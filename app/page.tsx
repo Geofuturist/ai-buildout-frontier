@@ -44,7 +44,7 @@ export default async function HomePage() {
   // Join in JavaScript by region_id
   const regionsMap = new Map(regionsData.map((r) => [r.id, r]));
 
-  const features: Feature<MultiPolygon>[] = feasibilityData
+  const features = feasibilityData
     .map((f) => {
       const region = regionsMap.get(f.region_id);
       if (!region?.geometry) return null;
@@ -62,7 +62,7 @@ export default async function HomePage() {
         },
       };
     })
-    .filter((f): f is Feature<MultiPolygon> => f !== null);
+    .filter((f) => f !== null) as Feature<MultiPolygon>[];
 
   const geojsonData: FeatureCollection = {
     type: 'FeatureCollection',
