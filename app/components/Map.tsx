@@ -4,7 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 import ReactMap, { Source, Layer, Popup } from 'react-map-gl/maplibre';
 import { useState, useCallback } from 'react';
-import type { FillLayer, LineLayer } from 'react-map-gl/maplibre';
+import type { FillLayerSpecification, LineLayerSpecification } from 'maplibre-gl';
 import type { FeatureCollection } from 'geojson';
 import type { MapLayerMouseEvent } from 'react-map-gl';
 
@@ -14,7 +14,7 @@ interface MapComponentProps {
   data: FeatureCollection;
 }
 
-const fillLayer: FillLayer = {
+const fillLayer: FillLayerSpecification = {
   id: 'counties-fill',
   type: 'fill',
   source: 'counties',
@@ -33,7 +33,7 @@ const fillLayer: FillLayer = {
   },
 };
 
-const borderLayer: LineLayer = {
+const borderLayer: LineLayerSpecification = {
   id: 'counties-border',
   type: 'line',
   source: 'counties',
