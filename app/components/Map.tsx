@@ -6,7 +6,7 @@ import ReactMap, { Source, Layer, Popup } from 'react-map-gl/maplibre';
 import { useState, useCallback } from 'react';
 import type { FillLayerSpecification, LineLayerSpecification } from 'maplibre-gl';
 import type { FeatureCollection } from 'geojson';
-import type { MapLayerMouseEvent } from 'react-map-gl';
+import type { MapLayerMouseEvent } from 'react-map-gl/maplibre';
 
 import { FEASIBILITY_COLORS, FEASIBILITY_LABELS, type FeasibilityCategory } from '@/lib/feasibility';
 
