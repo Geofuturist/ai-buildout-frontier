@@ -1,0 +1,76 @@
+# =============================================================================
+# .gitignore — AI Buildout Frontier
+# =============================================================================
+
+# Secrets and credentials — NEVER COMMIT
+.env
+.env.local
+.env.*.local
+*.env
+Supabase.txt
+credentials.*
+secrets.*
+*_credentials.*
+*.secret
+
+# Personal project documents (not public)
+briefing_*.pdf
+briefing_*.md
+*_briefing.*
+AI Energy infrastructure*.pdf
+Technical_Framework*.pdf
+
+# Old versions and working copies
+*_v.[0-9]*.*
+*.zip
+*.bak
+*_old.*
+*_draft.*
+ARCHITECTURE_DECISIONS_v.*.md
+SPEC_*.md
+CODE_CHAT_CONTEXT.md
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build and deployment artifacts
+.vercel/
+.turbo/
+
+# GeoJSON source files — not in repo (live on D:/GISData/)
+*.geojson
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.gpkg
+
+# Exception: allow sample data in public/
+!public/**/*.geojson
