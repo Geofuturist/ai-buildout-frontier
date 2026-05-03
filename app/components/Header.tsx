@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Header() {
   return (
     <header className="border-b bg-white px-6 py-3 z-10 relative">
@@ -10,14 +12,22 @@ export default function Header() {
             Physical constraints on AI infrastructure — Virginia pilot
           </p>
         </div>
-        <a
-          href="https://github.com/Geofuturist/ai-buildout-frontier"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-        >
-          GitHub →
-        </a>
+        <nav className="flex items-center gap-5">
+          <Link
+            href="/methodology"
+            className="text-sm text-slate-700 hover:text-slate-900 underline underline-offset-2"
+          >
+            Methodology
+          </Link>
+          <a
+            href="https://github.com/Geofuturist/ai-buildout-frontier"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            GitHub →
+          </a>
+        </nav>
       </div>
     </header>
   );

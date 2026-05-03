@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Footer from '@/app/components/Footer';
 
 export const metadata: Metadata = {
   title: 'The AI Buildout Frontier',
@@ -14,8 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="h-screen flex flex-col overflow-hidden bg-gray-50">
+      <body className="min-h-screen flex flex-col bg-gray-50">
         {children}
+        <Footer />
       </body>
     </html>
   );
