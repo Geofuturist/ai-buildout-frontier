@@ -44,8 +44,8 @@ export default function MethodologyPage() {
             <strong className="font-semibold text-slate-800">
               structural pressure on regional electricity infrastructure
             </strong>{' '}
-            from announced AI compute demand at sub-national resolution (counties,
-            fylker, emirates). It is calculated for each region as:
+            from announced AI compute demand at sub-national resolution (L1-L2, counties,
+        , districts, etc.). It is calculated for each region as:
           </p>
 
           {/* Formula block */}
