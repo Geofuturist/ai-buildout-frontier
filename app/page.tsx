@@ -1,22 +1,43 @@
+// app/page.tsx
+// Server Component — fetches all map data in parallel, passes to client AppShell.
+// County data joined in JS (PostgREST cross-schema FK limitation — see §3 / §7.2 ADR).
+// DC data fetched via query functions that accept the inline client (Arch decision 3).
+
 import { createClient } from '@supabase/supabase-js';
 import type { FeatureCollection, Feature, MultiPolygon } from 'geojson';
-import MapComponent from './components/Map';
-import Header from './components/Header';
-import Legend from './components/Legend';
 
-// Server Component — data fetched at request time on the server
+import Header from './components/Header';
+import AppShell from './components/AppShell';
+import { fetchFrontierDCs, fetchClusterDCs, fetchOsmDCs } from '@/lib/queries/datacenters';
+
 export default async function HomePage() {
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
   );
 
-  // Query 1: feasibility data from indices schema
-  const { data: feasibilityData, error: feasibilityError } = await supabase
-    .schema('indices')
-    .from('grid_feasibility_current')
-    .select('region_id, value, category, components');
+  // ── Parallel fetch: all 4 data sources ──────────────────────────────────────
+  const [
+    { data: feasibilityData, error: feasibilityError },
+    { data: regionsData, error: regionsError },
+    frontier,
+    clusters,
+    osm,
+  ] = await Promise.all([
+    supabase
+      .schema('indices')
+      .from('grid_feasibility_current')
+      .select('region_id, value, category, components'),
+    supabase
+      .schema('core')
+      .from('regions')
+      .select('id, name, admin_code, geometry'),
+    fetchFrontierDCs(supabase),
+    fetchClusterDCs(supabase),
+    fetchOsmDCs(supabase),
+  ]);
 
+  // ── Error handling for required county data ──────────────────────────────────
   if (feasibilityError || !feasibilityData) {
     console.error('Feasibility fetch error:', feasibilityError);
     return (
@@ -25,12 +46,6 @@ export default async function HomePage() {
       </main>
     );
   }
-
-  // Query 2: region geometries from core schema
-  const { data: regionsData, error: regionsError } = await supabase
-    .schema('core')
-    .from('regions')
-    .select('id, name, admin_code, geometry');
 
   if (regionsError || !regionsData) {
     console.error('Regions fetch error:', regionsError);
@@ -41,7 +56,7 @@ export default async function HomePage() {
     );
   }
 
-  // Join in JavaScript by region_id
+  // ── JS join for county GeoJSON (§7.2 pattern) ───────────────────────────────
   const regionsMap = new Map(regionsData.map((r) => [r.id, r]));
 
   const features = feasibilityData
@@ -64,18 +79,19 @@ export default async function HomePage() {
     })
     .filter((f) => f !== null) as Feature<MultiPolygon>[];
 
-  const geojsonData: FeatureCollection = {
+  const counties: FeatureCollection<MultiPolygon> = {
     type: 'FeatureCollection',
     features,
   };
 
+  // ── Render ──────────────────────────────────────────────────────────────────
   return (
     <main className="flex flex-col h-screen">
       <Header />
-      <div className="relative flex-1">
-        <MapComponent data={geojsonData} />
-        <Legend />
-      </div>
+      <AppShell
+        counties={counties}
+        datacenters={{ frontier, clusters, osm }}
+      />
     </main>
   );
 }

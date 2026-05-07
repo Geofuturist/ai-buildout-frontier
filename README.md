@@ -30,14 +30,32 @@ Feasibility Ratio = Available Capacity (MW) / Realistic Queue Pressure (MW)
 | Critical constraint | < 0.5 | Red |
 | DC Hotspot (override) | — | Dark red |
 
+## Features
+
+- County-level grid feasibility scores (Virginia pilot, 133 counties)
+- Datacenter layers:
+  - Frontier AI Datacenters (Epoch AI, 38 records, 33 spatial)
+  - GPU Clusters (Epoch AI, 786 records, 598 spatial)
+  - OpenStreetMap datacenters (US, 1,317 records)
+- Interactive layer toggles with status sub-filters (planned / decommissioned)
+- Shareable URL state for filtered views
+- Cluster aggregation on zoom-out for Clusters and OSM layers
+- Methodology and data source documentation
+
 ## Data sources
 
+**Grid feasibility:**
 - **EIA Form 861** — net generation and retail service territories, joined to HIFLD boundaries
 - **Berkeley Lab LBNL Interconnection Queue Data** — generation queue projects by county (PJM, historical completion rate 19.7%)
 - **OpenStreetMap via Overpass API** — substation locations and voltage classification
 - **US Census TIGER** — county and independent city boundaries
 
-Full methodology: see `ARCHITECTURE_DECISIONS.md`.
+**Datacenter layers:**
+- **Frontier datacenters:** [Epoch AI Frontier Data Hub](https://epoch.ai/data/frontier-data-centres) (CC-BY-4.0)
+- **GPU clusters:** [Epoch AI GPU Clusters](https://epoch.ai/data/gpu-clusters) (CC-BY-4.0)
+- **OSM datacenters:** [OpenStreetMap](https://www.openstreetmap.org/) (ODbL)
+
+Full methodology: see [methodology page](https://project-j8oo5.vercel.app/methodology) or `app/methodology/page.tsx`.
 
 ## Local development
 
@@ -98,15 +116,25 @@ Every push to `main` triggers an automatic redeploy.
 ```
 app/
   components/
+    AppShell.tsx      # Client layout shell (sidebar + map area + mobile sheet)
     Header.tsx        # Top navigation bar
-    Map.tsx           # MapLibre map (client component)
+    Map.tsx           # MapLibre map — county + 3 DC layers (client component)
     Legend.tsx        # Feasibility category legend
+    LayerPanel.tsx    # Layer toggle controls
+    BottomSheet.tsx   # Mobile slide-up panel
+    DCPopup.tsx       # Datacenter popup (3 variants)
+  methodology/
+    page.tsx          # Methodology documentation
   layout.tsx          # Root layout
-  page.tsx            # Homepage
+  page.tsx            # Homepage (server component — data fetching)
   globals.css
 lib/
-  supabase.ts         # Supabase client
+  supabase.ts         # Supabase client singleton
   feasibility.ts      # Types, color mapping, helpers
+  queries/
+    datacenters.ts    # DC fetch functions (Frontier, Clusters, OSM)
+  hooks/
+    useLayerState.ts  # URL-backed layer toggle state
 ```
 
 ## License

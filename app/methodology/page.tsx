@@ -245,6 +245,145 @@ export default function MethodologyPage() {
           </p>
         </section>
 
+        {/* ── Section: Datacenter sources ── */}
+        <section>
+          <h2 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
+            Datacenter sources
+          </h2>
+
+          <p className="text-base leading-[1.7] text-slate-700 mb-6">
+            Three independent datasets show where AI-relevant compute infrastructure
+            exists, is being built, or is announced. Each is displayed as a separate
+            toggleable layer on the map.
+          </p>
+
+          {/* Frontier */}
+          <h3 className="text-lg font-semibold text-slate-900 mt-8 mb-3">
+            Frontier AI Datacenters
+          </h3>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Source:</strong>{' '}
+            <a
+              href="https://epoch.ai/data/frontier-data-centres"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline underline-offset-2 hover:text-blue-800"
+            >
+              Epoch AI Frontier Data Hub
+            </a>{' '}
+            (CC-BY-4.0).
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Coverage:</strong>{' '}
+            38 datacenters globally, of which 33 have verified geographic coordinates.
+            The remaining 5 are known to exist but lack precise location data and are
+            excluded from the map.
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Methodology:</strong>{' '}
+            Epoch AI identifies installations housing the largest training clusters by
+            H100-equivalent compute. Coordinates are verified via satellite imagery
+            where possible.
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-6">
+            <strong className="font-semibold text-slate-800">Last updated:</strong>{' '}
+            2026-05-04.
+          </p>
+
+          {/* GPU Clusters */}
+          <h3 className="text-lg font-semibold text-slate-900 mt-8 mb-3">
+            GPU Clusters
+          </h3>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Source:</strong>{' '}
+            <a
+              href="https://epoch.ai/data/gpu-clusters"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline underline-offset-2 hover:text-blue-800"
+            >
+              Epoch AI GPU Clusters
+            </a>{' '}
+            (CC-BY-4.0).
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Coverage:</strong>{' '}
+            786 clusters globally; 598 have coordinates and appear on the map. The
+            remaining 188 are known to exist but lack precise location data.
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Methodology:</strong>{' '}
+            Compiled from corporate disclosures, news reports, and regulatory filings.
+            Each cluster carries a Certainty rating (Confirmed / Likely / Unlikely) and
+            a Status field indicating lifecycle stage.
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-6">
+            <strong className="font-semibold text-slate-800">Last updated:</strong>{' '}
+            2026-05-04.
+          </p>
+
+          {/* OSM */}
+          <h3 className="text-lg font-semibold text-slate-900 mt-8 mb-3">
+            OpenStreetMap Datacenters (US)
+          </h3>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Source:</strong>{' '}
+            <a
+              href="https://www.openstreetmap.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline underline-offset-2 hover:text-blue-800"
+            >
+              OpenStreetMap
+            </a>{' '}
+            (ODbL).
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-2">
+            <strong className="font-semibold text-slate-800">Coverage:</strong>{' '}
+            1,317 facilities tagged as datacenters in US OpenStreetMap. Currently US-only
+            — global OSM coverage is uneven and would require additional curation.
+          </p>
+          <p className="text-base leading-[1.7] text-slate-700 mb-6">
+            <strong className="font-semibold text-slate-800">Methodology:</strong>{' '}
+            Community-maintained tags{' '}
+            <code className="font-mono text-sm bg-slate-100 px-1 rounded">
+              building=data_center
+            </code>{' '}
+            or{' '}
+            <code className="font-mono text-sm bg-slate-100 px-1 rounded">
+              man_made=data_center
+            </code>
+            . Includes all datacenter types, not only AI-relevant. Useful as broad
+            infrastructure context against which specialized lists (Frontier, Clusters)
+            can be compared.
+          </p>
+
+          {/* Notes */}
+          <h3 className="text-lg font-semibold text-slate-900 mt-8 mb-3">
+            Note on overlapping records
+          </h3>
+          <p className="text-base leading-[1.7] text-slate-700 mb-6">
+            A single physical datacenter may appear in multiple datasets — for example,
+            a large hyperscaler facility may be listed in the Epoch Frontier set, the
+            GPU Clusters set, and OSM. We display each dataset independently rather than
+            deduplicating, because each source applies different criteria for what counts
+            as a "datacenter" and at what threshold. Researchers can compare and
+            triangulate across layers.
+          </p>
+
+          <h3 className="text-lg font-semibold text-slate-900 mt-8 mb-3">
+            Note on geocoding precision
+          </h3>
+          <p className="text-base leading-[1.7] text-slate-700 mb-6">
+            Some sources report coordinates at varying precision: street-level (precise),
+            city-level (centroid of municipality), regional (state/province centroid), or
+            country-level (national centroid). We encode this visually as point opacity on
+            the GPU Clusters layer once Epoch begins publishing precision metadata. As of
+            the current data version, all coordinates render at default opacity (treated
+            as city-level equivalent).
+          </p>
+        </section>
+
         {/* Document footer note */}
         <div className="mt-12 pt-6 border-t border-slate-200">
           <p className="text-sm text-slate-400 italic">
