@@ -245,6 +245,32 @@ export default function MethodologyPage() {
           </p>
         </section>
 
+       ## Grid feasibility data sources
+
+The Grid Feasibility Index for Virginia synthesizes four independent datasets:
+
+### Generation interconnection queue
+**Source:** [Berkeley Lab Energy Markets & Policy](https://emp.lbl.gov/queues) (CC-BY-4.0).
+**Coverage:** 440 generation projects in Virginia totaling 37,327 MW.
+**Use:** measures planned new generation capacity entering the grid.
+**Last updated:** 2024 data file (`LBNL_Ix_Queue_Data_File_thru2024_v2`).
+
+### Power plants
+**Source:** [Global Energy Monitor](https://globalenergymonitor.org/) (CC-BY-4.0).
+**Coverage:** all major power plants with station-level capacity.
+**Use:** establishes existing generation baseline per county.
+**Last updated:** March 2026 snapshot.
+
+### Energy generation and consumption
+**Source:** US Energy Information Administration (public domain).
+**Use:** state-level generation and consumption data, used to derive county-level headroom estimates.
+
+### County boundaries
+**Source:** US Census Bureau TIGER/Line shapefiles (public domain).
+**Use:** geographic regions for spatial aggregation.
+
+### Note on HIFLD
+The Homeland Infrastructure Foundation-Level Data (HIFLD) substation and transmission datasets are planned data sources for Phase B (substation-level resolution). They are not used in the current v1.0 county-level methodology.
         {/* ── Section: Datacenter sources ── */}
         <section>
           <h2 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
