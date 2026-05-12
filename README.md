@@ -44,13 +44,15 @@ Feasibility Ratio = Available Capacity (MW) / Realistic Queue Pressure (MW)
 
 ## Data sources
 
-**Grid feasibility:**
-- **EIA Form 861** — net generation and retail service territories, joined to HIFLD boundaries
-- **Berkeley Lab LBNL Interconnection Queue Data** — generation queue projects by county (PJM, historical completion rate 19.7%)
-- **OpenStreetMap via Overpass API** — substation locations and voltage classification
-- **US Census TIGER** — county and independent city boundaries
+## Data sources
 
-**Datacenter layers:**
+### Grid feasibility (Virginia v1.0)
+- **Generation queue:** [Berkeley Lab Energy Markets & Policy](https://emp.lbl.gov/queues) (CC-BY-4.0)
+- **Power plants:** [Global Energy Monitor](https://globalenergymonitor.org/) (CC-BY-4.0)
+- **Generation & consumption:** US Energy Information Administration (public domain)
+- **County boundaries:** US Census Bureau (public domain)
+
+### Datacenter layers
 - **Frontier datacenters:** [Epoch AI Frontier Data Hub](https://epoch.ai/data/frontier-data-centres) (CC-BY-4.0)
 - **GPU clusters:** [Epoch AI GPU Clusters](https://epoch.ai/data/gpu-clusters) (CC-BY-4.0)
 - **OSM datacenters:** [OpenStreetMap](https://www.openstreetmap.org/) (ODbL)
