@@ -245,7 +245,13 @@ export default function MethodologyPage() {
           </p>
         </section>
 
-       ## Grid feasibility data sources
+The Homeland Infrastructure Foundation-Level Data (HIFLD) substation and transmission datasets are planned data sources for Phase B (substation-level resolution). They are not used in the current v1.0 county-level methodology.
+        {/* ── Section: Datacenter sources ── */}
+        <section>
+          <h2 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
+            Sources
+          </h2>
+## Grid feasibility data sources
 
 The Grid Feasibility Index for Virginia synthesizes four independent datasets:
 
@@ -271,12 +277,6 @@ The Grid Feasibility Index for Virginia synthesizes four independent datasets:
 
 ### Note on HIFLD
 The Homeland Infrastructure Foundation-Level Data (HIFLD) substation and transmission datasets are planned data sources for Phase B (substation-level resolution). They are not used in the current v1.0 county-level methodology.
-        {/* ── Section: Datacenter sources ── */}
-        <section>
-          <h2 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
-            Datacenter sources
-          </h2>
-
           <p className="text-base leading-[1.7] text-slate-700 mb-6">
             Three independent datasets show where AI-relevant compute infrastructure
             exists, is being built, or is announced. Each is displayed as a separate
