@@ -251,32 +251,53 @@ The Homeland Infrastructure Foundation-Level Data (HIFLD) substation and transmi
           <h2 className="text-2xl font-semibold text-slate-900 mt-12 mb-4">
             Sources
           </h2>
-## Grid feasibility data sources
+<h2>Grid feasibility data sources</h2>
 
-The Grid Feasibility Index for Virginia synthesizes four independent datasets:
+<p>The Grid Feasibility Index for Virginia synthesizes four independent datasets:</p>
 
-### Generation interconnection queue
-**Source:** [Berkeley Lab Energy Markets & Policy](https://emp.lbl.gov/queues) (CC-BY-4.0).
-**Coverage:** 440 generation projects in Virginia totaling 37,327 MW.
-**Use:** measures planned new generation capacity entering the grid.
-**Last updated:** 2024 data file (`LBNL_Ix_Queue_Data_File_thru2024_v2`).
+<h3>Generation interconnection queue</h3>
+<p>
+  <strong>Source:</strong>{' '}
+  <a href="https://emp.lbl.gov/queues" target="_blank" rel="noopener noreferrer">
+    Berkeley Lab Energy Markets &amp; Policy
+  </a>{' '}
+  (CC-BY-4.0).
+</p>
+<p><strong>Coverage:</strong> 440 generation projects in Virginia totaling 37,327 MW.</p>
+<p><strong>Use:</strong> measures planned new generation capacity entering the grid.</p>
+<p><strong>Last updated:</strong> 2024 data file (<code>LBNL_Ix_Queue_Data_File_thru2024_v2</code>).</p>
 
-### Power plants
-**Source:** [Global Energy Monitor](https://globalenergymonitor.org/) (CC-BY-4.0).
-**Coverage:** all major power plants with station-level capacity.
-**Use:** establishes existing generation baseline per county.
-**Last updated:** March 2026 snapshot.
+<h3>Power plants</h3>
+<p>
+  <strong>Source:</strong>{' '}
+  <a href="https://globalenergymonitor.org/" target="_blank" rel="noopener noreferrer">
+    Global Energy Monitor
+  </a>{' '}
+  (CC-BY-4.0).
+</p>
+<p><strong>Coverage:</strong> all major power plants with station-level capacity.</p>
+<p><strong>Use:</strong> establishes existing generation baseline per county.</p>
+<p><strong>Last updated:</strong> March 2026 snapshot.</p>
 
-### Energy generation and consumption
-**Source:** US Energy Information Administration (public domain).
-**Use:** state-level generation and consumption data, used to derive county-level headroom estimates.
+<h3>Energy generation and consumption</h3>
+<p><strong>Source:</strong> US Energy Information Administration (public domain).</p>
+<p>
+  <strong>Use:</strong> state-level generation and consumption data, used to derive
+  county-level headroom estimates.
+</p>
 
-### County boundaries
-**Source:** US Census Bureau TIGER/Line shapefiles (public domain).
-**Use:** geographic regions for spatial aggregation.
+<h3>County boundaries</h3>
+<p>
+  <strong>Source:</strong> US Census Bureau TIGER/Line shapefiles (public domain).
+</p>
+<p><strong>Use:</strong> geographic regions for spatial aggregation.</p>
 
-### Note on HIFLD
-The Homeland Infrastructure Foundation-Level Data (HIFLD) substation and transmission datasets are planned data sources for Phase B (substation-level resolution). They are not used in the current v1.0 county-level methodology.
+<h3>Note on HIFLD</h3>
+<p>
+  The Homeland Infrastructure Foundation-Level Data (HIFLD) substation and transmission
+  datasets are planned data sources for Phase B (substation-level resolution). They are
+  not used in the current v1.0 county-level methodology.
+</p>
           <p className="text-base leading-[1.7] text-slate-700 mb-6">
             Three independent datasets show where AI-relevant compute infrastructure
             exists, is being built, or is announced. Each is displayed as a separate
