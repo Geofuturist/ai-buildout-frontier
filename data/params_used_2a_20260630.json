@@ -1,0 +1,22 @@
+{
+  "transmission_derating_factor": 0.5,
+  "import_cap_pct": 0.5,
+  "dc_backup_gen_to_load_factor": 0.7,
+  "completion_rate_by_iso": {
+    "PJM": 0.13
+  },
+  "nrel_year": 2023,
+  "eia860_year": 2024,
+  "voltage_thermal_lookup_mw": {
+    "ge765": 2400,
+    "v500": 1500,
+    "v345": 900,
+    "v230": 400,
+    "v138": 150,
+    "v115": 120,
+    "v69": 50,
+    "lt69_unknown": 25
+  },
+  "hifld_status_filter": "IN SERVICE + NOT AVAILABLE (см. решение V в сессии чата)",
+  "dlr_used": false
+}
