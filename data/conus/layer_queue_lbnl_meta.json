@@ -1,0 +1,13 @@
+{
+  "source": "Berkeley Lab (LBNL) 'Queued Up' — interconnection queue database",
+  "source_url": "https://emp.lbl.gov/queues",
+  "vintage": "снапшот май-2026 (данные до конца 2025)",
+  "license": "см. страницу emp.lbl.gov/queues (открытый доступ)",
+  "coverage": "48 states + DC (CONUS), все ISO/BA (PJM, MISO, CAISO, ERCOT, и др.)",
+  "n_units_covered": 10242,
+  "n_units_no_data": 158,
+  "known_gaps": "158/10538 записей status=='active' национально не имеют fips_codes в источнике — не попадают в county-агрегацию (прямой FIPS-джойн, без spatial fallback: источник не даёт lat/lon). Публикуются только status=='active' — withdrawn/suspended/operational заявки в этом слое не отражены, это активная очередь на сегодня, не архив. poi_request_mw = max(mw1,mw2,mw3) для гибридных заявок, не сумма компонентов.",
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20260913",
+  "geometry_reconstruction": "GeoJSON не хранится в git (производная величина, восстанавливается детерминированно): python recreate_layer_geojson.py queue_lbnl -- берёт актуальный layer_queue_lbnl_<дата>.csv и cb_2023_us_county_500k.shp, join по fips."
+}

@@ -74,3 +74,5 @@ Thumbs.db
 
 # Exception: allow sample data in public/
 !public/**/*.geojson
+data/conus/*.geojson 
+data/conus/_osm_cache/ 

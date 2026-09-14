@@ -1,0 +1,13 @@
+{
+  "source": "EIA Form 860, Schedule 3 (Generator, Operable/OP) + Schedule 2 (Plant)",
+  "source_url": "https://www.eia.gov/electricity/data/eia860/",
+  "vintage": "data year 2024, final release 2025-09-09",
+  "license": "US government work — public domain (17 U.S.C. § 105)",
+  "coverage": "48 states + DC (CONUS)",
+  "n_units_covered": 23954,
+  "n_units_no_data": 3,
+  "known_gaps": "3 генераторов с валидными координатами не резолвятся ни в один округ CONUS даже с запасом 1000м (настоящий офшор — Block Island Wind Farm, South Fork Wind, Coastal Virginia Offshore Wind; расстояние до берега 5-43 км) — исключены из агрегации. Статусы OA/OS (временно не в работе) и SB (standby) исключены сознательно — слой отражает текущую действующую генерацию, не номинальную мощность парка. Point-in-polygon использует запас 1000м для точек у самой границы округа (обрезка береговой линии в cb-границах 500k, международная речная граница) — откалибровано эмпирически на реальном разрыве между береговыми случаями (6-718м) и офшором (4865-42758м).",
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20260912",
+  "geometry_reconstruction": "GeoJSON не хранится в git (производная величина, восстанавливается детерминированно): python recreate_layer_geojson.py generation_eia860 -- берёт актуальный layer_generation_eia860_<дата>.csv и cb_2023_us_county_500k.shp, join по fips."
+}

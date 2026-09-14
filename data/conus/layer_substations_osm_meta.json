@@ -1,0 +1,13 @@
+{
+  "source": "OpenStreetMap, тег power=substation (через Overpass API)",
+  "source_url": "https://www.openstreetmap.org (via Overpass API, overpass-api.de)",
+  "vintage": "снимок на дату запуска скрипта: 20260913",
+  "license": "OpenStreetMap — ODbL (Open Database License). Проект публикует данные под CC BY 4.0 — совместимость ODbL (share-alike) с CC BY для этого производного слоя НЕ решена здесь, открытый вопрос для [ARCH] перед публикацией. Расчёт слоя это не блокирует.",
+  "coverage": "48 states + DC (CONUS)",
+  "n_units_covered": 71696,
+  "n_units_no_data": 2263,
+  "known_gaps": "n_substations в редконаселённых округах систематически занижен — плотность картирования OSM коррелирует с населением, это свойство источника, не дефект пайплайна. max_substation_voltage_kv — максимум ТОЛЬКО среди подстанций с известным тегом voltage; отсутствие тега не равно нулю, такие объекты учтены в n_substations, но не в max(). frac_substations_voltage_unknown по каждому округу — доля подстанций без известного напряжения, для оценки надёжности max_substation_voltage_kv в конкретном округе.",
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20260913",
+  "geometry_reconstruction": "GeoJSON не хранится в git (производная величина, восстанавливается детерминированно): python recreate_layer_geojson.py substations_osm -- берёт актуальный layer_substations_osm_<дата>.csv и cb_2023_us_county_500k.shp, join по fips."
+}

@@ -1,0 +1,13 @@
+{
+  "source": "HIFLD Transmission Lines (nationwide feature class)",
+  "source_url": "https://gii.dhs.gov/HIFLD",
+  "vintage": "экспорт архива: 2026-02-26 (восстановлено из внутренних timestamp'ов zip — канал/URL скачивания НЕ восстановлен, см. отдельный provenance-отчёт); SOURCEDATE/VAL_DATE по записям: до 2024-09-26 (max по всем 94619 записям)",
+  "license": "публичные данные HIFLD/DHS; вопросы условий использования — hifld@hq.dhs.gov",
+  "coverage": "48 states + DC (CONUS)",
+  "n_units_covered": 93880,
+  "n_units_no_data": 12,
+  "known_gaps": "12 округов геометрически не содержат ни одной линии этого статуса (проверено вручную: 4 независимых города Вирджинии — маленькие полигоны; 2 острова — Nantucket, Dukes County/Martha's Vineyard; 6 сельских малонаселённых округов Джорджии, Вирджинии, Пенсильвании, Айовы — расстояние до ближайшей линии везде километры-десятки км, не геометрический промах). Отдельно 14 округов ИМЕЮТ линию(и) в пределах, но voltage_kv неизвестен у всех — max_voltage_kv для них NaN, это не 'нет линий', см. поле has_any_line и frac_km_unknown_voltage по каждому округу. max_voltage_kv/км по классам считаются через 'вложенность' (intersects с площадью округа), не пересечение с линией границы. thermal MW не публикуется вообще — осознанное решение, не пробел. Км округлены до целого.",
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20260913",
+  "geometry_reconstruction": "GeoJSON не хранится в git (производная величина, восстанавливается детерминированно): python recreate_layer_geojson.py transmission_lines_hifld -- берёт актуальный layer_transmission_lines_hifld_<дата>.csv и cb_2023_us_county_500k.shp, join по fips."
+}

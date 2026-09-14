@@ -1,0 +1,13 @@
+{
+  "source": "NREL/NLR OEDI submission 8562 — Hourly Electricity Demand Profiles for US Counties",
+  "source_url": "https://data.openei.org/submissions/8562",
+  "vintage": "почасовые данные 2016-2023, взят год 2023",
+  "license": "см. страницу OEDI submission 8562 (открытый доступ, без регистрации)",
+  "coverage": "48 states + DC (CONUS) — AK/HI отсутствуют в самом источнике",
+  "n_units_covered": 3109,
+  "n_units_no_data": 0,
+  "known_gaps": "peak_demand_mw = годовой почасовой максимум за 2023 год (единственный залоченный год, как и в пилоте M2a по Вирджинии). Не включает существующую DC-нагрузку отдельным слагаемым (в отличие от старой Peak_adj из M2a v1) — это чистый спрос по счётчикам коммунальных сетей, без derived-поправок.",
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20260912",
+  "geometry_reconstruction": "GeoJSON не хранится в git (производная величина, восстанавливается детерминированно): python recreate_layer_geojson.py demand_nrel8562 -- берёт актуальный layer_demand_nrel8562_<дата>.csv и cb_2023_us_county_500k.shp, join по fips."
+}
