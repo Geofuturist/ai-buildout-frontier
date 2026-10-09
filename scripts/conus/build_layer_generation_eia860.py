@@ -20,6 +20,11 @@ Island, South Fork Wind, CVOW) остаётся корректно исключ�
 
 Запуск (та же папка, что и gci_conus_common.py):
     python build_layer_generation_eia860.py
+    python build_layer_generation_eia860.py --input-dir D:\GISData\Energy\USA\eia8602025
+
+--input-dir (добавлено 09.10.2026, TZ_CODE_PILOT_eia860_2025_v1): папка издания
+EIA-860; файлы ищутся по шаблонам 2___Plant_Y*.xlsx и 3_1_Generator_Y*.xlsx.
+По умолчанию — прежняя папка 2024 года. Логика слоя не менялась.
 """
 
 from __future__ import annotations
@@ -35,8 +40,23 @@ from gci_conus_common import (
     log,
 )
 
-PLANT_XLSX = Path(r"D:\GISData\Energy\USA\eia8602024\2___Plant_Y2024.xlsx")
-GENERATOR_XLSX = Path(r"D:\GISData\Energy\USA\eia8602024\3_1_Generator_Y2024.xlsx")
+DEFAULT_INPUT_DIR = Path(r"D:\GISData\Energy\USA\eia8602024")
+PLANT_XLSX = DEFAULT_INPUT_DIR / "2___Plant_Y2024.xlsx"
+GENERATOR_XLSX = DEFAULT_INPUT_DIR / "3_1_Generator_Y2024.xlsx"
+
+
+def _set_input_dir() -> None:
+    """--input-dir: the only change (09.10.2026); default = the 2024 folder."""
+    import argparse
+    global PLANT_XLSX, GENERATOR_XLSX
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--input-dir", default=str(DEFAULT_INPUT_DIR))
+    d = Path(ap.parse_args().input_dir)
+    if d != DEFAULT_INPUT_DIR:
+        PLANT_XLSX = next(iter(sorted(d.glob("2___Plant_Y*.xlsx"))), d / "2___Plant_Y?.xlsx")
+        GENERATOR_XLSX = next(iter(sorted(d.glob("3_1_Generator_Y*.xlsx"))),
+                              d / "3_1_Generator_Y?.xlsx")
+    log.info("Вход: %s ; %s", PLANT_XLSX, GENERATOR_XLSX)
 
 LAYER_NAME = "generation_eia860"
 SOURCE_URL = "https://www.eia.gov/electricity/data/eia860/"
@@ -48,6 +68,7 @@ def main() -> None:
     import pandas as pd
     import geopandas as gpd
 
+    _set_input_dir()
     if not PLANT_XLSX.exists() or not GENERATOR_XLSX.exists():
         log.error("Не найден один из файлов EIA-860.")
         return

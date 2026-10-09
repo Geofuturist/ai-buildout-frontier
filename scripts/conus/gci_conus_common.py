@@ -42,7 +42,12 @@ CONUS_STATES_FIPS = {
 }
 
 # Решение зафиксировано в pre-flight: cb 500k, не 5m, не полный TIGER/Line.
-BOUNDARY_SHP = Path(r"D:\GISData\Energy\USA\cb_2023_us_county_500k\cb_2023_us_county_500k.shp")
+# 09.10.2026: the same file now lives under D:\GISData\AI\Administrative units\USA\ -
+# the path can be given in ABF_COUNTY_SHP; default = the original path.
+import os  # noqa: E402
+BOUNDARY_SHP = Path(os.environ.get(
+    "ABF_COUNTY_SHP",
+    r"D:\GISData\Energy\USA\cb_2023_us_county_500k\cb_2023_us_county_500k.shp"))
 BOUNDARY_SOURCE_NOTE = (
     "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо "
     "5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line "

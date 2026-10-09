@@ -1,0 +1,17 @@
+{
+  "source": "EIA Form 860, Schedule 3 (Generator, Operable/OP) + Schedule 2 (Plant)",
+  "source_url": "https://www.eia.gov/electricity/data/eia860/",
+  "vintage": "data year 2025, final release 2026-09-10",
+  "license": "US government work — public domain (17 U.S.C. § 105)",
+  "coverage": "48 states + DC (CONUS)",
+  "n_units_covered": 24958,
+  "n_units_no_data": 3,
+  "known_gaps": "3 генераторов с валидными координатами не резолвятся ни в один округ CONUS даже с запасом 1000м (настоящий офшор — Block Island Wind Farm, South Fork Wind, Coastal Virginia Offshore Wind; расстояние до берега 5-43 км) — исключены из агрегации. Статусы OA/OS (временно не в работе) и SB (standby) исключены сознательно — слой отражает текущую действующую генерацию, не номинальную мощность парка. Point-in-polygon использует запас 1000м для точек у самой границы округа (обрезка береговой линии в cb-границах 500k, международная речная граница) — откалибровано эмпирически на реальном разрыве между береговыми случаями (6-718м) и офшором (4865-42758м).",
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20261009",
+  "edition": "2025 final",
+  "current_through": "2025-12-31",
+  "input": "D:\\GISData\\Energy\\USA\\eia8602025",
+  "boundary_file": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+  "boundary_file_sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+}

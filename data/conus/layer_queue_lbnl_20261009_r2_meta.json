@@ -1,0 +1,97 @@
+{
+  "source": "Berkeley Lab (LBNL) 'Queued Up' — interconnection queue database",
+  "source_url": "https://emp.lbl.gov/queues",
+  "vintage": "Queued Up 2026 edition (data through 2025-12-31)",
+  "license": "CC BY 4.0 (confirmed for the Queued Up 2026 edition)",
+  "coverage": "48 states + DC (CONUS), все ISO/BA (PJM, MISO, CAISO, ERCOT, и др.)",
+  "n_units_covered": 8407,
+  "n_units_no_data": 89,
+  "known_gaps": "89/8513 записей status=='active' национально не имеют fips_codes в источнике — не попадают в county-агрегацию (прямой FIPS-джойн, без spatial fallback: источник не даёт lat/lon). Публикуются только status=='active' — withdrawn/suspended/operational заявки в этом слое не отражены, это активная очередь на сегодня, не архив. poi_request_mw = max(mw1,mw2,mw3) для гибридных заявок, не сумма компонентов. Connecticut: the source codes projects by pre-2022 counties; 7 active records (678.2 MW) cannot be placed in the 2022 planning regions, so all 9 regions are not_covered (no value, not zero). Requests whose largest capacity field is zero or negative are left out of the sum and the project count: L002 (MISO, county 27139, -28 MW); L003 (MISO, county 26091, -10 MW); L004 (MISO, county 39171, -22 MW); L006 (MISO, county 26137, -5 MW); L008 (MISO, county 39041, -4 MW); L009 (MISO, county 27063, -11 MW); 18INR0064 (ERCOT, county 48133, -7.2 MW); 19INR0120 (ERCOT, county 48371, -18 MW); 20INR0019 (ERCOT, county 48503, -27 MW); 24INR0372 (ERCOT, county 48453, -53.3 MW).",
+  "code_crosswalk": {
+    "file": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\boundaries\\code_crosswalk_exact.csv",
+    "applied": [
+      {
+        "old_fips": "46113",
+        "new_fips": "46102",
+        "records": 1,
+        "mw": 110.0
+      },
+      {
+        "old_fips": "51515",
+        "new_fips": "51019",
+        "records": 0,
+        "mw": 0.0
+      }
+    ]
+  },
+  "n_units_not_covered": 9,
+  "excluded_nonpositive": [
+    {
+      "q_id": "L002",
+      "region": "MISO",
+      "fips": "27139",
+      "mw": -28.0
+    },
+    {
+      "q_id": "L003",
+      "region": "MISO",
+      "fips": "26091",
+      "mw": -10.0
+    },
+    {
+      "q_id": "L004",
+      "region": "MISO",
+      "fips": "39171",
+      "mw": -22.0
+    },
+    {
+      "q_id": "L006",
+      "region": "MISO",
+      "fips": "26137",
+      "mw": -5.0
+    },
+    {
+      "q_id": "L008",
+      "region": "MISO",
+      "fips": "39041",
+      "mw": -4.0
+    },
+    {
+      "q_id": "L009",
+      "region": "MISO",
+      "fips": "27063",
+      "mw": -11.0
+    },
+    {
+      "q_id": "18INR0064",
+      "region": "ERCOT",
+      "fips": "48133",
+      "mw": -7.2
+    },
+    {
+      "q_id": "19INR0120",
+      "region": "ERCOT",
+      "fips": "48371",
+      "mw": -18.0
+    },
+    {
+      "q_id": "20INR0019",
+      "region": "ERCOT",
+      "fips": "48503",
+      "mw": -27.0
+    },
+    {
+      "q_id": "24INR0372",
+      "region": "ERCOT",
+      "fips": "48453",
+      "mw": -53.3
+    }
+  ],
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20261009_r2",
+  "edition": "Queued Up 2026",
+  "current_through": "2025-12-31",
+  "input": "D:\\GISData\\Energy\\USA\\lbnl_ix_queue_data_file_thru2025.xlsx",
+  "boundary_file": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+  "boundary_file_sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+}
