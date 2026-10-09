@@ -1,7 +1,7 @@
 r"""Independent check of a published release: download every file and compare with the manifest.
 
 Run command (from the repository root, Windows):
-    python scripts\publish\verify_release.py --url https://data.<domain>/abf-layers/v0.1.0/manifest.json --save-manifest "D:\GISData\release\abf-layers-v0.1.0"
+    python scripts\publish\verify_release.py --url https://data.aibuildoutfrontier.org/abf-layers/v0.1.0/manifest.json --save-manifest "D:\GISData\release\abf-layers-v0.1.0"
 
 Needs: python -m pip install jsonschema requests
 Checks: size and SHA-256 of every file, the schema of manifest and of every meta.json,

@@ -76,7 +76,7 @@ coverage:
     - "County demand in this dataset is modeled: utilities do not meter or publish demand by county."
     - "Large single loads, data centers among them, may be under-represented, especially in counties with few residents."
 verification:
-  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
     The yearly maximum of the hourly profile of each county is computed by script from the source
     table. No value was re-checked by a person or by an agent. The automated checks listed below

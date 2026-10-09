@@ -122,7 +122,7 @@ coverage:
     - "Hamilton County, Iowa (19079) and Clare County, Michigan (26035) have a line in the source, but shorter than 0.5 km, so the county value km_total is 0."
     - "The layer does not show how much power can flow into a county."
 verification:
-  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
     Line lengths inside each county are computed by script from the segments of the archive and
     classed by voltage. No value was re-checked by a person or by an agent. The automated checks

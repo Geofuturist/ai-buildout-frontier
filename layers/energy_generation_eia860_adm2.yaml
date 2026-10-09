@@ -100,7 +100,7 @@ coverage:
     - "Offshore wind farms are not assigned to any county, so they are not in the county values."
     - "Emergency generators at data centers and other buildings are not listed in EIA-860."
 verification:
-  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
     Values are computed by script from the source tables: operating generators are located by the
     coordinates of their plants and summed by county. No value was re-checked by a person or by an

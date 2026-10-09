@@ -93,7 +93,7 @@ coverage:
     - "53 active requests located in other states or territories, or with no state given (8,813.0 MW), are not in the layer."
     - "The queue changes continuously; the file is a snapshot of requests as reported by grid operators and utilities."
 verification:
-  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
     Active requests are summed by county by script from the source workbook. No value was
     re-checked by a person or by an agent. The automated checks listed below were run on every
