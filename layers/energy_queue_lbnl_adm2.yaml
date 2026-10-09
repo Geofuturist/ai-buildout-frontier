@@ -1,0 +1,136 @@
+# Layer config: interconnection queue, LBNL Queued Up 2026 edition, county level.
+layer_id: energy_queue_lbnl_adm2
+title: "Interconnection queue · LBNL Queued Up · county"
+title_ru: "Очередь на подключение · LBNL Queued Up · округа"
+domain: energy
+level: ADM2
+frame: {iso3: USA, level: ADM2}
+input:
+  # Built by [CODE-PILOT] on 2026-10-09 from lbnl_ix_queue_data_file_thru2025.xlsx (file with _r2; the
+  # file without _r2 is an intermediate one and must not be used).
+  table: 'data\conus\layer_queue_lbnl_20261009_r2.csv'
+  key: fips
+  legacy_meta: 'data\conus\layer_queue_lbnl_20261009_r2_meta.json'
+  coverage_column: coverage_status        # per-row coverage given by the table (Connecticut = not_covered)
+  coverage_note_column: coverage_note     # goes to the report only, not published as a field
+description: >-
+  Capacity of the active interconnection requests in the Queued Up database (2026 edition), summed
+  by county, with the number of those projects. A county with no active request in the file has the
+  value 0. Alaska and Hawaii, and the nine Connecticut planning regions, are not covered and have empty values.
+fields:
+  - name: queue_mw_active
+    type: number
+    unit: MW
+    nullable: true
+    null_meaning:
+      not_covered: "The unit is outside the contiguous United States and the District of Columbia and was not processed, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions."
+      covered: null
+    description: "Capacity of the active interconnection requests located in the county. 0 means there is no active project in the queue file for this county."
+    fill_na_covered: 0
+    min: 0
+  - name: n_active_projects
+    type: integer
+    nullable: true
+    null_meaning:
+      not_covered: "The unit is outside the contiguous United States and the District of Columbia and was not processed, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions."
+      covered: null
+    description: "Number of active interconnection requests in the county. 0 means none are in the queue file."
+    fill_na_covered: 0
+    min: 0
+sources:
+  - source_id: lbnl_queued_up
+    role: primary
+    publisher: "Lawrence Berkeley National Laboratory and GridTracker"
+    product: "Queued Up: 2026 Edition, interconnection queue data file (data through end of 2025)"
+    url: "https://emp.lbl.gov/queues"
+    edition: "Queued Up 2026"
+    retrieved_at: legacy_meta
+    current_through: "2025-12-31"
+    input_refs: [table, source_workbook]
+    license:
+      id: CC-BY-4.0
+      name: Creative Commons Attribution 4.0 International
+      url: "https://creativecommons.org/licenses/by/4.0/"
+      family: attribution
+      attribution_text: "Interconnection queue: Lawrence Berkeley National Laboratory and GridTracker, Queued Up 2026 Edition, CC BY 4.0."
+    rights_basis:
+      type: license
+      text: "The data file of the 2026 edition is released under CC BY 4.0 with attribution to Lawrence Berkeley National Laboratory and GridTracker."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://emp.lbl.gov/queues"
+    publication_mode: open_licence
+  - source_id: census_cb_2023
+    role: geometry
+    publisher: U.S. Census Bureau
+    product: "Cartographic boundary file cb_2023_us_county_500k"
+    url: "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip"
+    edition: "2023"
+    retrieved_at: "2026-09-28"
+    current_through: "2023-12-31"
+    input_refs: [geometry_calc, geometry_display]
+    license:
+      id: LicenseRef-us-gov-work
+      name: U.S. Government work
+      url: "https://www.usa.gov/government-works"
+      family: public_domain
+      attribution_text: "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+    rights_basis:
+      type: statute
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    publication_mode: open_licence
+freshness: {source_cadence: annual, next_check: "2027-06-30"}
+coverage:
+  geography: "Contiguous United States and the District of Columbia"
+  known_gaps:
+    - "Alaska and Hawaii are not covered."
+    - "The nine Connecticut planning regions (09110-09190) are not covered: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions. Seven active Connecticut requests (678.2 MW) are not in the layer."
+    - "Eleven active requests with capacity of zero or less (-193.5 MW in total) are excluded. Ten of them lie in the contiguous United States: MISO L002, L003, L004, L006, L008, L009 and ERCOT 18INR0064, 19INR0120, 20INR0019, 24INR0372. The reason for the negative values is not checked against the source codebook."
+    - "35 active requests in states of the contiguous United States have no county code (11,280.7 MW) and are not in the county values."
+    - "Active requests located in other states or territories, or with no state given, are not in the layer. Their number and capacity are listed in the release report."
+    - "The queue changes continuously; the file is a snapshot of requests as reported by grid operators and utilities."
+verification:
+  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  method: >-
+    Active requests are summed by county by script from the source workbook. No value was
+    re-checked by a person or by an agent. The automated checks listed below were run on every
+    build.
+  sample_share: {}
+checks:
+  totals_vs_source:
+    # Rule of [CODE-PILOT]: active; project MW = max(mw1, mw2, mw3) over numeric values; MW <= 0 excluded.
+    # Expected: 8513 active = 8407 in the layer + 89 without county code + 7 Connecticut + 10 with MW <= 0.
+    source_file: 'D:\GISData\Energy\USA\lbnl_ix_queue_data_file_thru2025.xlsx'
+    sheet: "03. Complete Queue Data"
+    header_row: 1
+    status_column: q_status
+    status_value: active
+    state_column: state
+    mw_column: [mw_1, mw_2, mw_3]
+    mw_mode: max
+    exclude_nonpositive: true
+    layer_column: queue_mw_active
+    states: [AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, ID, IL, IN, IA, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY]
+    code_column: fips_code
+    count_column: n_active_projects
+    # Disjoint categories, in this order ([ARCH] 09.10); what is left must equal the layer.
+    derived_exceptions:
+      - {name: "capacity zero or less", nonpositive: true}
+      - {name: "state outside the contiguous US or not given", outside_states: true}
+      - {name: "contiguous US state, no county code", empty_code: true}
+      - {name: "Connecticut, pre-2022 county codes", states: [CT]}
+display:
+  geometry_type: polygon
+  value_field: queue_mw_active
+  unit: MW
+  breaks: [150, 300, 600, 1250]
+  zero_class: true
+  legend_title: "Active queue capacity, MW"
+  tile_fields: [unit_id, name, coverage_status, queue_mw_active, n_active_projects]
+tiles: {minzoom: 0, maxzoom: 10}
+citation:
+  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
+  record_pattern: "AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"

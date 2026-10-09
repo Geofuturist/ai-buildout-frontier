@@ -1,0 +1,96 @@
+# Layer config: peak demand, NREL OEDI 8562, county level.
+layer_id: energy_demand_nrel8562_adm2
+title: "Demand · NREL OEDI 8562 · county"
+title_ru: "Спрос · NREL OEDI 8562 · округа"
+domain: energy
+level: ADM2
+frame: {iso3: USA, level: ADM2}
+input:
+  table: 'data\conus\layer_demand_nrel8562_20260912.csv'
+  key: fips
+  legacy_meta: 'data\conus\layer_demand_nrel8562_meta.json'
+description: >-
+  Highest hourly electricity demand in 2023 for each county, in MW, taken from the modeled
+  county-level demand profiles of NREL OEDI submission 8562. Alaska and Hawaii are not processed
+  and have empty values.
+fields:
+  - name: peak_demand_mw
+    type: number
+    unit: MW
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: null
+    description: "Highest hourly demand of the county in 2023. The profile is modeled, not metered."
+    min: 0
+sources:
+  - source_id: nrel_oedi_8562
+    role: primary
+    publisher: "National Laboratory of the Rockies (NLR)"
+    product: "OEDI submission 8562: hourly electricity demand profiles for U.S. counties (Obika, Cole, Rivers)"
+    url: "https://data.openei.org/submissions/8562"
+    edition: "published 2025-11-05, demand year 2023"
+    retrieved_at: legacy_meta
+    current_through: "2023-12-31"
+    input_refs: [table]
+    license:
+      id: CC-BY-4.0
+      name: Creative Commons Attribution 4.0 International
+      url: "https://creativecommons.org/licenses/by/4.0/"
+      family: attribution
+      attribution_text: "Demand: National Laboratory of the Rockies (NLR); Obika, Cole, Rivers. OEDI submission 8562, CC BY 4.0."
+    rights_basis:
+      type: license
+      text: "The OEDI dataset page states CC BY 4.0."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://data.openei.org/submissions/8562"
+    publication_mode: open_licence
+  - source_id: census_cb_2023
+    role: geometry
+    publisher: U.S. Census Bureau
+    product: "Cartographic boundary file cb_2023_us_county_500k"
+    url: "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip"
+    edition: "2023"
+    retrieved_at: "2026-09-28"
+    current_through: "2023-12-31"
+    input_refs: [geometry_calc, geometry_display]
+    license:
+      id: LicenseRef-us-gov-work
+      name: U.S. Government work
+      url: "https://www.usa.gov/government-works"
+      family: public_domain
+      attribution_text: "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+    rights_basis:
+      type: statute
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    publication_mode: open_licence
+freshness: {source_cadence: static, next_check: null}
+coverage:
+  geography: "Contiguous United States and the District of Columbia"
+  known_gaps:
+    - "Alaska and Hawaii are not covered."
+    - "County demand in this dataset is modeled: utilities do not meter or publish demand by county."
+    - "Large single loads, data centers among them, may be under-represented, especially in counties with few residents."
+verification:
+  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  method: >-
+    The yearly maximum of the hourly profile of each county is computed by script from the source
+    table. No value was re-checked by a person or by an agent. The automated checks listed below
+    were run on every build.
+  sample_share: {}
+display:
+  geometry_type: polygon
+  value_field: peak_demand_mw
+  unit: MW
+  breaks: [25, 50, 100, 250]
+  zero_class: false
+  legend_title: "Peak hourly demand, 2023, MW"
+  tile_fields: [unit_id, name, coverage_status, peak_demand_mw]
+tiles: {minzoom: 0, maxzoom: 10}
+citation:
+  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
+  record_pattern: "AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"

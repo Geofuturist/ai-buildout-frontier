@@ -1,0 +1,134 @@
+# Layer config: generation, EIA-860, county level (SPEC_META_publish_v0_1 section 5).
+# Public texts are a draft by [CODE-PUB]; [RES] edits title, description, known_gaps,
+# null_meaning and attribution_text before the final release.
+layer_id: energy_generation_eia860_adm2
+title: "Generation · EIA-860 · county"
+title_ru: "Генерация · EIA-860 · округа"
+domain: energy
+level: ADM2
+frame: {iso3: USA, level: ADM2}
+input:
+  # Built by [CODE-PILOT] on 2026-10-09 (EIA-860 2025 final).
+  table: 'data\conus\layer_generation_eia860_20261009.csv'
+  key: fips
+  rename: {net_summer_gen_mw: net_summer_capacity_mw}   # capacity, not generation (P1)
+  legacy_meta: 'data\conus\layer_generation_eia860_20261009_meta.json'
+description: >-
+  Net summer capacity of the operating generators listed in Form EIA-860, summed by county, with
+  the number of those generators and of their plants. A county where EIA-860 lists no operating
+  generator has the value 0. Alaska and Hawaii are not processed and have empty values.
+fields:
+  - name: net_summer_capacity_mw
+    type: number
+    unit: MW
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: null
+    description: "Sum of the net summer capacity of the operating generators (status OP) located in the county. 0 means EIA-860 lists no operating generator in this county."
+    fill_na_covered: 0
+    min: 0
+  - name: n_op_generators
+    type: integer
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: null
+    description: "Number of operating generators (status OP) in the county. 0 means none are listed."
+    fill_na_covered: 0
+    min: 0
+  - name: n_op_plants
+    type: integer
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: null
+    description: "Number of plants with at least one operating generator in the county. 0 means none are listed."
+    fill_na_covered: 0
+    min: 0
+sources:
+  - source_id: eia860
+    role: primary
+    publisher: U.S. Energy Information Administration
+    product: "Form EIA-860, annual electric generator data (Schedule 3 generators, Schedule 2 plants)"
+    url: "https://www.eia.gov/electricity/data/eia860/"
+    edition: "2025 final"
+    retrieved_at: legacy_meta
+    current_through: "2025-12-31"
+    input_refs: [table, source_workbook]
+    license:
+      id: LicenseRef-us-gov-work
+      name: U.S. Government work
+      url: "https://www.usa.gov/government-works"
+      family: public_domain
+      attribution_text: "Source: U.S. Energy Information Administration, Form EIA-860."
+    rights_basis:
+      type: statute
+      text: "Work of the U.S. federal government (17 U.S.C. §105); the EIA copyright and reuse page allows reuse with citation of the source."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://www.eia.gov/about/copyrights_reuse.php"
+    publication_mode: open_licence
+  - source_id: census_cb_2023
+    role: geometry
+    publisher: U.S. Census Bureau
+    product: "Cartographic boundary file cb_2023_us_county_500k"
+    url: "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip"
+    edition: "2023"
+    retrieved_at: "2026-09-28"
+    current_through: "2023-12-31"
+    input_refs: [geometry_calc, geometry_display]
+    license:
+      id: LicenseRef-us-gov-work
+      name: U.S. Government work
+      url: "https://www.usa.gov/government-works"
+      family: public_domain
+      attribution_text: "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+    rights_basis:
+      type: statute
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    publication_mode: open_licence
+freshness: {source_cadence: annual, next_check: "2027-06-30"}
+coverage:
+  geography: "Contiguous United States and the District of Columbia"
+  known_gaps:
+    - "Alaska and Hawaii are not covered."
+    - "Plants that started operating after the edition year are missing."
+    - "Offshore wind farms are not assigned to any county, so they are not in the county values."
+    - "Emergency generators at data centers and other buildings are not listed in EIA-860."
+verification:
+  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  method: >-
+    Values are computed by script from the source tables: operating generators are located by the
+    coordinates of their plants and summed by county. No value was re-checked by a person or by an
+    agent. The automated checks listed below were run on every build.
+  sample_share: {}
+checks:
+  totals_vs_source:
+    source_file: 'D:\GISData\Energy\USA\eia8602025\3_1_Generator_Y2025.xlsx'
+    sheet: Operable
+    header_row: 1
+    status_column: Status
+    status_value: OP
+    state_column: State
+    mw_column: Summer Capacity (MW)
+    layer_column: net_summer_capacity_mw
+    states: &conus_states [AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, ID, IL, IN, IA, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY]
+    # Three offshore stations lie outside every county (reported by [CODE-PILOT] 09.10).
+    exceptions:
+      - {name: "offshore: Block Island Wind Farm, South Fork Wind, CVOW Pilot", mw: 171.3}
+display:
+  geometry_type: polygon
+  value_field: net_summer_capacity_mw
+  unit: MW
+  breaks: [20, 100, 300, 900]
+  zero_class: true
+  legend_title: "Net summer capacity, MW"
+  tile_fields: [unit_id, name, coverage_status, net_summer_capacity_mw, n_op_generators, n_op_plants]
+tiles: {minzoom: 0, maxzoom: 10}
+citation:
+  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
+  record_pattern: "AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"

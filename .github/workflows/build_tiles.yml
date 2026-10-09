@@ -1,0 +1,109 @@
+# Build tiles and finalize (SPEC_META_publish_v0_1 section 9, step 4).
+# Reads the staged release from the private bucket abf-staging, builds PMTiles with Tippecanoe,
+# writes manifest.json, copies the files of the manifest to abf-data (manifest last) and cleans staging.
+# Channel final: also commits data/<dataset>/v<version>/, sets the tag and creates the GitHub Release.
+name: Build tiles and finalize
+
+on:
+  workflow_dispatch:
+    inputs:
+      dataset:
+        description: "Dataset"
+        required: true
+        type: choice
+        options: [abf-layers, abf-boundaries]
+      version:
+        description: "Version, for example 0.1.0"
+        required: true
+        default: "0.1.0"
+      channel:
+        description: "Channel: dev (no DOI, can be overwritten) or final"
+        required: true
+        type: choice
+        options: [dev, final]
+        default: dev
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ inputs.dataset }}-${{ inputs.version }}
+  cancel-in-progress: false
+
+env:
+  TIPPECANOE_TAG: "2.79.0"
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET }}
+  R2_STAGING_BUCKET: ${{ secrets.R2_STAGING_BUCKET }}
+
+jobs:
+  finalize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - name: Check inputs
+        run: |
+          [[ "${{ inputs.version }}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "version must look like 0.1.0"; exit 1; }
+          for v in R2_ACCOUNT_ID R2_ACCESS_KEY_ID R2_SECRET_ACCESS_KEY R2_BUCKET R2_STAGING_BUCKET; do
+            [ -n "${!v}" ] || { echo "GitHub secret $v is empty (SPEC_META section 8, step 7)"; exit 1; }
+          done
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python packages
+        run: python -m pip install boto3 jsonschema pyyaml
+
+      - name: Cache Tippecanoe
+        id: tpc-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/tippecanoe-bin
+          key: tippecanoe-${{ env.TIPPECANOE_TAG }}-ubuntu24
+
+      - name: Build Tippecanoe from source
+        if: steps.tpc-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libsqlite3-dev zlib1g-dev
+          git clone --depth 1 --branch "${TIPPECANOE_TAG}" https://github.com/felt/tippecanoe.git /tmp/tippecanoe
+          make -C /tmp/tippecanoe -j"$(nproc)"
+          mkdir -p ~/tippecanoe-bin
+          cp /tmp/tippecanoe/tippecanoe ~/tippecanoe-bin/
+
+      - name: Tiles, manifest, publish
+        run: |
+          python scripts/publish/finalize_release.py \
+            --dataset "${{ inputs.dataset }}" --version "${{ inputs.version }}" --channel "${{ inputs.channel }}" \
+            --work "$RUNNER_TEMP/work" --tippecanoe "$HOME/tippecanoe-bin/tippecanoe" --git-out data
+
+      - name: Commit data, tag and GitHub Release (final only)
+        if: inputs.channel == 'final'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATA_BASE_URL: ${{ vars.DATA_BASE_URL }}
+        run: |
+          TAG="${{ inputs.dataset }}-v${{ inputs.version }}"
+          DOI=$(python -c "import json;print(json.load(open('data/${{ inputs.dataset }}/v${{ inputs.version }}/manifest.json'))['doi'])")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "data/${{ inputs.dataset }}/v${{ inputs.version }}"
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit"
+          else
+            git commit -m "data: ${TAG} manifest, meta and CSV (DOI ${DOI})"
+            git push origin HEAD
+          fi
+          if ! git rev-parse "refs/tags/${TAG}" >/dev/null 2>&1; then
+            git tag "${TAG}"
+            git push origin "${TAG}"
+          fi
+          if ! gh release view "${TAG}" >/dev/null 2>&1; then
+            gh release create "${TAG}" --title "${TAG}" \
+              --notes "DOI: https://doi.org/${DOI}. Manifest: ${DATA_BASE_URL:-<set the repository variable DATA_BASE_URL>}/${{ inputs.dataset }}/v${{ inputs.version }}/manifest.json"
+          fi

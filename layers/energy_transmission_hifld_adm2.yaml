@@ -1,0 +1,144 @@
+# Layer config: transmission lines, HIFLD, aggregated by county.
+layer_id: energy_transmission_hifld_adm2
+title: "Transmission lines · HIFLD · county"
+title_ru: "ЛЭП · HIFLD · округа"
+domain: energy
+level: ADM2
+frame: {iso3: USA, level: ADM2}
+input:
+  table: 'data\conus\layer_transmission_lines_hifld_20260913.csv'
+  key: fips
+  legacy_meta: 'data\conus\layer_transmission_lines_hifld_meta.json'
+  derive:
+    - {op: sum, name: km_total, columns: [km_ge765, km_v500, km_v345, km_v230, km_v138, km_v115, km_v69, km_lt69_unknown]}
+description: >-
+  Kilometres of transmission line inside each county by voltage class, their sum, the highest
+  voltage class present, and whether the county has any line. Lengths are measured inside the
+  county; a line that crosses a boundary is counted only for the part inside. Alaska and Hawaii are
+  not processed and have empty values.
+fields:
+  - name: max_voltage_kv
+    type: number
+    unit: kV
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: "The county has no line, or none of its lines has a recorded voltage."
+    description: "Highest voltage among the lines inside the county that have a recorded voltage."
+  - name: has_any_line
+    type: boolean
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: null
+    description: "True if at least one line of the source file touches the county. It can be true while km_total is 0 when the length inside the county is below the rounding of the kilometre columns."
+  - name: frac_km_unknown_voltage
+    type: number
+    unit: share
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: "The county has no line length inside it, so the share is undefined."
+    description: "Share of the line length inside the county that has no recorded voltage, from 0 to 1."
+  - {name: km_ge765, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 735 kV and above, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_v500, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 500 kV, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_v345, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 345 kV, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_v230, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 230 kV, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_v138, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 138 kV, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_v115, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 115 kV, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_v69, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 69 kV, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_lt69_unknown, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county with a class below 69 kV or without a recorded voltage, rounded to whole kilometres. 0 means no such line."}
+  - name: km_total
+    type: integer
+    unit: km
+    nullable: true
+    null_meaning:
+      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      covered: null
+    description: "Sum of the published km columns (km_ge765 to km_lt69_unknown). The columns are whole kilometres, so km_total is exactly their sum and differs from the true line length by at most 4 km."
+sources:
+  - source_id: hifld_transmission_lines
+    role: primary
+    publisher: "Oak Ridge National Laboratory for the U.S. Department of Energy; distributed via HIFLD Open (DHS)"
+    product: "Electric Power Transmission Lines (HIFLD national feature class)"
+    url: "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html"
+    edition: "HIFLD archive of 2026-02-26; newest record 2024-09-26; publisher metadata edition 2024-09-30"
+    retrieved_at: legacy_meta
+    current_through: "2024-09-30"
+    input_refs: [table, archive]
+    license: &hifld_license
+      id: LicenseRef-public-domain
+      name: Public domain by the publisher's statement
+      url: "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html"
+      family: public_domain
+      attribution_text: "Transmission lines: Oak Ridge National Laboratory for the U.S. Department of Energy; distributed via HIFLD Open (DHS)."
+    rights_basis: &hifld_rights
+      type: publisher_statement
+      text: "The publisher's metadata for the same edition states access constraints 'None (Public Domain Information)' and use limitation 'None (Public Use)'."
+      checked_at: "2026-10-07"
+      checked_by: "agent:CODE-PUB (verdict of ARCH 2026-10-06)"
+      evidence_url: "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html"
+    publication_mode: open_licence
+  - source_id: census_cb_2023
+    role: geometry
+    publisher: U.S. Census Bureau
+    product: "Cartographic boundary file cb_2023_us_county_500k"
+    url: "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip"
+    edition: "2023"
+    retrieved_at: "2026-09-28"
+    current_through: "2023-12-31"
+    input_refs: [geometry_calc, geometry_display]
+    license:
+      id: LicenseRef-us-gov-work
+      name: U.S. Government work
+      url: "https://www.usa.gov/government-works"
+      family: public_domain
+      attribution_text: "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+    rights_basis:
+      type: statute
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    publication_mode: open_licence
+rights_check:
+  source_id: hifld_transmission_lines
+  archive: 'D:\GISData\Energy\GEM\US_Electric_Power_Transmission_Lines_-8378795084787321001.zip'
+  external_html: 'research\publish\licences\hifld_transmission_lines.html'
+  expected:
+    originator: "Oak Ridge National Laboratory"
+    otherConstraints: "None (Public Domain Information)"
+    useLimitation: "None (Public Use)"
+source_archive:
+  path: 'D:\GISData\Energy\GEM\US_Electric_Power_Transmission_Lines_-8378795084787321001.zip'
+  description: "Archive of the HIFLD national transmission-line file used for the layers, published unchanged so that the processing can be checked."
+freshness: {source_cadence: discontinued, next_check: null}
+coverage:
+  geography: "Contiguous United States and the District of Columbia"
+  known_gaps:
+    - "Alaska and Hawaii are not covered."
+    - "The HIFLD public portal closed in August 2025; the layer uses an archived copy of the national file, created on 26 February 2026, whose newest record is from 26 September 2024. The channel the archive came through could not be traced."
+    - "Twelve county-equivalents have no line inside them."
+    - "Hamilton County, Iowa (19079) and Clare County, Michigan (26035) have a line in the source, but shorter than 0.5 km, so the county value km_total is 0."
+    - "The layer does not show how much power can flow into a county."
+verification:
+  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  method: >-
+    Line lengths inside each county are computed by script from the segments of the archive and
+    classed by voltage. No value was re-checked by a person or by an agent. The automated checks
+    listed below were run on every build.
+  sample_share: {}
+checks:
+  km_total_matches_has_any_line: true
+display:
+  geometry_type: polygon
+  value_field: km_total
+  unit: km
+  breaks: [100, 200, 300, 400]
+  zero_class: true
+  legend_title: "Transmission line length in the county, km"
+  tile_fields: [unit_id, name, coverage_status, has_any_line, max_voltage_kv, km_total]
+tiles: {minzoom: 0, maxzoom: 10}
+citation:
+  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
+  record_pattern: "AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"

@@ -1,0 +1,30 @@
+# Release of the boundaries dataset: the finished output of CODE-BND, copied under the names of SPEC section 4.2.
+dataset: abf-boundaries
+version: 0.1.0
+tag: abf-boundaries-v0.1.0
+doi: null
+published_at: "2026-10-15"
+built_at: null
+boundary_release: null
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\abf_boundaries.yaml'
+# Mapping: file of the CODE-BND output (without extension) -> name in the release.
+file_map:
+  display/adm0: adm0
+  display/adm1: adm1
+  display/adm2: adm2
+  display/adm0_disputed_unassigned: disputed_unassigned
+  analysis/USA_adm1_cb2023_500k: analysis_usa_adm1
+  analysis/USA_adm2_cb2023_500k: analysis_usa_adm2
+  analysis/NOR_adm1_inndelingsbase_20260101: analysis_nor_adm1
+  analysis/NOR_adm2_inndelingsbase_20260101: analysis_nor_adm2
+# Reference files: the first three live in the repository, the last two in the CODE-BND output.
+reference_files:
+  registry: 'boundaries\boundary_registry.csv'
+  adm0_overrides: 'boundaries\adm0_overrides.csv'
+  holes_whitelist: 'boundaries\holes_whitelist.geojson'
+  validation_report: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0\validation_report.json'
+  unit_hashes: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0\unit_hashes.csv'

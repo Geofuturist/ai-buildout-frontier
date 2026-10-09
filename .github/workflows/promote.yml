@@ -1,0 +1,64 @@
+# Promote release (SPEC_META_publish_v0_1 section 9, step 7).
+# Points manifest/latest.json at the given versions of BOTH datasets and redeploys the site.
+name: Promote release
+
+on:
+  workflow_dispatch:
+    inputs:
+      layers_version:
+        description: "Version of abf-layers, for example 0.1.0"
+        required: true
+        default: "0.1.0"
+      boundaries_version:
+        description: "Version of abf-boundaries, for example 0.1.0"
+        required: true
+        default: "0.1.0"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: promote
+  cancel-in-progress: false
+
+env:
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET }}
+  R2_STAGING_BUCKET: ${{ secrets.R2_STAGING_BUCKET }}
+
+jobs:
+  promote:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check inputs
+        run: |
+          [[ "${{ inputs.layers_version }}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "bad layers version"; exit 1; }
+          [[ "${{ inputs.boundaries_version }}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "bad boundaries version"; exit 1; }
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python packages
+        run: python -m pip install boto3 jsonschema pyyaml
+
+      - name: Write manifest/latest.json
+        run: |
+          python scripts/publish/promote_release.py \
+            --layers "${{ inputs.layers_version }}" --boundaries "${{ inputs.boundaries_version }}"
+
+      - name: Redeploy the site (Vercel deploy hook)
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK" ]; then
+            echo "VERCEL_DEPLOY_HOOK is not set: latest.json is updated, but the site was NOT redeployed."
+            exit 1
+          fi
+          curl --fail --silent --show-error -X POST "$VERCEL_DEPLOY_HOOK"
+          echo "Deploy hook called."

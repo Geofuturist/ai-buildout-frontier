@@ -1,0 +1,134 @@
+# Config of the boundaries dataset (SPEC_META_publish_v0_1 section 4.2). Built from the output of CODE-BND.
+layer_id: abf_boundaries
+title: "Administrative boundaries · ADM0, ADM1, ADM2"
+title_ru: "Административные границы · ADM0, ADM1, ADM2"
+description: >-
+  Administrative units of the world at level ADM0 and, for countries with a verified registry
+  entry, ADM1 and ADM2. Every unit has a code unit_id of the form ISO3-level-national code. Units
+  carry the geometry for display; the geometry for calculations of the United States and Norway is
+  published in separate analysis files. Disputed and unassigned areas are a separate layer.
+license: {id: CC-BY-4.0, name: Creative Commons Attribution 4.0 International, url: "https://creativecommons.org/licenses/by/4.0/", family: attribution, attribution_text: ""}
+published_columns:
+  adm0: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref, adm0_status, ne_type]
+  adm1: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref]
+  adm2: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref]
+  disputed_unassigned: [unit_id, label, area_km2, pov]
+fields:
+  - {name: unit_id, type: string, nullable: false, description: "Unit code: ISO3-level-national code, for example USA-2-51059."}
+  - {name: iso3, type: string, nullable: false, description: "ISO 3166-1 alpha-3 code of the country."}
+  - {name: level, type: string, nullable: false, description: "Administrative level of the unit: ADM0 (country), ADM1 or ADM2."}
+  - {name: parent_id, type: string, nullable: true, null_meaning: "The unit is a country and has no parent.", description: "unit_id of the unit one level up."}
+  - {name: name, type: string, nullable: false, description: "Name of the unit as given by the source."}
+  - {name: unit_type_local, type: string, nullable: true, null_meaning: "The source gives no local type of the unit.", description: "Type of the unit in the national language, for example county or commune."}
+  - {name: unit_type_en, type: string, nullable: true, null_meaning: "The source gives no type of the unit.", description: "Type of the unit in English."}
+  - {name: method, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "How the unit was made: taken as it is from the source, dissolved from smaller units, or conformed to a national list."}
+  - {name: source, type: string, nullable: false, description: "Publisher or product the unit comes from."}
+  - {name: source_vintage, type: string, nullable: true, null_meaning: "The source gives no edition.", description: "Edition or date of the source."}
+  - {name: license, type: string, nullable: false, description: "Licence of the source of the unit."}
+  - {name: boundary_vintage, type: string, nullable: true, null_meaning: "The source gives no edition.", description: "Date or year of the boundaries."}
+  - {name: src_ref, type: string, nullable: true, null_meaning: "The source gives no reference code.", description: "Reference of the unit in the source, for example its original code."}
+  - {name: adm0_status, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Status of the country record, as set by the project's rules for disputed territories."}
+  - {name: ne_type, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Type of the country record in Natural Earth."}
+  - {name: label, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Name of the disputed or unassigned area."}
+  - {name: area_km2, type: number, unit: km2, nullable: true, null_meaning: "Not applicable to the unit.", description: "Area of the disputed or unassigned area."}
+  - {name: pov, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Point of view under which the area is drawn."}
+sources:
+  - source_id: natural_earth
+    role: primary
+    publisher: Natural Earth
+    product: "Natural Earth 1:10m administrative boundaries, version 5.1.2"
+    url: "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2"
+    edition: "v5.1.2"
+    retrieved_at: "2026-09-28"
+    current_through: "2022-05-31"   # to confirm with CODE-BND: release date of Natural Earth 5.1.2
+    bnd_match: ["ne_10m"]
+    license:
+      id: LicenseRef-public-domain
+      name: Public domain (Natural Earth terms of use)
+      url: "https://www.naturalearthdata.com/about/terms-of-use/"
+      family: public_domain
+      attribution_text: "Country, state and county boundaries: Natural Earth."
+    rights_basis:
+      type: publisher_statement
+      text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."
+      checked_at: "2026-09-26"
+      checked_by: "agent:ARCH"
+      evidence_url: "https://www.naturalearthdata.com/about/terms-of-use/"
+    publication_mode: open_licence
+  - source_id: census_cb_2023
+    role: geometry
+    publisher: US Census Bureau
+    product: "Cartographic boundary files cb_2023 (state and county, 1:500,000)"
+    url: "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip"
+    edition: "2023"
+    retrieved_at: "2026-09-28"
+    current_through: "2023-12-31"
+    bnd_match: ["cb_2023"]
+    license:
+      id: LicenseRef-us-gov-work
+      name: U.S. Government work
+      url: "https://www.usa.gov/government-works"
+      family: public_domain
+      attribution_text: "United States state and county boundaries: U.S. Census Bureau, cartographic boundary files 2023."
+    rights_basis:
+      type: statute
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      checked_at: "2026-09-20"
+      checked_by: "agent:RES"
+      evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    publication_mode: open_licence
+  - source_id: kartverket_inndelingsbase
+    role: geometry
+    publisher: Kartverket
+    product: "Administrative units of Norway (Inndelingsbase): counties and municipalities"
+    url: "https://data.norge.no/en/datasets/3557d23d-8188-4136-b227-c854f89a6e8e/administrative-enheter-kommuner"
+    edition: "2026-01-01"
+    retrieved_at: "2026-09-28"
+    current_through: "2026-01-01"
+    bnd_match: ["Inndelingsbase"]
+    license:
+      id: CC-BY-4.0
+      name: Creative Commons Attribution 4.0 International
+      url: "https://creativecommons.org/licenses/by/4.0/"
+      family: attribution
+      attribution_text: "Norwegian county and municipality boundaries: © Kartverket, CC BY 4.0."
+    rights_basis:
+      type: license
+      text: "The data.norge.no entries of the two datasets state CC BY 4.0."
+      checked_at: "2026-09-27"
+      checked_by: "agent:CODE-BND"
+      evidence_url: "https://data.norge.no/en/datasets/3557d23d-8188-4136-b227-c854f89a6e8e/administrative-enheter-kommuner"
+    publication_mode: open_licence
+freshness: {source_cadence: irregular, next_check: "2027-03-31"}
+coverage:
+  geography: "World (ADM0); ADM1 and ADM2 for the countries with a verified entry in the boundary registry"
+  known_gaps:
+    - "ADM1 and ADM2 exist only for the countries listed in the registry (ADM1: USA, FRA, GBR, NOR; ADM2: USA, FRA, NOR)."
+    - "Disputed and unassigned areas are not part of any country."
+verification:
+  levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
+  method: >-
+    Units are built by script from the sources by the method named in the registry; the registry
+    marks a country and level as verified before its units are published. The validation report
+    of the build is published next to the units.
+  sample_share: {}
+display:
+  geometry_type: polygon
+  legend_title: "Administrative boundaries"
+  tile_fields_by_layer:
+    adm0: [unit_id, name, iso3, level, adm0_status]
+    adm1: [unit_id, name, iso3, level]
+    adm2: [unit_id, name, iso3, level]
+    disputed_unassigned: [unit_id, label]
+tiles:
+  minzoom: 0
+  maxzoom: 10
+  extra_args: ["--detect-shared-borders", "--no-tile-size-limit", "--no-feature-limit"]
+  layers:
+    adm0: {minzoom: 0, maxzoom: 10}
+    adm1: {minzoom: 2, maxzoom: 10}
+    adm2: {minzoom: 4, maxzoom: 10}
+    disputed_unassigned: {minzoom: 0, maxzoom: 10}
+citation:
+  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
+  record_pattern: "AI Buildout Frontier, boundaries, unit {record_key}, version {version}. {doi_url}"

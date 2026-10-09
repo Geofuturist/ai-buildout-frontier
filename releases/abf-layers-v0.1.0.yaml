@@ -1,0 +1,17 @@
+# Release of the layers dataset (SPEC_META_publish_v0_1 section 9, step 1).
+dataset: abf-layers
+version: 0.1.0
+tag: abf-layers-v0.1.0
+doi: null                       # fill in after "Get a DOI now" in Zenodo; leave null for channel dev
+published_at: "2026-10-15"
+built_at: null                  # set by the first final build and then kept
+boundary_release: abf-boundaries-v0.1.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\energy_generation_eia860_adm2.yaml'
+  - 'layers\energy_demand_nrel8562_adm2.yaml'
+  - 'layers\energy_transmission_hifld_adm2.yaml'
+  - 'layers\energy_transmission_lines_hifld.yaml'
+  - 'layers\energy_queue_lbnl_adm2.yaml'

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abf.invalid/schemas/abf-latest-1.0.json",
+  "title": "abf-latest-1.0",
+  "description": "Pointer manifest/latest.json and manifest/dev.json (SPEC_META_publish_v0_1 section 4.4).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated_at", "datasets"],
+  "properties": {
+    "schema_version": {"const": "abf-latest-1.0"},
+    "updated_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"},
+    "datasets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["abf-layers", "abf-boundaries"],
+      "properties": {
+        "abf-layers": {"$ref": "#/$defs/pointer"},
+        "abf-boundaries": {"$ref": "#/$defs/pointer"}
+      }
+    }
+  },
+  "$defs": {
+    "pointer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "manifest"],
+      "properties": {
+        "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+        "manifest": {"type": "string", "pattern": "^(dev/)?abf-[a-z]+/v\\d+\\.\\d+\\.\\d+/manifest\\.json$"}
+      }
+    }
+  }
+}
