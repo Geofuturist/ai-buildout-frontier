@@ -90,7 +90,7 @@ coverage:
     - "The nine Connecticut planning regions (09110-09190) are not covered: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions. Seven active Connecticut requests (678.2 MW) are not in the layer."
     - "Eleven active requests with capacity of zero or less (-193.5 MW in total) are excluded. Ten of them lie in the contiguous United States: MISO L002, L003, L004, L006, L008, L009 and ERCOT 18INR0064, 19INR0120, 20INR0019, 24INR0372. The reason for the negative values is not checked against the source codebook."
     - "35 active requests in states of the contiguous United States have no county code (11,280.7 MW) and are not in the county values."
-    - "Active requests located in other states or territories, or with no state given, are not in the layer. Their number and capacity are listed in the release report."
+    - "53 active requests located in other states or territories, or with no state given (8,813.0 MW), are not in the layer."
     - "The queue changes continuously; the file is a snapshot of requests as reported by grid operators and utilities."
 verification:
   levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
