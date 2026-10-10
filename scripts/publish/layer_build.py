@@ -40,7 +40,7 @@ from hifld_rights import RightsResult, check_hifld_rights
 log = logging.getLogger("publish.layers")
 
 BUILD_ONLY_KEYS = ("fill_na_covered", "min")  # in the yaml for the build, never published
-OPTIONAL_REFS = {"source_workbook"}            # input_refs that may be absent on this machine
+OPTIONAL_REFS = {"source_workbook", "geometry_calc"}            # input_refs that may be absent on this machine
 
 SERVICE_FIELDS = {
     "unit_id": {
@@ -94,9 +94,12 @@ class Boundaries:
         rows = reg[(reg["iso3"] == iso3) & (reg["level"].map(self.norm_level) == level)]
         return bool(len(rows) == 1 and str(rows.iloc[0]["verified"]).strip().lower() == "true")
 
-    def analysis_path(self, iso3: str, level: str) -> Path:
+    def analysis_path(self, iso3: str, level: str, optional: bool = False) -> Path | None:
+        """Geometry for calculations; countries taken as-is from Natural Earth have none (display geometry is used)."""
         n = level.replace("ADM", "")
         found = sorted((self.root / "analysis").glob(f"{iso3}_adm{n}_*.parquet"))
+        if not found and optional:
+            return None
         if len(found) != 1:
             raise GateError("G4", f"expected exactly one analysis file for {iso3} {level}, found {found}")
         return found[0]
@@ -519,10 +522,14 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     df[key] = codes
 
     # frame: calc geometry (analysis) + names (display)
-    calc = ctx.boundaries.read(f"analysis/{ctx.boundaries.analysis_path(iso3, level).name}")
+    calc_path = ctx.boundaries.analysis_path(iso3, level, optional=True)
+    calc = ctx.boundaries.read(f"analysis/{calc_path.name}") if calc_path else None
     disp_all = ctx.boundaries.read(f"display/{level.lower()}.parquet")
     prefix = f"{iso3}-{level.replace('ADM', '')}-"
     disp = disp_all[disp_all["unit_id"].astype(str).str.startswith(prefix)].copy()
+    if calc is None:
+        report.section(f"Geometry ({layer_id})", [f"- no analysis file for {iso3} {level}: the display geometry of the boundaries release is used for the GeoParquet and GeoJSON files"])
+        calc = disp.copy()
     calc = calc[calc["unit_id"].astype(str).str.startswith(prefix)].copy()
     if set(calc["unit_id"]) != set(disp["unit_id"]):
         raise GateError("G4", f"{layer_id}: analysis and display files hold different units "
@@ -645,10 +652,9 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
 
     # checks
     checks: list[dict[str, str]] = []
-    extra_refs = {
-        "geometry_calc": ctx.boundaries.analysis_path(iso3, level),
-        "geometry_display": ctx.boundaries.root / "display" / f"{level.lower()}.parquet",
-    }
+    extra_refs = {"geometry_display": ctx.boundaries.root / "display" / f"{level.lower()}.parquet"}
+    if calc_path:
+        extra_refs["geometry_calc"] = calc_path
     if cfg.get("source_archive"):
         extra_refs["archive"] = resolve_path(cfg["source_archive"]["path"])
     tvs_cfg = cfg.get("checks", {}).get("totals_vs_source")
