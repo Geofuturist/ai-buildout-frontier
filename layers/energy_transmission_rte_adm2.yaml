@@ -1,0 +1,100 @@
+# [CODE-PILOT] 10.10 (SPEC_FRA r6 §5). Texts: claude/RES_texts_FRA_layers_v1.md r2. Structure: [CODE-PUB].
+# Attributions are [RES] drafts: dev only until [RES] checks them against research\fra\licences\.
+# The source shapefile is NOT published (no source_archives entry): SPEC_FRA r4 §5.
+layer_id: energy_transmission_rte_adm2
+title: "Transmission lines · RTE · department"
+title_ru: "ЛЭП · RTE · департаменты"
+domain: energy
+level: ADM2
+frame: {iso3: FRA, level: ADM2}
+input: {table: 'data\fra\layer_transmission_rte_20261010.csv', key: unit_id,
+        legacy_meta: 'data\fra\layer_transmission_rte_20261010_meta.json',
+        coverage_column: coverage_status, coverage_note_column: coverage_note}
+description: >-
+  Kilometres of RTE transmission line in operation inside each department of mainland France by
+  voltage band, their sum, the highest voltage present, and whether the department has any line.
+  Lengths are measured inside the department; a line that crosses a boundary is counted only for
+  the part inside. The line geometry dates from 30 June 2023.
+fields:
+  - {name: km_total, type: number, unit: km, nullable: true, min: 0,
+     description: "Sum of the band columns: length of line in operation inside the department, km."}
+  - {name: km_lt100, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of line below 100 kV (90, 63, 45 kV and below), km. 0 means none."}
+  - {name: km_100_199, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of line from 100 to 199 kV (150 kV in this network), km. 0 means none."}
+  - {name: km_200_299, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of line from 200 to 299 kV (225 kV in this network), km. 0 means none."}
+  - {name: km_300_399, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of line from 300 to 399 kV, km. The RTE network has no line in this band; the column keeps the bands common to all transmission layers of the project."}
+  - {name: km_400_599, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of line from 400 to 599 kV (400 kV in this network), km. 0 means none."}
+  - {name: km_ge600, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of line of 600 kV and above, km. The RTE network has no line in this band; the column keeps the bands common to all transmission layers of the project."}
+  - {name: km_dc, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of direct-current line, km. 0 means none."}
+  - {name: km_unknown, type: number, unit: km, nullable: true, min: 0,
+     description: "Length of line without a usable voltage, mostly lines recorded as de-energized (hors tension), km. 0 means none."}
+  - {name: max_voltage_kv, type: number, unit: kV, nullable: true,
+     description: "Highest voltage among the lines inside the department that have a recorded voltage.",
+     null_meaning: {covered: "The department has no line with a recorded voltage."}}
+  - {name: has_any_line, type: boolean, nullable: true,
+     description: "True if at least one line of the source touches the department."}
+  - {name: frac_km_unknown_voltage, type: number, nullable: true, min: 0, max: 1,
+     description: "Share of the line length inside the department without a usable voltage, from 0 to 1.",
+     null_meaning: {covered: "The department has no line length inside it, so the share is undefined."}}
+null_meaning_all_fields:
+  not_covered: >-
+    The RTE transmission network covers mainland France; Corsica and the overseas departments
+    have separate grids that are not in this source.
+  covered: null   # except max_voltage_kv and frac_km_unknown_voltage, see fields
+sources:
+  - source_id: rte_lignes_ddtm27
+    role: primary
+    publisher: "RTE (copy republished by DDTM de l'Eure on data.gouv.fr)"
+    product: "Lignes aériennes RTE; Lignes souterraines RTE"
+    url: [https://www.data.gouv.fr/datasets/lignes-aeriennes-rte, https://www.data.gouv.fr/datasets/lignes-souterraines-rte-1]
+    edition: "data at 2023-06-30"
+    current_through: 2023-06-30
+    publication_mode: open_licence
+    license: {id: etalab-2.0, name: "Licence Ouverte v2.0", family: attribution,
+              attribution_text: "Transmission lines: RTE, Lignes aériennes RTE and Lignes souterraines RTE (data as of 30/06/2023), republished by DDTM de l'Eure on data.gouv.fr, last updated 02/11/2023, Licence Ouverte v2.0 (Etalab)."}   # [RES] draft
+    rights_basis: {type: license, text: "The data.gouv.fr page of the republished copy states Licence Ouverte v2.0. The line segments are withheld by the project's rule on geometry withdrawn by its operator, not by the licence."}
+  - source_id: odre_rte_lignes_2026
+    role: context
+    product: "Lignes aériennes / souterraines RTE – nouveau découpage (au 16 juin 2026), ODRÉ — published without coordinates"
+    url: https://odre.opendatasoft.com/explore/dataset/lignes-aeriennes-rte-nv/
+  - source_id: natural_earth_via_abf_boundaries
+    role: geometry
+    product: "abf-boundaries v0.1.0 (Natural Earth 1:10m)"
+    publication_mode: open_licence
+    license: {id: public-domain, family: public_domain,
+              attribution_text: "Department outlines: Natural Earth, via abf-boundaries v0.1.0."}
+    rights_basis: {type: license, text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."}
+verification:
+  method: >-
+    Line lengths inside each department are computed by script from the line geometry of the
+    source and classed by voltage. No value was re-checked by a person or by an agent. The automated
+    checks listed below were run on every build.
+  totals_vs_source: {tolerance_pct: 0.5}
+freshness: {source_cadence: discontinued_geometry, next_check: 2027-06-30}
+coverage:
+  geography: "94 continental departments; 2A, 2B and the five overseas departments not covered"
+  known_gaps:
+    - >-
+      The line geometry dates from 30 June 2023 (a public copy republished by DDTM de l'Eure). Since
+      June 2026 RTE publishes its list of lines on ODRÉ without coordinates, citing public security:
+      "RTE a fait évoluer l'accès aux données GPS des infrastructures du réseau public de transport
+      pour des raisons de sécurité publique". The project therefore publishes only department totals
+      and does not publish line segments.
+    - >-
+      Lines with an administrative approval that are not yet built (état ACCORD ADMINISTRATIF;
+      159 segments, 1,467.5 km) are not included.
+    - "Lines recorded as de-energized (hors tension; 1,882 km) are counted in km_unknown, without a voltage."
+    - >-
+      Department outlines are Natural Earth 1:10m: a line within about a kilometre of a department
+      boundary may be counted in the neighbouring department. 793.5 km of line lie outside the 94
+      departments (coast and international connections) and are not counted.
+    - "The layer does not show how much power can flow into a department."
+display: {geometry_type: polygon, value_field: km_total, unit: km,
+          breaks: [650, 810, 980, 1200],   # preliminary; build recomputes
+          zero_class: true, legend_title: "Transmission lines, km"}

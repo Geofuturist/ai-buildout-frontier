@@ -1,0 +1,61 @@
+{
+  "layer": "generation_odre",
+  "snapshot_date": "20261010",
+  "rows": 101,
+  "n_covered": 101,
+  "n_not_covered": 0,
+  "source": "ODRÉ — Registre national des installations de production et de stockage d'électricité (agrégé)",
+  "publisher": "RTE, Enedis, EDF SEI, ELD",
+  "source_url": "https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/",
+  "edition": "au 31/07/2026",
+  "current_through": "2026-07-31",
+  "license": "Licence Ouverte v2.0 (Etalab)",
+  "inputs": [
+    {
+      "file": "registre-national-installation-production-stockage-electricite-agrege.csv",
+      "path": "D:\\GISData\\Energy\\France\\odre_registre\\registre-national-installation-production-stockage-electricite-agrege.csv",
+      "bytes": 44599902,
+      "sha256": "20bf6795a72286aec629982a7cb6023e9e156e078481c3b5fdfc9fa848c6e39b"
+    },
+    {
+      "file": "closed_plants.csv",
+      "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\fra\\rules\\closed_plants.csv",
+      "bytes": 279,
+      "sha256": "ecc7712e71e0cde538845b2bf8788064a8e8c99d39b205d3b7f4451808461bfd"
+    },
+    {
+      "file": "build_decisions_odre.csv",
+      "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\fra\\rules\\build_decisions_odre.csv",
+      "bytes": 548,
+      "sha256": "1ff37b033bc74762bd0fda7d099b93081ddbf28dc3f748154f30424644ddaa6f"
+    }
+  ],
+  "verification_method": "operating = no dateDeraccordement AND commissioning date <= 2026-07-31 AND regime != 'En retrait provisoire' (rows without commissioning date or regime kept); storage = filiere 'Stockage non hydraulique' (pumped hydro stays in hydro); capacity = puisMaxInstallee kW / 1000; joined by codeDepartement",
+  "rules_status": "approved by [RES] 10.10 (RES_to_CODE_FRA_preflight_answers_v1 §1)",
+  "totals_vs_source": {
+    "departments_plus_excluded_kw": 173016517.79199997,
+    "source_kw": 173016517.792,
+    "ok": "True"
+  },
+  "excluded": {
+    "no_department": {
+      "rows": 49,
+      "mw": 34.126079999999995
+    },
+    "outside_frame": {
+      "rows": 44,
+      "mw": 135.0757,
+      "codes": [
+        "975",
+        "977",
+        "978"
+      ]
+    }
+  },
+  "known_gaps_draft": [
+    "Capacity is the maximum installed power (puissance maximale installée) declared in the register; it is not the net summer capacity of EIA-860, so the French and U.S. generation layers are not directly comparable.",
+    "Installations without a commissioning date in the register (226 rows, 12.0 GW) are counted as operating; installations temporarily withdrawn (6 rows, 1.0 GW) are not.",
+    "Small installations under 36 kW are aggregated in the source; they are included in the totals and in n_installations.",
+    "Installations without a department code (34.1 MW) and in Saint-Pierre-et-Miquelon, Saint-Barthélemy and Saint-Martin (135.1 MW) are not in the department values."
+  ]
+}

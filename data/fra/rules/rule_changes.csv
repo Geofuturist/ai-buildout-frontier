@@ -1,0 +1,7 @@
+date,change,reason,decided_by,sample_seed
+2026-10-10,OVHcloud C->B,remark by [CODE-PILOT] before the recheck: OVH Strasbourg was in the rejected sample,[RES],20261011
+2026-10-10,rejected sample redrawn with a new seed,the old sample contained a known miss (OVH),[RES],20261011
+2026-10-10,B: + Albiant-IT (ALBIAN-IT / ALBIANT-IT),MISSED in [VER-FRA] round 1 (0006512960),[RES],
+2026-10-10,new rule D: site list research/fra/dc_sites.csv (Bull Les Clayes 0006503226; EDF Val-de-Reuil 0005803742),MISSED in [VER-FRA] round 1,[RES],
+2026-10-10,second rejected sample (round 2) from the pool minus checked records,estimate misses for the final rules,[RES],20261012
+2026-10-10,IBM 0006601111 added to dc_sites (rule D) from second sample; no third round — layer published as lower bound; remaining-miss estimate from second sample applied to unchecked pool,second sample: 1 miss of 10,[RES],

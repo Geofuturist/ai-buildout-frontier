@@ -1,0 +1,52 @@
+{
+  "layer": "transmission_rte",
+  "snapshot_date": "20261010",
+  "rows": 101,
+  "n_covered": 94,
+  "n_not_covered": 7,
+  "source": "RTE — Lignes aériennes RTE / Lignes souterraines RTE, copy published by DDTM de l'Eure on data.gouv.fr (data at 30.06.2023)",
+  "source_url": [
+    "https://www.data.gouv.fr/datasets/lignes-aeriennes-rte",
+    "https://www.data.gouv.fr/datasets/lignes-souterraines-rte-1"
+  ],
+  "edition": "data at 2023-06-30 (DDTM 27 copy)",
+  "current_through": "2023-06-30",
+  "license": "Licence Ouverte v2.0 (lov2)",
+  "inputs": [
+    {
+      "file": "dataset-1791627155707.zip",
+      "path": "D:\\GISData\\Energy\\France\\ddtm27_rte_lignes\\dataset-1791627155707.zip",
+      "bytes": 4833413,
+      "sha256": "2431b0a844758389a0b19bbc48cada4f8c45177bc7fdef88e114252a3eed862c"
+    },
+    {
+      "file": "dataset-1791627176048.zip",
+      "path": "D:\\GISData\\Energy\\France\\ddtm27_rte_lignes\\dataset-1791627176048.zip",
+      "bytes": 15246493,
+      "sha256": "912a690c9daf615b1ede6e0d6608ed8341028f942796ac088eb5749adfca5949"
+    }
+  ],
+  "verification_method": "segments with etat = 'EN EXPLOITATION' clipped to FRA ADM2 (abf-boundaries-v0.1.0) in EPSG:2154; length inside each department; voltage_kv parsed from 'tension'; 'COURANT CONTINU' -> dc; 'HORS TENSION' -> unknown; '<45kV' -> lt100",
+  "segments_layer": "energy_transmission_lines_rte built locally, NOT published (decision V 10.10, SPEC_FRA r4 §5)",
+  "odre_attributes_joined": false,
+  "totals_vs_source": {
+    "km_layer": 87942.38821245641,
+    "km_inside_94": 87942.38821245644,
+    "diff_pct": 3.309420070151261e-14,
+    "ok": "True"
+  },
+  "excluded": {
+    "accord_administratif": {
+      "segments": 159,
+      "km": 1467.5279841752954
+    },
+    "outside_departments_km": 793.5475162873336
+  },
+  "known_gaps_draft": [
+    "Line geometry is as of 30 June 2023, from the copy of RTE's dataset published by DDTM de l'Eure on data.gouv.fr.",
+    "In 2026 RTE stopped publishing line coordinates: «RTE a fait évoluer l'accès aux données GPS des infrastructures du réseau public de transport pour des raisons de sécurité publique.» (https://odre.opendatasoft.com/explore/dataset/lignes-aeriennes-rte-nv/). The project therefore publishes only department totals, not the line segments.",
+    "RTE does not publish substation coordinates; the project does not look for them.",
+    "Lines with an administrative approval that are not yet built (état ACCORD ADMINISTRATIF) are not included: 139 lines, 1,468 km.",
+    "Department boundaries are Natural Earth 1:10m; a line within about 1 km of a department boundary may be counted in the neighbouring department."
+  ]
+}

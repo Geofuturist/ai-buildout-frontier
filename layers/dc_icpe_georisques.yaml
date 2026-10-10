@@ -1,0 +1,93 @@
+# [CODE-PILOT] 10.10 (SPEC_FRA r6 §6). Texts: claude/RES_texts_FRA_layers_v1.md r2. Structure: [CODE-PUB].
+# Whitelist only (P9). [CODE-PUB]: G3 words rubrique, regime.
+# {N}, {low}, {high} in known_gaps are NOT build substitutions: [RES] fills them. Not for the final channel.
+# Attribution is a [RES] draft: dev only until [RES] checks it against research\fra\licences\.
+layer_id: dc_icpe_georisques
+title: "Data centers · classified installations (ICPE), Géorisques · points"   # [ARCH] 10.10, SPEC_FRA r5 §6
+title_ru: "ЦОД · классифицированные установки (ICPE), Géorisques · точки"
+domain: datacenters
+level: point
+frame: {iso3: FRA}
+input: {table: 'data\fra\layer_icpe_georisques_20261010.csv', key: record_id,
+        legacy_meta: 'data\fra\layer_icpe_georisques_20261010_meta.json', lon: lon, lat: lat}
+description: >-
+  Data centers that appear in France's register of installations classified for environmental
+  protection (ICPE), as published by Géorisques, with the commune and a link to the register card
+  of each installation. Presence in the register is a fact about the register: it is not a
+  statement about the size of the site, and data centers below the register thresholds are not in
+  it at all.
+fields:
+  - {name: record_id, type: string, nullable: false,
+     description: "AIOT number of the installation in the register, kept as a string with leading zeros."}
+  - {name: name_public, type: string,
+     description: "Name of the installation or of its operator as recorded in the register."}
+  - {name: commune_insee, type: string, description: "INSEE code of the commune of the installation."}
+  - {name: unit_id, type: string, description: "Department of the installation, see abf-boundaries."}
+  - {name: naf_code, type: string, nullable: true,
+     description: "Division of the French activity classification (NAF) recorded in the register, two digits.",
+     null_meaning: {covered: "The register gives no activity code for the installation."}}
+  - {name: selection_rule, type: string, nullable: false,
+     enum: [name, operator_list, site_list],
+     description: "[RES]"}   # SPEC_FRA r6 §6: name = rule A, operator_list = rule B (and C), site_list = rule D; tables in data/fra/rules/
+  - {name: lon, type: number, nullable: true, description: "Longitude as published in the register (WGS 84).",
+     null_meaning: {covered: "The register gives no usable coordinates for the installation."}}
+  - {name: lat, type: number, nullable: true, description: "Latitude as published in the register (WGS 84).",
+     null_meaning: {covered: "The register gives no usable coordinates for the installation."}}
+  - {name: coord_source, type: string, description: "Origin of the point: georisques, the register itself."}
+  - {name: coord_precision, type: string,
+     description: "Precision of the point. city for all records: the register does not state the precision of its coordinates."}
+  - {name: ref, type: string, description: "Address of the register card of the installation on Géorisques."}
+  - {name: checked_at, type: date, description: "Date and time of the build that set the record."}
+  - {name: checked_by, type: string,
+     description: "Script that selected the record; the independent agent check is in the verification log."}
+sources:
+  - source_id: georisques_icpe
+    role: primary
+    publisher: "Ministère de la Transition écologique — Géorisques"
+    product: "Installations classées pour la protection de l'environnement (ICPE)"
+    url: https://www.georisques.gouv.fr/donnees/bases-de-donnees/installations-industrielles
+    edition: "extract 2026-10-10"
+    publication_mode: open_licence
+    license: {id: etalab-2.0, name: "Licence Ouverte v2.0", family: attribution,
+              attribution_text: "Data centers: Géorisques, Installations classées pour la protection de l'environnement (ICPE), extract downloaded 10/10/2026, Licence Ouverte v2.0 (Etalab)."}   # [RES] draft
+    rights_basis: {type: license, checked_by: "human:V",
+                   text: "The Géorisques site states that, unless otherwise indicated, all its content is under Licence Ouverte 2.0 (etalab-2.0); the ICPE download page states no other terms."}
+verification:
+  levels: [script_rules, agent_sample]
+  method: >-
+    Candidates are selected by script rules (name, operator list, site list). Every candidate was
+    checked by an independent agent against the register card and a public source, and only
+    confirmed records are published. A record is confirmed when the operator publicly states a data
+    center in the same commune and the address matches, or the operator has a single site there, or
+    the register name itself says data center. Two random samples of 10 rejected records were
+    checked for missed data centers. The rejected pool is the set of records left out by the final
+    rules among those with NAF division 62 or 63 or the name of a mixed-profile operator; records
+    found to be data centers in a sample were added by rule and are not in the pool. The rejected
+    share is the number of sampled records still in the pool divided by the pool size.
+  sample_share: {candidates: 1.0, rejected: 0.0829}   # 16 / 193; check against meta verification.sample_share after apply
+freshness: {source_cadence: continuous, next_check: 2027-04-30}
+coverage:
+  geography: "France (101 departments)"
+  known_gaps:
+    - >-
+      Data centers are selected from the register by name, by a list of data-center operators, and
+      by a list of sites named in public operator documents. Every selected record was checked by an
+      independent agent against the register card and a public source; three records could not be
+      confirmed and are not in the layer.
+    - >-
+      Two random samples of 10 records left out by the rules found 3 and then 1 data centers, which
+      were added. On the second sample, between 1.8% and 40.4% (95% interval) of the {N} unchecked
+      left-out records, roughly {low} to {high} records, may be data centers; six records of that sample
+      could not be settled, so this is a low estimate. The layer is a lower bound of the data centers
+      in the register.
+    - >-
+      The register extract gives no status of the installation and no precision of the coordinates,
+      so all points are shown at commune precision. For one listed installation (Digital Realty MRS3,
+      Marseille) the register card shows "en fin d'exploitation".
+    - >-
+      Activity codes in the extract are two-digit NAF divisions, so the code 63.11Z (data
+      processing and hosting) cannot be used to select data centers.
+    - >-
+      Classification headings (rubriques), the regime of the installation and its equipment are
+      deliberately not published.
+display: {geometry_type: point, value_field: null, symbol: "one shape; fill by coord_precision"}

@@ -1,0 +1,89 @@
+{
+  "layer": "dc_icpe_georisques",
+  "snapshot_date": "20261010",
+  "rows": 43,
+  "source": "Géorisques — installations classées pour la protection de l'environnement (ICPE)",
+  "source_url": "https://www.georisques.gouv.fr/donnees/bases-de-donnees/installations-industrielles",
+  "license": "etalab-2.0",
+  "publication_mode": "open_licence",
+  "rights_basis": {
+    "type": "license",
+    "text": "The Géorisques site states that, unless otherwise indicated, all its content is under Licence Ouverte 2.0 (etalab-2.0); the ICPE download page states no other terms.",
+    "checked_by": "human:V"
+  },
+  "inputs": [
+    {
+      "file": "result.csv",
+      "path": "D:\\GISData\\Energy\\France\\georisques_icpe\\result.csv",
+      "bytes": 42956336,
+      "sha256": "ce0e097ab0fe06fe94c137d0b1cb6b78a0200bcd8099386a5fe3e8a0d49e185a"
+    },
+    {
+      "file": "dc_operators.csv",
+      "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\fra\\rules\\dc_operators.csv",
+      "bytes": 2655,
+      "sha256": "af9e0ba903f418589a9965634caf2b1aad04a1c27f5f939685246f1232c9987a"
+    },
+    {
+      "file": "dc_sites.csv",
+      "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\fra\\rules\\dc_sites.csv",
+      "bytes": 886,
+      "sha256": "3fdc7e08995af125769f20aca29356c9f5be6f2c3ad2b593b4429170556d83cf"
+    },
+    {
+      "file": "rule_changes.csv",
+      "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\fra\\rules\\rule_changes.csv",
+      "bytes": 888,
+      "sha256": "5672597182ee7280dd4554bafe819603441c394965193a9023f6d43e8b57bccd"
+    },
+    {
+      "file": "agent_recheck_icpe_fra_all.xlsx",
+      "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\research\\fra\\agent_recheck_icpe_fra_all.xlsx",
+      "bytes": 15294,
+      "sha256": "0b0985dd489cec7e9236713756fd7bb05848ccf938ec1eadabda49d344f92f58"
+    }
+  ],
+  "script_rules": "A/B/C (RES_to_CODE_FRA_preflight_answers_v1 §4.1) + D (site list data/fra/rules/dc_sites.csv, [RES] 10.10); changes: data/fra/rules/rule_changes.csv",
+  "verification_method": "A record is confirmed when the operator publicly states a data center in the same commune and the address matches, or the operator has a single site there, or the register name itself says data center.",
+  "verification": {
+    "agent": "agent:VER-FRA",
+    "sample_share": {
+      "candidates": 1.0,
+      "rejected": 0.0829
+    },
+    "rejected_pool_definition": "records left out by the final rules among those with NAF division 62 or 63 or a mixed-profile operator name; records found to be data centers in a sample were added by rule and are not in the pool",
+    "rejected_pool_size": 193,
+    "rejected_checked_in_pool": 16,
+    "rejected_unchecked": 177,
+    "sampled_all_rounds": 20,
+    "sampled_missed_moved_to_rules": 4,
+    "miss_estimate_last_sample": {
+      "round": "2",
+      "missed": 1,
+      "checked": 10,
+      "unclear": 6,
+      "wilson95": [
+        0.018,
+        0.404
+      ],
+      "unchecked_pool": 177,
+      "records_low_high": [
+        3,
+        72
+      ],
+      "note": "lower estimate of the share: unclear records counted as not DC"
+    }
+  },
+  "candidates": 46,
+  "published": 43,
+  "rejected_by_agent": 3,
+  "coord_precision": {
+    "city": 43
+  },
+  "known_gaps_draft": [
+    "Data centers are selected from the register by name, by a list of data-center operators, and by a list of sites named in public operator documents; every selected record was confirmed by an independent agent check. Two random samples of 10 records left out by the rules found 3 and then 1 data centers; after each sample the sites found were added. On the second sample, between 2% and 40% (95% interval) of the 177 unchecked left-out records may be data centers, so the layer is a lower bound of the data centers in the register.",
+    "For one listed installation (Digital Realty MRS3, Marseille) the register card shows \"en fin d'exploitation\".",
+    "The extract does not state the status of the installation.",
+    "Coordinates are those of the register; their precision is not stated, so all points are marked city-level."
+  ]
+}

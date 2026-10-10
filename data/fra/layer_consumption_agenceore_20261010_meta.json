@@ -1,0 +1,53 @@
+{
+  "layer": "consumption_agenceore",
+  "snapshot_date": "20261010",
+  "rows": 101,
+  "n_covered": 101,
+  "n_not_covered": 0,
+  "source": "Agence ORE — Consommation annuelle d'électricité et gaz par département",
+  "publisher": "Agence ORE",
+  "source_url": "https://opendata.agenceore.fr/datasets/6l33py6xpnaolvzkckzkhcic",
+  "edition": "data year 2024, dataset updated 2026-01-06",
+  "current_through": "2024-12-31",
+  "license": "Licence Ouverte / Open Licence v1.0 (LicenseRef-etalab-1.0)",
+  "inputs": [
+    {
+      "file": "6l33py6xpnaolvzkckzkhcic.csv",
+      "path": "D:\\GISData\\Energy\\France\\agenceore_consommation\\6l33py6xpnaolvzkckzkhcic.csv",
+      "bytes": 18438196,
+      "sha256": "ba5869ddd14dbef0f75ef7cce5867ab219710d28bc1e4d7e2264c6b1e201cc82"
+    },
+    {
+      "file": "consommation-annuelle-d-electricite-et-gaz-par-commune.csv",
+      "path": "D:\\GISData\\Energy\\France\\agenceore_consommation\\consommation-annuelle-d-electricite-et-gaz-par-commune.csv",
+      "bytes": 839248165,
+      "sha256": "bd8bff448d4b10221c1150847233bb2f7dbec334f6873cf21f9a6bd2adef641f"
+    }
+  ],
+  "verification_method": "electricity rows, year 2024, summed by 'Code Département'; sectors from 'CODE GRAND SECTEUR' (NAP -> unknown); n_delivery_points = sum of 'Nb sites'",
+  "automated_checks": [
+    {
+      "id": "secrecy_dept_vs_commune",
+      "departments_below": 4,
+      "dept_file_mwh": 403343153.308234,
+      "commune_sum_mwh": 402862966.76723397,
+      "result": "department file exceeds the municipal sum by 0.12% nationally; lower in 4 departments (45, 59, 80, 95) by at most 0.03% — difference between extracts; department totals not reduced by secrecy ([RES] 10.10)"
+    }
+  ],
+  "fields_note": {
+    "n_rows_without_value": "Number of department × sector rows that the source publishes without a consumption value. When above 0, consumption_mwh and the sector columns of this department are lower bounds."
+  },
+  "null_meaning": {
+    "covered": null
+  },
+  "totals_vs_source": {
+    "file_mwh": 403343153.308234,
+    "layer_mwh": 403343153.308234,
+    "ok": "True"
+  },
+  "known_gaps_draft": [
+    "Annual metered energy in MWh, not peak power: not comparable with the modeled peak demand of the U.S. demand layer.",
+    "In 31 departments the source publishes 85 department × sector rows without a value; their consumption is not in the totals, so the totals of these departments are lower bounds (see n_rows_without_value).",
+    "Department totals are not reduced by the statistical confidentiality applied to municipalities: the department file exceeds the sum of the municipal file by 0.12% nationally; in 4 departments (45, 59, 80, 95) it is lower by at most 0.03%, which is treated as a difference between the two extracts."
+  ]
+}

@@ -1,0 +1,17 @@
+operator,profile,pattern,source_url,source_kind,note
+Digital Realty / Interxion,B,digital realty|interxion,https://datacenterfrontier.com/focused-on-france-digital-realty-building-big-in-paris-marseille,secondary,found by web search 10.10; not opened; official page to be found by [VER-FRA]
+Equinix,B,equinix,https://www.equinix.com/locations/europe-colocation/france-colocation/paris-data-centers/,operator,found by web search 10.10; not opened
+Data4,B,\bdata ?4\b,https://data4group.com/en/?p=2229,operator,found by web search 10.10; not opened
+Telehouse,B,telehouse,https://www.telehouse.net/data-centre-services/france/paris/,operator,found by web search 10.10; not opened
+Global Switch,B,global switch,https://globalswitch.com/locations/paris,operator,found by web search 10.10; not opened
+nLighten,B,nlighten,https://www.nlighten.com/en/press-releases/nlighten-acquires-euclyde-data-centers-a-leading-edge-data-center-platform-in-france/,operator,found by web search 10.10; not opened
+Thésée DataCenter,B,thesee,https://datacenterdynamics.com/en/news/thésée-datacenters-inaugurates-its-first-tier-iv-data-center-outside-paris-france,secondary,found by web search 10.10; not opened
+Ikoula,B,ikoula,https://www.ikoula.com/en/company/infrastructures,operator,found by web search 10.10; not opened
+Opcore,B,\bop ?core\b,https://www.datacentermap.com/france/paris/opcore-paris-dc5/,secondary,found by web search 10.10; not opened
+Colt DCS,B,\bcolt\b,https://www.datacenterdynamics.com/en/news/colt-dcs-breaks-ground-paris-expansion/,secondary,found by web search 10.10; not opened
+CyrusOne,B,cyrusone,https://www.cyrusone.com/data-centers/emea/paris-france,operator,found by web search 10.10; not opened
+NTT GDC,B,\bntt\b,https://datacenterdynamics.com/en/news/ntt-to-build-84mw-data-center-campus-outside-paris-france,secondary,found by web search 10.10; not opened
+Orange,C,\borange\b,https://orange-business.com/en/press/orange-unveils-its-new-generation-data-center-in-val-de-reuil-normandy,operator,found by web search 10.10; not opened
+OVHcloud,B,\bovh,https://www.ovhcloud.com/en/about-us/global-infrastructure/regions-new/,operator,found by web search 10.10; not opened
+SFR,C,\bsfr\b,https://alticefrance.com/sites/default/files/pdf/20220531_CP_SFR_Interxion_Equinix_0.pdf,operator,found by web search 10.10; not opened; content not checked
+Albiant-IT,B,\balbiant? ?it\b,https://e3p.jrc.ec.europa.eu/en/groups/data-centres-code-conduct/participants,agent,"source = agent_evidence_url of [VER-FRA] round 1 (EU Code of Conduct participants: «Vega – Bailly Romainvilliers»); pinned from agent:0006512960, [VER-FRA] round 1"

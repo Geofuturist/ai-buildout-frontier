@@ -1,0 +1,83 @@
+# [CODE-PILOT] 10.10 (SPEC_FRA r6 §4). Texts: claude/RES_texts_FRA_layers_v1.md r2. Structure: [CODE-PUB].
+# Attributions are [RES] drafts: dev only until [RES] checks them against research\fra\licences\.
+layer_id: energy_consumption_agenceore_adm2
+title: "Electricity consumption · Agence ORE · department"
+title_ru: "Потребление электроэнергии · Agence ORE · департаменты"
+domain: energy
+level: ADM2
+frame: {iso3: FRA, level: ADM2}
+input: {table: 'data\fra\layer_consumption_agenceore_20261010.csv', key: unit_id,
+        legacy_meta: 'data\fra\layer_consumption_agenceore_20261010_meta.json'}
+description: >-
+  Electricity delivered to consumers in 2024 in each department, in MWh, as reported by the grid
+  operators and published by Agence ORE, with the split by sector and the number of delivery
+  points. The total includes consumers on the transmission network and on distribution networks.
+  This is annual metered energy, not peak power: it is not comparable with the modeled peak
+  demand of the U.S. demand layer.
+fields:
+  - {name: consumption_mwh, type: number, unit: MWh, nullable: false, min: 0,
+     description: "Electricity delivered in the department in the year, in MWh."}
+  - {name: consumption_mwh_residential, type: number, unit: MWh, nullable: false, min: 0,
+     description: "Part of consumption_mwh delivered to households."}
+  - {name: consumption_mwh_tertiary, type: number, unit: MWh, nullable: false, min: 0,
+     description: "Part of consumption_mwh delivered to services and public administration."}
+  - {name: consumption_mwh_industry, type: number, unit: MWh, nullable: false, min: 0,
+     description: "Part of consumption_mwh delivered to industry."}
+  - {name: consumption_mwh_agriculture, type: number, unit: MWh, nullable: false, min: 0,
+     description: "Part of consumption_mwh delivered to agriculture."}
+  - {name: consumption_mwh_unknown, type: number, unit: MWh, nullable: false, min: 0,
+     description: "Part of consumption_mwh whose sector is not known to the grid operator."}
+  - {name: n_delivery_points, type: integer, nullable: false, min: 0,
+     description: "Number of delivery points (sites) as counted in the source."}
+  - {name: n_rows_without_value, type: integer, nullable: false, min: 0,
+     description: "Number of department × sector rows that the source publishes without a consumption value. When above 0, consumption_mwh and the sector columns of this department are lower bounds."}
+  - {name: data_year, type: integer, description: "Year of the consumption data."}
+null_meaning_all_fields:
+  not_covered: "Not applicable: all 101 departments are covered by the source."
+  covered: null
+sources:
+  - source_id: agenceore_conso_dept
+    role: primary
+    publisher: Agence ORE
+    product: "Consommation annuelle d'électricité et gaz par département"
+    url: https://opendata.agenceore.fr/datasets/6l33py6xpnaolvzkckzkhcic
+    edition: "data year 2024, dataset updated 2026-01-06"
+    current_through: 2024-12-31
+    publication_mode: open_licence
+    license: {id: LicenseRef-etalab-1.0, name: "Licence Ouverte / Open Licence v1.0",
+              url: https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf,
+              family: attribution,
+              attribution_text: "Consumption: Agence ORE, Consommation annuelle d'électricité et gaz par département, last updated 06/01/2026, Licence Ouverte / Open Licence v1.0."}   # [RES] draft
+    rights_basis: {type: license, text: "The dataset page on the Agence ORE portal states \"Licence Ouverte / Open Licence\" and links to version 1.0 of its text.",
+                   checked_at: 2026-10-10, checked_by: "script:download_fra"}
+  - source_id: natural_earth_via_abf_boundaries
+    role: geometry
+    product: "abf-boundaries v0.1.0 (Natural Earth 1:10m)"
+    publication_mode: open_licence
+    license: {id: public-domain, family: public_domain,
+              attribution_text: "Department outlines: Natural Earth, via abf-boundaries v0.1.0."}
+    rights_basis: {type: license, text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."}
+verification:
+  method: >-
+    Rows for electricity and the data year are summed by department and sector by script from the
+    source table. Department totals were compared with the sum of the municipal file of the same
+    source. No value was re-checked by a person or by an agent. The automated checks listed below
+    were run on every build.
+  automated_checks: [secrecy_dept_vs_commune]     # result in the layer meta
+  totals_vs_source: {exceptions: []}              # layer = sum of the file
+freshness: {source_cadence: annual, next_check: 2027-01-31}
+coverage:
+  geography: "All 101 departments"
+  known_gaps:
+    - >-
+      In 31 departments the source publishes 85 department × sector rows without a value; their
+      consumption is not in the totals, so the totals of these departments are lower bounds (see
+      n_rows_without_value).
+    - >-
+      Department totals are not reduced by the statistical confidentiality applied to
+      municipalities: the department file exceeds the sum of the municipal file by 0.12%
+      nationally; in four departments (59, 45, 80, 95) it is lower by at most 0.02%, which is
+      treated as a difference between the two extracts.
+display: {geometry_type: polygon, value_field: consumption_mwh, unit: MWh,
+          breaks: [1400000, 2400000, 3900000, 6000000],   # preliminary; build recomputes
+          zero_class: false, legend_title: "Electricity consumption 2024, MWh"}

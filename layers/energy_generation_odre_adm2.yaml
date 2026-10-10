@@ -1,0 +1,93 @@
+# [CODE-PILOT] 10.10 (SPEC_FRA r6 §3). Texts: claude/RES_texts_FRA_layers_v1.md r2. Structure: [CODE-PUB].
+# Attributions are [RES] drafts: dev only until [RES] checks them against research\fra\licences\.
+layer_id: energy_generation_odre_adm2
+title: "Generation · ODRÉ national register · department"
+title_ru: "Генерация · национальный реестр ODRÉ · департаменты"
+domain: energy
+level: ADM2
+frame: {iso3: FRA, level: ADM2}
+input: {table: 'data\fra\layer_generation_odre_20261010.csv', key: unit_id,
+        legacy_meta: 'data\fra\layer_generation_odre_20261010_meta.json'}
+description: >-
+  Maximum installed capacity of the electricity generating installations listed in France's
+  national register of production and storage installations (snapshot of 31 July 2026), summed
+  by department and split by technology group, with storage capacity in a separate column. Only
+  installations in operation on the snapshot date are counted.
+fields:
+  - {name: installed_capacity_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Sum of the maximum installed capacity (puissance maximale installée) of the operating generating installations in the department, storage excluded."}
+  - {name: storage_capacity_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Maximum capacity of non-hydraulic storage installations, mostly batteries. It is not part of installed_capacity_mw. 0 means none are listed."}
+  - {name: capacity_nuclear_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Part of installed_capacity_mw from nuclear installations. 0 means none are listed."}
+  - {name: capacity_fossil_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Part of installed_capacity_mw from non-renewable thermal installations (gas, coal, oil). 0 means none are listed."}
+  - {name: capacity_hydro_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Part of installed_capacity_mw from hydro installations, including pumped storage as the source classifies it. 0 means none are listed."}
+  - {name: capacity_wind_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Part of installed_capacity_mw from wind installations. 0 means none are listed."}
+  - {name: capacity_solar_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Part of installed_capacity_mw from solar installations. 0 means none are listed."}
+  - {name: capacity_bioenergy_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Part of installed_capacity_mw from bioenergy installations. 0 means none are listed."}
+  - {name: capacity_other_mw, type: number, unit: MW, nullable: false, min: 0,
+     description: "Part of installed_capacity_mw from marine, geothermal and other installations. 0 means none are listed."}
+  - {name: n_installations, type: integer, nullable: false, min: 0,
+     description: "Number of operating installations as counted in the source. Installations under 36 kW are aggregated in the source and counted here by the number it gives."}
+  - {name: data_snapshot_date, type: date, description: "Date of the register snapshot."}
+null_meaning_all_fields:
+  not_covered: "Not applicable: all 101 departments are covered by the register."
+  covered: null
+sources:
+  - source_id: odre_registre
+    role: primary
+    publisher: "RTE, Enedis, EDF SEI, ELD (ODRÉ)"
+    product: "Registre national des installations de production et de stockage d'électricité (agrégé)"
+    url: https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/
+    edition: "au 31/07/2026"
+    current_through: 2026-07-31
+    publication_mode: open_licence
+    license: {id: etalab-2.0, name: "Licence Ouverte v2.0 (Etalab)",
+              url: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf,
+              family: attribution,
+              attribution_text: "Generation: Registre national des installations de production et de stockage d'électricité (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies, published on ODRÉ, last updated 10/09/2026, Licence Ouverte v2.0 (Etalab)."}   # [RES] draft
+    rights_basis: {type: license, text: "The ODRÉ dataset page states Licence Ouverte v2.0 (Etalab).",
+                   checked_at: 2026-10-10, checked_by: "human:V"}
+  - source_id: natural_earth_via_abf_boundaries
+    role: geometry
+    product: "abf-boundaries v0.1.0 (Natural Earth 1:10m)"
+    publication_mode: open_licence
+    license: {id: public-domain, family: public_domain,
+              attribution_text: "Department outlines: Natural Earth, via abf-boundaries v0.1.0."}
+    rights_basis: {type: license, text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."}
+verification:
+  method: >-
+    Operating installations are selected and summed by department by script from the source table,
+    using the department code of each row. A row counts as operating if it has no disconnection
+    date, was commissioned on or before the snapshot date, and is not temporarily withdrawn. A list
+    of known closed plants stops the build for a decision; decisions are logged. No value was
+    re-checked by a person or by an agent. The automated checks listed below were run on every build.
+  totals_vs_source:
+    exceptions:
+      - {what: "rows without department code", rows: 49, mw: 34.126}
+      - {what: "codes 975, 977, 978 (outside the 101 departments)", rows: 44, mw: 135.076}
+freshness: {source_cadence: monthly, next_check: 2026-11-30}
+coverage:
+  geography: "All 101 departments, including the five overseas departments"
+  known_gaps:
+    - >-
+      Capacity is the maximum installed power declared in the register. It is not the net summer
+      capacity of EIA-860, so the French and U.S. generation layers are not directly comparable.
+    - >-
+      Installations without a commissioning date in the register (226 rows, 12.0 GW) are counted as
+      operating. Disconnected installations (22 rows, 155.9 MW), installations commissioned after
+      the snapshot date (6 rows, 1.0 MW) and installations temporarily withdrawn from service
+      (6 rows, 1,007.4 MW) are not counted.
+    - >-
+      Installations without a department code (49 aggregated rows, 34.1 MW) and those in
+      Saint-Pierre-et-Miquelon, Saint-Barthélemy and Saint-Martin (44 rows, 135.1 MW) are not in the
+      department values.
+    - "The register is updated monthly; the layer is a snapshot of 31 July 2026."
+display: {geometry_type: polygon, value_field: installed_capacity_mw, unit: MW,
+          breaks: [460, 760, 1100, 2400],   # preliminary (pre-flight quantiles); build recomputes
+          zero_class: true, legend_title: "Installed capacity, MW"}
