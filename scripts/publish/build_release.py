@@ -193,12 +193,16 @@ def run(args: argparse.Namespace) -> int:
     else:
         for layer_yaml in rel["layers"]:
             cfg = load_yaml(resolve_path(layer_yaml))
+            if cfg.get("publish") is False:
+                raise GateError("P9", f"{cfg['layer_id']}: the layer has publish: false but is listed in the release")
             if cfg["level"] == "line":
                 lo = layer_build.build_line_layer(cfg, ctx)
+            elif cfg["level"] == "point":
+                lo = layer_build.build_point_layer(cfg, ctx)
             else:
                 lo = layer_build.build_adm_layer(cfg, ctx)
-            if cfg["domain"] == "dc":
-                raise GateError("G3b", "domain dc layers are not supported in this release flow yet (ADR section 6.2 list)")
+            if cfg["domain"] == "dc" and cfg["level"] != "point":
+                raise GateError("G3b", f"{cfg['layer_id']}: only point layers are supported for the domain dc")
             metas.append((lo.meta_path, lo.meta))
             all_layers.append(lo)
             plan_layers.append(plan_layer(lo, out, [], f"{lo.layer_id}.pmtiles"))
@@ -207,6 +211,11 @@ def run(args: argparse.Namespace) -> int:
                 archives[a["file"].name] = a
             check_lists[lo.layer_id] = [c["id"] for c in lo.meta["verification"]["automated_checks"]]
             scan_text_values(lo, report)
+
+    # --- G3b across the release: not more than one layer of the domain dc carries power fields
+    power_layers = [lo.layer_id for lo in all_layers if lo.domain == "dc" and lo.carries_power]
+    if len(power_layers) > 1:
+        raise GateError("G3b", f"more than one layer of the domain dc carries power fields: {power_layers}")
 
     # --- meta.json: G7, G1, write
     for path, meta in metas:
