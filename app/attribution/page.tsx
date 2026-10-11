@@ -55,6 +55,18 @@ export default function AttributionPage() {
             This page is generated from the metadata of the published layers ({total} data sources), so it cannot differ from the data.
           </p>
 
+          <p className="text-sm">
+            Datasets covered:{' '}
+            {Object.values(data.datasets).map((d, i) => (
+              <span key={d.dataset}>
+                {i > 0 ? '; ' : ''}
+                {d.dataset} v{d.version}
+                {d.doi ? <> (DOI <a href={`https://doi.org/${d.doi}`}>{d.doi}</a>)</> : ' (DOI not assigned yet)'}
+              </span>
+            ))}
+            .
+          </p>
+
           {data.attribution.map((g) => (
             <section key={g.family}>
               <h2>{GROUP_TITLE[g.family]}</h2>

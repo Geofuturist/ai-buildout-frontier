@@ -83,7 +83,8 @@ function LayerCard({ meta, entries }: { meta: Meta; entries: LayerEntry[] }) {
 
 export default function DataPage() {
   const data = getData();
-  const order: ('abf-layers' | 'abf-boundaries')[] = ['abf-layers', 'abf-boundaries'];
+  // layers datasets first, boundaries last; inside each group the pointer order
+  const order = Object.keys(data.datasets).sort((a, b) => Number(data.datasets[a].kind === 'boundaries') - Number(data.datasets[b].kind === 'boundaries'));
   return (
     <>
       <SiteHeader />
@@ -92,7 +93,7 @@ export default function DataPage() {
           <h1>Data</h1>
           <p>
             Every layer is a downloadable file with a fixed, versioned address. Map tiles are for display only; use GeoParquet, GeoJSON or CSV for analysis.
-            Read codes as text (<code>unit_id</code>, <code>fips</code>) or leading zeros disappear.
+            Read codes as text (for example <code>unit_id</code>) or leading zeros disappear.
           </p>
 
           {order.map((name) => {

@@ -74,7 +74,7 @@ export interface Meta {
 }
 
 export interface LayerEntry {
-  dataset: 'abf-layers' | 'abf-boundaries';
+  dataset: string;
   layer_id: string;
   meta_id: string;
   title: string;
@@ -95,6 +95,8 @@ export interface LayerEntry {
 
 export interface DatasetInfo {
   dataset: string;
+  /** 'boundaries' when the metadata of the dataset have kind = boundaries, otherwise 'layers' */
+  kind: 'boundaries' | 'layers';
   version: string;
   tag: string;
   doi: string | null;
@@ -124,7 +126,8 @@ export interface AbfData {
   channel: 'final' | 'dev';
   base_url: string;
   site_url: string;
-  datasets: Record<'abf-layers' | 'abf-boundaries', DatasetInfo>;
+  /** every dataset of the pointer, in pointer order */
+  datasets: Record<string, DatasetInfo>;
   layers: LayerEntry[];
   metas: Record<string, Meta>;
   anchors: Record<string, string>;

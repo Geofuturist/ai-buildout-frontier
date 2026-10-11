@@ -98,16 +98,17 @@ async function main() {
   const pointerPath = STRICT ? 'manifest/latest.json' : 'manifest/dev.json';
   const { json: pointer } = await getJson(pointerPath, { bust: true });
   if (pointer.schema_version !== 'abf-latest-1.0') fail(`${pointerPath}: unexpected schema_version ${pointer.schema_version}`);
-  for (const ds of ['abf-layers', 'abf-boundaries']) {
-    if (!pointer.datasets || !pointer.datasets[ds]) fail(`${pointerPath} has no dataset ${ds}`);
-  }
+  // Every dataset of the pointer is read; no dataset name is known in advance (ADR 4.4)
+  const dsNames = Object.keys(pointer.datasets || {});
+  if (dsNames.length === 0) fail(`${pointerPath} lists no datasets`);
+  for (const n of dsNames) if (!/^abf-[a-z0-9]+$/.test(n)) fail(`${pointerPath}: unexpected dataset name "${n}"`);
 
   const datasets = {};
   const layers = [];
   const metas = {};
 
   // 2. Manifests and metas
-  for (const dsName of ['abf-layers', 'abf-boundaries']) {
+  for (const dsName of dsNames) {
     const ptr = pointer.datasets[dsName];
     const { json: man } = await getJson(ptr.manifest);
     if (man.schema_version !== 'abf-manifest-1.0') fail(`${ptr.manifest}: unexpected schema_version`);
@@ -172,17 +173,32 @@ async function main() {
         },
       });
     }
+    // A dataset is "boundaries" when its metadata say kind = boundaries (never by name)
+    const kinds = new Set([...metaCache.values()].map((m) => m.kind));
+    if (kinds.size !== 1) fail(`${dsName}: mixes metadata kinds (${[...kinds].join(', ')})`);
+    datasets[dsName].kind = kinds.has('boundaries') ? 'boundaries' : 'layers';
   }
 
-  if (datasets['abf-layers'].boundary_release !== `abf-boundaries-v${datasets['abf-boundaries'].version}`) {
-    strict(`abf-layers points to ${datasets['abf-layers'].boundary_release}, but the boundaries dataset is v${datasets['abf-boundaries'].version}`);
+  const boundaryNames = dsNames.filter((n) => datasets[n].kind === 'boundaries');
+  if (boundaryNames.length !== 1) fail(`expected exactly one boundaries dataset, found ${boundaryNames.length}`);
+  const bnd = datasets[boundaryNames[0]];
+  const layerNames = dsNames.filter((n) => datasets[n].kind === 'layers');
+  if (layerNames.length === 0) fail('no dataset of layers in the pointer');
+
+  // boundary_release (SPEC_META 6 p.25): a dataset may refer to a boundaries version that is not newer than the
+  // current one (boundaries are only ever extended). Checking that every unit_id exists in the boundaries is a
+  // publishing gate (G4); the site has no access to the ids at build time.
+  const semver = (v) => v.split('.').map(Number);
+  const newer = (a, b) => { const x = semver(a), y = semver(b); for (let i = 0; i < 3; i++) if (x[i] !== y[i]) return x[i] > y[i]; return false; };
+  for (const n of layerNames) {
+    const m = new RegExp(`^${bnd.dataset}-v(\\d+\\.\\d+\\.\\d+)$`).exec(datasets[n].boundary_release || '');
+    if (!m) strict(`${n}: boundary_release "${datasets[n].boundary_release}" is not a ${bnd.dataset} version`);
+    else if (newer(m[1], bnd.version)) strict(`${n} refers to boundaries v${m[1]}, newer than the current v${bnd.version}`);
   }
 
   // 3. Methodology placeholders and anchors
-  const layerTitles = layers.filter((l) => l.dataset === 'abf-layers').map((l) => ({ id: l.layer_id, title: l.title }));
+  const layerTitles = layers.filter((l) => datasets[l.dataset].kind === 'layers').map((l) => ({ id: l.layer_id, title: l.title }));
   const mdSrc = fs.readFileSync(path.join(ROOT, 'content', 'methodology.md'), 'utf8');
-  const lay = datasets['abf-layers'];
-  const bnd = datasets['abf-boundaries'];
   const doiLink = (d) => (d.doi ? `[${d.doi}](https://doi.org/${d.doi})` : 'not assigned yet');
   const primary = (id) => {
     const m = metas[id];
@@ -190,21 +206,34 @@ async function main() {
   };
   let unfilled = 0;
   const md = mdSrc.replace(
-    /\{(DOI_layers|DOI_boundaries|version_layers|version_boundaries|release_date|domain|archive_v1_url|(?:edition|current_through):[a-z0-9_]+)\}/g,
+    /\{(DOI_layers|DOI_boundaries|version_layers|version_boundaries|release_date(?::abf-[a-z0-9]+)?|domain|archive_v1_url|(?:DOI|version):abf-[a-z0-9]+|(?:edition|current_through):[a-z0-9_]+)\}/g,
     (token, name) => {
+      // Old names are synonyms: {DOI_layers} = {DOI:abf-layers}, {DOI_boundaries} = {DOI:<boundaries dataset>}, ...
+      const named = (id) => {
+        const d = datasets[id];
+        if (!d) { unfilled++; strict(`methodology: ${token} - no dataset ${id} in the pointer`); }
+        return d;
+      };
+      const syn = { DOI_layers: ['DOI', 'abf-layers'], version_layers: ['version', 'abf-layers'], release_date: ['release_date', 'abf-layers'],
+                    DOI_boundaries: ['DOI', bnd.dataset], version_boundaries: ['version', bnd.dataset] };
+      let kind, id;
+      if (syn[name]) [kind, id] = syn[name];
+      else if (/^(DOI|version|release_date):/.test(name)) [kind, id] = name.split(':');
+      if (kind) {
+        const d = named(id);
+        if (!d) return token;
+        if (kind === 'DOI') return doiLink(d);
+        if (kind === 'version') return d.version;
+        return longDate(d.published_at);
+      }
       switch (name) {
-        case 'DOI_layers': return doiLink(lay);
-        case 'DOI_boundaries': return doiLink(bnd);
-        case 'version_layers': return lay.version;
-        case 'version_boundaries': return bnd.version;
-        case 'release_date': return longDate(lay.published_at);
         case 'domain': return new URL(SITE_URL).host;
         case 'archive_v1_url': return ARCHIVE_V1_URL;
         default: {
-          const [kind, id] = name.split(':');
-          const m = metas[id];
-          if (!m) { unfilled++; strict(`methodology: ${token} - no layer ${id}`); return token; }
-          if (kind === 'edition') return primary(id).edition;
+          const [k2, lid] = name.split(':');
+          const m = metas[lid];
+          if (!m) { unfilled++; strict(`methodology: ${token} - no layer ${lid}`); return token; }
+          if (k2 === 'edition') return primary(lid).edition;
           return m.freshness.source_current_through;
         }
       }
@@ -287,8 +316,8 @@ async function main() {
   fs.writeFileSync(path.join(ROOT, 'generated', 'abf-data.json'), JSON.stringify(out));
   fs.writeFileSync(path.join(ROOT, 'generated', 'methodology.md'), md);
   console.log(
-    `fetch-data: ok. layers v${lay.version} (${layers.filter((l) => l.dataset === 'abf-layers').length} layers), ` +
-      `boundaries v${bnd.version}, ${shown} sources, ${warnings.length} warning(s)`,
+    `fetch-data: ok. ${dsNames.map((n) => `${n} v${datasets[n].version} (${layers.filter((l) => l.dataset === n).length} entries)`).join(', ')}; ` +
+      `${shown} sources, ${warnings.length} warning(s)`,
   );
 }
 

@@ -104,7 +104,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
 
       {/* 2. Boundaries: one PMTiles file, several source layers */}
       {bnd.adm0 && (
-        <Source id="abf-boundaries" type="vector" url={`pmtiles://${bnd.adm0.tiles.url}`}>
+        <Source id="boundaries" type="vector" url={`pmtiles://${bnd.adm0.tiles.url}`}>
           {bnd.disputed && (
             <Layer
               id="disputed-fill"
