@@ -1,18 +1,25 @@
 # Promote release (SPEC_META_publish_v0_1 section 9, step 7).
-# Points manifest/latest.json at the given versions of BOTH datasets and redeploys the site.
+# Points manifest/latest.json at the given versions of the datasets and redeploys the site.
+# One input: the list dataset=version. abf-boundaries must be in it. Example:
+#   abf-layers=0.1.0,abf-boundaries=0.1.0,abf-fra=0.1.0
+# The two old inputs (layers_version, boundaries_version) still work when the list is empty.
 name: Promote release
 
 on:
   workflow_dispatch:
     inputs:
+      datasets:
+        description: "List dataset=version, for example abf-layers=0.1.0,abf-boundaries=0.1.0,abf-fra=0.1.0"
+        required: false
+        default: ""
       layers_version:
-        description: "Version of abf-layers, for example 0.1.0"
-        required: true
-        default: "0.1.0"
+        description: "Old form (only if the list above is empty): version of abf-layers, for example 0.1.0"
+        required: false
+        default: ""
       boundaries_version:
-        description: "Version of abf-boundaries, for example 0.1.0"
-        required: true
-        default: "0.1.0"
+        description: "Old form (only if the list above is empty): version of abf-boundaries, for example 0.1.0"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -27,6 +34,10 @@ env:
   R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
   R2_BUCKET: ${{ secrets.R2_BUCKET }}
   R2_STAGING_BUCKET: ${{ secrets.R2_STAGING_BUCKET }}
+  # inputs go through the environment, never into the shell text
+  IN_DATASETS: ${{ inputs.datasets }}
+  IN_LAYERS: ${{ inputs.layers_version }}
+  IN_BOUNDARIES: ${{ inputs.boundaries_version }}
 
 jobs:
   promote:
@@ -35,8 +46,12 @@ jobs:
     steps:
       - name: Check inputs
         run: |
-          [[ "${{ inputs.layers_version }}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "bad layers version"; exit 1; }
-          [[ "${{ inputs.boundaries_version }}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "bad boundaries version"; exit 1; }
+          if [ -n "$IN_DATASETS" ]; then
+            [[ "$IN_DATASETS" =~ ^[a-z0-9=.,\ -]+$ ]] || { echo "bad characters in the list"; exit 1; }
+          else
+            [[ "$IN_LAYERS" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "give the list, or both old versions (layers version is bad or empty)"; exit 1; }
+            [[ "$IN_BOUNDARIES" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "give the list, or both old versions (boundaries version is bad or empty)"; exit 1; }
+          fi
 
       - uses: actions/checkout@v4
 
@@ -45,12 +60,15 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python packages
-        run: python -m pip install boto3 jsonschema pyyaml
+        run: python -m pip install boto3 jsonschema pyyaml pyarrow
 
       - name: Write manifest/latest.json
         run: |
-          python scripts/publish/promote_release.py \
-            --layers "${{ inputs.layers_version }}" --boundaries "${{ inputs.boundaries_version }}"
+          if [ -n "$IN_DATASETS" ]; then
+            python scripts/publish/promote_release.py --datasets "$IN_DATASETS"
+          else
+            python scripts/publish/promote_release.py --layers "$IN_LAYERS" --boundaries "$IN_BOUNDARIES"
+          fi
 
       - name: Redeploy the site (Vercel deploy hook)
         env:

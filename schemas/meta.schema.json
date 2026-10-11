@@ -187,7 +187,7 @@
       "additionalProperties": false,
       "required": ["dataset", "version", "tag", "doi", "published_at"],
       "properties": {
-        "dataset": {"enum": ["abf-layers", "abf-boundaries"]},
+        "dataset": {"type": "string", "pattern": "^abf-[a-z0-9]+$"},
         "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
         "tag": {"type": "string", "pattern": "^abf-[a-z]+-v\\d+\\.\\d+\\.\\d+$"},
         "doi": {"anyOf": [{"type": "null"}, {"type": "string", "pattern": "^10\\.5281/zenodo\\.\\d+$"}]},

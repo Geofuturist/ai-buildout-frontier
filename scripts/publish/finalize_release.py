@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import re
 import shutil
 import subprocess
 import sys
@@ -159,8 +160,15 @@ def publish(manifest: dict[str, Any], work: Path, channel: str) -> None:
     log.info("published %d files and %s (manifest last)", n, mkey)
 
 
+def dataset_name(value: str) -> str:
+    """argparse type: any dataset named abf-<lowercase letters and digits>."""
+    if not re.fullmatch(r"abf-[a-z0-9]+", value):
+        raise argparse.ArgumentTypeError(f"dataset must look like abf-layers, got {value!r}")
+    return value
+
+
 def update_dev_pointer(manifest: dict[str, Any]) -> None:
-    """manifest/dev.json lists both datasets; this run replaces its own entry."""
+    """manifest/dev.json lists every dataset that has a dev build; this run replaces its own entry."""
     store = open_store("R2_BUCKET")
     key = "manifest/dev.json"
     raw = store.get_bytes(key)
@@ -171,17 +179,16 @@ def update_dev_pointer(manifest: dict[str, Any]) -> None:
     doc["updated_at"] = utc_iso(datetime.now(timezone.utc).replace(microsecond=0))
     import jsonschema
     schema = read_json(SCHEMA_DIR / "latest.schema.json")
-    if set(doc["datasets"]) != {"abf-layers", "abf-boundaries"}:
-        # only one dataset was built so far: check everything except "both datasets present"
+    if "abf-boundaries" not in doc["datasets"]:
+        # abf-boundaries has no dev build yet: check everything except "boundaries present"
         schema["properties"]["datasets"].pop("required", None)
     jsonschema.validate(doc, schema, cls=jsonschema.Draft202012Validator)
     tmp = Path("dev.json.tmp")
     write_json(tmp, doc)
     store.put_file(tmp, key, sha256_file(tmp))
     tmp.unlink()
-    missing = {"abf-layers", "abf-boundaries"} - set(doc["datasets"])
-    if missing:
-        log.warning("manifest/dev.json does not list %s yet (the file should list both datasets)", sorted(missing))
+    if "abf-boundaries" not in doc["datasets"]:
+        log.warning("manifest/dev.json does not list abf-boundaries yet")
 
 
 def run(args: argparse.Namespace) -> int:
@@ -253,7 +260,7 @@ def run(args: argparse.Namespace) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Tiles, manifest and publication of a staged release.")
-    parser.add_argument("--dataset", required=True, choices=["abf-layers", "abf-boundaries"])
+    parser.add_argument("--dataset", required=True, type=dataset_name, help="dataset name, abf-<name>, e.g. abf-fra")
     parser.add_argument("--version", required=True)
     parser.add_argument("--channel", required=True, choices=["dev", "final"])
     parser.add_argument("--work", default="work", help="working folder")
