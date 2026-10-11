@@ -14,7 +14,7 @@ import re
 import sys
 from pathlib import Path
 
-ALLOWED = re.compile(r"open_licence|Licence\s+Ouverte|Open\s+Licence", re.I)
+ALLOWED = re.compile(r"open_licence|Licence\s+Ouverte|Open\s+Licence|https?://\S+", re.I)  # names, the code and URLs may keep the British spelling
 CHECKS = [
     ("licence (British spelling)", re.compile(r"licen[c]e", re.I), True),
     ("kilometre", re.compile(r"kilomet(re|res)\b", re.I), False),
