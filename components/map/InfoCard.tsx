@@ -5,10 +5,12 @@ import { X } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
 import type { FieldDef, LayerEntry, Meta } from '@/lib/data';
 import { checkedByLine, formatBytes, formatNumber, isoDate, recordCitation } from '@/lib/format';
-import { VOLTAGE_BANDS } from '@/lib/style';
+import { capitalize, recordNoun } from '@/lib/layers';
+import { MODULE_BY_TYPE } from './modules';
+import RecordDownload from './RecordDownload';
 import type { CardState, MapData } from './types';
 
-const HIDDEN_FIELDS = new Set(['unit_id', 'fips', 'name', 'coverage_status']);
+const HIDDEN_FIELDS = new Set(['name', 'coverage_status']);
 const FORMATS: { key: string; label: string }[] = [
   { key: 'csv', label: 'CSV' },
   { key: 'parquet', label: 'GeoParquet' },
@@ -70,13 +72,15 @@ function Shell({ title, subtitle, onClose, children }: { title: string; subtitle
   );
 }
 
-function ValueRows({ layer, meta, props }: { layer: LayerEntry; meta: Meta; props: Record<string, unknown> }) {
-  const covered = props.coverage_status === 'covered';
+function ValueRows({ layer, meta, props, keyField }: { layer: LayerEntry; meta: Meta; props: Record<string, unknown>; keyField: string }) {
+  const mod = MODULE_BY_TYPE[layer.tiles.geometry_type];
+  const covered = props.coverage_status === undefined || props.coverage_status === 'covered';
   const valueField = meta.display?.value_field;
-  const fields = meta.fields.filter((f) => !HIDDEN_FIELDS.has(f.name) && layer.tiles.fields.includes(f.name));
+  const fields = meta.fields.filter((f) => !HIDDEN_FIELDS.has(f.name) && f.name !== keyField && layer.tiles.fields.includes(f.name));
   const firstNull = fields.find((f) => f.null_meaning);
 
   if (!covered) {
+    // The record's own coverage_note if the tile has one, otherwise the layer's null_meaning.not_covered
     const note = typeof props.coverage_note === 'string' && props.coverage_note ? props.coverage_note : nullText(firstNull, false);
     return (
       <div className="mt-3 rounded-md border border-dashed border-[#8a8f96] p-3">
@@ -93,15 +97,19 @@ function ValueRows({ layer, meta, props }: { layer: LayerEntry; meta: Meta; prop
         let text: string;
         let note = '';
         if (v === null || v === undefined || v === '') text = nullText(f, true);
-        else if (typeof v === 'boolean') text = v ? 'Yes' : 'No';
-        else if (typeof v === 'number') {
-          text = `${formatNumber(v, 1)}${f.unit ? ` ${f.unit}` : ''}`;
-          if (v === 0 && f.name === valueField && meta.display?.zero_class) note = 'none listed in the source';
-        } else text = String(v);
+        else {
+          const custom = mod.formatValue?.(f, v, meta) ?? null;
+          if (custom !== null) text = custom;
+          else if (typeof v === 'boolean') text = v ? 'Yes' : 'No';
+          else if (typeof v === 'number') {
+            text = `${formatNumber(v, 1)}${f.unit ? ` ${f.unit}` : ''}`;
+            if (v === 0 && f.name === valueField && meta.display?.zero_class) note = 'none listed in the source';
+          } else text = String(v);
+        }
         return (
           <div key={f.name} className="contents">
             <dt className="text-ink2" title={f.description}>{humanize(f.name)}</dt>
-            <dd className="text-right font-medium">
+            <dd className="break-words text-right font-medium">
               {text}
               {note && <span className="block text-xs font-normal text-muted">{note}</span>}
             </dd>
@@ -147,55 +155,24 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
     );
   }
 
+  const mod = MODULE_BY_TYPE[layer.tiles.geometry_type];
   const p = card.props;
-  const isLine = layer.tiles.geometry_type === 'line';
-  const key = String(isLine ? p.record_id ?? '' : p.unit_id ?? '');
-
-  if (isLine) {
-    const kv = typeof p.voltage_kv === 'number' && p.voltage_kv > 0 ? `${formatNumber(p.voltage_kv, 0)} kV` : 'Not recorded';
-    const band = VOLTAGE_BANDS.find((b) => b.id === p.voltage_band)?.label ?? String(p.voltage_band ?? '');
-    const rows: [string, string][] = [
-      ['Segment ID', key],
-      ['Voltage', kv],
-      ['Voltage class', String(p.voltage_class ?? '—')],
-      ['Voltage band', band],
-      ['Owner', String(p.owner ?? '—')],
-      ['Status', String(p.status ?? '—')],
-    ];
-    return (
-      <Shell title="Transmission line segment" subtitle={layer.title} onClose={onClose}>
-        <dl className="mt-3 grid grid-cols-[1fr_auto] gap-x-3 gap-y-2">
-          {rows.map(([k, v]) => (
-            <div key={k} className="contents">
-              <dt className="text-ink2">{k}</dt>
-              <dd className="break-words text-right font-medium">{v}</dd>
-            </div>
-          ))}
-        </dl>
-        <Footer layer={layer} meta={meta} anchor={anchor} cite={recordCitation(meta, key)} />
-      </Shell>
-    );
-  }
+  const key = String(p[mod.keyField] ?? '');
+  const noun = recordNoun(layer);
+  const title = typeof p.name === 'string' && p.name ? p.name : `${capitalize(noun)} ${key}`;
 
   return (
-    <Shell title={String(p.name ?? key)} subtitle={`${key} · ${layer.title}`} onClose={onClose}>
-      <ValueRows layer={layer} meta={meta} props={p} />
-      <Footer layer={layer} meta={meta} anchor={anchor} cite={recordCitation(meta, key)} />
-    </Shell>
-  );
-}
-
-function Footer({ layer, meta, anchor, cite }: { layer: LayerEntry; meta: Meta; anchor?: string; cite: string }) {
-  return (
-    <>
+    <Shell title={title} subtitle={`${key} · ${layer.title}`} onClose={onClose}>
+      <ValueRows layer={layer} meta={meta} props={p} keyField={mod.keyField} />
       <p className="mt-4 text-xs text-ink2">{sourceLine(meta)}</p>
       <p className="mt-1 text-xs text-ink2">Licence: <a href={meta.license.url}>{meta.license.name}</a></p>
       <p className="mt-1 text-xs text-ink2">{checkedByLine(meta)}</p>
-      <Downloads layer={layer} />
+      {mod.recordDownload && key && <RecordDownload layer={layer} meta={meta} keyField={mod.keyField} keyValue={key} />}
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        <CopyButton text={cite} label="Cite this record" />
+        <CopyButton text={recordCitation(meta, key)} label={mod.recordDownload ? 'Cite this record' : `Cite this ${noun}`} />
         {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
       </div>
-    </>
+      <p className="mt-3 text-sm"><Link href={`/data/#${layer.layer_id}`}>All files of this layer</Link></p>
+    </Shell>
   );
 }

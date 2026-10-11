@@ -14,6 +14,7 @@ export const COLORS = {
   adm0: '#3a3f45',
   adm1: '#6b7280',
   selected: '#0f6e6e',
+  point: '#2b2f36',
 } as const;
 
 export interface VoltageBand {
@@ -47,15 +48,15 @@ export function fillColorExpression(field: string, breaks: number[]): Expression
   ] as unknown as ExpressionSpecification;
 }
 
-export function bandColorExpression(): ExpressionSpecification {
-  const m: unknown[] = ['match', ['get', 'voltage_band']];
+export function bandColorExpression(field: string): ExpressionSpecification {
+  const m: unknown[] = ['match', ['get', field]];
   for (const b of VOLTAGE_BANDS) if (b.id !== 'unknown') m.push(b.id, b.color);
   m.push(VOLTAGE_BANDS[VOLTAGE_BANDS.length - 1].color);
   return m as unknown as ExpressionSpecification;
 }
 
-export function bandWidthExpression(): ExpressionSpecification {
-  const m: unknown[] = ['match', ['get', 'voltage_band']];
+export function bandWidthExpression(field: string): ExpressionSpecification {
+  const m: unknown[] = ['match', ['get', field]];
   for (const b of VOLTAGE_BANDS) if (b.id !== 'unknown') m.push(b.id, b.width);
   m.push(VOLTAGE_BANDS[VOLTAGE_BANDS.length - 1].width);
   return ['interpolate', ['linear'], ['zoom'], 3, ['*', m, 0.6], 9, ['*', m, 1.6]] as unknown as ExpressionSpecification;

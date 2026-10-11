@@ -6,21 +6,28 @@ import MapCanvas from './MapCanvas';
 import type { MapHandle } from './MapCanvas';
 import LayerPanel from './LayerPanel';
 import InfoCard from './InfoCard';
+import { MODULE_BY_TYPE } from './modules';
+import { selectDataLayers } from './select';
 import type { CardState, MapData } from './types';
 
 export default function MapApp({ data }: { data: MapData }) {
   const mapRef = useRef<MapHandle>(null);
-  const firstPoly = data.layers.find(
-    (l) => l.dataset === 'abf-layers' && l.tiles.geometry_type === 'polygon' && data.metas[l.meta_id]?.display?.value_field,
-  );
-  const [activeId, setActiveId] = useState<string>(firstPoly?.layer_id ?? 'none');
-  const [linesOn, setLinesOn] = useState<Record<string, boolean>>({});
+  // The fill layer that is on at start: the first one in the manifest order (generation, listed first)
+  const firstFill = selectDataLayers(data).find((l) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive);
+  const [activeId, setActiveId] = useState<string>(firstFill?.layer_id ?? 'none');
+  const [overlays, setOverlays] = useState<Record<string, boolean>>({});
   const [card, setCard] = useState<CardState>(null);
   const [failed, setFailed] = useState<Set<string>>(new Set());
 
   const onFailed = useCallback((id: string) => setFailed((prev) => (prev.has(id) ? prev : new Set(prev).add(id))), []);
 
-  const selectedUnit = card && card.type === 'record' && typeof card.props.unit_id === 'string' ? card.props.unit_id : null;
+  const selected = (() => {
+    if (!card || card.type !== 'record') return null;
+    const layer = data.layers.find((l) => l.layer_id === card.layerId);
+    if (!layer) return null;
+    const v = card.props[MODULE_BY_TYPE[layer.tiles.geometry_type].keyField];
+    return v === undefined || v === null ? null : { layerId: card.layerId, key: String(v) };
+  })();
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
@@ -29,21 +36,21 @@ export default function MapApp({ data }: { data: MapData }) {
           ref={mapRef}
           data={data}
           activeId={activeId}
-          linesOn={linesOn}
-          selectedUnit={selectedUnit}
+          overlays={overlays}
+          selected={selected}
           onSelect={setCard}
           onFailed={onFailed}
         />
         <LayerPanel
           data={data}
           activeId={activeId}
-          linesOn={linesOn}
+          overlays={overlays}
           failed={failed}
           hidden={card !== null}
           onActive={(id) => { setActiveId(id); setCard(null); }}
-          onLines={(id, on) => setLinesOn((prev) => ({ ...prev, [id]: on }))}
+          onOverlay={(id, on) => setOverlays((prev) => ({ ...prev, [id]: on }))}
           onInfo={(id) => setCard({ type: 'layer', layerId: id })}
-          onUS={() => mapRef.current?.fitUS()}
+          onZoom={(b) => mapRef.current?.fitBounds(b)}
           onWorld={() => mapRef.current?.fitWorld()}
         />
         <InfoCard data={data} card={card} onClose={() => setCard(null)} />

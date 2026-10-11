@@ -1,73 +1,65 @@
 'use client';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { forwardRef, useCallback, useImperativeHandle, useMemo, useRef, useState } from 'react';
+import { Fragment, forwardRef, useCallback, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import MapGL, { Layer, NavigationControl, Source } from 'react-map-gl/maplibre';
 import type { MapLayerMouseEvent, MapRef } from 'react-map-gl/maplibre';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import { registerPmtiles } from './pmtiles';
 import type { CardState, MapData } from './types';
-import { COLORS, bandColorExpression, bandWidthExpression, fillColorExpression } from '@/lib/style';
-import type { LayerEntry } from '@/lib/data';
+import { COLORS } from '@/lib/style';
+import { MODULES, MODULE_BY_TYPE } from './modules';
+import { selectBoundaryLayers, selectDataLayers } from './select';
 
 registerPmtiles();
 
 const BEFORE = 'labels-start';
 const STYLE_URL = process.env.NEXT_PUBLIC_BASEMAP_STYLE || '/styles/abf-base.json';
-const HIT_SUFFIXES = ['-fill', '-nc-hit'];
 
 export interface MapHandle {
-  fitUS: () => void;
+  fitBounds: (bbox: [number, number, number, number]) => void;
   fitWorld: () => void;
 }
 
 interface Props {
   data: MapData;
   activeId: string;
-  linesOn: Record<string, boolean>;
-  selectedUnit: string | null;
+  overlays: Record<string, boolean>;
+  selected: { layerId: string; key: string } | null;
   onSelect: (card: CardState) => void;
   onFailed: (layerId: string) => void;
 }
 
-const COVERED = ['==', ['get', 'coverage_status'], 'covered'] as ExpressionSpecification;
-const NOT_COVERED = ['!=', ['get', 'coverage_status'], 'covered'] as ExpressionSpecification;
-
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas(
-  { data, activeId, linesOn, selectedUnit, onSelect, onFailed },
-  ref,
-) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, onSelect, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
   useImperativeHandle(ref, () => ({
-    fitUS: () => mapRef.current?.fitBounds([[-125.5, 24], [-66, 49.8]], { padding: 24, duration: 1200 }),
+    fitBounds: (b) => mapRef.current?.fitBounds([[b[0], b[1]], [b[2], b[3]]], { padding: 24, duration: 1200 }),
     fitWorld: () => mapRef.current?.easeTo({ center: [-40, 30], zoom: 1.5, duration: 1200 }),
   }));
 
-  const polygons = useMemo(
-    () =>
-      data.layers.filter(
-        (l) => l.dataset === 'abf-layers' && l.tiles.geometry_type === 'polygon' && data.metas[l.meta_id]?.display?.value_field,
-      ),
-    [data],
-  );
-  const lines = useMemo(
-    () => data.layers.filter((l) => l.dataset === 'abf-layers' && l.tiles.geometry_type === 'line'),
-    [data],
-  );
+  const dataLayers = useMemo(() => selectDataLayers(data), [data]);
+
+  // layer_ids that are switched on: the active exclusive layer plus the ticked overlays
+  const visible = useMemo(() => {
+    const v = new Set<string>();
+    for (const l of dataLayers) {
+      if (MODULE_BY_TYPE[l.tiles.geometry_type].exclusive ? l.layer_id === activeId : overlays[l.layer_id]) v.add(l.layer_id);
+    }
+    return v;
+  }, [dataLayers, activeId, overlays]);
+
   const bnd = useMemo(() => {
-    const all = data.layers.filter((l) => l.dataset === 'abf-boundaries');
+    const all = selectBoundaryLayers(data);
     const by = (sl: string) => all.find((l) => l.tiles.source_layer === sl);
     return { adm0: by('adm0'), adm1: by('adm1'), adm2: by('adm2'), disputed: by('disputed_unassigned') };
   }, [data]);
 
-  const interactiveLayerIds = useMemo(() => {
-    const ids: string[] = [];
-    for (const l of lines) if (linesOn[l.layer_id]) ids.push(`${l.layer_id}-hit`);
-    if (activeId !== 'none') for (const s of HIT_SUFFIXES) ids.push(`${activeId}${s}`);
-    return ids;
-  }, [activeId, lines, linesOn]);
+  const interactiveLayerIds = useMemo(
+    () => dataLayers.filter((l) => visible.has(l.layer_id)).flatMap((l) => MODULE_BY_TYPE[l.tiles.geometry_type].hitLayerIds(l.layer_id)),
+    [dataLayers, visible],
+  );
 
   const onClick = useCallback(
     (e: MapLayerMouseEvent) => {
@@ -76,53 +68,14 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas(
         onSelect(null);
         return;
       }
-      const lid = f.layer.id;
-      let layerId = lid;
-      if (lid.endsWith('-hit') && !lid.endsWith('-nc-hit')) layerId = lid.slice(0, -4);
-      else {
-        const suffix = HIT_SUFFIXES.find((s) => lid.endsWith(s));
-        if (suffix) layerId = lid.slice(0, -suffix.length);
-      }
-      onSelect({ type: 'record', layerId, props: { ...(f.properties as Record<string, unknown>) } });
+      // every layer has its own source, and the source id is the layer_id
+      onSelect({ type: 'record', layerId: f.source, props: { ...(f.properties as Record<string, unknown>) } });
     },
     [onSelect],
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
-
-  const lineLayer = (l: LayerEntry) => {
-    const visibility = linesOn[l.layer_id] ? 'visible' : 'none';
-    return (
-      <Source key={l.layer_id} id={l.layer_id} type="vector" url={`pmtiles://${l.tiles.url}`}>
-        <Layer
-          id={`${l.layer_id}-line`}
-          type="line"
-          source-layer={l.tiles.source_layer}
-          beforeId={BEFORE}
-          filter={['!=', ['get', 'voltage_band'], 'unknown'] as ExpressionSpecification}
-          layout={{ visibility, 'line-cap': 'round' }}
-          paint={{ 'line-color': bandColorExpression(), 'line-width': bandWidthExpression() }}
-        />
-        <Layer
-          id={`${l.layer_id}-line-unknown`}
-          type="line"
-          source-layer={l.tiles.source_layer}
-          beforeId={BEFORE}
-          filter={['==', ['get', 'voltage_band'], 'unknown'] as ExpressionSpecification}
-          layout={{ visibility }}
-          paint={{ 'line-color': '#8a8f96', 'line-width': 0.8, 'line-dasharray': [2, 2] }}
-        />
-        <Layer
-          id={`${l.layer_id}-hit`}
-          type="line"
-          source-layer={l.tiles.source_layer}
-          beforeId={BEFORE}
-          layout={{ visibility }}
-          paint={{ 'line-color': '#ffffff', 'line-opacity': 0.01, 'line-width': 12 }}
-        />
-      </Source>
-    );
-  };
+  const ctx = useMemo(() => ({ metas: data.metas, visible, selected, before: BEFORE }), [data.metas, visible, selected]);
 
   return (
     <MapGL
@@ -144,65 +97,10 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas(
     >
       <NavigationControl position="bottom-right" showCompass={false} />
 
-      {/* 1. County layers: all mounted in a fixed order, only the active one is visible */}
-      {polygons.map((l) => {
-        const meta = data.metas[l.meta_id];
-        const d = meta.display!;
-        const field = d.value_field!;
-        const vis = l.layer_id === activeId ? 'visible' : 'none';
-        return (
-          <Source key={l.layer_id} id={l.layer_id} type="vector" url={`pmtiles://${l.tiles.url}`}>
-            <Layer
-              id={`${l.layer_id}-fill`}
-              type="fill"
-              source-layer={l.tiles.source_layer}
-              beforeId={BEFORE}
-              filter={COVERED}
-              layout={{ visibility: vis }}
-              paint={{ 'fill-color': fillColorExpression(field, d.breaks ?? []) }}
-            />
-            {d.zero_class && (
-              <Layer
-                id={`${l.layer_id}-zero`}
-                type="line"
-                source-layer={l.tiles.source_layer}
-                beforeId={BEFORE}
-                filter={['all', COVERED, ['==', ['get', field], 0]] as ExpressionSpecification}
-                layout={{ visibility: vis }}
-                paint={{ 'line-color': COLORS.zeroStroke, 'line-width': 0.5 }}
-              />
-            )}
-            {/* Not covered: no fill, dashed outline (fallback approved in SPEC_WEB section 6) */}
-            <Layer
-              id={`${l.layer_id}-nc`}
-              type="line"
-              source-layer={l.tiles.source_layer}
-              beforeId={BEFORE}
-              filter={NOT_COVERED}
-              layout={{ visibility: vis }}
-              paint={{ 'line-color': COLORS.notCovered, 'line-width': 0.8, 'line-dasharray': [2, 2] }}
-            />
-            <Layer
-              id={`${l.layer_id}-nc-hit`}
-              type="fill"
-              source-layer={l.tiles.source_layer}
-              beforeId={BEFORE}
-              filter={NOT_COVERED}
-              layout={{ visibility: vis }}
-              paint={{ 'fill-color': COLORS.surface, 'fill-opacity': 0.01 }}
-            />
-            <Layer
-              id={`${l.layer_id}-sel`}
-              type="line"
-              source-layer={l.tiles.source_layer}
-              beforeId={BEFORE}
-              filter={['==', ['get', 'unit_id'], selectedUnit ?? ''] as ExpressionSpecification}
-              layout={{ visibility: vis === 'visible' && selectedUnit ? 'visible' : 'none' }}
-              paint={{ 'line-color': COLORS.selected, 'line-width': 2.5 }}
-            />
-          </Source>
-        );
-      })}
+      {/* 1. Fill layers: all mounted in a fixed order, only the active one is visible */}
+      {MODULES.filter((m) => m.exclusive).map((m) => (
+        <Fragment key={m.type}>{m.renderLayers(dataLayers.filter((l) => l.tiles.geometry_type === m.type), ctx)}</Fragment>
+      ))}
 
       {/* 2. Boundaries: one PMTiles file, several source layers */}
       {bnd.adm0 && (
@@ -271,8 +169,10 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas(
         </Source>
       )}
 
-      {/* 3. Line overlays (transmission segments) */}
-      {lines.map(lineLayer)}
+      {/* 3. Overlays: lines, then points (each geometry type has its own module) */}
+      {MODULES.filter((m) => !m.exclusive).map((m) => (
+        <Fragment key={m.type}>{m.renderLayers(dataLayers.filter((l) => l.tiles.geometry_type === m.type), ctx)}</Fragment>
+      ))}
     </MapGL>
   );
 });

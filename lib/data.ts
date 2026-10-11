@@ -52,7 +52,7 @@ export interface Meta {
   sources: SourceInfo[];
   license: LicenseInfo;
   freshness: { source_current_through: string | null; source_cadence: string; built_at: string; next_check: string | null };
-  coverage: { geography: string; frame?: { iso3: string; level: string } | null; n_units_frame: number | null; n_units_covered: number | null; n_records: number; known_gaps: string[] };
+  coverage: { geography: string; frame?: { iso3: string; level: string; country_name?: string } | null; n_units_frame: number | null; n_units_covered: number | null; n_records: number; known_gaps: string[] };
   release: { dataset: string; version: string; tag: string; doi: string | null; published_at: string };
   verification: {
     levels: Record<string, number>;
