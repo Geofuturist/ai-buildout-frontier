@@ -60,8 +60,8 @@ sources:
       text: >-
         The Queued Up page states that the data file is licensed CC BY 4.0 and may be used, shared or
         adapted as long as it is attributed to Lawrence Berkeley National Laboratory and GridTracker.
-      checked_at: "2026-09-20"
-      checked_by: "agent:RES"
+      checked_at: "2026-10-11"
+      checked_by: "script:license_phrases.py"
       evidence_url: "https://emp.lbl.gov/queues"
     publication_mode: open_licence
   - source_id: census_cb_2023

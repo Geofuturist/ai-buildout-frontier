@@ -6,7 +6,7 @@ Run commands (from the repository root, Windows):
     python scripts\\publish\\license_phrases.py lbnl
     python scripts\\publish\\license_phrases.py oedi
 
-lbnl reads  research\\publish\\licences\\lbnl_queues.html  (V saves the page by hand: Ctrl+S, "Webpage, HTML only")
+lbnl reads  research\\publish\\licences\\lbnl_queues.html or .htm  (V saves the page by hand: Ctrl+S, "Webpage, HTML only")
 oedi reads  research\\publish\\licences\\nrel_oedi_8562_1.html  (saved earlier by fetch_licences.py)
 
 Every required sentence must be found. The script prints each hit with its surroundings, writes the
@@ -29,7 +29,7 @@ OUT_DIR = Path("research") / "publish" / "licences"
 # key -> (file patterns, [(label, regex, required)])
 CHECKS: dict[str, tuple[list[str], list[tuple[str, str, bool]]]] = {
     "lbnl": (
-        ["lbnl_queues.html", "lbnl_queued_up_*.html"],
+        ["lbnl_queues.html", "lbnl_queues.htm", "lbnl_queued_up_*.html"],
         [
             ("license sentence", r"Queued Up data file is licensed CC BY 4\.0", True),
             ("attribution sentence", r"attribute it to Lawrence Berkeley National Laboratory and GridTracker", True),
