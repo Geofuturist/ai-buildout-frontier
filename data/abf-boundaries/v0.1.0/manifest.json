@@ -1,0 +1,266 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-boundaries",
+  "version": "0.1.0",
+  "tag": "abf-boundaries-v0.1.0",
+  "doi": "10.5281/zenodo.23295311",
+  "published_at": "2026-10-15",
+  "boundary_release": null,
+  "base_path": "abf-boundaries/v0.1.0/",
+  "layers": [
+    {
+      "layer_id": "boundaries_adm0",
+      "title": "Boundaries · adm0",
+      "domain": "boundaries",
+      "level": "ADM0",
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        83.6341
+      ],
+      "meta": {
+        "path": "abf_boundaries.meta.json",
+        "bytes": 12868,
+        "sha256": "5207832ec0d52d32e260d38d3e8f67587493eda196c620be1e075d5934092bfb"
+      },
+      "files": {
+        "parquet": {
+          "path": "adm0.parquet",
+          "bytes": 4092270,
+          "sha256": "208c3a75f106f96617bdb2767a90ef7425ae38f01807e3426ab7996f87ad0c72"
+        },
+        "geojson.gz": {
+          "path": "adm0.geojson.gz",
+          "bytes": 4617109,
+          "sha256": "497002e24193af79b4f2f34fe24b7d97489a4e9bee675c484ea56c8795075c85"
+        },
+        "pmtiles": {
+          "path": "boundaries.pmtiles",
+          "bytes": 39500215,
+          "sha256": "ae27a10cc9ef6ea1b180f2259bd4069df73f66bbe39e5aeae05ac76c0c519591"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "boundaries.pmtiles",
+        "source_layer": "adm0",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "iso3",
+          "level",
+          "adm0_status"
+        ]
+      }
+    },
+    {
+      "layer_id": "boundaries_adm1",
+      "title": "Boundaries · adm1",
+      "domain": "boundaries",
+      "level": "ADM1",
+      "bbox": [
+        -179.1467,
+        -21.3708,
+        179.7785,
+        80.7701
+      ],
+      "meta": {
+        "path": "abf_boundaries.meta.json",
+        "bytes": 12868,
+        "sha256": "5207832ec0d52d32e260d38d3e8f67587493eda196c620be1e075d5934092bfb"
+      },
+      "files": {
+        "parquet": {
+          "path": "adm1.parquet",
+          "bytes": 3607771,
+          "sha256": "8244eecda621fc9279577e3890760fa61fc0513871951cb34eb84a1aed28e721"
+        },
+        "geojson.gz": {
+          "path": "adm1.geojson.gz",
+          "bytes": 3398096,
+          "sha256": "f3c700e05f3b92fbf4281c9483afc65ee7234199ce6d05d6cc386bf538bcef70"
+        },
+        "pmtiles": {
+          "path": "boundaries.pmtiles",
+          "bytes": 39500215,
+          "sha256": "ae27a10cc9ef6ea1b180f2259bd4069df73f66bbe39e5aeae05ac76c0c519591"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "boundaries.pmtiles",
+        "source_layer": "adm1",
+        "geometry_type": "polygon",
+        "minzoom": 2,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "iso3",
+          "level"
+        ]
+      }
+    },
+    {
+      "layer_id": "boundaries_adm2",
+      "title": "Boundaries · adm2",
+      "domain": "boundaries",
+      "level": "ADM2",
+      "bbox": [
+        -179.1467,
+        -21.3708,
+        179.7785,
+        71.3878
+      ],
+      "meta": {
+        "path": "abf_boundaries.meta.json",
+        "bytes": 12868,
+        "sha256": "5207832ec0d52d32e260d38d3e8f67587493eda196c620be1e075d5934092bfb"
+      },
+      "files": {
+        "parquet": {
+          "path": "adm2.parquet",
+          "bytes": 13573802,
+          "sha256": "cd5bd0f4ecdd6d4164c7485c0399dad19b89e2a0db6ffe4a75db65385bb6730b"
+        },
+        "geojson.gz": {
+          "path": "adm2.geojson.gz",
+          "bytes": 14034980,
+          "sha256": "2d03ee8f54519cd52db5fae1031ae52af430e1c672a398cf21f06204cb059c9d"
+        },
+        "pmtiles": {
+          "path": "boundaries.pmtiles",
+          "bytes": 39500215,
+          "sha256": "ae27a10cc9ef6ea1b180f2259bd4069df73f66bbe39e5aeae05ac76c0c519591"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "boundaries.pmtiles",
+        "source_layer": "adm2",
+        "geometry_type": "polygon",
+        "minzoom": 4,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "iso3",
+          "level"
+        ]
+      }
+    },
+    {
+      "layer_id": "boundaries_disputed_unassigned",
+      "title": "Boundaries · disputed_unassigned",
+      "domain": "boundaries",
+      "level": "ADM0",
+      "bbox": [
+        -73.588,
+        -49.76,
+        77.8003,
+        35.6478
+      ],
+      "meta": {
+        "path": "abf_boundaries.meta.json",
+        "bytes": 12868,
+        "sha256": "5207832ec0d52d32e260d38d3e8f67587493eda196c620be1e075d5934092bfb"
+      },
+      "files": {
+        "parquet": {
+          "path": "disputed_unassigned.parquet",
+          "bytes": 13298,
+          "sha256": "ee3cfbbbd719313ab19c96cc95c8ce70bb68fd87a278549fcf4bfc9da77a0fea"
+        },
+        "geojson.gz": {
+          "path": "disputed_unassigned.geojson.gz",
+          "bytes": 1950,
+          "sha256": "6e41c990e4881999099f7ce8439045b326ce067b057ed5fbd7524418decb9bdf"
+        },
+        "pmtiles": {
+          "path": "boundaries.pmtiles",
+          "bytes": 39500215,
+          "sha256": "ae27a10cc9ef6ea1b180f2259bd4069df73f66bbe39e5aeae05ac76c0c519591"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "boundaries.pmtiles",
+        "source_layer": "disputed_unassigned",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "label"
+        ]
+      }
+    }
+  ],
+  "extra_files": [
+    {
+      "path": "analysis_usa_adm1.parquet",
+      "bytes": 2334751,
+      "sha256": "b21843119c619a1980f0b1cf8f53ec6f726cc4f706c7d00bfc0a538ea05861b5",
+      "description": "Geometry used for calculations (USA ADM1), EPSG:4326; not for display."
+    },
+    {
+      "path": "analysis_usa_adm2.parquet",
+      "bytes": 6997062,
+      "sha256": "aaeb8e02070fa62ba8a946de98173e19108ab6b0200dad496f019c8604d2dac8",
+      "description": "Geometry used for calculations (USA ADM2), EPSG:4326; not for display."
+    },
+    {
+      "path": "analysis_nor_adm1.parquet",
+      "bytes": 1386046,
+      "sha256": "2b4ab0f38fb5286e11785b9e61714cfcb47cc756606657373923e0b02f0f4272",
+      "description": "Geometry used for calculations (NOR ADM1), EPSG:4326; not for display."
+    },
+    {
+      "path": "analysis_nor_adm2.parquet",
+      "bytes": 6655894,
+      "sha256": "f37386250af4e6a0282c2beb465743d768b95afa7dfa6128b960d7266bdaf88b",
+      "description": "Geometry used for calculations (NOR ADM2), EPSG:4326; not for display."
+    },
+    {
+      "path": "units.csv",
+      "bytes": 402913,
+      "sha256": "d247291df9e966249f5996f4755d8ee65af1b30ae2853eb84d7cbc95764a6b2d",
+      "description": "List of all units without geometry: unit_id, iso3, level, name, parent_id, adm0_status, source, license, boundary_vintage."
+    },
+    {
+      "path": "boundary_registry.csv",
+      "bytes": 4127,
+      "sha256": "1d50f369421aae56dc3dad6d8d5af98bb3e31516ab40f00f504a31476d31d332",
+      "description": "Boundary registry: method, source, license and verification status of every country and level."
+    },
+    {
+      "path": "adm0_overrides.csv",
+      "bytes": 503,
+      "sha256": "9b610557dbd9c9a91ac99638f72239ac0355599ef856c703de1cb933dba492d1",
+      "description": "Overrides applied to ADM0 status of countries."
+    },
+    {
+      "path": "holes_whitelist.geojson",
+      "bytes": 69412,
+      "sha256": "2de137654cbd526c1f0ab753dd1245cc709f063e46c3c1e91e0f527eb689b783",
+      "description": "Reviewed list of holes in the boundary geometry that are accepted as they are."
+    },
+    {
+      "path": "validation_report.json",
+      "bytes": 2232,
+      "sha256": "ec2751059b2641d6c21d5f82ac9b414bc74a6daa75196950ead2db2aa6829b45",
+      "description": "Validation report of the boundaries build."
+    },
+    {
+      "path": "unit_hashes.csv",
+      "bytes": 182036,
+      "sha256": "3673258de078bd7d2c66361246bc18e3742536bef57cf6c38f60829591980418",
+      "description": "Hash of the geometry of every unit."
+    }
+  ],
+  "source_archives": []
+}
