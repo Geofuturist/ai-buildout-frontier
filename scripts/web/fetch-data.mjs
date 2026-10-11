@@ -196,6 +196,23 @@ async function main() {
     else if (newer(m[1], bnd.version)) strict(`${n} refers to boundaries v${m[1]}, newer than the current v${bnd.version}`);
   }
 
+  // Layer that is on when the map opens: content/site.json -> default_layer (SPEC_WEB 0.3 p.6).
+  // Pointer order is alphabetical, so "the first layer" would depend on dataset names.
+  let defaultLayer = null;
+  const sitePath = path.join(ROOT, 'content', 'site.json');
+  if (fs.existsSync(sitePath)) {
+    let site = {};
+    try {
+      site = JSON.parse(fs.readFileSync(sitePath, 'utf8'));
+    } catch {
+      fail('content/site.json is not valid JSON');
+    }
+    if (site.default_layer) {
+      if (layers.some((l) => l.layer_id === site.default_layer && datasets[l.dataset].kind === 'layers')) defaultLayer = site.default_layer;
+      else strict(`content/site.json: default_layer "${site.default_layer}" is not a layer of the pointer; the first fill layer is used`);
+    }
+  }
+
   // 3. Methodology placeholders and anchors
   const layerTitles = layers.filter((l) => datasets[l.dataset].kind === 'layers').map((l) => ({ id: l.layer_id, title: l.title }));
   const mdSrc = fs.readFileSync(path.join(ROOT, 'content', 'methodology.md'), 'utf8');
@@ -309,6 +326,7 @@ async function main() {
     layers,
     metas,
     anchors,
+    default_layer: defaultLayer,
     attribution: groups,
     warnings,
   };

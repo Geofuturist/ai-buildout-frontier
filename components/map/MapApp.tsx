@@ -12,8 +12,9 @@ import type { CardState, MapData } from './types';
 
 export default function MapApp({ data }: { data: MapData }) {
   const mapRef = useRef<MapHandle>(null);
-  // The fill layer that is on at start: the first one in the manifest order (generation, listed first)
-  const firstFill = selectDataLayers(data).find((l) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive);
+  // The fill layer that is on at start: content/site.json default_layer, otherwise the first fill layer
+  const fills = selectDataLayers(data).filter((l) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive);
+  const firstFill = fills.find((l) => l.layer_id === data.default_layer) ?? fills[0];
   const [activeId, setActiveId] = useState<string>(firstFill?.layer_id ?? 'none');
   const [overlays, setOverlays] = useState<Record<string, boolean>>({});
   const [card, setCard] = useState<CardState>(null);

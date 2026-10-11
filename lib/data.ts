@@ -131,6 +131,8 @@ export interface AbfData {
   layers: LayerEntry[];
   metas: Record<string, Meta>;
   anchors: Record<string, string>;
+  /** layer_id that is on when the map opens (content/site.json), or null */
+  default_layer: string | null;
   attribution: { family: LicenseInfo['family']; sources: AttributionSource[] }[];
   warnings: string[];
 }
