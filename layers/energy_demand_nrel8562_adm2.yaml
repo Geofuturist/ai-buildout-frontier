@@ -32,7 +32,7 @@ sources:
       States (Obika, Cole, Rivers), DOI 10.25984/3366592
     url: "https://data.openei.org/submissions/8562"
     edition: "submitted 2025-11-05, page last updated 2026-06-02; year 2023 of the 2016–2023 series"
-    retrieved_at: legacy_meta
+    retrieved_at: "2026-06-29"
     current_through: "2023-12-31"
     input_refs: [table]
     license:
@@ -46,9 +46,9 @@ sources:
         submission 8562, DOI 10.25984/3366592, CC BY 4.0.
     rights_basis:
       type: license
-      text: "The OEDI dataset page states CC BY 4.0."
-      checked_at: "2026-09-20"
-      checked_by: "agent:RES"
+      text: "The dataset’s page on OEDI links its License entry to Creative Commons Attribution 4.0 (creativecommons.org/licenses/by/4.0/), and the site states that content is available under Creative Commons Attribution 4.0 unless otherwise noted."
+      checked_at: "2026-10-11"
+      checked_by: "script:license_phrases.py"
       evidence_url: "https://data.openei.org/submissions/8562"
     publication_mode: open_licence
   - source_id: census_cb_2023

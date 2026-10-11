@@ -100,7 +100,7 @@ sources:
     checked_at: 2026-10-10
     checked_by: script:download_fra
     evidence_url: https://opendata.agenceore.fr/datasets/6l33py6xpnaolvzkckzkhcic
-  retrieved_at: legacy_meta
+  retrieved_at: '2026-10-10'
   input_refs:
   - table
   - source_workbook

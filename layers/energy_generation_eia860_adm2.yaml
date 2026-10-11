@@ -55,7 +55,7 @@ sources:
     product: "Form EIA-860, annual electric generator data (Schedule 3 generators, Schedule 2 plants)"
     url: "https://www.eia.gov/electricity/data/eia860/"
     edition: "2025 final"
-    retrieved_at: legacy_meta
+    retrieved_at: "2026-10-06"
     current_through: "2025-12-31"
     input_refs: [table, source_workbook]
     license:

@@ -81,6 +81,40 @@ def page_text(raw: bytes) -> str:
             .replace(" ", " "))
 
 
+class _Links(HTMLParser):
+    """All <a href> with their visible text."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.links: list[tuple[str, str]] = []
+        self._href: str | None = None
+        self._buf: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "a":
+            self._href = dict(attrs).get("href") or ""
+            self._buf = []
+
+    def handle_data(self, data: str) -> None:
+        if self._href is not None:
+            self._buf.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "a" and self._href is not None:
+            self.links.append((" ".join(" ".join(self._buf).split()), self._href))
+            self._href = None
+
+
+def license_link_hrefs(raw: bytes) -> list[str]:
+    """href values of every link whose visible text is 'License' / 'Licence'."""
+    parser = _Links()
+    parser.feed(raw.decode("utf-8", errors="replace"))
+    return [h for t, h in parser.links if re.fullmatch(r"licen[cs]e", t, re.I)]
+
+
+OEDI_LICENSE_HREF = "https://creativecommons.org/licenses/by/4.0/"
+
+
 def main(argv: list[str]) -> int:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     if len(argv) != 2 or argv[1] not in CHECKS:
@@ -105,6 +139,15 @@ def main(argv: list[str]) -> int:
             lines.append(f"MISSING {label} ({'required' if required else 'optional'}): {regex}")
             if required:
                 missing.append(label)
+    if key == "oedi":
+        hrefs = license_link_hrefs(page.read_bytes())
+        lines.append("")
+        lines.append(f"License link href(s) found: {hrefs}")
+        if any(h.rstrip("/") + "/" == OEDI_LICENSE_HREF for h in hrefs):
+            lines.append(f"HREF OK: the License link points to {OEDI_LICENSE_HREF}")
+        else:
+            lines.append(f"HREF MISMATCH: expected {OEDI_LICENSE_HREF}; STOP and ask RES")
+            missing.append("license link href")
     lines.append("")
     lines.append("RESULT: " + ("ALL REQUIRED SENTENCES FOUND" if not missing else f"STOP, missing: {missing}"))
     report = "\n".join(lines)

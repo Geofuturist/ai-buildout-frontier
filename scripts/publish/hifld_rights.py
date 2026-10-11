@@ -221,7 +221,7 @@ def check_hifld_rights(
             "expected public-domain wording."
         ),
         known_gap=(
-            "The archive carries no dataset metadata; licence status is taken from the publisher's "
+            "The archive carries no dataset metadata; license status is taken from the publisher's "
             "metadata for the same edition (30 Sep 2024)."
         ),
     )

@@ -659,8 +659,8 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     checks.append({"id": "input_sha256", "description":
                    "SHA-256 of every input file was computed at the start and again at the end of the build; they match."})
     checks.append({"id": "frame_complete", "description":
-                   f"The file has exactly one row for each of the {n_frame} {iso3} {level} units of the boundaries release; "
-                   f"{int((~nc).sum())} are covered and {int(nc.sum())} are not_covered with empty values."})
+                   f"The file has exactly one row for each of the {n_frame:,} {iso3} {level} units of the boundaries release; "
+                   f"{int((~nc).sum()):,} are covered and {int(nc.sum()):,} are not_covered with empty values."})
     checks.append({"id": "unit_id_in_boundaries", "description":
                    "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."})
     checks.append({"id": "schema_fields", "description":
@@ -897,7 +897,7 @@ def run_csv_totals(layer_id, tvs, table, checks, report) -> None:  # noqa: ANN00
     report.section(f"totals_vs_source ({layer_id})", lines)
     outside_text = "; ".join(f"{n} {c} rows" for n, c, _ in out_parts) if tvs.get("outside") else "none"
     checks.append({"id": "totals_vs_source", "description":
-                   f"The source table was filtered by the stated rules and summed again by unit: {len(done)} layer columns "
+                   f"The source table was filtered by the stated rules and summed again by unit: {len(done):,} layer columns "
                    f"({', '.join(done)}) equal the recomputed sums in every covered unit; the source total equals the layer total "
                    f"plus the rows outside the units ({outside_text})."})
 
@@ -1010,7 +1010,7 @@ def run_reconciliation(layer_id, tvs, src, layer_sum, table, checks, report) -> 
                               f"{kept_mw:.3f} MW, the layer has {layer_n} / {layer_sum:.3f} MW; " + "; ".join(
                                   f"{r['name']}: {r['n']} / {r['mw']} MW" for r in rows))
     checks.append({"id": "totals_vs_source", "description":
-                   f"All {len(src)} {tvs['status_value']} requests of the source workbook were split into disjoint categories "
+                   f"All {len(src):,} {tvs['status_value']} requests of the source workbook were split into disjoint categories "
                    f"and recomputed: {kept_n} requests ({kept_mw:.1f} MW) equal the layer; excluded: "
                    + "; ".join(f"{r['name']} {r['n']} requests ({r['mw']:.1f} MW)" for r in rows) + "."})
 
@@ -1194,7 +1194,7 @@ def build_line_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         {"id": "schema_fields", "description":
          "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."},
         {"id": "record_id_unique", "description":
-         f"record_id (the HIFLD ID) is present and unique in all {len(table)} segments; none has an empty geometry."},
+         f"record_id (the HIFLD ID) is present and unique in all {len(table):,} segments; none has an empty geometry."},
     ]
     sources = build_sources(cfg, ctx, table_path, {"archive": resolve_path(cfg["source_archive"]["path"])
                                                    if cfg.get("source_archive") else table_path})
@@ -1203,10 +1203,10 @@ def build_line_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     known_gaps = list(cfg["coverage"].get("known_gaps", []))
     if hifld_gap:
         known_gaps.append(hifld_gap)
-    known_gaps.append(
-        f"{vstats['unknown']} of {len(table)} segments have no usable voltage; their voltage_band is unknown. "
-        f"{vstats['from_class']} more have no numeric voltage and take the band of their voltage_class."
-    )
+    gap = f"{vstats['unknown']:,} of {len(table):,} segments have no usable voltage; their voltage_band is unknown."
+    if vstats["from_class"]:
+        gap += f" {vstats['from_class']:,} more have no numeric voltage and take the band of their voltage_class."
+    known_gaps.append(gap)
     coverage = {
         "geography": cfg["coverage"]["geography"],
         "frame": None, "n_units_frame": None, "n_units_covered": None,
@@ -1326,7 +1326,7 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         {"id": "schema_fields", "description":
          "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."},
         {"id": "record_id_unique", "description":
-         f"record_id is present and unique in all {len(table)} records."},
+         f"record_id is present and unique in all {len(table):,} records."},
     ]
     if uc:
         if not ctx.boundaries.verified(uc["iso3"], uc["level"]):

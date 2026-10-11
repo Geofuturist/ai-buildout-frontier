@@ -46,7 +46,7 @@ sources:
     product: "Queued Up: 2026 Edition, interconnection queue data file (data through end of 2025)"
     url: "https://emp.lbl.gov/queues"
     edition: "Queued Up 2026"
-    retrieved_at: legacy_meta
+    retrieved_at: "2026-10-07"
     current_through: "2025-12-31"
     input_refs: [table, source_workbook]
     license:

@@ -188,7 +188,7 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
     report_lines += [f"- {n}" for n in notes]
 
     # reference files of the boundaries release
-    for key, desc in (("registry", "Boundary registry: method, source, licence and verification status of every country and level."),
+    for key, desc in (("registry", "Boundary registry: method, source, license and verification status of every country and level."),
                       ("adm0_overrides", "Overrides applied to ADM0 status of countries."),
                       ("holes_whitelist", "Reviewed list of holes in the boundary geometry that are accepted as they are."),
                       ("validation_report", "Validation report of the boundaries build."),
