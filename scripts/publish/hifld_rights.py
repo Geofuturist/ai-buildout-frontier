@@ -166,6 +166,7 @@ def check_hifld_rights(
     archive: Path,
     external_html: Path | None,
     expected: dict[str, str],
+    publish_name: str | None = None,
 ) -> RightsResult:
     """Run the section 10 check. Raises GateError when [ARCH] must be asked."""
     xml_name: str | None = None
@@ -194,7 +195,7 @@ def check_hifld_rights(
                         f"archive metadata has a description section but field {key} is "
                         f"{joined[key]!r}, expected {want!r}. STOP: ask [ARCH].",
                     )
-            archive_stem = archive.name
+            archive_stem = publish_name or archive.name
             return RightsResult(
                 mode="xml",
                 check_id="rights_metadata_xml",
@@ -220,7 +221,7 @@ def check_hifld_rights(
             "expected public-domain wording."
         ),
         known_gap=(
-            "The archive carries no dataset metadata; licence status is taken from the publisher's "
+            "The archive carries no dataset metadata; license status is taken from the publisher's "
             "metadata for the same edition (30 Sep 2024)."
         ),
     )

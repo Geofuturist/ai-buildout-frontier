@@ -1,0 +1,18 @@
+# Release of the dataset of France (ADR r10 section 4.4, SPEC_META r9 section 6 item 25): four layers of France,
+# one dataset per country. Own Zenodo record, own published_at.
+dataset: abf-fra
+version: 0.1.0
+tag: abf-fra-v0.1.0
+doi: 10.5281/zenodo.23300637    # Zenodo draft of abf-fra (reserved by V, 11.10); ignored by channel dev
+published_at: "2026-10-13"      # agreed with V 11.10: the day of Publish in Zenodo
+built_at: null                  # set by the first final build and then kept
+boundary_release: abf-boundaries-v0.1.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'
+  registry: 'boundaries\boundary_registry.csv'
+  name_overrides: 'boundaries\name_overrides.csv'
+layers:
+  - 'layers\energy_generation_odre_adm2.yaml'
+  - 'layers\energy_consumption_agenceore_adm2.yaml'
+  - 'layers\energy_transmission_rte_adm2.yaml'
+  - 'layers\dc_icpe_georisques.yaml'

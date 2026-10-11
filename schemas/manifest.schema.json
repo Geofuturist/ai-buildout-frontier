@@ -11,7 +11,7 @@
   ],
   "properties": {
     "schema_version": {"const": "abf-manifest-1.0"},
-    "dataset": {"enum": ["abf-layers", "abf-boundaries"]},
+    "dataset": {"type": "string", "pattern": "^abf-[a-z0-9]+$"},
     "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
     "tag": {"type": "string", "pattern": "^abf-[a-z]+-v\\d+\\.\\d+\\.\\d+$"},
     "doi": {"anyOf": [{"type": "null"}, {"type": "string", "pattern": "^10\\.5281/zenodo\\.\\d+$"}]},
@@ -65,6 +65,10 @@
         "domain": {"enum": ["energy", "dc", "restrictions", "observability", "boundaries"]},
         "level": {"enum": ["ADM0", "ADM1", "ADM2", "point", "line"]},
         "bbox": {
+          "type": "array", "minItems": 4, "maxItems": 4,
+          "items": {"type": "number"}
+        },
+        "home_bbox": {
           "type": "array", "minItems": 4, "maxItems": 4,
           "items": {"type": "number"}
         },

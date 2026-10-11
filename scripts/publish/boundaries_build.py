@@ -188,7 +188,7 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
     report_lines += [f"- {n}" for n in notes]
 
     # reference files of the boundaries release
-    for key, desc in (("registry", "Boundary registry: method, source, licence and verification status of every country and level."),
+    for key, desc in (("registry", "Boundary registry: method, source, license and verification status of every country and level."),
                       ("adm0_overrides", "Overrides applied to ADM0 status of countries."),
                       ("holes_whitelist", "Reviewed list of holes in the boundary geometry that are accepted as they are."),
                       ("validation_report", "Validation report of the boundaries build."),
@@ -299,7 +299,7 @@ def _boundaries_sources(cfg: dict[str, Any], ctx: BuildContext) -> list[dict[str
             raise GateError("G6", f"{src['source_id']}: no upstream record with a SHA-256 in the boundaries meta.json")
         src["inputs"] = sorted(inputs, key=lambda x: x["file"])
         src["retrieved_at"] = str(src["retrieved_at"])
-        src["current_through"] = str(src["current_through"])
+        src["current_through"] = None if src["current_through"] is None else str(src["current_through"])
         for key in ("checked_at",):
             if key in src.get("rights_basis", {}):
                 src["rights_basis"][key] = str(src["rights_basis"][key])

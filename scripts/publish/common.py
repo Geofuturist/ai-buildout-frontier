@@ -38,6 +38,13 @@ P9_VALUE_REGEX = re.compile(
     r"backup\b.*\bload|rubrique|regime)\b",
     re.IGNORECASE,
 )
+# G3b: P9, power fields of a data-center (dc) layer. A field name that looks like a power quantity is
+# allowed only if it is on the ADR section 6.2 list; at most one layer of the domain carries them.
+P9_POWER_REGEX = re.compile(r"(?:^|_)(?:mw|kw|hp)(?:_|$)|power|capacity|generator|load", re.IGNORECASE)
+P9_POWER_ALLOWED = frozenset({
+    "power_mw", "power_basis", "power_status", "power_status_reason", "power_value_original",
+    "power_unit_original", "power_ref", "power_source_date", "power_checked_by",
+})
 CYRILLIC_REGEX = re.compile(r"[Ѐ-ӿ]")
 DOI_REGEX = re.compile(r"^10\.5281/zenodo\.\d+$")
 HASH_CHUNK = 8 * 1024 * 1024
@@ -211,6 +218,29 @@ def find_cyrillic(obj: Any, allowed_paths: tuple[str, ...] = ("title_ru",)) -> l
     return bad
 
 
+# G13: unfilled places in public texts. `[RES]` marks text still to be written by RES; `{...}` is a slot to fill.
+# citation.text and citation.record_pattern are substitution templates by design and are not scanned.
+PLACEHOLDER_REGEX = re.compile(r"\[RES\]|\{[^{}]*\}")
+PLACEHOLDER_PATHS = (
+    re.compile(r"^description$"),
+    re.compile(r"^coverage\.known_gaps\[\d+\]$"),
+    re.compile(r"^fields\[\d+\]\.description$"),
+    re.compile(r"^fields\[\d+\]\.null_meaning(\..+)?$"),
+    re.compile(r"(^|\.)attribution_text$"),
+    re.compile(r"(^|\.)rights_basis\.text$"),
+    re.compile(r"^verification\.method$"),
+)
+
+
+def find_placeholders(meta: Any) -> list[tuple[str, str]]:
+    """G13: (json-path, text) of public strings that still contain `[RES]` or a `{...}` slot."""
+    hits = []
+    for path, text in iter_strings(meta):
+        if any(rx.search(path) for rx in PLACEHOLDER_PATHS) and PLACEHOLDER_REGEX.search(text):
+            hits.append((path, PLACEHOLDER_REGEX.search(text).group(0)))
+    return hits
+
+
 def p9_hits(names: Iterable[str]) -> list[str]:
     """G3: the names that match the P9 regular expression."""
     return [n for n in names if P9_FIELD_REGEX.search(n)]
@@ -265,6 +295,13 @@ def content_headers(key: str) -> dict[str, str]:
     else:
         headers["Content-Type"] = "application/octet-stream"
     return headers
+
+
+def power_field_names(names: Iterable[str]) -> tuple[list[str], list[str]]:
+    """G3b: (field names that look like power but are not on the ADR 6.2 list, allowed power fields present)."""
+    bad = [n for n in names if P9_POWER_REGEX.search(n) and n not in P9_POWER_ALLOWED]
+    allowed = [n for n in names if n in P9_POWER_ALLOWED]
+    return bad, allowed
 
 
 def p9_value_hits(values: Iterable[str]) -> list[str]:

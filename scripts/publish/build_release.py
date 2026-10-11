@@ -4,7 +4,7 @@ Run command (from the repository root, Windows):
     python scripts\\publish\\build_release.py --release releases\\abf-layers-v0.1.0.yaml --out "D:\\GISData\\release" --channel dev
 
 What it does: reads the release yaml, builds the data files, meta.json files and
-the tile inputs, runs the gates G1-G7 and G10-G12, and writes release_report.md,
+the tile inputs, runs the gates G1-G7 and G10-G13, and writes release_report.md,
 build_log.json, build_plan.json and zenodo_files.txt. It does not touch R2.
 Tiles and manifest.json are made later by the workflow "Build tiles and finalize".
 """
@@ -33,6 +33,7 @@ from common import (
     Report,
     dump_yaml_value,
     find_cyrillic,
+    find_placeholders,
     load_yaml,
     p9_value_hits,
     P9_VALUE_FIELDS,
@@ -70,7 +71,20 @@ def load_boundaries(rel: dict[str, Any]) -> Boundaries:
     if not reg_path.exists():
         raise GateError("G12", f"boundary registry not found: {reg_path}")
     registry = pd.read_csv(reg_path, dtype=str, keep_default_na=False)
-    return Boundaries(root=root, registry=registry)
+    overrides = None
+    ov_value = rel["boundaries"].get("name_overrides")
+    if ov_value:
+        ov_path = resolve_path(ov_value)
+        if not ov_path.exists():
+            raise GateError("G12", f"name overrides file not found: {ov_path}")
+        overrides = pd.read_csv(ov_path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        absent = [c for c in ("unit_id", "name_source", "name") if c not in overrides.columns]
+        if absent:
+            raise GateError("G12", f"{ov_path.name} has no columns {absent}; found {list(overrides.columns)}")
+        for c in ("name_source", "name"):
+            overrides[c] = overrides[c].str.strip()
+        overrides["unit_id"] = overrides["unit_id"].str.strip()
+    return Boundaries(root=root, registry=registry, name_overrides=overrides)
 
 
 def registry_report(boundaries: Boundaries, report: Report) -> None:
@@ -113,7 +127,7 @@ def check_inputs_unchanged(ctx: BuildContext) -> None:
 def plan_layer(lo: LayerOutput, out: Path, extra: list[dict[str, Any]], tiles_file: str) -> dict[str, Any]:
     """One entry of build_plan.json (the manifest layer without the tile file hash)."""
     files = {fmt: p.name for fmt, p in lo.files.items()}
-    return {
+    entry = {
         "layer_id": lo.layer_id, "title": lo.title, "domain": lo.domain, "level": lo.level,
         "bbox": lo.bbox,
         "meta": lo.meta_path.name,
@@ -123,6 +137,10 @@ def plan_layer(lo: LayerOutput, out: Path, extra: list[dict[str, Any]], tiles_fi
                   "geometry_type": lo.geometry_type, "minzoom": int(lo.tile_cfg.get("minzoom", 0)),
                   "maxzoom": int(lo.tile_cfg.get("maxzoom", 10)), "fields": lo.tile_fields},
     }
+    home_bbox = (lo.meta.get("display") or {}).get("home_bbox")  # copied as is from meta.json (SPEC_META 6 item 23)
+    if home_bbox is not None:
+        entry["home_bbox"] = home_bbox
+    return entry
 
 
 def run(args: argparse.Namespace) -> int:
@@ -193,12 +211,16 @@ def run(args: argparse.Namespace) -> int:
     else:
         for layer_yaml in rel["layers"]:
             cfg = load_yaml(resolve_path(layer_yaml))
+            if cfg.get("publish") is False:
+                raise GateError("P9", f"{cfg['layer_id']}: the layer has publish: false but is listed in the release")
             if cfg["level"] == "line":
                 lo = layer_build.build_line_layer(cfg, ctx)
+            elif cfg["level"] == "point":
+                lo = layer_build.build_point_layer(cfg, ctx)
             else:
                 lo = layer_build.build_adm_layer(cfg, ctx)
-            if cfg["domain"] == "dc":
-                raise GateError("G3b", "domain dc layers are not supported in this release flow yet (ADR section 6.2 list)")
+            if cfg["domain"] == "dc" and cfg["level"] != "point":
+                raise GateError("G3b", f"{cfg['layer_id']}: only point layers are supported for the domain dc")
             metas.append((lo.meta_path, lo.meta))
             all_layers.append(lo)
             plan_layers.append(plan_layer(lo, out, [], f"{lo.layer_id}.pmtiles"))
@@ -208,11 +230,22 @@ def run(args: argparse.Namespace) -> int:
             check_lists[lo.layer_id] = [c["id"] for c in lo.meta["verification"]["automated_checks"]]
             scan_text_values(lo, report)
 
+    # --- G3b across the release: not more than one layer of the domain dc carries power fields
+    power_layers = [lo.layer_id for lo in all_layers if lo.domain == "dc" and lo.carries_power]
+    if len(power_layers) > 1:
+        raise GateError("G3b", f"more than one layer of the domain dc carries power fields: {power_layers}")
+
     # --- meta.json: G7, G1, write
     for path, meta in metas:
         cyr = find_cyrillic(meta)
         if cyr:
             raise GateError("G7", f"{meta['layer_id']}: Cyrillic in public text at {cyr}")
+        holes = find_placeholders(meta)
+        if holes:
+            msg = f"{meta['layer_id']}: unfilled places in public text (G13): " + "; ".join(f"{p} has {tok}" for p, tok in holes)
+            if channel == "final":
+                raise GateError("G13", msg)
+            report.warn(msg + " (allowed in dev, a stop in final)")
         validate_meta(meta)
         write_json(path, meta)
 

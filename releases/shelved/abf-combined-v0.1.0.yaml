@@ -1,0 +1,24 @@
+# Shelved 2026-10-11, not to be published. Rebuild from git and inputs if a combined dataset is needed.
+# Was releases/abf-layers-v0.2.0.yaml: the US layers of abf-layers v0.1.0 plus the four layers of France in one
+# dataset. Replaced by one dataset per country (abf-layers = USA, abf-fra = France; ADR r10 section 4.4).
+dataset: abf-combined
+version: 0.1.0
+tag: abf-combined-v0.1.0
+doi: null
+published_at: "2026-10-19"
+built_at: null
+boundary_release: abf-boundaries-v0.1.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'
+  registry: 'boundaries\boundary_registry.csv'
+  name_overrides: 'boundaries\name_overrides.csv'
+layers:
+  - 'layers\energy_generation_eia860_adm2.yaml'
+  - 'layers\energy_demand_nrel8562_adm2.yaml'
+  - 'layers\energy_transmission_hifld_adm2.yaml'
+  - 'layers\energy_transmission_lines_hifld.yaml'
+  - 'layers\energy_queue_lbnl_adm2.yaml'
+  - 'layers\energy_generation_odre_adm2.yaml'
+  - 'layers\energy_consumption_agenceore_adm2.yaml'
+  - 'layers\energy_transmission_rte_adm2.yaml'
+  - 'layers\dc_icpe_georisques.yaml'
