@@ -70,13 +70,16 @@ def compose_manifest(plan: dict[str, Any], work: Path) -> dict[str, Any]:
         files = {fmt: file_ref(work / name) for fmt, name in lp["files"].items()}
         tiles = lp["tiles"]
         files["pmtiles"] = file_ref(work / tiles["file"])
-        layers.append({
+        entry = {
             "layer_id": lp["layer_id"], "title": lp["title"], "domain": lp["domain"], "level": lp["level"],
             "bbox": lp["bbox"], "meta": file_ref(work / lp["meta"]),
             "files": {k: files[k] for k in ("parquet", "geojson.gz", "csv", "pmtiles") if k in files},
             "extra_files": [{**file_ref(work / e["path"]), "description": e["description"]} for e in lp.get("extra_files", [])],
             "tiles": tiles,
-        })
+        }
+        if lp.get("home_bbox") is not None:
+            entry["home_bbox"] = lp["home_bbox"]
+        layers.append(entry)
     return {
         "schema_version": "abf-manifest-1.0",
         "dataset": plan["dataset"], "version": plan["version"], "tag": plan["tag"],

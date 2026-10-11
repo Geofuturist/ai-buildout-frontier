@@ -120,6 +120,7 @@ freshness:
   next_check: 2027-04-30
 coverage:
   geography: France (101 departments)
+  iso3: [FRA]
   known_gaps:
   - Data centers are selected from the register by name, by a list of data-center operators, and by a
     list of sites named in public operator documents. Every selected record was checked by an independent
@@ -140,7 +141,10 @@ coverage:
     not published.
 display:
   geometry_type: point
-  value_field: coord_precision
+  home_bbox_from:      # SPEC_META 6 item 23: mainland France with Corsica (01-95, 2A, 2B); overseas departments stay in the data
+    iso3: FRA
+    level: ADM2
+    code_regex: '0[1-9]|[1-8][0-9]|9[0-5]|2A|2B'
   legend_title: Precision of the point
   tile_fields:
   - record_id

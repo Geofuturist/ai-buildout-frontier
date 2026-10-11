@@ -152,6 +152,10 @@ coverage:
     45, 80, 95) it is lower by at most 0.02%, which is treated as a difference between the two extracts.'
 display:
   geometry_type: polygon
+  home_bbox_from:      # SPEC_META 6 item 23: mainland France with Corsica (01-95, 2A, 2B); overseas departments stay in the data
+    iso3: FRA
+    level: ADM2
+    code_regex: '0[1-9]|[1-8][0-9]|9[0-5]|2A|2B'
   value_field: consumption_mwh
   unit: MWh
   breaks:

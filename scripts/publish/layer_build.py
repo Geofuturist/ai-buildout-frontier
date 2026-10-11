@@ -60,7 +60,18 @@ SERVICE_FIELDS = {
         "description": "covered: the unit is inside the area the source was processed for; "
                        "not_covered: outside it, all values are empty (not zero).",
     },
+    "coverage_note": {
+        "name": "coverage_note", "type": "string", "nullable": True,
+        "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+        "null_meaning": {
+            "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+            "covered": "The unit is covered, so there is no reason to give.",
+        },
+    },
 }
+
+OUTSIDE_NOTE_DEFAULTS = {"USA": "Alaska and Hawaii are not covered in this release."}  # units outside the processed area
+GENERIC_OUTSIDE_NOTE = "This unit is not covered in this release."
 
 
 # --------------------------------------------------------------------------- context
@@ -193,13 +204,15 @@ def service_field_names(cfg: dict[str, Any]) -> list[str]:
     """Service fields of an ADM layer. US layers keep `fips`; other countries have no such field."""
     names = cfg.get("frame", {}).get("service_fields")
     if names is None:
-        return ["unit_id", "fips", "name", "coverage_status"]
+        return ["unit_id", "fips", "name", "coverage_status", "coverage_note"]
     if names[:1] != ["unit_id"] or "coverage_status" not in names or "name" not in names:
         raise GateError("G2", f"{cfg['layer_id']}: frame.service_fields must contain unit_id, name, coverage_status")
     unknown = [n for n in names if n not in SERVICE_FIELDS]
     if unknown:
         raise GateError("G2", f"{cfg['layer_id']}: unknown service fields {unknown}")
-    return list(names)
+    names = [n for n in names if n != "coverage_note"]
+    names.insert(names.index("coverage_status") + 1, "coverage_note")  # SPEC_META 2.2: right after coverage_status
+    return names
 
 
 def full_fields(cfg: dict[str, Any], adm: bool) -> list[dict[str, Any]]:
@@ -314,6 +327,39 @@ def fill_citation(text: str, ctx: BuildContext, title: str, layer_id: str) -> st
     return text
 
 
+def coverage_iso3(cfg: dict[str, Any], frame_iso3: str | None) -> list[str]:
+    """coverage.iso3: countries of the layer (SPEC_META 6 item 23). ADM layers default to the frame country."""
+    value = cfg["coverage"].get("iso3")
+    if value is None and frame_iso3:
+        value = [frame_iso3]
+    if not value or not isinstance(value, list) or not all(re.fullmatch(r"[A-Z]{3}", str(v)) for v in value):
+        raise GateError("G1", f"{cfg['layer_id']}: coverage.iso3 must be a list of ISO3 codes, e.g. [USA]; got {value!r}")
+    return [str(v) for v in value]
+
+
+def home_bbox_of(cfg: dict[str, Any], ctx: "BuildContext") -> list[float] | None:
+    """display.home_bbox: given as four numbers, or computed from boundaries units (`home_bbox_from`)."""
+    disp = cfg.get("display", {})
+    if disp.get("home_bbox") is not None:
+        hb = [float(v) for v in disp["home_bbox"]]
+        if len(hb) != 4 or hb[0] >= hb[2] or hb[1] >= hb[3]:
+            raise GateError("G1", f"{cfg['layer_id']}: display.home_bbox must be [west, south, east, north], got {hb}")
+        return hb
+    rule = disp.get("home_bbox_from")
+    if not rule:
+        return None
+    iso3, level = rule["iso3"], rule["level"]
+    prefix = f"{iso3}-{level.replace('ADM', '')}-"
+    all_units = ctx.boundaries.read(f"display/{level.lower()}.parquet")
+    units = all_units[all_units["unit_id"].astype(str).str.startswith(prefix)]
+    codes = units["unit_id"].astype(str).str[len(prefix):]
+    chosen = units[codes.str.fullmatch(str(rule["code_regex"]))]
+    if chosen.empty:
+        raise GateError("G4", f"{cfg['layer_id']}: home_bbox_from selects no unit of {iso3} {level}")
+    log.info("%s: home_bbox from %d of %d %s %s units", cfg["layer_id"], len(chosen), len(units), iso3, level)
+    return tilesio.bbox_of(chosen)
+
+
 def assemble_meta(
     cfg: dict[str, Any],
     ctx: BuildContext,
@@ -372,7 +418,11 @@ def assemble_meta(
             "record_pattern": fill_citation(cfg["citation"]["record_pattern"], ctx, cfg["title"], cfg["layer_id"]),
         },
     })
-    if display:
+    home_bbox = home_bbox_of(cfg, ctx)
+    if home_bbox is not None or display:
+        display = {k: v for k, v in display.items() if k not in ("home_bbox", "home_bbox_from")}
+        if home_bbox is not None:
+            display["home_bbox"] = home_bbox
         meta["display"] = display
     if extra_files:
         meta["extra_files"] = extra_files
@@ -549,6 +599,7 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     # rows marked not_covered stay in the frame as not_covered with empty values; they are never
     # filled with 0 ("no data" is not "checked, nothing found").
     declared_nc: set[str] = set()
+    row_notes: dict[str, str] = {}
     cov_col = cfg["input"].get("coverage_column")
     if cov_col:
         if cov_col not in df.columns:
@@ -562,6 +613,9 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
                 raise GateError("G4", f"{layer_id}: {spec['name']} has values in rows marked not_covered")
         note_col = cfg["input"].get("coverage_note_column")
         notes = sorted({str(n) for n in nc_rows[note_col].dropna()}) if note_col and note_col in nc_rows else []
+        if note_col and note_col in nc_rows:
+            row_notes = {r["unit_id"]: " ".join(str(r[note_col]).split()) for _, r in nc_rows.iterrows()
+                         if pd.notna(r[note_col]) and str(r[note_col]).strip()}
         declared_nc = set(nc_rows["unit_id"])
         report.section("Units marked not_covered by the input table", [
             f"- {layer_id}: {len(nc_rows)} units: {sorted(declared_nc)[:12]}"] + [f"  - note: {n}" for n in notes])
@@ -589,6 +643,25 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     table = frame.merge(values, on="unit_id", how="left", validate="one_to_one")
     covered_ids = set(df["unit_id"]) - declared_nc
     table["coverage_status"] = np.where(table["unit_id"].isin(covered_ids), "covered", "not_covered")
+    # coverage_note: the reason, from the input table when it gives one, else the text for units outside
+    # the processed area (SPEC_META 2.2); empty for covered units.
+    outside_note = frame_cfg.get("outside_note") or OUTSIDE_NOTE_DEFAULTS.get(iso3)
+    n_generic = 0
+    notes_col: list[str | None] = []
+    for uid, status in zip(table["unit_id"], table["coverage_status"]):
+        if status == "covered":
+            notes_col.append(None)
+        elif uid in row_notes:
+            notes_col.append(row_notes[uid])
+        elif outside_note and uid not in declared_nc:
+            notes_col.append(" ".join(str(outside_note).split()))
+        else:
+            notes_col.append(GENERIC_OUTSIDE_NOTE)
+            n_generic += 1
+    table["coverage_note"] = pd.Series(notes_col, index=table.index, dtype=object)
+    if n_generic:
+        report.warn(f"{layer_id}: {n_generic:,} not_covered units have no reason in the input table; "
+                    f"the generic coverage_note is used")
     for spec in value_specs:
         table[spec["name"]] = cast_series(table[spec["name"]], spec["type"])
     order = service_field_names(cfg) + [f["name"] for f in value_specs]
@@ -607,6 +680,8 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         if n_null and not covered_allowed:
             raise GateError("G4", f"{layer_id}: {spec['name']} is empty in {n_null} covered units, "
                                   f"but null_meaning.covered is null")
+    if table.loc[~nc, "coverage_note"].notna().any() or table.loc[nc, "coverage_note"].isna().any():
+        raise GateError("G4", f"{layer_id}: coverage_note must be empty for covered units and given for every not_covered unit")
     fields = full_fields(cfg, adm=True)
     gate_field_names(layer_id, [f["name"] for f in fields])
     for f in fields:
@@ -629,9 +704,8 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     disp_geom = disp.set_index("unit_id").geometry
     tgdf = gpd.GeoDataFrame(table.copy(), geometry=disp_geom.reindex(table["unit_id"]).values, crs=disp.crs)
     display = copy.deepcopy(cfg.get("display", {}))
-    tile_fields = display.get("tile_fields") or (["unit_id", "name", "coverage_status"] + [f["name"] for f in value_specs])
-    if tile_fields[:3] != ["unit_id", "name", "coverage_status"]:
-        tile_fields = ["unit_id", "name", "coverage_status"] + [t for t in tile_fields if t not in ("unit_id", "name", "coverage_status")]
+    tile_base = ["unit_id", "name", "coverage_status", "coverage_note"]
+    tile_fields = tile_base + [t for t in (display.get("tile_fields") or [f["name"] for f in value_specs]) if t not in tile_base]
     gate_field_names(layer_id + " (tile fields)", tile_fields)
     display["tile_fields"] = tile_fields
     tile_in = out / "_tiles_input" / f"{layer_id}.geojsonseq.gz"
@@ -683,6 +757,7 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         known_gaps.append(hifld_gap)
     coverage = {
         "geography": cfg["coverage"]["geography"],
+        "iso3": coverage_iso3(cfg, iso3),
         "frame": {"iso3": iso3, "level": level},
         "n_units_frame": n_frame,
         "n_units_covered": int((~nc).sum()),
@@ -1209,6 +1284,7 @@ def build_line_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     known_gaps.append(gap)
     coverage = {
         "geography": cfg["coverage"]["geography"],
+        "iso3": coverage_iso3(cfg, None),
         "frame": None, "n_units_frame": None, "n_units_covered": None,
         "n_records": int(len(table)),
         "known_gaps": known_gaps,
@@ -1399,6 +1475,7 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     ])
     coverage = {
         "geography": cfg["coverage"]["geography"],
+        "iso3": coverage_iso3(cfg, None),
         "frame": None, "n_units_frame": None, "n_units_covered": None,
         "n_records": int(len(table)),
         "known_gaps": list(cfg["coverage"].get("known_gaps", [])),

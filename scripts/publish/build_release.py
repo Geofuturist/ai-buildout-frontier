@@ -114,7 +114,7 @@ def check_inputs_unchanged(ctx: BuildContext) -> None:
 def plan_layer(lo: LayerOutput, out: Path, extra: list[dict[str, Any]], tiles_file: str) -> dict[str, Any]:
     """One entry of build_plan.json (the manifest layer without the tile file hash)."""
     files = {fmt: p.name for fmt, p in lo.files.items()}
-    return {
+    entry = {
         "layer_id": lo.layer_id, "title": lo.title, "domain": lo.domain, "level": lo.level,
         "bbox": lo.bbox,
         "meta": lo.meta_path.name,
@@ -124,6 +124,10 @@ def plan_layer(lo: LayerOutput, out: Path, extra: list[dict[str, Any]], tiles_fi
                   "geometry_type": lo.geometry_type, "minzoom": int(lo.tile_cfg.get("minzoom", 0)),
                   "maxzoom": int(lo.tile_cfg.get("maxzoom", 10)), "fields": lo.tile_fields},
     }
+    home_bbox = (lo.meta.get("display") or {}).get("home_bbox")  # copied as is from meta.json (SPEC_META 6 item 23)
+    if home_bbox is not None:
+        entry["home_bbox"] = home_bbox
+    return entry
 
 
 def run(args: argparse.Namespace) -> int:

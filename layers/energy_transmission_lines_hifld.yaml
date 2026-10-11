@@ -66,6 +66,7 @@ source_archive:
 freshness: {source_cadence: discontinued, next_check: null}
 coverage:
   geography: "Contiguous United States and the District of Columbia"
+  iso3: [USA]
   known_gaps:
     - "Alaska and Hawaii are not covered."
     - >-

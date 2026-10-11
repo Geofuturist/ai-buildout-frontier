@@ -158,6 +158,10 @@
       "required": ["geography", "frame", "n_units_frame", "n_units_covered", "n_records", "known_gaps"],
       "properties": {
         "geography": {"type": "string", "minLength": 1},
+        "iso3": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[A-Z]{3}$"}
+        },
         "frame": {
           "anyOf": [
             {"type": "null"},
@@ -242,6 +246,7 @@
         "unit": {"type": "string"},
         "breaks": {"type": "array", "items": {"type": "number"}},
         "zero_class": {"type": "boolean"},
+        "home_bbox": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
         "tile_fields": {"type": "array", "items": {"type": "string"}},
         "legend_title": {"type": "string"}
       }
