@@ -1,0 +1,293 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-layers",
+  "version": "0.1.0",
+  "tag": "abf-layers-v0.1.0",
+  "doi": "10.5281/zenodo.23295409",
+  "published_at": "2026-10-15",
+  "boundary_release": "abf-boundaries-v0.1.0",
+  "base_path": "abf-layers/v0.1.0/",
+  "layers": [
+    {
+      "layer_id": "energy_generation_eia860_adm2",
+      "title": "Generation · EIA-860 · county",
+      "domain": "energy",
+      "level": "ADM2",
+      "bbox": [
+        -124.7631,
+        24.5213,
+        -66.9499,
+        49.3844
+      ],
+      "meta": {
+        "path": "energy_generation_eia860_adm2.meta.json",
+        "bytes": 9864,
+        "sha256": "6fed8474df6af4c645ee012c34ab84ace9d158aaddc44e7be3e3fe0f5d47b227"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_generation_eia860_adm2.parquet",
+          "bytes": 7031825,
+          "sha256": "9c44f7e9fef69f711ff0c57cfe05ac6ad3c2cad40269999c2adf40ae4db29e49"
+        },
+        "geojson.gz": {
+          "path": "energy_generation_eia860_adm2.geojson.gz",
+          "bytes": 7783160,
+          "sha256": "b048c39d63f15283cb9cdc62871b4f23b2801581cb3af029a0acdc1d792298fc"
+        },
+        "csv": {
+          "path": "energy_generation_eia860_adm2.csv",
+          "bytes": 137745,
+          "sha256": "7ecb9a69b7a15711a12959edc4df022817cd9075a3ccdb5860d28937afb11d0b"
+        },
+        "pmtiles": {
+          "path": "energy_generation_eia860_adm2.pmtiles",
+          "bytes": 13201411,
+          "sha256": "e21da4b0377c72eef9db8884ce6830c756206fdffba8085ce457ae11759903dc"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_generation_eia860_adm2.pmtiles",
+        "source_layer": "energy_generation_eia860_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "net_summer_capacity_mw",
+          "n_op_generators",
+          "n_op_plants"
+        ]
+      }
+    },
+    {
+      "layer_id": "energy_demand_nrel8562_adm2",
+      "title": "Demand · NREL OEDI 8562 · county",
+      "domain": "energy",
+      "level": "ADM2",
+      "bbox": [
+        -124.7631,
+        24.5213,
+        -66.9499,
+        49.3844
+      ],
+      "meta": {
+        "path": "energy_demand_nrel8562_adm2.meta.json",
+        "bytes": 8715,
+        "sha256": "83aed66acfed377811877a812b4e3a9173b172cc95f03ba39ba19c3ac060818a"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_demand_nrel8562_adm2.parquet",
+          "bytes": 7045041,
+          "sha256": "2437b9acbb8229b30a0493d6717bfac5ec5c4cd2c7e8a1648a4e1bdd76a6a29d"
+        },
+        "geojson.gz": {
+          "path": "energy_demand_nrel8562_adm2.geojson.gz",
+          "bytes": 7791675,
+          "sha256": "9e9c2c99eb6bb8268b461b1d6991e6df87014e95d9dae2a0d592af23b5f4ecc5"
+        },
+        "csv": {
+          "path": "energy_demand_nrel8562_adm2.csv",
+          "bytes": 164051,
+          "sha256": "aad6574c0da3a0b057d6c948dce0aaa8664d3d16e2bc577380ff0f648e3b6099"
+        },
+        "pmtiles": {
+          "path": "energy_demand_nrel8562_adm2.pmtiles",
+          "bytes": 12980038,
+          "sha256": "c3ebb770604cd330b31377070fb83fc0abc86bb52742f7f50fe8f00d48d618a0"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_demand_nrel8562_adm2.pmtiles",
+        "source_layer": "energy_demand_nrel8562_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "peak_demand_mw"
+        ]
+      }
+    },
+    {
+      "layer_id": "energy_transmission_hifld_adm2",
+      "title": "Transmission lines · HIFLD · county",
+      "domain": "energy",
+      "level": "ADM2",
+      "bbox": [
+        -124.7631,
+        24.5213,
+        -66.9499,
+        49.3844
+      ],
+      "meta": {
+        "path": "energy_transmission_hifld_adm2.meta.json",
+        "bytes": 14726,
+        "sha256": "c7b545879de448caf84e9ee5d41d2a4468f48b99f517ddfcb2fa9abcabea70d3"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_transmission_hifld_adm2.parquet",
+          "bytes": 7064038,
+          "sha256": "4e92b7560fbfb411eb599fcae69f9fe9120314a6892e1243530e52f46a6f90fb"
+        },
+        "geojson.gz": {
+          "path": "energy_transmission_hifld_adm2.geojson.gz",
+          "bytes": 7859839,
+          "sha256": "f959d24ea12c07c3816b7973d73b04744fec11663e79e55bda46949fe9aa79e5"
+        },
+        "csv": {
+          "path": "energy_transmission_hifld_adm2.csv",
+          "bytes": 255819,
+          "sha256": "c383ab3295d6a6211eeb9683c290e62104a24c322641c2ab166cece46869c568"
+        },
+        "pmtiles": {
+          "path": "energy_transmission_hifld_adm2.pmtiles",
+          "bytes": 13014625,
+          "sha256": "15ded127fd9accdf9707d76351c2a64373fa1e25ee8826ce3c18b75ccee91011"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_transmission_hifld_adm2.pmtiles",
+        "source_layer": "energy_transmission_hifld_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "has_any_line",
+          "max_voltage_kv",
+          "km_total"
+        ]
+      }
+    },
+    {
+      "layer_id": "energy_transmission_lines_hifld",
+      "title": "Transmission lines · HIFLD · segments",
+      "domain": "energy",
+      "level": "line",
+      "bbox": [
+        -124.6114,
+        24.5476,
+        -66.4241,
+        49.8589
+      ],
+      "meta": {
+        "path": "energy_transmission_lines_hifld.meta.json",
+        "bytes": 7769,
+        "sha256": "d6a06d97692e0a1377da184fa52657bf46cfe645a2a03a37542806c1ed270d34"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_transmission_lines_hifld.parquet",
+          "bytes": 41912244,
+          "sha256": "ceeaa3d57cd6a90429e4065846e0d987756db04a9ded2912625544285c66a1fe"
+        },
+        "geojson.gz": {
+          "path": "energy_transmission_lines_hifld.geojson.gz",
+          "bytes": 23200457,
+          "sha256": "10cef4dec9c83767d6b7d08023d98ff8eb6c1544a944777bf888ff82ceac90b3"
+        },
+        "csv": {
+          "path": "energy_transmission_lines_hifld.csv",
+          "bytes": 5692953,
+          "sha256": "3d2829328026e136998636184cf5fd7f53daaf3af12e100ea621290643a6298d"
+        },
+        "pmtiles": {
+          "path": "energy_transmission_lines_hifld.pmtiles",
+          "bytes": 17640618,
+          "sha256": "21b740a13cba8a98c5a3e2d00b49c5e772613bc044e73c0459b5642409ab3ac4"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_transmission_lines_hifld.pmtiles",
+        "source_layer": "energy_transmission_lines_hifld",
+        "geometry_type": "line",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "record_id",
+          "voltage_kv",
+          "voltage_class",
+          "owner",
+          "status",
+          "voltage_band"
+        ]
+      }
+    },
+    {
+      "layer_id": "energy_queue_lbnl_adm2",
+      "title": "Interconnection queue · LBNL Queued Up · county",
+      "domain": "energy",
+      "level": "ADM2",
+      "bbox": [
+        -124.7631,
+        24.5213,
+        -66.9499,
+        49.3844
+      ],
+      "meta": {
+        "path": "energy_queue_lbnl_adm2.meta.json",
+        "bytes": 10730,
+        "sha256": "5880a6d4c7bfb83855f769700a871e0eb9c8bccbd1d62720a272658f2f3d7b55"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_queue_lbnl_adm2.parquet",
+          "bytes": 7027052,
+          "sha256": "78c94482753f3665975f9419df90ea2226d6ad8797d9e2b6eca45877deb667bc"
+        },
+        "geojson.gz": {
+          "path": "energy_queue_lbnl_adm2.geojson.gz",
+          "bytes": 7769802,
+          "sha256": "d000383192167c1d0aca8399a1749f70d117ff3e18d2a65950873cbb4f8e285f"
+        },
+        "csv": {
+          "path": "energy_queue_lbnl_adm2.csv",
+          "bytes": 130869,
+          "sha256": "a709df40d1760f39fa10804794e396434425de60a108a6cbf5628d435adc3d14"
+        },
+        "pmtiles": {
+          "path": "energy_queue_lbnl_adm2.pmtiles",
+          "bytes": 12735192,
+          "sha256": "c647fa3d5fe29db42c2eaa6477c74272e30fa94957cb8522f508fe3a0b9b48cd"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_queue_lbnl_adm2.pmtiles",
+        "source_layer": "energy_queue_lbnl_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "queue_mw_active",
+          "n_active_projects"
+        ]
+      }
+    }
+  ],
+  "extra_files": [],
+  "source_archives": [
+    {
+      "path": "sources/hifld_transmission_lines_20260226.zip",
+      "bytes": 38958010,
+      "sha256": "4605236351807219a1a875a42db053d4b04174bc043871022396fef8ad5eaa74",
+      "description": "Archive of the HIFLD national transmission-line file used for the layers, published unchanged so that the processing can be checked. Original file name: US_Electric_Power_Transmission_Lines_-8378795084787321001.zip."
+    }
+  ]
+}

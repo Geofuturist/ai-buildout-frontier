@@ -1,0 +1,237 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_queue_lbnl_adm2",
+  "title": "Interconnection queue · LBNL Queued Up · county",
+  "title_ru": "Очередь на подключение · LBNL Queued Up · округа",
+  "domain": "energy",
+  "level": "ADM2",
+  "description": "Capacity of the active interconnection requests in the Queued Up data file (2026 edition), summed by county, with the number of those requests. These are generation and storage projects asking to connect to the grid, not electricity users. A county with no active request in the file has the value 0. Alaska and Hawaii, and the nine Connecticut planning regions, are not covered and have empty values.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "fips",
+      "type": "string",
+      "nullable": false,
+      "description": "County FIPS code, 5 digits, kept as a string (leading zeros matter)."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name as published in the boundaries release."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "queue_mw_active",
+      "type": "number",
+      "unit": "MW",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is outside the contiguous United States and the District of Columbia and was not processed, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions.",
+        "covered": null
+      },
+      "description": "Capacity of the active interconnection requests located in the county. 0 means there is no active project in the queue file for this county."
+    },
+    {
+      "name": "n_active_projects",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is outside the contiguous United States and the District of Columbia and was not processed, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions.",
+        "covered": null
+      },
+      "description": "Number of active interconnection requests in the county. 0 means none are in the queue file."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "lbnl_queued_up",
+      "role": "primary",
+      "publisher": "Lawrence Berkeley National Laboratory and GridTracker",
+      "product": "Queued Up: 2026 Edition, interconnection queue data file (data through end of 2025)",
+      "url": "https://emp.lbl.gov/queues",
+      "edition": "Queued Up 2026",
+      "retrieved_at": "2026-10-07",
+      "current_through": "2025-12-31",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Interconnection queue: Lawrence Berkeley National Laboratory and GridTracker, Queued Up 2026 Edition, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The Queued Up page states that the data file is licensed CC BY 4.0 and may be used, shared or adapted as long as it is attributed to Lawrence Berkeley National Laboratory and GridTracker.",
+        "checked_at": "2026-10-11",
+        "checked_by": "script:license_phrases.py",
+        "evidence_url": "https://emp.lbl.gov/queues"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "layer_queue_lbnl_20261009_r2.csv",
+          "bytes": 146259,
+          "sha256": "b6eae7fd53d42204d7c4b05d8fb505f6156104aba97b34512dfa35a8bdae5b05"
+        },
+        {
+          "file": "lbnl_ix_queue_data_file_thru2025.xlsx",
+          "bytes": 15571236,
+          "sha256": "794582d3281c6a305e9615fcfec3fae9dc85be2165216d33760b677e976a08b6"
+        }
+      ]
+    },
+    {
+      "source_id": "census_cb_2023",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "Cartographic boundary file cb_2023_us_county_500k",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip",
+      "edition": "2023",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2023-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "USA_adm2_cb2023_500k.parquet",
+          "bytes": 16297158,
+          "sha256": "5d3348143dff30dc9df52f18cff2754c2d63ab67de5766414850062bf85cdb19"
+        },
+        {
+          "file": "adm2.parquet",
+          "bytes": 32160253,
+          "sha256": "5fb110613fad13ce0ec404e91569b4e08acb103b6b69e343d2a04ff4de4c669b"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution",
+    "attribution_text": "Interconnection queue: Lawrence Berkeley National Laboratory and GridTracker, Queued Up 2026 Edition, CC BY 4.0. County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+  },
+  "boundary_release": "abf-boundaries-v0.1.0",
+  "freshness": {
+    "source_current_through": "2025-12-31",
+    "source_cadence": "annual",
+    "built_at": "2026-10-11T09:59:56Z",
+    "next_check": "2027-06-30"
+  },
+  "coverage": {
+    "geography": "Contiguous United States and the District of Columbia",
+    "frame": {
+      "iso3": "USA",
+      "level": "ADM2"
+    },
+    "n_units_frame": 3144,
+    "n_units_covered": 3100,
+    "n_records": 3144,
+    "known_gaps": [
+      "Alaska and Hawaii are not covered.",
+      "The nine Connecticut planning regions (09110-09190) are not covered: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions. Seven active Connecticut requests (678.2 MW) are not in the layer.",
+      "Eleven active requests with capacity of zero or less (-193.5 MW in total) are excluded. Ten of them lie in the contiguous United States: MISO L002, L003, L004, L006, L008, L009 and ERCOT 18INR0064, 19INR0120, 20INR0019, 24INR0372. The reason for the negative values is not checked against the source codebook.",
+      "35 active requests in states of the contiguous United States have no county code (11,280.7 MW) and are not in the county values.",
+      "53 active requests outside the contiguous United States and the District of Columbia, or with no state given (8,813.0 MW), are not in the layer.",
+      "When a request has more than one capacity value in the file (columns mw1 to mw3), the largest is used, not the sum.",
+      "The queue changes continuously; the file is a snapshot of requests as reported by grid operators and utilities."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-layers",
+    "version": "0.1.0",
+    "tag": "abf-layers-v0.1.0",
+    "doi": "10.5281/zenodo.23295409",
+    "published_at": "2026-10-15"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Active requests are summed by county by script from the source workbook; for each request the largest of its capacity values is taken. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 3,144 USA ADM2 units of the boundaries release; 3,100 are covered and 44 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "totals_vs_source",
+        "description": "All 8,513 active requests of the source workbook were split into disjoint categories and recomputed: 8407 requests (1728543.2 MW) equal the layer; excluded: capacity zero or less 11 requests (-193.5 MW); state outside the contiguous US or not given 53 requests (8813.0 MW); contiguous US state, no county code 35 requests (11280.7 MW); Connecticut, pre-2022 county codes 7 requests (678.2 MW)."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Interconnection queue · LBNL Queued Up · county (version 0.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23295409",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_queue_lbnl_adm2, unit {record_key}, version 0.1.0. https://doi.org/10.5281/zenodo.23295409"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "queue_mw_active",
+    "unit": "MW",
+    "breaks": [
+      150,
+      300,
+      600,
+      1250
+    ],
+    "zero_class": true,
+    "legend_title": "Active queue capacity, MW",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "queue_mw_active",
+      "n_active_projects"
+    ]
+  }
+}

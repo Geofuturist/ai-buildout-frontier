@@ -1,0 +1,173 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_transmission_lines_hifld",
+  "title": "Transmission lines · HIFLD · segments",
+  "title_ru": "ЛЭП · HIFLD · сегменты",
+  "domain": "energy",
+  "level": "line",
+  "description": "Segments of the HIFLD national transmission-line file inside the contiguous United States, with the recorded voltage, voltage class, owner and status of each segment, and a voltage band shared by all transmission layers of the project. Alaska and Hawaii are not covered.",
+  "fields": [
+    {
+      "name": "record_id",
+      "type": "string",
+      "nullable": false,
+      "description": "ID of the segment in the HIFLD file, kept as a string. It is the reference of the record to the source."
+    },
+    {
+      "name": "owner",
+      "type": "string",
+      "nullable": false,
+      "description": "Owner of the line as recorded in the HIFLD file."
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "nullable": false,
+      "description": "Status recorded in the HIFLD file: IN SERVICE or NOT AVAILABLE."
+    },
+    {
+      "name": "voltage_kv",
+      "type": "number",
+      "unit": "kV",
+      "nullable": true,
+      "null_meaning": "No voltage is recorded for the segment in the source file.",
+      "description": "Voltage of the segment in kilovolts, as recorded in the HIFLD file."
+    },
+    {
+      "name": "voltage_class",
+      "type": "string",
+      "nullable": false,
+      "description": "Voltage class of the segment (v69, v115, v138, v230, v345, v500, ge765 or lt69_unknown), as used by the project's county layer."
+    },
+    {
+      "name": "voltage_band",
+      "type": "string",
+      "nullable": false,
+      "description": "Band common to the project's transmission layers, computed from voltage_kv: lt100, 100_199, 200_299, 300_399, 400_599, ge600, dc or unknown. The class is used only when there is no number; unknown means no usable voltage."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "hifld_transmission_lines",
+      "role": "primary",
+      "publisher": "Oak Ridge National Laboratory for the U.S. Department of Energy; distributed via HIFLD Open (DHS)",
+      "product": "Electric Power Transmission Lines (HIFLD national feature class)",
+      "url": "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html",
+      "edition": "HIFLD archive of 2026-02-26; newest record 2024-09-26; publisher metadata edition 2024-09-30",
+      "retrieved_at": "2026-03-16",
+      "current_through": "2024-09-30",
+      "license": {
+        "id": "LicenseRef-public-domain",
+        "name": "Public domain by the publisher's statement",
+        "url": "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html",
+        "family": "public_domain",
+        "attribution_text": "Transmission lines: Oak Ridge National Laboratory for the U.S. Department of Energy; distributed via HIFLD Open (DHS)."
+      },
+      "rights_basis": {
+        "type": "publisher_statement",
+        "text": "The publisher's metadata for the same edition states access constraints 'None (Public Domain Information)' and use limitation 'None (Public Use)'.",
+        "checked_at": "2026-10-07",
+        "checked_by": "script:hifld_rights.py",
+        "evidence_url": "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "layer_transmission_lines_hifld_segments_20260913.geojson",
+          "bytes": 148081642,
+          "sha256": "6c4484105834cd01744e3ddb52a6a0d59407df2836d938fb81a048d154c425b9"
+        },
+        {
+          "file": "US_Electric_Power_Transmission_Lines_-8378795084787321001.zip",
+          "bytes": 38958010,
+          "sha256": "4605236351807219a1a875a42db053d4b04174bc043871022396fef8ad5eaa74"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "LicenseRef-public-domain",
+    "name": "Public domain by the publisher's statement",
+    "url": "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html",
+    "family": "public_domain",
+    "attribution_text": "Transmission lines: Oak Ridge National Laboratory for the U.S. Department of Energy; distributed via HIFLD Open (DHS)."
+  },
+  "boundary_release": null,
+  "freshness": {
+    "source_current_through": "2024-09-30",
+    "source_cadence": "discontinued",
+    "built_at": "2026-10-11T09:59:56Z",
+    "next_check": null
+  },
+  "coverage": {
+    "geography": "Contiguous United States and the District of Columbia",
+    "frame": null,
+    "n_units_frame": null,
+    "n_units_covered": null,
+    "n_records": 93880,
+    "known_gaps": [
+      "Alaska and Hawaii are not covered.",
+      "HIFLD Open, the public portal that distributed this file, was discontinued by the U.S. Department of Homeland Security on 26 August 2025; the announcement gave no reason. The layer uses an archived copy of the national file (copy of 26 February 2026; newest record 26 September 2024). Other public archives of the file exist, for example DataLumos (DOI 10.3886/E240591V1); which archive our copy came from was not recorded, and it has not been matched to them record by record.",
+      "No segment in the file is marked as direct current, so the band dc is empty in this release.",
+      "The archive carries no dataset metadata; license status is taken from the publisher's metadata for the same edition (30 Sep 2024).",
+      "14,069 of 93,880 segments have no usable voltage; their voltage_band is unknown."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-layers",
+    "version": "0.1.0",
+    "tag": "abf-layers-v0.1.0",
+    "doi": "10.5281/zenodo.23295409",
+    "published_at": "2026-10-15"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Segments are published as recorded in the source file; only voltage_band is computed, by script, from voltage_kv. Values of -999999, the source's code for a missing voltage, are published as empty, and so are values of zero or less. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "record_id_unique",
+        "description": "record_id (the HIFLD ID) is present and unique in all 93,880 segments; none has an empty geometry."
+      },
+      {
+        "id": "rights_metadata_external_copy",
+        "description": "Originator, other constraints and use limitation cut from the saved copy of the publisher's metadata for the same edition (PSU Data Commons) and compared with the expected public-domain wording."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Transmission lines · HIFLD · segments (version 0.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23295409",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_transmission_lines_hifld, segment {record_key}, version 0.1.0. https://doi.org/10.5281/zenodo.23295409"
+  },
+  "display": {
+    "geometry_type": "line",
+    "value_field": "voltage_band",
+    "tile_fields": [
+      "record_id",
+      "voltage_kv",
+      "voltage_class",
+      "owner",
+      "status",
+      "voltage_band"
+    ],
+    "legend_title": "Voltage band, kV"
+  }
+}

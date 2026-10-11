@@ -1,0 +1,213 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_demand_nrel8562_adm2",
+  "title": "Demand · NREL OEDI 8562 · county",
+  "title_ru": "Спрос · NREL OEDI 8562 · округа",
+  "domain": "energy",
+  "level": "ADM2",
+  "description": "Highest hourly electricity demand of each county in 2023, in MW, from the modeled county demand profiles of OEDI submission 8562 (National Laboratory of the Rockies, formerly NREL). Alaska and Hawaii are not covered and have empty values.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "fips",
+      "type": "string",
+      "nullable": false,
+      "description": "County FIPS code, 5 digits, kept as a string (leading zeros matter)."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name as published in the boundaries release."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "peak_demand_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.",
+        "covered": null
+      },
+      "description": "Highest hourly demand of the county in 2023. The profile is modeled, not metered."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "nrel_oedi_8562",
+      "role": "primary",
+      "publisher": "National Laboratory of the Rockies (NLR)",
+      "product": "OEDI submission 8562: Hourly Electricity Demand Profiles for Each County in the Contiguous United States (Obika, Cole, Rivers), DOI 10.25984/3366592",
+      "url": "https://data.openei.org/submissions/8562",
+      "edition": "submitted 2025-11-05, page last updated 2026-06-02; year 2023 of the 2016–2023 series",
+      "retrieved_at": "2026-06-29",
+      "current_through": "2023-12-31",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Demand: Kodi Obika, Wesley Cole and Marie Rivers, Hourly Electricity Demand Profiles for Each County in the Contiguous United States, National Laboratory of the Rockies (NLR), OEDI submission 8562, DOI 10.25984/3366592, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The dataset’s page on OEDI links its License entry to Creative Commons Attribution 4.0 (creativecommons.org/licenses/by/4.0/), and the site states that content is available under Creative Commons Attribution 4.0 unless otherwise noted.",
+        "checked_at": "2026-10-11",
+        "checked_by": "script:license_phrases.py",
+        "evidence_url": "https://data.openei.org/submissions/8562"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "layer_demand_nrel8562_20260912.csv",
+          "bytes": 150451,
+          "sha256": "ffbd3b14d1d2d2115fd1b4f2b10f3271332412833991aabdee0003ab00054bcf"
+        }
+      ]
+    },
+    {
+      "source_id": "census_cb_2023",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "Cartographic boundary file cb_2023_us_county_500k",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip",
+      "edition": "2023",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2023-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "USA_adm2_cb2023_500k.parquet",
+          "bytes": 16297158,
+          "sha256": "5d3348143dff30dc9df52f18cff2754c2d63ab67de5766414850062bf85cdb19"
+        },
+        {
+          "file": "adm2.parquet",
+          "bytes": 32160253,
+          "sha256": "5fb110613fad13ce0ec404e91569b4e08acb103b6b69e343d2a04ff4de4c669b"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution",
+    "attribution_text": "Demand: Kodi Obika, Wesley Cole and Marie Rivers, Hourly Electricity Demand Profiles for Each County in the Contiguous United States, National Laboratory of the Rockies (NLR), OEDI submission 8562, DOI 10.25984/3366592, CC BY 4.0. County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+  },
+  "boundary_release": "abf-boundaries-v0.1.0",
+  "freshness": {
+    "source_current_through": "2023-12-31",
+    "source_cadence": "static",
+    "built_at": "2026-10-11T09:59:56Z",
+    "next_check": null
+  },
+  "coverage": {
+    "geography": "Contiguous United States and the District of Columbia",
+    "frame": {
+      "iso3": "USA",
+      "level": "ADM2"
+    },
+    "n_units_frame": 3144,
+    "n_units_covered": 3109,
+    "n_records": 3144,
+    "known_gaps": [
+      "Alaska and Hawaii are not covered.",
+      "County demand is modeled, not metered: in this dataset, retail sales reported by utilities are totaled by state and allocated to counties by each county's share of the state population.",
+      "Because sales are spread by population, a large load that does not follow population, such as a data center campus in a county with few residents, is spread across its state rather than placed in its county."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-layers",
+    "version": "0.1.0",
+    "tag": "abf-layers-v0.1.0",
+    "doi": "10.5281/zenodo.23295409",
+    "published_at": "2026-10-15"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "The yearly maximum of the hourly profile of each county is computed by script from the source table. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 3,144 USA ADM2 units of the boundaries release; 3,109 are covered and 35 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Demand · NREL OEDI 8562 · county (version 0.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23295409",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_demand_nrel8562_adm2, unit {record_key}, version 0.1.0. https://doi.org/10.5281/zenodo.23295409"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "peak_demand_mw",
+    "unit": "MW",
+    "breaks": [
+      25,
+      50,
+      100,
+      250
+    ],
+    "zero_class": false,
+    "legend_title": "Peak hourly demand, 2023, MW",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "peak_demand_mw"
+    ]
+  }
+}
