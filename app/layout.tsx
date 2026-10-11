@@ -1,24 +1,21 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import Footer from '@/app/components/Footer';
+
+const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://aibuildoutfrontier.org';
 
 export const metadata: Metadata = {
-  title: 'The AI Buildout Frontier',
+  metadataBase: new URL(SITE),
+  title: { default: 'AI Buildout Frontier', template: '%s · AI Buildout Frontier' },
   description:
-    'Physical constraints on AI infrastructure buildout — compute, energy, geopolitics. Virginia pilot.',
+    'An open observatory of data layers on the physical side of AI: power generation, demand, transmission lines and interconnection queues. Download, cite and rebuild every layer from its source.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const viewport: Viewport = { width: 'device-width', initialScale: 1 };
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-gray-50">
-        {children}
-        <Footer />
-      </body>
+      <body className="flex min-h-screen flex-col">{children}</body>
     </html>
   );
 }

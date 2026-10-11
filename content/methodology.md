@@ -1,0 +1,316 @@
+# Methodology
+
+**Release:** abf-layers, version {version_layers} (DOI: {DOI_layers}) and abf-boundaries, version
+{version_boundaries} (DOI: {DOI_boundaries}) · published {release_date}
+
+## What this site is
+
+AI Buildout Frontier is an open observatory of data layers on the physical side of AI. This first
+release covers the U.S. power system at county level: what generates electricity, how much is
+consumed, where transmission lines run, and what is waiting to connect to the grid. The next
+releases add France, data centers themselves, and the restrictions placed on them around the
+world.
+
+The project started from a research question: which of the indicators that AI governance relies
+on can actually be collected from open data and checked by someone else? The map is how we work
+on that question. Every layer on it can be downloaded, cited and rebuilt from its source.
+
+## How to read a layer
+
+**A layer is named after its source, not after what it might stand for.** “Generation · EIA-860 ·
+county” tells you what EIA-860 lists for a county. It does not tell you how much power that county
+can supply. We keep the two apart because a layer states a fact. An estimate would need its own
+assumptions, and those belong in a methods text, not in the data.
+
+**Blank is not zero.** We separate three states: there is a value; we looked and found nothing; we
+have not looked. A county with 0 MW of generation is a statement that EIA-860 lists no operating
+generator there. A hatched county is not covered by the layer. Sometimes a covered county has an
+empty field because the value does not exist, for example the highest voltage in a county with no
+line. The pop-up then says why.
+
+**Each layer keeps its source's license.** The project has no single data license. Our own code is
+under the MIT license, and our own compilations, such as the boundary set, are under CC BY 4.0. If
+you combine layers, join them by unit code (`unit_id` or `fips`). The combined file carries the
+obligations of every license in it.
+
+**Every layer shows its dates**: the period the source covers and the day we built the layer. The
+map shows them too, because the sources update on different schedules, from yearly to never again.
+
+**Every layer states how it was checked.** In this release all energy layers are published as the
+source gives them (`source_as_is`). Our scripts place, sum or measure the source's own records and
+run the automated checks listed below. No value was re-checked by a person or by an AI agent.
+Later layers that rest on judgment, such as deciding which registry entry is a data center, will
+state how much of that judgment a person or an agent re-checked.
+
+## Layers in this release
+
+| Layer | Source | Value per county | Data through | License |
+|---|---|---|---|---|
+| Generation | Form EIA-860, U.S. Energy Information Administration | net summer capacity of operating generators, MW; number of generators; number of plants | {current_through:energy_generation_eia860_adm2} | U.S. Government work |
+| Demand | OEDI submission 8562, National Laboratory of the Rockies | highest hourly electricity demand in the year, MW (modeled) | {current_through:energy_demand_nrel8562_adm2} | CC BY 4.0 |
+| Transmission lines | HIFLD national transmission-line file, archived copy | km of line inside the county by voltage class; highest voltage present. The line segments are a separate layer | {current_through:energy_transmission_hifld_adm2} | Public domain (publisher statement in HIFLD metadata; produced by ORNL for DOE) |
+| Interconnection queue | Queued Up, Lawrence Berkeley National Laboratory and GridTracker | MW and number of active requests to connect to the grid | {current_through:energy_queue_lbnl_adm2} | CC BY 4.0 |
+
+Every county layer lists all 3,144 counties and county-equivalents of the United States. Values
+cover 3,109 of them: the 48 contiguous states and the District of Columbia. Alaska and Hawaii are
+listed but marked not covered, because they need their own map projection. In the queue layer the
+nine Connecticut planning regions are not covered either (see below).
+
+### Generation · EIA-860 · county
+
+- **Edition.** Form EIA-860, {edition:energy_generation_eia860_adm2} · data through
+  {current_through:energy_generation_eia860_adm2}. EIA publishes a new edition every year.
+- **What is counted.** Only generators with status “OP”, operating. Generators on standby or
+  temporarily out of service are left out. The value is net summer capacity as reported to EIA. We
+  count both generators and plants, because one plant often has many generators.
+- **How plants are placed in counties.** By their coordinates: first a plain point-in-polygon test.
+  A few plants on the shore fall just outside every county, because the Census cartographic
+  boundaries are trimmed to the coastline. For those we take the nearest county within 1 km. When
+  we first built the layer, on the 2024 edition, we checked this rule against EIA's own county
+  field for the 8 plants it affected, and all 8 matched. Three offshore wind plants, Block Island,
+  South Fork Wind and the Coastal Virginia Offshore Wind pilot, lie farther out. Together they have
+  171.3 MW and are not assigned to any county.
+- **What it does not show.** Form EIA-860 covers power plants with a combined nameplate capacity of
+  1 MW or more. Emergency and standby generators at data centers and other buildings are generally
+  not reported to it. Generators that entered service after
+  {current_through:energy_generation_eia860_adm2} are not in this edition.
+
+### Demand · NREL OEDI 8562 · county
+
+- **Edition.** OEDI submission 8562, {edition:energy_demand_nrel8562_adm2} · data through
+  {current_through:energy_demand_nrel8562_adm2}. The dataset is static: a later year would need a
+  new submission.
+- **What the value is.** For each county, the highest hourly electricity demand in 2023, in MW.
+  2023 is the last year of the dataset's 2016–2023 series.
+- **How the dataset is modeled.** Utilities do not meter or publish demand by county, so the
+  dataset estimates it. Retail electricity sales reported by utilities are totaled by state and
+  allocated to counties by each county's share of the state population. The hourly shape comes from
+  the reported demand of the surrounding balancing-authority regions. Power plants' reported direct
+  use and estimated self-consumption of rooftop solar are added separately.
+- **What it does not show.** Measured demand at any place. Because sales are spread by population,
+  a large load that does not follow population, such as a data center campus in a county with few
+  residents, is spread across its state rather than placed in its county.
+- **Attribution.** Kodi Obika, Wesley Cole and Marie Rivers, National Laboratory of the Rockies
+  (NLR), DOI 10.25984/3366592. The laboratory was called the National Renewable Energy Laboratory
+  (NREL) until December 2025; the layer keeps the name NREL, under which the dataset was announced.
+
+### Transmission lines · HIFLD · county
+
+- **Edition.** {edition:energy_transmission_hifld_adm2} · data through
+  {current_through:energy_transmission_hifld_adm2}. The source is no longer updated.
+- **What the values are.** Kilometers of line inside the county by voltage class, their total, the
+  highest voltage present, whether the county has any line at all, and what share of its line
+  length has no recorded voltage. The classes are 69, 115, 138, 230, 345 and 500 kV, 735 kV and
+  above, and one class for lines below 69 kV or without a recorded voltage.
+- **Inside, not across.** We measure line length inside each county. We do not count lines crossing
+  a county boundary, because a boundary shifted by a kilometer can flip that count while the length
+  inside barely changes. The kilometer columns are rounded to whole kilometers, so their total can
+  differ from the true length by up to 4 km.
+- **Empty values.** Twelve county-equivalents have no HIFLD line inside them: four independent
+  cities in Virginia, the islands of Nantucket and Martha's Vineyard, and six rural counties. In
+  two more, Hamilton County, Iowa, and Clare County, Michigan, the line inside is shorter than
+  0.5 km, so the total rounds to 0 km while “has any line” says yes. Where a county has lines but
+  none with a recorded voltage, the highest voltage is left blank.
+- **Where the data comes from.** HIFLD Open, the public portal that distributed this file, was
+  discontinued by the U.S. Department of Homeland Security on 26 August 2025; the announcement gave
+  no reason. We use an archived copy of the national file: the copy is dated 26 February 2026, and
+  its newest record is from 26 September 2024. Other public archives of the file exist, for example
+  on DataLumos (DOI 10.3886/E240591V1). Which archive our copy came from was not recorded, and we
+  have not matched it to those archives record by record. So we publish our copy itself next to
+  the layer, and anyone can check our processing against it.
+- **License.** Public domain (publisher statement in HIFLD metadata; produced by ORNL for DOE). Our
+  archive carries no dataset metadata of its own, so the statement is taken from a copy of the
+  publisher's metadata for the same edition, kept by the Penn State Data Commons. The lines were
+  produced by Oak Ridge National Laboratory, which a contractor runs for the Department of Energy.
+  That is why we rely on the publisher's statement and not on the rule for works of federal
+  employees.
+- **Was the geometry withdrawn?** Before we publish the location of infrastructure, we check
+  whether its publisher withdrew it for security reasons (see “What we do not publish”). HIFLD did
+  not: no reason was given for closing the portal, and the U.S. Energy Atlas of EIA still offers
+  the transmission-line file as an archived layer.
+- **What it does not show.** How much power can flow into a county. An earlier version of this
+  project estimated that from line ratings, and we dropped the estimate (see “Why there is no
+  index”).
+
+### Transmission lines · HIFLD · segments
+
+- **What it is.** The 93,880 line segments of the same archived file inside the contiguous United
+  States. Each keeps its HIFLD ID, voltage, voltage class, owner and status (in service or not
+  available).
+- **Voltage band.** Each segment also gets a band shared by all transmission layers of the project:
+  below 100 kV, 100–199, 200–299, 300–399, 400–599, 600 kV and above, direct current, unknown. The
+  band is computed from the recorded voltage; the class is used only when no number is recorded. A
+  segment without a usable voltage is in the band “unknown”. The direct-current band is empty in
+  this release, because no segment in the file is marked as direct current.
+- Edition, license and provenance are the same as for the county layer above.
+
+### Interconnection queue · LBNL Queued Up · county
+
+- **Edition.** {edition:energy_queue_lbnl_adm2} data file · data through
+  {current_through:energy_queue_lbnl_adm2}. A new edition appears every year.
+- **What the value is.** Megawatts and number of projects with an active request to connect to the
+  grid, by the county where the project would be built. All grid operator regions are included.
+  When a request has more than one capacity value in the file, we take the largest, not the sum.
+- **What is left out.** Requests with a capacity of zero or less; requests outside the contiguous
+  states or with no state given; requests without a county code; and requests in Connecticut. The
+  source codes Connecticut projects by the state's former counties, which do not map onto the
+  planning regions the Census has used since 2022. So the nine regions are marked not covered
+  rather than shown as zero. The layer's known gaps list each excluded group with its count and
+  megawatts. Together, the groups account exactly for the difference between the layer and the
+  source file.
+- **What it does not show.** These are power plants and batteries asking to connect, not
+  electricity users. Most requests are never built. There is no public county-level queue of new
+  large loads such as data centers: utilities and grid operators collect that information, but in
+  the cases we checked they keep it confidential.
+- **Attribution.** “Lawrence Berkeley National Laboratory and GridTracker”, as the license asks.
+  This is the jointly released data file under CC BY 4.0. It is not the GridTracker website, whose
+  terms do not allow reuse.
+
+## Administrative boundaries · ADM0, ADM1, ADM2
+
+- **One frame for the whole world.** Natural Earth at 1:10 million, version 5.1.2. Where borders
+  are disputed, we use the U.S. government's point of view, because the main sources in this
+  project are U.S. federal. **The boundaries do not express a position of the project.** Five
+  disputed areas belong to no country in this view: Abyei, the Ilemi Triangle, the Siachen Glacier,
+  the Southern Patagonian Ice Field and Rincón de Artigas. They are drawn with a neutral fill, not
+  left blank like the sea.
+- **Levels follow each country's own structure**, not whatever a source calls “admin-1”. This
+  release:
+
+  | Country | First level | Second level | Source |
+  |---|---|---|---|
+  | World | 242 countries and territories | — | Natural Earth |
+  | United States | 51 (states and the District of Columbia) | 3,144 counties and county-equivalents | U.S. Census Bureau cartographic boundaries 1:500,000, 2023 |
+  | France | 18 regions | 101 departments | Natural Earth, merged |
+  | United Kingdom | 4 countries | — | Natural Earth, merged |
+  | Norway | 15 counties and Svalbard | 357 municipalities | Kartverket, CC BY 4.0, reference date 1 January 2026 |
+
+  Other countries show national borders only, until we check their subnational divisions against
+  an official list. An outdated division on a site about checkable data would be worse than none.
+- **Fitting national data to the frame.** National boundaries of the United States and Norway are
+  fitted to the frame along land borders with neighbors only. The coastline stays national.
+- **Two geometries.** Calculations use the official boundaries at full resolution: for the United
+  States, the Census 1:500,000 files. The map shows a simplified version. Both carry the same unit
+  codes, so what you see is what we counted on. The subdivisions of France and the United Kingdom
+  come from Natural Earth and are generalized: they are not the official national boundaries.
+- **Unit codes.** Countries: ISO 3166 three-letter codes (`USA`). Subdivisions:
+  `{country}-{level}-{national code}`, for example `USA-1-51` (Virginia) or `USA-2-51059` (Fairfax
+  County).
+- **Checks run at every build.** No overlaps between units. No gaps except a reviewed list of seas,
+  disputed areas and slivers. Every unit inside its parent. Unit counts as expected. Subdivisions
+  are published only for countries whose entry in the boundary registry has been verified. The
+  build ran twice with byte-identical results and was reproduced on a second machine.
+- **License.** CC BY 4.0 for the boundary set. Each unit carries its own source and license.
+
+## Counties, county-equivalents and cities
+
+“County” on this site means a county or county-equivalent as the Census defines it. In Virginia that
+is 133 county-equivalents (95 counties + 38 independent cities). Independent cities are separate
+units: St. Louis city and St. Louis County in Missouri are two rows, not one. Connecticut appears as
+9 planning regions, as in the 2023 Census files, not as its 8 former counties. Areas are computed in
+equal-area projections.
+
+## Downloading and citing
+
+- **Formats.** Every layer comes as GeoParquet (the main format, readable by GeoPandas and DuckDB),
+  gzipped GeoJSON and CSV without geometry. Map tiles are for display only.
+- **Joining.** Join on `unit_id` or on the five-digit `fips` code. Read codes as text, or leading
+  zeros disappear.
+- **Stable links.** Files sit at fixed, versioned addresses. A new version gets a new address, and
+  old ones keep working. The current version is listed in `manifest/latest.json` with file sizes
+  and checksums.
+- **Citing.** Cite the layer, the version and the DOI: {DOI_layers} for the energy layers,
+  {DOI_boundaries} for the boundaries. Each layer card gives a ready citation, and each pop-up gives
+  one for the single record. Please also credit the original source as its license requires. The
+  attribution text of each layer is in its metadata and on the Sources and licenses page.
+
+## What we checked
+
+**On every build, for every layer:**
+- every input file is fingerprinted (SHA-256), and the fingerprint is published in the layer's
+  metadata;
+- if an input is missing or incomplete, the build stops, so a failed download cannot turn into
+  zeros;
+- field names and types are checked against the layer's declared schema;
+- every county layer lists each unit of the frame exactly once, and every unit code exists in
+  abf-boundaries;
+- the totals in the published files equal the totals of the build.
+
+**Against the source:**
+- **Generation.** The capacity of operating generators in the EIA-860 workbook equals the layer
+  total plus the three offshore wind plants outside every county.
+- **Interconnection queue.** The active requests in the Queued Up workbook equal the requests in the
+  layer plus the excluded groups listed in its known gaps, both in number and in megawatts.
+- **Transmission lines, county.** The kilometer totals are checked against the “has any line”
+  field. The two counties where they disagree because of rounding are listed in the layer's known
+  gaps.
+- **Transmission lines, county and segments.** A script checks the license statement against the
+  copy of the publisher's metadata.
+- **Transmission lines, segments.** Every segment ID is unique.
+
+**Against our earlier Virginia pipeline.** When we first built these layers in September 2026, on
+the 2024 edition of EIA-860 and the 2025 edition of Queued Up, we compared them with the pipeline
+behind version 1.0 for Virginia's 133 county-equivalents:
+- demand matched in all 133;
+- the queue differed in 1, explained by including all grid regions instead of one;
+- generation differed in 10. These are 5 pairs of neighboring units, together 0.7% of Virginia's
+  capacity: plants near a boundary landed on the other side, because the old and new boundary files
+  are drawn slightly differently.
+
+**Published files do not change.** Once a version is published, its files are fixed, and every new
+publication checks them by checksum. Corrections come as a new version.
+
+## Known limitations
+
+- **Generation** covers generators operating at the end of the edition year. Generators that
+  entered service later are missing until the next edition.
+- **Demand** is modeled and spread by population, so it may misplace large single loads.
+- **Transmission** comes from an archive whose newest record is from September 2024, and the
+  source is no longer updated. Some lines have no recorded voltage.
+- **The queue** lists requests, not plants that will be built, and generation, not demand.
+- **Alaska and Hawaii** are not covered, and in the queue layer neither is Connecticut.
+- **Boundaries** outside the United States, France, the United Kingdom and Norway are national only
+  and generalized at 1:10 million.
+
+## What we do not publish
+
+- **Vulnerability of specific facilities**: how they could be reached or disabled, single points
+  of failure, security.
+- **How long a specific facility could run without the grid**: fuel, permitted generator hours,
+  backup configuration. Such figures appear only as totals for regions or classes, never for fewer
+  than three facilities.
+- **Locations withdrawn for security.** If the publisher of infrastructure locations withdraws them
+  and gives security as the reason, we do not republish older copies. We publish totals by area
+  instead.
+- **Substations from OpenStreetMap.** We built this layer, but it is not in this release: coverage
+  is uneven, and its license (ODbL) would carry over to any file it is merged into.
+- **A composite score.** See below.
+
+## Why there is no index
+
+Version 1.0 of this site, in April 2026, published a “grid feasibility index” for Virginia's 133
+county-equivalents. While building a national version, we checked the index against its raw inputs
+and dropped it.
+
+- **The transmission term was demand under another name.** In 128 of the 133 units it hit a cap set
+  at half of adjusted peak demand. In those rows it was exactly 0.5 × demand, so its 0.9995
+  correlation with demand was an identity, not a finding.
+- **The cap threw away most of the transmission signal.** Across those 128 rows the median import
+  estimate fell from 1,281 MW to 41 MW (from 1,230 to 38 MW across all 133), and 94.5% of the total
+  by sum.
+- **The “severe” band held only artifacts.** Five units sat at −1.0: places with no generation and
+  no transmission lines at all. Forty more sat at exactly −0.5, the floor the formula could not go
+  below.
+
+An index asks readers to trust its author. Layers ask them to trust EIA, NLR, HIFLD and LBNL, and
+then let them check. The version 1.0 methodology is archived at {archive_v1_url}.
+
+## How this was built
+
+One researcher, working with AI coding assistants. The code is public on GitHub
+(https://github.com/Geofuturist/ai-buildout-frontier) under the MIT license. AI tools helped write
+the code and these texts, but they are not a source: every value comes from a file listed in the
+layer's metadata, and the checks above are scripts, not model output.
+
+**Found an error?** Open an issue on GitHub. Corrections are listed with the version that fixes
+them.
