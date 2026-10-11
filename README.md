@@ -141,7 +141,9 @@ lib/
 
 ## License
 
-[CC BY 4.0](LICENSE) — use freely with attribution.
+Code: [MIT](LICENSE.txt). Data: each dataset and layer carries its own license — see
+[DATA_LICENSES.md](DATA_LICENSES.md) and https://aibuildoutfrontier.org/attribution. Files derived
+from OpenStreetMap are under ODbL 1.0 (`data/conus/NOTICE_substations_osm.md`).
 
 ## Author
 
