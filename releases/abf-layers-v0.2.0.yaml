@@ -11,6 +11,7 @@ boundary_release: abf-boundaries-v0.1.0
 boundaries:
   dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'
   registry: 'boundaries\boundary_registry.csv'
+  name_overrides: 'boundaries\name_overrides.csv'
 layers:
   - 'layers\energy_generation_eia860_adm2.yaml'
   - 'layers\energy_demand_nrel8562_adm2.yaml'

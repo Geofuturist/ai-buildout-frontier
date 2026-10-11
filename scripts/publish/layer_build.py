@@ -81,6 +81,7 @@ class Boundaries:
 
     root: Path
     registry: pd.DataFrame
+    name_overrides: pd.DataFrame | None = None  # boundaries/name_overrides.csv (names corrected after the boundaries release)
     _cache: dict[str, gpd.GeoDataFrame] = field(default_factory=dict)
 
     @staticmethod
@@ -114,6 +115,53 @@ class Boundaries:
         if len(found) != 1:
             raise GateError("G4", f"expected exactly one analysis file for {iso3} {level}, found {found}")
         return found[0]
+
+
+OVERRIDE_COLUMNS = ["unit_id", "name_source", "name", "source", "checked_at", "checked_by"]
+NAME_OVERRIDE_PHRASE = "{n} unit names corrected from Natural Earth spelling to the INSEE official geographic code."
+
+
+def _norm_name(value: Any) -> str:
+    """Spelling-insensitive form for comparing names: NFC, one kind of apostrophe, single spaces."""
+    import unicodedata
+    text = unicodedata.normalize("NFC", str(value)).replace("\u2019", "'")
+    return " ".join(text.split())
+
+
+def apply_name_overrides(frame: pd.DataFrame, prefix: str, ctx: "BuildContext", layer_id: str) -> int:
+    """Replace `name` in the frame by the corrected names of boundaries/name_overrides.csv.
+
+    Only rows of this layer's level (unit_id starts with `prefix`) are used. Returns the number of
+    names that really changed. The boundaries release itself is not touched.
+    """
+    ov = ctx.boundaries.name_overrides
+    if ov is None:
+        return 0
+    rows = ov[ov["unit_id"].str.startswith(prefix)]
+    if rows.empty:
+        return 0
+    if rows["unit_id"].duplicated().any():
+        raise GateError("G4", f"{layer_id}: name_overrides.csv has repeated unit_id: "
+                              f"{rows.loc[rows['unit_id'].duplicated(), 'unit_id'].tolist()}")
+    empty = rows[rows["name"].str.strip() == ""]
+    if len(empty):
+        raise GateError("G4", f"{layer_id}: name_overrides.csv has an empty name for {empty['unit_id'].tolist()}")
+    missing = sorted(set(rows["unit_id"]) - set(frame["unit_id"]))
+    if missing:
+        raise GateError("G4", f"{layer_id}: name_overrides.csv refers to units that are not in the frame: {missing}")
+    current = frame.set_index("unit_id")["name"]
+    changed: list[str] = []
+    for _, r in rows.iterrows():
+        old = current[r["unit_id"]]
+        new = " ".join(r["name"].split())
+        if r["name_source"].strip() and _norm_name(r["name_source"]) != _norm_name(old):
+            ctx.report.warn(f"{layer_id}: name_overrides.csv expects the boundaries name '{r['name_source']}' for "
+                            f"{r['unit_id']}, but the boundaries release has '{old}'; the corrected name is still used")
+        if new != old:
+            frame.loc[frame["unit_id"] == r["unit_id"], "name"] = new
+            changed.append(f"{r['unit_id']}: {old} -> {new}")
+    ctx.report.section(f"Corrected unit names ({layer_id})", [f"- {c}" for c in changed] or ["- none"])
+    return len(changed)
 
 
 @dataclass
@@ -227,7 +275,13 @@ def full_fields(cfg: dict[str, Any], adm: bool) -> list[dict[str, Any]]:
     clash = [f["name"] for f in declared if f["name"] in service_names]
     if clash:
         raise GateError("G2", f"{cfg['layer_id']}: fields[] must not declare service fields {clash}; the build adds them")
-    return [copy.deepcopy(SERVICE_FIELDS[k]) for k in service_names] + declared
+    service = [copy.deepcopy(SERVICE_FIELDS[k]) for k in service_names]
+    if cfg.get("_name_corrected"):
+        for f in service:
+            if f["name"] == "name":
+                f["description"] = ("Unit name from the boundaries release; where it differs from the official "
+                                    "geographic code, the official spelling is used (see verification.method).")
+    return service + declared
 
 
 def layer_license(sources: list[dict[str, Any]]) -> dict[str, Any]:
@@ -580,6 +634,13 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     if disp["unit_id"].duplicated().any():
         raise GateError("G4", f"{layer_id}: duplicated unit_id in the boundaries display file")
     frame = disp[["unit_id", "name"]].sort_values("unit_id").reset_index(drop=True)
+    n_renamed = apply_name_overrides(frame, prefix, ctx, layer_id)
+    if n_renamed:
+        # the corrected names are part of the published layer: say so in verification.method and in the field text
+        cfg = copy.deepcopy(cfg)
+        cfg["verification"]["method"] = (" ".join(str(cfg["verification"]["method"]).split()) + " "
+                                         + NAME_OVERRIDE_PHRASE.format(n=n_renamed))
+        cfg["_name_corrected"] = True
     frame["fips"] = frame["unit_id"].str[len(prefix):]
     if not frame["fips"].str.fullmatch(code_regex).all():
         raise GateError("G4", f"{layer_id}: unit_id of the frame does not end with a code matching {code_regex}")

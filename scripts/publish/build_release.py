@@ -71,7 +71,20 @@ def load_boundaries(rel: dict[str, Any]) -> Boundaries:
     if not reg_path.exists():
         raise GateError("G12", f"boundary registry not found: {reg_path}")
     registry = pd.read_csv(reg_path, dtype=str, keep_default_na=False)
-    return Boundaries(root=root, registry=registry)
+    overrides = None
+    ov_value = rel["boundaries"].get("name_overrides")
+    if ov_value:
+        ov_path = resolve_path(ov_value)
+        if not ov_path.exists():
+            raise GateError("G12", f"name overrides file not found: {ov_path}")
+        overrides = pd.read_csv(ov_path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        absent = [c for c in ("unit_id", "name_source", "name") if c not in overrides.columns]
+        if absent:
+            raise GateError("G12", f"{ov_path.name} has no columns {absent}; found {list(overrides.columns)}")
+        for c in ("name_source", "name"):
+            overrides[c] = overrides[c].str.strip()
+        overrides["unit_id"] = overrides["unit_id"].str.strip()
+    return Boundaries(root=root, registry=registry, name_overrides=overrides)
 
 
 def registry_report(boundaries: Boundaries, report: Report) -> None:
