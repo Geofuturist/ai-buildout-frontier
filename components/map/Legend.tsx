@@ -30,6 +30,10 @@ export default function Legend({ meta, showLines }: { meta: Meta | null; showLin
               </li>
             ))}
             <li className="flex items-center gap-2">
+              <Swatch color={COLORS.noValue} />
+              <span>Covered, no value in the source</span>
+            </li>
+            <li className="flex items-center gap-2">
               <Swatch stroke={COLORS.notCovered} dashed />
               <span>Not covered (no fill, dashed outline)</span>
             </li>
