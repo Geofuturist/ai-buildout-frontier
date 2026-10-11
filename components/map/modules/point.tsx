@@ -6,6 +6,8 @@ import { COLORS } from '@/lib/style';
 import type { GeometryModule } from './types';
 
 const SITE_LEVEL = 'site';
+// Position accuracy is a contract field of every point layer (ADR 6.2): site | city | none
+const PRECISION_FIELD = 'coord_precision';
 
 const pointModule: GeometryModule = {
   type: 'point',
@@ -18,14 +20,11 @@ const pointModule: GeometryModule = {
 
   renderLayers(layers, ctx) {
     return layers.map((l) => {
-      const precision = ctx.metas[l.meta_id].display?.value_field;
       const visibility = ctx.visible.has(l.layer_id) ? 'visible' : 'none';
       const sl = l.tiles.source_layer;
       const sel = ctx.selected && ctx.selected.layerId === l.layer_id ? ctx.selected.key : null;
-      // No precision field in the meta: treat every point as approximate (hollow)
-      const fill = precision
-        ? (['case', ['==', ['get', precision], SITE_LEVEL], COLORS.point, 'rgba(252,252,251,0.35)'] as ExpressionSpecification)
-        : 'rgba(252,252,251,0.35)';
+      // filled = site-level position; anything else is drawn hollow, so accuracy is never overstated
+      const fill = ['case', ['==', ['get', PRECISION_FIELD], SITE_LEVEL], COLORS.point, 'rgba(252,252,251,0.35)'] as ExpressionSpecification;
       return (
         <Source key={l.layer_id} id={l.layer_id} type="vector" url={`pmtiles://${l.tiles.url}`}>
           <Layer
@@ -58,8 +57,8 @@ const pointModule: GeometryModule = {
     });
   },
 
-  formatValue(field, value, meta) {
-    if (field.name === meta.display?.value_field) {
+  formatValue(field, value) {
+    if (field.name === PRECISION_FIELD) {
       if (value === SITE_LEVEL) return 'Site level';
       if (value === 'city') return 'Approximate (commune level)';
     }

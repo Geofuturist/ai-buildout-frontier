@@ -5,7 +5,6 @@ import { Download } from 'lucide-react';
 import { buildRecordCsv, cutRecord, safePart } from '@/lib/csv';
 import type { LayerEntry, Meta } from '@/lib/data';
 import { recordCitation } from '@/lib/format';
-import { recordNoun } from '@/lib/layers';
 
 // The published CSV of a layer is fetched once per page and the single row is cut out in the browser.
 const csvCache = new Map<string, Promise<string>>();
@@ -68,7 +67,7 @@ export default function RecordDownload({ layer, meta, keyField, keyValue }: Prop
     <div className="mt-3">
       <button type="button" className="btn" onClick={run} disabled={state === 'busy'}>
         <Download size={16} aria-hidden className="mr-1.5" />
-        {state === 'busy' ? 'Preparing…' : <>Download this {recordNoun(layer)}: CSV</>}
+        {state === 'busy' ? 'Preparing…' : 'Download this record: CSV'}
       </button>
       {state === 'error' && (
         <p role="alert" className="mt-1 text-xs text-[#9a2a00]">

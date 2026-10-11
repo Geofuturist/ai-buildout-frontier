@@ -95,7 +95,7 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
 
         <div className="mt-2 flex flex-wrap gap-2">
           {countries.map((c) => {
-            const bbox = unionBbox(c.domains.flatMap((d) => d.layers));
+            const bbox = unionBbox(c.domains.flatMap((d) => d.layers), data.metas);
             return bbox ? (
               <button key={c.iso3} type="button" className="btn flex-1" onClick={() => onZoom(bbox)}>{c.name}</button>
             ) : null;

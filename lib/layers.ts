@@ -4,7 +4,7 @@ import type { LayerEntry, Meta } from './data';
 import { countryNameFromIso3 } from './iso3';
 
 export function countryOf(meta: Meta | undefined): string {
-  return meta?.coverage.frame?.iso3 ?? '';
+  return meta?.coverage.iso3 ?? meta?.coverage.frame?.iso3 ?? '';
 }
 
 export function countryName(meta: Meta | undefined): string {
@@ -41,16 +41,16 @@ export interface CountryGroup {
 }
 
 /**
- * The meta that tells which country a layer belongs to: its own coverage.frame, or, when it has none
- * (segments and points have no frame), the frame of another layer made from the same source.
+ * The meta that tells which country a layer belongs to: its own coverage.iso3 (v0.2.0) or coverage.frame.
+ * Fallback for v0.1.0, where segments have neither: the country of another layer made from the same source.
  */
 function frameMeta(l: LayerEntry, layers: LayerEntry[], metas: Record<string, Meta>): Meta | undefined {
   const own = metas[l.meta_id];
-  if (own?.coverage.frame) return own;
+  if (countryOf(own)) return own;
   const ids = new Set(own?.sources.map((s) => s.source_id) ?? []);
   for (const o of layers) {
     const m = metas[o.meta_id];
-    if (m?.coverage.frame && m.sources.some((s) => ids.has(s.source_id))) return m;
+    if (countryOf(m) && m.sources.some((s) => ids.has(s.source_id))) return m;
   }
   return own;
 }
@@ -76,12 +76,13 @@ export function groupByCountry(layers: LayerEntry[], metas: Record<string, Meta>
   return out;
 }
 
-/** Union of layer bboxes, or null if none has one. */
-export function unionBbox(layers: LayerEntry[]): [number, number, number, number] | null {
+/** Union of the home views of the layers: display.home_bbox if the meta has it, otherwise the manifest bbox. */
+export function unionBbox(layers: LayerEntry[], metas: Record<string, Meta>): [number, number, number, number] | null {
   let b: [number, number, number, number] | null = null;
   for (const l of layers) {
-    if (!l.bbox) continue;
-    b = b ? [Math.min(b[0], l.bbox[0]), Math.min(b[1], l.bbox[1]), Math.max(b[2], l.bbox[2]), Math.max(b[3], l.bbox[3])] : [...l.bbox];
+    const v = metas[l.meta_id]?.display?.home_bbox ?? l.bbox;
+    if (!v) continue;
+    b = b ? [Math.min(b[0], v[0]), Math.min(b[1], v[1]), Math.max(b[2], v[2]), Math.max(b[3], v[3])] : [...v];
   }
   return b;
 }
