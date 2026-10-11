@@ -2,7 +2,7 @@
 dataset: abf-layers
 version: 0.1.0
 tag: abf-layers-v0.1.0
-doi: null                       # fill in after "Get a DOI now" in Zenodo; leave null for channel dev
+doi: 10.5281/zenodo.23295409
 published_at: "2026-10-15"
 built_at: null                  # set by the first final build and then kept
 boundary_release: abf-boundaries-v0.1.0
