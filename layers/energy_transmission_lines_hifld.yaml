@@ -11,8 +11,8 @@ input:
 ref_field: record_id          # the HIFLD ID is the reference of every record (G10)
 description: >-
   Segments of the HIFLD national transmission-line file inside the contiguous United States, with
-  the recorded voltage, voltage class, owner and status of each segment, and a voltage band common
-  to all transmission layers of the project.
+  the recorded voltage, voltage class, owner and status of each segment, and a voltage band shared
+  by all transmission layers of the project. Alaska and Hawaii are not covered.
 fields:
   - {name: record_id, type: string, nullable: false, description: "ID of the segment in the HIFLD file, kept as a string. It is the reference of the record to the source."}
   - {name: owner, type: string, nullable: false, description: "Owner of the line as recorded in the HIFLD file."}
@@ -48,7 +48,7 @@ sources:
       type: publisher_statement
       text: "The publisher's metadata for the same edition states access constraints 'None (Public Domain Information)' and use limitation 'None (Public Use)'."
       checked_at: "2026-10-07"
-      checked_by: "agent:CODE-PUB (verdict of ARCH 2026-10-06)"
+      checked_by: "script:hifld_rights.py"
       evidence_url: "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html"
     publication_mode: open_licence
 rights_check:
@@ -61,19 +61,28 @@ rights_check:
     useLimitation: "None (Public Use)"
 source_archive:
   path: 'D:\GISData\Energy\GEM\US_Electric_Power_Transmission_Lines_-8378795084787321001.zip'
+  publish_as: hifld_transmission_lines_20260226.zip   # named by the export date (SPEC_META section 6 item 10)
   description: "Archive of the HIFLD national transmission-line file used for the layers, published unchanged so that the processing can be checked."
 freshness: {source_cadence: discontinued, next_check: null}
 coverage:
   geography: "Contiguous United States and the District of Columbia"
   known_gaps:
     - "Alaska and Hawaii are not covered."
-    - "The HIFLD public portal closed in August 2025; the layer uses an archived copy of the national file, created on 26 February 2026, whose newest record is from 26 September 2024. The channel the archive came through could not be traced."
+    - >-
+      HIFLD Open, the public portal that distributed this file, was discontinued by the U.S.
+      Department of Homeland Security on 26 August 2025; the announcement gave no reason. The layer
+      uses an archived copy of the national file (copy of 26 February 2026; newest record 26
+      September 2024). Other public archives of the file exist, for example DataLumos (DOI
+      10.3886/E240591V1); which archive our copy came from was not recorded, and it has not been
+      matched to them record by record.
+    - "No segment in the file is marked as direct current, so the band dc is empty in this release."
 verification:
   levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
     Segments are published as recorded in the source file; only voltage_band is computed, by
-    script, from voltage_kv. No value was re-checked by a person or by an agent. The automated
-    checks listed below were run on every build.
+    script, from voltage_kv. Values of -999999, the source's code for a missing voltage, are
+    published as empty, and so are values of zero or less. No value was re-checked by a person or by
+    an agent. The automated checks listed below were run on every build.
   sample_share: {}
 display:
   geometry_type: line
@@ -86,5 +95,5 @@ tiles:
   # Lowest zoom at which a band is drawn (classes of 345 kV and above are visible from zoom 3).
   minzoom_by_band: {ge600: 2, "400_599": 3, "300_399": 3, dc: 3, "200_299": 5, "100_199": 6, lt100: 8, unknown: 8}
 citation:
-  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
-  record_pattern: "AI Buildout Frontier, layer {layer_id}, segment {record_key}, version {version}. {doi_url}"
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: "Ilin, V. AI Buildout Frontier, layer {layer_id}, segment {record_key}, version {version}. {doi_url}"

@@ -4,7 +4,7 @@ Run command (from the repository root, Windows):
     python scripts\\publish\\build_release.py --release releases\\abf-layers-v0.1.0.yaml --out "D:\\GISData\\release" --channel dev
 
 What it does: reads the release yaml, builds the data files, meta.json files and
-the tile inputs, runs the gates G1-G7 and G10-G12, and writes release_report.md,
+the tile inputs, runs the gates G1-G7 and G10-G13, and writes release_report.md,
 build_log.json, build_plan.json and zenodo_files.txt. It does not touch R2.
 Tiles and manifest.json are made later by the workflow "Build tiles and finalize".
 """
@@ -33,6 +33,7 @@ from common import (
     Report,
     dump_yaml_value,
     find_cyrillic,
+    find_placeholders,
     load_yaml,
     p9_value_hits,
     P9_VALUE_FIELDS,
@@ -222,6 +223,12 @@ def run(args: argparse.Namespace) -> int:
         cyr = find_cyrillic(meta)
         if cyr:
             raise GateError("G7", f"{meta['layer_id']}: Cyrillic in public text at {cyr}")
+        holes = find_placeholders(meta)
+        if holes:
+            msg = f"{meta['layer_id']}: unfilled places in public text (G13): " + "; ".join(f"{p} has {tok}" for p, tok in holes)
+            if channel == "final":
+                raise GateError("G13", msg)
+            report.warn(msg + " (allowed in dev, a stop in final)")
         validate_meta(meta)
         write_json(path, meta)
 

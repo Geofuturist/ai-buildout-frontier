@@ -20,7 +20,7 @@ input:
   legacy_meta: data\fra\layer_transmission_rte_20261010_meta.json
   coverage_column: coverage_status
   coverage_note_column: coverage_note
-description: Kilometres of RTE transmission line in operation inside each department of mainland France
+description: Kilometers of RTE transmission line in operation inside each department of mainland France
   by voltage band, their sum, the highest voltage present, and whether the department has any line. Lengths
   are measured inside the department; a line that crosses a boundary is counted only for the part inside.
   The line geometry dates from 30 June 2023.
@@ -164,7 +164,7 @@ sources:
   rights_basis:
     type: license
     text: The data.gouv.fr page of the republished copy states Licence Ouverte v2.0. The line segments
-      are withheld by the project's rule on geometry withdrawn by its operator, not by the licence.
+      are withheld by the project's rule on geometry withdrawn by its operator, not by the license.
     checked_at: '2026-10-10'
     checked_by: script:download_fra
     evidence_url: https://www.data.gouv.fr/datasets/lignes-aeriennes-rte
@@ -219,8 +219,8 @@ coverage:
   - Lines with an administrative approval that are not yet built (état ACCORD ADMINISTRATIF; 159 segments,
     1,467.5 km) are not included.
   - Lines recorded as de-energized (hors tension; 1,882 km) are counted in km_unknown, without a voltage.
-  - 'Department outlines are Natural Earth 1:10m: a line within about a kilometre of a department boundary
-    may be counted in the neighbouring department. 793.5 km of line lie outside the 94 departments (coast
+  - 'Department outlines are Natural Earth 1:10m: a line within about a kilometer of a department boundary
+    may be counted in the neighboring department. 793.5 km of line lie outside the 94 departments (coast
     and international connections) and are not counted.'
   - The layer does not show how much power can flow into a department.
 display:
@@ -235,8 +235,8 @@ display:
   zero_class: true
   legend_title: Transmission lines, km
 citation:
-  text: AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}
-  record_pattern: AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}
 tiles:
   minzoom: 0
   maxzoom: 10

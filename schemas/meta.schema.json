@@ -120,7 +120,7 @@
         "url": {"type": "string", "minLength": 1},
         "edition": {"type": "string", "minLength": 1},
         "retrieved_at": {"type": "string", "minLength": 1},
-        "current_through": {"$ref": "#/$defs/date"},
+        "current_through": {"anyOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
         "inputs": {
           "type": "array",
           "items": {
@@ -144,7 +144,7 @@
       "additionalProperties": false,
       "required": ["source_current_through", "source_cadence", "built_at", "next_check"],
       "properties": {
-        "source_current_through": {"$ref": "#/$defs/date"},
+        "source_current_through": {"anyOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
         "source_cadence": {"enum": ["monthly", "annual", "irregular", "static", "discontinued"]},
         "built_at": {"$ref": "#/$defs/datetime_utc"},
         "next_check": {"anyOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]}

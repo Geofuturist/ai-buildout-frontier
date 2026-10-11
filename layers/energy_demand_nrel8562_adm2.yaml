@@ -10,16 +10,16 @@ input:
   key: fips
   legacy_meta: 'data\conus\layer_demand_nrel8562_meta.json'
 description: >-
-  Highest hourly electricity demand in 2023 for each county, in MW, taken from the modeled
-  county-level demand profiles of NREL OEDI submission 8562. Alaska and Hawaii are not processed
-  and have empty values.
+  Highest hourly electricity demand of each county in 2023, in MW, from the modeled county demand
+  profiles of OEDI submission 8562 (National Laboratory of the Rockies, formerly NREL). Alaska and
+  Hawaii are not covered and have empty values.
 fields:
   - name: peak_demand_mw
     type: number
     unit: MW
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: null
     description: "Highest hourly demand of the county in 2023. The profile is modeled, not metered."
     min: 0
@@ -27,9 +27,11 @@ sources:
   - source_id: nrel_oedi_8562
     role: primary
     publisher: "National Laboratory of the Rockies (NLR)"
-    product: "OEDI submission 8562: hourly electricity demand profiles for U.S. counties (Obika, Cole, Rivers)"
+    product: >-
+      OEDI submission 8562: Hourly Electricity Demand Profiles for Each County in the Contiguous United
+      States (Obika, Cole, Rivers), DOI 10.25984/3366592
     url: "https://data.openei.org/submissions/8562"
-    edition: "published 2025-11-05, demand year 2023"
+    edition: "submitted 2025-11-05, page last updated 2026-06-02; year 2023 of the 2016–2023 series"
     retrieved_at: legacy_meta
     current_through: "2023-12-31"
     input_refs: [table]
@@ -38,7 +40,10 @@ sources:
       name: Creative Commons Attribution 4.0 International
       url: "https://creativecommons.org/licenses/by/4.0/"
       family: attribution
-      attribution_text: "Demand: National Laboratory of the Rockies (NLR); Obika, Cole, Rivers. OEDI submission 8562, CC BY 4.0."
+      attribution_text: >-
+        Demand: Kodi Obika, Wesley Cole and Marie Rivers, Hourly Electricity Demand Profiles for Each
+        County in the Contiguous United States, National Laboratory of the Rockies (NLR), OEDI
+        submission 8562, DOI 10.25984/3366592, CC BY 4.0.
     rights_basis:
       type: license
       text: "The OEDI dataset page states CC BY 4.0."
@@ -63,7 +68,7 @@ sources:
       attribution_text: "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
     rights_basis:
       type: statute
-      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute."
       checked_at: "2026-09-20"
       checked_by: "agent:RES"
       evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
@@ -73,8 +78,13 @@ coverage:
   geography: "Contiguous United States and the District of Columbia"
   known_gaps:
     - "Alaska and Hawaii are not covered."
-    - "County demand in this dataset is modeled: utilities do not meter or publish demand by county."
-    - "Large single loads, data centers among them, may be under-represented, especially in counties with few residents."
+    - >-
+      County demand is modeled, not metered: in this dataset, retail sales reported by utilities
+      are totaled by state and allocated to counties by each county's share of the state population.
+    - >-
+      Because sales are spread by population, a large load that does not follow population, such as
+      a data center campus in a county with few residents, is spread across its state rather than
+      placed in its county.
 verification:
   levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
@@ -92,5 +102,5 @@ display:
   tile_fields: [unit_id, name, coverage_status, peak_demand_mw]
 tiles: {minzoom: 0, maxzoom: 10}
 citation:
-  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
-  record_pattern: "AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: "Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"

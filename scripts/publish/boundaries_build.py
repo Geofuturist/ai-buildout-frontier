@@ -299,7 +299,7 @@ def _boundaries_sources(cfg: dict[str, Any], ctx: BuildContext) -> list[dict[str
             raise GateError("G6", f"{src['source_id']}: no upstream record with a SHA-256 in the boundaries meta.json")
         src["inputs"] = sorted(inputs, key=lambda x: x["file"])
         src["retrieved_at"] = str(src["retrieved_at"])
-        src["current_through"] = str(src["current_through"])
+        src["current_through"] = None if src["current_through"] is None else str(src["current_through"])
         for key in ("checked_at",):
             if key in src.get("rights_basis", {}):
                 src["rights_basis"][key] = str(src["rights_basis"][key])

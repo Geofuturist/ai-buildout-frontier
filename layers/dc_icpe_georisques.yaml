@@ -170,5 +170,5 @@ tiles:
   minzoom: 0
   maxzoom: 12
 citation:
-  text: AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}
-  record_pattern: AI Buildout Frontier, layer {layer_id}, record {record_key}, version {version}. {doi_url}
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: Ilin, V. AI Buildout Frontier, layer {layer_id}, record {record_key}, version {version}. {doi_url}

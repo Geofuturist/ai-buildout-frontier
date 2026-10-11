@@ -288,7 +288,7 @@ def build_sources(
             h = hash_input(ctx, refs[name])
             src["inputs"].append({"file": h["file"], "bytes": h["bytes"], "sha256": h["sha256"]})
         src["retrieved_at"] = retrieved_at_of(src, cfg, table_path) if src.get("retrieved_at") in (None, "legacy_meta") else str(src["retrieved_at"])
-        src["current_through"] = str(src["current_through"])
+        src["current_through"] = None if src["current_through"] is None else str(src["current_through"])
         for key in ("checked_at",):
             if key in src.get("rights_basis", {}):
                 src["rights_basis"][key] = str(src["rights_basis"][key])
@@ -330,13 +330,6 @@ def assemble_meta(
     base_levels = sum(float(cfg["verification"]["levels"].get(k, 0)) for k in ("source_as_is", "script_rules", "human"))
     if abs(base_levels - 1.0) > 1e-6:
         raise GateError("G1", f"{cfg['layer_id']}: verification.levels source_as_is + script_rules + human must be 1, got {base_levels}")
-    placeholders = re.findall(r"\{(?:N|low|high)\}", json.dumps([cfg.get("description"), coverage.get("known_gaps"),
-                                                                  cfg["verification"].get("method")], ensure_ascii=False))
-    if placeholders:
-        msg = f"{cfg['layer_id']}: public text still has RES placeholders {sorted(set(placeholders))}"
-        if ctx.channel == "final":
-            raise GateError("G1", msg + "; the final channel needs the numbers from RES")
-        ctx.report.warn(msg + " (allowed in dev, not in final)")
     meta: dict[str, Any] = {
         "schema_version": "abf-meta-1.0",
         "kind": "layer",
@@ -1031,7 +1024,8 @@ def apply_rights_check(cfg, ctx, checks, sources, out, report) -> str | None:  #
     if not archive.exists():
         raise GateError("G6", f"{cfg['layer_id']}: HIFLD archive not found: {archive}")
     ext = resolve_path(rc["external_html"]) if rc.get("external_html") else None
-    result: RightsResult = check_hifld_rights(archive, ext, rc["expected"])
+    result: RightsResult = check_hifld_rights(archive, ext, rc["expected"],
+                                              publish_name=(cfg.get("source_archive") or {}).get("publish_as"))
     for w in result.warnings:
         report.warn(f"{cfg['layer_id']}: {w}")
     if result.check_id:
@@ -1056,11 +1050,15 @@ def collect_archives(cfg, ctx, out, sources) -> list[dict[str, Any]]:  # noqa: A
         src = resolve_path(arch["path"])
         if not src.exists():
             raise GateError("G6", f"{cfg['layer_id']}: source archive not found: {src}")
-        dst = out / "sources" / src.name
+        publish_name = arch.get("publish_as") or src.name
+        dst = out / "sources" / publish_name
         dst.parent.mkdir(parents=True, exist_ok=True)
         if not dst.exists():
             shutil.copyfile(src, dst)
-        result.append({"file": dst, "description": arch["description"]})
+        description = arch["description"]
+        if publish_name != src.name:
+            description += f" Original file name: {src.name}."
+        result.append({"file": dst, "description": description})
     xml_dir = out / "sources"
     if xml_dir.exists():
         for xml in sorted(xml_dir.glob("*.metadata.xml")):
@@ -1126,13 +1124,19 @@ def build_line_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     vb_cfg = cfg["voltage_band"]
     band, vstats = voltage_band(gdf["voltage_kv"], gdf["voltage_class"], vb_cfg["class_map"])
     gdf["voltage_band"] = band
+    # SPEC_META section 6 item 2 (ARCH 10.10): the missing-value code -999999 and values <= 0 are published as empty.
+    kv_num = pd.to_numeric(gdf["voltage_kv"], errors="coerce")
+    n_code = int((kv_num == -999999).sum())
+    n_nonpos = int(((kv_num <= 0) & (kv_num != -999999)).sum())
+    gdf["voltage_kv"] = kv_num.where(kv_num > 0)
     report.section(f"voltage_band ({layer_id})", [
         f"- from the numeric voltage: {vstats['from_number']}",
         f"- from the class (no number): {vstats['from_class']}",
         f"- unknown: {vstats['unknown']}",
         f"- dc (by class field): {vstats['dc']}",
-        f"- voltage_kv equal to the missing-value code -999999 (published as in the source): "
-        f"{int((pd.to_numeric(gdf['voltage_kv'], errors='coerce') == -999999).sum())}",
+        f"- voltage_kv equal to the missing-value code -999999 (published as empty): {n_code}",
+        f"- voltage_kv of zero or less, other than the code (published as empty): {n_nonpos}",
+        f"- voltage_kv empty in the published file: {int(gdf['voltage_kv'].isna().sum())}",
         f"- counts by band: {band.value_counts().to_dict()}",
     ])
 

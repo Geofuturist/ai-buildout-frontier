@@ -12,50 +12,52 @@ input:
   derive:
     - {op: sum, name: km_total, columns: [km_ge765, km_v500, km_v345, km_v230, km_v138, km_v115, km_v69, km_lt69_unknown]}
 description: >-
-  Kilometres of transmission line inside each county by voltage class, their sum, the highest
-  voltage class present, and whether the county has any line. Lengths are measured inside the
-  county; a line that crosses a boundary is counted only for the part inside. Alaska and Hawaii are
-  not processed and have empty values.
+  Kilometers of transmission line inside each county by voltage class, their sum, the highest
+  voltage present, and whether the county has any line. Lengths are measured inside the county; a
+  line that crosses a boundary is counted only for the part inside. Alaska and Hawaii are not
+  covered and have empty values.
 fields:
   - name: max_voltage_kv
     type: number
     unit: kV
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: "The county has no line, or none of its lines has a recorded voltage."
     description: "Highest voltage among the lines inside the county that have a recorded voltage."
   - name: has_any_line
     type: boolean
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: null
-    description: "True if at least one line of the source file touches the county. It can be true while km_total is 0 when the length inside the county is below the rounding of the kilometre columns."
+    description: >-
+      True if at least one line of the source file touches the county. It can be true while km_total
+      is 0, when the length inside the county is below the rounding of the kilometer columns.
   - name: frac_km_unknown_voltage
     type: number
     unit: share
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: "The county has no line length inside it, so the share is undefined."
     description: "Share of the line length inside the county that has no recorded voltage, from 0 to 1."
-  - {name: km_ge765, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 735 kV and above, rounded to whole kilometres. 0 means no such line."}
-  - {name: km_v500, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 500 kV, rounded to whole kilometres. 0 means no such line."}
-  - {name: km_v345, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 345 kV, rounded to whole kilometres. 0 means no such line."}
-  - {name: km_v230, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 230 kV, rounded to whole kilometres. 0 means no such line."}
-  - {name: km_v138, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 138 kV, rounded to whole kilometres. 0 means no such line."}
-  - {name: km_v115, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 115 kV, rounded to whole kilometres. 0 means no such line."}
-  - {name: km_v69, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county, class 69 kV, rounded to whole kilometres. 0 means no such line."}
-  - {name: km_lt69_unknown, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed.", covered: null}, description: "Line length inside the county with a class below 69 kV or without a recorded voltage, rounded to whole kilometres. 0 means no such line."}
+  - {name: km_ge765, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 735 kV and above, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v500, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 500 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v345, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 345 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v230, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 230 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v138, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 138 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v115, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 115 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v69, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 69 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_lt69_unknown, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county with a class below 69 kV or without a recorded voltage, rounded to whole kilometers. 0 means no such line."}
   - name: km_total
     type: integer
     unit: km
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: null
-    description: "Sum of the published km columns (km_ge765 to km_lt69_unknown). The columns are whole kilometres, so km_total is exactly their sum and differs from the true line length by at most 4 km."
+    description: "Sum of the published km columns (km_ge765 to km_lt69_unknown). The columns are whole kilometers, so km_total is exactly their sum and differs from the true line length by at most 4 km."
 sources:
   - source_id: hifld_transmission_lines
     role: primary
@@ -76,7 +78,7 @@ sources:
       type: publisher_statement
       text: "The publisher's metadata for the same edition states access constraints 'None (Public Domain Information)' and use limitation 'None (Public Use)'."
       checked_at: "2026-10-07"
-      checked_by: "agent:CODE-PUB (verdict of ARCH 2026-10-06)"
+      checked_by: "script:hifld_rights.py"
       evidence_url: "https://www.datacommons.psu.edu/metadata/Transmission%20Lines-metadata.html"
     publication_mode: open_licence
   - source_id: census_cb_2023
@@ -96,7 +98,7 @@ sources:
       attribution_text: "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
     rights_basis:
       type: statute
-      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute."
       checked_at: "2026-09-20"
       checked_by: "agent:RES"
       evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
@@ -111,15 +113,24 @@ rights_check:
     useLimitation: "None (Public Use)"
 source_archive:
   path: 'D:\GISData\Energy\GEM\US_Electric_Power_Transmission_Lines_-8378795084787321001.zip'
+  publish_as: hifld_transmission_lines_20260226.zip   # named by the export date (SPEC_META section 6 item 10)
   description: "Archive of the HIFLD national transmission-line file used for the layers, published unchanged so that the processing can be checked."
 freshness: {source_cadence: discontinued, next_check: null}
 coverage:
   geography: "Contiguous United States and the District of Columbia"
   known_gaps:
     - "Alaska and Hawaii are not covered."
-    - "The HIFLD public portal closed in August 2025; the layer uses an archived copy of the national file, created on 26 February 2026, whose newest record is from 26 September 2024. The channel the archive came through could not be traced."
+    - >-
+      HIFLD Open, the public portal that distributed this file, was discontinued by the U.S.
+      Department of Homeland Security on 26 August 2025; the announcement gave no reason. The layer
+      uses an archived copy of the national file (copy of 26 February 2026; newest record 26
+      September 2024). Other public archives of the file exist, for example DataLumos (DOI
+      10.3886/E240591V1); which archive our copy came from was not recorded, and it has not been
+      matched to them record by record.
     - "Twelve county-equivalents have no line inside them."
-    - "Hamilton County, Iowa (19079) and Clare County, Michigan (26035) have a line in the source, but shorter than 0.5 km, so the county value km_total is 0."
+    - >-
+      Hamilton County, Iowa (19079) and Clare County, Michigan (26035) have a line inside them
+      shorter than 0.5 km, so km_total is 0 while has_any_line is true.
     - "The layer does not show how much power can flow into a county."
 verification:
   levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
@@ -140,5 +151,5 @@ display:
   tile_fields: [unit_id, name, coverage_status, has_any_line, max_voltage_kv, km_total]
 tiles: {minzoom: 0, maxzoom: 10}
 citation:
-  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
-  record_pattern: "AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: "Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"

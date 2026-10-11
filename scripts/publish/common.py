@@ -218,6 +218,29 @@ def find_cyrillic(obj: Any, allowed_paths: tuple[str, ...] = ("title_ru",)) -> l
     return bad
 
 
+# G13: unfilled places in public texts. `[RES]` marks text still to be written by RES; `{...}` is a slot to fill.
+# citation.text and citation.record_pattern are substitution templates by design and are not scanned.
+PLACEHOLDER_REGEX = re.compile(r"\[RES\]|\{[^{}]*\}")
+PLACEHOLDER_PATHS = (
+    re.compile(r"^description$"),
+    re.compile(r"^coverage\.known_gaps\[\d+\]$"),
+    re.compile(r"^fields\[\d+\]\.description$"),
+    re.compile(r"^fields\[\d+\]\.null_meaning(\..+)?$"),
+    re.compile(r"(^|\.)attribution_text$"),
+    re.compile(r"(^|\.)rights_basis\.text$"),
+    re.compile(r"^verification\.method$"),
+)
+
+
+def find_placeholders(meta: Any) -> list[tuple[str, str]]:
+    """G13: (json-path, text) of public strings that still contain `[RES]` or a `{...}` slot."""
+    hits = []
+    for path, text in iter_strings(meta):
+        if any(rx.search(path) for rx in PLACEHOLDER_PATHS) and PLACEHOLDER_REGEX.search(text):
+            hits.append((path, PLACEHOLDER_REGEX.search(text).group(0)))
+    return hits
+
+
 def p9_hits(names: Iterable[str]) -> list[str]:
     """G3: the names that match the P9 regular expression."""
     return [n for n in names if P9_FIELD_REGEX.search(n)]

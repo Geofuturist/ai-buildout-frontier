@@ -23,7 +23,7 @@ fields:
     unit: MW
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: null
     description: "Sum of the net summer capacity of the operating generators (status OP) located in the county. 0 means EIA-860 lists no operating generator in this county."
     fill_na_covered: 0
@@ -32,16 +32,18 @@ fields:
     type: integer
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: null
-    description: "Number of operating generators (status OP) in the county. 0 means none are listed."
+    description: >-
+      Number of operating generators (status OP) in the county. 0 means none are listed. A generator
+      without an ID in the source is not counted (see known gaps).
     fill_na_covered: 0
     min: 0
   - name: n_op_plants
     type: integer
     nullable: true
     null_meaning:
-      not_covered: "The county is outside the contiguous United States and the District of Columbia; it was not processed."
+      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
       covered: null
     description: "Number of plants with at least one operating generator in the county. 0 means none are listed."
     fill_na_covered: 0
@@ -86,7 +88,7 @@ sources:
       attribution_text: "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
     rights_basis:
       type: statute
-      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a licence, so the status rests on the statute."
+      text: "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute."
       checked_at: "2026-09-20"
       checked_by: "agent:RES"
       evidence_url: "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
@@ -96,9 +98,15 @@ coverage:
   geography: "Contiguous United States and the District of Columbia"
   known_gaps:
     - "Alaska and Hawaii are not covered."
-    - "Plants that started operating after the edition year are missing."
-    - "Offshore wind farms are not assigned to any county, so they are not in the county values."
-    - "Emergency generators at data centers and other buildings are not listed in EIA-860."
+    - "Generators that entered service after the end of the edition year are not included."
+    - "Three offshore wind plants (171.3 MW in total) are not assigned to any county, so they are not in the county values."
+    - >-
+      Form EIA-860 covers power plants with a combined nameplate capacity of 1 MW or more. Emergency
+      and standby generators at data centers and other buildings are generally not reported to it.
+    - >-
+      One operating generator has no generator ID in the source (Cranberry Point Energy Storage,
+      plant 62844, Massachusetts, 150 MW). Its capacity is in the county value, but it is not
+      counted in n_op_generators.
 verification:
   levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
@@ -130,5 +138,5 @@ display:
   tile_fields: [unit_id, name, coverage_status, net_summer_capacity_mw, n_op_generators, n_op_plants]
 tiles: {minzoom: 0, maxzoom: 10}
 citation:
-  text: "AI Buildout Frontier. {title}. Version {version}, {year}. {doi_url}"
-  record_pattern: "AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: "Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"
