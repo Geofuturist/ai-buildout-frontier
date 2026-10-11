@@ -1,6 +1,6 @@
 // Generic helpers for choosing and grouping layers. Everything comes from the manifest and meta.json:
 // no layer ids, country codes or field names here (SPEC_WEB 0.3).
-import type { LayerEntry, Meta } from './data';
+import type { AbfData, LayerEntry, Meta } from './data';
 import { countryNameFromIso3 } from './iso3';
 
 export function countryOf(meta: Meta | undefined): string {
@@ -55,8 +55,22 @@ function frameMeta(l: LayerEntry, layers: LayerEntry[], metas: Record<string, Me
   return own;
 }
 
-/** Groups layers by country (order of first appearance), then by domain inside the country. */
-export function groupByCountry(layers: LayerEntry[], metas: Record<string, Meta>): CountryGroup[] {
+/** The country of a layer (see frameMeta); '' when unknown. */
+export function layerCountry(l: LayerEntry, layers: LayerEntry[], metas: Record<string, Meta>): string {
+  return countryOf(frameMeta(l, layers, metas));
+}
+
+/**
+ * Country order (SPEC_WEB 0.3 p.6): the country of the default layer first, the others alphabetically by
+ * English name. Nothing depends on the order of datasets in the pointer.
+ */
+function byDefaultCountryThenName<T extends { iso3: string; name: string }>(items: T[], defaultIso3: string | null): T[] {
+  const rank = (x: T) => (defaultIso3 && x.iso3 === defaultIso3 ? 0 : 1);
+  return [...items].sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name, 'en'));
+}
+
+/** Groups layers by country, then by domain inside the country; countries ordered as above. */
+export function groupByCountry(layers: LayerEntry[], metas: Record<string, Meta>, defaultLayerId: string | null): CountryGroup[] {
   const out: CountryGroup[] = [];
   for (const l of layers) {
     const meta = frameMeta(l, layers, metas);
@@ -73,7 +87,27 @@ export function groupByCountry(layers: LayerEntry[], metas: Record<string, Meta>
     }
     d.layers.push(l);
   }
-  return out;
+  const def = defaultLayerId ? layers.find((l) => l.layer_id === defaultLayerId) : undefined;
+  return byDefaultCountryThenName(out, def ? layerCountry(def, layers, metas) : null);
+}
+
+/**
+ * Dataset names in display order (/data, /attribution): datasets of layers first, the dataset of the default
+ * layer's country at the top, then alphabetically by country name; the boundaries dataset last.
+ */
+export function orderedDatasetNames(data: Pick<AbfData, 'datasets' | 'layers' | 'metas' | 'default_layer'>): string[] {
+  const dataLayers = data.layers.filter((l) => data.datasets[l.dataset]?.kind === 'layers');
+  const def = data.default_layer ? dataLayers.find((l) => l.layer_id === data.default_layer) : undefined;
+  const defIso = def ? layerCountry(def, dataLayers, data.metas) : null;
+  const info = (name: string) => {
+    const first = dataLayers.find((l) => l.dataset === name);
+    const meta = first ? frameMeta(first, dataLayers, data.metas) : undefined;
+    return { name, iso3: countryOf(meta), label: first ? countryName(meta) : name };
+  };
+  const layersNames = Object.keys(data.datasets).filter((n) => data.datasets[n].kind === 'layers').map(info);
+  const boundaryNames = Object.keys(data.datasets).filter((n) => data.datasets[n].kind !== 'layers').sort();
+  const sorted = byDefaultCountryThenName(layersNames.map((x) => ({ ...x, name: x.label, id: x.name })), defIso);
+  return [...sorted.map((x) => x.id), ...boundaryNames];
 }
 
 /** Union of the home views of the layers: display.home_bbox if the meta has it, otherwise the manifest bbox. */

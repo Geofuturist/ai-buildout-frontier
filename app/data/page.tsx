@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import CopyButton from '@/components/CopyButton';
+import { orderedDatasetNames } from '@/lib/layers';
 import { getData } from '@/lib/data';
 import type { FileRef, LayerEntry, Meta } from '@/lib/data';
 import { checkedByLine, doiUrl, formatBytes, isoDate } from '@/lib/format';
@@ -83,8 +84,8 @@ function LayerCard({ meta, entries }: { meta: Meta; entries: LayerEntry[] }) {
 
 export default function DataPage() {
   const data = getData();
-  // layers datasets first, boundaries last; inside each group the pointer order
-  const order = Object.keys(data.datasets).sort((a, b) => Number(data.datasets[a].kind === 'boundaries') - Number(data.datasets[b].kind === 'boundaries'));
+  // the default layer's country first, then by country name; boundaries last (SPEC_WEB 0.3 p.6)
+  const order = orderedDatasetNames(data);
   return (
     <>
       <SiteHeader />

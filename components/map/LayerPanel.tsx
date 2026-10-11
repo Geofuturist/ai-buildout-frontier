@@ -27,7 +27,7 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
   const [open, setOpen] = useState(false);
 
   const layers = useMemo(() => selectDataLayers(data), [data]);
-  const countries = useMemo(() => groupByCountry(layers, data.metas), [layers, data.metas]);
+  const countries = useMemo(() => groupByCountry(layers, data.metas, data.default_layer), [layers, data.metas, data.default_layer]);
   const exclusive = (l: LayerEntry) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive;
 
   const activeLayer = layers.find((l) => l.layer_id === activeId);

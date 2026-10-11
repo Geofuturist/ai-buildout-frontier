@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import { getData } from '@/lib/data';
+import { orderedDatasetNames } from '@/lib/layers';
 import type { AttributionSource } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -57,13 +58,16 @@ export default function AttributionPage() {
 
           <p className="text-sm">
             Datasets covered:{' '}
-            {Object.values(data.datasets).map((d, i) => (
+            {orderedDatasetNames(data).map((n, i) => {
+              const d = data.datasets[n];
+              return (
               <span key={d.dataset}>
                 {i > 0 ? '; ' : ''}
                 {d.dataset} v{d.version}
                 {d.doi ? <> (DOI <a href={`https://doi.org/${d.doi}`}>{d.doi}</a>)</> : ' (DOI not assigned yet)'}
               </span>
-            ))}
+              );
+            })}
             .
           </p>
 
