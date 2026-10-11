@@ -47,7 +47,7 @@ def files_of(manifest: dict[str, Any]) -> dict[str, dict[str, Any]]:
     return out
 
 
-def verify(url: str, save_to: Path | None) -> int:
+def verify(url: str, save_to: Path | None, quick: bool = False) -> int:
     import jsonschema
 
     sess = _session()
@@ -70,6 +70,19 @@ def verify(url: str, save_to: Path | None) -> int:
     meta_schema = read_json(SCHEMA_DIR / "meta.schema.json")
     for rel, ref in sorted(files_of(manifest).items()):
         furl = base_url + manifest["base_path"] + rel
+        if quick and not rel.endswith(".meta.json") and ref["bytes"] >= 5_000_000:
+            # Quick mode (dev only): no download of big files; status, size and cache header from a HEAD request.
+            hr = sess.head(furl, headers={"Accept-Encoding": "identity"}, timeout=60, allow_redirects=True)
+            cc = hr.headers.get("cache-control", "")
+            if hr.status_code != 200:
+                problems.append(f"{rel}: HTTP {hr.status_code}")
+            elif int(hr.headers.get("content-length", -1)) != ref["bytes"]:
+                problems.append(f"{rel}: size {hr.headers.get('content-length')} != manifest {ref['bytes']}")
+            elif (manifest["base_path"] + rel).startswith("dev/") and cc.replace(" ", "") != "public,max-age=60":
+                problems.append(f"{rel}: cache-control is {cc!r}, expected 'public, max-age=60' (dev channel)")
+            else:
+                log.info("ok (size only) %s", rel)
+            continue
         digest, size = hashlib.sha256(), 0
         with sess.get(furl, stream=True, timeout=120) as resp:
             if resp.status_code != 200:
@@ -106,7 +119,7 @@ def verify(url: str, save_to: Path | None) -> int:
             if meta["release"]["doi"] != manifest["doi"]:
                 problems.append(f"{rel}: DOI in meta ({meta['release']['doi']}) differs from the manifest ({manifest['doi']})")
         log.info("ok %s (%d bytes)", rel, size)
-    for layer in manifest["layers"]:
+    for layer in ([] if quick else manifest["layers"]):
         tile = layer["files"]["pmtiles"]
         furl = base_url + manifest["base_path"] + tile["path"]
         rr = sess.get(furl, headers={"Range": "bytes=0-16383"}, timeout=60)
@@ -130,7 +143,7 @@ def verify(url: str, save_to: Path | None) -> int:
             log.error("PROBLEM %s", p)
         print(f"\nНайдено проблем: {len(problems)}. Релиз не принимать.")
         return 1
-    print(f"\nВсё сходится: {len(files_of(manifest))} файлов, размеры и SHA-256 как в манифесте.")
+    print(f"\nВсё сходится: {len(files_of(manifest))} файлов" + (" (быстрая проверка: SHA-256 только у файлов меньше 5 МБ)." if quick else ", размеры и SHA-256 как в манифесте."))
     return 0
 
 
@@ -138,11 +151,15 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Download a published release and compare it with its manifest.")
     parser.add_argument("--url", required=True, help="address of manifest.json")
     parser.add_argument("--save-manifest", help="folder to save a copy of manifest.json (for Zenodo)")
+    parser.add_argument("--quick", action="store_true",
+                        help="dev only: download manifest and all files under 5 MB, check bigger ones by size (HEAD), saves traffic")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args()
     setup_logging(args.verbose)
     try:
-        return verify(args.url, Path(args.save_manifest) if args.save_manifest else None)
+        if args.quick and args.save_manifest:
+            raise GateError('verify', '--quick cannot be used with --save-manifest (final needs the full check)')
+        return verify(args.url, Path(args.save_manifest) if args.save_manifest else None, args.quick)
     except GateError as exc:
         log.error("STOP %s", exc)
         return 2
