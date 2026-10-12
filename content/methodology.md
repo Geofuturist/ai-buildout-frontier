@@ -1,15 +1,16 @@
 # Methodology
 
-**Release:** abf-layers, version {version_layers} (DOI: {DOI_layers}) and abf-boundaries, version
-{version_boundaries} (DOI: {DOI_boundaries}) · published {release_date}
+**Datasets:** abf-layers, United States, version {version_layers} (DOI: {DOI_layers}) ·
+abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France (version and
+DOI on the Data page). Each dataset has its own DOI and is cited on its own.
 
 ## What this site is
 
-AI Buildout Frontier is an open observatory of data layers on the physical side of AI. This first
-release covers the U.S. power system at county level: what generates electricity, how much is
-consumed, where transmission lines run, and what is waiting to connect to the grid. The next
-releases add France, data centers themselves, and the restrictions placed on them around the
-world.
+AI Buildout Frontier is an open observatory of data layers on the physical side of AI. It covers the
+power system of the United States by county: what generates electricity, how much is consumed,
+where transmission lines run, and what is waiting to connect to the grid. For France it covers
+generation, consumption and transmission lines by department, and the data centers that can be
+found in the national register of classified installations. Further countries and layers follow.
 
 The project started from a research question: which of the indicators that AI governance relies
 on can actually be collected from open data and checked by someone else? The map is how we work
@@ -24,9 +25,9 @@ assumptions, and those belong in a methods text, not in the data.
 
 **Blank is not zero.** We separate three states: there is a value; we looked and found nothing; we
 have not looked. A county with 0 MW of generation is a statement that EIA-860 lists no operating
-generator there. A hatched county is not covered by the layer. Sometimes a covered county has an
-empty field because the value does not exist, for example the highest voltage in a county with no
-line. The pop-up then says why.
+generator there. A county marked “Not covered” in the legend is not covered by the layer. Sometimes
+a covered county has an empty field because the value does not exist, for example the highest
+voltage in a county with no line. The pop-up then says why.
 
 **Each layer keeps its source's license.** The project has no single data license. Our own code is
 under the MIT license, and our own compilations, such as the boundary set, are under CC BY 4.0. If
@@ -36,13 +37,14 @@ obligations of every license in it.
 **Every layer shows its dates**: the period the source covers and the day we built the layer. The
 map shows them too, because the sources update on different schedules, from yearly to never again.
 
-**Every layer states how it was checked.** In this release all energy layers are published as the
-source gives them (`source_as_is`). Our scripts place, sum or measure the source's own records and
-run the automated checks listed below. No value was re-checked by a person or by an AI agent.
-Later layers that rest on judgment, such as deciding which registry entry is a data center, will
-state how much of that judgment a person or an agent re-checked.
+**Every layer states how it was checked.** All energy layers are published as the source gives
+them (`source_as_is`). Our scripts place, sum or measure the source's own records and run the
+automated checks listed below. No value in them was re-checked by a person or by an AI agent. A
+layer that rests on judgment, such as deciding which registry entry is a data center, states how
+much of that judgment was re-checked and by whom: in the French data-center layer, every record was
+re-checked by an independent AI agent.
 
-## Layers in this release
+## United States · abf-layers
 
 | Layer | Source | Value per county | Data through | License |
 |---|---|---|---|---|
@@ -166,6 +168,115 @@ nine Connecticut planning regions are not covered either (see below).
   This is the jointly released data file under CC BY 4.0. It is not the GridTracker website, whose
   terms do not allow reuse.
 
+## France · abf-fra
+
+The French layers form a separate dataset, abf-fra, with its own DOI. They cover the 101
+departments: the 96 of metropolitan France, Corsica included, and the five overseas departments.
+Values are attached to a department by the department code given in each source, not by
+geometry. The exception is transmission lines, whose length is measured inside each department.
+Department outlines come from Natural Earth 1:10m (see "Administrative boundaries"), so they are
+generalized. Department names follow the official geographic code of INSEE: where Natural Earth
+spells a name differently, the INSEE spelling is used.
+
+| Layer | Source | Value per department | Data as of | License |
+|---|---|---|---|---|
+| Generation | National register of production and storage installations, via ODRÉ | maximum installed capacity of operating installations, MW, by technology group; storage separately | 31 July 2026 | Licence Ouverte / Open Licence 2.0 |
+| Electricity consumption | Agence ORE | electricity delivered in the year, MWh, by sector; number of delivery points | year 2024 | Licence Ouverte / Open Licence 1.0 |
+| Transmission lines | RTE line data, in a copy republished by DDTM de l'Eure | km of line in operation inside the department by voltage band | 30 June 2023 | Licence Ouverte / Open Licence 2.0 |
+| Data centers | Register of classified installations (ICPE), Géorisques | points: data centers present in the register | extract of 10 October 2026 | Licence Ouverte / Open Licence 2.0 |
+
+French and U.S. values measure different things: maximum installed capacity rather than net summer
+capacity, delivered energy over a year rather than a modeled peak hour. Compare them only with that
+in mind.
+
+### Generation · ODRÉ national register · department
+
+- **Edition.** Registre national des installations de production et de stockage d'électricité,
+  snapshot of 31 July 2026, published on Open Data Réseaux Énergies (ODRÉ) and updated monthly. RTE
+  compiles the register from its own data and the data of the distribution network operators:
+  Enedis, EDF SEI and local distribution companies.
+- **What is counted.** The maximum installed capacity (puissance maximale installée) of the
+  installations in operation on the snapshot date. An installation counts unless it has a
+  disconnection date, was commissioned after the snapshot date, or is marked as temporarily
+  withdrawn. Installations without a commissioning date are counted, because the register lists
+  them. Installations under 36 kW are aggregated in the register and included.
+- **Groups and storage.** Technology groups follow the register: nuclear, fossil (non-renewable
+  thermal), hydro, wind, solar, bioenergy and other. Pumped-storage hydro stays in hydro, as the
+  register classifies it. Other storage, mostly batteries, is a separate column and is not part of
+  the total.
+- **What is left out.** Aggregated rows without a department code (34.1 MW), and installations in
+  Saint-Pierre-et-Miquelon, Saint-Barthélemy and Saint-Martin (135.1 MW), which are not
+  departments. With them, the department values add up exactly to the register total.
+- **Closed plants.** If a plant on our list of known closures appears as operating, the build stops
+  and the case is decided from public sources. The list and every decision are in the code
+  repository.
+
+### Electricity consumption · Agence ORE · department
+
+- **Edition.** "Consommation annuelle d'électricité et gaz par département", Agence ORE, year 2024.
+  Only electricity is used.
+- **What the value is.** Electricity delivered to consumers in the department during the year, in
+  MWh, as reported by the grid operators: in total and by sector (residential, tertiary, industry,
+  agriculture, unknown), with the number of delivery points. Consumers connected directly to the
+  transmission network are included.
+- **Not peak power.** This is metered energy over a year. It is not comparable with the modeled peak
+  hour of the U.S. demand layer.
+- **Rows without a value.** In 31 departments the source publishes 85 department × sector rows
+  without a value. Totals there are lower bounds; the field `n_rows_without_value` marks them.
+- **Confidentiality.** The source hides small values at municipal level. We compared the department
+  file with the sum of the municipal file of the same source: department totals are 0.12% higher
+  nationally, so they are not reduced by this confidentiality.
+
+### Transmission lines · RTE · department
+
+- **Edition.** RTE's datasets of overhead and underground lines, data as of 30 June 2023, in the
+  copy republished by the Direction départementale des territoires et de la mer de l'Eure on
+  data.gouv.fr.
+- **Why a 2023 copy, and why no segments.** RTE's current list of lines on ODRÉ (edition of 16 June
+  2026) has no coordinates. Its description says: "RTE a fait évoluer l'accès aux données GPS des
+  infrastructures du réseau public de transport pour des raisons de sécurité publique" (RTE has
+  changed access to the GPS data of the transmission network for reasons of public security;
+  https://odre.opendatasoft.com/explore/dataset/lignes-aeriennes-rte-nv/). We do not republish locations that their operator withdrew for security (see "What we
+  do not publish"), even when an older copy and its license would allow it. So the line segments
+  are not published. Kilometers per department are: they do not show where a line runs.
+- **What the values are.** The same method as the U.S. county layer: length of line inside the
+  department, by the voltage bands shared by all transmission layers of the project. Direct-current
+  lines have their own column. Lines recorded as de-energized (hors tension) are counted without a
+  voltage. Only lines in operation are counted; lines with an administrative approval that are not
+  yet built are left out.
+- **Coverage.** 94 departments of continental France. Corsica and the overseas departments have
+  grids separate from the RTE network and are marked not covered.
+- **Outlines.** Department outlines are Natural Earth 1:10m, so a line within about a kilometer of
+  a department boundary may be counted in the neighboring department. 793.5 km of line lie outside
+  the 94 departments (coast and international connections) and are not counted.
+- **What it does not show.** How much power can flow into a department.
+
+### Data centers · classified installations (ICPE), Géorisques · points
+
+- **The register.** France registers installations whose activities exceed environmental
+  thresholds as installations classified for environmental protection (ICPE). Géorisques publishes
+  the register. A data center appears in it when its installations cross these thresholds. Being
+  in the register is a fact about the register: it says nothing about the size of the site, and
+  data centers below the thresholds are not in it at all.
+- **Finding data centers in it.** The register has no category for data centers, and its activity
+  codes are two-digit divisions only. We select records by three rules: the name contains a
+  data-center term; the operator is on our list of data-center operators (for operators with other
+  lines of business, only when the name also points to a data center); or the site is named as a
+  data center in a public document of its operator. The rules and lists are in the code
+  repository. Each point records which rule found it.
+- **Checking.** An independent AI agent, working from a written protocol and not involved in
+  writing the rules, checked each selected record against its register card and a public source.
+  The agent can confirm or dispute a record; it cannot add one. Of 46 selected records, 43 were
+  confirmed and are published; 3 could not be confirmed and are left out.
+- **Misses.** The agent also checked random samples of records the rules left out. They contained
+  data centers, and the rules were extended to include them. From the last sample we estimate that
+  roughly 3 to 72 of the 177 left-out records that were never checked may be data centers. The
+  layer is therefore a lower bound of the data centers in the register.
+- **Location.** The register gives coordinates but not their precision, so every point is shown at
+  commune precision. We do not use geocoders.
+- **What is not published.** Classification headings (rubriques), the regime of the installation,
+  its equipment and the contents of inspections are never collected into the layer.
+
 ## Administrative boundaries · ADM0, ADM1, ADM2
 
 - **One frame for the whole world.** Natural Earth at 1:10 million, version 5.1.2. Where borders
@@ -214,13 +325,13 @@ equal-area projections.
 
 - **Formats.** Every layer comes as GeoParquet (the main format, readable by GeoPandas and DuckDB),
   gzipped GeoJSON and CSV without geometry. Map tiles are for display only.
-- **Joining.** Join on `unit_id` or on the five-digit `fips` code. Read codes as text, or leading
-  zeros disappear.
+- **Joining.** Join on `unit_id`, or in U.S. layers on the five-digit `fips` code. Read codes as
+  text, or leading zeros disappear.
 - **Stable links.** Files sit at fixed, versioned addresses. A new version gets a new address, and
   old ones keep working. The current version is listed in `manifest/latest.json` with file sizes
   and checksums.
-- **Citing.** Cite the layer, the version and the DOI: {DOI_layers} for the energy layers,
-  {DOI_boundaries} for the boundaries. Each layer card gives a ready citation, and each pop-up gives
+- **Citing.** Cite the layer, the version and the DOI of its dataset: {DOI_layers} for the U.S.
+  energy layers, {DOI_boundaries} for the boundaries; the DOI of abf-fra is on the Data page. Each layer card gives a ready citation, and each pop-up gives
   one for the single record. Please also credit the original source as its license requires. The
   attribution text of each layer is in its metadata and on the Sources and licenses page.
 
@@ -248,6 +359,17 @@ equal-area projections.
   copy of the publisher's metadata.
 - **Transmission lines, segments.** Every segment ID is unique.
 
+**France:**
+- **Generation.** The department values plus the rows left out (no department code; Saint-Pierre-et-
+  Miquelon, Saint-Barthélemy, Saint-Martin) equal the capacity of operating installations in the
+  register, to the kilowatt.
+- **Electricity consumption.** The department values equal the source total for 2024, in every
+  column. Department totals were compared with the municipal file of the same source.
+- **Transmission lines.** When the layer was built, the department totals were checked against the
+  length of all line segments inside the 94 departments.
+- **Data centers.** Every published record was re-checked by an independent AI agent; samples of
+  the records left out were checked for misses (see the layer section).
+
 **Against our earlier Virginia pipeline.** When we first built these layers in September 2026, on
 the 2024 edition of EIA-860 and the 2025 edition of Queued Up, we compared them with the pipeline
 behind version 1.0 for Virginia's 133 county-equivalents:
@@ -269,6 +391,10 @@ publication checks them by checksum. Corrections come as a new version.
   source is no longer updated. Some lines have no recorded voltage.
 - **The queue** lists requests, not plants that will be built, and generation, not demand.
 - **Alaska and Hawaii** are not covered, and in the queue layer neither is Connecticut.
+- **France, transmission** comes from a copy with data as of June 2023 and is published only as
+  department totals. Corsica and the overseas departments are not covered.
+- **France, data centers** is a lower bound: data centers registered under names and operators we
+  could not identify are missed, and the points are at commune precision.
 - **Boundaries** outside the United States, France, the United Kingdom and Norway are national only
   and generalized at 1:10 million.
 
@@ -281,7 +407,9 @@ publication checks them by checksum. Corrections come as a new version.
   than three facilities.
 - **Locations withdrawn for security.** If the publisher of infrastructure locations withdraws them
   and gives security as the reason, we do not republish older copies. We publish totals by area
-  instead.
+  instead. This is why France's transmission lines appear only as department totals.
+- **Classification details of installations**: for the French data-center layer, the
+  classification headings, regime, equipment and inspection contents from the register.
 - **Substations from OpenStreetMap.** We built this layer, but it is not in this release: coverage
   is uneven, and its license (ODbL) would carry over to any file it is merged into.
 - **A composite score.** See below.
