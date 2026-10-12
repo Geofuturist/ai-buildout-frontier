@@ -147,5 +147,5 @@ from OpenStreetMap are under ODbL 1.0 (`data/conus/NOTICE_substations_osm.md`).
 
 ## Author
 
-Volodymyr Ilin — geographer, AI infrastructure researcher.  
+Vladimir Ilin — geographer, AI infrastructure researcher.  
 [Substack](https://substack.com/@volodymyrilin) | Research: compute geopolitics, middle AI powers, AI energy constraints
