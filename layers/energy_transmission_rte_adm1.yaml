@@ -1,0 +1,60 @@
+# [CODE-PILOT] 12.10 · abf-fra v0.2.0 (SPEC_FRA r10 §11). Texts "[RES]": [RES]. Structure: [CODE-PUB].
+# Region names: boundaries/name_overrides.csv (INSEE COG), applied by [CODE-PUB].
+# breaks: preliminary round values; the build may recompute.
+# Segments are NOT published (SPEC_FRA §5); this layer is a regional total only.
+layer_id: energy_transmission_rte_adm1
+title: "Transmission lines · RTE · region"
+title_ru: "ЛЭП · RTE · регионы"
+domain: energy
+level: ADM1
+frame: {iso3: FRA, level: ADM1}
+input: {table: 'data\fra\layer_transmission_rte_adm1_20261012.csv', key: unit_id,
+        legacy_meta: 'data\fra\layer_transmission_rte_adm1_20261012_meta.json',
+        coverage_column: coverage_status, coverage_note_column: coverage_note}
+description: "[RES]"
+fields:
+  - {name: km_total, type: number, unit: km, nullable: true, min: 0, description: "[RES]"}
+  - {name: km_lt100, type: number, unit: km, nullable: true, min: 0}
+  - {name: km_100_199, type: number, unit: km, nullable: true, min: 0}
+  - {name: km_200_299, type: number, unit: km, nullable: true, min: 0}
+  - {name: km_300_399, type: number, unit: km, nullable: true, min: 0}
+  - {name: km_400_599, type: number, unit: km, nullable: true, min: 0}
+  - {name: km_ge600, type: number, unit: km, nullable: true, min: 0}
+  - {name: km_dc, type: number, unit: km, nullable: true, min: 0}
+  - {name: km_unknown, type: number, unit: km, nullable: true, min: 0}
+  - {name: max_voltage_kv, type: number, unit: kV, nullable: true}
+  - {name: has_any_line, type: boolean, nullable: true}
+  - {name: frac_km_unknown_voltage, type: number, nullable: true, min: 0, max: 1,
+     description: "Recomputed from km of the region, not averaged from departments"}
+null_meaning_all_fields: {not_covered: "[RES]", covered: null}
+sources:
+  - source_id: rte_lignes_ddtm27
+    role: primary
+    publisher: "RTE (copy republished by DDTM de l'Eure on data.gouv.fr)"
+    product: "Lignes aériennes RTE; Lignes souterraines RTE"
+    url: [https://www.data.gouv.fr/datasets/lignes-aeriennes-rte, https://www.data.gouv.fr/datasets/lignes-souterraines-rte-1]
+    edition: "data at 2023-06-30"
+    current_through: 2023-06-30
+    publication_mode: open_licence
+    license: {id: etalab-2.0, name: "Licence Ouverte / Open Licence version 2.0", family: attribution,
+              attribution_text: "Transmission lines: RTE, Lignes aériennes RTE and Lignes souterraines RTE (data as of 30/06/2023), republished by DDTM de l'Eure on data.gouv.fr, last updated 02/11/2023, Licence Ouverte v2.0 (Etalab)."}   # same input as the ADM2 layer
+    rights_basis: {type: license, text: "The data.gouv.fr page of the republished copy states Licence Ouverte v2.0. The line segments are withheld by the project's rule on geometry withdrawn by its operator, not by the licence."}
+  - source_id: natural_earth_via_abf_boundaries
+    role: geometry
+    product: "abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments"
+    publication_mode: open_licence
+    license: {id: public-domain, family: public_domain,
+              attribution_text: "Region outlines: Natural Earth, via abf-boundaries v0.1.0."}
+    rights_basis: {type: license, text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."}
+verification:
+  method: >-
+    Same segments and method as energy_transmission_rte_adm2 (etat = EN EXPLOITATION, EPSG:2154),
+    clipped to the 18 regions. Sum of km_total over regions = sum over departments (87,942.4 km),
+    difference 0.0000%.
+  totals_vs_source: {tolerance_pct: 0.01}
+freshness: {source_cadence: discontinued_geometry, next_check: 2027-06-30}
+coverage:
+  geography: "12 continental regions; Corse (94) and the five overseas regions not covered"
+  known_gaps: "[RES]"
+display: {geometry_type: polygon, value_field: km_total, unit: km,
+          breaks: [4000, 6000, 8000, 10000], zero_class: false, legend_title: "Transmission lines, km"}

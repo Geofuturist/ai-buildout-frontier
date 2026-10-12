@@ -48,6 +48,7 @@ AGENT_FILE = RES / "agent_recheck_icpe_fra.xlsx"
 CANDIDATES = RES / "icpe_candidates.csv"
 SITES = rules_file("dc_sites.csv")         # rule D ([RES] 10.10)
 RULE_CHANGES = rules_file("rule_changes.csv")
+RULES_DIR = RULE_CHANGES.parent
 # published column selection_rule (SPEC_FRA r6 §6): internal rule letter -> public value.
 # C is the same operator list (mixed-profile operators, name with a DC marker).
 SELECTION_RULE = {"A": "name", "B": "operator_list", "C": "operator_list", "D": "site_list"}
@@ -126,9 +127,34 @@ def classify(df: pd.DataFrame, op: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+# agent verdicts in git (SPEC_FRA r8 §6 p.7): a reduced copy of the round files, so that
+# select --final and apply run from the repository alone. No addresses, no free-text notes, no P9.
+VERDICTS = RULES_DIR / "icpe_agent_verdicts.csv"
+VERDICT_COLS = ["record_id", "round", "sample", "rule", "agent_is_dc", "agree", "reason_code",
+                "evidence_url", "checked_at", "checked_by"]
+REASON_CODES = ("WRONG_RECORD", "NOT_DC", "NO_EVIDENCE", "MISSED", "OTHER")   # protocol §4
+FROM_VERDICTS = "--from-verdicts" in sys.argv
+
+
+def round_files() -> list[Path]:
+    return sorted(RES.glob("agent_recheck_icpe_fra_round*_done.xlsx"))
+
+
 def previous_answers() -> pd.DataFrame:
-    """All earlier agent rounds (research\fra\agent_recheck_icpe_fra_round*_done.xlsx)."""
-    files = sorted(RES.glob("agent_recheck_icpe_fra_round*_done.xlsx"))
+    r"""All earlier agent rounds: research\fra\agent_recheck_icpe_fra_round*_done.xlsx, or
+    data\fra\rules\icpe_agent_verdicts.csv with --from-verdicts (or when no round file exists)."""
+    files = round_files()
+    if FROM_VERDICTS or not files:
+        if not VERDICTS.exists():
+            return pd.DataFrame(columns=["record_id", "rule", "round", *AGENT_COLS])
+        v = pd.read_csv(VERDICTS, dtype=str, keep_default_na=False)
+        a = pd.DataFrame({"record_id": v["record_id"], "rule": v["rule"], "round": v["round"],
+                          "agree": v["agree"], "agent_reason": v["reason_code"],
+                          "agent_is_dc": v["agent_is_dc"], "agent_evidence_url": v["evidence_url"]})
+        for c in AGENT_COLS:
+            if c not in a:
+                a[c] = ""
+        return a
     parts = []
     for f in files:
         a = pd.read_excel(f, sheet_name="records", dtype=str).fillna("")
@@ -136,6 +162,36 @@ def previous_answers() -> pd.DataFrame:
         parts.append(a)
     return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame(
         columns=["record_id", "rule", "round", *AGENT_COLS])
+
+
+def export_verdicts() -> None:
+    r"""Round files -> data\fra\rules\icpe_agent_verdicts.csv (reduced columns)."""
+    files = round_files()
+    if not files:
+        sys.exit("СТОП: нет файлов раундов research\\fra\\agent_recheck_icpe_fra_round*_done.xlsx")
+    rows, free = [], []
+    for f in files:
+        a = pd.read_excel(f, sheet_name="records", dtype=str).fillna("")
+        rnd = re.search(r"round(\d+)", f.name).group(1)
+        day = dt.date.fromtimestamp(f.stat().st_mtime).isoformat()
+        for _, r in a.iterrows():
+            raw = str(r.get("agent_reason", "")).strip()
+            code = raw.upper() if raw.upper() in REASON_CODES else next(
+                (c for c in REASON_CODES if re.search(rf"\b{c}\b", raw.upper())), "")
+            if raw and not code:
+                free.append(r["record_id"])
+            rows.append({"record_id": str(r["record_id"]).zfill(10), "round": rnd,
+                         "sample": "rejected" if r["rule"] == "rejected_sample" else "candidate",
+                         "rule": r["rule"], "agent_is_dc": r.get("agent_is_dc", ""),
+                         "agree": str(r.get("agree", "")).strip().lower(), "reason_code": code,
+                         "evidence_url": r.get("agent_evidence_url", ""), "checked_at": day,
+                         "checked_by": "agent:VER-FRA"})
+    v = pd.DataFrame(rows, columns=VERDICT_COLS).sort_values(["round", "record_id"])
+    v.to_csv(VERDICTS, index=False, encoding="utf-8")
+    print(f"{VERDICTS.name}: {len(v)} строк ({', '.join(f'раунд {k}: {n}' for k, n in v['round'].value_counts().sort_index().items())}); "
+          f"кандидатов {int((v['sample'] == 'candidate').sum())}, отклонённых {int((v['sample'] == 'rejected').sum())}.")
+    print("Коды причин: " + ", ".join(f"{k or '(пусто)'} {n}" for k, n in v["reason_code"].value_counts().items()))
+    print(f"Причин свободным текстом без кода (не перенесены): {len(free)}" + (f" — {free}" if free else ""))
 
 
 def select(final: bool = False) -> None:
@@ -400,7 +456,9 @@ if __name__ == "__main__":
         select(final="--final" in sys.argv)
     elif len(sys.argv) >= 2 and sys.argv[1] == "pin-sources":
         pin_sources()
+    elif len(sys.argv) >= 2 and sys.argv[1] == "export-verdicts":
+        export_verdicts()
     elif len(sys.argv) >= 2 and sys.argv[1] == "apply":
         apply()
     else:
-        sys.exit("Использование: build_icpe_georisques.py select [--final] | pin-sources | apply")
+        sys.exit("Использование: build_icpe_georisques.py select [--final] | pin-sources | export-verdicts | apply  [--from-verdicts]")

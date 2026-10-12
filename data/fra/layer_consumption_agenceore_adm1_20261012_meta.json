@@ -1,0 +1,38 @@
+{
+  "layer": "consumption_agenceore_adm1",
+  "snapshot_date": "20261012",
+  "rows": 18,
+  "n_covered": 18,
+  "n_not_covered": 0,
+  "source": "Agence ORE — annual consumption by region",
+  "source_url": "https://opendata.agenceore.fr/datasets/8us2i1a0pj4rtmhil0z42yzu",
+  "mode": "region_dataset",
+  "edition": "data year 2024",
+  "current_through": "2024-12-31",
+  "license": "Licence Ouverte / Open Licence (Agence ORE)",
+  "inputs": [
+    {
+      "file": "8us2i1a0pj4rtmhil0z42yzu.csv",
+      "path": "D:\\GISData\\Energy\\France\\agenceore_consommation\\8us2i1a0pj4rtmhil0z42yzu.csv",
+      "bytes": 4706129,
+      "sha256": "d603aaed2e5b4ad9eb75d2911697dc739ebb8d935439865eeb050cbe30633525"
+    }
+  ],
+  "verification_method": "electricity rows, year 2024, summed by 'Code Région'",
+  "totals_vs_source": {
+    "file_mwh": 403755065.01068604,
+    "layer_mwh": 403755065.010686,
+    "rows_without_region": 0,
+    "ok": "True"
+  },
+  "vs_departments": {
+    "max_abs_diff_pct": 0.5356991201097007,
+    "regions_over_1pct": []
+  },
+  "proposed_breaks_mwh": [
+    1700000,
+    17000000,
+    25000000,
+    37000000
+  ]
+}

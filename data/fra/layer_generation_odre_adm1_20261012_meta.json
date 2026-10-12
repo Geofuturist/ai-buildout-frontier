@@ -1,0 +1,47 @@
+{
+  "layer": "generation_odre_adm1",
+  "snapshot_date": "20261012",
+  "rows": 18,
+  "n_covered": 18,
+  "n_not_covered": 0,
+  "source": "Registre national des installations de production et de stockage d'électricité (agrégé), ODRÉ",
+  "source_url": "https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/",
+  "edition": "au 31/07/2026",
+  "current_through": "2026-07-31",
+  "license": "Licence Ouverte v2.0 (Etalab)",
+  "inputs": [
+    {
+      "file": "registre-national-installation-production-stockage-electricite-agrege.csv",
+      "path": "D:\\GISData\\Energy\\France\\odre_registre\\registre-national-installation-production-stockage-electricite-agrege.csv",
+      "bytes": 44599902,
+      "sha256": "20bf6795a72286aec629982a7cb6023e9e156e078481c3b5fdfc9fa848c6e39b"
+    }
+  ],
+  "verification_method": "operating rule of energy_generation_odre_adm2; grouped by the region field 'codeRegion' of the register; codes 975/977/978 excluded",
+  "totals_vs_source": {
+    "regions_kw": 172876205.382,
+    "excluded_975_977_978": {
+      "rows": 44,
+      "kw": 135075.7
+    },
+    "excluded_no_region": {
+      "rows": 13,
+      "kw": 5236.71
+    },
+    "source_kw": 173016517.792,
+    "ok": "True"
+  },
+  "vs_departments": {
+    "rows_without_department": 49,
+    "of_which_with_region": 36,
+    "mw_with_region": 28.88937,
+    "ok": "True",
+    "region_mismatch_rows": 0
+  },
+  "proposed_breaks_mw": [
+    800,
+    4000,
+    11000,
+    16000
+  ]
+}

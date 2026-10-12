@@ -1,0 +1,56 @@
+# [CODE-PILOT] 12.10 · abf-fra v0.2.0 (SPEC_FRA r10 §11). Texts "[RES]": [RES]. Structure: [CODE-PUB].
+# Region names: boundaries/name_overrides.csv (INSEE COG), applied by [CODE-PUB].
+# breaks: preliminary round values; the build may recompute.
+# Attribution: [RES] checks it against research\fra\licences\agenceore_8us2i1a0pj4rtmhil0z42yzu.html
+layer_id: energy_consumption_agenceore_adm1
+title: "Electricity consumption · Agence ORE · region"
+title_ru: "Потребление электроэнергии · Agence ORE · регионы"
+domain: energy
+level: ADM1
+frame: {iso3: FRA, level: ADM1}
+input: {table: 'data\fra\layer_consumption_agenceore_adm1_20261012.csv', key: unit_id,
+        legacy_meta: 'data\fra\layer_consumption_agenceore_adm1_20261012_meta.json'}
+description: "[RES]"
+fields:
+  - {name: consumption_mwh, type: number, unit: MWh, nullable: false, min: 0, description: "[RES]"}
+  - {name: consumption_mwh_residential, type: number, unit: MWh, nullable: false, min: 0}
+  - {name: consumption_mwh_tertiary, type: number, unit: MWh, nullable: false, min: 0}
+  - {name: consumption_mwh_industry, type: number, unit: MWh, nullable: false, min: 0}
+  - {name: consumption_mwh_agriculture, type: number, unit: MWh, nullable: false, min: 0}
+  - {name: consumption_mwh_unknown, type: number, unit: MWh, nullable: false, min: 0}
+  - {name: n_delivery_points, type: integer, nullable: false, min: 0}
+  - {name: n_rows_without_value, type: integer, nullable: false, min: 0, description: "[RES]"}
+  - {name: data_year, type: integer}
+null_meaning_all_fields: {not_covered: "[RES]", covered: null}
+sources:
+  - source_id: agenceore_conso_region
+    role: primary
+    publisher: Agence ORE
+    product: "Consommation annuelle d'électricité et gaz par région"
+    url: https://opendata.agenceore.fr/datasets/8us2i1a0pj4rtmhil0z42yzu
+    edition: "data year 2024"
+    current_through: 2024-12-31
+    publication_mode: open_licence
+    license: {id: "[RES]", name: "[RES]", family: attribution, attribution_text: "[RES]"}
+    rights_basis: {type: license, text: "[RES]"}
+  - source_id: natural_earth_via_abf_boundaries
+    role: geometry
+    product: "abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments"
+    publication_mode: open_licence
+    license: {id: public-domain, family: public_domain,
+              attribution_text: "Region outlines: Natural Earth, via abf-boundaries v0.1.0."}
+    rights_basis: {type: license, text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."}
+verification:
+  method: >-
+    Electricity rows of 2024 summed by 'Code Région' of the regional dataset (SPEC_FRA §11,
+    principle 3: the source's own regional totals). Each region compared with the sum of its
+    departments in energy_consumption_agenceore_adm2: none differs by more than 1%; nationally the
+    regional file is 0.10% higher.
+  totals_vs_source: {exceptions: []}
+freshness: {source_cadence: annual, next_check: 2027-01-31}
+coverage:
+  geography: "All 18 regions"
+  known_gaps: "[RES]"
+display: {geometry_type: polygon, value_field: consumption_mwh, unit: MWh,
+          breaks: [2000000, 15000000, 25000000, 35000000], zero_class: false,
+          legend_title: "Electricity consumption 2024, MWh"}

@@ -1,0 +1,47 @@
+{
+  "layer": "transmission_rte_adm1",
+  "snapshot_date": "20261012",
+  "rows": 18,
+  "n_covered": 12,
+  "n_not_covered": 6,
+  "source": "RTE — Lignes aériennes / souterraines RTE, copy published by DDTM de l'Eure (data at 30.06.2023)",
+  "source_url": [
+    "https://www.data.gouv.fr/datasets/lignes-aeriennes-rte",
+    "https://www.data.gouv.fr/datasets/lignes-souterraines-rte-1"
+  ],
+  "edition": "data at 2023-06-30 (DDTM 27 copy)",
+  "current_through": "2023-06-30",
+  "license": "Licence Ouverte v2.0 (lov2)",
+  "inputs": [
+    {
+      "file": "dataset-1791627155707.zip",
+      "path": "D:\\GISData\\Energy\\France\\ddtm27_rte_lignes\\dataset-1791627155707.zip",
+      "bytes": 4833413,
+      "sha256": "2431b0a844758389a0b19bbc48cada4f8c45177bc7fdef88e114252a3eed862c"
+    },
+    {
+      "file": "dataset-1791627176048.zip",
+      "path": "D:\\GISData\\Energy\\France\\ddtm27_rte_lignes\\dataset-1791627176048.zip",
+      "bytes": 15246493,
+      "sha256": "912a690c9daf615b1ede6e0d6608ed8341028f942796ac088eb5749adfca5949"
+    }
+  ],
+  "derived_input_not_published": {
+    "file": "rte_lines_segments_ddtm2023_20261010.gpkg",
+    "sha256": "c0478c16f67d0f3052d7b000164352548ff7006ffd2cbf07cddfbbff443d95d9"
+  },
+  "verification_method": "segments of energy_transmission_rte_adm2 (etat = 'EN EXPLOITATION') clipped to FRA ADM1 in EPSG:2154; length inside each region",
+  "totals_vs_source": {
+    "km_regions": 87942.38821245644,
+    "km_departments_v010": 87942.38821245643,
+    "diff_pct": 1.654710035075631e-14,
+    "tolerance_pct": 0.01,
+    "ok": true
+  },
+  "proposed_breaks_km": [
+    5300,
+    5500,
+    6700,
+    9700
+  ]
+}

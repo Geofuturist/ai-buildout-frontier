@@ -1,0 +1,59 @@
+# [CODE-PILOT] 12.10 · abf-fra v0.2.0 (SPEC_FRA r10 §11). Texts "[RES]": [RES]. Structure: [CODE-PUB].
+# Region names: boundaries/name_overrides.csv (INSEE COG), applied by [CODE-PUB].
+# breaks: preliminary round values; the build may recompute.
+layer_id: energy_generation_odre_adm1
+title: "Generation · ODRÉ national register · region"
+title_ru: "Генерация · национальный реестр ODRÉ · регионы"
+domain: energy
+level: ADM1
+frame: {iso3: FRA, level: ADM1}
+input: {table: 'data\fra\layer_generation_odre_adm1_20261012.csv', key: unit_id,
+        legacy_meta: 'data\fra\layer_generation_odre_adm1_20261012_meta.json'}
+description: "[RES]"
+fields:
+  - {name: installed_capacity_mw, type: number, unit: MW, nullable: false, min: 0, description: "[RES]"}
+  - {name: storage_capacity_mw, type: number, unit: MW, nullable: false, min: 0, description: "[RES]"}
+  - {name: capacity_nuclear_mw, type: number, unit: MW, nullable: false, min: 0}
+  - {name: capacity_fossil_mw, type: number, unit: MW, nullable: false, min: 0}
+  - {name: capacity_hydro_mw, type: number, unit: MW, nullable: false, min: 0}
+  - {name: capacity_wind_mw, type: number, unit: MW, nullable: false, min: 0}
+  - {name: capacity_solar_mw, type: number, unit: MW, nullable: false, min: 0}
+  - {name: capacity_bioenergy_mw, type: number, unit: MW, nullable: false, min: 0}
+  - {name: capacity_other_mw, type: number, unit: MW, nullable: false, min: 0}
+  - {name: n_installations, type: integer, nullable: false, min: 0}
+  - {name: data_snapshot_date, type: date}
+null_meaning_all_fields: {not_covered: "[RES]", covered: null}
+sources:
+  - source_id: odre_registre
+    role: primary
+    publisher: "RTE, Enedis, EDF SEI, ELD (ODRÉ)"
+    product: "Registre national des installations de production et de stockage d'électricité (agrégé)"
+    url: https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/
+    edition: "au 31/07/2026"
+    current_through: 2026-07-31
+    publication_mode: open_licence
+    license: {id: etalab-2.0, name: "Licence Ouverte / Open Licence version 2.0", family: attribution,
+              attribution_text: "Generation: Registre national des installations de production et de stockage d'électricité (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies, published on ODRÉ, last updated 10/09/2026, Licence Ouverte v2.0 (Etalab)."}   # same input as the ADM2 layer
+    rights_basis: {type: license, text: "The ODRÉ dataset page states Licence Ouverte v2.0 (Etalab)."}
+  - source_id: natural_earth_via_abf_boundaries
+    role: geometry
+    product: "abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments"
+    publication_mode: open_licence
+    license: {id: public-domain, family: public_domain,
+              attribution_text: "Region outlines: Natural Earth, via abf-boundaries v0.1.0."}
+    rights_basis: {type: license, text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."}
+verification:
+  method: >-
+    Same operating rule as energy_generation_odre_adm2; rows grouped by the region code of the
+    register (codeRegion), not by summing departments. Codes 975, 977, 978 excluded.
+  totals_vs_source:
+    exceptions:
+      - {what: "codes 975, 977, 978 (not regions)", rows: 44, mw: 135.076}
+      - {what: "rows without region code", rows: 13, mw: 5.237}
+  vs_departments: "region − sum of its departments = rows with a region code but no department code (36 rows, 28.9 MW); checked per region"
+freshness: {source_cadence: monthly, next_check: 2026-11-30}
+coverage:
+  geography: "All 18 regions, including the five overseas regions"
+  known_gaps: "[RES]"
+display: {geometry_type: polygon, value_field: installed_capacity_mw, unit: MW,
+          breaks: [1000, 5000, 10000, 15000], zero_class: false, legend_title: "Installed capacity, MW"}
