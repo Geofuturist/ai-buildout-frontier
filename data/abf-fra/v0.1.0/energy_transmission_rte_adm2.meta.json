@@ -1,0 +1,358 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_transmission_rte_adm2",
+  "title": "Transmission lines · RTE · department",
+  "title_ru": "ЛЭП · RTE · департаменты",
+  "domain": "energy",
+  "level": "ADM2",
+  "description": "Kilometers of RTE transmission line in operation inside each department of mainland France by voltage band, their sum, the highest voltage present, and whether the department has any line. Lengths are measured inside the department; a line that crosses a boundary is counted only for the part inside. The line geometry dates from 30 June 2023.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name from the boundaries release; where it differs from the official geographic code, the official spelling is used (see verification.method)."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "coverage_note",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+      "null_meaning": {
+        "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+        "covered": "The unit is covered, so there is no reason to give."
+      }
+    },
+    {
+      "name": "km_total",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Sum of the band columns: length of line in operation inside the department, km.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_lt100",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of line below 100 kV (90, 63, 45 kV and below), km. 0 means none.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_100_199",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of line from 100 to 199 kV (150 kV in this network), km. 0 means none.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_200_299",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of line from 200 to 299 kV (225 kV in this network), km. 0 means none.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_300_399",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of line from 300 to 399 kV, km. The RTE network has no line in this band; the column keeps the bands common to all transmission layers of the project.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_400_599",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of line from 400 to 599 kV (400 kV in this network), km. 0 means none.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_ge600",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of line of 600 kV and above, km. The RTE network has no line in this band; the column keeps the bands common to all transmission layers of the project.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_dc",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of direct-current line, km. 0 means none.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "km_unknown",
+      "type": "number",
+      "unit": "km",
+      "nullable": true,
+      "description": "Length of line without a usable voltage, mostly lines recorded as de-energized (hors tension), km. 0 means none.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "max_voltage_kv",
+      "type": "number",
+      "unit": "kV",
+      "nullable": true,
+      "description": "Highest voltage among the lines inside the department that have a recorded voltage.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": "The department has no line with a recorded voltage."
+      }
+    },
+    {
+      "name": "has_any_line",
+      "type": "boolean",
+      "nullable": true,
+      "description": "True if at least one line of the source touches the department.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": null
+      }
+    },
+    {
+      "name": "frac_km_unknown_voltage",
+      "type": "number",
+      "nullable": true,
+      "description": "Share of the line length inside the department without a usable voltage, from 0 to 1.",
+      "null_meaning": {
+        "not_covered": "The RTE transmission network covers mainland France; Corsica and the overseas departments have separate grids that are not in this source.",
+        "covered": "The department has no line length inside it, so the share is undefined."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "rte_lignes_ddtm27",
+      "role": "primary",
+      "publisher": "RTE (copy republished by DDTM de l'Eure on data.gouv.fr)",
+      "product": "Lignes aériennes RTE; Lignes souterraines RTE",
+      "url": "https://www.data.gouv.fr/datasets/lignes-aeriennes-rte",
+      "edition": "data at 2023-06-30",
+      "current_through": "2023-06-30",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "etalab-2.0",
+        "name": "Licence Ouverte / Open Licence version 2.0",
+        "family": "attribution",
+        "attribution_text": "Transmission lines: Lignes aériennes RTE and Lignes souterraines RTE (network of RTE, data as of 30/06/2023), Direction départementale des territoires et de la mer de l'Eure, data.gouv.fr, last updated 02/11/2023, Licence Ouverte / Open Licence version 2.0.",
+        "url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The data.gouv.fr pages of both datasets state Licence Ouverte / Open Licence version 2.0. The line segments are withheld by the project's rule on geometry withdrawn by its operator, not by the license.",
+        "checked_at": "2026-10-12",
+        "checked_by": "script:fra_license_pages.py",
+        "evidence_url": "https://www.data.gouv.fr/datasets/lignes-aeriennes-rte"
+      },
+      "retrieved_at": "2026-10-10",
+      "inputs": [
+        {
+          "file": "layer_transmission_rte_20261010.csv",
+          "bytes": 17146,
+          "sha256": "c275d64a6e16c958c58bc52e40797ae70a928a3c56be83b432648d92982ab723"
+        }
+      ]
+    },
+    {
+      "source_id": "natural_earth_via_abf_boundaries",
+      "role": "geometry",
+      "publisher": "Natural Earth",
+      "product": "Natural Earth 1:10m administrative boundaries, version 5.1.2 (department outlines, via abf-boundaries v0.1.0)",
+      "url": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+      "edition": "v5.1.2",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2022-05-31",
+      "license": {
+        "id": "LicenseRef-public-domain",
+        "name": "Public domain (Natural Earth terms of use)",
+        "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "family": "public_domain",
+        "attribution_text": "Department outlines: Natural Earth, via abf-boundaries v0.1.0."
+      },
+      "rights_basis": {
+        "type": "publisher_statement",
+        "text": "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain.",
+        "checked_at": "2026-09-26",
+        "checked_by": "agent:ARCH",
+        "evidence_url": "https://www.naturalearthdata.com/about/terms-of-use/"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "adm2.parquet",
+          "bytes": 32160253,
+          "sha256": "5fb110613fad13ce0ec404e91569b4e08acb103b6b69e343d2a04ff4de4c669b"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "etalab-2.0",
+    "name": "Licence Ouverte / Open Licence version 2.0",
+    "family": "attribution",
+    "attribution_text": "Transmission lines: Lignes aériennes RTE and Lignes souterraines RTE (network of RTE, data as of 30/06/2023), Direction départementale des territoires et de la mer de l'Eure, data.gouv.fr, last updated 02/11/2023, Licence Ouverte / Open Licence version 2.0. Department outlines: Natural Earth, via abf-boundaries v0.1.0.",
+    "url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
+  },
+  "boundary_release": "abf-boundaries-v0.1.0",
+  "freshness": {
+    "source_current_through": "2023-06-30",
+    "source_cadence": "discontinued",
+    "built_at": "2026-10-12T10:11:48Z",
+    "next_check": null
+  },
+  "coverage": {
+    "geography": "94 continental departments; 2A, 2B and the five overseas departments not covered",
+    "iso3": [
+      "FRA"
+    ],
+    "frame": {
+      "iso3": "FRA",
+      "level": "ADM2"
+    },
+    "n_units_frame": 101,
+    "n_units_covered": 94,
+    "n_records": 101,
+    "known_gaps": [
+      "The line geometry dates from 30 June 2023 (a public copy republished by DDTM de l'Eure). Since June 2026 RTE publishes its list of lines on ODRÉ without coordinates, citing public security: \"RTE a fait évoluer l'accès aux données GPS des infrastructures du réseau public de transport pour des raisons de sécurité publique\" (ODRÉ, Lignes aériennes RTE, https://odre.opendatasoft.com/explore/dataset/lignes-aeriennes-rte-nv/). The project therefore publishes only department totals and does not publish line segments.",
+      "Lines with an administrative approval that are not yet built (état ACCORD ADMINISTRATIF; 159 segments, 1,467.5 km) are not included.",
+      "Lines recorded as de-energized (hors tension; 1,882 km) are counted in km_unknown, without a voltage.",
+      "Department outlines are Natural Earth 1:10m: a line within about a kilometer of a department boundary may be counted in the neighboring department. 793.5 km of line lie outside the 94 departments (coast and international connections) and are not counted.",
+      "The layer does not show how much power can flow into a department."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-fra",
+    "version": "0.1.0",
+    "tag": "abf-fra-v0.1.0",
+    "doi": "10.5281/zenodo.23300637",
+    "published_at": "2026-10-13"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Line lengths inside each department are computed by script from the line geometry of the source and classed by voltage. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build. 3 unit names corrected from Natural Earth spelling to the INSEE official geographic code.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 101 FRA ADM2 units of the boundaries release; 94 are covered and 7 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "km_total_matches_has_any_line",
+        "description": "km_total > 0 exactly when has_any_line was tested for every covered unit; 0 divergences (lines shorter than rounding) are listed in the release report."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Transmission lines · RTE · department (version 0.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23300637",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_transmission_rte_adm2, unit {record_key}, version 0.1.0. https://doi.org/10.5281/zenodo.23300637"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "km_total",
+    "unit": "km",
+    "breaks": [
+      650,
+      810,
+      980,
+      1200
+    ],
+    "zero_class": true,
+    "legend_title": "Transmission lines, km",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "coverage_note",
+      "km_total",
+      "km_lt100",
+      "km_100_199",
+      "km_200_299",
+      "km_300_399",
+      "km_400_599",
+      "km_ge600",
+      "km_dc",
+      "km_unknown",
+      "max_voltage_kv",
+      "has_any_line",
+      "frac_km_unknown_voltage"
+    ],
+    "home_bbox": [
+      -5.1328,
+      41.3659,
+      9.5596,
+      51.0875
+    ]
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-fra",
+  "version": "0.1.0",
+  "tag": "abf-fra-v0.1.0",
+  "doi": "10.5281/zenodo.23300637",
+  "published_at": "2026-10-13",
+  "boundary_release": "abf-boundaries-v0.1.0",
+  "base_path": "abf-fra/v0.1.0/",
+  "layers": [
+    {
+      "layer_id": "energy_generation_odre_adm2",
+      "title": "Generation · ODRÉ national register · department",
+      "domain": "energy",
+      "level": "ADM2",
+      "bbox": [
+        -61.7978,
+        -21.3708,
+        55.8545,
+        51.0875
+      ],
+      "meta": {
+        "path": "energy_generation_odre_adm2.meta.json",
+        "bytes": 13296,
+        "sha256": "0d46b4a33587ee314e8e42f9eed496cd414d8d611b9d814766d09ad2f2a09ea0"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_generation_odre_adm2.parquet",
+          "bytes": 211164,
+          "sha256": "2d5c5ba357274dd6c0efbae898207722d83a1bbf52e6c382e2eb6559984dc371"
+        },
+        "geojson.gz": {
+          "path": "energy_generation_odre_adm2.geojson.gz",
+          "bytes": 191954,
+          "sha256": "0dca9c7f563325243e373ff067c7b7451a384b4fa899591d33d62e41be74a30c"
+        },
+        "csv": {
+          "path": "energy_generation_odre_adm2.csv",
+          "bytes": 11319,
+          "sha256": "e5fa2d019ed3a67bbb228d799d27c14cc6e1117ec89cd734a0cd72adb4d6cb63"
+        },
+        "pmtiles": {
+          "path": "energy_generation_odre_adm2.pmtiles",
+          "bytes": 1145332,
+          "sha256": "8ef4756b087d8c198dbabaeb5fb78adc560e05fa0c5fea6d2062bac940376e17"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_generation_odre_adm2.pmtiles",
+        "source_layer": "energy_generation_odre_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "coverage_note",
+          "installed_capacity_mw",
+          "storage_capacity_mw",
+          "capacity_nuclear_mw",
+          "capacity_fossil_mw",
+          "capacity_hydro_mw",
+          "capacity_wind_mw",
+          "capacity_solar_mw",
+          "capacity_bioenergy_mw",
+          "capacity_other_mw",
+          "n_installations",
+          "data_snapshot_date"
+        ]
+      },
+      "home_bbox": [
+        -5.1328,
+        41.3659,
+        9.5596,
+        51.0875
+      ]
+    },
+    {
+      "layer_id": "energy_consumption_agenceore_adm2",
+      "title": "Electricity consumption · Agence ORE · department",
+      "domain": "energy",
+      "level": "ADM2",
+      "bbox": [
+        -61.7978,
+        -21.3708,
+        55.8545,
+        51.0875
+      ],
+      "meta": {
+        "path": "energy_consumption_agenceore_adm2.meta.json",
+        "bytes": 11526,
+        "sha256": "3e2079102664d3a16fa6f00b68e26543efaefe8d7bb54e1d809b639772836801"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_consumption_agenceore_adm2.parquet",
+          "bytes": 210002,
+          "sha256": "6a9acfc3f994d2fefd5ac385567d9114fde637c2006eee887f5199bffa3aedb5"
+        },
+        "geojson.gz": {
+          "path": "energy_consumption_agenceore_adm2.geojson.gz",
+          "bytes": 193445,
+          "sha256": "1be9cda258da96c7e0d032eaa2c63f7e13deb148c7399ddb0ed69be2b785931e"
+        },
+        "csv": {
+          "path": "energy_consumption_agenceore_adm2.csv",
+          "bytes": 12379,
+          "sha256": "edeb72c5c5d408b0f0d1922bf4aefebc25e356cfdba04d86eced5806345f8b3e"
+        },
+        "pmtiles": {
+          "path": "energy_consumption_agenceore_adm2.pmtiles",
+          "bytes": 1127412,
+          "sha256": "999be157a59638c580590998c094bb9bb2518941cc8c87abfd4c039391c0ed9d"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_consumption_agenceore_adm2.pmtiles",
+        "source_layer": "energy_consumption_agenceore_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "coverage_note",
+          "consumption_mwh",
+          "consumption_mwh_residential",
+          "consumption_mwh_tertiary",
+          "consumption_mwh_industry",
+          "consumption_mwh_agriculture",
+          "consumption_mwh_unknown",
+          "n_delivery_points",
+          "n_rows_without_value",
+          "data_year"
+        ]
+      },
+      "home_bbox": [
+        -5.1328,
+        41.3659,
+        9.5596,
+        51.0875
+      ]
+    },
+    {
+      "layer_id": "energy_transmission_rte_adm2",
+      "title": "Transmission lines · RTE · department",
+      "domain": "energy",
+      "level": "ADM2",
+      "bbox": [
+        -5.1328,
+        42.3257,
+        8.2003,
+        51.0875
+      ],
+      "meta": {
+        "path": "energy_transmission_rte_adm2.meta.json",
+        "bytes": 15357,
+        "sha256": "3db60f9f01def3d55de8bfaaf72fb19fc4f7c5a3cce71d655fe0925c5126e560"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_transmission_rte_adm2.parquet",
+          "bytes": 210991,
+          "sha256": "5a173fe7345e3f25c3f1d6f7c2bfdc70fba1cbbb35d476dc837a63fad87b72fb"
+        },
+        "geojson.gz": {
+          "path": "energy_transmission_rte_adm2.geojson.gz",
+          "bytes": 194197,
+          "sha256": "165aeae93f81a323c39a25ab47a6f8d0a642e0d039acac606eb971a399944493"
+        },
+        "csv": {
+          "path": "energy_transmission_rte_adm2.csv",
+          "bytes": 16815,
+          "sha256": "be8a0634bbb779a27ad21aad0f84450f8249a03f80eca985881706f4af9e0997"
+        },
+        "pmtiles": {
+          "path": "energy_transmission_rte_adm2.pmtiles",
+          "bytes": 1084962,
+          "sha256": "7c2307416b01a52aae26b5935b3f341b6c14ad83de3539991e50b67ec6bc7736"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_transmission_rte_adm2.pmtiles",
+        "source_layer": "energy_transmission_rte_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "coverage_note",
+          "km_total",
+          "km_lt100",
+          "km_100_199",
+          "km_200_299",
+          "km_300_399",
+          "km_400_599",
+          "km_ge600",
+          "km_dc",
+          "km_unknown",
+          "max_voltage_kv",
+          "has_any_line",
+          "frac_km_unknown_voltage"
+        ]
+      },
+      "home_bbox": [
+        -5.1328,
+        41.3659,
+        9.5596,
+        51.0875
+      ]
+    },
+    {
+      "layer_id": "dc_icpe_georisques",
+      "title": "Data centers · classified installations (ICPE), Géorisques · points",
+      "domain": "dc",
+      "level": "point",
+      "bbox": [
+        -1.5379,
+        43.2978,
+        8.1281,
+        51.0177
+      ],
+      "meta": {
+        "path": "dc_icpe_georisques.meta.json",
+        "bytes": 10804,
+        "sha256": "422f81ef15e3691c2986727c274ba03036f7d07cd9ae83ef9a90733a7480167a"
+      },
+      "files": {
+        "parquet": {
+          "path": "dc_icpe_georisques.parquet",
+          "bytes": 15107,
+          "sha256": "bd447dc14651a63fea7f77320a3f54f100ce587744868faa2b549c99dd4e31f9"
+        },
+        "geojson.gz": {
+          "path": "dc_icpe_georisques.geojson.gz",
+          "bytes": 2859,
+          "sha256": "c8ea60b2608b9931e6b9cf636c30d1ebeb7d24440a7ba751594a71a0df75d6ab"
+        },
+        "csv": {
+          "path": "dc_icpe_georisques.csv",
+          "bytes": 10052,
+          "sha256": "bcca9636b9607cac5b1e54f46f11466c1961fcf4a364a7688c29008520f25bb5"
+        },
+        "pmtiles": {
+          "path": "dc_icpe_georisques.pmtiles",
+          "bytes": 57070,
+          "sha256": "2d1106fc3c0b9246984d640e4f30d20df105cd5dbcd23e07e485cb9ebd164b2d"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "dc_icpe_georisques.pmtiles",
+        "source_layer": "dc_icpe_georisques",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 12,
+        "fields": [
+          "record_id",
+          "name_public",
+          "unit_id",
+          "commune_insee",
+          "coord_precision",
+          "ref"
+        ]
+      },
+      "home_bbox": [
+        -5.1328,
+        41.3659,
+        9.5596,
+        51.0875
+      ]
+    }
+  ],
+  "extra_files": [],
+  "source_archives": []
+}
