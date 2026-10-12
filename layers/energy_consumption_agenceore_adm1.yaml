@@ -89,7 +89,7 @@ sources:
       par région, last updated 10/03/2026, Licence Ouverte / Open Licence version 2.0.'
   rights_basis:
     type: license
-    text: The dataset page on the Agence ORE portal states "Licence Ouverte / Open Licence" and names version 2.0 in its licence link ([RES] to confirm).
+    text: 'The dataset page on the Agence ORE portal states “Licence Ouverte / Open Licence version 2.0” and gives 10 March 2026 as the date of the last data update.'
 - source_id: natural_earth_via_abf_boundaries
   role: geometry
   product: abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments
