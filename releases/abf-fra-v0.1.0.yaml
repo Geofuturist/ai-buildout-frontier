@@ -5,7 +5,7 @@ version: 0.1.0
 tag: abf-fra-v0.1.0
 doi: 10.5281/zenodo.23300637    # Zenodo draft of abf-fra (reserved by V, 11.10); ignored by channel dev
 published_at: "2026-10-13"      # agreed with V 11.10: the day of Publish in Zenodo
-built_at: null                  # set by the first final build and then kept
+built_at: "2026-10-12T10:11:48Z"
 boundary_release: abf-boundaries-v0.1.0
 boundaries:
   dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'

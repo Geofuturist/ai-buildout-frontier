@@ -90,7 +90,7 @@ sources:
   rights_basis:
     type: license
     checked_by: 'script:fra_license_pages.py'
-    text: 'The Géorisques site states that, unless otherwise indicated, its content is under Licence Ouverte / Open Licence version 2.0; the ICPE download page states no other terms.'
+    text: 'The Géorisques site states that, unless otherwise indicated, its content is under the license etalab-2.0, which is Licence Ouverte / Open Licence version 2.0.'
     checked_at: '2026-10-12'
     evidence_url: https://www.georisques.gouv.fr/donnees/bases-de-donnees/installations-industrielles
   retrieved_at: '2026-10-10'

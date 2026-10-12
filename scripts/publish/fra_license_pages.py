@@ -144,7 +144,7 @@ EDITS: dict[str, tuple[str, dict[tuple[str, ...], str]]] = {
             "Generation: Registre national des installations de production et de stockage d'électricité "
             "(au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies (ELD), published on Open Data "
             "Réseaux Énergies (ODRÉ), last updated 10/09/2026, " + LIC2 + ".",
-        ("rights_basis", "text"): "The ODRÉ dataset page states " + LIC2 + ".",
+        ("rights_basis", "text"): "The metadata of the ODRÉ dataset page state " + LIC2 + ".",
     }),
     "energy_consumption_agenceore_adm2": ("agenceore_conso_dept", {
         ("license", "name"): LIC1,
@@ -171,8 +171,8 @@ EDITS: dict[str, tuple[str, dict[tuple[str, ...], str]]] = {
             "Data centers: selected from Installations classées pour la protection de l'environnement (ICPE), "
             "Géorisques, extract downloaded 10/10/2026, " + LIC2 + ".",
         ("rights_basis", "text"):
-            "The Géorisques site states that, unless otherwise indicated, its content is under " + LIC2 +
-            "; the ICPE download page states no other terms.",
+            "The Géorisques site states that, unless otherwise indicated, its content is under the license etalab-2.0, "
+            "which is " + LIC2 + ".",
     }),
 }
 
