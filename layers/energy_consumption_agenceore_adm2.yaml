@@ -88,17 +88,15 @@ sources:
   publication_mode: open_licence
   license:
     id: LicenseRef-etalab-1.0
-    name: Licence Ouverte / Open Licence v1.0
+    name: 'Licence Ouverte / Open Licence v1.0'
     url: https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf
     family: attribution
-    attribution_text: 'Consumption: Agence ORE, Consommation annuelle d''électricité et gaz par département,
-      last updated 06/01/2026, Licence Ouverte / Open Licence v1.0.'
+    attribution_text: 'Consumption: Agence ORE, Consommation annuelle d''électricité et gaz par département, last updated 06/01/2026, Licence Ouverte / Open Licence v1.0.'
   rights_basis:
     type: license
-    text: The dataset page on the Agence ORE portal states "Licence Ouverte / Open Licence" and links
-      to version 1.0 of its text.
-    checked_at: 2026-10-10
-    checked_by: script:download_fra
+    text: 'The dataset page on the Agence ORE portal states "Licence Ouverte / Open Licence" and links to version 1.0 of its text.'
+    checked_at: '2026-10-12'
+    checked_by: 'script:fra_license_pages.py'
     evidence_url: https://opendata.agenceore.fr/datasets/6l33py6xpnaolvzkckzkhcic
   retrieved_at: '2026-10-10'
   input_refs:

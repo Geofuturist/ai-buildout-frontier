@@ -83,17 +83,15 @@ sources:
   publication_mode: open_licence
   license:
     id: etalab-2.0
-    name: Licence Ouverte v2.0
+    name: 'Licence Ouverte / Open Licence version 2.0'
     family: attribution
-    attribution_text: 'Data centers: Géorisques, Installations classées pour la protection de l''environnement
-      (ICPE), extract downloaded 10/10/2026, Licence Ouverte v2.0 (Etalab).'
+    attribution_text: 'Data centers: selected from Installations classées pour la protection de l''environnement (ICPE), Géorisques, extract downloaded 10/10/2026, Licence Ouverte / Open Licence version 2.0.'
     url: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf
   rights_basis:
     type: license
-    checked_by: human:V
-    text: The Géorisques site states that, unless otherwise indicated, all its content is under Licence
-      Ouverte 2.0 (etalab-2.0); the ICPE download page states no other terms.
-    checked_at: '2026-10-10'
+    checked_by: 'script:fra_license_pages.py'
+    text: 'The Géorisques site states that, unless otherwise indicated, its content is under Licence Ouverte / Open Licence version 2.0; the ICPE download page states no other terms.'
+    checked_at: '2026-10-12'
     evidence_url: https://www.georisques.gouv.fr/donnees/bases-de-donnees/installations-industrielles
   retrieved_at: '2026-10-10'
   input_refs:

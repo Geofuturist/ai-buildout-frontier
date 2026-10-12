@@ -155,18 +155,15 @@ sources:
   publication_mode: open_licence
   license:
     id: etalab-2.0
-    name: Licence Ouverte v2.0
+    name: 'Licence Ouverte / Open Licence version 2.0'
     family: attribution
-    attribution_text: 'Transmission lines: RTE, Lignes aériennes RTE and Lignes souterraines RTE (data
-      as of 30/06/2023), republished by DDTM de l''Eure on data.gouv.fr, last updated 02/11/2023, Licence
-      Ouverte v2.0 (Etalab).'
+    attribution_text: 'Transmission lines: Lignes aériennes RTE and Lignes souterraines RTE (network of RTE, data as of 30/06/2023), Direction départementale des territoires et de la mer de l''Eure, data.gouv.fr, last updated 02/11/2023, Licence Ouverte / Open Licence version 2.0.'
     url: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf
   rights_basis:
     type: license
-    text: The data.gouv.fr page of the republished copy states Licence Ouverte v2.0. The line segments
-      are withheld by the project's rule on geometry withdrawn by its operator, not by the license.
-    checked_at: '2026-10-10'
-    checked_by: script:download_fra
+    text: 'The data.gouv.fr pages of both datasets state Licence Ouverte / Open Licence version 2.0. The line segments are withheld by the project''s rule on geometry withdrawn by its operator, not by the license.'
+    checked_at: '2026-10-12'
+    checked_by: 'script:fra_license_pages.py'
     evidence_url: https://www.data.gouv.fr/datasets/lignes-aeriennes-rte
   retrieved_at: '2026-10-10'
   input_refs:
@@ -211,11 +208,7 @@ freshness:
 coverage:
   geography: 94 continental departments; 2A, 2B and the five overseas departments not covered
   known_gaps:
-  - 'The line geometry dates from 30 June 2023 (a public copy republished by DDTM de l''Eure). Since June
-    2026 RTE publishes its list of lines on ODRÉ without coordinates, citing public security: "RTE a fait
-    évoluer l''accès aux données GPS des infrastructures du réseau public de transport pour des raisons
-    de sécurité publique". The project therefore publishes only department totals and does not publish
-    line segments.'
+  - 'The line geometry dates from 30 June 2023 (a public copy republished by DDTM de l''Eure). Since June 2026 RTE publishes its list of lines on ODRÉ without coordinates, citing public security: "RTE a fait évoluer l''accès aux données GPS des infrastructures du réseau public de transport pour des raisons de sécurité publique" (ODRÉ, Lignes aériennes RTE, https://odre.opendatasoft.com/explore/dataset/lignes-aeriennes-rte-nv/). The project therefore publishes only department totals and does not publish line segments.'
   - Lines with an administrative approval that are not yet built (état ACCORD ADMINISTRATIF; 159 segments,
     1,467.5 km) are not included.
   - Lines recorded as de-energized (hors tension; 1,882 km) are counted in km_unknown, without a voltage.

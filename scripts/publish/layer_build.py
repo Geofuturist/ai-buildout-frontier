@@ -3,7 +3,7 @@
 Run command: none. This is a helper module, it is imported by build_release.py.
 
 Two layer kinds are built here:
-* ADM layers (level ADM2): one row per unit of the frame, `coverage_status`
+* ADM layers (level ADM1 or ADM2, set in the yaml): one row per unit of the frame, `coverage_status`
   tells covered from not_covered (P2);
 * line layers (level line): one row per segment, key `record_id`.
 """
@@ -578,7 +578,7 @@ def read_geojson_columns(path_gz: Path) -> list[str]:
 
 # --------------------------------------------------------------------------- ADM layer
 def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
-    """One ADM2 layer: rows for all units of the frame, values for covered ones."""
+    """One ADM layer (ADM1 or ADM2): rows for all units of the frame, values for covered ones."""
     layer_id = cfg["layer_id"]
     report = ctx.report
     frame_cfg = cfg["frame"]

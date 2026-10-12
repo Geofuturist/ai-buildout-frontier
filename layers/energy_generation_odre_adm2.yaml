@@ -105,17 +105,15 @@ sources:
   publication_mode: open_licence
   license:
     id: etalab-2.0
-    name: Licence Ouverte v2.0 (Etalab)
+    name: 'Licence Ouverte / Open Licence version 2.0'
     url: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf
     family: attribution
-    attribution_text: 'Generation: Registre national des installations de production et de stockage d''électricité
-      (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies, published on ODRÉ, last
-      updated 10/09/2026, Licence Ouverte v2.0 (Etalab).'
+    attribution_text: 'Generation: Registre national des installations de production et de stockage d''électricité (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies (ELD), published on Open Data Réseaux Énergies (ODRÉ), last updated 10/09/2026, Licence Ouverte / Open Licence version 2.0.'
   rights_basis:
     type: license
-    text: The ODRÉ dataset page states Licence Ouverte v2.0 (Etalab).
-    checked_at: 2026-10-10
-    checked_by: human:V
+    text: 'The ODRÉ dataset page states Licence Ouverte / Open Licence version 2.0.'
+    checked_at: '2026-10-12'
+    checked_by: 'script:fra_license_pages.py'
     evidence_url: https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/
   retrieved_at: '2026-10-10'
   input_refs:
