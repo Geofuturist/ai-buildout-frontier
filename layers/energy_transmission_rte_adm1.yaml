@@ -1,60 +1,174 @@
-# [CODE-PILOT] 12.10 · abf-fra v0.2.0 (SPEC_FRA r10 §11). Texts "[RES]": [RES]. Structure: [CODE-PUB].
-# Region names: boundaries/name_overrides.csv (INSEE COG), applied by [CODE-PUB].
-# breaks: preliminary round values; the build may recompute.
-# Segments are NOT published (SPEC_FRA §5); this layer is a regional total only.
+# [CODE-PILOT] 12.10 · abf-fra v0.2.0 (SPEC_FRA r10 §11). Texts: claude/RES_texts_FRA_regions_v0_2_0.md r2.
+# Region names: boundaries/name_overrides.csv (INSEE COG), applied by [CODE-PUB]. breaks: preliminary.
 layer_id: energy_transmission_rte_adm1
-title: "Transmission lines · RTE · region"
-title_ru: "ЛЭП · RTE · регионы"
+title: Transmission lines · RTE · region
+title_ru: ЛЭП · RTE · регионы
 domain: energy
 level: ADM1
-frame: {iso3: FRA, level: ADM1}
-input: {table: 'data\fra\layer_transmission_rte_adm1_20261012.csv', key: unit_id,
-        legacy_meta: 'data\fra\layer_transmission_rte_adm1_20261012_meta.json',
-        coverage_column: coverage_status, coverage_note_column: coverage_note}
-description: "[RES]"
+frame:
+  iso3: FRA
+  level: ADM1
+input:
+  table: data\fra\layer_transmission_rte_adm1_20261012.csv
+  key: unit_id
+  legacy_meta: data\fra\layer_transmission_rte_adm1_20261012_meta.json
+  coverage_column: coverage_status
+  coverage_note_column: coverage_note
+description: Kilometers of RTE transmission line in operation inside each region of mainland France by
+  voltage band, their sum, the highest voltage present, and whether the region has any line. Lengths are
+  measured inside the region; a line that crosses a boundary is counted only for the part inside. The
+  line geometry dates from 30 June 2023.
 fields:
-  - {name: km_total, type: number, unit: km, nullable: true, min: 0, description: "[RES]"}
-  - {name: km_lt100, type: number, unit: km, nullable: true, min: 0}
-  - {name: km_100_199, type: number, unit: km, nullable: true, min: 0}
-  - {name: km_200_299, type: number, unit: km, nullable: true, min: 0}
-  - {name: km_300_399, type: number, unit: km, nullable: true, min: 0}
-  - {name: km_400_599, type: number, unit: km, nullable: true, min: 0}
-  - {name: km_ge600, type: number, unit: km, nullable: true, min: 0}
-  - {name: km_dc, type: number, unit: km, nullable: true, min: 0}
-  - {name: km_unknown, type: number, unit: km, nullable: true, min: 0}
-  - {name: max_voltage_kv, type: number, unit: kV, nullable: true}
-  - {name: has_any_line, type: boolean, nullable: true}
-  - {name: frac_km_unknown_voltage, type: number, nullable: true, min: 0, max: 1,
-     description: "Recomputed from km of the region, not averaged from departments"}
-null_meaning_all_fields: {not_covered: "[RES]", covered: null}
+- name: km_total
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: 'Sum of the band columns: length of line in operation inside the region, km.'
+- name: km_lt100
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of line below 100 kV (90, 63, 45 kV and below), km. 0 means none.
+- name: km_100_199
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of line from 100 to 199 kV (150 kV in this network), km. 0 means none.
+- name: km_200_299
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of line from 200 to 299 kV (225 kV in this network), km. 0 means none.
+- name: km_300_399
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of line from 300 to 399 kV, km. The RTE network has no line in this band; the column
+    keeps the bands common to all transmission layers of the project.
+- name: km_400_599
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of line from 400 to 599 kV (400 kV in this network), km. 0 means none.
+- name: km_ge600
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of line of 600 kV and above, km. The RTE network has no line in this band; the column
+    keeps the bands common to all transmission layers of the project.
+- name: km_dc
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of direct-current line, km. 0 means none.
+- name: km_unknown
+  type: number
+  unit: km
+  nullable: true
+  min: 0
+  description: Length of line without a usable voltage, mostly lines recorded as de-energized (hors tension),
+    km. 0 means none.
+- name: max_voltage_kv
+  type: number
+  unit: kV
+  nullable: true
+  description: Highest voltage among the lines inside the region that have a recorded voltage.
+  null_meaning:
+    covered: The region has no line with a recorded voltage.
+- name: has_any_line
+  type: boolean
+  nullable: true
+  description: True if at least one line of the source touches the region.
+- name: frac_km_unknown_voltage
+  type: number
+  nullable: true
+  min: 0
+  max: 1
+  description: Share of the line length inside the region without a usable voltage, from 0 to 1.
+  null_meaning:
+    covered: The region has no line length inside it, so the share is undefined.
+null_meaning_all_fields:
+  not_covered: The RTE transmission network covers mainland France; Corsica and the overseas regions have
+    separate grids that are not in this source.
+  covered: null
 sources:
-  - source_id: rte_lignes_ddtm27
-    role: primary
-    publisher: "RTE (copy republished by DDTM de l'Eure on data.gouv.fr)"
-    product: "Lignes aériennes RTE; Lignes souterraines RTE"
-    url: [https://www.data.gouv.fr/datasets/lignes-aeriennes-rte, https://www.data.gouv.fr/datasets/lignes-souterraines-rte-1]
-    edition: "data at 2023-06-30"
-    current_through: 2023-06-30
-    publication_mode: open_licence
-    license: {id: etalab-2.0, name: "Licence Ouverte / Open Licence version 2.0", family: attribution,
-              attribution_text: "Transmission lines: RTE, Lignes aériennes RTE and Lignes souterraines RTE (data as of 30/06/2023), republished by DDTM de l'Eure on data.gouv.fr, last updated 02/11/2023, Licence Ouverte v2.0 (Etalab)."}   # same input as the ADM2 layer
-    rights_basis: {type: license, text: "The data.gouv.fr page of the republished copy states Licence Ouverte v2.0. The line segments are withheld by the project's rule on geometry withdrawn by its operator, not by the licence."}
-  - source_id: natural_earth_via_abf_boundaries
-    role: geometry
-    product: "abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments"
-    publication_mode: open_licence
-    license: {id: public-domain, family: public_domain,
-              attribution_text: "Region outlines: Natural Earth, via abf-boundaries v0.1.0."}
-    rights_basis: {type: license, text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."}
+- source_id: rte_lignes_ddtm27
+  role: primary
+  publisher: RTE (copy republished by DDTM de l'Eure on data.gouv.fr)
+  product: Lignes aériennes RTE; Lignes souterraines RTE
+  url:
+  - https://www.data.gouv.fr/datasets/lignes-aeriennes-rte
+  - https://www.data.gouv.fr/datasets/lignes-souterraines-rte-1
+  edition: data at 2023-06-30
+  current_through: 2023-06-30
+  publication_mode: open_licence
+  license:
+    id: etalab-2.0
+    name: Licence Ouverte / Open Licence version 2.0
+    family: attribution
+    attribution_text: 'Transmission lines: RTE, Lignes aériennes RTE and Lignes souterraines RTE (data
+      as of 30/06/2023), republished by DDTM de l''Eure on data.gouv.fr, last updated 02/11/2023, Licence
+      Ouverte v2.0 (Etalab).'
+  rights_basis:
+    type: license
+    text: The data.gouv.fr page of the republished copy states Licence Ouverte v2.0. The line segments
+      are withheld by the project's rule on geometry withdrawn by its operator, not by the licence.
+- source_id: natural_earth_via_abf_boundaries
+  role: geometry
+  product: abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments
+  publication_mode: open_licence
+  license:
+    id: public-domain
+    family: public_domain
+    attribution_text: 'Region outlines: Natural Earth, via abf-boundaries v0.1.0.'
+  rights_basis:
+    type: license
+    text: The Natural Earth terms of use state that all versions of Natural Earth are in the public domain.
 verification:
-  method: >-
-    Same segments and method as energy_transmission_rte_adm2 (etat = EN EXPLOITATION, EPSG:2154),
-    clipped to the 18 regions. Sum of km_total over regions = sum over departments (87,942.4 km),
-    difference 0.0000%.
-  totals_vs_source: {tolerance_pct: 0.01}
-freshness: {source_cadence: discontinued_geometry, next_check: 2027-06-30}
+  method: Line lengths inside each region are computed by script from the line geometry of the source
+    and classed by voltage, with the same rules as the department layer; frac_km_unknown_voltage is computed
+    from kilometers, not averaged over departments. Region totals were checked against the sum of the
+    department totals. No value was re-checked by a person or by an agent. The automated checks listed
+    below were run on every build.
+  totals_vs_source:
+    tolerance_pct: 0.01
+  levels:
+    source_as_is: 1.0
+freshness:
+  source_cadence: discontinued_geometry
+  next_check: 2027-06-30
 coverage:
-  geography: "12 continental regions; Corse (94) and the five overseas regions not covered"
-  known_gaps: "[RES]"
-display: {geometry_type: polygon, value_field: km_total, unit: km,
-          breaks: [4000, 6000, 8000, 10000], zero_class: false, legend_title: "Transmission lines, km"}
+  geography: 12 continental regions; Corse (94) and the five overseas regions not covered
+  known_gaps:
+  - 'The line geometry dates from 30 June 2023 (a public copy republished by DDTM de l''Eure). Since June
+    2026 RTE publishes its list of lines on ODRÉ without coordinates, citing public security: "RTE a fait
+    évoluer l''accès aux données GPS des infrastructures du réseau public de transport pour des raisons
+    de sécurité publique" (ODRÉ, Lignes aériennes RTE, https://odre.opendatasoft.com/explore/dataset/lignes-aeriennes-rte-nv/).
+    The project therefore publishes only region and department totals and does not publish line segments.'
+  - Lines with an administrative approval that are not yet built (état ACCORD ADMINISTRATIF; 159 segments,
+    1,467.5 km) are not included.
+  - Lines recorded as de-energized (hors tension; 1,882 km) are counted in km_unknown, without a voltage.
+  - Regions are merged from the Natural Earth 1:10m department outlines used by the department layer,
+    so region values equal the sum of their department values. A line within about a kilometer of a region
+    boundary may be counted in the neighboring region. 793.5 km of line lie outside the 12 covered regions
+    (coast and international connections) and are not counted.
+  - The layer does not show how much power can flow into a region.
+display:
+  geometry_type: polygon
+  value_field: km_total
+  unit: km
+  breaks:
+  - 4000
+  - 6000
+  - 8000
+  - 10000
+  zero_class: false
+  legend_title: Transmission lines, km
