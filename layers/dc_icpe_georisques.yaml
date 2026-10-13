@@ -71,7 +71,7 @@ fields:
   nullable: false
 - name: checked_by
   type: string
-  description: Script that selected the record; the independent agent check is in the verification log.
+  description: Script that selected the record. The independent agent's verdict on each record it checked is published with the dataset in icpe_agent_verdicts.csv.
   nullable: false
 sources:
 - source_id: georisques_icpe
@@ -91,7 +91,7 @@ sources:
     type: license
     checked_by: 'script:fra_license_pages.py'
     text: 'The Géorisques site states that, unless otherwise indicated, its content is under the license etalab-2.0, which is Licence Ouverte / Open Licence version 2.0.'
-    checked_at: '2026-10-12'
+    checked_at: '2026-10-13'
     evidence_url: https://www.georisques.gouv.fr/donnees/bases-de-donnees/installations-industrielles
   retrieved_at: '2026-10-10'
   input_refs:
@@ -109,10 +109,15 @@ verification:
     same commune and the address matches, or the operator has a single site there, or the register name
     itself says data center. Missed data centers are checked on a random sample of the records the final
     rules leave out among those with NAF division 62 or 63 or an operator with other lines of business:
-    16 of these 193 records were checked.'
+    16 of these 193 records were checked. The agent''s verdicts on all records it checked, selected and left out, are published with the dataset in icpe_agent_verdicts.csv.'
   sample_share:
     candidates: 1.0
     rejected: 0.0829
+source_archive:
+  path: 'data\fra\rules\icpe_agent_verdicts.csv'
+  kind: reference_csv
+  publish_as: icpe_agent_verdicts.csv
+  description: "Verdicts of the independent agent on the records it checked for the layer dc_icpe_georisques: the selected records and the records left out by the rules. One row per check, published as it is."
 freshness:
   source_cadence: irregular
   next_check: 2027-04-30

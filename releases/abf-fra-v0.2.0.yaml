@@ -1,0 +1,21 @@
+# Release of the dataset of France, version 0.2.0 (SPEC_FRA r10 section 11): the four layers of v0.1.0 and three region layers.
+# One dataset per country. Own Zenodo record (a new version of the record of v0.1.0), own DOI and published_at.
+dataset: abf-fra
+version: 0.2.0
+tag: abf-fra-v0.2.0
+doi: 10.5281/zenodo.0000000    # PLACEHOLDER: put the DOI of the Zenodo "New version" draft here before the final build; ignored by channel dev
+published_at: "2026-10-17"      # PLACEHOLDER: the day of Publish in Zenodo; check before the final build
+built_at: null
+boundary_release: abf-boundaries-v0.1.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'
+  registry: 'boundaries\boundary_registry.csv'
+  name_overrides: 'boundaries\name_overrides.csv'
+layers:
+  - 'layers\energy_generation_odre_adm2.yaml'
+  - 'layers\energy_consumption_agenceore_adm2.yaml'
+  - 'layers\energy_transmission_rte_adm2.yaml'
+  - 'layers\dc_icpe_georisques.yaml'
+  - 'layers\energy_generation_odre_adm1.yaml'
+  - 'layers\energy_consumption_agenceore_adm1.yaml'
+  - 'layers\energy_transmission_rte_adm1.yaml'

@@ -28,8 +28,11 @@ import pyogrio
 import tilesio
 from common import (
     GateError,
+    P9_VALUE_FIELDS,
     Report,
+    find_cyrillic,
     p9_hits,
+    p9_value_hits,
     power_field_names,
     read_json,
     resolve_path,
@@ -962,11 +965,15 @@ def run_csv_totals(layer_id, tvs, table, checks, report) -> None:  # noqa: ANN00
         raise GateError("G2", f"{layer_id}: totals_vs_source: code column {code_col!r} is not in the source; "
                               f"columns found: {list(src.columns)[:40]}")
     decimal = tvs.get("decimal", ".")
-    codes = src[code_col].astype(str).str.strip().str.upper().str.replace(r"\.0+$", "", regex=True)
-    codes = codes.where(~codes.isin(["NAN", "NONE", "NULL"]), "")
-    if tvs.get("code_zfill"):
-        digits = codes.str.fullmatch(r"\d+")
-        codes = codes.where(~digits, codes.str.zfill(int(tvs["code_zfill"])))
+    def norm_codes(series: pd.Series, zfill: Any) -> pd.Series:
+        out_codes = series.astype(str).str.strip().str.upper().str.replace(r"\.0+$", "", regex=True)
+        out_codes = out_codes.where(~out_codes.isin(["NAN", "NONE", "NULL"]), "")
+        if zfill:
+            digits = out_codes.str.fullmatch(r"\d+")
+            out_codes = out_codes.where(~digits, out_codes.str.zfill(int(zfill)))
+        return out_codes
+
+    codes = norm_codes(src[code_col], tvs.get("code_zfill"))
     unit_prefix = tvs["unit_prefix"]
     layer_units = table["unit_id"].astype(str)
     covered = table["coverage_status"] == "covered"
@@ -980,7 +987,13 @@ def run_csv_totals(layer_id, tvs, table, checks, report) -> None:  # noqa: ANN00
         if rule.get("empty_code"):
             hit = codes == ""
         elif "codes" in rule:
-            hit = codes.isin([str(c) for c in rule["codes"]])
+            # `column:` takes the codes from another column of the source (France: overseas collectivities by department code)
+            if rule.get("column"):
+                if rule["column"] not in src.columns:
+                    raise GateError("G2", f"{layer_id}: totals_vs_source: outside column {rule['column']!r} is not in the source")
+                hit = norm_codes(src[rule["column"]], rule.get("zfill")).isin([str(c) for c in rule["codes"]])
+            else:
+                hit = codes.isin([str(c) for c in rule["codes"]])
         elif rule.get("not_in_frame"):
             hit = ~(unit_prefix + codes).isin(set(layer_units))
         else:
@@ -1176,6 +1189,34 @@ def apply_rights_check(cfg, ctx, checks, sources, out, report) -> str | None:  #
             if s["source_id"] == rc.get("source_id"):
                 s["rights_basis"]["evidence_url"] = f"sources/{result.published_xml_name}"
     return result.known_gap
+
+
+def gate_reference_csv(cfg, ctx, report) -> None:  # noqa: ANN001
+    """Gates for a CSV that is published next to the layer as a reference file (`source_archive` with kind: reference_csv).
+
+    G3: column names against the P9 pattern. G7: no Cyrillic in the header or in any value. G3 (text part): P9
+    words in the `evidence_url` values and in the other text columns are listed in the report, not a stop.
+    """
+    arch = cfg.get("source_archive") or {}
+    if arch.get("kind") != "reference_csv":
+        return
+    layer_id = cfg["layer_id"]
+    path = resolve_path(arch["path"])
+    if not path.exists():
+        raise GateError("G6", f"{layer_id}: reference file not found: {path}")
+    hash_input(ctx, path)  # G6: re-hashed at the end of the build
+    df = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+    gate_field_names(f"{layer_id} (reference file {path.name})", list(df.columns))
+    cyr = find_cyrillic({"columns": list(df.columns), **{c: list(df[c].unique()) for c in df.columns}}, ())
+    if cyr:
+        raise GateError("G7", f"{layer_id}: Cyrillic in the reference file {path.name}: {cyr[:8]}")
+    lines = [f"- {path.name}: {len(df)} rows, columns: {', '.join(df.columns)}"]
+    for col in df.columns:
+        if col == "evidence_url" or col in P9_VALUE_FIELDS:
+            found = p9_value_hits([v for v in df[col].unique() if v])
+            if found:
+                lines.append(f"- P9 words in {col} ({len(found)} values, not a stop): {found[:10]}")
+    report.section(f"Reference file ({layer_id})", lines)
 
 
 def collect_archives(cfg, ctx, out, sources) -> list[dict[str, Any]]:  # noqa: ANN001
@@ -1528,6 +1569,8 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
 
     sources = build_sources(cfg, ctx, table_path, {})
     gate_licences(layer_id, sources)
+    gate_reference_csv(cfg, ctx, report)
+    archives = collect_archives(cfg, ctx, out, sources)
     n_no_point = int((~has_xy).sum())
     report.section(f"Point layer ({layer_id})", [
         f"- {len(table)} records, {int(has_xy.sum())} with a point, {n_no_point} without",
@@ -1554,6 +1597,6 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         "args": tiles_cfg.get("extra_args", ["--no-tile-size-limit", "--no-feature-limit", "-r1"]),
     }
     lo = LayerOutput(layer_id, meta, out / f"{layer_id}.meta.json", files, tile_in, build, bbox,
-                     [], [], cfg["title"], cfg["domain"], cfg["level"], tile_fields, layer_id, "point", tiles_cfg)
+                     archives, [], cfg["title"], cfg["domain"], cfg["level"], tile_fields, layer_id, "point", tiles_cfg)
     lo.carries_power = carries_power
     return lo

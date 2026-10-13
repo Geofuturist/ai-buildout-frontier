@@ -92,6 +92,15 @@ SOURCES: list[dict[str, Any]] = [
         "href_v1": True,
     },
     {
+        "key": "agenceore_region", "title": "Agence ORE, consumption by region (v0.2.0)",
+        "ident": r"8us2i1a0pj4rtmhil0z42yzu",
+        "phrases": [
+            ("Licence Ouverte / Open Licence", r"Licence Ouverte\s*/\s*Open Licen[cs]e", True),
+            ("updated 10/03/2026", date_rx(10, 3, 2026), True),
+        ],
+        "href_v2": True,
+    },
+    {
         "key": "ddtm_aeriennes", "title": "DDTM, Lignes aeriennes RTE (data.gouv.fr)",
         "ident": r"lignes-aeriennes-rte(?![-\w])",
         "phrases": [
@@ -154,6 +163,16 @@ EDITS: dict[str, tuple[str, dict[tuple[str, ...], str]]] = {
         ("rights_basis", "text"):
             "The dataset page on the Agence ORE portal states \"Licence Ouverte / Open Licence\" and links to "
             "version 1.0 of its text.",
+    }),
+    # v0.2.0, Agence ORE by region (RES r3, r4 section 7): version 2.0 and date 10/03/2026 from the saved page
+    "energy_consumption_agenceore_adm1": ("agenceore_conso_region", {
+        ("license", "name"): LIC2,
+        ("license", "attribution_text"):
+            "Consumption by region: Agence ORE, Consommation annuelle d'électricité et gaz par région, last "
+            "updated 10/03/2026, " + LIC2 + ".",
+        ("rights_basis", "text"):
+            "The dataset page on the Agence ORE portal states \"" + LIC2 + "\" and gives 10 March 2026 as the "
+            "date of the last data update.",
     }),
     "energy_transmission_rte_adm2": ("rte_lignes_ddtm27", {
         ("license", "name"): LIC2,
@@ -275,6 +294,22 @@ def check() -> tuple[list[str], list[str], dict[str, Any]]:
             else:
                 lines.append("MISSING link to the text of version 1.0 (required): no href with Licence Ouverte that is not 2.0")
                 missing.append(f"{src['key']}: link to version 1.0")
+        if src.get("href_v2"):
+            links2: list[tuple[str, str]] = []
+            for p in pages:
+                parser = _Links()
+                parser.feed(docs[p])
+                links2 += [(t, h) for t, h in parser.links if re.search(r"licen[cs]e|etalab", h + " " + t, re.I)]
+            links2 = list(dict.fromkeys(links2))
+            lines.append(f"licence link(s) found (text -> href): {links2}")
+            # The version is read from the link itself: its label ("... version 2.0") or its address.
+            ok2 = [(t, h) for t, h in links2
+                   if re.search(r"Licence Ouverte\s*/\s*Open Licen[cs]e\s+version 2\.0", t, re.I) or re.search(r"2\.0|v2", h, re.I)]
+            if ok2:
+                lines.append(f"FOUND   link to the licence with version 2.0: label '{ok2[0][0]}' -> {ok2[0][1]}")
+            else:
+                lines.append("MISSING link to the licence with version 2.0 (required): no link whose label or address says 2.0")
+                missing.append(f"{src['key']}: link to version 2.0")
         if src.get("address"):
             sidecars = " ".join(read_text_file(p.with_suffix(".txt")) for p in pages if p.suffix.lower() != ".txt" and p.with_suffix(".txt").exists())
             addrs: list[str] = []
@@ -333,6 +368,12 @@ def set_key(lines: list[str], lo: int, hi: int, key_indent: int, path: tuple[str
     for depth, key in enumerate(path):
         ind = key_indent + 2 * depth
         idx = next((j for j in range(lo, hi) if re.match(rf"^ {{{ind}}}{re.escape(key)}:", lines[j])), None)
+        if idx is None and depth == len(path) - 1:  # the last key may be new: add it at the end of its block
+            at = hi
+            while at > lo and not lines[at - 1].strip():
+                at -= 1
+            lines.insert(at, " " * ind + f"{key}: {value}")
+            return True
         if idx is None:
             raise KeyError(f"key {'.'.join(path[:depth + 1])} not found")
         if depth == len(path) - 1:

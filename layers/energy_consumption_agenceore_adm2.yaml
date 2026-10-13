@@ -95,7 +95,7 @@ sources:
   rights_basis:
     type: license
     text: 'The dataset page on the Agence ORE portal states "Licence Ouverte / Open Licence" and links to version 1.0 of its text.'
-    checked_at: '2026-10-12'
+    checked_at: '2026-10-13'
     checked_by: 'script:fra_license_pages.py'
     evidence_url: https://opendata.agenceore.fr/datasets/6l33py6xpnaolvzkckzkhcic
   retrieved_at: '2026-10-10'

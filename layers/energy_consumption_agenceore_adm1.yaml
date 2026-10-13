@@ -1,6 +1,7 @@
 # [CODE-PILOT] 12.10 · abf-fra v0.2.0 (SPEC_FRA r10 §11). Texts: claude/RES_texts_FRA_regions_v0_2_0.md r2.
 # Region names: boundaries/name_overrides.csv (INSEE COG), applied by [CODE-PUB]. breaks: preliminary.
 # licence version, date and id filled 2026-10-12 by scripts/fra/finalize_regions_fra.py from the saved page.
+# Build structure (frame, checks, citation, tiles, source fields) added by [CODE-PUB] with scripts/publish/patch_fra_v020.py; texts by [CODE-PILOT] and [RES].
 layer_id: energy_consumption_agenceore_adm1
 title: Electricity consumption · Agence ORE · region
 title_ru: Потребление электроэнергии · Agence ORE · регионы
@@ -9,15 +10,21 @@ level: ADM1
 frame:
   iso3: FRA
   level: ADM1
+  code_regex: \d{2}
+  service_fields:
+  - unit_id
+  - name
+  - coverage_status
 input:
   table: data\fra\layer_consumption_agenceore_adm1_20261012.csv
   key: unit_id
   legacy_meta: data\fra\layer_consumption_agenceore_adm1_20261012_meta.json
-description: 'Electricity delivered to consumers in 2024 in each region, in MWh, as reported by the grid
-  operators and published by Agence ORE in its dataset by region, with the split by sector and the number
-  of delivery points. The total includes consumers on the transmission network and on distribution networks.
-  This is annual metered energy, not peak power: it is not comparable with the modeled peak demand of
-  the U.S. demand layer.'
+  coverage_column: coverage_status
+  coverage_note_column: coverage_note
+description: 'Electricity delivered to consumers in 2024 in each region, in MWh, as reported by the grid operators
+  and published by Agence ORE in its dataset by region, with the split by sector and the number of delivery points.
+  The total includes consumers on the transmission network and on distribution networks. This is annual metered
+  energy, not peak power: it is not comparable with the modeled peak demand of the U.S. demand layer.'
 fields:
 - name: consumption_mwh
   type: number
@@ -64,14 +71,12 @@ fields:
   type: integer
   nullable: false
   min: 0
-  description: Number of region × sector rows that the source publishes without a consumption value. 0
-    in every region of this edition.
+  description: Number of region × sector rows that the source publishes without a consumption value. 0 in every
+    region of this edition.
 - name: data_year
   type: integer
   description: Year of the consumption data.
-null_meaning_all_fields:
-  not_covered: 'Not applicable: all 18 regions are covered by the source.'
-  covered: null
+  nullable: false
 sources:
 - source_id: agenceore_conso_region
   role: primary
@@ -82,43 +87,66 @@ sources:
   current_through: 2024-12-31
   publication_mode: open_licence
   license:
-    id: 'etalab-2.0'
-    name: Licence Ouverte / Open Licence version 2.0
+    id: etalab-2.0
+    name: 'Licence Ouverte / Open Licence version 2.0'
     family: attribution
-    attribution_text: 'Consumption by region: Agence ORE, Consommation annuelle d''électricité et gaz
-      par région, last updated 10/03/2026, Licence Ouverte / Open Licence version 2.0.'
+    attribution_text: 'Consumption by region: Agence ORE, Consommation annuelle d''électricité et gaz par région, last updated 10/03/2026, Licence Ouverte / Open Licence version 2.0.'
+    url: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf
   rights_basis:
     type: license
-    text: 'The dataset page on the Agence ORE portal states “Licence Ouverte / Open Licence version 2.0” and gives 10 March 2026 as the date of the last data update.'
+    text: 'The dataset page on the Agence ORE portal states "Licence Ouverte / Open Licence version 2.0" and gives 10 March 2026 as the date of the last data update.'
+    evidence_url: https://opendata.agenceore.fr/datasets/8us2i1a0pj4rtmhil0z42yzu
+    checked_at: '2026-10-13'
+    checked_by: 'script:fra_license_pages.py'
+  retrieved_at: legacy_meta
+  input_refs:
+  - table
+  - source_workbook
 - source_id: natural_earth_via_abf_boundaries
   role: geometry
   product: abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments
   publication_mode: open_licence
   license:
-    id: public-domain
+    id: LicenseRef-public-domain
     family: public_domain
     attribution_text: 'Region outlines: Natural Earth, via abf-boundaries v0.1.0.'
+    name: Public domain (Natural Earth terms of use)
+    url: https://www.naturalearthdata.com/about/terms-of-use/
   rights_basis:
-    type: license
+    type: publisher_statement
     text: The Natural Earth terms of use state that all versions of Natural Earth are in the public domain.
+    checked_at: '2026-09-26'
+    checked_by: agent:ARCH
+    evidence_url: https://www.naturalearthdata.com/about/terms-of-use/
+  publisher: Natural Earth
+  url: https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2
+  edition: v5.1.2
+  retrieved_at: '2026-09-28'
+  current_through: '2022-05-31'
+  input_refs:
+  - geometry_calc
+  - geometry_display
 verification:
-  method: Rows for electricity and 2024 are summed by region and sector by script from the source's dataset
-    by region. The 18 regions add up to the total of the file. Region totals were compared with the sum
-    of the department values of the same source. No value was re-checked by a person or by an agent. The
-    automated checks listed below were run on every build.
+  method: Rows for electricity and 2024 are summed by region and sector by script from the source's dataset by region.
+    The 18 regions add up to the total of the file. Region totals were compared with the sum of the department values
+    of the same source. No value was re-checked by a person or by an agent. The automated checks listed below were
+    run on every build.
   totals_vs_source:
     exceptions: []
   levels:
     source_as_is: 1.0
+    script_rules: 0.0
+    human: 0.0
+  sample_share: {}
 freshness:
   source_cadence: annual
   next_check: 2027-01-31
 coverage:
   geography: All 18 regions
   known_gaps:
-  - Region values come from Agence ORE's dataset by region, a separate extract from its dataset by department.
-    Nationally they are 0.10% higher than the sum of the departments, and in no region does the difference
-    exceed 1%. The source does not explain the difference.
+  - Region values come from Agence ORE's dataset by region, a separate extract from its dataset by department. Nationally
+    they are 0.10% higher than the sum of the departments, and in no region does the difference exceed 1%. The source
+    does not explain the difference.
 display:
   geometry_type: polygon
   value_field: consumption_mwh
@@ -130,3 +158,68 @@ display:
   - 35000000
   zero_class: false
   legend_title: Electricity consumption 2024, MWh
+  home_bbox_from:
+    iso3: FRA
+    level: ADM1
+    code_regex: 1[1-9]|[2-9]\d
+citation:
+  text: Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}
+  record_pattern: Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}
+tiles:
+  minzoom: 0
+  maxzoom: 10
+checks:
+  totals_vs_source:
+    kind: csv
+    source_file: D:\GISData\Energy\France\agenceore_consommation\8us2i1a0pj4rtmhil0z42yzu.csv
+    separator: auto
+    decimal: ','
+    code_column: Code Région
+    code_zfill: 2
+    unit_prefix: FRA-1-
+    filters:
+    - column: FILIERE
+      contains: lec
+    - column: Année
+      equals: '2024'
+    outside: []
+    columns:
+    - layer_column: consumption_mwh
+      value_column: Conso totale (MWh)
+      filters: []
+    - layer_column: consumption_mwh_residential
+      value_column: Conso totale (MWh)
+      filters:
+      - column: CODE GRAND SECTEUR
+        in:
+        - RESIDENTIEL
+    - layer_column: consumption_mwh_tertiary
+      value_column: Conso totale (MWh)
+      filters:
+      - column: CODE GRAND SECTEUR
+        in:
+        - TERTIAIRE
+    - layer_column: consumption_mwh_industry
+      value_column: Conso totale (MWh)
+      filters:
+      - column: CODE GRAND SECTEUR
+        in:
+        - INDUSTRIE
+    - layer_column: consumption_mwh_agriculture
+      value_column: Conso totale (MWh)
+      filters:
+      - column: CODE GRAND SECTEUR
+        in:
+        - AGRICULTURE
+    - layer_column: consumption_mwh_unknown
+      value_column: Conso totale (MWh)
+      filters:
+      - column: CODE GRAND SECTEUR
+        not_in:
+        - RESIDENTIEL
+        - TERTIAIRE
+        - INDUSTRIE
+        - AGRICULTURE
+    - layer_column: n_delivery_points
+      value_column: Nb sites
+      filters: []

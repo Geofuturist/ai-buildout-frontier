@@ -1,5 +1,6 @@
 # [CODE-PILOT] 12.10 · abf-fra v0.2.0 (SPEC_FRA r10 §11). Texts: claude/RES_texts_FRA_regions_v0_2_0.md r2.
 # Region names: boundaries/name_overrides.csv (INSEE COG), applied by [CODE-PUB]. breaks: preliminary.
+# Build structure (frame, checks, citation, tiles, source fields) added by [CODE-PUB] with scripts/publish/patch_fra_v020.py; texts by [CODE-PILOT] and [RES].
 layer_id: energy_generation_odre_adm1
 title: Generation · ODRÉ national register · region
 title_ru: Генерация · национальный реестр ODRÉ · регионы
@@ -8,15 +9,21 @@ level: ADM1
 frame:
   iso3: FRA
   level: ADM1
+  code_regex: \d{2}
+  service_fields:
+  - unit_id
+  - name
+  - coverage_status
 input:
   table: data\fra\layer_generation_odre_adm1_20261012.csv
   key: unit_id
   legacy_meta: data\fra\layer_generation_odre_adm1_20261012_meta.json
-description: Maximum installed capacity of the electricity generating installations listed in France's
-  national register of production and storage installations (snapshot of 31 July 2026), summed by region
-  and split by technology group, with storage capacity in a separate column. Only installations in operation
-  on the snapshot date are counted. Each installation is counted in a region by the region code given
-  in the register.
+  coverage_column: coverage_status
+  coverage_note_column: coverage_note
+description: Maximum installed capacity of the electricity generating installations listed in France's national
+  register of production and storage installations (snapshot of 31 July 2026), summed by region and split by technology
+  group, with storage capacity in a separate column. Only installations in operation on the snapshot date are counted.
+  Each installation is counted in a region by the region code given in the register.
 fields:
 - name: installed_capacity_mw
   type: number
@@ -30,8 +37,8 @@ fields:
   unit: MW
   nullable: false
   min: 0
-  description: Maximum capacity of non-hydraulic storage installations, mostly batteries. It is not part
-    of installed_capacity_mw. 0 means none are listed.
+  description: Maximum capacity of non-hydraulic storage installations, mostly batteries. It is not part of installed_capacity_mw.
+    0 means none are listed.
 - name: capacity_nuclear_mw
   type: number
   unit: MW
@@ -43,15 +50,15 @@ fields:
   unit: MW
   nullable: false
   min: 0
-  description: Part of installed_capacity_mw from non-renewable thermal installations (gas, coal, oil).
-    0 means none are listed.
+  description: Part of installed_capacity_mw from non-renewable thermal installations (gas, coal, oil). 0 means
+    none are listed.
 - name: capacity_hydro_mw
   type: number
   unit: MW
   nullable: false
   min: 0
-  description: Part of installed_capacity_mw from hydro installations, including pumped storage as the
-    source classifies it. 0 means none are listed.
+  description: Part of installed_capacity_mw from hydro installations, including pumped storage as the source classifies
+    it. 0 means none are listed.
 - name: capacity_wind_mw
   type: number
   unit: MW
@@ -75,20 +82,17 @@ fields:
   unit: MW
   nullable: false
   min: 0
-  description: Part of installed_capacity_mw from marine, geothermal and other installations. 0 means
-    none are listed.
+  description: Part of installed_capacity_mw from marine, geothermal and other installations. 0 means none are listed.
 - name: n_installations
   type: integer
   nullable: false
   min: 0
-  description: Number of operating installations as counted in the source. Installations under 36 kW are
-    aggregated in the source and counted here by the number it gives.
+  description: Number of operating installations as counted in the source. Installations under 36 kW are aggregated
+    in the source and counted here by the number it gives.
 - name: data_snapshot_date
   type: date
   description: Date of the register snapshot.
-null_meaning_all_fields:
-  not_covered: 'Not applicable: all 18 regions are covered by the register.'
-  covered: null
+  nullable: false
 sources:
 - source_id: odre_registre
   role: primary
@@ -101,31 +105,52 @@ sources:
   license:
     id: etalab-2.0
     name: Licence Ouverte / Open Licence version 2.0
+    url: https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf
     family: attribution
     attribution_text: 'Generation: Registre national des installations de production et de stockage d''électricité
-      (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies, published on ODRÉ, last
-      updated 10/09/2026, Licence Ouverte v2.0 (Etalab).'
+      (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies (ELD), published on Open Data Réseaux
+      Énergies (ODRÉ), last updated 10/09/2026, Licence Ouverte / Open Licence version 2.0.'
   rights_basis:
     type: license
-    text: The ODRÉ dataset page states Licence Ouverte v2.0 (Etalab).
+    text: The metadata of the ODRÉ dataset page state Licence Ouverte / Open Licence version 2.0.
+    checked_at: '2026-10-12'
+    checked_by: script:fra_license_pages.py
+    evidence_url: https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/
+  retrieved_at: '2026-10-10'
+  input_refs:
+  - table
+  - source_workbook
 - source_id: natural_earth_via_abf_boundaries
   role: geometry
   product: abf-boundaries v0.1.0 (Natural Earth 1:10m), regions dissolved from departments
   publication_mode: open_licence
   license:
-    id: public-domain
+    id: LicenseRef-public-domain
     family: public_domain
     attribution_text: 'Region outlines: Natural Earth, via abf-boundaries v0.1.0.'
+    name: Public domain (Natural Earth terms of use)
+    url: https://www.naturalearthdata.com/about/terms-of-use/
   rights_basis:
-    type: license
+    type: publisher_statement
     text: The Natural Earth terms of use state that all versions of Natural Earth are in the public domain.
+    checked_at: '2026-09-26'
+    checked_by: agent:ARCH
+    evidence_url: https://www.naturalearthdata.com/about/terms-of-use/
+  publisher: Natural Earth
+  url: https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2
+  edition: v5.1.2
+  retrieved_at: '2026-09-28'
+  current_through: '2022-05-31'
+  input_refs:
+  - geometry_calc
+  - geometry_display
 verification:
-  method: Operating installations are selected by script from the source table with the same rule as the
-    department layer and summed by the region code of each row. A row counts as operating if it has no
-    disconnection date, was commissioned on or before the snapshot date, and is not temporarily withdrawn.
-    The region values plus the rows left out equal the register total, to the kilowatt. For each region,
-    the difference from the sum of its departments equals its rows without a department code. No value
-    was re-checked by a person or by an agent. The automated checks listed below were run on every build.
+  method: Operating installations are selected by script from the source table with the same rule as the department
+    layer and summed by the region code of each row. A row counts as operating if it has no disconnection date,
+    was commissioned on or before the snapshot date, and is not temporarily withdrawn. The region values plus the
+    rows left out equal the register total, to the kilowatt. For each region, the difference from the sum of its
+    departments equals its rows without a department code. No value was re-checked by a person or by an agent. The
+    automated checks listed below were run on every build.
   totals_vs_source:
     exceptions:
     - what: codes 975, 977, 978 (not regions)
@@ -134,28 +159,29 @@ verification:
     - what: rows without region code
       rows: 13
       mw: 5.237
-  vs_departments: region − sum of its departments = rows with a region code but no department code (36
-    rows, 28.9 MW); checked per region
+  vs_departments: region − sum of its departments = rows with a region code but no department code (36 rows, 28.9
+    MW); checked per region
   levels:
     source_as_is: 1.0
+    script_rules: 0.0
+    human: 0.0
+  sample_share: {}
 freshness:
   source_cadence: monthly
   next_check: 2026-11-30
 coverage:
   geography: All 18 regions, including the five overseas regions
   known_gaps:
-  - Capacity is the maximum installed power declared in the register. It is not the net summer capacity
-    of EIA-860, so the French and U.S. generation layers are not directly comparable.
-  - Region values are taken from the region code in the register, not summed from departments. 36 aggregated
-    rows (28.9 MW) have a region code but no department code; they are in the region values but in no
-    department value, so these regions exceed the sum of their departments.
-  - Installations without a commissioning date in the register (226 rows, 12.0 GW) are counted as operating.
-    Disconnected installations (22 rows, 155.9 MW), installations commissioned after the snapshot date
-    (6 rows, 1.0 MW) and installations temporarily withdrawn from service (6 rows, 1,007.4 MW) are not
-    counted.
-  - Rows without a region code (13 aggregated rows, 5.2 MW) and installations in Saint-Pierre-et-Miquelon,
-    Saint-Barthélemy and Saint-Martin (44 rows, 135.1 MW), which are not regions, are not in the region
-    values.
+  - Capacity is the maximum installed power declared in the register. It is not the net summer capacity of EIA-860,
+    so the French and U.S. generation layers are not directly comparable.
+  - Region values are taken from the region code in the register, not summed from departments. 36 aggregated rows
+    (28.9 MW) have a region code but no department code; they are in the region values but in no department value,
+    so these regions exceed the sum of their departments.
+  - Installations without a commissioning date in the register (226 rows, 12.0 GW) are counted as operating. Disconnected
+    installations (22 rows, 155.9 MW), installations commissioned after the snapshot date (6 rows, 1.0 MW) and installations
+    temporarily withdrawn from service (6 rows, 1,007.4 MW) are not counted.
+  - Rows without a region code (13 aggregated rows, 5.2 MW) and installations in Saint-Pierre-et-Miquelon, Saint-Barthélemy
+    and Saint-Martin (44 rows, 135.1 MW), which are not regions, are not in the region values.
   - The register is updated monthly; the layer is a snapshot of 31 July 2026.
 display:
   geometry_type: polygon
@@ -168,3 +194,109 @@ display:
   - 15000
   zero_class: false
   legend_title: Installed capacity, MW
+  home_bbox_from:
+    iso3: FRA
+    level: ADM1
+    code_regex: 1[1-9]|[2-9]\d
+citation:
+  text: Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}
+  record_pattern: Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}
+tiles:
+  minzoom: 0
+  maxzoom: 10
+checks:
+  totals_vs_source:
+    kind: csv
+    source_file: D:\GISData\Energy\France\odre_registre\registre-national-installation-production-stockage-electricite-agrege.csv
+    separator: ;
+    decimal: ','
+    code_column: codeRegion
+    code_zfill: 2
+    unit_prefix: FRA-1-
+    filters:
+    - column: dateDeraccordement
+      empty: true
+    - column: dateMiseEnservice (format date)
+      not_after: '2026-07-31'
+      keep_empty: true
+    - column: regime
+      not_in:
+      - En retrait provisoire
+    outside:
+    - name: codes 975, 977, 978 (not regions)
+      column: codeDepartement
+      codes:
+      - '975'
+      - '977'
+      - '978'
+    - name: rows without region code
+      empty_code: true
+    columns:
+    - layer_column: installed_capacity_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        not_in:
+        - Stockage non hydraulique
+    - layer_column: storage_capacity_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Stockage non hydraulique
+    - layer_column: capacity_nuclear_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Nucléaire
+    - layer_column: capacity_fossil_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Thermique non renouvelable
+    - layer_column: capacity_hydro_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Hydraulique
+    - layer_column: capacity_wind_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Eolien
+    - layer_column: capacity_solar_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Solaire
+    - layer_column: capacity_bioenergy_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Bioénergies
+    - layer_column: capacity_other_mw
+      value_column: puisMaxInstallee
+      divisor: 1000
+      filters:
+      - column: filiere
+        in:
+        - Energies Marines
+        - Géothermie
+        - Autre
+    - layer_column: n_installations
+      value_column: nbInstallations
+      filters: []
