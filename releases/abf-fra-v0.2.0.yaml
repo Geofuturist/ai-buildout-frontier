@@ -3,8 +3,8 @@
 dataset: abf-fra
 version: 0.2.0
 tag: abf-fra-v0.2.0
-doi: 10.5281/zenodo.0000000    # PLACEHOLDER: put the DOI of the Zenodo "New version" draft here before the final build; ignored by channel dev
-published_at: "2026-10-17"      # PLACEHOLDER: the day of Publish in Zenodo; check before the final build
+doi: 10.5281/zenodo.23336103    # Zenodo draft "New version" of abf-fra (reserved by V, 13.10); ignored by channel dev
+published_at: "2026-10-17"      # provisional (ARCH plan: final 16-17.10); set to the day of Publish in Zenodo before the final build
 built_at: null
 boundary_release: abf-boundaries-v0.1.0
 boundaries:
