@@ -6,6 +6,7 @@ import MapCanvas from './MapCanvas';
 import type { MapHandle } from './MapCanvas';
 import LayerPanel from './LayerPanel';
 import InfoCard from './InfoCard';
+import MapNav from './MapNav';
 import { MODULE_BY_TYPE } from './modules';
 import { selectDataLayers } from './select';
 import type { CardState, MapData } from './types';
@@ -54,6 +55,7 @@ export default function MapApp({ data }: { data: MapData }) {
           onZoom={(b) => mapRef.current?.fitBounds(b)}
           onWorld={() => mapRef.current?.fitWorld()}
         />
+        <MapNav preview={data.channel === 'dev'} />
         <InfoCard data={data} card={card} onClose={() => setCard(null)} />
       </div>
 

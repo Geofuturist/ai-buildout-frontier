@@ -1,7 +1,8 @@
 'use client';
 
-import { useMemo, useState } from 'react';
-import { ChevronDown, ChevronUp, Info } from 'lucide-react';
+import { useEffect, useMemo, useState } from 'react';
+import Link from 'next/link';
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Info } from 'lucide-react';
 import type { LayerEntry } from '@/lib/data';
 import { capitalize, domainLabel, groupByCountry, unionBbox, unitWord } from '@/lib/layers';
 import { throughLabel } from '@/lib/format';
@@ -23,8 +24,27 @@ interface Props {
   onWorld: () => void;
 }
 
+const FOLD_KEY = 'abf.panel.folded';
+
 export default function LayerPanel({ data, activeId, overlays, failed, hidden, onActive, onOverlay, onInfo, onZoom, onWorld }: Props) {
   const [open, setOpen] = useState(false);
+  // Desktop: the panel folds to the left; the choice is remembered in this browser (phone: unchanged)
+  const [folded, setFolded] = useState(false);
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem(FOLD_KEY) === '1') setFolded(true);
+    } catch {
+      /* storage may be blocked: the panel simply starts open */
+    }
+  }, []);
+  const fold = (v: boolean) => {
+    setFolded(v);
+    try {
+      window.localStorage.setItem(FOLD_KEY, v ? '1' : '0');
+    } catch {
+      /* ignore */
+    }
+  };
 
   const layers = useMemo(() => selectDataLayers(data), [data]);
   const countries = useMemo(() => groupByCountry(layers, data.metas, data.default_layer), [layers, data.metas, data.default_layer]);
@@ -62,8 +82,21 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
   };
 
   return (
+    <>
+    {folded && (
+      <button
+        type="button"
+        className="absolute left-3 top-3 z-10 hidden h-9 items-center gap-1 rounded-md border border-line bg-surface pl-2 pr-3 text-[13px] font-semibold text-ink shadow-md hover:text-accent md:flex"
+        aria-label="Show the layer panel"
+        aria-expanded={false}
+        onClick={() => fold(false)}
+      >
+        <ChevronRight size={18} aria-hidden />
+        Layers
+      </button>
+    )}
     <aside
-      className={`absolute inset-x-0 bottom-0 z-10 flex max-h-[62%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:left-3 md:top-3 md:max-h-[calc(100%-1.5rem)] md:w-80 md:rounded-xl ${hidden ? 'max-md:hidden' : ''}`}
+      className={`${folded ? 'md:hidden ' : ''}absolute inset-x-0 bottom-0 z-10 flex max-h-[62%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:left-3 md:top-3 md:max-h-[calc(100%-1.5rem)] md:w-80 md:rounded-xl ${hidden ? 'max-md:hidden' : ''}`}
       aria-label="Layers"
     >
       <button type="button" className="flex min-h-[48px] items-center justify-between px-3 text-left md:hidden" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
@@ -73,8 +106,15 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
         {open ? <ChevronDown size={20} aria-hidden /> : <ChevronUp size={20} aria-hidden />}
       </button>
 
-      <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-3 pb-3 md:block md:pt-3`}>
-        <h2 className="hidden text-base font-semibold md:block">Layers</h2>
+      <div className="hidden items-center justify-between gap-2 px-3 pt-3 md:flex">
+        <Link href="/" className="text-base font-semibold text-ink no-underline">AI Buildout Frontier</Link>
+        <button type="button" className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-line text-ink2 hover:text-accent" aria-label="Hide the layer panel" aria-expanded onClick={() => fold(true)}>
+          <ChevronLeft size={18} aria-hidden />
+        </button>
+      </div>
+
+      <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-3 pb-3 md:block md:pt-1`}>
+        <h2 className="sr-only">Layers</h2>
 
         {countries.map((c) => (
           <div key={c.iso3} className="mt-3">
@@ -107,5 +147,6 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
         <Legend layers={switchedOn} metas={data.metas} />
       </div>
     </aside>
+    </>
   );
 }

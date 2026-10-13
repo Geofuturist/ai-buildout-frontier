@@ -23,6 +23,16 @@ const lineModule: GeometryModule = {
       const sl = l.tiles.source_layer;
       return (
         <Source key={l.layer_id} id={l.layer_id} type="vector" url={`pmtiles://${l.tiles.url}`}>
+          {/* Light casing under the lines, so dark steps stay visible over dark fills */}
+          <Layer
+            id={`${l.layer_id}-casing`}
+            type="line"
+            source-layer={sl}
+            beforeId={ctx.before}
+            filter={['!=', ['get', band], 'unknown'] as ExpressionSpecification}
+            layout={{ visibility, 'line-cap': 'round' }}
+            paint={{ 'line-color': '#fcfcfb', 'line-opacity': 0.8, 'line-width': bandWidthExpression(band, 1.2) }}
+          />
           <Layer
             id={`${l.layer_id}-line`}
             type="line"

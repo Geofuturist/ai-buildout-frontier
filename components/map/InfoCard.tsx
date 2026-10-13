@@ -55,7 +55,7 @@ function Downloads({ layer }: { layer: LayerEntry }) {
 function Shell({ title, subtitle, onClose, children }: { title: string; subtitle?: string; onClose: () => void; children: React.ReactNode }) {
   return (
     <aside
-      className="absolute inset-x-0 bottom-0 z-20 flex max-h-[68%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-3 md:max-h-[calc(100%-1.5rem)] md:w-[24rem] md:rounded-xl"
+      className="absolute inset-x-0 bottom-0 z-20 flex max-h-[68%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-14 md:max-h-[calc(100%-4.5rem)] md:w-[24rem] md:rounded-xl"
       aria-label="Details"
     >
       <div className="flex items-start justify-between gap-2 px-4 pt-3">
