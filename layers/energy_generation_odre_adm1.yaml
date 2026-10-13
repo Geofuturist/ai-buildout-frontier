@@ -188,10 +188,10 @@ display:
   value_field: installed_capacity_mw
   unit: MW
   breaks:
-  - 1000
-  - 5000
-  - 10000
-  - 15000
+  - 2000
+  - 6000
+  - 12000
+  - 18000
   zero_class: false
   legend_title: Installed capacity, MW
   home_bbox_from:

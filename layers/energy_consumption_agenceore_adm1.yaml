@@ -98,7 +98,7 @@ sources:
     evidence_url: https://opendata.agenceore.fr/datasets/8us2i1a0pj4rtmhil0z42yzu
     checked_at: '2026-10-13'
     checked_by: 'script:fra_license_pages.py'
-  retrieved_at: legacy_meta
+  retrieved_at: '2026-10-12'
   input_refs:
   - table
   - source_workbook
@@ -152,10 +152,10 @@ display:
   value_field: consumption_mwh
   unit: MWh
   breaks:
-  - 2000000
-  - 15000000
-  - 25000000
-  - 35000000
+  - 1000000
+  - 10000000
+  - 30000000
+  - 50000000
   zero_class: false
   legend_title: Electricity consumption 2024, MWh
   home_bbox_from:

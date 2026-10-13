@@ -4,8 +4,8 @@ dataset: abf-fra
 version: 0.2.0
 tag: abf-fra-v0.2.0
 doi: 10.5281/zenodo.23336103    # Zenodo draft "New version" of abf-fra (reserved by V, 13.10); ignored by channel dev
-published_at: "2026-10-17"      # provisional (ARCH plan: final 16-17.10); set to the day of Publish in Zenodo before the final build
-built_at: null
+published_at: "2026-10-13"      # the day of Publish in Zenodo (decision of V, 13.10)
+built_at: "2026-10-13T09:48:32Z"
 boundary_release: abf-boundaries-v0.1.0
 boundaries:
   dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.1.0'
