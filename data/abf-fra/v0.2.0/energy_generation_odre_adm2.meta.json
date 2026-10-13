@@ -1,0 +1,306 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_generation_odre_adm2",
+  "title": "Generation · ODRÉ national register · department",
+  "title_ru": "Генерация · национальный реестр ODRÉ · департаменты",
+  "domain": "energy",
+  "level": "ADM2",
+  "description": "Maximum installed capacity of the electricity generating installations listed in France's national register of production and storage installations (snapshot of 31 July 2026), summed by department and split by technology group, with storage capacity in a separate column. Only installations in operation on the snapshot date are counted.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name from the boundaries release; where it differs from the official geographic code, the official spelling is used (see verification.method)."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "coverage_note",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+      "null_meaning": {
+        "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+        "covered": "The unit is covered, so there is no reason to give."
+      }
+    },
+    {
+      "name": "installed_capacity_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Sum of the maximum installed capacity (puissance maximale installée) of the operating generating installations in the department, storage excluded."
+    },
+    {
+      "name": "storage_capacity_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Maximum capacity of non-hydraulic storage installations, mostly batteries. It is not part of installed_capacity_mw. 0 means none are listed."
+    },
+    {
+      "name": "capacity_nuclear_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Part of installed_capacity_mw from nuclear installations. 0 means none are listed."
+    },
+    {
+      "name": "capacity_fossil_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Part of installed_capacity_mw from non-renewable thermal installations (gas, coal, oil). 0 means none are listed."
+    },
+    {
+      "name": "capacity_hydro_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Part of installed_capacity_mw from hydro installations, including pumped storage as the source classifies it. 0 means none are listed."
+    },
+    {
+      "name": "capacity_wind_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Part of installed_capacity_mw from wind installations. 0 means none are listed."
+    },
+    {
+      "name": "capacity_solar_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Part of installed_capacity_mw from solar installations. 0 means none are listed."
+    },
+    {
+      "name": "capacity_bioenergy_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Part of installed_capacity_mw from bioenergy installations. 0 means none are listed."
+    },
+    {
+      "name": "capacity_other_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Part of installed_capacity_mw from marine, geothermal and other installations. 0 means none are listed."
+    },
+    {
+      "name": "n_installations",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of operating installations as counted in the source. Installations under 36 kW are aggregated in the source and counted here by the number it gives."
+    },
+    {
+      "name": "data_snapshot_date",
+      "type": "date",
+      "description": "Date of the register snapshot.",
+      "nullable": false
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "odre_registre",
+      "role": "primary",
+      "publisher": "RTE, Enedis, EDF SEI, ELD (ODRÉ)",
+      "product": "Registre national des installations de production et de stockage d'électricité (agrégé)",
+      "url": "https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/",
+      "edition": "au 31/07/2026",
+      "current_through": "2026-07-31",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "etalab-2.0",
+        "name": "Licence Ouverte / Open Licence version 2.0",
+        "url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+        "family": "attribution",
+        "attribution_text": "Generation: Registre national des installations de production et de stockage d'électricité (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies (ELD), published on Open Data Réseaux Énergies (ODRÉ), last updated 10/09/2026, Licence Ouverte / Open Licence version 2.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The metadata of the ODRÉ dataset page state Licence Ouverte / Open Licence version 2.0.",
+        "checked_at": "2026-10-13",
+        "checked_by": "script:fra_license_pages.py",
+        "evidence_url": "https://odre.opendatasoft.com/explore/dataset/registre-national-installation-production-stockage-electricite-agrege/"
+      },
+      "retrieved_at": "2026-10-10",
+      "inputs": [
+        {
+          "file": "layer_generation_odre_20261010.csv",
+          "bytes": 11720,
+          "sha256": "041075c7f95307ed8ad677fc21695f4425d44e189594b2d46e3393df258405f3"
+        },
+        {
+          "file": "registre-national-installation-production-stockage-electricite-agrege.csv",
+          "bytes": 44599902,
+          "sha256": "20bf6795a72286aec629982a7cb6023e9e156e078481c3b5fdfc9fa848c6e39b"
+        }
+      ]
+    },
+    {
+      "source_id": "natural_earth_via_abf_boundaries",
+      "role": "geometry",
+      "publisher": "Natural Earth",
+      "product": "Natural Earth 1:10m administrative boundaries, version 5.1.2 (department outlines, via abf-boundaries v0.1.0)",
+      "url": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+      "edition": "v5.1.2",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2022-05-31",
+      "license": {
+        "id": "LicenseRef-public-domain",
+        "name": "Public domain (Natural Earth terms of use)",
+        "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "family": "public_domain",
+        "attribution_text": "Department outlines: Natural Earth, via abf-boundaries v0.1.0."
+      },
+      "rights_basis": {
+        "type": "publisher_statement",
+        "text": "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain.",
+        "checked_at": "2026-09-26",
+        "checked_by": "agent:ARCH",
+        "evidence_url": "https://www.naturalearthdata.com/about/terms-of-use/"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "adm2.parquet",
+          "bytes": 32160253,
+          "sha256": "5fb110613fad13ce0ec404e91569b4e08acb103b6b69e343d2a04ff4de4c669b"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "etalab-2.0",
+    "name": "Licence Ouverte / Open Licence version 2.0",
+    "url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+    "family": "attribution",
+    "attribution_text": "Generation: Registre national des installations de production et de stockage d'électricité (au 31/07/2026), RTE, Enedis, EDF SEI and local distribution companies (ELD), published on Open Data Réseaux Énergies (ODRÉ), last updated 10/09/2026, Licence Ouverte / Open Licence version 2.0. Department outlines: Natural Earth, via abf-boundaries v0.1.0."
+  },
+  "boundary_release": "abf-boundaries-v0.1.0",
+  "freshness": {
+    "source_current_through": "2026-07-31",
+    "source_cadence": "monthly",
+    "built_at": "2026-10-13T09:48:32Z",
+    "next_check": "2026-11-30"
+  },
+  "coverage": {
+    "geography": "All 101 departments, including the five overseas departments",
+    "iso3": [
+      "FRA"
+    ],
+    "frame": {
+      "iso3": "FRA",
+      "level": "ADM2"
+    },
+    "n_units_frame": 101,
+    "n_units_covered": 101,
+    "n_records": 101,
+    "known_gaps": [
+      "Capacity is the maximum installed power declared in the register. It is not the net summer capacity of EIA-860, so the French and U.S. generation layers are not directly comparable.",
+      "Installations without a commissioning date in the register (226 rows, 12.0 GW) are counted as operating. Disconnected installations (22 rows, 155.9 MW), installations commissioned after the snapshot date (6 rows, 1.0 MW) and installations temporarily withdrawn from service (6 rows, 1,007.4 MW) are not counted.",
+      "Installations without a department code (49 aggregated rows, 34.1 MW) and those in Saint-Pierre-et-Miquelon, Saint-Barthélemy and Saint-Martin (44 rows, 135.1 MW) are not in the department values.",
+      "The register is updated monthly; the layer is a snapshot of 31 July 2026."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-fra",
+    "version": "0.2.0",
+    "tag": "abf-fra-v0.2.0",
+    "doi": "10.5281/zenodo.23336103",
+    "published_at": "2026-10-13"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Operating installations are selected and summed by department by script from the source table, using the department code of each row. A row counts as operating if it has no disconnection date, was commissioned on or before the snapshot date, and is not temporarily withdrawn. A list of known closed plants stops the build for a decision; decisions are logged. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build. 3 unit names corrected from Natural Earth spelling to the INSEE official geographic code.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 101 FRA ADM2 units of the boundaries release; 101 are covered and 0 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "totals_vs_source",
+        "description": "The source table was filtered by the stated rules and summed again by unit: 10 layer columns (installed_capacity_mw, storage_capacity_mw, capacity_nuclear_mw, capacity_fossil_mw, capacity_hydro_mw, capacity_wind_mw, capacity_solar_mw, capacity_bioenergy_mw, capacity_other_mw, n_installations) equal the recomputed sums in every covered unit; the source total equals the layer total plus the rows outside the units (rows without department code 49 rows; codes 975, 977, 978 (outside the 101 departments) 44 rows)."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Generation · ODRÉ national register · department (version 0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23336103",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_generation_odre_adm2, unit {record_key}, version 0.2.0. https://doi.org/10.5281/zenodo.23336103"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "installed_capacity_mw",
+    "unit": "MW",
+    "breaks": [
+      460,
+      760,
+      1100,
+      2400
+    ],
+    "zero_class": true,
+    "legend_title": "Installed capacity, MW",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "coverage_note",
+      "installed_capacity_mw",
+      "storage_capacity_mw",
+      "capacity_nuclear_mw",
+      "capacity_fossil_mw",
+      "capacity_hydro_mw",
+      "capacity_wind_mw",
+      "capacity_solar_mw",
+      "capacity_bioenergy_mw",
+      "capacity_other_mw",
+      "n_installations",
+      "data_snapshot_date"
+    ],
+    "home_bbox": [
+      -5.1328,
+      41.3659,
+      9.5596,
+      51.0875
+    ]
+  }
+}

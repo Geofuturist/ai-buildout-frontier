@@ -1,0 +1,287 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_consumption_agenceore_adm2",
+  "title": "Electricity consumption · Agence ORE · department",
+  "title_ru": "Потребление электроэнергии · Agence ORE · департаменты",
+  "domain": "energy",
+  "level": "ADM2",
+  "description": "Electricity delivered to consumers in 2024 in each department, in MWh, as reported by the grid operators and published by Agence ORE, with the split by sector and the number of delivery points. The total includes consumers on the transmission network and on distribution networks. This is annual metered energy, not peak power: it is not comparable with the modeled peak demand of the U.S. demand layer.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name from the boundaries release; where it differs from the official geographic code, the official spelling is used (see verification.method)."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "coverage_note",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+      "null_meaning": {
+        "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+        "covered": "The unit is covered, so there is no reason to give."
+      }
+    },
+    {
+      "name": "consumption_mwh",
+      "type": "number",
+      "unit": "MWh",
+      "nullable": false,
+      "description": "Electricity delivered in the department in the year, in MWh."
+    },
+    {
+      "name": "consumption_mwh_residential",
+      "type": "number",
+      "unit": "MWh",
+      "nullable": false,
+      "description": "Part of consumption_mwh delivered to households."
+    },
+    {
+      "name": "consumption_mwh_tertiary",
+      "type": "number",
+      "unit": "MWh",
+      "nullable": false,
+      "description": "Part of consumption_mwh delivered to services and public administration."
+    },
+    {
+      "name": "consumption_mwh_industry",
+      "type": "number",
+      "unit": "MWh",
+      "nullable": false,
+      "description": "Part of consumption_mwh delivered to industry."
+    },
+    {
+      "name": "consumption_mwh_agriculture",
+      "type": "number",
+      "unit": "MWh",
+      "nullable": false,
+      "description": "Part of consumption_mwh delivered to agriculture."
+    },
+    {
+      "name": "consumption_mwh_unknown",
+      "type": "number",
+      "unit": "MWh",
+      "nullable": false,
+      "description": "Part of consumption_mwh whose sector is not known to the grid operator."
+    },
+    {
+      "name": "n_delivery_points",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of delivery points (sites) as counted in the source."
+    },
+    {
+      "name": "n_rows_without_value",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of department × sector rows that the source publishes without a consumption value. When above 0, consumption_mwh and the sector columns of this department are lower bounds."
+    },
+    {
+      "name": "data_year",
+      "type": "integer",
+      "description": "Year of the consumption data.",
+      "nullable": false
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "agenceore_conso_dept",
+      "role": "primary",
+      "publisher": "Agence ORE",
+      "product": "Consommation annuelle d'électricité et gaz par département",
+      "url": "https://opendata.agenceore.fr/datasets/6l33py6xpnaolvzkckzkhcic",
+      "edition": "data year 2024, dataset updated 2026-01-06",
+      "current_through": "2024-12-31",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "LicenseRef-etalab-1.0",
+        "name": "Licence Ouverte / Open Licence v1.0",
+        "url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
+        "family": "attribution",
+        "attribution_text": "Consumption: Agence ORE, Consommation annuelle d'électricité et gaz par département, last updated 06/01/2026, Licence Ouverte / Open Licence v1.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The dataset page on the Agence ORE portal states \"Licence Ouverte / Open Licence\" and links to version 1.0 of its text.",
+        "checked_at": "2026-10-13",
+        "checked_by": "script:fra_license_pages.py",
+        "evidence_url": "https://opendata.agenceore.fr/datasets/6l33py6xpnaolvzkckzkhcic"
+      },
+      "retrieved_at": "2026-10-10",
+      "inputs": [
+        {
+          "file": "layer_consumption_agenceore_20261010.csv",
+          "bytes": 12841,
+          "sha256": "a12ad8e9dfb8cb70170a80ec4c7b7eec22ef8d1ee15307f0e5a11850e60fa689"
+        },
+        {
+          "file": "6l33py6xpnaolvzkckzkhcic.csv",
+          "bytes": 18438196,
+          "sha256": "ba5869ddd14dbef0f75ef7cce5867ab219710d28bc1e4d7e2264c6b1e201cc82"
+        }
+      ]
+    },
+    {
+      "source_id": "natural_earth_via_abf_boundaries",
+      "role": "geometry",
+      "publisher": "Natural Earth",
+      "product": "Natural Earth 1:10m administrative boundaries, version 5.1.2 (department outlines, via abf-boundaries v0.1.0)",
+      "url": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+      "edition": "v5.1.2",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2022-05-31",
+      "license": {
+        "id": "LicenseRef-public-domain",
+        "name": "Public domain (Natural Earth terms of use)",
+        "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "family": "public_domain",
+        "attribution_text": "Department outlines: Natural Earth, via abf-boundaries v0.1.0."
+      },
+      "rights_basis": {
+        "type": "publisher_statement",
+        "text": "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain.",
+        "checked_at": "2026-09-26",
+        "checked_by": "agent:ARCH",
+        "evidence_url": "https://www.naturalearthdata.com/about/terms-of-use/"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "adm2.parquet",
+          "bytes": 32160253,
+          "sha256": "5fb110613fad13ce0ec404e91569b4e08acb103b6b69e343d2a04ff4de4c669b"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "LicenseRef-etalab-1.0",
+    "name": "Licence Ouverte / Open Licence v1.0",
+    "url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
+    "family": "attribution",
+    "attribution_text": "Consumption: Agence ORE, Consommation annuelle d'électricité et gaz par département, last updated 06/01/2026, Licence Ouverte / Open Licence v1.0. Department outlines: Natural Earth, via abf-boundaries v0.1.0."
+  },
+  "boundary_release": "abf-boundaries-v0.1.0",
+  "freshness": {
+    "source_current_through": "2024-12-31",
+    "source_cadence": "annual",
+    "built_at": "2026-10-13T09:48:32Z",
+    "next_check": "2027-01-31"
+  },
+  "coverage": {
+    "geography": "All 101 departments",
+    "iso3": [
+      "FRA"
+    ],
+    "frame": {
+      "iso3": "FRA",
+      "level": "ADM2"
+    },
+    "n_units_frame": 101,
+    "n_units_covered": 101,
+    "n_records": 101,
+    "known_gaps": [
+      "In 31 departments the source publishes 85 department × sector rows without a value; their consumption is not in the totals, so the totals of these departments are lower bounds (see n_rows_without_value).",
+      "Department totals are not reduced by the statistical confidentiality applied to municipalities: the department file exceeds the sum of the municipal file by 0.12% nationally; in four departments (59, 45, 80, 95) it is lower by at most 0.02%, which is treated as a difference between the two extracts."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-fra",
+    "version": "0.2.0",
+    "tag": "abf-fra-v0.2.0",
+    "doi": "10.5281/zenodo.23336103",
+    "published_at": "2026-10-13"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Rows for electricity and the data year are summed by department and sector by script from the source table. Department totals were compared with the sum of the municipal file of the same source. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build. 3 unit names corrected from Natural Earth spelling to the INSEE official geographic code.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 101 FRA ADM2 units of the boundaries release; 101 are covered and 0 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "totals_vs_source",
+        "description": "The source table was filtered by the stated rules and summed again by unit: 7 layer columns (consumption_mwh, consumption_mwh_residential, consumption_mwh_tertiary, consumption_mwh_industry, consumption_mwh_agriculture, consumption_mwh_unknown, n_delivery_points) equal the recomputed sums in every covered unit; the source total equals the layer total plus the rows outside the units (none)."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Electricity consumption · Agence ORE · department (version 0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23336103",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_consumption_agenceore_adm2, unit {record_key}, version 0.2.0. https://doi.org/10.5281/zenodo.23336103"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "consumption_mwh",
+    "unit": "MWh",
+    "breaks": [
+      1400000,
+      2400000,
+      3900000,
+      6000000
+    ],
+    "zero_class": false,
+    "legend_title": "Electricity consumption 2024, MWh",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "coverage_note",
+      "consumption_mwh",
+      "consumption_mwh_residential",
+      "consumption_mwh_tertiary",
+      "consumption_mwh_industry",
+      "consumption_mwh_agriculture",
+      "consumption_mwh_unknown",
+      "n_delivery_points",
+      "n_rows_without_value",
+      "data_year"
+    ],
+    "home_bbox": [
+      -5.1328,
+      41.3659,
+      9.5596,
+      51.0875
+    ]
+  }
+}

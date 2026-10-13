@@ -1,0 +1,19 @@
+unit_id,name,coverage_status,coverage_note,km_total,km_lt100,km_100_199,km_200_299,km_300_399,km_400_599,km_ge600,km_dc,km_unknown,max_voltage_kv,has_any_line,frac_km_unknown_voltage
+FRA-1-01,Guadeloupe,not_covered,RTE's transmission network covers continental France; Corsica and the overseas departments are run by EDF SEI and are not in this source,,,,,,,,,,,,
+FRA-1-02,Martinique,not_covered,RTE's transmission network covers continental France; Corsica and the overseas departments are run by EDF SEI and are not in this source,,,,,,,,,,,,
+FRA-1-03,Guyane,not_covered,RTE's transmission network covers continental France; Corsica and the overseas departments are run by EDF SEI and are not in this source,,,,,,,,,,,,
+FRA-1-04,La Réunion,not_covered,RTE's transmission network covers continental France; Corsica and the overseas departments are run by EDF SEI and are not in this source,,,,,,,,,,,,
+FRA-1-06,Mayotte,not_covered,RTE's transmission network covers continental France; Corsica and the overseas departments are run by EDF SEI and are not in this source,,,,,,,,,,,,
+FRA-1-11,Île-de-France,covered,,5250.467657960705,1798.460490842221,0.0,1900.463322801092,0.0,971.7272152174836,0.0,0.0,579.8166290999078,400.0,True,0.1104314257075359
+FRA-1-24,Centre-Val de Loire,covered,,5618.844002219082,3132.9978547834817,0.0,1090.9985546855046,0.0,1280.0220534667749,0.0,0.0,114.82553928332028,400.0,True,0.0204357941309585
+FRA-1-27,Bourgogne-Franche-Comté,covered,,6707.41302293358,3964.395526602,7.227631971731885,1524.65261910064,0.0,1169.899328512275,0.0,0.0,41.23791674693225,400.0,True,0.0061481105466346
+FRA-1-28,Normandie,covered,,4865.236997113315,2715.2944801643257,0.0,1075.8182645789486,0.0,979.4525431252076,0.0,25.80619841779663,68.86551082703619,400.0,True,0.0141546055963761
+FRA-1-32,Hauts-de-France,covered,,6688.2188101330285,3353.125914482582,3.600474096891251,1975.9977657033053,0.0,1254.2368262223497,0.0,40.54908591787378,60.70874371002502,400.0,True,0.0090769673411473
+FRA-1-44,Grand Est,covered,,9023.65752581546,4542.40307356518,49.6569831642032,2386.4970922961347,0.0,1967.3584968779871,0.0,0.0,77.74187991195427,400.0,True,0.0086153402530565
+FRA-1-52,Pays de la Loire,covered,,5369.31400134443,3289.6591775277143,0.0,1462.5699899840567,0.0,527.5220339423469,0.0,0.0,89.56279989031205,400.0,True,0.0166804921202012
+FRA-1-53,Bretagne,covered,,4715.6821989252485,2948.0829705243564,0.0,1237.9650526031944,0.0,456.75069247741567,0.0,0.0,72.88348332028241,400.0,True,0.0154555545191093
+FRA-1-75,Nouvelle-Aquitaine,covered,,12232.908891147765,7621.44970387846,111.5231844977129,2711.957467493459,0.0,1568.4927176529654,0.0,0.0,219.48581762516812,400.0,True,0.0179422424852683
+FRA-1-76,Occitanie,covered,,9849.60446993527,5737.258737633963,345.95591406248747,2518.933889721206,0.0,1065.3548222128632,0.0,67.8461932593903,114.25491304535822,400.0,True,0.0115999493577744
+FRA-1-84,Auvergne-Rhône-Alpes,covered,,12273.478019113283,6621.49557280039,38.94008090868419,3254.647354501112,0.0,2013.075369325035,0.0,97.94962271551,247.37001886255425,400.0,True,0.0201548427004414
+FRA-1-93,Provence-Alpes-Côte d'Azur,covered,,5347.562615815274,2553.2515862729606,284.1738306270355,1912.3563284822967,0.0,412.54834833613614,0.0,0.0,185.23252209684404,400.0,True,0.0346386822192644
+FRA-1-94,Corse,not_covered,RTE's transmission network covers continental France; Corsica and the overseas departments are run by EDF SEI and are not in this source,,,,,,,,,,,,
