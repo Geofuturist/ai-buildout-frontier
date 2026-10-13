@@ -3,8 +3,14 @@
 import type { AbfData, LayerEntry, Meta } from './data';
 import { countryNameFromIso3 } from './iso3';
 
+/** coverage.iso3 is a string in some metas and a one-item list in others; both are read as one code. */
+function firstCode(v: unknown): string {
+  const x = Array.isArray(v) ? v[0] : v;
+  return typeof x === 'string' ? x : '';
+}
+
 export function countryOf(meta: Meta | undefined): string {
-  return meta?.coverage.iso3 ?? meta?.coverage.frame?.iso3 ?? '';
+  return firstCode(meta?.coverage.iso3) || firstCode(meta?.coverage.frame?.iso3);
 }
 
 export function countryName(meta: Meta | undefined): string {
