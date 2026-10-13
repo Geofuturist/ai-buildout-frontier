@@ -178,10 +178,13 @@ Department outlines come from Natural Earth 1:10m (see "Administrative boundarie
 generalized. Department names follow the official geographic code of INSEE: where Natural Earth
 spells a name differently, the INSEE spelling is used.
 
+From version 0.2.0, the three energy layers are also published for the 18 regions. Their sections
+follow the data-center layer below.
+
 | Layer | Source | Value per department | Data as of | License |
 |---|---|---|---|---|
 | Generation | National register of production and storage installations, via ODRÉ | maximum installed capacity of operating installations, MW, by technology group; storage separately | 31 July 2026 | Licence Ouverte / Open Licence 2.0 |
-| Electricity consumption | Agence ORE | electricity delivered in the year, MWh, by sector; number of delivery points | year 2024 | Licence Ouverte / Open Licence 1.0 |
+| Electricity consumption | Agence ORE | electricity delivered in the year, MWh, by sector; number of delivery points | year 2024 | Licence Ouverte / Open Licence 1.0 (departments), 2.0 (regions) |
 | Transmission lines | RTE line data, in a copy republished by DDTM de l'Eure | km of line in operation inside the department by voltage band | 30 June 2023 | Licence Ouverte / Open Licence 2.0 |
 | Data centers | Register of classified installations (ICPE), Géorisques | points: data centers present in the register | extract of 10 October 2026 | Licence Ouverte / Open Licence 2.0 |
 
@@ -267,7 +270,8 @@ in mind.
 - **Checking.** An independent AI agent, working from a written protocol and not involved in
   writing the rules, checked each selected record against its register card and a public source.
   The agent can confirm or dispute a record; it cannot add one. Of 46 selected records, 43 were
-  confirmed and are published; 3 could not be confirmed and are left out.
+  confirmed and are published; 3 could not be confirmed and are left out. The agent's verdicts are
+  published with the dataset (icpe_agent_verdicts.csv).
 - **Misses.** The agent also checked random samples of records the rules left out. They contained
   data centers, and the rules were extended to include them. From the last sample we estimate that
   roughly 3 to 72 of the 177 left-out records that were never checked may be data centers. The
@@ -276,6 +280,30 @@ in mind.
   commune precision. We do not use geocoders.
 - **What is not published.** Classification headings (rubriques), the regime of the installation,
   its equipment and the contents of inspections are never collected into the layer.
+
+### Generation · ODRÉ national register · region
+
+The same register, snapshot and rules as the department layer. The difference is how an
+installation is placed: by the region code in the register, not by summing departments. Some
+aggregated rows of small installations have a region code but no department code (36 rows,
+28.9 MW). They are in a region but in no department, so a region total can be larger than the sum of
+its departments. Thirteen such rows have no region code either (5.2 MW) and are left out, as are
+Saint-Pierre-et-Miquelon, Saint-Barthélemy and Saint-Martin.
+
+### Electricity consumption · Agence ORE · region
+
+Taken from Agence ORE's dataset by region for 2024, not summed from departments. Following our rule
+of using a source at its own resolution, we prefer the source's own regional figures. The datasets
+by region and by department are separate extracts: nationally the regions are 0.10% higher than the
+sum of the departments, and no region differs by more than 1%. The source does not explain the
+difference. Unlike the department dataset, the regional one has no rows without a value. Everything
+else is as in the department layer: delivered energy over a year, not peak power.
+
+### Transmission lines · RTE · region
+
+The same line data, method and rules as the department layer. Regions are merged from the same
+department outlines, so region totals equal the sums of their departments. Corsica and the five
+overseas regions are not covered.
 
 ## Administrative boundaries · ADM0, ADM1, ADM2
 
@@ -369,6 +397,10 @@ equal-area projections.
   length of all line segments inside the 94 departments.
 - **Data centers.** Every published record was re-checked by an independent AI agent; samples of
   the records left out were checked for misses (see the layer section).
+- **Regions.** Generation: the region values plus the rows left out equal the register total, and
+  each region differs from the sum of its departments exactly by its rows without a department
+  code. Transmission lines: region totals equal the sums of the department totals. Consumption: the
+  regions add up to the total of the regional file and were compared with the department values.
 
 **Against our earlier Virginia pipeline.** When we first built these layers in September 2026, on
 the 2024 edition of EIA-860 and the 2025 edition of Queued Up, we compared them with the pipeline
