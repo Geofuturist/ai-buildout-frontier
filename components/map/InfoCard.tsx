@@ -142,7 +142,7 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
           </>
         )}
         <p className="mt-3"><strong>Freshness.</strong> Data through {meta.freshness.source_current_through ?? 'n/a'} · built {isoDate(meta.freshness.built_at)} · updates: {meta.freshness.source_cadence}</p>
-        <p className="mt-3"><strong>Licence.</strong> <a href={meta.license.url}>{meta.license.name}</a></p>
+        <p className="mt-3"><strong>License.</strong> <a href={meta.license.url}>{meta.license.name}</a></p>
         <blockquote className="mt-1 border-l-4 border-line pl-3 text-xs text-ink2">{meta.license.attribution_text}</blockquote>
         <p className="mt-3">{checkedByLine(meta)}</p>
         <Downloads layer={layer} />
@@ -165,7 +165,7 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
     <Shell title={title} subtitle={`${key} · ${layer.title}`} onClose={onClose}>
       <ValueRows layer={layer} meta={meta} props={p} keyField={mod.keyField} />
       <p className="mt-4 text-xs text-ink2">{sourceLine(meta)}</p>
-      <p className="mt-1 text-xs text-ink2">Licence: <a href={meta.license.url}>{meta.license.name}</a></p>
+      <p className="mt-1 text-xs text-ink2">License: <a href={meta.license.url}>{meta.license.name}</a></p>
       <p className="mt-1 text-xs text-ink2">{checkedByLine(meta)}</p>
       {mod.recordDownload && key && <RecordDownload layer={layer} meta={meta} keyField={mod.keyField} keyValue={key} />}
       <div className="mt-3 flex flex-wrap items-center gap-3">

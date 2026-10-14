@@ -6,6 +6,7 @@ const LINKS = [
   { href: '/data/', label: 'Data' },
   { href: '/methodology/', label: 'Methodology' },
   { href: '/attribution/', label: 'Sources' },
+  { href: '/about/', label: 'About' },
 ];
 
 export default function SiteHeader() {

@@ -66,6 +66,15 @@ const polygonModule: GeometryModule = {
             paint={{ 'fill-color': COLORS.surface, 'fill-opacity': 0.01 }}
           />
           <Layer
+            id={`${l.layer_id}-sel-under`}
+            type="line"
+            source-layer={sl}
+            beforeId={ctx.before}
+            filter={['==', ['get', 'unit_id'], sel ?? ''] as ExpressionSpecification}
+            layout={{ visibility: vis === 'visible' && sel ? 'visible' : 'none' }}
+            paint={{ 'line-color': COLORS.surface, 'line-width': 5 }}
+          />
+          <Layer
             id={`${l.layer_id}-sel`}
             type="line"
             source-layer={sl}

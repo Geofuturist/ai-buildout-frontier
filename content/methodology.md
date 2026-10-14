@@ -1,8 +1,7 @@
 # Methodology
 
 **Datasets:** abf-layers, United States, version {version_layers} (DOI: {DOI_layers}) ·
-abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France (version and
-DOI on the Data page). Each dataset has its own DOI and is cited on its own.
+abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France, version {version:abf-fra} (DOI: {DOI:abf-fra}). Each dataset has its own DOI and is cited on its own.
 
 ## What this site is
 
@@ -359,7 +358,8 @@ equal-area projections.
   old ones keep working. The current version is listed in `manifest/latest.json` with file sizes
   and checksums.
 - **Citing.** Cite the layer, the version and the DOI of its dataset: {DOI_layers} for the U.S.
-  energy layers, {DOI_boundaries} for the boundaries; the DOI of abf-fra is on the Data page. Each layer card gives a ready citation, and each pop-up gives
+  energy layers, {DOI:abf-fra} for France,
+  {DOI_boundaries} for the boundaries. Each layer card gives a ready citation, and each pop-up gives
   one for the single record. Please also credit the original source as its license requires. The
   attribution text of each layer is in its metadata and on the Sources and licenses page.
 

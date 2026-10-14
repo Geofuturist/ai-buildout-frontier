@@ -83,6 +83,12 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
 
   return (
     <>
+    {folded && switchedOn.length > 0 && (
+      // The legend stays visible when the panel is folded: meaning must not rest on colour alone
+      <div className="absolute bottom-3 left-3 z-10 hidden max-h-[55%] w-72 overflow-y-auto rounded-xl border border-line bg-surface p-3 shadow-lg md:block">
+        <Legend layers={switchedOn} metas={data.metas} />
+      </div>
+    )}
     {folded && (
       <button
         type="button"

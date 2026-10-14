@@ -52,3 +52,8 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .prose-abf a { overflow-wrap: anywhere; }
 
 .chip { display: inline-block; font-size: 0.75rem; padding: 0.1rem 0.5rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-2); }
+
+/* Phone: the zoom buttons sit above the collapsed layer bar, not under it */
+@media (max-width: 767px) {
+  .maplibregl-ctrl-bottom-right { margin-bottom: 56px; }
+}

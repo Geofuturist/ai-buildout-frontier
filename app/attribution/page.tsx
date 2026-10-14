@@ -6,14 +6,14 @@ import { orderedDatasetNames } from '@/lib/layers';
 import type { AttributionSource } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Sources and licences',
-  description: 'Publisher, edition, licence and attribution text of every source used in the layers.',
+  title: 'Sources and licenses',
+  description: 'Publisher, edition, license and attribution text of every source used in the layers.',
 };
 
 const GROUP_TITLE: Record<string, string> = {
   public_domain: 'Public domain',
-  attribution: 'Attribution licences',
-  share_alike: 'Share-alike licences',
+  attribution: 'Attribution licenses',
+  share_alike: 'Share-alike licenses',
 };
 
 function SourceBlock({ s }: { s: AttributionSource }) {
@@ -29,7 +29,7 @@ function SourceBlock({ s }: { s: AttributionSource }) {
         <dd>{s.current_through ?? 'not applicable'}</dd>
         <dt className="text-muted">Source page</dt>
         <dd><a href={s.url}>{s.url}</a></dd>
-        <dt className="text-muted">Licence</dt>
+        <dt className="text-muted">License</dt>
         <dd><a href={s.license.url}>{s.license.name}</a> <span className="text-muted">({s.license.id})</span></dd>
         <dt className="text-muted">Basis for publishing</dt>
         <dd>{s.rights_basis_text}</dd>
@@ -50,9 +50,9 @@ export default function AttributionPage() {
       <SiteHeader />
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8">
         <div className="prose-abf">
-          <h1>Sources and licences</h1>
+          <h1>Sources and licenses</h1>
           <p>
-            Each layer keeps its source&apos;s licence; our code is MIT; our own compilations are CC BY 4.0.
+            Each layer keeps its source&apos;s license; our code is MIT; our own compilations are CC BY 4.0.
             This page is generated from the metadata of the published layers ({total} data sources), so it cannot differ from the data.
           </p>
 

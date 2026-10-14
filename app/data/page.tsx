@@ -10,7 +10,7 @@ import { checkedByLine, doiUrl, formatBytes, isoDate } from '@/lib/format';
 
 export const metadata: Metadata = {
   title: 'Data',
-  description: 'Catalogue of all published layers: versions, DOIs, citations and download links with sizes and checksums.',
+  description: 'Catalog of all published layers: versions, DOIs, citations and download links with sizes and checksums.',
 };
 
 const FORMAT_LABEL: Record<string, string> = {
@@ -48,7 +48,7 @@ function LayerCard({ meta, entries }: { meta: Meta; entries: LayerEntry[] }) {
         <dd>{meta.coverage.geography}{meta.coverage.n_records ? ` · ${meta.coverage.n_records.toLocaleString('en-US')} records` : ''}</dd>
         <dt className="text-muted">Data through</dt>
         <dd>{meta.freshness.source_current_through ?? 'varies by country'} · built {isoDate(meta.freshness.built_at)} · updates: {meta.freshness.source_cadence}</dd>
-        <dt className="text-muted">Licence</dt>
+        <dt className="text-muted">License</dt>
         <dd><a href={meta.license.url}>{meta.license.name}</a></dd>
         <dt className="text-muted">Checking</dt>
         <dd>{checkedByLine(meta).replace('Checked by: ', '')}</dd>
