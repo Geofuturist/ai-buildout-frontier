@@ -27,4 +27,4 @@ they are never a source of data.
 Data: [Data page](/data/) (DOIs on Zenodo) · Code:
 [GitHub](https://github.com/Geofuturist/ai-buildout-frontier) (MIT) ·
 Writing: [Substack](https://substack.com/@geofuturistv) · Contact:
-[contact@aibuildoutfrontier.org](mailto:contact@aibuildoutfrontier.org)
+[geofuturistv@gmail.com](mailto:geofuturistv@gmail.com)
