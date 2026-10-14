@@ -126,3 +126,30 @@ export function unionBbox(layers: LayerEntry[], metas: Record<string, Meta>): [n
   }
   return b;
 }
+
+/** First fragment of a layer title before " · ": "Generation", "Transmission lines" (temporary rule until display.topic). */
+export function topicOf(layer: LayerEntry): string {
+  return layer.title.split('·')[0].trim().toLowerCase();
+}
+
+/** Administrative level as a number: "ADM1" -> 1; unknown levels go last. */
+function levelNumber(layer: LayerEntry): number {
+  const m = /(\d+)/.exec(layer.level ?? '');
+  return m ? Number(m[1]) : 99;
+}
+
+/**
+ * Which fill layer to switch on when a country is chosen by a click (ARCH 14.10, package 1c).
+ * `fills` are the country's fill layers in panel order; `current` is the fill layer that is on now.
+ * Same first title fragment as the layer being switched off wins (bigger units first: ADM1 before ADM2);
+ * otherwise the first fill layer of the country in panel order. A country's own layer that is already on stays.
+ */
+export function pickCountryFill(fills: LayerEntry[], current: LayerEntry | undefined): LayerEntry | undefined {
+  if (current && fills.some((l) => l.layer_id === current.layer_id)) return current;
+  if (current) {
+    const topic = topicOf(current);
+    const same = fills.filter((l) => topicOf(l) === topic);
+    if (same.length) return [...same].sort((a, b) => levelNumber(a) - levelNumber(b))[0];
+  }
+  return fills[0];
+}

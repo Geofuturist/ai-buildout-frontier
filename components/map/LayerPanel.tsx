@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Info } from 'lucide-react';
 import type { LayerEntry } from '@/lib/data';
@@ -17,6 +17,8 @@ interface Props {
   overlays: Record<string, boolean>;
   failed: Set<string>;
   hidden: boolean;
+  /** a country chosen by a click on the map: its group is scrolled into view */
+  focus: { iso3: string; n: number } | null;
   onActive: (id: string) => void;
   onOverlay: (id: string, on: boolean) => void;
   onInfo: (id: string) => void;
@@ -26,7 +28,7 @@ interface Props {
 
 const FOLD_KEY = 'abf.panel.folded';
 
-export default function LayerPanel({ data, activeId, overlays, failed, hidden, onActive, onOverlay, onInfo, onZoom, onWorld }: Props) {
+export default function LayerPanel({ data, activeId, overlays, failed, hidden, focus, onActive, onOverlay, onInfo, onZoom, onWorld }: Props) {
   const [open, setOpen] = useState(false);
   // Desktop: the panel folds to the left; the choice is remembered in this browser (phone: unchanged)
   const [folded, setFolded] = useState(false);
@@ -45,6 +47,13 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
       /* ignore */
     }
   };
+
+  const listRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!focus) return;
+    const el = listRef.current?.querySelector(`[data-country="${CSS.escape(focus.iso3)}"]`);
+    if (el) el.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }, [focus]);
 
   const layers = useMemo(() => selectDataLayers(data), [data]);
   const countries = useMemo(() => groupByCountry(layers, data.metas, data.default_layer), [layers, data.metas, data.default_layer]);
@@ -119,11 +128,11 @@ export default function LayerPanel({ data, activeId, overlays, failed, hidden, o
         </button>
       </div>
 
-      <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-3 pb-3 md:block md:pt-1`}>
+      <div ref={listRef} className={`${open ? 'block' : 'hidden'} overflow-y-auto px-3 pb-3 md:block md:pt-1`}>
         <h2 className="sr-only">Layers</h2>
 
         {countries.map((c) => (
-          <div key={c.iso3} className="mt-3">
+          <div key={c.iso3} data-country={c.iso3} className="mt-3">
             <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">{c.name}</h3>
             {c.domains.map((d) => (
               <div key={d.domain} className="mt-1">

@@ -6,4 +6,5 @@ export type MapData = Pick<AbfData, 'channel' | 'layers' | 'metas' | 'anchors' |
 export type CardState =
   | { type: 'record'; layerId: string; props: Record<string, unknown> }
   | { type: 'layer'; layerId: string }
+  | { type: 'country'; iso3: string }
   | null;
