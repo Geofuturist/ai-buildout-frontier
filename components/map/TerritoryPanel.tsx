@@ -99,7 +99,7 @@ export default function TerritoryPanel(p: Props) {
 
   return (
     <aside
-      className={`absolute inset-x-0 bottom-0 z-20 flex max-h-[68%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-14 md:max-h-[calc(100%-4.5rem)] md:w-[24rem] md:rounded-xl ${p.hidden ? 'hidden' : ''}`}
+      className={`absolute inset-x-0 bottom-0 z-20 flex max-h-[58%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-14 md:max-h-[calc(100%-12rem)] md:w-[24rem] md:rounded-xl ${p.hidden ? 'hidden' : ''}`}
       aria-label="Territory"
     >
       <button type="button" className="flex min-h-[48px] items-center justify-between px-4 text-left md:hidden" aria-expanded={open} onClick={() => setOpen((v) => !v)}>

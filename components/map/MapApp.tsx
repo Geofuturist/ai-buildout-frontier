@@ -145,6 +145,10 @@ export default function MapApp({ data }: { data: MapData }) {
         />
         <LegendCard data={data} heading={heading} layers={legendLayers} covered={card !== null} />
         <MapNav preview={data.channel === 'dev'} />
+        {/* Zoom and the level a click selects, above the zoom buttons */}
+        <p className="pointer-events-none absolute bottom-[86px] right-[10px] z-10 rounded bg-surface/90 px-1.5 py-0.5 text-[11px] font-semibold text-ink2 max-md:bottom-[62px] max-md:left-[112px] max-md:right-auto" aria-live="off">
+          Zoom {zoom.toFixed(1)} · {country ? levelWord(selLevel, indicator ?? undefined, country, data.unit_words) : 'Country'} level
+        </p>
         <TerritoryPanel
           data={data}
           countries={countries}

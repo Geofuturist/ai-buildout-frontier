@@ -4,6 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { Fragment, forwardRef, useCallback, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import MapGL, { Layer, NavigationControl, Source } from 'react-map-gl/maplibre';
 import type { MapLayerMouseEvent, MapRef } from 'react-map-gl/maplibre';
+import type { MapGeoJSONFeature } from 'maplibre-gl';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import { registerPmtiles } from './pmtiles';
 import type { CardState, MapData, UnitRef } from './types';
@@ -100,30 +101,48 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     [dataLayers, visible, bnd.adm0, bnd.adm1, bnd.adm2],
   );
 
-  const onClick = useCallback(
-    (e: MapLayerMouseEvent) => {
-      const all = e.features ?? [];
-      // An object of a switched-on overlay wins over the territory under it
+  // What is under the pointer: an object of a switched-on overlay, a country, or a unit of the selection level
+  type Target = { kind: 'record'; f: MapGeoJSONFeature } | { kind: 'country'; iso3: string; unit: UnitRef } | { kind: 'unit'; unit: UnitRef } | null;
+  const targetOf = useCallback(
+    (all: MapGeoJSONFeature[]): Target => {
       const over = all.find((x) => x.source !== 'boundaries');
-      if (over) {
-        onSelect({ type: 'record', layerId: over.source, props: { ...(over.properties as Record<string, unknown>) } });
-        return;
-      }
+      if (over) return { kind: 'record', f: over };
       const hits = all.filter((x) => x.source === 'boundaries' && typeof x.properties?.unit_id === 'string');
-      if (hits.length === 0) return; // the sea, a disputed area: nothing
+      if (hits.length === 0) return null; // the sea, a disputed area: nothing
       const iso3 = String(hits[0].properties?.iso3 ?? '');
-      if (!iso3) return;
+      if (!iso3) return null;
+      const ref = (f: MapGeoJSONFeature): UnitRef => ({ unit_id: String(f.properties?.unit_id), name: String(f.properties?.name ?? ''), level: levelNumber(String(f.properties?.level)) });
+      const adm0 = hits.find((x) => x.properties?.iso3 === iso3 && levelNumber(String(x.properties?.level)) === 0) ?? hits[0];
       // A click in another country chooses that country; inside the chosen country it chooses a unit of the selection level
-      if (iso3 !== country) {
-        onCountry(iso3);
-        return;
-      }
+      if (iso3 !== country) return { kind: 'country', iso3, unit: ref(adm0) };
       const inCountry = hits.filter((x) => x.properties?.iso3 === iso3);
       const ok = inCountry.filter((x) => levelNumber(String(x.properties?.level)) <= selectLevel);
       const pick = ok.sort((a, b) => levelNumber(String(b.properties?.level)) - levelNumber(String(a.properties?.level)))[0] ?? inCountry[0];
-      onUnit({ unit_id: String(pick.properties?.unit_id), name: String(pick.properties?.name ?? ''), level: levelNumber(String(pick.properties?.level)) });
+      return { kind: 'unit', unit: ref(pick) };
     },
-    [onSelect, onCountry, onUnit, country, selectLevel],
+    [country, selectLevel],
+  );
+
+  const [hover, setHover] = useState<UnitRef | null>(null);
+  const onMove = useCallback(
+    (e: MapLayerMouseEvent) => {
+      const t = targetOf(e.features ?? []);
+      setCursor(t ? 'pointer' : '');
+      const u = t && t.kind !== 'record' ? t.unit : null;
+      setHover((prev) => (prev?.unit_id === u?.unit_id && prev?.level === u?.level ? prev : u));
+    },
+    [targetOf],
+  );
+
+  const onClick = useCallback(
+    (e: MapLayerMouseEvent) => {
+      const t = targetOf(e.features ?? []);
+      if (!t) return;
+      if (t.kind === 'record') onSelect({ type: 'record', layerId: t.f.source, props: { ...(t.f.properties as Record<string, unknown>) } });
+      else if (t.kind === 'country') onCountry(t.iso3);
+      else onUnit(t.unit);
+    },
+    [targetOf, onSelect, onCountry, onUnit],
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
@@ -139,10 +158,14 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       attributionControl={false}
       interactiveLayerIds={interactiveLayerIds}
       cursor={cursor}
-      onMouseEnter={() => setCursor('pointer')}
-      onMouseLeave={() => setCursor('')}
+      onMouseMove={onMove}
+      onMouseLeave={() => { setCursor(''); setHover(null); }}
       onClick={onClick}
-      onLoad={() => onReady?.()}
+      onLoad={() => {
+        // Test hook, only in a build made with NEXT_PUBLIC_E2E=1 (never set on Vercel)
+        if (process.env.NEXT_PUBLIC_E2E) (window as unknown as { __map?: unknown }).__map = mapRef.current?.getMap();
+        onReady?.();
+      }}
       onMove={(e) => onZoom(Math.round(e.viewState.zoom * 10) / 10)}
       onError={(e) => {
         const sid = (e as unknown as { sourceId?: string }).sourceId;
@@ -227,28 +250,47 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
             beforeId={BEFORE}
             paint={{ 'line-color': COLORS.adm0, 'line-width': 1 }}
           />
-          {/* The chosen unit: teal outline on a light underlay, in the layer of its own level */}
-          {([bnd.adm0, bnd.adm1, bnd.adm2] as (typeof bnd.adm0)[]).map((b, i) =>
-            b ? (
-              <Fragment key={`sel${i}`}>
-                <Layer
-                  id={`sel-under-${i}`}
-                  type="line"
-                  source-layer={b.tiles.source_layer}
-                  beforeId={BEFORE}
-                  filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
-                  paint={{ 'line-color': COLORS.surface, 'line-width': 5 }}
-                />
-                <Layer
-                  id={`sel-line-${i}`}
-                  type="line"
-                  source-layer={b.tiles.source_layer}
-                  beforeId={BEFORE}
-                  filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
-                  paint={{ 'line-color': COLORS.selected, 'line-width': 2.5 }}
-                />
-              </Fragment>
-            ) : null,
+          {/* Hover: grey outline of the country or unit a click would choose now (its own style, not the teal of the choice) */}
+          {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
+            b
+              ? [
+                  <Layer
+                    key={`hov-line-${i}`}
+                    id={`hov-line-${i}`}
+                    type="line"
+                    source-layer={b.tiles.source_layer}
+                    beforeId={BEFORE}
+                    filter={['==', ['get', 'unit_id'], hover && hover.level === i ? hover.unit_id : ''] as ExpressionSpecification}
+                    paint={{ 'line-color': COLORS.hover, 'line-width': 1.8, 'line-dasharray': [3, 1.5] }}
+                  />,
+                ]
+              : [],
+          )}
+          {/* The chosen unit: teal outline on a light underlay, in the layer of its own level.
+              (Flat list on purpose: <Source> passes its id only to direct children, not through fragments.) */}
+          {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
+            b
+              ? [
+                  <Layer
+                    key={`sel-under-${i}`}
+                    id={`sel-under-${i}`}
+                    type="line"
+                    source-layer={b.tiles.source_layer}
+                    beforeId={BEFORE}
+                    filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
+                    paint={{ 'line-color': COLORS.surface, 'line-width': 5 }}
+                  />,
+                  <Layer
+                    key={`sel-line-${i}`}
+                    id={`sel-line-${i}`}
+                    type="line"
+                    source-layer={b.tiles.source_layer}
+                    beforeId={BEFORE}
+                    filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
+                    paint={{ 'line-color': COLORS.selected, 'line-width': 2.5 }}
+                  />,
+                ]
+              : [],
           )}
         </Source>
       )}

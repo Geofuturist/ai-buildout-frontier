@@ -18,6 +18,8 @@ export const COLORS = {
   selected: '#0f6e6e',
   // Data-center points (domain dc): plum, apart from the blue and the warm ramps
   point: '#9c2f7f',
+  /** hover outline of the unit a click would choose */
+  hover: '#2b2d31',
 } as const;
 
 export interface VoltageBand {
