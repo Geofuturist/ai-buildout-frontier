@@ -196,12 +196,14 @@ async function main() {
     else if (newer(m[1], bnd.version)) strict(`${n} refers to boundaries v${m[1]}, newer than the current v${bnd.version}`);
   }
 
-  // Layer that is on when the map opens: content/site.json -> default_layer (SPEC_WEB 0.3 p.6).
+  // content/site.json: default_layer (the indicator that is on when a country is chosen), default_view.country
+  // (a country the site opens on, or null for the world) and level_zoom (zoom thresholds of ADM1 / ADM2, SPEC_WEB_territory 4).
   // Pointer order is alphabetical, so "the first layer" would depend on dataset names.
   let defaultLayer = null;
+  let defaultCountry = null;
+  let site = {};
   const sitePath = path.join(ROOT, 'content', 'site.json');
   if (fs.existsSync(sitePath)) {
-    let site = {};
     try {
       site = JSON.parse(fs.readFileSync(sitePath, 'utf8'));
     } catch {
@@ -210,6 +212,78 @@ async function main() {
     if (site.default_layer) {
       if (layers.some((l) => l.layer_id === site.default_layer && datasets[l.dataset].kind === 'layers')) defaultLayer = site.default_layer;
       else strict(`content/site.json: default_layer "${site.default_layer}" is not a layer of the pointer; the first fill layer is used`);
+    }
+    const dc = site.default_view && site.default_view.country;
+    if (dc) {
+      if (/^[A-Z]{3}$/.test(dc)) defaultCountry = dc;
+      else strict(`content/site.json: default_view.country "${dc}" is not an ISO3 code; the site opens on the world`);
+    }
+  }
+
+  // Zoom thresholds: never below the minzoom of the boundary tiles of that level (below it the tiles hold no units).
+  const levelZoom = {};
+  for (const lvl of ['ADM1', 'ADM2']) {
+    const tiles = layers.find((l) => l.dataset === bnd.dataset && l.level === lvl);
+    const minz = tiles ? tiles.tiles.minzoom : 0;
+    const wanted = site.level_zoom && typeof site.level_zoom[lvl] === 'number' ? site.level_zoom[lvl] : lvl === 'ADM1' ? 3.0 : 5.5;
+    if (wanted < minz) {
+      const msg = `content/site.json: level_zoom.${lvl} = ${wanted} is below the boundary tiles minzoom ${minz}; raised to ${minz}`;
+      warnings.push(msg);
+      console.warn(`WARN: ${msg}`);
+    }
+    levelZoom[lvl] = Math.max(wanted, minz);
+  }
+
+  // Territory (SPEC_WEB_territory 5, 10): units of the countries that have layers, from units.csv of the boundaries
+  // dataset (never from geometry), and the unit words of boundary_registry.csv. units.csv goes to a lazily loaded
+  // file (territory.json); the registry words and thresholds travel with abf-data.json.
+  const csvRows = (text) => {
+    const out = [];
+    let row = [], cur = '', q = false;
+    const src = text.charCodeAt(0) === 0xfeff ? text.slice(1) : text;
+    for (let i = 0; i < src.length; i++) {
+      const c = src[i];
+      if (q) { if (c === '"') { if (src[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; }
+      else if (c === '"') q = true;
+      else if (c === ',') { row.push(cur); cur = ''; }
+      else if (c === '\n' || c === '\r') { if (c === '\r' && src[i + 1] === '\n') i++; row.push(cur); if (row.length > 1 || row[0] !== '') out.push(row); row = []; cur = ''; }
+      else cur += c;
+    }
+    if (cur !== '' || row.length) { row.push(cur); out.push(row); }
+    const head = out.shift() || [];
+    return out.map((r) => Object.fromEntries(head.map((h, i) => [h, r[i] ?? ''])));
+  };
+  const bndFile = async (name) => {
+    const f = bnd.extra_files.find((x) => x.path === name);
+    if (!f) { strict(`${bnd.dataset}: extra file ${name} is not in the manifest`); return null; }
+    const bytes = await getBytes(bnd.base_path + f.path);
+    const got = sha256(bytes);
+    if (got !== f.sha256) strict(`${f.path}: sha256 ${got.slice(0, 12)} differs from manifest ${f.sha256.slice(0, 12)}`);
+    return bytes.toString('utf8');
+  };
+  const unitsText = await bndFile('units.csv');
+  const registryText = await bndFile('boundary_registry.csv');
+  const countryCodes = new Set();
+  for (const m of Object.values(metas)) {
+    if (m.kind !== 'layer') continue;
+    const c = (Array.isArray(m.coverage.iso3) ? m.coverage.iso3[0] : m.coverage.iso3) || (m.coverage.frame && m.coverage.frame.iso3);
+    if (c) countryCodes.add(c);
+  }
+  const territory = { units: {} };
+  if (unitsText) {
+    const LEVEL = { ADM0: 0, ADM1: 1, ADM2: 2 };
+    for (const r of csvRows(unitsText)) {
+      if (!countryCodes.has(r.iso3) || !(r.level in LEVEL)) continue;
+      // unit_id -> [level, name, parent_id]
+      territory.units[r.unit_id] = [LEVEL[r.level], r.name, r.parent_id];
+    }
+    if (Object.keys(territory.units).length === 0) strict('units.csv holds no units of the countries that have layers');
+  }
+  const unitWords = {};
+  if (registryText) {
+    for (const r of csvRows(registryText)) {
+      if (!r.iso3 || !r.level || !r.unit_type_en) continue;
+      (unitWords[r.iso3] = unitWords[r.iso3] || {})[r.level] = r.unit_type_en;
     }
   }
 
@@ -327,12 +401,16 @@ async function main() {
     metas,
     anchors,
     default_layer: defaultLayer,
+    default_country: defaultCountry,
+    level_zoom: levelZoom,
+    unit_words: unitWords,
     attribution: groups,
     warnings,
   };
   fs.mkdirSync(path.join(ROOT, 'generated'), { recursive: true });
   fs.writeFileSync(path.join(ROOT, 'generated', 'abf-data.json'), JSON.stringify(out));
   fs.writeFileSync(path.join(ROOT, 'generated', 'methodology.md'), md);
+  fs.writeFileSync(path.join(ROOT, 'generated', 'territory.json'), JSON.stringify(territory));
   console.log(
     `fetch-data: ok. ${dsNames.map((n) => `${n} v${datasets[n].version} (${layers.filter((l) => l.dataset === n).length} entries)`).join(', ')}; ` +
       `${shown} sources, ${warnings.length} warning(s)`,

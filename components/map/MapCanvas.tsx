@@ -6,7 +6,8 @@ import MapGL, { Layer, NavigationControl, Source } from 'react-map-gl/maplibre';
 import type { MapLayerMouseEvent, MapRef } from 'react-map-gl/maplibre';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import { registerPmtiles } from './pmtiles';
-import type { CardState, MapData } from './types';
+import type { CardState, MapData, UnitRef } from './types';
+import { levelNumber } from '@/lib/indicators';
 import { COLORS } from '@/lib/style';
 import { MODULES, MODULE_BY_TYPE } from './modules';
 import { selectBoundaryLayers, selectDataLayers } from './select';
@@ -14,32 +15,44 @@ import { selectBoundaryLayers, selectDataLayers } from './select';
 registerPmtiles();
 
 const BEFORE = 'labels-start';
-const COUNTRY_HIT = 'adm0-hit';
+const HIT = ['adm0-hit', 'adm1-hit', 'adm2-hit'];
 const STYLE_URL = process.env.NEXT_PUBLIC_BASEMAP_STYLE || '/styles/abf-base.json';
 
 export interface MapHandle {
   fitBounds: (bbox: [number, number, number, number]) => void;
   fitWorld: () => void;
+  /** Fits the view to a unit using the boundary tiles that are loaded; false if none of its geometry is loaded. */
+  fitUnit: (unitId: string, level: number) => boolean;
 }
 
 interface Props {
   data: MapData;
+  /** the fill layer that is drawn (only one, of the chosen country), or 'none' */
   activeId: string;
   overlays: Record<string, boolean>;
+  /** the point or line record shown in the card, if any */
   selected: { layerId: string; key: string } | null;
+  /** the chosen country and the level a click selects (0 country, 1 ADM1, 2 ADM2) */
+  country: string | null;
+  selectLevel: number;
+  selectedUnit: UnitRef | null;
   onSelect: (card: CardState) => void;
   onCountry: (iso3: string) => void;
+  onUnit: (u: UnitRef) => void;
+  onZoom: (zoom: number) => void;
+  onReady?: () => void;
   onFailed: (layerId: string) => void;
 }
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, onSelect, onCountry, onFailed }, ref) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, onSelect, onCountry, onUnit, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
-  useImperativeHandle(ref, () => ({
-    fitBounds: (b) => mapRef.current?.fitBounds([[b[0], b[1]], [b[2], b[3]]], { padding: 24, duration: 1200 }),
-    fitWorld: () => mapRef.current?.easeTo({ center: [-40, 30], zoom: 1.5, duration: 1200 }),
-  }));
+  const bnd = useMemo(() => {
+    const all = selectBoundaryLayers(data);
+    const by = (sl: string) => all.find((l) => l.tiles.source_layer === sl);
+    return { adm0: by('adm0'), adm1: by('adm1'), adm2: by('adm2'), disputed: by('disputed_unassigned') };
+  }, [data]);
 
   const dataLayers = useMemo(() => selectDataLayers(data), [data]);
 
@@ -52,36 +65,65 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     return v;
   }, [dataLayers, activeId, overlays]);
 
-  const bnd = useMemo(() => {
-    const all = selectBoundaryLayers(data);
-    const by = (sl: string) => all.find((l) => l.tiles.source_layer === sl);
-    return { adm0: by('adm0'), adm1: by('adm1'), adm2: by('adm2'), disputed: by('disputed_unassigned') };
-  }, [data]);
+  useImperativeHandle(ref, () => ({
+    fitBounds: (b) => mapRef.current?.fitBounds([[b[0], b[1]], [b[2], b[3]]], { padding: 24, duration: 1200 }),
+    fitWorld: () => mapRef.current?.easeTo({ center: [-40, 30], zoom: 1.5, duration: 1200 }),
+    fitUnit: (unitId, level) => {
+      const sl = [bnd.adm0, bnd.adm1, bnd.adm2][level]?.tiles.source_layer;
+      const map = mapRef.current?.getMap();
+      if (!map || !sl) return false;
+      const feats = map.querySourceFeatures('boundaries', { sourceLayer: sl, filter: ['==', ['get', 'unit_id'], unitId] });
+      let b: number[] | null = null;
+      const walk = (c: unknown) => {
+        if (Array.isArray(c) && typeof c[0] === 'number') {
+          const [x, y] = c as number[];
+          b = b ? [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)] : [x, y, x, y];
+        } else if (Array.isArray(c)) c.forEach(walk);
+      };
+      for (const f of feats) walk((f.geometry as { coordinates?: unknown }).coordinates);
+      if (!b) return false;
+      const bb = b as number[];
+      mapRef.current?.fitBounds([[bb[0], bb[1]], [bb[2], bb[3]]], { padding: 40, duration: 1200 });
+      return true;
+    },
+  }));
 
-  // Data layers first; the invisible country fill is last and only catches clicks that miss every object
+  // Clickable: overlay objects (points, lines) of the switched-on layers, then the invisible boundary fills of the
+  // levels that exist. Polygon fills are not clickable themselves: a click chooses a unit of the selection level.
   const interactiveLayerIds = useMemo(
     () => [
-      ...dataLayers.filter((l) => visible.has(l.layer_id)).flatMap((l) => MODULE_BY_TYPE[l.tiles.geometry_type].hitLayerIds(l.layer_id)),
-      ...(bnd.adm0 ? [COUNTRY_HIT] : []),
+      ...dataLayers.filter((l) => visible.has(l.layer_id) && !MODULE_BY_TYPE[l.tiles.geometry_type].exclusive).flatMap((l) => MODULE_BY_TYPE[l.tiles.geometry_type].hitLayerIds(l.layer_id)),
+      ...(bnd.adm2 ? [HIT[2]] : []),
+      ...(bnd.adm1 ? [HIT[1]] : []),
+      ...(bnd.adm0 ? [HIT[0]] : []),
     ],
-    [dataLayers, visible, bnd.adm0],
+    [dataLayers, visible, bnd.adm0, bnd.adm1, bnd.adm2],
   );
 
   const onClick = useCallback(
     (e: MapLayerMouseEvent) => {
       const all = e.features ?? [];
-      // An object of a switched-on layer wins over the country under it
-      const f = all.find((x) => x.layer.id !== COUNTRY_HIT);
-      if (f) {
-        // every layer has its own source, and the source id is the layer_id
-        onSelect({ type: 'record', layerId: f.source, props: { ...(f.properties as Record<string, unknown>) } });
+      // An object of a switched-on overlay wins over the territory under it
+      const over = all.find((x) => x.source !== 'boundaries');
+      if (over) {
+        onSelect({ type: 'record', layerId: over.source, props: { ...(over.properties as Record<string, unknown>) } });
         return;
       }
-      const iso3 = all[0]?.properties?.iso3;
-      if (typeof iso3 === 'string' && iso3) onCountry(iso3);
-      else onSelect(null);
+      const hits = all.filter((x) => x.source === 'boundaries' && typeof x.properties?.unit_id === 'string');
+      if (hits.length === 0) return; // the sea, a disputed area: nothing
+      const iso3 = String(hits[0].properties?.iso3 ?? '');
+      if (!iso3) return;
+      // A click in another country chooses that country; inside the chosen country it chooses a unit of the selection level
+      if (iso3 !== country) {
+        onCountry(iso3);
+        return;
+      }
+      const inCountry = hits.filter((x) => x.properties?.iso3 === iso3);
+      const ok = inCountry.filter((x) => levelNumber(String(x.properties?.level)) <= selectLevel);
+      const pick = ok.sort((a, b) => levelNumber(String(b.properties?.level)) - levelNumber(String(a.properties?.level)))[0] ?? inCountry[0];
+      onUnit({ unit_id: String(pick.properties?.unit_id), name: String(pick.properties?.name ?? ''), level: levelNumber(String(pick.properties?.level)) });
     },
-    [onSelect, onCountry],
+    [onSelect, onCountry, onUnit, country, selectLevel],
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
@@ -100,6 +142,8 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       onMouseEnter={() => setCursor('pointer')}
       onMouseLeave={() => setCursor('')}
       onClick={onClick}
+      onLoad={() => onReady?.()}
+      onMove={(e) => onZoom(Math.round(e.viewState.zoom * 10) / 10)}
       onError={(e) => {
         const sid = (e as unknown as { sourceId?: string }).sourceId;
         if (sid && layerIdSet.has(sid)) onFailed(sid);
@@ -169,14 +213,13 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
               paint={{ 'line-color': COLORS.adm1, 'line-width': 0.8 }}
             />
           )}
-          {/* Invisible: nothing is recoloured; it only lets a click choose a country (ARCH 14.10, package 1c) */}
-          <Layer
-            id={COUNTRY_HIT}
-            type="fill"
-            source-layer={bnd.adm0.tiles.source_layer}
-            beforeId={BEFORE}
-            paint={{ 'fill-opacity': 0 }}
-          />
+          {/* Invisible: nothing is recoloured; these only let a click choose a country or a unit */}
+          {([bnd.adm0, bnd.adm1, bnd.adm2] as (typeof bnd.adm0)[]).map(
+            (b, i) =>
+              b && (
+                <Layer key={HIT[i]} id={HIT[i]} type="fill" source-layer={b.tiles.source_layer} beforeId={BEFORE} paint={{ 'fill-opacity': 0 }} />
+              ),
+          )}
           <Layer
             id="adm0-lines"
             type="line"
@@ -184,6 +227,29 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
             beforeId={BEFORE}
             paint={{ 'line-color': COLORS.adm0, 'line-width': 1 }}
           />
+          {/* The chosen unit: teal outline on a light underlay, in the layer of its own level */}
+          {([bnd.adm0, bnd.adm1, bnd.adm2] as (typeof bnd.adm0)[]).map((b, i) =>
+            b ? (
+              <Fragment key={`sel${i}`}>
+                <Layer
+                  id={`sel-under-${i}`}
+                  type="line"
+                  source-layer={b.tiles.source_layer}
+                  beforeId={BEFORE}
+                  filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
+                  paint={{ 'line-color': COLORS.surface, 'line-width': 5 }}
+                />
+                <Layer
+                  id={`sel-line-${i}`}
+                  type="line"
+                  source-layer={b.tiles.source_layer}
+                  beforeId={BEFORE}
+                  filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
+                  paint={{ 'line-color': COLORS.selected, 'line-width': 2.5 }}
+                />
+              </Fragment>
+            ) : null,
+          )}
         </Source>
       )}
 

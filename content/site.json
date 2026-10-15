@@ -1,1 +1,6 @@
-{"default_layer": "energy_generation_eia860_adm2"}
+{
+  "default_layer": "energy_generation_eia860_adm2",
+  "default_view": { "country": null },
+  "level_zoom": { "ADM1": 3.0, "ADM2": 5.5 },
+  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. default_view.country: an ISO3 code to open on a country, null for the world."
+}

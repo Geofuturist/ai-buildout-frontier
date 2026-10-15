@@ -4,26 +4,11 @@ import { useState } from 'react';
 import { Download } from 'lucide-react';
 import { buildRecordCsv, cutRecord, safePart } from '@/lib/csv';
 import type { LayerEntry, Meta } from '@/lib/data';
+import { loadCsv } from '@/lib/csvLoad';
 import { recordCitation } from '@/lib/format';
 
-// The published CSV of a layer is fetched once per page and the single row is cut out in the browser.
-const csvCache = new Map<string, Promise<string>>();
-
-function loadCsv(url: string): Promise<string> {
-  let p = csvCache.get(url);
-  if (!p) {
-    p = fetch(url).then((r) => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.text();
-    });
-    p.catch(() => csvCache.delete(url));
-    csvCache.set(url, p);
-  }
-  return p;
-}
-
 /** Attribution texts of all sources of the layer, without repeats (a licence condition of CC BY and Licence Ouverte). */
-function sourceTexts(meta: Meta): string[] {
+export function sourceTexts(meta: Meta): string[] {
   const texts = meta.sources.map((s) => s.license.attribution_text).filter(Boolean);
   if (texts.length === 0 && meta.license.attribution_text) texts.push(meta.license.attribution_text);
   return [...new Set(texts)];

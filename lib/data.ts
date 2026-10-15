@@ -133,6 +133,12 @@ export interface AbfData {
   anchors: Record<string, string>;
   /** layer_id that is on when the map opens (content/site.json), or null */
   default_layer: string | null;
+  /** ISO3 the site opens on (content/site.json default_view.country), or null for the world */
+  default_country: string | null;
+  /** zoom at which the selection level changes to ADM1 / ADM2 (never below the boundary tiles minzoom) */
+  level_zoom: { ADM1: number; ADM2: number };
+  /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
+  unit_words: Record<string, Record<string, string>>;
   attribution: { family: LicenseInfo['family']; sources: AttributionSource[] }[];
   warnings: string[];
 }
