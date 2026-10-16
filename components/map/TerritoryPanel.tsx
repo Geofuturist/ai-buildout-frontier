@@ -6,7 +6,7 @@ import { ChevronDown, ChevronUp, Info } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
 import type { LayerEntry } from '@/lib/data';
 import { checkedByLine, recordCitation, throughLabel } from '@/lib/format';
-import { fillLevelOf, levelWord } from '@/lib/indicators';
+import { levelWord, shownLevelOf } from '@/lib/indicators';
 import type { CountryModel, Indicator } from '@/lib/indicators';
 import { capitalize, unitWord } from '@/lib/layers';
 import { chainOf, unitName } from '@/lib/territory';
@@ -50,7 +50,7 @@ export default function TerritoryPanel(p: Props) {
   }, [p.nonce]);
 
   const exclusiveRow = (ind: Indicator) => {
-    const shown = fillLevelOf(ind, p.selLevel).layer;
+    const shown = shownLevelOf(ind, p.selLevel).layer;
     const meta = data.metas[shown.meta_id];
     const words = ind.levels.map((x) => unitWord(x.layer)).join(', ');
     return (
@@ -91,11 +91,14 @@ export default function TerritoryPanel(p: Props) {
   const valueLayer = indicator && unit ? indicator.levels.find((x) => x.level === unit.level)?.layer : undefined;
   const chain = unit && p.countryIso ? chainOf(p.territory, unit.unit_id) : [];
   const word = unit ? levelWord(unit.level, indicator ?? undefined, p.countryIso ?? '', data.unit_words) : '';
-  const citeLayer = valueLayer ?? (indicator ? fillLevelOf(indicator, p.selLevel).layer : undefined);
+  const citeLayer = valueLayer ?? (indicator ? shownLevelOf(indicator, p.selLevel).layer : undefined);
   const citeMeta = citeLayer ? data.metas[citeLayer.meta_id] : null;
   const anchor = citeLayer ? data.anchors[citeLayer.layer_id] : undefined;
 
-  const title = p.countryIso ? (unit && unit.level > 0 ? unit.name : p.countryName) : 'Choose a country on the map';
+  const title = unit && unit.level > 0 ? unit.name : p.countryName;
+
+  // World view: no panel, the start globe marks the countries with data
+  if (!p.countryIso) return null;
 
   return (
     <aside
@@ -104,26 +107,12 @@ export default function TerritoryPanel(p: Props) {
     >
       <button type="button" className="flex min-h-[48px] items-center justify-between px-4 text-left md:hidden" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
         <span className="text-sm">
-          <span className="font-semibold">{p.countryIso ? title : 'Territory'}</span>
-          {!p.countryIso && <span className="text-ink2"> · choose a country</span>}
+          <span className="font-semibold">{title}</span>
         </span>
         {open ? <ChevronDown size={20} aria-hidden /> : <ChevronUp size={20} aria-hidden />}
       </button>
 
       <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-4 pb-4 pt-1 text-sm md:block md:pt-3`}>
-        {!p.countryIso && (
-          <>
-            <h2 className="text-base font-semibold leading-tight">Choose a country on the map</h2>
-            <p className="mt-1 text-ink2">Countries with data:</p>
-            <div className="mt-2 flex flex-wrap gap-2">
-              {p.countries.map((c) => (
-                <button key={c.iso3} type="button" className="btn" onClick={() => p.onCountry(c.iso3)}>{c.name}</button>
-              ))}
-              <button type="button" className="btn" onClick={p.onWorld}>World</button>
-            </div>
-          </>
-        )}
-
         {p.countryIso && (
           <>
             {/* Path up: country › region › unit */}

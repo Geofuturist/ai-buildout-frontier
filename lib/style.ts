@@ -11,6 +11,10 @@ export const COLORS = {
   zeroStroke: '#c9c2b4',
   noValue: '#6b6f76',
   notCovered: '#8a8f96',
+  /** polygons of a level the indicator has no data for */
+  neutralUnit: '#e6e3dc',
+  /** countries that have data, on the start globe */
+  dataCountry: '#6b7280',
   disputedFill: '#e7e3dc',
   disputedLine: '#b9b2a6',
   adm0: '#3a3f45',

@@ -12,7 +12,7 @@ import { MODULE_BY_TYPE } from './modules';
 import { selectDataLayers } from './select';
 import type { CardState, MapData, UnitRef } from './types';
 import { countryNameFromIso3 } from '@/lib/iso3';
-import { fillLevelOf, buildCountries, levelWord, selectionLevel } from '@/lib/indicators';
+import { buildCountries, fillLevelOf, levelWord, selectionLevel } from '@/lib/indicators';
 import { groupByCountry, unionBbox } from '@/lib/layers';
 import { levelsOfCountry, loadTerritory } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
@@ -46,6 +46,8 @@ export default function MapApp({ data }: { data: MapData }) {
   const selLevel = selectionLevel(zoom, data.level_zoom, levelsOfCountry(territory, country ?? ''));
   const fill = indicator ? fillLevelOf(indicator, selLevel) : null;
   const activeId = fill?.layer.layer_id ?? 'none';
+  // No data at this level: plain polygons of the level are drawn instead of a layer of another level
+  const neutralLevel = country && indicator && !fill ? selLevel : null;
   const chosen: UnitRef | null = country ? unit ?? { unit_id: country, name: countryName, level: 0 } : null;
 
   // Points and lines of the chosen country that are switched on
@@ -121,7 +123,12 @@ export default function MapApp({ data }: { data: MapData }) {
   })();
 
   // Legend heading: indicator title and the level that is drawn
-  const heading = indicator && fill ? `${indicator.title} · ${levelWord(fill.level, indicator, indicator.iso3, data.unit_words)} level` : null;
+  const heading = indicator ? `${indicator.title} · ${levelWord(fill ? fill.level : selLevel, indicator, indicator.iso3, data.unit_words)} level` : null;
+  const finest = indicator ? indicator.levels[indicator.levels.length - 1] : null;
+  const note =
+    indicator && !fill && finest
+      ? `No data at this level in this release. Zoom in to see ${levelWord(finest.level, indicator, indicator.iso3, data.unit_words).toLowerCase()} data.`
+      : null;
   const legendLayers = fill ? [fill.layer, ...overlaysOn] : [];
 
   return (
@@ -136,6 +143,8 @@ export default function MapApp({ data }: { data: MapData }) {
           country={country}
           selectLevel={selLevel}
           selectedUnit={chosen}
+          neutralLevel={neutralLevel}
+          dataCountries={countries.map((c) => c.iso3)}
           onSelect={setCard}
           onCountry={selectCountry}
           onUnit={onUnit}
@@ -143,7 +152,7 @@ export default function MapApp({ data }: { data: MapData }) {
           onReady={onReady}
           onFailed={onFailed}
         />
-        <LegendCard data={data} heading={heading} layers={legendLayers} covered={card !== null} />
+        <LegendCard data={data} heading={heading} note={note} layers={legendLayers} covered={card !== null} countries={countries} onCountry={selectCountry} />
         <MapNav preview={data.channel === 'dev'} />
         {/* Zoom and the level a click selects, above the zoom buttons */}
         <p className="pointer-events-none absolute bottom-[86px] right-[10px] z-10 rounded bg-surface/90 px-1.5 py-0.5 text-[11px] font-semibold text-ink2 max-md:bottom-[62px] max-md:left-[112px] max-md:right-auto" aria-live="off">

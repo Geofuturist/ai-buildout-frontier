@@ -37,6 +37,10 @@ interface Props {
   country: string | null;
   selectLevel: number;
   selectedUnit: UnitRef | null;
+  /** level (0, 1, 2) at which plain polygons of the chosen country are drawn, when the indicator has no data there */
+  neutralLevel: number | null;
+  /** countries with data: tinted on the start globe (no country chosen) */
+  dataCountries: string[];
   onSelect: (card: CardState) => void;
   onCountry: (iso3: string) => void;
   onUnit: (u: UnitRef) => void;
@@ -45,7 +49,7 @@ interface Props {
   onFailed: (layerId: string) => void;
 }
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, onSelect, onCountry, onUnit, onZoom, onReady, onFailed }, ref) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, dataCountries, onSelect, onCountry, onUnit, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -182,6 +186,33 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       {/* 2. Boundaries: one PMTiles file, several source layers */}
       {bnd.adm0 && (
         <Source id="boundaries" type="vector" url={`pmtiles://${bnd.adm0.tiles.url}`}>
+          {/* Start globe: countries with data in a grey tint (flat list: <Source> passes its id to direct children only) */}
+          <Layer
+            id="data-countries"
+            type="fill"
+            source-layer={bnd.adm0.tiles.source_layer}
+            beforeId={BEFORE}
+            filter={['in', ['get', 'iso3'], ['literal', dataCountries]] as ExpressionSpecification}
+            layout={{ visibility: country ? 'none' : 'visible' }}
+            paint={{ 'fill-color': COLORS.dataCountry, 'fill-opacity': 0.5 }}
+          />
+          {/* Plain polygons of the level the map shows when the indicator has no data at that level */}
+          {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
+            b
+              ? [
+                  <Layer
+                    key={`neutral-${i}`}
+                    id={`neutral-${i}`}
+                    type="fill"
+                    source-layer={b.tiles.source_layer}
+                    beforeId={BEFORE}
+                    filter={['==', ['get', 'iso3'], country ?? ''] as ExpressionSpecification}
+                    layout={{ visibility: country && neutralLevel === i ? 'visible' : 'none' }}
+                    paint={{ 'fill-color': COLORS.neutralUnit }}
+                  />,
+                ]
+              : [],
+          )}
           {bnd.disputed && (
             <Layer
               id="disputed-fill"

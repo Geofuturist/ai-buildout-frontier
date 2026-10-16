@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, ListTree } from 'lucide-react';
 import type { LayerEntry } from '@/lib/data';
+import type { CountryModel } from '@/lib/indicators';
+import { COLORS } from '@/lib/style';
 import Legend from './Legend';
 import type { MapData } from './types';
 
@@ -15,6 +17,11 @@ interface Props {
   heading: string | null;
   /** the fill layer and the switched-on points and lines */
   layers: LayerEntry[];
+  /** shown under the heading when the indicator has no data at the level that is drawn */
+  note: string | null;
+  /** countries with data (start globe: shaded; also listed here as buttons) */
+  countries: CountryModel[];
+  onCountry: (iso3: string) => void;
   /** a card of the right-hand side is open: on a phone the legend steps aside */
   covered: boolean;
 }
@@ -23,7 +30,7 @@ interface Props {
  * Legend card, left (SPEC_WEB_territory 3). Desktop: top left, folds to the left with a remembered choice.
  * Phone: a small button bottom left that opens the card above the territory bar.
  */
-export default function LegendCard({ data, heading, layers, covered }: Props) {
+export default function LegendCard({ data, heading, note, layers, covered, countries, onCountry }: Props) {
   const [folded, setFolded] = useState(false);
   const [openPhone, setOpenPhone] = useState(false);
   useEffect(() => {
@@ -47,8 +54,22 @@ export default function LegendCard({ data, heading, layers, covered }: Props) {
       {heading ? (
         <p className="mb-2 text-sm font-semibold leading-tight text-ink">{heading}</p>
       ) : (
-        <p className="mb-2 text-sm text-ink2">Choose a country to see its layers.</p>
+        <>
+          <p className="mb-1 flex items-center gap-2 text-sm text-ink2">
+            <span className="inline-block h-3 w-5 shrink-0 rounded-sm border border-line" style={{ background: COLORS.dataCountry, opacity: 0.5 }} aria-hidden />
+            Countries with data. Click one on the map.
+          </p>
+          <p className="text-xs text-muted">
+            {countries.map((c, i) => (
+              <span key={c.iso3}>
+                {i > 0 && ' · '}
+                <button type="button" className="text-accent hover:underline" onClick={() => onCountry(c.iso3)}>{c.name}</button>
+              </span>
+            ))}
+          </p>
+        </>
       )}
+      {note && <p className="mb-2 rounded-md border border-dashed border-[#8a8f96] p-2 text-xs text-ink2">{note}</p>}
       {heading && <Legend layers={layers} metas={data.metas} />}
       {!heading && (
         <>

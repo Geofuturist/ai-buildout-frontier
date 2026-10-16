@@ -53,12 +53,17 @@ export function selectionLevel(zoom: number, levelZoom: { ADM1: number; ADM2: nu
 }
 
 /**
- * Fill layer of an indicator: the finest of its layers not finer than the selection level; if there is none,
- * the coarsest it has.
+ * Data fill of an indicator at the selection level: the finest of its layers not finer than the level.
+ * null when the indicator has nothing at that level or coarser (the map then shows plain polygons of that level).
  */
-export function fillLevelOf(ind: Indicator, sel: number): { level: number; layer: LayerEntry } {
+export function fillLevelOf(ind: Indicator, sel: number): { level: number; layer: LayerEntry } | null {
   const ok = ind.levels.filter((x) => x.level <= sel);
-  return ok.length ? ok[ok.length - 1] : ind.levels[0];
+  return ok.length ? ok[ok.length - 1] : null;
+}
+
+/** The layer to describe in the panel (info, citation): the one drawn, else the coarsest the indicator has. */
+export function shownLevelOf(ind: Indicator, sel: number): { level: number; layer: LayerEntry } {
+  return fillLevelOf(ind, sel) ?? ind.levels[0];
 }
 
 /** Word for a level: the last title fragment of the indicator layer of that level, else the registry word, ADM0 = Country. */
