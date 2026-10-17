@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-build_boundaries.py -- assemble abf-boundaries-v0.1.0.
+build_boundaries.py -- assemble abf-boundaries (v0.1.0; v0.2.0 adds the plan-driven ADM1 of 104 countries,
+the Adjara ADM0 patch, name overrides and the contested_areas layer -- see bnd_plan.py).
 
 Run (from repo root, after fetch_boundary_sources.py has succeeded):
-    python scripts\\boundaries\\build_boundaries.py --sources-dir "D:\\GISData\\Boundaries\\sources" --out-dir "D:\\GISData\\Boundaries\\out\\abf-boundaries-v0.1.0" --pov usa
+    python scripts\\boundaries\\build_boundaries.py --sources-dir "D:\\GISData\\Boundaries\\sources" --out-dir "D:\\GISData\\Boundaries\\out\\abf-boundaries-v0.2.0" --pov usa
 
 Builds, per SPEC_BND_boundaries_v0_1.md S4:
   - ADM0 for the whole world (S4.1): merge Natural Earth by iso3 = ISO_A3_EH, with
@@ -27,6 +28,7 @@ Writes, under --out-dir (SPEC S6):
                                             computed from the *output* files per SPEC S5).
     analysis/USA_adm1_cb2023_500k.parquet, analysis/USA_adm2_cb2023_500k.parquet
     analysis/NOR_adm1_inndelingsbase_20260101.parquet, analysis/NOR_adm2_inndelingsbase_20260101.parquet
+    display/contested_areas.parquet + .geojson.gz (v0.2.0, SPEC S2.6; empty layer allowed)
     meta.json, build_log.json, sources_manifest.json (copied from --sources-dir), unit_hashes.csv
 
 Then run validate_boundaries.py (see boundaries/README.md).
@@ -48,6 +50,7 @@ import shapely
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bnd_common as c  # noqa: E402
+import bnd_plan as bp  # noqa: E402
 
 T0 = time.time()
 
@@ -550,6 +553,7 @@ def main() -> int:
     ap.add_argument("--sources-dir", required=True, type=Path)
     ap.add_argument("--out-dir", required=True, type=Path)
     ap.add_argument("--pov", default="usa")
+    ap.add_argument("--release", default="abf-boundaries-v0.2.0", help="release name written to meta.json")
     ap.add_argument("--boundaries-dir", default=Path("boundaries"), type=Path,
                      help="repo-relative dir with boundary_registry.csv / adm0_overrides.csv (default: boundaries, run from repo root)")
     args = ap.parse_args()
@@ -573,6 +577,13 @@ def main() -> int:
 
     adm0 = build_adm0(src["ne_adm0"], overrides, args.pov, logger)
 
+    # v0.2.0 S2.2 -- ADM0 patches (Adjara into Georgia); only rows of boundaries/adm0_patches.csv
+    ne_adm1_wgs = c.clean_geodataframe(c.to_wgs84(src["ne_adm1"]))
+    adm0, patch_report = bp.apply_adm0_patches(adm0, ne_adm1_wgs, args.boundaries_dir / "adm0_patches.csv", logger)
+    for pr in patch_report:
+        log(f"ADM0 patch {pr['iso3']}: {pr['area_before_km2']} -> {pr['area_after_km2']} km2, "
+            f"parts {pr['parts_before']} -> {pr['parts_after']}")
+
     fra_adm2, fra_adm1 = build_france(src["ne_adm1"], logger)
     assert_nesting(fra_adm1, adm0.loc[adm0["unit_id"] == "FRA", "geometry"].iloc[0], "FRA", logger)
 
@@ -585,6 +596,31 @@ def main() -> int:
     nor_adm2, nor_adm1, nor_analysis_adm2, nor_analysis_adm1, nor_gap, nor_cross = build_norway(
         src["fylke_raw"], src["kommune_raw"], src["ne_adm1"], adm0, lakes_union, logger,
     )
+
+    # v0.2.0 S2.1 -- generic plan-driven ADM1 for the countries in boundaries/adm1_plan.csv
+    plan_path = args.boundaries_dir / "adm1_plan.csv"
+    plan_adm1, plan_losses = None, []
+    if plan_path.exists():
+        plan = bp.load_plan(plan_path)
+        clash = sorted(set(plan["iso3"]) & {"FRA", "GBR", "USA", "NOR"})
+        if clash:
+            raise c.BuildError(f"adm1_plan.csv has rows for countries with their own builder: {clash}. Stop.")
+        plan_adm1, plan_losses = bp.build_plan_adm1(plan, src["ne_adm1"], adm0, registry, logger)
+        if registry is not None:
+            reg1 = registry[registry["level"] == "ADM1"].set_index("iso3")["expected_units"].astype(int)
+            cnt = plan_adm1.groupby("iso3").size()
+            badc = {k: (int(cnt.get(k, 0)), int(v)) for k, v in reg1.items() if k in set(plan["iso3"]) and int(cnt.get(k, 0)) != v}
+            if badc or set(plan["iso3"]) - set(reg1.index):
+                raise c.BuildError(f"plan vs registry expected_units mismatch (built, expected): {badc}; "
+                                   f"not in registry: {sorted(set(plan['iso3']) - set(reg1.index))}. Stop.")
+        log(f"plan ADM1: {len(plan_adm1)} units in {plan_adm1['iso3'].nunique()} countries; "
+            f"{len(plan_losses)} units lose >= {bp.LOSS_REPORT_KM2} km2 when clipped to their ADM0")
+        nested = bp.check_nested(bp.find_nested_units(plan_adm1))
+        logger.add(step="p8_nested_units", **{k: v for k, v in nested.items() if k != "passed"})
+        log(f"P8 nested units: max {nested['max_per_country']} per country {nested['per_country']}")
+        if not nested["passed"]:
+            raise c.BuildError(f"P8: >= {bp.NESTED_STOP_COUNT} nested units in a country: {nested['over_limit']}. Stop and ask.")
+        logger.add(step="plan_clip_losses", losses=plan_losses)
 
     # apply registry "verified" -> published, where a registry is available
     def apply_published(gdf: gpd.GeoDataFrame, iso3: str, level: str) -> gpd.GeoDataFrame:
@@ -604,10 +640,35 @@ def main() -> int:
     nor_adm1 = apply_published(nor_adm1, "NOR", "ADM1")
     nor_adm2 = apply_published(nor_adm2, "NOR", "ADM2")
 
-    display_adm1 = pd.concat([fra_adm1, gbr_adm1, usa_adm1, nor_adm1], ignore_index=True)
+    adm1_parts = [fra_adm1, gbr_adm1, usa_adm1, nor_adm1] + ([plan_adm1] if plan_adm1 is not None else [])
+    display_adm1 = pd.concat(adm1_parts, ignore_index=True)
     display_adm1 = gpd.GeoDataFrame(display_adm1, crs=c.CRS_WGS84)
     display_adm2 = pd.concat([fra_adm2, usa_adm2, nor_adm2], ignore_index=True)
     display_adm2 = gpd.GeoDataFrame(display_adm2, crs=c.CRS_WGS84)
+
+    # v0.2.0 S2.4 -- name overrides (all levels)
+    frames, names_applied = bp.apply_name_overrides(
+        {"ADM0": adm0, "ADM1": display_adm1, "ADM2": display_adm2}, args.boundaries_dir / "name_overrides.csv", logger)
+    adm0, display_adm1, display_adm2 = frames["ADM0"], frames["ADM1"], frames["ADM2"]
+    log(f"name overrides applied: {len(names_applied)}")
+
+    # v0.2.0 S2.4a -- codes and names against Unicode CLDR release-48-2 (stop on a violation)
+    if plan_adm1 is not None:
+        cldr = bp.check_cldr(plan, dict(zip(display_adm1["unit_id"], display_adm1["name"])), src["manifest"])
+        logger.add(step="cldr_check", **cldr)
+        log(f"CLDR check: {cldr['n_checked']} units, {cldr['n_violations']} violations, {len(cldr['exceptions'])} exception(s)")
+        if not cldr["passed"]:
+            raise c.BuildError(f"CLDR check (SPEC S2.4a) failed: {cldr['violations'][:20]}. Stop and ask.")
+
+    # v0.2.0 S2.6 -- contested_areas (union of already-built frame units; input written by RES6)
+    frame_by_id = dict(zip(adm0["unit_id"], adm0.geometry))
+    frame_by_id.update(dict(zip(display_adm1["unit_id"], display_adm1.geometry)))
+    contested, contested_problems, n_contested_rows = bp.build_contested_areas(
+        args.boundaries_dir / "contested_areas.csv", frame_by_id, set(adm0["unit_id"]))
+    logger.add(step="contested_areas", n_zones=len(contested), n_rows_in_csv=n_contested_rows, problems=contested_problems)
+    if contested_problems:
+        raise c.BuildError(f"contested_areas.csv: {contested_problems}. Stop and ask.")
+    log(f"contested_areas: {len(contested)} zone(s)")
 
     # --- validation check 1 sanity pre-pass (full check + report lives in validate_boundaries.py) ---
     for level_name, gdf in [("ADM0", adm0), ("ADM1", display_adm1), ("ADM2", display_adm2)]:
@@ -624,6 +685,8 @@ def main() -> int:
     c.write_geojson_gz(display_adm1, out_dir / "display" / "adm1.geojson.gz")
     c.write_parquet(display_adm2, out_dir / "display" / "adm2.parquet")
     c.write_geojson_gz(display_adm2, out_dir / "display" / "adm2.geojson.gz")
+    c.write_parquet(contested, out_dir / "display" / "contested_areas.parquet", sort_col="area_id")
+    c.write_geojson_gz(contested, out_dir / "display" / "contested_areas.geojson.gz", sort_col="area_id")
     log("display/adm0, adm1, adm2 written (adm0_disputed_unassigned is written by validate_boundaries.py --init-whitelist)")
 
     # --- write analysis layers (USA, Norway only -- SPEC S4.7) ---
@@ -643,10 +706,14 @@ def main() -> int:
     unit_counts = {
         "ADM0": len(adm0),
         "ADM1": {"total": len(display_adm1), "USA": len(usa_adm1), "FRA": len(fra_adm1),
-                  "GBR": len(gbr_adm1), "NOR": len(nor_adm1)},
+                  "GBR": len(gbr_adm1), "NOR": len(nor_adm1),
+                  "plan_countries": (int(plan_adm1["iso3"].nunique()) if plan_adm1 is not None else 0),
+                  "plan_units": (len(plan_adm1) if plan_adm1 is not None else 0),
+                  "countries_with_adm1": int(display_adm1["iso3"].nunique())},
         "ADM2": {"total": len(display_adm2), "USA": len(usa_adm2), "FRA": len(fra_adm2), "NOR": len(nor_adm2)},
+        "contested_areas": len(contested),
     }
-    meta = build_meta("abf-boundaries-v0.1.0", args.pov, src["manifest"], unit_counts, out_dir)
+    meta = build_meta(args.release, args.pov, src["manifest"], unit_counts, out_dir)
     (out_dir / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     log("meta.json written")
 
@@ -659,6 +726,8 @@ def main() -> int:
     print(f"ADM0: {len(adm0)} units (expected {c.ADM0_EXPECTED_UNITS})")
     print(f"ADM1: {len(display_adm1)} (USA {len(usa_adm1)}, FRA {len(fra_adm1)}, GBR {len(gbr_adm1)}, NOR {len(nor_adm1)})")
     print(f"ADM2: {len(display_adm2)} (USA {len(usa_adm2)}, FRA {len(fra_adm2)}, NOR {len(nor_adm2)})")
+    print(f"ADM1 countries: {display_adm1['iso3'].nunique()}; plan units: {len(plan_adm1) if plan_adm1 is not None else 0}; "
+          f"contested_areas: {len(contested)}; name overrides: {len(names_applied)}")
     print(f"USA gap report: {usa_gap}")
     print(f"USA ADM1 vs Census cross-check: {usa_cross}")
     print(f"Norway gap report: {nor_gap}")

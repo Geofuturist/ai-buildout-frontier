@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-fetch_boundary_sources.py -- stage and verify the inputs for abf-boundaries-v0.1.0.
+fetch_boundary_sources.py -- stage and verify the inputs for abf-boundaries (v0.1.0; v0.2.0 adds four Unicode CLDR release-48-2 files).
 
 Run:
     python -m pip install "geopandas>=1.0" "shapely>=2.0" pyogrio pyarrow pyproj requests
@@ -17,6 +17,10 @@ What it does (SPEC_BND_boundaries_v0_1.md S1):
     files are already sitting in --sources-dir; if not, it prints exactly which file is
     missing and how to obtain it, and exits with a non-zero code without starting the
     build.
+  - v0.2.0: downloads four files of Unicode CLDR release-48-2 from raw.githubusercontent.com (tag, not branch)
+    and checks their SHA-256 against the values pinned in SPEC_BND_boundaries_v0_2_0.md S1. A mismatch stops
+    the run (also for a cached file). They give the codes and English names for the check of S2.4a and the
+    license notice (LICENSE); no geometry.
   - Extracts every .zip source into sources-dir/extracted/<key>/ (idempotent).
   - Writes sources_manifest.json: url (or "manual"), retrieved_at, size, sha256,
     license, publisher/product, for every source file.
@@ -44,6 +48,8 @@ except ImportError:
     )
     sys.exit(2)
 
+
+CLDR_BASE = "https://raw.githubusercontent.com/unicode-org/cldr/release-48-2/"
 
 # Each entry: key, filename (as it will sit in --sources-dir), url (None = manual only),
 # publisher, product, license, required (False = best-effort, does not fail the run),
@@ -129,6 +135,32 @@ SOURCES = [
             "  and place it at the path above with this exact name."
         ),
     ),
+    # --- Unicode CLDR release-48-2 (SPEC_BND v0.2.0 S1, r4). publisher is exactly "Unicode, Inc."; product starts
+    # with "Unicode CLDR release-48-2" and contains the path; CODE-PUB matches the inputs by these strings. ---
+    dict(
+        key="cldr_license", filename="CLDR_release-48-2_LICENSE",
+        url=CLDR_BASE + "LICENSE", publisher="Unicode, Inc.",
+        product="Unicode CLDR release-48-2: LICENSE", license="Unicode-3.0", required=True,
+        expected_sha256="b49d0e9f8ead51ca8b7df6fec89cc3ae6809198b4b9d43c74216da0118f23f5b",
+    ),
+    dict(
+        key="cldr_subdivisions_en", filename="CLDR_release-48-2_subdivisions_en.xml",
+        url=CLDR_BASE + "common/subdivisions/en.xml", publisher="Unicode, Inc.",
+        product="Unicode CLDR release-48-2: common/subdivisions/en.xml", license="Unicode-3.0", required=True,
+        expected_sha256="997a14da1144bb66f36a829db1783afe41f7529e33070afbe964bdd8e387b1d2",
+    ),
+    dict(
+        key="cldr_subdivisions", filename="CLDR_release-48-2_supplemental_subdivisions.xml",
+        url=CLDR_BASE + "common/supplemental/subdivisions.xml", publisher="Unicode, Inc.",
+        product="Unicode CLDR release-48-2: common/supplemental/subdivisions.xml", license="Unicode-3.0", required=True,
+        expected_sha256="63095a3b5bd4e0a00d9e1cf96853808cacd0ec7c826dbcbfd31755c6cb9b6c55",
+    ),
+    dict(
+        key="cldr_supplemental_metadata", filename="CLDR_release-48-2_supplementalMetadata.xml",
+        url=CLDR_BASE + "common/supplemental/supplementalMetadata.xml", publisher="Unicode, Inc.",
+        product="Unicode CLDR release-48-2: common/supplemental/supplementalMetadata.xml", license="Unicode-3.0", required=True,
+        expected_sha256="36e807ce72b15304dd993f132216f408351be1c4376edaa2fe9e9547e2efcac1",
+    ),
     dict(
         key="geoboundaries_meta",
         filename="geoBoundariesOpen-meta.csv",
@@ -198,6 +230,13 @@ def main() -> int:
             else:
                 print(f"[fetch] {src['key']}: optional, continuing without it.")
                 continue
+
+        if src.get("expected_sha256"):
+            got_sha = c.sha256_file(dest)
+            if got_sha != src["expected_sha256"]:
+                print(f"[fetch] {src['key']}: SHA-256 MISMATCH -- got {got_sha}, expected {src['expected_sha256']}. "
+                      f"STOP (SPEC_BND v0.2.0 S1). Delete {dest} and re-run; if it repeats, ask ARCH6.")
+                return 3
 
         extracted_dir = extract_if_zip(dest, sources_dir, src["key"])
 

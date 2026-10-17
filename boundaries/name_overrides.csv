@@ -5,3 +5,4 @@ FRA-1-93,Provence-Alpes-Côte-d'Azur,Provence-Alpes-Côte d'Azur,https://www.ins
 FRA-2-68,Haute-Rhin,Haut-Rhin,https://www.insee.fr/fr/statistiques/fichier/8740222/v_departement_2026.csv,2026-10-11,script:check_names_cog
 FRA-2-77,Seien-et-Marne,Seine-et-Marne,https://www.insee.fr/fr/statistiques/fichier/8740222/v_departement_2026.csv,2026-10-11,script:check_names_cog
 FRA-2-973,Guyane française,Guyane,https://www.insee.fr/fr/statistiques/fichier/8740222/v_departement_2026.csv,2026-10-11,script:check_names_cog
+CHN-1-NM,Inner Mongol,Inner Mongolia,https://github.com/unicode-org/cldr/blob/release-48-2/common/subdivisions/en.xml,2026-10-17,script:validate_boundaries.py

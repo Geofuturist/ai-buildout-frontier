@@ -542,17 +542,17 @@ def pairwise_overlaps(gdf: gpd.GeoDataFrame, tol_km2: float = OVERLAP_TOL_KM2) -
 # I/O helpers
 # --------------------------------------------------------------------------
 
-def write_parquet(gdf: gpd.GeoDataFrame, path: Path) -> None:
+def write_parquet(gdf: gpd.GeoDataFrame, path: Path, sort_col: str = "unit_id") -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    gdf = gdf.sort_values("unit_id").reset_index(drop=True)
+    gdf = gdf.sort_values(sort_col).reset_index(drop=True)
     gdf.to_parquet(path)
 
 
-def write_geojson_gz(gdf: gpd.GeoDataFrame, path: Path, precision: int = 6) -> None:
+def write_geojson_gz(gdf: gpd.GeoDataFrame, path: Path, precision: int = 6, sort_col: str = "unit_id") -> None:
     import gzip
 
     path.parent.mkdir(parents=True, exist_ok=True)
-    gdf = gdf.sort_values("unit_id").reset_index(drop=True)
+    gdf = gdf.sort_values(sort_col).reset_index(drop=True)
     raw = gdf.to_json(na="null", drop_id=True)
     # Round coordinate precision post-hoc via GDAL's COORDINATE_PRECISION would need
     # a temp file; simplest robust route is geopandas' own to_json + re-dump through
