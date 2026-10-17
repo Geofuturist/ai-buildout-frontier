@@ -5,7 +5,7 @@ Run command (from the repository root, Windows):
 
 Looks for: British spelling (licence, kilometre), [RES], {placeholders} outside citation templates,
 "0 more", and the wrong spellings "License Ouverte" / "Open License" / "open_license".
-The names "Licence Ouverte" / "Open Licence" and the code open_licence are allowed. Nothing is changed.
+The names "Licence Ouverte" / "Open Licence", the code open_licence and script names (script:06_licences.py) are allowed. Nothing is changed.
 """
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ import re
 import sys
 from pathlib import Path
 
-ALLOWED = re.compile(r"open_licence|Licence\s+Ouverte|Open\s+Licence|https?://\S+", re.I)  # names, the code and URLs may keep the British spelling
+ALLOWED = re.compile(r"open_licence|Licence\s+Ouverte|Open\s+Licence|https?://\S+|script:\S+", re.I)  # names, the code, URLs and script names may keep the British spelling
 CHECKS = [
     ("licence (British spelling)", re.compile(r"licen[c]e", re.I), True),
     ("kilometre", re.compile(r"kilomet(re|res)\b", re.I), False),

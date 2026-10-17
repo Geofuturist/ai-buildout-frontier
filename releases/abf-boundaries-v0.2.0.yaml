@@ -1,0 +1,55 @@
+# Release of the boundaries dataset, version 0.2.0: the finished output of CODE-BND, copied under the names of SPEC section 4.2.
+# Before the final build V sets `doi` (the DOI reserved as a "New version" of the abf-boundaries record) and `published_at`:
+#   python scripts\publish\set_release_doi.py releases\abf-boundaries-v0.2.0.yaml 10.5281/zenodo.NNNNNNN 2026-MM-DD
+dataset: abf-boundaries
+version: 0.2.0
+tag: abf-boundaries-v0.2.0
+doi: null
+published_at: null
+built_at: null
+boundary_release: null
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\abf_boundaries.yaml'
+# Mapping: file of the CODE-BND output (without extension) -> name in the release.
+file_map:
+  display/adm0: adm0
+  display/adm1: adm1
+  display/adm2: adm2
+  display/adm0_disputed_unassigned: disputed_unassigned
+  display/contested_areas: contested_areas
+  analysis/USA_adm1_cb2023_500k: analysis_usa_adm1
+  analysis/USA_adm2_cb2023_500k: analysis_usa_adm2
+  analysis/NOR_adm1_inndelingsbase_20260101: analysis_nor_adm1
+  analysis/NOR_adm2_inndelingsbase_20260101: analysis_nor_adm2
+# The build stops if the counts of the files differ (SPEC_BND section 6 item 1).
+expected_counts: {adm0: 242, adm1: 1667, adm2: 3602}
+# Shares of verification, computed from the registry of the release (SPEC_BND section 3 item 3c).
+# Countries counted: verified ADM1 countries outside exclude_iso3 (the ones of version 0.1.0).
+# Expected (ARCH6, 17.10): 27 countries, 429 units. A difference is a warning in dev and a stop in final.
+verification_from_registry:
+  exclude_iso3: [USA, FRA, GBR, NOR]
+  expected_countries: 104
+  expected_verdicts: {confirmed: 22, disputed: 3, refer_arch: 2}
+  expected_units: 429
+# Reference files: the first nine live in the repository, the next two in the CODE-BND output,
+# the last one is the CLDR notice found by its SHA-256 among the downloaded CLDR files.
+reference_files:
+  registry: 'boundaries\boundary_registry.csv'
+  adm0_overrides: 'boundaries\adm0_overrides.csv'
+  adm0_patches: 'boundaries\adm0_patches.csv'
+  name_overrides: 'boundaries\name_overrides.csv'
+  contested_areas: 'boundaries\contested_areas.csv'
+  adm1_plan: 'boundaries\adm1_plan.csv'
+  adm1_leftovers: 'boundaries\adm1_leftovers.csv'
+  code_overrides: 'boundaries\code_overrides.csv'
+  holes_whitelist: 'boundaries\holes_whitelist.geojson'
+  validation_report: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0\validation_report.json'
+  unit_hashes: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0\unit_hashes.csv'
+  license_unicode:
+    find: 'D:\GISData\Boundaries\sources'
+    name: 'LICENSE*'
+    sha256: b49d0e9f8ead51ca8b7df6fec89cc3ae6809198b4b9d43c74216da0118f23f5b
+    publish_as: LICENSE_Unicode-3.0.txt

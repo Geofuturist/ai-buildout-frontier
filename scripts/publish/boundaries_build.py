@@ -8,7 +8,9 @@ read, checked, copied under the names of SPEC section 4.2, and `units.csv` is ma
 from __future__ import annotations
 
 import copy
+import hashlib
 import logging
+import re
 import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -16,6 +18,7 @@ from typing import Any
 
 import geopandas as gpd
 import pandas as pd
+from shapely.ops import unary_union
 
 import tilesio
 from common import CYRILLIC_REGEX, GateError, resolve_path
@@ -35,6 +38,25 @@ UNIT_COLUMNS = ["unit_id", "iso3", "level", "name", "parent_id", "adm0_status",
                 "source", "license", "boundary_vintage"]
 REQUIRED_FOR_UNITS = ["unit_id", "iso3", "level", "name", "parent_id"]
 LEVEL_FILES = {"adm0": "ADM0", "adm1": "ADM1", "adm2": "ADM2"}
+# layers that are not a level of their own: shown in the manifest as ADM0 (like the unassigned areas)
+LEVEL_OF_LAYER = {"adm0": "ADM0", "adm1": "ADM1", "adm2": "ADM2",
+                  "disputed_unassigned": "ADM0", "contested_areas": "ADM0"}
+VERDICT_REGEX = re.compile(r"verdict\W{0,3}(confirmed|disputed|refer_arch)\b", re.I)
+# description of every reference file of the release that may be named in `reference_files` of the release yaml
+REFERENCE_DESCRIPTIONS = {
+    "registry": "Boundary registry: method, source, license and verification status of every country and level.",
+    "adm0_overrides": "Overrides applied to ADM0 status of countries.",
+    "adm0_patches": "Patches to the geometry of countries (in this release, Adjara added to Georgia).",
+    "name_overrides": "Corrections of unit names, each with its source and the name it replaces.",
+    "contested_areas": "Contested areas: state in control, claiming state, date, sources and checks. Input of the contested_areas layer.",
+    "adm1_plan": "Plan of the first-level units added in version 0.2.0, one row per unit.",
+    "adm1_leftovers": "Areas that belong to a country but to none of its first-level units, with their areas in km2.",
+    "code_overrides": "Written corrections to the ISO 3166-2 code list applied when the first-level units were planned.",
+    "holes_whitelist": "Reviewed list of holes in the boundary geometry that are accepted as they are.",
+    "validation_report": "Validation report of the boundaries build.",
+    "unit_hashes": "Hash of the geometry of every unit.",
+    "license_unicode": "Unicode License v3 notice for the CLDR data used: codes and English names of first-level units.",
+}
 
 
 @dataclass
@@ -137,7 +159,8 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
         dropped = [c for c in gdf.columns if c not in cols and c != "geometry"]
         if dropped:
             report_lines.append(f"- {name}: input columns not published (not declared in fields[]): {dropped}")
-        sub = gdf[cols + ["geometry"]].sort_values("unit_id", kind="stable").reset_index(drop=True)
+        sort_key = "area_id" if name == "contested_areas" else "unit_id"   # the contested areas have no unit_id
+        sub = gdf[cols + ["geometry"]].sort_values(sort_key, kind="stable").reset_index(drop=True)
         base = f"boundaries_{name}"       # layer_id in the manifest
         files = {"parquet": out / f"{name}.parquet", "geojson.gz": out / f"{name}.geojson.gz"}
         tilesio.write_parquet(sub, files["parquet"])
@@ -155,7 +178,7 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
             meta={}, meta_path=out / f"{layer_id}.meta.json",
             files=files, tile_input=tile_in, tile_build={}, bbox=bbox,
             title=f"Boundaries · {name}", domain="boundaries",
-            level="ADM0" if name in ("adm0", "disputed_unassigned") else name.upper(),
+            level=LEVEL_OF_LAYER[name],
         ))
         layer_outputs[-1].tile_fields = tf
         layer_outputs[-1].source_layer = name
@@ -165,6 +188,14 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
     # counts of the release (SPEC section 12 item 6: 242 / 89 / 3602)
     counts = {k: len(v) for k, v in levels.items()}
     report_lines.append(f"- unit counts: {counts}")
+    expected = rel_cfg.get("expected_counts")
+    if expected:
+        wrong = {k: (counts.get(k), v) for k, v in expected.items() if counts.get(k) != v}
+        if wrong:
+            raise GateError("G4", f"unit counts differ from expected_counts of the release yaml (found, expected): {wrong}")
+        report_lines.append(f"- unit counts equal expected_counts of the release yaml: {dict(expected)}")
+    contested_checks = check_contested_areas(ctx, levels, report_lines) if "contested_areas" in file_map.values() else None
+    ver_cfg = compute_verification(cfg, rel_cfg, registry, levels, ctx, report_lines)
 
     # analysis files, copied under the names of SPEC section 4.2
     extra: list[dict[str, Any]] = []
@@ -188,19 +219,22 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
     report_lines += [f"- {n}" for n in notes]
 
     # reference files of the boundaries release
-    for key, desc in (("registry", "Boundary registry: method, source, license and verification status of every country and level."),
-                      ("adm0_overrides", "Overrides applied to ADM0 status of countries."),
-                      ("holes_whitelist", "Reviewed list of holes in the boundary geometry that are accepted as they are."),
-                      ("validation_report", "Validation report of the boundaries build."),
-                      ("unit_hashes", "Hash of the geometry of every unit.")):
-        p = _reference_path(rel_cfg, ctx, key)
-        if p is None:
-            continue
-        dst = out / p.name
+    license_checked = False
+    for key, value in (rel_cfg.get("reference_files") or {}).items():
+        if key not in REFERENCE_DESCRIPTIONS:
+            raise GateError("G6", f"reference_files: unknown key {key!r}; known keys: {sorted(REFERENCE_DESCRIPTIONS)}")
+        p, publish_as, sha = _reference_path(value, ctx, key)
+        if sha is not None:
+            got = hashlib.sha256(p.read_bytes()).hexdigest()
+            if got != sha.lower():
+                raise GateError("G6", f"{key}: SHA-256 of {p.name} is {got}, expected {sha}")
+            license_checked = license_checked or key == "license_unicode"
+            report_lines.append(f"- {publish_as}: SHA-256 equals {sha[:8]}... (checked)")
+        dst = out / publish_as
         check_reference_text(p)
         shutil.copyfile(p, dst)
         hash_input(ctx, p)
-        extra.append({"file": dst, "description": desc})
+        extra.append({"file": dst, "description": REFERENCE_DESCRIPTIONS[key]})
 
     # fields[] = union of the published columns, with the descriptions of the yaml
     fields = copy.deepcopy(cfg["fields"])
@@ -228,6 +262,11 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
         {"id": "schema_fields", "description":
          "Columns of every published Parquet file are declared in fields[]."},
     ]
+    if contested_checks is not None:
+        checks.append({"id": "contested_areas_valid", "description": contested_checks})
+    if license_checked:
+        checks.append({"id": "license_notice_sha256", "description":
+                       "The Unicode License v3 notice published with the release was compared by SHA-256 with the LICENSE file of Unicode CLDR release-48-2."})
     for lo in layer_outputs:
         cols = list(gpd.read_parquet(lo.files["parquet"]).columns)
         cols = [c for c in cols if c != "geometry"]
@@ -242,7 +281,7 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
         "known_gaps": list(cfg["coverage"].get("known_gaps", [])),
     }
     display = {"tile_fields": sorted({t for v in tile_fields_cfg.values() for t in v})}
-    meta = assemble_meta_boundaries(cfg, ctx, sources, fields, coverage, checks, display)
+    meta = assemble_meta_boundaries(ver_cfg, ctx, sources, fields, coverage, checks, display)
     tile_build = {
         "output": "boundaries.pmtiles",
         "inputs": tile_inputs,
@@ -265,16 +304,117 @@ def check_reference_text(path: Path) -> None:
                                   f"near: {line[max(0, m.start() - 30):m.start() + 30]!r}")
 
 
-def _reference_path(rel_cfg: dict[str, Any], ctx: BuildContext, key: str) -> Path | None:
-    """Reference files: registry etc. live in the repository, the rest in the BND output."""
-    inputs = rel_cfg.get("reference_files", {})
-    value = inputs.get(key)
-    if not value:
-        return None
-    path = resolve_path(value, ctx.boundaries.root) if not str(value).startswith(("boundaries", "D:", "d:")) else resolve_path(value)
+def _reference_path(value: Any, ctx: BuildContext, key: str) -> tuple[Path, str, str | None]:
+    """Reference file: (path, name in the release, expected SHA-256 or None).
+
+    `value` is a path, or a mapping with `path` (or `find` + `name` to search a folder for a file by its SHA-256),
+    optional `publish_as` and optional `sha256`. The registry etc. live in the repository, the rest in the
+    BND output.
+    """
+    sha = None
+    publish_as = None
+    if isinstance(value, dict):
+        sha = value.get("sha256")
+        publish_as = value.get("publish_as")
+        if "find" in value:
+            if not sha:
+                raise GateError("G6", f"{key}: `find` needs `sha256`")
+            folder = resolve_path(value["find"])
+            pattern = value.get("name", "*")
+            hits = [q for q in sorted(folder.rglob(pattern)) if q.is_file()
+                    and hashlib.sha256(q.read_bytes()).hexdigest() == sha.lower()] if folder.exists() else []
+            if not hits:
+                raise GateError("G6", f"{key}: no file named {pattern} with SHA-256 {sha} under {folder}")
+            path = hits[0]
+        else:
+            path = resolve_path(value["path"]) if str(value["path"]).startswith(("boundaries", "D:", "d:")) \
+                else resolve_path(value["path"], ctx.boundaries.root)
+    else:
+        path = resolve_path(value, ctx.boundaries.root) if not str(value).startswith(("boundaries", "D:", "d:")) else resolve_path(value)
     if not path.exists():
         raise GateError("G6", f"reference file is missing: {path}")
-    return path
+    return path, publish_as or path.name, sha
+
+
+def check_contested_areas(ctx: BuildContext, levels: dict[str, gpd.GeoDataFrame], report_lines: list[str]) -> str:
+    """Checks of the contested_areas layer; returns the text for automated_checks (what was really checked)."""
+    gdf = ctx.boundaries.read("display/contested_areas.parquet")
+    need = ["area_id", "frame_unit_ids", "controlled_by", "claimed_by"]
+    absent = [c for c in need if c not in gdf.columns]
+    if absent:
+        raise GateError("G4", f"contested_areas: columns {absent} are missing; found {list(gdf.columns)}: stop and ask [ARCH]/[CODE-BND]")
+    if gdf["area_id"].duplicated().any():
+        raise GateError("G4", "contested_areas: area_id is not unique")
+    frame = pd.concat([levels[k][["unit_id", "geometry"]] for k in ("adm0", "adm1", "adm2")], ignore_index=True)
+    geom = dict(zip(frame["unit_id"], frame["geometry"]))
+    countries = set(levels["adm0"]["iso3"])
+    for _, row in gdf.iterrows():
+        ids = [x.strip() for x in str(row["frame_unit_ids"]).split(";") if x.strip()]
+        missing = [i for i in ids if i not in geom]
+        if not ids or missing:
+            raise GateError("G4", f"contested_areas {row['area_id']}: frame units not found in the release: {missing or 'none named'}")
+        for col in ("controlled_by", "claimed_by"):
+            codes = [x.strip() for x in str(row[col]).split(";") if x.strip()]
+            bad = [c for c in codes if c not in countries]
+            if not codes or bad:
+                raise GateError("G4", f"contested_areas {row['area_id']}: {col} is not an ADM0 iso3 of the release: {bad or 'empty'}")
+        union = unary_union([geom[i] for i in ids])
+        diff = gpd.GeoSeries([row.geometry.symmetric_difference(union)], crs=4326).to_crs(6933).area.iloc[0] / 1e6
+        if diff > 0.01:
+            raise GateError("G4", f"contested_areas {row['area_id']}: geometry differs from the union of its frame units by {diff:.3f} km2")
+        report_lines.append(f"- contested_areas {row['area_id']}: {len(ids)} frame unit(s), geometry equals their union (difference {diff:.4f} km2)")
+    rows = list(gdf.sort_values("area_id")["geometry"])
+    for i in range(len(rows)):
+        for j in range(i + 1, len(rows)):
+            ov = gpd.GeoSeries([rows[i].intersection(rows[j])], crs=4326).to_crs(6933).area.iloc[0] / 1e6
+            if ov > 0.01:
+                raise GateError("G4", f"contested_areas: two areas overlap by {ov:.3f} km2")
+    return (f"Every frame unit named by the {len(gdf)} contested area(s) exists in the release; the geometry of each area equals "
+            f"the union of its frame units; the areas do not overlap; the states are countries of the ADM0 layer.")
+
+
+def compute_verification(cfg: dict[str, Any], rel_cfg: dict[str, Any], registry: pd.DataFrame,
+                         levels: dict[str, gpd.GeoDataFrame], ctx: BuildContext, report_lines: list[str]) -> dict[str, Any]:
+    """verification.sample_share and levels.agent_sample from the registry of the release (SPEC_BND 3 item 3c).
+
+    Countries counted: those with verified ADM1 that are not in `exclude_iso3` (the countries of the earlier release).
+    A country is in the sample when its `verified_against` holds a verdict confirmed, disputed or refer_arch.
+    """
+    vcfg = rel_cfg.get("verification_from_registry")
+    if not vcfg:
+        return cfg
+    exclude = set(vcfg.get("exclude_iso3", []))
+    reg = registry[registry["level"].map(Boundaries.norm_level) == "ADM1"]
+    reg = reg[reg["verified"].astype(str).str.strip().str.lower() == "true"]
+    new = reg[~reg["iso3"].isin(exclude)]
+    n_new = new["iso3"].nunique()
+    if vcfg.get("expected_countries") is not None and n_new != vcfg["expected_countries"]:
+        raise GateError("G12", f"registry: {n_new} verified ADM1 countries outside {sorted(exclude)}, expected {vcfg['expected_countries']}")
+    verdicts: dict[str, str] = {}
+    for _, row in new.iterrows():
+        m = VERDICT_REGEX.findall(str(row["verified_against"]))
+        if m:
+            verdicts[row["iso3"]] = m[-1].lower()
+    counts = {v: sum(1 for x in verdicts.values() if x == v) for v in ("confirmed", "disputed", "refer_arch")}
+    n_units = int(levels["adm1"]["iso3"].isin(verdicts).sum())
+    total = sum(len(v) for v in levels.values())
+    share = round(len(verdicts) / n_new, 3) if n_new else 0.0
+    units_share = round(n_units / total, 3)
+    line = (f"- verification sample: {len(verdicts)} of {n_new} new countries with a verdict {counts}; "
+            f"{n_units} ADM1 units of {total}; sample_share {share}, agent_sample {units_share}")
+    report_lines.append(line)
+    exp = vcfg.get("expected_verdicts")
+    if exp and (exp != counts or vcfg.get("expected_units") not in (None, n_units)):
+        msg = (f"verification sample differs from the expected one: verdicts {counts}, units {n_units}; "
+               f"expected {exp}, units {vcfg.get('expected_units')}")
+        if ctx.channel == "final":
+            raise GateError("G12", msg)
+        ctx.report.warn(msg + " (a stop in final)")
+    out = copy.deepcopy(cfg)
+    out["verification"] = copy.deepcopy(cfg["verification"])
+    out["verification"]["levels"] = {**cfg["verification"]["levels"], "agent_sample": units_share}
+    out["verification"]["sample_share"] = {"adm1_countries_official_list": share}
+    return out
 
 
 def _boundaries_sources(cfg: dict[str, Any], ctx: BuildContext) -> list[dict[str, Any]]:
@@ -294,10 +434,20 @@ def _boundaries_sources(cfg: dict[str, Any], ctx: BuildContext) -> list[dict[str
         for item in bnd_sources:
             product = str(item.get("product", ""))
             if item.get("publisher") == src["publisher"] and any(m in product for m in match):
-                inputs.append({"file": product, "bytes": None, "sha256": item["sha256"]})
+                # the schema forbids a path in `file`: for "Unicode CLDR release-48-2: common/subdivisions/en.xml" keep the file name
+                name = re.split(r"[\\/]", product.split(": ")[-1])[-1] if "CLDR" in product else product
+                inputs.append({"file": name, "bytes": None, "sha256": item["sha256"]})
         if not inputs:
             raise GateError("G6", f"{src['source_id']}: no upstream record with a SHA-256 in the boundaries meta.json")
         src["inputs"] = sorted(inputs, key=lambda x: x["file"])
+        if str(src["retrieved_at"]) == "bnd_meta":
+            dates = sorted({str(i.get(k)) for i in bnd_sources if i.get("publisher") == src["publisher"]
+                            and any(m in str(i.get("product", "")) for m in match)
+                            for k in ("retrieved_at", "downloaded_at", "date", "retrieved") if i.get(k)})
+            if len(dates) != 1:
+                raise GateError("G6", f"{src['source_id']}: retrieved_at: bnd_meta needs exactly one download date in the "
+                                      f"boundaries meta.json, found {dates}: tell [ARCH]")
+            src["retrieved_at"] = dates[0][:10]
         src["retrieved_at"] = str(src["retrieved_at"])
         src["current_through"] = None if src["current_through"] is None else str(src["current_through"])
         for key in ("checked_at",):

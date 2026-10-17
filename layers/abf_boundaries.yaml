@@ -3,24 +3,33 @@ layer_id: abf_boundaries
 title: "Administrative boundaries · ADM0, ADM1, ADM2"
 title_ru: "Административные границы · ADM0, ADM1, ADM2"
 description: >-
-  Administrative units of the world: countries (ADM0) everywhere, and first- and second-level units
-  (ADM1, ADM2) for the countries whose entry in the boundary registry has been verified. Every unit
-  has a code unit_id: ISO3 for countries, ISO3-level-national code below them (for example
-  USA-2-51059). Units carry the geometry used on the map; for the United States and Norway, the
-  national geometry used for calculations is published in separate analysis files. Areas that the
-  chosen point of view assigns to no country are a separate layer.
+  Administrative units of the world: countries (ADM0) everywhere, first-level units (ADM1) for 108
+  countries and second-level units (ADM2) for the United States, France and Norway, in the countries
+  whose entry in the boundary registry has been verified. Every unit has a code unit_id: ISO3 for
+  countries, ISO3-level-national code below them (for example USA-2-51059 or POL-1-24). Units carry
+  the geometry used on the map; for the United States and Norway, the national geometry used for
+  calculations is published in separate analysis files. Boundaries follow the U.S. government's
+  point of view and do not express a position of the project. Areas where the state in control
+  differs from the state shown are listed in the contested_areas layer, with both states, the date
+  and sources. Areas that the chosen point of view assigns to no country are a separate layer.
+  Changes from 0.1.0: ADM1 added for 104 countries (1,578 units) by the top level of ISO 3166-2 in
+  Unicode CLDR release-48-2, with documented corrections; Adjara added to the ADM0 unit of Georgia
+  (GEO), which Natural Earth 1:10m v5.1.2 (U.S. point of view) left uncovered; six French region and
+  department names aligned with the official geographic code of INSEE (COG); new layer
+  contested_areas.
 license: {id: CC-BY-4.0, name: Creative Commons Attribution 4.0 International, url: "https://creativecommons.org/licenses/by/4.0/", family: attribution, attribution_text: ""}
 published_columns:
   adm0: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref, adm0_status, ne_type]
   adm1: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref]
   adm2: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref]
   disputed_unassigned: [unit_id, label, area_km2, pov]
+  contested_areas: [area_id, name, controlled_by, claimed_by, control_since, label, frame_unit_ids, source_control, source_claim, checked_at, checked_by]
 fields:
   - {name: unit_id, type: string, nullable: false, description: "Unit code: ISO3 for countries, ISO3-level-national code below them, for example USA-2-51059."}
   - {name: iso3, type: string, nullable: false, description: "ISO 3166-1 alpha-3 code of the country."}
   - {name: level, type: string, nullable: false, description: "Administrative level of the unit: ADM0 (country), ADM1 or ADM2."}
   - {name: parent_id, type: string, nullable: true, null_meaning: "The unit is a country and has no parent.", description: "unit_id of the unit one level up."}
-  - {name: name, type: string, nullable: false, description: "Name of the unit as given by the source."}
+  - {name: name, type: string, nullable: false, description: "Name of the unit: for first-level units added in version 0.2.0, the English name of the code in Unicode CLDR where CLDR has one, otherwise the name in Natural Earth; in France, the name in the official geographic code of INSEE; elsewhere, as given by the source. For a contested area, its English name."}
   - {name: unit_type_local, type: string, nullable: true, null_meaning: "The source gives no local type of the unit.", description: "Type of the unit in the national language, for example county or commune."}
   - {name: unit_type_en, type: string, nullable: true, null_meaning: "The source gives no type of the unit.", description: "Type of the unit in English."}
   - {name: method, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "How the unit was made: taken as it is from the source, dissolved from smaller units, or conformed to a national list."}
@@ -31,9 +40,18 @@ fields:
   - {name: src_ref, type: string, nullable: true, null_meaning: "The source gives no reference code.", description: "Reference of the unit in the source, for example its original code."}
   - {name: adm0_status, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Status of the country record, as set by the project's rules for disputed territories."}
   - {name: ne_type, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Type of the country record in Natural Earth."}
-  - {name: label, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Name of the disputed or unassigned area."}
+  - {name: label, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Label of the area: the name of a disputed or unassigned area; for a contested area, the map caption with the state in control, the claiming state and the date."}
   - {name: area_km2, type: number, unit: km2, nullable: true, null_meaning: "Not applicable to the unit.", description: "Area of the disputed or unassigned area."}
   - {name: pov, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "Point of view under which the area is drawn."}
+  - {name: area_id, type: string, nullable: false, description: "Code of the contested area, for example CA-0001. It does not change between versions."}
+  - {name: frame_unit_ids, type: string, nullable: false, description: "unit_id of the units of the frame that make up the contested area, separated by semicolons."}
+  - {name: controlled_by, type: string, nullable: false, description: "ISO 3166-1 alpha-3 code of the state in control of the area; several codes are separated by semicolons."}
+  - {name: claimed_by, type: string, nullable: false, description: "ISO 3166-1 alpha-3 code of the state that claims the area; several codes are separated by semicolons."}
+  - {name: control_since, type: string, nullable: false, description: "Year and month, or date, from which the state in control has controlled the area."}
+  - {name: source_control, type: string, nullable: false, description: "Addresses of the documents on the control of the area, separated by semicolons."}
+  - {name: source_claim, type: string, nullable: false, description: "Addresses of the documents on the claim to the area, separated by semicolons."}
+  - {name: checked_at, type: string, nullable: false, description: "Date the sources of the row were checked."}
+  - {name: checked_by, type: string, nullable: false, description: "Who checked the sources: human, script or AI agent with its role (human:…, script:…, agent:…)."}
 sources:
   - source_id: natural_earth
     role: primary
@@ -49,7 +67,7 @@ sources:
       name: Public domain (Natural Earth terms of use)
       url: "https://www.naturalearthdata.com/about/terms-of-use/"
       family: public_domain
-      attribution_text: "Country boundaries, regions and departments of France and the countries of the United Kingdom: Natural Earth."
+      attribution_text: "Country boundaries, the departments of France and first-level units outside the United States and Norway: Natural Earth."
     rights_basis:
       type: publisher_statement
       text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."
@@ -101,26 +119,80 @@ sources:
       checked_by: "agent:CODE-BND"
       evidence_url: "https://data.norge.no/en/datasets/3557d23d-8188-4136-b227-c854f89a6e8e/administrative-enheter-kommuner"
     publication_mode: open_licence
+  - source_id: unicode_cldr
+    role: reference
+    publisher: "Unicode, Inc."
+    product: "Unicode CLDR: subdivision codes and English subdivision names"
+    url: "https://github.com/unicode-org/cldr/tree/release-48-2"
+    edition: "release-48-2"
+    retrieved_at: bnd_meta   # the build takes the download date from the boundaries meta.json
+    current_through: null
+    bnd_match: ["CLDR"]
+    license:
+      id: Unicode-3.0
+      name: Unicode License v3
+      url: "https://github.com/unicode-org/cldr/blob/release-48-2/LICENSE"
+      family: attribution
+      attribution_text: "First-level unit codes and English names: Unicode CLDR release-48-2, © Unicode, Inc., Unicode License v3."
+    rights_basis:
+      type: license
+      text: "The LICENSE file of the CLDR repository and the SPDX lines of its subdivision files state the Unicode License v3, which requires its copyright and permission notice with copies of the data or in associated documentation."
+      checked_at: "2026-10-14"
+      checked_by: "script:06_licences.py"
+      evidence_url: "https://github.com/unicode-org/cldr/blob/release-48-2/LICENSE"
+    publication_mode: open_licence
 freshness: {source_cadence: irregular, next_check: "2027-03-31"}
 coverage:
-  geography: "World (ADM0); ADM1 and ADM2 for the countries with a verified entry in the boundary registry"
+  geography: "World (ADM0); ADM1 for 108 countries and ADM2 for the United States, France and Norway, the countries with a verified entry in the boundary registry"
   known_gaps:
     - >-
-      ADM1 and ADM2 units exist only for countries whose registry entry has been verified: ADM1 for
-      the United States, France, the United Kingdom and Norway; ADM2 for the United States, France
-      and Norway.
+      Ten areas, about 487 km² together, belong to a country but to none of its first-level units,
+      because Natural Earth gives them no code of the reference list: six in Australia (Jervis Bay
+      Territory, Christmas Island, the Cocos (Keeling) Islands, Macquarie Island, Ashmore and
+      Cartier Islands, the Coral Sea Islands), two in the United Arab Emirates, one in Russia and
+      one in Venezuela. They are listed with their areas in adm1_leftovers.csv. Macquarie Island is
+      left out of Tasmania (AUS-1-TAS) until it is checked against a document of the state.
     - >-
-      The regions and departments of France and the four countries of the United Kingdom are built
-      from Natural Earth 1:10m units. They are generalized and are not the official national
+      Thirteen small areas of land in the Natural Earth admin-1 file, from 1 to 45 km² each and
+      about 289 km² together, are covered by no ADM0 unit and are not in the layer of unassigned
+      areas either. Most are coastal edges and small islands where the admin-1 and admin-0 files of
+      Natural Earth are drawn differently; one is the Paracel Islands (5 km²). They are listed in
+      validation_report.json.
+    - >-
+      ADM1 follows the top level of ISO 3166-2 as recorded in Unicode CLDR release-48-2; reforms
+      after that release may not be reflected.
+    - >-
+      First-level units are cut to the outline of their country. Where Natural Earth draws a
+      first-level unit beyond that outline, the part outside is left out; the largest is 2,268 km²
+      of Ladakh (IND-1-LA) inside the outline of China in the U.S. point of view. All such losses
+      are listed in validation_report.json.
+    - >-
+      ADM1 units exist only for countries whose registry entry has been verified (108 in this
+      release); ADM2 units exist for the United States, France and Norway. The other 134 countries
+      and territories have ADM0 only.
+    - >-
+      First-level units outside the United States and Norway, and the departments of France, are
+      built from Natural Earth 1:10m units. They are generalized and are not the official national
       boundaries.
-    - "Disputed and unassigned areas are not part of any country."
+    - >-
+      Disputed and unassigned areas are not part of any country.
+    - >-
+      The contested_areas layer lists only areas whose control has been checked against sources:
+      Crimea and Sevastopol in this release. It is made of whole units of the frame, so areas where
+      control covers only part of a unit, such as areas of eastern and southern Ukraine since 2022,
+      are not listed.
 verification:
   levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
   method: >-
     Units are built by script from the sources by the method named in the registry; the registry
-    marks a country and level as verified before its units are published. The validation report
-    of the build is published next to the units.
-  sample_share: {}
+    marks a country and level as verified before its units are published. For the first-level units
+    added in version 0.2.0, the code list of each country was matched to Unicode CLDR release-48-2
+    by script, and a random sample of countries, together with every country whose units were
+    merged, matched by name or left with parts outside any unit, was checked against official
+    national lists by an independent AI agent. The verification sample covers countries whose
+    official lists could be retrieved. The validation report of the build is published next to the
+    units.
+  sample_share: {}   # the build adds sample_share and levels.agent_sample from the registry
 display:
   geometry_type: polygon
   legend_title: "Administrative boundaries"
@@ -129,6 +201,7 @@ display:
     adm1: [unit_id, name, iso3, level]
     adm2: [unit_id, name, iso3, level]
     disputed_unassigned: [unit_id, label]
+    contested_areas: [area_id, name, controlled_by, claimed_by, control_since, label]
 tiles:
   minzoom: 0
   maxzoom: 10
@@ -138,6 +211,7 @@ tiles:
     adm1: {minzoom: 2, maxzoom: 10}
     adm2: {minzoom: 4, maxzoom: 10}
     disputed_unassigned: {minzoom: 0, maxzoom: 10}
+    contested_areas: {minzoom: 0, maxzoom: 10}
 citation:
   text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
   record_pattern: "Ilin, V. AI Buildout Frontier, boundaries, unit {record_key}, version {version}. {doi_url}"
