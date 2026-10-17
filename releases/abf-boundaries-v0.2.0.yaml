@@ -34,6 +34,10 @@ verification_from_registry:
   expected_countries: 104
   expected_verdicts: {confirmed: 22, disputed: 3, refer_arch: 2}
   expected_units: 429
+# The CODE-BND layer contested_areas has six columns; the other five (frame_unit_ids, sources, check) come from
+# contested_areas.csv by area_id (the site card needs the source links, SPEC_WEB section 11). To publish six columns only,
+# remove this line and the five names from published_columns.contested_areas.
+contested_areas_columns_from_reference: true
 # Reference files: the first nine live in the repository, the next two in the CODE-BND output,
 # the last one is the CLDR notice found by its SHA-256 among the downloaded CLDR files.
 reference_files:
@@ -50,6 +54,6 @@ reference_files:
   unit_hashes: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0\unit_hashes.csv'
   license_unicode:
     find: 'D:\GISData\Boundaries\sources'
-    name: 'LICENSE*'
+    name: '*LICENSE*'
     sha256: b49d0e9f8ead51ca8b7df6fec89cc3ae6809198b4b9d43c74216da0118f23f5b
     publish_as: LICENSE_Unicode-3.0.txt

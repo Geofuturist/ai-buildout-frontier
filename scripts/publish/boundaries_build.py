@@ -133,6 +133,9 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
             raise GateError("G4", f"boundaries output file is missing: {p}")
         hash_input(ctx, p)
 
+    if "contested_areas" in file_map.values() and rel_cfg.get("contested_areas_columns_from_reference"):
+        join_contested_columns(ctx, rel_cfg, report_lines)
+
     levels: dict[str, gpd.GeoDataFrame] = {}
     for lvl in ("adm0", "adm1", "adm2"):
         gdf = ctx.boundaries.read(f"display/{lvl}.parquet")
@@ -336,6 +339,37 @@ def _reference_path(value: Any, ctx: BuildContext, key: str) -> tuple[Path, str,
     return path, publish_as or path.name, sha
 
 
+def join_contested_columns(ctx: BuildContext, rel_cfg: dict[str, Any], report_lines: list[str]) -> None:
+    """Add the columns of contested_areas.csv that the CODE-BND layer does not carry (frame_unit_ids, sources, checks).
+
+    The CODE-BND layer has area_id, name, controlled_by, claimed_by, control_since, label and the geometry. The other
+    columns come from the reference file by area_id. The areas of the two files must be the same, and the columns
+    that both have must be equal; otherwise the build stops (G4).
+    """
+    key = "display/contested_areas.parquet"
+    gdf = ctx.boundaries.read(key)
+    ref_value = (rel_cfg.get("reference_files") or {}).get("contested_areas")
+    if not ref_value:
+        raise GateError("G6", "contested_areas_columns_from_reference needs reference_files.contested_areas")
+    path, _, _ = _reference_path(ref_value, ctx, "contested_areas")
+    hash_input(ctx, path)
+    ref = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+    if "area_id" not in ref.columns or ref["area_id"].duplicated().any():
+        raise GateError("G4", f"{path.name}: area_id is missing or not unique")
+    if sorted(ref["area_id"]) != sorted(gdf["area_id"]):
+        raise GateError("G4", f"contested_areas: areas of the layer {sorted(gdf['area_id'])} differ from {path.name} {sorted(ref['area_id'])}")
+    ref = ref.set_index("area_id")
+    for col in (c for c in gdf.columns if c in ref.columns):
+        bad = [a for a, v in zip(gdf["area_id"], gdf[col].astype(str)) if ref.at[a, col] != v]
+        if bad:
+            raise GateError("G4", f"contested_areas: column {col} of the layer differs from {path.name} in {bad}")
+    added = [c for c in ref.columns if c not in gdf.columns]
+    for col in added:
+        gdf[col] = gdf["area_id"].map(ref[col])
+    ctx.boundaries._cache[key] = gdf
+    report_lines.append(f"- contested_areas: columns {added} added from {path.name} by area_id; shared columns are equal")
+
+
 def check_contested_areas(ctx: BuildContext, levels: dict[str, gpd.GeoDataFrame], report_lines: list[str]) -> str:
     """Checks of the contested_areas layer; returns the text for automated_checks (what was really checked)."""
     gdf = ctx.boundaries.read("display/contested_areas.parquet")
@@ -441,13 +475,13 @@ def _boundaries_sources(cfg: dict[str, Any], ctx: BuildContext) -> list[dict[str
             raise GateError("G6", f"{src['source_id']}: no upstream record with a SHA-256 in the boundaries meta.json")
         src["inputs"] = sorted(inputs, key=lambda x: x["file"])
         if str(src["retrieved_at"]) == "bnd_meta":
-            dates = sorted({str(i.get(k)) for i in bnd_sources if i.get("publisher") == src["publisher"]
+            dates = sorted({str(i.get(k))[:10] for i in bnd_sources if i.get("publisher") == src["publisher"]
                             and any(m in str(i.get("product", "")) for m in match)
                             for k in ("retrieved_at", "downloaded_at", "date", "retrieved") if i.get(k)})
             if len(dates) != 1:
-                raise GateError("G6", f"{src['source_id']}: retrieved_at: bnd_meta needs exactly one download date in the "
+                raise GateError("G6", f"{src['source_id']}: retrieved_at: bnd_meta needs exactly one download day in the "
                                       f"boundaries meta.json, found {dates}: tell [ARCH]")
-            src["retrieved_at"] = dates[0][:10]
+            src["retrieved_at"] = dates[0]
         src["retrieved_at"] = str(src["retrieved_at"])
         src["current_through"] = None if src["current_through"] is None else str(src["current_through"])
         for key in ("checked_at",):
