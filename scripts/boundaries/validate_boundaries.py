@@ -25,6 +25,11 @@ Exit code 1 if any of checks 1-5 or 7-11 fails; check 6 is report-only and never
 committed by this script -- SPEC S5: "в git -- только после ответа V") and
 display/adm0_disputed_unassigned.parquet + .geojson.gz (kind == disputed_unassigned
 holes only, with a `pov` column) into --out-dir.
+
+--write-disputed-layer writes only the two display/adm0_disputed_unassigned.* files, taking the
+rows from the committed boundaries/holes_whitelist.geojson (nothing is recomputed, the whitelist
+is not touched). This is the normal way to complete a release; check 2 then confirms that the
+whitelist still matches the ADM0 of the build.
 """
 from __future__ import annotations
 
@@ -411,6 +416,11 @@ def write_whitelist_and_disputed_layer(adm0: gpd.GeoDataFrame, out_dir: Path, bo
             f"flagged UNKNOWN, needs manual review: "
             f"{[(round(h['area_km2'],1), h['lon'], h['lat']) for h in unknown]}")
 
+    write_disputed_layer(wl_gdf, out_dir, pov)
+
+
+def write_disputed_layer(wl_gdf: gpd.GeoDataFrame, out_dir: Path, pov: str) -> None:
+    """display/adm0_disputed_unassigned.* from the rows of the whitelist with kind == disputed_unassigned."""
     disputed = wl_gdf[wl_gdf["kind"] == "disputed_unassigned"].copy()
     disputed["pov"] = pov
     c.write_parquet(
@@ -442,6 +452,10 @@ def main() -> int:
                           "(report-only) reads ne_10m_admin_2_counties from here.")
     ap.add_argument("--prev-hashes", type=Path, default=None,
                      help="unit_hashes.csv of the previous release (v0.1.0) for the S2.5 reconciliation (check 9)")
+    ap.add_argument("--write-disputed-layer", action="store_true",
+                     help="write display/adm0_disputed_unassigned.* from the COMMITTED boundaries/holes_whitelist.geojson "
+                          "(no recomputation, holes_whitelist.geojson is not touched). Check 2 below confirms that the "
+                          "whitelist still matches the ADM0 of this build.")
     ap.add_argument("--init-whitelist", action="store_true",
                      help="(re)compute boundaries/holes_whitelist.geojson and display/adm0_disputed_unassigned.* "
                           "from the current ADM0 output, instead of checking against a committed whitelist.")
@@ -468,6 +482,11 @@ def main() -> int:
 
     if args.init_whitelist:
         write_whitelist_and_disputed_layer(adm0, out_dir, args.boundaries_dir, pov)
+    elif args.write_disputed_layer:
+        wl_path = args.boundaries_dir / "holes_whitelist.geojson"
+        if not wl_path.exists():
+            raise c.BuildError(f"{wl_path} does not exist -- cannot write the disputed layer")
+        write_disputed_layer(gpd.read_file(wl_path), out_dir, pov)
 
     log("check 1: overlaps...")
     r1 = check_overlaps(adm0, adm1, adm2, registry)
