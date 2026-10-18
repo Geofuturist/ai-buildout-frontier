@@ -203,6 +203,7 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
         report_lines.append(f"- unit counts equal expected_counts of the release yaml: {dict(expected)}")
     contested_checks = check_contested_areas(ctx, levels, report_lines) if "contested_areas" in file_map.values() else None
     ver_cfg = compute_verification(cfg, rel_cfg, registry, levels, ctx, report_lines)
+    check_registry_unit_types(rel_cfg, registry, ctx, report_lines)
 
     # analysis files, copied under the names of SPEC section 4.2
     extra: list[dict[str, Any]] = []
@@ -497,6 +498,34 @@ def compute_verification(cfg: dict[str, Any], rel_cfg: dict[str, Any], registry:
     out["verification"]["levels"] = {**cfg["verification"]["levels"], "agent_sample": units_share}
     out["verification"]["sample_share"] = {"adm1_countries_official_list": share}
     return out
+
+
+def check_registry_unit_types(rel_cfg: dict[str, Any], registry: pd.DataFrame, ctx: BuildContext,
+                              report_lines: list[str]) -> None:
+    """The two numbers of known_gaps item 11 (types of first-level units) are counted from the registry.
+
+    Rows counted: ADM1 rows of countries outside `exclude_iso3` (the countries of the earlier release).
+    multi_type = a "/" in unit_type_local or unit_type_en; empty = both type cells empty. A difference from the
+    numbers of the release yaml is a warning in dev and a stop in final (the numbers stand in the public text).
+    """
+    tcfg = rel_cfg.get("registry_unit_types")
+    if not tcfg:
+        return
+    exclude = set(tcfg.get("exclude_iso3") or (rel_cfg.get("verification_from_registry") or {}).get("exclude_iso3", []))
+    reg = registry[registry["level"].map(Boundaries.norm_level) == "ADM1"]
+    reg = reg[~reg["iso3"].isin(exclude)]
+    loc = reg["unit_type_local"].fillna("").astype(str).str.strip()
+    eng = reg["unit_type_en"].fillna("").astype(str).str.strip()
+    found = {"multi_type": int((loc.str.contains("/", regex=False) | eng.str.contains("/", regex=False)).sum()),
+             "empty": int(((loc == "") & (eng == "")).sum())}
+    report_lines.append(f"- unit types in the registry ({len(reg)} countries): {found['multi_type']} with more than one type "
+                        f"(a \"/\"), {found['empty']} with no type; the public text says {tcfg['multi_type']} and {tcfg['empty']}")
+    wrong = {k: (found[k], tcfg[k]) for k in found if found[k] != tcfg[k]}
+    if wrong:
+        msg = f"numbers of unit types in the registry differ from the text of known_gaps (found, in text): {wrong}"
+        if ctx.channel == "final":
+            raise GateError("G12", msg)
+        ctx.report.warn(msg + " (a stop in final)")
 
 
 def _boundaries_sources(cfg: dict[str, Any], ctx: BuildContext) -> list[dict[str, Any]]:

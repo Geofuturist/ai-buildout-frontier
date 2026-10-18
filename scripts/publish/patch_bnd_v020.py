@@ -4,7 +4,7 @@ Run command (from the repository root, Windows):
     python scripts\publish\patch_bnd_v020.py            # shows what would change, writes nothing
     python scripts\publish\patch_bnd_v020.py --apply    # writes the file
 
-What it does (texts of RES_texts_BND_v0_2_0.md section 3, with the two edits of SPEC_BND section 4 item 6):
+What it does (texts of RES_texts_BND_v0_2_0.md section 3, r5 of 18 October):
   - replaces the top-level blocks: description, published_columns, fields, coverage, verification, display, tiles;
   - sets the attribution text of the source natural_earth;
   - adds the source unicode_cldr at the end of sources (if it is not there).
@@ -27,13 +27,16 @@ DESCRIPTION = (
     "registry has been verified. Every unit has a code unit_id: ISO3 for countries, ISO3-level-national code below them "
     "(for example USA-2-51059 or POL-1-24). Units carry the geometry used on the map; for the United States and Norway, "
     "the national geometry used for calculations is published in separate analysis files. Boundaries follow the U.S. "
-    "government's point of view and do not express a position of the project. Areas where the state in control differs "
-    "from the state shown are listed in the contested_areas layer, with both states, the date and sources. Areas that "
-    "the chosen point of view assigns to no country are a separate layer. Changes from 0.1.0: ADM1 added for 104 "
-    "countries (1,578 units) by the top level of ISO 3166-2 in Unicode CLDR release-48-2, with documented corrections; "
-    "Adjara added to the ADM0 unit of Georgia (GEO), which Natural Earth 1:10m v5.1.2 (U.S. point of view) left "
-    "uncovered; six French region and department names aligned with the official geographic code of INSEE (COG); new "
-    "layer contested_areas."
+    "government's point of view, with one rule-based exception, and do not express a position of the project. The "
+    "exception: where sources show that another recognized state controls whole units of the frame and has made them part "
+    "of its own administrative division, the frame shows the state in control. In this release this applies to Crimea and "
+    "Sevastopol, shown under Russia. The contested_areas layer lists areas of disputed control: the state in control, the "
+    "state that claims the area, the date from which control is counted, and the sources for both. Areas that the U.S. "
+    "point of view assigns to no country are a separate layer. Changes from 0.1.0: ADM1 added for 104 countries (1,578 "
+    "units) by the top level of ISO 3166-2 in Unicode CLDR release-48-2, with documented corrections; Adjara added to the "
+    "ADM0 unit of Georgia (GEO), which Natural Earth 1:10m v5.1.2 (U.S. point of view) left uncovered; Crimea and "
+    "Sevastopol shown under Russia instead of Ukraine, by the rule above; six French region and department names aligned "
+    "with the official geographic code of INSEE (COG); new layer contested_areas."
 )
 
 GEOGRAPHY = ("World (ADM0); ADM1 for 108 countries and ADM2 for the United States, France and Norway, the countries "
@@ -59,9 +62,19 @@ KNOWN_GAPS = [
     "First-level units outside the United States and Norway, and the departments of France, are built from Natural Earth "
     "1:10m units. They are generalized and are not the official national boundaries.",
     "Disputed and unassigned areas are not part of any country.",
+    "The frame departs from the U.S. point of view only for whole units of the frame that another recognized state "
+    "controls and has made part of its own administrative division, as shown by sources: Crimea and Sevastopol, shown "
+    "under Russia, with Ukraine's claim in the contested_areas layer. Areas of the Donetsk, Luhansk, Zaporizhzhia and "
+    "Kherson regions under Russian control since 2022 remain under Ukraine: the rule applies only to whole units, and no "
+    "open dated line of control was found. Other areas of disputed control have not yet been checked against this rule.",
     "The contested_areas layer lists only areas whose control has been checked against sources: Crimea and Sevastopol in "
-    "this release. It is made of whole units of the frame, so areas where control covers only part of a unit, such as "
-    "areas of eastern and southern Ukraine since 2022, are not listed.",
+    "this release.",
+    "The first-level codes of Crimea (RUS-1-35) and Sevastopol (RUS-1-67) are codes of Russia's OKATO classifier, not "
+    "ISO 3166-2 codes: ISO 3166-2 lists these units under Ukraine (UA-43, UA-40).",
+    "For first-level units added in version 0.2.0, unit_type_local and unit_type_en give the types of first-level units "
+    "in the country, not the type of each unit. In 29 countries with more than one type, such as states and a federal "
+    "district, all types are listed, separated by \"/\". In 21 countries the types are not filled in this release. The "
+    "type of each unit is planned for a later version.",
 ]
 
 VERIFICATION_METHOD = (
@@ -94,8 +107,10 @@ FIELDS = [
      "Name of the unit: for first-level units added in version 0.2.0, the English name of the code in Unicode CLDR where CLDR has one, "
      "otherwise the name in Natural Earth; in France, the name in the official geographic code of INSEE; elsewhere, as given by the "
      "source. For a contested area, its English name.", None),
-    ("unit_type_local", "string", True, "The source gives no local type of the unit.", "Type of the unit in the national language, for example county or commune.", None),
-    ("unit_type_en", "string", True, "The source gives no type of the unit.", "Type of the unit in English.", None),
+    ("unit_type_local", "string", True, "No type is given: the source gives none, or the types of this country are not filled in this release.",
+     "Type of the unit in the national language. For the United States, France, the United Kingdom and Norway, the type of the unit itself, for example county or commune. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type.", None),
+    ("unit_type_en", "string", True, "No type is given: the source gives none, or the types of this country are not filled in this release.",
+     "Type of the unit in English. For the United States, France, the United Kingdom and Norway, the type of the unit itself. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type.", None),
     ("method", "string", True, "Not applicable to the unit.", "How the unit was made: taken as it is from the source, dissolved from smaller units, or conformed to a national list.", None),
     ("source", "string", False, None, "Publisher or product the unit comes from.", None),
     ("source_vintage", "string", True, "The source gives no edition.", "Edition or date of the source.", None),

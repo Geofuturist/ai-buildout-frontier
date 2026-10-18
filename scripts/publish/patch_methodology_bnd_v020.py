@@ -1,4 +1,4 @@
-r"""Patch content\methodology.md for abf-boundaries v0.2.0 (idempotent). Texts: RES_texts_BND_v0_2_0.md section 4.
+r"""Patch content\methodology.md for abf-boundaries v0.2.0 (idempotent). Texts: RES_texts_BND_v0_2_0.md section 4 (r5, 18 October: Crimea and Sevastopol under Russia).
 
 Run command (from the repository root, Windows):
     python scripts\publish\patch_methodology_bnd_v020.py                 # shows what would change, writes nothing
@@ -22,17 +22,23 @@ REPRODUCED = " The build was reproduced on a second machine."
 
 SECTION = '''## Administrative boundaries · ADM0, ADM1, ADM2
 
-- **One frame for the whole world.** Natural Earth at 1:10 million, version 5.1.2. Where borders
-  are disputed, we use the U.S. government's point of view, because the main sources in this
-  project are U.S. federal. **The boundaries do not express a position of the project.** Five
-  disputed areas belong to no country in this view: Abyei, the Ilemi Triangle, the Siachen Glacier,
-  the Southern Patagonian Ice Field and Rincón de Artigas. They are drawn with a neutral fill, not
-  left blank like the sea.
-- **Who controls an area is recorded as a fact, not drawn as a border.** Where the state in control
-  differs from the state shown, the area is listed in the layer contested_areas, with both states,
-  the date and sources; the frame stays as it is. This release lists two areas: Crimea and
-  Sevastopol. The layer is made of whole units of the frame, so areas where control covers only
-  part of a unit, such as areas of eastern and southern Ukraine since 2022, are not listed.
+- **One frame for the whole world.** Natural Earth at 1:10 million, version 5.1.2. Where borders are
+  disputed, we use the U.S. government's point of view, because the main sources in this project are
+  U.S. federal, with one exception described next. **The boundaries do not express a position of the
+  project.** Five disputed areas belong to no country in this view: Abyei, the Ilemi Triangle, the
+  Siachen Glacier, the Southern Patagonian Ice Field and Rincón de Artigas. They are drawn with a
+  neutral fill, not left blank like the sea.
+- **Whole units under another state's control are shown under that state.** Where sources show that
+  another recognized state controls whole units of the frame and has made them part of its own
+  administrative division, the map shows the state in control and records the other state's claim.
+  In this release this applies to Crimea and Sevastopol: under Russian control since 2014 and listed
+  among the subjects of the Russian Federation in its Constitution; Ukraine's claim is recorded with
+  sources. Areas of the Donetsk, Luhansk, Zaporizhzhia and Kherson regions under Russian control
+  since 2022 remain under Ukraine: the rule applies only to whole units, and we found no open dated
+  line of control.
+- **Areas of disputed control are a separate layer.** The layer contested_areas lists, for each
+  area, the state in control, the state that claims it, the date from which control is counted, and
+  the documents for both. This release lists two areas: Crimea and Sevastopol.
 - **Levels follow each country's own structure**, not whatever a source calls “admin-1”. This
   release:
 
@@ -81,7 +87,9 @@ SECTION = '''## Administrative boundaries · ADM0, ADM1, ADM2
 - **Unit codes.** Countries: ISO 3166 three-letter codes (`USA`). Subdivisions:
   `{country}-{level}-{national code}`, for example `USA-1-51` (Virginia) or `USA-2-51059` (Fairfax
   County). For the 104 countries added in version 0.2.0, the national code is the ISO 3166-2 code:
-  `POL-1-24` is Silesia. France keeps its INSEE codes (`FRA-1-84`).
+  `POL-1-24` is Silesia. France keeps its INSEE codes (`FRA-1-84`). Crimea and Sevastopol, shown
+  under Russia, carry codes of Russia's OKATO classifier (`RUS-1-35`, `RUS-1-67`), because ISO
+  3166-2 lists them under Ukraine.
 - **Checks run at every build.** No overlaps between units. No gaps except a reviewed list of seas,
   disputed areas and slivers. No land outside every country: the country layer is compared with the
   land of the Natural Earth admin-1 file, and an uncovered area of 100 km² or more stops the build.
@@ -95,7 +103,8 @@ SECTION = '''## Administrative boundaries · ADM0, ADM1, ADM2
 
 BULLET = '''- **Boundaries** outside the United States and Norway are generalized at 1:10 million. First levels
   of 104 countries follow CLDR release-48-2 and may miss later reforms; 134 countries and
-  territories have national borders only.
+  territories have national borders only. Crimea and Sevastopol are shown under Russia, the state in
+  control, by a stated rule; Ukraine's claim is in the layer contested_areas.
 '''
 
 
