@@ -34,6 +34,11 @@ verification_from_registry:
   expected_countries: 104
   expected_verdicts: {confirmed: 22, disputed: 3, refer_arch: 2}
   expected_units: 429
+# Rows of the registry that were in version 0.1.0 stay identical to it (ARCH6, 17 October): reference = registry of commit
+# 227ce5c (the file the release v0.1.0 was built from). A row changed on purpose is listed in changed_rows ("ISO3|LEVEL").
+registry_frozen_rows:
+  reference: 'releases\reference\boundary_registry_abf-boundaries-v0.1.0.csv'
+  changed_rows: []
 # The CODE-BND layer contested_areas has six columns; the other five (frame_unit_ids, sources, check) come from
 # contested_areas.csv by area_id (the site card needs the source links, SPEC_WEB section 11). To publish six columns only,
 # remove this line and the five names from published_columns.contested_areas.

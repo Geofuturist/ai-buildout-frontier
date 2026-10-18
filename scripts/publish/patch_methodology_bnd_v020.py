@@ -3,8 +3,9 @@ r"""Patch content\methodology.md for abf-boundaries v0.2.0 (idempotent). Texts: 
 Run command (from the repository root, Windows):
     python scripts\publish\patch_methodology_bnd_v020.py                 # shows what would change, writes nothing
     python scripts\publish\patch_methodology_bnd_v020.py --apply         # writes the file
-    python scripts\publish\patch_methodology_bnd_v020.py --apply --reproduced
-        # adds the sentence "The build was reproduced on a second machine." (only after the build at V matched v0.1.0)
+    python scripts\publish\patch_methodology_bnd_v020.py --apply
+        # includes the sentence "The build was reproduced on a second machine." (CODE-BND confirmed on 17 October:
+        # all 5 511 rows of unit_hashes.csv are equal in two environments). Option --without-reproduced leaves it out.
 
 Replaces the whole section "Administrative boundaries · ADM0, ADM1, ADM2" and the bullet "Boundaries" of "Known limitations".
 The rest of the file is kept byte for byte, line endings too.
@@ -100,7 +101,7 @@ BULLET = '''- **Boundaries** outside the United States and Norway are generalize
 
 def main(argv: list[str]) -> int:
     apply = "--apply" in argv
-    reproduced = "--reproduced" in argv
+    reproduced = "--without-reproduced" not in argv
     if not PATH.exists():
         print(f"STOP: {PATH} not found; run from the repository root")
         return 2
@@ -132,7 +133,7 @@ def main(argv: list[str]) -> int:
     print("Changes:")
     for c in changed:
         print("  -", c)
-    print("The sentence about the second machine is " + ("included." if reproduced else "NOT included (use --reproduced after the build at V matched)."))
+    print("The sentence about the second machine is " + ("included." if reproduced else "NOT included (--without-reproduced)."))
     if apply:
         PATH.write_bytes(text.replace("\n", nl).encode("utf-8"))
         print(f"Written {PATH}")

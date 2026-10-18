@@ -21,6 +21,7 @@ import pandas as pd
 from shapely.ops import unary_union
 
 import tilesio
+from registry_rows import read_records
 from common import CYRILLIC_REGEX, GateError, resolve_path
 from layer_build import (
     Boundaries,
@@ -125,6 +126,9 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
     report_lines: list[str] = []
     notes: list[str] = []
     registry = ctx.boundaries.registry
+
+    if rel_cfg.get("registry_frozen_rows"):
+        check_registry_frozen_rows(rel_cfg, report_lines)
 
     # inputs hashed up front (G6)
     for rel in file_map:
@@ -296,6 +300,50 @@ def build_boundaries(cfg: dict[str, Any], ctx: BuildContext, rel_cfg: dict[str, 
     for lo in layer_outputs:
         lo.tile_build = tile_build
     return BoundariesOutput(layer_outputs, meta, out / f"{layer_id}.meta.json", extra, tile_build, report_lines)
+
+
+def check_registry_frozen_rows(rel_cfg: dict[str, Any], report_lines: list[str]) -> None:
+    """G6: rows of the registry that were in the previous release stay identical to it (ARCH6, 17 October).
+
+    `registry_frozen_rows.reference` is the registry of the previous release (for version 0.1.0: the file of commit
+    227ce5c). Every row of it must stand in the registry of this release as it is, text for text (line endings are
+    not compared), except the rows listed in `registry_frozen_rows.changed_rows` ("ISO3|LEVEL"); those are
+    changed on purpose and must be named in the release file.
+    """
+    frozen = rel_cfg["registry_frozen_rows"]
+    ref_path = resolve_path(frozen["reference"])
+    reg_path = resolve_path(rel_cfg["boundaries"]["registry"])
+    for p in (ref_path, reg_path):
+        if not p.exists():
+            raise GateError("G6", f"registry_frozen_rows: file is missing: {p}")
+    _, ref_header, ref_records = read_records(ref_path)
+    _, header, records = read_records(reg_path)
+    if header != ref_header:
+        raise GateError("G6", f"registry_frozen_rows: the header of {reg_path.name} differs from the previous release")
+    changed = set(frozen.get("changed_rows") or [])
+    ref_keys = {k for k, *_ in ref_records}
+    if changed - ref_keys:
+        raise GateError("G6", f"registry_frozen_rows.changed_rows names rows that are not in the reference: {sorted(changed - ref_keys)}")
+    by_key: dict[str, list[tuple[str, list[str]]]] = {}
+    for key, norm, cells, _ in records:
+        by_key.setdefault(key, []).append((norm, cells))
+    problems: list[str] = []
+    for key, ref_norm, ref_cells, _ in ref_records:
+        if key in changed:
+            continue
+        found = by_key.get(key, [])
+        if len(found) != 1:
+            problems.append(f"{key}: {len(found)} rows in the registry, expected 1")
+        elif found[0][0] != ref_norm:
+            cols = [h for h, a, b in zip(header, found[0][1], ref_cells) if a != b]
+            problems.append(f"{key}: differs from the previous release in column(s) {', '.join(cols) or 'line breaks'}")
+    if problems:
+        raise GateError("G6", "registry rows of the previous release are not identical to it (run "
+                              "patch_registry_frozen_v020.py, or list the row in registry_frozen_rows.changed_rows): "
+                              + "; ".join(problems))
+    kept = len(ref_keys) - len(changed)
+    report_lines.append(f"- Registry: {kept} rows of the previous release are identical to {ref_path.name}"
+                        + (f"; changed on purpose: {', '.join(sorted(changed))}" if changed else ""))
 
 
 def check_reference_text(path: Path) -> None:
