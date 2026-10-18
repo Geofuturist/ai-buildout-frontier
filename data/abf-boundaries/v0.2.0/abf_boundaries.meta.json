@@ -1,0 +1,462 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "boundaries",
+  "layer_id": "abf_boundaries",
+  "title": "Administrative boundaries · ADM0, ADM1, ADM2",
+  "title_ru": "Административные границы · ADM0, ADM1, ADM2",
+  "domain": "boundaries",
+  "levels": [
+    "ADM0",
+    "ADM1",
+    "ADM2"
+  ],
+  "description": "Administrative units of the world: countries (ADM0) everywhere, first-level units (ADM1) for 108 countries and second-level units (ADM2) for the United States, France and Norway, in the countries whose entry in the boundary registry has been verified. Every unit has a code unit_id: ISO3 for countries, ISO3-level-national code below them (for example USA-2-51059 or POL-1-24). Units carry the geometry used on the map; for the United States and Norway, the national geometry used for calculations is published in separate analysis files. Boundaries follow the U.S. government's point of view, with one rule-based exception, and do not express a position of the project. The exception: where sources show that another recognized state controls whole units of the frame and has made them part of its own administrative division, the frame shows the state in control. In this release this applies to Crimea and Sevastopol, shown under Russia. The contested_areas layer lists areas of disputed control: the state in control, the state that claims the area, the date from which control is counted, and the sources for both. Areas that the U.S. point of view assigns to no country are a separate layer. Changes from 0.1.0: ADM1 added for 104 countries (1,578 units) by the top level of ISO 3166-2 in Unicode CLDR release-48-2, with documented corrections; Adjara added to the ADM0 unit of Georgia (GEO), which Natural Earth 1:10m v5.1.2 (U.S. point of view) left uncovered; Crimea and Sevastopol shown under Russia instead of Ukraine, by the rule above; six French region and department names aligned with the official geographic code of INSEE (COG); new layer contested_areas.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code: ISO3 for countries, ISO3-level-national code below them, for example USA-2-51059."
+    },
+    {
+      "name": "iso3",
+      "type": "string",
+      "nullable": false,
+      "description": "ISO 3166-1 alpha-3 code of the country."
+    },
+    {
+      "name": "level",
+      "type": "string",
+      "nullable": false,
+      "description": "Administrative level of the unit: ADM0 (country), ADM1 or ADM2."
+    },
+    {
+      "name": "parent_id",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "The unit is a country and has no parent.",
+      "description": "unit_id of the unit one level up."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Name of the unit: for first-level units added in version 0.2.0, the English name of the code in Unicode CLDR where CLDR has one, otherwise the name in Natural Earth; in France, the name in the official geographic code of INSEE; elsewhere, as given by the source. For a contested area, its English name."
+    },
+    {
+      "name": "unit_type_local",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "No type is given: the source gives none, or the types of this country are not filled in this release.",
+      "description": "Type of the unit in the national language. For the United States, France, the United Kingdom and Norway, the type of the unit itself, for example county or commune. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."
+    },
+    {
+      "name": "unit_type_en",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "No type is given: the source gives none, or the types of this country are not filled in this release.",
+      "description": "Type of the unit in English. For the United States, France, the United Kingdom and Norway, the type of the unit itself. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "Not applicable to the unit.",
+      "description": "How the unit was made: taken as it is from the source, dissolved from smaller units, or conformed to a national list."
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "nullable": false,
+      "description": "Publisher or product the unit comes from."
+    },
+    {
+      "name": "source_vintage",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "The source gives no edition.",
+      "description": "Edition or date of the source."
+    },
+    {
+      "name": "license",
+      "type": "string",
+      "nullable": false,
+      "description": "License of the source of the unit."
+    },
+    {
+      "name": "boundary_vintage",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "The source gives no edition.",
+      "description": "Date or year of the boundaries."
+    },
+    {
+      "name": "src_ref",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "The source gives no reference code.",
+      "description": "Reference of the unit in the source, for example its original code."
+    },
+    {
+      "name": "adm0_status",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "Not applicable to the unit.",
+      "description": "Status of the country record, as set by the project's rules for disputed territories."
+    },
+    {
+      "name": "ne_type",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "Not applicable to the unit.",
+      "description": "Type of the country record in Natural Earth."
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "Not applicable to the unit.",
+      "description": "Label of the area: the name of a disputed or unassigned area; for a contested area, the map caption with the state in control, the claiming state and the date."
+    },
+    {
+      "name": "area_km2",
+      "type": "number",
+      "unit": "km2",
+      "nullable": true,
+      "null_meaning": "Not applicable to the unit.",
+      "description": "Area of the disputed or unassigned area."
+    },
+    {
+      "name": "pov",
+      "type": "string",
+      "nullable": true,
+      "null_meaning": "Not applicable to the unit.",
+      "description": "Point of view under which the area is drawn."
+    },
+    {
+      "name": "area_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Code of the contested area, for example CA-0001. It does not change between versions."
+    },
+    {
+      "name": "frame_unit_ids",
+      "type": "string",
+      "nullable": false,
+      "description": "unit_id of the units of the frame that make up the contested area, separated by semicolons."
+    },
+    {
+      "name": "controlled_by",
+      "type": "string",
+      "nullable": false,
+      "description": "ISO 3166-1 alpha-3 code of the state in control of the area; several codes are separated by semicolons."
+    },
+    {
+      "name": "claimed_by",
+      "type": "string",
+      "nullable": false,
+      "description": "ISO 3166-1 alpha-3 code of the state that claims the area; several codes are separated by semicolons."
+    },
+    {
+      "name": "control_since",
+      "type": "string",
+      "nullable": false,
+      "description": "Year and month, or date, from which the state in control has controlled the area."
+    },
+    {
+      "name": "source_control",
+      "type": "string",
+      "nullable": false,
+      "description": "Addresses of the documents on the control of the area, separated by semicolons."
+    },
+    {
+      "name": "source_claim",
+      "type": "string",
+      "nullable": false,
+      "description": "Addresses of the documents on the claim to the area, separated by semicolons."
+    },
+    {
+      "name": "checked_at",
+      "type": "string",
+      "nullable": false,
+      "description": "Date the sources of the row were checked."
+    },
+    {
+      "name": "checked_by",
+      "type": "string",
+      "nullable": false,
+      "description": "Who checked the sources: human, script or AI agent with its role (human:…, script:…, agent:…)."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "natural_earth",
+      "role": "primary",
+      "publisher": "Natural Earth",
+      "product": "Natural Earth 1:10m administrative boundaries, version 5.1.2",
+      "url": "https://github.com/nvkelso/natural-earth-vector/tree/v5.1.2",
+      "edition": "v5.1.2, U.S. point of view",
+      "retrieved_at": "2026-09-28",
+      "current_through": null,
+      "license": {
+        "id": "LicenseRef-public-domain",
+        "name": "Public domain (Natural Earth terms of use)",
+        "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+        "family": "public_domain",
+        "attribution_text": "Country boundaries, the departments of France and first-level units outside the United States and Norway: Natural Earth."
+      },
+      "rights_basis": {
+        "type": "publisher_statement",
+        "text": "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain.",
+        "checked_at": "2026-09-26",
+        "checked_by": "agent:ARCH",
+        "evidence_url": "https://www.naturalearthdata.com/about/terms-of-use/"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "ne_10m_admin_0_countries_usa v5.1.2",
+          "bytes": null,
+          "sha256": "d3166691d3d86f113c0d8db52506f4b72936513691d1593f47010fed01fc0b93"
+        },
+        {
+          "file": "ne_10m_admin_1_states_provinces v5.1.2",
+          "bytes": null,
+          "sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5"
+        },
+        {
+          "file": "ne_10m_admin_2_counties v5.1.2",
+          "bytes": null,
+          "sha256": "9a80308d80eef51a0c1ade49aeb9ca877957a346f880e177a85527ef6cfdd1bb"
+        },
+        {
+          "file": "ne_10m_lakes v5.1.2",
+          "bytes": null,
+          "sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9"
+        }
+      ]
+    },
+    {
+      "source_id": "census_cb_2023",
+      "role": "geometry",
+      "publisher": "US Census Bureau",
+      "product": "Cartographic boundary files cb_2023 (state and county, 1:500,000)",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip",
+      "edition": "2023",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2023-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "United States state and county boundaries: U.S. Census Bureau, cartographic boundary files 2023."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "cb_2023_us_county_500k",
+          "bytes": null,
+          "sha256": "99d6597b1fc7767deef62e01d28d8b5dcbd578e151855f7dc0d173cbf5bf0868"
+        },
+        {
+          "file": "cb_2023_us_state_500k",
+          "bytes": null,
+          "sha256": "4a9b4f5cf993cd23738ac49b58fbb556f1f097fcf5e404a9dc10348dd41f7432"
+        }
+      ]
+    },
+    {
+      "source_id": "kartverket_inndelingsbase",
+      "role": "geometry",
+      "publisher": "Kartverket",
+      "product": "Administrative units of Norway (Inndelingsbase): counties and municipalities",
+      "url": "https://data.norge.no/en/datasets/3557d23d-8188-4136-b227-c854f89a6e8e/administrative-enheter-kommuner",
+      "edition": "2026-01-01",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2026-01-01",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Norwegian county and municipality boundaries: © Kartverket, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The data.norge.no entries of the two datasets state CC BY 4.0.",
+        "checked_at": "2026-09-27",
+        "checked_by": "agent:CODE-BND",
+        "evidence_url": "https://data.norge.no/en/datasets/3557d23d-8188-4136-b227-c854f89a6e8e/administrative-enheter-kommuner"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "Administrative enheter fylker (Inndelingsbase)",
+          "bytes": null,
+          "sha256": "5da15759410da8525603d6b6d7f234ae342f88b504e7a8d2fe887fe2820a436e"
+        },
+        {
+          "file": "Administrative enheter kommuner (Inndelingsbase)",
+          "bytes": null,
+          "sha256": "f4bb733477e033e16f98eb3382e35b2b95e81e0038baa8e28267277e62112735"
+        }
+      ]
+    },
+    {
+      "source_id": "unicode_cldr",
+      "role": "reference",
+      "publisher": "Unicode, Inc.",
+      "product": "Unicode CLDR: subdivision codes and English subdivision names",
+      "url": "https://github.com/unicode-org/cldr/tree/release-48-2",
+      "edition": "release-48-2",
+      "retrieved_at": "2026-10-17",
+      "current_through": null,
+      "license": {
+        "id": "Unicode-3.0",
+        "name": "Unicode License v3",
+        "url": "https://github.com/unicode-org/cldr/blob/release-48-2/LICENSE",
+        "family": "attribution",
+        "attribution_text": "First-level unit codes and English names: Unicode CLDR release-48-2, © Unicode, Inc., Unicode License v3."
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The LICENSE file of the CLDR repository and the SPDX lines of its subdivision files state the Unicode License v3, which requires its copyright and permission notice with copies of the data or in associated documentation.",
+        "checked_at": "2026-10-14",
+        "checked_by": "script:06_licences.py",
+        "evidence_url": "https://github.com/unicode-org/cldr/blob/release-48-2/LICENSE"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "LICENSE",
+          "bytes": null,
+          "sha256": "b49d0e9f8ead51ca8b7df6fec89cc3ae6809198b4b9d43c74216da0118f23f5b"
+        },
+        {
+          "file": "en.xml",
+          "bytes": null,
+          "sha256": "997a14da1144bb66f36a829db1783afe41f7529e33070afbe964bdd8e387b1d2"
+        },
+        {
+          "file": "subdivisions.xml",
+          "bytes": null,
+          "sha256": "63095a3b5bd4e0a00d9e1cf96853808cacd0ec7c826dbcbfd31755c6cb9b6c55"
+        },
+        {
+          "file": "supplementalMetadata.xml",
+          "bytes": null,
+          "sha256": "36e807ce72b15304dd993f132216f408351be1c4376edaa2fe9e9547e2efcac1"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution",
+    "attribution_text": "Country boundaries, the departments of France and first-level units outside the United States and Norway: Natural Earth. United States state and county boundaries: U.S. Census Bureau, cartographic boundary files 2023. Norwegian county and municipality boundaries: © Kartverket, CC BY 4.0. First-level unit codes and English names: Unicode CLDR release-48-2, © Unicode, Inc., Unicode License v3."
+  },
+  "boundary_release": null,
+  "freshness": {
+    "source_current_through": null,
+    "source_cadence": "irregular",
+    "built_at": "2026-10-18T15:50:02Z",
+    "next_check": "2027-03-31"
+  },
+  "coverage": {
+    "geography": "World (ADM0); ADM1 for 108 countries and ADM2 for the United States, France and Norway, the countries with a verified entry in the boundary registry",
+    "frame": null,
+    "n_units_frame": null,
+    "n_units_covered": null,
+    "n_records": 5511,
+    "known_gaps": [
+      "Ten areas, about 487 km² together, belong to a country but to none of its first-level units, because Natural Earth gives them no code of the reference list: six in Australia (Jervis Bay Territory, Christmas Island, the Cocos (Keeling) Islands, Macquarie Island, Ashmore and Cartier Islands, the Coral Sea Islands), two in the United Arab Emirates, one in Russia and one in Venezuela. They are listed with their areas in adm1_leftovers.csv. Macquarie Island is left out of Tasmania (AUS-1-TAS) until it is checked against a document of the state.",
+      "Thirteen small areas of land in the Natural Earth admin-1 file, from 1 to 45 km² each and about 289 km² together, are covered by no ADM0 unit and are not in the layer of unassigned areas either. Most are coastal edges and small islands where the admin-1 and admin-0 files of Natural Earth are drawn differently; one is the Paracel Islands (5 km²). They are listed in validation_report.json.",
+      "ADM1 follows the top level of ISO 3166-2 as recorded in Unicode CLDR release-48-2; reforms after that release may not be reflected.",
+      "First-level units are cut to the outline of their country. Where Natural Earth draws a first-level unit beyond that outline, the part outside is left out; the largest is 2,268 km² of Ladakh (IND-1-LA) inside the outline of China in the U.S. point of view. All such losses are listed in validation_report.json.",
+      "ADM1 units exist only for countries whose registry entry has been verified (108 in this release); ADM2 units exist for the United States, France and Norway. The other 134 countries and territories have ADM0 only.",
+      "First-level units outside the United States and Norway, and the departments of France, are built from Natural Earth 1:10m units. They are generalized and are not the official national boundaries.",
+      "Disputed and unassigned areas are not part of any country.",
+      "The frame departs from the U.S. point of view only for whole units of the frame that another recognized state controls and has made part of its own administrative division, as shown by sources: Crimea and Sevastopol, shown under Russia, with Ukraine's claim in the contested_areas layer. Areas of the Donetsk, Luhansk, Zaporizhzhia and Kherson regions under Russian control since 2022 remain under Ukraine: the rule applies only to whole units, and no open dated line of control was found. Other areas of disputed control have not yet been checked against this rule.",
+      "The contested_areas layer lists only areas whose control has been checked against sources: Crimea and Sevastopol in this release.",
+      "The first-level codes of Crimea (RUS-1-35) and Sevastopol (RUS-1-67) are codes of Russia's OKATO classifier, not ISO 3166-2 codes: ISO 3166-2 lists these units under Ukraine (UA-43, UA-40).",
+      "For first-level units added in version 0.2.0, unit_type_local and unit_type_en give the types of first-level units in the country, not the type of each unit. In 29 countries with more than one type, such as states and a federal district, all types are listed, separated by \"/\". In 21 countries the types are not filled in this release. The type of each unit is planned for a later version."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz"
+  ],
+  "release": {
+    "dataset": "abf-boundaries",
+    "version": "0.2.0",
+    "tag": "abf-boundaries-v0.2.0",
+    "doi": "10.5281/zenodo.23454136",
+    "published_at": "2026-10-18"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 0.0,
+      "script_rules": 1.0,
+      "human": 0.0,
+      "agent_sample": 0.078
+    },
+    "method": "Units are built by script from the sources by the method named in the registry; the registry marks a country and level as verified before its units are published. For the first-level units added in version 0.2.0, the code list of each country was matched to Unicode CLDR release-48-2 by script, and a random sample of countries, together with every country whose units were merged, matched by name or left with parts outside any unit, was checked against official national lists by an independent AI agent. The verification sample covers countries whose official lists could be retrieved. The validation report of the build is published next to the units.",
+    "sample_share": {
+      "adm1_countries_official_list": 0.26
+    },
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "Unit counts of the release were counted from the files: ADM0 242, ADM1 1667, ADM2 3602; unit_id is unique across all levels."
+      },
+      {
+        "id": "registry_verified",
+        "description": "Every country and level with ADM1 or ADM2 units in the release has verified = true in the boundary registry."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of every published Parquet file are declared in fields[]."
+      },
+      {
+        "id": "contested_areas_valid",
+        "description": "Every frame unit named by the 2 contested area(s) exists in the release; the geometry of each area equals the union of its frame units; the areas do not overlap; the states are countries of the ADM0 layer."
+      },
+      {
+        "id": "license_notice_sha256",
+        "description": "The Unicode License v3 notice published with the release was compared by SHA-256 with the LICENSE file of Unicode CLDR release-48-2."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Administrative boundaries · ADM0, ADM1, ADM2 (version 0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23454136",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, boundaries, unit {record_key}, version 0.2.0. https://doi.org/10.5281/zenodo.23454136"
+  },
+  "display": {
+    "tile_fields": [
+      "adm0_status",
+      "area_id",
+      "claimed_by",
+      "control_since",
+      "controlled_by",
+      "iso3",
+      "label",
+      "level",
+      "name",
+      "unit_id"
+    ]
+  }
+}

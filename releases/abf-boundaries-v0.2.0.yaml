@@ -4,9 +4,9 @@
 dataset: abf-boundaries
 version: 0.2.0
 tag: abf-boundaries-v0.2.0
-doi: null
-published_at: null
-built_at: null
+doi: 10.5281/zenodo.23454136
+published_at: "2026-10-18"
+built_at: "2026-10-18T15:50:02Z"
 boundary_release: null
 boundaries:
   dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'
@@ -28,12 +28,14 @@ file_map:
 expected_counts: {adm0: 242, adm1: 1667, adm2: 3602}
 # Shares of verification, computed from the registry of the release (SPEC_BND section 3 item 3c).
 # Countries counted: verified ADM1 countries outside exclude_iso3 (the ones of version 0.1.0).
-# Expected (ARCH6, 17.10): 27 countries, 429 units. A difference is a warning in dev and a stop in final.
+# Expected (ARCH6, 18.10, after Crimea and Sevastopol moved to RUS): 27 countries, 431 units (RUS 85 instead of 83, refer_arch). A difference is a warning in dev and a stop in final.
 verification_from_registry:
   exclude_iso3: [USA, FRA, GBR, NOR]
   expected_countries: 104
   expected_verdicts: {confirmed: 22, disputed: 3, refer_arch: 2}
-  expected_units: 429
+  expected_units: 431
+# The numbers of known_gaps item 11 (types of first-level units): counted from the registry, a stop in final if they differ.
+registry_unit_types: {multi_type: 29, empty: 21}
 # Rows of the registry that were in version 0.1.0 stay identical to it (ARCH6, 17 October): reference = registry of commit
 # 227ce5c (the file the release v0.1.0 was built from). A row changed on purpose is listed in changed_rows ("ISO3|LEVEL").
 registry_frozen_rows:

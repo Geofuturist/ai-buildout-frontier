@@ -9,14 +9,18 @@ description: >-
   countries, ISO3-level-national code below them (for example USA-2-51059 or POL-1-24). Units carry
   the geometry used on the map; for the United States and Norway, the national geometry used for
   calculations is published in separate analysis files. Boundaries follow the U.S. government's
-  point of view and do not express a position of the project. Areas where the state in control
-  differs from the state shown are listed in the contested_areas layer, with both states, the date
-  and sources. Areas that the chosen point of view assigns to no country are a separate layer.
-  Changes from 0.1.0: ADM1 added for 104 countries (1,578 units) by the top level of ISO 3166-2 in
-  Unicode CLDR release-48-2, with documented corrections; Adjara added to the ADM0 unit of Georgia
-  (GEO), which Natural Earth 1:10m v5.1.2 (U.S. point of view) left uncovered; six French region and
-  department names aligned with the official geographic code of INSEE (COG); new layer
-  contested_areas.
+  point of view, with one rule-based exception, and do not express a position of the project. The
+  exception: where sources show that another recognized state controls whole units of the frame and
+  has made them part of its own administrative division, the frame shows the state in control. In
+  this release this applies to Crimea and Sevastopol, shown under Russia. The contested_areas layer
+  lists areas of disputed control: the state in control, the state that claims the area, the date
+  from which control is counted, and the sources for both. Areas that the U.S. point of view assigns
+  to no country are a separate layer. Changes from 0.1.0: ADM1 added for 104 countries (1,578 units)
+  by the top level of ISO 3166-2 in Unicode CLDR release-48-2, with documented corrections; Adjara
+  added to the ADM0 unit of Georgia (GEO), which Natural Earth 1:10m v5.1.2 (U.S. point of view)
+  left uncovered; Crimea and Sevastopol shown under Russia instead of Ukraine, by the rule above;
+  six French region and department names aligned with the official geographic code of INSEE (COG);
+  new layer contested_areas.
 license: {id: CC-BY-4.0, name: Creative Commons Attribution 4.0 International, url: "https://creativecommons.org/licenses/by/4.0/", family: attribution, attribution_text: ""}
 published_columns:
   adm0: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref, adm0_status, ne_type]
@@ -30,8 +34,8 @@ fields:
   - {name: level, type: string, nullable: false, description: "Administrative level of the unit: ADM0 (country), ADM1 or ADM2."}
   - {name: parent_id, type: string, nullable: true, null_meaning: "The unit is a country and has no parent.", description: "unit_id of the unit one level up."}
   - {name: name, type: string, nullable: false, description: "Name of the unit: for first-level units added in version 0.2.0, the English name of the code in Unicode CLDR where CLDR has one, otherwise the name in Natural Earth; in France, the name in the official geographic code of INSEE; elsewhere, as given by the source. For a contested area, its English name."}
-  - {name: unit_type_local, type: string, nullable: true, null_meaning: "The source gives no local type of the unit.", description: "Type of the unit in the national language, for example county or commune."}
-  - {name: unit_type_en, type: string, nullable: true, null_meaning: "The source gives no type of the unit.", description: "Type of the unit in English."}
+  - {name: unit_type_local, type: string, nullable: true, null_meaning: "No type is given: the source gives none, or the types of this country are not filled in this release.", description: "Type of the unit in the national language. For the United States, France, the United Kingdom and Norway, the type of the unit itself, for example county or commune. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."}
+  - {name: unit_type_en, type: string, nullable: true, null_meaning: "No type is given: the source gives none, or the types of this country are not filled in this release.", description: "Type of the unit in English. For the United States, France, the United Kingdom and Norway, the type of the unit itself. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."}
   - {name: method, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "How the unit was made: taken as it is from the source, dissolved from smaller units, or conformed to a national list."}
   - {name: source, type: string, nullable: false, description: "Publisher or product the unit comes from."}
   - {name: source_vintage, type: string, nullable: true, null_meaning: "The source gives no edition.", description: "Edition or date of the source."}
@@ -177,10 +181,26 @@ coverage:
     - >-
       Disputed and unassigned areas are not part of any country.
     - >-
+      The frame departs from the U.S. point of view only for whole units of the frame that another
+      recognized state controls and has made part of its own administrative division, as shown by
+      sources: Crimea and Sevastopol, shown under Russia, with Ukraine's claim in the
+      contested_areas layer. Areas of the Donetsk, Luhansk, Zaporizhzhia and Kherson regions under
+      Russian control since 2022 remain under Ukraine: the rule applies only to whole units, and no
+      open dated line of control was found. Other areas of disputed control have not yet been
+      checked against this rule.
+    - >-
       The contested_areas layer lists only areas whose control has been checked against sources:
-      Crimea and Sevastopol in this release. It is made of whole units of the frame, so areas where
-      control covers only part of a unit, such as areas of eastern and southern Ukraine since 2022,
-      are not listed.
+      Crimea and Sevastopol in this release.
+    - >-
+      The first-level codes of Crimea (RUS-1-35) and Sevastopol (RUS-1-67) are codes of Russia's
+      OKATO classifier, not ISO 3166-2 codes: ISO 3166-2 lists these units under Ukraine (UA-43,
+      UA-40).
+    - >-
+      For first-level units added in version 0.2.0, unit_type_local and unit_type_en give the types
+      of first-level units in the country, not the type of each unit. In 29 countries with more than
+      one type, such as states and a federal district, all types are listed, separated by "/". In 21
+      countries the types are not filled in this release. The type of each unit is planned for a
+      later version.
 verification:
   levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
   method: >-
