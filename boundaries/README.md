@@ -63,6 +63,32 @@ Census (`cb_2023_us_state_500k.zip`, `cb_2023_us_county_500k.zip`) и оба ф�
 Файл `holes_whitelist.geojson` уже в git: с v0.2.0 `--init-whitelist` в обычном запуске не нужен (флаг нужен только для
 пересчёта белого списка после смены ADM0; он перезаписывает файл).
 
+### Полная последовательность выпуска v0.2.0
+
+Слой `display/adm0_disputed_unassigned.{parquet,geojson.gz}` (пять спорных территорий без страны) сам
+`build_boundaries.py` в v0.2.0 не пишет. Его пишет `validate_boundaries.py --write-disputed-layer`
+из закоммиченного `holes_whitelist.geojson` (ничего не пересчитывается, белый список не меняется).
+Без него `build_release.py` останавливается на G4. Порядок:
+
+0. Перед сборкой: свежий клон или `git pull` ветки `main`, затем `git status` и `git diff main -- boundaries scripts\boundaries`.
+   Файлы, которые собираешься менять, должны совпадать с `main` по `git diff`, а не по памяти локальной копии
+   (иначе чужие правки из `main` молча откатываются).
+1. `fetch_boundary_sources.py --sources-dir ...` (кэш: уже лежащее не трогается; четыре файла CLDR проверяются по SHA-256).
+2. `build_boundaries.py --sources-dir ... --out-dir ...\abf-boundaries-v0.2.0 --pov usa`
+3. Один запуск проверки, который заодно пишет слой спорных территорий:
+
+```
+python scripts\boundaries\validate_boundaries.py --out-dir "D:\GISData\Boundaries\out\abf-boundaries-v0.2.0" --sources-dir "D:\GISData\Boundaries\sources" --prev-hashes "D:\GISData\Boundaries\out\abf-boundaries-v0.1.0\unit_hashes.csv" --write-disputed-layer
+```
+
+   В выводе: первая строка `wrote display/adm0_disputed_unassigned.* (7 zones, pov=usa)`, в конце `OVERALL: PASSED`.
+4. Результат: в `display\` десять файлов (`adm0`, `adm1`, `adm2`, `contested_areas`, `adm0_disputed_unassigned`; у каждого `.parquet` и `.geojson.gz`),
+   рядом `analysis\`, `meta.json`, `build_log.json`, `validation_report.json/.md`, `unit_hashes.csv`.
+5. Сверка со второй средой (по желанию): сравнить два `unit_hashes.csv` по `unit_id`, `geom_sha256_16`, `attr_sha256_16`.
+   Для v0.2.0 облако и Windows дали 5 511 из 5 511 совпавших строк.
+
+В следующей версии запись слоя переедет в `build_boundaries.py` (SPEC r5 §2.8), и шаг 3 останется чистой проверкой.
+
 ## Что посмотреть в QGIS после сборки
 
 - `boundaries/holes_whitelist.geojson` (после `--init-whitelist`, до того как класть в git) —
