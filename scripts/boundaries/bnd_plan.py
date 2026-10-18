@@ -6,7 +6,8 @@ Imported by build_boundaries.py and validate_boundaries.py. The France / Britain
 Norway builders in build_boundaries.py are NOT touched; this module adds:
 
   - load_plan / build_plan_adm1 : one generic ADM1 builder driven by boundaries/adm1_plan.csv (S2.1)
-  - apply_adm0_patches          : boundaries/adm0_patches.csv, Adjara into Georgia (S2.2)
+  - apply_adm0_patches          : boundaries/adm0_patches.csv, Adjara into Georgia (S2.2); transfers between
+                                  countries via the column from_iso3, Crimea and Sevastopol UKR -> RUS (S2.9, r6)
   - apply_name_overrides        : boundaries/name_overrides.csv, applied to `name` at all levels (S2.4)
   - find_nested_units           : amendment P8 report (S2.1 p.6)
   - build_contested_areas       : layer `contested_areas` (S2.6)
@@ -33,6 +34,9 @@ HOLE_MIN_AREA_KM2 = 0.01    # S2.2 p.2: interior rings smaller than this are rem
 NESTED_STOP_COUNT = 5       # S2.1 p.6 / amendment P8: >= 5 nested units in a country -> stop
 NESTED_MIN_SHARE = 0.99     # P8: share of the unit's boundary shared with one other unit of the same country
 LOSS_REPORT_KM2 = 0.01      # clipping losses below this are not listed
+TRANSFER_SUM_TOL_KM2 = 0.01  # S2.9 p.3: area(to) + area(from) is the same before and after a transfer, within this
+TRANSFER_AREA_TOL_KM2 = 0.1  # S2.9 p.1: area_km2 of a transfer row is "by the build"; the build must reproduce it
+NATIONAL_CODE_MATCH = "national_code_okato"  # S2.9 p.2: plan rows with a national (OKATO) code instead of a CLDR code
 
 PLAN_COLUMNS = ["iso3", "unit_id", "unit_code_iso", "name", "ne_adm1_codes", "method", "match_via", "cldr_code"]
 ALLOWED_PLAN_METHODS = {"ne_as_is", "ne_dissolve"}
@@ -85,6 +89,13 @@ def apply_adm0_patches(adm0: gpd.GeoDataFrame, ne_adm1_wgs: gpd.GeoDataFrame, pa
             raise c.BuildError(f"adm0_patches.csv: unsupported source {p.source!r} for {p.iso3}.")
         if p.source_key not in by_code.index or isinstance(by_code.loc[p.source_key, "geometry"], gpd.GeoSeries):
             raise c.BuildError(f"adm0_patches.csv: source_key {p.source_key!r} not found exactly once in NE admin-1.")
+        from_iso3 = getattr(p, "from_iso3", "").strip()
+        if from_iso3:
+            # S2.9 p.1: transfer. The part of ADM0 `from_iso3` covered by the NE object goes to ADM0 `iso3`.
+            adm0, row = _transfer_adm0_part(adm0, p, from_iso3, by_code.loc[p.source_key])
+            report.append(row)
+            logger.add(step="adm0_transfer", **row)
+            continue
         add = c.clean(by_code.loc[p.source_key, "geometry"])
         add_area = c.area_km2(add)
         idx = adm0.index[adm0["unit_id"] == p.iso3][0]
@@ -108,6 +119,62 @@ def apply_adm0_patches(adm0: gpd.GeoDataFrame, ne_adm1_wgs: gpd.GeoDataFrame, pa
         report.append(row)
         logger.add(step="adm0_patch", **row)
     return adm0, report
+
+
+def _transfer_adm0_part(adm0: gpd.GeoDataFrame, p, from_iso3: str, ne_row) -> tuple[gpd.GeoDataFrame, dict]:
+    """S2.9 p.1. moved = (NE object) intersect (ADM0 from_iso3); ADM0 iso3 = ADM0 iso3 + moved;
+    ADM0 from_iso3 = ADM0 from_iso3 - moved. Exact partition: no overlaps, no new holes.
+    Stops if the area differs from the file, if the pair's total area changes, or if the transfer leaves
+    pieces of from_iso3 inside the transferred area's envelope that are not part of it (slivers)."""
+    ids = set(adm0["unit_id"])
+    if from_iso3 not in ids:
+        raise c.BuildError(f"adm0_patches.csv: from_iso3 {from_iso3!r} is not an ADM0 unit.")
+    if from_iso3 == p.iso3:
+        raise c.BuildError(f"adm0_patches.csv: from_iso3 equals iso3 ({p.iso3}).")
+    i_to = adm0.index[adm0["unit_id"] == p.iso3][0]
+    i_from = adm0.index[adm0["unit_id"] == from_iso3][0]
+    to_before, from_before = adm0.at[i_to, "geometry"], adm0.at[i_from, "geometry"]
+    obj = c.clean(ne_row["geometry"])
+    moved = c.clean(shapely.intersection(obj, from_before))
+    if moved is None or moved.is_empty:
+        raise c.BuildError(f"adm0_patches.csv: {p.source_key} does not intersect ADM0 {from_iso3}. Stop.")
+    moved_km2 = c.area_km2(moved)
+    file_km2 = float(p.area_km2)
+    if abs(moved_km2 - file_km2) > TRANSFER_AREA_TOL_KM2:
+        raise c.BuildError(f"adm0_patches.csv: transfer {from_iso3}->{p.iso3} by {p.source_key} is {moved_km2:.2f} km2 in the "
+                           f"build, the file says {file_km2}; stop and ask.")
+    to_after = c.union_clean([to_before, moved])
+    from_after = c.clean(shapely.difference(from_before, moved))
+    sum_before = c.area_km2(to_before) + c.area_km2(from_before)
+    sum_after = c.area_km2(to_after) + c.area_km2(from_after)
+    if abs(sum_after - sum_before) > TRANSFER_SUM_TOL_KM2:
+        raise c.BuildError(f"transfer {from_iso3}->{p.iso3}: area of the pair changed by {sum_after - sum_before:+.4f} km2 "
+                           f"(allowed {TRANSFER_SUM_TOL_KM2}). Stop.")
+    overlap = c.area_km2(shapely.intersection(to_after, from_after))
+    if overlap > 0.001:
+        raise c.BuildError(f"transfer {from_iso3}->{p.iso3}: the two ADM0 units overlap by {overlap:.4f} km2. Stop.")
+    # slivers: what is left of from_iso3 within the transferred area's 0.1-degree neighbourhood and not connected to
+    # the rest of from_iso3's main body is reported; pieces >= 1 km2 stop the build (they would be orphans).
+    env = shapely.buffer(moved, 0.1)
+    left_near = [g for g in c.explode_parts(from_after) if shapely.intersects(g, env)]
+    near_small = [round(c.area_km2(g), 3) for g in left_near if c.area_km2(g) < 5000]
+    adm0.at[i_to, "geometry"] = to_after
+    adm0.at[i_from, "geometry"] = from_after
+    row = dict(
+        iso3=p.iso3, from_iso3=from_iso3, source_key=p.source_key,
+        ne_iso_3166_2=str(ne_row.get("iso_3166_2", "")), ne_name=str(ne_row.get("name", "")),
+        expected_area_km2=file_km2, moved_km2=round(moved_km2, 3),
+        area_to_before_km2=round(c.area_km2(to_before), 2), area_to_after_km2=round(c.area_km2(to_after), 2),
+        area_from_before_km2=round(c.area_km2(from_before), 2), area_from_after_km2=round(c.area_km2(from_after), 2),
+        pair_sum_diff_km2=round(sum_after - sum_before, 5),
+        parts_to_before=len(c.explode_parts(to_before)), parts_to_after=len(c.explode_parts(to_after)),
+        parts_from_before=len(c.explode_parts(from_before)), parts_from_after=len(c.explode_parts(from_after)),
+        small_parts_of_from_near_moved_km2=near_small,
+        # keep the Adjara-style keys so the console line in build_boundaries.py works for both kinds of rows
+        area_before_km2=round(c.area_km2(to_before), 1), area_after_km2=round(c.area_km2(to_after), 1),
+        parts_before=len(c.explode_parts(to_before)), parts_after=len(c.explode_parts(to_after)),
+    )
+    return adm0, row
 
 
 # --------------------------------------------------------------------------
@@ -389,8 +456,22 @@ def check_cldr(plan: pd.DataFrame, unit_names: dict[str, str], manifest: dict) -
     overlong = {a.get("type"): a.get("replacement") for a in
                 ET.parse(files["cldr_supplemental_metadata"]).getroot().iter("subdivisionAlias")
                 if a.get("reason") == "overlong"}
-    viol, exceptions = [], []
+    viol, exceptions, national = [], [], []
     for r in plan.itertuples():
+        if r.match_via == NATIONAL_CODE_MATCH:
+            # S2.9 p.2 / RES_texts r4 S6.3: a unit that our frame shows under another country than ISO 3166-2 does
+            # (Crimea, Sevastopol under RUS) has a national code instead of a CLDR code: S2.4a does not apply.
+            # Required instead: no cldr_code, the unit_id suffix is the national code, the unit exists in the build.
+            if r.cldr_code:
+                viol.append((r.unit_id, "national_code_row_has_cldr_code", r.cldr_code))
+            if r.unit_id.rsplit("-", 1)[-1] != r.unit_code_iso:
+                viol.append((r.unit_id, "national_code_suffix_differs_from_unit_code", r.unit_code_iso))
+            if r.unit_id not in unit_names:
+                viol.append((r.unit_id, "unit_missing_in_build", r.unit_code_iso))
+            else:
+                national.append(dict(unit_id=r.unit_id, national_code=r.unit_code_iso, name=unit_names[r.unit_id],
+                                     note="national code (OKATO); S2.4a not applicable, see S2.9 p.2"))
+            continue
         code = r.cldr_code
         cc = code[:2].upper()
         if cc not in reach_cache:
@@ -412,7 +493,8 @@ def check_cldr(plan: pd.DataFrame, unit_names: dict[str, str], manifest: dict) -
                 viol.append((r.unit_id, "p3_no_name_in_en_xml", code))
         elif len(set(cand)) != 1 or cand[0] != built:
             viol.append((r.unit_id, "p3_name_differs", f"built={built!r} en.xml={cand!r}"))
-    return dict(passed=not viol, n_checked=len(plan), violations=viol[:100], n_violations=len(viol), exceptions=exceptions)
+    return dict(passed=not viol, n_checked=len(plan), violations=viol[:100], n_violations=len(viol), exceptions=exceptions,
+                national_code_units=national)
 
 
 # --------------------------------------------------------------------------

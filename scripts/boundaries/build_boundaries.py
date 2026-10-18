@@ -581,8 +581,13 @@ def main() -> int:
     ne_adm1_wgs = c.clean_geodataframe(c.to_wgs84(src["ne_adm1"]))
     adm0, patch_report = bp.apply_adm0_patches(adm0, ne_adm1_wgs, args.boundaries_dir / "adm0_patches.csv", logger)
     for pr in patch_report:
-        log(f"ADM0 patch {pr['iso3']}: {pr['area_before_km2']} -> {pr['area_after_km2']} km2, "
-            f"parts {pr['parts_before']} -> {pr['parts_after']}")
+        if pr.get("from_iso3"):
+            log(f"ADM0 transfer {pr['from_iso3']} -> {pr['iso3']} ({pr['source_key']} {pr['ne_name']}): {pr['moved_km2']} km2 moved; "
+                f"{pr['iso3']} {pr['area_before_km2']} -> {pr['area_after_km2']} km2, "
+                f"{pr['from_iso3']} {pr['area_from_before_km2']} -> {pr['area_from_after_km2']} km2, pair sum diff {pr['pair_sum_diff_km2']} km2")
+        else:
+            log(f"ADM0 patch {pr['iso3']}: {pr['area_before_km2']} -> {pr['area_after_km2']} km2, "
+                f"parts {pr['parts_before']} -> {pr['parts_after']}")
 
     fra_adm2, fra_adm1 = build_france(src["ne_adm1"], logger)
     assert_nesting(fra_adm1, adm0.loc[adm0["unit_id"] == "FRA", "geometry"].iloc[0], "FRA", logger)
@@ -687,7 +692,7 @@ def main() -> int:
     c.write_geojson_gz(display_adm2, out_dir / "display" / "adm2.geojson.gz")
     c.write_parquet(contested, out_dir / "display" / "contested_areas.parquet", sort_col="area_id")
     c.write_geojson_gz(contested, out_dir / "display" / "contested_areas.geojson.gz", sort_col="area_id")
-    log("display/adm0, adm1, adm2 written (adm0_disputed_unassigned is written by validate_boundaries.py --init-whitelist)")
+    log("display/adm0, adm1, adm2 written (adm0_disputed_unassigned is written by validate_boundaries.py --write-disputed-layer)")
 
     # --- write analysis layers (USA, Norway only -- SPEC S4.7) ---
     c.write_parquet(usa_analysis_adm1, out_dir / "analysis" / "USA_adm1_cb2023_500k.parquet")

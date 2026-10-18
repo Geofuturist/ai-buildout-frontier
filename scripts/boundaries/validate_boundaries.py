@@ -10,6 +10,7 @@ v0.2.0 additions:
   check 9  reconciliation with v0.1.0 unit_hashes.csv (--prev-hashes; skipped with a note if not given)
   check 10 contested_areas layer
   check 11 codes and names against Unicode CLDR release-48-2 (S2.4a)
+  check 12 ADM0 transfers (Crimea, Sevastopol -> RUS, S2.9) and acceptance points
   report   per-unit clipping losses of the plan ADM1 (read from build_log.json)
 
 Run (from repo root, after build_boundaries.py):
@@ -19,7 +20,7 @@ Run (from repo root, after build_boundaries.py):
     python scripts\\boundaries\\validate_boundaries.py --out-dir "D:\\GISData\\Boundaries\\out\\abf-boundaries-v0.2.0" --sources-dir "D:\\GISData\\Boundaries\\sources" --prev-hashes "D:\\GISData\\Boundaries\\out\\abf-boundaries-v0.1.0\\unit_hashes.csv"
 
 Writes validation_report.json and validation_report.md into --out-dir.
-Exit code 1 if any of checks 1-5 or 7-11 fails; check 6 is report-only and never fails the run.
+Exit code 1 if any of checks 1-5 or 7-12 fails; check 6 is report-only and never fails the run.
 
 --init-whitelist additionally writes boundaries/holes_whitelist.geojson (repo, not
 committed by this script -- SPEC S5: "в git -- только после ответа V") and
@@ -339,9 +340,12 @@ def check_reconciliation(prev_hashes: Path | None, out_dir: Path, boundaries_dir
     plan = bp.load_plan(boundaries_dir / "adm1_plan.csv")
     ov_path = boundaries_dir / "name_overrides.csv"
     ov_ids = set(pd.read_csv(ov_path, dtype=str)["unit_id"]) if ov_path.exists() else set()
-    patches = pd.read_csv(boundaries_dir / "adm0_patches.csv", dtype=str)
+    patches = pd.read_csv(boundaries_dir / "adm0_patches.csv", dtype=str, keep_default_na=False)
+    changed = set(patches["iso3"])
+    if "from_iso3" in patches.columns:  # S2.9 p.6: GEO, RUS, UKR -- the country that gains and the country that loses
+        changed |= {x for x in patches["from_iso3"] if x}
     res = bp.reconcile_with_previous(Path(prev_hashes), out_dir / "unit_hashes.csv",
-                                     expected_geom_changed=set(patches["iso3"]), name_override_ids=ov_ids,
+                                     expected_geom_changed=changed, name_override_ids=ov_ids,
                                      plan_iso3=set(plan["iso3"]))
     # new rows: exactly the planned ADM1 units, all with parent_id in the plan countries
     new = pd.read_csv(out_dir / "unit_hashes.csv", dtype=str)
@@ -395,6 +399,57 @@ def check_contested(out_dir: Path, boundaries_dir: Path, adm0, adm1) -> dict:
         problems.append(f"zones overlap: {ov}")
     return {"passed": not problems, "problems": problems, "n_zones": len(layer), "n_csv_rows": n_csv,
             "note": "empty layer is allowed (no rows in contested_areas.csv)" if n_csv == 0 else ""}
+
+
+# SPEC_BND r6 S6 p.2 and p.11: points that must lie in the named ADM0 unit (and only there)
+ACCEPTANCE_POINTS = [
+    ("Adjara (41.64 N, 41.64 E)", 41.64, 41.64, "GEO"),
+    ("Simferopol (34.10 E, 44.95 N)", 34.10, 44.95, "RUS"),
+    ("Sevastopol (33.52 E, 44.60 N)", 33.52, 44.60, "RUS"),
+]
+
+
+def check_transfers(adm0, adm1, boundaries_dir: Path, out_dir: Path) -> dict:
+    """SPEC r6 S2.9 / S6 p.11. For every row of adm0_patches.csv with from_iso3: the NE object moved from one ADM0 unit to
+    the other, the pair's total area is unchanged (build_log.json), the ADM1 units built from that NE object belong to the
+    receiving country. Plus the acceptance points of S6 p.2 and p.11 (each in its ADM0 unit and in no other)."""
+    problems, rows = [], []
+    patches = pd.read_csv(boundaries_dir / "adm0_patches.csv", dtype=str, keep_default_na=False)
+    transfers = patches[patches["from_iso3"] != ""] if "from_iso3" in patches.columns else patches.iloc[0:0]
+    log_rows = {}
+    bl_path = out_dir / "build_log.json"
+    if bl_path.exists():
+        for e in json.loads(bl_path.read_text(encoding="utf-8")):
+            if e.get("step") == "adm0_transfer":
+                log_rows[e["source_key"]] = e
+    geom = dict(zip(adm0["unit_id"], adm0.geometry))
+    for t in transfers.itertuples():
+        e = log_rows.get(t.source_key)
+        row = dict(iso3=t.iso3, from_iso3=t.from_iso3, source_key=t.source_key)
+        if e is None:
+            problems.append(f"{t.source_key}: no 'adm0_transfer' entry in build_log.json (the build did not run this row)")
+        else:
+            row.update(moved_km2=e["moved_km2"], pair_sum_diff_km2=e["pair_sum_diff_km2"],
+                       area_from_before_km2=e["area_from_before_km2"], area_from_after_km2=e["area_from_after_km2"],
+                       area_to_before_km2=e["area_to_before_km2"], area_to_after_km2=e["area_to_after_km2"])
+            if abs(e["pair_sum_diff_km2"]) > bp.TRANSFER_SUM_TOL_KM2:
+                problems.append(f"{t.source_key}: area of the pair changed by {e['pair_sum_diff_km2']} km2")
+        units = adm1[adm1["src_ref"].astype(str).str.split(";").apply(lambda xs: t.source_key in xs)]
+        row["adm1_units"] = units["unit_id"].tolist()
+        wrong = units[units["iso3"] != t.iso3]
+        if units.empty:
+            problems.append(f"{t.source_key}: no ADM1 unit built from this NE object")
+        if len(wrong):
+            problems.append(f"{t.source_key}: ADM1 units {wrong['unit_id'].tolist()} are not units of {t.iso3}")
+        rows.append(row)
+    pts = []
+    for name, lon, lat, want in ACCEPTANCE_POINTS:
+        pt = shapely.Point(lon, lat)
+        inside = sorted(u for u, g in geom.items() if g.contains(pt))
+        pts.append(dict(point=name, adm0=inside, expected=want))
+        if inside != [want]:
+            problems.append(f"point {name}: in ADM0 {inside}, expected [{want!r}]")
+    return {"passed": not problems, "problems": problems, "transfers": rows, "acceptance_points": pts}
 
 
 # --------------------------------------------------------------------------
@@ -538,7 +593,15 @@ def main() -> int:
     log("check 11: codes and names vs Unicode CLDR release-48-2...")
     plan_df = bp.load_plan(args.boundaries_dir / "adm1_plan.csv")
     r11 = bp.check_cldr(plan_df, dict(zip(adm1["unit_id"], adm1["name"])), manifest)
-    log(f"  passed={r11['passed']} violations={r11['n_violations']} exceptions={[e['unit_id'] for e in r11['exceptions']]}")
+    log(f"  passed={r11['passed']} violations={r11['n_violations']} exceptions={[e['unit_id'] for e in r11['exceptions']]} "
+        f"national_code_units={[e['unit_id'] for e in r11['national_code_units']]}")
+
+    log("check 12: ADM0 transfers (Crimea, Sevastopol) and acceptance points...")
+    r12 = check_transfers(adm0, adm1, args.boundaries_dir, out_dir)
+    log(f"  passed={r12['passed']}" + (f" -- {r12['problems']}" if r12["problems"] else "")
+        + "".join(f"\n    {t['from_iso3']}->{t['iso3']} {t['source_key']}: moved {t.get('moved_km2')} km2, pair sum diff {t.get('pair_sum_diff_km2')} km2, ADM1 {t['adm1_units']}"
+                  for t in r12["transfers"])
+        + "".join(f"\n    point {p['point']}: ADM0 {p['adm0']}" for p in r12["acceptance_points"]))
 
     clip_losses = []
     bl_path = out_dir / "build_log.json"
@@ -563,10 +626,11 @@ def main() -> int:
         "check_9_reconciliation_with_previous": r9,
         "check_10_contested_areas": r10,
         "check_11_cldr_codes_and_names": r11,
+        "check_12_adm0_transfers": r12,
         "plan_adm1_clip_losses": clip_losses,
     }
     overall_passed = all([r1["passed"], r2["passed"], r3["passed"], r4["passed"], r5["passed"],
-                           r7["passed"], r8["passed"], r9["passed"], r10["passed"], r11["passed"]])
+                           r7["passed"], r8["passed"], r9["passed"], r10["passed"], r11["passed"], r12["passed"]])
     report["overall_passed"] = overall_passed
 
     (out_dir / "validation_report.json").write_text(
@@ -586,7 +650,9 @@ def main() -> int:
           f"| 8. nested units (P8) | {r8['passed']} (max {r8['max_per_country']} per country) |",
           f"| 9. reconciliation with previous release | {r9['passed']}{' (skipped)' if r9.get('skipped') else ''} |",
           f"| 10. contested_areas | {r10['passed']} ({r10['n_zones']} zones) |",
-          f"| 11. CLDR codes and names | {r11['passed']} (exceptions: {', '.join(e['unit_id'] for e in r11['exceptions']) or 'none'}) |",
+          f"| 11. CLDR codes and names | {r11['passed']} (exceptions: {', '.join(e['unit_id'] for e in r11['exceptions']) or 'none'}; "
+          f"national codes: {', '.join(e['unit_id'] for e in r11.get('national_code_units', [])) or 'none'}) |",
+          f"| 12. ADM0 transfers and acceptance points | {r12['passed']} ({len(r12['transfers'])} transfers) |",
           ""]
     (out_dir / "validation_report.md").write_text("\n".join(md), encoding="utf-8")
 
