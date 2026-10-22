@@ -31,6 +31,7 @@ from shapely.prepared import prep
 import dc_lib as L
 
 GEOD = Geod(ellps="WGS84")
+NEAREST_M, FALLBACK_M = 1000.0, 10000.0
 warnings.filterwarnings("ignore", message=".*sjoin_nearest.*")   # used only to pick a candidate; the 1 000 m test is geodesic
 
 STOP = set("""data center centre centres centers cloud edge core digital tech technology technologies solutions services network networks telecom group
@@ -98,11 +99,12 @@ class Frame:
         for idx in pts.index:
             iso, how = res.get(idx, ("", "none"))
             out.at[idx, "iso3_frame"], out.at[idx, "frame_how"] = iso, how
-        # nearest country within 1 000 m (ADR section 10): geodesic distance to the nearest polygon point
+        # nearest country: within 1 000 m (ADR section 10); fallback up to 10 km for coastal points (r3 section 10 item 8), marked
+        # `fallback_<m>m` in frame_how and listed in the report; farther than 10 km -> empty
         miss = [i for i in pts.index if out.at[i, "iso3_frame"] == ""]
         if miss:
             sub = g.loc[miss]
-            near = gpd.sjoin_nearest(sub, self.adm0[["iso3", "geometry"]], how="left", max_distance=0.05, distance_col="deg")
+            near = gpd.sjoin_nearest(sub, self.adm0[["iso3", "geometry"]], how="left", max_distance=0.35, distance_col="deg")
             near = near[~near.index.duplicated(keep="first")]
             geom_by_iso = self.adm0.set_index("iso3")["geometry"]
             for idx, r in near.iterrows():
@@ -111,8 +113,10 @@ class Frame:
                 p = g.at[idx, "geometry"]
                 q = nearest_points(p, geom_by_iso[r["iso3"]])[1]
                 d = GEOD.inv(p.x, p.y, q.x, q.y)[2]
-                if d <= 1000.0:
+                if d <= NEAREST_M:
                     out.at[idx, "iso3_frame"], out.at[idx, "frame_how"] = r["iso3"], f"nearest_{round(d)}m"
+                elif d <= FALLBACK_M:
+                    out.at[idx, "iso3_frame"], out.at[idx, "frame_how"] = r["iso3"], f"fallback_{round(d)}m"
         zg = gpd.sjoin(g, self.zones[["controlled_by", "geometry"]], how="left", predicate="within")
         zc = zg[~zg.index.duplicated(keep="first")]["controlled_by"]
         for idx in pts.index:
@@ -174,6 +178,24 @@ class PlaceResolver:
                     return obj, st, bp, text, via
         return None, "none", False, "", ""
 
+    def _prepare(self, rec: dict):
+        """-> (zone_extra, address, parsed address, admin1 code) shared by the chain and the step-3 evaluation."""
+        iso3, cc = rec["iso3"], rec["cc"]
+        zone_extra = [(self.countries.iso2(o), poly) for o, poly in self.frame.zone_pairs.get(iso3, [])]
+        zone_extra = [(c2, p) for c2, p in zone_extra if c2]
+        addr = rec["address"].strip()
+        parsed = L.parse_address(addr, cc) if addr else dict(status="no_address", region="", locality="", locality_candidates="")
+        region_text = parsed["region"] or rec.get("adm1", "")
+        a1code = self.gn.region_code(cc, region_text) if region_text else None
+        return zone_extra, addr, parsed, a1code
+
+    def step3_only(self, rec: dict) -> dict:
+        """The place from the record name alone (step 3 of the chain), for the accuracy evaluation. -> dict(status, obj, by_pop, text)."""
+        if not rec["cc"]:
+            return dict(status="none")
+        zone_extra, _, _, a1code = self._prepare(rec)
+        return self._step3(rec, rec["cc"], a1code, zone_extra)
+
     # ---- the chain
     def resolve(self, rec: dict) -> dict:
         iso3, cc = rec["iso3"], rec["cc"]
@@ -182,12 +204,7 @@ class PlaceResolver:
         if not cc:
             out["location_state"] = "no_address" if not rec["address"].strip() else "unresolved"
             return out
-        zone_extra = [(self.countries.iso2(o), poly) for o, poly in self.frame.zone_pairs.get(iso3, [])]
-        zone_extra = [(c2, p) for c2, p in zone_extra if c2]
-        addr = rec["address"].strip()
-        parsed = L.parse_address(addr, cc) if addr else dict(status="no_address", region="", locality="", locality_candidates="")
-        region_text = parsed["region"] or rec.get("adm1", "")
-        a1code = self.gn.region_code(cc, region_text) if region_text else None
+        zone_extra, addr, parsed, a1code = self._prepare(rec)
         ambiguous = False
         name_candidate = False
 

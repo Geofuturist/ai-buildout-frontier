@@ -304,7 +304,11 @@ def _report(rep, atlas_out, epoch_out, atl, ep, pa, pe, counts, groups, checks, 
     for nm, d in (("Atlas", atlas_out), ("Epoch", epoch_out)):
         x = d[(d["iso3_frame"] != "") & (d["iso3_frame"] != d["iso3_source"])]
         rep.append(f"- {nm}: {len(x)}" + ("" if x.empty else "; " + "; ".join(f"{r.record_id} {r.iso3_source}->{r.iso3_frame}" + (f" (control {r.control_iso3})" if r.control_iso3 else "") for r in x.head(60).itertuples())))
-    rep += ["", "## points with no ADM0 within 1 000 m (iso3_frame empty)", ""]
+    rep += ["", "## coastal fallback: nearest ADM0 between 1 km and 10 km (iso3_frame set, frame_how = fallback_<m>m)", ""]
+    for nm, d, src in (("Atlas", atlas_out, atl), ("Epoch", epoch_out, ep)):
+        fb = src[src["frame_how"].str.startswith("fallback")]
+        rep.append(f"- {nm}: {len(fb)}" + ("" if fb.empty else "; " + "; ".join(f"{r.record_id} {r.iso3_source}->{r.iso3_frame} ({r.frame_how}, {r.lon}, {r.lat})" for r in fb.itertuples())))
+    rep += ["", "## points with no ADM0 within 10 km (iso3_frame empty)", ""]
     for nm, d in (("Atlas", atlas_out), ("Epoch", epoch_out)):
         x = d[(d["coord_precision"] == "city") & (d["iso3_frame"] == "")]
         rep.append(f"- {nm}: {len(x)}" + ("" if x.empty else "; " + "; ".join(f"{r.record_id} {r.iso3_source} ({r.lon}, {r.lat})" for r in x.itertuples())))
