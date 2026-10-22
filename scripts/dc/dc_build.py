@@ -304,6 +304,10 @@ def _report(rep, atlas_out, epoch_out, atl, ep, pa, pe, counts, groups, checks, 
     for nm, d in (("Atlas", atlas_out), ("Epoch", epoch_out)):
         x = d[(d["iso3_frame"] != "") & (d["iso3_frame"] != d["iso3_source"])]
         rep.append(f"- {nm}: {len(x)}" + ("" if x.empty else "; " + "; ".join(f"{r.record_id} {r.iso3_source}->{r.iso3_frame}" + (f" (control {r.control_iso3})" if r.control_iso3 else "") for r in x.head(60).itertuples())))
+    rep += ["", "## points with no ADM0 within 1 000 m (iso3_frame empty)", ""]
+    for nm, d in (("Atlas", atlas_out), ("Epoch", epoch_out)):
+        x = d[(d["coord_precision"] == "city") & (d["iso3_frame"] == "")]
+        rep.append(f"- {nm}: {len(x)}" + ("" if x.empty else "; " + "; ".join(f"{r.record_id} {r.iso3_source} ({r.lon}, {r.lat})" for r in x.itertuples())))
     rep += ["", "## contested zones", ""]
     for nm, d in (("Atlas", atlas_out), ("Epoch", epoch_out)):
         x = d[d["control_iso3"] != ""]
