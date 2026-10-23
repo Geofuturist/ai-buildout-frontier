@@ -13,6 +13,8 @@ Spec: `SPEC_DC_world_v0_1_0.md` r2 (abf-scratch, `tasks/`). Inputs, outputs and 
 | `dc_count.py` | `dc_atlas_count_adm0`, `groups.csv` |
 | `dc_checks.py` | `checks.csv` (Epoch x `atlas_dcp`), the table for V, stop checks (section 2.9) |
 | `dc_build.py` | orchestration; writes the layers, `sources_manifest.json`, `build_log.json`, `build_report.md` |
+| `dc_ver_sample.py` | sample frames for [CODE-DC]_ver (SPEC section 3): place layers and check cells |
+| `dc_eval_step3.py` | accuracy of step 3 on the scouting reference (no network) |
 | `test_dc_smoke.py` | smoke tests without network or data |
 
 Windows cmd, from the repo root:
@@ -22,5 +24,5 @@ Windows cmd, from the repo root:
     python scripts\dc\dc_fetch.py --sources-dir "D:\GISData\DC\sources"
     python scripts\dc\dc_build.py --inputs-dir "D:\GISData\DC\inputs" --sources-dir "D:\GISData\DC\sources" --out-dir "D:\GISData\DC\out\abf-dc-v0.1.0"
 
-Add `--v-table "D:\GISData\DC\review_atlas_dcp.xlsx"` once V has filled the table. Compare two builds by `record_hashes.csv`
+Add `--v-table "D:\GISData\DC\review_atlas_dcp_V_20261023.xlsx" --v-table-date 2026-10-23` once V has filled the table (the date is the date of the verdicts). Compare two builds by `record_hashes.csv`
 (the hash of every published field of a record except `checked_at`).

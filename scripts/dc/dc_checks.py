@@ -64,7 +64,7 @@ def tokens(*texts: str, drop: set[str]) -> set[str]:
 
 
 def build_checks(epoch_out: pd.DataFrame, atlas_out: pd.DataFrame, ep: pd.DataFrame, atl: pd.DataFrame, counts: pd.DataFrame, checked_at: str,
-                 v_table: Path | None, report: list[str]):
+                 v_table: Path | None, v_date: str | None, report: list[str]):
     """ep / atl: the working frames of dc_build (raw fields + record_id, iso3_source, coord_precision, unit_id, _gid, _place, _county)."""
     n_by_iso = atlas_out.groupby("iso3_source").size().to_dict()
     atl = atl.copy()
@@ -97,7 +97,7 @@ def build_checks(epoch_out: pd.DataFrame, atlas_out: pd.DataFrame, ep: pd.DataFr
     checks, review = pd.DataFrame(rows), pd.DataFrame(review_rows)
     notes.append(f"- strong key found: {n['strong']}; country with 0 Atlas records -> not_found: {n['zero']}; rows with candidates (for V): {n['cand']}; rest not_checked: {n['rest']}")
     if v_table is not None:
-        checks, vnotes = apply_v_table(checks, review, v_table)
+        checks, vnotes = apply_v_table(checks, review, v_table, v_date, set(atlas_out["record_id"]))
         notes += vnotes
     else:
         notes.append("- V's table not given: cells with candidates stay `not_checked`; the table is written to review_atlas_dcp.xlsx")
@@ -117,7 +117,7 @@ def _candidates(e, atl: pd.DataFrame):
     return [c for c in cands.itertuples() if et & tokens(c.name_or_title, c.primary_actor, drop=drop)]
 
 
-def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path):
+def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path, v_date: str, atlas_ids: set[str]):
     import openpyxl
     wb = openpyxl.load_workbook(path, data_only=True)
     ws = wb.active
@@ -134,8 +134,8 @@ def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path):
             vt[rid] = (str(row[ix["verdict"]] or "").strip().lower(), str(row[ix["matched_ids"]] or "").strip())
     if set(vt) != set(review["epoch_record_id"]):
         raise L.BuildStop(f"V's table rows differ from the 94 Epoch sites: missing {sorted(set(review['epoch_record_id']) - set(vt))[:5]}, extra {sorted(set(vt) - set(review['epoch_record_id']))[:5]}")
-    when = dt.datetime.fromtimestamp(path.stat().st_mtime, dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    notes, unsure = [], []
+    when = v_date                                         # date of V's verdicts (--v-table-date), not the file time
+    notes, unsure, empty = [], [], []
     checks = checks.set_index("record_id")
     n_found = n_nf = 0
     for r in review.itertuples():
@@ -147,13 +147,22 @@ def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path):
         if verdict == "unsure":
             unsure.append(r.epoch_record_id)
             continue
+        if verdict == "":
+            empty.append(r.epoch_record_id)              # no verdict = the cell stays not_checked (not a stop)
+            continue
         if verdict not in ("found", "not_found"):
-            raise L.BuildStop(f"V's table: no verdict for {r.epoch_record_id} (it has {r.n_candidates} candidates)")
+            raise L.BuildStop(f"V's table: verdict {verdict!r} for {r.epoch_record_id} is not found / not_found / unsure")
         cand_ids = [ln.split(" | ")[0].strip() for ln in r.candidates.split("\n") if " | " in ln]
         if verdict == "found":
             ids = [x.strip() for x in re.split(r"[;,\s]+", matched) if x.strip()] or (cand_ids if len(cand_ids) == 1 else [])
-            if not ids or any(i not in cand_ids for i in ids):
-                raise L.BuildStop(f"V's table: {r.epoch_record_id} is found but matched_ids is empty or not among its candidates")
+            if not ids:
+                raise L.BuildStop(f"V's table: {r.epoch_record_id} is found but matched_ids is empty and it has {len(cand_ids)} candidates")
+            unknown = [i for i in ids if i not in atlas_ids]
+            if unknown:
+                raise L.BuildStop(f"V's table: matched_ids of {r.epoch_record_id} are not in the Atlas layer: {unknown}")
+            off = [i for i in ids if i not in cand_ids]
+            if off:
+                notes.append(f"- {r.epoch_record_id}: matched_ids {off} are in the Atlas layer but were not among the script candidates")
             checks.loc[r.epoch_record_id, ["status", "ref"]] = ["found", ";".join(ids)]
             n_found += 1
         else:
@@ -162,7 +171,7 @@ def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path):
         checks.loc[r.epoch_record_id, ["checked_by", "checked_at"]] = ["human:V", when]
     if unsure:
         raise L.BuildStop(f"V's table still has `unsure` for {len(unsure)} site(s): {unsure[:10]}")
-    notes.append(f"- V's table applied ({path.name}): found {n_found}, not_found {n_nf}; checked_by human:V")
+    notes.append(f"- V's table applied ({path.name}, checked_at {when}): found {n_found}, not_found {n_nf}, empty verdict (stays not_checked) {len(empty)}: {', '.join(empty)}; checked_by human:V")
     return checks.reset_index(), notes
 
 
@@ -229,7 +238,11 @@ def stop_checks(atlas_out: pd.DataFrame, epoch_out: pd.DataFrame, counts: pd.Dat
         city = d["coord_precision"] == "city"
         if not (d.loc[city, ["lon", "lat"]].astype(str).ne("").all().all() and (d.loc[city, "unit_id"] == "").all()):
             stops.append(f"{nm}: a city record without lon/lat or with unit_id")
+        if (d.loc[city, ["place_name", "place_ref"]] == "").any().any() or not d.loc[city, "place_ref"].str.match(r"^(geonames:[0-9]+|census:[0-9]+)$").all():
+            stops.append(f"{nm}: a city record without place_name / place_ref or with a malformed place_ref")
         non = ~city
+        if (d.loc[non, ["place_name", "place_ref"]] != "").any().any():
+            stops.append(f"{nm}: a county/none record with place_name / place_ref")
         if not ((d.loc[non, "unit_id"] != "").all() and (d.loc[non, "lon"].astype(str) == "").all() and d.loc[non, "coord_precision"].isin(["county", "none"]).all()):
             stops.append(f"{nm}: a county/none record without unit_id or with lon/lat")
         if (d["power_basis"] == "").any() or d["power_basis"].isna().any():

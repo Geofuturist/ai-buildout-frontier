@@ -46,7 +46,7 @@ VERSION = "0.1.0"
 BOUNDARY_RELEASE = "abf-boundaries-v0.2.0"
 EPOCH_FILE_DATE = "2026-10-12"
 
-CONTRACT = ["record_id", "unit_id", "lon", "lat", "coord_source", "coord_precision", "source_grade", "ref", "checked_at", "checked_by"]
+CONTRACT = ["record_id", "unit_id", "lon", "lat", "coord_source", "coord_precision", "place_name", "place_ref", "source_grade", "ref", "checked_at", "checked_by"]
 ATLAS_COLS = CONTRACT + ["name", "operator", "operator_type", "status_raw", "start_year", "power_class", "power_basis", "power_status",
                          "power_status_reason", "atlas_confidence", "country_source", "adm1_raw", "adm2_raw", "address_raw", "source_urls",
                          "same_key_group", "identical_group", "iso3_source", "iso3_frame", "control_iso3", "resolved_by_population", "location_state"]
@@ -70,6 +70,7 @@ def main() -> int:
     ap.add_argument("--sources-dir", required=True, type=Path)
     ap.add_argument("--out-dir", required=True, type=Path)
     ap.add_argument("--v-table", type=Path, default=None)
+    ap.add_argument("--v-table-date", default=None, help="checked_at date of the cells taken from V's table, YYYY-MM-DD (required with --v-table)")
     ap.add_argument("--aliases", default="rules/country_name_aliases_20261022.csv")
     ap.add_argument("--epoch-file-date", default=EPOCH_FILE_DATE)
     ap.add_argument("--expected-records", type=int, default=A.EXPECTED_RECORDS, help="9865 until the Portugal copy without filter is swapped in")
@@ -77,6 +78,8 @@ def main() -> int:
     I, S, O = a.inputs_dir, a.sources_dir, a.out_dir
     checked_at = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     A.EXPECTED_RECORDS = a.expected_records
+    if a.v_table is not None and not a.v_table_date:
+        raise L.BuildStop("--v-table needs --v-table-date YYYY-MM-DD (the date V's verdicts were made)")
     report: list[str] = ["# abf-dc v0.1.0 build report", "", f"Built {checked_at}; boundary_release {BOUNDARY_RELEASE}.", ""]
     notes: dict[str, object] = {}
 
@@ -119,7 +122,11 @@ def main() -> int:
                   + ("consistent." if atl["_selection_name"].nunique() == 126 else "NOT consistent, question to [RES]."))
     filtered = blocks_df[blocks_df["active_filters"].str.contains("Status=", na=False)]
     retired_not_copied = {iso_by_block[n] for n in filtered["selection_name"] if "Retired" not in filtered.loc[filtered["selection_name"] == n, "active_filters"].iloc[0]}
-    report.append("Blocks copied with a status filter (retired records not copied): " + (", ".join(sorted(retired_not_copied)) or "none"))
+    # a status-filtered block is closed by a manual check "no Retired records with all statuses selected" (human:V, result not_found)
+    retired_zero = {r["country_iso3"] for r in mc.values() if "Retired" in r["question"] + r["note"] and r["result"] == "not_found" and r["checked_by"].startswith("human:")}
+    report.append("Blocks copied with a status filter: " + (", ".join(sorted(retired_not_copied)) or "none")
+                  + "; closed by a manual check of V (no Retired records): " + (", ".join(sorted(retired_not_copied & retired_zero)) or "none"))
+    retired_not_copied = retired_not_copied - retired_zero
     listed_iso3 = set(atl["iso3_source"])
 
     # ------------------------------------------------------------------ Epoch records
@@ -153,7 +160,7 @@ def main() -> int:
 
     def attach(d: pd.DataFrame, p: pd.DataFrame, f: pd.DataFrame) -> pd.DataFrame:
         d = d.copy()
-        for c in ["unit_id", "lon", "lat", "coord_source", "coord_precision", "resolved_by_population", "location_state"]:
+        for c in ["unit_id", "lon", "lat", "coord_source", "coord_precision", "place_name", "place_ref", "resolved_by_population", "location_state"]:
             d[c] = p[c]
         d["iso3_frame"] = f["iso3_frame"].reindex(d.index).fillna("")
         d["control_iso3"] = f["control_iso3"].reindex(d.index).fillna("")
@@ -161,6 +168,8 @@ def main() -> int:
         d["resolved_by_population"] = d["resolved_by_population"].map(lambda v: "true" if v else "false")
         return d
 
+    pa["place_name"], pe["place_name"] = pa["place"].where(pa["coord_precision"] == "city", ""), pe["place"].where(pe["coord_precision"] == "city", "")
+    pa["place_ref"], pe["place_ref"] = pa["place_ref"].where(pa["coord_precision"] == "city", ""), pe["place_ref"].where(pe["coord_precision"] == "city", "")
     atl = attach(atl, pa, fa)
     ep = attach(ep, pe, fe)
     atl["place_step"], ep["place_step"] = pa["step"], pe["step"]
@@ -183,7 +192,7 @@ def main() -> int:
     atl["checked_at"], atl["checked_by"], atl["source_grade"] = checked_at, "script:dc_build", "secondary"
     atlas_out = pd.DataFrame({
         "record_id": atl["record_id"], "unit_id": atl["unit_id"], "lon": atl["lon"], "lat": atl["lat"], "coord_source": atl["coord_source"],
-        "coord_precision": atl["coord_precision"], "source_grade": atl["source_grade"], "ref": atl["ref"], "checked_at": atl["checked_at"],
+        "coord_precision": atl["coord_precision"], "place_name": atl["place_name"], "place_ref": atl["place_ref"], "source_grade": atl["source_grade"], "ref": atl["ref"], "checked_at": atl["checked_at"],
         "checked_by": atl["checked_by"], "name": atl["name_or_title"], "operator": atl["primary_actor"], "operator_type": atl["primary_actor_type"],
         "status_raw": atl["status"], "start_year": atl["start_year"], "power_class": atl["power_class"], "power_basis": atl["power_basis"],
         "power_status": atl["power_status"], "power_status_reason": atl["power_status_reason"], "atlas_confidence": atl["confidence"],
@@ -202,7 +211,7 @@ def main() -> int:
     ol = L.one_line
     epoch_out = pd.DataFrame({
         "record_id": ep["record_id"], "unit_id": ep["unit_id"], "lon": ep["lon"], "lat": ep["lat"], "coord_source": ep["coord_source"],
-        "coord_precision": ep["coord_precision"], "source_grade": ep["source_grade"], "ref": ep["ref"], "checked_at": ep["checked_at"],
+        "coord_precision": ep["coord_precision"], "place_name": ep["place_name"], "place_ref": ep["place_ref"], "source_grade": ep["source_grade"], "ref": ep["ref"], "checked_at": ep["checked_at"],
         "checked_by": ep["checked_by"], "name": ep["Name"], "owner": ep["Owner"].map(ol), "users": ep["Users"].map(ol), "project": ep["Project"].map(ol),
         "country_source": ep["Country"], "address_raw": ep["Address"].map(ol), "power_mw": ep["power_mw"], "power_basis": ep["power_basis"],
         "power_status": ep["power_status"], "power_status_reason": ep["power_status_reason"], "power_ref": ep["power_ref"],
@@ -218,7 +227,7 @@ def main() -> int:
     groups = C.group_table(I / "groups" / "GROUPS_members_v1.csv", counts)
 
     # ------------------------------------------------------------------ checks.csv (section 2.8)
-    checks, review, check_notes = K.build_checks(epoch_out, atlas_out, ep, atl, counts, checked_at, a.v_table, report)
+    checks, review, check_notes = K.build_checks(epoch_out, atlas_out, ep, atl, counts, checked_at, a.v_table, a.v_table_date, report)
 
     # ------------------------------------------------------------------ stops (section 2.9)
     K.stop_checks(atlas_out, epoch_out, counts, frame, a.expected_records, ATLAS_COLS, EPOCH_COLS)
@@ -240,9 +249,9 @@ def main() -> int:
             hashes.append(dict(layer=layer, record_id=r[0], row_sha256=hashlib.sha256("\x1f".join(str(v) for v in r).encode("utf-8")).hexdigest()))
     pd.DataFrame(hashes).to_csv(O / "record_hashes.csv", index=False, lineterminator="\n")
     trace_a = pd.DataFrame({"record_id": atl["record_id"], "layer": "dc_atlas_points", "step": pa["step"], "place": pa["place"], "geonameid": pa["geonameid"],
-                            "via": pa["via"], "basis_text": pa["basis_text"], "iso3_frame_how": atl["frame_how"]})
+                            "via": pa["via"], "basis_text": pa["basis_text"], "region_match": pa["region_match"], "resolved_by_population": atl["resolved_by_population"], "adm1_raw": atl["adm1"], "iso3_frame_how": atl["frame_how"]})
     trace_e = pd.DataFrame({"record_id": ep["record_id"], "layer": "dc_epoch_points", "step": pe["step"], "place": pe["place"], "geonameid": pe["geonameid"],
-                            "via": pe["via"], "basis_text": pe["basis_text"], "iso3_frame_how": ep["frame_how"]})
+                            "via": pe["via"], "basis_text": pe["basis_text"], "region_match": pe["region_match"], "resolved_by_population": ep["resolved_by_population"], "adm1_raw": "", "iso3_frame_how": ep["frame_how"]})
     pd.concat([trace_a, trace_e]).sort_values(["layer", "record_id"]).to_csv(O / "place_trace.csv", index=False, lineterminator="\n")
     if review is not None:
         K.write_review_xlsx(review, O / "review_atlas_dcp.xlsx")
@@ -321,7 +330,8 @@ def _report(rep, atlas_out, epoch_out, atl, ep, pa, pe, counts, groups, checks, 
     rep += ["", "## P9 / withheld", "", f"- withheld: {len(withheld_rows)}" + ("" if not withheld_rows else " -> p9_withheld.csv")]
     rep += ["", "## Dropped repeated Atlas blocks", ""] + [f"- {d['selection_name']}: dropped {d['dropped']}, kept {d['kept']}, identical content {d['identical_content']}" for d in dropped]
     rep += ["", "## Retired records not copied", "", ", ".join(sorted(retired_not_copied)) or "none"]
-    rep += ["", "## checks.csv", ""] + check_notes
+    cd = checks.assign(kind=checks["status"] + " / " + checks["checked_by"]).groupby("kind").size()
+    rep += ["", "## checks.csv", "", "| status / checked_by | cells |", "|---|---:|"] + [f"| {k} | {v} |" for k, v in cd.items()] + [""] + check_notes
     rep += ["", "## Comparison with the scouting run (differences over 5 points are listed)", ""]
     n_city_e = int((epoch_out["coord_precision"] == "city").sum())
     rep.append(f"- Epoch records with a city point: {n_city_e} of 94 (scouting: 63 resolved); difference {n_city_e - 63:+d} ({(n_city_e - 63) / 94 * 100:+.1f} points)")

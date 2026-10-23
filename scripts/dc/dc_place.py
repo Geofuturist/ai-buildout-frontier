@@ -200,7 +200,7 @@ class PlaceResolver:
     def resolve(self, rec: dict) -> dict:
         iso3, cc = rec["iso3"], rec["cc"]
         out = dict(step=5, coord_source="", coord_precision="none", lon="", lat="", unit_id=iso3, resolved_by_population=False, location_state="",
-                   geonameid="", place="", via="", basis_text="", county_unit_id="")
+                   geonameid="", place="", place_ref="", via="", basis_text="", county_unit_id="", region_match=False)
         if not cc:
             out["location_state"] = "no_address" if not rec["address"].strip() else "unresolved"
             return out
@@ -225,7 +225,7 @@ class PlaceResolver:
                     if len(hit) == 1:
                         h = hit[0]
                         out.update(step=2, coord_source="census_place", coord_precision="city", lon=round(float(h.INTPTLONG), 6), lat=round(float(h.INTPTLAT), 6),
-                                   unit_id="", place=h.NAME, via="census", basis_text=t, geonameid="census:" + h.GEOID)
+                                   unit_id="", place=h.NAME, place_ref="census:" + h.GEOID, via="census", basis_text=t, geonameid="census:" + h.GEOID)
                         return out
                     if len(hit) > 1:
                         ambiguous = True
@@ -234,6 +234,7 @@ class PlaceResolver:
         # step 3
         s3 = self._step3(rec, cc, a1code, zone_extra)
         if s3["status"] == "resolved":
+            out["region_match"] = s3["region_match"]
             return self._city(out, s3["obj"], 3, "geonames_name", s3["by_pop"], s3["text"], "name")
         if s3["status"] == "ambiguous":
             ambiguous = True
@@ -272,7 +273,7 @@ class PlaceResolver:
 
     def _city(self, out: dict, obj, step: int, source: str, by_pop: bool, text: str, via: str) -> dict:
         out.update(step=step, coord_source=source, coord_precision="city", lon=round(obj.lonf, 6), lat=round(obj.latf, 6), unit_id="",
-                   resolved_by_population=by_pop, geonameid=obj.geonameid, place=obj.name, via=via, basis_text=text)
+                   resolved_by_population=by_pop, geonameid=obj.geonameid, place=obj.name, place_ref="geonames:" + obj.geonameid, via=via, basis_text=text)
         return out
 
     def _step3(self, rec: dict, cc: str, a1code, zone_extra: list) -> dict:
@@ -313,7 +314,7 @@ class PlaceResolver:
             if all(s[1] <= k[0] or s[0] >= k[1] for k in kept):
                 kept.append(s)
         if len(kept) == 1 and kept[0][3] is not None:
-            return dict(status="resolved", obj=kept[0][3], by_pop=kept[0][5], text=kept[0][2])
+            return dict(status="resolved", obj=kept[0][3], by_pop=kept[0][5], text=kept[0][2], region_match=kept[0][2] == region_norm)
         if kept:
             return dict(status="ambiguous")
         return dict(status="blocked_county" if blocked else "none")
