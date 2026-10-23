@@ -143,9 +143,14 @@ class Census:
         return c
 
 
+ALL_RULES = frozenset({"r1", "r2", "r3a", "r3b", "r3c"})   # SPEC r5 section 12 items 1, 2, 3a, 3b, 3c
+
+
 class PlaceResolver:
-    def __init__(self, gn: L.GeoNames, countries: L.Countries, frame: Frame, census: Census):
+    def __init__(self, gn: L.GeoNames, countries: L.Countries, frame: Frame, census: Census, rules=ALL_RULES):
         self.gn, self.countries, self.frame, self.census = gn, countries, frame, census
+        self.rules = frozenset(rules)
+        self.learned_adm1: dict = {}
 
     # ---- helpers
     def _decide(self, cands: list):
@@ -168,6 +173,8 @@ class PlaceResolver:
                 continue
             stages = [("name", self.gn.by_main)] + ([("alternatenames", self.gn.by_alt)] if use_alt else [])
             for via, idx in stages:
+                if via == "alternatenames" and "r1" in self.rules and n in self.gn.a1_norms.get(cc, ()):
+                    continue                                   # r5 item 1: an alternative name equal to an ADM1 name of the country does not count
                 c = list(idx.get((cc, n), []))
                 if a1code:
                     c = [x for x in c if x.adm1 == a1code]
@@ -184,10 +191,34 @@ class PlaceResolver:
         zone_extra = [(self.countries.iso2(o), poly) for o, poly in self.frame.zone_pairs.get(iso3, [])]
         zone_extra = [(c2, p) for c2, p in zone_extra if c2]
         addr = rec["address"].strip()
-        parsed = L.parse_address(addr, cc) if addr else dict(status="no_address", region="", locality="", locality_candidates="")
+        parsed = L.parse_address(addr, cc, strict="r2" in self.rules) if addr else dict(status="no_address", region="", locality="", locality_candidates="")
         region_text = parsed["region"] or rec.get("adm1", "")
         a1code = self.gn.region_code(cc, region_text) if region_text else None
         return zone_extra, addr, parsed, a1code
+
+    def learn_adm1(self, recs: list[dict]) -> int:
+        """ADM1 of a record whose `adm1` text is not an ADM1 name of GeoNames (provinces, departments): taken from the places that step 1
+        found for the other records of the country with the same `adm1` text, when there are at least 2 and >= 90% agree (SPEC r5 item 3b)."""
+        from collections import Counter, defaultdict
+        wit: dict = defaultdict(Counter)
+        for rec in recs:
+            cc = rec["cc"]
+            if not cc or not rec.get("adm1") or not rec["address"].strip():
+                continue
+            zone_extra, addr, parsed, a1code = self._prepare(rec)
+            if a1code is not None:
+                continue
+            texts = [parsed["locality"]] if parsed["locality"] else [t.strip() for t in parsed["locality_candidates"].split("|") if t.strip()]
+            obj, st, _, _, _ = self._lookup(texts, cc, None, [], use_alt=True) if texts else (None, "none", False, "", "")
+            if st == "resolved" and obj.cc == cc:
+                wit[(cc, L.norm(rec["adm1"]))][obj.adm1] += 1
+        self.learned_adm1 = {}
+        for k, c in wit.items():
+            tot = sum(c.values())
+            code, top = c.most_common(1)[0]
+            if tot >= 2 and top / tot >= 0.9:
+                self.learned_adm1[k] = code
+        return len(self.learned_adm1)
 
     def step3_only(self, rec: dict) -> dict:
         """The place from the record name alone (step 3 of the chain), for the accuracy evaluation. -> dict(status, obj, by_pop, text)."""
@@ -277,26 +308,36 @@ class PlaceResolver:
         return out
 
     def _step3(self, rec: dict, cc: str, a1code, zone_extra: list) -> dict:
-        toks = L.norm(rec["name"]).split()
+        if "r3a" in self.rules:      # r5 item 3a: a hyphenated word is one unit (Noord-Holland), it is not split
+            units = [u for u in re.split(r"[^\w'\-]+", rec["name"]) if u]
+            toks = [L.norm(u) for u in units if L.norm(u)]
+        else:
+            toks = L.norm(rec["name"]).split()
         optoks = set(L.norm(rec.get("operator", "")).split())
         region_norm = L.norm(rec.get("adm1", ""))
+        addr_norm = " " + L.norm(rec["address"]) + " " if rec["address"].strip() else ""
+        a1_eff = a1code
+        if a1_eff is None and "r3b" in self.rules and rec.get("adm1"):
+            a1_eff = self.learned_adm1.get((cc, region_norm))      # r5 item 3b: the record's ADM1, when it can be determined
         spans = []
         blocked = False
         for n in (3, 2, 1):
             for i in range(len(toks) - n + 1):
                 g = " ".join(toks[i:i + n])
-                part = toks[i:i + n]
+                part = " ".join(toks[i:i + n]).split()
                 if len(g) < 4 or g in STOP or any(t in STOP for t in part) or set(part) <= optoks:
                     continue
                 c = list(self.gn.by_main.get((cc, g), []))
-                if a1code:
-                    c = [x for x in c if x.adm1 == a1code]
+                if a1_eff:
+                    c = [x for x in c if x.adm1 == a1_eff]
                 for cc2, poly in zone_extra:
                     c += [x for x in self.gn.by_main.get((cc2, g), []) if poly.contains(Point(x.lonf, x.latf))]
                 if g == region_norm:
                     c = [x for x in c if x.fcode in ("PPLA", "PPLC")]
                 if not c:
                     continue
+                if "r3c" in self.rules and addr_norm and f" {g} " not in addr_norm:
+                    continue                                       # r5 item 3c: with an address, the place from the name must occur in it
                 if cc == "US":                                   # US: the place must lie in the record's county
                     if not rec.get("adm2"):
                         blocked = True

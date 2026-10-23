@@ -71,6 +71,7 @@ def main() -> int:
     ap.add_argument("--out-dir", required=True, type=Path)
     ap.add_argument("--v-table", type=Path, default=None)
     ap.add_argument("--v-table-date", default=None, help="checked_at date of the cells taken from V's table, YYYY-MM-DD (required with --v-table)")
+    ap.add_argument("--recheck-log", default="ver_check/ver_recheck_log_DC_v0_1_0.csv", help="relative to --inputs-dir; the re-check log of the independent check")
     ap.add_argument("--aliases", default="rules/country_name_aliases_20261022.csv")
     ap.add_argument("--epoch-file-date", default=EPOCH_FILE_DATE)
     ap.add_argument("--expected-records", type=int, default=A.EXPECTED_RECORDS, help="9865 until the Portugal copy without filter is swapped in")
@@ -145,16 +146,64 @@ def main() -> int:
     ep["iso3_source"] = iso_e
 
     # ------------------------------------------------------------------ place chain
-    def run_chain(df: pd.DataFrame, name_col: str, op_col: str | None, adm1: str | None, adm2: str | None, addr_col: str, country_col: str) -> pd.DataFrame:
-        rows = []
-        for i, r in df.iterrows():
-            rec = dict(iso3=r["iso3_source"], cc=countries.iso2(r["iso3_source"]), country_field=r[country_col], adm1=r[adm1] if adm1 else "",
-                       adm2=r[adm2] if adm2 else "", address=r[addr_col], name=r[name_col], operator=r[op_col] if op_col else "")
-            rows.append(resolver.resolve(rec))
-        return pd.DataFrame(rows, index=df.index)
+    def make_recs(df: pd.DataFrame, name_col: str, op_col: str | None, adm1: str | None, adm2: str | None, addr_col: str, country_col: str) -> list[dict]:
+        return [dict(iso3=r["iso3_source"], cc=countries.iso2(r["iso3_source"]), country_field=r[country_col], adm1=r[adm1] if adm1 else "",
+                     adm2=r[adm2] if adm2 else "", address=r[addr_col], name=r[name_col], operator=r[op_col] if op_col else "") for _, r in df.iterrows()]
 
-    pa = run_chain(atl, "name_or_title", "primary_actor", "adm1", "adm2", "address", "country")
-    pe = run_chain(ep, "Name", "Owner", None, None, "Address", "Country")
+    recs_a = make_recs(atl, "name_or_title", "primary_actor", "adm1", "adm2", "address", "country")
+    recs_e = make_recs(ep, "Name", "Owner", None, None, "Address", "Country")
+
+    def chain_pass(rules) -> tuple[pd.DataFrame, pd.DataFrame, P.PlaceResolver]:
+        rs = P.PlaceResolver(gn, countries, frame, census, rules=rules)
+        if "r3b" in rs.rules:
+            rs.learn_adm1(recs_a)
+        return (pd.DataFrame([rs.resolve(r) for r in recs_a], index=atl.index), pd.DataFrame([rs.resolve(r) for r in recs_e], index=ep.index), rs)
+
+    # impact of the rules of SPEC r5 section 12 (cumulative): how many records change step / place at each rule
+    stages = [("baseline (r4: before the check)", set()), ("r1 alternatenames = ADM1 name", {"r1"}), ("r2 whole address segment", {"r1", "r2"}),
+              ("r3a hyphenated words", {"r1", "r2", "r3a"}), ("r3b place inside the record ADM1", {"r1", "r2", "r3a", "r3b"}),
+              ("r3c place from the name occurs in the address", {"r1", "r2", "r3a", "r3b", "r3c"})]
+    impact, prev, results = [], None, {}
+    for label, rules in stages:
+        pa_, pe_, rs_ = chain_pass(rules)
+        cur = pd.concat([pa_.assign(layer="atlas"), pe_.assign(layer="epoch")])
+        key_ = cur["step"].astype(str) + "|" + cur["place_ref"].astype(str) + "|" + cur["unit_id"].astype(str)
+        if prev is not None:
+            ch = key_ != prev[1]
+            trans = (prev[0]["step"].astype(str) + "->" + cur["step"].astype(str))[ch].value_counts()
+            impact.append(dict(rule=label, records_changed=int(ch.sum()), atlas=int(ch[cur["layer"] == "atlas"].sum()), epoch=int(ch[cur["layer"] == "epoch"].sum()),
+                               step_transitions="; ".join(f"{k}: {v}" for k, v in trans.items())))
+        prev, results[label] = (cur, key_), (pa_, pe_, rs_)
+    pa, pe, resolver = results[stages[-1][0]]
+    notes["learned_adm1_texts"] = len(resolver.learned_adm1)
+
+    # item 4 of r5 section 12: places that the check disputed and that kept the same point after items 1-3 -> none / disputed_by_check
+    disputed_places, disputed_cells, still_same, moved = {}, {}, [], []
+    rl = I / a.recheck_log
+    if rl.exists():
+        import re as _re
+        for r in csv.DictReader(open(rl, encoding="utf-8-sig", newline="")):
+            if r["kind"] == "place":
+                m = _re.search(r"geonames:(\d+)", r["disputed"])
+                disputed_places[r["record_id"]] = m.group(1) if m else ""
+            elif r["kind"] == "cell":
+                disputed_cells[r["record_id"]] = r["reason"]
+    else:
+        report.append(f"WARNING: re-check log {rl} not found; no disputed places or cells are applied")
+    for rid, gid in disputed_places.items():
+        for df_, p_, nm in ((atl, pa, "atlas"), (ep, pe, "epoch")):
+            hit = df_.index[df_["record_id"] == rid]
+            if len(hit):
+                i = hit[0]
+                if p_.at[i, "place_ref"] == f"geonames:{gid}":
+                    still_same.append(rid)
+                    p_.loc[i, ["step", "coord_source", "coord_precision", "lon", "lat", "unit_id", "location_state", "geonameid", "place", "place_ref", "via", "basis_text"]] = \
+                        [5, "", "none", "", "", df_.at[i, "iso3_source"], "disputed_by_check", "", "", "", "", ""]
+                    p_.at[i, "resolved_by_population"] = False
+                    p_.at[i, "region_match"] = False
+                else:
+                    moved.append((rid, gid, p_.at[i, "place_ref"] or p_.at[i, "unit_id"], int(p_.at[i, "step"])))
+    notes["disputed_places"] = (len(disputed_places), len(still_same), len(moved))
     fa, fe = (frame.assign_frame(p.loc[p["coord_precision"] == "city", ["lon", "lat"]].astype(float), d["iso3_source"])
               for p, d in ((pa, atl), (pe, ep)))
 
@@ -227,7 +276,7 @@ def main() -> int:
     groups = C.group_table(I / "groups" / "GROUPS_members_v1.csv", counts)
 
     # ------------------------------------------------------------------ checks.csv (section 2.8)
-    checks, review, check_notes = K.build_checks(epoch_out, atlas_out, ep, atl, counts, checked_at, a.v_table, a.v_table_date, report)
+    checks, review, check_notes = K.build_checks(epoch_out, atlas_out, ep, atl, counts, checked_at, a.v_table, a.v_table_date, report, disputed_cells)
 
     # ------------------------------------------------------------------ stops (section 2.9)
     K.stop_checks(atlas_out, epoch_out, counts, frame, a.expected_records, ATLAS_COLS, EPOCH_COLS)
@@ -277,6 +326,29 @@ def main() -> int:
 
     # report
     _report(report, atlas_out, epoch_out, atl, ep, pa, pe, counts, groups, checks, check_notes, withheld_rows, retired_not_copied, frame, dropped)
+    report += ["", "## Rule changes of SPEC r5 section 12 (cumulative; a record counts when its step or place changed)", "",
+               "| rule | records changed | Atlas | Epoch | step transitions |", "|---|---:|---:|---:|---|"]
+    report += [f"| {i['rule']} | {i['records_changed']} | {i['atlas']} | {i['epoch']} | {i['step_transitions']} |" for i in impact]
+    n_disp, n_same, n_moved = notes["disputed_places"]
+    report += ["", f"Places disputed by the independent check: {n_disp}; kept the same point after r1-r3 and set to none / disputed_by_check: {n_same}; "
+               f"moved by r1-r3 (not set): {n_moved}.", ""]
+    report += [f"- set to none / disputed_by_check: {rid}" for rid in still_same]
+    report += [f"- moved by the rules: {rid} (was geonames:{gid}) -> {now} (step {st})" for rid, gid, now, st in moved]
+    report += ["", f"ADM1 texts learned from step-1 witnesses (item 3b): {notes['learned_adm1_texts']}"]
+    # places that exist after the rules but were not the baseline place of the record: a gain (no city place before) or a replacement
+    base_a, base_e, _ = results[stages[0][0]]
+    newp = []
+    for layer, df_, b_, f_ in (("dc_atlas_points", atl, base_a, pa), ("dc_epoch_points", ep, base_e, pe)):
+        for i in df_.index:
+            if int(f_.at[i, "step"]) <= 3 and (b_.at[i, "place_ref"] != f_.at[i, "place_ref"]):
+                newp.append(dict(layer=layer, record_id=df_.at[i, "record_id"], kind=("gain" if int(b_.at[i, "step"]) > 3 else "replacement"),
+                                 baseline_step=int(b_.at[i, "step"]), baseline_place=b_.at[i, "place"], baseline_basis=b_.at[i, "basis_text"],
+                                 new_step=int(f_.at[i, "step"]), new_place=f_.at[i, "place"], new_place_ref=f_.at[i, "place_ref"], new_basis=f_.at[i, "basis_text"]))
+    pd.DataFrame(newp).to_csv(O / "rule_new_places.csv", index=False, lineterminator="\n")
+    kinds = pd.Series([x["kind"] for x in newp]).value_counts().to_dict() if newp else {}
+    report += ["", f"Places that the rules added or replaced (not vetoed): {len(newp)} {kinds} -> rule_new_places.csv "
+                   "(a gain = the record had no city place before; a replacement = the next candidate of the address or the name after a vetoed one)."]
+    pd.DataFrame(impact).to_csv(O / "rule_impact.csv", index=False, lineterminator="\n")
     (O / "build_report.md").write_text("\n".join(report), encoding="utf-8")
     log = dict(version=VERSION, boundary_release=BOUNDARY_RELEASE, built_at=checked_at, seconds=round(time.time() - t0, 1), python=platform.python_version(),
                platform=platform.platform(), libs={m: sys.modules[m].__version__ for m in ("pandas", "geopandas", "shapely", "pyarrow") if m in sys.modules},

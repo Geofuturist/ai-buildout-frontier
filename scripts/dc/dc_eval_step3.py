@@ -49,6 +49,7 @@ def main() -> int:
     ap.add_argument("--reference", required=True, type=Path)
     ap.add_argument("--out-dir", required=True, type=Path)
     ap.add_argument("--aliases", default="rules/country_name_aliases_20261022.csv")
+    ap.add_argument("--without-r3c", action="store_true", help="drop item 3c (place must occur in the address): the situation of records WITHOUT an address, which are the real targets of step 3")
     a = ap.parse_args()
     I, S = a.inputs_dir, a.sources_dir
 
@@ -57,11 +58,14 @@ def main() -> int:
     aliases = L.load_aliases(I / a.aliases)
     countries = L.Countries(gn, aliases, frame.units[frame.units["level"] == "ADM0"])
     L.extend_country_tokens(gn.country_names, {r["name_in_source"]: gn.iso3_to_2[r["iso3"]] for r in aliases.values() if r["iso3"] in gn.iso3_to_2})
-    resolver = P.PlaceResolver(gn, countries, frame, census=None)
+    resolver = P.PlaceResolver(gn, countries, frame, census=None, rules=(P.ALL_RULES - {"r3c"}) if a.without_r3c else P.ALL_RULES)
 
     report: list[str] = []
     atl, rec_h, _, _ = A.read_atlas(I / "atlas_copies", report)
     atl["iso3_source"] = [countries.iso3(n)[0] for n in atl["_selection_name"]]
+    # item 3b of SPEC r5 section 12: the ADM1 of a record is learned from step 1 on all Atlas records, as in the build
+    resolver.learn_adm1([dict(iso3=r.iso3_source, cc=countries.iso2(r.iso3_source), adm1=r.adm1, adm2=r.adm2, address=r.address, name=r.name_or_title,
+                              operator=r.primary_actor) for r in atl.itertuples()])
 
     ref = pd.read_csv(a.reference, dtype=str, keep_default_na=False)
     ref = ref[ref["geonames_status"] == "resolved"].copy()

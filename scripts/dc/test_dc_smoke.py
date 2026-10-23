@@ -56,6 +56,16 @@ class Text(unittest.TestCase):
         self.assertEqual(a, b)
         self.assertNotEqual(a, K.addr_key("5503 Spinks Road, Abilene, Texas 79601, United States"))
 
+    def test_us_key_ignores_city(self):
+        self.assertEqual(K.us_key("5855 SW Kerry St, Cumming, IA 50061"), K.us_key("5855, Southwest Kerry Street, West Des Moines, IA, 50061, United States of America"))
+        self.assertNotEqual(K.us_key("5855 SW Kerry St, Cumming, IA 50061"), K.us_key("5855 SW Kerry St, Cumming, MN 50061"))
+
+    def test_region_phrase_is_not_a_place(self):
+        p = L.parse_address("Rapides Parish / Central Louisiana, United States", "US")
+        self.assertEqual(p["locality"], "")
+        p2 = L.parse_address("Memphis TN 38109", "US")
+        self.assertEqual(p2["locality"], "Memphis")
+
     def test_parse_us(self):
         p = L.parse_address("4581 Webb St, Pryor, OK 74361", "US")
         self.assertEqual((p["locality"], p["region"]), ("Pryor", "OK"))

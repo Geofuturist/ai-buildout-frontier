@@ -94,9 +94,11 @@ def extend_country_tokens(country_info_names: dict[str, str], aliases: dict[str,
             COUNTRY_TOKENS.setdefault(name.casefold(), iso2)
 
 
-def parse_address(addr: str, iso2_hint: str = "") -> dict:
+def parse_address(addr: str, iso2_hint: str = "", strict: bool = True) -> dict:
     """-> dict(country_iso, region, postcode, locality, locality_candidates, rule, status). Rules: see the scouting run
-    (PREFLIGHT_DC_world_v0_2 section 4): US_STATE(_ZIP), FR_POSTCODE, AU_STATE_POST, CA_PROV, IE_COUNTY_DISTRICT, GENERIC_POSTCODE, GENERIC_LAST."""
+    (PREFLIGHT_DC_world_v0_2 section 4): US_STATE(_ZIP), FR_POSTCODE, AU_STATE_POST, CA_PROV, IE_COUNTY_DISTRICT, GENERIC_POSTCODE, GENERIC_LAST.
+    strict (SPEC r5 section 12 item 2): the place must be a whole segment of the address; text that precedes a spelled-out state or province
+    inside one segment ("Central Louisiana") is a region phrase, not a place."""
     out = dict(country_iso="", region="", postcode="", locality="", locality_candidates="", rule="", status="")
     a = (addr or "").strip()
     if not a:
@@ -131,6 +133,9 @@ def parse_address(addr: str, iso2_hint: str = "") -> dict:
                 if m.group("zip"):
                     out["postcode"] = m.group("zip")
                 pre = m.group("pre").strip()
+                if strict and pre and m.group("st").upper() not in US_ABBR:
+                    out.update(rule="US_STATE_NAME_IN_SEGMENT", status="no_locality")
+                    return out
                 cand = pre if pre else (toks[idx - 1] if idx > 0 else "")
                 if not pre and re.fullmatch(r"\d{5}", cand) and idx > 1:
                     out["postcode"] = cand
@@ -173,6 +178,9 @@ def parse_address(addr: str, iso2_hint: str = "") -> dict:
             m = re.match(r"^(?P<pre>.*?)\s*\b(?P<pv>" + prov_names + "|" + prov_abbr + r")\b\s*(?P<pc>" + pc + r")$", toks[idx], re.I)
             if m:
                 pre = m.group("pre").strip()
+                if strict and pre and m.group("pv").upper() not in CA_ABBR:
+                    out.update(rule="CA_PROV_NAME_IN_SEGMENT", status="no_locality")
+                    return out
                 cand = pre if pre else (toks[idx - 1] if idx else "")
                 pv = m.group("pv")
                 out["region"] = CA_PROV.get(pv.casefold(), pv.upper())
@@ -240,6 +248,7 @@ class GeoNames:
                     self.by_alt[(r.cc, n)].append(r)
         self.a1: dict = {}                              # (cc, norm(name)) -> code
         self.a1_name: dict = {}                         # (cc, code) -> name
+        self.a1_norms: dict[str, set] = defaultdict(set)   # cc -> normalised names of all ADM1 units of the country
         for line in (gdir / "admin1CodesASCII.txt").read_text(encoding="utf-8").splitlines():
             p = line.split("\t")
             if len(p) >= 2:
@@ -247,6 +256,7 @@ class GeoNames:
                 self.a1_name[(cc, code)] = p[1]
                 for k in {norm(p[1])} | ({norm(p[2])} if len(p) >= 3 else set()):
                     self.a1.setdefault((cc, k), set()).add(code)
+                    self.a1_norms[cc].add(k)
         self.countries: dict[str, tuple[str, str]] = {}   # norm(name) -> (iso3, iso2)
         self.iso3_to_2: dict[str, str] = {}
         self.country_names: dict[str, str] = {}           # name -> iso2

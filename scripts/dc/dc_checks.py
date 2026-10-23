@@ -21,14 +21,15 @@ import dc_place as P
 
 CHANNEL = "atlas_dcp"
 SCRIPT = "script:dc_checks"
-SEARCH_METHOD = ("atlas_dcp v1: strong key = equal normalised address (country tail dropped) -> found; country with 0 Atlas records -> not_found; "
+SEARCH_METHOD = ("atlas_dcp v2: strong key = equal normalised address (country tail dropped); in the US house number + street + state (city not compared) -> found; country with 0 Atlas records -> not_found; "
                  "candidates = Atlas records in the same place (GeoNames/Census place, or the same US county) with a shared token of owner/name/project; "
                  "candidates are judged by V, otherwise not_checked; no fuzzy matching; Atlas copies of atlas_data_updated 2026-10-08")
 GENERIC = P.STOP | set("""dc dcs campus site data center centers centre llc inc ltd corp project phase building expansion north south east west""".split())
 
 
 _STREET_ABBR = {"rd": "road", "st": "street", "ave": "avenue", "av": "avenue", "blvd": "boulevard", "dr": "drive", "ln": "lane", "hwy": "highway",
-                "pkwy": "parkway", "ct": "court", "cir": "circle", "pl": "place", "ter": "terrace", "n": "north", "s": "south", "e": "east", "w": "west"}
+                "pkwy": "parkway", "ct": "court", "cir": "circle", "pl": "place", "ter": "terrace", "n": "north", "s": "south", "e": "east", "w": "west",
+                "ne": "northeast", "nw": "northwest", "se": "southeast", "sw": "southwest"}
 _STATE_BY_ABBR = {v: k for k, v in L.US_STATES.items()}
 
 
@@ -54,6 +55,36 @@ def addr_key(addr: str) -> str:
     return " | ".join(out)
 
 
+def us_key(addr: str) -> str:
+    """US strong key (SPEC r5 section 12 item 5): house number + street + state; the city is NOT compared (the postal city and the city of
+    Atlas differ: Cumming / West Des Moines). '' if the address has no house number or no state."""
+    toks = [t.strip() for t in (addr or "").split(",") if t.strip()]
+    while toks and (toks[-1].casefold() in L.COUNTRY_TOKENS or re.fullmatch(r"[0-9]{4,6}", toks[-1])):
+        toks.pop()
+    if not toks:
+        return ""
+    first = toks[0]
+    rest = toks[1:]
+    if re.fullmatch(r"\d+[A-Za-z]?", first) and rest:
+        first, rest = first + " " + rest[0], rest[1:]
+    m = re.match(r"^(\d+[A-Za-z]?)\s+(.+)$", first)
+    if not m:
+        return ""
+    state = ""
+    for t in [first] + rest:
+        tt = re.sub(r"\s*\d{5}(?:-\d{4})?$", "", t).strip()
+        w = tt.split()
+        for cand in (" ".join(w[-1:]), " ".join(w[-2:]), " ".join(w[-3:]), tt):
+            if cand.upper() in _STATE_BY_ABBR and (len(cand) == 2 and cand.isupper() or cand == tt):
+                state = _STATE_BY_ABBR[cand.upper()]
+            elif cand.casefold() in L.US_STATES and t is not first:
+                state = cand.casefold()
+    if not state:
+        return ""
+    street = " ".join(_STREET_ABBR.get(x, x) for x in _plain(m.group(2)))
+    return f"{m.group(1).lower()} | {street} | {state}"
+
+
 def tokens(*texts: str, drop: set[str]) -> set[str]:
     out = set()
     for t in texts:
@@ -64,15 +95,20 @@ def tokens(*texts: str, drop: set[str]) -> set[str]:
 
 
 def build_checks(epoch_out: pd.DataFrame, atlas_out: pd.DataFrame, ep: pd.DataFrame, atl: pd.DataFrame, counts: pd.DataFrame, checked_at: str,
-                 v_table: Path | None, v_date: str | None, report: list[str]):
+                 v_table: Path | None, v_date: str | None, report: list[str], disputed: dict[str, str] | None = None):
     """ep / atl: the working frames of dc_build (raw fields + record_id, iso3_source, coord_precision, unit_id, _gid, _place, _county)."""
     n_by_iso = atlas_out.groupby("iso3_source").size().to_dict()
     atl = atl.copy()
     atl["akey"] = atl["address"].map(addr_key)
     byakey: dict[str, list] = {}
+    byus: dict[str, list] = {}
     for r in atl.itertuples():
         if r.address.strip():
             byakey.setdefault(r.akey, []).append(r)
+            if r.iso3_source == "USA":
+                k = us_key(r.address)
+                if k:
+                    byus.setdefault(k, []).append(r)
     rows, review_rows, notes = [], [], []
     n = dict(strong=0, zero=0, cand=0, rest=0)
     for _, e in ep.reset_index(drop=True).iterrows():
@@ -80,6 +116,11 @@ def build_checks(epoch_out: pd.DataFrame, atlas_out: pd.DataFrame, ep: pd.DataFr
         status, ref, cands = "not_checked", "", []
         key = addr_key(e["Address"]) if e["Address"].strip() else ""
         strong = [r for r in byakey.get(key, []) if r.iso3_source == iso] if key else []
+        if iso == "USA" and e["Address"].strip():
+            uk = us_key(e["Address"])
+            for r in (byus.get(uk, []) if uk else []):
+                if r not in strong:
+                    strong.append(r)
         if strong:
             status, ref = "found", ";".join(r.record_id for r in strong)
             n["strong"] += 1
@@ -89,7 +130,7 @@ def build_checks(epoch_out: pd.DataFrame, atlas_out: pd.DataFrame, ep: pd.DataFr
         else:
             cands = _candidates(e, atl)
             n["cand" if cands else "rest"] += 1
-        rows.append(dict(record_id=rid, channel=CHANNEL, status=status, ref=ref, checked_at=checked_at, checked_by=SCRIPT, search_method=SEARCH_METHOD))
+        rows.append(dict(record_id=rid, channel=CHANNEL, status=status, ref=ref, checked_at=checked_at, checked_by=SCRIPT, search_method=SEARCH_METHOD, note=""))
         review_rows.append(dict(epoch_record_id=rid, name=e["Name"], owner=e["Owner"], country=e["Country"], address=e["Address"], script_status=status,
                                 n_candidates=len(cands),
                                 candidates="\n".join(f"{c.record_id} | {c.name_or_title} | {c.primary_actor} | {c.address or '(no address)'} | {c.source_urls[:200]}" for c in cands[:40]) + (f"\n... and {len(cands) - 40} more" if len(cands) > 40 else ""),
@@ -97,7 +138,7 @@ def build_checks(epoch_out: pd.DataFrame, atlas_out: pd.DataFrame, ep: pd.DataFr
     checks, review = pd.DataFrame(rows), pd.DataFrame(review_rows)
     notes.append(f"- strong key found: {n['strong']}; country with 0 Atlas records -> not_found: {n['zero']}; rows with candidates (for V): {n['cand']}; rest not_checked: {n['rest']}")
     if v_table is not None:
-        checks, vnotes = apply_v_table(checks, review, v_table, v_date, set(atlas_out["record_id"]))
+        checks, vnotes = apply_v_table(checks, review, v_table, v_date, set(atlas_out["record_id"]), disputed or {}, checked_at)
         notes += vnotes
     else:
         notes.append("- V's table not given: cells with candidates stay `not_checked`; the table is written to review_atlas_dcp.xlsx")
@@ -117,7 +158,7 @@ def _candidates(e, atl: pd.DataFrame):
     return [c for c in cands.itertuples() if et & tokens(c.name_or_title, c.primary_actor, drop=drop)]
 
 
-def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path, v_date: str, atlas_ids: set[str]):
+def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path, v_date: str, atlas_ids: set[str], disputed: dict[str, str], built_at: str):
     import openpyxl
     wb = openpyxl.load_workbook(path, data_only=True)
     ws = wb.active
@@ -140,15 +181,27 @@ def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path, v_date
     n_found = n_nf = 0
     for r in review.itertuples():
         verdict, matched = vt[r.epoch_record_id]
-        if r.n_candidates == 0 or r.script_status != "not_checked":
-            if verdict and ((verdict == "found") != (r.script_status == "found")) and r.script_status in ("found", "not_found"):
-                notes.append(f"- V's verdict {verdict!r} differs from the script cell for {r.epoch_record_id} ({r.script_status}); the script cell is kept")
+        if r.script_status != "not_checked":
+            if r.script_status == "found" and verdict:
+                strong_ids = set(checks.at[r.epoch_record_id, "ref"].split(";"))
+                v_ids = {x.strip() for x in re.split(r"[;,\s]+", matched) if x.strip()}
+                if verdict != "found" or (v_ids and v_ids != strong_ids):
+                    msg = (f"V table verdict: {verdict}" + (f" ({matched})" if matched else "") + "; the strong key (script) takes precedence")
+                    if r.epoch_record_id in disputed:
+                        msg += f"; the independent check disputed the V cell: {disputed[r.epoch_record_id]}"
+                    notes.append(f"- {r.epoch_record_id}: {msg}")
+                else:
+                    msg = f"V table verdict: found" + (f" ({matched})" if matched else "") + "; the same cell is found by the strong key (script decides)"
+                checks.at[r.epoch_record_id, "note"] = msg
+            elif verdict and r.script_status == "not_found" and verdict != "not_found":
+                notes.append(f"- V's verdict {verdict!r} differs from the script cell for {r.epoch_record_id} (not_found); the script cell is kept")
             continue
         if verdict == "unsure":
             unsure.append(r.epoch_record_id)
             continue
         if verdict == "":
-            empty.append(r.epoch_record_id)              # no verdict = the cell stays not_checked (not a stop)
+            if r.n_candidates > 0:
+                empty.append(r.epoch_record_id)          # candidates but no verdict = the cell stays not_checked (not a stop)
             continue
         if verdict not in ("found", "not_found"):
             raise L.BuildStop(f"V's table: verdict {verdict!r} for {r.epoch_record_id} is not found / not_found / unsure")
@@ -169,6 +222,12 @@ def apply_v_table(checks: pd.DataFrame, review: pd.DataFrame, path: Path, v_date
             checks.loc[r.epoch_record_id, ["status", "ref"]] = ["not_found", ""]
             n_nf += 1
         checks.loc[r.epoch_record_id, ["checked_by", "checked_at"]] = ["human:V", when]
+    for rid, reason in disputed.items():
+        if rid in checks.index and checks.at[rid, "checked_by"] == "human:V":
+            was = f"{checks.at[rid, 'status']} {checks.at[rid, 'ref']}".strip()
+            checks.loc[rid, ["status", "ref", "checked_by", "checked_at"]] = ["not_checked", "", SCRIPT, built_at]
+            checks.at[rid, "note"] = f"disputed by the independent check, not decided by a strong key: {reason}; V table verdict was: {was}"
+            notes.append(f"- {rid}: V cell ({was}) disputed by the independent check and not decided by a strong key -> not_checked")
     if unsure:
         raise L.BuildStop(f"V's table still has `unsure` for {len(unsure)} site(s): {unsure[:10]}")
     notes.append(f"- V's table applied ({path.name}, checked_at {when}): found {n_found}, not_found {n_nf}, empty verdict (stays not_checked) {len(empty)}: {', '.join(empty)}; checked_by human:V")
