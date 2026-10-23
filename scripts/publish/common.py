@@ -39,11 +39,12 @@ P9_VALUE_REGEX = re.compile(
     re.IGNORECASE,
 )
 # G3b: P9, power fields of a data-center (dc) layer. A field name that looks like a power quantity is
-# allowed only if it is on the ADR section 6.2 list; at most one layer of the domain carries them.
+# allowed only if it is on the ADR section 6.2 list. New edition (SPEC_DC r6, 23.10): the numeric power_mw is in at
+# most one layer of a release; the class field power_class (Atlas size class) has no such limit.
 P9_POWER_REGEX = re.compile(r"(?:^|_)(?:mw|kw|hp)(?:_|$)|power|capacity|generator|load", re.IGNORECASE)
 P9_POWER_ALLOWED = frozenset({
     "power_mw", "power_basis", "power_status", "power_status_reason", "power_value_original",
-    "power_unit_original", "power_ref", "power_source_date", "power_checked_by",
+    "power_unit_original", "power_ref", "power_source_date", "power_checked_by", "power_class",
 })
 CYRILLIC_REGEX = re.compile(r"[Ѐ-ӿ]")
 DOI_REGEX = re.compile(r"^10\.5281/zenodo\.\d+$")

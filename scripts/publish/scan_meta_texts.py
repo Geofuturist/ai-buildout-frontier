@@ -5,7 +5,7 @@ Run command (from the repository root, Windows):
 
 Looks for: British spelling (licence, kilometre), [RES], {placeholders} outside citation templates,
 "0 more", and the wrong spellings "License Ouverte" / "Open License" / "open_license".
-The names "Licence Ouverte" / "Open Licence", the code open_licence and script names (script:06_licences.py) are allowed. Nothing is changed.
+The names "Licence Ouverte" / "Open Licence" / "International Licence" (the Atlas title of CC BY 4.0), the code open_licence and script names (script:06_licences.py) are allowed; so is the {n} of display.unit_card_line (filled in by the site). Nothing is changed.
 """
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ import re
 import sys
 from pathlib import Path
 
-ALLOWED = re.compile(r"open_licence|Licence\s+Ouverte|Open\s+Licence|https?://\S+|script:\S+", re.I)  # names, the code, URLs and script names may keep the British spelling
+ALLOWED = re.compile(r"open_licence|Licence\s+Ouverte|Open\s+Licence|International\s+Licence|https?://\S+|script:\S+", re.I)  # names, the code, URLs and script names may keep the British spelling; "International Licence" is the Atlas title of CC BY 4.0, quoted in rights_basis (abf-dc)
 CHECKS = [
     ("licence (British spelling)", re.compile(r"licen[c]e", re.I), True),
     ("kilometre", re.compile(r"kilomet(re|res)\b", re.I), False),
@@ -53,7 +53,7 @@ def main(argv: list[str]) -> int:
                     if rx.search(cleaned if use_cleaned else flat):
                         print(f"FOUND {label}: {f.name} {path}: ...{flat[:120]}...")
                         total += 1
-                if "citation" not in path and PLACEHOLDER.search(flat):
+                if "citation" not in path and not path.endswith("display.unit_card_line") and PLACEHOLDER.search(flat):  # {n}: filled in by the site (abf-dc)
                     print(f"FOUND placeholder: {f.name} {path}: ...{flat[:120]}...")
                     total += 1
             print(f"checked {f.name}")

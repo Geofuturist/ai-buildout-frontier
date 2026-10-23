@@ -27,6 +27,7 @@ import pyogrio
 
 import tilesio
 from common import (
+    CYRILLIC_REGEX,
     GateError,
     P9_VALUE_FIELDS,
     Report,
@@ -42,7 +43,7 @@ from hifld_rights import RightsResult, check_hifld_rights
 
 log = logging.getLogger("publish.layers")
 
-BUILD_ONLY_KEYS = ("fill_na_covered", "min")  # in the yaml for the build, never published
+BUILD_ONLY_KEYS = ("fill_na_covered", "min", "allowed_values")  # in the yaml for the build, never published
 OPTIONAL_REFS = {"source_workbook", "geometry_calc"}            # input_refs that may be absent on this machine
 
 SERVICE_FIELDS = {
@@ -279,6 +280,19 @@ def full_fields(cfg: dict[str, Any], adm: bool) -> list[dict[str, Any]]:
     if clash:
         raise GateError("G2", f"{cfg['layer_id']}: fields[] must not declare service fields {clash}; the build adds them")
     service = [copy.deepcopy(SERVICE_FIELDS[k]) for k in service_names]
+    # frame.service_overrides: texts written by [RES] for a layer whose service fields mean something else
+    # (the world count layer: coverage_status is covered for every unit, coverage_note says why a count is 0)
+    overrides = cfg.get("frame", {}).get("service_overrides") or {}
+    unknown_ov = sorted(set(overrides) - set(service_names))
+    if unknown_ov:
+        raise GateError("G2", f"{cfg['layer_id']}: frame.service_overrides names unknown service fields {unknown_ov}")
+    for f in service:
+        ov = overrides.get(f["name"])
+        if ov:
+            bad_keys = sorted(set(ov) - {"description", "null_meaning", "nullable"})
+            if bad_keys:
+                raise GateError("G2", f"{cfg['layer_id']}: frame.service_overrides.{f['name']} has unknown keys {bad_keys}")
+            f.update(copy.deepcopy(ov))
     if cfg.get("_name_corrected"):
         for f in service:
             if f["name"] == "name":
@@ -384,9 +398,15 @@ def fill_citation(text: str, ctx: BuildContext, title: str, layer_id: str) -> st
     return text
 
 
-def coverage_iso3(cfg: dict[str, Any], frame_iso3: str | None) -> list[str]:
-    """coverage.iso3: countries of the layer (SPEC_META 6 item 23). ADM layers default to the frame country."""
+def coverage_iso3(cfg: dict[str, Any], frame_iso3: str | None, computed: list[str] | None = None) -> list[str]:
+    """coverage.iso3: countries of the layer (SPEC_META 6 item 23). ADM layers default to the frame country.
+
+    A world layer (coverage.iso3_from in the yaml) gets the codes computed from its own data: the sorted
+    distinct values of a column (point layers) or the ISO3 of all frame units (the count layer).
+    """
     value = cfg["coverage"].get("iso3")
+    if value is None and computed:
+        value = sorted(computed)
     if value is None and frame_iso3:
         value = [frame_iso3]
     if not value or not isinstance(value, list) or not all(re.fullmatch(r"[A-Z]{3}", str(v)) for v in value):
@@ -585,16 +605,22 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     layer_id = cfg["layer_id"]
     report = ctx.report
     frame_cfg = cfg["frame"]
-    iso3, level = frame_cfg["iso3"], frame_cfg["level"]
+    world = bool(frame_cfg.get("world"))   # abf-dc: all countries of display/adm0.parquet, no single-country frame
+    if not world and frame_cfg.get("level") == "ADM0":
+        raise GateError("G2", f"{layer_id}: a layer of level ADM0 needs frame.world: true (all countries of the boundaries release)")
+    iso3, level = (None if world else frame_cfg["iso3"]), frame_cfg["level"]
+    if world and level != "ADM0":
+        raise GateError("G2", f"{layer_id}: frame.world is only defined for level ADM0, got {level}")
     log.info("== %s", layer_id)
 
-    if not ctx.boundaries.verified(iso3, level):
+    if not world and not ctx.boundaries.verified(iso3, level):
         raise GateError("G12", f"{layer_id}: boundary registry row {iso3} {level} is not verified=true")
 
     table_path = resolve_input(cfg, ctx)
     hash_input(ctx, table_path)
     key = cfg["input"]["key"]
-    df = pd.read_csv(table_path, dtype={key: str})
+    df = pd.read_csv(table_path, dtype={key: str}, keep_default_na=False, na_values=[""]) if world \
+        else pd.read_csv(table_path, dtype={key: str})
     df = df.rename(columns=cfg["input"].get("rename", {}))
     key = cfg["input"].get("rename", {}).get(key, key)
     for d in cfg["input"].get("derive", []):
@@ -603,51 +629,59 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         df[d["name"]] = df[d["columns"]].sum(axis=1)
     # The key column holds either the national code (US: 5-digit FIPS) or the full unit_id (France).
     code_regex = str(frame_cfg.get("code_regex", r"\d{5}"))
-    unit_prefix = f"{iso3}-{level.replace('ADM', '')}-"
+    prefix = "" if world else f"{iso3}-{level.replace('ADM', '')}-"
+    unit_prefix = prefix
     if key not in df.columns:
         raise GateError("G2", f"{layer_id}: key column {key} is not in the input table; columns: {list(df.columns)[:30]}")
     if df[key].isna().any():
         raise GateError("G4", f"{layer_id}: key {key} is empty in {int(df[key].isna().sum())} rows")
     df[key] = df[key].astype(str).str.strip()
-    full_ids = df[key].str.startswith(unit_prefix)
-    if full_ids.any() and not full_ids.all():
-        raise GateError("G4", f"{layer_id}: key {key} mixes full unit_id and national codes")
-    codes = df[key].str[len(unit_prefix):] if full_ids.all() else df[key]
-    if not codes.str.fullmatch(code_regex).all():
-        bad_codes = df.loc[~codes.str.fullmatch(code_regex), key].tolist()[:5]
-        raise GateError("G4", f"{layer_id}: key {key} must match {code_regex} for every row, bad: {bad_codes}")
+    if world:
+        codes = df[key]            # the key is the unit_id of display/adm0.parquet as it is
+    else:
+        full_ids = df[key].str.startswith(unit_prefix)
+        if full_ids.any() and not full_ids.all():
+            raise GateError("G4", f"{layer_id}: key {key} mixes full unit_id and national codes")
+        codes = df[key].str[len(unit_prefix):] if full_ids.all() else df[key]
+        if not codes.str.fullmatch(code_regex).all():
+            bad_codes = df.loc[~codes.str.fullmatch(code_regex), key].tolist()[:5]
+            raise GateError("G4", f"{layer_id}: key {key} must match {code_regex} for every row, bad: {bad_codes}")
     if df[key].duplicated().any():
         raise GateError("G4", f"{layer_id}: duplicated keys in the input table: "
                               f"{df.loc[df[key].duplicated(), key].tolist()[:5]}")
     df[key] = codes
 
     # frame: calc geometry (analysis) + names (display)
-    calc_path = ctx.boundaries.analysis_path(iso3, level, optional=True)
+    calc_path = None if world else ctx.boundaries.analysis_path(iso3, level, optional=True)
     calc = ctx.boundaries.read(f"analysis/{calc_path.name}") if calc_path else None
     disp_all = ctx.boundaries.read(f"display/{level.lower()}.parquet")
-    prefix = f"{iso3}-{level.replace('ADM', '')}-"
-    disp = disp_all[disp_all["unit_id"].astype(str).str.startswith(prefix)].copy()
+    disp = disp_all.copy() if world else disp_all[disp_all["unit_id"].astype(str).str.startswith(prefix)].copy()
     if calc is None:
-        report.section(f"Geometry ({layer_id})", [f"- no analysis file for {iso3} {level}: the display geometry of the boundaries release is used for the GeoParquet and GeoJSON files"])
+        where = "all countries" if world else f"{iso3} {level}"
+        report.section(f"Geometry ({layer_id})", [f"- no analysis file for {where}: the display geometry of the boundaries release is used for the GeoParquet and GeoJSON files"])
         calc = disp.copy()
-    calc = calc[calc["unit_id"].astype(str).str.startswith(prefix)].copy()
+    calc = calc if world else calc[calc["unit_id"].astype(str).str.startswith(prefix)].copy()
     if set(calc["unit_id"]) != set(disp["unit_id"]):
         raise GateError("G4", f"{layer_id}: analysis and display files hold different units "
                               f"({len(calc)} vs {len(disp)})")
     if disp["unit_id"].duplicated().any():
         raise GateError("G4", f"{layer_id}: duplicated unit_id in the boundaries display file")
     frame = disp[["unit_id", "name"]].sort_values("unit_id").reset_index(drop=True)
-    n_renamed = apply_name_overrides(frame, prefix, ctx, layer_id)
+    n_renamed = 0 if world else apply_name_overrides(frame, prefix, ctx, layer_id)
     if n_renamed:
         # the corrected names are part of the published layer: say so in verification.method and in the field text
         cfg = copy.deepcopy(cfg)
         cfg["verification"]["method"] = (" ".join(str(cfg["verification"]["method"]).split()) + " "
                                          + NAME_OVERRIDE_PHRASE.format(n=n_renamed))
         cfg["_name_corrected"] = True
-    frame["fips"] = frame["unit_id"].str[len(prefix):]
-    if not frame["fips"].str.fullmatch(code_regex).all():
-        raise GateError("G4", f"{layer_id}: unit_id of the frame does not end with a code matching {code_regex}")
+    if not world:
+        frame["fips"] = frame["unit_id"].str[len(prefix):]
+        if not frame["fips"].str.fullmatch(code_regex).all():
+            raise GateError("G4", f"{layer_id}: unit_id of the frame does not end with a code matching {code_regex}")
     n_frame = len(frame)
+    expected_frame = frame_cfg.get("expected_units")
+    if expected_frame is not None and n_frame != int(expected_frame):
+        raise GateError("G4", f"{layer_id}: the frame has {n_frame} units, expected {expected_frame}")
 
     df["unit_id"] = prefix + df[key]
     unknown = sorted(set(df["unit_id"]) - set(frame["unit_id"]))
@@ -680,6 +714,10 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         if note_col and note_col in nc_rows:
             row_notes = {r["unit_id"]: " ".join(str(r[note_col]).split()) for _, r in nc_rows.iterrows()
                          if pd.notna(r[note_col]) and str(r[note_col]).strip()}
+        if frame_cfg.get("keep_covered_notes") and note_col and note_col in df.columns:
+            # world count layer: a covered unit may carry a note (why its count is 0); RES text in service_overrides
+            row_notes.update({r["unit_id"]: " ".join(str(r[note_col]).split()) for _, r in df.iterrows()
+                              if r[cov_col] == "covered" and pd.notna(r[note_col]) and str(r[note_col]).strip()})
         declared_nc = set(nc_rows["unit_id"])
         report.section("Units marked not_covered by the input table", [
             f"- {layer_id}: {len(nc_rows)} units: {sorted(declared_nc)[:12]}"] + [f"  - note: {n}" for n in notes])
@@ -712,9 +750,10 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     outside_note = frame_cfg.get("outside_note") or OUTSIDE_NOTE_DEFAULTS.get(iso3)
     n_generic = 0
     notes_col: list[str | None] = []
+    keep_notes = bool(frame_cfg.get("keep_covered_notes"))
     for uid, status in zip(table["unit_id"], table["coverage_status"]):
         if status == "covered":
-            notes_col.append(None)
+            notes_col.append(row_notes.get(uid) if keep_notes else None)
         elif uid in row_notes:
             notes_col.append(row_notes[uid])
         elif outside_note and uid not in declared_nc:
@@ -744,8 +783,10 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         if n_null and not covered_allowed:
             raise GateError("G4", f"{layer_id}: {spec['name']} is empty in {n_null} covered units, "
                                   f"but null_meaning.covered is null")
-    if table.loc[~nc, "coverage_note"].notna().any() or table.loc[nc, "coverage_note"].isna().any():
+    if table.loc[nc, "coverage_note"].isna().any() or (not keep_notes and table.loc[~nc, "coverage_note"].notna().any()):
         raise GateError("G4", f"{layer_id}: coverage_note must be empty for covered units and given for every not_covered unit")
+    check_allowed_values(layer_id, table, cfg["fields"])
+    gate_g7_table(cfg, table, report)
     fields = full_fields(cfg, adm=True)
     gate_field_names(layer_id, [f["name"] for f in fields])
     for f in fields:
@@ -788,6 +829,7 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         extra_refs["geometry_calc"] = calc_path
     if cfg.get("source_archive"):
         extra_refs["archive"] = resolve_path(cfg["source_archive"]["path"])
+    extra_refs.update(named_inputs(cfg, ctx))
     tvs_cfg = cfg.get("checks", {}).get("totals_vs_source")
     if tvs_cfg and resolve_path(tvs_cfg["source_file"]).exists():
         extra_refs["source_workbook"] = resolve_path(tvs_cfg["source_file"])
@@ -796,8 +838,9 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     gate_licences(layer_id, sources)
     checks.append({"id": "input_sha256", "description":
                    "SHA-256 of every input file was computed at the start and again at the end of the build; they match."})
+    frame_what = f"{n_frame:,} countries and territories" if world else f"{n_frame:,} {iso3} {level} units"
     checks.append({"id": "frame_complete", "description":
-                   f"The file has exactly one row for each of the {n_frame:,} {iso3} {level} units of the boundaries release; "
+                   f"The file has exactly one row for each of the {frame_what} of the boundaries release; "
                    f"{int((~nc).sum()):,} are covered and {int(nc.sum()):,} are not_covered with empty values."})
     checks.append({"id": "unit_id_in_boundaries", "description":
                    "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."})
@@ -813,23 +856,33 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     checks.append({"id": "sum_matches_build", "description":
                    "The sum of every numeric column read back from the published CSV equals the sum in the input table."})
     run_layer_checks(cfg, ctx, df, table, checks, report)
+    if cfg["domain"] == "dc":
+        apply_g3b(cfg, [f["name"] for f in fields], table, checks)
+    check_expected_counts(cfg, ctx, table, checks, report)
+    check_display_keys(cfg, display, [f["name"] for f in fields], table)
 
     hifld_gap = apply_rights_check(cfg, ctx, checks, sources, out, report)
 
     known_gaps = list(cfg["coverage"].get("known_gaps", []))
     if hifld_gap:
         known_gaps.append(hifld_gap)
+    if world:
+        frame_iso3_codes = None
+        adm0_iso3 = ctx.boundaries.read("display/adm0.parquet")
+        iso_col = "iso3" if "iso3" in adm0_iso3.columns else "unit_id"
+        frame_iso3_codes = sorted(set(adm0_iso3.loc[adm0_iso3["unit_id"].isin(frame["unit_id"]), iso_col].astype(str)))
     coverage = {
         "geography": cfg["coverage"]["geography"],
-        "iso3": coverage_iso3(cfg, iso3),
-        "frame": {"iso3": iso3, "level": level},
+        "iso3": coverage_iso3(cfg, iso3, frame_iso3_codes if world else None),
+        "frame": None if world else {"iso3": iso3, "level": level},
         "n_units_frame": n_frame,
         "n_units_covered": int((~nc).sum()),
         "n_records": int(len(table)),
         "known_gaps": known_gaps,
     }
     archives = collect_archives(cfg, ctx, out, sources)
-    meta = assemble_meta(cfg, ctx, sources, fields, coverage, checks, display, [])
+    meta_extra, plan_extra = build_layer_extras(cfg, ctx, out, table, checks, report)
+    meta = assemble_meta(cfg, ctx, sources, fields, coverage, checks, display, meta_extra)
     meta_path = out / f"{layer_id}.meta.json"
 
     if hash_input(ctx, table_path)["sha256"] != sha256_file(table_path):
@@ -845,7 +898,7 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         "args": tiles_cfg.get("extra_args", ["--detect-shared-borders", "--no-tile-size-limit",
                                              "--no-feature-limit", "--simplify-only-low-zooms"]),
     }
-    return LayerOutput(layer_id, meta, meta_path, files, tile_in, build, bbox, archives, [],
+    return LayerOutput(layer_id, meta, meta_path, files, tile_in, build, bbox, archives, plan_extra,
                        cfg["title"], cfg["domain"], cfg["level"], tile_fields, layer_id, "polygon", tiles_cfg)
 
 
@@ -1191,48 +1244,96 @@ def apply_rights_check(cfg, ctx, checks, sources, out, report) -> str | None:  #
     return result.known_gap
 
 
-def gate_reference_csv(cfg, ctx, report) -> None:  # noqa: ANN001
-    """Gates for a CSV that is published next to the layer as a reference file (`source_archive` with kind: reference_csv).
+def archive_entries(cfg: dict[str, Any]) -> list[dict[str, Any]]:
+    """Archives published next to the layer: the single `source_archive` and/or the list `source_archives`.
 
-    G3: column names against the P9 pattern. G7: no Cyrillic in the header or in any value. G3 (text part): P9
-    words in the `evidence_url` values and in the other text columns are listed in the report, not a stop.
+    Entry keys: path, publish_as, description, kind (copy or reference_csv), ref_name (name for input_refs of
+    sources[]), g7_skip_columns (reference_csv only: columns that hold source values as they are).
     """
-    arch = cfg.get("source_archive") or {}
-    if arch.get("kind") != "reference_csv":
-        return
+    entries: list[dict[str, Any]] = []
+    if cfg.get("source_archive"):
+        entries.append(cfg["source_archive"])
+    entries += list(cfg.get("source_archives") or [])
+    names = [e.get("publish_as") or Path(str(e["path"]).replace("\\", "/")).name for e in entries]
+    dup = sorted({n for n in names if names.count(n) > 1})
+    if dup:
+        raise GateError("G2", f"{cfg['layer_id']}: two archives are published under the same name: {dup}")
+    for e in entries:
+        if e.get("kind", "copy") not in ("copy", "reference_csv"):
+            raise GateError("G2", f"{cfg['layer_id']}: archive {e.get('path')}: unknown kind {e.get('kind')!r}")
+    return entries
+
+
+def named_inputs(cfg: dict[str, Any], ctx: BuildContext) -> dict[str, Path]:
+    """Named input files for input_refs of sources[]: `input.files` (name -> path) and the archives with `ref_name`."""
+    refs: dict[str, Path] = {}
+    for name, value in (cfg["input"].get("files") or {}).items():
+        path = resolve_path(value)
+        if not path.exists():
+            raise GateError("G6", f"{cfg['layer_id']}: input file {name} not found: {path}")
+        refs[name] = path
+    for e in cfg.get("source_archives") or []:
+        if e.get("ref_name"):
+            path = resolve_path(e["path"])
+            if not path.exists():
+                raise GateError("G6", f"{cfg['layer_id']}: source archive not found: {path}")
+            refs[e["ref_name"]] = path
+    return refs
+
+
+def gate_reference_csv(cfg, ctx, report) -> None:  # noqa: ANN001
+    """Gates for a CSV that is published next to the layer as a reference file (an archive with kind: reference_csv).
+
+    G3: column names against the P9 pattern. G7: no Cyrillic in the header or in any value, except the columns
+    listed in the entry's `g7_skip_columns` (values of the source as they are; their cells are counted in the
+    report). G3 (text part): P9 words in the `evidence_url` values and in the other text columns are listed in
+    the report, not a stop.
+    """
     layer_id = cfg["layer_id"]
-    path = resolve_path(arch["path"])
-    if not path.exists():
-        raise GateError("G6", f"{layer_id}: reference file not found: {path}")
-    hash_input(ctx, path)  # G6: re-hashed at the end of the build
-    df = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
-    gate_field_names(f"{layer_id} (reference file {path.name})", list(df.columns))
-    cyr = find_cyrillic({"columns": list(df.columns), **{c: list(df[c].unique()) for c in df.columns}}, ())
-    if cyr:
-        raise GateError("G7", f"{layer_id}: Cyrillic in the reference file {path.name}: {cyr[:8]}")
-    lines = [f"- {path.name}: {len(df)} rows, columns: {', '.join(df.columns)}"]
-    for col in df.columns:
-        if col == "evidence_url" or col in P9_VALUE_FIELDS:
-            found = p9_value_hits([v for v in df[col].unique() if v])
-            if found:
-                lines.append(f"- P9 words in {col} ({len(found)} values, not a stop): {found[:10]}")
-    report.section(f"Reference file ({layer_id})", lines)
+    for arch in archive_entries(cfg):
+        if arch.get("kind") != "reference_csv":
+            continue
+        path = resolve_path(arch["path"])
+        if not path.exists():
+            raise GateError("G6", f"{layer_id}: reference file not found: {path}")
+        hash_input(ctx, path)  # G6: re-hashed at the end of the build
+        df = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        gate_field_names(f"{layer_id} (reference file {path.name})", list(df.columns))
+        skip = list(arch.get("g7_skip_columns") or [])
+        absent = [c for c in skip if c not in df.columns]
+        if absent:
+            raise GateError("G2", f"{layer_id}: {path.name}: g7_skip_columns names columns that are not in the file: {absent}")
+        strict = {"columns": list(df.columns), **{c: list(df[c].unique()) for c in df.columns if c not in skip}}
+        cyr = find_cyrillic(strict, ())
+        if cyr:
+            raise GateError("G7", f"{layer_id}: Cyrillic in the reference file {path.name}: {cyr[:8]}")
+        lines = [f"- {path.name}: {len(df)} rows, columns: {', '.join(df.columns)}"]
+        for c in skip:
+            n = int(df[c].map(lambda v: bool(CYRILLIC_REGEX.search(v))).sum())
+            lines.append(f"- Cyrillic cells in {c} (source values, skipped by G7): {n}")
+        for col in df.columns:
+            if col == "evidence_url" or col in P9_VALUE_FIELDS:
+                found = p9_value_hits([v for v in df[col].unique() if v])
+                if found:
+                    lines.append(f"- P9 words in {col} ({len(found)} values, not a stop): {found[:10]}")
+        report.section(f"Reference file ({layer_id}: {path.name})", lines)
 
 
 def collect_archives(cfg, ctx, out, sources) -> list[dict[str, Any]]:  # noqa: ANN001
-    """Copy the source archive next to the release (sources/<name>) when configured."""
-    arch = cfg.get("source_archive")
+    """Copy the source archives next to the release (sources/<name>) when configured."""
     result: list[dict[str, Any]] = []
-    if arch:
+    for arch in archive_entries(cfg):
         src = resolve_path(arch["path"])
         if not src.exists():
             raise GateError("G6", f"{cfg['layer_id']}: source archive not found: {src}")
+        if arch is not cfg.get("source_archive"):
+            hash_input(ctx, src)      # list entries: re-hashed at the end of the build (G6)
         publish_name = arch.get("publish_as") or src.name
         dst = out / "sources" / publish_name
         dst.parent.mkdir(parents=True, exist_ok=True)
         if not dst.exists():
             shutil.copyfile(src, dst)
-        description = arch["description"]
+        description = " ".join(str(arch["description"]).split())
         if publish_name != src.name:
             description += f" Original file name: {src.name}."
         result.append({"file": dst, "description": description})
@@ -1241,6 +1342,278 @@ def collect_archives(cfg, ctx, out, sources) -> list[dict[str, Any]]:  # noqa: A
         for xml in sorted(xml_dir.glob("*.metadata.xml")):
             result.append({"file": xml, "description": "Dataset metadata read from the source archive (XML)."})
     return result
+
+
+# --------------------------------------------------------------------------- world layers (abf-dc)
+def adm0_codes(ctx: BuildContext) -> tuple[set[str], dict[str, str]]:
+    """Every country of display/adm0.parquet: ({unit_id}, {unit_id: iso3})."""
+    g = ctx.boundaries.read("display/adm0.parquet")
+    uid = g["unit_id"].astype(str)
+    iso = g["iso3"].astype(str) if "iso3" in g.columns else uid
+    return set(uid), dict(zip(uid, iso))
+
+
+def check_units_and_codes(cfg, ctx, table, prec_c, checks, report) -> None:  # noqa: ANN001
+    """unit_id by precision and ISO3 columns against the boundaries release (abf-dc, SPEC section 2.9 item 2).
+
+    yaml: unit_checks: [{precision: county, level: ADM2, iso3: USA}, {precision: none, level: ADM0}],
+    unit_empty_for: [city], iso3_columns: [iso3_source, iso3_frame, control_iso3].
+    """
+    layer_id = cfg["layer_id"]
+    rules = cfg.get("unit_checks") or []
+    iso_cols = cfg.get("iso3_columns") or []
+    empty_for = cfg.get("unit_empty_for") or []
+    if not (rules or iso_cols or empty_for):
+        return
+    uid_set, to_iso = adm0_codes(ctx)
+    iso_set = set(to_iso.values())
+    rid = table["record_id"].astype(str)
+    parts: list[str] = []
+    for rule in rules:
+        col, level = rule.get("column", "unit_id"), rule["level"]
+        sel = table[prec_c].astype(str) == str(rule["precision"])
+        vals = table.loc[sel, col].astype(object)
+        blank = vals.isna() | (vals.astype(str).str.strip() == "")
+        if blank.any():
+            raise GateError("G4", f"{layer_id}: {int(blank.sum())} records with {prec_c} {rule['precision']} have no {col}: "
+                                  f"{rid[sel][blank].tolist()[:5]}")
+        if level == "ADM0":
+            known = uid_set
+            what = "a country"
+        else:
+            if not ctx.boundaries.verified(rule["iso3"], level):
+                raise GateError("G12", f"{layer_id}: boundary registry row {rule['iso3']} {level} is not verified=true")
+            disp = ctx.boundaries.read(f"display/{level.lower()}.parquet")
+            known = set(disp["unit_id"].astype(str))
+            what = f"a {rule['iso3']} {level} unit"
+        unknown = sorted(set(vals.astype(str)) - known)
+        if unknown:
+            raise GateError("G4", f"{layer_id}: {len(unknown)} {col} values of records with {prec_c} {rule['precision']} "
+                                  f"are not in the boundaries release ({level}): {unknown[:5]}")
+        parts.append(f"{col} of a record with {prec_c} {rule['precision']} is {what} of the boundaries release")
+        if level == "ADM0" and "iso3_source" in table.columns:   # consistency: the country of the unit is the Atlas/Epoch country
+            diff = sel & (table[col].astype(str).map(to_iso) != table["iso3_source"].astype(str))
+            if diff.any():
+                report.warn(f"{layer_id}: {int(diff.sum())} records with {prec_c} {rule['precision']} have a {col} whose country "
+                            f"differs from iso3_source: {rid[diff].tolist()[:5]}")
+    for prec in empty_for:
+        sel = table[prec_c].astype(str) == str(prec)
+        filled = sel & table["unit_id"].notna() & (table["unit_id"].astype(str).str.strip() != "")
+        if filled.any():
+            raise GateError("G4", f"{layer_id}: {int(filled.sum())} records with {prec_c} {prec} have a unit_id, "
+                                  f"but a record with a point has none: {rid[filled].tolist()[:5]}")
+    if rules or empty_for:
+        text = "; ".join(parts + ([f"a record with {prec_c} {', '.join(empty_for)} has no unit_id"] if empty_for else []))
+        checks.append({"id": "unit_id_in_boundaries", "description":
+                       f"Every unit_id was looked up in the boundaries release: {text}."})
+    if iso_cols:
+        for c in iso_cols:
+            vals = table[c].dropna().astype(str)
+            vals = vals[vals.str.strip() != ""]
+            unknown = sorted(set(vals) - iso_set)
+            if unknown:
+                raise GateError("G4", f"{layer_id}: {len(unknown)} {c} values are not countries of the boundaries release: {unknown[:5]}")
+        checks.append({"id": "iso3_in_boundaries", "description":
+                       f"Every value of {', '.join(iso_cols)} is the ISO 3166 alpha-3 code of a country or territory of the boundaries release."})
+
+
+def check_allowed_values(layer_id, table, specs, checks=None) -> None:  # noqa: ANN001
+    """Fields with `allowed_values` in the yaml hold only those values (G4)."""
+    names = []
+    for s in specs:
+        allowed = s.get("allowed_values")
+        if allowed is None or s["name"] not in table.columns:
+            continue
+        vals = table[s["name"]].dropna().astype(str)
+        extra = sorted(set(vals) - {str(a) for a in allowed})
+        if extra:
+            raise GateError("G4", f"{layer_id}: {s['name']} has values outside {list(allowed)}: {extra[:8]}")
+        names.append(s["name"])
+    if names and checks is not None:
+        checks.append({"id": "listed_values_only", "description":
+                       f"The fields {', '.join(names)} hold only the values listed in their descriptions."})
+
+
+def check_field_formats(layer_id, table, specs) -> None:  # noqa: ANN001
+    """date and datetime fields hold what their type says (only for layers with check_field_formats: true)."""
+    patterns = {"date": r"\d{4}-\d{2}-\d{2}", "datetime": r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z"}
+    for s in specs:
+        rx = patterns.get(s["type"])
+        if rx is None or s["name"] not in table.columns:
+            continue
+        vals = table[s["name"]].dropna().astype(str)
+        bad = vals[~vals.str.fullmatch(rx)]
+        if len(bad):
+            raise GateError("G1", f"{layer_id}: {s['name']} is declared {s['type']} but holds {sorted(set(bad))[:3]}")
+
+
+def gate_g7_table(cfg, table, report) -> None:  # noqa: ANN001
+    """G7 for the values of a layer: our own columns hold no Cyrillic; the columns of `g7_source_value_fields`
+    hold values of the source as they are and are skipped (decision of [ARCH6] 23.10); their cells are counted."""
+    if "g7_source_value_fields" not in cfg:
+        return
+    layer_id = cfg["layer_id"]
+    skip = list(cfg["g7_source_value_fields"] or [])
+    unknown = [c for c in skip if c not in table.columns]
+    if unknown:
+        raise GateError("G2", f"{layer_id}: g7_source_value_fields names columns that are not in the layer: {unknown}")
+    bad: dict[str, list[str]] = {}
+    lines: list[str] = []
+    skipped_rows: set[int] = set()
+    for c in table.columns:
+        col = table[c]
+        if not (col.dtype == object or str(col.dtype).startswith("string")):
+            continue
+        mask = col.map(lambda v: isinstance(v, str) and bool(CYRILLIC_REGEX.search(v)))
+        n = int(mask.sum())
+        if not n:
+            continue
+        if c in skip:
+            lines.append(f"- {c}: {n} cells")
+            skipped_rows |= set(table.index[mask])
+        else:
+            bad[c] = table.loc[mask, "record_id" if "record_id" in table.columns else c].astype(str).tolist()[:5]
+    if bad:
+        raise GateError("G7", f"{layer_id}: Cyrillic in columns written by the project: {bad}")
+    report.section(f"Cyrillic in source values ({layer_id}; skipped by G7, decision of ARCH6 23.10)",
+                   lines + [f"- records with such cells: {len(skipped_rows)}"])
+
+
+def check_expected_counts(cfg, ctx, table, checks, report) -> None:  # noqa: ANN001
+    """Numbers stated in the public texts, recomputed from the data (yaml `expected_counts`).
+
+    Keys: rows, value_counts {column: {value: n}} ('(empty)' = missing; every value of the column must be listed),
+    value_counts_listed {column: {value: n}} (the same, but only the listed values are checked), nonempty_counts
+    {column: n} (rows where the column is not empty), distinct_counts {column: n} (different non-empty values),
+    sums {column: total}, zero_counts {column: n}. A difference is a warning in dev and a stop in final.
+    """
+    exp = cfg.get("expected_counts")
+    if not exp:
+        return
+    layer_id = cfg["layer_id"]
+    problems: list[str] = []
+    if "rows" in exp and len(table) != int(exp["rows"]):
+        problems.append(f"rows {len(table)} (texts: {exp['rows']})")
+    for col, want in (exp.get("value_counts") or {}).items():
+        have = table[col].astype(object).where(table[col].notna(), "(empty)").astype(str).value_counts().to_dict()
+        want = {str(k): int(v) for k, v in want.items()}
+        for k, v in want.items():
+            if have.get(k, 0) != v:
+                problems.append(f"{col} = {k}: {have.get(k, 0)} (texts: {v})")
+        rest = {k: v for k, v in have.items() if k not in want}
+        if rest:
+            problems.append(f"{col} has values that the texts do not state: {rest}")
+    for col, want in (exp.get("value_counts_listed") or {}).items():
+        have = table[col].astype(object).where(table[col].notna(), "(empty)").astype(str).value_counts().to_dict()
+        for k, v in want.items():
+            if have.get(str(k), 0) != int(v):
+                problems.append(f"{col} = {k}: {have.get(str(k), 0)} (texts: {v})")
+    for col, n_want in (exp.get("nonempty_counts") or {}).items():
+        n_have = int((table[col].notna() & (table[col].astype(str).str.strip() != "")).sum())
+        if n_have != int(n_want):
+            problems.append(f"non-empty {col}: {n_have} (texts: {n_want})")
+    for col, n_want in (exp.get("distinct_counts") or {}).items():
+        vals = table[col].dropna().astype(str)
+        n_have = int(vals[vals.str.strip() != ""].nunique())
+        if n_have != int(n_want):
+            problems.append(f"different values of {col}: {n_have} (texts: {n_want})")
+    for col, total in (exp.get("sums") or {}).items():
+        have_sum = float(pd.to_numeric(table[col], errors="coerce").sum())
+        if not np.isclose(have_sum, float(total)):
+            problems.append(f"sum of {col} {have_sum} (texts: {total})")
+    for col, n_zero in (exp.get("zero_counts") or {}).items():
+        have_zero = int((pd.to_numeric(table[col], errors="coerce") == 0).sum())
+        if have_zero != int(n_zero):
+            problems.append(f"zero values of {col}: {have_zero} (texts: {n_zero})")
+    if problems:
+        msg = f"{layer_id}: the data differ from the numbers of the public texts: " + "; ".join(problems)
+        if ctx.channel == "final":
+            raise GateError("G4", msg)
+        report.warn(msg + " (a warning in dev, a stop in final)")
+        return
+    stated = []
+    if "rows" in exp:
+        stated.append(f"the number of records ({int(exp['rows']):,})")
+    listed = list(exp.get("value_counts") or {}) + list(exp.get("value_counts_listed") or {})
+    if listed:
+        stated.append("the counts by " + ", ".join(dict.fromkeys(listed)))
+    if exp.get("nonempty_counts") or exp.get("distinct_counts"):
+        stated.append("the numbers of records and groups with " + ", ".join(list(exp.get("nonempty_counts") or {}) + list(exp.get("distinct_counts") or {})))
+    if exp.get("sums"):
+        stated.append("the totals of " + ", ".join(exp["sums"]))
+    if exp.get("zero_counts"):
+        stated.append("the number of zero values of " + ", ".join(exp["zero_counts"]))
+    checks.append({"id": "counts_match_texts", "description":
+                   "Recomputed from the published file and equal to the numbers in the texts of this layer: " + "; ".join(stated) + "."})
+
+
+def check_display_keys(cfg, display, names, table) -> None:  # noqa: ANN001
+    """display.size_field / size_breaks / size_classes / value_field refer to real fields and are in order."""
+    layer_id = cfg["layer_id"]
+    for key in ("size_field", "value_field"):
+        v = display.get(key)
+        if v is not None and v not in names:
+            raise GateError("G1", f"{layer_id}: display.{key} = {v} is not a field of the layer")
+    sb = display.get("size_breaks")
+    if sb is not None and any(b2 <= b1 for b1, b2 in zip(sb, sb[1:])):
+        raise GateError("G1", f"{layer_id}: display.size_breaks must increase, got {sb}")
+    sc = display.get("size_classes")
+    if sc is not None:
+        sf = display.get("size_field")
+        if not sf:
+            raise GateError("G1", f"{layer_id}: display.size_classes needs display.size_field")
+        present = set(table[sf].dropna().astype(str))
+        missing = sorted(present - {str(c) for c in sc})
+        if missing:
+            raise GateError("G1", f"{layer_id}: display.size_classes does not list the values {missing} of {sf}")
+
+
+def build_layer_extras(cfg, ctx, out, table, checks, report):  # noqa: ANN001
+    """Reference tables published at the root of the release as extra_files of the layer (checks.csv, groups.csv).
+
+    yaml extra_files: [{path, publish_as, description, unique_column, covers: {column, layer_column}}].
+    Returns (meta.extra_files entries, plan entries).
+    """
+    layer_id = cfg["layer_id"]
+    meta_extra: list[dict[str, Any]] = []
+    plan_extra: list[dict[str, Any]] = []
+    for it in cfg.get("extra_files") or []:
+        src = resolve_path(it["path"])
+        if not src.exists():
+            raise GateError("G6", f"{layer_id}: extra file not found: {src}")
+        name = it.get("publish_as") or src.name
+        if not name.lower().endswith(".csv"):
+            raise GateError("G2", f"{layer_id}: extra file {name}: only CSV files are supported")
+        hash_input(ctx, src)
+        df = pd.read_csv(src, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+        gate_field_names(f"{layer_id} (extra file {name})", list(df.columns))
+        cyr = find_cyrillic({"columns": list(df.columns), **{c: list(df[c].unique()) for c in df.columns}}, ())
+        if cyr:
+            raise GateError("G7", f"{layer_id}: Cyrillic in the extra file {name}: {cyr[:8]}")
+        uc = it.get("unique_column")
+        if uc and df[uc].duplicated().any():
+            raise GateError("G4", f"{layer_id}: {name}: {uc} is not unique: {df.loc[df[uc].duplicated(), uc].tolist()[:5]}")
+        cov = it.get("covers")
+        if cov:
+            a, b = set(df[cov["column"]]), set(table[cov["layer_column"]].astype(str))
+            if a != b:
+                raise GateError("G4", f"{layer_id}: {name} and the layer do not hold the same {cov['column']} values: "
+                                      f"only in the file {sorted(a - b)[:5]}, only in the layer {sorted(b - a)[:5]}")
+            checks.append({"id": f"{Path(name).stem}_covers_layer", "description":
+                           f"{name} has exactly one row for each of the {len(b):,} records of the layer."})
+        dst = out / name
+        shutil.copyfile(src, dst)
+        description = " ".join(str(it["description"]).split())
+        meta_extra.append({"file": name, "description": description})
+        plan_extra.append({"path": name, "description": description})
+        lines = [f"- {name}: {len(df)} rows, columns: {', '.join(df.columns)}"]
+        for col in df.columns:
+            if col == "evidence_url" or col in P9_VALUE_FIELDS:
+                found = p9_value_hits([v for v in df[col].unique() if v])
+                if found:
+                    lines.append(f"- P9 words in {col} ({len(found)} values, not a stop): {found[:10]}")
+        report.section(f"Extra file ({layer_id}: {name})", lines)
+    return meta_extra, plan_extra
 
 
 # --------------------------------------------------------------------------- line layer
@@ -1411,7 +1784,9 @@ def build_line_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
 def apply_g3b(cfg: dict[str, Any], names: list[str], table: pd.DataFrame, checks: list[dict[str, str]]) -> bool:
     """G3b for a layer of the domain dc: power-like fields only from the ADR 6.2 list, one basis per record.
 
-    Returns True if the layer carries power fields. A layer without them passes.
+    New edition (SPEC_DC r6 section 4 item 2): the numeric field power_mw may be in one layer of the release at most;
+    the class field power_class has no such limit. Returns True if the layer carries power_mw (the release-level
+    check counts these layers). A layer without power fields passes.
     """
     layer_id = cfg["layer_id"]
     bad, allowed = power_field_names(names)
@@ -1422,13 +1797,18 @@ def apply_g3b(cfg: dict[str, Any], names: list[str], table: pd.DataFrame, checks
         multi = basis[~basis.str.fullmatch(r"[a-z][a-z0-9_]*")]
         if len(multi):
             raise GateError("G3b", f"{layer_id}: power_basis must be one code per record, got {sorted(set(multi))[:5]}")
-    if allowed:
+    carries_mw = "power_mw" in allowed
+    if carries_mw:
         checks.append({"id": "power_fields_adr", "description":
                        f"Power fields of the layer ({', '.join(allowed)}) are on the ADR 6.2 list; each record has one power basis."})
+    elif allowed:
+        checks.append({"id": "power_class_adr", "description":
+                       f"Power fields of the layer ({', '.join(allowed)}) are on the ADR 6.2 list; the layer gives a size class, "
+                       f"not megawatts, and each record has one power basis."})
     else:
         checks.append({"id": "no_power_fields", "description":
                        "No field of the layer, of its files or of its tiles carries a power, capacity, generator or load value."})
-    return bool(allowed)
+    return carries_mw
 
 
 def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
@@ -1444,7 +1824,7 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     specs = cfg["fields"]
     names = [f["name"] for f in specs]
     str_cols = {f["name"]: str for f in specs if f["type"] == "string"}
-    raw = pd.read_csv(table_path, dtype=str_cols, keep_default_na=False, na_values=[""])
+    raw = pd.read_csv(table_path, dtype=str_cols, keep_default_na=False, na_values=[""], float_precision="round_trip")  # exact floats: no value changes in the 16th digit
     raw = raw.rename(columns=cfg["input"].get("rename", {}))
     missing = [n for n in names if n not in raw.columns]
     if missing:
@@ -1475,10 +1855,11 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         if c not in table.columns:
             raise GateError("G2", f"{layer_id}: geometry column {c} is not among the fields")
     lon, lat = pd.to_numeric(table[lon_c], errors="coerce"), pd.to_numeric(table[lat_c], errors="coerce")
-    none_prec = table[prec_c].astype(str) == "none"
+    nopoint = list(gcfg.get("precisions_without_point", ["none"]))   # abf-dc: county and none have no point
+    none_prec = table[prec_c].astype(str).isin(nopoint)
     has_xy = lon.notna() & lat.notna()
     if (none_prec & has_xy).any() or (~none_prec & ~has_xy).any():
-        raise GateError("G4", f"{layer_id}: coordinates and {prec_c} disagree: precision none must have empty "
+        raise GateError("G4", f"{layer_id}: coordinates and {prec_c} disagree: precision {', '.join(nopoint)} must have empty "
                               f"{lon_c}/{lat_c}, every other precision must have both")
     bad_xy = has_xy & ~lon.between(-180, 180) | has_xy & ~lat.between(-90, 90)
     if bad_xy.any():
@@ -1521,7 +1902,21 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         checks.append({"id": "points_inside_country", "description":
                        "Every point lies inside the bounding box of the country of the layer."})
     checks.append({"id": "coords_match_precision", "description":
-                   f"Records with {prec_c} none have no coordinates; every other record has a longitude and a latitude in range."})
+                   f"Records with {prec_c} {' or '.join(nopoint)} have no coordinates; every other record has a longitude and a latitude in range."})
+    check_units_and_codes(cfg, ctx, table, prec_c, checks, report)
+    check_allowed_values(layer_id, table, specs, checks)
+    if cfg.get("check_field_formats"):
+        check_field_formats(layer_id, table, specs)
+    gate_g7_table(cfg, table, report)
+    check_expected_counts(cfg, ctx, table, checks, report)
+    if "power_status" in table.columns:   # SPEC_DC section 2.4: P9 between layers is checked by the data build; here only the result
+        n_withheld = int((table["power_status"].astype(str) == "withheld").sum())
+        report.note(f"{layer_id}: records with power_status withheld (P9, other basis): {n_withheld}")
+        if n_withheld:
+            msg = f"{layer_id}: {n_withheld} records have power_status withheld (P9); the texts expect 0"
+            if ctx.channel == "final":
+                raise GateError("P9", msg)
+            report.warn(msg + " (a warning in dev, a stop in final)")
 
     # G10: every record carries its reference
     ref_field = cfg.get("ref_field", "ref")
@@ -1558,6 +1953,7 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         if bad_t:
             raise GateError("G3b", f"{layer_id}: tile fields look like power but are not on the ADR 6.2 list: {bad_t}")
     display["tile_fields"] = tile_fields
+    check_display_keys(cfg, display, names, table)
     tiles_cfg = cfg.get("tiles", {})
     tile_in = out / "_tiles_input" / f"{layer_id}.geojsonseq.gz"
     tilesio.write_geojsonseq_gz(with_geom, tile_in, tile_fields, ctx.tmp_dir)
@@ -1567,24 +1963,27 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     if gj_cols != names:
         raise GateError("G2", f"{layer_id}: geojson.gz properties {gj_cols} differ from fields[]")
 
-    sources = build_sources(cfg, ctx, table_path, {})
+    sources = build_sources(cfg, ctx, table_path, named_inputs(cfg, ctx))
     gate_licences(layer_id, sources)
     gate_reference_csv(cfg, ctx, report)
     archives = collect_archives(cfg, ctx, out, sources)
+    meta_extra, plan_extra = build_layer_extras(cfg, ctx, out, table, checks, report)
     n_no_point = int((~has_xy).sum())
     report.section(f"Point layer ({layer_id})", [
         f"- {len(table)} records, {int(has_xy.sum())} with a point, {n_no_point} without",
         f"- {prec_c}: {table[prec_c].value_counts().to_dict()}",
         f"- power fields present: {carries_power}",
     ])
+    iso3_from = cfg["coverage"].get("iso3_from")      # world layers: the countries that have records
+    computed_iso3 = sorted(set(table[iso3_from].dropna().astype(str)) - {""}) if iso3_from else None
     coverage = {
         "geography": cfg["coverage"]["geography"],
-        "iso3": coverage_iso3(cfg, None),
+        "iso3": coverage_iso3(cfg, None, computed_iso3),
         "frame": None, "n_units_frame": None, "n_units_covered": None,
         "n_records": int(len(table)),
         "known_gaps": list(cfg["coverage"].get("known_gaps", [])),
     }
-    meta = assemble_meta(cfg, ctx, sources, fields, coverage, checks, display, [])
+    meta = assemble_meta(cfg, ctx, sources, fields, coverage, checks, display, meta_extra)
     if hash_input(ctx, table_path)["sha256"] != sha256_file(table_path):
         raise GateError("G6", f"{layer_id}: input file changed during the build: {table_path.name}")
     build = {
@@ -1597,6 +1996,6 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
         "args": tiles_cfg.get("extra_args", ["--no-tile-size-limit", "--no-feature-limit", "-r1"]),
     }
     lo = LayerOutput(layer_id, meta, out / f"{layer_id}.meta.json", files, tile_in, build, bbox,
-                     archives, [], cfg["title"], cfg["domain"], cfg["level"], tile_fields, layer_id, "point", tiles_cfg)
+                     archives, plan_extra, cfg["title"], cfg["domain"], cfg["level"], tile_fields, layer_id, "point", tiles_cfg)
     lo.carries_power = carries_power
     return lo

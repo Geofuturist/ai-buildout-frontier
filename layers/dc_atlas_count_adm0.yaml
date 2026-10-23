@@ -1,0 +1,222 @@
+# abf-dc v0.1.0 · layer 3 of 3. Texts: claude/RES_texts_DC_v0_1_0.md r2 (sections 3, 4, 5, 6.3, 7), word for word.
+# Build rules: claude/SPEC_DC_world_v0_1_0.md r7 (sections 2.6, 4, 13, 14). Structure by [CODE-PUB].
+# World layer of level ADM0: all 242 units of display/adm0.parquet of abf-boundaries v0.2.0 (frame.world); no registry row (G12 does not apply).
+layer_id: dc_atlas_count_adm0
+title: "Data centers · Atlas of Data Center Politics · records by country"
+title_ru: "ЦОД · Atlas of Data Center Politics · записи по странам"
+domain: dc
+level: ADM0
+frame:
+  world: true
+  level: ADM0
+  expected_units: 242
+  service_fields: [unit_id, name, coverage_status, coverage_note]
+  keep_covered_notes: true
+  service_overrides:
+    unit_id:
+      description: "Country or territory, code of abf-boundaries v0.2.0."
+    name:
+      description: "Name of the country or territory in abf-boundaries."
+    coverage_status:
+      description: >-
+        covered for all 242 units: all countries and territories the Atlas lists were copied, and a country
+        outside its list has no records in it (checked by V on the Atlas site on 18 October 2026).
+    coverage_note:
+      description: >-
+        Note on the count: the country is not in the Atlas list and has no records, or the count includes
+        the Atlas entry Somaliland.
+      null_meaning: "No note: the country is in the Atlas list and counted as listed."
+input:
+  table: 'D:\GISData\AI\DC\out\abf-dc-v0.1.0\dc_atlas_count_adm0.csv'
+  key: unit_id
+  coverage_column: coverage_status
+  coverage_note_column: coverage_note
+  files:
+    atlas_copies: 'D:\GISData\AI\DC\release_inputs\atlas_copies_20261014-18.zip'
+description: >-
+  Number of data-center records the Atlas of Data Center Politics lists for each of the 242 countries
+  and territories of abf-boundaries, split by status and by size class. A record is counted under the
+  country the Atlas lists it under, not by its point. 0 means that the Atlas lists no data-center record
+  for the country; it does not mean that the country has no data centers. groups.csv gives the same
+  counts for groups of countries (EU27).
+fields:
+- name: n_records
+  type: integer
+  nullable: false
+  min: 0
+  description: "Number of Atlas data-center records listed under the country."
+- name: n_operating_or_construction
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas status Operating / Construction, which covers both operating sites and sites under construction."
+- name: n_planned
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas status Planned."
+- name: n_retired
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas status Retired."
+- name: n_class_lt10
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Small (below 10 MW)."
+- name: n_class_10_99
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Large (10–99 MW)."
+- name: n_class_100_999
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Hyperscale (100–999 MW)."
+- name: n_class_ge1000
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Gigascale (above 999 MW)."
+- name: n_class_unknown
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Unknown."
+expected_counts:
+  rows: 242
+  sums: {n_records: 9865}
+  zero_counts: {n_records: 116}
+  value_counts_listed:
+    coverage_status: {covered: 242}
+sources:
+- source_id: atlas_of_data_center_politics
+  role: primary
+  publisher: "Infrastructure Lab, National University of Singapore"
+  product: "Atlas of Data Center Politics, national tables of data centers"
+  url: https://www.atlasofdatacenterpolitics.com/
+  edition: "Version 0.1.0; Atlas data updated 2026-10-08; copies of 2026-10-14 to 2026-10-18"
+  current_through: "2026-10-08"
+  retrieved_at: "2026-10-14/2026-10-18"
+  publication_mode: open_licence
+  license:
+    id: CC-BY-4.0
+    name: "Creative Commons Attribution 4.0 International"
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: >-
+      Data centers: Kollar, Justin. Atlas of Data Center Politics. Version 0.1.0. Infrastructure Lab,
+      National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under
+      CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas
+      (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from
+      their addresses and names, and counted by country. These figures are not the Atlas as published.
+  rights_basis:
+    type: license
+    checked_by: "script:licence_extract.py"
+    checked_at: "2026-10-14"
+    evidence_url: https://www.atlasofdatacenterpolitics.com/LICENSE-DATA
+    text: >-
+      The data license of the Atlas (https://www.atlasofdatacenterpolitics.com/LICENSE-DATA) states: "The
+      Atlas datasets are licensed under the Creative Commons Attribution 4.0 International Licence (CC BY
+      4.0)." It asks for attribution in substantially the form above, for the version used, and for a
+      statement where the data are adapted or filtered. Its request about automated access is stated
+      there not to be a condition of the license; the records were copied by hand with the site's Copy
+      as: Table function.
+  input_refs: [table, atlas_copies, manual_checks, country_names]
+- source_id: abf_boundaries_v0_2_0
+  role: geometry
+  publisher: "AI Buildout Frontier"
+  product: "abf-boundaries v0.2.0"
+  url: https://doi.org/10.5281/zenodo.23454136
+  edition: "v0.2.0"
+  current_through: null
+  retrieved_at: "2026-10-22"
+  publication_mode: open_licence
+  license:
+    id: CC-BY-4.0
+    name: "Creative Commons Attribution 4.0 International"
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: >-
+      Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries
+      v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0.
+  rights_basis:
+    type: license
+    checked_by: "agent:CODE-PUB"
+    checked_at: "2026-10-23"
+    evidence_url: https://doi.org/10.5281/zenodo.23454136
+    text: >-
+      abf-boundaries v0.2.0 is published by this project under CC BY 4.0 (Zenodo record
+      10.5281/zenodo.23454136); the sources of its outlines are listed in its own meta.json.
+  input_refs: [geometry_display]
+source_archives:
+- path: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\manual_checks.csv'
+  publish_as: manual_checks.csv
+  kind: reference_csv
+  ref_name: manual_checks
+  description: >-
+    Checks that V made by hand on the Atlas site: the list of countries of the Atlas national tab (126),
+    Malta and Libya without records, Portugal without Retired records. One row per check, published as it is.
+- path: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\rules\country_name_aliases_20261022.csv'
+  publish_as: country_name_aliases_20261022.csv
+  kind: reference_csv
+  ref_name: country_names
+  description: >-
+    The country names of the Atlas that differ from the names of the boundary frame, each with the code
+    of abf-boundaries it is counted under, the reason and who accepted it (10 rows). Published as it is.
+extra_files:
+- path: 'D:\GISData\AI\DC\out\abf-dc-v0.1.0\groups.csv'
+  publish_as: groups.csv
+  unique_column: group_id
+  description: >-
+    Counts of dc_atlas_count_adm0 summed for groups of countries. EU27: the 27 member states of the
+    European Union. aggregate_state is complete when every member is covered.
+verification:
+  levels:
+    source_as_is: 0.0
+    script_rules: 1.0
+    human: 0.0
+  sample_share: {}
+  method: >-
+    Records are counted by script by the country under which the Atlas lists them. The build stops if the
+    counts of the 242 units do not add up to the 9,865 records of the point layer. That the Atlas lists
+    126 countries and territories was read by V on the Atlas site on 18 October 2026; V also checked that
+    Malta and Libya, which are not in the list, have no records, and that Portugal has no Retired records
+    (manual_checks.csv).
+freshness:
+  source_cadence: irregular
+  next_check: "2027-01-31"
+coverage:
+  geography: "All 242 countries and territories of abf-boundaries v0.2.0"
+  known_gaps:
+  - >-
+    The Atlas states that absence from it should not be read as evidence that a facility does not exist,
+    and that its coverage is broad but uneven. 116 countries and territories have 0 records because the
+    Atlas lists none for them.
+  - >-
+    Counts follow the Atlas rows: records identical in every field are counted separately, and a record
+    is counted under the country the Atlas lists it under, also where its point falls in a neighboring
+    country.
+  - >-
+    The one record the Atlas lists under Somaliland is counted under Somalia (SOM), because
+    abf-boundaries has no separate unit for Somaliland. This follows the boundary frame and is not a
+    position on its status.
+  - "The Atlas gives Gibraltar as a first-level unit; its one record is counted under GIB, a unit of abf-boundaries."
+  - >-
+    The record in Simferopol, Crimea, is counted under Russia, as the Atlas lists it; abf-boundaries
+    v0.2.0 shows Crimea under Russian control and records Ukraine's claim (contested_areas).
+display:
+  geometry_type: polygon
+  value_field: n_records
+  unit: records
+  zero_class: true
+  # breaks: none decided for this layer yet (question to ARCH6, handoff PUB Rev 42)
+  tile_fields: [n_records, n_operating_or_construction, n_planned, n_retired, n_class_lt10, n_class_10_99, n_class_100_999, n_class_ge1000, n_class_unknown]
+tiles:
+  minzoom: 0
+  maxzoom: 6
+citation:
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: "Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}"

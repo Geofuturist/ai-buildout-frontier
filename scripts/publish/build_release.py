@@ -25,6 +25,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import boundaries_build
+import check_dc_phrases
 import layer_build
 from common import (
     DOI_REGEX,
@@ -143,6 +144,69 @@ def plan_layer(lo: LayerOutput, out: Path, extra: list[dict[str, Any]], tiles_fi
     return entry
 
 
+def run_cross_checks(checks: list[dict[str, Any]], out: Path, boundaries: Boundaries, report: Report) -> None:
+    """Checks between the files of one release (abf-dc): references into a layer, counts that add up (G4).
+
+    kind refs_in_layer: every id in column `column` of `file` (several ids separated by `separator`, empty cells
+        skipped) is a value of `layer_column` of the layer `layer`.
+    kind counts_match: for every country, the count columns of the count layer equal the numbers of records of the
+        point layer; `columns` maps a count column to None (all records) or to {column: value} of the point layer
+        (an empty value matches empty cells).
+    """
+    for chk in checks:
+        kind = chk["kind"]
+        if kind == "refs_in_layer":
+            df = pd.read_csv(out / chk["file"], dtype=str, keep_default_na=False)
+            ids = {part.strip() for v in df[chk["column"]] for part in str(v).split(chk.get("separator", ";")) if part.strip()}
+            layer = pd.read_csv(out / f"{chk['layer']}.csv", dtype=str, keep_default_na=False, usecols=[chk["layer_column"]])
+            missing = sorted(ids - set(layer[chk["layer_column"]]))
+            if missing:
+                raise GateError("G4", f"{chk['file']}.{chk['column']} refers to records that are not in {chk['layer']}: {missing[:5]}")
+            report.note(f"cross-check: {len(ids)} ids of {chk['file']}.{chk['column']} exist in {chk['layer']}")
+        elif kind == "counts_match":
+            counts = pd.read_csv(out / f"{chk['count_layer']}.csv", dtype=str, keep_default_na=False)
+            points = pd.read_csv(out / f"{chk['point_layer']}.csv", dtype=str, keep_default_na=False)
+            _, to_iso = layer_build.adm0_codes(BuildContextStub(boundaries))
+            counts["_iso"] = counts[chk["unit_column"]].map(to_iso)
+            if counts["_iso"].isna().any():
+                raise GateError("G4", f"{chk['count_layer']}: unit_id values that are not countries of the boundaries release")
+            for col, cond in chk["columns"].items():
+                sub = points
+                if cond:
+                    ((cc, vv),) = cond.items()
+                    sub = points[points[cc] == str(vv)]
+                have = sub.groupby(chk["point_iso_column"]).size()
+                want = pd.to_numeric(counts.set_index("_iso")[col], errors="raise").astype(int)
+                joined = pd.concat([want.rename("layer"), have.rename("points")], axis=1).fillna(0).astype(int)
+                bad = joined[joined["layer"] != joined["points"]]
+                if len(bad):
+                    raise GateError("G4", f"{chk['count_layer']}.{col} differs from the records of {chk['point_layer']} "
+                                          f"for {len(bad)} countries, for example {bad.head(3).to_dict('index')}")
+            report.note(f"cross-check: {len(chk['columns'])} count columns of {chk['count_layer']} equal the records of {chk['point_layer']} for every country")
+        else:
+            raise GateError("G2", f"unknown cross_check kind {kind!r}")
+
+
+class BuildContextStub:
+    """Just enough of the build context for layer_build.adm0_codes (only .boundaries is read)."""
+
+    def __init__(self, boundaries: Boundaries) -> None:
+        self.boundaries = boundaries
+
+
+def run_phrase_check(cfg: dict[str, Any], channel: str, report: Report) -> None:
+    """Phrases of the abf-dc texts against the saved source pages (check_dc_phrases.py). A stop in final, a warning in dev."""
+    pages = resolve_path(cfg["pages"])
+    readme = resolve_path(cfg["geonames_readme"]) if cfg.get("geonames_readme") else None
+    lines, not_found, problems = check_dc_phrases.run_check(pages, readme, resolve_path(cfg.get("layers", "layers")))
+    report.section("Phrases of the abf-dc texts against the saved pages", [f"- {l}" for l in lines if not l.startswith("         ")])
+    if not_found or problems:
+        msg = f"phrase check (RES_texts_DC section 10): missing {not_found}; problems {problems}"
+        if channel == "final":
+            raise GateError("G13", msg)
+        report.warn(msg + " (a warning in dev, a stop in final)")
+
+
 def run(args: argparse.Namespace) -> int:
     started = time.time()
     rel_path = resolve_path(args.release)
@@ -219,11 +283,11 @@ def run(args: argparse.Namespace) -> int:
                 lo = layer_build.build_point_layer(cfg, ctx)
             else:
                 lo = layer_build.build_adm_layer(cfg, ctx)
-            if cfg["domain"] == "dc" and cfg["level"] != "point":
-                raise GateError("G3b", f"{cfg['layer_id']}: only point layers are supported for the domain dc")
+            if cfg["domain"] == "dc" and cfg["level"] not in ("point", "ADM0"):
+                raise GateError("G3b", f"{cfg['layer_id']}: only point layers and the world ADM0 count layer are supported for the domain dc")
             metas.append((lo.meta_path, lo.meta))
             all_layers.append(lo)
-            plan_layers.append(plan_layer(lo, out, [], f"{lo.layer_id}.pmtiles"))
+            plan_layers.append(plan_layer(lo, out, lo.extra_files, f"{lo.layer_id}.pmtiles"))
             tile_builds.append({**lo.tile_build})
             for a in lo.archives:
                 archives[a["file"].name] = a
@@ -234,6 +298,15 @@ def run(args: argparse.Namespace) -> int:
     power_layers = [lo.layer_id for lo in all_layers if lo.domain == "dc" and lo.carries_power]
     if len(power_layers) > 1:
         raise GateError("G3b", f"more than one layer of the domain dc carries power fields: {power_layers}")
+    # the class thresholds of the dc layers of one release are common (ADR section 11)
+    breaks = {lo.layer_id: tuple((lo.meta.get("display") or {}).get("size_breaks") or ()) for lo in all_layers
+              if lo.domain == "dc" and (lo.meta.get("display") or {}).get("size_breaks")}
+    if len(set(breaks.values())) > 1:
+        raise GateError("G3b", f"the dc layers of the release have different display.size_breaks: {breaks}")
+    if rel.get("cross_checks"):
+        run_cross_checks(rel["cross_checks"], out, boundaries, report)
+    if rel.get("phrase_check"):
+        run_phrase_check(rel["phrase_check"], channel, report)
 
     # --- meta.json: G7, G1, write
     for path, meta in metas:
@@ -266,6 +339,7 @@ def run(args: argparse.Namespace) -> int:
     names: list[str] = []
     for lo in all_layers:
         names += [p.name for p in lo.files.values()]
+        names += [e["path"] for e in lo.extra_files]
     names += sorted({p.name for p, _ in metas})
     names += [e["path"] for e in plan_extra]
     names += [a["path"] for a in source_archives]

@@ -1,0 +1,49 @@
+# Release of the dataset abf-dc, version 0.1.0 (SPEC_DC_world r7 sections 4, 13, 14): data centers of the world,
+# three layers from two sources. A new dataset: its own Zenodo record (new record, not a new version), own DOI.
+# Before the final build V sets published_at (the day of Publish in Zenodo):
+#   python scripts\publish\set_release_doi.py releases\abf-dc-v0.1.0.yaml 10.5281/zenodo.23591916 2026-MM-DD
+dataset: abf-dc
+version: 0.1.0
+tag: abf-dc-v0.1.0
+doi: 10.5281/zenodo.23591916    # reserved by V (new Zenodo draft of abf-dc); ignored by channel dev
+published_at: null              # the day of Publish in Zenodo, set by set_release_doi.py before the final build
+built_at: null
+boundary_release: abf-boundaries-v0.2.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\dc_atlas_points.yaml'
+  - 'layers\dc_epoch_points.yaml'
+  - 'layers\dc_atlas_count_adm0.yaml'
+# Checks between the files of the release (build_release.py run_cross_checks). P9 between layers is checked by the
+# data build (SPEC_DC r7 Q9), not here.
+cross_checks:
+  # every Atlas record named in checks.csv exists in the Atlas layer
+  - kind: refs_in_layer
+    file: checks.csv
+    column: ref
+    separator: ";"
+    layer: dc_atlas_points
+    layer_column: record_id
+  # the count layer equals the Atlas layer: records per country, by status and by size class
+  - kind: counts_match
+    count_layer: dc_atlas_count_adm0
+    point_layer: dc_atlas_points
+    unit_column: unit_id
+    point_iso_column: iso3_source
+    columns:
+      n_records: null
+      n_operating_or_construction: {status_raw: "Operating / Construction"}
+      n_planned: {status_raw: "Planned"}
+      n_retired: {status_raw: "Retired"}
+      n_class_lt10: {power_class: "lt10"}
+      n_class_10_99: {power_class: "10_99"}
+      n_class_100_999: {power_class: "100_999"}
+      n_class_ge1000: {power_class: "ge1000"}
+      n_class_unknown: {power_class: ""}
+# The quoted phrases of the texts against the saved source pages (RES_texts_DC section 10): a stop in final.
+phrase_check:
+  pages: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\licence_pages'
+  geonames_readme: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\geonames\Readme.txt'
+  layers: 'layers'
