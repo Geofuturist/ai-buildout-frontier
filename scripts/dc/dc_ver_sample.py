@@ -10,7 +10,7 @@ Place sample (no network). Layers, each sampled separately; share 10% of the lay
   P2  region name: step 3 records where the matched words are the region name (PPLA / PPLC rule)
   P3  resolved_by_population = true
   P4  step 1 by alternatenames
-Cell sample (checks.csv, network Full, from the links of the records): 10% (rounded up, at least 3 or all) of each stratum:
+Cell sample (checks.csv, network Full, from the links of the records): 10% (rounded up, at least 5 or all, ADR 6.2) of each stratum:
   C1  found by the script (strong key)   C2  found by V   C3  not_found by V   C4  not_found by the script
 Cells of V are checked like the others and stay `human:V`.
 The sample is deterministic: records are sorted by record_id, then `random.Random(seed).sample`.
@@ -26,7 +26,7 @@ from pathlib import Path
 
 import pandas as pd
 
-PLACE_MIN, CELL_MIN, SHARE = 5, 3, 0.10
+PLACE_MIN, CELL_MIN, SHARE = 5, 5, 0.10
 
 
 def take(ids: list[str], rng: random.Random, minimum: int) -> list[str]:
