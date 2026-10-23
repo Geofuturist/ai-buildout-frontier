@@ -70,6 +70,9 @@ export interface Meta {
     legend_title?: string;
     tile_fields?: string[];
     home_bbox?: [number, number, number, number];
+    /** panel topic; absent in older metas (then derived from the domain) */
+    topic?: string;
+    series?: string;
   };
 }
 

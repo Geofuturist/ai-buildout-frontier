@@ -53,15 +53,17 @@ function InsideButton({ layer, meta, unit, territory, label }: { layer: LayerEnt
 
 interface Props {
   data: MapData;
-  model: CountryModel;
+  /** the country's own layers, or null when it has none */
+  model: CountryModel | null;
+  iso3: string;
   indicator: Indicator | null;
   unit: UnitRef;
   territory: Territory | null;
 }
 
 /** Download block by scope: country - region - unit (SPEC_WEB_territory 5). Cuts are CSV only. */
-export default function TerritoryDownloads({ data, model, indicator, unit, territory }: Props) {
-  const word = levelWord(unit.level, indicator ?? undefined, model.iso3, data.unit_words).toLowerCase();
+export default function TerritoryDownloads({ data, model, iso3, indicator, unit, territory }: Props) {
+  const word = levelWord(unit.level, indicator ?? undefined, iso3, data.unit_words).toLowerCase();
 
   if (unit.level === 0) {
     // Whole country: the full files of every level of the indicator, and of the points and lines
@@ -70,11 +72,11 @@ export default function TerritoryDownloads({ data, model, indicator, unit, terri
         <p className="text-sm font-semibold">Download for {unit.name}</p>
         {indicator?.levels.map(({ level, layer }) => (
           <div key={layer.layer_id} className="mt-2">
-            <p className="text-xs text-ink2">{levelWord(level, indicator, model.iso3, data.unit_words)} level · {layer.title}</p>
+            <p className="text-xs text-ink2">{levelWord(level, indicator, iso3, data.unit_words)} level · {layer.title}</p>
             <Downloads layer={layer} />
           </div>
         ))}
-        {model.overlays.map((layer) => (
+        {(model?.overlays ?? []).map((layer) => (
           <div key={layer.layer_id} className="mt-2">
             <p className="text-xs text-ink2">{layer.title}</p>
             <Downloads layer={layer} />
@@ -86,7 +88,7 @@ export default function TerritoryDownloads({ data, model, indicator, unit, terri
 
   const own = indicator?.levels.find((x) => x.level === unit.level);
   const finer = indicator?.levels.filter((x) => x.level > unit.level) ?? [];
-  const points = model.overlays.filter((l) => l.tiles.geometry_type === 'point' && l.files.csv);
+  const points = (model?.overlays ?? []).filter((l) => l.tiles.geometry_type === 'point' && l.files.csv);
 
   return (
     <div className="mt-4">

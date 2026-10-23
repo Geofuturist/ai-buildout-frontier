@@ -2,13 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, ChevronUp, Info } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
-import type { LayerEntry } from '@/lib/data';
-import { checkedByLine, recordCitation, throughLabel } from '@/lib/format';
+import { checkedByLine, recordCitation } from '@/lib/format';
 import { levelWord, shownLevelOf } from '@/lib/indicators';
 import type { CountryModel, Indicator } from '@/lib/indicators';
-import { capitalize, unitWord } from '@/lib/layers';
 import { chainOf, unitName } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
 import TerritoryDownloads from './TerritoryDownloads';
@@ -17,14 +15,12 @@ import type { MapData, UnitRef } from './types';
 
 interface Props {
   data: MapData;
-  countries: CountryModel[];
   /** the chosen country: its ISO3 code (even when it has no layers) */
   countryIso: string | null;
   countryName: string;
   model: CountryModel | null;
+  /** the fill that is on, when it applies to the chosen country (its own or a world one) */
   indicator: Indicator | null;
-  overlays: Record<string, boolean>;
-  failed: Set<string>;
   /** the chosen unit; level 0 = the country */
   unit: UnitRef | null;
   territory: Territory | null;
@@ -34,12 +30,8 @@ interface Props {
   nonce: number;
   /** the level a click selects now (0, 1, 2) */
   selLevel: number;
-  onIndicator: (key: string) => void;
-  onOverlay: (id: string, on: boolean) => void;
-  onCountry: (iso3: string) => void;
   onWorld: () => void;
   onCrumb: (unitId: string) => void;
-  onInfo: (layerId: string) => void;
 }
 
 export default function TerritoryPanel(p: Props) {
@@ -48,44 +40,6 @@ export default function TerritoryPanel(p: Props) {
   useEffect(() => {
     if (p.nonce > 0) setOpen(true);
   }, [p.nonce]);
-
-  const exclusiveRow = (ind: Indicator) => {
-    const shown = shownLevelOf(ind, p.selLevel).layer;
-    const meta = data.metas[shown.meta_id];
-    const words = ind.levels.map((x) => unitWord(x.layer)).join(', ');
-    return (
-      <li key={ind.key} className="flex items-stretch">
-        <label className="flex min-h-[44px] flex-1 cursor-pointer items-center gap-2 py-1">
-          <input type="radio" name="indicator" className="h-4 w-4 shrink-0 accent-[#0f6e6e]" checked={indicator?.key === ind.key} onChange={() => p.onIndicator(ind.key)} />
-          <span className="leading-tight">
-            <span className="block text-sm text-ink">{ind.title}</span>
-            <span className="block text-xs text-muted">{capitalize(words)} · {throughLabel(meta)}</span>
-          </span>
-        </label>
-        <button type="button" className="flex h-11 w-11 shrink-0 items-center justify-center text-accent" aria-label={`About: ${shown.title}`} onClick={() => p.onInfo(shown.layer_id)}>
-          <Info size={18} aria-hidden />
-        </button>
-      </li>
-    );
-  };
-
-  const overlayRow = (l: LayerEntry) => (
-    <li key={l.layer_id} className="flex items-stretch">
-      <label className="flex min-h-[44px] flex-1 cursor-pointer items-center gap-2 py-1">
-        <input type="checkbox" className="h-4 w-4 shrink-0 accent-[#0f6e6e]" checked={Boolean(p.overlays[l.layer_id])} onChange={(e) => p.onOverlay(l.layer_id, e.target.checked)} />
-        <span className="leading-tight">
-          <span className="block text-sm text-ink">{l.title}</span>
-          <span className="block text-xs text-muted">
-            {capitalize(unitWord(l))} · {throughLabel(data.metas[l.meta_id])}
-            {p.failed.has(l.layer_id) && <strong className="ml-1 text-[#9a2a00]">· Failed to load</strong>}
-          </span>
-        </span>
-      </label>
-      <button type="button" className="flex h-11 w-11 shrink-0 items-center justify-center text-accent" aria-label={`About: ${l.title}`} onClick={() => p.onInfo(l.layer_id)}>
-        <Info size={18} aria-hidden />
-      </button>
-    </li>
-  );
 
   // Value of the active indicator at the level of the chosen unit
   const valueLayer = indicator && unit ? indicator.levels.find((x) => x.level === unit.level)?.layer : undefined;
@@ -132,45 +86,32 @@ export default function TerritoryPanel(p: Props) {
             <h2 className="mt-2 text-base font-semibold leading-tight">{title}</h2>
             {unit && <p className="text-xs text-muted">{word} · {unit.unit_id}</p>}
 
-            {!model && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
+            {!model && !indicator && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
 
-            {model && (
-              <>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-muted">Indicators</p>
-                <ul>{model.indicators.map(exclusiveRow)}</ul>
-                {model.overlays.length > 0 && (
-                  <>
-                    <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">On top of the map</p>
-                    <ul>{model.overlays.map(overlayRow)}</ul>
-                  </>
+            {indicator && unit && (
+              <div className="mt-3 border-t border-line pt-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
+                {valueLayer ? (
+                  <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
+                ) : (
+                  <p className="mt-2 rounded-md border border-dashed border-[#8a8f96] p-3 text-ink2">Not published at this level in this release.</p>
                 )}
-
-                {indicator && unit && (
-                  <div className="mt-3 border-t border-line pt-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
-                    {valueLayer ? (
-                      <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
-                    ) : (
-                      <p className="mt-2 rounded-md border border-dashed border-[#8a8f96] p-3 text-ink2">Not published at this level in this release.</p>
-                    )}
-                    {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
-                  </div>
-                )}
-
-                {unit && <TerritoryDownloads data={data} model={model} indicator={indicator} unit={unit} territory={p.territory} />}
-
-                {citeLayer && citeMeta && unit && (
-                  <div className="mt-3 flex flex-wrap items-center gap-3">
-                    <CopyButton
-                      text={valueLayer && unit.level > 0 ? recordCitation(citeMeta, unit.unit_id) : citeMeta.citation.text}
-                      label={valueLayer && unit.level > 0 ? 'Cite this record' : 'Cite this layer'}
-                    />
-                    {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
-                  </div>
-                )}
-                {citeLayer && <p className="mt-3 text-sm"><Link href="/data/">All files</Link></p>}
-              </>
+                {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
+              </div>
             )}
+
+            {unit && (model || indicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={indicator} unit={unit} territory={p.territory} />}
+
+            {citeLayer && citeMeta && unit && (
+              <div className="mt-3 flex flex-wrap items-center gap-3">
+                <CopyButton
+                  text={valueLayer && unit.level > 0 ? recordCitation(citeMeta, unit.unit_id) : citeMeta.citation.text}
+                  label={valueLayer && unit.level > 0 ? 'Cite this record' : 'Cite this layer'}
+                />
+                {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
+              </div>
+            )}
+            {citeLayer && <p className="mt-3 text-sm"><Link href="/data/">All files</Link></p>}
           </>
         )}
       </div>
