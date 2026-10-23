@@ -14,7 +14,7 @@ import type { CardState, MapData, UnitRef } from './types';
 import { countryNameFromIso3 } from '@/lib/iso3';
 import { buildCountries, fillLevelOf, levelWord, selectionLevel } from '@/lib/indicators';
 import { groupByCountry, unionBbox } from '@/lib/layers';
-import { levelsOfCountry, loadTerritory } from '@/lib/territory';
+import { isWithin, levelsOfCountry, loadTerritory } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
 
 export default function MapApp({ data }: { data: MapData }) {
@@ -48,6 +48,15 @@ export default function MapApp({ data }: { data: MapData }) {
   const activeId = fill?.layer.layer_id ?? 'none';
   // No data at this level: plain polygons of the level are drawn instead of a layer of another level
   const neutralLevel = country && indicator && !fill ? selLevel : null;
+  const neutralIds = useMemo(() => {
+    if (neutralLevel === null || !country) return [];
+    if (neutralLevel === 0) return [country];
+    if (!territory) return [];
+    return Object.entries(territory.units)
+      .filter(([id, u]) => u[0] === neutralLevel && isWithin(territory, id, country))
+      .map(([id]) => id);
+  }, [neutralLevel, country, territory]);
+  const dataCountryIds = useMemo(() => countries.map((c) => c.iso3), [countries]);
   const chosen: UnitRef | null = country ? unit ?? { unit_id: country, name: countryName, level: 0 } : null;
 
   // Points and lines of the chosen country that are switched on
@@ -144,7 +153,8 @@ export default function MapApp({ data }: { data: MapData }) {
           selectLevel={selLevel}
           selectedUnit={chosen}
           neutralLevel={neutralLevel}
-          dataCountries={countries.map((c) => c.iso3)}
+          neutralIds={neutralIds}
+          dataCountries={dataCountryIds}
           onSelect={setCard}
           onCountry={selectCountry}
           onUnit={onUnit}

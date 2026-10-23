@@ -1,7 +1,7 @@
 'use client';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { Fragment, forwardRef, useCallback, useImperativeHandle, useMemo, useRef, useState } from 'react';
+import { Fragment, forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import MapGL, { Layer, NavigationControl, Source } from 'react-map-gl/maplibre';
 import type { MapLayerMouseEvent, MapRef } from 'react-map-gl/maplibre';
 import type { MapGeoJSONFeature } from 'maplibre-gl';
@@ -39,6 +39,8 @@ interface Props {
   selectedUnit: UnitRef | null;
   /** level (0, 1, 2) at which plain polygons of the chosen country are drawn, when the indicator has no data there */
   neutralLevel: number | null;
+  /** unit_ids drawn as plain polygons at neutralLevel */
+  neutralIds: string[];
   /** countries with data: tinted on the start globe (no country chosen) */
   dataCountries: string[];
   onSelect: (card: CardState) => void;
@@ -49,7 +51,10 @@ interface Props {
   onFailed: (layerId: string) => void;
 }
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, dataCountries, onSelect, onCountry, onUnit, onZoom, onReady, onFailed }, ref) {
+/** Opacity that is `on` where the feature state `key` is set and 0 elsewhere (constant expression: never reloads tiles). */
+const FS_OPACITY = (key: string, on: number) => ['case', ['boolean', ['feature-state', key], false], on, 0] as ExpressionSpecification;
+
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -128,6 +133,51 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   );
 
   const [hover, setHover] = useState<UnitRef | null>(null);
+
+  // Feature ids of the boundaries are the unit_ids (promoteId), so the look of a unit is set by feature state:
+  // immediate, no tile reload.
+  const promoteId = useMemo(() => {
+    const o: Record<string, string> = {};
+    for (const b of [bnd.adm0, bnd.adm1, bnd.adm2]) if (b) o[b.tiles.source_layer] = 'unit_id';
+    return o;
+  }, [bnd]);
+  const [ready, setReady] = useState(false);
+  const applied = useRef(new Map<string, { sl: string; id: string; key: string; value: number | boolean }>());
+  const desired = useMemo(() => {
+    const out: { level: number; id: string; key: string; value: number | boolean }[] = [];
+    if (!country) for (const id of dataCountries) out.push({ level: 0, id, key: 'datac', value: true });
+    if (neutralLevel !== null) for (const id of neutralIds) out.push({ level: neutralLevel, id, key: 'neutral', value: true });
+    if (selectedUnit) {
+      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'sel', value: true });
+      // lighter tint when a data fill lies under the unit, so that the colours of the data are not hidden
+      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'tint', value: activeId === 'none' ? 0.16 : 0.07 });
+    }
+    if (hover) out.push({ level: hover.level, id: hover.unit_id, key: 'hov', value: true });
+    return out;
+  }, [country, dataCountries, neutralLevel, neutralIds, selectedUnit, hover, activeId]);
+  useEffect(() => {
+    const map = mapRef.current?.getMap();
+    if (!ready || !map || !map.getSource('boundaries')) return;
+    const layerOf = (lvl: number) => [bnd.adm0, bnd.adm1, bnd.adm2][lvl]?.tiles.source_layer;
+    const want = new Map<string, { sl: string; id: string; key: string; value: number | boolean }>();
+    for (const d of desired) {
+      const sl = layerOf(d.level);
+      if (sl) want.set(`${sl}|${d.id}|${d.key}`, { sl, id: d.id, key: d.key, value: d.value });
+    }
+    for (const [k, a] of applied.current) {
+      if (!want.has(k)) {
+        map.removeFeatureState({ source: 'boundaries', sourceLayer: a.sl, id: a.id }, a.key);
+        applied.current.delete(k);
+      }
+    }
+    for (const [k, w] of want) {
+      const a = applied.current.get(k);
+      if (!a || a.value !== w.value) {
+        map.setFeatureState({ source: 'boundaries', sourceLayer: w.sl, id: w.id }, { [w.key]: w.value });
+        applied.current.set(k, w);
+      }
+    }
+  }, [desired, ready, bnd]);
   const onMove = useCallback(
     (e: MapLayerMouseEvent) => {
       const t = targetOf(e.features ?? []);
@@ -168,6 +218,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       onLoad={() => {
         // Test hook, only in a build made with NEXT_PUBLIC_E2E=1 (never set on Vercel)
         if (process.env.NEXT_PUBLIC_E2E) (window as unknown as { __map?: unknown }).__map = mapRef.current?.getMap();
+        setReady(true);
         onReady?.();
       }}
       onMove={(e) => onZoom(Math.round(e.viewState.zoom * 10) / 10)}
@@ -185,16 +236,16 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
 
       {/* 2. Boundaries: one PMTiles file, several source layers */}
       {bnd.adm0 && (
-        <Source id="boundaries" type="vector" url={`pmtiles://${bnd.adm0.tiles.url}`}>
-          {/* Start globe: countries with data in a grey tint (flat list: <Source> passes its id to direct children only) */}
+        <Source id="boundaries" type="vector" url={`pmtiles://${bnd.adm0.tiles.url}`} promoteId={promoteId}>
+          {/* Shown through feature state only: a change of filter, layout or data-driven paint of a layer reloads and
+              re-parses the tiles of the whole source, which made the outline lag behind the card. */}
+          {/* Start globe: countries with data in a grey tint (flat lists: <Source> passes its id to direct children only) */}
           <Layer
             id="data-countries"
             type="fill"
             source-layer={bnd.adm0.tiles.source_layer}
             beforeId={BEFORE}
-            filter={['in', ['get', 'iso3'], ['literal', dataCountries]] as ExpressionSpecification}
-            layout={{ visibility: country ? 'none' : 'visible' }}
-            paint={{ 'fill-color': COLORS.dataCountry, 'fill-opacity': 0.5 }}
+            paint={{ 'fill-color': COLORS.dataCountry, 'fill-opacity': FS_OPACITY('datac', 0.5) }}
           />
           {/* Plain polygons of the level the map shows when the indicator has no data at that level */}
           {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
@@ -206,9 +257,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
                     type="fill"
                     source-layer={b.tiles.source_layer}
                     beforeId={BEFORE}
-                    filter={['==', ['get', 'iso3'], country ?? ''] as ExpressionSpecification}
-                    layout={{ visibility: country && neutralLevel === i ? 'visible' : 'none' }}
-                    paint={{ 'fill-color': COLORS.neutralUnit }}
+                    paint={{ 'fill-color': COLORS.neutralUnit, 'fill-opacity': FS_OPACITY('neutral', 1) }}
                   />,
                 ]
               : [],
@@ -281,6 +330,22 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
             beforeId={BEFORE}
             paint={{ 'line-color': COLORS.adm0, 'line-width': 1 }}
           />
+          {/* The chosen unit: a light tint (strength set by feature state), then a teal outline on a light underlay,
+              in the layer of its own level. */}
+          {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
+            b
+              ? [
+                  <Layer
+                    key={`sel-tint-${i}`}
+                    id={`sel-tint-${i}`}
+                    type="fill"
+                    source-layer={b.tiles.source_layer}
+                    beforeId={BEFORE}
+                    paint={{ 'fill-color': COLORS.selected, 'fill-opacity': ['coalesce', ['feature-state', 'tint'], 0] as ExpressionSpecification }}
+                  />,
+                ]
+              : [],
+          )}
           {/* Hover: grey outline of the country or unit a click would choose now (its own style, not the teal of the choice) */}
           {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
             b
@@ -291,14 +356,11 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
                     type="line"
                     source-layer={b.tiles.source_layer}
                     beforeId={BEFORE}
-                    filter={['==', ['get', 'unit_id'], hover && hover.level === i ? hover.unit_id : ''] as ExpressionSpecification}
-                    paint={{ 'line-color': COLORS.hover, 'line-width': 1.8, 'line-dasharray': [3, 1.5] }}
+                    paint={{ 'line-color': COLORS.hover, 'line-width': 1.8, 'line-dasharray': [3, 1.5], 'line-opacity': FS_OPACITY('hov', 1) }}
                   />,
                 ]
               : [],
           )}
-          {/* The chosen unit: teal outline on a light underlay, in the layer of its own level.
-              (Flat list on purpose: <Source> passes its id only to direct children, not through fragments.) */}
           {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
             b
               ? [
@@ -308,8 +370,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
                     type="line"
                     source-layer={b.tiles.source_layer}
                     beforeId={BEFORE}
-                    filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
-                    paint={{ 'line-color': COLORS.surface, 'line-width': 5 }}
+                    paint={{ 'line-color': COLORS.surface, 'line-width': 5, 'line-opacity': FS_OPACITY('sel', 1) }}
                   />,
                   <Layer
                     key={`sel-line-${i}`}
@@ -317,8 +378,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
                     type="line"
                     source-layer={b.tiles.source_layer}
                     beforeId={BEFORE}
-                    filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
-                    paint={{ 'line-color': COLORS.selected, 'line-width': 2.5 }}
+                    paint={{ 'line-color': COLORS.selected, 'line-width': 2.5, 'line-opacity': FS_OPACITY('sel', 1) }}
                   />,
                 ]
               : [],
