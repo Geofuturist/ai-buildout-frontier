@@ -76,7 +76,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   }, [dataLayers, activeId, overlays]);
 
   useImperativeHandle(ref, () => ({
-    fitBounds: (b) => mapRef.current?.fitBounds([[b[0], b[1]], [b[2], b[3]]], { padding: 24, duration: 1200 }),
+    fitBounds: (b) => mapRef.current?.fitBounds([[b[0], b[1]], [b[2], b[3]]], { padding: 24, duration: 1200, maxZoom: 9 }),
     fitWorld: () => mapRef.current?.easeTo({ center: [-40, 30], zoom: 1.5, duration: 1200 }),
     fitUnit: (unitId, level) => {
       const sl = [bnd.adm0, bnd.adm1, bnd.adm2][level]?.tiles.source_layer;

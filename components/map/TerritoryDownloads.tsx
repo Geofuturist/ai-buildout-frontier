@@ -55,6 +55,8 @@ interface Props {
   data: MapData;
   /** the country's own layers, or null when it has none */
   model: CountryModel | null;
+  /** layers that cover several countries: their full files are offered on every country card */
+  world: CountryModel | null;
   iso3: string;
   indicator: Indicator | null;
   unit: UnitRef;
@@ -62,7 +64,7 @@ interface Props {
 }
 
 /** Download block by scope: country - region - unit (SPEC_WEB_territory 5). Cuts are CSV only. */
-export default function TerritoryDownloads({ data, model, iso3, indicator, unit, territory }: Props) {
+export default function TerritoryDownloads({ data, model, world, iso3, indicator, unit, territory }: Props) {
   const word = levelWord(unit.level, indicator ?? undefined, iso3, data.unit_words).toLowerCase();
 
   if (unit.level === 0) {
@@ -82,6 +84,22 @@ export default function TerritoryDownloads({ data, model, iso3, indicator, unit,
             <Downloads layer={layer} />
           </div>
         ))}
+        {world && (world.indicators.some((x) => x.key !== indicator?.key) || world.overlays.length > 0) && (
+          <div className="mt-4 border-t border-line pt-3">
+            <p className="text-xs font-semibold uppercase tracking-wide text-muted">Layers of the whole world</p>
+            <p className="text-xs text-muted">Full files: every country, not only {unit.name}.</p>
+            {world.indicators
+              .filter((x) => x.key !== indicator?.key)
+              .flatMap((x) => x.levels.map((lv) => lv.layer))
+              .concat(world.overlays)
+              .map((layer) => (
+                <div key={layer.layer_id} className="mt-2">
+                  <p className="text-xs text-ink2">{layer.title}</p>
+                  <Downloads layer={layer} />
+                </div>
+              ))}
+          </div>
+        )}
       </div>
     );
   }

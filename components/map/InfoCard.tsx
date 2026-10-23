@@ -5,6 +5,7 @@ import CopyButton from '@/components/CopyButton';
 import { checkedByLine, isoDate, recordCitation } from '@/lib/format';
 import { capitalize, recordNoun } from '@/lib/layers';
 import { MODULE_BY_TYPE } from './modules';
+import DcPointRows from './DcPointRows';
 import { Downloads, ValueRows, sourceLine } from './parts';
 import RecordDownload from './RecordDownload';
 import Shell from './Shell';
@@ -53,7 +54,11 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
 
   return (
     <Shell title={title} subtitle={`${key} · ${layer.title}`} onClose={onClose}>
-      <ValueRows layer={layer} meta={meta} props={p} keyField={mod.keyField} />
+      {meta.display?.size_field ? (
+        <DcPointRows layer={layer} meta={meta} props={p} anchor={anchor} />
+      ) : (
+        <ValueRows layer={layer} meta={meta} props={p} keyField={mod.keyField} />
+      )}
       <p className="mt-4 text-xs text-ink2">{sourceLine(meta)}</p>
       <p className="mt-1 text-xs text-ink2">License: <a href={meta.license.url}>{meta.license.name}</a></p>
       <p className="mt-1 text-xs text-ink2">{checkedByLine(meta)}</p>

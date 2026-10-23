@@ -33,7 +33,7 @@ const polygonModule: GeometryModule = {
             beforeId={ctx.before}
             filter={COVERED}
             layout={{ visibility: vis }}
-            paint={{ 'fill-color': fillColorExpression(field, d.breaks ?? [], l.domain) }}
+            paint={{ 'fill-color': fillColorExpression(field, d.breaks ?? [], l.domain, Boolean(d.breaks_fixed)) }}
           />
           {d.zero_class && (
             <Layer
@@ -93,7 +93,7 @@ const polygonModule: GeometryModule = {
     const meta = layers[0] ? metas[layers[0].meta_id] : null;
     const d = meta?.display;
     if (!d || !d.breaks || !d.value_field) return null;
-    const classes = legendClasses(d.breaks, d.unit ?? '', Boolean(d.zero_class), layers[0].domain);
+    const classes = legendClasses(d.breaks, d.unit ?? '', Boolean(d.zero_class), layers[0].domain, Boolean(d.breaks_fixed));
     return (
       <>
         <h3 className="mb-1 text-[13px] font-semibold text-ink">{d.legend_title}</h3>

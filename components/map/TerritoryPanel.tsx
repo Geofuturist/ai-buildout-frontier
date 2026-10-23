@@ -19,6 +19,8 @@ interface Props {
   countryIso: string | null;
   countryName: string;
   model: CountryModel | null;
+  /** layers that cover several countries (full files on the country card) */
+  world: CountryModel | null;
   /** the fill that is on, when it applies to the chosen country (its own or a world one) */
   indicator: Indicator | null;
   /** the chosen unit; level 0 = the country */
@@ -100,7 +102,7 @@ export default function TerritoryPanel(p: Props) {
               </div>
             )}
 
-            {unit && (model || indicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={indicator} unit={unit} territory={p.territory} />}
+            {unit && (model || indicator || p.world) && <TerritoryDownloads data={data} model={model} world={p.world} iso3={p.countryIso} indicator={indicator} unit={unit} territory={p.territory} />}
 
             {citeLayer && citeMeta && unit && (
               <div className="mt-3 flex flex-wrap items-center gap-3">

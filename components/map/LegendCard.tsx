@@ -7,6 +7,7 @@ import type { LayerEntry } from '@/lib/data';
 import type { PanelRow } from '@/lib/panel';
 import { COLORS } from '@/lib/style';
 import Legend from './Legend';
+import CountrySearch from './CountrySearch';
 import LayersPanel from './LayersPanel';
 import type { MapData } from './types';
 
@@ -21,6 +22,7 @@ interface Props {
   /** shown under the heading when the indicator has no data at the level that is drawn */
   note: string | null;
   rows: PanelRow[];
+  onSearch: (c: MapData['countries'][number]) => void;
   activeFill: string | null;
   overlays: Record<string, boolean>;
   failed: Set<string>;
@@ -37,7 +39,7 @@ interface Props {
  * Legend card, left (SPEC_WEB_territory 3). Desktop: top left, folds to the left with a remembered choice.
  * Phone: a small button bottom left that opens the card above the territory bar.
  */
-export default function LegendCard({ data, heading, note, layers, covered, rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, nonce }: Props) {
+export default function LegendCard({ data, heading, note, layers, covered, rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, onSearch, nonce }: Props) {
   const [folded, setFolded] = useState(false);
   const [openPhone, setOpenPhone] = useState(false);
   useEffect(() => {
@@ -62,6 +64,7 @@ export default function LegendCard({ data, heading, note, layers, covered, rows,
   const hasLegend = Boolean(heading) || layers.length > 0;
   const body = (
     <>
+      <CountrySearch countries={data.countries} onPick={onSearch} />
       {/* The legend of what is on the map stays above the list, so it is seen without scrolling */}
       {hasLegend && (
         <div className="mb-3 border-b border-line pb-3">

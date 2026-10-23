@@ -9,6 +9,7 @@ export default function HomePage() {
     default_country: d.default_country,
     level_zoom: d.level_zoom,
     unit_words: d.unit_words,
+    countries: d.countries,
   };
   return (
     <div className="flex h-[100dvh] flex-col">

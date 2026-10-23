@@ -45,7 +45,7 @@ export default function MapApp({ data }: { data: MapData }) {
   const rows = useMemo(() => buildRows(worldModel, countries, data.metas), [worldModel, countries, data.metas]);
 
   const model = countries.find((c) => c.iso3 === country) ?? null;
-  const countryName = model?.name ?? (country ? countryNameFromIso3(country) : '');
+  const countryName = (country ? data.countries.find((c) => c.iso3 === country)?.name : undefined) ?? model?.name ?? (country ? countryNameFromIso3(country) : '');
   // The fill that is on: any country's indicator or a world one; it does not depend on the chosen country
   const indicator = indicatorKey ? rows.find((r) => r.indicator?.key === indicatorKey)?.indicator ?? null : null;
   const indCountry = indicator && indicator.iso3 !== WORLD ? indicator.iso3 : null;
@@ -96,7 +96,7 @@ export default function MapApp({ data }: { data: MapData }) {
           const byDefault = data.default_layer ? m.indicators.find((i) => i.levels.some((x) => x.layer.layer_id === data.default_layer)) : undefined;
           const ind = byDefault ?? m.indicators[0];
           key = ind.key;
-          fly = unionBbox(ind.levels.map((x) => x.layer), data.metas);
+          fly = fly ?? unionBbox(ind.levels.map((x) => x.layer), data.metas);
         }
       }
       setIndicatorKey(key);
@@ -219,6 +219,7 @@ export default function MapApp({ data }: { data: MapData }) {
           onFill={onFill}
           onOverlay={onOverlayRow}
           onInfo={(id) => setCard({ type: 'layer', layerId: id })}
+          onSearch={(c) => selectCountry(c.iso3, { fly: c.bbox })}
         />
         <MapNav preview={data.channel === 'dev'} />
         {/* Zoom and the level a click selects, above the zoom buttons */}
@@ -230,6 +231,7 @@ export default function MapApp({ data }: { data: MapData }) {
           countryIso={country}
           countryName={countryName}
           model={model}
+          world={worldModel}
           indicator={indicator && country && (indicator.iso3 === WORLD || indicator.iso3 === country) ? indicator : null}
           unit={chosen}
           territory={territory}

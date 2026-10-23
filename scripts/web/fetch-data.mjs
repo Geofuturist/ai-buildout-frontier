@@ -16,9 +16,11 @@
 //   NEXT_PUBLIC_SITE_URL  used for the {domain} placeholder
 
 import { createHash } from 'node:crypto';
+import zlib from 'node:zlib';
 import fs from 'node:fs';
 import path from 'node:path';
 import GithubSlugger from 'github-slugger';
+import { featureBox } from './bbox.mjs';
 
 const ROOT = process.cwd();
 const BASE = (process.env.ABF_DATA_BASE_URL || 'https://data.aibuildoutfrontier.org').replace(/\/+$/, '');
@@ -287,6 +289,39 @@ async function main() {
     }
   }
 
+  // Countries for the search by name: every ADM0 unit of units.csv (name) with a box from the ADM0 geometry
+  // (boundaries geojson.gz, read here once; antimeridian handled in bbox.mjs).
+  const countries = [];
+  if (unitsText) {
+    const adm0 = layers.find((l) => l.dataset === bnd.dataset && l.tiles.source_layer === 'adm0');
+    const boxes = {};
+    const gj = adm0 && adm0.files['geojson.gz'];
+    if (gj) {
+      try {
+        const bytes = await getBytes(bnd.base_path + gj.path);
+        const fc = JSON.parse(zlib.gunzipSync(bytes).toString('utf8'));
+        for (const f of fc.features || []) {
+          const id = f.properties && (f.properties.unit_id || f.properties.iso3);
+          const b = id ? featureBox(f.geometry) : null;
+          if (b) boxes[id] = b;
+        }
+      } catch (e) {
+        strict(`country boxes: could not read the ADM0 geometry (${e && e.message ? e.message : e})`);
+      }
+    } else strict('country boxes: the ADM0 layer has no geojson.gz in the manifest');
+    for (const r of csvRows(unitsText)) {
+      if (r.level !== 'ADM0') continue;
+      countries.push({ iso3: r.unit_id, name: r.name, bbox: boxes[r.unit_id] || null });
+    }
+    countries.sort((a, b) => a.name.localeCompare(b.name, 'en'));
+    const missing = countries.filter((c) => !c.bbox).length;
+    if (missing) {
+      const msg = `${missing} of ${countries.length} countries have no box (the search selects them without flying)`;
+      warnings.push(msg);
+      console.warn(`WARN: ${msg}`);
+    }
+  }
+
   // 3. Methodology placeholders and anchors
   const layerTitles = layers.filter((l) => datasets[l.dataset].kind === 'layers').map((l) => ({ id: l.layer_id, title: l.title }));
   const mdSrc = fs.readFileSync(path.join(ROOT, 'content', 'methodology.md'), 'utf8');
@@ -404,6 +439,7 @@ async function main() {
     default_country: defaultCountry,
     level_zoom: levelZoom,
     unit_words: unitWords,
+    countries,
     attribution: groups,
     warnings,
   };

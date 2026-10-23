@@ -66,8 +66,18 @@ export interface Meta {
     value_field?: string;
     unit?: string;
     breaks?: number[];
+    /** breaks are the LOWER bounds of the classes (1, 10, 100, 1000 -> 1-9, 10-99, 100-999, 1000+) */
+    breaks_fixed?: boolean;
     zero_class?: boolean;
+    /** point layers: the field that sets the size, its thresholds and (for a class field) the classes in order */
+    size_field?: string;
+    size_breaks?: number[];
+    size_classes?: string[];
     legend_title?: string;
+    legend_note?: string;
+    legend_zero?: string;
+    legend_unknown?: string;
+    legend_point?: string;
     tile_fields?: string[];
     home_bbox?: [number, number, number, number];
     /** panel topic; absent in older metas (then derived from the domain) */
@@ -142,6 +152,8 @@ export interface AbfData {
   level_zoom: { ADM1: number; ADM2: number };
   /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
   unit_words: Record<string, Record<string, string>>;
+  /** every country of the boundaries (name from units.csv) with its box [w, s, e, n] (e may exceed 180), for the search */
+  countries: { iso3: string; name: string; bbox: [number, number, number, number] | null }[];
   attribution: { family: LicenseInfo['family']; sources: AttributionSource[] }[];
   warnings: string[];
 }
