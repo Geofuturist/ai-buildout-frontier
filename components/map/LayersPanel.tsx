@@ -1,6 +1,7 @@
 'use client';
 
-import { Info } from 'lucide-react';
+import { useState } from 'react';
+import { ChevronDown, ChevronRight, Info } from 'lucide-react';
 import { rowsByTopic } from '@/lib/panel';
 import type { PanelRow } from '@/lib/panel';
 
@@ -21,6 +22,15 @@ interface Props {
  */
 export default function LayersPanel({ rows, activeFill, overlays, failed, onFill, onOverlay, onInfo }: Props) {
   const topics = rowsByTopic(rows);
+  // Compact menu: the topics are buttons, a topic opens its list of layers (all closed at the start)
+  const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
+  const toggle = (t: string) =>
+    setOpenTopics((prev) => {
+      const n = new Set(prev);
+      if (n.has(t)) n.delete(t);
+      else n.add(t);
+      return n;
+    });
   if (topics.length === 0) return <p className="text-xs text-muted">No layers in this release.</p>;
 
   const text = (r: PanelRow, bad: boolean) => (
@@ -35,11 +45,29 @@ export default function LayersPanel({ rows, activeFill, overlays, failed, onFill
   );
 
   return (
-    <div className="space-y-3">
-      {topics.map(({ topic, rows: list }) => (
-        <section key={topic} aria-label={topic}>
-          <h3 className="text-xs font-semibold uppercase tracking-wide text-muted">{topic}</h3>
-          <ul>
+    <div className="space-y-1">
+      {topics.map(({ topic, rows: list }) => {
+        const isOpen = openTopics.has(topic);
+        const on = list.filter((r) => (r.kind === 'fill' ? activeFill === r.key : overlays[r.key])).length;
+        return (
+          <section key={topic} aria-label={topic}>
+            <button
+              type="button"
+              className="flex min-h-[40px] w-full items-center justify-between rounded-md border border-line bg-surface px-3 text-left text-sm font-semibold text-ink hover:border-accent"
+              aria-expanded={isOpen}
+              onClick={() => toggle(topic)}
+            >
+              <span>
+                {topic}
+                {on > 0 && <span className="ml-2 rounded-full bg-[#0f6e6e] px-1.5 py-0.5 text-[11px] font-semibold text-white">{on} on</span>}
+              </span>
+              <span className="flex items-center gap-2 text-xs font-normal text-muted">
+                {list.length}
+                {isOpen ? <ChevronDown size={16} aria-hidden /> : <ChevronRight size={16} aria-hidden />}
+              </span>
+            </button>
+            {isOpen && (
+              <ul className="mb-2 mt-1">
             {list.map((r) => (
               <li key={r.key} className="flex items-stretch">
                 {r.kind === 'fill' ? (
@@ -66,9 +94,11 @@ export default function LayersPanel({ rows, activeFill, overlays, failed, onFill
                 </button>
               </li>
             ))}
-          </ul>
-        </section>
-      ))}
+              </ul>
+            )}
+          </section>
+        );
+      })}
     </div>
   );
 }

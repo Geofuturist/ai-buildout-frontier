@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronRight, ChevronLeft, ChevronUp } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
 import { checkedByLine, recordCitation } from '@/lib/format';
 import { levelWord, shownLevelOf } from '@/lib/indicators';
@@ -39,6 +39,23 @@ interface Props {
 export default function TerritoryPanel(p: Props) {
   const { data, model, indicator, unit } = p;
   const [open, setOpen] = useState(false);
+  // Desktop: the card can be folded to the right edge; the choice is remembered
+  const [folded, setFolded] = useState(false);
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem('abf.territory.folded') === '1') setFolded(true);
+    } catch {
+      /* storage may be blocked */
+    }
+  }, []);
+  const fold = (v: boolean) => {
+    setFolded(v);
+    try {
+      window.localStorage.setItem('abf.territory.folded', v ? '1' : '0');
+    } catch {
+      /* ignore */
+    }
+  };
   useEffect(() => {
     if (p.nonce > 0) setOpen(true);
   }, [p.nonce]);
@@ -57,8 +74,15 @@ export default function TerritoryPanel(p: Props) {
   if (!p.countryIso) return null;
 
   return (
+    <>
+    {folded && !p.hidden && (
+      <button type="button" className="absolute right-3 top-14 z-20 hidden h-9 items-center gap-1 rounded-md border border-line bg-surface pl-3 pr-2 text-[13px] font-semibold text-ink shadow-md hover:text-accent md:flex" aria-label="Show the territory card" aria-expanded={false} onClick={() => fold(false)}>
+        {title}
+        <ChevronLeft size={18} aria-hidden />
+      </button>
+    )}
     <aside
-      className={`absolute inset-x-0 bottom-0 z-20 flex max-h-[58%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-14 md:max-h-[calc(100%-12rem)] md:w-[24rem] md:rounded-xl ${p.hidden ? 'hidden' : ''}`}
+      className={`${folded ? 'md:hidden ' : ''}absolute inset-x-0 bottom-0 z-20 flex max-h-[58%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-14 md:max-h-[calc(100%-12rem)] md:w-[24rem] md:rounded-xl ${p.hidden ? 'hidden' : ''}`}
       aria-label="Territory"
     >
       <button type="button" className="flex min-h-[48px] items-center justify-between px-4 text-left md:hidden" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
@@ -68,7 +92,10 @@ export default function TerritoryPanel(p: Props) {
         {open ? <ChevronDown size={20} aria-hidden /> : <ChevronUp size={20} aria-hidden />}
       </button>
 
-      <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-4 pb-4 pt-1 text-sm md:block md:pt-3`}>
+      <button type="button" className="absolute right-2 top-2 hidden h-8 w-8 items-center justify-center rounded-md border border-line text-ink2 hover:text-accent md:flex" aria-label="Hide the territory card" aria-expanded onClick={() => fold(true)}>
+        <ChevronRight size={18} aria-hidden />
+      </button>
+      <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-4 pb-4 pt-1 text-sm md:block md:pr-12 md:pt-3`}>
         {p.countryIso && (
           <>
             {/* Path up: country › region › unit */}
@@ -118,5 +145,6 @@ export default function TerritoryPanel(p: Props) {
         )}
       </div>
     </aside>
+    </>
   );
 }
