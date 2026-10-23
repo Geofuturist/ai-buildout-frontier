@@ -63,11 +63,11 @@ export default function LegendCard({ data, heading, note, layers, covered, rows,
 
   const hasLegend = Boolean(heading) || layers.length > 0;
   const body = (
-    <>
+    <div className="flex min-h-0 flex-1 flex-col">
       <CountrySearch countries={data.countries} onPick={onSearch} />
       {/* The legend of what is on the map stays above the list, so it is seen without scrolling */}
       {hasLegend && (
-        <div className="mb-3 border-b border-line pb-3">
+        <div className="mb-3 max-h-[42vh] shrink-0 overflow-y-auto border-b border-line pb-3">
           {heading && <p className="mb-2 text-sm font-semibold leading-tight text-ink">{heading}</p>}
           {note && <p className="mb-2 rounded-md border border-dashed border-[#8a8f96] p-2 text-xs text-ink2">{note}</p>}
           <Legend layers={layers} metas={data.metas} />
@@ -79,14 +79,16 @@ export default function LegendCard({ data, heading, note, layers, covered, rows,
           Grey countries have their own layers. Click one on the map.
         </p>
       )}
-      <LayersPanel rows={rows} activeFill={activeFill} overlays={overlays} failed={failed} onFill={onFill} onOverlay={onOverlay} onInfo={onInfo} />
+      <div className="md:min-h-0 md:flex-1 md:overflow-y-auto">
+        <LayersPanel rows={rows} activeFill={activeFill} overlays={overlays} failed={failed} onFill={onFill} onOverlay={onOverlay} onInfo={onInfo} />
+      </div>
       {!hasLegend && (
         <>
           <p className="mt-3 text-xs text-muted">Layers are named after their source.</p>
           <p className="mt-1 text-xs text-muted">Boundaries follow the US government&apos;s point of view and do not express a position of the project.</p>
         </>
       )}
-    </>
+    </div>
   );
 
   return (
@@ -111,7 +113,7 @@ export default function LegendCard({ data, heading, note, layers, covered, rows,
               <ChevronLeft size={18} aria-hidden />
             </button>
           </div>
-          <div className="overflow-y-auto px-3 pb-3 pt-2">{body}</div>
+          <div className="flex min-h-0 flex-1 flex-col px-3 pb-3 pt-2">{body}</div>
         </aside>
       )}
 

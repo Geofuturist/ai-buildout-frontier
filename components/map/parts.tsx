@@ -13,7 +13,13 @@ export const FORMATS: { key: string; label: string }[] = [
 
 export function humanize(name: string): string {
   // n_records -> Records, n_class_lt10 -> Class lt10
-  const s = name.replace(/^n_/, '').replace(/_(mw|kv|km)$/, '').replace(/_/g, ' ');
+  const s = name
+    .replace(/^n_/, '')
+    .replace(/_(mw|kv|km)$/, '')
+    .replace(/(\d+)_(\d+)/g, '$1–$2')
+    .replace(/\blt(\d+)/g, 'below $1')
+    .replace(/\bge(\d+)/g, '$1 and above')
+    .replace(/_/g, ' ');
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
