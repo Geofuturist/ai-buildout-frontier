@@ -797,6 +797,19 @@
         },
         "unit_card_line": {
           "type": "string"
+        },
+        "map": {
+          "type": "boolean"
+        },
+        "count_field": {
+          "type": "string"
+        },
+        "count_breaks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "number"
+          }
         }
       }
     },

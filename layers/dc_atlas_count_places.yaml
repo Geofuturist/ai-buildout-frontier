@@ -1,0 +1,287 @@
+# abf-dc v0.2.0 · new layer: Atlas records with a point, counted by place. Texts: DRAFT by [CODE-PUB]2, [RES]7 replaces them (SPEC_DC_world_v0_2_0 r1 section 5).
+# Data: scripts/dc/dc_count_v020.py (SPEC section 2.2). Every `[RES]` below is a G13 mark: a warning in dev, a stop in final.
+layer_id: dc_atlas_count_places
+title: "Data centers · Atlas of Data Center Politics · places"
+title_ru: "ЦОД · Atlas of Data Center Politics · места"
+domain: dc
+level: point
+input:
+  table: 'D:\GISData\AI\DC\out\abf-dc-v0.2.0\dc_atlas_count_places.csv'
+  files:
+    points_v010: 'D:\GISData\AI\DC\out\abf-dc-v0.1.0\dc_atlas_points.csv'
+    geonames_cities500: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\geonames\cities500.zip'
+    geonames_admin1: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\geonames\admin1CodesASCII.txt'
+    geonames_country_info: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\geonames\countryInfo.txt'
+    geonames_readme: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\geonames\Readme.txt'
+    census_places_zip: 'D:\GISData\AI\DC\sources\census\2023_Gaz_place_national.zip'
+    census_places_txt: 'D:\GISData\AI\DC\sources\census\2023_Gaz_place_national.txt'
+    frame_adm0: 'D:\GISData\AI\DC\sources\frame\adm0.parquet'
+    frame_units: 'D:\GISData\AI\DC\sources\frame\units.csv'
+description: >-
+  [RES] Draft. Number of data-center records of the Atlas of Data Center Politics that have a town point, counted
+  by place: one row for each of the 2,303 places (a GeoNames town or a Census place). A place is a town, not a
+  site; the records of a place may be different sites. The counts are those of dc_atlas_points.
+fields:
+- name: record_id
+  type: string
+  nullable: false
+  description: "Identifier set by the project: PLC- and the place_ref of the place, with the colon replaced by a hyphen."
+- name: place_ref
+  type: string
+  nullable: false
+  description: "Identifier of the place: geonames:<geonameid> or census:<GEOID>."
+- name: place_name
+  type: string
+  nullable: false
+  description: "Name of the town or U.S. place, as GeoNames or the Census Gazetteer gives it."
+- name: lon
+  type: number
+  nullable: false
+  description: "Longitude of the place (WGS 84), as in dc_atlas_points."
+- name: lat
+  type: number
+  nullable: false
+  description: "Latitude of the place (WGS 84), as in dc_atlas_points."
+- name: coord_precision
+  type: string
+  nullable: false
+  allowed_values: [city]
+  description: "city for every row: the place is a town point; records placed only in a county or without a place are not in this layer."
+- name: iso3_source
+  type: string
+  nullable: false
+  description: "Country under which the Atlas lists the records of the place, as the ISO 3166 alpha-3 code of a unit of abf-boundaries. The Atlas entry Somaliland is coded SOM."
+- name: iso3_frame
+  type: string
+  nullable: false
+  description: "Country of abf-boundaries v0.2.0 in which the point lies, as in dc_atlas_points."
+- name: control_iso3
+  type: string
+  nullable: true
+  description: "State in control of the area of disputed control (contested_areas layer of abf-boundaries) in which the point lies."
+  null_meaning: "The place does not lie in an area of disputed control."
+- name: ref
+  type: string
+  nullable: false
+  description: "Where the row comes from: the file and the records of dc_atlas_points of abf-dc 0.1.0 that it counts (the records with this place_ref)."
+- name: checked_at
+  type: datetime
+  nullable: false
+  description: "Date and time of the data step that counted the place."
+- name: checked_by
+  type: string
+  nullable: false
+  description: "Script that counted the place (script:dc_count_v020)."
+- name: n_records
+  type: integer
+  nullable: false
+  min: 0
+  description: "Number of Atlas data-center records of the place."
+- name: n_operating_or_construction
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas status Operating / Construction, which covers both operating sites and sites under construction."
+- name: n_planned
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas status Planned."
+- name: n_retired
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas status Retired."
+- name: n_class_lt10
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Small (below 10 MW)."
+- name: n_class_10_99
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Large (10–99 MW)."
+- name: n_class_100_999
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Hyperscale (100–999 MW)."
+- name: n_class_ge1000
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Gigascale (above 999 MW)."
+- name: n_class_unknown
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records with the Atlas size class Unknown."
+- name: power_class
+  type: string
+  nullable: true
+  allowed_values: [lt10, "10_99", "100_999", ge1000]
+  description: >-
+    Size class of the record, as the Atlas gives it, for a place with one record: lt10 (below 10 MW), 10_99, 100_999,
+    ge1000 (above 999 MW). Empty for a place with two or more records.
+  null_meaning: "The place has two or more records (n_records > 1), or its one record has the Atlas size class Unknown (n_records = 1)."
+geometry:
+  lon: lon
+  lat: lat
+  precision: coord_precision
+  precisions: [city]
+  precisions_without_point: []
+iso3_columns: [iso3_source, iso3_frame, control_iso3]
+g7_source_value_fields: []
+check_field_formats: true
+# Numbers of SPEC_DC_world_v0_2_0 section 2.4 (also stated in the texts of [RES]7); a difference stops the final build.
+expected_counts:
+  rows: 2303
+  sums: {n_records: 6087}
+  value_counts_listed:
+    coord_precision: {city: 2303}
+sources:
+
+- source_id: atlas_of_data_center_politics
+  role: primary
+  publisher: "Infrastructure Lab, National University of Singapore"
+  product: "Atlas of Data Center Politics, national tables of data centers"
+  url: https://www.atlasofdatacenterpolitics.com/
+  edition: "Version 0.1.0; Atlas data updated 2026-10-08; copies of 2026-10-14 to 2026-10-18"
+  current_through: "2026-10-08"
+  retrieved_at: "2026-10-14/2026-10-18"
+  publication_mode: open_licence
+  license:
+    id: CC-BY-4.0
+    name: "Creative Commons Attribution 4.0 International"
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: >-
+      Data centers: Kollar, Justin. Atlas of Data Center Politics. Version 0.1.0. Infrastructure Lab,
+      National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under
+      CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas
+      (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from
+      their addresses and names, and counted by country. These figures are not the Atlas as published.
+  rights_basis:
+    type: license
+    checked_by: "script:licence_extract.py"
+    checked_at: "2026-10-14"
+    evidence_url: https://www.atlasofdatacenterpolitics.com/LICENSE-DATA
+    text: >-
+      The data license of the Atlas (https://www.atlasofdatacenterpolitics.com/LICENSE-DATA) states: "The
+      Atlas datasets are licensed under the Creative Commons Attribution 4.0 International Licence (CC BY
+      4.0)." It asks for attribution in substantially the form above, for the version used, and for a
+      statement where the data are adapted or filtered. Its request about automated access is stated
+      there not to be a condition of the license; the records were copied by hand with the site's Copy
+      as: Table function.
+  input_refs: [table, points_v010]
+- source_id: geonames
+  role: geometry
+  publisher: "GeoNames"
+  product: "cities500 and admin1CodesASCII"
+  url: https://www.geonames.org/export/
+  edition: "files of 2026-10-16"
+  current_through: "2026-10-16"
+  retrieved_at: "2026-10-16"
+  publication_mode: open_licence
+  license:
+    id: CC-BY-4.0
+    name: "Creative Commons Attribution 4.0 International"
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: "Town points: GeoNames (https://www.geonames.org/), cities500 and admin1CodesASCII, files of 16 October 2026, CC BY 4.0."
+  rights_basis:
+    type: license
+    checked_by: "script:pf_run.py"
+    checked_at: "2026-10-22"
+    evidence_url: https://www.geonames.org/export/
+    text: >-
+      The readme of the GeoNames download files states: "This work is licensed under a Creative Commons
+      Attribution 4.0 License".
+  input_refs: [geonames_cities500, geonames_admin1, geonames_country_info, geonames_readme]
+- source_id: census_gazetteer_places_2023
+  role: geometry
+  publisher: "U.S. Census Bureau"
+  product: "2023 Gazetteer Files, Places"
+  url: https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
+  edition: "2023"
+  current_through: null
+  retrieved_at: "2026-10-22"
+  publication_mode: open_licence
+  license:
+    id: LicenseRef-us-gov-work
+    name: "U.S. Government work"
+    url: https://www.law.cornell.edu/uscode/text/17/105
+    family: public_domain
+    attribution_text: "U.S. place points: U.S. Census Bureau, 2023 Gazetteer Files, Places."
+  rights_basis:
+    type: statute
+    checked_by: "agent:RES"
+    checked_at: "2026-10-23"
+    evidence_url: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_place_national.zip
+    text: >-
+      Work of the U.S. federal government (17 U.S.C. §105). The download does not state a license, so the
+      status rests on the statute.
+  input_refs: [census_places_zip, census_places_txt]
+- source_id: abf_boundaries_v0_2_0
+  role: geometry
+  publisher: "AI Buildout Frontier"
+  product: "abf-boundaries v0.2.0"
+  url: https://doi.org/10.5281/zenodo.23454136
+  edition: "v0.2.0"
+  current_through: null
+  retrieved_at: "2026-10-22"
+  publication_mode: open_licence
+  license:
+    id: CC-BY-4.0
+    name: "Creative Commons Attribution 4.0 International"
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: >-
+      Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries
+      v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0.
+  rights_basis:
+    type: license
+    checked_by: "agent:CODE-PUB"
+    checked_at: "2026-10-23"
+    evidence_url: https://doi.org/10.5281/zenodo.23454136
+    text: >-
+      abf-boundaries v0.2.0 is published by this project under CC BY 4.0 (Zenodo record
+      10.5281/zenodo.23454136); the sources of its outlines are listed in its own meta.json.
+  input_refs: [frame_adm0, frame_units]
+verification:
+  levels:
+    source_as_is: 0.0
+    script_rules: 1.0
+    human: 0.0
+  sample_share: {}
+  method: >-
+    [RES] Draft. The places are counted by script from the published records of dc_atlas_points (abf-dc 0.1.0); the
+    build stops if the counts do not add up to the 6,087 records with a town point. No new check by an agent was made:
+    the layer counts records that were already checked.
+freshness:
+  source_cadence: irregular
+  next_check: "2027-01-31"
+coverage:
+  geography: "Places of the 126 countries and territories listed in the Atlas national tables"
+  iso3_from: iso3_source
+  known_gaps:
+  - "[RES] Draft. A place is a town point, not a site. 3,778 of the 9,865 Atlas records have no town point and are not in this layer."
+display:
+  geometry_type: point
+  size_field: power_class
+  size_classes: [lt10, "10_99", "100_999", ge1000]
+  size_breaks: [10, 100, 1000]
+  count_field: n_records
+  count_breaks: [2, 10]
+  legend_title: "[RES] Draft: records per place"
+  tile_fields: [record_id, place_ref, place_name, n_records, power_class, n_operating_or_construction, n_planned, n_retired, n_class_lt10, n_class_10_99, n_class_100_999, n_class_ge1000, n_class_unknown, iso3_source, control_iso3]
+ref_field: ref
+tiles:
+  minzoom: 0
+  maxzoom: 12
+  # all 2,303 points at every zoom, no dropping (SPEC section 3 item 4)
+  extra_args: ["-r1", "--no-tile-size-limit", "--no-feature-limit"]
+citation:
+  text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
+  record_pattern: "Ilin, V. AI Buildout Frontier, layer {layer_id}, record {record_key}, version {version}. {doi_url}"

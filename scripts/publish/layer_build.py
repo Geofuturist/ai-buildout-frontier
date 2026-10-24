@@ -1551,10 +1551,20 @@ def check_expected_counts(cfg, ctx, table, checks, report) -> None:  # noqa: ANN
 def check_display_keys(cfg, display, names, table) -> None:  # noqa: ANN001
     """display.size_field / size_breaks / size_classes / value_field refer to real fields and are in order."""
     layer_id = cfg["layer_id"]
-    for key in ("size_field", "value_field"):
+    for key in ("size_field", "value_field", "count_field"):
         v = display.get(key)
         if v is not None and v not in names:
             raise GateError("G1", f"{layer_id}: display.{key} = {v} is not a field of the layer")
+    cb = display.get("count_breaks")
+    if cb is not None:
+        if not display.get("count_field"):
+            raise GateError("G1", f"{layer_id}: display.count_breaks needs display.count_field")
+        if not cb or any(b2 <= b1 for b1, b2 in zip(cb, cb[1:])):
+            raise GateError("G1", f"{layer_id}: display.count_breaks must be a non-empty increasing list, got {cb}")
+    if display.get("count_field") and cb is None:
+        raise GateError("G1", f"{layer_id}: display.count_field needs display.count_breaks")
+    if "map" in display and not isinstance(display["map"], bool):
+        raise GateError("G1", f"{layer_id}: display.map must be true or false, got {display['map']!r}")
     sb = display.get("size_breaks")
     if sb is not None and any(b2 <= b1 for b1, b2 in zip(sb, sb[1:])):
         raise GateError("G1", f"{layer_id}: display.size_breaks must increase, got {sb}")

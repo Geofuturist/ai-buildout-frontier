@@ -1,0 +1,83 @@
+# Release of the dataset abf-dc, version 0.2.0 (SPEC_DC_world_v0_2_0 r1 section 3): a new version of the Zenodo record abf-dc
+# (same concept DOI as 0.1.0). Five layers: the three of 0.1.0 unchanged (the tiles of dc_atlas_points rebuilt with -r1) and two
+# new count layers (places, U.S. counties). 0.1.0 stays as published; the identity block makes the build prove it.
+# After V reserves the DOI ("New version" of the record abf-dc) and before the final build:
+#   python scripts\publish\set_release_doi.py releases\abf-dc-v0.2.0.yaml 10.5281/zenodo.<number> 2026-MM-DD
+dataset: abf-dc
+version: 0.2.0
+tag: abf-dc-v0.2.0
+doi: null
+boundary_release: abf-boundaries-v0.2.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\dc_atlas_points.yaml'
+  - 'layers\dc_epoch_points.yaml'
+  - 'layers\dc_atlas_count_adm0.yaml'
+  - 'layers\dc_atlas_count_places.yaml'
+  - 'layers\dc_atlas_count_usa_adm2.yaml'
+# The layers kept from 0.1.0 are the same files: CSV, extra files and source archives by SHA-256 of the manifest of 0.1.0
+# (data\abf-dc\v0.1.0\manifest.json); GeoParquet and GeoJSON.gz by SHA-256 or, if only the bytes differ, by values (needs the
+# folder of the 0.1.0 build). PMTiles and meta.json may differ. A difference is a stop in dev and in final (G9).
+identity:
+  manifest: 'data\abf-dc\v0.1.0\manifest.json'
+  layers: [dc_atlas_points, dc_epoch_points, dc_atlas_count_adm0]
+  old_release_dir: 'D:\GISData\release\abf-dc-v0.1.0'
+# Checks between the files of the release (build_release.py run_cross_checks). P9 between layers is checked by the data build.
+cross_checks:
+  # every Atlas record named in checks.csv exists in the Atlas layer
+  - kind: refs_in_layer
+    file: checks.csv
+    column: ref
+    separator: ";"
+    layer: dc_atlas_points
+    layer_column: record_id
+  # the country count layer equals the Atlas layer: records per country, by status and by size class
+  - kind: counts_match
+    count_layer: dc_atlas_count_adm0
+    point_layer: dc_atlas_points
+    unit_column: unit_id
+    point_iso_column: iso3_source
+    columns: &count_columns
+      n_records: null
+      n_operating_or_construction: {status_raw: "Operating / Construction"}
+      n_planned: {status_raw: "Planned"}
+      n_retired: {status_raw: "Retired"}
+      n_class_lt10: {power_class: "lt10"}
+      n_class_10_99: {power_class: "10_99"}
+      n_class_100_999: {power_class: "100_999"}
+      n_class_ge1000: {power_class: "ge1000"}
+      n_class_unknown: {power_class: ""}
+  # the places layer equals the Atlas records with a town point, by place_ref; a place with one record has its size class
+  - kind: counts_by_key
+    count_layer: dc_atlas_count_places
+    count_key: place_ref
+    point_layer: dc_atlas_points
+    point_filter: {coord_precision: "city"}
+    point_key: place_ref
+    columns: *count_columns
+    single_record_columns: [power_class]
+  # the county layer equals the Atlas records of the United States, by the county that county_records.csv gives them
+  - kind: counts_by_key
+    count_layer: dc_atlas_count_usa_adm2
+    count_key: unit_id
+    covered_column: coverage_status
+    point_layer: dc_atlas_points
+    mapping_file: county_records.csv
+    mapping_record: record_id
+    mapping_key: unit_id
+    mapping_filter: {assignment: "matched"}
+    columns: *count_columns
+  # every record named in county_records.csv exists in the Atlas layer
+  - kind: refs_in_layer
+    file: county_records.csv
+    column: record_id
+    separator: ";"
+    layer: dc_atlas_points
+    layer_column: record_id
+# The quoted phrases of the texts against the saved source pages (RES_texts_DC section 10): a stop in final.
+phrase_check:
+  pages: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\licence_pages'
+  geonames_readme: 'D:\GISData\AI\DC\abf-scratch-dc\research\dc_world\inputs\geonames\Readme.txt'
+  layers: 'layers'

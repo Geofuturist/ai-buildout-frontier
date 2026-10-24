@@ -11,6 +11,8 @@ Tiles and manifest.json are made later by the workflow "Build tiles and finalize
 from __future__ import annotations
 
 import argparse
+import gzip
+import json
 import logging
 import platform
 import shutil
@@ -20,6 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+import geopandas as gpd
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -152,6 +155,8 @@ def run_cross_checks(checks: list[dict[str, Any]], out: Path, boundaries: Bounda
     kind counts_match: for every country, the count columns of the count layer equal the numbers of records of the
         point layer; `columns` maps a count column to None (all records) or to {column: value} of the point layer
         (an empty value matches empty cells).
+    kind counts_by_key (abf-dc 0.2.0): every row of the count layer equals the records of the point layer that carry its
+        key; see check_counts_by_key.
     """
     for chk in checks:
         kind = chk["kind"]
@@ -183,8 +188,178 @@ def run_cross_checks(checks: list[dict[str, Any]], out: Path, boundaries: Bounda
                     raise GateError("G4", f"{chk['count_layer']}.{col} differs from the records of {chk['point_layer']} "
                                           f"for {len(bad)} countries, for example {bad.head(3).to_dict('index')}")
             report.note(f"cross-check: {len(chk['columns'])} count columns of {chk['count_layer']} equal the records of {chk['point_layer']} for every country")
+        elif kind == "counts_by_key":
+            check_counts_by_key(chk, out, report)
         else:
             raise GateError("G2", f"unknown cross_check kind {kind!r}")
+
+
+def _read_str(path: Path, **kw: Any) -> pd.DataFrame:
+    return pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8-sig", **kw)
+
+
+def check_counts_by_key(chk: dict[str, Any], out: Path, report: Report) -> None:
+    """A count layer against the records of a point layer, row by row (G4).
+
+    yaml: count_layer, count_key (key column of the count layer), point_layer, columns {count column: None | {column: value}},
+    optional point_filter {column: value} (records taken into account), point_key (key column of the point layer), or
+    mapping_file + mapping_record + mapping_key (+ mapping_filter): the key of a record comes from a file with one row per record
+    (county_records.csv); records that are not in it (after the filter) are not counted. covered_column: only rows with the
+    value `covered` are compared; the other rows must have every count column empty and no record may be counted to them.
+    single_record_columns: for a row with n_records = 1 the column equals that of its only record, otherwise it is empty.
+    """
+    count_layer, point_layer, ckey = chk["count_layer"], chk["point_layer"], chk["count_key"]
+    counts = _read_str(out / f"{count_layer}.csv")
+    points = _read_str(out / f"{point_layer}.csv")
+    for col, val in (chk.get("point_filter") or {}).items():
+        points = points[points[col] == str(val)]
+    if chk.get("mapping_file"):
+        mp = _read_str(out / chk["mapping_file"])
+        for col, val in (chk.get("mapping_filter") or {}).items():
+            mp = mp[mp[col] == str(val)]
+        mp = mp[[chk["mapping_record"], chk["mapping_key"]]].rename(columns={chk["mapping_key"]: "_key"})
+        if (mp["_key"] == "").any():
+            raise GateError("G4", f"{chk['mapping_file']}: rows with an empty {chk['mapping_key']} after the filter")
+        points = points.merge(mp, left_on="record_id", right_on=chk["mapping_record"], how="inner", validate="one_to_one")
+        key = "_key"
+    else:
+        key = chk["point_key"]
+        points = points[points[key] != ""]
+    if counts[ckey].duplicated().any():
+        raise GateError("G4", f"{count_layer}: {ckey} is not unique")
+    cov_col = chk.get("covered_column")
+    covered = counts[counts[cov_col] == "covered"] if cov_col else counts
+    uncovered = counts.drop(covered.index)
+    cols = list(chk["columns"])
+    if len(uncovered):
+        filled = uncovered[cols].ne("").any(axis=1)
+        if filled.any():
+            raise GateError("G4", f"{count_layer}: {int(filled.sum())} rows that are not covered have values, for example "
+                                  f"{uncovered.loc[filled, ckey].head(3).tolist()}")
+        stray = sorted(set(points[key]) & set(uncovered[ckey]))
+        if stray:
+            raise GateError("G4", f"{point_layer}: records are counted to {len(stray)} units that are not covered: {stray[:5]}")
+    unknown = sorted(set(points[key]) - set(counts[ckey]))
+    if unknown:
+        raise GateError("G4", f"{point_layer}: records carry {len(unknown)} keys that are not in {count_layer}: {unknown[:5]}")
+    idx = covered.set_index(ckey)
+    for col, cond in chk["columns"].items():
+        sub = points
+        if cond:
+            ((cc, vv),) = cond.items()
+            sub = points[points[cc] == str(vv)]
+        have = sub.groupby(key).size().reindex(idx.index).fillna(0).astype(int)
+        want = pd.to_numeric(idx[col], errors="raise").astype(int)
+        bad = have.index[(want != have).to_numpy()]
+        if len(bad):
+            raise GateError("G4", f"{count_layer}.{col} differs from the records of {point_layer} for {len(bad)} rows of {ckey}, "
+                                  f"for example {[(b, int(want[b]), int(have[b])) for b in bad[:3]]}")
+    for col in chk.get("single_record_columns") or []:
+        first = points.groupby(key)[col].first().reindex(idx.index).fillna("")
+        n = pd.to_numeric(idx["n_records"], errors="raise").astype(int)
+        expect = first.where(n == 1, "")
+        bad = idx.index[(idx[col] != expect).to_numpy()]
+        if len(bad):
+            raise GateError("G4", f"{count_layer}.{col} is not the value of the only record (or is not empty for several records) "
+                                  f"in {len(bad)} rows, for example {list(bad[:3])}")
+    report.note(f"cross-check: {len(cols)} count columns of {count_layer} equal the records of {point_layer} for each of the "
+                f"{len(covered):,} covered rows of {ckey}" + (f"; {len(uncovered)} not covered rows are empty and receive no record" if len(uncovered) else ""))
+
+
+def _geojson_features(path: Path) -> list[Any]:
+    text = gzip.decompress(path.read_bytes()).decode("utf-8")
+    try:
+        data = json.loads(text)
+        return data["features"] if isinstance(data, dict) and "features" in data else [data]
+    except json.JSONDecodeError:
+        return [json.loads(line) for line in text.splitlines() if line.strip()]
+
+
+def compare_parquet_values(old: Path, new: Path) -> list[str]:
+    """Same rows, same values of every column and same geometry (WKB) in two GeoParquet files; [] when equal."""
+    a, b = gpd.read_parquet(old), gpd.read_parquet(new)
+    if list(a.columns) != list(b.columns):
+        return [f"columns differ: {list(a.columns)} vs {list(b.columns)}"]
+    if len(a) != len(b):
+        return [f"{len(a)} rows vs {len(b)}"]
+    a, b = a.reset_index(drop=True), b.reset_index(drop=True)
+    problems = []
+    for col in a.columns:
+        if col == a.geometry.name:
+            wa = a.geometry.apply(lambda g: g.wkb if g is not None else b"")
+            wb = b.geometry.apply(lambda g: g.wkb if g is not None else b"")
+            n = int((wa != wb).sum())
+        else:
+            n = int((~((a[col] == b[col]) | (a[col].isna() & b[col].isna()))).sum())
+        if n:
+            problems.append(f"{n} values differ in {col}")
+    return problems
+
+
+def run_identity(spec: dict[str, Any], out: Path, report: Report) -> None:
+    """The layers kept from an earlier release are the same files (SPEC_DC_world_v0_2_0 section 3 item 3), a stop (G9).
+
+    By the SHA-256 of the earlier manifest: CSV files, extra files and source archives must be byte-identical. GeoParquet and
+    GeoJSON.gz: the same SHA-256, or - when only the bytes differ (another library version) - equal values and geometry, which
+    needs the earlier release folder (`old_release_dir`, its files must match the manifest). PMTiles and meta.json may differ.
+    yaml: identity: {manifest, layers: [layer_id], old_release_dir}.
+    """
+    manifest = read_json(resolve_path(spec["manifest"]))
+    wanted = list(spec["layers"])
+    by_id = {lay["layer_id"]: lay for lay in manifest["layers"]}
+    absent = [w for w in wanted if w not in by_id]
+    if absent:
+        raise GateError("G9", f"identity: layers {absent} are not in the manifest {spec['manifest']}")
+    old_dir = resolve_path(spec["old_release_dir"]) if spec.get("old_release_dir") else None
+    same: list[str] = []
+    by_values: list[str] = []
+
+    def need(rec: dict[str, Any]) -> Path:
+        path = out / rec["path"]
+        if not path.exists():
+            raise GateError("G9", f"identity: {rec['path']} of {manifest['tag']} is not in this release")
+        return path
+
+    for lid in wanted:
+        lay = by_id[lid]
+        for fmt, rec in lay["files"].items():
+            if fmt == "pmtiles":
+                continue
+            new = need(rec)
+            if sha256_file(new) == rec["sha256"]:
+                same.append(rec["path"])
+                continue
+            if fmt not in ("parquet", "geojson.gz"):
+                raise GateError("G9", f"identity: {rec['path']} differs from {manifest['tag']} (SHA-256), a {fmt} file must be identical")
+            if old_dir is None or not (old_dir / rec["path"]).exists():
+                raise GateError("G9", f"identity: {rec['path']} differs from {manifest['tag']} in bytes and the earlier release folder "
+                                      f"is not available to compare the values (identity.old_release_dir)")
+            old = old_dir / rec["path"]
+            if sha256_file(old) != rec["sha256"]:
+                raise GateError("G9", f"identity: {old} is not the published file of {manifest['tag']} (SHA-256 differs from the manifest)")
+            if fmt == "parquet":
+                probs = compare_parquet_values(old, new)
+            else:
+                probs = [] if _geojson_features(old) == _geojson_features(new) else ["the features differ"]
+            if probs:
+                raise GateError("G9", f"identity: {rec['path']} differs from {manifest['tag']} in values: {probs[:3]}")
+            by_values.append(rec["path"])
+        for rec in lay["extra_files"]:
+            if sha256_file(need(rec)) != rec["sha256"]:
+                raise GateError("G9", f"identity: {rec['path']} differs from {manifest['tag']} (SHA-256)")
+            same.append(rec["path"])
+    for rec in manifest["source_archives"]:
+        if sha256_file(need(rec)) != rec["sha256"]:
+            raise GateError("G9", f"identity: {rec['path']} differs from {manifest['tag']} (SHA-256)")
+        same.append(rec["path"])
+    lines = [f"- layers kept from {manifest['tag']}: {', '.join(wanted)}",
+             f"- the same SHA-256: {len(same)} files"] + [f"  - {n}" for n in same]
+    if by_values:
+        lines.append(f"- other bytes, equal values and geometry: {len(by_values)} files")
+        lines += [f"  - {n}" for n in by_values]
+    lines.append("- PMTiles and meta.json are not compared (tiles of dc_atlas_points are rebuilt with -r1; meta has the new version, dates and texts)")
+    report.section(f"Identity with {manifest['tag']}", lines)
+    report.note(f"identity with {manifest['tag']}: {len(same)} files by SHA-256, {len(by_values)} by values")
 
 
 class BuildContextStub:
@@ -283,8 +458,8 @@ def run(args: argparse.Namespace) -> int:
                 lo = layer_build.build_point_layer(cfg, ctx)
             else:
                 lo = layer_build.build_adm_layer(cfg, ctx)
-            if cfg["domain"] == "dc" and cfg["level"] not in ("point", "ADM0"):
-                raise GateError("G3b", f"{cfg['layer_id']}: only point layers and the world ADM0 count layer are supported for the domain dc")
+            if cfg["domain"] == "dc" and cfg["level"] not in ("point", "ADM0", "ADM2"):
+                raise GateError("G3b", f"{cfg['layer_id']}: only point layers, the world ADM0 count layer and ADM2 count layers are supported for the domain dc")
             metas.append((lo.meta_path, lo.meta))
             all_layers.append(lo)
             plan_layers.append(plan_layer(lo, out, lo.extra_files, f"{lo.layer_id}.pmtiles"))
@@ -305,6 +480,8 @@ def run(args: argparse.Namespace) -> int:
         raise GateError("G3b", f"the dc layers of the release have different display.size_breaks: {breaks}")
     if rel.get("cross_checks"):
         run_cross_checks(rel["cross_checks"], out, boundaries, report)
+    if rel.get("identity"):
+        run_identity(rel["identity"], out, report)
     if rel.get("phrase_check"):
         run_phrase_check(rel["phrase_check"], channel, report)
 

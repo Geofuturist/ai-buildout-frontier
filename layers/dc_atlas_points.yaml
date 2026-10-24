@@ -478,6 +478,7 @@ coverage:
     iso3_frame differs from iso3_source. Counts by country use the Atlas country.
 display:
   geometry_type: point
+  map: false   # SPEC_DC_world_v0_2_0 section 1 item 7: shown by dc_atlas_count_places
   size_field: power_class
   size_classes: [lt10, "10_99", "100_999", ge1000]
   size_breaks: [10, 100, 1000]
@@ -512,7 +513,7 @@ tiles:
   # About 6,100 points with long text fields (address_raw, source_urls) for the point window: in a dense tile the densest
   # points are dropped instead of making the tile huge. The default of point layers (keep every point) is not used here.
   # Decision for ARCH6 (handoff PUB Rev 42); the size of the .pmtiles is reported after the dev build.
-  extra_args: ["--drop-densest-as-needed", "--extend-zooms-if-still-dropping"]
+  extra_args: ["-r1", "--drop-densest-as-needed", "--extend-zooms-if-still-dropping"]
 citation:
   text: "Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}"
   record_pattern: "Ilin, V. AI Buildout Frontier, layer {layer_id}, record {record_key}, version {version}. {doi_url}"
