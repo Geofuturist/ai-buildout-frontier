@@ -1,0 +1,557 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "dc_epoch_points",
+  "title": "AI data centers · Epoch AI · sites",
+  "title_ru": "ИИ-ЦОД · Epoch AI · площадки",
+  "domain": "dc",
+  "level": "point",
+  "description": "The 94 AI data-center sites of the Epoch AI data set \"AI data centers\" (file of 12 October 2026), with owner, users, current IT power, compute in H100 equivalents, capital cost and chip types as Epoch AI gives them. Epoch AI selects the largest AI data centers by computing capacity; the data set is not a census of data centers. Power is Epoch AI's estimate of current IT power in MW, a value of the source, not of the project; 0 MW means that Epoch AI counts no IT power in operation at the site on the file date. Each site is placed at the town named in its address or name; a point marks the town, not the site. The file checks.csv records, site by site, whether the Atlas of Data Center Politics lists the same site.",
+  "fields": [
+    {
+      "name": "record_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Identifier set by the project: EPO- and the site name in lower case with hyphens."
+    },
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": true,
+      "description": "For a site without a point (coord_precision = none), the country given by Epoch AI. Codes of abf-boundaries v0.2.0.",
+      "null_meaning": "The site has a point (lon, lat)."
+    },
+    {
+      "name": "lon",
+      "type": "number",
+      "nullable": true,
+      "description": "Longitude of the town the site is placed at (WGS 84): the GeoNames point of the town or the Census internal point of the U.S. place.",
+      "null_meaning": "The site has no place below the country (see location_state)."
+    },
+    {
+      "name": "lat",
+      "type": "number",
+      "nullable": true,
+      "description": "Latitude of the town the site is placed at (WGS 84), as for lon.",
+      "null_meaning": "The site has no place below the country (see location_state)."
+    },
+    {
+      "name": "coord_source",
+      "type": "string",
+      "nullable": true,
+      "description": "How the place was found: geonames_address (a town named in the address, found in GeoNames); census_place (a U.S. place named in the address, found in the Census Gazetteer 2023); geonames_name (a town named in the site name, found in GeoNames; not used for U.S. sites).",
+      "null_meaning": "The site has no place below the country (see location_state)."
+    },
+    {
+      "name": "coord_precision",
+      "type": "string",
+      "nullable": false,
+      "description": "city (a point at the town) or none (no place below the country)."
+    },
+    {
+      "name": "place_name",
+      "type": "string",
+      "nullable": true,
+      "description": "Name of the town or U.S. place of the point, as GeoNames or the Census Gazetteer gives it.",
+      "null_meaning": "The site has no place below the country (see location_state)."
+    },
+    {
+      "name": "place_ref",
+      "type": "string",
+      "nullable": true,
+      "description": "Identifier of that place: geonames:<geonameid> or census:<GEOID>.",
+      "null_meaning": "The site has no place below the country (see location_state)."
+    },
+    {
+      "name": "source_grade",
+      "type": "string",
+      "nullable": false,
+      "description": "secondary for all sites: Epoch AI compiles its sites from other sources."
+    },
+    {
+      "name": "ref",
+      "type": "string",
+      "nullable": false,
+      "description": "Epoch AI, AI data centers, the site name and the date of the file."
+    },
+    {
+      "name": "checked_at",
+      "type": "datetime",
+      "nullable": false,
+      "description": "Date and time of the build that set the record."
+    },
+    {
+      "name": "checked_by",
+      "type": "string",
+      "nullable": false,
+      "description": "Script that built the record (script:dc_build)."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Name of the site as given by Epoch AI."
+    },
+    {
+      "name": "owner",
+      "type": "string",
+      "nullable": true,
+      "description": "Owner as given by Epoch AI, with Epoch AI's confidence tag (#confident, #likely, #speculative) kept as in the file.",
+      "null_meaning": "Epoch AI gives no owner."
+    },
+    {
+      "name": "users",
+      "type": "string",
+      "nullable": true,
+      "description": "Users of the site's compute as given by Epoch AI, with its confidence tags.",
+      "null_meaning": "Epoch AI gives no users."
+    },
+    {
+      "name": "project",
+      "type": "string",
+      "nullable": true,
+      "description": "Project as given by Epoch AI, for example Stargate or Project Rainier, with its confidence tags.",
+      "null_meaning": "Epoch AI gives no project."
+    },
+    {
+      "name": "country_source",
+      "type": "string",
+      "nullable": false,
+      "description": "Country as given by Epoch AI."
+    },
+    {
+      "name": "address_raw",
+      "type": "string",
+      "nullable": true,
+      "description": "Address as given by Epoch AI.",
+      "null_meaning": "Epoch AI gives no address."
+    },
+    {
+      "name": "power_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Current IT power of the site in MW as given by Epoch AI: the power available to GPU servers, network and storage, without cooling and other facility overhead, as of the file date. 0 is a value: Epoch AI counts no IT power in operation at the site yet."
+    },
+    {
+      "name": "power_basis",
+      "type": "string",
+      "nullable": false,
+      "description": "epoch_it_power for all sites."
+    },
+    {
+      "name": "power_status",
+      "type": "string",
+      "nullable": false,
+      "description": "found for all 94 sites."
+    },
+    {
+      "name": "power_status_reason",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason when power_status is not found; none in this version.",
+      "null_meaning": "power_status is found."
+    },
+    {
+      "name": "power_ref",
+      "type": "string",
+      "nullable": false,
+      "description": "Site name in the Epoch AI file from which the value is taken."
+    },
+    {
+      "name": "power_source_date",
+      "type": "date",
+      "nullable": false,
+      "description": "Date of the Epoch AI file."
+    },
+    {
+      "name": "power_checked_by",
+      "type": "string",
+      "nullable": false,
+      "description": "Script that took the value (script:dc_power)."
+    },
+    {
+      "name": "h100e_current",
+      "type": "number",
+      "unit": "H100 equivalents",
+      "nullable": false,
+      "description": "Current computing capacity of the site in H100 equivalents, as estimated by Epoch AI."
+    },
+    {
+      "name": "capital_cost_usd_bn",
+      "type": "number",
+      "unit": "billion USD (2025)",
+      "nullable": false,
+      "description": "Current total capital cost of the site in billions of 2025 U.S. dollars, as estimated by Epoch AI."
+    },
+    {
+      "name": "chip_types_current",
+      "type": "string",
+      "nullable": true,
+      "description": "Types of AI chips currently at the site, as given by Epoch AI.",
+      "null_meaning": "Epoch AI gives no current chip types."
+    },
+    {
+      "name": "selected_sources",
+      "type": "string",
+      "nullable": false,
+      "description": "Sources Epoch AI lists for the site, as Markdown links separated by a vertical bar ( | )."
+    },
+    {
+      "name": "iso3_source",
+      "type": "string",
+      "nullable": false,
+      "description": "Country given by Epoch AI, as the ISO 3166 alpha-3 code of a unit of abf-boundaries."
+    },
+    {
+      "name": "iso3_frame",
+      "type": "string",
+      "nullable": true,
+      "description": "Country of abf-boundaries v0.2.0 in which the point lies; a coastal point outside every country goes to the nearest country within 10 km.",
+      "null_meaning": "The site has no point."
+    },
+    {
+      "name": "control_iso3",
+      "type": "string",
+      "nullable": true,
+      "description": "State in control of the area of disputed control (contested_areas layer of abf-boundaries) in which the point lies.",
+      "null_meaning": "The site does not lie in an area of disputed control."
+    },
+    {
+      "name": "resolved_by_population",
+      "type": "boolean",
+      "nullable": false,
+      "description": "true when several towns of that name lie in the same region and the place was chosen because only one of them has a population above zero in GeoNames."
+    },
+    {
+      "name": "location_state",
+      "type": "string",
+      "nullable": true,
+      "description": "Why the site has no point: no_address (the file gives no address and the name names no town), unresolved (a town is named but not found under the rules), ambiguous (several towns fit).",
+      "null_meaning": "The site has a town point."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "epoch_ai_data_centers",
+      "role": "primary",
+      "publisher": "Epoch AI",
+      "product": "AI data centers, file data_centers.csv",
+      "url": "https://epoch.ai/data/ai-data-centers",
+      "edition": "file updated 2026-10-12, retrieved 2026-10-14",
+      "current_through": "2026-10-12",
+      "retrieved_at": "2026-10-14",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "AI data centers: Epoch AI, 'AI data centers'. Published online at epoch.ai. Retrieved from 'https://epoch.ai/data/ai-data-centers' [online resource]. Accessed 14 Oct 2026. File updated 12 Oct 2026, CC BY 4.0. Selected columns; places assigned by AI Buildout Frontier."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:licence_extract.py",
+        "checked_at": "2026-10-14",
+        "evidence_url": "https://epoch.ai/data/data-centers",
+        "text": "The Epoch AI data page states: \"Epoch AI's data is free to use, distribute, and reproduce provided the source and authors are credited under the Creative Commons Attribution license\", with a link to CC BY 4.0; the README of the downloaded archive says the same."
+      },
+      "inputs": [
+        {
+          "file": "dc_epoch_points.csv",
+          "bytes": 86906,
+          "sha256": "8f4c634e3f9ee6dbf342def46f672ede843e9f095751f4f748b70e61691cfa98"
+        },
+        {
+          "file": "data_centers.csv",
+          "bytes": 70660,
+          "sha256": "2820f8e22d0f4db5cda8f59f7598d6d14916ee0280758a7007e8721e19aa5a37"
+        }
+      ]
+    },
+    {
+      "source_id": "geonames",
+      "role": "geometry",
+      "publisher": "GeoNames",
+      "product": "cities500 and admin1CodesASCII",
+      "url": "https://www.geonames.org/export/",
+      "edition": "files of 2026-10-16",
+      "current_through": "2026-10-16",
+      "retrieved_at": "2026-10-16",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Town points: GeoNames (https://www.geonames.org/), cities500 and admin1CodesASCII, files of 16 October 2026, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:pf_run.py",
+        "checked_at": "2026-10-22",
+        "evidence_url": "https://www.geonames.org/export/",
+        "text": "The readme of the GeoNames download files states: \"This work is licensed under a Creative Commons Attribution 4.0 License\"."
+      },
+      "inputs": [
+        {
+          "file": "cities500.zip",
+          "bytes": 13884845,
+          "sha256": "ca136e8a47637dbfd3140900f313733e7c2776d310c7ed4b58676ea2af626e05"
+        },
+        {
+          "file": "admin1CodesASCII.txt",
+          "bytes": 155448,
+          "sha256": "687b8814839a781874dbc6cd4b1f0c1efa4c283dc4f3ca435219ef1e508d7deb"
+        },
+        {
+          "file": "countryInfo.txt",
+          "bytes": 31690,
+          "sha256": "c55f638cfaafb4fe45a9aa15120a0f1f78e8a34a8e1847d7b9320cf740fbc9ab"
+        },
+        {
+          "file": "Readme.txt",
+          "bytes": 8984,
+          "sha256": "5fce6c36d3686ee871bf10b50f4b36f86de49280f0a28296b0d41fc483022c2d"
+        }
+      ]
+    },
+    {
+      "source_id": "census_gazetteer_places_2023",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "2023 Gazetteer Files, Places",
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html",
+      "edition": "2023",
+      "current_through": null,
+      "retrieved_at": "2026-10-22",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.law.cornell.edu/uscode/text/17/105",
+        "family": "public_domain",
+        "attribution_text": "U.S. place points: U.S. Census Bureau, 2023 Gazetteer Files, Places."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "checked_by": "agent:RES",
+        "checked_at": "2026-10-23",
+        "evidence_url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_place_national.zip",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The download does not state a license, so the status rests on the statute."
+      },
+      "inputs": [
+        {
+          "file": "2023_Gaz_place_national.zip",
+          "bytes": 1220953,
+          "sha256": "3c8b23c0dcdb15c0ebd16fee7373e032466e6b585650aa219bc1bee5ac8bd58f"
+        },
+        {
+          "file": "2023_Gaz_place_national.txt",
+          "bytes": 6498405,
+          "sha256": "ac101507007c207bda757db7ea2aff36007b133f449ba1c97cdc4380828dbe25"
+        }
+      ]
+    },
+    {
+      "source_id": "abf_boundaries_v0_2_0",
+      "role": "geometry",
+      "publisher": "AI Buildout Frontier",
+      "product": "abf-boundaries v0.2.0",
+      "url": "https://doi.org/10.5281/zenodo.23454136",
+      "edition": "v0.2.0",
+      "current_through": null,
+      "retrieved_at": "2026-10-22",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "agent:CODE-PUB",
+        "checked_at": "2026-10-23",
+        "evidence_url": "https://doi.org/10.5281/zenodo.23454136",
+        "text": "abf-boundaries v0.2.0 is published by this project under CC BY 4.0 (Zenodo record 10.5281/zenodo.23454136); the sources of its outlines are listed in its own meta.json."
+      },
+      "inputs": [
+        {
+          "file": "adm0.parquet",
+          "bytes": 4091957,
+          "sha256": "561698ff2dd8be004c5cfee694874939aa0aa9cf0ab1ad79ac1d2d70f0738d82"
+        },
+        {
+          "file": "units.csv",
+          "bytes": 529161,
+          "sha256": "126b8017034c2c72a181a47f2aa8d454f0dcadd3a856d9d0fc9ed785f3093e4d"
+        },
+        {
+          "file": "contested_areas.parquet",
+          "bytes": 20956,
+          "sha256": "4cc9b327848f1abc44db620a8765208b931fa02615668c5ad36dc91a6440e80b"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution",
+    "attribution_text": "AI data centers: Epoch AI, 'AI data centers'. Published online at epoch.ai. Retrieved from 'https://epoch.ai/data/ai-data-centers' [online resource]. Accessed 14 Oct 2026. File updated 12 Oct 2026, CC BY 4.0. Selected columns; places assigned by AI Buildout Frontier. Town points: GeoNames (https://www.geonames.org/), cities500 and admin1CodesASCII, files of 16 October 2026, CC BY 4.0. U.S. place points: U.S. Census Bureau, 2023 Gazetteer Files, Places. Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+  },
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "freshness": {
+    "source_current_through": "2026-10-12",
+    "source_cadence": "irregular",
+    "built_at": "2026-10-23T13:42:07Z",
+    "next_check": "2027-01-31"
+  },
+  "coverage": {
+    "geography": "94 AI data-center sites in 12 countries",
+    "iso3": [
+      "ARE",
+      "AUS",
+      "CHN",
+      "FIN",
+      "GBR",
+      "IDN",
+      "ISL",
+      "MYS",
+      "NOR",
+      "PRT",
+      "SWE",
+      "USA"
+    ],
+    "frame": null,
+    "n_units_frame": null,
+    "n_units_covered": null,
+    "n_records": 94,
+    "known_gaps": [
+      "Epoch AI selects data centers mostly by computing capacity, with a lower bar outside the United States, and mostly sites that become operational in 2024 or later. Its database mostly consists of data centers in the United States: 77 of the 94 sites are there. Epoch AI estimates that it covers 44% of the world's deployed AI computing capacity as of 14 October 2026 (90% interval 23–81%). The layer is not a census of data centers.",
+      "Power is current IT power, an estimate of Epoch AI, not a value reported by the operator. Epoch AI notes that total facility power is 20–50% higher because of cooling and other overhead. 20 sites have 0 MW: Epoch AI counts no IT power in operation there on the file date.",
+      "23 sites (17 of them in the United States) have no point: the file gives no address, or the address names no town in a form the rules read, and for U.S. sites the town is not taken from the name. A point marks the town, not the site.",
+      "In checks.csv, found means that the Atlas lists the same site: an Atlas record has the same street address (in the United States the same house number, street and state), or V judged a candidate listed by the script to be the same site. not_checked means that the script found no candidate. An Atlas record without an address cannot be matched by address, so not_checked does not mean that the Atlas lacks the site."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-dc",
+    "version": "0.1.0",
+    "tag": "abf-dc-v0.1.0",
+    "doi": "10.5281/zenodo.23591916",
+    "published_at": "2026-10-23"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 0.0,
+      "script_rules": 1.0,
+      "human": 0.0,
+      "agent_sample": 0.1596
+    },
+    "method": "Places are set by the same rules as in the Atlas layer, without the county step, since the Epoch AI file gives no county, and without the town from the name for U.S. sites. Values, including power, are taken from the Epoch AI file as given. The independent AI session checked 17 places of Epoch AI sites in its samples; one, Johor Bahru for a site in Sedenak, was disputed and removed by the corrected rules, and 15 sites keep the place that was checked, all agreed. Whether the Atlas lists the same site (checks.csv) is decided by the address rule or, for candidates the script lists, by V. The independent session checked 13 of these cells against public web pages: 9 confirmed, 2 disputed, 2 could not be decided. In both disputed cells an Atlas record has the same street address as the Epoch AI site, so the address rule now decides them and V's verdict is kept in the note. The verdicts are published with the dataset in ver_results_places.csv (with the Atlas layer) and ver_results_cells.csv.",
+    "sample_share": {
+      "places_geonames_address": 0.125,
+      "places_census_place": 1.0,
+      "places_geonames_name": 1.0,
+      "cells_found_script": 0.2333,
+      "cells_found_human": 0.1212,
+      "cells_not_found_human": 1.0
+    },
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "record_id_unique",
+        "description": "record_id is present and unique in all 94 records."
+      },
+      {
+        "id": "coords_match_precision",
+        "description": "Records with coord_precision none have no coordinates; every other record has a longitude and a latitude in range."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id was looked up in the boundaries release: unit_id of a record with coord_precision none is a country of the boundaries release; a record with coord_precision city has no unit_id."
+      },
+      {
+        "id": "iso3_in_boundaries",
+        "description": "Every value of iso3_source, iso3_frame, control_iso3 is the ISO 3166 alpha-3 code of a country or territory of the boundaries release."
+      },
+      {
+        "id": "listed_values_only",
+        "description": "The fields coord_source, coord_precision, source_grade, power_basis, power_status, location_state hold only the values listed in their descriptions."
+      },
+      {
+        "id": "counts_match_texts",
+        "description": "Recomputed from the published file and equal to the numbers in the texts of this layer: the number of records (94); the counts by coord_precision, country_source; the number of zero values of power_mw."
+      },
+      {
+        "id": "ref_present",
+        "description": "Every record has a non-empty ref (reference to the source record)."
+      },
+      {
+        "id": "power_fields_adr",
+        "description": "Power fields of the layer (power_mw, power_basis, power_status, power_status_reason, power_ref, power_source_date, power_checked_by) are on the ADR 6.2 list; each record has one power basis."
+      },
+      {
+        "id": "checks_covers_layer",
+        "description": "checks.csv has exactly one row for each of the 94 records of the layer."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · AI data centers · Epoch AI · sites (version 0.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23591916",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer dc_epoch_points, record {record_key}, version 0.1.0. https://doi.org/10.5281/zenodo.23591916"
+  },
+  "display": {
+    "geometry_type": "point",
+    "size_field": "power_mw",
+    "size_breaks": [
+      10,
+      100,
+      1000
+    ],
+    "zero_class": true,
+    "legend_title": "Power class",
+    "legend_note": "Classes by the value each source gives. Bases differ: Epoch AI gives current IT power; the Atlas gives a size class without stating its basis.",
+    "legend_zero": "0 MW (Epoch AI: no IT power in operation yet)",
+    "legend_unknown": "Unknown (the source gives no value)",
+    "legend_point": "Point at the town, not at the site",
+    "unit_card_line": "{n} records without a point",
+    "tile_fields": [
+      "record_id",
+      "name",
+      "owner",
+      "users",
+      "project",
+      "power_mw",
+      "power_status",
+      "place_name",
+      "coord_source",
+      "selected_sources",
+      "address_raw",
+      "iso3_source",
+      "iso3_frame",
+      "control_iso3"
+    ]
+  },
+  "extra_files": [
+    {
+      "file": "checks.csv",
+      "description": "One row per Epoch AI site: whether the Atlas of Data Center Politics lists the same site (channel atlas_dcp). status is found (ref gives the Atlas record_id, several separated by semicolons), not_found or not_checked. checked_by is script:dc_checks where an Atlas record has the same street address (in the United States the same house number, street and state) or no candidate was found, and human:V where V judged the candidates the script listed. Where V's verdict differs from the address rule, the address rule decides and note keeps V's verdict. search_method gives the rule."
+    }
+  ]
+}
