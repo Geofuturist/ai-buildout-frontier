@@ -84,6 +84,8 @@ export interface Meta {
     count_field?: string;
     /** lower bounds of the badge classes, increasing (2, 10 -> 2-9 and 10+) */
     count_breaks?: number[];
+  /** words the layer is found by in the search (besides its title, source, topic, scope and levels) */
+  tags?: string[];
     tile_fields?: string[];
     home_bbox?: [number, number, number, number];
     /** panel topic; absent in older metas (then derived from the domain) */

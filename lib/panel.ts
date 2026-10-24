@@ -34,6 +34,8 @@ export interface PanelRow {
   fresh: string;
   /** the layer the (i) button describes: the coarsest of an indicator */
   infoLayer: LayerEntry;
+  /** display.tags of the layer: extra words for the search */
+  tags: string[];
   indicator?: Indicator;
   layer?: LayerEntry;
 }
@@ -68,6 +70,7 @@ export function buildRows(world: CountryModel | null, countries: CountryModel[],
         levels: capitalize(ind.levels.map((x) => unitWord(x.layer)).join(', ')),
         fresh: throughLabel(meta),
         infoLayer: first,
+        tags: meta?.display?.tags ?? [],
         indicator: ind,
       });
     }
@@ -85,6 +88,7 @@ export function buildRows(world: CountryModel | null, countries: CountryModel[],
         levels: capitalize(unitWord(l)),
         fresh: throughLabel(meta),
         infoLayer: l,
+        tags: meta?.display?.tags ?? [],
         layer: l,
       });
     }
@@ -100,3 +104,14 @@ export function rowsByTopic(rows: PanelRow[]): { topic: Topic; rows: PanelRow[] 
   }).filter((t) => t.rows.length > 0);
 }
 
+
+/** Rows whose title, source, topic, scope, levels or tags contain every word of the query (the first few). */
+export function searchRows(rows: PanelRow[], query: string, limit = 6): PanelRow[] {
+  const words = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  if (words.length === 0) return [];
+  const hay = (r: PanelRow) => [r.title, r.source, r.topic, r.scope, r.levels, ...r.tags].join(' ').toLowerCase();
+  return rows.filter((r) => {
+    const h = hay(r);
+    return words.every((w) => h.includes(w));
+  }).slice(0, limit);
+}

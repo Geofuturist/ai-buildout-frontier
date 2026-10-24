@@ -23,6 +23,9 @@ interface Props {
   note: string | null;
   rows: PanelRow[];
   onSearch: (c: MapData['countries'][number]) => void;
+  /** all rows (also of single countries) for the search by layer */
+  allRows: PanelRow[];
+  onFound: (r: PanelRow) => void;
   activeFill: string | null;
   overlays: Record<string, boolean>;
   failed: Set<string>;
@@ -39,7 +42,7 @@ interface Props {
  * Legend card, left (SPEC_WEB_territory 3). Desktop: top left, folds to the left with a remembered choice.
  * Phone: a small button bottom left that opens the card above the territory bar.
  */
-export default function LegendCard({ data, heading, note, layers, covered, rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, onSearch, nonce }: Props) {
+export default function LegendCard({ data, heading, note, layers, covered, rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, onSearch, allRows, onFound, nonce }: Props) {
   const [folded, setFolded] = useState(false);
   const [openPhone, setOpenPhone] = useState(false);
   useEffect(() => {
@@ -64,7 +67,7 @@ export default function LegendCard({ data, heading, note, layers, covered, rows,
   const hasLegend = Boolean(heading) || layers.length > 0;
   const body = (
     <div className="flex min-h-0 flex-1 flex-col">
-      <CountrySearch countries={data.countries} onPick={onSearch} />
+      <CountrySearch countries={data.countries} rows={allRows} onPick={onSearch} onLayer={onFound} />
       {/* The legend of what is on the map stays above the list, so it is seen without scrolling */}
       {hasLegend && (
         <div className="mb-3 max-h-[42vh] shrink-0 overflow-y-auto border-b border-line pb-3">
@@ -73,12 +76,11 @@ export default function LegendCard({ data, heading, note, layers, covered, rows,
           <Legend layers={layers} metas={data.metas} />
         </div>
       )}
-      {!hasLegend && (
-        <p className="mb-3 flex items-center gap-2 text-xs text-ink2">
-          <span className="inline-block h-3 w-5 shrink-0 rounded-sm border border-line" style={{ background: COLORS.dataCountry, opacity: 0.5 }} aria-hidden />
-          Grey countries have their own layers. Click one on the map.
-        </p>
-      )}
+      {/* The key of the grey countries stays whatever is chosen */}
+      <p className="mb-3 flex items-center gap-2 text-xs text-ink2">
+        <span className="inline-block h-3 w-5 shrink-0 rounded-sm border border-line" style={{ background: COLORS.dataCountry, opacity: 0.5 }} aria-hidden />
+        Grey countries have their own layers. Click one on the map.
+      </p>
       <div className="md:min-h-0 md:flex-1 md:overflow-y-auto">
         <LayersPanel rows={rows} activeFill={activeFill} overlays={overlays} failed={failed} onFill={onFill} onOverlay={onOverlay} onInfo={onInfo} />
       </div>

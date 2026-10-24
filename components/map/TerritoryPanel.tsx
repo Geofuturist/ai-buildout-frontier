@@ -6,6 +6,7 @@ import { ChevronDown, ChevronRight, ChevronLeft, ChevronUp } from 'lucide-react'
 import CopyButton from '@/components/CopyButton';
 import { checkedByLine, recordCitation } from '@/lib/format';
 import { levelWord, shownLevelOf } from '@/lib/indicators';
+import { WORLD } from '@/lib/layers';
 import type { CountryModel, Indicator } from '@/lib/indicators';
 import { chainOf, unitName } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
@@ -21,8 +22,6 @@ interface Props {
   countryIso: string | null;
   countryName: string;
   model: CountryModel | null;
-  /** layers that cover several countries (full files on the country card) */
-  world: CountryModel | null;
   /** the fill that is on, when it applies to the chosen country (its own or a world one) */
   indicator: Indicator | null;
   /** the chosen unit; level 0 = the country */
@@ -69,6 +68,7 @@ export default function TerritoryPanel(p: Props) {
     if (p.nonce > 0) setOpen(true);
   }, [p.nonce]);
 
+  const ownIndicator = indicator && indicator.iso3 !== WORLD ? indicator : null;
   // Value of the active indicator at the level of the chosen unit
   const valueLayer = indicator && unit ? indicator.levels.find((x) => x.level === unit.level)?.layer : undefined;
   const chain = unit && p.countryIso ? chainOf(p.territory, unit.unit_id) : [];
@@ -145,7 +145,8 @@ export default function TerritoryPanel(p: Props) {
               </div>
             )}
 
-            {unit && (model || indicator || p.world) && <TerritoryDownloads data={data} model={model} world={p.world} iso3={p.countryIso} indicator={indicator} unit={unit} territory={p.territory} />}
+            {/* Files of the country itself; files of the whole world are on the world card */}
+            {unit && (model || ownIndicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={ownIndicator} unit={unit} territory={p.territory} />}
 
             {citeLayer && citeMeta && unit && (
               <div className="mt-3 flex flex-wrap items-center gap-3">

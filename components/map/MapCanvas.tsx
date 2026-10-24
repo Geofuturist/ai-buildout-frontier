@@ -9,6 +9,7 @@ import type { ExpressionSpecification } from 'maplibre-gl';
 import { registerPmtiles } from './pmtiles';
 import type { CardState, MapData, UnitRef } from './types';
 import { levelNumber } from '@/lib/indicators';
+import { WORLD_ZOOM } from '@/lib/layers';
 import { onMap } from '@/lib/panel';
 import { objectsAtSpot } from '@/lib/spots';
 import { COLORS } from '@/lib/style';
@@ -47,6 +48,10 @@ interface Props {
   dataCountries: string[];
   onSelect: (card: CardState) => void;
   onCountry: (iso3: string) => void;
+  /** a click on the globe far out */
+  onWorld: () => void;
+  /** the whole world is chosen: every country gets the tint of a chosen unit */
+  worldOn: boolean;
   onUnit: (u: UnitRef) => void;
   onZoom: (zoom: number) => void;
   onReady?: () => void;
@@ -56,7 +61,7 @@ interface Props {
 /** Opacity that is `on` where the feature state `key` is set and 0 elsewhere (constant expression: never reloads tiles). */
 const FS_OPACITY = (key: string, on: number) => ['case', ['boolean', ['feature-state', key], false], on, 0] as ExpressionSpecification;
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onZoom, onReady, onFailed }, ref) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, worldOn, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -157,7 +162,8 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   const applied = useRef(new Map<string, { sl: string; id: string; key: string; value: number | boolean }>());
   const desired = useMemo(() => {
     const out: { level: number; id: string; key: string; value: number | boolean }[] = [];
-    if (!country) for (const id of dataCountries) out.push({ level: 0, id, key: 'datac', value: true });
+    // Countries with own layers stay marked whatever is chosen, so that the legend key always applies
+    for (const id of dataCountries) out.push({ level: 0, id, key: 'datac', value: true });
     if (neutralLevel !== null) for (const id of neutralIds) out.push({ level: neutralLevel, id, key: 'neutral', value: true });
     if (selectedUnit) {
       out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'sel', value: true });
@@ -166,7 +172,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     }
     if (hover) out.push({ level: hover.level, id: hover.unit_id, key: 'hov', value: true });
     return out;
-  }, [country, dataCountries, neutralLevel, neutralIds, selectedUnit, hover, activeId]);
+  }, [dataCountries, neutralLevel, neutralIds, selectedUnit, hover, activeId]);
   useEffect(() => {
     const map = mapRef.current?.getMap();
     if (!ready || !map || !map.getSource('boundaries')) return;
@@ -203,6 +209,11 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   const onClick = useCallback(
     (e: MapLayerMouseEvent) => {
       const t = targetOf(e.features ?? []);
+      // Far out the globe is one body: a click on it chooses the whole world
+      if ((!t || t.kind !== 'record') && (mapRef.current?.getZoom() ?? 99) < WORLD_ZOOM) {
+        onWorld();
+        return;
+      }
       if (!t) return;
       if (t.kind === 'record') {
         if (t.peers.length > 1) {
@@ -213,7 +224,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       } else if (t.kind === 'country') onCountry(t.iso3);
       else onUnit(t.unit);
     },
-    [targetOf, onSelect, onCountry, onUnit],
+    [targetOf, onSelect, onCountry, onUnit, onWorld],
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
@@ -346,6 +357,15 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
             source-layer={bnd.adm0.tiles.source_layer}
             beforeId={BEFORE}
             paint={{ 'line-color': COLORS.adm0, 'line-width': 1 }}
+          />
+          {/* The whole world chosen: one translucent body */}
+          <Layer
+            id="world-tint"
+            type="fill"
+            source-layer={bnd.adm0.tiles.source_layer}
+            beforeId={BEFORE}
+            layout={{ visibility: worldOn ? 'visible' : 'none' }}
+            paint={{ 'fill-color': COLORS.selected, 'fill-opacity': 0.3 }}
           />
           {/* The chosen unit: a translucent fill (strength set by feature state), in the layer of its own level; no outline */}
           {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>

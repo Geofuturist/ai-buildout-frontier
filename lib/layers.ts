@@ -11,6 +11,8 @@ function firstCode(v: unknown): string {
 
 /** Pseudo country code of the layers that cover several countries (coverage.iso3 with 2 or more codes). */
 export const WORLD = 'WORLD';
+/** Below this zoom a click on the globe chooses the whole world (its card offers the world files). */
+export const WORLD_ZOOM = 1.2;
 
 export function countryOf(meta: Meta | undefined): string {
   const v = meta?.coverage.iso3;
