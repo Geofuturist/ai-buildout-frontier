@@ -10,6 +10,7 @@ import { levelWord } from '@/lib/indicators';
 import type { CountryModel, Indicator } from '@/lib/indicators';
 import { isWithin } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
+import DownloadMenu from './DownloadMenu';
 import { Downloads } from './parts';
 import RecordDownload, { sourceTexts } from './RecordDownload';
 import type { MapData, UnitRef } from './types';
@@ -68,8 +69,7 @@ export default function TerritoryDownloads({ data, model, iso3, indicator, unit,
   if (unit.level === 0) {
     // Whole country: the full files of every level of the indicator, and of the points and lines
     return (
-      <div className="mt-4">
-        <p className="text-sm font-semibold">Download for {unit.name}</p>
+      <DownloadMenu label={`Download for ${unit.name}`}>
         {indicator?.levels.map(({ level, layer }) => (
           <div key={layer.layer_id} className="mt-2">
             <p className="text-xs text-ink2">{levelWord(level, indicator, iso3, data.unit_words)} level · {layer.title}</p>
@@ -82,7 +82,7 @@ export default function TerritoryDownloads({ data, model, iso3, indicator, unit,
             <Downloads layer={layer} />
           </div>
         ))}
-      </div>
+      </DownloadMenu>
     );
   }
 
@@ -91,8 +91,7 @@ export default function TerritoryDownloads({ data, model, iso3, indicator, unit,
   const points = (model?.overlays ?? []).filter((l) => l.tiles.geometry_type === 'point' && l.files.csv);
 
   return (
-    <div className="mt-4">
-      <p className="text-sm font-semibold">Download for {unit.name}</p>
+    <DownloadMenu label={`Download for ${unit.name}`}>
       {own && <RecordDownload layer={own.layer} meta={data.metas[own.layer.meta_id]} keyField="unit_id" keyValue={unit.unit_id} />}
       {territory ? (
         <>
@@ -121,6 +120,6 @@ export default function TerritoryDownloads({ data, model, iso3, indicator, unit,
         <p className="mt-2 text-xs text-muted">Loading the list of units…</p>
       )}
       {!own && finer.length === 0 && points.length === 0 && <p className="mt-2 text-xs text-muted">{capitalize(word)} files are published for the whole country only.</p>}
-    </div>
+    </DownloadMenu>
   );
 }

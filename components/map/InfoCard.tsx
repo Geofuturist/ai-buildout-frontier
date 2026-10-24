@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import CopyButton from '@/components/CopyButton';
 import { checkedByLine, isoDate } from '@/lib/format';
+import DownloadMenu from './DownloadMenu';
 import { Downloads } from './parts';
 import { ItemsCard, PlaceCard, RecordShell } from './RecordViews';
 import Shell from './Shell';
@@ -33,7 +34,9 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
         <p className="mt-3"><strong>License.</strong> <a href={meta.license.url}>{meta.license.name}</a></p>
         <blockquote className="mt-1 border-l-4 border-line pl-3 text-xs text-ink2">{meta.license.attribution_text}</blockquote>
         <p className="mt-3">{checkedByLine(meta)}</p>
-        <Downloads layer={layer} />
+        <DownloadMenu label="Download this layer">
+          <Downloads layer={layer} />
+        </DownloadMenu>
         <div className="mt-3 flex flex-wrap items-center gap-3">
           <CopyButton text={meta.citation.text} label="Cite this layer" />
           {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}

@@ -4,6 +4,7 @@
 import { ChevronRight, X } from 'lucide-react';
 import type { LayerEntry } from '@/lib/data';
 import type { CountryModel } from '@/lib/indicators';
+import DownloadMenu from './DownloadMenu';
 import { Downloads } from './parts';
 
 export default function WorldCard({ world, hidden, onClose }: { world: CountryModel | null; hidden: boolean; onClose: () => void }) {
@@ -20,13 +21,16 @@ export default function WorldCard({ world, hidden, onClose }: { world: CountryMo
         <h2 className="text-base font-semibold leading-tight">World</h2>
         <p className="text-xs text-muted">Layers that cover several countries</p>
         {layers.length === 0 && <p className="mt-3 text-ink2">No layers of the whole world in this release.</p>}
-        {layers.length > 0 && <p className="mt-3 text-sm font-semibold">Download for the world</p>}
-        {layers.map((layer) => (
-          <div key={layer.layer_id} className="mt-2">
-            <p className="text-xs text-ink2">{layer.title}</p>
-            <Downloads layer={layer} />
-          </div>
-        ))}
+        {layers.length > 0 && (
+          <DownloadMenu label="Download for the world">
+            {layers.map((layer) => (
+              <div key={layer.layer_id} className="mt-2">
+                <p className="text-xs text-ink2">{layer.title}</p>
+                <Downloads layer={layer} />
+              </div>
+            ))}
+          </DownloadMenu>
+        )}
         <p className="mt-3 flex items-center gap-1 text-xs text-ink2">
           Zoom in and click a country for its own layers <ChevronRight size={14} aria-hidden />
         </p>
