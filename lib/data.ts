@@ -78,6 +78,12 @@ export interface Meta {
     legend_zero?: string;
     legend_unknown?: string;
     legend_point?: string;
+    /** false: the layer is not a map item (not drawn, not in the layers panel); files, /data and citation stay (abf-dc 0.2.0) */
+    map?: boolean;
+    /** point layers of places: from `count_breaks[0]` records the place is a badge with the number in this field, below it a point by size_field */
+    count_field?: string;
+    /** lower bounds of the badge classes, increasing (2, 10 -> 2-9 and 10+) */
+    count_breaks?: number[];
     tile_fields?: string[];
     home_bbox?: [number, number, number, number];
     /** panel topic; absent in older metas (then derived from the domain) */

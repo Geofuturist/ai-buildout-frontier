@@ -9,6 +9,8 @@ import type { ExpressionSpecification } from 'maplibre-gl';
 import { registerPmtiles } from './pmtiles';
 import type { CardState, MapData, UnitRef } from './types';
 import { levelNumber } from '@/lib/indicators';
+import { onMap } from '@/lib/panel';
+import { objectsAtSpot } from '@/lib/spots';
 import { COLORS } from '@/lib/style';
 import { MODULES, MODULE_BY_TYPE } from './modules';
 import { selectBoundaryLayers, selectDataLayers } from './select';
@@ -64,7 +66,8 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     return { adm0: by('adm0'), adm1: by('adm1'), adm2: by('adm2'), disputed: by('disputed_unassigned') };
   }, [data]);
 
-  const dataLayers = useMemo(() => selectDataLayers(data), [data]);
+  // display.map = false: not a map item (its files stay in the downloads and on /data)
+  const dataLayers = useMemo(() => selectDataLayers(data).filter((l) => onMap(data.metas[l.meta_id])), [data]);
 
   // layer_ids that are switched on: the active exclusive layer plus the ticked overlays
   const visible = useMemo(() => {
@@ -111,11 +114,20 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   );
 
   // What is under the pointer: an object of a switched-on overlay, a country, or a unit of the selection level
-  type Target = { kind: 'record'; f: MapGeoJSONFeature } | { kind: 'country'; iso3: string; unit: UnitRef } | { kind: 'unit'; unit: UnitRef } | null;
+  // `peers`: every object of the same layer at the same spot, the clicked one included (a list is shown for 2 or more)
+  type Target = { kind: 'record'; f: MapGeoJSONFeature; peers: MapGeoJSONFeature[] } | { kind: 'country'; iso3: string; unit: UnitRef } | { kind: 'unit'; unit: UnitRef } | null;
   const targetOf = useCallback(
     (all: MapGeoJSONFeature[]): Target => {
-      const over = all.find((x) => x.source !== 'boundaries');
-      if (over) return { kind: 'record', f: over };
+      const objects = all.filter((x) => x.source !== 'boundaries');
+      const over = objects[0];
+      if (over) {
+        // Places (count_field) are one object per click. Other point layers: the objects at one spot are listed
+        // (Epoch: up to 3 sites in one point). It is a list of tile objects, not a count.
+        const meta = data.metas[data.layers.find((l) => l.layer_id === over.source)?.meta_id ?? ''];
+        // Not a place: every object of the layer at this spot (one entry per record)
+        const peers = meta?.display?.count_field ? [over] : objectsAtSpot(objects, over, MODULE_BY_TYPE.point.keyField);
+        return { kind: 'record', f: over, peers };
+      }
       const hits = all.filter((x) => x.source === 'boundaries' && typeof x.properties?.unit_id === 'string');
       if (hits.length === 0) return null; // the sea, a disputed area: nothing
       const iso3 = String(hits[0].properties?.iso3 ?? '');
@@ -129,7 +141,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       const pick = ok.sort((a, b) => levelNumber(String(b.properties?.level)) - levelNumber(String(a.properties?.level)))[0] ?? inCountry[0];
       return { kind: 'unit', unit: ref(pick) };
     },
-    [country, selectLevel],
+    [country, selectLevel, data.layers, data.metas],
   );
 
   const [hover, setHover] = useState<UnitRef | null>(null);
@@ -192,8 +204,13 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     (e: MapLayerMouseEvent) => {
       const t = targetOf(e.features ?? []);
       if (!t) return;
-      if (t.kind === 'record') onSelect({ type: 'record', layerId: t.f.source, props: { ...(t.f.properties as Record<string, unknown>) } });
-      else if (t.kind === 'country') onCountry(t.iso3);
+      if (t.kind === 'record') {
+        if (t.peers.length > 1) {
+          const key = MODULE_BY_TYPE.point.keyField;
+          const items = t.peers.map((p) => ({ ...(p.properties as Record<string, unknown>) })).sort((a, b) => String(a[key]).localeCompare(String(b[key])));
+          onSelect({ type: 'records', layerId: t.f.source, items });
+        } else onSelect({ type: 'record', layerId: t.f.source, props: { ...(t.f.properties as Record<string, unknown>) } });
+      } else if (t.kind === 'country') onCountry(t.iso3);
       else onUnit(t.unit);
     },
     [targetOf, onSelect, onCountry, onUnit],

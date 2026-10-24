@@ -12,5 +12,7 @@ export interface UnitRef {
 
 export type CardState =
   | { type: 'record'; layerId: string; props: Record<string, unknown> }
+  /** several objects of one point layer at the same spot (Epoch: up to 3 sites): the card lists them all */
+  | { type: 'records'; layerId: string; items: Record<string, unknown>[] }
   | { type: 'layer'; layerId: string }
   | null;

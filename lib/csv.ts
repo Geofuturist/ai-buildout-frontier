@@ -101,6 +101,29 @@ export function cutRows(text: string, keyColumn: string, keep: (key: string) => 
   return { header, rows, eol: src.includes('\r\n') ? '\r\n' : '\n' };
 }
 
+/**
+ * All rows (raw text) grouped by the value of column `keyColumn`, in file order; rows with an empty value are left out.
+ * One pass over the file: a lookup afterwards costs nothing. Null if the column is missing.
+ */
+export function groupRows(text: string, keyColumn: string): { header: string; byKey: Map<string, string[]>; eol: string } | null {
+  const src = text.charCodeAt(0) === 0xfeff ? text.slice(1) : text;
+  const recs = scanRecords(src);
+  if (recs.length < 1) return null;
+  const header = src.slice(recs[0][0], recs[0][1]);
+  const col = splitFields(header).indexOf(keyColumn);
+  if (col < 0) return null;
+  const byKey = new Map<string, string[]>();
+  for (let r = 1; r < recs.length; r++) {
+    const raw = src.slice(recs[r][0], recs[r][1]);
+    const k = splitFields(raw)[col] ?? '';
+    if (k === '') continue;
+    const list = byKey.get(k);
+    if (list) list.push(raw);
+    else byKey.set(k, [raw]);
+  }
+  return { header, byKey, eol: src.includes('\r\n') ? '\r\n' : '\n' };
+}
+
 /** The same, for several rows: "# Cite:" with the scope, "# Source:" lines, the header and the rows. */
 export function buildRowsCsv(cut: { header: string; rows: string[]; eol: string }, cite: string, sources: string[]): string {
   const one = (s: string) => s.replace(/\s+/g, ' ').trim();

@@ -11,7 +11,7 @@ import {
 
 type Props = { layer: LayerEntry; meta: Meta; props: Record<string, unknown>; anchor?: string };
 
-const str = (v: unknown): string => (typeof v === 'string' ? v.trim() : typeof v === 'number' ? String(v) : '');
+export const str = (v: unknown): string => (typeof v === 'string' ? v.trim() : typeof v === 'number' ? String(v) : '');
 
 /** "In the Atlas" status of an Epoch site: the row of checks.csv (an extra file of the layer), fetched on click. */
 function useCell(layer: LayerEntry, recordId: string): { status: string; ref: string } | 'loading' | 'error' | null {
@@ -39,31 +39,39 @@ function useCell(layer: LayerEntry, recordId: string): { status: string; ref: st
   return cell;
 }
 
+/** Capacity of a record: the value of the source, never our estimate ("10–99 MW · size class given by ...", or the unknown / withheld text). */
+export function capacityOf(meta: Meta, p: Record<string, unknown>): string {
+  const d = meta.display!;
+  const sizeField = d.size_field!;
+  const unit = meta.fields.find((f) => f.name === sizeField)?.unit ?? 'MW';
+  const status = str(p.power_status);
+  if (status === 'withheld') return CAPACITY_WITHHELD;
+  if (d.size_classes?.length) {
+    const cls = str(p[sizeField]);
+    return cls && status !== 'not_found' ? classCapacity(cls, d.size_classes, d.size_breaks ?? [], unit) : CAPACITY_UNKNOWN_CLASS;
+  }
+  const v = p[sizeField];
+  return typeof v === 'number' && status !== 'not_found' ? numberCapacity(v, unit, longDate(meta.freshness.source_current_through)) : CAPACITY_UNKNOWN_NUMBER;
+}
+
+/** The same in a few words for a line of a list: "10–99 MW", "unknown", "not published". */
+export function capacityShort(meta: Meta, p: Record<string, unknown>): string {
+  const s = capacityOf(meta, p).replace(/^Capacity: /, '');
+  if (/^unknown/.test(s)) return 'unknown';
+  if (/^not published/.test(s)) return 'not published';
+  return s.split(' · ')[0];
+}
+
 /**
  * Point window of the world data-center layers (SPEC_DC_world 6): every row says whose statement it is.
  * Rows appear for the fields the tiles carry, so one component serves both sources.
  */
 export default function DcPointRows({ layer, meta, props: p, anchor }: Props) {
-  const d = meta.display!;
   const fields = new Set(layer.tiles.fields);
   const has = (f: string) => fields.has(f);
-  const classMode = Boolean(d.size_classes?.length);
-  const sizeField = d.size_field!;
-  const unit = meta.fields.find((f) => f.name === sizeField)?.unit ?? 'MW';
   const source = layer.title.split('·')[1]?.trim() ?? 'the source';
   const cell = useCell(layer, str(p.record_id));
-
-  // Capacity: the value of the source, never our estimate
-  let capacity: string;
-  const status = str(p.power_status);
-  if (status === 'withheld') capacity = CAPACITY_WITHHELD;
-  else if (classMode) {
-    const cls = str(p[sizeField]);
-    capacity = cls && status !== 'not_found' ? classCapacity(cls, d.size_classes ?? [], d.size_breaks ?? [], unit) : CAPACITY_UNKNOWN_CLASS;
-  } else {
-    const v = p[sizeField];
-    capacity = typeof v === 'number' && status !== 'not_found' ? numberCapacity(v, unit, longDate(meta.freshness.source_current_through)) : CAPACITY_UNKNOWN_NUMBER;
-  }
+  const capacity = capacityOf(meta, p);
 
   const placeFrom = (() => {
     const s = str(p.coord_source);

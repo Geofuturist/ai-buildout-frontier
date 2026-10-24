@@ -8,8 +8,10 @@ import type { ExpressionSpecification } from 'maplibre-gl';
 import type { LayerEntry, Meta } from '@/lib/data';
 import { COLORS } from '@/lib/style';
 import {
-  RING_EXTRA, SIZE_RADII, UNKNOWN_COLOR, UNKNOWN_RADIUS, colorOf, isSized, radiusExpression, sizeLabels, unknownCondition, zeroCondition,
+  BADGE_COLOR, BADGE_RADII, RING_EXTRA, SIZE_RADII, UNKNOWN_COLOR, UNKNOWN_RADIUS,
+  badgeCondition, badgeRadius, badgeTextSize, colorOf, countLabels, isCounted, isSized, placeRadius, radiusExpression, sizeLabels, unknownCondition, zeroCondition,
 } from '@/lib/pointSize';
+import type { Counted } from '@/lib/pointSize';
 import type { GeometryModule, ModuleCtx } from './types';
 
 const SITE_LEVEL = 'site';
@@ -76,6 +78,80 @@ function renderSized(l: LayerEntry, d: Display & { size_field: string }, ctx: Mo
   );
 }
 
+/**
+ * Places (display.count_field): a place with `count_breaks[0]` records or more is a badge with the number, sized by
+ * the badge class; a place with fewer is a point of its record, sized by the size class as in a sized layer
+ * (a place whose one record has no class is the grey "unknown" dot). Every number comes from the tiles.
+ */
+function renderCounted(l: LayerEntry, d: Counted & { size_field: string }, ctx: ModuleCtx) {
+  const visibility = ctx.visible.has(l.layer_id) ? 'visible' : 'none';
+  const sl = l.tiles.source_layer;
+  const sel = ctx.selected && ctx.selected.layerId === l.layer_id ? ctx.selected.key : null;
+  const color = colorOf(d);
+  const radius = placeRadius(d);
+  const isBadge = badgeCondition(d);
+  const notBadge = ['!', isBadge] as unknown as ExpressionSpecification;
+  const unknown = unknownCondition(d);
+  const fillColor = ['case', unknown, UNKNOWN_COLOR, color] as unknown as ExpressionSpecification;
+  const fillOpacity = ['case', unknown, 0.9, 0.5] as unknown as ExpressionSpecification;
+  const strokeWidth = ['case', unknown, 0, 1.2] as unknown as ExpressionSpecification;
+  const selFilter = ['==', ['get', 'record_id'], sel ?? ''] as ExpressionSpecification;
+  const selVis = visibility === 'visible' && sel ? 'visible' : 'none';
+  const countGet = ['get', d.count_field] as unknown as ExpressionSpecification;
+  return (
+    <Source key={l.layer_id} id={l.layer_id} type="vector" url={`pmtiles://${l.tiles.url}`}>
+      <Layer id={`${l.layer_id}-ring`} type="circle" source-layer={sl} beforeId={ctx.before} layout={{ visibility }} paint={{ 'circle-radius': num(radius, RING_EXTRA), 'circle-color': COLORS.surface, 'circle-opacity': 0.85 }} />
+      <Layer
+        id={`${l.layer_id}-pt`}
+        type="circle"
+        source-layer={sl}
+        beforeId={ctx.before}
+        filter={notBadge}
+        layout={{ visibility }}
+        paint={{ 'circle-radius': radiusExpression(d), 'circle-color': fillColor, 'circle-opacity': fillOpacity, 'circle-stroke-color': color, 'circle-stroke-width': strokeWidth, 'circle-stroke-opacity': 1 }}
+      />
+      {/* Bigger numbers on top of smaller ones where badges overlap */}
+      <Layer
+        id={`${l.layer_id}-badge`}
+        type="circle"
+        source-layer={sl}
+        beforeId={ctx.before}
+        filter={isBadge}
+        layout={{ visibility, 'circle-sort-key': countGet }}
+        paint={{ 'circle-radius': badgeRadius(d), 'circle-color': BADGE_COLOR, 'circle-opacity': 0.92, 'circle-stroke-color': COLORS.surface, 'circle-stroke-width': 1.2 }}
+      />
+      <Layer
+        id={`${l.layer_id}-badge-n`}
+        type="symbol"
+        source-layer={sl}
+        beforeId={ctx.before}
+        filter={isBadge}
+        layout={{
+          visibility,
+          'text-field': ['to-string', countGet] as unknown as ExpressionSpecification,
+          'text-font': ['Noto Sans Regular'],
+          'text-size': badgeTextSize(d),
+          'text-allow-overlap': true,
+          'text-ignore-placement': true,
+        }}
+        paint={{ 'text-color': '#ffffff' }}
+      />
+      <Layer id={`${l.layer_id}-hit`} type="circle" source-layer={sl} beforeId={ctx.before} layout={{ visibility }} paint={{ 'circle-radius': ['max', 9, num(radius, 3)] as unknown as ExpressionSpecification, 'circle-color': '#ffffff', 'circle-opacity': 0.01 }} />
+      <Layer id={`${l.layer_id}-sel-under`} type="circle" source-layer={sl} beforeId={ctx.before} filter={selFilter} layout={{ visibility: selVis }} paint={{ 'circle-radius': num(radius, 5), 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': COLORS.surface, 'circle-stroke-width': 5.5 }} />
+      <Layer id={`${l.layer_id}-sel`} type="circle" source-layer={sl} beforeId={ctx.before} filter={selFilter} layout={{ visibility: selVis }} paint={{ 'circle-radius': num(radius, 5), 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': COLORS.selected, 'circle-stroke-width': 2.5 }} />
+    </Source>
+  );
+}
+
+function Badge({ r, n }: { r: number; n: string }) {
+  return (
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden className="shrink-0">
+      <circle cx="20" cy="20" r={r} fill={BADGE_COLOR} fillOpacity="0.92" stroke={COLORS.surface} strokeWidth="1.2" />
+      <text x="20" y="20" textAnchor="middle" dominantBaseline="central" fontSize={r > 14 ? 12.5 : 11} fill="#ffffff">{n}</text>
+    </svg>
+  );
+}
+
 function Dot({ r, color, fill, stroke, w = 1.2, opacity = 0.5, ring = true }: { r: number; color?: string; fill?: string; stroke?: string; w?: number; opacity?: number; ring?: boolean }) {
   const c = 14;
   return (
@@ -105,6 +181,7 @@ const pointModule: GeometryModule = {
     };
     return [...layers].sort((a, b) => rank(a) - rank(b)).map((l) => {
       const d = sizedOf(l);
+      if (isSized(d) && isCounted(d)) return renderCounted(l, d, ctx);
       return isSized(d) ? renderSized(l, d, ctx) : renderPlain(l, ctx);
     });
   },
@@ -124,6 +201,7 @@ const pointModule: GeometryModule = {
     const first = sized[0] ? (metas[sized[0].meta_id].display as Display & { size_field: string }) : null;
     const withZero = sized.some((l) => metas[l.meta_id].display?.zero_class);
     const unit = first ? metas[sized.find((l) => !metas[l.meta_id].display?.size_classes?.length)?.meta_id ?? sized[0].meta_id].fields.find((f) => f.name === first.size_field)?.unit ?? '' : '';
+    const counted = sized.map((l) => metas[l.meta_id].display).find((x) => isCounted(x)) as Counted | undefined;
     const breaks = first?.size_breaks ?? [];
     const labels = breaks.length ? sizeLabels(breaks, unit || 'MW') : [];
     const plainDot = (filled: boolean) => (
@@ -171,6 +249,17 @@ const pointModule: GeometryModule = {
                     <span>{first.legend_point}</span>
                   </li>
                 )}
+              </ul>
+            )}
+            {counted && (
+              <ul className="mt-1 space-y-0 border-t border-line pt-1">
+                <li className="text-xs text-ink2">Place with several records (the number is the count):</li>
+                {countLabels(counted.count_breaks).map((t, i) => (
+                  <li key={t} className="flex items-center gap-2">
+                    <Badge r={Math.min(BADGE_RADII[Math.min(i, BADGE_RADII.length - 1)], 19)} n={String(counted.count_breaks[i])} />
+                    <span>{t}</span>
+                  </li>
+                ))}
               </ul>
             )}
             {first.legend_note && <p className="mt-1 text-xs text-muted">{first.legend_note}</p>}

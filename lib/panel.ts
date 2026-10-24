@@ -43,6 +43,11 @@ function sourceOf(meta: Meta | undefined): string {
   return s?.publisher ?? '';
 }
 
+/** display.map = false: the layer is not an item of the map (SPEC_DC_world_v0_2_0 4.3); its files, /data and citation stay. */
+export function onMap(meta: Meta | undefined): boolean {
+  return meta?.display?.map !== false;
+}
+
 /** Rows of all topics: one per indicator (fills) and one per point or line layer, world rows first in a topic. */
 export function buildRows(world: CountryModel | null, countries: CountryModel[], metas: Record<string, Meta>): PanelRow[] {
   const rows: PanelRow[] = [];
@@ -51,6 +56,7 @@ export function buildRows(world: CountryModel | null, countries: CountryModel[],
     for (const ind of m.indicators) {
       const first = ind.levels[0].layer;
       const meta = metas[first.meta_id];
+      if (!onMap(meta)) continue;
       rows.push({
         key: ind.key,
         kind: 'fill',
@@ -67,6 +73,7 @@ export function buildRows(world: CountryModel | null, countries: CountryModel[],
     }
     for (const l of m.overlays) {
       const meta = metas[l.meta_id];
+      if (!onMap(meta)) continue;
       rows.push({
         key: l.layer_id,
         kind: 'overlay',

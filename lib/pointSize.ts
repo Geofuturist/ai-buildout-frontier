@@ -56,6 +56,55 @@ export function radiusExpression(d: Display & { size_field: string }): Expressio
   return ['case', unknownCondition(d), UNKNOWN_RADIUS, by] as unknown as ExpressionSpecification;
 }
 
+// ---- Places with several records: a badge with the number (display.count_field, display.count_breaks) ----
+// The number is a value of the published layer: nothing is counted in the browser.
+
+/** Radii in px of the badge classes (first class ... last); a layer with more classes reuses the last one. */
+export const BADGE_RADII = [11, 15, 19];
+export const BADGE_TEXT_SIZES = [11, 12.5, 14];
+export const BADGE_COLOR = '#6e1f5a';
+
+export type Counted = Display & { count_field: string; count_breaks: number[] };
+
+export function isCounted(d: Display | undefined): d is Counted {
+  return Boolean(d?.count_field && d.count_breaks && d.count_breaks.length > 0);
+}
+
+/** true where the place has at least `count_breaks[0]` records: a badge. Below it the place is a point by size_field. */
+export function badgeCondition(d: Counted): ExpressionSpecification {
+  return ['>=', ['to-number', ['get', d.count_field], 0], d.count_breaks[0]] as unknown as ExpressionSpecification;
+}
+
+/** A value per badge class (the first below the second break, and so on), as a MapLibre step on the count field. */
+function stepByCount(d: Counted, values: number[]): ExpressionSpecification {
+  const s: unknown[] = ['step', ['to-number', ['get', d.count_field], 0], values[0]];
+  d.count_breaks.slice(1).forEach((b, i) => s.push(b, values[Math.min(i + 1, values.length - 1)]));
+  return s as unknown as ExpressionSpecification;
+}
+
+export function badgeRadius(d: Counted): ExpressionSpecification {
+  return stepByCount(d, BADGE_RADII);
+}
+
+export function badgeTextSize(d: Counted): ExpressionSpecification {
+  return stepByCount(d, BADGE_TEXT_SIZES);
+}
+
+/** Radius of a place on the map: the badge class, or the size class of its one record. */
+export function placeRadius(d: Counted & { size_field: string }): ExpressionSpecification {
+  return ['case', badgeCondition(d), badgeRadius(d), radiusExpression(d)] as unknown as ExpressionSpecification;
+}
+
+/** Labels of the badge classes from the thresholds: "2–9 records", "10 records and above". */
+export function countLabels(breaks: number[], noun = 'records'): string[] {
+  const f = (n: number) => n.toLocaleString('en-US');
+  return breaks.map((b, i) => {
+    if (i === breaks.length - 1) return `${f(b)} ${noun} and above`;
+    const hi = breaks[i + 1] - 1;
+    return hi === b ? `${f(b)} ${noun}` : `${f(b)}–${f(hi)} ${noun}`;
+  });
+}
+
 /** Labels of the size classes from the thresholds: "Below 10 MW", "10–99 MW", ..., "1,000 MW and above". */
 export function sizeLabels(breaks: number[], unit: string): string[] {
   const f = (n: number) => n.toLocaleString('en-US');

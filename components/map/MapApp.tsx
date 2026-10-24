@@ -167,10 +167,12 @@ export default function MapApp({ data }: { data: MapData }) {
 
   // The record of a point or line shown in the card (outline in its module)
   const selected = (() => {
-    if (!card || card.type !== 'record') return null;
+    if (!card || card.type === 'layer') return null;
     const layer = data.layers.find((l) => l.layer_id === card.layerId);
     if (!layer) return null;
-    const v = card.props[MODULE_BY_TYPE[layer.tiles.geometry_type].keyField];
+    // several objects at one spot: the outline sits on the spot, so any of them marks it
+    const props = card.type === 'record' ? card.props : card.items[0];
+    const v = props?.[MODULE_BY_TYPE[layer.tiles.geometry_type].keyField];
     return v === undefined || v === null ? null : { layerId: card.layerId, key: String(v) };
   })();
 
