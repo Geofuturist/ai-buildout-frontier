@@ -45,14 +45,17 @@ class DataStep(unittest.TestCase):
 
     def test_pinned_hash(self):
         with tempfile.TemporaryDirectory() as t:
-            raw = PTS.read_bytes()
+            lf = PTS.read_bytes().replace(b"\r\n", b"\n")              # the working tree may already be CRLF (git on Windows)
             crlf = Path(t) / "crlf.csv"
-            crlf.write_bytes(raw.replace(b"\n", b"\r\n"))
+            crlf.write_bytes(lf.replace(b"\n", b"\r\n"))
             df, info = C.read_pinned(str(crlf), "points")
             self.assertEqual(len(df), 9865)
             self.assertIn("CRLF", info["read"])
+            plain = Path(t) / "lf.csv"
+            plain.write_bytes(lf)
+            self.assertEqual(C.read_pinned(str(plain), "points")[1]["read"], "as is")
             bad = Path(t) / "bad.csv"
-            bad.write_bytes(raw.replace(b"ATL-", b"ATX-", 1))
+            bad.write_bytes(lf.replace(b"ATL-", b"ATX-", 1))
             with self.assertRaises(BuildStop):
                 C.read_pinned(str(bad), "points")
 
