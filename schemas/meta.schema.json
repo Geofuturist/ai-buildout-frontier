@@ -748,6 +748,9 @@
         "zero_class": {
           "type": "boolean"
         },
+        "breaks_fixed": {
+          "type": "boolean"
+        },
         "home_bbox": {
           "type": "array",
           "minItems": 4,

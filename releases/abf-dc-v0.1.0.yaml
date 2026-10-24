@@ -5,9 +5,9 @@
 dataset: abf-dc
 version: 0.1.0
 tag: abf-dc-v0.1.0
-doi: 10.5281/zenodo.23591916    # reserved by V (new Zenodo draft of abf-dc); ignored by channel dev
-published_at: null              # the day of Publish in Zenodo, set by set_release_doi.py before the final build
-built_at: null
+doi: 10.5281/zenodo.23591916
+published_at: "2026-10-23"
+built_at: "2026-10-23T13:42:07Z"
 boundary_release: abf-boundaries-v0.2.0
 boundaries:
   dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'

@@ -212,7 +212,8 @@ display:
   value_field: n_records
   unit: records
   zero_class: true
-  # breaks: none decided for this layer yet (question to ARCH6, handoff PUB Rev 42)
+  breaks_fixed: true
+  breaks: [1, 10, 100, 1000]  # SPEC_DC r8 section 15 (ARCH6, 23.10); zero_class is a separate class
   tile_fields: [n_records, n_operating_or_construction, n_planned, n_retired, n_class_lt10, n_class_10_99, n_class_100_999, n_class_ge1000, n_class_unknown]
 tiles:
   minzoom: 0

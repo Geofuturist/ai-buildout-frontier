@@ -468,7 +468,8 @@ def assemble_meta(
         "fields": fields,
         "sources": sources,
         "license": layer_license(sources),
-        "boundary_release": ctx.release.get("boundary_release") if cfg["level"] not in ("line", "point") else None,
+        "boundary_release": (ctx.release.get("boundary_release")
+                             if cfg["level"] not in ("line", "point") or cfg["domain"] == "dc" else None),
         "freshness": {
             "source_current_through": primary["current_through"],
             "source_cadence": fresh_cfg["source_cadence"],
@@ -910,8 +911,8 @@ def report_breaks(cfg: dict[str, Any], table: pd.DataFrame, report: Report) -> N
     """
     disp = cfg.get("display", {})
     field_name, breaks = disp.get("value_field"), disp.get("breaks")
-    if not field_name or not breaks or field_name not in table.columns:
-        return
+    if not field_name or not breaks or field_name not in table.columns or disp.get("breaks_fixed"):
+        return  # breaks_fixed: breaks set by [ARCH], not derived from quantiles
     covered = table.loc[table["coverage_status"] == "covered", field_name]
     nz = pd.to_numeric(covered, errors="coerce")
     nz = nz[nz > 0]
