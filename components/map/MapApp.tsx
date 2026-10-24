@@ -43,6 +43,9 @@ export default function MapApp({ data }: { data: MapData }) {
   const worldModel = allModels.find((c) => c.iso3 === WORLD) ?? null;
   const countries = useMemo(() => allModels.filter((c) => c.iso3 !== WORLD), [allModels]);
   const rows = useMemo(() => buildRows(worldModel, countries, data.metas), [worldModel, countries, data.metas]);
+  // The panel on the left lists the layers of the whole world; the layers of one country are chosen in its card
+  const worldRows = useMemo(() => rows.filter((r) => r.iso3 === WORLD), [rows]);
+  const countryRows = useMemo(() => rows.filter((r) => r.iso3 !== WORLD && r.iso3 === country), [rows, country]);
 
   const model = countries.find((c) => c.iso3 === country) ?? null;
   const countryName = (country ? data.countries.find((c) => c.iso3 === country)?.name : undefined) ?? model?.name ?? (country ? countryNameFromIso3(country) : '');
@@ -214,7 +217,7 @@ export default function MapApp({ data }: { data: MapData }) {
           layers={legendLayers}
           covered={card !== null}
           nonce={nonce}
-          rows={rows}
+          rows={worldRows}
           activeFill={indicator?.key ?? null}
           overlays={overlays}
           failed={failed}
@@ -240,6 +243,12 @@ export default function MapApp({ data }: { data: MapData }) {
           hidden={card !== null}
           nonce={nonce}
           selLevel={selLevel}
+          countryRows={countryRows}
+          overlays={overlays}
+          failed={failed}
+          onFill={onFill}
+          onOverlay={onOverlayRow}
+          onInfo={(id) => setCard({ type: 'layer', layerId: id })}
           onWorld={toWorld}
           onCrumb={onCrumb}
         />

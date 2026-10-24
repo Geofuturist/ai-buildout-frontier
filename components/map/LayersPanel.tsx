@@ -14,16 +14,19 @@ interface Props {
   onFill: (row: PanelRow) => void;
   onOverlay: (row: PanelRow, on: boolean) => void;
   onInfo: (layerId: string) => void;
+  /** all topics open from the start (the territory card, where the list is short) */
+  openAll?: boolean;
 }
 
 /**
  * Layers by topic (SPEC_WEB_territory r4 12). Fills are switches (one fill on the map at a time), points and
  * lines are checkboxes. Nothing is on when the page opens.
  */
-export default function LayersPanel({ rows, activeFill, overlays, failed, onFill, onOverlay, onInfo }: Props) {
+export default function LayersPanel({ rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, openAll }: Props) {
   const topics = rowsByTopic(rows);
   // Compact menu: the topics are buttons, a topic opens its list of layers (all closed at the start)
   const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
+  const isOpenTopic = (t: string) => Boolean(openAll) !== openTopics.has(t);
   const toggle = (t: string) =>
     setOpenTopics((prev) => {
       const n = new Set(prev);
@@ -47,7 +50,7 @@ export default function LayersPanel({ rows, activeFill, overlays, failed, onFill
   return (
     <div className="space-y-1">
       {topics.map(({ topic, rows: list }) => {
-        const isOpen = openTopics.has(topic);
+        const isOpen = isOpenTopic(topic);
         const on = list.filter((r) => (r.kind === 'fill' ? activeFill === r.key : overlays[r.key])).length;
         return (
           <section key={topic} aria-label={topic}>

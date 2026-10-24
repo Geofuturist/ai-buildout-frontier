@@ -9,7 +9,7 @@ export const UNKNOWN_RADIUS = 3;
 export const UNKNOWN_COLOR = '#8a8f96';
 /** A field of classes (display.size_classes) and a numeric field are two different bases: two colours. */
 export const CLASS_COLOR = '#9c2f7f';
-export const NUMBER_COLOR = '#12408a';
+export const NUMBER_COLOR = '#1f8a4c';
 /** light ring around a point: px outside the dot */
 export const RING_EXTRA = 2.4;
 // Position and capacity status are contract fields of every point layer (ADR 6.2)

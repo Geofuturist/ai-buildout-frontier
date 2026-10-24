@@ -161,8 +161,8 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     if (neutralLevel !== null) for (const id of neutralIds) out.push({ level: neutralLevel, id, key: 'neutral', value: true });
     if (selectedUnit) {
       out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'sel', value: true });
-      // lighter tint when a data fill lies under the unit, so that the colours of the data are not hidden
-      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'tint', value: activeId === 'none' ? 0.16 : 0.07 });
+      // translucent fill; lighter when a data fill lies under the unit, so that the colours of the data stay readable
+      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'tint', value: activeId === 'none' ? 0.34 : 0.24 });
     }
     if (hover) out.push({ level: hover.level, id: hover.unit_id, key: 'hov', value: true });
     return out;
@@ -347,8 +347,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
             beforeId={BEFORE}
             paint={{ 'line-color': COLORS.adm0, 'line-width': 1 }}
           />
-          {/* The chosen unit: a light tint (strength set by feature state), then a teal outline on a light underlay,
-              in the layer of its own level. */}
+          {/* The chosen unit: a translucent fill (strength set by feature state), in the layer of its own level; no outline */}
           {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
             b
               ? [
@@ -374,28 +373,6 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
                     source-layer={b.tiles.source_layer}
                     beforeId={BEFORE}
                     paint={{ 'line-color': COLORS.hover, 'line-width': 1.8, 'line-dasharray': [3, 1.5], 'line-opacity': FS_OPACITY('hov', 1) }}
-                  />,
-                ]
-              : [],
-          )}
-          {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
-            b
-              ? [
-                  <Layer
-                    key={`sel-under-${i}`}
-                    id={`sel-under-${i}`}
-                    type="line"
-                    source-layer={b.tiles.source_layer}
-                    beforeId={BEFORE}
-                    paint={{ 'line-color': COLORS.surface, 'line-width': 5, 'line-opacity': FS_OPACITY('sel', 1) }}
-                  />,
-                  <Layer
-                    key={`sel-line-${i}`}
-                    id={`sel-line-${i}`}
-                    type="line"
-                    source-layer={b.tiles.source_layer}
-                    beforeId={BEFORE}
-                    paint={{ 'line-color': COLORS.selected, 'line-width': 2.5, 'line-opacity': FS_OPACITY('sel', 1) }}
                   />,
                 ]
               : [],

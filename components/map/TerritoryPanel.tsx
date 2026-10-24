@@ -9,6 +9,8 @@ import { levelWord, shownLevelOf } from '@/lib/indicators';
 import type { CountryModel, Indicator } from '@/lib/indicators';
 import { chainOf, unitName } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
+import type { PanelRow } from '@/lib/panel';
+import LayersPanel from './LayersPanel';
 import TerritoryDownloads from './TerritoryDownloads';
 import UnitValues from './UnitValues';
 import type { MapData, UnitRef } from './types';
@@ -32,6 +34,13 @@ interface Props {
   nonce: number;
   /** the level a click selects now (0, 1, 2) */
   selLevel: number;
+  /** layers of the chosen country: the dataset is chosen here, not in the panel on the left */
+  countryRows: PanelRow[];
+  overlays: Record<string, boolean>;
+  failed: Set<string>;
+  onFill: (row: PanelRow) => void;
+  onOverlay: (row: PanelRow, on: boolean) => void;
+  onInfo: (layerId: string) => void;
   onWorld: () => void;
   onCrumb: (unitId: string) => void;
 }
@@ -115,7 +124,14 @@ export default function TerritoryPanel(p: Props) {
             <h2 className="mt-2 text-base font-semibold leading-tight">{title}</h2>
             {unit && <p className="text-xs text-muted">{word} · {unit.unit_id}</p>}
 
-            {!model && !indicator && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
+            {!model && !indicator && p.countryRows.length === 0 && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
+
+            {p.countryRows.length > 0 && (
+              <div className="mt-3 border-t border-line pt-3">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
+                <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onFill={p.onFill} onOverlay={p.onOverlay} onInfo={p.onInfo} openAll />
+              </div>
+            )}
 
             {indicator && unit && (
               <div className="mt-3 border-t border-line pt-3">
