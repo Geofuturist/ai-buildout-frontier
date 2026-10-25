@@ -866,6 +866,9 @@
         },
         "legend_layer_note": {
           "type": "string"
+        },
+        "fan_note": {
+          "type": "string"
         }
       }
     },

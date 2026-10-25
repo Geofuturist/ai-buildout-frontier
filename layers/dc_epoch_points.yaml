@@ -401,7 +401,6 @@ coverage:
     Atlas lacks the site.
 display:
   geometry_type: point
-  symbol: diamond
   legend_layer_note: "AI data centers that Epoch AI selects by their AI computing capacity."
   size_field: power_mw
   size_breaks: [10, 100, 1000]

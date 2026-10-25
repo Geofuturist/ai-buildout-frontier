@@ -360,12 +360,14 @@ display:
   size_classes: [lt10, "10_99", "100_999", ge1000]
   size_breaks: [10, 100, 1000]
   count_field: n_records
-  count_breaks: [2, 10]
+  count_breaks: [2]
   legend_title: "Atlas records per place"
   legend_note: >-
-    A place is a town, not a site. A place with one record is drawn by the record's size class; a place with two
-    or more records shows their number.
-  legend_count_classes: ["2–9 records", "10 or more records"]
+    A place is a town, not a site. A place with one record is drawn by the record's operator type and size class.
+    A place with two or more records has one size and shows how many records it holds.
+  legend_count_classes: ["Two or more records at the town: the number is the count"]
+  fan_note: >-
+    Schematic: all these records share the town point. Their positions in the fan do not show where the sites are.
   legend_unknown: "One record, size class unknown"
   legend_point: "Point at the town, not at the site"
   list_title: "{n} Atlas records at {place_name}"

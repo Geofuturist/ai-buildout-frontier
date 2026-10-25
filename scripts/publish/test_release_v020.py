@@ -124,10 +124,11 @@ class NewLayers(unittest.TestCase):
         out = self.tmp / "o2"
         _, lp, lc = self.build_both(out)
         d = lp.meta["display"]
-        self.assertEqual((d["count_field"], d["count_breaks"], d["size_field"], d["size_breaks"]), ("n_records", [2, 10], "power_class", [10, 100, 1000]))
+        self.assertEqual((d["count_field"], d["count_breaks"], d["size_field"], d["size_breaks"]), ("n_records", [2], "power_class", [10, 100, 1000]))
         self.assertEqual((d["color_field"], d["color_classes"], d["symbol" if "symbol" in d else "color_field"]), ("type_group", GROUPS, "type_group"))
         self.assertEqual(d["filter_fields"], {g: f"n_type_{g}" for g in GROUPS})
-        self.assertEqual(d["legend_count_classes"], ["2–9 records", "10 or more records"])
+        self.assertEqual(d["legend_count_classes"], ["Two or more records at the town: the number is the count"])
+        self.assertTrue(d["fan_note"].startswith("Schematic: all these records share the town point."))
         self.assertEqual(d["list_title"], "{n} Atlas records at {place_name}")
         self.assertEqual(set(d["legend_type_labels"]), set(GROUPS))
         self.assertEqual(lp.tile_build["args"][0], "-r1")
@@ -548,17 +549,19 @@ class StaticFiles(unittest.TestCase):
         props = schema["$defs"]["display"]["properties"]
         for k in ("map", "count_field", "count_breaks", "color_field", "color_classes", "filter_fields", "symbol", "legend_type_title",
                   "legend_type_note", "legend_type_labels", "legend_type_filter_all", "legend_count_classes", "list_title", "list_note",
-                  "legend_layer_note"):
+                  "legend_layer_note", "fan_note"):
             self.assertIn(k, props)
 
 
 class TextPatchScript(unittest.TestCase):
     """patch_dc_texts_v020.py on the 0.1.0 texts (as in git) in LF and in CRLF."""
     def git_text(self, name: str) -> str:
-        r = subprocess.run(["git", "show", f"HEAD:layers/{name}"], cwd=ROOT, capture_output=True)
-        if r.returncode:
-            self.skipTest("git history not available")
-        return r.stdout.decode("utf-8").replace("\r\n", "\n")
+        """The layer yaml as it was before this patch: the working file with the patch undone (the committed file is already patched)."""
+        text = (ROOT / "layers" / name).read_bytes().decode("utf-8").replace("\r\n", "\n")
+        for new_s, old_s in ((PT.ATTR_NEW, PT.ATTR_OLD), (PT.DESC_NEW, PT.DESC_OLD), (PT.GAP_NEW, PT.GAP_OLD)):
+            text = text.replace(new_s, old_s)
+        keep = [l for l in text.split("\n") if l not in ("  symbol: diamond", PT.LAYER_NOTE_LINE)]
+        return "\n".join(keep)
 
     def test_points(self):
         old = self.git_text("dc_atlas_points.yaml")
@@ -577,11 +580,15 @@ class TextPatchScript(unittest.TestCase):
         self.assertEqual(done, ["attribution_text"])
         self.assertEqual(PT.patch_adm0(a), (a, []))
         e, done = PT.patch_epoch(self.git_text("dc_epoch_points.yaml"))
-        self.assertEqual(len(done), 1)
+        self.assertEqual(done, ["display.legend_layer_note"])
         c = __import__("yaml").safe_load(e)
-        self.assertEqual(c["display"]["symbol"], "diamond")
+        self.assertNotIn("symbol", c["display"])
         self.assertEqual(c["display"]["legend_layer_note"], "AI data centers that Epoch AI selects by their AI computing capacity.")
         self.assertEqual(PT.patch_epoch(e), (e, []))
+        # a file made by the first version of the script (symbol: diamond + note): the symbol line is removed, the rest stays
+        old = e.replace("  geometry_type: point\n", "  geometry_type: point\n  symbol: diamond\n", 1)
+        again, done = PT.patch_epoch(old)
+        self.assertEqual((again, done), (e, ["display.symbol removed"]))
 
     def test_main_keeps_crlf(self):
         with tempfile.TemporaryDirectory() as t:
