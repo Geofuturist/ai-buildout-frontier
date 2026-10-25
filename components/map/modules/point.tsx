@@ -8,8 +8,8 @@ import type { ExpressionSpecification } from 'maplibre-gl';
 import type { LayerEntry, Meta } from '@/lib/data';
 import { COLORS } from '@/lib/style';
 import {
-  BADGE_COLOR, BADGE_RADII, RING_EXTRA, SIZE_RADII, UNKNOWN_COLOR, UNKNOWN_RADIUS,
-  badgeCondition, badgeRadius, badgeTextSize, colorOf, countLabels, filterColumn, groupShown, isCounted, isSized, isTyped, placeRadius, radiusExpression, sizeLabels, typeColor, typeColorExpression, unknownCondition, zeroCondition,
+  BADGE_COLOR, BADGE_RADIUS, RING_EXTRA, SIZE_RADII, UNKNOWN_COLOR, UNKNOWN_RADIUS,
+  badgeCondition, badgeRadius, badgeTextSize, colorOf, filterColumn, groupShown, isCounted, isSized, isTyped, placeRadius, radiusExpression, sizeLabels, typeColor, typeColorExpression, unknownCondition, zeroCondition,
 } from '@/lib/pointSize';
 import type { Counted, Typed } from '@/lib/pointSize';
 import type { GeometryModule, ModuleCtx } from './types';
@@ -93,7 +93,7 @@ function renderCounted(l: LayerEntry, d: Counted & { size_field: string }, ctx: 
   const group = column ? ctx.typeFilter : null;
   const numField = column ?? d.count_field;
   const color = colorOf(d);
-  const radius = placeRadius(d, column ?? undefined);
+  const radius = placeRadius(d);
   const isBadge = badgeCondition(d);
   const notBadge = ['!', isBadge] as unknown as ExpressionSpecification;
   const unknown = unknownCondition(d);
@@ -132,7 +132,7 @@ function renderCounted(l: LayerEntry, d: Counted & { size_field: string }, ctx: 
         beforeId={ctx.before}
         filter={badgeFilter}
         layout={{ visibility, 'circle-sort-key': countGet }}
-        paint={{ 'circle-radius': badgeRadius(d, column ?? undefined), 'circle-color': BADGE_COLOR, 'circle-opacity': 0.92, 'circle-stroke-color': COLORS.surface, 'circle-stroke-width': 1.2 }}
+        paint={{ 'circle-radius': badgeRadius(), 'circle-color': BADGE_COLOR, 'circle-opacity': 0.92, 'circle-stroke-color': COLORS.surface, 'circle-stroke-width': 1.2 }}
       />
       <Layer
         id={`${l.layer_id}-badge-n`}
@@ -144,7 +144,7 @@ function renderCounted(l: LayerEntry, d: Counted & { size_field: string }, ctx: 
           visibility,
           'text-field': ['to-string', countGet] as unknown as ExpressionSpecification,
           'text-font': ['Noto Sans Regular'],
-          'text-size': badgeTextSize(d, column ?? undefined),
+          'text-size': badgeTextSize(),
           'text-allow-overlap': true,
           'text-ignore-placement': true,
         }}
@@ -271,13 +271,10 @@ const pointModule: GeometryModule = {
             )}
             {counted && (
               <ul className="mt-1 space-y-0 border-t border-line pt-1">
-                <li className="text-xs text-ink2">Place with several records (the number is the count):</li>
-                {(counted.legend_count_classes?.length === counted.count_breaks.length ? counted.legend_count_classes : countLabels(counted.count_breaks)).map((t, i) => (
-                  <li key={t} className="flex items-center gap-2">
-                    <Badge r={Math.min(BADGE_RADII[Math.min(i, BADGE_RADII.length - 1)], 19)} n={String(counted.count_breaks[i])} />
-                    <span>{t}</span>
-                  </li>
-                ))}
+                <li className="flex items-center gap-2">
+                  <Badge r={BADGE_RADIUS} n="n" />
+                  <span>{counted.legend_count_classes?.[0] ?? 'Place with several records: the number is the count'}</span>
+                </li>
               </ul>
             )}
             {first.legend_note && <p className="mt-1 text-xs text-muted">{first.legend_note}</p>}

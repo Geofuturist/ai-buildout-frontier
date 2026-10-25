@@ -15,6 +15,7 @@ import { capitalize, recordNoun, unitWord } from '@/lib/layers';
 import { GROUPS_FILE, PLACE_KEY, loadPlaceIndex, loadTypeGroups, placeRowsLayer, rowsOfGroup, rowsOfPlace } from '@/lib/placeRows';
 import { filterColumn } from '@/lib/pointSize';
 import { epochTags, parseLinks } from '@/lib/dcTexts';
+import { countryNameFromIso3 } from '@/lib/iso3';
 import DcPointRows, { capacityShort, str } from './DcPointRows';
 import { MODULE_BY_TYPE } from './modules';
 import { ValueRows, sourceLine } from './parts';
@@ -77,12 +78,12 @@ export function RecordList({ data, layer, items, onOpen }: { data: MapData; laye
               {line && <span className="block text-xs text-ink2">{line}</span>}
             </button>
             {links.length > 0 && (
-              <p className="mt-0.5 break-all text-xs text-ink2">
+              <p className="mt-0.5 break-words text-xs text-ink2">
                 Sources:{' '}
                 {links.slice(0, 2).map((l, j) => (
                   <span key={l.href}>
                     {j > 0 && ', '}
-                    <a href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>
+                    <a className="break-all" href={l.href} target="_blank" rel="noopener noreferrer">{l.label}</a>
                   </span>
                 ))}
                 {links.length > 2 && ` and ${links.length - 2} more in the record`}
@@ -153,8 +154,11 @@ export function PlaceCard({ data, layer, props: p, typeFilter, onClose }: { data
     };
   }, [csvUrl, rowsMeta, ref, n, column, groupsUrl, typeFilter, nGroup]);
 
-  const title = str(p.place_name) || ref;
-  const subtitle = `${ref} · ${layer.title}`;
+  // Title: the town and its country; the place key is small, on the line of the citation
+  const iso = str(p.iso3_source) || str(p.iso3_frame);
+  const country = iso ? countryNameFromIso3(iso) : '';
+  const title = [str(p.place_name) || ref, country].filter(Boolean).join(', ');
+  const subtitle = layer.title;
   if (state === 'loading') {
     return (
       <Shell title={title} subtitle={subtitle} onClose={onClose}>
@@ -182,6 +186,10 @@ export function PlaceCard({ data, layer, props: p, typeFilter, onClose }: { data
       {d?.list_note && <p className="mt-1 text-xs text-muted">{d.list_note}</p>}
       {column && state.rows.length !== state.all && <p className="mt-1 text-xs text-ink2">Filter: {groupLabel}. {state.rows.length} of the {state.all} records of this place.</p>}
       <RecordList data={data} layer={rowsLayer} items={rows} onOpen={setOpen} />
+      <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
+        <CopyButton text={recordCitation(meta, str(p.record_id) || ref)} label="Cite this place" />
+        <span className="text-xs text-muted">{ref}</span>
+      </div>
       <p className="mt-3 text-sm"><Link href={`/data/#${rowsLayer.layer_id}`}>All files of the records</Link></p>
     </Shell>
   );

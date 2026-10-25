@@ -99,8 +99,8 @@ export interface Meta {
     legend_count_classes?: string[];
     list_title?: string;
     list_note?: string;
-    /** mark shape; the site draws circles only (V 25.10: Epoch stays a circle for now), the key is read and ignored */
-    symbol?: string;
+    /** caption of the fan of records (a schematic layout, not positions) */
+    fan_note?: string;
     tile_fields?: string[];
     home_bbox?: [number, number, number, number];
     /** panel topic; absent in older metas (then derived from the domain) */

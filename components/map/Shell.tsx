@@ -12,7 +12,7 @@ export default function Shell({ title, subtitle, onClose, children }: { title: s
       <div className="flex items-start justify-between gap-2 px-4 pt-3">
         <div className="min-w-0">
           <h2 className="text-base font-semibold leading-tight">{title}</h2>
-          {subtitle && <p className="mt-0.5 break-all text-xs text-muted">{subtitle}</p>}
+          {subtitle && <p className="mt-0.5 break-words text-xs text-muted">{subtitle}</p>}
         </div>
         <button type="button" className="-mr-2 -mt-1 flex h-11 w-11 shrink-0 items-center justify-center" aria-label="Close" onClick={onClose}>
           <X size={20} aria-hidden />

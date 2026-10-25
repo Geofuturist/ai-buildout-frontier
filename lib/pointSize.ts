@@ -59,9 +59,9 @@ export function radiusExpression(d: Display & { size_field: string }): Expressio
 // ---- Places with several records: a badge with the number (display.count_field, display.count_breaks) ----
 // The number is a value of the published layer: nothing is counted in the browser.
 
-/** Radii in px of the badge classes (first class ... last); a layer with more classes reuses the last one. */
-export const BADGE_RADII = [11, 15, 19];
-export const BADGE_TEXT_SIZES = [11, 12.5, 14];
+/** One size for every badge: on the map the size means capacity only (V 25.10), the number sits on the badge. */
+export const BADGE_RADIUS = 12;
+export const BADGE_TEXT_SIZE = 12;
 export const BADGE_COLOR = '#3f4752';
 
 export type Counted = Display & { count_field: string; count_breaks: number[] };
@@ -75,24 +75,17 @@ export function badgeCondition(d: Counted): ExpressionSpecification {
   return ['>=', ['to-number', ['get', d.count_field], 0], d.count_breaks[0]] as unknown as ExpressionSpecification;
 }
 
-/** A value per badge class (the first below the second break, and so on), as a MapLibre step on the count field. */
-function stepByCount(d: Counted, values: number[], field: string = d.count_field): ExpressionSpecification {
-  const s: unknown[] = ['step', ['to-number', ['get', field], 0], values[0]];
-  d.count_breaks.slice(1).forEach((b, i) => s.push(b, values[Math.min(i + 1, values.length - 1)]));
-  return s as unknown as ExpressionSpecification;
+export function badgeRadius(): number {
+  return BADGE_RADIUS;
 }
 
-export function badgeRadius(d: Counted, field?: string): ExpressionSpecification {
-  return stepByCount(d, BADGE_RADII, field);
+export function badgeTextSize(): number {
+  return BADGE_TEXT_SIZE;
 }
 
-export function badgeTextSize(d: Counted, field?: string): ExpressionSpecification {
-  return stepByCount(d, BADGE_TEXT_SIZES, field);
-}
-
-/** Radius of a place on the map: the badge class, or the size class of its one record. `field` replaces the count (filter by type). */
-export function placeRadius(d: Counted & { size_field: string }, field?: string): ExpressionSpecification {
-  return ['case', badgeCondition(d), badgeRadius(d, field), radiusExpression(d)] as unknown as ExpressionSpecification;
+/** Radius of a place on the map: the badge, or the size class of its one record. */
+export function placeRadius(d: Counted & { size_field: string }): ExpressionSpecification {
+  return ['case', badgeCondition(d), BADGE_RADIUS, radiusExpression(d)] as unknown as ExpressionSpecification;
 }
 
 // ---- Colour by type (display.color_field, display.color_classes) and the filter by type (display.filter_fields) ----
