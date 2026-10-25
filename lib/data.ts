@@ -173,6 +173,10 @@ export interface AbfData {
   default_country: string | null;
   /** zoom at which the selection level changes to ADM1 / ADM2 (never below the boundary tiles minzoom) */
   level_zoom: { ADM1: number; ADM2: number };
+  /** below this zoom a click on the globe chooses the whole world (content/site.json world_zoom) */
+  world_zoom: number;
+  /** a click on a place with more records than this opens the list only, no fan (content/site.json fan_max) */
+  fan_max: number;
   /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
   unit_words: Record<string, Record<string, string>>;
   /** every country of the boundaries (name from units.csv) with its box [w, s, e, n] (e may exceed 180), for the search */

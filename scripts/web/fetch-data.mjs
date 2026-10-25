@@ -248,6 +248,19 @@ async function main() {
     levelZoom[lvl] = Math.max(wanted, minz);
   }
 
+  // Two more numbers of content/site.json: the zoom below which a click chooses the whole world, and the most records
+  // a place may have to open as a fan (SPEC_WEB_territory 15; SPEC_DC_world_v0_2_0 9)
+  const num = (v, dflt, name) => {
+    if (v === undefined) return dflt;
+    if (typeof v !== 'number' || !Number.isFinite(v) || v < 0) {
+      strict(`content/site.json: ${name} must be a non-negative number; ${dflt} is used`);
+      return dflt;
+    }
+    return v;
+  };
+  const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
+  const fanMax = num(site.fan_max, 30, 'fan_max');
+
   // Territory (SPEC_WEB_territory 5, 10): units of the countries that have layers, from units.csv of the boundaries
   // dataset (never from geometry), and the unit words of boundary_registry.csv. units.csv goes to a lazily loaded
   // file (territory.json); the registry words and thresholds travel with abf-data.json.
@@ -450,6 +463,8 @@ async function main() {
     default_layer: defaultLayer,
     default_country: defaultCountry,
     level_zoom: levelZoom,
+    world_zoom: worldZoom,
+    fan_max: fanMax,
     unit_words: unitWords,
     countries,
     attribution: groups,

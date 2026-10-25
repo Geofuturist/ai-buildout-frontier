@@ -7,9 +7,8 @@ import type { MapLayerMouseEvent, MapRef } from 'react-map-gl/maplibre';
 import type { MapGeoJSONFeature } from 'maplibre-gl';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import { registerPmtiles } from './pmtiles';
-import type { CardState, MapData, UnitRef } from './types';
+import type { CardState, FanSpot, MapData, UnitRef } from './types';
 import { levelNumber } from '@/lib/indicators';
-import { WORLD_ZOOM } from '@/lib/layers';
 import { onMap } from '@/lib/panel';
 import { objectsAtSpot } from '@/lib/spots';
 import { COLORS } from '@/lib/style';
@@ -50,6 +49,8 @@ interface Props {
   onCountry: (iso3: string) => void;
   /** a click on the globe far out */
   onWorld: () => void;
+  /** a click on a place with several records: where it is on the screen, for the fan; null when no fan is wanted */
+  onFan: (f: FanSpot | null) => void;
   /** the whole world is chosen: every country gets the tint of a chosen unit */
   worldOn: boolean;
   /** the group chosen in the filter by type, or null */
@@ -63,7 +64,7 @@ interface Props {
 /** Opacity that is `on` where the feature state `key` is set and 0 elsewhere (constant expression: never reloads tiles). */
 const FS_OPACITY = (key: string, on: number) => ['case', ['boolean', ['feature-state', key], false], on, 0] as ExpressionSpecification;
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, worldOn, typeFilter, onZoom, onReady, onFailed }, ref) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, onFan, worldOn, typeFilter, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -211,8 +212,9 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   const onClick = useCallback(
     (e: MapLayerMouseEvent) => {
       const t = targetOf(e.features ?? []);
+      onFan(null);
       // Far out the globe is one body: a click on it chooses the whole world
-      if ((!t || t.kind !== 'record') && (mapRef.current?.getZoom() ?? 99) < WORLD_ZOOM) {
+      if ((!t || t.kind !== 'record') && (mapRef.current?.getZoom() ?? 99) < data.world_zoom) {
         onWorld();
         return;
       }
@@ -222,11 +224,22 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
           const key = MODULE_BY_TYPE.point.keyField;
           const items = t.peers.map((p) => ({ ...(p.properties as Record<string, unknown>) })).sort((a, b) => String(a[key]).localeCompare(String(b[key])));
           onSelect({ type: 'records', layerId: t.f.source, items });
-        } else onSelect({ type: 'record', layerId: t.f.source, props: { ...(t.f.properties as Record<string, unknown>) } });
+        } else {
+          const props = { ...(t.f.properties as Record<string, unknown>) };
+          onSelect({ type: 'record', layerId: t.f.source, props });
+          // A place with several records may open as a fan around its badge: the screen position of its point
+          const d = data.metas[data.layers.find((l) => l.layer_id === t.f.source)?.meta_id ?? '']?.display;
+          const n = Number(props[d?.count_field ?? '']);
+          const g = t.f.geometry;
+          if (d?.count_field && d.count_breaks && n >= d.count_breaks[0] && g.type === 'Point' && mapRef.current) {
+            const pt = mapRef.current.project(g.coordinates as [number, number]);
+            onFan({ layerId: t.f.source, props, x: pt.x, y: pt.y });
+          }
+        }
       } else if (t.kind === 'country') onCountry(t.iso3);
       else onUnit(t.unit);
     },
-    [targetOf, onSelect, onCountry, onUnit, onWorld],
+    [targetOf, onSelect, onCountry, onUnit, onWorld, onFan, data.world_zoom, data.metas, data.layers],
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
@@ -245,6 +258,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       onMouseMove={onMove}
       onMouseLeave={() => { setCursor(''); setHover(null); }}
       onClick={onClick}
+      onMoveStart={() => onFan(null)}
       onLoad={() => {
         // Test hook, only in a build made with NEXT_PUBLIC_E2E=1 (never set on Vercel)
         if (process.env.NEXT_PUBLIC_E2E) (window as unknown as { __map?: unknown }).__map = mapRef.current?.getMap();

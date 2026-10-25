@@ -8,6 +8,8 @@ export default function HomePage() {
     default_layer: d.default_layer,
     default_country: d.default_country,
     level_zoom: d.level_zoom,
+    world_zoom: d.world_zoom,
+    fan_max: d.fan_max,
     unit_words: d.unit_words,
     countries: d.countries,
   };

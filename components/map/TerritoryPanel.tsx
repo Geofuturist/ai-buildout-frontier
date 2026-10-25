@@ -22,6 +22,8 @@ interface Props {
   countryIso: string | null;
   countryName: string;
   model: CountryModel | null;
+  /** indicators that are not on the map (display.map = false): the card still shows their values */
+  hiddenIndicators: Indicator[];
   /** the fill that is on, when it applies to the chosen country (its own or a world one) */
   indicator: Indicator | null;
   /** the chosen unit; level 0 = the country */
@@ -124,7 +126,7 @@ export default function TerritoryPanel(p: Props) {
             <h2 className="mt-2 text-base font-semibold leading-tight">{title}</h2>
             {unit && <p className="text-xs text-muted">{word} · {unit.unit_id}</p>}
 
-            {!model && !indicator && p.countryRows.length === 0 && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
+            {!model && !indicator && p.countryRows.length === 0 && p.hiddenIndicators.length === 0 && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
 
             {p.countryRows.length > 0 && (
               <div className="mt-3 border-t border-line pt-3">
@@ -146,6 +148,17 @@ export default function TerritoryPanel(p: Props) {
             )}
 
             {/* Files of the country itself; files of the whole world are on the world card */}
+            {unit && p.hiddenIndicators.map((h) => {
+              const l = h.levels.find((x) => x.level === unit.level)?.layer;
+              return l ? (
+                <div key={h.key} className="mt-3 border-t border-line pt-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted">{h.title}</p>
+                  <UnitValues layer={l} meta={data.metas[l.meta_id]} unitId={unit.unit_id} />
+                  <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[l.meta_id])}</p>
+                </div>
+              ) : null;
+            })}
+
             {unit && (model || ownIndicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={ownIndicator} unit={unit} territory={p.territory} />}
 
             {citeLayer && citeMeta && unit && (

@@ -7,15 +7,16 @@ import type { MapHandle } from './MapCanvas';
 import LegendCard from './LegendCard';
 import TerritoryPanel from './TerritoryPanel';
 import WorldCard from './WorldCard';
+import Fan from './Fan';
 import InfoCard from './InfoCard';
 import MapNav from './MapNav';
 import { MODULE_BY_TYPE } from './modules';
 import { selectDataLayers } from './select';
-import type { CardState, MapData, UnitRef } from './types';
+import type { CardState, FanSpot, MapData, UnitRef } from './types';
 import { countryNameFromIso3 } from '@/lib/iso3';
 import { buildCountries, fillLevelOf, levelWord, selectionLevel } from '@/lib/indicators';
 import { WORLD, groupByCountry, unionBbox } from '@/lib/layers';
-import { buildRows } from '@/lib/panel';
+import { buildRows, onMap } from '@/lib/panel';
 import type { PanelRow } from '@/lib/panel';
 import { isWithin, levelsOfCountry, loadTerritory } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
@@ -36,16 +37,24 @@ export default function MapApp({ data }: { data: MapData }) {
   const [worldOpen, setWorldOpen] = useState(false);
   // Filter by operator type: one group at a time, or null for all (display.filter_fields of the places layer)
   const [typeFilter, setTypeFilter] = useState<string | null>(null);
+  // The place that was clicked and may open as a fan (screen position); it shows only while its own card is open
+  const [fanSpot, setFanSpot] = useState<FanSpot | null>(null);
 
   const onFailed = useCallback((id: string) => setFailed((prev) => (prev.has(id) ? prev : new Set(prev).add(id))), []);
 
   const layers = useMemo(() => selectDataLayers(data), [data]);
-  const allModels = useMemo(
-    () => buildCountries(groupByCountry(layers, data.metas, data.default_layer), data.metas, (l) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive),
-    [layers, data.metas, data.default_layer],
+  // Layers with display.map = false are not items of the map: no row, no fill, no points. They stay in the files and
+  // the values of the card, so there are two models: of the layers on the map and of all layers (SPEC_DC_world 9 p. 5).
+  const mapLayers = useMemo(() => layers.filter((l) => onMap(data.metas[l.meta_id])), [layers, data.metas]);
+  const modelsOf = useCallback(
+    (ls: typeof layers) => buildCountries(groupByCountry(ls, data.metas, data.default_layer), data.metas, (l) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive),
+    [data.metas, data.default_layer],
   );
+  const allModels = useMemo(() => modelsOf(mapLayers), [modelsOf, mapLayers]);
+  const fullModels = useMemo(() => modelsOf(layers), [modelsOf, layers]);
   // Layers that cover several countries (coverage.iso3 with 2+ codes) are not tied to a country
   const worldModel = allModels.find((c) => c.iso3 === WORLD) ?? null;
+  const fullWorld = fullModels.find((c) => c.iso3 === WORLD) ?? null;
   const countries = useMemo(() => allModels.filter((c) => c.iso3 !== WORLD), [allModels]);
   const rows = useMemo(() => buildRows(worldModel, countries, data.metas), [worldModel, countries, data.metas]);
   // The panel on the left lists the layers of the whole world; the layers of one country are chosen in its card
@@ -53,6 +62,12 @@ export default function MapApp({ data }: { data: MapData }) {
   const countryRows = useMemo(() => rows.filter((r) => r.iso3 !== WORLD && r.iso3 === country), [rows, country]);
 
   const model = countries.find((c) => c.iso3 === country) ?? null;
+  const fullModel = fullModels.find((c) => c.iso3 === country) ?? null;
+  // Indicators that are not on the map (map = false): their values stay in the card of the country
+  const hiddenInds = useMemo(
+    () => [...(fullWorld?.indicators ?? []), ...(fullModel?.indicators ?? [])].filter((i) => !onMap(data.metas[i.levels[0].layer.meta_id])),
+    [fullWorld, fullModel, data.metas],
+  );
   const countryName = (country ? data.countries.find((c) => c.iso3 === country)?.name : undefined) ?? model?.name ?? (country ? countryNameFromIso3(country) : '');
   // The fill that is on: any country's indicator or a world one; it does not depend on the chosen country
   const indicator = indicatorKey ? rows.find((r) => r.indicator?.key === indicatorKey)?.indicator ?? null : null;
@@ -76,7 +91,7 @@ export default function MapApp({ data }: { data: MapData }) {
   const chosen: UnitRef | null = country ? unit ?? { unit_id: country, name: countryName, level: 0 } : null;
 
   // Points and lines that are switched on are drawn wherever they are, whatever country is chosen
-  const overlaysOn = useMemo(() => layers.filter((l) => !MODULE_BY_TYPE[l.tiles.geometry_type].exclusive && overlays[l.layer_id]), [layers, overlays]);
+  const overlaysOn = useMemo(() => mapLayers.filter((l) => !MODULE_BY_TYPE[l.tiles.geometry_type].exclusive && overlays[l.layer_id]), [mapLayers, overlays]);
   const shownOverlays: Record<string, boolean> = Object.fromEntries(overlaysOn.map((l) => [l.layer_id, true]));
 
   const ensureTerritory = useCallback(() => {
@@ -216,6 +231,7 @@ export default function MapApp({ data }: { data: MapData }) {
           onSelect={setCard}
           onCountry={(iso3) => selectCountry(iso3)}
           onWorld={toWorld}
+          onFan={(f) => setFanSpot(f && Number(f.props[data.metas[data.layers.find((l) => l.layer_id === f.layerId)?.meta_id ?? '']?.display?.count_field ?? '']) <= data.fan_max ? f : null)}
           worldOn={worldOpen && !country}
           typeFilter={typeFilter}
           onUnit={onUnit}
@@ -223,6 +239,9 @@ export default function MapApp({ data }: { data: MapData }) {
           onReady={onReady}
           onFailed={onFailed}
         />
+        {fanSpot && card?.type === 'record' && card.layerId === fanSpot.layerId && card.props.record_id === fanSpot.props.record_id && (
+          <Fan data={data} spot={fanSpot} typeFilter={typeFilter} onOpen={(layer, row) => setCard({ type: 'record', layerId: layer.layer_id, props: row })} />
+        )}
         <LegendCard
           data={data}
           heading={heading}
@@ -252,7 +271,8 @@ export default function MapApp({ data }: { data: MapData }) {
           data={data}
           countryIso={country}
           countryName={countryName}
-          model={model}
+          model={fullModel}
+          hiddenIndicators={hiddenInds}
           indicator={indicator && country && (indicator.iso3 === WORLD || indicator.iso3 === country) ? indicator : null}
           unit={chosen}
           territory={territory}
@@ -268,7 +288,7 @@ export default function MapApp({ data }: { data: MapData }) {
           onWorld={backToGlobe}
           onCrumb={onCrumb}
         />
-        {worldOpen && !country && <WorldCard world={worldModel} hidden={card !== null} onClose={() => setWorldOpen(false)} />}
+        {worldOpen && !country && <WorldCard world={fullWorld} hidden={card !== null} onClose={() => setWorldOpen(false)} />}
         <InfoCard data={data} card={card} typeFilter={typeFilter} onClose={() => setCard(null)} />
       </div>
 
