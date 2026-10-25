@@ -5,7 +5,7 @@ Run command (from the repository root, Windows):
 
 Changes (each only if not yet done; safe to run twice; the line endings of every file are kept):
   layers\dc_atlas_points.yaml      description: last sentence on the map by place; known_gaps item 3: last sentence; attribution_text: tail
-  layers\dc_atlas_count_adm0.yaml  attribution_text: tail
+  layers\dc_atlas_count_adm0.yaml  attribution_text: tail; display.map: false (V, 25.10)
   layers\dc_epoch_points.yaml      display.legend_layer_note; removes display.symbol: diamond if an earlier run of this script put it there
 Nothing else in these files is touched. Run patch_dc_atlas_points_v020.py (-r1, display.map) separately; the order does not matter.
 """
@@ -46,9 +46,28 @@ def patch_points(text: str) -> tuple[str, list[str]]:
     return text, done
 
 
+MAP_LINE = "  map: false   # decision of V 25.10 (SPEC_DC_world_v0_2_0 r5 section 9 item 5): the country count is not drawn as a map layer"
+
+
 def patch_adm0(text: str) -> tuple[str, list[str]]:
     done: list[str] = []
-    return swap(text, ATTR_OLD, ATTR_NEW, "counted by country, by place", "attribution_text", done), done
+    text = swap(text, ATTR_OLD, ATTR_NEW, "counted by country, by place", "attribution_text", done)
+    lines = text.split("\n")
+    try:
+        d = lines.index("display:")
+    except ValueError:
+        raise SystemExit("adm0: block 'display:' not found") from None
+    end = d + 1
+    while end < len(lines) and (lines[end].startswith(" ") or lines[end] == ""):
+        end += 1
+    block = lines[d + 1:end]
+    if not any(l.startswith("  map:") for l in block):
+        g = next((i for i, l in enumerate(block) if l.startswith("  geometry_type:")), None)
+        if g is None:
+            raise SystemExit("adm0: display.geometry_type not found")
+        lines.insert(d + 1 + g + 1, MAP_LINE)
+        done.append("display.map: false")
+    return "\n".join(lines), done
 
 
 def patch_epoch(text: str) -> tuple[str, list[str]]:

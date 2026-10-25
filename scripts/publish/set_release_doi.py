@@ -3,7 +3,7 @@ r"""Set the DOI and the publication date in a release yaml (idempotent).
 Run command (from the repository root, Windows):
     python scripts\publish\set_release_doi.py releases\abf-boundaries-v0.2.0.yaml 10.5281/zenodo.NNNNNNN 2026-10-20
 
-Only the lines `doi:` and `published_at:` at column 0 are changed; the rest of the file is kept.
+Only the lines `doi:` and `published_at:` at column 0 are changed (a missing `published_at:` is added after `doi:`); the rest of the file is kept.
 """
 from __future__ import annotations
 
@@ -36,6 +36,10 @@ def main(argv: list[str]) -> int:
     changed = False
     for key, value in wanted.items():
         hits = [i for i, ln in enumerate(lines) if re.match(rf"^{key}\s*:", ln)]
+        if not hits and key == "published_at":              # a release yaml made without the line: it goes right after `doi:`
+            d = next(i for i, ln in enumerate(lines) if re.match(r"^doi\s*:", ln))
+            lines.insert(d + 1, "published_at: null")
+            hits = [d + 1]
         if len(hits) != 1:
             print(f"STOP: expected one line `{key}:` at column 0, found {len(hits)}")
             return 2

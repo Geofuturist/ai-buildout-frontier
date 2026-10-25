@@ -560,7 +560,7 @@ class TextPatchScript(unittest.TestCase):
         text = (ROOT / "layers" / name).read_bytes().decode("utf-8").replace("\r\n", "\n")
         for new_s, old_s in ((PT.ATTR_NEW, PT.ATTR_OLD), (PT.DESC_NEW, PT.DESC_OLD), (PT.GAP_NEW, PT.GAP_OLD)):
             text = text.replace(new_s, old_s)
-        keep = [l for l in text.split("\n") if l not in ("  symbol: diamond", PT.LAYER_NOTE_LINE)]
+        keep = [l for l in text.split("\n") if l not in ("  symbol: diamond", PT.LAYER_NOTE_LINE, PT.MAP_LINE)]
         return "\n".join(keep)
 
     def test_points(self):
@@ -577,8 +577,12 @@ class TextPatchScript(unittest.TestCase):
 
     def test_adm0_and_epoch(self):
         a, done = PT.patch_adm0(self.git_text("dc_atlas_count_adm0.yaml"))
-        self.assertEqual(done, ["attribution_text"])
+        self.assertEqual(done, ["attribution_text", "display.map: false"])
         self.assertEqual(PT.patch_adm0(a), (a, []))
+        self.assertIs(__import__("yaml").safe_load(a)["display"]["map"], False)
+        # a file with the attribution already patched (first run of the script): only the map line is added
+        half = PT.swap(a, PT.ATTR_NEW, PT.ATTR_NEW, "", "x", [])
+        self.assertEqual(PT.patch_adm0(half.replace(PT.MAP_LINE + "\n", "")), (a, ["display.map: false"]))
         e, done = PT.patch_epoch(self.git_text("dc_epoch_points.yaml"))
         self.assertEqual(done, ["display.legend_layer_note"])
         c = __import__("yaml").safe_load(e)

@@ -209,6 +209,7 @@ coverage:
     v0.2.0 shows Crimea under Russian control and records Ukraine's claim (contested_areas).
 display:
   geometry_type: polygon
+  map: false   # decision of V 25.10 (SPEC_DC_world_v0_2_0 r5 section 9 item 5): the country count is not drawn as a map layer
   value_field: n_records
   unit: records
   zero_class: true
