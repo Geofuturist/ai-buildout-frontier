@@ -16,13 +16,15 @@ interface Props {
   onInfo: (layerId: string) => void;
   /** all topics open from the start (the territory card, where the list is short) */
   openAll?: boolean;
+  /** territory card: the second line says "data by <level>" so it is not read as the selected level */
+  byLevel?: boolean;
 }
 
 /**
  * Layers by topic (SPEC_WEB_territory r4 12). Fills are switches (one fill on the map at a time), points and
  * lines are checkboxes. Nothing is on when the page opens.
  */
-export default function LayersPanel({ rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, openAll }: Props) {
+export default function LayersPanel({ rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, openAll, byLevel }: Props) {
   const topics = rowsByTopic(rows);
   // Compact menu: the topics are buttons, a topic opens its list of layers (all closed at the start)
   const [openTopics, setOpenTopics] = useState<Set<string>>(new Set());
@@ -40,7 +42,7 @@ export default function LayersPanel({ rows, activeFill, overlays, failed, onFill
     <span className="min-w-0 leading-tight">
       <span className="block text-sm text-ink">{r.title}</span>
       <span className="block text-xs text-ink2">
-        {r.scope} · {r.levels}
+        {r.scope} · {byLevel && r.kind === 'fill' ? `data by ${r.levels.toLowerCase()}` : r.levels}
         {bad && <strong className="ml-1 text-[#9a2a00]">· Failed to load</strong>}
       </span>
       <span className="block text-xs text-muted">{[r.source, r.fresh].filter(Boolean).join(' · ')}</span>

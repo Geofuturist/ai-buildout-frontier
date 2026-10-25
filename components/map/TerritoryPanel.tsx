@@ -131,7 +131,7 @@ export default function TerritoryPanel(p: Props) {
             {p.countryRows.length > 0 && (
               <div className="mt-3 border-t border-line pt-3">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
-                <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onFill={p.onFill} onOverlay={p.onOverlay} onInfo={p.onInfo} openAll />
+                <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onFill={p.onFill} onOverlay={p.onOverlay} onInfo={p.onInfo} openAll byLevel />
               </div>
             )}
 
