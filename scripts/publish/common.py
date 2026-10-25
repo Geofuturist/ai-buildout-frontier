@@ -183,7 +183,8 @@ def dump_yaml_value(text_path: Path, key: str, value: str) -> None:
     """Set one top-level `key: value` line in a yaml file, keeping comments.
 
     Used only to freeze built_at / locked inputs on the first build. The key
-    must already exist as a line `key: ...` at column 0.
+    should exist as a line `key: ...` at column 0; if it does not, `built_at` is
+    added after the line `published_at:` (or `doi:`) of the header.
     """
     lines = text_path.read_text(encoding="utf-8").splitlines()
     pattern = re.compile(rf"^{re.escape(key)}\s*:")
@@ -192,6 +193,13 @@ def dump_yaml_value(text_path: Path, key: str, value: str) -> None:
             lines[i] = f"{key}: {value}"
             text_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
             return
+    if key == "built_at":
+        for anchor in ("published_at", "doi"):
+            for i, line in enumerate(lines):
+                if re.match(rf"^{anchor}\s*:", line):
+                    lines.insert(i + 1, f"{key}: {value}")
+                    text_path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+                    return
     raise KeyError(f"{text_path}: no top-level key '{key}'")
 
 
