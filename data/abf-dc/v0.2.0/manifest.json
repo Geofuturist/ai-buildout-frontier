@@ -1,0 +1,420 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-dc",
+  "version": "0.2.0",
+  "tag": "abf-dc-v0.2.0",
+  "doi": "10.5281/zenodo.23645541",
+  "published_at": "2026-10-25",
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "base_path": "abf-dc/v0.2.0/",
+  "layers": [
+    {
+      "layer_id": "dc_atlas_points",
+      "title": "Data centers · Atlas of Data Center Politics · records",
+      "domain": "dc",
+      "level": "point",
+      "bbox": [
+        -158.015,
+        -46.4,
+        174.7756,
+        70.2553
+      ],
+      "meta": {
+        "path": "dc_atlas_points.meta.json",
+        "bytes": 30896,
+        "sha256": "5bd696426b9d8691334d12226257aab3d2bf9294609fb2e282296ef7f9d7b3c5"
+      },
+      "files": {
+        "parquet": {
+          "path": "dc_atlas_points.parquet",
+          "bytes": 1055698,
+          "sha256": "7cf4cffcbe49d3ad14b643da2885b5e66164ecac927e9ab5584bbde1fb9b9094"
+        },
+        "geojson.gz": {
+          "path": "dc_atlas_points.geojson.gz",
+          "bytes": 1637558,
+          "sha256": "833f424cd8c76cb2da9f887d9cc8c61815d6c788e12c3b8c1543ee2897bb8799"
+        },
+        "csv": {
+          "path": "dc_atlas_points.csv",
+          "bytes": 5611745,
+          "sha256": "b4d4aabdbed7d76cc13081bcabe1db6426fe9af57b2781bc3e5f40c93bed1df5"
+        },
+        "pmtiles": {
+          "path": "dc_atlas_points.pmtiles",
+          "bytes": 13586657,
+          "sha256": "5d83214ef2f10a691cdf89637e65ca41fb781eb3612847c8df944f0454f8d8f8"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "dc_atlas_points.pmtiles",
+        "source_layer": "dc_atlas_points",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 12,
+        "fields": [
+          "record_id",
+          "name",
+          "operator",
+          "operator_type",
+          "status_raw",
+          "start_year",
+          "power_class",
+          "power_status",
+          "place_name",
+          "coord_source",
+          "source_urls",
+          "address_raw",
+          "iso3_source",
+          "iso3_frame",
+          "control_iso3"
+        ]
+      }
+    },
+    {
+      "layer_id": "dc_epoch_points",
+      "title": "AI data centers · Epoch AI · sites",
+      "domain": "dc",
+      "level": "point",
+      "bbox": [
+        -122.9898,
+        -37.814,
+        144.9633,
+        68.4384
+      ],
+      "meta": {
+        "path": "dc_epoch_points.meta.json",
+        "bytes": 24471,
+        "sha256": "c6619821095c198652b5e52beb3169ecdd05af8dcc74e1b1dda57c8818cbfe2f"
+      },
+      "files": {
+        "parquet": {
+          "path": "dc_epoch_points.parquet",
+          "bytes": 54769,
+          "sha256": "79b54351137cf68e2eb2d4cb3fb8f2324ccfe09e74ddde6d139a3c065e5d67bf"
+        },
+        "geojson.gz": {
+          "path": "dc_epoch_points.geojson.gz",
+          "bytes": 27797,
+          "sha256": "58238f2310b26a7d9f5c5701d500049c4109e0d9e293fd3541b396b21f6fd042"
+        },
+        "csv": {
+          "path": "dc_epoch_points.csv",
+          "bytes": 87168,
+          "sha256": "bd3d0745c80f38441d9603c4cc38c2640625a84295df4cfc25743669607a6749"
+        },
+        "pmtiles": {
+          "path": "dc_epoch_points.pmtiles",
+          "bytes": 433145,
+          "sha256": "0b323bb8a0ccba8e3615e87c08578bedb2b1b572361aff7054859b18a7f31a74"
+        }
+      },
+      "extra_files": [
+        {
+          "path": "checks.csv",
+          "bytes": 50847,
+          "sha256": "f2973b7f3df72438c0fb9c0b2d2c93bfdc828475b4005508044e4cabb750b524",
+          "description": "One row per Epoch AI site: whether the Atlas of Data Center Politics lists the same site (channel atlas_dcp). status is found (ref gives the Atlas record_id, several separated by semicolons), not_found or not_checked. checked_by is script:dc_checks where an Atlas record has the same street address (in the United States the same house number, street and state) or no candidate was found, and human:V where V judged the candidates the script listed. Where V's verdict differs from the address rule, the address rule decides and note keeps V's verdict. search_method gives the rule."
+        }
+      ],
+      "tiles": {
+        "file": "dc_epoch_points.pmtiles",
+        "source_layer": "dc_epoch_points",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 12,
+        "fields": [
+          "record_id",
+          "name",
+          "owner",
+          "users",
+          "project",
+          "power_mw",
+          "power_status",
+          "place_name",
+          "coord_source",
+          "selected_sources",
+          "address_raw",
+          "iso3_source",
+          "iso3_frame",
+          "control_iso3"
+        ]
+      }
+    },
+    {
+      "layer_id": "dc_atlas_count_adm0",
+      "title": "Data centers · Atlas of Data Center Politics · records by country",
+      "domain": "dc",
+      "level": "ADM0",
+      "bbox": [
+        -180.0,
+        -90.0,
+        180.0,
+        83.6341
+      ],
+      "meta": {
+        "path": "dc_atlas_count_adm0.meta.json",
+        "bytes": 16402,
+        "sha256": "81552272c1a126b429b3d2d5196d881ff67d49b693815453468167295cfd98d4"
+      },
+      "files": {
+        "parquet": {
+          "path": "dc_atlas_count_adm0.parquet",
+          "bytes": 4089864,
+          "sha256": "4e879fc0437fd58258ff9a4b210b70523e2862593aaa2873c497dbbd19c39f84"
+        },
+        "geojson.gz": {
+          "path": "dc_atlas_count_adm0.geojson.gz",
+          "bytes": 4615597,
+          "sha256": "f5df408da4650dd876c159c51fc1e88238d947d26c1223991f2750f4cb024244"
+        },
+        "csv": {
+          "path": "dc_atlas_count_adm0.csv",
+          "bytes": 20292,
+          "sha256": "4ed23afe34e297ff2f71639ab145488b5b292b9978f7087c787f73eab3b1db51"
+        },
+        "pmtiles": {
+          "path": "dc_atlas_count_adm0.pmtiles",
+          "bytes": 3739310,
+          "sha256": "7fea7a04fe6bed78d43b638b9171f3c57d3e94b3aebfe2200a3e350be0f118b3"
+        }
+      },
+      "extra_files": [
+        {
+          "path": "groups.csv",
+          "bytes": 258,
+          "sha256": "bbd3330e5dad2fa40579efb487c7d1c226d61f97f18a278c9b95896a16d673f5",
+          "description": "Counts of dc_atlas_count_adm0 summed for groups of countries. EU27: the 27 member states of the European Union. aggregate_state is complete when every member is covered."
+        }
+      ],
+      "tiles": {
+        "file": "dc_atlas_count_adm0.pmtiles",
+        "source_layer": "dc_atlas_count_adm0",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 6,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "coverage_note",
+          "n_records",
+          "n_operating_or_construction",
+          "n_planned",
+          "n_retired",
+          "n_class_lt10",
+          "n_class_10_99",
+          "n_class_100_999",
+          "n_class_ge1000",
+          "n_class_unknown"
+        ]
+      }
+    },
+    {
+      "layer_id": "dc_atlas_count_places",
+      "title": "Data centers · Atlas of Data Center Politics · places",
+      "domain": "dc",
+      "level": "point",
+      "bbox": [
+        -158.015,
+        -46.4,
+        174.7756,
+        70.2553
+      ],
+      "meta": {
+        "path": "dc_atlas_count_places.meta.json",
+        "bytes": 25630,
+        "sha256": "3d50d34d5efe8e0302edb89e8c40ef99cb7fe7970155df3dc3018150fdacf8e8"
+      },
+      "files": {
+        "parquet": {
+          "path": "dc_atlas_count_places.parquet",
+          "bytes": 156230,
+          "sha256": "daa587a08fe467d9de47c3e5403bbe71c877a68c4f90b86ee3c3f0c288f28063"
+        },
+        "geojson.gz": {
+          "path": "dc_atlas_count_places.geojson.gz",
+          "bytes": 112035,
+          "sha256": "6adfdc28e1f0c5a9644aa2ee251868ff0a7ab18a1462e8b6badc8f06c6ad2d55"
+        },
+        "csv": {
+          "path": "dc_atlas_count_places.csv",
+          "bytes": 547818,
+          "sha256": "cd55007458a9712fe85ff6bd11395bd95c474d08512b331f56989285bcf97f48"
+        },
+        "pmtiles": {
+          "path": "dc_atlas_count_places.pmtiles",
+          "bytes": 4527651,
+          "sha256": "6d8d546cf2d5be5ae2be5e176cafe69f69a86a52ef2b3a2eb9c7f98fd0511c75"
+        }
+      },
+      "extra_files": [
+        {
+          "path": "operator_type_groups.csv",
+          "bytes": 519,
+          "sha256": "b56080b1a351643c24166abb49603434d0f699f0072f48df1d8851b8343065ad",
+          "description": "The 20 operator types of the Atlas of Data Center Politics and the group under which the project shows each on the map, with the number of records of each type. The groups are for display only; the records keep the Atlas type in operator_type."
+        }
+      ],
+      "tiles": {
+        "file": "dc_atlas_count_places.pmtiles",
+        "source_layer": "dc_atlas_count_places",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 12,
+        "fields": [
+          "record_id",
+          "place_ref",
+          "place_name",
+          "n_records",
+          "power_class",
+          "n_operating_or_construction",
+          "n_planned",
+          "n_retired",
+          "n_class_lt10",
+          "n_class_10_99",
+          "n_class_100_999",
+          "n_class_ge1000",
+          "n_class_unknown",
+          "type_group",
+          "n_type_colocation",
+          "n_type_telecom",
+          "n_type_developer_investor",
+          "n_type_cloud",
+          "n_type_enterprise_it",
+          "n_type_ai_compute",
+          "n_type_other",
+          "iso3_source",
+          "control_iso3"
+        ]
+      }
+    },
+    {
+      "layer_id": "dc_atlas_count_usa_adm2",
+      "title": "Data centers · Atlas of Data Center Politics · county",
+      "domain": "dc",
+      "level": "ADM2",
+      "bbox": [
+        -179.1467,
+        18.9104,
+        179.7785,
+        71.3878
+      ],
+      "meta": {
+        "path": "dc_atlas_count_usa_adm2.meta.json",
+        "bytes": 16984,
+        "sha256": "2243074d7a24ae641d045631d1fe1305c19b821de812e5bfb92b869f4c8242af"
+      },
+      "files": {
+        "parquet": {
+          "path": "dc_atlas_count_usa_adm2.parquet",
+          "bytes": 7029902,
+          "sha256": "55264f467045e1dc7a519264e5a6660d377f1c2a7ea92ebad94bb4982ad4e8ed"
+        },
+        "geojson.gz": {
+          "path": "dc_atlas_count_usa_adm2.geojson.gz",
+          "bytes": 7787153,
+          "sha256": "902c1c530a72e40e409d5362810494285f5265c483c4acaf1e6cf2570953c32f"
+        },
+        "csv": {
+          "path": "dc_atlas_count_usa_adm2.csv",
+          "bytes": 170789,
+          "sha256": "d5881bdcb57f442d5dbc9ea7d83bebca7ebc2c8601862de629ee55113a587724"
+        },
+        "pmtiles": {
+          "path": "dc_atlas_count_usa_adm2.pmtiles",
+          "bytes": 13840374,
+          "sha256": "2aaee708c27822b8a763208380f11fd38ff2ba51516b15599df011128b4c013c"
+        }
+      },
+      "extra_files": [
+        {
+          "path": "county_records.csv",
+          "bytes": 154903,
+          "sha256": "369186738ffb6c5bba755c8759c394bc733820bbaefdc38db239f860b8dd93d5",
+          "description": "One row for each of the 4,038 Atlas records of the United States in dc_atlas_points: the county it is counted under (unit_id, where assignment is matched) or the reason it is counted under none: no_state (the record gives no state), connecticut (a Connecticut record, see coverage_note), no_county_field (the record gives no county), ambiguous_name (the name fits a county and an independent city; both are in candidates), not_matched (the name fits no unit of the state; none in this version). The county counts can be rebuilt from this file."
+        }
+      ],
+      "tiles": {
+        "file": "dc_atlas_count_usa_adm2.pmtiles",
+        "source_layer": "dc_atlas_count_usa_adm2",
+        "geometry_type": "polygon",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "unit_id",
+          "name",
+          "coverage_status",
+          "coverage_note",
+          "n_records",
+          "n_operating_or_construction",
+          "n_planned",
+          "n_retired",
+          "n_class_lt10",
+          "n_class_10_99",
+          "n_class_100_999",
+          "n_class_ge1000",
+          "n_class_unknown"
+        ]
+      },
+      "home_bbox": [
+        -124.7631,
+        24.5213,
+        -66.9499,
+        49.3695
+      ]
+    }
+  ],
+  "extra_files": [],
+  "source_archives": [
+    {
+      "path": "sources/atlas_copies_20261014-18.zip",
+      "bytes": 5214382,
+      "sha256": "ab9fd1b8c33c7d5b5bdd4a064783a040b62a223b4c1cda6b61d4ea3cbc1be50e",
+      "description": "The copies of the Atlas national tables as they were copied on 14–18 October 2026 (Copy as: Table), one file per copy, file names and contents as they are: the source of every record of the layer dc_atlas_points and of dc_atlas_count_adm0. The field ref of each record names the file and the row."
+    },
+    {
+      "path": "sources/country_name_aliases_20261022.csv",
+      "bytes": 3329,
+      "sha256": "a01271a0f7d0260df45840f3197d393f54fd547c7840d3ba094a2ea429de8a95",
+      "description": "The country names of the Atlas that differ from the names of the boundary frame, each with the code of abf-boundaries it is counted under, the reason and who accepted it (10 rows). Published as it is."
+    },
+    {
+      "path": "sources/epoch_data_centers_20261012.csv",
+      "bytes": 70660,
+      "sha256": "2820f8e22d0f4db5cda8f59f7598d6d14916ee0280758a7007e8721e19aa5a37",
+      "description": "The Epoch AI file data_centers.csv (updated 12 October 2026, retrieved 14 October 2026) byte for byte as downloaded: the source of every site of the layer dc_epoch_points. Original file name: data_centers.csv."
+    },
+    {
+      "path": "sources/manual_checks.csv",
+      "bytes": 1741,
+      "sha256": "469e70a8dbd81825278e69fbd2cacbc0ac7df6011241183f15ae0b964179b34c",
+      "description": "Checks that V made by hand on the Atlas site: the list of countries of the Atlas national tab (126), Malta and Libya without records, Portugal without Retired records. One row per check, published as it is."
+    },
+    {
+      "path": "sources/rule_new_places_RES_read.csv",
+      "bytes": 20025,
+      "sha256": "a97a129e80ae0cfd1a2111b4137ea840045181e4aec9789291e81d3959a43134",
+      "description": "The 82 records that received another or a new town from the corrected rules and were not in the sample (68 replacements, 14 new points), with the town, its basis in the record's own address or name and the reading of a second AI session. One row per record, published as it is."
+    },
+    {
+      "path": "sources/ver_recheck_log_DC_v0_1_0.csv",
+      "bytes": 4846,
+      "sha256": "4446e9bc5962aad56d6b8381fa004fcb5086727381b8fcf4d7d794e559dc1bbe",
+      "description": "Log of the re-check after the check: the 17 disputed places and 2 disputed cells, the reason of each and what was done. One row per case, published as it is."
+    },
+    {
+      "path": "sources/ver_results_cells.csv",
+      "bytes": 18455,
+      "sha256": "dbe5be808e1eac25ca20028b73fe51da67295072f52e4de9052b4ff7faf24046",
+      "description": "Verdicts of the independent AI session on the 13 cells of checks.csv it checked against public web pages: the cell, the Atlas records, the evidence and the verdict. One row per cell, published as it is."
+    },
+    {
+      "path": "sources/ver_results_places.csv",
+      "bytes": 445678,
+      "sha256": "3ed4f35db7e8a7b1a9eabff0307c052559f6e6791f562a6ce9165032bdf7cc3c",
+      "description": "Verdicts of the independent AI session on the 870 places it checked in the layers dc_atlas_points (853 checks) and dc_epoch_points (17 checks): the sample layer, the record, the place and its basis, the verdict and the reason. One row per check, published as it is."
+    }
+  ]
+}

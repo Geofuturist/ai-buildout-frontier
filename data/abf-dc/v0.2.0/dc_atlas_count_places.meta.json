@@ -1,0 +1,652 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "dc_atlas_count_places",
+  "title": "Data centers · Atlas of Data Center Politics · places",
+  "title_ru": "ЦОД · Atlas of Data Center Politics · места",
+  "domain": "dc",
+  "level": "point",
+  "description": "Data-center records of the Atlas of Data Center Politics that have a town point, counted by place: one row for each of the 2,303 towns and U.S. Census places at which the project placed at least one record of dc_atlas_points. A place is a town, not a site. Its records may be separate sites kilometers apart, and the Atlas table does not say how they relate. Each row counts the records of the place by Atlas status, size class and operator-type group, and for a place with one record it also gives that record's size class and group. The counts are made from the records of abf-dc 0.1.0, which this version publishes unchanged. The 3,778 records without a town point are not in this layer.",
+  "fields": [
+    {
+      "name": "record_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Identifier set by the project: PLC- and the place_ref of the place, with the colon replaced by a hyphen."
+    },
+    {
+      "name": "place_ref",
+      "type": "string",
+      "nullable": false,
+      "description": "Identifier of the place: geonames:<geonameid> or census:<GEOID>."
+    },
+    {
+      "name": "place_name",
+      "type": "string",
+      "nullable": false,
+      "description": "Name of the town or U.S. place, as GeoNames or the Census Gazetteer gives it."
+    },
+    {
+      "name": "lon",
+      "type": "number",
+      "nullable": false,
+      "description": "Longitude of the place (WGS 84), as in dc_atlas_points."
+    },
+    {
+      "name": "lat",
+      "type": "number",
+      "nullable": false,
+      "description": "Latitude of the place (WGS 84), as in dc_atlas_points."
+    },
+    {
+      "name": "coord_precision",
+      "type": "string",
+      "nullable": false,
+      "description": "city for every row: the place is a town point; records placed only in a county or without a place are not in this layer."
+    },
+    {
+      "name": "iso3_source",
+      "type": "string",
+      "nullable": false,
+      "description": "Country under which the Atlas lists the records of the place, as the ISO 3166 alpha-3 code of a unit of abf-boundaries. The Atlas entry Somaliland is coded SOM."
+    },
+    {
+      "name": "iso3_frame",
+      "type": "string",
+      "nullable": false,
+      "description": "Country of abf-boundaries v0.2.0 in which the point lies, as in dc_atlas_points."
+    },
+    {
+      "name": "control_iso3",
+      "type": "string",
+      "nullable": true,
+      "description": "State in control of the area of disputed control (contested_areas layer of abf-boundaries) in which the point lies.",
+      "null_meaning": "The place does not lie in an area of disputed control."
+    },
+    {
+      "name": "ref",
+      "type": "string",
+      "nullable": false,
+      "description": "The records counted in the row: the records of dc_atlas_points (abf-dc 0.1.0) with this place_ref."
+    },
+    {
+      "name": "checked_at",
+      "type": "datetime",
+      "nullable": false,
+      "description": "Date and time of the data step that counted the place."
+    },
+    {
+      "name": "checked_by",
+      "type": "string",
+      "nullable": false,
+      "description": "Script that counted the place (script:dc_count_v020)."
+    },
+    {
+      "name": "n_records",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of Atlas data-center records placed at this town."
+    },
+    {
+      "name": "n_operating_or_construction",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas status Operating / Construction, which covers both operating sites and sites under construction."
+    },
+    {
+      "name": "n_planned",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas status Planned."
+    },
+    {
+      "name": "n_retired",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas status Retired."
+    },
+    {
+      "name": "n_class_lt10",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas size class Small (below 10 MW)."
+    },
+    {
+      "name": "n_class_10_99",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas size class Large (10–99 MW)."
+    },
+    {
+      "name": "n_class_100_999",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas size class Hyperscale (100–999 MW)."
+    },
+    {
+      "name": "n_class_ge1000",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas size class Gigascale (above 999 MW)."
+    },
+    {
+      "name": "n_class_unknown",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records with the Atlas size class Unknown."
+    },
+    {
+      "name": "power_class",
+      "type": "string",
+      "nullable": true,
+      "description": "Size class of the one record of the place, as the Atlas gives it: lt10 (Small, below 10 MW), 10_99 (Large, 10–99 MW), 100_999 (Hyperscale, 100–999 MW), ge1000 (Gigascale, above 999 MW). Given only for a place with one record; for more records the classes are in the n_class_ columns.",
+      "null_meaning": "The place has two or more records (n_records > 1), or its one record has the Atlas size class Unknown (n_records = 1)."
+    },
+    {
+      "name": "type_group",
+      "type": "string",
+      "nullable": true,
+      "description": "Operator-type group of the one record of the place (see operator_type_groups.csv); empty for a place with two or more records.",
+      "null_meaning": "The place has two or more records (n_records > 1)."
+    },
+    {
+      "name": "n_type_colocation",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records whose Atlas operator type is Colocation."
+    },
+    {
+      "name": "n_type_telecom",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records whose Atlas operator type is Telecom."
+    },
+    {
+      "name": "n_type_developer_investor",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records whose Atlas operator type is Developer, Asset Manager, Private Equity, Lender or Construction."
+    },
+    {
+      "name": "n_type_cloud",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records whose Atlas operator type is Cloud."
+    },
+    {
+      "name": "n_type_enterprise_it",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records whose Atlas operator type is Managed IT, Enterprise or Fintech."
+    },
+    {
+      "name": "n_type_ai_compute",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records whose Atlas operator type is AI Compute."
+    },
+    {
+      "name": "n_type_other",
+      "type": "integer",
+      "nullable": false,
+      "description": "Records whose Atlas operator type is Crypto, Energy, Utility, Public, Government, Education, Regulator or Unknown."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "atlas_of_data_center_politics",
+      "role": "primary",
+      "publisher": "Infrastructure Lab, National University of Singapore",
+      "product": "Atlas of Data Center Politics, national tables of data centers",
+      "url": "https://www.atlasofdatacenterpolitics.com/",
+      "edition": "Version 0.1.0; Atlas data updated 2026-10-08; copies of 2026-10-14 to 2026-10-18",
+      "current_through": "2026-10-08",
+      "retrieved_at": "2026-10-14/2026-10-18",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Data centers: Kollar, Justin. Atlas of Data Center Politics. Version 0.1.0. Infrastructure Lab, National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:licence_extract.py",
+        "checked_at": "2026-10-14",
+        "evidence_url": "https://www.atlasofdatacenterpolitics.com/LICENSE-DATA",
+        "text": "The data license of the Atlas (https://www.atlasofdatacenterpolitics.com/LICENSE-DATA) states: \"The Atlas datasets are licensed under the Creative Commons Attribution 4.0 International Licence (CC BY 4.0).\" It asks for attribution in substantially the form above, for the version used, and for a statement where the data are adapted or filtered. Its request about automated access is stated there not to be a condition of the license; the records were copied by hand with the site's Copy as: Table function."
+      },
+      "inputs": [
+        {
+          "file": "dc_atlas_count_places.csv",
+          "bytes": 547818,
+          "sha256": "cd55007458a9712fe85ff6bd11395bd95c474d08512b331f56989285bcf97f48"
+        },
+        {
+          "file": "dc_atlas_points.csv",
+          "bytes": 5611745,
+          "sha256": "bda4f5e483af77580d238114114c04602ef13a16dc1202eedfe724d86bd10b16"
+        }
+      ]
+    },
+    {
+      "source_id": "geonames",
+      "role": "geometry",
+      "publisher": "GeoNames",
+      "product": "cities500 and admin1CodesASCII",
+      "url": "https://www.geonames.org/export/",
+      "edition": "files of 2026-10-16",
+      "current_through": "2026-10-16",
+      "retrieved_at": "2026-10-16",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Town points: GeoNames (https://www.geonames.org/), cities500 and admin1CodesASCII, files of 16 October 2026, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:pf_run.py",
+        "checked_at": "2026-10-22",
+        "evidence_url": "https://www.geonames.org/export/",
+        "text": "The readme of the GeoNames download files states: \"This work is licensed under a Creative Commons Attribution 4.0 License\"."
+      },
+      "inputs": [
+        {
+          "file": "cities500.zip",
+          "bytes": 13884845,
+          "sha256": "ca136e8a47637dbfd3140900f313733e7c2776d310c7ed4b58676ea2af626e05"
+        },
+        {
+          "file": "admin1CodesASCII.txt",
+          "bytes": 155448,
+          "sha256": "687b8814839a781874dbc6cd4b1f0c1efa4c283dc4f3ca435219ef1e508d7deb"
+        },
+        {
+          "file": "countryInfo.txt",
+          "bytes": 31690,
+          "sha256": "c55f638cfaafb4fe45a9aa15120a0f1f78e8a34a8e1847d7b9320cf740fbc9ab"
+        },
+        {
+          "file": "Readme.txt",
+          "bytes": 8984,
+          "sha256": "5fce6c36d3686ee871bf10b50f4b36f86de49280f0a28296b0d41fc483022c2d"
+        }
+      ]
+    },
+    {
+      "source_id": "census_gazetteer_places_2023",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "2023 Gazetteer Files, Places",
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html",
+      "edition": "2023",
+      "current_through": null,
+      "retrieved_at": "2026-10-22",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.law.cornell.edu/uscode/text/17/105",
+        "family": "public_domain",
+        "attribution_text": "U.S. place points: U.S. Census Bureau, 2023 Gazetteer Files, Places."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "checked_by": "agent:RES",
+        "checked_at": "2026-10-23",
+        "evidence_url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_place_national.zip",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The download does not state a license, so the status rests on the statute."
+      },
+      "inputs": [
+        {
+          "file": "2023_Gaz_place_national.zip",
+          "bytes": 1220953,
+          "sha256": "3c8b23c0dcdb15c0ebd16fee7373e032466e6b585650aa219bc1bee5ac8bd58f"
+        },
+        {
+          "file": "2023_Gaz_place_national.txt",
+          "bytes": 6498405,
+          "sha256": "ac101507007c207bda757db7ea2aff36007b133f449ba1c97cdc4380828dbe25"
+        }
+      ]
+    },
+    {
+      "source_id": "abf_boundaries_v0_2_0",
+      "role": "geometry",
+      "publisher": "AI Buildout Frontier",
+      "product": "abf-boundaries v0.2.0",
+      "url": "https://doi.org/10.5281/zenodo.23454136",
+      "edition": "v0.2.0",
+      "current_through": null,
+      "retrieved_at": "2026-10-22",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "agent:CODE-PUB",
+        "checked_at": "2026-10-23",
+        "evidence_url": "https://doi.org/10.5281/zenodo.23454136",
+        "text": "abf-boundaries v0.2.0 is published by this project under CC BY 4.0 (Zenodo record 10.5281/zenodo.23454136); the sources of its outlines are listed in its own meta.json."
+      },
+      "inputs": [
+        {
+          "file": "adm0.parquet",
+          "bytes": 4091957,
+          "sha256": "561698ff2dd8be004c5cfee694874939aa0aa9cf0ab1ad79ac1d2d70f0738d82"
+        },
+        {
+          "file": "units.csv",
+          "bytes": 529161,
+          "sha256": "126b8017034c2c72a181a47f2aa8d454f0dcadd3a856d9d0fc9ed785f3093e4d"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution",
+    "attribution_text": "Data centers: Kollar, Justin. Atlas of Data Center Politics. Version 0.1.0. Infrastructure Lab, National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published. Town points: GeoNames (https://www.geonames.org/), cities500 and admin1CodesASCII, files of 16 October 2026, CC BY 4.0. U.S. place points: U.S. Census Bureau, 2023 Gazetteer Files, Places. Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+  },
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "freshness": {
+    "source_current_through": "2026-10-08",
+    "source_cadence": "irregular",
+    "built_at": "2026-10-25T16:40:17Z",
+    "next_check": "2027-01-31"
+  },
+  "coverage": {
+    "geography": "Places of the 126 countries and territories listed in the Atlas national tables",
+    "iso3": [
+      "AGO",
+      "ARE",
+      "ARG",
+      "ARM",
+      "AUS",
+      "AUT",
+      "AZE",
+      "BEL",
+      "BGD",
+      "BGR",
+      "BLR",
+      "BRA",
+      "BRN",
+      "CAN",
+      "CHE",
+      "CHL",
+      "CHN",
+      "COD",
+      "COL",
+      "CPV",
+      "CRI",
+      "CUW",
+      "CYP",
+      "CZE",
+      "DEU",
+      "DJI",
+      "DNK",
+      "ECU",
+      "EGY",
+      "ESP",
+      "EST",
+      "ETH",
+      "FIN",
+      "FRA",
+      "FRO",
+      "GBR",
+      "GEO",
+      "GHA",
+      "GIB",
+      "GRC",
+      "GRL",
+      "GTM",
+      "GUM",
+      "HKG",
+      "HND",
+      "HRV",
+      "HUN",
+      "IDN",
+      "IMN",
+      "IND",
+      "IRL",
+      "IRN",
+      "ISL",
+      "ISR",
+      "ITA",
+      "JPN",
+      "KAZ",
+      "KEN",
+      "KHM",
+      "KOR",
+      "KWT",
+      "LAO",
+      "LKA",
+      "LUX",
+      "LVA",
+      "MAR",
+      "MDA",
+      "MEX",
+      "MMR",
+      "MNP",
+      "MOZ",
+      "MUS",
+      "MYS",
+      "NGA",
+      "NLD",
+      "NOR",
+      "NZL",
+      "OMN",
+      "PAK",
+      "PAN",
+      "PER",
+      "PHL",
+      "PNG",
+      "POL",
+      "PRI",
+      "PRT",
+      "QAT",
+      "ROU",
+      "RUS",
+      "RWA",
+      "SAU",
+      "SGP",
+      "SLV",
+      "SRB",
+      "SUR",
+      "SVK",
+      "SVN",
+      "SWE",
+      "SYC",
+      "TGO",
+      "THA",
+      "TUR",
+      "TWN",
+      "TZA",
+      "URY",
+      "USA",
+      "UZB",
+      "VEN",
+      "VNM",
+      "ZAF",
+      "ZWE"
+    ],
+    "frame": null,
+    "n_units_frame": null,
+    "n_units_covered": null,
+    "n_records": 2303,
+    "known_gaps": [
+      "A place is a town point, not a site. 4,663 records share their place with at least one other record, and 109 places hold 10 or more records each (Shanghai 80, Beijing 70, Ashburn 57). The records of one place may be separate sites, buildings or phases of one site, or repeats.",
+      "3,778 of the 9,865 Atlas records are not in this layer: 1,583 U.S. records placed only in a county, which are counted in dc_atlas_count_usa_adm2, and 2,195 records without a place below the country, which are counted only by country (dc_atlas_count_adm0).",
+      "The town of each record comes from its address or its name, by the rules described in dc_atlas_points. 1,686 of the 6,087 records with a point take their town from the record name; in a test this rule gave the same town as the address in 86.9% of cases.",
+      "Counts follow the Atlas rows: records identical in every field are counted separately.",
+      "The size class is the Atlas's own, and the Atlas does not state whether it refers to IT power or to the whole facility. 296 of the 1,424 places with one record have the class Unknown.",
+      "The points of four places in border towns (Gibraltar, Sittard, Grevenmacher, Lauterbourg) fall in the neighboring country on the generalized 1:10 million outlines, so iso3_frame differs from iso3_source. One place, Simferopol, lies in Crimea, which abf-boundaries v0.2.0 shows under Russian control and records as claimed by Ukraine (control_iso3). Neither is a position of the project.",
+      "The operator type is the Atlas's type of the operator of a record, not the use of the site; we found no definition of the types on the Atlas pages we read. The groups are the project's (operator_type_groups.csv). The Atlas type AI Compute does not mark AI data centers as Epoch AI does: the 63 Epoch AI sites found in the Atlas match 75 Atlas records, of which 39 have the type Cloud, 24 Colocation and 10 AI Compute."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-dc",
+    "version": "0.2.0",
+    "tag": "abf-dc-v0.2.0",
+    "doi": "10.5281/zenodo.23645541",
+    "published_at": "2026-10-25"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 0.0,
+      "script_rules": 1.0,
+      "human": 0.0
+    },
+    "method": "Places are counted by script from the published records of dc_atlas_points (abf-dc 0.1.0); a place is the place_ref of a record. The build stops if the records of one place differ in point, name or country, if the places do not add up to the 6,087 records with a town point, or if the counts by status, by size class or by operator-type group in a row do not add up to n_records. No new check by an agent was made: the layer only counts records whose places were set by rules and checked by sample in abf-dc 0.1.0, as described in dc_atlas_points.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "record_id_unique",
+        "description": "record_id is present and unique in all 2,303 records."
+      },
+      {
+        "id": "coords_match_precision",
+        "description": "Records with coord_precision  have no coordinates; every other record has a longitude and a latitude in range."
+      },
+      {
+        "id": "iso3_in_boundaries",
+        "description": "Every value of iso3_source, iso3_frame, control_iso3 is the ISO 3166 alpha-3 code of a country or territory of the boundaries release."
+      },
+      {
+        "id": "listed_values_only",
+        "description": "The fields coord_precision, power_class, type_group hold only the values listed in their descriptions."
+      },
+      {
+        "id": "counts_match_texts",
+        "description": "Recomputed from the published file and equal to the numbers in the texts of this layer: the number of records (2,303); the counts by coord_precision, type_group; the totals of n_records, n_type_colocation, n_type_telecom, n_type_developer_investor, n_type_cloud, n_type_enterprise_it, n_type_ai_compute, n_type_other."
+      },
+      {
+        "id": "ref_present",
+        "description": "Every record has a non-empty ref (reference to the source record)."
+      },
+      {
+        "id": "power_class_adr",
+        "description": "Power fields of the layer (power_class) are on the ADR 6.2 list; the layer gives a size class, not megawatts, and each record has one power basis."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Data centers · Atlas of Data Center Politics · places (version 0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23645541",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer dc_atlas_count_places, record {record_key}, version 0.2.0. https://doi.org/10.5281/zenodo.23645541"
+  },
+  "display": {
+    "geometry_type": "point",
+    "size_field": "power_class",
+    "size_classes": [
+      "lt10",
+      "10_99",
+      "100_999",
+      "ge1000"
+    ],
+    "size_breaks": [
+      10,
+      100,
+      1000
+    ],
+    "count_field": "n_records",
+    "count_breaks": [
+      2
+    ],
+    "legend_title": "Atlas records per place",
+    "legend_note": "A place is a town, not a site. A place with one record is drawn by the record's operator type and size class. A place with two or more records has one size and shows how many records it holds.",
+    "legend_count_classes": [
+      "Two or more records at the town: the number is the count"
+    ],
+    "fan_note": "Schematic: all these records share the town point. Their positions in the fan do not show where the sites are.",
+    "legend_unknown": "One record, size class unknown",
+    "legend_point": "Point at the town, not at the site",
+    "list_title": "{n} Atlas records at {place_name}",
+    "list_note": "Records at one town point may be separate sites. Select a record for its details.",
+    "color_field": "type_group",
+    "color_classes": [
+      "colocation",
+      "telecom",
+      "developer_investor",
+      "cloud",
+      "enterprise_it",
+      "ai_compute",
+      "other"
+    ],
+    "filter_fields": {
+      "colocation": "n_type_colocation",
+      "telecom": "n_type_telecom",
+      "developer_investor": "n_type_developer_investor",
+      "cloud": "n_type_cloud",
+      "enterprise_it": "n_type_enterprise_it",
+      "ai_compute": "n_type_ai_compute",
+      "other": "n_type_other"
+    },
+    "legend_type_title": "Atlas: operator type",
+    "legend_type_note": "The type of the operator as the Atlas gives it, grouped by the project. It tells who runs the site, not what the site is used for.",
+    "legend_type_labels": {
+      "colocation": "Colocation",
+      "telecom": "Telecom",
+      "developer_investor": "Developer or investor",
+      "cloud": "Cloud",
+      "enterprise_it": "Enterprise or IT services",
+      "ai_compute": "AI compute (Atlas type)",
+      "other": "Other or unknown"
+    },
+    "legend_type_filter_all": "All types",
+    "tile_fields": [
+      "record_id",
+      "place_ref",
+      "place_name",
+      "n_records",
+      "power_class",
+      "n_operating_or_construction",
+      "n_planned",
+      "n_retired",
+      "n_class_lt10",
+      "n_class_10_99",
+      "n_class_100_999",
+      "n_class_ge1000",
+      "n_class_unknown",
+      "type_group",
+      "n_type_colocation",
+      "n_type_telecom",
+      "n_type_developer_investor",
+      "n_type_cloud",
+      "n_type_enterprise_it",
+      "n_type_ai_compute",
+      "n_type_other",
+      "iso3_source",
+      "control_iso3"
+    ]
+  },
+  "extra_files": [
+    {
+      "file": "operator_type_groups.csv",
+      "description": "The 20 operator types of the Atlas of Data Center Politics and the group under which the project shows each on the map, with the number of records of each type. The groups are for display only; the records keep the Atlas type in operator_type."
+    }
+  ]
+}

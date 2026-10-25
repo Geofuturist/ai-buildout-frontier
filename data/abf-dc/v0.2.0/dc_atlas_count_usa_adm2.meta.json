@@ -1,0 +1,344 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "dc_atlas_count_usa_adm2",
+  "title": "Data centers · Atlas of Data Center Politics · county",
+  "title_ru": "ЦОД · Atlas of Data Center Politics · округа",
+  "domain": "dc",
+  "level": "ADM2",
+  "description": "Number of data-center records of the Atlas of Data Center Politics for each of the 3,144 U.S. counties and county equivalents of abf-boundaries v0.2.0. A record is counted under the county it names itself (its state and county fields), not by the point the project gave it, so records with and without a town point count alike: 3,914 of the 4,038 U.S. records name a county that the rule identifies. 0 means that no Atlas record names the county; it does not mean that the county has no data centers. 17 units are not covered, because the Atlas names them in a way that cannot be assigned to one unit: the 9 Connecticut planning regions and both units of four pairs of a county and an independent city with the same name. county_records.csv gives, record by record, the county each U.S. record is counted under or the reason it is counted under none.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "fips",
+      "type": "string",
+      "nullable": false,
+      "description": "County FIPS code, 5 digits, kept as a string (leading zeros matter)."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name as published in the boundaries release."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "coverage_note",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+      "null_meaning": {
+        "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+        "covered": "The unit is covered, so there is no reason to give."
+      }
+    },
+    {
+      "name": "n_records",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Number of Atlas data-center records that name the county."
+    },
+    {
+      "name": "n_operating_or_construction",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas status Operating / Construction, which covers both operating sites and sites under construction."
+    },
+    {
+      "name": "n_planned",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas status Planned."
+    },
+    {
+      "name": "n_retired",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas status Retired."
+    },
+    {
+      "name": "n_class_lt10",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas size class Small (below 10 MW)."
+    },
+    {
+      "name": "n_class_10_99",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas size class Large (10–99 MW)."
+    },
+    {
+      "name": "n_class_100_999",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas size class Hyperscale (100–999 MW)."
+    },
+    {
+      "name": "n_class_ge1000",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas size class Gigascale (above 999 MW)."
+    },
+    {
+      "name": "n_class_unknown",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The unit is not covered: Atlas records that may refer to it cannot be assigned to it (see coverage_note).",
+        "covered": null
+      },
+      "description": "Records with the Atlas size class Unknown."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "atlas_of_data_center_politics",
+      "role": "primary",
+      "publisher": "Infrastructure Lab, National University of Singapore",
+      "product": "Atlas of Data Center Politics, national tables of data centers",
+      "url": "https://www.atlasofdatacenterpolitics.com/",
+      "edition": "Version 0.1.0; Atlas data updated 2026-10-08; copies of 2026-10-14 to 2026-10-18",
+      "current_through": "2026-10-08",
+      "retrieved_at": "2026-10-14/2026-10-18",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Data centers: Kollar, Justin. Atlas of Data Center Politics. Version 0.1.0. Infrastructure Lab, National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:licence_extract.py",
+        "checked_at": "2026-10-14",
+        "evidence_url": "https://www.atlasofdatacenterpolitics.com/LICENSE-DATA",
+        "text": "The data license of the Atlas (https://www.atlasofdatacenterpolitics.com/LICENSE-DATA) states: \"The Atlas datasets are licensed under the Creative Commons Attribution 4.0 International Licence (CC BY 4.0).\" It asks for attribution in substantially the form above, for the version used, and for a statement where the data are adapted or filtered. Its request about automated access is stated there not to be a condition of the license; the records were copied by hand with the site's Copy as: Table function."
+      },
+      "inputs": [
+        {
+          "file": "dc_atlas_count_usa_adm2.csv",
+          "bytes": 170789,
+          "sha256": "d5881bdcb57f442d5dbc9ea7d83bebca7ebc2c8601862de629ee55113a587724"
+        },
+        {
+          "file": "dc_atlas_points.csv",
+          "bytes": 5611745,
+          "sha256": "bda4f5e483af77580d238114114c04602ef13a16dc1202eedfe724d86bd10b16"
+        },
+        {
+          "file": "units.csv",
+          "bytes": 529161,
+          "sha256": "126b8017034c2c72a181a47f2aa8d454f0dcadd3a856d9d0fc9ed785f3093e4d"
+        }
+      ]
+    },
+    {
+      "source_id": "abf_boundaries_v0_2_0",
+      "role": "geometry",
+      "publisher": "AI Buildout Frontier",
+      "product": "abf-boundaries v0.2.0",
+      "url": "https://doi.org/10.5281/zenodo.23454136",
+      "edition": "v0.2.0",
+      "current_through": null,
+      "retrieved_at": "2026-10-22",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "agent:CODE-PUB",
+        "checked_at": "2026-10-23",
+        "evidence_url": "https://doi.org/10.5281/zenodo.23454136",
+        "text": "abf-boundaries v0.2.0 is published by this project under CC BY 4.0 (Zenodo record 10.5281/zenodo.23454136); the sources of its outlines are listed in its own meta.json."
+      },
+      "inputs": [
+        {
+          "file": "adm2.parquet",
+          "bytes": 32160231,
+          "sha256": "632093409e2c6bfc6ac2f1cb6029d80508078f3b5b86e0a28cb9358d5b201fa5"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution",
+    "attribution_text": "Data centers: Kollar, Justin. Atlas of Data Center Politics. Version 0.1.0. Infrastructure Lab, National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published. Countries, U.S. counties and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+  },
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "freshness": {
+    "source_current_through": "2026-10-08",
+    "source_cadence": "irregular",
+    "built_at": "2026-10-25T16:40:17Z",
+    "next_check": "2027-01-31"
+  },
+  "coverage": {
+    "geography": "All 3,144 U.S. counties and county equivalents of abf-boundaries v0.2.0; the 17 units not covered are explained in coverage_note.",
+    "iso3": [
+      "USA"
+    ],
+    "frame": {
+      "iso3": "USA",
+      "level": "ADM2"
+    },
+    "n_units_frame": 3144,
+    "n_units_covered": 3127,
+    "n_records": 3144,
+    "known_gaps": [
+      "Records are counted under the county they name, not by their point. For 160 of the 2,331 U.S. records that have both a town point and a county the rule identifies, the point lies in another county than the one the record names. A town given in a postal address can lie across a county line from the site.",
+      "124 of the 4,038 U.S. records are counted under no county: 70 give a name that a county and an independent city of the same state share, without saying which they mean (Fairfax, Virginia, 46; Baltimore, Maryland, 14; St. Louis, Missouri, 9; Franklin, Virginia, 1); 21 are in Connecticut; 32 give no county; 1 gives no state. They are listed in county_records.csv and counted in the country count.",
+      "17 units are shown as not covered rather than 0. The Atlas gives Connecticut's eight historical counties, which the U.S. Census Bureau replaced with nine planning regions as county equivalents in 2022, and the boundary frame has the planning regions. For each of the four county and city pairs, records that may refer to either unit cannot be assigned, so a count for either would be too low.",
+      "The Atlas states that absence from it should not be read as evidence that a facility does not exist. 2,315 counties have 0 records.",
+      "Counts follow the Atlas rows: records identical in every field are counted separately."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-dc",
+    "version": "0.2.0",
+    "tag": "abf-dc-v0.2.0",
+    "doi": "10.5281/zenodo.23645541",
+    "published_at": "2026-10-25"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 0.0,
+      "script_rules": 1.0,
+      "human": 0.0
+    },
+    "method": "Records are assigned to counties by script, with the rule of step 4 of the place chain of dc_atlas_points: the exact county name within the state the record names, then the same name without the word for the unit type (County, Parish, Borough, Census Area, Municipality, Municipio); a name that fits two units gives no county. The independent check of abf-dc 0.1.0 confirmed this rule on 156 of 156 sampled county placements, and all 1,583 records that 0.1.0 placed by county receive the same county here. No new check by an agent was made: the layer counts records already published and checked. The build stops if the assigned and unassigned records do not add up to the 4,038 U.S. records, or the counts of the units to the 3,914 assigned records. As a report, the build also compared each town point with the county its record names (see known gaps).",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 3,144 USA ADM2 units of the boundaries release; 3,127 are covered and 17 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "no_power_fields",
+        "description": "No field of the layer, of its files or of its tiles carries a power, capacity, generator or load value."
+      },
+      {
+        "id": "counts_match_texts",
+        "description": "Recomputed from the published file and equal to the numbers in the texts of this layer: the number of records (3,144); the counts by coverage_status; the numbers of records and groups with n_records; the totals of n_records; the number of zero values of n_records."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Data centers · Atlas of Data Center Politics · county (version 0.2.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23645541",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer dc_atlas_count_usa_adm2, unit {record_key}, version 0.2.0. https://doi.org/10.5281/zenodo.23645541"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "n_records",
+    "unit": "records",
+    "zero_class": true,
+    "breaks_fixed": true,
+    "breaks": [
+      1,
+      3,
+      10,
+      30,
+      100
+    ],
+    "legend_title": "Atlas records by county",
+    "legend_note": "Counted by the county each record names, not by its point. 0: no Atlas record names the county. Not covered: records cannot be assigned to the unit (see its card).",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "coverage_note",
+      "n_records",
+      "n_operating_or_construction",
+      "n_planned",
+      "n_retired",
+      "n_class_lt10",
+      "n_class_10_99",
+      "n_class_100_999",
+      "n_class_ge1000",
+      "n_class_unknown"
+    ],
+    "home_bbox": [
+      -124.7631,
+      24.5213,
+      -66.9499,
+      49.3695
+    ]
+  },
+  "extra_files": [
+    {
+      "file": "county_records.csv",
+      "description": "One row for each of the 4,038 Atlas records of the United States in dc_atlas_points: the county it is counted under (unit_id, where assignment is matched) or the reason it is counted under none: no_state (the record gives no state), connecticut (a Connecticut record, see coverage_note), no_county_field (the record gives no county), ambiguous_name (the name fits a county and an independent city; both are in candidates), not_matched (the name fits no unit of the state; none in this version). The county counts can be rebuilt from this file."
+    }
+  ]
+}
