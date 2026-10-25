@@ -258,6 +258,15 @@ async function main() {
     }
     return v;
   };
+  // Temporary: layers kept off the map from the content side, until their meta.json says display.map = false. The
+  // override is applied to the data the site gets, never to the published files. An entry the meta already hides is
+  // reported, so the line can be deleted.
+  for (const id of Array.isArray(site.hidden_layers) ? site.hidden_layers : []) {
+    const m = metas[id];
+    if (!m) { strict(`content/site.json: hidden_layers has "${id}", which is not a layer of the pointer`); continue; }
+    if (m.display && m.display.map === false) { console.warn(`NOTE: content/site.json hidden_layers "${id}" is already display.map = false in its meta; the line can go`); continue; }
+    m.display = { ...(m.display || {}), map: false };
+  }
   const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
   const fanMax = num(site.fan_max, 30, 'fan_max');
 
