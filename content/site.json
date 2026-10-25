@@ -2,5 +2,8 @@
   "default_layer": "energy_generation_eia860_adm2",
   "default_view": { "country": null },
   "level_zoom": { "ADM1": 3.0, "ADM2": 5.5 },
-  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. default_view.country: an ISO3 code to open on a country, null for the world."
+  "world_zoom": 1.2,
+  "fan_max": 30,
+  "hidden_layers": ["dc_atlas_count_adm0"],
+  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. world_zoom: below this zoom a click on the globe chooses the whole world. hidden_layers: layer_ids kept off the map from here, a temporary stand-in for display.map = false in the meta (the layer stays in the files, on /data and in the card values). fan_max: a place with more records than this opens as a list only, with no fan. default_view.country: an ISO3 code to open on a country, null for the world."
 }

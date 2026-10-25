@@ -1,14 +1,16 @@
 'use client';
 
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { Fragment, forwardRef, useCallback, useImperativeHandle, useMemo, useRef, useState } from 'react';
+import { Fragment, forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import MapGL, { Layer, NavigationControl, Source } from 'react-map-gl/maplibre';
 import type { MapLayerMouseEvent, MapRef } from 'react-map-gl/maplibre';
 import type { MapGeoJSONFeature } from 'maplibre-gl';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import { registerPmtiles } from './pmtiles';
-import type { CardState, MapData, UnitRef } from './types';
+import type { CardState, FanSpot, MapData, UnitRef } from './types';
 import { levelNumber } from '@/lib/indicators';
+import { onMap } from '@/lib/panel';
+import { objectsAtSpot } from '@/lib/spots';
 import { COLORS } from '@/lib/style';
 import { MODULES, MODULE_BY_TYPE } from './modules';
 import { selectBoundaryLayers, selectDataLayers } from './select';
@@ -39,17 +41,30 @@ interface Props {
   selectedUnit: UnitRef | null;
   /** level (0, 1, 2) at which plain polygons of the chosen country are drawn, when the indicator has no data there */
   neutralLevel: number | null;
+  /** unit_ids drawn as plain polygons at neutralLevel */
+  neutralIds: string[];
   /** countries with data: tinted on the start globe (no country chosen) */
   dataCountries: string[];
   onSelect: (card: CardState) => void;
   onCountry: (iso3: string) => void;
+  /** a click on the globe far out */
+  onWorld: () => void;
+  /** a click on a place with several records: where it is on the screen, for the fan; null when no fan is wanted */
+  onFan: (f: FanSpot | null) => void;
+  /** the whole world is chosen: every country gets the tint of a chosen unit */
+  worldOn: boolean;
+  /** the group chosen in the filter by type, or null */
+  typeFilter: string | null;
   onUnit: (u: UnitRef) => void;
   onZoom: (zoom: number) => void;
   onReady?: () => void;
   onFailed: (layerId: string) => void;
 }
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, dataCountries, onSelect, onCountry, onUnit, onZoom, onReady, onFailed }, ref) {
+/** Opacity that is `on` where the feature state `key` is set and 0 elsewhere (constant expression: never reloads tiles). */
+const FS_OPACITY = (key: string, on: number) => ['case', ['boolean', ['feature-state', key], false], on, 0] as ExpressionSpecification;
+
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, onFan, worldOn, typeFilter, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -59,7 +74,8 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     return { adm0: by('adm0'), adm1: by('adm1'), adm2: by('adm2'), disputed: by('disputed_unassigned') };
   }, [data]);
 
-  const dataLayers = useMemo(() => selectDataLayers(data), [data]);
+  // display.map = false: not a map item (its files stay in the downloads and on /data)
+  const dataLayers = useMemo(() => selectDataLayers(data).filter((l) => onMap(data.metas[l.meta_id])), [data]);
 
   // layer_ids that are switched on: the active exclusive layer plus the ticked overlays
   const visible = useMemo(() => {
@@ -71,7 +87,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   }, [dataLayers, activeId, overlays]);
 
   useImperativeHandle(ref, () => ({
-    fitBounds: (b) => mapRef.current?.fitBounds([[b[0], b[1]], [b[2], b[3]]], { padding: 24, duration: 1200 }),
+    fitBounds: (b) => mapRef.current?.fitBounds([[b[0], b[1]], [b[2], b[3]]], { padding: 24, duration: 1200, maxZoom: 9 }),
     fitWorld: () => mapRef.current?.easeTo({ center: [-40, 30], zoom: 1.5, duration: 1200 }),
     fitUnit: (unitId, level) => {
       const sl = [bnd.adm0, bnd.adm1, bnd.adm2][level]?.tiles.source_layer;
@@ -106,11 +122,20 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   );
 
   // What is under the pointer: an object of a switched-on overlay, a country, or a unit of the selection level
-  type Target = { kind: 'record'; f: MapGeoJSONFeature } | { kind: 'country'; iso3: string; unit: UnitRef } | { kind: 'unit'; unit: UnitRef } | null;
+  // `peers`: every object of the same layer at the same spot, the clicked one included (a list is shown for 2 or more)
+  type Target = { kind: 'record'; f: MapGeoJSONFeature; peers: MapGeoJSONFeature[] } | { kind: 'country'; iso3: string; unit: UnitRef } | { kind: 'unit'; unit: UnitRef } | null;
   const targetOf = useCallback(
     (all: MapGeoJSONFeature[]): Target => {
-      const over = all.find((x) => x.source !== 'boundaries');
-      if (over) return { kind: 'record', f: over };
+      const objects = all.filter((x) => x.source !== 'boundaries');
+      const over = objects[0];
+      if (over) {
+        // Places (count_field) are one object per click. Other point layers: the objects at one spot are listed
+        // (Epoch: up to 3 sites in one point). It is a list of tile objects, not a count.
+        const meta = data.metas[data.layers.find((l) => l.layer_id === over.source)?.meta_id ?? ''];
+        // Not a place: every object of the layer at this spot (one entry per record)
+        const peers = meta?.display?.count_field ? [over] : objectsAtSpot(objects, over, MODULE_BY_TYPE.point.keyField);
+        return { kind: 'record', f: over, peers };
+      }
       const hits = all.filter((x) => x.source === 'boundaries' && typeof x.properties?.unit_id === 'string');
       if (hits.length === 0) return null; // the sea, a disputed area: nothing
       const iso3 = String(hits[0].properties?.iso3 ?? '');
@@ -124,10 +149,56 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       const pick = ok.sort((a, b) => levelNumber(String(b.properties?.level)) - levelNumber(String(a.properties?.level)))[0] ?? inCountry[0];
       return { kind: 'unit', unit: ref(pick) };
     },
-    [country, selectLevel],
+    [country, selectLevel, data.layers, data.metas],
   );
 
   const [hover, setHover] = useState<UnitRef | null>(null);
+
+  // Feature ids of the boundaries are the unit_ids (promoteId), so the look of a unit is set by feature state:
+  // immediate, no tile reload.
+  const promoteId = useMemo(() => {
+    const o: Record<string, string> = {};
+    for (const b of [bnd.adm0, bnd.adm1, bnd.adm2]) if (b) o[b.tiles.source_layer] = 'unit_id';
+    return o;
+  }, [bnd]);
+  const [ready, setReady] = useState(false);
+  const applied = useRef(new Map<string, { sl: string; id: string; key: string; value: number | boolean }>());
+  const desired = useMemo(() => {
+    const out: { level: number; id: string; key: string; value: number | boolean }[] = [];
+    // Countries with own layers stay marked whatever is chosen, so that the legend key always applies
+    for (const id of dataCountries) out.push({ level: 0, id, key: 'datac', value: true });
+    if (neutralLevel !== null) for (const id of neutralIds) out.push({ level: neutralLevel, id, key: 'neutral', value: true });
+    if (selectedUnit) {
+      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'sel', value: true });
+      // translucent fill; lighter when a data fill lies under the unit, so that the colours of the data stay readable
+      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'tint', value: activeId === 'none' ? 0.34 : 0.24 });
+    }
+    if (hover) out.push({ level: hover.level, id: hover.unit_id, key: 'hov', value: true });
+    return out;
+  }, [dataCountries, neutralLevel, neutralIds, selectedUnit, hover, activeId]);
+  useEffect(() => {
+    const map = mapRef.current?.getMap();
+    if (!ready || !map || !map.getSource('boundaries')) return;
+    const layerOf = (lvl: number) => [bnd.adm0, bnd.adm1, bnd.adm2][lvl]?.tiles.source_layer;
+    const want = new Map<string, { sl: string; id: string; key: string; value: number | boolean }>();
+    for (const d of desired) {
+      const sl = layerOf(d.level);
+      if (sl) want.set(`${sl}|${d.id}|${d.key}`, { sl, id: d.id, key: d.key, value: d.value });
+    }
+    for (const [k, a] of applied.current) {
+      if (!want.has(k)) {
+        map.removeFeatureState({ source: 'boundaries', sourceLayer: a.sl, id: a.id }, a.key);
+        applied.current.delete(k);
+      }
+    }
+    for (const [k, w] of want) {
+      const a = applied.current.get(k);
+      if (!a || a.value !== w.value) {
+        map.setFeatureState({ source: 'boundaries', sourceLayer: w.sl, id: w.id }, { [w.key]: w.value });
+        applied.current.set(k, w);
+      }
+    }
+  }, [desired, ready, bnd]);
   const onMove = useCallback(
     (e: MapLayerMouseEvent) => {
       const t = targetOf(e.features ?? []);
@@ -141,16 +212,38 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   const onClick = useCallback(
     (e: MapLayerMouseEvent) => {
       const t = targetOf(e.features ?? []);
+      onFan(null);
+      // Far out the globe is one body: a click on it chooses the whole world
+      if ((!t || t.kind !== 'record') && (mapRef.current?.getZoom() ?? 99) < data.world_zoom) {
+        onWorld();
+        return;
+      }
       if (!t) return;
-      if (t.kind === 'record') onSelect({ type: 'record', layerId: t.f.source, props: { ...(t.f.properties as Record<string, unknown>) } });
-      else if (t.kind === 'country') onCountry(t.iso3);
+      if (t.kind === 'record') {
+        if (t.peers.length > 1) {
+          const key = MODULE_BY_TYPE.point.keyField;
+          const items = t.peers.map((p) => ({ ...(p.properties as Record<string, unknown>) })).sort((a, b) => String(a[key]).localeCompare(String(b[key])));
+          onSelect({ type: 'records', layerId: t.f.source, items });
+        } else {
+          const props = { ...(t.f.properties as Record<string, unknown>) };
+          onSelect({ type: 'record', layerId: t.f.source, props });
+          // A place with several records may open as a fan around its badge: the screen position of its point
+          const d = data.metas[data.layers.find((l) => l.layer_id === t.f.source)?.meta_id ?? '']?.display;
+          const n = Number(props[d?.count_field ?? '']);
+          const g = t.f.geometry;
+          if (d?.count_field && d.count_breaks && n >= d.count_breaks[0] && g.type === 'Point' && mapRef.current) {
+            const pt = mapRef.current.project(g.coordinates as [number, number]);
+            onFan({ layerId: t.f.source, props, x: pt.x, y: pt.y });
+          }
+        }
+      } else if (t.kind === 'country') onCountry(t.iso3);
       else onUnit(t.unit);
     },
-    [targetOf, onSelect, onCountry, onUnit],
+    [targetOf, onSelect, onCountry, onUnit, onWorld, onFan, data.world_zoom, data.metas, data.layers],
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
-  const ctx = useMemo(() => ({ metas: data.metas, visible, selected, before: BEFORE }), [data.metas, visible, selected]);
+  const ctx = useMemo(() => ({ metas: data.metas, visible, selected, typeFilter, before: BEFORE }), [data.metas, visible, selected, typeFilter]);
 
   return (
     <MapGL
@@ -165,9 +258,11 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       onMouseMove={onMove}
       onMouseLeave={() => { setCursor(''); setHover(null); }}
       onClick={onClick}
+      onMoveStart={() => onFan(null)}
       onLoad={() => {
         // Test hook, only in a build made with NEXT_PUBLIC_E2E=1 (never set on Vercel)
         if (process.env.NEXT_PUBLIC_E2E) (window as unknown as { __map?: unknown }).__map = mapRef.current?.getMap();
+        setReady(true);
         onReady?.();
       }}
       onMove={(e) => onZoom(Math.round(e.viewState.zoom * 10) / 10)}
@@ -185,16 +280,16 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
 
       {/* 2. Boundaries: one PMTiles file, several source layers */}
       {bnd.adm0 && (
-        <Source id="boundaries" type="vector" url={`pmtiles://${bnd.adm0.tiles.url}`}>
-          {/* Start globe: countries with data in a grey tint (flat list: <Source> passes its id to direct children only) */}
+        <Source id="boundaries" type="vector" url={`pmtiles://${bnd.adm0.tiles.url}`} promoteId={promoteId}>
+          {/* Shown through feature state only: a change of filter, layout or data-driven paint of a layer reloads and
+              re-parses the tiles of the whole source, which made the outline lag behind the card. */}
+          {/* Start globe: countries with data in a grey tint (flat lists: <Source> passes its id to direct children only) */}
           <Layer
             id="data-countries"
             type="fill"
             source-layer={bnd.adm0.tiles.source_layer}
             beforeId={BEFORE}
-            filter={['in', ['get', 'iso3'], ['literal', dataCountries]] as ExpressionSpecification}
-            layout={{ visibility: country ? 'none' : 'visible' }}
-            paint={{ 'fill-color': COLORS.dataCountry, 'fill-opacity': 0.5 }}
+            paint={{ 'fill-color': COLORS.dataCountry, 'fill-opacity': FS_OPACITY('datac', 0.5) }}
           />
           {/* Plain polygons of the level the map shows when the indicator has no data at that level */}
           {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
@@ -206,9 +301,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
                     type="fill"
                     source-layer={b.tiles.source_layer}
                     beforeId={BEFORE}
-                    filter={['==', ['get', 'iso3'], country ?? ''] as ExpressionSpecification}
-                    layout={{ visibility: country && neutralLevel === i ? 'visible' : 'none' }}
-                    paint={{ 'fill-color': COLORS.neutralUnit }}
+                    paint={{ 'fill-color': COLORS.neutralUnit, 'fill-opacity': FS_OPACITY('neutral', 1) }}
                   />,
                 ]
               : [],
@@ -281,6 +374,30 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
             beforeId={BEFORE}
             paint={{ 'line-color': COLORS.adm0, 'line-width': 1 }}
           />
+          {/* The whole world chosen: one translucent body */}
+          <Layer
+            id="world-tint"
+            type="fill"
+            source-layer={bnd.adm0.tiles.source_layer}
+            beforeId={BEFORE}
+            layout={{ visibility: worldOn ? 'visible' : 'none' }}
+            paint={{ 'fill-color': COLORS.selected, 'fill-opacity': 0.3 }}
+          />
+          {/* The chosen unit: a translucent fill (strength set by feature state), in the layer of its own level; no outline */}
+          {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
+            b
+              ? [
+                  <Layer
+                    key={`sel-tint-${i}`}
+                    id={`sel-tint-${i}`}
+                    type="fill"
+                    source-layer={b.tiles.source_layer}
+                    beforeId={BEFORE}
+                    paint={{ 'fill-color': COLORS.selected, 'fill-opacity': ['coalesce', ['feature-state', 'tint'], 0] as ExpressionSpecification }}
+                  />,
+                ]
+              : [],
+          )}
           {/* Hover: grey outline of the country or unit a click would choose now (its own style, not the teal of the choice) */}
           {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
             b
@@ -291,34 +408,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
                     type="line"
                     source-layer={b.tiles.source_layer}
                     beforeId={BEFORE}
-                    filter={['==', ['get', 'unit_id'], hover && hover.level === i ? hover.unit_id : ''] as ExpressionSpecification}
-                    paint={{ 'line-color': COLORS.hover, 'line-width': 1.8, 'line-dasharray': [3, 1.5] }}
-                  />,
-                ]
-              : [],
-          )}
-          {/* The chosen unit: teal outline on a light underlay, in the layer of its own level.
-              (Flat list on purpose: <Source> passes its id only to direct children, not through fragments.) */}
-          {[bnd.adm0, bnd.adm1, bnd.adm2].flatMap((b, i) =>
-            b
-              ? [
-                  <Layer
-                    key={`sel-under-${i}`}
-                    id={`sel-under-${i}`}
-                    type="line"
-                    source-layer={b.tiles.source_layer}
-                    beforeId={BEFORE}
-                    filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
-                    paint={{ 'line-color': COLORS.surface, 'line-width': 5 }}
-                  />,
-                  <Layer
-                    key={`sel-line-${i}`}
-                    id={`sel-line-${i}`}
-                    type="line"
-                    source-layer={b.tiles.source_layer}
-                    beforeId={BEFORE}
-                    filter={['==', ['get', 'unit_id'], selectedUnit && selectedUnit.level === i ? selectedUnit.unit_id : ''] as ExpressionSpecification}
-                    paint={{ 'line-color': COLORS.selected, 'line-width': 2.5 }}
+                    paint={{ 'line-color': COLORS.hover, 'line-width': 1.8, 'line-dasharray': [3, 1.5], 'line-opacity': FS_OPACITY('hov', 1) }}
                   />,
                 ]
               : [],

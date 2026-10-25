@@ -1,7 +1,7 @@
 # Methodology
 
 **Datasets:** abf-layers, United States, version {version_layers} (DOI: {DOI_layers}) ·
-abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France, version {version:abf-fra} (DOI: {DOI:abf-fra}). Each dataset has its own DOI and is cited on its own.
+abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France, version {version:abf-fra} (DOI: {DOI:abf-fra}) · abf-dc, data centers of the world, version {version:abf-dc} (DOI: {DOI:abf-dc}). Each dataset has its own DOI and is cited on its own.
 
 ## What this site is
 
@@ -9,7 +9,8 @@ AI Buildout Frontier is an open observatory of data layers on the physical side 
 power system of the United States by county: what generates electricity, how much is consumed,
 where transmission lines run, and what is waiting to connect to the grid. For France it covers
 generation, consumption and transmission lines by department, and the data centers that can be
-found in the national register of classified installations. Further countries and layers follow.
+found in the national register of classified installations. For the world it shows data centers as two sources list them: the
+Atlas of Data Center Politics and Epoch AI. Further countries and layers follow.
 
 The project started from a research question: which of the indicators that AI governance relies
 on can actually be collected from open data and checked by someone else? The map is how we work
@@ -41,7 +42,7 @@ them (`source_as_is`). Our scripts place, sum or measure the source's own record
 automated checks listed below. No value in them was re-checked by a person or by an AI agent. A
 layer that rests on judgment, such as deciding which registry entry is a data center, states how
 much of that judgment was re-checked and by whom: in the French data-center layer, every record was
-re-checked by an independent AI agent.
+re-checked by an independent AI agent. In the world data-center layers, places are set by rules and a random sample of them was checked by an independent AI agent.
 
 ## United States · abf-layers
 
@@ -304,6 +305,159 @@ The same line data, method and rules as the department layer. Regions are merged
 department outlines, so region totals equal the sums of their departments. Corsica and the five
 overseas regions are not covered.
 
+## World · abf-dc
+
+The data-center layers of the world form a separate dataset, abf-dc, with its own DOI. Version 0.2.0 has five layers from two sources: the three layers of version 0.1.0, unchanged, and two that count the Atlas
+records by place and by U.S. county. Each source keeps its own layer: the two count different things, and whether a site
+of one is in the other is itself a finding, recorded site by site.
+
+| Layer | Source | What it holds | Data as of | License |
+|---|---|---|---|---|
+| Data centers · records | Atlas of Data Center Politics, Infrastructure Lab, National University of Singapore | 9,865 data-center records in 126 countries and territories, placed at towns or U.S. counties | Atlas data of 8 October 2026 | CC BY 4.0 |
+| AI data centers · sites | Epoch AI, AI data centers | 94 of the largest AI data-center sites, with current IT power | file of 12 October 2026 | CC BY 4.0 |
+| Data centers · records by country | Atlas of Data Center Politics | Atlas records in each of the 242 countries and territories, by status and size class | Atlas data of 8 October 2026 | CC BY 4.0 |
+| Data centers · places | Atlas of Data Center Politics | Atlas records with a town point, counted at 2,303 places | Atlas data of 8 October 2026 | CC BY 4.0 |
+| Data centers · county | Atlas of Data Center Politics | Atlas records of the United States, counted by the county each record names, for 3,144 counties | Atlas data of 8 October 2026 | CC BY 4.0 |
+
+### Data centers · Atlas of Data Center Politics · records
+
+- **The source.** The Atlas collects data centers, policies and events from public sources and gives the sources of
+  each record. It has no bulk download yet, but each country's table can be copied from the site. We copied the tables
+  of all 126 countries and territories in its national list between 14 and 18 October 2026, by hand, as the Atlas asks
+  automated clients to stay off its data. The copies are published with the dataset.
+- **Records, not facilities.** We keep every row. 329 rows are identical in every field to another row, and 1,222
+  share name, address and operator with another. They may be separate buildings or phases that the table does not tell
+  apart, so we do not merge them; the groups are marked in the data.
+- **Status and size.** As the Atlas gives them. Its status Operating / Construction covers both operating sites and
+  sites under construction. Size is one of four classes, from Small (below 10 MW) to Gigascale (above 999 MW). The
+  Atlas does not say whether a class means IT power or the power of the whole facility, so we do not convert classes to
+  megawatts. Where the Atlas says Unknown, so do we.
+- **Identifiers.** The Atlas table has no record identifiers. Ours are computed from the content of each row, so a
+  record that the Atlas edits gets a new identifier in our next version.
+
+#### How records are placed
+
+The Atlas keeps a point for each record, but its table copies do not include it. We place each record ourselves, by a
+fixed chain; the first step that works gives the place:
+
+1. a town named in the record's address, found in GeoNames within the record's country and region;
+2. in the United States, a place named in the address and found in the Census Gazetteer 2023;
+3. a town named in the record name, by its main GeoNames name only. It must lie in the record's region and, if the
+   record has an address, appear in it; in the United States it must lie in the county the record gives. A name that is
+   also the name of a region counts only if the town is the seat of a first-level region or the national capital;
+4. in the United States, the county the record gives. The record is placed in the county, without a point;
+5. otherwise no place below the country.
+
+GeoNames lists towns of more than 500 people and the seats of administrative units. When several towns of the same name
+lie in one region and only one has people, that one is taken. We use no geocoding service and no approximate matching of
+names. A point marks the town, not the site, which can lie kilometers away.
+
+Result: 61.7% of Atlas records have a town point (44.2% from the address, 0.4% from a Census place, 17.1% from the
+name), 16.0% are placed in a U.S. county, and 22.3% have no place below the country. Outside the United States the last
+share is 37.1%: many Atlas records there have no address.
+
+Because a point marks the town, many records share one point: the 6,087 records with a point lie at 2,303 places, and 109
+places hold 10 or more records each (Shanghai 80, Beijing 70, Ashburn 57). The map therefore shows the Atlas by place. A
+place with one record is drawn by that record's size class, a place with more records shows their number, and clicking it
+lists them. We do not spread the records around the town, because each spread point would be a position that no source
+gives. A fan that opens on a click lays out up to 30 records on the screen around the town point; it is a diagram, not a
+map of sites, and it is not saved or shared.
+
+**How good is a town taken from the name?** We tested the rule on 4,160 Atlas records whose town is known from their
+address, applying it as it applies to records without an address. It gave a town for 2,230 of them: the same town in
+86.9%, a different town less than 25 km away in 8.3%, and 25 km or more away in 4.9%. In the United States the shares
+are 93.2%, 5.5% and 1.3%; elsewhere 82.8%, 10.0% and 7.2%. Most records placed this way have no address, and their names
+may point to a region or market more often than the names of the test records, so the true accuracy may be lower.
+
+Epoch AI sites are placed by the same chain, without the county step, since the Epoch AI file gives no county, and
+without the town from the name for U.S. sites.
+
+### AI data centers · Epoch AI · sites
+
+- **The source.** Epoch AI tracks the largest AI data centers, chosen mostly by computing capacity, with a lower bar
+  outside the United States and mostly sites that become operational in 2024 or later. 77 of its 94 sites are in the
+  United States. Epoch AI estimates that its database covers 44% of the world's deployed AI computing capacity (as of
+  14 October 2026, 90% interval 23–81%). It is not a census of data centers.
+- **Power.** Current IT power in MW, as Epoch AI estimates it: the power available to servers, network and storage,
+  without cooling. Epoch AI notes that total facility power is 20–50% higher. A site with 0 MW is one where Epoch AI
+  counts no IT power in operation yet; it is a value, not a gap.
+- **Other values.** Compute in H100 equivalents, capital cost and chip types are Epoch AI's estimates. Owners, users and
+  projects keep Epoch AI's confidence tags (confident, likely, speculative).
+
+#### Is an Epoch AI site in the Atlas?
+
+For each Epoch AI site, the file checks.csv records whether the Atlas lists the same site. If an Atlas record has the
+same street address (in the United States the same house number, street and state), the script marks it found. If not,
+the script lists candidates, Atlas records in the same town or U.S. county that share a word of the owner, name or
+project, and V judged them. Without candidates the cell stays not checked. Of the 94 sites, 63 are found in the Atlas
+(30 by address, 33 by V), 2 are not found, and 29 are not checked. Not checked does not mean absent: an Atlas record
+without an address cannot be matched by address.
+
+### Data centers · Atlas of Data Center Politics · records by country
+
+The number of Atlas records in each country and territory, by status and size class, counted by the country the Atlas
+gives, not by the point. 116 countries and territories have 0: the Atlas lists none for them. That is a statement about
+the Atlas. The Atlas itself warns that absence from it is not evidence that a facility does not exist.
+
+#### Borders and disputed areas
+
+Countries come from abf-boundaries v0.2.0. One Atlas record lies in Simferopol, in Crimea, which that release shows under
+Russian control and records as claimed by Ukraine. The record carries both the country the Atlas gives and the state in
+control. The one record that the Atlas lists under Somaliland is counted under Somalia, because the boundary frame has no
+separate unit for it. Neither choice is a position of the project.
+
+#### How the places were checked
+
+An independent AI session, which did not build the layers, checked a fixed random sample of places against GeoNames and
+the Census files: 10% of each place source, plus separate samples of the riskier rules. Of 870 checks, 845 agreed, 17
+were disputed and 8 could not be decided; all 156 county placements agreed. The disputed places came from errors in the
+rules, such as reading the Malaysian state Johor as the city of Johor Bahru, so we corrected the rules rather than single
+points, and rebuilt the layers. Three places the corrected rules still gave were removed. The corrected rules gave 82
+records another or a new town; a second AI session read all 82 against each record's address, name and region, and all
+agree. The same session checked 13 cells of checks.csv against public web pages: 9 confirmed, 2 disputed and settled by
+the address rule, 2 undecided.
+
+### Data centers · Atlas of Data Center Politics · places
+
+The Atlas records with a town point, counted by place: one row for each of the 2,303 towns and U.S. Census places, with
+the number of records by status and size class. A place is a town, not a site, and the records of one place may be
+separate sites, buildings or phases, or repeats that the table does not tell apart. For a place with one record the row
+also gives its size class, so the map can draw it like a single record. 3,778 records have no town point and are not in
+this layer: 1,583 U.S. records placed in a county, counted in the county layer, and 2,195 records without a place below the
+country.
+
+### Operator types
+
+The Atlas gives each record one of 20 operator types, from Colocation (4,656 records) to Regulator (1). On the map we
+group them into six colors and gray: colocation, telecom, developers and investors, cloud, enterprise and IT services,
+AI compute, and other or unknown. The exact Atlas type is shown for each record, and the grouping is published with the
+dataset. The type describes who runs a site, not what it is used for. The Atlas type AI Compute is therefore not the
+same as an Epoch AI site: the 63 Epoch AI sites that we found in the Atlas match 75 Atlas records, and only 10 of them
+have the type AI Compute; 39 are Cloud and 24 Colocation. The two layers use different colors, and each can be turned
+off. A place with two or more records is drawn as one gray badge with their number, because coloring it by the group that
+prevails would be our reading of the mix; the filter by type shows the number of records of one chosen group.
+
+### Data centers · Atlas of Data Center Politics · county
+
+The Atlas records of the United States, counted by the county each record names in its own state and county fields, not by
+the point we gave it. Records with and without a point count alike. The county is found by the rule we use to place
+records in a county: the exact name within the state, then the name without the word County, Parish or the like. The
+independent check of version 0.1.0 confirmed it on 156 of 156 sampled records.
+
+3,914 of the 4,038 U.S. records are counted in 812 counties; Loudoun County, Virginia, has the most (179). 124 records are
+counted under no county, and the file county_records.csv says why for each:
+- 70 give a name that a county and an independent city of the same state share, such as Fairfax in Virginia (46 records),
+  and do not say which they mean. Deciding by our point would not help: a postal address in "Fairfax, VA" puts the point in
+  the city, while the site may lie in the county.
+- 21 are in Connecticut. The Atlas gives the state's eight historical counties, which the U.S. Census Bureau replaced with
+  nine planning regions in 2022, and our boundaries have the planning regions.
+- 32 give no county and 1 gives no state.
+
+Where records cannot be assigned, we show the units as not covered rather than 0: the nine Connecticut planning regions and
+both units of the Fairfax, Baltimore, St. Louis and Franklin pairs. 0 elsewhere means that no Atlas record names the
+county, which is a statement about the Atlas. For 160 of the 2,331 U.S. records that have both a point and a county, the
+point lies in another county than the one the record names. This is one reason we count by the record and not by the point.
+
 ## Administrative boundaries · ADM0, ADM1, ADM2
 
 - **One frame for the whole world.** Natural Earth at 1:10 million, version 5.1.2. Where borders are
@@ -401,7 +555,7 @@ equal-area projections.
   old ones keep working. The current version is listed in `manifest/latest.json` with file sizes
   and checksums.
 - **Citing.** Cite the layer, the version and the DOI of its dataset: {DOI_layers} for the U.S.
-  energy layers, {DOI:abf-fra} for France,
+  energy layers, {DOI:abf-fra} for France, {DOI:abf-dc} for the data centers of the world,
   {DOI_boundaries} for the boundaries. Each layer card gives a ready citation, and each pop-up gives
   one for the single record. Please also credit the original source as its license requires. The
   attribution text of each layer is in its metadata and on the Sources and licenses page.
@@ -445,6 +599,14 @@ equal-area projections.
   code. Transmission lines: region totals equal the sums of the department totals. Consumption: the
   regions add up to the total of the regional file and were compared with the department values.
 
+**World data centers:**
+- the country counts add up to the records of the point layer, and every country of the frame is listed once;
+- the counts by place and by county add up to the records of the point layer, and every U.S. record is either counted under
+  one county or listed with the reason it is not;
+- every record has either a town point or a unit, never both;
+- power: at most one layer of the release gives megawatts, and no site has two power values;
+- a random sample of places and of checks.csv cells was checked by an independent AI agent (see the layer section).
+
 **Against our earlier Virginia pipeline.** When we first built these layers in September 2026, on
 the 2024 edition of EIA-860 and the 2025 edition of Queued Up, we compared them with the pipeline
 behind version 1.0 for Virginia's 133 county-equivalents:
@@ -470,6 +632,7 @@ publication checks them by checksum. Corrections come as a new version.
   department totals. Corsica and the overseas departments are not covered.
 - **France, data centers** is a lower bound: data centers registered under names and operators we
   could not identify are missed, and the points are at commune precision.
+- **World data centers** are placed at towns, not at sites; 22.3% of Atlas records have no place below the country, and a town taken from the record name is the same town as the address gives in about 87% of tested cases. The county counts follow the county each Atlas record names; 124 U.S. records name none we can identify, and 17 units are shown as not covered.
 - **Boundaries** outside the United States and Norway are generalized at 1:10 million. First levels
   of 104 countries follow CLDR release-48-2 and may miss later reforms; 134 countries and
   territories have national borders only. Crimea and Sevastopol are shown under Russia, the state in
@@ -487,6 +650,7 @@ publication checks them by checksum. Corrections come as a new version.
   instead. This is why France's transmission lines appear only as department totals.
 - **Classification details of installations**: for the French data-center layer, the
   classification headings, regime, equipment and inspection contents from the register.
+- **More than one power value for a site.** Where two sources give power for the same site on different bases, we publish one value per site.
 - **Substations from OpenStreetMap.** We built this layer, but it is not in this release: coverage
   is uneven, and its license (ODbL) would carry over to any file it is merged into.
 - **A composite score.** See below.

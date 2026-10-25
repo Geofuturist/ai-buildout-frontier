@@ -51,11 +51,22 @@ export function rampFor(domain: string | undefined): readonly string[] {
   return domain === 'energy' ? COLORS.rampWarm : COLORS.ramp;
 }
 
-/** Fill colour of a unit layer: no value / zero / five classes (breaks has 4 entries). */
-export function fillColorExpression(field: string, breaks: number[], domain?: string): ExpressionSpecification {
+/** Ramp steps used for n classes: the darkest steps, so the top class is always the darkest. */
+function rampSteps(ramp: readonly string[], n: number): string[] {
+  return ramp.slice(Math.max(0, ramp.length - n));
+}
+
+/**
+ * Fill colour of a unit layer: no value / zero / classes.
+ * Upper bounds (default): `breaks` has 4 entries, five classes. `lower` (display.breaks_fixed): `breaks` are the lower
+ * bounds of the classes (1, 10, 100, 1000 -> 1-9, 10-99, 100-999, 1000+), 0 is its own class.
+ */
+export function fillColorExpression(field: string, breaks: number[], domain?: string, lower = false): ExpressionSpecification {
   const ramp = rampFor(domain);
-  const step: unknown[] = ['step', ['get', field], ramp[0]];
-  breaks.forEach((b, i) => step.push(b, ramp[Math.min(i + 1, ramp.length - 1)]));
+  const colors = lower ? rampSteps(ramp, breaks.length) : [...ramp];
+  const step: unknown[] = ['step', ['get', field], colors[0]];
+  if (lower) breaks.slice(1).forEach((b, i) => step.push(b, colors[i + 1]));
+  else breaks.forEach((b, i) => step.push(b, colors[Math.min(i + 1, colors.length - 1)]));
   return [
     'case',
     ['==', ['get', field], null], COLORS.noValue,
@@ -84,12 +95,21 @@ export interface LegendClass {
   color: string;
 }
 
-/** Legend classes for a county layer. */
-export function legendClasses(breaks: number[], unit: string, zeroClass: boolean, domain?: string): LegendClass[] {
+/** Legend classes for a unit layer; `lower` as in fillColorExpression. */
+export function legendClasses(breaks: number[], unit: string, zeroClass: boolean, domain?: string, lower = false): LegendClass[] {
   const ramp = rampFor(domain);
   const fmt = (n: number) => n.toLocaleString('en-US');
   const out: LegendClass[] = [];
   if (zeroClass) out.push({ label: '0 — none listed in the source', color: COLORS.zero });
+  if (lower) {
+    const colors = rampSteps(ramp, breaks.length);
+    breaks.forEach((b, i) => {
+      const last = i === breaks.length - 1;
+      const label = last ? `${fmt(b)} ${unit} and above` : b === breaks[i + 1] - 1 ? `${fmt(b)} ${unit}` : `${fmt(b)}–${fmt(breaks[i + 1] - 1)} ${unit}`;
+      out.push({ label, color: colors[i] });
+    });
+    return out;
+  }
   const first = breaks[0];
   out.push({ label: zeroClass ? `Above 0 – ${fmt(first)} ${unit}` : `Below ${fmt(first)} ${unit}`, color: ramp[0] });
   for (let i = 0; i < breaks.length - 1; i++) {

@@ -33,7 +33,7 @@ const polygonModule: GeometryModule = {
             beforeId={ctx.before}
             filter={COVERED}
             layout={{ visibility: vis }}
-            paint={{ 'fill-color': fillColorExpression(field, d.breaks ?? [], l.domain) }}
+            paint={{ 'fill-color': fillColorExpression(field, d.breaks ?? [], l.domain, Boolean(d.breaks_fixed)) }}
           />
           {d.zero_class && (
             <Layer
@@ -93,7 +93,10 @@ const polygonModule: GeometryModule = {
     const meta = layers[0] ? metas[layers[0].meta_id] : null;
     const d = meta?.display;
     if (!d || !d.breaks || !d.value_field) return null;
-    const classes = legendClasses(d.breaks, d.unit ?? '', Boolean(d.zero_class), layers[0].domain);
+    // every unit of the frame is covered (e.g. the world count layer): no "not covered" row
+    const cov = meta?.coverage;
+    const allCovered = Boolean(cov && cov.n_units_frame !== null && cov.n_units_frame === cov.n_units_covered);
+    const classes = legendClasses(d.breaks, d.unit ?? '', Boolean(d.zero_class), layers[0].domain, Boolean(d.breaks_fixed));
     return (
       <>
         <h3 className="mb-1 text-[13px] font-semibold text-ink">{d.legend_title}</h3>
@@ -108,10 +111,12 @@ const polygonModule: GeometryModule = {
             <Swatch color={COLORS.noValue} />
             <span>Covered, no value in the source</span>
           </li>
-          <li className="flex items-center gap-2">
-            <Swatch stroke={COLORS.notCovered} dashed />
-            <span>Not covered (no fill, dashed outline)</span>
-          </li>
+          {!allCovered && (
+            <li className="flex items-center gap-2">
+              <Swatch stroke={COLORS.notCovered} dashed />
+              <span>Not covered (no fill, dashed outline)</span>
+            </li>
+          )}
         </ul>
       </>
     );

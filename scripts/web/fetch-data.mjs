@@ -16,9 +16,11 @@
 //   NEXT_PUBLIC_SITE_URL  used for the {domain} placeholder
 
 import { createHash } from 'node:crypto';
+import zlib from 'node:zlib';
 import fs from 'node:fs';
 import path from 'node:path';
 import GithubSlugger from 'github-slugger';
+import { featureBox } from './bbox.mjs';
 
 const ROOT = process.cwd();
 const BASE = (process.env.ABF_DATA_BASE_URL || 'https://data.aibuildoutfrontier.org').replace(/\/+$/, '');
@@ -153,6 +155,18 @@ async function main() {
       if (!files.parquet || !files['geojson.gz']) fail(`${l.layer_id}: parquet or geojson.gz missing in manifest`);
       if (meta.kind === 'layer' && !files.csv) fail(`${l.layer_id}: csv missing in manifest`);
       if (!l.tiles || !l.tiles.file) fail(`${l.layer_id}: no tiles entry`);
+      // Fields the map reads from the tiles: count, colour and filter columns of a layer of places (abf-dc 0.2.0)
+      {
+        const d = meta.display || {};
+        const need = [d.count_field, d.color_field, ...Object.values(d.filter_fields || {})].filter(Boolean);
+        const have = new Set(l.tiles.fields || []);
+        const missing = need.filter((f) => !have.has(f));
+        if (missing.length) strict(`${l.layer_id}: tiles lack the fields the map uses: ${missing.join(', ')}`);
+        if (d.filter_fields && d.color_classes) {
+          const bad = d.color_classes.filter((c) => !d.filter_fields[c]);
+          if (bad.length) strict(`${l.layer_id}: color_classes without a filter column: ${bad.join(', ')}`);
+        }
+      }
       layers.push({
         dataset: dsName,
         layer_id: l.layer_id,
@@ -234,6 +248,28 @@ async function main() {
     levelZoom[lvl] = Math.max(wanted, minz);
   }
 
+  // Two more numbers of content/site.json: the zoom below which a click chooses the whole world, and the most records
+  // a place may have to open as a fan (SPEC_WEB_territory 15; SPEC_DC_world_v0_2_0 9)
+  const num = (v, dflt, name) => {
+    if (v === undefined) return dflt;
+    if (typeof v !== 'number' || !Number.isFinite(v) || v < 0) {
+      strict(`content/site.json: ${name} must be a non-negative number; ${dflt} is used`);
+      return dflt;
+    }
+    return v;
+  };
+  // Temporary: layers kept off the map from the content side, until their meta.json says display.map = false. The
+  // override is applied to the data the site gets, never to the published files. An entry the meta already hides is
+  // reported, so the line can be deleted.
+  for (const id of Array.isArray(site.hidden_layers) ? site.hidden_layers : []) {
+    const m = metas[id];
+    if (!m) { strict(`content/site.json: hidden_layers has "${id}", which is not a layer of the pointer`); continue; }
+    if (m.display && m.display.map === false) { console.warn(`NOTE: content/site.json hidden_layers "${id}" is already display.map = false in its meta; the line can go`); continue; }
+    m.display = { ...(m.display || {}), map: false };
+  }
+  const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
+  const fanMax = num(site.fan_max, 30, 'fan_max');
+
   // Territory (SPEC_WEB_territory 5, 10): units of the countries that have layers, from units.csv of the boundaries
   // dataset (never from geometry), and the unit words of boundary_registry.csv. units.csv goes to a lazily loaded
   // file (territory.json); the registry words and thresholds travel with abf-data.json.
@@ -284,6 +320,39 @@ async function main() {
     for (const r of csvRows(registryText)) {
       if (!r.iso3 || !r.level || !r.unit_type_en) continue;
       (unitWords[r.iso3] = unitWords[r.iso3] || {})[r.level] = r.unit_type_en;
+    }
+  }
+
+  // Countries for the search by name: every ADM0 unit of units.csv (name) with a box from the ADM0 geometry
+  // (boundaries geojson.gz, read here once; antimeridian handled in bbox.mjs).
+  const countries = [];
+  if (unitsText) {
+    const adm0 = layers.find((l) => l.dataset === bnd.dataset && l.tiles.source_layer === 'adm0');
+    const boxes = {};
+    const gj = adm0 && adm0.files['geojson.gz'];
+    if (gj) {
+      try {
+        const bytes = await getBytes(bnd.base_path + gj.path);
+        const fc = JSON.parse(zlib.gunzipSync(bytes).toString('utf8'));
+        for (const f of fc.features || []) {
+          const id = f.properties && (f.properties.unit_id || f.properties.iso3);
+          const b = id ? featureBox(f.geometry) : null;
+          if (b) boxes[id] = b;
+        }
+      } catch (e) {
+        strict(`country boxes: could not read the ADM0 geometry (${e && e.message ? e.message : e})`);
+      }
+    } else strict('country boxes: the ADM0 layer has no geojson.gz in the manifest');
+    for (const r of csvRows(unitsText)) {
+      if (r.level !== 'ADM0') continue;
+      countries.push({ iso3: r.unit_id, name: r.name, bbox: boxes[r.unit_id] || null });
+    }
+    countries.sort((a, b) => a.name.localeCompare(b.name, 'en'));
+    const missing = countries.filter((c) => !c.bbox).length;
+    if (missing) {
+      const msg = `${missing} of ${countries.length} countries have no box (the search selects them without flying)`;
+      warnings.push(msg);
+      console.warn(`WARN: ${msg}`);
     }
   }
 
@@ -403,7 +472,10 @@ async function main() {
     default_layer: defaultLayer,
     default_country: defaultCountry,
     level_zoom: levelZoom,
+    world_zoom: worldZoom,
+    fan_max: fanMax,
     unit_words: unitWords,
+    countries,
     attribution: groups,
     warnings,
   };

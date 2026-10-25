@@ -1,7 +1,7 @@
 import type { AbfData } from '@/lib/data';
 
 /** What the server page passes to the client map (no attribution, no warnings). */
-export type MapData = Pick<AbfData, 'channel' | 'layers' | 'metas' | 'anchors' | 'datasets' | 'default_layer' | 'default_country' | 'level_zoom' | 'unit_words'>;
+export type MapData = Pick<AbfData, 'channel' | 'layers' | 'metas' | 'anchors' | 'datasets' | 'default_layer' | 'default_country' | 'level_zoom' | 'world_zoom' | 'fan_max' | 'unit_words' | 'countries'>;
 
 /** A unit chosen on the map: level 0 is the country itself (unit_id = its ISO3 code). */
 export interface UnitRef {
@@ -12,5 +12,15 @@ export interface UnitRef {
 
 export type CardState =
   | { type: 'record'; layerId: string; props: Record<string, unknown> }
+  /** several objects of one point layer at the same spot (Epoch: up to 3 sites): the card lists them all */
+  | { type: 'records'; layerId: string; items: Record<string, unknown>[] }
   | { type: 'layer'; layerId: string }
   | null;
+
+/** A place with several records that was clicked: its point on the screen (px in the map container), for the fan. */
+export interface FanSpot {
+  layerId: string;
+  props: Record<string, unknown>;
+  x: number;
+  y: number;
+}

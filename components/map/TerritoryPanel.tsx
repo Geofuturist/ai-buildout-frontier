@@ -2,29 +2,30 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, ChevronUp, Info } from 'lucide-react';
+import { ChevronDown, ChevronRight, ChevronLeft, ChevronUp } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
-import type { LayerEntry } from '@/lib/data';
-import { checkedByLine, recordCitation, throughLabel } from '@/lib/format';
+import { checkedByLine, recordCitation } from '@/lib/format';
 import { levelWord, shownLevelOf } from '@/lib/indicators';
+import { WORLD } from '@/lib/layers';
 import type { CountryModel, Indicator } from '@/lib/indicators';
-import { capitalize, unitWord } from '@/lib/layers';
 import { chainOf, unitName } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
+import type { PanelRow } from '@/lib/panel';
+import LayersPanel from './LayersPanel';
 import TerritoryDownloads from './TerritoryDownloads';
 import UnitValues from './UnitValues';
 import type { MapData, UnitRef } from './types';
 
 interface Props {
   data: MapData;
-  countries: CountryModel[];
   /** the chosen country: its ISO3 code (even when it has no layers) */
   countryIso: string | null;
   countryName: string;
   model: CountryModel | null;
+  /** indicators that are not on the map (display.map = false): the card still shows their values */
+  hiddenIndicators: Indicator[];
+  /** the fill that is on, when it applies to the chosen country (its own or a world one) */
   indicator: Indicator | null;
-  overlays: Record<string, boolean>;
-  failed: Set<string>;
   /** the chosen unit; level 0 = the country */
   unit: UnitRef | null;
   territory: Territory | null;
@@ -34,59 +35,42 @@ interface Props {
   nonce: number;
   /** the level a click selects now (0, 1, 2) */
   selLevel: number;
-  onIndicator: (key: string) => void;
-  onOverlay: (id: string, on: boolean) => void;
-  onCountry: (iso3: string) => void;
+  /** layers of the chosen country: the dataset is chosen here, not in the panel on the left */
+  countryRows: PanelRow[];
+  overlays: Record<string, boolean>;
+  failed: Set<string>;
+  onFill: (row: PanelRow) => void;
+  onOverlay: (row: PanelRow, on: boolean) => void;
+  onInfo: (layerId: string) => void;
   onWorld: () => void;
   onCrumb: (unitId: string) => void;
-  onInfo: (layerId: string) => void;
 }
 
 export default function TerritoryPanel(p: Props) {
   const { data, model, indicator, unit } = p;
   const [open, setOpen] = useState(false);
+  // Desktop: the card can be folded to the right edge; the choice is remembered
+  const [folded, setFolded] = useState(false);
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem('abf.territory.folded') === '1') setFolded(true);
+    } catch {
+      /* storage may be blocked */
+    }
+  }, []);
+  const fold = (v: boolean) => {
+    setFolded(v);
+    try {
+      window.localStorage.setItem('abf.territory.folded', v ? '1' : '0');
+    } catch {
+      /* ignore */
+    }
+  };
   useEffect(() => {
     if (p.nonce > 0) setOpen(true);
   }, [p.nonce]);
 
-  const exclusiveRow = (ind: Indicator) => {
-    const shown = shownLevelOf(ind, p.selLevel).layer;
-    const meta = data.metas[shown.meta_id];
-    const words = ind.levels.map((x) => unitWord(x.layer)).join(', ');
-    return (
-      <li key={ind.key} className="flex items-stretch">
-        <label className="flex min-h-[44px] flex-1 cursor-pointer items-center gap-2 py-1">
-          <input type="radio" name="indicator" className="h-4 w-4 shrink-0 accent-[#0f6e6e]" checked={indicator?.key === ind.key} onChange={() => p.onIndicator(ind.key)} />
-          <span className="leading-tight">
-            <span className="block text-sm text-ink">{ind.title}</span>
-            <span className="block text-xs text-muted">{capitalize(words)} · {throughLabel(meta)}</span>
-          </span>
-        </label>
-        <button type="button" className="flex h-11 w-11 shrink-0 items-center justify-center text-accent" aria-label={`About: ${shown.title}`} onClick={() => p.onInfo(shown.layer_id)}>
-          <Info size={18} aria-hidden />
-        </button>
-      </li>
-    );
-  };
-
-  const overlayRow = (l: LayerEntry) => (
-    <li key={l.layer_id} className="flex items-stretch">
-      <label className="flex min-h-[44px] flex-1 cursor-pointer items-center gap-2 py-1">
-        <input type="checkbox" className="h-4 w-4 shrink-0 accent-[#0f6e6e]" checked={Boolean(p.overlays[l.layer_id])} onChange={(e) => p.onOverlay(l.layer_id, e.target.checked)} />
-        <span className="leading-tight">
-          <span className="block text-sm text-ink">{l.title}</span>
-          <span className="block text-xs text-muted">
-            {capitalize(unitWord(l))} · {throughLabel(data.metas[l.meta_id])}
-            {p.failed.has(l.layer_id) && <strong className="ml-1 text-[#9a2a00]">· Failed to load</strong>}
-          </span>
-        </span>
-      </label>
-      <button type="button" className="flex h-11 w-11 shrink-0 items-center justify-center text-accent" aria-label={`About: ${l.title}`} onClick={() => p.onInfo(l.layer_id)}>
-        <Info size={18} aria-hidden />
-      </button>
-    </li>
-  );
-
+  const ownIndicator = indicator && indicator.iso3 !== WORLD ? indicator : null;
   // Value of the active indicator at the level of the chosen unit
   const valueLayer = indicator && unit ? indicator.levels.find((x) => x.level === unit.level)?.layer : undefined;
   const chain = unit && p.countryIso ? chainOf(p.territory, unit.unit_id) : [];
@@ -101,8 +85,15 @@ export default function TerritoryPanel(p: Props) {
   if (!p.countryIso) return null;
 
   return (
+    <>
+    {folded && !p.hidden && (
+      <button type="button" className="absolute right-3 top-14 z-20 hidden h-9 items-center gap-1 rounded-md border border-line bg-surface pl-3 pr-2 text-[13px] font-semibold text-ink shadow-md hover:text-accent md:flex" aria-label="Show the territory card" aria-expanded={false} onClick={() => fold(false)}>
+        {title}
+        <ChevronLeft size={18} aria-hidden />
+      </button>
+    )}
     <aside
-      className={`absolute inset-x-0 bottom-0 z-20 flex max-h-[58%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-14 md:max-h-[calc(100%-12rem)] md:w-[24rem] md:rounded-xl ${p.hidden ? 'hidden' : ''}`}
+      className={`${folded ? 'md:hidden ' : ''}absolute inset-x-0 bottom-0 z-20 flex max-h-[58%] flex-col rounded-t-xl border border-line bg-surface shadow-lg md:inset-x-auto md:bottom-auto md:right-3 md:top-14 md:max-h-[calc(100%-12rem)] md:w-[24rem] md:rounded-xl ${p.hidden ? 'hidden' : ''}`}
       aria-label="Territory"
     >
       <button type="button" className="flex min-h-[48px] items-center justify-between px-4 text-left md:hidden" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
@@ -112,7 +103,10 @@ export default function TerritoryPanel(p: Props) {
         {open ? <ChevronDown size={20} aria-hidden /> : <ChevronUp size={20} aria-hidden />}
       </button>
 
-      <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-4 pb-4 pt-1 text-sm md:block md:pt-3`}>
+      <button type="button" className="absolute right-2 top-2 hidden h-8 w-8 items-center justify-center rounded-md border border-line text-ink2 hover:text-accent md:flex" aria-label="Hide the territory card" aria-expanded onClick={() => fold(true)}>
+        <ChevronRight size={18} aria-hidden />
+      </button>
+      <div className={`${open ? 'block' : 'hidden'} overflow-y-auto px-4 pb-4 pt-1 text-sm md:block md:pr-12 md:pt-3`}>
         {p.countryIso && (
           <>
             {/* Path up: country › region › unit */}
@@ -132,48 +126,55 @@ export default function TerritoryPanel(p: Props) {
             <h2 className="mt-2 text-base font-semibold leading-tight">{title}</h2>
             {unit && <p className="text-xs text-muted">{word} · {unit.unit_id}</p>}
 
-            {!model && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
+            {!model && !indicator && p.countryRows.length === 0 && p.hiddenIndicators.length === 0 && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
 
-            {model && (
-              <>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-muted">Indicators</p>
-                <ul>{model.indicators.map(exclusiveRow)}</ul>
-                {model.overlays.length > 0 && (
-                  <>
-                    <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">On top of the map</p>
-                    <ul>{model.overlays.map(overlayRow)}</ul>
-                  </>
-                )}
-
-                {indicator && unit && (
-                  <div className="mt-3 border-t border-line pt-3">
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
-                    {valueLayer ? (
-                      <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
-                    ) : (
-                      <p className="mt-2 rounded-md border border-dashed border-[#8a8f96] p-3 text-ink2">Not published at this level in this release.</p>
-                    )}
-                    {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
-                  </div>
-                )}
-
-                {unit && <TerritoryDownloads data={data} model={model} indicator={indicator} unit={unit} territory={p.territory} />}
-
-                {citeLayer && citeMeta && unit && (
-                  <div className="mt-3 flex flex-wrap items-center gap-3">
-                    <CopyButton
-                      text={valueLayer && unit.level > 0 ? recordCitation(citeMeta, unit.unit_id) : citeMeta.citation.text}
-                      label={valueLayer && unit.level > 0 ? 'Cite this record' : 'Cite this layer'}
-                    />
-                    {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
-                  </div>
-                )}
-                {citeLayer && <p className="mt-3 text-sm"><Link href="/data/">All files</Link></p>}
-              </>
+            {p.countryRows.length > 0 && (
+              <div className="mt-3 border-t border-line pt-3">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
+                <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onFill={p.onFill} onOverlay={p.onOverlay} onInfo={p.onInfo} openAll />
+              </div>
             )}
+
+            {indicator && unit && (
+              <div className="mt-3 border-t border-line pt-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
+                {valueLayer ? (
+                  <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
+                ) : (
+                  <p className="mt-2 rounded-md border border-dashed border-[#8a8f96] p-3 text-ink2">Not published at this level in this release.</p>
+                )}
+                {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
+              </div>
+            )}
+
+            {/* Files of the country itself; files of the whole world are on the world card */}
+            {unit && p.hiddenIndicators.map((h) => {
+              const l = h.levels.find((x) => x.level === unit.level)?.layer;
+              return l ? (
+                <div key={h.key} className="mt-3 border-t border-line pt-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted">{h.title}</p>
+                  <UnitValues layer={l} meta={data.metas[l.meta_id]} unitId={unit.unit_id} />
+                  <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[l.meta_id])}</p>
+                </div>
+              ) : null;
+            })}
+
+            {unit && (model || ownIndicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={ownIndicator} unit={unit} territory={p.territory} />}
+
+            {citeLayer && citeMeta && unit && (
+              <div className="mt-3 flex flex-wrap items-center gap-3">
+                <CopyButton
+                  text={valueLayer && unit.level > 0 ? recordCitation(citeMeta, unit.unit_id) : citeMeta.citation.text}
+                  label={valueLayer && unit.level > 0 ? 'Cite this record' : 'Cite this layer'}
+                />
+                {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
+              </div>
+            )}
+            {citeLayer && <p className="mt-3 text-sm"><Link href="/data/">All files</Link></p>}
           </>
         )}
       </div>
     </aside>
+    </>
   );
 }

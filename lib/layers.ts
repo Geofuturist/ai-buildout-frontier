@@ -9,12 +9,18 @@ function firstCode(v: unknown): string {
   return typeof x === 'string' ? x : '';
 }
 
+/** Pseudo country code of the layers that cover several countries (coverage.iso3 with 2 or more codes). */
+export const WORLD = 'WORLD';
+
 export function countryOf(meta: Meta | undefined): string {
-  return firstCode(meta?.coverage.iso3) || firstCode(meta?.coverage.frame?.iso3);
+  const v = meta?.coverage.iso3;
+  if (Array.isArray(v) && v.length >= 2) return WORLD;
+  return firstCode(v) || firstCode(meta?.coverage.frame?.iso3);
 }
 
 export function countryName(meta: Meta | undefined): string {
   const iso = countryOf(meta);
+  if (iso === WORLD) return 'World';
   return meta?.coverage.frame?.country_name ?? (iso ? countryNameFromIso3(iso) : 'Other');
 }
 

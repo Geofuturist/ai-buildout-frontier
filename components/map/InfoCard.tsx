@@ -2,15 +2,14 @@
 
 import Link from 'next/link';
 import CopyButton from '@/components/CopyButton';
-import { checkedByLine, isoDate, recordCitation } from '@/lib/format';
-import { capitalize, recordNoun } from '@/lib/layers';
-import { MODULE_BY_TYPE } from './modules';
-import { Downloads, ValueRows, sourceLine } from './parts';
-import RecordDownload from './RecordDownload';
+import { checkedByLine, isoDate } from '@/lib/format';
+import DownloadMenu from './DownloadMenu';
+import { Downloads } from './parts';
+import { ItemsCard, PlaceCard, RecordShell } from './RecordViews';
 import Shell from './Shell';
 import type { CardState, MapData } from './types';
 
-export default function InfoCard({ data, card, onClose }: { data: MapData; card: CardState; onClose: () => void }) {
+export default function InfoCard({ data, card, typeFilter, onClose }: { data: MapData; card: CardState; typeFilter: string | null; onClose: () => void }) {
   if (!card) return null;
   const layer = data.layers.find((l) => l.layer_id === card.layerId);
   if (!layer) return null;
@@ -35,7 +34,9 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
         <p className="mt-3"><strong>License.</strong> <a href={meta.license.url}>{meta.license.name}</a></p>
         <blockquote className="mt-1 border-l-4 border-line pl-3 text-xs text-ink2">{meta.license.attribution_text}</blockquote>
         <p className="mt-3">{checkedByLine(meta)}</p>
-        <Downloads layer={layer} />
+        <DownloadMenu label="Download this layer">
+          <Downloads layer={layer} />
+        </DownloadMenu>
         <div className="mt-3 flex flex-wrap items-center gap-3">
           <CopyButton text={meta.citation.text} label="Cite this layer" />
           {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
@@ -45,24 +46,11 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
     );
   }
 
-  const mod = MODULE_BY_TYPE[layer.tiles.geometry_type];
-  const p = card.props;
-  const key = String(p[mod.keyField] ?? '');
-  const noun = recordNoun(layer);
-  const title = typeof p.name === 'string' && p.name ? p.name : `${capitalize(noun)} ${key}`;
+  // Several objects of one layer at the same spot (Epoch): a list of all of them
+  if (card.type === 'records') return <ItemsCard key={card.items.map((x) => String(x.record_id)).join('|')} data={data} layer={layer} items={card.items} onClose={onClose} />;
 
-  return (
-    <Shell title={title} subtitle={`${key} · ${layer.title}`} onClose={onClose}>
-      <ValueRows layer={layer} meta={meta} props={p} keyField={mod.keyField} />
-      <p className="mt-4 text-xs text-ink2">{sourceLine(meta)}</p>
-      <p className="mt-1 text-xs text-ink2">License: <a href={meta.license.url}>{meta.license.name}</a></p>
-      <p className="mt-1 text-xs text-ink2">{checkedByLine(meta)}</p>
-      {mod.recordDownload && key && <RecordDownload layer={layer} meta={meta} keyField={mod.keyField} keyValue={key} />}
-      <div className="mt-3 flex flex-wrap items-center gap-3">
-        <CopyButton text={recordCitation(meta, key)} label={mod.recordDownload ? 'Cite this record' : `Cite this ${noun}`} />
-        {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
-      </div>
-      <p className="mt-3 text-sm"><Link href={`/data/#${layer.layer_id}`}>All files of this layer</Link></p>
-    </Shell>
-  );
+  // A place of the places layer: its record (one) or the list of its records (several)
+  if (meta.display?.count_field) return <PlaceCard key={String(card.props.record_id)} data={data} layer={layer} props={card.props} typeFilter={typeFilter} onClose={onClose} />;
+
+  return <RecordShell data={data} layer={layer} props={card.props} onClose={onClose} />;
 }

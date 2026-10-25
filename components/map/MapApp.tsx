@@ -6,15 +6,19 @@ import MapCanvas from './MapCanvas';
 import type { MapHandle } from './MapCanvas';
 import LegendCard from './LegendCard';
 import TerritoryPanel from './TerritoryPanel';
+import WorldCard from './WorldCard';
+import Fan from './Fan';
 import InfoCard from './InfoCard';
 import MapNav from './MapNav';
 import { MODULE_BY_TYPE } from './modules';
 import { selectDataLayers } from './select';
-import type { CardState, MapData, UnitRef } from './types';
+import type { CardState, FanSpot, MapData, UnitRef } from './types';
 import { countryNameFromIso3 } from '@/lib/iso3';
 import { buildCountries, fillLevelOf, levelWord, selectionLevel } from '@/lib/indicators';
-import { groupByCountry, unionBbox } from '@/lib/layers';
-import { levelsOfCountry, loadTerritory } from '@/lib/territory';
+import { WORLD, groupByCountry, unionBbox } from '@/lib/layers';
+import { buildRows, onMap } from '@/lib/panel';
+import type { PanelRow } from '@/lib/panel';
+import { isWithin, levelsOfCountry, loadTerritory } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
 
 export default function MapApp({ data }: { data: MapData }) {
@@ -29,64 +33,140 @@ export default function MapApp({ data }: { data: MapData }) {
   const [territory, setTerritory] = useState<Territory | null>(null);
   const [zoom, setZoom] = useState(1.5);
   const [nonce, setNonce] = useState(0);
+  // The whole world is chosen (a click on the globe far out, or the World step of the path)
+  const [worldOpen, setWorldOpen] = useState(false);
+  // Filter by operator type: one group at a time, or null for all (display.filter_fields of the places layer)
+  const [typeFilter, setTypeFilter] = useState<string | null>(null);
+  // The place that was clicked and may open as a fan (screen position); it shows only while its own card is open
+  const [fanSpot, setFanSpot] = useState<FanSpot | null>(null);
 
   const onFailed = useCallback((id: string) => setFailed((prev) => (prev.has(id) ? prev : new Set(prev).add(id))), []);
 
   const layers = useMemo(() => selectDataLayers(data), [data]);
-  const countries = useMemo(
-    () => buildCountries(groupByCountry(layers, data.metas, data.default_layer), data.metas, (l) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive),
-    [layers, data.metas, data.default_layer],
+  // Layers with display.map = false are not items of the map: no row, no fill, no points. They stay in the files and
+  // the values of the card, so there are two models: of the layers on the map and of all layers (SPEC_DC_world 9 p. 5).
+  const mapLayers = useMemo(() => layers.filter((l) => onMap(data.metas[l.meta_id])), [layers, data.metas]);
+  const modelsOf = useCallback(
+    (ls: typeof layers) => buildCountries(groupByCountry(ls, data.metas, data.default_layer), data.metas, (l) => MODULE_BY_TYPE[l.tiles.geometry_type].exclusive),
+    [data.metas, data.default_layer],
   );
+  const allModels = useMemo(() => modelsOf(mapLayers), [modelsOf, mapLayers]);
+  const fullModels = useMemo(() => modelsOf(layers), [modelsOf, layers]);
+  // Layers that cover several countries (coverage.iso3 with 2+ codes) are not tied to a country
+  const worldModel = allModels.find((c) => c.iso3 === WORLD) ?? null;
+  const fullWorld = fullModels.find((c) => c.iso3 === WORLD) ?? null;
+  const countries = useMemo(() => allModels.filter((c) => c.iso3 !== WORLD), [allModels]);
+  const rows = useMemo(() => buildRows(worldModel, countries, data.metas), [worldModel, countries, data.metas]);
+  // The panel on the left lists the layers of the whole world; the layers of one country are chosen in its card
+  const worldRows = useMemo(() => rows.filter((r) => r.iso3 === WORLD), [rows]);
+  const countryRows = useMemo(() => rows.filter((r) => r.iso3 !== WORLD && r.iso3 === country), [rows, country]);
 
   const model = countries.find((c) => c.iso3 === country) ?? null;
-  const countryName = model?.name ?? (country ? countryNameFromIso3(country) : '');
-  const indicator = model ? model.indicators.find((i) => i.key === indicatorKey) ?? model.indicators[0] ?? null : null;
+  const fullModel = fullModels.find((c) => c.iso3 === country) ?? null;
+  // Indicators that are not on the map (map = false): their values stay in the card of the country
+  const hiddenInds = useMemo(
+    () => [...(fullWorld?.indicators ?? []), ...(fullModel?.indicators ?? [])].filter((i) => !onMap(data.metas[i.levels[0].layer.meta_id])),
+    [fullWorld, fullModel, data.metas],
+  );
+  const countryName = (country ? data.countries.find((c) => c.iso3 === country)?.name : undefined) ?? model?.name ?? (country ? countryNameFromIso3(country) : '');
+  // The fill that is on: any country's indicator or a world one; it does not depend on the chosen country
+  const indicator = indicatorKey ? rows.find((r) => r.indicator?.key === indicatorKey)?.indicator ?? null : null;
+  const indCountry = indicator && indicator.iso3 !== WORLD ? indicator.iso3 : null;
 
   // Level a click selects, from the zoom; the fill is the finest layer of the indicator not finer than that
-  const selLevel = selectionLevel(zoom, data.level_zoom, levelsOfCountry(territory, country ?? ''));
+  const selLevel = selectionLevel(zoom, data.level_zoom, levelsOfCountry(territory, indCountry ?? country ?? ''));
   const fill = indicator ? fillLevelOf(indicator, selLevel) : null;
   const activeId = fill?.layer.layer_id ?? 'none';
   // No data at this level: plain polygons of the level are drawn instead of a layer of another level
-  const neutralLevel = country && indicator && !fill ? selLevel : null;
+  const neutralLevel = indCountry && !fill ? selLevel : null;
+  const neutralIds = useMemo(() => {
+    if (neutralLevel === null || !indCountry) return [];
+    if (neutralLevel === 0) return [indCountry];
+    if (!territory) return [];
+    return Object.entries(territory.units)
+      .filter(([id, u]) => u[0] === neutralLevel && isWithin(territory, id, indCountry))
+      .map(([id]) => id);
+  }, [neutralLevel, indCountry, territory]);
+  const dataCountryIds = useMemo(() => countries.map((c) => c.iso3), [countries]);
   const chosen: UnitRef | null = country ? unit ?? { unit_id: country, name: countryName, level: 0 } : null;
 
-  // Points and lines of the chosen country that are switched on
-  const overlaysOn = model ? model.overlays.filter((l) => overlays[l.layer_id]) : [];
-  // Only the chosen country's points and lines are drawn
+  // Points and lines that are switched on are drawn wherever they are, whatever country is chosen
+  const overlaysOn = useMemo(() => mapLayers.filter((l) => !MODULE_BY_TYPE[l.tiles.geometry_type].exclusive && overlays[l.layer_id]), [mapLayers, overlays]);
   const shownOverlays: Record<string, boolean> = Object.fromEntries(overlaysOn.map((l) => [l.layer_id, true]));
 
+  const ensureTerritory = useCallback(() => {
+    loadTerritory().then(setTerritory).catch(() => undefined);
+  }, []);
+
+  /**
+   * Choose a country (a click on the map or a layer of that country). Fill rule: no fill on, or a fill of another
+   * country -> the default indicator of this country turns on; a world fill stays; a country with no layers of its
+   * own leaves the fill as it is. `fly` moves the map to the country's layers.
+   */
   const selectCountry = useCallback(
-    (iso3: string) => {
+    (iso3: string, opts?: { key?: string; fly?: [number, number, number, number] | null }) => {
       const m = countries.find((c) => c.iso3 === iso3);
       setCountry(iso3);
+      setWorldOpen(false);
       setUnit(null);
       setCard(null);
       setNonce((n) => n + 1);
-      // The indicator: the default one if this country has it, otherwise its first
-      const byDefault = data.default_layer ? m?.indicators.find((i) => i.levels.some((x) => x.layer.layer_id === data.default_layer)) : undefined;
-      setIndicatorKey((byDefault ?? m?.indicators[0])?.key ?? null);
-      loadTerritory().then(setTerritory).catch(() => undefined);
-      if (m) {
-        const ind = byDefault ?? m.indicators[0];
-        const b = ind ? unionBbox(ind.levels.map((x) => x.layer), data.metas) : null;
-        if (b) mapRef.current?.fitBounds(b);
+      ensureTerritory();
+      let key = opts?.key ?? indicatorKey;
+      let fly = opts?.fly ?? null;
+      if (!opts?.key && m && m.indicators.length) {
+        const keep = indicator && (indicator.iso3 === WORLD || indicator.iso3 === iso3);
+        if (!keep) {
+          const byDefault = data.default_layer ? m.indicators.find((i) => i.levels.some((x) => x.layer.layer_id === data.default_layer)) : undefined;
+          const ind = byDefault ?? m.indicators[0];
+          key = ind.key;
+          fly = fly ?? unionBbox(ind.levels.map((x) => x.layer), data.metas);
+        }
       }
+      setIndicatorKey(key);
+      if (fly) mapRef.current?.fitBounds(fly);
     },
-    [countries, data.default_layer, data.metas],
+    [countries, data.default_layer, data.metas, indicator, indicatorKey, ensureTerritory],
   );
+
+  // Panel: a fill switch. A country's layer also chooses that country and flies to it; a world layer changes nothing else.
+  const onFill = (row: PanelRow) => {
+    if (indicatorKey === row.indicator?.key) {
+      setIndicatorKey(null);
+      return;
+    }
+    if (!row.indicator) return;
+    if (row.iso3 === WORLD) {
+      setIndicatorKey(row.indicator.key);
+      return;
+    }
+    selectCountry(row.iso3, { key: row.indicator.key, fly: unionBbox(row.indicator.levels.map((x) => x.layer), data.metas) });
+  };
+  const onOverlayRow = (row: PanelRow, on: boolean) => {
+    if (!row.layer) return;
+    setOverlays((prev) => ({ ...prev, [row.layer!.layer_id]: on }));
+    if (on && row.iso3 !== WORLD) {
+      const fly = unionBbox([row.layer], data.metas);
+      if (country !== row.iso3) selectCountry(row.iso3, { key: indicatorKey ?? undefined, fly });
+      else if (fly) mapRef.current?.fitBounds(fly);
+    }
+  };
 
   const onUnit = useCallback((u: UnitRef) => {
     setUnit(u.level === 0 ? null : u);
     setCard(null);
     setNonce((n) => n + 1);
-    loadTerritory().then(setTerritory).catch(() => undefined);
-  }, []);
+    ensureTerritory();
+  }, [ensureTerritory]);
 
-  const toWorld = () => {
+  const toWorld = useCallback(() => {
     setCountry(null);
     setUnit(null);
     setCard(null);
-    setIndicatorKey(null);
+    setWorldOpen(true);
+  }, []);
+  const backToGlobe = () => {
+    toWorld();
     mapRef.current?.fitWorld();
   };
 
@@ -95,7 +175,7 @@ export default function MapApp({ data }: { data: MapData }) {
     if (!country) return;
     if (unitId === country) {
       setUnit(null);
-      const b = indicator ? unionBbox(indicator.levels.map((x) => x.layer), data.metas) : null;
+      const b = indicator && indCountry === country ? unionBbox(indicator.levels.map((x) => x.layer), data.metas) : null;
       if (b) mapRef.current?.fitBounds(b);
       return;
     }
@@ -115,10 +195,12 @@ export default function MapApp({ data }: { data: MapData }) {
 
   // The record of a point or line shown in the card (outline in its module)
   const selected = (() => {
-    if (!card || card.type !== 'record') return null;
+    if (!card || card.type === 'layer') return null;
     const layer = data.layers.find((l) => l.layer_id === card.layerId);
     if (!layer) return null;
-    const v = card.props[MODULE_BY_TYPE[layer.tiles.geometry_type].keyField];
+    // several objects at one spot: the outline sits on the spot, so any of them marks it
+    const props = card.type === 'record' ? card.props : card.items[0];
+    const v = props?.[MODULE_BY_TYPE[layer.tiles.geometry_type].keyField];
     return v === undefined || v === null ? null : { layerId: card.layerId, key: String(v) };
   })();
 
@@ -129,7 +211,7 @@ export default function MapApp({ data }: { data: MapData }) {
     indicator && !fill && finest
       ? `No data at this level in this release. Zoom in to see ${levelWord(finest.level, indicator, indicator.iso3, data.unit_words).toLowerCase()} data.`
       : null;
-  const legendLayers = fill ? [fill.layer, ...overlaysOn] : [];
+  const legendLayers = [...(fill ? [fill.layer] : []), ...overlaysOn];
 
   return (
     <div className="flex min-h-0 flex-1 flex-col">
@@ -144,15 +226,42 @@ export default function MapApp({ data }: { data: MapData }) {
           selectLevel={selLevel}
           selectedUnit={chosen}
           neutralLevel={neutralLevel}
-          dataCountries={countries.map((c) => c.iso3)}
+          neutralIds={neutralIds}
+          dataCountries={dataCountryIds}
           onSelect={setCard}
-          onCountry={selectCountry}
+          onCountry={(iso3) => selectCountry(iso3)}
+          onWorld={toWorld}
+          onFan={(f) => setFanSpot(f && Number(f.props[data.metas[data.layers.find((l) => l.layer_id === f.layerId)?.meta_id ?? '']?.display?.count_field ?? '']) <= data.fan_max ? f : null)}
+          worldOn={worldOpen && !country}
+          typeFilter={typeFilter}
           onUnit={onUnit}
           onZoom={setZoom}
           onReady={onReady}
           onFailed={onFailed}
         />
-        <LegendCard data={data} heading={heading} note={note} layers={legendLayers} covered={card !== null} countries={countries} onCountry={selectCountry} />
+        {fanSpot && card?.type === 'record' && card.layerId === fanSpot.layerId && card.props.record_id === fanSpot.props.record_id && (
+          <Fan data={data} spot={fanSpot} typeFilter={typeFilter} onOpen={(layer, row) => setCard({ type: 'record', layerId: layer.layer_id, props: row })} />
+        )}
+        <LegendCard
+          data={data}
+          heading={heading}
+          note={note}
+          layers={legendLayers}
+          covered={card !== null}
+          nonce={nonce}
+          rows={worldRows}
+          activeFill={indicator?.key ?? null}
+          overlays={overlays}
+          failed={failed}
+          onFill={onFill}
+          onOverlay={onOverlayRow}
+          onInfo={(id) => setCard({ type: 'layer', layerId: id })}
+          onSearch={(c) => selectCountry(c.iso3, { fly: c.bbox })}
+          allRows={rows}
+          typeFilter={typeFilter}
+          onTypeFilter={setTypeFilter}
+          onFound={(row) => (row.kind === 'fill' ? (indicatorKey === row.indicator?.key ? undefined : onFill(row)) : onOverlayRow(row, true))}
+        />
         <MapNav preview={data.channel === 'dev'} />
         {/* Zoom and the level a click selects, above the zoom buttons */}
         <p className="pointer-events-none absolute bottom-[86px] right-[10px] z-10 rounded bg-surface/90 px-1.5 py-0.5 text-[11px] font-semibold text-ink2 max-md:bottom-[62px] max-md:left-[112px] max-md:right-auto" aria-live="off">
@@ -160,26 +269,27 @@ export default function MapApp({ data }: { data: MapData }) {
         </p>
         <TerritoryPanel
           data={data}
-          countries={countries}
           countryIso={country}
           countryName={countryName}
-          model={model}
-          indicator={indicator}
-          overlays={overlays}
-          failed={failed}
+          model={fullModel}
+          hiddenIndicators={hiddenInds}
+          indicator={indicator && country && (indicator.iso3 === WORLD || indicator.iso3 === country) ? indicator : null}
           unit={chosen}
           territory={territory}
           hidden={card !== null}
           nonce={nonce}
           selLevel={selLevel}
-          onIndicator={(k) => { setIndicatorKey(k); }}
-          onOverlay={(id, on) => setOverlays((prev) => ({ ...prev, [id]: on }))}
-          onCountry={selectCountry}
-          onWorld={toWorld}
-          onCrumb={onCrumb}
+          countryRows={countryRows}
+          overlays={overlays}
+          failed={failed}
+          onFill={onFill}
+          onOverlay={onOverlayRow}
           onInfo={(id) => setCard({ type: 'layer', layerId: id })}
+          onWorld={backToGlobe}
+          onCrumb={onCrumb}
         />
-        <InfoCard data={data} card={card} onClose={() => setCard(null)} />
+        {worldOpen && !country && <WorldCard world={fullWorld} hidden={card !== null} onClose={() => setWorldOpen(false)} />}
+        <InfoCard data={data} card={card} typeFilter={typeFilter} onClose={() => setCard(null)} />
       </div>
 
       {/* Always visible, including on a phone (SPEC_WEB 4.6) */}

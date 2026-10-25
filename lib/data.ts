@@ -66,10 +66,46 @@ export interface Meta {
     value_field?: string;
     unit?: string;
     breaks?: number[];
+    /** breaks are the LOWER bounds of the classes (1, 10, 100, 1000 -> 1-9, 10-99, 100-999, 1000+) */
+    breaks_fixed?: boolean;
     zero_class?: boolean;
+    /** point layers: the field that sets the size, its thresholds and (for a class field) the classes in order */
+    size_field?: string;
+    size_breaks?: number[];
+    size_classes?: string[];
     legend_title?: string;
+    legend_note?: string;
+    legend_zero?: string;
+    legend_unknown?: string;
+    legend_point?: string;
+    /** false: the layer is not a map item (not drawn, not in the layers panel); files, /data and citation stay (abf-dc 0.2.0) */
+    map?: boolean;
+    /** point layers of places: from `count_breaks[0]` records the place is a badge with the number in this field, below it a point by size_field */
+    count_field?: string;
+    /** lower bounds of the badge classes, increasing (2, 10 -> 2-9 and 10+) */
+    count_breaks?: number[];
+  /** words the layer is found by in the search (besides its title, source, topic, scope and levels) */
+  tags?: string[];
+    /** operator type of the place (abf-dc 0.2.0): the field that sets the colour of a point and its classes in the legend order; the last class beyond the palette is grey */
+    color_field?: string;
+    color_classes?: string[];
+    /** group -> the column that counts the records of that group in a place (n_type_<group>): the filter by type */
+    filter_fields?: Record<string, string>;
+    legend_type_title?: string;
+    legend_type_note?: string;
+    legend_type_labels?: Record<string, string>;
+    legend_type_filter_all?: string;
+    legend_layer_note?: string;
+    legend_count_classes?: string[];
+    list_title?: string;
+    list_note?: string;
+    /** caption of the fan of records (a schematic layout, not positions) */
+    fan_note?: string;
     tile_fields?: string[];
     home_bbox?: [number, number, number, number];
+    /** panel topic; absent in older metas (then derived from the domain) */
+    topic?: string;
+    series?: string;
   };
 }
 
@@ -137,8 +173,14 @@ export interface AbfData {
   default_country: string | null;
   /** zoom at which the selection level changes to ADM1 / ADM2 (never below the boundary tiles minzoom) */
   level_zoom: { ADM1: number; ADM2: number };
+  /** below this zoom a click on the globe chooses the whole world (content/site.json world_zoom) */
+  world_zoom: number;
+  /** a click on a place with more records than this opens the list only, no fan (content/site.json fan_max) */
+  fan_max: number;
   /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
   unit_words: Record<string, Record<string, string>>;
+  /** every country of the boundaries (name from units.csv) with its box [w, s, e, n] (e may exceed 180), for the search */
+  countries: { iso3: string; name: string; bbox: [number, number, number, number] | null }[];
   attribution: { family: LicenseInfo['family']; sources: AttributionSource[] }[];
   warnings: string[];
 }
