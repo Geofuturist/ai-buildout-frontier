@@ -28,7 +28,7 @@ description: >-
   in the United States, in the county the record gives. A point marks the town, not the site. Identical
   records are not merged, because they may be different sites that the table does not tell apart.
   Capacity is the Atlas's size class as given; where the Atlas gives none, it is shown as unknown, not
-  estimated.
+  estimated. On the project map the records are shown by place (dc_atlas_count_places).
 fields:
 - name: record_id
   type: string
@@ -275,7 +275,7 @@ sources:
       National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under
       CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas
       (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from
-      their addresses and names, and counted by country. These figures are not the Atlas as published.
+      their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published.
   rights_basis:
     type: license
     checked_by: "script:licence_extract.py"
@@ -438,8 +438,9 @@ coverage:
     name, not the site, which may lie several kilometers away. No point is at site precision.
   - >-
     1,583 U.S. records (16.0%) are placed only in their county, and 2,195 records (22.3%) have no place
-    below the country: outside the United States, 2,160 of 5,827 records (37.1%). These records are in
-    the files and in the country counts but are not drawn on the map.
+    below the country: outside the United States, 2,160 of 5,827 records (37.1%).
+    The 1,583 county records are counted by county in dc_atlas_count_usa_adm2, and the 2,195 records without a place only by
+    country. Neither group is drawn on the map.
   - >-
     The place of 1,686 records (17.1%) comes from the record name, because their address gives no town
     or they have no address. We tested this rule on 4,160 Atlas records whose town is known from their

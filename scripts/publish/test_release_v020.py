@@ -29,12 +29,15 @@ from shapely.geometry import box  # noqa: E402
 import build_release as BR  # noqa: E402
 import layer_build as LB  # noqa: E402
 import patch_dc_atlas_points_v020 as PP  # noqa: E402
+import patch_dc_texts_v020 as PT  # noqa: E402
 from common import GateError, Report, load_yaml, sha256_file  # noqa: E402
 
 PTS = ROOT / "data" / "abf-dc" / "v0.1.0" / "dc_atlas_points.csv"
 UNITS = ROOT / "data" / "abf-boundaries" / "v0.2.0" / "units.csv"
 STEP = ROOT / "scripts" / "dc" / "dc_count_v020.py"
 HAVE_INPUTS = PTS.exists() and UNITS.exists()
+GROUPS = ["colocation", "telecom", "developer_investor", "cloud", "enterprise_it", "ai_compute", "other"]
+C_TYPE_COLS = [f"n_type_{g}" for g in GROUPS]
 
 
 def make_boundaries(root: Path) -> LB.Boundaries:
@@ -93,7 +96,7 @@ class NewLayers(unittest.TestCase):
         if "points_v010" in (c["input"].get("files") or {}):
             c["input"]["files"]["points_v010"] = str(PTS)
         for e in c.get("extra_files") or []:
-            e["path"] = str(self.step_out / "county_records.csv")
+            e["path"] = str(self.step_out / e["publish_as"])
         return c
 
     def build_both(self, out: Path, channel: str = "final"):
@@ -122,17 +125,24 @@ class NewLayers(unittest.TestCase):
         _, lp, lc = self.build_both(out)
         d = lp.meta["display"]
         self.assertEqual((d["count_field"], d["count_breaks"], d["size_field"], d["size_breaks"]), ("n_records", [2, 10], "power_class", [10, 100, 1000]))
+        self.assertEqual((d["color_field"], d["color_classes"], d["symbol" if "symbol" in d else "color_field"]), ("type_group", GROUPS, "type_group"))
+        self.assertEqual(d["filter_fields"], {g: f"n_type_{g}" for g in GROUPS})
+        self.assertEqual(d["legend_count_classes"], ["2–9 records", "10 or more records"])
+        self.assertEqual(d["list_title"], "{n} Atlas records at {place_name}")
+        self.assertEqual(set(d["legend_type_labels"]), set(GROUPS))
         self.assertEqual(lp.tile_build["args"][0], "-r1")
         self.assertEqual(lp.tile_build["geometry_type"], "point")
         self.assertEqual(lp.tile_fields, ["record_id", "place_ref", "place_name", "n_records", "power_class", "n_operating_or_construction", "n_planned",
                                           "n_retired", "n_class_lt10", "n_class_10_99", "n_class_100_999", "n_class_ge1000", "n_class_unknown",
-                                          "iso3_source", "control_iso3"])
+                                          "type_group", *C_TYPE_COLS, "iso3_source", "control_iso3"])
         dc = lc.meta["display"]
         self.assertEqual((dc["value_field"], dc["breaks"], dc["breaks_fixed"], dc["zero_class"]), ("n_records", [1, 3, 10, 30, 100], True, True))
         west, _, east, _ = dc["home_bbox"]
         self.assertGreater(west, -125)      # no Alaska, no Hawaii
         self.assertEqual([e["file"] for e in lc.meta["extra_files"]], ["county_records.csv"])
+        self.assertEqual([e["file"] for e in lp.meta["extra_files"]], ["operator_type_groups.csv"])
         self.assertTrue((out / "county_records.csv").exists())
+        self.assertTrue((out / "operator_type_groups.csv").exists())
         for meta in (lp.meta, lc.meta):
             BR.validate_meta(meta)
 
@@ -144,6 +154,11 @@ class NewLayers(unittest.TestCase):
         self.assertEqual((df["n_records"].astype(int) == 1).sum(), 1424)
         self.assertTrue((df.loc[df["n_records"].astype(int) > 1, "power_class"] == "").all())
         self.assertNotIn("unit_id", df.columns)
+        n = df["n_records"].astype(int)
+        self.assertTrue((df[C_TYPE_COLS].astype(int).sum(axis=1) == n).all())
+        self.assertEqual([int(df[c].astype(int).sum()) for c in C_TYPE_COLS], [2774, 1089, 671, 562, 386, 138, 467])
+        self.assertTrue((df.loc[n > 1, "type_group"] == "").all())
+        self.assertTrue((df.loc[n == 1, "type_group"] != "").all())
 
     def test_county_layer_not_covered(self):
         out = self.tmp / "o4"
@@ -193,6 +208,33 @@ class NewLayers(unittest.TestCase):
             return df
         self.assertIn("power_class", self.mutate("dc_atlas_count_places", f))
 
+    def test_cross_check_stops_places_type_column(self):
+        def f(df):
+            i = df.index[df["n_records"] == "1"][0]
+            c = next(c for c in C_TYPE_COLS if df.loc[i, c] == "1")
+            o = next(c2 for c2 in C_TYPE_COLS if c2 != c)
+            df.loc[i, c], df.loc[i, o] = "0", "1"                     # the one record moved to another group
+            return df
+        self.assertIn("n_type_", self.mutate("dc_atlas_count_places", f))
+
+    def test_cross_check_stops_places_type_group(self):
+        def f(df):
+            i = df.index[df["n_records"] == "1"][0]
+            df.loc[i, "type_group"] = "other" if df.loc[i, "type_group"] != "other" else "cloud"
+            return df
+        self.assertIn("type_group", self.mutate("dc_atlas_count_places", f))
+
+    def test_cross_check_stops_groups_table_changed(self):
+        def f(df):                                                    # Telecom moved to 'other' in the published table only
+            df.loc[df["operator_type"] == "Telecom", "type_group"] = "other"
+            return df
+        self.assertIn("n_type_", self.mutate("operator_type_groups.csv", f))
+
+    def test_cross_check_stops_type_not_in_groups_table(self):
+        def f(df):
+            return df[df["operator_type"] != "Crypto"]
+        self.assertIn("not in operator_type_groups.csv", self.mutate("operator_type_groups.csv", f))
+
     def test_cross_check_stops_place_ref_missing(self):
         def f(df):
             return df.iloc[1:]
@@ -223,7 +265,7 @@ class NewLayers(unittest.TestCase):
     def release_run(self, channel: str):
         import argparse
         import yaml
-        base = self.tmp / f"rel_{channel}"
+        base = self.tmp / f"rel_{channel}_{len(list(self.tmp.glob('rel_*')))}"
         base.mkdir()
         (base / "reg.csv").write_text("iso3,level,verified\nUSA,ADM2,true\n", encoding="utf-8")
         layer_files = []
@@ -251,15 +293,16 @@ class NewLayers(unittest.TestCase):
         args = argparse.Namespace(release=str(rf), out=str(base / "out"), channel=channel, built_at=None, override=None)
         return args, base / "out" / "abf-dc-v0.2.0"
 
-    def test_release_run_dev_has_g13_warnings_and_no_stop(self):
+    def test_release_run_dev_has_no_g13_and_no_stop(self):
         args, out = self.release_run("dev")
         self.assertEqual(BR.run(args), 0)
         report = (out / "release_report.md").read_text(encoding="utf-8")
-        self.assertIn("unfilled places in public text (G13)", report)
-        self.assertIn("cross-check: 9 count columns of dc_atlas_count_places", report)
+        self.assertNotIn("unfilled places in public text (G13)", report)
+        self.assertIn("cross-check: 16 count columns of dc_atlas_count_places", report)
         self.assertIn("cross-check: 9 count columns of dc_atlas_count_usa_adm2", report)
         zf = (out / "zenodo_files.txt").read_text(encoding="utf-8")
         self.assertIn("county_records.csv", zf)
+        self.assertIn("operator_type_groups.csv", zf)
         self.assertIn("dc_atlas_count_places.csv", zf)
         plan = json.loads((out / "build_plan.json").read_text(encoding="utf-8"))
         ids = [x["layer_id"] for x in plan["layers"]]
@@ -271,8 +314,19 @@ class NewLayers(unittest.TestCase):
         self.assertIs(points_meta["display"]["map"], False)
         self.assertEqual(points_meta["release"]["version"], "0.2.0")
 
+    def test_release_run_final_is_clean(self):
+        args, out = self.release_run("final")
+        self.assertEqual(BR.run(args), 0)
+        meta = json.loads((out / "dc_atlas_count_places.meta.json").read_text(encoding="utf-8"))
+        self.assertIn("by place and by U.S. county", json.dumps(meta))
+
     def test_release_run_final_stops_on_unfilled_texts(self):
+        import yaml
         args, _ = self.release_run("final")
+        f = Path(args.release).parent / "dc_atlas_count_places.yaml"
+        c = yaml.safe_load(f.read_text(encoding="utf-8"))
+        c["description"] = "[RES] " + c["description"]
+        f.write_text(yaml.safe_dump(c, allow_unicode=True, sort_keys=False, width=200), encoding="utf-8")
         with self.assertRaises(GateError) as cm:
             BR.run(args)
         self.assertIn("G13", str(cm.exception))
@@ -304,6 +358,37 @@ class DisplayKeys(unittest.TestCase):
     def test_map_boolean(self):
         with self.assertRaises(GateError):
             self.call({"map": "no"})
+
+    def color(self, **kw):
+        names = ["a", "b", "g", "n_x", "n_y"]
+        table = pd.DataFrame({"a": [1, 2], "b": [2, 3], "g": ["x", ""], "n_x": [1, 0], "n_y": [0, 1]})
+        d = {"color_field": "g", "color_classes": ["x", "y"], "filter_fields": {"x": "n_x", "y": "n_y"}, "legend_type_labels": {"x": "X", "y": "Y"}}
+        d.update(kw)
+        d = {k: v for k, v in d.items() if v is not None}
+        LB.check_display_keys({"layer_id": "x"}, d, names, table)
+
+    def test_color_ok(self):
+        self.color()
+        self.color(symbol="diamond")
+
+    def test_color_errors(self):
+        for kw in ({"color_field": "zz"}, {"color_classes": ["x"]}, {"color_classes": ["x", "x", "y"]}, {"color_classes": []},
+                   {"filter_fields": {"x": "n_x"}}, {"filter_fields": {"x": "n_x", "y": "nope"}},
+                   {"legend_type_labels": {"x": "X"}}, {"symbol": "star"}):
+            with self.assertRaises(GateError, msg=str(kw)):
+                self.color(**kw)
+
+    def test_color_keys_need_color_field(self):
+        for kw in ({"color_classes": ["x"]}, {"filter_fields": {"x": "a"}}, {"legend_type_title": "t"}):
+            with self.assertRaises(GateError, msg=str(kw)):
+                LB.check_display_keys({"layer_id": "x"}, kw, ["a"], pd.DataFrame({"a": [1]}))
+
+    def test_legend_count_classes(self):
+        self.call({"count_field": "a", "count_breaks": [2, 10], "legend_count_classes": ["2-9", "10+"]})
+        with self.assertRaises(GateError):
+            self.call({"count_field": "a", "count_breaks": [2, 10], "legend_count_classes": ["2-9"]})
+        with self.assertRaises(GateError):
+            self.call({"legend_count_classes": ["2-9"]})
 
 
 class Identity(unittest.TestCase):
@@ -439,11 +524,19 @@ class StaticFiles(unittest.TestCase):
         self.assertTrue(load_yaml(ROOT / "layers" / "dc_atlas_count_places.yaml")["title"].endswith("· places"))
         self.assertTrue(load_yaml(ROOT / "layers" / "dc_atlas_count_usa_adm2.yaml")["title"].endswith("· county"))
 
-    def test_new_yamls_texts_are_marked_for_res(self):
+    def test_new_yamls_have_the_texts_of_res_and_no_marks(self):
         for n in ("dc_atlas_count_places", "dc_atlas_count_usa_adm2"):
-            c = load_yaml(ROOT / "layers" / f"{n}.yaml")
-            self.assertIn("[RES]", c["description"])
-            self.assertIn("[RES]", c["verification"]["method"])
+            text = (ROOT / "layers" / f"{n}.yaml").read_text(encoding="utf-8")
+            self.assertNotIn("[RES]", text)
+            self.assertIn("by place and by U.S. county. These figures are not the Atlas as published.", " ".join(text.split()))
+        pl = load_yaml(ROOT / "layers" / "dc_atlas_count_places.yaml")
+        self.assertTrue(pl["description"].startswith("Data-center records of the Atlas of Data Center Politics that have a town point"))
+        self.assertEqual([f["name"] for f in pl["fields"]][-9:-7], ["power_class", "type_group"])
+        self.assertEqual([f["name"] for f in pl["fields"]][-7:], C_TYPE_COLS)
+        self.assertEqual(len(pl["coverage"]["known_gaps"]), 7)
+        self.assertEqual(pl["extra_files"][0]["publish_as"], "operator_type_groups.csv")
+        co = load_yaml(ROOT / "layers" / "dc_atlas_count_usa_adm2.yaml")
+        self.assertEqual(len(co["coverage"]["known_gaps"]), 5)
 
     def test_points_yaml_has_the_patch(self):
         c = load_yaml(ROOT / "layers" / "dc_atlas_points.yaml")
@@ -453,8 +546,59 @@ class StaticFiles(unittest.TestCase):
     def test_schema_knows_the_new_display_keys(self):
         schema = json.loads((ROOT / "schemas" / "meta.schema.json").read_text(encoding="utf-8"))
         props = schema["$defs"]["display"]["properties"]
-        for k in ("map", "count_field", "count_breaks"):
+        for k in ("map", "count_field", "count_breaks", "color_field", "color_classes", "filter_fields", "symbol", "legend_type_title",
+                  "legend_type_note", "legend_type_labels", "legend_type_filter_all", "legend_count_classes", "list_title", "list_note",
+                  "legend_layer_note"):
             self.assertIn(k, props)
+
+
+class TextPatchScript(unittest.TestCase):
+    """patch_dc_texts_v020.py on the 0.1.0 texts (as in git) in LF and in CRLF."""
+    def git_text(self, name: str) -> str:
+        r = subprocess.run(["git", "show", f"HEAD:layers/{name}"], cwd=ROOT, capture_output=True)
+        if r.returncode:
+            self.skipTest("git history not available")
+        return r.stdout.decode("utf-8").replace("\r\n", "\n")
+
+    def test_points(self):
+        old = self.git_text("dc_atlas_points.yaml")
+        new, done = PT.patch_points(old)
+        self.assertEqual(len(done), 3)
+        self.assertIn("counted by country, by place and by U.S. county.", new)
+        self.assertIn("estimated. On the project map the records are shown by place (dc_atlas_count_places).", new)
+        self.assertIn("The 1,583 county records are counted by county in dc_atlas_count_usa_adm2", new)
+        self.assertNotIn("but are not drawn on the map", new)
+        self.assertEqual(PT.patch_points(new), (new, []))
+        c = __import__("yaml").safe_load(new)
+        self.assertIn("Neither group is drawn on the map.", " ".join(c["coverage"]["known_gaps"][2].split()))
+
+    def test_adm0_and_epoch(self):
+        a, done = PT.patch_adm0(self.git_text("dc_atlas_count_adm0.yaml"))
+        self.assertEqual(done, ["attribution_text"])
+        self.assertEqual(PT.patch_adm0(a), (a, []))
+        e, done = PT.patch_epoch(self.git_text("dc_epoch_points.yaml"))
+        self.assertEqual(len(done), 1)
+        c = __import__("yaml").safe_load(e)
+        self.assertEqual(c["display"]["symbol"], "diamond")
+        self.assertEqual(c["display"]["legend_layer_note"], "AI data centers that Epoch AI selects by their AI computing capacity.")
+        self.assertEqual(PT.patch_epoch(e), (e, []))
+
+    def test_main_keeps_crlf(self):
+        with tempfile.TemporaryDirectory() as t:
+            root = Path(t)
+            (root / "layers").mkdir()
+            for n in ("dc_atlas_points.yaml", "dc_atlas_count_adm0.yaml", "dc_epoch_points.yaml"):
+                (root / "layers" / n).write_bytes(self.git_text(n).replace("\n", "\r\n").encode("utf-8"))
+            old_root = PT.REPO_ROOT
+            PT.REPO_ROOT = root
+            try:
+                self.assertEqual(PT.main(), 0)
+                for n in ("dc_atlas_points.yaml", "dc_atlas_count_adm0.yaml", "dc_epoch_points.yaml"):
+                    b = (root / "layers" / n).read_bytes()
+                    self.assertEqual(b.count(b"\n"), b.count(b"\r\n"), n)
+                    self.assertNotIn(b"counted by country.", b)
+            finally:
+                PT.REPO_ROOT = old_root
 
 
 class PatchScript(unittest.TestCase):

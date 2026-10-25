@@ -1,5 +1,5 @@
-# abf-dc v0.2.0 · new layer: Atlas records with a point, counted by place. Texts: DRAFT by [CODE-PUB]2, [RES]7 replaces them (SPEC_DC_world_v0_2_0 r1 section 5).
-# Data: scripts/dc/dc_count_v020.py (SPEC section 2.2). Every `[RES]` below is a G13 mark: a warning in dev, a stop in final.
+# abf-dc v0.2.0 · new layer: Atlas records with a town point, counted by place. Texts: RES_texts_DC_v0_2_0 r2 sections 1 and 9.
+# Data: scripts/dc/dc_count_v020.py (SPEC_DC_world_v0_2_0 r2 sections 2.2 and 8).
 layer_id: dc_atlas_count_places
 title: "Data centers · Atlas of Data Center Politics · places"
 title_ru: "ЦОД · Atlas of Data Center Politics · места"
@@ -18,9 +18,13 @@ input:
     frame_adm0: 'D:\GISData\AI\DC\sources\frame\adm0.parquet'
     frame_units: 'D:\GISData\AI\DC\sources\frame\units.csv'
 description: >-
-  [RES] Draft. Number of data-center records of the Atlas of Data Center Politics that have a town point, counted
-  by place: one row for each of the 2,303 places (a GeoNames town or a Census place). A place is a town, not a
-  site; the records of a place may be different sites. The counts are those of dc_atlas_points.
+  Data-center records of the Atlas of Data Center Politics that have a town point, counted by place: one row
+  for each of the 2,303 towns and U.S. Census places at which the project placed at least one record of
+  dc_atlas_points. A place is a town, not a site. Its records may be separate sites kilometers apart, and the
+  Atlas table does not say how they relate. Each row counts the records of the place by Atlas status, size
+  class and operator-type group, and for a place with one record it also gives that record's size class and
+  group. The counts are made from the records of abf-dc 0.1.0, which this version publishes unchanged. The
+  3,778 records without a town point are not in this layer.
 fields:
 - name: record_id
   type: string
@@ -63,7 +67,7 @@ fields:
 - name: ref
   type: string
   nullable: false
-  description: "Where the row comes from: the file and the records of dc_atlas_points of abf-dc 0.1.0 that it counts (the records with this place_ref)."
+  description: "The records counted in the row: the records of dc_atlas_points (abf-dc 0.1.0) with this place_ref."
 - name: checked_at
   type: datetime
   nullable: false
@@ -76,7 +80,7 @@ fields:
   type: integer
   nullable: false
   min: 0
-  description: "Number of Atlas data-center records of the place."
+  description: "Number of Atlas data-center records placed at this town."
 - name: n_operating_or_construction
   type: integer
   nullable: false
@@ -122,9 +126,55 @@ fields:
   nullable: true
   allowed_values: [lt10, "10_99", "100_999", ge1000]
   description: >-
-    Size class of the record, as the Atlas gives it, for a place with one record: lt10 (below 10 MW), 10_99, 100_999,
-    ge1000 (above 999 MW). Empty for a place with two or more records.
-  null_meaning: "The place has two or more records (n_records > 1), or its one record has the Atlas size class Unknown (n_records = 1)."
+    Size class of the one record of the place, as the Atlas gives it: lt10 (Small, below 10 MW), 10_99 (Large,
+    10–99 MW), 100_999 (Hyperscale, 100–999 MW), ge1000 (Gigascale, above 999 MW). Given only for a place with
+    one record; for more records the classes are in the n_class_ columns.
+  null_meaning: >-
+    The place has two or more records (n_records > 1), or its one record has the Atlas size class Unknown
+    (n_records = 1).
+- name: type_group
+  type: string
+  nullable: true
+  allowed_values: [colocation, telecom, developer_investor, cloud, enterprise_it, ai_compute, other]
+  description: >-
+    Operator-type group of the one record of the place (see operator_type_groups.csv); empty for a place with two or
+    more records.
+  null_meaning: "The place has two or more records (n_records > 1)."
+- name: n_type_colocation
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records whose Atlas operator type is Colocation."
+- name: n_type_telecom
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records whose Atlas operator type is Telecom."
+- name: n_type_developer_investor
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records whose Atlas operator type is Developer, Asset Manager, Private Equity, Lender or Construction."
+- name: n_type_cloud
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records whose Atlas operator type is Cloud."
+- name: n_type_enterprise_it
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records whose Atlas operator type is Managed IT, Enterprise or Fintech."
+- name: n_type_ai_compute
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records whose Atlas operator type is AI Compute."
+- name: n_type_other
+  type: integer
+  nullable: false
+  min: 0
+  description: "Records whose Atlas operator type is Crypto, Energy, Utility, Public, Government, Education, Regulator or Unknown."
 geometry:
   lon: lon
   lat: lat
@@ -134,12 +184,13 @@ geometry:
 iso3_columns: [iso3_source, iso3_frame, control_iso3]
 g7_source_value_fields: []
 check_field_formats: true
-# Numbers of SPEC_DC_world_v0_2_0 section 2.4 (also stated in the texts of [RES]7); a difference stops the final build.
+# Numbers of SPEC_DC_world_v0_2_0 section 2.4 and section 8 item 4 (also stated in the texts of RES7); a difference stops the final build.
 expected_counts:
   rows: 2303
-  sums: {n_records: 6087}
+  sums: {n_records: 6087, n_type_colocation: 2774, n_type_telecom: 1089, n_type_developer_investor: 671, n_type_cloud: 562, n_type_enterprise_it: 386, n_type_ai_compute: 138, n_type_other: 467}
   value_counts_listed:
     coord_precision: {city: 2303}
+    type_group: {colocation: 474, telecom: 233, developer_investor: 253, cloud: 115, enterprise_it: 124, ai_compute: 39, other: 186}
 sources:
 
 - source_id: atlas_of_data_center_politics
@@ -161,7 +212,7 @@ sources:
       National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under
       CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas
       (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from
-      their addresses and names, and counted by country. These figures are not the Atlas as published.
+      their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published.
   rights_basis:
     type: license
     checked_by: "script:licence_extract.py"
@@ -249,6 +300,14 @@ sources:
       abf-boundaries v0.2.0 is published by this project under CC BY 4.0 (Zenodo record
       10.5281/zenodo.23454136); the sources of its outlines are listed in its own meta.json.
   input_refs: [frame_adm0, frame_units]
+extra_files:
+- path: 'D:\GISData\AI\DC\out\abf-dc-v0.2.0\operator_type_groups.csv'
+  publish_as: operator_type_groups.csv
+  unique_column: operator_type
+  description: >-
+    The 20 operator types of the Atlas of Data Center Politics and the group under which the project shows each on
+    the map, with the number of records of each type. The groups are for display only; the records keep the Atlas
+    type in operator_type.
 verification:
   levels:
     source_as_is: 0.0
@@ -256,9 +315,12 @@ verification:
     human: 0.0
   sample_share: {}
   method: >-
-    [RES] Draft. The places are counted by script from the published records of dc_atlas_points (abf-dc 0.1.0); the
-    build stops if the counts do not add up to the 6,087 records with a town point. No new check by an agent was made:
-    the layer counts records that were already checked.
+    Places are counted by script from the published records of dc_atlas_points (abf-dc 0.1.0); a place is the
+    place_ref of a record. The build stops if the records of one place differ in point, name or country, if the
+    places do not add up to the 6,087 records with a town point, or if the counts by status, by size class or by
+    operator-type group in a row do not add up to n_records. No new check by an agent was made: the layer only
+    counts records whose places were set by rules and checked by sample in abf-dc 0.1.0, as described in
+    dc_atlas_points.
 freshness:
   source_cadence: irregular
   next_check: "2027-01-31"
@@ -266,7 +328,32 @@ coverage:
   geography: "Places of the 126 countries and territories listed in the Atlas national tables"
   iso3_from: iso3_source
   known_gaps:
-  - "[RES] Draft. A place is a town point, not a site. 3,778 of the 9,865 Atlas records have no town point and are not in this layer."
+  - >-
+    A place is a town point, not a site. 4,663 records share their place with at least one other record, and
+    109 places hold 10 or more records each (Shanghai 80, Beijing 70, Ashburn 57). The records of one place may
+    be separate sites, buildings or phases of one site, or repeats.
+  - >-
+    3,778 of the 9,865 Atlas records are not in this layer: 1,583 U.S. records placed only in a county, which are
+    counted in dc_atlas_count_usa_adm2, and 2,195 records without a place below the country, which are counted
+    only by country (dc_atlas_count_adm0).
+  - >-
+    The town of each record comes from its address or its name, by the rules described in dc_atlas_points.
+    1,686 of the 6,087 records with a point take their town from the record name; in a test this rule gave the
+    same town as the address in 86.9% of cases.
+  - "Counts follow the Atlas rows: records identical in every field are counted separately."
+  - >-
+    The size class is the Atlas's own, and the Atlas does not state whether it refers to IT power or to the
+    whole facility. 296 of the 1,424 places with one record have the class Unknown.
+  - >-
+    The points of four places in border towns (Gibraltar, Sittard, Grevenmacher, Lauterbourg) fall in the
+    neighboring country on the generalized 1:10 million outlines, so iso3_frame differs from iso3_source. One
+    place, Simferopol, lies in Crimea, which abf-boundaries v0.2.0 shows under Russian control and records as
+    claimed by Ukraine (control_iso3). Neither is a position of the project.
+  - >-
+    The operator type is the Atlas's type of the operator of a record, not the use of the site; we found no
+    definition of the types on the Atlas pages we read. The groups are the project's (operator_type_groups.csv).
+    The Atlas type AI Compute does not mark AI data centers as Epoch AI does: the 63 Epoch AI sites found in the
+    Atlas match 75 Atlas records, of which 39 have the type Cloud, 24 Colocation and 10 AI Compute.
 display:
   geometry_type: point
   size_field: power_class
@@ -274,8 +361,39 @@ display:
   size_breaks: [10, 100, 1000]
   count_field: n_records
   count_breaks: [2, 10]
-  legend_title: "[RES] Draft: records per place"
-  tile_fields: [record_id, place_ref, place_name, n_records, power_class, n_operating_or_construction, n_planned, n_retired, n_class_lt10, n_class_10_99, n_class_100_999, n_class_ge1000, n_class_unknown, iso3_source, control_iso3]
+  legend_title: "Atlas records per place"
+  legend_note: >-
+    A place is a town, not a site. A place with one record is drawn by the record's size class; a place with two
+    or more records shows their number.
+  legend_count_classes: ["2–9 records", "10 or more records"]
+  legend_unknown: "One record, size class unknown"
+  legend_point: "Point at the town, not at the site"
+  list_title: "{n} Atlas records at {place_name}"
+  list_note: "Records at one town point may be separate sites. Select a record for its details."
+  color_field: type_group
+  color_classes: [colocation, telecom, developer_investor, cloud, enterprise_it, ai_compute, other]
+  filter_fields:
+    colocation: n_type_colocation
+    telecom: n_type_telecom
+    developer_investor: n_type_developer_investor
+    cloud: n_type_cloud
+    enterprise_it: n_type_enterprise_it
+    ai_compute: n_type_ai_compute
+    other: n_type_other
+  legend_type_title: "Atlas: operator type"
+  legend_type_note: >-
+    The type of the operator as the Atlas gives it, grouped by the project. It tells who runs the site, not what
+    the site is used for.
+  legend_type_labels:
+    colocation: "Colocation"
+    telecom: "Telecom"
+    developer_investor: "Developer or investor"
+    cloud: "Cloud"
+    enterprise_it: "Enterprise or IT services"
+    ai_compute: "AI compute (Atlas type)"
+    other: "Other or unknown"
+  legend_type_filter_all: "All types"
+  tile_fields: [record_id, place_ref, place_name, n_records, power_class, n_operating_or_construction, n_planned, n_retired, n_class_lt10, n_class_10_99, n_class_100_999, n_class_ge1000, n_class_unknown, type_group, n_type_colocation, n_type_telecom, n_type_developer_investor, n_type_cloud, n_type_enterprise_it, n_type_ai_compute, n_type_other, iso3_source, control_iso3]
 ref_field: ref
 tiles:
   minzoom: 0

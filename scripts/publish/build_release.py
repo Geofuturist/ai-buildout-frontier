@@ -207,6 +207,9 @@ def check_counts_by_key(chk: dict[str, Any], out: Path, report: Report) -> None:
     (county_records.csv); records that are not in it (after the filter) are not counted. covered_column: only rows with the
     value `covered` are compared; the other rows must have every count column empty and no record may be counted to them.
     single_record_columns: for a row with n_records = 1 the column equals that of its only record, otherwise it is empty.
+    derive: {new column: {file, from, key, value}}: a column of the records computed from a reference file of the release
+    (operator_type_groups.csv: type_group of each record from its operator_type); a value that is not in the file is a stop.
+    The count layer is thus recomputed from the points through the table, independently of the data step.
     """
     count_layer, point_layer, ckey = chk["count_layer"], chk["point_layer"], chk["count_key"]
     counts = _read_str(out / f"{count_layer}.csv")
@@ -225,6 +228,15 @@ def check_counts_by_key(chk: dict[str, Any], out: Path, report: Report) -> None:
     else:
         key = chk["point_key"]
         points = points[points[key] != ""]
+    for newcol, d in (chk.get("derive") or {}).items():
+        ref = _read_str(out / d["file"])
+        if ref[d["key"]].duplicated().any():
+            raise GateError("G4", f"{d['file']}: {d['key']} is not unique")
+        mapped = points[d["from"]].map(dict(zip(ref[d["key"]], ref[d["value"]])))
+        if mapped.isna().any():
+            lost = sorted(set(points.loc[mapped.isna(), d["from"]]))
+            raise GateError("G4", f"{point_layer}: {d['from']} values that are not in {d['file']}: {lost[:5]}")
+        points = points.assign(**{newcol: mapped})
     if counts[ckey].duplicated().any():
         raise GateError("G4", f"{count_layer}: {ckey} is not unique")
     cov_col = chk.get("covered_column")

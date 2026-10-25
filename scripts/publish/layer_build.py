@@ -1548,6 +1548,48 @@ def check_expected_counts(cfg, ctx, table, checks, report) -> None:  # noqa: ANN
                    "Recomputed from the published file and equal to the numbers in the texts of this layer: " + "; ".join(stated) + "."})
 
 
+SYMBOLS = ("circle", "diamond", "square", "triangle")
+
+
+def _check_display_colors(layer_id, display, names, table, count_breaks) -> None:  # noqa: ANN001
+    """abf-dc 0.2.0 display keys (colour by a group field, filter by group, symbol, legend texts)."""
+    sym = display.get("symbol")
+    if sym is not None and sym not in SYMBOLS:
+        raise GateError("G1", f"{layer_id}: display.symbol must be one of {list(SYMBOLS)}, got {sym!r}")
+    if display.get("legend_count_classes") is not None:
+        lcc = display["legend_count_classes"]
+        if not display.get("count_field"):
+            raise GateError("G1", f"{layer_id}: display.legend_count_classes needs display.count_field")
+        if len(lcc) != len(count_breaks or []):
+            raise GateError("G1", f"{layer_id}: display.legend_count_classes has {len(lcc)} texts, display.count_breaks {len(count_breaks or [])} classes")
+    legend_type = [k for k in display if k.startswith("legend_type_")]
+    cf = display.get("color_field")
+    if cf is None:
+        extra = [k for k in ("color_classes", "filter_fields", *legend_type) if k in display]
+        if extra:
+            raise GateError("G1", f"{layer_id}: display.{extra[0]} needs display.color_field")
+        return
+    if cf not in names:
+        raise GateError("G1", f"{layer_id}: display.color_field = {cf} is not a field of the layer")
+    classes = display.get("color_classes")
+    if not classes or len(set(classes)) != len(classes):
+        raise GateError("G1", f"{layer_id}: display.color_classes must be a non-empty list without repeats, got {classes}")
+    present = {str(v) for v in table[cf].dropna() if str(v) != ""}
+    missing = sorted(present - {str(c) for c in classes})
+    if missing:
+        raise GateError("G1", f"{layer_id}: display.color_classes does not list the values {missing} of {cf}")
+    ff = display.get("filter_fields")
+    if ff is not None:
+        if set(ff) != set(classes):
+            raise GateError("G1", f"{layer_id}: display.filter_fields must have exactly the keys of color_classes {list(classes)}, got {list(ff)}")
+        bad = sorted(v for v in ff.values() if v not in names)
+        if bad:
+            raise GateError("G1", f"{layer_id}: display.filter_fields names fields that are not in the layer: {bad}")
+    labels = display.get("legend_type_labels")
+    if labels is not None and set(labels) != set(classes):
+        raise GateError("G1", f"{layer_id}: display.legend_type_labels must have exactly the keys of color_classes {list(classes)}, got {list(labels)}")
+
+
 def check_display_keys(cfg, display, names, table) -> None:  # noqa: ANN001
     """display.size_field / size_breaks / size_classes / value_field refer to real fields and are in order."""
     layer_id = cfg["layer_id"]
@@ -1565,6 +1607,7 @@ def check_display_keys(cfg, display, names, table) -> None:  # noqa: ANN001
         raise GateError("G1", f"{layer_id}: display.count_field needs display.count_breaks")
     if "map" in display and not isinstance(display["map"], bool):
         raise GateError("G1", f"{layer_id}: display.map must be true or false, got {display['map']!r}")
+    _check_display_colors(layer_id, display, names, table, cb)
     sb = display.get("size_breaks")
     if sb is not None and any(b2 <= b1 for b1, b2 in zip(sb, sb[1:])):
         raise GateError("G1", f"{layer_id}: display.size_breaks must increase, got {sb}")

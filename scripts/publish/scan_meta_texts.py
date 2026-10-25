@@ -53,7 +53,7 @@ def main(argv: list[str]) -> int:
                     if rx.search(cleaned if use_cleaned else flat):
                         print(f"FOUND {label}: {f.name} {path}: ...{flat[:120]}...")
                         total += 1
-                if "citation" not in path and not path.endswith("display.unit_card_line") and PLACEHOLDER.search(flat):  # {n}: filled in by the site (abf-dc)
+                if "citation" not in path and not path.endswith(("display.unit_card_line", "display.list_title")) and PLACEHOLDER.search(flat):  # {n}: filled in by the site (abf-dc)
                     print(f"FOUND placeholder: {f.name} {path}: ...{flat[:120]}...")
                     total += 1
             print(f"checked {f.name}")

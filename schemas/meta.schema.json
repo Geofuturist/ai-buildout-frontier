@@ -810,6 +810,62 @@
           "items": {
             "type": "number"
           }
+        },
+        "color_field": {
+          "type": "string"
+        },
+        "color_classes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "filter_fields": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "symbol": {
+          "type": "string",
+          "enum": [
+            "circle",
+            "diamond",
+            "square",
+            "triangle"
+          ]
+        },
+        "legend_type_title": {
+          "type": "string"
+        },
+        "legend_type_note": {
+          "type": "string"
+        },
+        "legend_type_labels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "legend_type_filter_all": {
+          "type": "string"
+        },
+        "legend_count_classes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "list_title": {
+          "type": "string"
+        },
+        "list_note": {
+          "type": "string"
+        },
+        "legend_layer_note": {
+          "type": "string"
         }
       }
     },

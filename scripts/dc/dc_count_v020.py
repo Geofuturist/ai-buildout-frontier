@@ -3,8 +3,11 @@ r"""abf-dc 0.2.0: data step (SPEC_DC_world_v0_2_0 r1, section 2).
 Reads only published files of earlier releases, no network:
   dc_atlas_points.csv  from abf-dc 0.1.0         (SHA-256 pinned)
   units.csv            from abf-boundaries 0.2.0 (SHA-256 pinned)
-Writes `dc_atlas_count_places.csv` (Atlas records with a point, by place), `dc_atlas_count_usa_adm2.csv` (Atlas records of the
-US by the county the record names), `county_records.csv`, `sources_manifest.json`, `build_report.md`.
+  operator_type_groups.csv (data/dc/rules, in git; SPEC r2 section 8: 20 Atlas operator types -> 7 display groups; its numbers are checked
+                       against the points, its SHA-256 goes into sources_manifest.json)
+Writes `dc_atlas_count_places.csv` (Atlas records with a point, by place, with the operator-type groups), `dc_atlas_count_usa_adm2.csv`
+(Atlas records of the US by the county the record names), `county_records.csv`, `operator_type_groups.csv` (a copy with LF line ends),
+`sources_manifest.json`, `build_report.md`.
 
 The county rule is the rule of step 4 of the place chain (SPEC 0.1.0 section 2.3): text normalisation `dc_lib.norm` and the
 type-word pattern `dc_place.ADM2_TYPE_WORD` are imported, not copied; the link check (section 2.3 item 5) proves they agree.
@@ -16,6 +19,7 @@ Windows cmd, from the repo root:
 
 Optional, for the report of section 2.3 item 7 (points that lie in another county than the record names):
     --analysis-adm2 <analysis_usa_adm2.parquet> --sources-manifest <sources_manifest.json of abf-dc 0.1.0> (may be repeated)
+    --groups <operator_type_groups.csv>   (default: data\\dc\\rules\\operator_type_groups.csv of the repository)
 """
 
 from __future__ import annotations
@@ -43,6 +47,9 @@ PINNED = {
     "units": ("units.csv of abf-boundaries 0.2.0", "126b8017034c2c72a181a47f2aa8d454f0dcadd3a856d9d0fc9ed785f3093e4d"),
 }
 CT_UNIT = "USA-1-09"
+GROUPS = ["colocation", "telecom", "developer_investor", "cloud", "enterprise_it", "ai_compute", "other"]   # order of the legend (RES_texts_DC_v0_2_0 9.1)
+TYPE_COLS = [f"n_type_{g}" for g in GROUPS]
+DEFAULT_GROUPS = Path(__file__).resolve().parents[2] / "data" / "dc" / "rules" / "operator_type_groups.csv"
 PLACE_SHARED = ["lon", "lat", "place_name", "iso3_source", "iso3_frame", "control_iso3"]
 ASSIGNMENTS = ["no_state", "connecticut", "no_county_field", "ambiguous_name", "not_matched", "matched"]
 
@@ -54,15 +61,20 @@ EXPECT = {
     "us.matched": 3914, "us.ambiguous_groups": [46, 14, 9, 1],
     "county.units": 3144, "county.ct_units": 9, "county.not_covered": 17, "county.with_records": 812, "county.sum": 3914,
     "county.max": 179, "county.max_unit": "USA-2-51107", "link.county_precision": 1583,
+    # SPEC r2 section 8 item 4 (order of GROUPS)
+    "types.points_with_point": [2774, 1089, 671, 562, 386, 138, 467], "types.single_places": [474, 233, 253, 115, 124, 39, 186],
+    "types.places_2plus": 879, "types.places_mixed": 571, "types.records": 9865, "types.n_operator_types": 20,
 }
 # SPEC section 3 item 5: classes of the display breaks [1, 3, 10, 30, 100] (report only, not a stop)
 EXPECT_DISPLAY_CLASSES = [482, 240, 71, 16, 3]
 
 # Provisional texts of `coverage_note` (English, G7). The final wording is [RES]7's; these are replaced there, the numbers stay.
-NOTE_CT = ("Connecticut: the Atlas names the former counties, the boundary frame has the planning regions; "
-           "{n} Atlas records of the state are not assigned to a unit.")
-NOTE_PAIR = ("{n} Atlas {records} name this county or its independent city by one shared name and cannot be assigned to either; "
-             "both units are not covered.")
+# `coverage_note` texts of RES_texts_DC_v0_2_0 r2 section 2 (the number {n} is filled in here)
+NOTE_CT = ("Not covered: the Atlas gives Connecticut's eight historical counties, and the boundary frame has the nine "
+           "planning regions that replaced them as county equivalents in 2022. No Atlas record of the state "
+           "({n} in all) is counted under a unit.")
+NOTE_PAIR = ("Not covered: a county and an independent city of this state share this name, and the Atlas records "
+             "that give it do not say which of the two they mean ({n} in all). Neither unit is counted.")
 
 
 class Problems:
@@ -105,6 +117,43 @@ def read_pinned(path: str, key: str):
     return df, dict(file=Path(path).name, what=label, bytes=len(raw), sha256=got, read=how)
 
 
+def read_groups(path: str):
+    """operator_type_groups.csv (SPEC r2 section 8 item 2). Read with CRLF -> LF (git on Windows); returns (table, info, LF bytes)."""
+    raw = Path(path).read_bytes().replace(b"\r\n", b"\n")
+    df = pd.read_csv(io.BytesIO(raw), dtype=str, keep_default_na=False)
+    if list(df.columns) != ["operator_type", "type_group", "n_records"]:
+        raise BuildStop(f"operator_type_groups.csv: columns {list(df.columns)}, expected operator_type, type_group, n_records")
+    if df["operator_type"].duplicated().any():
+        raise BuildStop("operator_type_groups.csv: an operator_type is listed twice")
+    bad = sorted(set(df["type_group"]) - set(GROUPS))
+    if bad:
+        raise BuildStop(f"operator_type_groups.csv: unknown type_group {bad}; allowed {GROUPS}")
+    missing = sorted(set(GROUPS) - set(df["type_group"]))
+    if missing:
+        raise BuildStop(f"operator_type_groups.csv: no operator type in the groups {missing}")
+    return df, dict(file=Path(path).name, what="operator_type_groups.csv (data/dc/rules)", bytes=len(raw), sha256=sha256_bytes(raw),
+                    read="CRLF replaced by LF"), raw
+
+
+def add_groups(pts: pd.DataFrame, groups: pd.DataFrame) -> pd.DataFrame:
+    """SPEC r2 section 8 item 2 stops: every operator type of the points is in the table; n_records of each row is the number of
+    points of that type; the sum is the number of points. Returns the points with the column type_group."""
+    types = pts["operator_type"]
+    unknown = sorted(set(types) - set(groups["operator_type"]))
+    if unknown:
+        raise BuildStop(f"operator_type of the points that is not in operator_type_groups.csv: {unknown}")
+    have = types.value_counts()
+    bad = [f"{r.operator_type}: table {r.n_records}, points {int(have.get(r.operator_type, 0))}" for r in groups.itertuples(index=False)
+           if int(r.n_records) != int(have.get(r.operator_type, 0))]
+    if bad:
+        raise BuildStop("n_records of operator_type_groups.csv differs from the points: " + "; ".join(bad))
+    if int(pd.to_numeric(groups["n_records"]).sum()) != len(pts):
+        raise BuildStop(f"sum of n_records of operator_type_groups.csv {int(pd.to_numeric(groups['n_records']).sum())} differs from the number of points {len(pts)}")
+    out = pts.copy()
+    out["type_group"] = types.map(dict(zip(groups["operator_type"], groups["type_group"])))
+    return out
+
+
 # ------------------------------------------------------------------------------------------------ counts
 
 def tally(df: pd.DataFrame, key: str) -> pd.DataFrame:
@@ -128,6 +177,7 @@ def ws_id(s: str) -> str:
 
 
 def build_places(pts: pd.DataFrame, checked_at: str) -> pd.DataFrame:
+    """`pts` has the column type_group (add_groups)."""
     city = pts[pts["coord_precision"] == "city"]
     if (city["place_ref"] == "").any():
         raise BuildStop(f"{int((city['place_ref'] == '').sum())} records with coord_precision city have no place_ref, first: "
@@ -155,8 +205,16 @@ def build_places(pts: pd.DataFrame, checked_at: str) -> pd.DataFrame:
     out["checked_at"], out["checked_by"] = checked_at, CHECKED_BY
     single = g["power_class"].first().where(t["n_records"].values == 1, "").reindex(out["place_ref"]).values
     out["power_class"] = single
+    tg = g["type_group"].first().where(t["n_records"].values == 1, "").reindex(out["place_ref"]).values
+    out["type_group"] = tg
+    for grp, col in zip(GROUPS, TYPE_COLS):
+        out[col] = (city["type_group"] == grp).groupby(city["place_ref"]).sum().reindex(out["place_ref"]).astype(int).values
+    if (out[TYPE_COLS].sum(axis=1) != out["n_records"]).any():
+        raise BuildStop("sum of n_type_* differs from n_records in " + str(int((out[TYPE_COLS].sum(axis=1) != out["n_records"]).sum())) + " places")
+    if ((out["n_records"] == 1) & (out["type_group"] == "")).any() or ((out["n_records"] >= 2) & (out["type_group"] != "")).any():
+        raise BuildStop("type_group is empty for a place with one record or filled for a place with several")
     cols = ["record_id", "place_ref", "place_name", "lon", "lat", "coord_precision", "iso3_source", "iso3_frame", "control_iso3",
-            "ref", "checked_at", "checked_by", *VALUE_COLS, "power_class"]
+            "ref", "checked_at", "checked_by", *VALUE_COLS, "power_class", "type_group", *TYPE_COLS]
     out = out[cols].sort_values("record_id", kind="stable").reset_index(drop=True)
     if int(out["n_records"].sum()) != len(city):
         raise BuildStop(f"sum of n_records over places is {int(out['n_records'].sum())}, records with a point {len(city)}")
@@ -217,7 +275,7 @@ def build_counties(pts: pd.DataFrame, units: pd.DataFrame):
     for u in sorted(ct_units):
         notes[u] = NOTE_CT.format(n=n_ct)
     for u, n in sorted(amb_units.items()):
-        notes[u] = (notes[u] + " " if u in notes else "") + NOTE_PAIR.format(n=n, records="record" if n == 1 else "records")
+        notes[u] = (notes[u] + " " if u in notes else "") + NOTE_PAIR.format(n=n)
 
     us_c = us.assign(cunit=us["record_id"].map(cr.set_index("record_id")["unit_id"]))
     t = tally(us_c[us_c["cunit"] != ""], "cunit")
@@ -311,6 +369,7 @@ def main():
     ap.add_argument("--units", required=True, help="units.csv of abf-boundaries 0.2.0")
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--checked-at", required=True, help="checked_at of the new rows, YYYY-MM-DDTHH:MM:SSZ (fixed so that a rerun gives the same bytes)")
+    ap.add_argument("--groups", default=str(DEFAULT_GROUPS), help="operator_type_groups.csv (SPEC r2 section 8), default: data/dc/rules in the repository")
     ap.add_argument("--analysis-adm2", default=None, help="analysis_usa_adm2.parquet, for the report of SPEC 2.3 item 7")
     ap.add_argument("--sources-manifest", action="append", default=[], help="sources_manifest.json of abf-dc 0.1.0 (hash of the parquet)")
     a = ap.parse_args()
@@ -330,16 +389,22 @@ def run(a):
     units, in_units = read_pinned(a.units, "units")
     need = {"record_id", "unit_id", "lon", "lat", "coord_precision", "place_name", "place_ref", "status_raw", "power_class", "adm1_raw",
             "adm2_raw", "iso3_source", "iso3_frame", "control_iso3"}
+    need |= {"operator_type"}
     miss = need - set(pts.columns)
     if miss:
         raise BuildStop(f"dc_atlas_points.csv has no columns {sorted(miss)}")
     if pts["record_id"].duplicated().any():
         raise BuildStop("record_id of dc_atlas_points is not unique")
 
+    if not Path(a.groups).exists():
+        raise BuildStop(f"operator_type_groups.csv not found: {a.groups} (data/dc/rules/ in the repository; --groups)")
+    groups, in_groups, groups_bytes = read_groups(a.groups)
+    pts = add_groups(pts, groups)
+
     pr = Problems()
     lines = ["# abf-dc 0.2.0 data step: build report", "", f"{VERSION}; checked_at {a.checked_at}; checked_by {CHECKED_BY}.", "",
              "## Inputs", ""]
-    for i in (in_pts, in_units):
+    for i in (in_pts, in_units, in_groups):
         lines.append(f"- {i['what']}: `{i['file']}`, {i['bytes']} bytes, SHA-256 `{i['sha256']}` (read: {i['read']})")
 
     # ---- places
@@ -356,6 +421,14 @@ def run(a):
     pr.check(int(((n == 1) & (places["power_class"] == "")).sum()) == int(((n == 1) & (places["n_class_unknown"] == 1)).sum()),
              "power_class of single-record places: empty class does not match n_class_unknown")
     pr.check(bool((places.loc[n >= 2, "power_class"] == "").all()), "a place with two or more records has a power_class")
+    city = pts[pts["coord_precision"] == "city"]
+    pr.expect("types.points_with_point", [int((city["type_group"] == g).sum()) for g in GROUPS], EXPECT["types.points_with_point"])
+    pr.expect("types.single_places", [int(((places["type_group"] == g)).sum()) for g in GROUPS], EXPECT["types.single_places"])
+    pr.expect("types.places_2plus", int((n >= 2).sum()), EXPECT["types.places_2plus"])
+    mixed = city.groupby("place_ref")["type_group"].nunique()
+    pr.expect("types.places_mixed", int(((mixed > 1) & (places.set_index("place_ref")["n_records"].reindex(mixed.index) >= 2)).sum()), EXPECT["types.places_mixed"])
+    pr.expect("types.records", int(pd.to_numeric(groups["n_records"]).sum()), EXPECT["types.records"])
+    pr.expect("types.n_operator_types", len(groups), EXPECT["types.n_operator_types"])
 
     # ---- counties
     cr, layer, meta = build_counties(pts, units)
@@ -394,6 +467,8 @@ def run(a):
 
     # ---- write
     f_places, f_layer, f_cr = "dc_atlas_count_places.csv", "dc_atlas_count_usa_adm2.csv", "county_records.csv"
+    f_groups = "operator_type_groups.csv"
+    (out / f_groups).write_bytes(groups_bytes)
     write_csv(places, out / f_places)
     write_csv(layer, out / f_layer)
     write_csv(cr, out / f_cr)
@@ -404,6 +479,11 @@ def run(a):
               f"2-9 records {int(((n >= 2) & (n <= 9)).sum())} (770), 10 or more {int((n >= 10).sum())} (109)",
               f"- largest place: {top['place_name']} (`{top['place_ref']}`), {int(top['n_records'])} records",
               "- top 10 places: " + "; ".join(f"{r.place_name} {r.n_records}" for r in places.sort_values(["n_records", "record_id"], ascending=[False, True]).head(10).itertuples()),
+              "", "## Operator types (`operator_type_groups.csv`)", "",
+              f"- {len(groups)} operator types in {len(set(groups['type_group']))} groups; the table agrees with the points (types, numbers, sum {int(pd.to_numeric(groups['n_records']).sum())})",
+              "- records with a point by group " + ", ".join(GROUPS) + ": " + " / ".join(str(int((city['type_group'] == g).sum())) for g in GROUPS),
+              "- places with one record by group: " + " / ".join(str(int((places['type_group'] == g).sum())) for g in GROUPS),
+              f"- places with two or more records {int((n >= 2).sum())}, of them with records of different groups {int(((mixed > 1) & (places.set_index('place_ref')['n_records'].reindex(mixed.index) >= 2)).sum())}",
               "", "## US records by assignment (`county_records.csv`)", ""]
     lines += [f"- {k}: {int(cat[k])}" for k in ASSIGNMENTS] + [f"- total: {int(cat.sum())}"]
     lines += ["", "ambiguous records by candidate set: " + "; ".join(
@@ -424,8 +504,8 @@ def run(a):
         lines += ["", "## US records with a point: point against the named county", "", "Not run: `--analysis-adm2` was not given."]
     (out / "build_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    outputs = {f: dict(bytes=(out / f).stat().st_size, sha256=sha256_bytes((out / f).read_bytes())) for f in (f_places, f_layer, f_cr)}
-    man = dict(version=VERSION, checked_at=a.checked_at, inputs={i["file"]: {k: i[k] for k in ("what", "bytes", "sha256", "read")} for i in (in_pts, in_units)},
+    outputs = {f: dict(bytes=(out / f).stat().st_size, sha256=sha256_bytes((out / f).read_bytes())) for f in (f_places, f_layer, f_cr, f_groups)}
+    man = dict(version=VERSION, checked_at=a.checked_at, inputs={i["file"]: {k: i[k] for k in ("what", "bytes", "sha256", "read")} for i in (in_pts, in_units, in_groups)},
                outputs=outputs)
     if geo:
         man["inputs"]["analysis_usa_adm2.parquet"] = dict(sha256=geo["parquet_sha256"], hash_checked_against_manifest=geo["hash_checked_against_manifest"])

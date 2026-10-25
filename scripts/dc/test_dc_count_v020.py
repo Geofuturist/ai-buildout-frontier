@@ -94,7 +94,7 @@ class DataStep(unittest.TestCase):
             C.PINNED["points"] = (old["points"][0], hashlib.sha256(f.read_bytes()).hexdigest())
             try:
                 C.run(argparse.Namespace(points=str(f), units=str(UNITS), out_dir=str(Path(t) / "o"), checked_at="2026-10-24T12:00:00Z",
-                                         analysis_adm2=None, sources_manifest=[]))
+                                         analysis_adm2=None, sources_manifest=[], groups=str(C.DEFAULT_GROUPS)))
             finally:
                 C.PINNED.update(old)
 
@@ -121,6 +121,57 @@ class DataStep(unittest.TestCase):
             p.loc[j, "place_ref"] = "geonames:999999999"              # a new place of one record, taken from a larger one: 2 304 places
         with self.assertRaises(BuildStop):
             self.run_mutated(m)
+
+    def run_groups(self, mutate_table):
+        """Run the step with a mutated operator_type_groups.csv."""
+        import argparse
+        with tempfile.TemporaryDirectory() as t:
+            g = pd.read_csv(C.DEFAULT_GROUPS, dtype=str, keep_default_na=False)
+            g = mutate_table(g)
+            f = Path(t) / "groups.csv"
+            g.to_csv(f, index=False, lineterminator="\n")
+            C.run(argparse.Namespace(points=str(PTS), units=str(UNITS), out_dir=str(Path(t) / "o"), checked_at="2026-10-24T12:00:00Z",
+                                     analysis_adm2=None, sources_manifest=[], groups=str(f)))
+
+    def test_groups_table_stops(self):
+        def drop(g):                                   # an operator type of the points is not in the table
+            return g[g["operator_type"] != "Crypto"]
+        def number(g):                                 # n_records of a row differs from the points
+            g.loc[g["operator_type"] == "Cloud", "n_records"] = "896"
+            return g
+        def group(g):                                  # a group outside the seven
+            g.loc[g["operator_type"] == "Cloud", "type_group"] = "clouds"
+            return g
+        def dup(g):
+            return pd.concat([g, g.head(1)])
+        for m in (drop, number, group, dup):
+            with self.assertRaises(BuildStop, msg=m.__name__):
+                self.run_groups(m)
+
+    def test_moved_type_changes_split_stop(self):
+        def m(g):                                      # Telecom into 'other': the numbers of SPEC section 8 item 4 no longer hold
+            g.loc[g["operator_type"] == "Telecom", "type_group"] = "other"
+            return g
+        with self.assertRaises(BuildStop):
+            self.run_groups(m)
+
+    def test_type_columns(self):
+        with tempfile.TemporaryDirectory() as t:
+            self.assertEqual(self.run_cli(Path(t)).returncode, 0)
+            pl = pd.read_csv(Path(t) / "dc_atlas_count_places.csv", dtype=str, keep_default_na=False)
+            cols = list(pl.columns)
+            i = cols.index("power_class")
+            self.assertEqual(cols[i + 1:], ["type_group", *C.TYPE_COLS])
+            n = pl["n_records"].astype(int)
+            self.assertTrue((pl[C.TYPE_COLS].astype(int).sum(axis=1) == n).all())
+            self.assertTrue((pl.loc[n == 1, "type_group"] != "").all())
+            self.assertTrue((pl.loc[n >= 2, "type_group"] == "").all())
+            for g in C.GROUPS:                         # the group of a single-record place is its only non-zero column
+                one = pl[(n == 1) & (pl["type_group"] == g)]
+                self.assertTrue((one["n_type_" + g].astype(int) == 1).all())
+            self.assertEqual(sum(pl[c].astype(int).sum() for c in C.TYPE_COLS), 6087)
+            self.assertNotIn(b"\r", (Path(t) / "operator_type_groups.csv").read_bytes())
+            self.assertEqual((Path(t) / "operator_type_groups.csv").read_bytes(), C.DEFAULT_GROUPS.read_bytes().replace(b"\r\n", b"\n"))
 
     def test_report_against_named_county(self):
         import geopandas as gpd

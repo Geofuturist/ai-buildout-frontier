@@ -111,7 +111,7 @@ sources:
       National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under
       CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas
       (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from
-      their addresses and names, and counted by country. These figures are not the Atlas as published.
+      their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published.
   rights_basis:
     type: license
     checked_by: "script:licence_extract.py"

@@ -56,8 +56,19 @@ cross_checks:
     point_layer: dc_atlas_points
     point_filter: {coord_precision: "city"}
     point_key: place_ref
-    columns: *count_columns
-    single_record_columns: [power_class]
+    # the operator-type group of each record comes from operator_type_groups.csv of the release (type -> group), not from the data step
+    derive:
+      type_group: {file: operator_type_groups.csv, from: operator_type, key: operator_type, value: type_group}
+    columns:
+      <<: *count_columns
+      n_type_colocation: {type_group: colocation}
+      n_type_telecom: {type_group: telecom}
+      n_type_developer_investor: {type_group: developer_investor}
+      n_type_cloud: {type_group: cloud}
+      n_type_enterprise_it: {type_group: enterprise_it}
+      n_type_ai_compute: {type_group: ai_compute}
+      n_type_other: {type_group: other}
+    single_record_columns: [power_class, type_group]
   # the county layer equals the Atlas records of the United States, by the county that county_records.csv gives them
   - kind: counts_by_key
     count_layer: dc_atlas_count_usa_adm2
