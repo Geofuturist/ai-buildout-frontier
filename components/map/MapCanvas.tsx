@@ -52,6 +52,8 @@ interface Props {
   onWorld: () => void;
   /** the whole world is chosen: every country gets the tint of a chosen unit */
   worldOn: boolean;
+  /** the group chosen in the filter by type, or null */
+  typeFilter: string | null;
   onUnit: (u: UnitRef) => void;
   onZoom: (zoom: number) => void;
   onReady?: () => void;
@@ -61,7 +63,7 @@ interface Props {
 /** Opacity that is `on` where the feature state `key` is set and 0 elsewhere (constant expression: never reloads tiles). */
 const FS_OPACITY = (key: string, on: number) => ['case', ['boolean', ['feature-state', key], false], on, 0] as ExpressionSpecification;
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, worldOn, onZoom, onReady, onFailed }, ref) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, worldOn, typeFilter, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -228,7 +230,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
-  const ctx = useMemo(() => ({ metas: data.metas, visible, selected, before: BEFORE }), [data.metas, visible, selected]);
+  const ctx = useMemo(() => ({ metas: data.metas, visible, selected, typeFilter, before: BEFORE }), [data.metas, visible, selected, typeFilter]);
 
   return (
     <MapGL

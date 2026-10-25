@@ -12,7 +12,8 @@ import CopyButton from '@/components/CopyButton';
 import type { LayerEntry } from '@/lib/data';
 import { checkedByLine, recordCitation } from '@/lib/format';
 import { capitalize, recordNoun, unitWord } from '@/lib/layers';
-import { PLACE_KEY, loadPlaceIndex, placeRowsLayer, rowsOfPlace } from '@/lib/placeRows';
+import { GROUPS_FILE, PLACE_KEY, loadPlaceIndex, loadTypeGroups, placeRowsLayer, rowsOfGroup, rowsOfPlace } from '@/lib/placeRows';
+import { filterColumn } from '@/lib/pointSize';
 import { epochTags, parseLinks } from '@/lib/dcTexts';
 import DcPointRows, { capacityShort, str } from './DcPointRows';
 import { MODULE_BY_TYPE } from './modules';
@@ -106,14 +107,18 @@ export function ItemsCard({ data, layer, items, onClose }: { data: MapData; laye
 }
 
 /** A place of the places layer: the records come from the published CSV of the layer of records, by the place key. */
-export function PlaceCard({ data, layer, props: p, onClose }: { data: MapData; layer: LayerEntry; props: Props; onClose: () => void }) {
+export function PlaceCard({ data, layer, props: p, typeFilter, onClose }: { data: MapData; layer: LayerEntry; props: Props; typeFilter: string | null; onClose: () => void }) {
   const meta = data.metas[layer.meta_id];
   const rowsLayer = placeRowsLayer(layer, data.layers, data.metas);
   const rowsMeta = rowsLayer ? data.metas[rowsLayer.meta_id] : undefined;
   const csvUrl = rowsLayer?.files.csv?.url;
   const n = Number(p[meta.display?.count_field ?? '']);
   const ref = str(p[PLACE_KEY]);
-  const [state, setState] = useState<'loading' | 'error' | { rows: Props[] }>('loading');
+  // Filter by type: the list shows the records of the chosen group, from the groups file of the layer
+  const column = filterColumn(meta.display ?? {}, typeFilter);
+  const groupsUrl = layer.extra_files.find((f) => f.path === GROUPS_FILE)?.url;
+  const nGroup = column ? Number(p[column]) : n;
+  const [state, setState] = useState<'loading' | 'error' | { rows: Props[]; all: number }>('loading');
   const [open, setOpen] = useState<number | null>(null);
 
   useEffect(() => {
@@ -125,12 +130,19 @@ export function PlaceCard({ data, layer, props: p, onClose }: { data: MapData; l
       setState('error');
       return;
     }
-    loadPlaceIndex(csvUrl)
-      .then((idx) => {
-        const rows = rowsOfPlace(idx, ref, rowsMeta);
+    Promise.all([loadPlaceIndex(csvUrl), column && groupsUrl ? loadTypeGroups(groupsUrl) : Promise.resolve(null)])
+      .then(([idx, groups]) => {
+        const all = rowsOfPlace(idx, ref, rowsMeta);
         // The list is not hidden if the numbers differ: the difference is reported, and the rows are shown
-        if (rows.length !== n) console.error(`place ${ref}: the places layer gives ${n} records, the file of records lists ${rows.length}`);
-        if (live) setState({ rows });
+        if (all.length !== n) console.error(`place ${ref}: the places layer gives ${n} records, the file of records lists ${all.length}`);
+        let rows = all;
+        if (column && typeFilter) {
+          if (groups) {
+            rows = rowsOfGroup(all, groups, typeFilter);
+            if (rows.length !== nGroup) console.error(`place ${ref}: the places layer gives ${nGroup} records of the type, the file of records lists ${rows.length}`);
+          } else console.error(`place ${ref}: ${GROUPS_FILE} is missing, the list shows all records of the place`);
+        }
+        if (live) setState({ rows, all: all.length });
       })
       .catch((e) => {
         console.error(`place ${ref}: could not read the records (${e instanceof Error ? e.message : String(e)})`);
@@ -139,7 +151,7 @@ export function PlaceCard({ data, layer, props: p, onClose }: { data: MapData; l
     return () => {
       live = false;
     };
-  }, [csvUrl, rowsMeta, ref, n]);
+  }, [csvUrl, rowsMeta, ref, n, column, groupsUrl, typeFilter, nGroup]);
 
   const title = str(p.place_name) || ref;
   const subtitle = `${ref} · ${layer.title}`;
@@ -161,9 +173,14 @@ export function PlaceCard({ data, layer, props: p, onClose }: { data: MapData; l
   const rows = state.rows;
   if (rows.length === 1) return <RecordShell data={data} layer={rowsLayer} props={rows[0]} onClose={onClose} />;
   if (open !== null && rows[open]) return <RecordShell data={data} layer={rowsLayer} props={rows[open]} onClose={onClose} onBack={() => setOpen(null)} />;
+  const d = meta.display;
+  const listTitle = d?.list_title ? d.list_title.replace('{n}', String(rows.length)).replace('{place_name}', title) : `${rows.length} ${unitWord(rowsLayer)} at this place`;
+  const groupLabel = typeFilter ? d?.legend_type_labels?.[typeFilter] ?? typeFilter : '';
   return (
     <Shell title={title} subtitle={subtitle} onClose={onClose}>
-      <p className="mt-2 text-ink2">{rows.length} {unitWord(rowsLayer)} at this place</p>
+      <p className="mt-2 text-ink2">{listTitle}</p>
+      {d?.list_note && <p className="mt-1 text-xs text-muted">{d.list_note}</p>}
+      {column && state.rows.length !== state.all && <p className="mt-1 text-xs text-ink2">Filter: {groupLabel}. {state.rows.length} of the {state.all} records of this place.</p>}
       <RecordList data={data} layer={rowsLayer} items={rows} onOpen={setOpen} />
       <p className="mt-3 text-sm"><Link href={`/data/#${rowsLayer.layer_id}`}>All files of the records</Link></p>
     </Shell>

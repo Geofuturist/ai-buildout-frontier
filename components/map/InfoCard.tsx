@@ -9,7 +9,7 @@ import { ItemsCard, PlaceCard, RecordShell } from './RecordViews';
 import Shell from './Shell';
 import type { CardState, MapData } from './types';
 
-export default function InfoCard({ data, card, onClose }: { data: MapData; card: CardState; onClose: () => void }) {
+export default function InfoCard({ data, card, typeFilter, onClose }: { data: MapData; card: CardState; typeFilter: string | null; onClose: () => void }) {
   if (!card) return null;
   const layer = data.layers.find((l) => l.layer_id === card.layerId);
   if (!layer) return null;
@@ -50,7 +50,7 @@ export default function InfoCard({ data, card, onClose }: { data: MapData; card:
   if (card.type === 'records') return <ItemsCard key={card.items.map((x) => String(x.record_id)).join('|')} data={data} layer={layer} items={card.items} onClose={onClose} />;
 
   // A place of the places layer: its record (one) or the list of its records (several)
-  if (meta.display?.count_field) return <PlaceCard key={String(card.props.record_id)} data={data} layer={layer} props={card.props} onClose={onClose} />;
+  if (meta.display?.count_field) return <PlaceCard key={String(card.props.record_id)} data={data} layer={layer} props={card.props} typeFilter={typeFilter} onClose={onClose} />;
 
   return <RecordShell data={data} layer={layer} props={card.props} onClose={onClose} />;
 }

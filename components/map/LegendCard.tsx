@@ -25,6 +25,8 @@ interface Props {
   onSearch: (c: MapData['countries'][number]) => void;
   /** all rows (also of single countries) for the search by layer */
   allRows: PanelRow[];
+  typeFilter: string | null;
+  onTypeFilter: (group: string | null) => void;
   onFound: (r: PanelRow) => void;
   activeFill: string | null;
   overlays: Record<string, boolean>;
@@ -42,7 +44,7 @@ interface Props {
  * Legend card, left (SPEC_WEB_territory 3). Desktop: top left, folds to the left with a remembered choice.
  * Phone: a small button bottom left that opens the card above the territory bar.
  */
-export default function LegendCard({ data, heading, note, layers, covered, rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, onSearch, allRows, onFound, nonce }: Props) {
+export default function LegendCard({ data, heading, note, layers, covered, rows, activeFill, overlays, failed, onFill, onOverlay, onInfo, onSearch, allRows, typeFilter, onTypeFilter, onFound, nonce }: Props) {
   const [folded, setFolded] = useState(false);
   const [openPhone, setOpenPhone] = useState(false);
   useEffect(() => {
@@ -73,7 +75,7 @@ export default function LegendCard({ data, heading, note, layers, covered, rows,
         <div className="mb-3 max-h-[42vh] shrink-0 overflow-y-auto border-b border-line pb-3">
           {heading && <p className="mb-2 text-sm font-semibold leading-tight text-ink">{heading}</p>}
           {note && <p className="mb-2 rounded-md border border-dashed border-[#8a8f96] p-2 text-xs text-ink2">{note}</p>}
-          <Legend layers={layers} metas={data.metas} />
+          <Legend layers={layers} metas={data.metas} typeFilter={typeFilter} onTypeFilter={onTypeFilter} />
         </div>
       )}
       {/* The key of the grey countries stays whatever is chosen */}

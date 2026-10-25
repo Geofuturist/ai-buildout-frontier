@@ -155,6 +155,18 @@ async function main() {
       if (!files.parquet || !files['geojson.gz']) fail(`${l.layer_id}: parquet or geojson.gz missing in manifest`);
       if (meta.kind === 'layer' && !files.csv) fail(`${l.layer_id}: csv missing in manifest`);
       if (!l.tiles || !l.tiles.file) fail(`${l.layer_id}: no tiles entry`);
+      // Fields the map reads from the tiles: count, colour and filter columns of a layer of places (abf-dc 0.2.0)
+      {
+        const d = meta.display || {};
+        const need = [d.count_field, d.color_field, ...Object.values(d.filter_fields || {})].filter(Boolean);
+        const have = new Set(l.tiles.fields || []);
+        const missing = need.filter((f) => !have.has(f));
+        if (missing.length) strict(`${l.layer_id}: tiles lack the fields the map uses: ${missing.join(', ')}`);
+        if (d.filter_fields && d.color_classes) {
+          const bad = d.color_classes.filter((c) => !d.filter_fields[c]);
+          if (bad.length) strict(`${l.layer_id}: color_classes without a filter column: ${bad.join(', ')}`);
+        }
+      }
       layers.push({
         dataset: dsName,
         layer_id: l.layer_id,

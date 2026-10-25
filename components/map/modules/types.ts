@@ -9,6 +9,8 @@ export interface ModuleCtx {
   visible: Set<string>;
   /** the record shown in the card, if it belongs to a layer of this module */
   selected: { layerId: string; key: string } | null;
+  /** the one group chosen in the filter by type (display.filter_fields), or null for all */
+  typeFilter: string | null;
   /** id of the first label layer of the basemap: our layers go under it */
   before: string;
 }
@@ -27,7 +29,7 @@ export interface GeometryModule {
   /** ids of the invisible hit layers: only these are clickable */
   hitLayerIds: (layerId: string) => string[];
   /** legend block for the layers of this type that are on */
-  Legend: (props: { layers: LayerEntry[]; metas: Record<string, Meta> }) => ReactNode;
+  Legend: (props: { layers: LayerEntry[]; metas: Record<string, Meta>; typeFilter?: string | null; onTypeFilter?: (group: string | null) => void }) => ReactNode;
   /** optional: custom text for a value in the record card (return null for the default) */
   formatValue?: (field: FieldDef, value: unknown, meta: Meta) => string | null;
 }

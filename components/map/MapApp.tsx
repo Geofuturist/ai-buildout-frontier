@@ -34,6 +34,8 @@ export default function MapApp({ data }: { data: MapData }) {
   const [nonce, setNonce] = useState(0);
   // The whole world is chosen (a click on the globe far out, or the World step of the path)
   const [worldOpen, setWorldOpen] = useState(false);
+  // Filter by operator type: one group at a time, or null for all (display.filter_fields of the places layer)
+  const [typeFilter, setTypeFilter] = useState<string | null>(null);
 
   const onFailed = useCallback((id: string) => setFailed((prev) => (prev.has(id) ? prev : new Set(prev).add(id))), []);
 
@@ -213,8 +215,9 @@ export default function MapApp({ data }: { data: MapData }) {
           dataCountries={dataCountryIds}
           onSelect={setCard}
           onCountry={(iso3) => selectCountry(iso3)}
-          onWorld={backToGlobe}
+          onWorld={toWorld}
           worldOn={worldOpen && !country}
+          typeFilter={typeFilter}
           onUnit={onUnit}
           onZoom={setZoom}
           onReady={onReady}
@@ -236,6 +239,8 @@ export default function MapApp({ data }: { data: MapData }) {
           onInfo={(id) => setCard({ type: 'layer', layerId: id })}
           onSearch={(c) => selectCountry(c.iso3, { fly: c.bbox })}
           allRows={rows}
+          typeFilter={typeFilter}
+          onTypeFilter={setTypeFilter}
           onFound={(row) => (row.kind === 'fill' ? (indicatorKey === row.indicator?.key ? undefined : onFill(row)) : onOverlayRow(row, true))}
         />
         <MapNav preview={data.channel === 'dev'} />
@@ -260,11 +265,11 @@ export default function MapApp({ data }: { data: MapData }) {
           onFill={onFill}
           onOverlay={onOverlayRow}
           onInfo={(id) => setCard({ type: 'layer', layerId: id })}
-          onWorld={toWorld}
+          onWorld={backToGlobe}
           onCrumb={onCrumb}
         />
         {worldOpen && !country && <WorldCard world={worldModel} hidden={card !== null} onClose={() => setWorldOpen(false)} />}
-        <InfoCard data={data} card={card} onClose={() => setCard(null)} />
+        <InfoCard data={data} card={card} typeFilter={typeFilter} onClose={() => setCard(null)} />
       </div>
 
       {/* Always visible, including on a phone (SPEC_WEB 4.6) */}

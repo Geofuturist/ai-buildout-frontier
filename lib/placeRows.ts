@@ -2,7 +2,7 @@
 // themselves are rows of the published CSV of the layer of records, found by the place key. The file is fetched once
 // (csvLoad) and indexed once; nothing is counted here: the list is what the file holds, and the number from the
 // places layer is only compared with it.
-import { groupRows, typedRow } from './csv';
+import { groupRows, splitFields, typedRow } from './csv';
 import { loadCsv } from './csvLoad';
 import type { LayerEntry, Meta } from './data';
 
@@ -53,4 +53,41 @@ export function loadPlaceIndex(csvUrl: string): Promise<PlaceIndex> {
 export function rowsOfPlace(idx: PlaceIndex, placeRef: string, meta: Meta): Record<string, unknown>[] {
   const types = Object.fromEntries(meta.fields.map((f) => [f.name, f.type]));
   return (idx.byKey.get(placeRef) ?? []).map((raw) => typedRow(idx.header, raw, types));
+}
+
+/**
+ * File of the groups of operator types, an extra file of the places layer (columns operator_type, type_group; contract
+ * columns like place_key). It lets the list of a place show only the records of the group chosen in the filter.
+ */
+export const GROUPS_FILE = 'operator_type_groups.csv';
+const TYPE_COLUMN = 'operator_type';
+const GROUP_COLUMN = 'type_group';
+
+const groupCache = new Map<string, Promise<Map<string, string>>>();
+
+export function loadTypeGroups(url: string): Promise<Map<string, string>> {
+  let p = groupCache.get(url);
+  if (!p) {
+    p = loadCsv(url).then((text) => {
+      const lines = text.split(/\r?\n/).filter((x) => x.trim() !== '');
+      const head = splitFields(lines[0] ?? '');
+      const ti = head.indexOf(TYPE_COLUMN);
+      const gi = head.indexOf(GROUP_COLUMN);
+      if (ti < 0 || gi < 0) throw new Error(`columns ${TYPE_COLUMN}, ${GROUP_COLUMN} are missing`);
+      const m = new Map<string, string>();
+      for (const line of lines.slice(1)) {
+        const f = splitFields(line);
+        m.set((f[ti] ?? '').trim(), (f[gi] ?? '').trim());
+      }
+      return m;
+    });
+    p.catch(() => groupCache.delete(url));
+    groupCache.set(url, p);
+  }
+  return p;
+}
+
+/** Rows of the group; a row whose type is not in the file is dropped (the build checks that none is missing). */
+export function rowsOfGroup(rows: Record<string, unknown>[], groups: Map<string, string>, group: string): Record<string, unknown>[] {
+  return rows.filter((r) => groups.get(String(r[TYPE_COLUMN] ?? '').trim()) === group);
 }

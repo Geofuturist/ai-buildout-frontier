@@ -9,9 +9,9 @@ import type { LayerEntry, Meta } from '@/lib/data';
 import { COLORS } from '@/lib/style';
 import {
   BADGE_COLOR, BADGE_RADII, RING_EXTRA, SIZE_RADII, UNKNOWN_COLOR, UNKNOWN_RADIUS,
-  badgeCondition, badgeRadius, badgeTextSize, colorOf, countLabels, isCounted, isSized, placeRadius, radiusExpression, sizeLabels, unknownCondition, zeroCondition,
+  badgeCondition, badgeRadius, badgeTextSize, colorOf, countLabels, filterColumn, groupShown, isCounted, isSized, isTyped, placeRadius, radiusExpression, sizeLabels, typeColor, typeColorExpression, unknownCondition, zeroCondition,
 } from '@/lib/pointSize';
-import type { Counted } from '@/lib/pointSize';
+import type { Counted, Typed } from '@/lib/pointSize';
 import type { GeometryModule, ModuleCtx } from './types';
 
 const SITE_LEVEL = 'site';
@@ -87,56 +87,70 @@ function renderCounted(l: LayerEntry, d: Counted & { size_field: string }, ctx: 
   const visibility = ctx.visible.has(l.layer_id) ? 'visible' : 'none';
   const sl = l.tiles.source_layer;
   const sel = ctx.selected && ctx.selected.layerId === l.layer_id ? ctx.selected.key : null;
+  const typed = isTyped(d);
+  // Filter by type: one group at a time; the number and size of a badge come from the column of that group
+  const column = filterColumn(d, ctx.typeFilter);
+  const group = column ? ctx.typeFilter : null;
+  const numField = column ?? d.count_field;
   const color = colorOf(d);
-  const radius = placeRadius(d);
+  const radius = placeRadius(d, column ?? undefined);
   const isBadge = badgeCondition(d);
   const notBadge = ['!', isBadge] as unknown as ExpressionSpecification;
   const unknown = unknownCondition(d);
-  const fillColor = ['case', unknown, UNKNOWN_COLOR, color] as unknown as ExpressionSpecification;
+  // Colour by operator type when the layer has it (a place with one record); a place with one record whose class is
+  // unknown keeps its type colour as a small dot
+  const fillColor = typed
+    ? typeColorExpression(d as Typed, 'fill')
+    : (['case', unknown, UNKNOWN_COLOR, color] as unknown as ExpressionSpecification);
+  const strokeColor = typed ? typeColorExpression(d as Typed, 'stroke') : color;
   const fillOpacity = ['case', unknown, 0.9, 0.5] as unknown as ExpressionSpecification;
-  const strokeWidth = ['case', unknown, 0, 1.2] as unknown as ExpressionSpecification;
+  const strokeWidth = (typed ? ['case', unknown, 1, 1.2] : ['case', unknown, 0, 1.2]) as unknown as ExpressionSpecification;
   const selFilter = ['==', ['get', 'record_id'], sel ?? ''] as ExpressionSpecification;
   const selVis = visibility === 'visible' && sel ? 'visible' : 'none';
-  const countGet = ['get', d.count_field] as unknown as ExpressionSpecification;
+  const countGet = ['get', numField] as unknown as ExpressionSpecification;
+  const shown = group && column ? groupShown(d as Counted & Typed, group, column) : null;
+  const ptFilter = shown ? (['all', notBadge, ['==', ['get', (d as Typed).color_field], group]] as unknown as ExpressionSpecification) : notBadge;
+  const badgeFilter = shown ? (['all', isBadge, ['>', ['to-number', ['get', column as string], 0], 0]] as unknown as ExpressionSpecification) : isBadge;
   return (
     <Source key={l.layer_id} id={l.layer_id} type="vector" url={`pmtiles://${l.tiles.url}`}>
-      <Layer id={`${l.layer_id}-ring`} type="circle" source-layer={sl} beforeId={ctx.before} layout={{ visibility }} paint={{ 'circle-radius': num(radius, RING_EXTRA), 'circle-color': COLORS.surface, 'circle-opacity': 0.85 }} />
+      <Layer id={`${l.layer_id}-ring`} type="circle" source-layer={sl} beforeId={ctx.before} {...(shown ? { filter: shown } : {})} layout={{ visibility }} paint={{ 'circle-radius': num(radius, RING_EXTRA), 'circle-color': COLORS.surface, 'circle-opacity': 0.85 }} />
       <Layer
         id={`${l.layer_id}-pt`}
         type="circle"
         source-layer={sl}
         beforeId={ctx.before}
-        filter={notBadge}
+        filter={ptFilter}
         layout={{ visibility }}
-        paint={{ 'circle-radius': radiusExpression(d), 'circle-color': fillColor, 'circle-opacity': fillOpacity, 'circle-stroke-color': color, 'circle-stroke-width': strokeWidth, 'circle-stroke-opacity': 1 }}
+        paint={{ 'circle-radius': radiusExpression(d), 'circle-color': fillColor, 'circle-opacity': fillOpacity, 'circle-stroke-color': strokeColor, 'circle-stroke-width': strokeWidth, 'circle-stroke-opacity': 1 }}
       />
-      {/* Bigger numbers on top of smaller ones where badges overlap */}
+      {/* Bigger numbers on top of smaller ones where badges overlap. A badge is neutral: it is not coloured by the
+          group that prevails, which would be our reading of the mix. */}
       <Layer
         id={`${l.layer_id}-badge`}
         type="circle"
         source-layer={sl}
         beforeId={ctx.before}
-        filter={isBadge}
+        filter={badgeFilter}
         layout={{ visibility, 'circle-sort-key': countGet }}
-        paint={{ 'circle-radius': badgeRadius(d), 'circle-color': BADGE_COLOR, 'circle-opacity': 0.92, 'circle-stroke-color': COLORS.surface, 'circle-stroke-width': 1.2 }}
+        paint={{ 'circle-radius': badgeRadius(d, column ?? undefined), 'circle-color': BADGE_COLOR, 'circle-opacity': 0.92, 'circle-stroke-color': COLORS.surface, 'circle-stroke-width': 1.2 }}
       />
       <Layer
         id={`${l.layer_id}-badge-n`}
         type="symbol"
         source-layer={sl}
         beforeId={ctx.before}
-        filter={isBadge}
+        filter={badgeFilter}
         layout={{
           visibility,
           'text-field': ['to-string', countGet] as unknown as ExpressionSpecification,
           'text-font': ['Noto Sans Regular'],
-          'text-size': badgeTextSize(d),
+          'text-size': badgeTextSize(d, column ?? undefined),
           'text-allow-overlap': true,
           'text-ignore-placement': true,
         }}
         paint={{ 'text-color': '#ffffff' }}
       />
-      <Layer id={`${l.layer_id}-hit`} type="circle" source-layer={sl} beforeId={ctx.before} layout={{ visibility }} paint={{ 'circle-radius': ['max', 9, num(radius, 3)] as unknown as ExpressionSpecification, 'circle-color': '#ffffff', 'circle-opacity': 0.01 }} />
+      <Layer id={`${l.layer_id}-hit`} type="circle" source-layer={sl} beforeId={ctx.before} {...(shown ? { filter: shown } : {})} layout={{ visibility }} paint={{ 'circle-radius': ['max', 9, num(radius, 3)] as unknown as ExpressionSpecification, 'circle-color': '#ffffff', 'circle-opacity': 0.01 }} />
       <Layer id={`${l.layer_id}-sel-under`} type="circle" source-layer={sl} beforeId={ctx.before} filter={selFilter} layout={{ visibility: selVis }} paint={{ 'circle-radius': num(radius, 5), 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': COLORS.surface, 'circle-stroke-width': 5.5 }} />
       <Layer id={`${l.layer_id}-sel`} type="circle" source-layer={sl} beforeId={ctx.before} filter={selFilter} layout={{ visibility: selVis }} paint={{ 'circle-radius': num(radius, 5), 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': COLORS.selected, 'circle-stroke-width': 2.5 }} />
     </Source>
@@ -194,7 +208,7 @@ const pointModule: GeometryModule = {
     return null;
   },
 
-  Legend({ layers, metas }) {
+  Legend({ layers, metas, typeFilter, onTypeFilter }) {
     if (layers.length === 0) return null;
     const sized = layers.filter((l) => isSized(metas[l.meta_id]?.display));
     const plain = layers.filter((l) => !isSized(metas[l.meta_id]?.display));
@@ -202,6 +216,7 @@ const pointModule: GeometryModule = {
     const withZero = sized.some((l) => metas[l.meta_id].display?.zero_class);
     const unit = first ? metas[sized.find((l) => !metas[l.meta_id].display?.size_classes?.length)?.meta_id ?? sized[0].meta_id].fields.find((f) => f.name === first.size_field)?.unit ?? '' : '';
     const counted = sized.map((l) => metas[l.meta_id].display).find((x) => isCounted(x)) as Counted | undefined;
+    const typed = sized.map((l) => metas[l.meta_id].display).find((x) => isTyped(x)) as Typed | undefined;
     const breaks = first?.size_breaks ?? [];
     const labels = breaks.length ? sizeLabels(breaks, unit || 'MW') : [];
     const plainDot = (filled: boolean) => (
@@ -218,8 +233,11 @@ const pointModule: GeometryModule = {
             <ul className="space-y-0.5">
               {sized.map((l) => (
                 <li key={l.layer_id} className="flex items-center gap-2">
-                  <Dot r={5} color={colorOf(metas[l.meta_id].display as Display)} />
-                  <span>{l.title}</span>
+                  <Dot r={5} color={isTyped(metas[l.meta_id].display) ? BADGE_COLOR : colorOf(metas[l.meta_id].display as Display)} />
+                  <span>
+                    {l.title}
+                    {metas[l.meta_id].display?.legend_layer_note && <span className="block text-xs text-muted">{metas[l.meta_id].display?.legend_layer_note}</span>}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -254,7 +272,7 @@ const pointModule: GeometryModule = {
             {counted && (
               <ul className="mt-1 space-y-0 border-t border-line pt-1">
                 <li className="text-xs text-ink2">Place with several records (the number is the count):</li>
-                {countLabels(counted.count_breaks).map((t, i) => (
+                {(counted.legend_count_classes?.length === counted.count_breaks.length ? counted.legend_count_classes : countLabels(counted.count_breaks)).map((t, i) => (
                   <li key={t} className="flex items-center gap-2">
                     <Badge r={Math.min(BADGE_RADII[Math.min(i, BADGE_RADII.length - 1)], 19)} n={String(counted.count_breaks[i])} />
                     <span>{t}</span>
@@ -263,6 +281,36 @@ const pointModule: GeometryModule = {
               </ul>
             )}
             {first.legend_note && <p className="mt-1 text-xs text-muted">{first.legend_note}</p>}
+            {typed && (
+              <div className="mt-2 border-t border-line pt-2" role="radiogroup" aria-label={typed.legend_type_title ?? 'Type'}>
+                <h3 className="mb-1 text-[13px] font-semibold text-ink">{typed.legend_type_title ?? 'Type'}</h3>
+                {typed.legend_type_note && <p className="mb-1 text-xs text-muted">{typed.legend_type_note}</p>}
+                <ul className="space-y-0">
+                  {[{ key: null as string | null, label: typed.legend_type_filter_all ?? 'All types', color: null as string | null }, ...typed.color_classes.map((c, i) => ({ key: c as string | null, label: typed.legend_type_labels?.[c] ?? c, color: typeColor(i).fill as string | null }))].map((o) => {
+                    const on = (typeFilter ?? null) === o.key;
+                    const canFilter = o.key === null || Boolean(typed.filter_fields?.[o.key]);
+                    return (
+                      <li key={o.key ?? 'all'}>
+                        <button
+                          type="button"
+                          role="radio"
+                          aria-checked={on}
+                          disabled={!onTypeFilter || !canFilter}
+                          className={`flex min-h-[32px] w-full items-center gap-2 rounded px-1 text-left hover:bg-[#eef3f3] ${on ? 'font-semibold' : ''}`}
+                          onClick={() => onTypeFilter?.(o.key)}
+                        >
+                          <span aria-hidden className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full border ${on ? 'border-[#0f6e6e]' : 'border-[#8a8f96]'}`}>
+                            {on && <span className="h-2 w-2 rounded-full bg-[#0f6e6e]" />}
+                          </span>
+                          {o.color ? <span aria-hidden className="h-3 w-3 shrink-0 rounded-full border border-black/20" style={{ background: o.color }} /> : <span aria-hidden className="h-3 w-3 shrink-0" />}
+                          <span>{o.label}</span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
           </>
         )}
         {plain.length > 0 && (

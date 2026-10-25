@@ -62,7 +62,7 @@ export function radiusExpression(d: Display & { size_field: string }): Expressio
 /** Radii in px of the badge classes (first class ... last); a layer with more classes reuses the last one. */
 export const BADGE_RADII = [11, 15, 19];
 export const BADGE_TEXT_SIZES = [11, 12.5, 14];
-export const BADGE_COLOR = '#6e1f5a';
+export const BADGE_COLOR = '#3f4752';
 
 export type Counted = Display & { count_field: string; count_breaks: number[] };
 
@@ -76,23 +76,72 @@ export function badgeCondition(d: Counted): ExpressionSpecification {
 }
 
 /** A value per badge class (the first below the second break, and so on), as a MapLibre step on the count field. */
-function stepByCount(d: Counted, values: number[]): ExpressionSpecification {
-  const s: unknown[] = ['step', ['to-number', ['get', d.count_field], 0], values[0]];
+function stepByCount(d: Counted, values: number[], field: string = d.count_field): ExpressionSpecification {
+  const s: unknown[] = ['step', ['to-number', ['get', field], 0], values[0]];
   d.count_breaks.slice(1).forEach((b, i) => s.push(b, values[Math.min(i + 1, values.length - 1)]));
   return s as unknown as ExpressionSpecification;
 }
 
-export function badgeRadius(d: Counted): ExpressionSpecification {
-  return stepByCount(d, BADGE_RADII);
+export function badgeRadius(d: Counted, field?: string): ExpressionSpecification {
+  return stepByCount(d, BADGE_RADII, field);
 }
 
-export function badgeTextSize(d: Counted): ExpressionSpecification {
-  return stepByCount(d, BADGE_TEXT_SIZES);
+export function badgeTextSize(d: Counted, field?: string): ExpressionSpecification {
+  return stepByCount(d, BADGE_TEXT_SIZES, field);
 }
 
-/** Radius of a place on the map: the badge class, or the size class of its one record. */
-export function placeRadius(d: Counted & { size_field: string }): ExpressionSpecification {
-  return ['case', badgeCondition(d), badgeRadius(d), radiusExpression(d)] as unknown as ExpressionSpecification;
+/** Radius of a place on the map: the badge class, or the size class of its one record. `field` replaces the count (filter by type). */
+export function placeRadius(d: Counted & { size_field: string }, field?: string): ExpressionSpecification {
+  return ['case', badgeCondition(d), badgeRadius(d, field), radiusExpression(d)] as unknown as ExpressionSpecification;
+}
+
+// ---- Colour by type (display.color_field, display.color_classes) and the filter by type (display.filter_fields) ----
+// Six colours and grey, picked to stay apart for readers with colour-vision deficiency (Okabe-Ito set); none is green,
+// because green belongs to the numeric-size points. Classes are taken in the order of the legend; any class after the
+// sixth is grey. The stroke of the yellow is darker so that it shows on a light map.
+export const TYPE_PALETTE: { fill: string; stroke: string }[] = [
+  { fill: '#0072B2', stroke: '#0072B2' }, // blue
+  { fill: '#E69F00', stroke: '#E69F00' }, // orange
+  { fill: '#CC79A7', stroke: '#CC79A7' }, // reddish purple
+  { fill: '#56B4E9', stroke: '#56B4E9' }, // sky blue
+  { fill: '#F0E442', stroke: '#A39A00' }, // yellow
+  { fill: '#D55E00', stroke: '#D55E00' }, // vermillion
+];
+export const TYPE_GREY = { fill: UNKNOWN_COLOR, stroke: UNKNOWN_COLOR };
+
+export type Typed = Display & { color_field: string; color_classes: string[] };
+
+export function isTyped(d: Display | undefined): d is Typed {
+  return Boolean(d?.color_field && d.color_classes && d.color_classes.length > 0);
+}
+
+export function typeColor(index: number): { fill: string; stroke: string } {
+  return TYPE_PALETTE[index] ?? TYPE_GREY;
+}
+
+/** Colour of a point by the value of color_field (fill or stroke). */
+export function typeColorExpression(d: Typed, part: 'fill' | 'stroke'): ExpressionSpecification {
+  const m: unknown[] = ['match', ['get', d.color_field]];
+  d.color_classes.forEach((c, i) => m.push(c, typeColor(i)[part]));
+  m.push(TYPE_GREY[part]);
+  return m as unknown as ExpressionSpecification;
+}
+
+/** The column of the chosen group, if the layer has the filter and knows the group. */
+export function filterColumn(d: Display, group: string | null): string | null {
+  return group && isTyped(d) && d.filter_fields?.[group] ? d.filter_fields[group] : null;
+}
+
+/**
+ * What is shown when one group is chosen: places with several records that have at least one record of the group
+ * (number and size from that group's column), and places with one record of the group. Values come from the tiles.
+ */
+export function groupShown(d: Counted & Typed, group: string, column: string): ExpressionSpecification {
+  return [
+    'any',
+    ['all', badgeCondition(d), ['>', ['to-number', ['get', column], 0], 0]],
+    ['all', ['!', badgeCondition(d)], ['==', ['get', d.color_field], group]],
+  ] as unknown as ExpressionSpecification;
 }
 
 /** Labels of the badge classes from the thresholds: "2–9 records", "10 records and above". */

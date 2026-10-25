@@ -86,6 +86,21 @@ export interface Meta {
     count_breaks?: number[];
   /** words the layer is found by in the search (besides its title, source, topic, scope and levels) */
   tags?: string[];
+    /** operator type of the place (abf-dc 0.2.0): the field that sets the colour of a point and its classes in the legend order; the last class beyond the palette is grey */
+    color_field?: string;
+    color_classes?: string[];
+    /** group -> the column that counts the records of that group in a place (n_type_<group>): the filter by type */
+    filter_fields?: Record<string, string>;
+    legend_type_title?: string;
+    legend_type_note?: string;
+    legend_type_labels?: Record<string, string>;
+    legend_type_filter_all?: string;
+    legend_layer_note?: string;
+    legend_count_classes?: string[];
+    list_title?: string;
+    list_note?: string;
+    /** mark shape; the site draws circles only (V 25.10: Epoch stays a circle for now), the key is read and ignored */
+    symbol?: string;
     tile_fields?: string[];
     home_bbox?: [number, number, number, number];
     /** panel topic; absent in older metas (then derived from the domain) */
