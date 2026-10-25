@@ -16,7 +16,7 @@ interface Props {
   onInfo: (layerId: string) => void;
   /** all topics open from the start (the territory card, where the list is short) */
   openAll?: boolean;
-  /** territory card: the second line says "data by <level>" so it is not read as the selected level */
+  /** territory card: no level in the second line; the level follows the selected territory, not the layer */
   byLevel?: boolean;
 }
 
@@ -42,7 +42,7 @@ export default function LayersPanel({ rows, activeFill, overlays, failed, onFill
     <span className="min-w-0 leading-tight">
       <span className="block text-sm text-ink">{r.title}</span>
       <span className="block text-xs text-ink2">
-        {r.scope} · {byLevel && r.kind === 'fill' ? `data by ${r.levels.toLowerCase()}` : r.levels}
+        {byLevel ? r.scope : `${r.scope} · ${r.levels}`}
         {bad && <strong className="ml-1 text-[#9a2a00]">· Failed to load</strong>}
       </span>
       <span className="block text-xs text-muted">{[r.source, r.fresh].filter(Boolean).join(' · ')}</span>
