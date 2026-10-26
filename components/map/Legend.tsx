@@ -10,10 +10,6 @@ export default function Legend({ layers, metas, typeFilter, onTypeFilter }: { la
         const Block = m.Legend;
         return <Block key={m.type} layers={layers.filter((l) => l.tiles.geometry_type === m.type)} metas={metas} typeFilter={typeFilter} onTypeFilter={onTypeFilter} />;
       })}
-      <p className="mt-3 text-xs text-muted">Layers are named after their source.</p>
-      <p className="mt-1 text-xs text-muted">
-        Boundaries follow the US government&apos;s point of view and do not express a position of the project.
-      </p>
     </section>
   );
 }

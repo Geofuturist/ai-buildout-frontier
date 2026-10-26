@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ChevronDown, ChevronRight, ChevronLeft, ChevronUp } from 'lucide-react';
 import CopyButton from '@/components/CopyButton';
@@ -12,7 +13,7 @@ import { chainOf, unitName } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
 import type { PanelRow } from '@/lib/panel';
 import LayersPanel from './LayersPanel';
-import TerritoryDownloads from './TerritoryDownloads';
+import TerritoryDownloads, { InsideButton } from './TerritoryDownloads';
 import UnitValues from './UnitValues';
 import type { MapData, UnitRef } from './types';
 
@@ -39,8 +40,9 @@ interface Props {
   countryRows: PanelRow[];
   overlays: Record<string, boolean>;
   failed: Set<string>;
-  onFill: (row: PanelRow) => void;
-  onOverlay: (row: PanelRow, on: boolean) => void;
+  onColors: (row: PanelRow) => void;
+  onPoints: (row: PanelRow, on: boolean) => void;
+  legendOf: (row: PanelRow) => ReactNode;
   onInfo: (layerId: string) => void;
   onWorld: () => void;
   onCrumb: (unitId: string) => void;
@@ -131,7 +133,7 @@ export default function TerritoryPanel(p: Props) {
             {p.countryRows.length > 0 && (
               <div className="mt-3 border-t border-line pt-3">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
-                <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onFill={p.onFill} onOverlay={p.onOverlay} onInfo={p.onInfo} openAll />
+                <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onColors={p.onColors} onPoints={p.onPoints} onInfo={p.onInfo} legendOf={p.legendOf} openAll />
               </div>
             )}
 
@@ -141,7 +143,7 @@ export default function TerritoryPanel(p: Props) {
                 {valueLayer ? (
                   <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
                 ) : (
-                  <p className="mt-2 rounded-md border border-dashed border-[#8a8f96] p-3 text-ink2">Not published at this level in this release.</p>
+                  <NoLevel data={data} indicator={indicator} unit={unit} territory={p.territory} iso3={p.countryIso} />
                 )}
                 {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
               </div>
@@ -176,5 +178,28 @@ export default function TerritoryPanel(p: Props) {
       </div>
     </aside>
     </>
+  );
+}
+
+/**
+ * No data of the indicator at the level of the chosen unit (SPEC_WEB_territory r9 16 item 5): one line that says which
+ * level there is and what can be downloaded inside the unit (rows cut by parent_id of units.csv).
+ */
+function NoLevel({ data, indicator, unit, territory, iso3 }: { data: MapData; indicator: Indicator; unit: UnitRef; territory: Territory | null; iso3: string }) {
+  const word = levelWord(unit.level, indicator, iso3, data.unit_words).toLowerCase();
+  const finer = indicator.levels.find((x) => x.level > unit.level);
+  if (!finer) return <p className="mt-2 rounded-md border border-dashed border-[#8a8f96] p-3 text-ink2">No {word} data in this version.</p>;
+  const finerWord = levelWord(finer.level, indicator, iso3, data.unit_words);
+  return (
+    <div className="mt-2 rounded-md border border-dashed border-[#8a8f96] p-3 text-ink2">
+      <p>
+        No {word} data in this version. {finerWord} data inside {unit.name}:
+      </p>
+      {territory ? (
+        <InsideButton layer={finer.layer} meta={data.metas[finer.layer.meta_id]} unit={unit} territory={territory} label="CSV" />
+      ) : (
+        <p className="mt-1 text-xs text-muted">Loading the list of units…</p>
+      )}
+    </div>
   );
 }

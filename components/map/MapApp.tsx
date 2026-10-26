@@ -8,6 +8,7 @@ import LegendCard from './LegendCard';
 import TerritoryPanel from './TerritoryPanel';
 import WorldCard from './WorldCard';
 import Fan from './Fan';
+import Legend from './Legend';
 import InfoCard from './InfoCard';
 import MapNav from './MapNav';
 import { MODULE_BY_TYPE } from './modules';
@@ -16,7 +17,7 @@ import type { CardState, FanSpot, MapData, UnitRef } from './types';
 import { countryNameFromIso3 } from '@/lib/iso3';
 import { buildCountries, fillLevelOf, levelWord, selectionLevel } from '@/lib/indicators';
 import { WORLD, groupByCountry, unionBbox } from '@/lib/layers';
-import { buildRows, onMap } from '@/lib/panel';
+import { buildRows, colorsOf, inCountry, onMap } from '@/lib/panel';
 import type { PanelRow } from '@/lib/panel';
 import { isWithin, levelsOfCountry, loadTerritory } from '@/lib/territory';
 import type { Territory } from '@/lib/territory';
@@ -59,7 +60,8 @@ export default function MapApp({ data }: { data: MapData }) {
   const rows = useMemo(() => buildRows(worldModel, countries, data.metas), [worldModel, countries, data.metas]);
   // The panel on the left lists the layers of the whole world; the layers of one country are chosen in its card
   const worldRows = useMemo(() => rows.filter((r) => r.iso3 === WORLD), [rows]);
-  const countryRows = useMemo(() => rows.filter((r) => r.iso3 !== WORLD && r.iso3 === country), [rows, country]);
+  // The card of a country lists the families that have a layer of that country (a world family too, if it has one)
+  const countryRows = useMemo(() => rows.filter((r) => country !== null && inCountry(r, country)), [rows, country]);
 
   const model = countries.find((c) => c.iso3 === country) ?? null;
   const fullModel = fullModels.find((c) => c.iso3 === country) ?? null;
@@ -70,7 +72,7 @@ export default function MapApp({ data }: { data: MapData }) {
   );
   const countryName = (country ? data.countries.find((c) => c.iso3 === country)?.name : undefined) ?? model?.name ?? (country ? countryNameFromIso3(country) : '');
   // The fill that is on: any country's indicator or a world one; it does not depend on the chosen country
-  const indicator = indicatorKey ? rows.find((r) => r.indicator?.key === indicatorKey)?.indicator ?? null : null;
+  const indicator = indicatorKey ? rows.flatMap((r) => r.fills).find((i) => i.key === indicatorKey) ?? null : null;
   const indCountry = indicator && indicator.iso3 !== WORLD ? indicator.iso3 : null;
 
   // Level a click selects, from the zoom; the fill is the finest layer of the indicator not finer than that
@@ -129,26 +131,37 @@ export default function MapApp({ data }: { data: MapData }) {
     [countries, data.default_layer, data.metas, indicator, indicatorKey, ensureTerritory],
   );
 
-  // Panel: a fill switch. A country's layer also chooses that country and flies to it; a world layer changes nothing else.
-  const onFill = (row: PanelRow) => {
-    if (indicatorKey === row.indicator?.key) {
+  // Panel: the Colors switch of a family. A fill of a country also chooses that country and flies to it; a world fill
+  // changes nothing else. The fill is the one of the chosen country when the family has several.
+  const onColors = (row: PanelRow) => {
+    const ind = colorsOf(row, country);
+    if (!ind) return;
+    if (indicatorKey === ind.key) {
       setIndicatorKey(null);
       return;
     }
-    if (!row.indicator) return;
-    if (row.iso3 === WORLD) {
-      setIndicatorKey(row.indicator.key);
+    if (ind.iso3 === WORLD) {
+      setIndicatorKey(ind.key);
       return;
     }
-    selectCountry(row.iso3, { key: row.indicator.key, fly: unionBbox(row.indicator.levels.map((x) => x.layer), data.metas) });
+    selectCountry(ind.iso3, { key: ind.key, fly: unionBbox(ind.levels.map((x) => x.layer), data.metas) });
   };
-  const onOverlayRow = (row: PanelRow, on: boolean) => {
-    if (!row.layer) return;
-    setOverlays((prev) => ({ ...prev, [row.layer!.layer_id]: on }));
-    if (on && row.iso3 !== WORLD) {
-      const fly = unionBbox([row.layer], data.metas);
-      if (country !== row.iso3) selectCountry(row.iso3, { key: indicatorKey ?? undefined, fly });
+  // The Points (or Lines) switch: all points and lines of the family together. Layers of a country choose it and fly there.
+  const onPoints = (row: PanelRow, on: boolean) => {
+    setOverlays((prev) => ({ ...prev, ...Object.fromEntries(row.overlays.map((o) => [o.layer.layer_id, on])) }));
+    const own = row.overlays.find((o) => o.iso3 !== WORLD && (country === null || o.iso3 === country)) ?? row.overlays.find((o) => o.iso3 !== WORLD);
+    if (on && own && !row.overlays.some((o) => o.iso3 === WORLD)) {
+      const fly = unionBbox([own.layer], data.metas);
+      if (country !== own.iso3) selectCountry(own.iso3, { key: indicatorKey ?? undefined, fly });
       else if (fly) mapRef.current?.fitBounds(fly);
+    }
+  };
+  // A family found by the search: its points if it has them, otherwise its colors
+  const onFound = (row: PanelRow) => {
+    if (row.overlays.length > 0) onPoints(row, true);
+    else {
+      const ind = colorsOf(row, country);
+      if (ind && indicatorKey !== ind.key) onColors(row);
     }
   };
 
@@ -211,8 +224,21 @@ export default function MapApp({ data }: { data: MapData }) {
     indicator && !fill && finest
       ? `No data at this level in this release. Zoom in to see ${levelWord(finest.level, indicator, indicator.iso3, data.unit_words).toLowerCase()} data.`
       : null;
-  const legendLayers = [...(fill ? [fill.layer] : []), ...overlaysOn];
-
+  // The legend of a family stands right under its row (SPEC_WEB_territory r9 16): in the left panel for a family
+  // of the world, in the card of the country for a family of that country only
+  const legendFor = (place: 'world' | 'country') => (row: PanelRow) => {
+    if (place === 'country' && row.iso3 === WORLD) return null;
+    const ownsFill = indicator !== null && row.fills.some((i) => i.key === indicator.key);
+    const ls = [...(ownsFill && fill ? [fill.layer] : []), ...row.overlays.map((o) => o.layer).filter((l) => overlays[l.layer_id])];
+    if (!ownsFill && ls.length === 0) return null;
+    return (
+      <div className="mx-1 mt-1 rounded-md border border-line bg-surface p-2">
+        {ownsFill && heading && <p className="mb-2 text-sm font-semibold leading-tight text-ink">{heading}</p>}
+        {ownsFill && note && <p className="mb-2 rounded-md border border-dashed border-[#8a8f96] p-2 text-xs text-ink2">{note}</p>}
+        <Legend layers={ls} metas={data.metas} typeFilter={typeFilter} onTypeFilter={setTypeFilter} />
+      </div>
+    );
+  };
   return (
     <div className="flex min-h-0 flex-1 flex-col">
       <div className="relative min-h-0 flex-1">
@@ -244,23 +270,19 @@ export default function MapApp({ data }: { data: MapData }) {
         )}
         <LegendCard
           data={data}
-          heading={heading}
-          note={note}
-          layers={legendLayers}
           covered={card !== null}
           nonce={nonce}
           rows={worldRows}
           activeFill={indicator?.key ?? null}
           overlays={overlays}
           failed={failed}
-          onFill={onFill}
-          onOverlay={onOverlayRow}
+          onColors={onColors}
+          onPoints={onPoints}
           onInfo={(id) => setCard({ type: 'layer', layerId: id })}
           onSearch={(c) => selectCountry(c.iso3, { fly: c.bbox })}
           allRows={rows}
-          typeFilter={typeFilter}
-          onTypeFilter={setTypeFilter}
-          onFound={(row) => (row.kind === 'fill' ? (indicatorKey === row.indicator?.key ? undefined : onFill(row)) : onOverlayRow(row, true))}
+          legendOf={legendFor('world')}
+          onFound={onFound}
         />
         <MapNav preview={data.channel === 'dev'} />
         {/* Zoom and the level a click selects, above the zoom buttons */}
@@ -282,8 +304,9 @@ export default function MapApp({ data }: { data: MapData }) {
           countryRows={countryRows}
           overlays={overlays}
           failed={failed}
-          onFill={onFill}
-          onOverlay={onOverlayRow}
+          onColors={onColors}
+          onPoints={onPoints}
+          legendOf={legendFor('country')}
           onInfo={(id) => setCard({ type: 'layer', layerId: id })}
           onWorld={backToGlobe}
           onCrumb={onCrumb}
