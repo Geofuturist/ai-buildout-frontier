@@ -246,6 +246,7 @@ export default function MapApp({ data }: { data: MapData }) {
           ref={mapRef}
           data={data}
           activeId={activeId}
+          fillUnderSelection={fill !== null && indicator !== null && (indicator.iso3 === WORLD || indicator.iso3 === country)}
           overlays={shownOverlays}
           selected={selected}
           country={country}

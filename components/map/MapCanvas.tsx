@@ -32,6 +32,8 @@ interface Props {
   data: MapData;
   /** the fill layer that is drawn (only one, of the chosen country), or 'none' */
   activeId: string;
+  /** a data fill with its legend is drawn under the chosen unit: the translucent selection fill is left out so it does not change the colours */
+  fillUnderSelection: boolean;
   overlays: Record<string, boolean>;
   /** the point or line record shown in the card, if any */
   selected: { layerId: string; key: string } | null;
@@ -64,7 +66,7 @@ interface Props {
 /** Opacity that is `on` where the feature state `key` is set and 0 elsewhere (constant expression: never reloads tiles). */
 const FS_OPACITY = (key: string, on: number) => ['case', ['boolean', ['feature-state', key], false], on, 0] as ExpressionSpecification;
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, onFan, worldOn, typeFilter, onZoom, onReady, onFailed }, ref) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, fillUnderSelection, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, onFan, worldOn, typeFilter, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -170,12 +172,12 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
     if (neutralLevel !== null) for (const id of neutralIds) out.push({ level: neutralLevel, id, key: 'neutral', value: true });
     if (selectedUnit) {
       out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'sel', value: true });
-      // translucent fill; lighter when a data fill lies under the unit, so that the colours of the data stay readable
-      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'tint', value: activeId === 'none' ? 0.34 : 0.24 });
+      // translucent fill on a plain map; none over a data fill, whose colours (and legend) it would change
+      out.push({ level: selectedUnit.level, id: selectedUnit.unit_id, key: 'tint', value: fillUnderSelection ? 0 : 0.34 });
     }
     if (hover) out.push({ level: hover.level, id: hover.unit_id, key: 'hov', value: true });
     return out;
-  }, [dataCountries, neutralLevel, neutralIds, selectedUnit, hover, activeId]);
+  }, [dataCountries, neutralLevel, neutralIds, selectedUnit, hover, fillUnderSelection]);
   useEffect(() => {
     const map = mapRef.current?.getMap();
     if (!ready || !map || !map.getSource('boundaries')) return;
