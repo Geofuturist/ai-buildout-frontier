@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { Layer, Source, useMap } from 'react-map-gl/maplibre';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import type { LayerEntry, Meta } from '@/lib/data';
-import { effectiveFilters, filterExpression, hasFilters } from '@/lib/filters';
+import { effectiveFilters, filterExpression, filtersOf, typeFilterOf } from '@/lib/filters';
 import type { LayerFilters } from '@/lib/filters';
 import { COLORS } from '@/lib/style';
 import { SIZE_RADII, classColor, isTyped, sizeLabels, typeColorExpression } from '@/lib/pointSize';
@@ -151,29 +151,57 @@ function Sq({ side, color, frame }: { side: number; color: string; frame?: boole
   );
 }
 
-/** Legend of a square layer: type colours, size classes, the frame, then the filters. */
+/** One line of a filter: a tick box with the label (and the colour of a type). */
+function Tick({ on, label, color, onClick, disabled }: { on: boolean; label: string; color?: string; onClick: () => void; disabled?: boolean }) {
+  return (
+    <li>
+      <button
+        type="button"
+        role="checkbox"
+        aria-checked={on}
+        disabled={disabled}
+        className={`flex min-h-[32px] w-full items-center gap-2 rounded px-1 text-left hover:bg-[#eef3f3] ${on ? 'font-semibold' : ''}`}
+        onClick={onClick}
+      >
+        <span aria-hidden className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-sm border ${on ? 'border-[#0f6e6e]' : 'border-[#8a8f96]'}`}>
+          {on && <span className="h-2 w-2 rounded-[1px] bg-[#0f6e6e]" />}
+        </span>
+        {color && <span aria-hidden className="h-3 w-3 shrink-0 border border-black/20" style={{ background: color }} />}
+        <span>{label}</span>
+      </button>
+    </li>
+  );
+}
+
+/** A filter: "All" and the values; several may be ticked; nothing ticked is "All". */
+function FilterList({ layerId, f, chosen, colors, onLayerFilter }: { layerId: string; f: NonNullable<ReturnType<typeof typeFilterOf>>; chosen: string[]; colors?: Record<string, string>; onLayerFilter?: (layerId: string, field: string, values: string[]) => void }) {
+  const set = (v: string[]) => onLayerFilter?.(layerId, f.field, v);
+  return (
+    <ul className="space-y-0" role="group" aria-label={f.title}>
+      <Tick on={chosen.length === 0} label="All" disabled={!onLayerFilter} onClick={() => set([])} />
+      {f.values.map((v) => (
+        <Tick key={v.value} on={chosen.includes(v.value)} label={v.label} color={colors?.[v.value]} disabled={!onLayerFilter} onClick={() => set(chosen.includes(v.value) ? chosen.filter((x) => x !== v.value) : [...chosen, v.value])} />
+      ))}
+    </ul>
+  );
+}
+
+/** Legend of a square layer: the types (a filter), size classes, the frame, then the other filters. */
 export function SquareLegend({ layer, d, layerFilters, onLayerFilter }: { layer: LayerEntry; d: Display; layerFilters?: LayerFilters; onLayerFilter?: (layerId: string, field: string, values: string[]) => void }) {
   const typed = isTyped(d) ? (d as Typed) : null;
+  const typeFilter = typeFilterOf(d);
   const classes = sizeClassesOf(d);
   const breaks = d.size_breaks ?? [];
   const sizeText: string[] = classes
     ? classes.map((c, i) => d.legend_size_labels?.[c] ?? sizeLabels(breaks, 'MW')[i] ?? c)
     : breaks.length ? sizeLabels(breaks, 'MW') : [];
   const chosen = effectiveFilters(d, layerFilters?.[layer.layer_id]);
+  const typeColors = typed ? Object.fromEntries(typed.color_classes.map((c, i) => [c, classColor(typed, c, i).fill])) : undefined;
   return (
     <div className="mt-3 first:mt-0">
       <h3 className="mb-1 text-[13px] font-semibold text-ink">{d.legend_title ?? layer.title}</h3>
       {d.legend_note && <p className="mb-1 text-xs text-muted">{d.legend_note}</p>}
-      {typed && (
-        <ul className="space-y-0">
-          {typed.color_classes.map((c, i) => (
-            <li key={c} className="flex items-center gap-2">
-              <Sq side={10} color={classColor(typed, c, i).fill} />
-              <span>{d.legend_type_labels?.[c] ?? c}</span>
-            </li>
-          ))}
-        </ul>
-      )}
+      {typeFilter && <FilterList layerId={layer.layer_id} f={typeFilter} chosen={chosen[typeFilter.field] ?? []} colors={typeColors} onLayerFilter={onLayerFilter} />}
       {sizeText.length > 0 && (
         <ul className="mt-1 space-y-0 border-t border-line pt-1">
           {sizeText.map((t, i) => (
@@ -189,38 +217,13 @@ export function SquareLegend({ layer, d, layerFilters, onLayerFilter }: { layer:
           <li className="flex items-center gap-2"><Sq side={10} color="#6b6f76" frame /><span>{d.legend_approximate}</span></li>
         </ul>
       )}
-      {hasFilters(d) && d.filters.map((f) => {
-        const vals = chosen[f.field] ?? [];
-        return (
-          <fieldset key={f.field} className="mt-2 border-t border-line pt-2">
-            {f.title && <legend className="mb-1 text-[13px] font-semibold text-ink">{f.title}</legend>}
-            {f.note && <p className="mb-1 text-xs text-muted">{f.note}</p>}
-            <ul className="space-y-0" role={f.mode === 'equals' ? 'radiogroup' : undefined}>
-              {f.values.map((v) => {
-                const on = vals.includes(v.value);
-                const set = () => onLayerFilter?.(layer.layer_id, f.field, f.mode === 'equals' ? [v.value] : on ? vals.filter((x) => x !== v.value) : [...vals, v.value]);
-                return (
-                  <li key={v.value}>
-                    <button
-                      type="button"
-                      role={f.mode === 'equals' ? 'radio' : 'checkbox'}
-                      aria-checked={on}
-                      disabled={!onLayerFilter}
-                      className={`flex min-h-[32px] w-full items-center gap-2 rounded px-1 text-left hover:bg-[#eef3f3] ${on ? 'font-semibold' : ''}`}
-                      onClick={set}
-                    >
-                      <span aria-hidden className={`flex h-4 w-4 shrink-0 items-center justify-center border ${f.mode === 'equals' ? 'rounded-full' : 'rounded-sm'} ${on ? 'border-[#0f6e6e]' : 'border-[#8a8f96]'}`}>
-                        {on && <span className={`h-2 w-2 ${f.mode === 'equals' ? 'rounded-full' : 'rounded-[1px]'} bg-[#0f6e6e]`} />}
-                      </span>
-                      <span>{v.label}</span>
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          </fieldset>
-        );
-      })}
+      {filtersOf(d).filter((f) => f.field !== typeFilter?.field).map((f) => (
+        <fieldset key={f.field} className="mt-2 border-t border-line pt-2">
+          {f.title && <legend className="mb-1 text-[13px] font-semibold text-ink">{f.title}</legend>}
+          {f.note && <p className="mb-1 text-xs text-muted">{f.note}</p>}
+          <FilterList layerId={layer.layer_id} f={f} chosen={chosen[f.field] ?? []} onLayerFilter={onLayerFilter} />
+        </fieldset>
+      ))}
     </div>
   );
 }
