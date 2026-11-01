@@ -29,6 +29,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import boundaries_build
 import check_dc_phrases
+import check_gem_phrases
 import layer_build
 from common import (
     DOI_REGEX,
@@ -141,6 +142,7 @@ def plan_layer(lo: LayerOutput, out: Path, extra: list[dict[str, Any]], tiles_fi
                   "geometry_type": lo.geometry_type, "minzoom": int(lo.tile_cfg.get("minzoom", 0)),
                   "maxzoom": int(lo.tile_cfg.get("maxzoom", 10)), "fields": lo.tile_fields},
     }
+    entry["git_copy"] = dict(lo.git_copy)   # read by finalize_release (not part of the manifest)
     home_bbox = (lo.meta.get("display") or {}).get("home_bbox")  # copied as is from meta.json (SPEC_META 6 item 23)
     if home_bbox is not None:
         entry["home_bbox"] = home_bbox
@@ -383,6 +385,15 @@ class BuildContextStub:
 
 def run_phrase_check(cfg: dict[str, Any], channel: str, report: Report) -> None:
     """Phrases of the abf-dc texts against the saved source pages (check_dc_phrases.py). A stop in final, a warning in dev."""
+    if cfg.get("kind") == "gem":   # abf-energy / abf-energync: the About sheet of the GEM workbook (check_gem_phrases.py)
+        lines, not_found, problems = check_gem_phrases.run_check(resolve_path(cfg["xlsx"]), resolve_path(cfg.get("layers", "layers")))
+        report.section("Phrases of the GEM texts against the GEM workbook", [f"- {l}" for l in lines if not l.startswith("         ")])
+        if not_found or problems:
+            msg = f"phrase check (RES_texts_GEM section 10): missing {not_found}; problems {problems}"
+            if channel == "final":
+                raise GateError("G13", msg)
+            report.warn(msg + " (a warning in dev, a stop in final)")
+        return
     pages = resolve_path(cfg["pages"])
     readme = resolve_path(cfg["geonames_readme"]) if cfg.get("geonames_readme") else None
     lines, not_found, problems = check_dc_phrases.run_check(pages, readme, resolve_path(cfg.get("layers", "layers")))
@@ -462,6 +473,8 @@ def run(args: argparse.Namespace) -> int:
     else:
         for layer_yaml in rel["layers"]:
             cfg = load_yaml(resolve_path(layer_yaml))
+            if "git_copy" in rel and "git_copy" not in cfg:   # release key: what goes to git for every layer (SPEC_GEM r6 Q6)
+                cfg["git_copy"] = rel["git_copy"]
             if cfg.get("publish") is False:
                 raise GateError("P9", f"{cfg['layer_id']}: the layer has publish: false but is listed in the release")
             if cfg["level"] == "line":

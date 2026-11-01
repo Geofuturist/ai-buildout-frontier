@@ -508,7 +508,7 @@ class StaticFiles(unittest.TestCase):
     def test_release_yaml(self):
         rel = load_yaml(ROOT / "releases" / "abf-dc-v0.2.0.yaml")
         self.assertEqual((rel["dataset"], rel["version"], rel["tag"]), ("abf-dc", "0.2.0", "abf-dc-v0.2.0"))
-        self.assertIsNone(rel["doi"])
+        self.assertEqual(rel["doi"], "10.5281/zenodo.23645541")
         ids = []
         for y in rel["layers"]:
             p = ROOT / y.replace("\\", "/")
