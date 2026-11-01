@@ -15,6 +15,7 @@ import { MODULE_BY_TYPE } from './modules';
 import { selectDataLayers } from './select';
 import type { CardState, FanSpot, MapData, UnitRef } from './types';
 import { countryNameFromIso3 } from '@/lib/iso3';
+import type { LayerFilters } from '@/lib/filters';
 import { buildCountries, fillLevelOf, levelWord, selectionLevel } from '@/lib/indicators';
 import { WORLD, groupByCountry, unionBbox } from '@/lib/layers';
 import { buildRows, colorsOf, inCountry, onMap } from '@/lib/panel';
@@ -38,6 +39,9 @@ export default function MapApp({ data }: { data: MapData }) {
   const [worldOpen, setWorldOpen] = useState(false);
   // Filter by operator type: one group at a time, or null for all (display.filter_fields of the places layer)
   const [typeFilter, setTypeFilter] = useState<string | null>(null);
+  // Filters by the value of a field (display.filters): layer_id -> field -> chosen values; untouched = the default of the meta
+  const [layerFilters, setLayerFilters] = useState<LayerFilters>({});
+  const onLayerFilter = useCallback((layerId: string, field: string, values: string[]) => setLayerFilters((prev) => ({ ...prev, [layerId]: { ...prev[layerId], [field]: values } })), []);
   // The place that was clicked and may open as a fan (screen position); it shows only while its own card is open
   const [fanSpot, setFanSpot] = useState<FanSpot | null>(null);
 
@@ -235,10 +239,28 @@ export default function MapApp({ data }: { data: MapData }) {
       <div className="mx-1 mt-1 rounded-md border border-line bg-surface p-2">
         {ownsFill && heading && <p className="mb-2 text-sm font-semibold leading-tight text-ink">{heading}</p>}
         {ownsFill && note && <p className="mb-2 rounded-md border border-dashed border-[#8a8f96] p-2 text-xs text-ink2">{note}</p>}
-        <Legend layers={ls} metas={data.metas} typeFilter={typeFilter} onTypeFilter={setTypeFilter} />
+        {ls.map((l) => {
+          const hint = data.metas[l.meta_id].display?.zoom_hint;
+          return hint && zoom < hint.below ? <p key={l.layer_id} className="mb-2 rounded-md border border-dashed border-[#8a8f96] p-2 text-xs text-ink2">{hint.text}</p> : null;
+        })}
+        <Legend layers={ls} metas={data.metas} typeFilter={typeFilter} onTypeFilter={setTypeFilter} layerFilters={layerFilters} onLayerFilter={onLayerFilter} />
       </div>
     );
   };
+  // Lines under the map for the layers that are on and carry one (display.map_attribution), with the logo of the source
+  // when content/site.json has one for it (source_logos). Nothing for a layer that is off.
+  const onAttributions = (() => {
+    const out: { text: string; logo?: { file: string; alt: string; href: string } }[] = [];
+    for (const l of data.layers) {
+      if (!(overlays[l.layer_id] || fill?.layer.layer_id === l.layer_id)) continue;
+      const m = data.metas[l.meta_id];
+      const text = m.display?.map_attribution;
+      if (!text || out.some((x) => x.text === text)) continue;
+      const logo = m.sources.map((s) => data.source_logos[s.source_id]).find(Boolean);
+      out.push({ text, logo });
+    }
+    return out;
+  })();
   return (
     <div className="flex min-h-0 flex-1 flex-col">
       <div className="relative min-h-0 flex-1">
@@ -261,6 +283,7 @@ export default function MapApp({ data }: { data: MapData }) {
           onFan={(f) => setFanSpot(f && Number(f.props[data.metas[data.layers.find((l) => l.layer_id === f.layerId)?.meta_id ?? '']?.display?.count_field ?? '']) <= data.fan_max ? f : null)}
           worldOn={worldOpen && !country}
           typeFilter={typeFilter}
+          layerFilters={layerFilters}
           onUnit={onUnit}
           onZoom={setZoom}
           onReady={onReady}
@@ -320,6 +343,18 @@ export default function MapApp({ data }: { data: MapData }) {
       <div className="shrink-0 border-t border-line bg-surface px-3 py-1.5 text-[11px] leading-snug text-ink2">
         © <a href="https://openfreemap.org">OpenFreeMap</a> © <a href="https://openmaptiles.org/">OpenMapTiles</a> ©{' '}
         <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>
+        {onAttributions.map((a) => (
+          <span key={a.text}>
+            {' · '}
+            {a.text}
+            {a.logo && (
+              <a href={a.logo.href} className="ml-1.5 inline-block align-middle" rel="noopener noreferrer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={`/${a.logo.file}`} alt={a.logo.alt} className="h-4 w-auto" />
+              </a>
+            )}
+          </span>
+        ))}
         {' · '}
         <Link href="/attribution/" className="font-semibold">Sources and licenses</Link>
       </div>

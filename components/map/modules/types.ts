@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { FieldDef, LayerEntry, Meta } from '@/lib/data';
+import type { LayerFilters } from '@/lib/filters';
 
 export type GeometryType = 'polygon' | 'line' | 'point';
 
@@ -11,6 +12,8 @@ export interface ModuleCtx {
   selected: { layerId: string; key: string } | null;
   /** the one group chosen in the filter by type (display.filter_fields), or null for all */
   typeFilter: string | null;
+  /** what the reader chose in the filters by field value (display.filters) */
+  layerFilters: LayerFilters;
   /** id of the first label layer of the basemap: our layers go under it */
   before: string;
 }
@@ -29,7 +32,7 @@ export interface GeometryModule {
   /** ids of the invisible hit layers: only these are clickable */
   hitLayerIds: (layerId: string) => string[];
   /** legend block for the layers of this type that are on */
-  Legend: (props: { layers: LayerEntry[]; metas: Record<string, Meta>; typeFilter?: string | null; onTypeFilter?: (group: string | null) => void }) => ReactNode;
+  Legend: (props: { layers: LayerEntry[]; metas: Record<string, Meta>; typeFilter?: string | null; onTypeFilter?: (group: string | null) => void; layerFilters?: LayerFilters; onLayerFilter?: (layerId: string, field: string, values: string[]) => void }) => ReactNode;
   /** optional: custom text for a value in the record card (return null for the default) */
   formatValue?: (field: FieldDef, value: unknown, meta: Meta) => string | null;
 }

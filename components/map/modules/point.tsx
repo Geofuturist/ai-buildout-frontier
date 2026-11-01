@@ -12,6 +12,7 @@ import {
   badgeCondition, badgeRadius, badgeTextSize, colorOf, filterColumn, groupShown, isCounted, isSized, isTyped, placeRadius, radiusExpression, sizeLabels, typeColor, typeColorExpression, unknownCondition, zeroCondition,
 } from '@/lib/pointSize';
 import type { Counted, Typed } from '@/lib/pointSize';
+import { SquareIcons, SquareLegend, isSquare, renderSquare } from './square';
 import type { GeometryModule, ModuleCtx } from './types';
 
 const SITE_LEVEL = 'site';
@@ -193,11 +194,14 @@ const pointModule: GeometryModule = {
       // class fields under numeric ones: the numeric layer is drawn on top
       return d.size_classes?.length ? 1 : 2;
     };
-    return [...layers].sort((a, b) => rank(a) - rank(b)).map((l) => {
+    const squares = layers.some((l) => isSquare(sizedOf(l)));
+    const drawn = [...layers].sort((a, b) => rank(a) - rank(b)).map((l) => {
       const d = sizedOf(l);
+      if (d && isSquare(d)) return renderSquare(l, d, ctx);
       if (isSized(d) && isCounted(d)) return renderCounted(l, d, ctx);
       return isSized(d) ? renderSized(l, d, ctx) : renderPlain(l, ctx);
     });
+    return squares ? [<SquareIcons key="abf-square-icons" />, ...drawn] : drawn;
   },
 
   formatValue(field, value) {
@@ -208,8 +212,10 @@ const pointModule: GeometryModule = {
     return null;
   },
 
-  Legend({ layers, metas, typeFilter, onTypeFilter }) {
-    if (layers.length === 0) return null;
+  Legend({ layers: all, metas, typeFilter, onTypeFilter, layerFilters, onLayerFilter }) {
+    if (all.length === 0) return null;
+    const squares = all.filter((l) => isSquare(metas[l.meta_id]?.display));
+    const layers = all.filter((l) => !isSquare(metas[l.meta_id]?.display));
     const sized = layers.filter((l) => isSized(metas[l.meta_id]?.display));
     const plain = layers.filter((l) => !isSized(metas[l.meta_id]?.display));
     const first = sized[0] ? (metas[sized[0].meta_id].display as Display & { size_field: string }) : null;
@@ -227,6 +233,7 @@ const pointModule: GeometryModule = {
     );
     return (
       <>
+        {squares.map((l) => <SquareLegend key={l.layer_id} layer={l} d={metas[l.meta_id].display as Display} layerFilters={layerFilters} onLayerFilter={onLayerFilter} />)}
         {sized.length > 0 && first && (
           <>
             <h3 className="mb-1 mt-3 text-[13px] font-semibold text-ink">{first.legend_title ?? 'Size'}</h3>

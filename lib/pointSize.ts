@@ -100,6 +100,20 @@ export const TYPE_PALETTE: { fill: string; stroke: string }[] = [
   { fill: '#F0E442', stroke: '#A39A00' }, // yellow
   { fill: '#D55E00', stroke: '#D55E00' }, // vermillion
 ];
+/**
+ * The squares (display.symbol = "square"; the power plants have eight types) take the whole Okabe-Ito set; the
+ * eighth, black, is a dark grey so that it does not read as a frame. Order = the order of color_classes.
+ */
+export const TYPE_PALETTE_8: { fill: string; stroke: string }[] = [
+  { fill: '#E69F00', stroke: '#E69F00' }, // orange
+  { fill: '#56B4E9', stroke: '#56B4E9' }, // sky blue
+  { fill: '#009E73', stroke: '#009E73' }, // bluish green
+  { fill: '#F0E442', stroke: '#A39A00' }, // yellow
+  { fill: '#0072B2', stroke: '#0072B2' }, // blue
+  { fill: '#D55E00', stroke: '#D55E00' }, // vermillion
+  { fill: '#CC79A7', stroke: '#CC79A7' }, // reddish purple
+  { fill: '#3a3f46', stroke: '#3a3f46' }, // dark grey
+];
 export const TYPE_GREY = { fill: UNKNOWN_COLOR, stroke: UNKNOWN_COLOR };
 
 export type Typed = Display & { color_field: string; color_classes: string[] };
@@ -108,14 +122,15 @@ export function isTyped(d: Display | undefined): d is Typed {
   return Boolean(d?.color_field && d.color_classes && d.color_classes.length > 0);
 }
 
-export function typeColor(index: number): { fill: string; stroke: string } {
-  return TYPE_PALETTE[index] ?? TYPE_GREY;
+/** `wide`: the eight-colour set of the squares (display.symbol = "square"); the dots keep the six colours. */
+export function typeColor(index: number, wide = false): { fill: string; stroke: string } {
+  return (wide ? TYPE_PALETTE_8 : TYPE_PALETTE)[index] ?? TYPE_GREY;
 }
 
 /** Colour of a point by the value of color_field (fill or stroke). */
 export function typeColorExpression(d: Typed, part: 'fill' | 'stroke'): ExpressionSpecification {
   const m: unknown[] = ['match', ['get', d.color_field]];
-  d.color_classes.forEach((c, i) => m.push(c, typeColor(i)[part]));
+  d.color_classes.forEach((c, i) => m.push(c, typeColor(i, d.symbol === 'square')[part]));
   m.push(TYPE_GREY[part]);
   return m as unknown as ExpressionSpecification;
 }

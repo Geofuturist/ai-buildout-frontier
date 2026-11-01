@@ -1,5 +1,6 @@
 'use client';
 
+import type { LayerFilters } from '@/lib/filters';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Fragment, forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import MapGL, { Layer, NavigationControl, Source } from 'react-map-gl/maplibre';
@@ -57,6 +58,7 @@ interface Props {
   worldOn: boolean;
   /** the group chosen in the filter by type, or null */
   typeFilter: string | null;
+  layerFilters: LayerFilters;
   onUnit: (u: UnitRef) => void;
   onZoom: (zoom: number) => void;
   onReady?: () => void;
@@ -66,7 +68,7 @@ interface Props {
 /** Opacity that is `on` where the feature state `key` is set and 0 elsewhere (constant expression: never reloads tiles). */
 const FS_OPACITY = (key: string, on: number) => ['case', ['boolean', ['feature-state', key], false], on, 0] as ExpressionSpecification;
 
-const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, fillUnderSelection, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, onFan, worldOn, typeFilter, onZoom, onReady, onFailed }, ref) {
+const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, activeId, fillUnderSelection, overlays, selected, country, selectLevel, selectedUnit, neutralLevel, neutralIds, dataCountries, onSelect, onCountry, onUnit, onWorld, onFan, worldOn, typeFilter, layerFilters, onZoom, onReady, onFailed }, ref) {
   const mapRef = useRef<MapRef>(null);
   const [cursor, setCursor] = useState<string>('');
 
@@ -245,7 +247,7 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
   );
 
   const layerIdSet = useMemo(() => new Set(data.layers.map((l) => l.layer_id)), [data]);
-  const ctx = useMemo(() => ({ metas: data.metas, visible, selected, typeFilter, before: BEFORE }), [data.metas, visible, selected, typeFilter]);
+  const ctx = useMemo(() => ({ metas: data.metas, visible, selected, typeFilter, layerFilters, before: BEFORE }), [data.metas, visible, selected, typeFilter, layerFilters]);
 
   return (
     <MapGL

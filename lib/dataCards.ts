@@ -37,6 +37,8 @@ export interface DataCard {
   source: string;
   through: string;
   license: { name: string; url: string };
+  /** display.license_note of the layer ("CC BY-NC 4.0 — non-commercial use only"), when it has one */
+  licenseNote: string | null;
   dataset: { name: string; version: string; doi: string | null; doiUrl: string | null };
   parts: CardPart[];
   /** reference files of the dataset that belong to the layers of this card */
@@ -78,6 +80,7 @@ function cardOf(
     source: sourceOf(meta),
     through: throughLabel(meta),
     license: { name: meta.license.name, url: meta.license.url },
+    licenseNote: layers.map((l) => data.metas[l.meta_id].display?.license_note).find(Boolean) ?? null,
     dataset: { name: ds.dataset, version: ds.version, doi: ds.doi, doiUrl: doiUrl(ds.doi) },
     parts,
     extra: layers.flatMap((l) => l.extra_files).map((f) => fileOf(f.description ?? 'Reference file', f)),

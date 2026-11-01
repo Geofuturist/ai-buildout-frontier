@@ -267,6 +267,22 @@ async function main() {
     if (m.display && m.display.map === false) { console.warn(`NOTE: content/site.json hidden_layers "${id}" is already display.map = false in its meta; the line can go`); continue; }
     m.display = { ...(m.display || {}), map: false };
   }
+  // Logos some source terms ask for (content/site.json source_logos): source_id -> { file in public/, alt, href }. The
+  // file is a resource of the site, not a data file. An entry whose file is missing is dropped (final mode stops).
+  const sourceLogos = {};
+  const knownSources = new Set(Object.values(metas).flatMap((m) => m.sources.map((x) => x.source_id)));
+  for (const [sid, v] of Object.entries(site.source_logos && typeof site.source_logos === 'object' ? site.source_logos : {})) {
+    if (!v || typeof v.file !== 'string' || typeof v.alt !== 'string' || typeof v.href !== 'string' || !/^https:\/\//.test(v.href)) {
+      strict(`content/site.json: source_logos.${sid} needs file, alt and an https href`);
+      continue;
+    }
+    if (!/^[\w.-]+$/.test(v.file) || !fs.existsSync(path.join(ROOT, 'public', v.file))) {
+      strict(`content/site.json: source_logos.${sid}: public/${v.file} does not exist`);
+      continue;
+    }
+    if (!knownSources.has(sid)) console.warn(`NOTE: content/site.json source_logos.${sid} is not a source of any layer of the pointer (yet)`);
+    sourceLogos[sid] = { file: v.file, alt: v.alt, href: v.href };
+  }
   const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
   const fanMax = num(site.fan_max, 30, 'fan_max');
 
@@ -445,7 +461,7 @@ async function main() {
       }
     }
   }
-  const families = ['public_domain', 'attribution', 'share_alike'];
+  const families = ['public_domain', 'attribution', 'share_alike', 'non_commercial'];
   const groups = families
     .map((family) => ({
       family,
@@ -474,6 +490,7 @@ async function main() {
     level_zoom: levelZoom,
     world_zoom: worldZoom,
     fan_max: fanMax,
+    source_logos: sourceLogos,
     unit_words: unitWords,
     countries,
     attribution: groups,

@@ -5,7 +5,7 @@ import CopyButton from '@/components/CopyButton';
 import { checkedByLine, isoDate } from '@/lib/format';
 import DownloadMenu from './DownloadMenu';
 import { Downloads } from './parts';
-import { ItemsCard, PlaceCard, RecordShell } from './RecordViews';
+import { ItemsCard, PlaceCard, PopupCard, RecordShell } from './RecordViews';
 import Shell from './Shell';
 import type { CardState, MapData } from './types';
 
@@ -31,11 +31,11 @@ export default function InfoCard({ data, card, typeFilter, onClose }: { data: Ma
           </>
         )}
         <p className="mt-3"><strong>Freshness.</strong> Data through {meta.freshness.source_current_through ?? 'n/a'} · built {isoDate(meta.freshness.built_at)} · updates: {meta.freshness.source_cadence}</p>
-        <p className="mt-3"><strong>License.</strong> <a href={meta.license.url}>{meta.license.name}</a></p>
+        <p className="mt-3"><strong>License.</strong> <a href={meta.license.url}>{meta.license.name}</a>{meta.display?.license_note && <span className="block font-semibold">{meta.display.license_note}</span>}</p>
         <blockquote className="mt-1 border-l-4 border-line pl-3 text-xs text-ink2">{meta.license.attribution_text}</blockquote>
         <p className="mt-3">{checkedByLine(meta)}</p>
         <DownloadMenu label="Download this layer">
-          <Downloads layer={layer} />
+          <Downloads layer={layer} note={meta.display?.license_note} />
         </DownloadMenu>
         <div className="mt-3 flex flex-wrap items-center gap-3">
           <CopyButton text={meta.citation.text} label="Cite this layer" />
@@ -48,6 +48,9 @@ export default function InfoCard({ data, card, typeFilter, onClose }: { data: Ma
 
   // Several objects of one layer at the same spot (Epoch): a list of all of them
   if (card.type === 'records') return <ItemsCard key={card.items.map((x) => String(x.record_id)).join('|')} data={data} layer={layer} items={card.items} onClose={onClose} />;
+
+  // An object whose window the meta describes (display.popup): made of its own fields, no CSV
+  if (meta.display?.popup) return <PopupCard key={String(card.props.record_id)} data={data} layer={layer} props={card.props} onClose={onClose} />;
 
   // A place of the places layer: its record (one) or the list of its records (several)
   if (meta.display?.count_field) return <PlaceCard key={String(card.props.record_id)} data={data} layer={layer} props={card.props} typeFilter={typeFilter} onClose={onClose} />;
