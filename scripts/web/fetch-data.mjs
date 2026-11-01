@@ -283,6 +283,21 @@ async function main() {
     if (!knownSources.has(sid)) console.warn(`NOTE: content/site.json source_logos.${sid} is not a source of any layer of the pointer (yet)`);
     sourceLogos[sid] = { file: v.file, alt: v.alt, href: v.href };
   }
+  // Colours by the value of a type (content/site.json type_colors: value -> #rrggbb), for the layers that colour by type.
+  // Applied to the data the site gets, never to the published files; a value no layer has is reported.
+  const typeColors = site.type_colors && typeof site.type_colors === 'object' ? site.type_colors : {};
+  for (const [v, c] of Object.entries(typeColors)) {
+    if (typeof c !== 'string' || !/^#[0-9a-fA-F]{6}$/.test(c)) { strict(`content/site.json: type_colors."${v}" must be #rrggbb`); delete typeColors[v]; }
+  }
+  const usedTypes = new Set();
+  for (const m of Object.values(metas)) {
+    const d = m.display;
+    if (!d || !d.color_field || !Array.isArray(d.color_classes)) continue;
+    const own = Object.fromEntries(d.color_classes.filter((c) => typeColors[c]).map((c) => [c, typeColors[c]]));
+    d.color_classes.forEach((c) => { if (typeColors[c]) usedTypes.add(c); });
+    if (Object.keys(own).length) d.type_colors = own;
+  }
+  for (const v of Object.keys(typeColors)) if (!usedTypes.has(v)) console.warn(`NOTE: content/site.json type_colors."${v}" is not a class of any layer (yet)`);
   const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
   const fanMax = num(site.fan_max, 30, 'fan_max');
 

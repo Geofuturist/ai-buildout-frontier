@@ -11,7 +11,7 @@ import type { LayerEntry, Meta } from '@/lib/data';
 import { effectiveFilters, filterExpression, hasFilters } from '@/lib/filters';
 import type { LayerFilters } from '@/lib/filters';
 import { COLORS } from '@/lib/style';
-import { SIZE_RADII, isTyped, sizeLabels, typeColor, typeColorExpression } from '@/lib/pointSize';
+import { SIZE_RADII, classColor, isTyped, sizeLabels, typeColorExpression } from '@/lib/pointSize';
 import type { Typed } from '@/lib/pointSize';
 import type { ModuleCtx } from './types';
 
@@ -168,7 +168,7 @@ export function SquareLegend({ layer, d, layerFilters, onLayerFilter }: { layer:
         <ul className="space-y-0">
           {typed.color_classes.map((c, i) => (
             <li key={c} className="flex items-center gap-2">
-              <Sq side={10} color={typeColor(i, true).fill} />
+              <Sq side={10} color={classColor(typed, c, i).fill} />
               <span>{d.legend_type_labels?.[c] ?? c}</span>
             </li>
           ))}

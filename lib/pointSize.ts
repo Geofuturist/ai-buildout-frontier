@@ -127,10 +127,16 @@ export function typeColor(index: number, wide = false): { fill: string; stroke: 
   return (wide ? TYPE_PALETTE_8 : TYPE_PALETTE)[index] ?? TYPE_GREY;
 }
 
+/** Colour of one class: the one set for its value in content/site.json (type_colors), otherwise the palette by its place. */
+export function classColor(d: Typed, value: string, index: number): { fill: string; stroke: string } {
+  const set = d.type_colors?.[value];
+  return set ? { fill: set, stroke: set } : typeColor(index, d.symbol === 'square');
+}
+
 /** Colour of a point by the value of color_field (fill or stroke). */
 export function typeColorExpression(d: Typed, part: 'fill' | 'stroke'): ExpressionSpecification {
   const m: unknown[] = ['match', ['get', d.color_field]];
-  d.color_classes.forEach((c, i) => m.push(c, typeColor(i, d.symbol === 'square')[part]));
+  d.color_classes.forEach((c, i) => m.push(c, classColor(d, c, i)[part]));
   m.push(TYPE_GREY[part]);
   return m as unknown as ExpressionSpecification;
 }

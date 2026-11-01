@@ -118,6 +118,8 @@ export interface Meta {
     popup_title?: string;
     /** size class (value of size_field) -> legend label */
     legend_size_labels?: Record<string, string>;
+    /** class value -> colour (content/site.json type_colors, put here by fetch-data); a class without one takes the palette by its place */
+    type_colors?: Record<string, string>;
     /** legend line of the frame that marks an approximate position */
     legend_approximate?: string;
     /** one line on the licence of the layer ("CC BY-NC 4.0 — non-commercial use only"): the layer window, Download, /data */
