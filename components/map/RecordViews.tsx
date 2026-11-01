@@ -71,6 +71,9 @@ export function PopupCard({ data, layer, props: p, onClose, onBack }: { data: Ma
   const key = String(p.record_id ?? '');
   const title = popupTitle(meta, p) ?? (typeof p.name === 'string' && p.name ? p.name : key);
   const lines = popupLines(meta, p);
+  // The type of the object (the value of color_field) with the label of the legend: "Wind (onshore and offshore)"
+  const typeValue = meta.display?.color_field ? p[meta.display.color_field] : undefined;
+  const typeLabel = typeof typeValue === 'string' && typeValue ? meta.display?.legend_type_labels?.[typeValue] ?? typeValue : '';
   return (
     <Shell title={title} subtitle={layer.title} onClose={onClose}>
       {onBack && (
@@ -79,6 +82,7 @@ export function PopupCard({ data, layer, props: p, onClose, onBack }: { data: Ma
         </button>
       )}
       <ul className="mt-2 space-y-1">
+        {typeLabel && <li className="font-semibold text-ink">{typeLabel}</li>}
         {lines.map((l, i) => (
           <li key={i}>{l.kind === 'link' ? <a href={l.href} target="_blank" rel="noopener noreferrer">{l.text}</a> : l.text}</li>
         ))}
