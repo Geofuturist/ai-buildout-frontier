@@ -194,7 +194,7 @@ class GemRelease(unittest.TestCase):
     def test_class_minzoom_in_tiles(self):
         _, lo = self.build("energy_plants_gem_locations", "en_loc", "o_mz")
         feats = self.tile_features(lo)
-        want = {"lt10": 7, "10_99": 5, "100_999": 3, "ge1000": 0}
+        want = {"lt10": 5, "10_99": 4, "100_999": 3, "ge1000": 0}   # SPEC_GEM r10: one class, one zoom
         for f in feats:
             self.assertEqual(f["tippecanoe"]["minzoom"], want[f["properties"]["capacity_class"]])
         self.assertEqual(lo.tile_build["maxzoom"], 10)
@@ -209,17 +209,26 @@ class GemRelease(unittest.TestCase):
 
     def test_zoom_hint_below_is_computed(self):
         _, lo = self.build("energy_plants_gem_tzsam_locations", "nc_loc", "o_zh")
-        self.assertEqual(lo.meta["display"]["zoom_hint"]["below"], 5)       # only lt10 (7) and 10_99 (5) are in the layer
-        self.assertEqual(lo.meta["display"]["zoom_hint"]["text"], "Zoom in to see these plants.")
+        self.assertEqual(lo.meta["display"]["zoom_hint"]["below"], 4)       # only lt10 (5) and 10_99 (4) are in the layer
+        self.assertEqual(lo.meta["display"]["zoom_hint"]["text"], "All plants of this layer are 20 MW or less. Zoom in to see them.")
 
         def wrong(c):
             c["display"]["zoom_hint"]["below"] = 3
         with self.assertRaises(GateError):
             self.build("energy_plants_gem_tzsam_locations", "nc_loc", "o_zh2", wrong)
 
+    def test_nc_legend_has_one_class_and_no_symbol(self):
+        # SPEC_GEM r10-r11: the NC legend shows one type; the shape of the symbol is not in the data
+        _, nc = self.build("energy_plants_gem_tzsam_locations", "nc_loc", "o_ncl")
+        d = nc.meta["display"]
+        self.assertEqual(d["color_classes"], ["utility-scale solar"])
+        self.assertEqual(list(d["legend_type_labels"]), ["utility-scale solar"])
+        self.assertNotIn("symbol", d)
+        self.assertIn("not in “Power plants”", d["legend_note"])
+
     def test_class_minzoom_checks(self):
         def high(c):
-            c["tiles"]["maxzoom"] = 6
+            c["tiles"]["maxzoom"] = 4   # lt10 appears at zoom 5
         with self.assertRaises(GateError):
             self.build("energy_plants_gem_locations", "en_loc", "o_hi", high)
 
@@ -238,7 +247,7 @@ class GemRelease(unittest.TestCase):
                          ["Announced", "Pre-construction", "Construction", "Operating", "Shelved", "Cancelled", "Mothballed", "Retired"])
         self.assertEqual(flt["dc_links"]["mode"], "contains")
         self.assertIsNone(flt["dc_links"]["default"])
-        self.assertEqual(d["symbol"], "square")
+        self.assertNotIn("symbol", d)   # SPEC_GEM r10: the shape comes from content/site.json
         self.assertEqual(d["color_field"], "type")
         self.assertEqual(set(d["legend_size_labels"]), {"lt10", "10_99", "100_999", "ge1000"})
         self.assertIn("legend_approximate", d)

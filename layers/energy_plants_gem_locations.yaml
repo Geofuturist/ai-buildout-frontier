@@ -329,7 +329,6 @@ coverage:
     all its units, flagged or not; n_units_dc_link gives the number of flagged units.'
 display:
   geometry_type: point
-  symbol: square
   color_field: type
   color_classes: *id001
   legend_type_labels:
@@ -359,18 +358,19 @@ display:
   class_minzoom:
     ge1000: 0
     '100_999': 3
-    '10_99': 5
-    lt10: 7
+    '10_99': 4
+    lt10: 5
   legend_title: Power plants (GEM)
-  legend_note: Square size shows capacity; smaller plants appear as you zoom in.
+  legend_note: Symbol size shows capacity; smaller plants appear as you zoom in. About half of the points (48.5%) are approximate,
+    as stated by GEM; the plant window says which.
   legend_approximate: Approximate location (as stated by GEM)
   filters:
   - field: status_group
     mode: equals
     default: operating
     title: Status (GEM)
-    note: One status at a time. Shelved and Cancelled include plants that GEM infers to be stalled after two or four years
-      without observed progress.
+    note: Operating by default; tick more statuses to add them. Shelved and Cancelled include plants that GEM infers to be stalled
+      after two or four years without observed progress.
     values:
     - value: announced
       label: Announced

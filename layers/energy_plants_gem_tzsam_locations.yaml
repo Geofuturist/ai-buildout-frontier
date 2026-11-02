@@ -316,25 +316,18 @@ coverage:
   geography: Solar plants of the world (GEM / TransitionZero)
   iso3_from: iso3_source
   known_gaps:
-  - Only the TZ-SAM records that GEM took into its tracker, with GEM's solar threshold; all rows are 20 MW or less, so on
-    the map the layer appears only from zoom level 5.
+  - Only the TZ-SAM records that GEM took into its tracker, with GEM's solar threshold. All rows are 20 MW or less, so on
+      the map they appear only as you zoom in, at the same zoom levels as plants of the same size in energy_plants_gem_locations.
   - 426 rows (2.3%) have a point that GEM gives as approximate.
   - '15 plants have units in both datasets: 17 rows here and 29 in energy_plants_gem_locations (abf-energy), marked by n_units_other_set.'
   - 'Country, capacity basis, owners and technology: as in energy_plants_gem_tzsam_units.'
 display:
   geometry_type: point
-  symbol: square
   color_field: type
-  color_classes: *id001
+  color_classes:
+  - utility-scale solar
   legend_type_labels:
-    coal: Coal
-    oil/gas: Oil and gas
     utility-scale solar: Utility-scale solar
-    wind: Wind (onshore and offshore)
-    hydropower: Hydropower (incl. pumped storage)
-    nuclear: Nuclear
-    bioenergy: Bioenergy
-    geothermal: Geothermal
   size_field: capacity_class
   size_classes:
   - lt10
@@ -353,18 +346,20 @@ display:
   class_minzoom:
     ge1000: 0
     '100_999': 3
-    '10_99': 5
-    lt10: 7
+    '10_99': 4
+    lt10: 5
   legend_title: Solar plants (GEM / TransitionZero)
-  legend_note: Square size shows capacity; smaller plants appear as you zoom in.
+  legend_note: Solar plants from TransitionZero's Solar Asset Mapper, as included by GEM. They are not in “Power plants”,
+    because TransitionZero licenses them for non-commercial use only. All are 20 MW or less and appear as you zoom in. 2.3%
+    of the points are approximate, as stated by GEM.
   legend_approximate: Approximate location (as stated by GEM)
   filters:
   - field: status_group
     mode: equals
     default: operating
     title: Status (GEM)
-    note: One status at a time. Shelved and Cancelled include plants that GEM infers to be stalled after two or four years
-      without observed progress.
+    note: Operating by default; tick more statuses to add them. Shelved and Cancelled include plants that GEM infers to be stalled
+      after two or four years without observed progress.
     values:
     - value: announced
       label: Announced
@@ -466,7 +461,7 @@ display:
     text: Plant page on GEM.wiki
   popup_title: '{plant_name}'
   zoom_hint:
-    text: Zoom in to see these plants.
+    text: All plants of this layer are 20 MW or less. Zoom in to see them.
   license_note: CC BY-NC 4.0 — non-commercial use only
   map_attribution: 'Solar records: TransitionZero Solar Asset Mapper, August 2025, via Global Energy Monitor · CC BY-NC
     4.0'
