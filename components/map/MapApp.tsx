@@ -135,7 +135,7 @@ export default function MapApp({ data }: { data: MapData }) {
     [countries, data.default_layer, data.metas, indicator, indicatorKey, ensureTerritory],
   );
 
-  // Panel: the Colors switch of a family. A fill of a country also chooses that country and flies to it; a world fill
+  // Panel: the Colors switch of a family. A fill of a country also chooses that country but does not fly there (SPEC r15 19); a world fill
   // changes nothing else. The fill is the one of the chosen country when the family has several.
   const onColors = (row: PanelRow) => {
     const ind = colorsOf(row, country);
@@ -148,7 +148,7 @@ export default function MapApp({ data }: { data: MapData }) {
       setIndicatorKey(ind.key);
       return;
     }
-    selectCountry(ind.iso3, { key: ind.key, fly: unionBbox(ind.levels.map((x) => x.layer), data.metas) });
+    selectCountry(ind.iso3, { key: ind.key });
   };
   // The Points (or Lines) switch: all points and lines of the family together. Layers of a country choose it and fly there.
   const onPoints = (row: PanelRow, on: boolean) => {
@@ -243,7 +243,7 @@ export default function MapApp({ data }: { data: MapData }) {
           const hint = data.metas[l.meta_id].display?.zoom_hint;
           return hint && zoom < hint.below ? <p key={l.layer_id} className="mb-2 rounded-md border border-dashed border-[#8a8f96] p-2 text-xs text-ink2">{hint.text}</p> : null;
         })}
-        <Legend layers={ls} metas={data.metas} typeFilter={typeFilter} onTypeFilter={setTypeFilter} layerFilters={layerFilters} onLayerFilter={onLayerFilter} />
+        <Legend layers={ls} metas={data.metas} typeFilter={typeFilter} onTypeFilter={setTypeFilter} layerFilters={layerFilters} onLayerFilter={onLayerFilter} statusLegend={data.status_legend} />
       </div>
     );
   };

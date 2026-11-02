@@ -232,6 +232,8 @@ export interface AbfData {
   fan_max: number;
   /** logos of sources (content/site.json source_logos): source_id -> file in public/, alt, link */
   source_logos: Record<string, SourceLogo>;
+  /** texts of the Status block of the legend (content/site.json status_styles): title, note, lines of a source (layer_ids, optional kind) */
+  status_legend: { title: string; note: string; lines: { layers: string[]; kind?: string; text: string }[] };
   /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
   unit_words: Record<string, Record<string, string>>;
   /** every country of the boundaries (name from units.csv) with its box [w, s, e, n] (e may exceed 180), for the search */

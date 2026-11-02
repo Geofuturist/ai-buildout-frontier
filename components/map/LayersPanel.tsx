@@ -100,7 +100,7 @@ export default function LayersPanel({ rows, activeFill, overlays, failed, onColo
                       </div>
                       <div className="flex flex-wrap items-center gap-x-2 px-1">
                         {r.overlays.length > 0 && <Switch on={pointsOn(r, overlays)} label={overlayWord(r)} onClick={() => onPoints(r, !pointsOn(r, overlays))} />}
-                        {r.fills.length > 0 && <Switch on={colorsOn(r, activeFill)} label="Areas" onClick={() => onColors(r)} />}
+                        {r.fills.length > 0 && <Switch on={colorsOn(r, activeFill)} label="Area shading" onClick={() => onColors(r)} />}
                       </div>
                       {legend}
                     </li>

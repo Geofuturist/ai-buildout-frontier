@@ -310,6 +310,17 @@ async function main() {
     for (const [f, map] of Object.entries(styles.fields || {})) for (const [v, k] of Object.entries(map)) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.fields.${f}.${v}: "${k}" is not a kind (${KINDS.join(', ')})`);
     for (const [f, k] of styles.counts || []) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.counts.${f}: "${k}" is not a kind`);
   }
+  // Texts of the Status block of the legend (status_styles.title, note, lines; RES_texts_site_legend)
+  const statusLegend = { title: 'Status', note: '', lines: [] };
+  if (styles) {
+    if (typeof styles.title === 'string') statusLegend.title = styles.title;
+    if (typeof styles.note === 'string') statusLegend.note = styles.note;
+    for (const ln of Array.isArray(styles.lines) ? styles.lines : []) {
+      const ok = ln && typeof ln.text === 'string' && Array.isArray(ln.layers) && ln.layers.every((x) => typeof x === 'string') && (ln.kind === undefined || KINDS.includes(ln.kind));
+      if (!ok) { strict('content/site.json: status_styles.lines needs text, layers (layer_ids) and, if given, a kind'); continue; }
+      statusLegend.lines.push({ layers: ln.layers, ...(ln.kind ? { kind: ln.kind } : {}), text: ln.text });
+    }
+  }
   for (const l of layers) {
     const m = metas[l.meta_id];
     const d = m && m.display;
@@ -530,6 +541,7 @@ async function main() {
     world_zoom: worldZoom,
     fan_max: fanMax,
     source_logos: sourceLogos,
+    status_legend: statusLegend,
     unit_words: unitWords,
     countries,
     attribution: groups,

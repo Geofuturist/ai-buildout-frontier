@@ -11,6 +11,7 @@ export default function HomePage() {
     world_zoom: d.world_zoom,
     fan_max: d.fan_max,
     source_logos: d.source_logos,
+    status_legend: d.status_legend,
     unit_words: d.unit_words,
     countries: d.countries,
   };
