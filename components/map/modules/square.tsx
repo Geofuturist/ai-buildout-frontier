@@ -79,6 +79,15 @@ export function squareSdf(frame: boolean): Uint8Array {
   return data;
 }
 
+/**
+ * Outline or filled: by display.outline (some values of a field, e.g. the planned plants) when the site config has it,
+ * otherwise by the position accuracy of the object: filled = site level, outline = anything else.
+ */
+export function iconExpression(d: Display): ExpressionSpecification {
+  if (d.outline && d.outline.values.length > 0) return ['match', ['get', d.outline.field], d.outline.values, ICON_FRAME, ICON_FILLED] as unknown as ExpressionSpecification;
+  return ['case', ['==', ['get', PRECISION_FIELD], SITE_LEVEL], ICON_FILLED, ICON_FRAME] as unknown as ExpressionSpecification;
+}
+
 /** Puts the two icons on the map; also when the style is loaded again (styleimagemissing). */
 export function SquareIcons() {
   const { current: ref } = useMap();
@@ -120,7 +129,7 @@ export function renderSquare(l: LayerEntry, d: Display, ctx: ModuleCtx) {
         {...fl}
         layout={{
           visibility,
-          'icon-image': ['case', ['==', ['get', PRECISION_FIELD], SITE_LEVEL], ICON_FILLED, ICON_FRAME] as unknown as ExpressionSpecification,
+          'icon-image': iconExpression(d),
           'icon-size': ['/', ['*', half, 2], SIDE] as unknown as ExpressionSpecification,
           'icon-allow-overlap': true,
           'icon-ignore-placement': true,
@@ -212,9 +221,9 @@ export function SquareLegend({ layer, d, layerFilters, onLayerFilter }: { layer:
           ))}
         </ul>
       )}
-      {d.legend_approximate && (
+      {(d.outline?.label || d.legend_approximate) && (
         <ul className="mt-1 space-y-0 border-t border-line pt-1">
-          <li className="flex items-center gap-2"><Sq side={10} color="#6b6f76" frame /><span>{d.legend_approximate}</span></li>
+          <li className="flex items-center gap-2"><Sq side={10} color="#6b6f76" frame /><span>{d.outline?.label ?? d.legend_approximate}</span></li>
         </ul>
       )}
       {filtersOf(d).filter((f) => f.field !== typeFilter?.field).map((f) => (

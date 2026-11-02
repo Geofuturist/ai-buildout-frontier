@@ -298,6 +298,16 @@ async function main() {
     if (Object.keys(own).length) d.type_colors = own;
   }
   for (const v of Object.keys(typeColors)) if (!usedTypes.has(v)) console.warn(`NOTE: content/site.json type_colors."${v}" is not a class of any layer (yet)`);
+  // Outline-only squares for some values of a field (content/site.json outline: { field, values, label }), for the
+  // layers of squares that have a filter on that field. Applied to the data the site gets, never to the published files.
+  const ol = site.outline && typeof site.outline === 'object' ? site.outline : null;
+  if (ol && (typeof ol.field !== 'string' || !Array.isArray(ol.values) || typeof ol.label !== 'string')) strict('content/site.json: outline needs field, values[] and label');
+  else if (ol) {
+    for (const m of Object.values(metas)) {
+      const d = m.display;
+      if (d && d.symbol === 'square' && Array.isArray(d.filters) && d.filters.some((f) => f.field === ol.field)) d.outline = { field: ol.field, values: ol.values, label: ol.label };
+    }
+  }
   const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
   const fanMax = num(site.fan_max, 30, 'fan_max');
 
