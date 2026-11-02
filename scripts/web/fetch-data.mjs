@@ -298,15 +298,29 @@ async function main() {
     if (Object.keys(own).length) d.type_colors = own;
   }
   for (const v of Object.keys(typeColors)) if (!usedTypes.has(v)) console.warn(`NOTE: content/site.json type_colors."${v}" is not a class of any layer (yet)`);
-  // Outline-only squares for some values of a field (content/site.json outline: { field, values, label }), for the
-  // layers of squares that have a filter on that field. Applied to the data the site gets, never to the published files.
-  const ol = site.outline && typeof site.outline === 'object' ? site.outline : null;
-  if (ol && (typeof ol.field !== 'string' || !Array.isArray(ol.values) || typeof ol.label !== 'string')) strict('content/site.json: outline needs field, values[] and label');
-  else if (ol) {
-    for (const m of Object.values(metas)) {
-      const d = m.display;
-      if (d && d.symbol === 'square' && Array.isArray(d.filters) && d.filters.some((f) => f.field === ol.field)) d.outline = { field: ol.field, values: ol.values, label: ol.label };
-    }
+  // Point icons (SPEC_WEB_territory r11 par. 18): the shape by the domain of the layer (content/site.json point_shapes) and
+  // how the status of an object becomes a kind of icon (status_styles). Put into display of the layers that are drawn as
+  // icons (point layers with a size or a colour class); the published files stay as they are.
+  const shapes = site.point_shapes && typeof site.point_shapes === 'object' ? site.point_shapes : {};
+  const KINDS = ['fill', 'pale', 'hatch', 'outline', 'q', 'x'];
+  const styles = site.status_styles && typeof site.status_styles === 'object' ? site.status_styles : null;
+  const labels = styles && styles.labels && typeof styles.labels === 'object' ? styles.labels : {};
+  for (const [dom, sh] of Object.entries(shapes)) if (sh !== 'circle' && sh !== 'square') { strict(`content/site.json: point_shapes.${dom} must be circle or square`); delete shapes[dom]; }
+  if (styles) {
+    for (const [f, map] of Object.entries(styles.fields || {})) for (const [v, k] of Object.entries(map)) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.fields.${f}.${v}: "${k}" is not a kind (${KINDS.join(', ')})`);
+    for (const [f, k] of styles.counts || []) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.counts.${f}: "${k}" is not a kind`);
+  }
+  for (const l of layers) {
+    const m = metas[l.meta_id];
+    const d = m && m.display;
+    if (!d || d.geometry_type !== 'point' || d.map === false || !(d.size_field || d.color_field) || !shapes[l.domain]) continue;
+    d.shape = shapes[l.domain];
+    if (!styles) continue;
+    const have = new Set([...(d.tile_fields || []), ...((l.tiles && l.tiles.fields) || [])]);
+    const byField = Object.entries(styles.fields || {}).find(([f]) => have.has(f));
+    const counts = (styles.counts || []).filter(([f]) => have.has(f));
+    if (byField) d.status_style = { field: byField[0], values: byField[1], labels };
+    else if (counts.length > 0) d.status_style = { counts, labels, rowFields: styles.fields || {} };
   }
   const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
   const fanMax = num(site.fan_max, 30, 'fan_max');

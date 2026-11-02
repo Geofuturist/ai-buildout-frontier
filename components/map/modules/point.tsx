@@ -12,7 +12,8 @@ import {
   badgeCondition, badgeRadius, badgeTextSize, colorOf, filterColumn, groupShown, isCounted, isSized, isTyped, placeRadius, radiusExpression, sizeLabels, typeColor, typeColorExpression, unknownCondition, zeroCondition,
 } from '@/lib/pointSize';
 import type { Counted, Typed } from '@/lib/pointSize';
-import { SquareIcons, SquareLegend, isSquare, renderSquare } from './square';
+import { PointIcons, TypedLegend, renderSymbols } from './symbols';
+import { shapeOf } from '@/lib/pointStatus';
 import type { GeometryModule, ModuleCtx } from './types';
 
 const SITE_LEVEL = 'site';
@@ -158,21 +159,23 @@ function renderCounted(l: LayerEntry, d: Counted & { size_field: string }, ctx: 
   );
 }
 
-function Badge({ r, n }: { r: number; n: string }) {
+function Badge({ r, n, shape }: { r: number; n: string; shape?: string | null }) {
   return (
     <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden className="shrink-0">
-      <circle cx="20" cy="20" r={r} fill={BADGE_COLOR} fillOpacity="0.92" stroke={COLORS.surface} strokeWidth="1.2" />
+      {shape === 'square' ? <rect x={20 - r} y={20 - r} width={2 * r} height={2 * r} fill={BADGE_COLOR} fillOpacity="0.92" stroke={COLORS.surface} strokeWidth="1.2" /> : <circle cx="20" cy="20" r={r} fill={BADGE_COLOR} fillOpacity="0.92" stroke={COLORS.surface} strokeWidth="1.2" />}
       <text x="20" y="20" textAnchor="middle" dominantBaseline="central" fontSize={r > 14 ? 12.5 : 11} fill="#ffffff">{n}</text>
     </svg>
   );
 }
 
-function Dot({ r, color, fill, stroke, w = 1.2, opacity = 0.5, ring = true }: { r: number; color?: string; fill?: string; stroke?: string; w?: number; opacity?: number; ring?: boolean }) {
+function Dot({ r, color, fill, stroke, w = 1.2, opacity = 0.5, ring = true, shape }: { r: number; color?: string; fill?: string; stroke?: string; w?: number; opacity?: number; ring?: boolean; shape?: string | null }) {
   const c = 14;
+  const sq = shape === 'square';
+  const R = r + RING_EXTRA;
   return (
     <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden className="shrink-0">
-      {ring && <circle cx={c} cy={c} r={r + RING_EXTRA} fill={COLORS.surface} fillOpacity="0.85" />}
-      <circle cx={c} cy={c} r={r} fill={fill ?? color} fillOpacity={opacity} stroke={stroke ?? color} strokeWidth={w} />
+      {ring && (sq ? <rect x={c - R} y={c - R} width={2 * R} height={2 * R} fill={COLORS.surface} fillOpacity="0.85" /> : <circle cx={c} cy={c} r={R} fill={COLORS.surface} fillOpacity="0.85" />)}
+      {sq ? <rect x={c - r} y={c - r} width={2 * r} height={2 * r} fill={fill ?? color} fillOpacity={opacity} stroke={stroke ?? color} strokeWidth={w} /> : <circle cx={c} cy={c} r={r} fill={fill ?? color} fillOpacity={opacity} stroke={stroke ?? color} strokeWidth={w} />}
     </svg>
   );
 }
@@ -194,14 +197,15 @@ const pointModule: GeometryModule = {
       // class fields under numeric ones: the numeric layer is drawn on top
       return d.size_classes?.length ? 1 : 2;
     };
-    const squares = layers.some((l) => isSquare(sizedOf(l)));
+    const icons = layers.some((l) => shapeOf(sizedOf(l)) && isSized(sizedOf(l)));
     const drawn = [...layers].sort((a, b) => rank(a) - rank(b)).map((l) => {
       const d = sizedOf(l);
-      if (d && isSquare(d)) return renderSquare(l, d, ctx);
+      // shape by domain (content/site.json point_shapes): icons with the kind of status
+      if (d && shapeOf(d) && isSized(d)) return renderSymbols(l, d, ctx);
       if (isSized(d) && isCounted(d)) return renderCounted(l, d, ctx);
       return isSized(d) ? renderSized(l, d, ctx) : renderPlain(l, ctx);
     });
-    return squares ? [<SquareIcons key="abf-square-icons" />, ...drawn] : drawn;
+    return icons ? [<PointIcons key="abf-point-icons" />, ...drawn] : drawn;
   },
 
   formatValue(field, value) {
@@ -214,8 +218,9 @@ const pointModule: GeometryModule = {
 
   Legend({ layers: all, metas, typeFilter, onTypeFilter, layerFilters, onLayerFilter }) {
     if (all.length === 0) return null;
-    const squares = all.filter((l) => isSquare(metas[l.meta_id]?.display));
-    const layers = all.filter((l) => !isSquare(metas[l.meta_id]?.display));
+    // typed icons without a count (the power plants) have their own legend with filters
+    const squares = all.filter((l) => { const d = metas[l.meta_id]?.display; return d && shapeOf(d) && isSized(d) && isTyped(d) && !isCounted(d) && !d.filter_fields; });
+    const layers = all.filter((l) => !squares.includes(l));
     const sized = layers.filter((l) => isSized(metas[l.meta_id]?.display));
     const plain = layers.filter((l) => !isSized(metas[l.meta_id]?.display));
     const first = sized[0] ? (metas[sized[0].meta_id].display as Display & { size_field: string }) : null;
@@ -233,14 +238,14 @@ const pointModule: GeometryModule = {
     );
     return (
       <>
-        {squares.map((l) => <SquareLegend key={l.layer_id} layer={l} d={metas[l.meta_id].display as Display} layerFilters={layerFilters} onLayerFilter={onLayerFilter} />)}
+        {squares.map((l) => <TypedLegend key={l.layer_id} layer={l} d={metas[l.meta_id].display as Display} layerFilters={layerFilters} onLayerFilter={onLayerFilter} />)}
         {sized.length > 0 && first && (
           <>
             <h3 className="mb-1 mt-3 text-[13px] font-semibold text-ink">{first.legend_title ?? 'Size'}</h3>
             <ul className="space-y-0.5">
               {sized.map((l) => (
                 <li key={l.layer_id} className="flex items-center gap-2">
-                  <Dot r={5} color={isTyped(metas[l.meta_id].display) ? BADGE_COLOR : colorOf(metas[l.meta_id].display as Display)} />
+                  <Dot shape={first?.shape} r={5} color={isTyped(metas[l.meta_id].display) ? BADGE_COLOR : colorOf(metas[l.meta_id].display as Display)} />
                   <span>
                     {l.title}
                     {metas[l.meta_id].display?.legend_layer_note && <span className="block text-xs text-muted">{metas[l.meta_id].display?.legend_layer_note}</span>}
@@ -252,25 +257,25 @@ const pointModule: GeometryModule = {
               <ul className="mt-1 space-y-0 border-t border-line pt-1">
                 {labels.map((t, i) => (
                   <li key={t} className="flex items-center gap-2">
-                    <Dot r={SIZE_RADII[Math.min(i, SIZE_RADII.length - 1)]} color="#6b6f76" />
+                    <Dot shape={first?.shape} r={SIZE_RADII[Math.min(i, SIZE_RADII.length - 1)]} color="#6b6f76" />
                     <span>{t}</span>
                   </li>
                 ))}
                 {withZero && first.legend_zero && (
                   <li className="flex items-center gap-2">
-                    <Dot r={SIZE_RADII[0]} color="#6b6f76" fill="rgba(255,255,255,0)" w={1.8} opacity={0} />
+                    <Dot shape={first?.shape} r={SIZE_RADII[0]} color="#6b6f76" fill="rgba(255,255,255,0)" w={1.8} opacity={0} />
                     <span>{first.legend_zero}</span>
                   </li>
                 )}
                 {first.legend_unknown && (
                   <li className="flex items-center gap-2">
-                    <Dot r={UNKNOWN_RADIUS} color={UNKNOWN_COLOR} w={0} opacity={0.9} />
+                    <Dot shape={first?.shape} r={UNKNOWN_RADIUS} color={UNKNOWN_COLOR} w={0} opacity={0.9} />
                     <span>{first.legend_unknown}</span>
                   </li>
                 )}
                 {first.legend_point && (
                   <li className="flex items-center gap-2">
-                    <Dot r={5} color="#6b6f76" />
+                    <Dot shape={first?.shape} r={5} color="#6b6f76" />
                     <span>{first.legend_point}</span>
                   </li>
                 )}
@@ -279,7 +284,7 @@ const pointModule: GeometryModule = {
             {counted && (
               <ul className="mt-1 space-y-0 border-t border-line pt-1">
                 <li className="flex items-center gap-2">
-                  <Badge r={BADGE_RADIUS} n="n" />
+                  <Badge r={BADGE_RADIUS} n="n" shape={first?.shape} />
                   <span>{counted.legend_count_classes?.[0] ?? 'Place with several records: the number is the count'}</span>
                 </li>
               </ul>

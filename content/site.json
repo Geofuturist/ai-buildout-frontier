@@ -12,7 +12,7 @@
   "hidden_layers": [
     "dc_atlas_count_adm0"
   ],
-  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. world_zoom: below this zoom a click on the globe chooses the whole world. hidden_layers: layer_ids kept off the map from here, a temporary stand-in for display.map = false in the meta (the layer stays in the files, on /data and in the card values). fan_max: a place with more records than this opens as a list only, with no fan. default_view.country: an ISO3 code to open on a country, null for the world. type_colors: colour of a class by its value (for layers that colour by type, such as the power plants); a class not listed takes the palette by its place. outline: for layers drawn as squares that have a filter on `field`, objects with one of `values` are drawn as an outline only and `label` is their legend line.",
+  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. world_zoom: below this zoom a click on the globe chooses the whole world. hidden_layers: layer_ids kept off the map from here, a temporary stand-in for display.map = false in the meta (the layer stays in the files, on /data and in the card values). fan_max: a place with more records than this opens as a list only, with no fan. default_view.country: an ISO3 code to open on a country, null for the world. type_colors: colour of a class by its value (for layers that colour by type, such as the power plants); a class not listed takes the palette by its place. point_shapes: shape of the point icons by the domain of the layer. status_styles: how a status field (or the count columns of a place) becomes a kind of icon: fill = works, pale = built but not working, hatch = under construction, outline = announced, q = shelved, x = cancelled; labels are working texts until [RES] gives the legend texts.",
   "type_colors": {
     "utility-scale solar": "#F2C500",
     "wind": "#2E9E44",
@@ -23,13 +23,49 @@
     "oil/gas": "#1A1A1A",
     "bioenergy": "#F28C1E"
   },
-  "outline": {
-    "field": "status_group",
-    "values": [
-      "announced",
-      "pre_construction",
-      "construction"
+  "point_shapes": {
+    "energy": "circle",
+    "dc": "square"
+  },
+  "status_styles": {
+    "fields": {
+      "status_group": {
+        "operating": "fill",
+        "mothballed": "pale",
+        "retired": "pale",
+        "construction": "hatch",
+        "announced": "outline",
+        "pre_construction": "outline",
+        "shelved": "q",
+        "cancelled": "x"
+      },
+      "status_raw": {
+        "Operating / Construction": "fill",
+        "Retired": "pale",
+        "Planned": "outline"
+      }
+    },
+    "counts": [
+      [
+        "n_operating_or_construction",
+        "fill"
+      ],
+      [
+        "n_planned",
+        "outline"
+      ],
+      [
+        "n_retired",
+        "pale"
+      ]
     ],
-    "label": "Outline only: planned or under construction"
+    "labels": {
+      "fill": "Operating",
+      "pale": "Built, not operating",
+      "hatch": "Under construction",
+      "outline": "Announced or planned",
+      "q": "Shelved, no decision",
+      "x": "Cancelled"
+    }
   }
 }

@@ -101,7 +101,7 @@ export const TYPE_PALETTE: { fill: string; stroke: string }[] = [
   { fill: '#D55E00', stroke: '#D55E00' }, // vermillion
 ];
 /**
- * The squares (display.symbol = "square"; the power plants have eight types) take the whole Okabe-Ito set; the
+ * A layer with more than seven classes (the power plants have eight types) takes the whole Okabe-Ito set; the
  * eighth, black, is a dark grey so that it does not read as a frame. Order = the order of color_classes.
  */
 export const TYPE_PALETTE_8: { fill: string; stroke: string }[] = [
@@ -122,7 +122,7 @@ export function isTyped(d: Display | undefined): d is Typed {
   return Boolean(d?.color_field && d.color_classes && d.color_classes.length > 0);
 }
 
-/** `wide`: the eight-colour set of the squares (display.symbol = "square"); the dots keep the six colours. */
+/** `wide`: the eight-colour set, for a layer with more than seven classes (the power plants); the others keep the six colours and grey. */
 export function typeColor(index: number, wide = false): { fill: string; stroke: string } {
   return (wide ? TYPE_PALETTE_8 : TYPE_PALETTE)[index] ?? TYPE_GREY;
 }
@@ -130,7 +130,7 @@ export function typeColor(index: number, wide = false): { fill: string; stroke: 
 /** Colour of one class: the one set for its value in content/site.json (type_colors), otherwise the palette by its place. */
 export function classColor(d: Typed, value: string, index: number): { fill: string; stroke: string } {
   const set = d.type_colors?.[value];
-  return set ? { fill: set, stroke: set } : typeColor(index, d.symbol === 'square');
+  return set ? { fill: set, stroke: set } : typeColor(index, d.color_classes.length > TYPE_PALETTE.length + 1);
 }
 
 /** Colour of a point by the value of color_field (fill or stroke). */

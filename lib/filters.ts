@@ -14,7 +14,8 @@ export type LayerFilters = Record<string, Record<string, string[]>>;
 
 /** The filters of the meta, and the filter by type of a layer drawn as squares (the types of the legend). */
 export function typeFilterOf(d: Display | undefined): DisplayFilter | null {
-  if (!d || d.symbol !== 'square' || !d.color_field || !d.color_classes?.length) return null;
+  // layers drawn as icons that colour by type and have no filter of their own by type (Atlas has its own)
+  if (!d || !d.shape || d.count_field || d.filter_fields || !d.color_field || !d.color_classes?.length) return null;
   return { field: d.color_field, mode: 'equals', default: null, values: d.color_classes.map((c) => ({ value: c, label: d.legend_type_labels?.[c] ?? c })) };
 }
 

@@ -106,8 +106,6 @@ export interface Meta {
     /** panel topic; absent in older metas (then derived from the domain) */
     topic?: string;
     series?: string;
-    /** point symbol: absent or 'circle' = the usual dots; 'square' = squares (symbol layer, SDF icon) */
-    symbol?: string;
     /** filters by the value of a field of the object (abf-energy 0.1.0): `equals` one value at a time, `contains` any of the ticked codes */
     filters?: DisplayFilter[];
     /** text under the layer's legend while the map is zoomed out below `below` (smaller objects appear as you zoom in) */
@@ -118,8 +116,10 @@ export interface Meta {
     popup_title?: string;
     /** size class (value of size_field) -> legend label */
     legend_size_labels?: Record<string, string>;
-    /** objects whose `field` holds one of `values` are drawn as an outline only; `label` is its legend line (content/site.json outline, put here by fetch-data) */
-    outline?: { field: string; values: string[]; label: string };
+    /** shape of the point icons by the domain of the layer (content/site.json point_shapes, put here by fetch-data) */
+    shape?: 'circle' | 'square';
+    /** how the status of an object becomes a kind of icon (content/site.json status_styles, put here by fetch-data): by the value of `field`, or by the count columns that stand at 1; `labels`: kind -> legend line */
+    status_style?: { field?: string; values?: Record<string, string>; counts?: [string, string][]; labels: Record<string, string>; rowFields?: Record<string, Record<string, string>> };
     /** class value -> colour (content/site.json type_colors, put here by fetch-data); a class without one takes the palette by its place */
     type_colors?: Record<string, string>;
     /** legend line of the frame that marks an approximate position */
