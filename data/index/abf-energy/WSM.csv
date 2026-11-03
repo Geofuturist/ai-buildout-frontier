@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413353,energy_plants_gem_units,WSM,point,,WSM-1-AA,,point,,,,false,abf-boundaries-v0.2.0,Fiaga power plant,L100000408979,oil/gas,operating,24
+G100001023589,energy_plants_gem_units,WSM,point,,WSM-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Faleata Racecourse solar farm,L100001020680,utility-scale solar,operating,1.4
+G100001023590,energy_plants_gem_units,WSM,point,,WSM-1-AA,,point,,,,false,abf-boundaries-v0.2.0,Faeolo International Airport solar farm,L100001020681,utility-scale solar,operating,2.1
+G100001023591,energy_plants_gem_units,WSM,point,,WSM-1-AA,,point,,,,false,abf-boundaries-v0.2.0,Satapuala solar farm,L100001020682,utility-scale solar,operating,2.6
+G100001023592,energy_plants_gem_units,WSM,point,,WSM-1-AA,,point,,,,false,abf-boundaries-v0.2.0,Satapuala solar farm,L100001020682,utility-scale solar,operating,2

@@ -1,0 +1,47 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000105526,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamwamba power station,L100000103012,coal,pre_construction,50
+G100000105527,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamwamba power station,L100000103012,coal,pre_construction,50
+G100000105528,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamwamba power station,L100000103012,coal,pre_construction,50
+G100000105529,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamwamba power station,L100000103012,coal,pre_construction,50
+G100000105530,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamwamba power station,L100000103012,coal,pre_construction,50
+G100000105531,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamwamba power station,L100000103012,coal,pre_construction,50
+G100000105532,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamwamba power station,L100000103012,coal,cancelled,700
+G100000107358,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Neno power station,L100000103013,coal,cancelled,800
+G100000107359,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Neno power station,L100000103013,coal,cancelled,800
+G100000107360,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Neno power station,L100000103013,coal,cancelled,800
+G100000107745,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Pamodzi power station,L100000103011,coal,cancelled,120
+G100000113824,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Rukuru power station,L100000104369,coal,pre_construction,50
+G100000201690,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Blantyre Waste to Energy power station,L100000201404,bioenergy,shelved,50
+G100000413955,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Mapanga Substation power station,L100000409173,oil/gas,operating,20
+G100000413956,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kanego power station,L100000409174,oil/gas,operating,25
+G100000413957,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Chinyama power station,L100000409175,oil/gas,operating,23
+G100000413958,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Chichiri power station,L100000409176,oil/gas,operating,35
+G100000602459,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Kapichira hydroelectric plant,L100000602428,hydropower,operating,130
+G100000602461,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Mpatamanga Gorge hydroelectric plant,L100000602430,hydropower,pre_construction,359
+G100000602462,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Nkula B hydroelectric plant,L100000602431,hydropower,operating,100
+G100000602463,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Tedzani Falls hydroelectric plant,L100000602432,hydropower,operating,121
+G100000604512,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Kholombidzo hydroelectric plant,L100000602429,hydropower,pre_construction,210
+G100000800095,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Bwengu solar farm,L100000800073,utility-scale solar,construction,50
+G100000800158,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Golomoti solar farm,L100000800122,utility-scale solar,operating,20
+G100000800263,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Monkey Bay solar farm,L100000800217,utility-scale solar,cancelled,20
+G100000800277,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Nkhoma Deka solar farm,L100000800231,utility-scale solar,pre_construction,50
+G100000800278,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Nkhotakota solar farm,L100000800232,utility-scale solar,operating,21
+G100000800329,energy_plants_gem_units,MWI,point,,,,,,,,false,abf-boundaries-v0.2.0,Salima solar farm,L100000800277,utility-scale solar,operating,60
+G100000814149,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Malawi (Elsewedy) solar farm,L100000811615,utility-scale solar,shelved,50
+G100000814150,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Malawi (Elsewedy) solar farm,L100000811615,utility-scale solar,shelved,50
+G100000831188,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Dwangwa solar farm,L100000827656,utility-scale solar,announced,55
+G100000831189,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Walkers Ferry solar farm,L100000827657,utility-scale solar,announced,30
+G100000900095,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Mzimba wind farm,L100000900075,wind,pre_construction,50
+G100000927408,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Mzimba (Nthundwa Village) wind farm,L100000921998,wind,shelved,150
+G100001000202,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Liwonde power station,L100001000081,coal,shelved,350
+G100001000227,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Rukuru power station,L100000104369,coal,pre_construction,50
+G100001000228,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Rukuru power station,L100000104369,coal,announced,150
+G100001021154,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Nanjoka (Malawi) solar farm,L100001018859,utility-scale solar,construction,10
+G100001021155,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Nanjoka (Malawi) solar farm,L100001018859,utility-scale solar,pre_construction,10
+G100001030398,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Fufu hydroelectric plant,L100001025634,hydropower,announced,261
+G100001051383,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Mzuzu wind farm,L100001045629,wind,announced,50
+G100001074462,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Choma (Malawi) solar farm,L100001064689,utility-scale solar,pre_construction,20
+G100001074463,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kanengo solar farm,L100001064691,utility-scale solar,construction,10
+G100001074464,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Chikwawa solar farm,L100001064692,utility-scale solar,announced,10
+G100001074465,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Mchinji Solar Power Station,L100001064693,utility-scale solar,announced,5
+G100001074466,energy_plants_gem_units,MWI,point,,,,,,,,true,abf-boundaries-v0.2.0,Zomba Solar Power Station,L100001064694,utility-scale solar,announced,5

@@ -1,0 +1,71 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100053,energy_plants_gem_units,SLV,point,,SLV-1-UN,,point,,,,true,abf-boundaries-v0.2.0,AES Fonseca power station,L100000101832,coal,cancelled,220
+G100000113857,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Cenérgica Power Station,L100000104431,coal,cancelled,150
+G100000200213,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Chaparrastique power station,L100000200188,bioenergy,operating,62
+G100000200218,energy_plants_gem_units,SLV,point,,SLV-1-SS,,point,,,,false,abf-boundaries-v0.2.0,Ingenio El Ángel power station,L100000200193,bioenergy,operating,47
+G100000200219,energy_plants_gem_units,SLV,point,,SLV-1-SV,,point,,,,false,abf-boundaries-v0.2.0,Ingenio Jiboa power station,L100000200194,bioenergy,operating,45
+G100000200221,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Izalco power station,L100000200196,bioenergy,operating,45
+G100000406673,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Pacífico Acajutla power station,L100000406602,oil/gas,operating,378
+G100000412034,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Termopuerto power station,L100000408639,oil/gas,operating,73.6
+G100000412035,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Talnique power station,L100000408640,oil/gas,operating,51
+G100000412036,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Talnique power station,L100000408640,oil/gas,operating,51
+G100000412037,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Orazul Acajutla power station,L100000408641,oil/gas,operating,51
+G100000412038,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Orazul Acajutla power station,L100000408641,oil/gas,operating,99
+G100000412039,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Orazul Acajutla power station,L100000408641,oil/gas,operating,82
+G100000412040,energy_plants_gem_units,SLV,point,,SLV-1-SS,,point,,,,false,abf-boundaries-v0.2.0,Nejapa Power power station,L100000408642,oil/gas,operating,143.9
+G100000601584,energy_plants_gem_units,SLV,point,,SLV-1-SV,,point,,,,false,abf-boundaries-v0.2.0,15 De Septiembre hydroelectric plant,L100000601566,hydropower,operating,180
+G100000601585,energy_plants_gem_units,SLV,point,,SLV-1-CA,,point,,,,false,abf-boundaries-v0.2.0,5 De Noviembre hydroelectric plant,L100000601567,hydropower,operating,179
+G100000601586,energy_plants_gem_units,SLV,point,,SLV-1-CA,,point,,,,false,abf-boundaries-v0.2.0,Cerrón Grande hydroelectric plant,L100000601568,hydropower,operating,173
+G100000700001,energy_plants_gem_units,SLV,point,,SLV-1-AH,,point,,,,false,abf-boundaries-v0.2.0,Ahuachapán geothermal power plant,L100000700001,geothermal,operating,30
+G100000700002,energy_plants_gem_units,SLV,point,,SLV-1-AH,,point,,,,false,abf-boundaries-v0.2.0,Ahuachapán geothermal power plant,L100000700001,geothermal,operating,30
+G100000700003,energy_plants_gem_units,SLV,point,,SLV-1-AH,,point,,,,false,abf-boundaries-v0.2.0,Ahuachapán geothermal power plant,L100000700001,geothermal,operating,35
+G100000700017,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,Berlín geothermal power plant,L100000700010,geothermal,operating,44.8
+G100000700050,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,true,abf-boundaries-v0.2.0,Chinameca geothermal power plant,L100000700032,geothermal,construction,25
+G100000700254,energy_plants_gem_units,SLV,point,,SLV-1-SV,,point,,,,true,abf-boundaries-v0.2.0,San Vicente geothermal power plant,L100000700155,geothermal,construction,10
+G100000700312,energy_plants_gem_units,SLV,point,,SLV-1-UN,,point,,,,true,abf-boundaries-v0.2.0,Volcán de Conchagua geothermal power plant,L100000700187,geothermal,shelved,30
+G100000700333,energy_plants_gem_units,SLV,point,,SLV-1-AH,,point,,,,false,abf-boundaries-v0.2.0,Ahuachapán geothermal power plant,L100000700001,geothermal,operating,6
+G100000700334,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,true,abf-boundaries-v0.2.0,Chinameca geothermal power plant,L100000700032,geothermal,construction,17
+G100000700335,energy_plants_gem_units,SLV,point,,SLV-1-SV,,point,,,,true,abf-boundaries-v0.2.0,San Vicente geothermal power plant,L100000700155,geothermal,construction,17
+G100000808770,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,Capella Solar Park,L100000807353,utility-scale solar,operating,70
+G100000808771,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,Capella Solar Park,L100000807353,utility-scale solar,operating,70
+G100000809280,energy_plants_gem_units,SLV,point,,SLV-1-PA,,point,,,,false,abf-boundaries-v0.2.0,Providencia Solar Park,L100000807608,utility-scale solar,operating,75
+G100000809281,energy_plants_gem_units,SLV,point,,SLV-1-PA,,point,,,,false,abf-boundaries-v0.2.0,Providencia Solar Park,L100000807608,utility-scale solar,operating,25
+G100000809285,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Los Remedios solar farm,L100000807612,utility-scale solar,operating,25
+G100000809368,energy_plants_gem_units,SLV,point,,SLV-1-SA,,point,,,,false,abf-boundaries-v0.2.0,Anchor solar farm,L100000807687,utility-scale solar,shelved,6
+G100000809370,energy_plants_gem_units,SLV,point,,SLV-1-UN,,point,,,,false,abf-boundaries-v0.2.0,Bósforo 1 Solar Project,L100000807688,utility-scale solar,operating,10
+G100000809376,energy_plants_gem_units,SLV,point,,SLV-1-SS,,point,,,,false,abf-boundaries-v0.2.0,Bósforo 3 Solar Project,L100000807690,utility-scale solar,operating,10
+G100000809377,energy_plants_gem_units,SLV,point,,SLV-1-SS,,point,,,,false,abf-boundaries-v0.2.0,Bósforo 3 Solar Project,L100000807690,utility-scale solar,operating,10
+G100000809378,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Bósforo 3 Solar Project,L100000807690,utility-scale solar,operating,10
+G100000809379,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Cangrejera solar farm,L100000807691,utility-scale solar,operating,1.2
+G100000809380,energy_plants_gem_units,SLV,point,,SLV-1-CU,,point,,,,true,abf-boundaries-v0.2.0,Cuscatlán solar farm,L100000807692,utility-scale solar,operating,10
+G100000809381,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,La Independencia solar farm,L100000807693,utility-scale solar,operating,10
+G100000809382,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,La Trinidad solar farm (El Salvador),L100000807694,utility-scale solar,operating,9
+G100000809383,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Las Mesas solar farm,L100000807695,utility-scale solar,operating,16
+G100000809384,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Márquez solar farm,L100000807696,utility-scale solar,operating,9
+G100000809385,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Moncagua solar farm,L100000807697,utility-scale solar,operating,2.5
+G100000809386,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,MPC Santa Rosa solar farm,L100000807698,utility-scale solar,operating,10.7
+G100000809387,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Opico Power solar farm,L100000807699,utility-scale solar,operating,5.2
+G100000809388,energy_plants_gem_units,SLV,point,,SLV-1-CA,,point,,,,false,abf-boundaries-v0.2.0,San Isidro solar farm (El Salvador),L100000807700,utility-scale solar,operating,6.5
+G100000809389,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Villa Sol (MPC) solar farm,L100000807701,utility-scale solar,operating,10.7
+G100000809390,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Sonsonate solar farm,L100000807702,utility-scale solar,operating,13
+G100000809392,energy_plants_gem_units,SLV,point,,SLV-1-SV,,point,,,,true,abf-boundaries-v0.2.0,Tecoluca solar farm,L100000807704,utility-scale solar,operating,2.4
+G100000838020,energy_plants_gem_units,SLV,point,,SLV-1-CU,,point,,,,true,abf-boundaries-v0.2.0,Agrisal Edecsa solar farm,L100000832460,utility-scale solar,shelved,9.6
+G100000838021,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Holcim Cement Plant solar farm,L100000832461,utility-scale solar,construction,21.4
+G100000838022,energy_plants_gem_units,SLV,point,,SLV-1-SS,,point,,,,false,abf-boundaries-v0.2.0,Ilopango solar farm,L100000832462,utility-scale solar,operating,4.1
+G100000838024,energy_plants_gem_units,SLV,point,,SLV-1-UN,,point,,,,false,abf-boundaries-v0.2.0,Meanguera del Golfo solar farm,L100000832464,utility-scale solar,operating,1.3
+G100000838027,energy_plants_gem_units,SLV,point,,SLV-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Talnique solar farm,L100000832467,utility-scale solar,operating,17
+G100000907501,energy_plants_gem_units,SLV,point,,SLV-1-SA,,point,,,,false,abf-boundaries-v0.2.0,Ventus Wind Project,L100000905495,wind,operating,54
+G100001031037,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,false,abf-boundaries-v0.2.0,3 De Febrero hydroelectric plant,L100001025911,hydropower,operating,67
+G100001048255,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,Berlín geothermal power plant,L100000700010,geothermal,operating,28.1
+G100001048256,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,Berlín geothermal power plant,L100000700010,geothermal,operating,28.1
+G100001048257,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,Berlín geothermal power plant,L100000700010,geothermal,operating,9.2
+G100001053115,energy_plants_gem_units,SLV,point,,SLV-1-SS,,point,,,,false,abf-boundaries-v0.2.0,Ingenio La Cabaña power station,L100001046841,bioenergy,operating,30
+G100001062212,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,true,abf-boundaries-v0.2.0,San Miguel solar farm,L100001054351,utility-scale solar,operating,3.6
+G100001070472,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,Berlin Binary geothermal power plant,L100001061507,geothermal,operating,7.5
+G100001071888,energy_plants_gem_units,SLV,point,,SLV-1-CH,,point,,,,true,abf-boundaries-v0.2.0,El Cimarrón hydroelectric plant,L100001062592,hydropower,cancelled,243
+G100001074849,energy_plants_gem_units,SLV,point,,SLV-1-SM,,point,,,,false,abf-boundaries-v0.2.0,San Miguel solar project I,L100001065063,utility-scale solar,operating,1.8
+G100001090663,energy_plants_gem_units,SLV,point,,SLV-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Metapán wind farm,L100001080731,wind,announced,100
+G100001090664,energy_plants_gem_units,SLV,point,,SLV-1-US,,point,,,,false,abf-boundaries-v0.2.0,15 de Septiembre (El Salvador) solar farm,L100001080733,utility-scale solar,operating,21.1
+G100001090666,energy_plants_gem_units,SLV,point,,SLV-1-PA,,point,,,,true,abf-boundaries-v0.2.0,Olocuilta solar farm,L100001080735,utility-scale solar,operating,44
+G100001090668,energy_plants_gem_units,SLV,point,,SLV-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Armenia solar farm,L100001080737,utility-scale solar,operating,28.1
+G100001093449,energy_plants_gem_units,SLV,point,,SLV-1-SS,,point,,,,false,abf-boundaries-v0.2.0,Ingenio El Ángel power station,L100000200193,bioenergy,operating,15

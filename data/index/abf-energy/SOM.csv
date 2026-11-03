@@ -1,0 +1,10 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000411355,energy_plants_gem_units,SOM,point,,,,,,,,true,abf-boundaries-v0.2.0,UN power station,L100000408171,oil/gas,operating,65
+G100000831271,energy_plants_gem_units,SOM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mogadishu solar farm,L100000827724,utility-scale solar,operating,8
+G100000831272,energy_plants_gem_units,SOM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mogadishu solar farm,L100000827724,utility-scale solar,shelved,92
+G100001021555,energy_plants_gem_units,SOM,point,,,,,,,,false,abf-boundaries-v0.2.0,GEEL Power solar farm,L100001019125,utility-scale solar,shelved,100
+G100001051503,energy_plants_gem_units,SOM,point,,,,,,,,false,abf-boundaries-v0.2.0,Jazeera Power Plant solar farm,L100001045719,utility-scale solar,pre_construction,55
+G100001051507,energy_plants_gem_units,SOM,point,,,,,,,,true,abf-boundaries-v0.2.0,Berbera II solar farm,L100001045721,utility-scale solar,pre_construction,12
+G100001051508,energy_plants_gem_units,SOM,point,,,,,,,,false,abf-boundaries-v0.2.0,Garowe solar farm,L100001045722,utility-scale solar,pre_construction,10
+G100001051509,energy_plants_gem_units,SOM,point,,,,,,,,false,abf-boundaries-v0.2.0,Daynile Power Plant solar farm,L100001045723,utility-scale solar,pre_construction,55
+G100001090067,energy_plants_gem_units,SOM,point,,,,,,,,true,abf-boundaries-v0.2.0,Awdal solar farm,L100001080217,utility-scale solar,announced,8

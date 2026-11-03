@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000411262,energy_plants_gem_units,TLS,point,,TLS-1-DI,,point,,,,false,abf-boundaries-v0.2.0,Hera power station,L100000408091,oil/gas,operating,119
+G100000411263,energy_plants_gem_units,TLS,point,,TLS-1-MF,,point,,,,false,abf-boundaries-v0.2.0,Betano power station,L100000408092,oil/gas,operating,136
+G100001023814,energy_plants_gem_units,TLS,point,,TLS-1-MT,,point,,,,true,abf-boundaries-v0.2.0,Manatuto solar farm,L100001020845,utility-scale solar,announced,72
+G100001023815,energy_plants_gem_units,TLS,point,,TLS-1-VI,,point,,,,true,abf-boundaries-v0.2.0,Lariguto wind farm,L100001020846,wind,announced,50

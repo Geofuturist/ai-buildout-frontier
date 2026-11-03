@@ -1,0 +1,109 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000108863,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,SCC Cement power station,L100000103532,coal,mothballed,30
+G100000108864,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,SCC Cement power station,L100000103532,coal,mothballed,30
+G100000408122,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jandar Gas power plant,L100000407075,oil/gas,operating,703
+G100000408123,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jandar Gas power plant,L100000407075,oil/gas,operating,480
+G100000408124,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Latakia power station,L100000407074,oil/gas,operating,183
+G100000408125,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mehardeh power plant,L100000407073,oil/gas,operating,165
+G100000408126,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Teshreen power station,L100000407071,oil/gas,operating,450
+G100000408127,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Teshreen power station,L100000407071,oil/gas,operating,113
+G100000408128,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Teshreen power station,L100000407071,oil/gas,operating,200
+G100000408130,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aleppo power plant,L100000407068,oil/gas,operating,213
+G100000408132,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias power plant,L100000407067,oil/gas,operating,138
+G100000408133,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Zara power plant,L100000407065,oil/gas,operating,220
+G100000408134,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Zara power plant,L100000407065,oil/gas,operating,220
+G100000408135,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Zara power plant,L100000407065,oil/gas,operating,220
+G100000408136,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Nasrieh Gas power plant,L100000407066,oil/gas,operating,487.5
+G100000408454,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Deir Ali power station,L100000406164,oil/gas,pre_construction,750
+G100000408455,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Deir Ali power station,L100000406164,oil/gas,operating,750
+G100000408535,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Deir El Zor power plant,L100000407103,oil/gas,cancelled,300
+G100000408536,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,El Tarifawi power plant,L100000407104,oil/gas,pre_construction,300
+G100000408537,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Teshreen power station,L100000407071,oil/gas,construction,200
+G100000408538,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Teshreen power station,L100000407071,oil/gas,construction,200
+G100000408545,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mehardeh power plant,L100000407073,oil/gas,operating,150
+G100000408546,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mehardeh power plant,L100000407073,oil/gas,operating,150
+G100000408547,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mehardeh power plant,L100000407073,oil/gas,operating,165
+G100000408548,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Teshreen power station,L100000407071,oil/gas,operating,113
+G100000408549,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Teshreen power station,L100000407071,oil/gas,operating,200
+G100000408550,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aleppo power plant,L100000407068,oil/gas,operating,213
+G100000408551,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aleppo power plant,L100000407068,oil/gas,mothballed,213
+G100000408552,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aleppo power plant,L100000407068,oil/gas,mothballed,213
+G100000408553,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aleppo power plant,L100000407068,oil/gas,mothballed,213
+G100000408554,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias power plant,L100000407067,oil/gas,operating,138
+G100000408555,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Deir Ali power station,L100000406164,oil/gas,operating,750
+G100000411149,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Zayzoun CCGT power plant,L100000408043,oil/gas,retired,488
+G100000411150,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Nasrieh Gas power plant,L100000407066,oil/gas,operating,100
+G100000411151,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Latakia power station,L100000407074,oil/gas,cancelled,526
+G100000411152,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jandar Gas power plant,L100000407075,oil/gas,construction,450
+G100000411154,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Zara power plant,L100000407065,oil/gas,announced,250
+G100000411382,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Latakia Steam power station,L100000408270,oil/gas,announced,150
+G100000411383,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Latakia Steam power station,L100000408270,oil/gas,announced,150
+G100000411384,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Latakia power station,L100000407074,oil/gas,construction,160
+G100000411385,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Latakia power station,L100000407074,oil/gas,operating,183
+G100000411386,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jandar Gas power plant,L100000407075,oil/gas,announced,350
+G100000411387,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,El Tarifawi power plant,L100000407104,oil/gas,pre_construction,300
+G100000411388,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Deir El Zor power plant,L100000407103,oil/gas,construction,750
+G100000411389,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Coastal Region power plant,L100000408271,oil/gas,announced,350
+G100000411390,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias Thermal power plant,L100000408264,oil/gas,operating,170
+G100000411391,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias Thermal power plant,L100000408264,oil/gas,operating,170
+G100000411392,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias Thermal power plant,L100000408264,oil/gas,operating,170
+G100000411393,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias Thermal power plant,L100000408264,oil/gas,announced,300
+G100000411394,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias Thermal power plant,L100000408264,oil/gas,announced,300
+G100000411395,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias Thermal power plant,L100000408264,oil/gas,operating,170
+G100000411396,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,AS-Suwayda power plant,L100000408265,oil/gas,announced,450
+G100000411397,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Aleppo Steam power plant,L100000408266,oil/gas,cancelled,300
+G100000414030,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mehardeh power plant,L100000407073,oil/gas,operating,25
+G100000414031,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Banias OCGT power plant,L100000409198,oil/gas,operating,34
+G100000414032,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,AS-Suwayda thermal power plant,L100000409199,oil/gas,mothballed,34.4
+G100000414033,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,AS-Suwayda thermal power plant,L100000409199,oil/gas,mothballed,34.4
+G100000414034,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,AS-Suwayda thermal power plant,L100000409199,oil/gas,mothballed,34.4
+G100000414035,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,AS-Suwayda thermal power plant,L100000409199,oil/gas,operating,34.4
+G100000414036,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,AS-Suwayda thermal power plant,L100000409199,oil/gas,operating,34.4
+G100000414037,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Thayyem OCGT power plant,L100000409191,oil/gas,operating,32
+G100000414038,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Thayyem OCGT power plant,L100000409191,oil/gas,operating,32
+G100000414039,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Thayyem OCGT power plant,L100000409191,oil/gas,operating,32
+G100000414040,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aleppo OCGT power plant,L100000409192,oil/gas,operating,30
+G100000603567,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Baath hydroelectric plant,L100000603532,hydropower,operating,75
+G100000603568,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Tabqa Dam hydroelectric plant,L100000603533,hydropower,operating,880
+G100000603569,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Tishrin Dam hydroelectric plant,L100000603534,hydropower,operating,630
+G100000804718,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jandar solar farm,L100000804126,utility-scale solar,pre_construction,14
+G100000804719,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jandar solar farm,L100000804126,utility-scale solar,pre_construction,24
+G100000804740,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Damascus Solar,L100000804147,utility-scale solar,shelved,300
+G100000804742,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Adra solar farm,L100000804149,utility-scale solar,operating,10
+G100000804743,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Aleppo solar farm,L100000804150,utility-scale solar,operating,42
+G100000811470,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Aleppo solar farm,L100000804150,utility-scale solar,construction,58
+G100000834941,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Adra solar farm,L100000804149,utility-scale solar,construction,90
+G100000834942,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hassia (Gemacy Solar) solar farm,L100000831044,utility-scale solar,pre_construction,10
+G100000834943,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hassia (Homs Chamber of Industry) solar farm,L100000831045,utility-scale solar,operating,10
+G100000834944,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hassia (International Rolling Mill) solar farm,L100000831046,utility-scale solar,pre_construction,10
+G100000908146,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Lake Qattinah wind farm,L100000905961,wind,cancelled,50
+G100000908154,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Sukhna wind farm,L100000905969,wind,cancelled,50
+G100000908155,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Hijana wind farm,L100000905970,wind,cancelled,50
+G100000927545,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghabagheb wind farm,L100000922088,wind,cancelled,50
+G100000927575,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Homs-Jandar wind farm,L100000922113,wind,shelved,10
+G100000927576,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Homs-Qutaineh wind farm,L100000922114,wind,shelved,100
+G100001005978,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,New Banias Power Plant,L100001004625,oil/gas,operating,24
+G100001005980,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,New Banias Power Plant,L100001004625,oil/gas,shelved,32
+G100001028327,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Nasrieh Gas power plant,L100000407066,oil/gas,construction,100
+G100001028328,energy_plants_gem_units,SYR,point,,,,,,,,false,abf-boundaries-v0.2.0,Nasrieh Gas power plant,L100000407066,oil/gas,cancelled,150
+G100001052169,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Deir El Zor Combind Cycle power plant,L100001046232,oil/gas,construction,1000
+G100001052995,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Syria Solar Power Project,L100001046772,utility-scale solar,construction,100
+G100001052997,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hassia (Homs Chamber of Industry) solar farm,L100000831045,utility-scale solar,operating,20
+G100001052998,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hassia (Homs Chamber of Industry) solar farm,L100000831045,utility-scale solar,announced,40
+G100001054284,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Mhardeh II power station,L100001047649,oil/gas,construction,800
+G100001054296,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Zayzoun power plant,L100001047659,oil/gas,construction,1000
+G100001054297,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,North Aleppo Combined Cycle power station,L100001047660,oil/gas,pre_construction,1200
+G100001090305,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Qatar and Turkey Power Ships,L100001080402,oil/gas,announced,400
+G100001090306,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Qatar and Turkey Power Ships,L100001080402,oil/gas,announced,400
+G100001090308,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Harfi Sakalko wind farm,L100001080404,wind,announced,200
+G100001090310,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Harfi Sakalko solar farm,L100001080407,utility-scale solar,announced,300
+G100001090313,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Kafr Behm solar farm,L100001080409,utility-scale solar,pre_construction,100
+G100001090314,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wedian Alrabee solar farm,L100001080410,utility-scale solar,announced,250
+G100001090315,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,20Solar solar farm,L100001080412,utility-scale solar,announced,100
+G100001090316,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,20Solar solar farm,L100001080412,utility-scale solar,announced,100
+G100001090317,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wedian Alrabee solar farm,L100001080410,utility-scale solar,announced,250
+G100001090318,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wedian Alrabee solar farm,L100001080410,utility-scale solar,announced,250
+G100001090319,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wedian Alrabee solar farm,L100001080410,utility-scale solar,announced,250
+G100001090321,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Manarat Al Shahba solar farm,L100001080415,utility-scale solar,announced,100
+G100001090322,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Rif Dimashq solar farm,L100001080416,utility-scale solar,announced,100
+G100001090323,energy_plants_gem_units,SYR,point,,,,,,,,true,abf-boundaries-v0.2.0,Rif Hama solar farm,L100001080417,utility-scale solar,announced,70

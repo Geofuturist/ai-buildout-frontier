@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000412235,energy_plants_gem_units,ABW,point,,,,,,,,false,abf-boundaries-v0.2.0,RECIP power plant,L100000408499,oil/gas,operating,102
+G100000412236,energy_plants_gem_units,ABW,point,,,,,,,,false,abf-boundaries-v0.2.0,RECIP power plant,L100000408499,oil/gas,operating,45.2
+G100000412237,energy_plants_gem_units,ABW,point,,,,,,,,false,abf-boundaries-v0.2.0,RECIP power plant,L100000408499,oil/gas,operating,23.4
+G100000412238,energy_plants_gem_units,ABW,point,,,,,,,,false,abf-boundaries-v0.2.0,RECIP power plant,L100000408499,oil/gas,operating,23.4
+G100000907689,energy_plants_gem_units,ABW,point,,,,,,,,true,abf-boundaries-v0.2.0,Urirama wind farm,L100000905599,wind,cancelled,24
+G100000907691,energy_plants_gem_units,ABW,point,,,,,,,,false,abf-boundaries-v0.2.0,Vader Piet wind farm,L100000905601,wind,operating,30

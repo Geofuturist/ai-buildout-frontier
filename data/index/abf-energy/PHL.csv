@@ -1,0 +1,1262 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100399,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Atimonan power station,L100000103162,coal,pre_construction,668
+G100000100400,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Atimonan power station,L100000103162,coal,pre_construction,668
+G100000100478,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Balingasag power station,L100000103192,coal,operating,55
+G100000100479,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Balingasag power station,L100000103192,coal,operating,55
+G100000100480,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Balingasag power station,L100000103192,coal,operating,55
+G100000100583,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Baquioen power station,L100000103188,coal,cancelled,300
+G100000100655,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas power station,L100000103164,coal,cancelled,150
+G100000100656,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas power station,L100000103164,coal,cancelled,150
+G100000100657,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas power station,L100000103164,coal,cancelled,150
+G100000100658,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas power station,L100000103164,coal,cancelled,150
+G100000101109,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bundagul power station,L100000103170,coal,operating,84
+G100000101148,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cadiz City power station,L100000103199,coal,cancelled,150
+G100000101149,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cadiz City power station,L100000103199,coal,cancelled,150
+G100000101151,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Calaca power station,L100000103165,coal,operating,150
+G100000101152,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Calaca power station,L100000103165,coal,operating,150
+G100000101153,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Calaca power station,L100000103165,coal,shelved,350
+G100000101154,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Calaca power station,L100000103165,coal,shelved,350
+G100000101155,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Calaca power station,L100000103165,coal,operating,300
+G100000101156,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Calaca power station,L100000103165,coal,operating,300
+G100000101687,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Concepcion power station,L100000103200,coal,operating,135
+G100000101688,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Concepcion power station,L100000103200,coal,construction,135
+G100000102263,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao San Miguel power station,L100000103184,coal,operating,150
+G100000102264,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao San Miguel power station,L100000103184,coal,operating,150
+G100000102265,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao San Miguel power station,L100000103184,coal,cancelled,150
+G100000102266,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao San Miguel power station,L100000103184,coal,cancelled,150
+G100000102267,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao San Miguel power station,L100000103184,coal,cancelled,300
+G100000102268,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao Therma South power station,L100000103185,coal,operating,150
+G100000102269,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao Therma South power station,L100000103185,coal,operating,150
+G100000102270,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao Therma South power station,L100000103185,coal,cancelled,172
+G100000102271,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davao Therma South power station,L100000103185,coal,cancelled,172
+G100000102980,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,General Santos power station,L100000103196,coal,cancelled,300
+G100000104907,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Isabel Copper power station,L100000103187,coal,cancelled,200
+G100000104908,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Isabela power station,L100000103161,coal,cancelled,100
+G100000105362,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Jose Panganiban power station,L100000103160,coal,cancelled,350
+G100000105363,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Jose Panganiban power station,L100000103160,coal,cancelled,350
+G100000105513,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamanga power station,L100000103197,coal,operating,105
+G100000105514,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamanga power station,L100000103197,coal,operating,105
+G100000105677,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,KEPCO Subic Bay power station,L100000103172,coal,cancelled,200
+G100000105753,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,King-king Project power station,L100000103186,coal,cancelled,80
+G100000105754,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,King-king Project power station,L100000103186,coal,cancelled,80
+G100000106078,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,La Union power station,L100000103189,coal,cancelled,335
+G100000106079,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,La Union power station,L100000103189,coal,cancelled,335
+G100000106141,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lanao Kauswagan power station,L100000103193,coal,operating,138
+G100000106142,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lanao Kauswagan power station,L100000103193,coal,operating,138
+G100000106143,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lanao Kauswagan power station,L100000103193,coal,operating,138
+G100000106144,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lanao Kauswagan power station,L100000103193,coal,operating,138
+G100000106293,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Limay power station,L100000103173,coal,cancelled,150
+G100000106294,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Limay power station,L100000103173,coal,operating,134
+G100000106295,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Limay power station,L100000103173,coal,operating,134
+G100000106296,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Limay power station,L100000103173,coal,operating,134
+G100000106297,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Limay power station,L100000103173,coal,operating,134
+G100000106455,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ludo power station,L100000103179,coal,cancelled,300
+G100000106538,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mabalacat Mill power station,L100000103174,coal,operating,52
+G100000106608,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Malabuyoc power station,L100000103180,coal,cancelled,300
+G100000106687,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dinginin power station,L100000103171,coal,operating,668
+G100000106688,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dinginin power station,L100000103171,coal,operating,668
+G100000106690,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mariveles Power Plant,L100000103175,coal,operating,325.8
+G100000106691,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mariveles Power Plant,L100000103175,coal,operating,325.8
+G100000106713,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Masinloc power station,L100000103176,coal,operating,330
+G100000106714,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Masinloc power station,L100000103176,coal,operating,344
+G100000106715,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Masinloc power station,L100000103176,coal,operating,351.8
+G100000106716,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Masinloc power station,L100000103176,coal,construction,350
+G100000106931,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindanao Steag power station,L100000103194,coal,operating,116
+G100000106932,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindanao Steag power station,L100000103194,coal,operating,116
+G100000106933,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindanao Steag power station,L100000103194,coal,cancelled,150
+G100000106947,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Misamis Oriental power station,L100000103195,coal,operating,135
+G100000106948,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Misamis Oriental power station,L100000103195,coal,operating,135
+G100000106949,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Misamis Oriental power station,L100000103195,coal,operating,135
+G100000107170,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naga power station,L100000103181,coal,retired,50
+G100000107171,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naga power station,L100000103181,coal,retired,55
+G100000107172,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naga power station,L100000103181,coal,operating,110.5
+G100000107173,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naga power station,L100000103181,coal,operating,110.5
+G100000107174,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naga power station,L100000103181,coal,cancelled,100
+G100000107175,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naga power station,L100000103181,coal,cancelled,100
+G100000107711,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Oyon Bay power station,L100000103177,coal,cancelled,150
+G100000107722,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pagbilao power station,L100000103166,coal,operating,367.5
+G100000107723,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pagbilao power station,L100000103166,coal,operating,367.5
+G100000107724,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pagbilao power station,L100000103166,coal,operating,420
+G100000107749,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Panay power station,L100000103202,coal,operating,150
+G100000107750,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Panay power plant (Kepco),L100000103201,coal,cancelled,50
+G100000107751,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Panay power station,L100000103202,coal,operating,82
+G100000107752,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Panay power station,L100000103202,coal,operating,82
+G100000108251,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Puting Bato power station,L100000103167,coal,operating,135
+G100000108252,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Puting Bato power station,L100000103167,coal,operating,135
+G100000108398,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Quezon power station,L100000103168,coal,operating,538
+G100000108399,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Quezon power station,L100000103168,coal,operating,528
+G100000109344,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sibuguey power station,L100000103204,coal,cancelled,100
+G100000109643,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sual power station,L100000103190,coal,operating,647
+G100000109644,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sual power station,L100000103190,coal,operating,647
+G100000109645,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sual power station,L100000103190,coal,cancelled,600
+G100000109646,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Subic power station,L100000103178,coal,cancelled,300
+G100000109647,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Subic power station,L100000103178,coal,cancelled,300
+G100000109685,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sultan Kudarat power station,L100000103198,coal,cancelled,200
+G100000110080,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Therma Visayas Energy Project,L100000103182,coal,operating,170
+G100000110081,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Therma Visayas Energy Project,L100000103182,coal,operating,170
+G100000110217,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Toledo City power station,L100000103183,coal,retired,52
+G100000110218,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cebu Energy power station,L100000104808,coal,operating,82
+G100000110219,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cebu Energy power station,L100000104808,coal,operating,82
+G100000110220,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cebu Energy power station,L100000104808,coal,operating,82
+G100000110221,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Toledo City power station,L100000103183,coal,operating,82
+G100000111523,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zamboanga power station,L100000103205,coal,pre_construction,120
+G100000112244,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Ibabang power station,L100000103169,coal,cancelled,355
+G100000112245,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Ibabang power station,L100000103169,coal,cancelled,355
+G100000112246,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Ibabang power station,L100000103169,coal,cancelled,355
+G100000112247,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Ibabang power station,L100000103169,coal,cancelled,355
+G100000112248,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zest-O power station,L100000103191,coal,cancelled,600
+G100000112249,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zest-O power station,L100000103191,coal,cancelled,600
+G100000113315,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Semirara power station,L100000103203,coal,cancelled,50
+G100000113791,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Limay power station,L100000103173,coal,cancelled,150
+G100000113872,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ozamiz power station,L100000104456,coal,cancelled,150
+G100000113873,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ozamiz power station,L100000104456,coal,cancelled,150
+G100000113917,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sual KEPCO Power Station,L100000104384,coal,cancelled,500
+G100000113918,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon Combined Cycle Power Plant,L100000104540,coal,cancelled,1200
+G100000113919,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Carlos Power Station,L100000104541,coal,cancelled,300
+G100000114046,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Mariveles power station,L100000104539,coal,operating,150
+G100000114097,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanjo power station,L100000104543,coal,cancelled,600
+G100000114099,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Baquioen power station,L100000103188,coal,cancelled,300
+G100000114100,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Baquioen power station,L100000103188,coal,cancelled,300
+G100000114101,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Basilan power station,L100000104545,coal,cancelled,58
+G100000114102,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jolo power station,L100000104544,coal,cancelled,58
+G100000114103,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tawi-Tawi power station,L100000104546,coal,cancelled,58
+G100000114104,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Panay power plant (Kepco),L100000103201,coal,cancelled,50
+G100000114305,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sual KEPCO Power Station,L100000104384,coal,cancelled,500
+G100000114306,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sariaya power station,L100000104796,coal,cancelled,600
+G100000114309,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,United Pulp & Paper power station,L100000104611,coal,operating,30
+G100000114476,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion Semirara power station,L100000104667,coal,cancelled,30
+G100000114477,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion Semirara power station,L100000104667,coal,cancelled,30
+G100000114478,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion Semirara power station,L100000104667,coal,cancelled,30
+G100000114479,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pulupandan power station,L100000104668,coal,cancelled,80
+G100000114516,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Mariveles power station,L100000104539,coal,operating,150
+G100000114517,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Mariveles power station,L100000104539,coal,operating,150
+G100000114518,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Mariveles power station,L100000104539,coal,operating,150
+G100000114764,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lumiere Ibabang power station,L100000104749,coal,cancelled,355
+G100000114765,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lumiere Ibabang power station,L100000104749,coal,cancelled,355
+G100000114926,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Misamis Oriental power station,L100000103195,coal,construction,135
+G100000114927,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Misamis Oriental power station,L100000103195,coal,pre_construction,135
+G100000114984,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Masinloc power station,L100000103176,coal,construction,350
+G100000114993,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Toledo City power station,L100000103183,coal,retired,40
+G100000115112,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Cruz power station (Philippines),L100000104844,coal,cancelled,82
+G100000115298,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Mariveles power station,L100000104539,coal,pre_construction,300
+G100000115299,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,SMC Mariveles power station,L100000104539,coal,pre_construction,300
+G100000115749,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Petron Refinery power station,L100000104980,coal,operating,35
+G100000115769,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Petron Refinery power station,L100000104980,coal,operating,35
+G100000115770,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Petron Refinery power station,L100000104980,coal,operating,35
+G100000115771,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Petron Refinery power station,L100000104980,coal,operating,35
+G100000200029,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon City Waste-to-Energy power station,L100000200027,bioenergy,shelved,42
+G100000200036,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Alcala power station,L100000200033,bioenergy,cancelled,30
+G100000200073,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Central Azucarera Don Pedro power station,L100000200069,bioenergy,retired,31
+G100000200074,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Biscom power station,L100000200070,bioenergy,operating,48
+G100000200075,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,URC-SONEDCO power station,L100000200071,bioenergy,operating,46
+G100000200806,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bataan WTE power station,L100000200709,bioenergy,cancelled,100
+G100000200807,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bislig City Lumino power station,L100000200710,bioenergy,shelved,50
+G100000200808,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabankalan power station,L100000200711,bioenergy,operating,46
+G100000200809,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maramag power station,L100000200712,bioenergy,operating,49
+G100000200810,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Victorias Milling power station,L100000200713,bioenergy,operating,40
+G100000404387,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,operating,625.5
+G100000404388,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,operating,625.5
+G100000404389,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Gabriel power station,L100000405345,oil/gas,operating,420
+G100000404390,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Lorenzo power station,L100000405346,oil/gas,operating,275
+G100000404391,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Lorenzo power station,L100000405346,oil/gas,operating,275
+G100000404392,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Rita power station,L100000405348,oil/gas,operating,273.7
+G100000404393,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Rita power station,L100000405348,oil/gas,operating,273.7
+G100000404394,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Rita power station,L100000405348,oil/gas,operating,273.7
+G100000404395,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Rita power station,L100000405348,oil/gas,operating,273.7
+G100000404396,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cebu LNG power station,L100000405341,oil/gas,cancelled,120
+G100000404397,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pagbilao Combined Cycle power station,L100000405343,oil/gas,cancelled,650
+G100000404398,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Saint Joseph Batangas power station,L100000405344,oil/gas,cancelled,600
+G100000404399,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Maria Batangas power station,L100000405347,oil/gas,pre_construction,630
+G100000405947,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Batangas Clean Energy power station,L100000405959,oil/gas,cancelled,1100
+G100000405948,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lloyds Energy power station,L100000405960,oil/gas,cancelled,1200
+G100000405949,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lucidum LNG power station,L100000405961,oil/gas,cancelled,300
+G100000405950,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas Combined Cycle power plant,L100000407927,oil/gas,operating,437.5
+G100000405951,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas Combined Cycle power plant,L100000407927,oil/gas,operating,437.5
+G100000405958,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tanglawan power station,L100000405964,oil/gas,cancelled,1000
+G100000406243,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Maria Batangas power station,L100000405347,oil/gas,pre_construction,630
+G100000409419,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Carlos Power Station,L100000104541,oil/gas,cancelled,300
+G100000409420,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sisiman LNG Combined Cycle power plant,L100000407364,oil/gas,announced,1200
+G100000409421,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kauswagan LNG Combined Cycle power plant,L100000407365,oil/gas,cancelled,600
+G100000409422,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Stellar power station,L100000407366,oil/gas,cancelled,1250
+G100000409423,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mariveles LNG power station,L100000407367,oil/gas,shelved,1200
+G100000409424,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Batangas (Millenium) power station,L100000407368,oil/gas,cancelled,1700
+G100000410393,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SMC Cebu power station,L100000407802,oil/gas,cancelled,600
+G100000410394,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Vires Energy floating power plant,L100000407803,oil/gas,shelved,450
+G100000410540,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SMC Leyte power station,L100000407857,oil/gas,cancelled,600
+G100000410630,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas Combined Cycle power plant,L100000407927,oil/gas,operating,437.5
+G100000410631,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Batangas Combined Cycle power plant,L100000407927,oil/gas,announced,437.5
+G100000410634,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,La Union power station,L100000103189,oil/gas,pre_construction,1128
+G100000410635,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000410636,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sangali LNG power station,L100000407924,oil/gas,cancelled,300
+G100000411259,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aboitiz Cebu LNG power station,L100000408899,oil/gas,cancelled,150
+G100000411265,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Western Mindanao Power Corporation (WMPC) Zamboanga power station,L100000408110,oil/gas,operating,112
+G100000411267,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Therma Marine Inc (TMI) 2 power barge power station,L100000408106,oil/gas,operating,100
+G100000411268,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Therma Marine Inc (TMI) 1 power barge power station,L100000408107,oil/gas,operating,100
+G100000411269,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon Combined Cycle Power Plant,L100000104540,oil/gas,shelved,1200
+G100000411270,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Subic diesel power station,L100000408109,oil/gas,operating,120
+G100000411271,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sangali diesel power station,L100000408111,oil/gas,construction,28
+G100000411274,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Francisco power station,L100000408113,oil/gas,announced,1200
+G100000411275,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Panasia Energy power station,L100000408076,oil/gas,cancelled,638
+G100000411276,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pagbilao power station,L100000103166,oil/gas,shelved,655
+G100000411277,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pagbilao power station,L100000103166,oil/gas,shelved,655
+G100000411282,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Millennium Gas Turbine Power Plant,L100000408077,oil/gas,cancelled,342
+G100000411283,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Millennium Gas Turbine Power Plant,L100000408077,oil/gas,operating,100
+G100000411284,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Malaya Thermal power station,L100000408094,oil/gas,operating,325
+G100000411285,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Malaya Thermal power station,L100000408094,oil/gas,operating,325
+G100000411286,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingrid power station,L100000408095,oil/gas,operating,150.7
+G100000411287,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Iligan Diesel power plant,L100000408096,oil/gas,operating,113.4
+G100000411288,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Energies PH Quezon power station,L100000408097,oil/gas,cancelled,1200
+G100000411290,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bulacan Bunker C-fired diesel power station,L100000408078,oil/gas,operating,54.5
+G100000411291,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bauang La Union Diesel power plant,L100000408099,oil/gas,operating,235.2
+G100000411292,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bataan power station,L100000408075,oil/gas,operating,270
+G100000411293,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bataan power station,L100000408075,oil/gas,operating,270
+G100000411294,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Atimonan power station,L100000103162,oil/gas,shelved,640
+G100000411295,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Atimonan power station,L100000103162,oil/gas,shelved,640
+G100000411296,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Atimonan power station,L100000103162,oil/gas,cancelled,640
+G100000411297,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Atimonan power station,L100000103162,oil/gas,cancelled,640
+G100000413194,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bohol diesel power station,L100000408926,oil/gas,operating,95.2
+G100000414319,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414320,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414321,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414322,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414323,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414324,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414325,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414326,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414327,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414328,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414329,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Navotas LNG power station,L100000407925,oil/gas,announced,541
+G100000414330,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Jose Panganiban power station,L100000103160,oil/gas,announced,300
+G100000501234,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bataan nuclear power plant,L100000500432,nuclear,mothballed,621
+G100000603170,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Agus 1 hydroelectric plant,L100000603135,hydropower,operating,80
+G100000603171,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Agus 2 hydroelectric plant,L100000603136,hydropower,operating,180
+G100000603172,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Agus 3 hydroelectric plant,L100000603137,hydropower,pre_construction,225
+G100000603173,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Agus 4 hydroelectric plant,L100000603138,hydropower,operating,158
+G100000603174,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Agus 6 hydroelectric plant,L100000603139,hydropower,operating,250
+G100000603175,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Alimit Main hydroelectric plant,L100000603140,hydropower,pre_construction,120
+G100000603176,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Alimit Pumped Storage hydroelectric plant,L100000603141,hydropower,announced,250
+G100000603177,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ambuklao hydroelectric plant,L100000603142,hydropower,operating,105
+G100000603178,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Angat hydroelectric plant,L100000603143,hydropower,operating,218
+G100000603179,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Binga hydroelectric plant,L100000603144,hydropower,operating,140
+G100000603181,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bolusao hydroelectric plant,L100000603146,hydropower,pre_construction,300
+G100000603182,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulsa Pumped Storage hydroelectric plant,L100000603147,hydropower,announced,100
+G100000603183,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cagayan 1N hydroelectric plant,L100000603148,hydropower,shelved,160
+G100000603184,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Casecnan hydroelectric plant,L100000603149,hydropower,operating,150
+G100000603185,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Chico hydroelectric plant,L100000603150,hydropower,pre_construction,150
+G100000603186,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Davao hydroelectric plant,L100000603151,hydropower,pre_construction,140
+G100000603187,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Diduyon hydroelectric plant,L100000603152,hydropower,pre_construction,320
+G100000603188,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dingalan hydroelectric plant,L100000603153,hydropower,pre_construction,500
+G100000603189,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gened 1 hydroelectric plant,L100000603154,hydropower,pre_construction,150
+G100000603190,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gened 2 hydroelectric plant,L100000603155,hydropower,pre_construction,250
+G100000603191,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilaguen B hydroelectric plant,L100000603156,hydropower,pre_construction,19
+G100000603193,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kalayaan 1 hydroelectric plant,L100000603158,hydropower,operating,366
+G100000603194,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kalayaan 2 hydroelectric plant,L100000603159,hydropower,operating,370
+G100000603195,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kanan B hydroelectric plant,L100000603160,hydropower,shelved,150
+G100000603196,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kibungan hydroelectric plant,L100000603161,hydropower,pre_construction,500
+G100000603197,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Magat hydroelectric plant,L100000603162,hydropower,operating,380
+G100000603200,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pantabangan Aya hydroelectric plant,L100000603165,hydropower,construction,120
+G100000603201,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pantabangan hydroelectric plant,L100000603166,hydropower,operating,120
+G100000603202,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pililla hydroelectric plant,L100000603167,hydropower,shelved,300
+G100000603203,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pulangi 4 hydroelectric plant,L100000603168,hydropower,operating,255
+G100000603204,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pulangi 5 hydroelectric plant,L100000603169,hydropower,pre_construction,250
+G100000603205,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Roque hydroelectric plant,L100000603170,hydropower,operating,435
+G100000603206,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Roque Lower East hydroelectric plant,L100000603171,hydropower,pre_construction,800
+G100000603207,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Roque Upper East hydroelectric plant,L100000603172,hydropower,pre_construction,600
+G100000603208,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Roque West hydroelectric plant,L100000603173,hydropower,pre_construction,800
+G100000603209,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Turumba hydroelectric plant,L100000603174,hydropower,shelved,350
+G100000604200,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Agbulu hydroelectric plant,L100000603134,hydropower,cancelled,360
+G100000604224,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bakun AC hydroelectric plant,L100000604168,hydropower,operating,75
+G100000604257,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Binongan Tineg hydroelectric plant,L100000603145,hydropower,cancelled,175
+G100000604284,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calanasan 2 hydroelectric plant,L100000604187,hydropower,pre_construction,220
+G100000604290,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capiz Pumped Storage hydroelectric plant,L100000604190,hydropower,announced,250
+G100000604329,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dagkan hydroelectric plant,L100000604203,hydropower,pre_construction,125
+G100000604333,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dambo Pumped Storage hydroelectric plant,L100000604206,hydropower,pre_construction,800
+G100000604362,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dupax Pumped Storage hydroelectric plant,L100000604214,hydropower,announced,108
+G100000604479,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabulnan II hydroelectric plant,L100000603157,hydropower,shelved,120
+G100000604593,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Malay Aklan hydroelectric plant,L100000603163,hydropower,pre_construction,300
+G100000604604,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mapanuepe Site 1 hydroelectric plant,L100000604279,hydropower,announced,500
+G100000604606,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maton Pumped Storage hydroelectric plant,L100000604281,hydropower,announced,2000
+G100000604643,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nabuangan hydroelectric plant,L100000603164,hydropower,cancelled,100
+G100000604700,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pakil 1 hydroelectric plant,L100000604309,hydropower,pre_construction,700
+G100000604701,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pakil 2 hydroelectric plant,L100000604310,hydropower,pre_construction,500
+G100000604704,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Panay Pumped Storage hydroelectric plant,L100000604312,hydropower,announced,250
+G100000604707,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pantabangan Pumped Storage hydroelectric plant,L100000604313,hydropower,pre_construction,600
+G100000604829,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Pulangi hydroelectric plant,L100000604359,hydropower,pre_construction,250
+G100000604943,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Wawa 2 Pumped Storage hydroelectric plant,L100000604390,hydropower,pre_construction,100
+G100000604944,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Wawa hydroelectric plant,L100000603175,hydropower,pre_construction,500
+G100000700010,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bac-Man geothermal power plant,L100000700006,geothermal,operating,55
+G100000700011,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bac-Man geothermal power plant,L100000700006,geothermal,operating,55
+G100000700059,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dauin geothermal power plant,L100000700038,geothermal,announced,40
+G100000700118,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalinga geothermal power plant,L100000700071,geothermal,pre_construction,40
+G100000700129,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kayabon geothermal power plant,L100000700078,geothermal,announced,30
+G100000700150,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahanagdong geothermal facility,L100000700092,geothermal,operating,60
+G100000700151,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahanagdong geothermal facility,L100000700092,geothermal,operating,60
+G100000700152,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahanagdong geothermal facility,L100000700092,geothermal,operating,60
+G100000700153,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maibarara geothermal power plant,L100000700093,geothermal,pre_construction,25
+G100000700154,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Makban geothermal power plant,L100000700094,geothermal,operating,63
+G100000700155,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Makban geothermal power plant,L100000700094,geothermal,operating,63
+G100000700156,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Makban geothermal power plant,L100000700094,geothermal,operating,63
+G100000700157,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Makban geothermal power plant,L100000700094,geothermal,operating,63
+G100000700158,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Makban geothermal power plant,L100000700094,geothermal,operating,55
+G100000700159,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Makban geothermal power plant,L100000700094,geothermal,operating,55
+G100000700160,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Malitbog geothermal power plant,L100000700095,geothermal,operating,78
+G100000700161,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Malitbog geothermal power plant,L100000700095,geothermal,operating,78
+G100000700162,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Malitbog geothermal power plant,L100000700095,geothermal,operating,78
+G100000700177,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindanao geothermal power plant,L100000700106,geothermal,operating,52
+G100000700178,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindanao geothermal power plant,L100000700106,geothermal,operating,54
+G100000700179,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindanao geothermal power plant,L100000700106,geothermal,pre_construction,5
+G100000700186,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mount Labo geothermal power plant,L100000700111,geothermal,pre_construction,105
+G100000700191,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nasulo geothermal power plant,L100000700115,geothermal,operating,40
+G100000700205,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Northern Negros geothermal power plant,L100000700125,geothermal,retired,50
+G100000700224,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Palinpinon 1 geothermal power plant,L100000700136,geothermal,operating,38
+G100000700225,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Palinpinon 1 geothermal power plant,L100000700136,geothermal,operating,38
+G100000700226,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Palinpinon 1 geothermal power plant,L100000700136,geothermal,operating,38
+G100000700239,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Botong Rangas geothermal power plant,L100000700145,geothermal,announced,40
+G100000700278,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tanawon geothermal power plant,L100000700169,geothermal,operating,22
+G100000700290,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiwi geothermal power plant,L100000700178,geothermal,operating,60
+G100000700291,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiwi geothermal power plant,L100000700178,geothermal,operating,60
+G100000700292,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiwi geothermal power plant,L100000700178,geothermal,operating,55
+G100000700293,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiwi geothermal power plant,L100000700178,geothermal,operating,55
+G100000700294,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiwi geothermal power plant,L100000700178,geothermal,operating,43
+G100000700295,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiwi geothermal power plant,L100000700178,geothermal,operating,57
+G100000700296,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tongonan geothermal power plant,L100000700179,geothermal,operating,38
+G100000700297,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tongonan geothermal power plant,L100000700179,geothermal,operating,38
+G100000700298,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tongonan geothermal power plant,L100000700179,geothermal,operating,38
+G100000700406,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Amacan geothermal power plant,L100000700225,geothermal,pre_construction,100
+G100000700407,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bac-Man geothermal power plant,L100000700006,geothermal,operating,20
+G100000700408,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bac-Man geothermal power plant,L100000700006,geothermal,operating,20
+G100000700409,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Baua-Sikaw geothermal power plant,L100000700226,geothermal,pre_construction,86
+G100000700410,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Biliran geothermal power plant,L100000700227,geothermal,construction,6
+G100000700411,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cagua-Baua geothermal power plant,L100000700228,geothermal,pre_construction,30
+G100000700412,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mahanagdong geothermal facility,L100000700092,geothermal,construction,28
+G100000700413,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maibarara geothermal power plant,L100000700093,geothermal,operating,20
+G100000700414,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maibarara geothermal power plant,L100000700093,geothermal,operating,12
+G100000700415,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindanao geothermal power plant,L100000700106,geothermal,operating,4
+G100000700416,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mount Natib geothermal power plant,L100000700229,geothermal,pre_construction,40
+G100000700417,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mount Parker geothermal power plant,L100000700230,geothermal,pre_construction,60
+G100000700418,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Palayan Bayan geothermal power plant,L100000700231,geothermal,operating,29
+G100000700419,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Southern Leyte geothermal power plant,L100000700232,geothermal,pre_construction,40
+G100000700420,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tayabas Lucban geothermal power plant,L100000700233,geothermal,pre_construction,31
+G100000700421,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tiaong geothermal power plant,L100000700234,geothermal,pre_construction,62
+G100000700422,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiwi Binary geothermal power plant,L100000700235,geothermal,operating,17
+G100000800912,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabacong Solar Power Project,L100000800788,utility-scale solar,shelved,50
+G100000800913,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calabanga Solar Power Project,L100000800789,utility-scale solar,operating,74
+G100000800918,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Alaminos Solar Power Project,L100000800793,utility-scale solar,operating,120
+G100000800928,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Arayat-Mexico solar farm,L100000800802,utility-scale solar,operating,72
+G100000800930,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Armenia Solar Power Project,L100000800804,utility-scale solar,operating,7.1
+G100000800940,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Badoc/Vintar solar farm,L100000800814,utility-scale solar,cancelled,20
+G100000800944,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Balayan Solar Power Project,L100000800818,utility-scale solar,cancelled,480
+G100000800959,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bato Solar Power Project,L100000800830,utility-scale solar,pre_construction,45
+G100000800968,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Biliran Solar Power Project,L100000800839,utility-scale solar,pre_construction,25
+G100000800969,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Binalonan (PV Sinag Power) Solar Power Project,L100000800840,utility-scale solar,cancelled,46
+G100000800980,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bugallon (Phinma) solar farm,L100000800850,utility-scale solar,cancelled,45
+G100000800984,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulacan 2 Solar Power Project,L100000800853,utility-scale solar,construction,22
+G100000800988,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabatang Tiaong Solar Power Project,L100000800856,utility-scale solar,shelved,832
+G100000800989,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cadiz Solar Power Project,L100000800857,utility-scale solar,operating,132
+G100000800990,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cagayan Valley Solar Power Project,L100000800858,utility-scale solar,pre_construction,48
+G100000800991,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calamba-Tanauan Solar Power Project,L100000800859,utility-scale solar,cancelled,80
+G100000800992,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calamba-Tanauan Solar Power Project,L100000800859,utility-scale solar,cancelled,100
+G100000800993,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Calatagan Solar Power Project,L100000800860,utility-scale solar,operating,63
+G100000801001,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capas Solar Power Project,L100000800867,utility-scale solar,construction,38.8
+G100000801003,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,"Cavite Special Economic Zone Solar Power Project,",L100000800869,utility-scale solar,operating,41
+G100000801004,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cayanga-Bugallon Solar Power Project,L100000800870,utility-scale solar,operating,94
+G100000801027,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clark Green City solar farm,L100000800893,utility-scale solar,cancelled,100
+G100000801030,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Claveria Solar Power Project,L100000800895,utility-scale solar,shelved,61
+G100000801032,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Concepcion solar farm,L100000800897,utility-scale solar,operating,21
+G100000801033,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Concepcion solar farm,L100000800897,utility-scale solar,operating,71
+G100000801034,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cordon Solar Power Project,L100000800898,utility-scale solar,operating,52.8
+G100000801035,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cordon Solar Power Project,L100000800898,utility-scale solar,cancelled,150
+G100000801041,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Currimao Solar Power Project,L100000800904,utility-scale solar,operating,20
+G100000801048,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Daanbantayan (CEKO) solar farm,L100000800907,utility-scale solar,cancelled,25
+G100000801064,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Darong Solar Power Project,L100000800919,utility-scale solar,cancelled,35
+G100000801069,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Davao Oriental Solar Power Project,L100000800922,utility-scale solar,pre_construction,60
+G100000801076,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Digos solar farm,L100000800929,utility-scale solar,operating,29
+G100000801088,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Eb Magalona solar farm,L100000800939,utility-scale solar,cancelled,30
+G100000801119,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,General Santos (Solar Philippines) solar farm,L100000800965,utility-scale solar,shelved,120
+G100000801123,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gigasol3 Solar Power Project,L100000800969,utility-scale solar,operating,63
+G100000801144,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hayes Solar Power Project,L100000800989,utility-scale solar,pre_construction,21.6
+G100000801169,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,ICOM solar farm,L100000801011,utility-scale solar,cancelled,35
+G100000801171,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilagan City Solar Power Project,L100000801013,utility-scale solar,pre_construction,80
+G100000801172,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos Norte II Solar Power Project,L100000801014,utility-scale solar,cancelled,40
+G100000801173,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos Norte II Solar Power Project,L100000801014,utility-scale solar,cancelled,40
+G100000801174,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilocos Norte Solar Power Project,L100000801015,utility-scale solar,construction,87.6
+G100000801178,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Islasol Solar Power Project,L100000801018,utility-scale solar,operating,48
+G100000801204,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kananga-Ormoc Solar Power Project,L100000801043,utility-scale solar,pre_construction,300
+G100000801263,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,La Carlota Solar Power Project,L100000801097,utility-scale solar,pre_construction,50
+G100000801264,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,La Mesa Solar Power Project,L100000801098,utility-scale solar,shelved,166
+G100000801266,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguindingan Solar Power Project,L100000801100,utility-scale solar,shelved,40
+G100000801267,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Lake Solar Floating Project,L100000801101,utility-scale solar,cancelled,110
+G100000801269,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lal-lo Solar Power Project,L100000801103,utility-scale solar,pre_construction,95
+G100000801272,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Laoag Solar Power Project,L100000801106,utility-scale solar,operating,57.8
+G100000801296,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lumbang Solar Power Project,L100000801123,utility-scale solar,shelved,50
+G100000801299,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Luntal Solar Power Project,L100000801126,utility-scale solar,operating,50
+G100000801301,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabuhay Solar Power Project,L100000801128,utility-scale solar,cancelled,44
+G100000801302,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Macabud solar farm,L100000801129,utility-scale solar,shelved,30
+G100000801305,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maguindanao Solar Power Project,L100000801132,utility-scale solar,shelved,20
+G100000801311,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Manolo Fortich Solar Power Project,L100000801137,utility-scale solar,pre_construction,34.4
+G100000801312,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maragondon 2 Solar Power Project,L100000801138,utility-scale solar,announced,140
+G100000801314,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maragondon-Naic 1 Solar Power Project,L100000801139,utility-scale solar,cancelled,100
+G100000801315,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maragondon-Naic-Tanza 2 Solar Power Project,L100000801140,utility-scale solar,announced,160
+G100000801319,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Medellin (Solar Philippines Commercial Rooftop Projects) Solar Power Project,L100000801144,utility-scale solar,announced,240
+G100000801357,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nabali-An Solar Power Project,L100000801177,utility-scale solar,shelved,60
+G100000801361,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Naic solar farm,L100000801181,utility-scale solar,cancelled,25
+G100000801368,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nasugbu Solar Power Project,L100000801188,utility-scale solar,announced,30
+G100000801393,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nks Solar One Floating Power Project,L100000801210,utility-scale solar,pre_construction,162
+G100000801413,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Opol Solar Power Project,L100000801228,utility-scale solar,cancelled,25
+G100000801416,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ormoc Solar Power Project,L100000801231,utility-scale solar,operating,30
+G100000801432,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Padre Garcia (Phinma Energy) Solar Power Project,L100000801247,utility-scale solar,cancelled,45
+G100000801433,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Palauig Solar Power Project,L100000801248,utility-scale solar,operating,59.5
+G100000801434,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Palawan Solar Power Project,L100000801249,utility-scale solar,announced,18.6
+G100000801435,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Palo Solar Power Project,L100000801250,utility-scale solar,operating,50
+G100000801444,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pantabangan Solar Power Project,L100000801259,utility-scale solar,cancelled,100
+G100000801445,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Paoay III Solar Energy Project,L100000801260,utility-scale solar,cancelled,40
+G100000801446,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pasuquin solar farm,L100000801261,utility-scale solar,cancelled,100
+G100000801472,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pililla Solar Power Project,L100000801281,utility-scale solar,announced,57.5
+G100000801475,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pinugay Solar Power Project,L100000801283,utility-scale solar,operating,71.6
+G100000801499,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rizal Floating Solar Project,L100000801303,utility-scale solar,announced,200
+G100000801500,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rizal Occ. Mindoro Hybrid Solar Power Project,L100000801304,utility-scale solar,shelved,52
+G100000801506,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sacasun Solar Power Project,L100000801310,utility-scale solar,operating,59
+G100000801517,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Carlos Solar Power Project,L100000801320,utility-scale solar,operating,22
+G100000801518,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Carlos Solar Power Project,L100000801320,utility-scale solar,operating,23
+G100000801519,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Ildefonso (Solar Philippines) solar farm,L100000801321,utility-scale solar,announced,112
+G100000801520,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Ildefonso (Team Philippines) solar farm,L100000801322,utility-scale solar,announced,44
+G100000801521,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Isidro Solar Power Project,L100000801323,utility-scale solar,pre_construction,224
+G100000801522,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Juan (Scion Sustainable Power) Solar Power Project,L100000801324,utility-scale solar,announced,40
+G100000801523,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Manuel 1 Solar Power Project,L100000801325,utility-scale solar,pre_construction,56
+G100000801524,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Manuel 1 Solar Power Project,L100000801325,utility-scale solar,cancelled,70
+G100000801526,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Pedro Floating Solar Power Project,L100000801327,utility-scale solar,pre_construction,200
+G100000801527,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Rafael 1 Solar Power Project (Philippines),L100000801328,utility-scale solar,shelved,112
+G100000801533,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Barbara Solar Power Project,L100000801334,utility-scale solar,operating,20
+G100000801534,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Maria Solar Power Project,L100000801335,utility-scale solar,cancelled,100
+G100000801535,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Maria Solar Power Project,L100000801335,utility-scale solar,announced,24
+G100000801537,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rosa Solar Power Project,L100000801337,utility-scale solar,operating,60.1
+G100000801538,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Solar Power Project,L100000801338,utility-scale solar,shelved,20
+G100000801540,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santos Solar Power Project,L100000801340,utility-scale solar,operating,25
+G100000801589,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Silay Solar Power Project,L100000801385,utility-scale solar,operating,25
+G100000801641,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sulvec Solar Power Project,L100000801427,utility-scale solar,cancelled,20
+G100000801654,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tagoloan Solar Power Project,L100000801440,utility-scale solar,announced,45
+G100000801668,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Talim Floating Solar Power Project,L100000801451,utility-scale solar,shelved,120
+G100000801669,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Talim Floating Solar Power Project,L100000801451,utility-scale solar,shelved,120
+G100000801670,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Talugtug Solar Power Project,L100000801452,utility-scale solar,announced,103
+G100000801674,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tanauan solar farm,L100000801456,utility-scale solar,operating,64
+G100000801677,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tantangan Solar Power Project,L100000801459,utility-scale solar,cancelled,50
+G100000801679,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarlac (PetroSolar) Solar Power Project,L100000801461,utility-scale solar,operating,50
+G100000801680,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tarlac (PetroSolar) Solar Power Project,L100000801461,utility-scale solar,operating,20
+G100000801708,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tigbauan Solar Power Project,L100000801489,utility-scale solar,pre_construction,27.4
+G100000801718,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tpi Sarangani Solar Power Project,L100000801498,utility-scale solar,cancelled,80
+G100000801730,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bolbok Solar Power Project,L100000801509,utility-scale solar,construction,50
+G100000801746,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Victorias Solar Energy Power Project,L100000801524,utility-scale solar,pre_construction,26
+G100000801762,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Vista Alegre Solar Power Project,L100000801529,utility-scale solar,construction,65
+G100000810936,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Arayat-Mexico solar farm,L100000800802,utility-scale solar,operating,43.7
+G100000810941,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Botolan Solar Power Project,L100000808680,utility-scale solar,shelved,31
+G100000810943,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cadiz City Solar Power Project,L100000808682,utility-scale solar,construction,96
+G100000810944,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calamba-Tanauan 2 (SPNEC) Solar Power Project,L100000808683,utility-scale solar,pre_construction,1680
+G100000810945,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calatrava solar farm,L100000808684,utility-scale solar,operating,173
+G100000810946,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Clark Solar Power Project,L100000808685,utility-scale solar,pre_construction,35
+G100000810947,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clark (Citicore) Solar Power Project,L100000808686,utility-scale solar,operating,22
+G100000810948,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gamu (AboitizPower) Solar Power Project,L100000808687,utility-scale solar,shelved,50
+G100000810949,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gamu (Pilipinas Faraday Energy) Solar Power Project,L100000808688,utility-scale solar,cancelled,100
+G100000810950,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Giga Ace 8 Solar Power Project,L100000808689,utility-scale solar,construction,233.8
+G100000810951,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hermosa Solar Power Project,L100000808690,utility-scale solar,pre_construction,20.6
+G100000810952,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Holcim solar plant,L100000808691,utility-scale solar,cancelled,29
+G100000810953,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iba Palauig 2 Solar Power Project,L100000808692,utility-scale solar,pre_construction,960
+G100000810954,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iba Palauig Solar Power Project,L100000808693,utility-scale solar,pre_construction,960
+G100000810955,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Bay 2 Solar Power Project,L100000808694,utility-scale solar,pre_construction,150
+G100000810956,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Lake - Bay Solar Power Project,L100000808695,utility-scale solar,announced,150
+G100000810957,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Lake - Los Baños Solar Power Project,L100000808696,utility-scale solar,pre_construction,125
+G100000810958,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Lake - Lumban Solar Power Project,L100000808697,utility-scale solar,pre_construction,600
+G100000810966,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Naga (Camarines Sur) Solar Power Project,L100000808703,utility-scale solar,announced,1200
+G100000810967,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nasugbu Solar Power Project,L100000801188,utility-scale solar,cancelled,20
+G100000810969,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rosa Nueva Ecija 2 Solar Power Project,L100000808705,utility-scale solar,pre_construction,171
+G100000810970,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rosa Nueva Ecija 2 Solar Power Project,L100000808705,utility-scale solar,construction,33
+G100000810971,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rosa Nueva Ecija 2 Solar Power Project,L100000808705,utility-scale solar,pre_construction,108
+G100000810972,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Olongapo solar farm,L100000808706,utility-scale solar,construction,172
+G100000810973,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Padre Garcia (Solar Philippines Batangas) solar farm,L100000808707,utility-scale solar,shelved,1202.9
+G100000810974,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Raslag IV Solar Power Project,L100000808708,utility-scale solar,operating,26.4
+G100000810975,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Raslag IV Solar Power Project,L100000808708,utility-scale solar,shelved,45
+G100000810976,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,PAVI Green Naga Solar Power Plant Project,L100000808709,utility-scale solar,construction,40.4
+G100000810977,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,PAVI Green San Vicente Solar Power Plant Project,L100000808710,utility-scale solar,construction,28.6
+G100000810981,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rizal Solar Power Project,L100000808714,utility-scale solar,pre_construction,300
+G100000810982,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sabang Solar Power Project,L100000808715,utility-scale solar,shelved,40.4
+G100000810983,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Samal Solar Power Project,L100000808716,utility-scale solar,operating,35.8
+G100000810984,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Isidro (Total Power INC) Solar Power Project,L100000808717,utility-scale solar,cancelled,280
+G100000810985,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Jose del Monte Solar Power Project,L100000808718,utility-scale solar,shelved,64
+G100000810986,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Miguel (PowerSource) Solar Power Project,L100000808719,utility-scale solar,operating,80
+G100000810988,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Marcelino Solar Power Project,L100000808721,utility-scale solar,operating,224
+G100000810990,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rita Solar Power Project,L100000808723,utility-scale solar,operating,7.1
+G100000810991,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Rita Solar Power Project,L100000808723,utility-scale solar,operating,30.3
+G100000810993,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rosa Nueva Ecija 3 Solar Power Project,L100000801336,utility-scale solar,pre_construction,20
+G100000810994,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Santo Domingo Solar Power Project,L100000808724,utility-scale solar,operating,46.2
+G100000810995,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapang Balen Solar 1 Power Project,L100000808725,utility-scale solar,construction,79.2
+G100000810996,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapang Balen Solar 2 Power Project,L100000808726,utility-scale solar,construction,61.7
+G100000810997,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Subic New PV Solar Power Plant Project,L100000801422,utility-scale solar,operating,61.6
+G100000810998,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Taguig Floating Solar Power Project,L100000808727,utility-scale solar,announced,200
+G100000810999,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarlac (AboitizPower) Solar Power Project,L100000808728,utility-scale solar,operating,44
+G100000811002,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Terra solar farm (Philippines),L100000808731,utility-scale solar,construction,778
+G100000811003,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Terra solar farm (Philippines),L100000808731,utility-scale solar,construction,2222
+G100000811004,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,TITAN I Solar Power Project,L100000808732,utility-scale solar,pre_construction,240
+G100000811005,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,TITAN I Solar Power Project,L100000808732,utility-scale solar,pre_construction,240
+G100000811006,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Trust Solar Power Project,L100000808733,utility-scale solar,operating,20.9
+G100000834640,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,1.212-MWp SUKELCO Solar Power Plant,L100000830767,utility-scale solar,announced,1.1
+G100000834641,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SAMELCO II - Paranas SPP solar project,L100000830768,utility-scale solar,construction,1.1
+G100000834642,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,5.803 MWp Roof-Mounted Solar Energy Project,L100000830769,utility-scale solar,operating,4.8
+G100000834643,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,8.009 MWp Roof-Mounted Solar Energy Project,L100000830770,utility-scale solar,operating,6.5
+G100000834644,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Apulid Solar Project,L100000830771,utility-scale solar,pre_construction,50
+G100000834645,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Arayat 3A Solar Power Project,L100000830772,utility-scale solar,construction,30
+G100000834646,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Armenia Solar Power Plant,L100000830773,utility-scale solar,operating,35
+G100000834647,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Asian Transmission Corporation Solar Power Project,L100000830774,utility-scale solar,operating,1.4
+G100000834649,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bacolod Solar Power Project,L100000830776,utility-scale solar,construction,145
+G100000834650,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bagac Solar Power Project,L100000830777,utility-scale solar,pre_construction,121.5
+G100000834651,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bais (SACASOL IV) Solar Power Project,L100000830778,utility-scale solar,operating,14.4
+G100000834652,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Conel-Mabuhay solar farm,L100000830779,utility-scale solar,pre_construction,150
+G100000834657,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bohol Solar Power Project,L100000830783,utility-scale solar,announced,17.5
+G100000834659,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bongabon II Solar Power Project,L100000830785,utility-scale solar,construction,19.8
+G100000834660,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bongabon (Nuevasol Energy) Solar Power Project,L100000830786,utility-scale solar,operating,30.9
+G100000834661,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bugallon (Bugallon Green Energy) solar farm,L100000830787,utility-scale solar,construction,18.5
+G100000834662,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bugallon (Barracuda Energy) solar farm,L100000830788,utility-scale solar,construction,530.4
+G100000834663,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bukidnon Solar Power Project,L100000830789,utility-scale solar,announced,1.6
+G100000834664,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos Solar Power Project,L100000830790,utility-scale solar,operating,3.7
+G100000834665,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos Solar Power Project,L100000830790,utility-scale solar,operating,2.3
+G100000834666,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Butuan City 1 Solar Power Project,L100000830791,utility-scale solar,construction,8
+G100000834667,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabanatuan Solar Power Project,L100000830792,utility-scale solar,construction,5
+G100000834668,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabanatuan Solar Power Project,L100000830792,utility-scale solar,operating,9.1
+G100000834669,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabangan Solar Project,L100000830793,utility-scale solar,pre_construction,43.8
+G100000834670,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cagayan North Solar Power Plant Project,L100000830794,utility-scale solar,operating,133.5
+G100000834671,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calamba-Tanauan 2 Solar Power Project,L100000830795,utility-scale solar,pre_construction,1203
+G100000834672,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camiguin Solar Power Project,L100000830796,utility-scale solar,announced,3.5
+G100000834673,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,CASURECO IV Solar Power Project,L100000830797,utility-scale solar,announced,2.2
+G100000834675,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Centrala Solar Power Project,L100000830799,utility-scale solar,operating,5
+G100000834676,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion 1 Solar Power Project,L100000830800,utility-scale solar,operating,23.1
+G100000834677,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion Tarlac 2 solar farm,L100000830801,utility-scale solar,pre_construction,200
+G100000834679,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cotabato Solar Power Project,L100000830803,utility-scale solar,announced,10
+G100000834681,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Currimao II Solar Power Project,L100000830805,utility-scale solar,operating,68
+G100000834682,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dagohoy solar farm,L100000830806,utility-scale solar,operating,27
+G100000834683,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dalayap Solar Power Project,L100000830807,utility-scale solar,operating,5.9
+G100000834685,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,DMPI Bugo Solar Power Project,L100000830809,utility-scale solar,construction,2
+G100000834686,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecopark Isla Solar Power Project,L100000830810,utility-scale solar,operating,4
+G100000834687,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecopark Tagalag Solar Power Project,L100000830811,utility-scale solar,operating,14.7
+G100000834688,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Festival Mall Solar Rooftop Project,L100000830812,utility-scale solar,operating,2.3
+G100000834689,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Floridablanca Solar Power Project,L100000830813,utility-scale solar,announced,9
+G100000834690,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gamu (Megasol Energy) Solar Power Project,L100000830814,utility-scale solar,operating,41.2
+G100000834692,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GIGASOL 1 Solar Power Plant Project,L100000830816,utility-scale solar,shelved,450
+G100000834693,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hermosa Solar Power Project,L100000808690,utility-scale solar,operating,13.4
+G100000834694,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Infanta 1 Solar Power Project,L100000830817,utility-scale solar,pre_construction,140.9
+G100000834695,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Isabela Ground Mounted Solar PV Project,L100000830818,utility-scale solar,pre_construction,337
+G100000834696,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Isabela Solar Power Project,L100000830819,utility-scale solar,announced,14.4
+G100000834697,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ixus Bugallon Solar Power Project,L100000830820,utility-scale solar,pre_construction,375
+G100000834699,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kibawe Solar Power Project,L100000830822,utility-scale solar,operating,8.2
+G100000834700,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kirahon Solar Power Project,L100000830823,utility-scale solar,operating,10
+G100000834701,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,La Carlota (Negros Island) solar farm,L100000830824,utility-scale solar,operating,32
+G100000834702,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Labrador Solar Power Plant Project,L100000830825,utility-scale solar,construction,123.5
+G100000834705,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Lake 2 Floating Solar Power Project,L100000830827,utility-scale solar,pre_construction,103
+G100000834707,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Limbauan (BKS) Solar Power Project,L100000830829,utility-scale solar,operating,40
+G100000834708,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Linglingay Solar Power Plant,L100000830830,utility-scale solar,pre_construction,70.1
+G100000834709,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Luca Solar Power Project,L100000830831,utility-scale solar,pre_construction,80
+G100000834710,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lucanin Solar Power Project,L100000830832,utility-scale solar,pre_construction,178.7
+G100000834711,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lumbangan Solar Power Plant,L100000830833,utility-scale solar,operating,90
+G100000834713,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Magat Floating Solar Power Project,L100000830834,utility-scale solar,pre_construction,54.1
+G100000834714,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mapanuepe Floating Solar Power Project,L100000830835,utility-scale solar,pre_construction,317.9
+G100000834715,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maragondon 3 Solar Power Project,L100000830836,utility-scale solar,announced,1200
+G100000834720,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Miag-ao Solar Power Project,L100000830841,utility-scale solar,operating,4.5
+G100000834721,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,MISAMIS SOLAR,L100000830842,utility-scale solar,construction,9.4
+G100000834723,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Morong Solar Power Project,L100000830844,utility-scale solar,operating,4
+G100000834724,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Naic Cavite Rooftop Solar Power Project,L100000830845,utility-scale solar,construction,5
+G100000834725,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,New Clark City solar farm,L100000830846,utility-scale solar,shelved,25
+G100000834728,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,OMCPC SMRA Solar Power Project,L100000830848,utility-scale solar,operating,6
+G100000834729,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Opus Solar Power Project,L100000830849,utility-scale solar,pre_construction,318.8
+G100000834730,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagadian Solar Power Project,L100000830850,utility-scale solar,announced,10
+G100000834731,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagbilao Solar Power Project,L100000830851,utility-scale solar,construction,71
+G100000834737,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pasuquin-Burgos Solar Power Plant,L100000830856,utility-scale solar,pre_construction,49
+G100000834739,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Project Sunshine Solar Power Project,L100000830858,utility-scale solar,announced,10
+G100000834740,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Raslag III Solar PV Power Project,L100000830859,utility-scale solar,operating,13.4
+G100000834742,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Jose Solar Power Project (Philippines),L100000830861,utility-scale solar,operating,10.1
+G100000834743,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Jose Solar Power Project (Philippines),L100000830861,utility-scale solar,operating,9.5
+G100000834744,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Binalonan (Citicore) Solar Power Project,L100000830862,utility-scale solar,construction,80.1
+G100000834745,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Manuel Solar Power Plant,L100000830863,utility-scale solar,construction,70.4
+G100000834746,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Marcelino Floating Solar Power Project,L100000830864,utility-scale solar,pre_construction,147
+G100000834747,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Marcelino Solar Power Project,L100000808721,utility-scale solar,operating,79.6
+G100000834748,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Marcelino Solar Power Project,L100000808721,utility-scale solar,construction,96
+G100000834749,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Pablo Solar Power Project,L100000830865,utility-scale solar,pre_construction,49
+G100000834750,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Pablo Solar Power Project,L100000830865,utility-scale solar,pre_construction,79
+G100000834752,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Roque Solar Power Project,L100000830867,utility-scale solar,announced,152
+G100000834755,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapang Balen Solar 2 Power Project,L100000808726,utility-scale solar,construction,61.7
+G100000834756,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapang Balen Solar 2 Power Project,L100000808726,utility-scale solar,construction,61.7
+G100000834757,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapang Balen Solar 2 Power Project,L100000808726,utility-scale solar,construction,61.7
+G100000834758,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapang Balen Solar 2 Power Project,L100000808726,utility-scale solar,announced,217.4
+G100000834759,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Silay 2a Solar Power Project,L100000830870,utility-scale solar,construction,30
+G100000834760,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Silay 2b Solar Power Project,L100000830871,utility-scale solar,construction,20
+G100000834761,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SM City Tuguegarao Solar Power Project,L100000830872,utility-scale solar,pre_construction,4
+G100000834762,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SM Mall of Asia Solar Power Project,L100000830873,utility-scale solar,operating,2.4
+G100000834763,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SM North Solar Power Project,L100000830874,utility-scale solar,operating,1.2
+G100000834764,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SOCOTECO II - Apopong SPP solar project,L100000830875,utility-scale solar,construction,1
+G100000834766,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SolarAce3 Solar Power Plant Project,L100000830877,utility-scale solar,pre_construction,200
+G100000834767,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta. Barbara 1 Solar Power Project,L100000830878,utility-scale solar,construction,90
+G100000834772,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tantangan (Apolaki) Solar Power Project,L100000830883,utility-scale solar,construction,40
+G100000834774,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tayabas Solar Power Project,L100000830885,utility-scale solar,shelved,450
+G100000834775,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Toledo Solar Power Project,L100000830886,utility-scale solar,operating,49
+G100000834776,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tumingad Island Solar Power Project,L100000830887,utility-scale solar,operating,7.9
+G100000834778,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ubay Solar Power Project,L100000830889,utility-scale solar,pre_construction,138.6
+G100000834779,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Valenzuela Solar Power Project,L100000830890,utility-scale solar,operating,6.7
+G100000834780,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Wyn Power Ground Mounted Solar Power Plant,L100000830891,utility-scale solar,construction,50
+G100000834781,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,YH Camarines Norte Solar Power Plant,L100000830892,utility-scale solar,construction,8
+G100000834782,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,YH Palawan Solar Power Project,L100000830893,utility-scale solar,announced,8
+G100000834783,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,YH Pangasinan Solar Power Project,L100000830894,utility-scale solar,construction,6.9
+G100000834784,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zamboanga del Norte Solar Power Project,L100000830895,utility-scale solar,announced,5
+G100000900820,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Abra De Ilog Wind Power Project,L100000900717,wind,announced,40
+G100000900821,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sembrano Wind Power Project,L100000900718,wind,pre_construction,94
+G100000901011,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangui Bay wind farm,L100000900884,wind,operating,19
+G100000901149,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nabas wind farm,L100000900997,wind,operating,36
+G100000901150,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nabas wind farm,L100000900997,wind,construction,13.2
+G100000901151,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindoro Island wind farm,L100000900998,wind,operating,16
+G100000901152,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindoro Island wind farm,L100000900998,wind,announced,10
+G100000901153,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mindoro Island wind farm,L100000900998,wind,cancelled,16
+G100000901207,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sibunag wind farm,L100000901037,wind,cancelled,40
+G100000901208,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Lorenzo wind farm (Philippines),L100000901038,wind,operating,54
+G100000901216,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pililla wind farm,L100000901043,wind,operating,54
+G100000901262,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Alabat Wind Power Project,L100000901083,wind,construction,62.4
+G100000901263,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao (Amihan Power) Wind Power Project,L100000901084,wind,announced,85.5
+G100000901264,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Presentacion Wind Power Project,L100000901085,wind,announced,42
+G100000901275,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Duero Wind Power Project,L100000901094,wind,cancelled,80
+G100000901277,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camiguin Wind Power Project,L100000901096,wind,cancelled,60
+G100000901285,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalayaan 2 Wind Power Project,L100000901103,wind,construction,100.8
+G100000901297,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Talisay wind farm,L100000901111,wind,cancelled,150
+G100000901300,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dumangas Wind Power Project,L100000901114,wind,cancelled,12
+G100000901315,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo 1 Wind Power Project,L100000901129,wind,cancelled,213
+G100000901316,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pasuquin East wind farm,L100000901130,wind,pre_construction,132
+G100000901422,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabini wind farm,L100000901222,wind,pre_construction,50
+G100000901440,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Buduan wind farm,L100000901238,wind,cancelled,44
+G100000901453,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballesteros Wind Power Project,L100000901249,wind,cancelled,45
+G100000901454,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Vinzons Wind Power Project,L100000901250,wind,cancelled,26
+G100000901468,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Real Wind Power Project,L100000901258,wind,pre_construction,250
+G100000901477,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cebu (Philippine New Energy) wind farm,L100000901266,wind,pre_construction,500
+G100000901518,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Miguel Bay (Sitex Windkraft) wind farm,L100000901300,wind,announced,600
+G100000901519,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bohol (First Gen Visayas) Wind Power Project,L100000901301,wind,pre_construction,100
+G100000901520,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon (EWKR) Wind Power Project,L100000901302,wind,pre_construction,200
+G100000901590,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Agoncillo Wind Power Project,L100000901354,wind,pre_construction,100
+G100000901591,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aguilar Wind Power Project,L100000901355,wind,pre_construction,99
+G100000901592,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aklan (Tri-Conti Elements) Wind Power Project,L100000901356,wind,pre_construction,75.6
+G100000901593,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anda Windkraft Project,L100000901357,wind,cancelled,50
+G100000901594,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aparri 1 Wind Power Project,L100000901358,wind,cancelled,48
+G100000901595,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aparri 2 Wind Power Project,L100000901359,wind,pre_construction,40
+G100000901596,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bago Wind Power Project,L100000901360,wind,pre_construction,50
+G100000901597,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagudpud (Energy Development Corporation) Wind Power Project,L100000901361,wind,pre_construction,84
+G100000901598,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Batan wind farm,L100000901362,wind,cancelled,50
+G100000901599,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bayog wind farm,L100000901363,wind,cancelled,90
+G100000901600,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bugallon Wind Power Plant,L100000901364,wind,pre_construction,86.6
+G100000901603,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calatagan (Solar Philippines) wind farm,L100000901366,wind,shelved,30
+G100000901604,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calauag Wind Power Project,L100000901367,wind,cancelled,10
+G100000901606,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cebu wind farm,L100000901369,wind,cancelled,200
+G100000901607,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Claveria (First Maxpower) wind farm,L100000901370,wind,pre_construction,15
+G100000901608,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Don Salvador wind farm,L100000901371,wind,cancelled,70
+G100000901610,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ivisan Windkraft wind farm,L100000901373,wind,cancelled,25
+G100000901611,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalayaan Aphc wind farm,L100000901374,wind,cancelled,18
+G100000901612,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Luzon wind farm,L100000901375,wind,cancelled,60
+G100000901613,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Luzon wind farm,L100000901375,wind,cancelled,45
+G100000901614,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Matnog Wind Power Project,L100000901376,wind,pre_construction,153
+G100000901615,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Matnog Wind Power Project,L100000901376,wind,pre_construction,206
+G100000901616,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Matnog Wind Power Project,L100000901376,wind,pre_construction,206
+G100000901617,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pulupandan Wind Power Project,L100000901377,wind,pre_construction,50
+G100000901618,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon (Triconti ECC) Wind Power Project,L100000901378,wind,pre_construction,100
+G100000901619,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Carlos Wind Energy Project,L100000901379,wind,cancelled,30
+G100000901620,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Carlos wind farm (Philippines),L100000901380,wind,cancelled,80
+G100000901622,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sanchez Mira Wind Power Project,L100000901382,wind,pre_construction,50
+G100000901623,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sison (Amihan Power) Wind Power Project,L100000901383,wind,announced,94
+G100000901624,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Subic wind farm,L100000901384,wind,cancelled,50
+G100000901625,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Talim wind farm,L100000901385,wind,pre_construction,218.8
+G100000901626,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tanay Wind Power Project,L100000901386,wind,construction,128
+G100000901627,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tanjay (Constellation Energy) Wind Power Project,L100000901387,wind,cancelled,50
+G100000901628,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ubay Windkraft Project,L100000901388,wind,cancelled,80
+G100000901629,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zambales South Wind Power Project,L100000901389,wind,pre_construction,200
+G100000920813,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anda Windkraft Project,L100000901357,wind,cancelled,50
+G100000920814,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Balaoi wind farm,L100000916759,wind,shelved,45
+G100000920815,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Batangas Wind Power Project,L100000916760,wind,shelved,200
+G100000920816,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao Bay Offshore Wind Power Project,L100000916761,wind,announced,1200
+G100000920819,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos 4 Wind Power Project,L100000916764,wind,announced,100
+G100000920820,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Burgos Wind Power Project,L100000916765,wind,operating,87
+G100000920821,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Burgos Wind Power Project,L100000916765,wind,operating,63
+G100000920822,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calatagan (Giga Ace 7) wind farm,L100000916766,wind,announced,512
+G100000920823,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caraga Wind Power Project,L100000916767,wind,announced,36
+G100000920824,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caraga Wind Power Project,L100000916767,wind,announced,36
+G100000920825,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caraga Wind Power Project,L100000916767,wind,shelved,57
+G100000920826,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cebu (Amihan Energy) wind farm,L100000916768,wind,cancelled,10
+G100000920827,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cebu (Amihan Energy) wind farm,L100000916768,wind,cancelled,55
+G100000920828,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dalupiri Island Wind Power Project,L100000916769,wind,pre_construction,150
+G100000920830,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalayaan 4 South Wind Energy Project,L100000916770,wind,cancelled,125
+G100000920831,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Northern Luzon Offshore Wind Power Project,L100000916771,wind,pre_construction,2000
+G100000920832,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagudpud (ACEN) Wind Power Project,L100000916772,wind,operating,160
+G100000920833,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon II Plaridel Wind Power Project,L100000916773,wind,pre_construction,50
+G100000920834,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Real Ace Wind Power Project,L100000916774,wind,pre_construction,387.5
+G100000920835,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rizal Wind Power Project,L100000916775,wind,pre_construction,90
+G100000920836,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Isidro Wind Power Project,L100000916776,wind,pre_construction,206.3
+G100000920837,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sual wind farm,L100000916777,wind,cancelled,30
+G100000920838,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tayabas Bay Wind Power Project,L100000916778,wind,announced,275
+G100000920839,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tayabas South Wind Energy Project,L100000916779,wind,pre_construction,187
+G100000927443,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Abra-Kalinga Wind Power Project,L100000922019,wind,pre_construction,200
+G100000927444,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Miguel Bay (ACX3) wind farm,L100000922020,wind,announced,500
+G100000927453,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aparri Bay wind farm,L100000901297,wind,pre_construction,600
+G100000927457,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aurora Offshore Wind Power Project,L100000922031,wind,pre_construction,600
+G100000927458,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bagac Bay offshore wind farm,L100000922032,wind,pre_construction,500
+G100000927459,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bago Wind Power Project,L100000901360,wind,pre_construction,50
+G100000927460,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bago Wind Power Project,L100000901360,wind,pre_construction,50
+G100000927465,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nasugbu Bay Wind Power Project,L100000922033,wind,pre_construction,100
+G100000927475,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bohol (First Gen Visayas Energy) Wind Power Project,L100000922041,wind,pre_construction,100
+G100000927476,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bohol (Southphil Renewable Energy) Wind Power Project,L100000901275,wind,pre_construction,51
+G100000927482,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Buenavista Wind Power Project,L100000922047,wind,pre_construction,100
+G100000927483,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao Offshore Wind Power Project,L100000922048,wind,announced,3100
+G100000927484,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao One Onshore Wind Energy Project,L100000922049,wind,pre_construction,330
+G100000927485,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos 3 Wind Power Project,L100000922050,wind,shelved,100
+G100000927486,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bustos Wind Power Project,L100000922051,wind,shelved,100
+G100000927489,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calatagan (Domhain) wind farm,L100000922053,wind,announced,1830
+G100000927490,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calavite Passage Offshore Wind Project,L100000922054,wind,cancelled,1000
+G100000927492,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camarines Sur CW Wind Power Project,L100000922056,wind,pre_construction,45
+G100000927493,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camia Bay Wind Power Project,L100000922057,wind,pre_construction,500
+G100000927507,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camarines Sur (Cornerstone Energy Development) Wind Power Project,L100000922060,wind,pre_construction,50
+G100000927508,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cavite (Skyborn) Offshore Wind Power Project,L100000922061,wind,cancelled,300
+G100000927509,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cavite (Vind Energy) Offshore Wind Project,L100000922062,wind,pre_construction,994
+G100000927511,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Luzon offshore floating wind farm,L100000922064,wind,shelved,1800
+G100000927520,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Claveria (Domhain) wind farm,L100000922071,wind,announced,1600
+G100000927521,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion Wind Power Project,L100000922072,wind,pre_construction,100
+G100000927534,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,East Panay offshore wind farm,L100000922080,wind,pre_construction,990
+G100000927536,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Frontera Bay Wind Power Project,L100000901298,wind,announced,450
+G100000927544,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gemini wind power project,L100000922087,wind,pre_construction,304
+G100000927552,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GS1 II Offshore Wind Project,L100000922094,wind,shelved,300
+G100000927553,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GS1 Offshore Wind Project,L100000922095,wind,pre_construction,574
+G100000927554,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GS2 Offshore Wind Power Project,L100000922096,wind,pre_construction,364
+G100000927555,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GS4 Offshore Wind Power Project,L100000922097,wind,pre_construction,455
+G100000927557,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras-Negros Occidental wind farm,L100000922099,wind,pre_construction,600
+G100000927558,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras UGS Offshore Wind Energy Project,L100000901299,wind,pre_construction,630
+G100000927559,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras UGS Offshore Wind Energy Project,L100000901299,wind,pre_construction,460
+G100000927590,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos Norte Onshore and Offshore wind farm,L100000922123,wind,pre_construction,900
+G100000927591,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos Sur Wind Power Plant,L100000922124,wind,pre_construction,100
+G100000927592,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo - Guimaras Offshore Wind Power Project,L100000922125,wind,pre_construction,1000
+G100000927593,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo CW 1 Wind Power Project,L100000922126,wind,pre_construction,152
+G100000927594,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo Strait Wind Power Project,L100000922127,wind,pre_construction,100
+G100000927601,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kabankalan Wind Power Project,L100000922134,wind,pre_construction,100
+G100000927602,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalayaan 4 North Wind Energy Project,L100000922135,wind,cancelled,125
+G100000927612,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Koala Wind Power Project,L100000922140,wind,pre_construction,150
+G100000927623,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna-Quezon Wind Power Project,L100000922147,wind,pre_construction,100
+G100000927624,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lanao del Norte Wind Power Project,L100000922148,wind,pre_construction,100
+G100000927627,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lubang and Looc Island Wind Power Project,L100000922150,wind,pre_construction,800
+G100000927628,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lucena Wind Power Project,L100000922151,wind,pre_construction,475
+G100000927629,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mainit Wind Power Project,L100000922152,wind,shelved,100
+G100000927631,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Manila Bay Wind Power Project,L100000922154,wind,pre_construction,1248
+G100000927633,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Marinduque Hybrid wind-diesel power wind farm,L100000922156,wind,cancelled,16
+G100000927634,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mariveles (Domhain Earth) wind farm,L100000922157,wind,pre_construction,1500
+G100000927645,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nasugbu Wind Power Project,L100000922165,wind,pre_construction,80
+G100000927646,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Negros 2 Offshore Wind Power Project,L100000922166,wind,cancelled,500
+G100000927647,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Negros Offshore Wind Power Project,L100000922167,wind,pre_construction,2320
+G100000927648,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Negros Oriental Onshore and Offshore Wind Power Project,L100000922168,wind,pre_construction,3400
+G100000927649,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Negros Wind Power Project,L100000922169,wind,pre_construction,100
+G100000927658,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,NOM FL1 Offshore Wind Project,L100000922174,wind,pre_construction,3038
+G100000927659,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Northern Luzon offshore floating wind farm,L100000922175,wind,announced,1800
+G100000927660,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Northern Luzon offshore wind farm,L100000922176,wind,pre_construction,100
+G100000927661,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Northern Mindoro offshore wind farm,L100000922177,wind,pre_construction,2000
+G100000927666,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coro Oslob (Coro Clean Energy) wind farm,L100000922181,wind,pre_construction,100
+G100000927667,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Oton Bank offshore wind farm,L100000922182,wind,pre_construction,510
+G100000927671,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagudpud Saint Praxedes Claveria wind farm,L100000922185,wind,pre_construction,440
+G100000927672,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Panda Wind Power Project,L100000922186,wind,pre_construction,150
+G100000927673,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pandan Labayat wind farm,L100000922187,wind,pre_construction,100
+G100000927674,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pandan Wind Energy Project,L100000922188,wind,pre_construction,62
+G100000927675,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dagupan Offshore Wind Power Project,L100000922189,wind,pre_construction,350
+G100000927676,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pangasinan CW 2 Wind Power Project,L100000922190,wind,pre_construction,80
+G100000927677,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pangasinan-Zambales Wind Power Project,L100000922191,wind,pre_construction,100
+G100000927679,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Piddig-Carasi Wind Power Project,L100000922193,wind,pre_construction,440
+G100000927687,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon (Quezon Wind Energy) Wind Power Project,L100000922198,wind,pre_construction,240
+G100000927703,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Enrique Bank offshore wind farm,L100000922213,wind,pre_construction,500
+G100000927704,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Lorenzo Bank offshore wind farm,L100000922214,wind,pre_construction,593
+G100000927708,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Semirara II Offshore Wind Power Project,L100000922217,wind,shelved,1000
+G100000927711,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Silang Maragondon wind farm,L100000922220,wind,pre_construction,100
+G100000927715,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Luzon offshore floating wind farm,L100000922224,wind,announced,1800
+G100000927717,energy_plants_gem_units,PHL,field,,,,,,,,true,abf-boundaries-v0.2.0,Southern Mindoro offshore floating wind farm,L100000922226,wind,announced,1800
+G100000927718,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sual wind power project,L100000922227,wind,pre_construction,100
+G100000927719,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tablas Strait Offshore Wind Project,L100000922228,wind,pre_construction,600
+G100000927722,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tayabas North Wind Energy Project,L100000922230,wind,announced,144
+G100000927746,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,VIP Offshore Wind Project,L100000922251,wind,cancelled,2000
+G100000927766,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zambales North Wind Power Project,L100000922268,wind,pre_construction,300
+G100000927767,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zambales Wind Power Project,L100000922269,wind,pre_construction,100
+G100001005190,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalinga geothermal power plant,L100000700071,geothermal,pre_construction,40
+G100001005191,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalinga geothermal power plant,L100000700071,geothermal,pre_construction,40
+G100001005329,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Daklan geothermal power plant,L100001004542,geothermal,pre_construction,51
+G100001005330,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mt. Malinao geothermal power plant,L100001004544,geothermal,pre_construction,50
+G100001006649,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Therma Visayas Energy Project,L100000103182,coal,pre_construction,169
+G100001017764,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Philippines nuclear power plant,L100001016306,nuclear,shelved,40
+G100001018543,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Frontera Bay II offshore wind farm,L100001016647,wind,announced,600
+G100001018719,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pantabangan (Freya Renewables) wind power project,L100001016782,wind,pre_construction,156.3
+G100001018720,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pasacao-San Fernando wind farm project,L100001016784,wind,pre_construction,300
+G100001018721,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caluya wind power project,L100001016785,wind,pre_construction,483.5
+G100001018722,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tinambac wind farm project,L100001016786,wind,pre_construction,50
+G100001018723,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lian wind farm project,L100001016787,wind,pre_construction,50
+G100001018724,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Taysan wind farm project,L100001016788,wind,pre_construction,50
+G100001018725,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sibonga wind farm project,L100001016789,wind,pre_construction,50
+G100001018726,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mulanay wind farm project,L100001016790,wind,pre_construction,50
+G100001018727,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Nicolas 1 Wind Power Project,L100001016791,wind,pre_construction,100
+G100001018810,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bangui 2 Wind Power Project,L100001016855,wind,pre_construction,132.8
+G100001018811,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bongabon Wind Power Project,L100001016856,wind,pre_construction,84.5
+G100001018821,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mindoro Wind Power Project,L100001016859,wind,pre_construction,500
+G100001018822,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Basiad Bay Offshore Wind Power Project,L100001016860,wind,pre_construction,300
+G100001018823,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Basiad Bay Offshore Wind Power Project,L100001016860,wind,pre_construction,300
+G100001018824,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,General Santos Wind Power Project,L100001016861,wind,pre_construction,100
+G100001018825,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Baao Wind Energy Project,L100001016862,wind,pre_construction,210.8
+G100001018826,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalayaan 4 Wind Energy Project,L100001016863,wind,pre_construction,303.8
+G100001018827,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagsanjan Wind Project,L100001016864,wind,pre_construction,200
+G100001018828,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Albay Wind Power Project,L100001016865,wind,pre_construction,100
+G100001018831,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bais (Envision Energy) Wind Project,L100001016867,wind,pre_construction,150
+G100001018832,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gubat Wind Project,L100001016868,wind,pre_construction,190
+G100001018833,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calabanga wind farm,L100001016869,wind,pre_construction,200
+G100001018834,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lavezares Wind Project,L100001016870,wind,pre_construction,200
+G100001018835,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Infanta-Dasol Wind Power Project,L100001016871,wind,pre_construction,380
+G100001018885,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sorsogon (Solus Wind Energy) wind farm,L100001016903,wind,pre_construction,400
+G100001018886,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dalupiri Island Wind Power Project,L100000916769,wind,pre_construction,150
+G100001018887,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pangasinan CW 1 Wind Power Project,L100001016905,wind,pre_construction,50
+G100001019951,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Prieto Diaz Wind Farm Project,L100001017963,wind,pre_construction,150
+G100001019956,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Miguel Bay (CINMF) wind farm,L100001017967,wind,announced,1000
+G100001019959,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos (Energy Development) wind farm,L100001017969,wind,pre_construction,144
+G100001019960,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pasuquin (Energy Development) wind farm,L100001017970,wind,pre_construction,90
+G100001019961,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calatagan (Giga Ace 7) wind farm,L100000916766,wind,announced,512
+G100001020001,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Doña Remedios Trinidad Bulacan Wind Farm Project,L100001017995,wind,pre_construction,200
+G100001020052,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Banahaw Wind Power Project,L100001018027,wind,announced,247
+G100001020056,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tagkawayan Wind Farm Project,L100001018031,wind,pre_construction,300
+G100001020058,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,East Ecija Wind Power Project,L100001018033,wind,pre_construction,420
+G100001020060,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Balayan Bay Offshore Wind Energy Project,L100001018035,wind,pre_construction,750
+G100001020064,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calatagan (Gigasol6) wind farm,L100001018039,wind,announced,130
+G100001020071,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camarines Norte wind power project,L100001018045,wind,pre_construction,250
+G100001020073,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pasacao Wind Power Project,L100001018047,wind,pre_construction,300
+G100001020076,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Diwata 2 Wind Power Project,L100001018049,wind,pre_construction,500
+G100001020078,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon-Camarines Norte wind power project,L100001018052,wind,pre_construction,400
+G100001020079,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camarines Sur (Upward Wind Energy) wind power project,L100001018053,wind,pre_construction,500
+G100001020081,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Luzon E-1 offshore wind farm,L100001018054,wind,pre_construction,555
+G100001020082,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bicol Wind Power Project,L100001018056,wind,pre_construction,500
+G100001020084,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagbilao Offshore Wind Power,L100001018058,wind,pre_construction,300
+G100001020172,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tayabas Bay offshore floating wind farm,L100001018125,wind,announced,250
+G100001020173,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tayabas Bay offshore floating wind farm,L100001018125,wind,announced,250
+G100001020177,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sison (First Gen Visayas) Wind Power Project,L100001018129,wind,announced,100
+G100001020181,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos Norte CW Wind Power Project,L100001018131,wind,pre_construction,120
+G100001020184,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ombra Wind Power Project,L100001018135,wind,pre_construction,312.5
+G100001020206,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos Pangasinan Solar Power Project,L100001018153,utility-scale solar,pre_construction,50.1
+G100001020207,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cawag Solar Power Project,L100001018154,utility-scale solar,pre_construction,120.6
+G100001020208,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Botolan Solar PV Power Plant,L100001018155,utility-scale solar,pre_construction,57.2
+G100001020210,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabuyao 1 Floating solar farm,L100001018157,utility-scale solar,pre_construction,105.6
+G100001020211,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bay 2 floating solar farm,L100001018158,utility-scale solar,pre_construction,105.6
+G100001020212,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bay 1 floating solar farm,L100001018159,utility-scale solar,pre_construction,105.6
+G100001020213,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Fuego Solar Power Plant Project,L100001018160,utility-scale solar,pre_construction,75.2
+G100001020214,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagbilao Floating Solar Power Plant Project,L100001018161,utility-scale solar,pre_construction,98.7
+G100001020288,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Miguel (Sunpalo Solar Energy) Solar Power Project,L100001018215,utility-scale solar,pre_construction,205
+G100001020302,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Victorias Solar Power Project,L100001018225,utility-scale solar,pre_construction,85.9
+G100001020308,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Manapla Solar Power Project,L100001018229,utility-scale solar,pre_construction,120
+G100001020391,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GS2 Offshore Wind Power Project,L100000922096,wind,pre_construction,364
+G100001020392,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GS4 Offshore Wind Power Project,L100000922097,wind,pre_construction,455
+G100001020525,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sibunag Wind Power Project,L100001018396,wind,announced,103.5
+G100001020667,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tanjay (Inner Channel) Wind Power Project,L100001018500,wind,pre_construction,45
+G100001020675,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo 1 (Iloilo 1 Renewable Energy) Wind Power Project,L100001018505,wind,shelved,48
+G100001020676,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caluya wind power project,L100001016785,wind,pre_construction,483.5
+G100001020677,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Samar Norte Offshore Wind Power Project,L100001018506,wind,pre_construction,650
+G100001020679,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Negros Occidental (Apolaki One) wind farm,L100001018508,wind,pre_construction,300
+G100001020680,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras Onshore Wind Power Project,L100001018509,wind,pre_construction,100
+G100001020719,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo Biomass power station,L100001018535,bioenergy,shelved,17.5
+G100001020720,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo Biomass power station,L100001018535,bioenergy,shelved,17.5
+G100001020723,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,La Carlota City Biomass power station,L100001018536,bioenergy,operating,25
+G100001020728,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Isabela Biomass power station,L100001018539,bioenergy,operating,20
+G100001020730,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hawaiian-Philippine Company Biomass power station,L100001018540,bioenergy,operating,20
+G100001020788,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras 1 Offshore Wind Power Project,L100001018510,wind,pre_construction,582
+G100001020789,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ajuy wind farm,L100001018586,wind,pre_construction,200
+G100001020790,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bais (First Gen Visayas Energy ) Wind Power Project,L100001018587,wind,pre_construction,100
+G100001020791,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras Strait (First Gen Visayas) Wind Power Project,L100001018588,wind,pre_construction,100
+G100001020792,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras Strait II Wind Power Project,L100001018589,wind,pre_construction,600
+G100001020793,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Malay Wind Power Project,L100001018590,wind,pre_construction,500
+G100001020794,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tambobo Bay Wind Energy Project,L100001018591,wind,pre_construction,461
+G100001020795,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tambobo Bay Wind Energy Project,L100001018591,wind,pre_construction,461
+G100001020796,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimbal Wind Power Project,L100001018592,wind,pre_construction,200
+G100001020797,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Highlands Guimaras Wind Project,L100001018593,wind,pre_construction,100
+G100001020798,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aklan (First Gen Visayas Energy) Wind Power Project,L100001018594,wind,pre_construction,100
+G100001020831,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lake Mainit Wind Power Project,L100001018621,wind,pre_construction,200
+G100001020834,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camiguin Onshore Wind Power Project,L100001018623,wind,pre_construction,100
+G100001020851,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gumalang Solar Power Project,L100001018638,utility-scale solar,pre_construction,35
+G100001020853,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,The Ark Solar Power Project,L100001018640,utility-scale solar,announced,99
+G100001020897,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapang Balen Solar 1 Power Project,L100000808725,utility-scale solar,construction,79.2
+G100001021331,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bataan-Zambales CW Wind Power Project,L100001018981,wind,pre_construction,100
+G100001021409,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ajuy 1 Solar Power Plant Project,L100001019026,utility-scale solar,construction,64
+G100001021504,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Labrador 1 Solar Power Project,L100001019085,utility-scale solar,pre_construction,333.4
+G100001021506,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Antonio Solar Power Project,L100001019087,utility-scale solar,announced,61.6
+G100001021513,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Juan (Casilagan Solar Power) Solar Power Project,L100001019091,utility-scale solar,announced,35.2
+G100001021515,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Minalabac 1 Solar Power Project,L100001019092,utility-scale solar,pre_construction,268.1
+G100001021517,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sikatuna Solar Power Plant,L100001019095,utility-scale solar,announced,37.9
+G100001021518,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Radius Floating Solar Power Project,L100001019096,utility-scale solar,pre_construction,125
+G100001021520,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nazareno Solar Power Project,L100001019099,utility-scale solar,pre_construction,41.4
+G100001021521,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sagay Solar on Water PV Power Plant,L100001019100,utility-scale solar,pre_construction,101.2
+G100001021522,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tuy Solar Power Project,L100001019101,utility-scale solar,pre_construction,96
+G100001021523,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Currimao (Northern Sun) Solar Power Project,L100001019102,utility-scale solar,pre_construction,244.8
+G100001021524,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Villasis-Malasiqui 1 Solar Power Project,L100001019103,utility-scale solar,pre_construction,443.4
+G100001021527,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta. Rosa floating solar farm,L100001019105,utility-scale solar,pre_construction,105.6
+G100001021533,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dasol 1 Solar Power Project,L100001019111,utility-scale solar,pre_construction,179
+G100001023803,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maragondon Solar Power Project,L100001020837,utility-scale solar,operating,64
+G100001031014,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Toledo City power station,L100000103183,coal,pre_construction,82
+G100001031038,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Subic power station,L100000103178,oil/gas,shelved,660
+G100001031208,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Buguias-Tinoc geothermal power plant,L100001026005,geothermal,pre_construction,100
+G100001031211,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Biliran 2 geothermal power plant,L100001026007,geothermal,announced,170
+G100001048214,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Medellin (Sinag Solar Power) Solar Power Project,L100001042873,utility-scale solar,pre_construction,303.6
+G100001048247,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Orion solar farm,L100001042904,utility-scale solar,operating,20.4
+G100001048250,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pinugay Solar Power Project,L100000801283,utility-scale solar,operating,8.5
+G100001048524,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Palinpinon 2 geothermal power plant,L100001043034,geothermal,operating,80
+G100001050365,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bago Binary geothermal power plant,L100001044847,geothermal,construction,5.6
+G100001050366,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Biliran geothermal power plant,L100000700227,geothermal,operating,2
+G100001050367,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Mahiao geothermal power plant,L100001044848,geothermal,operating,125
+G100001050370,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Laoag Solar Power Project,L100000801106,utility-scale solar,operating,71.4
+G100001051419,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kapangan hydroelectric plant,L100001045656,hydropower,construction,60
+G100001051421,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Manolo Fortich I hydroelectric plant,L100001045658,hydropower,operating,45
+G100001051422,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Saltan-D hydroelectric plant,L100001045659,hydropower,pre_construction,49
+G100001051423,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Saltan-E hydroelectric plant,L100001045660,hydropower,announced,45
+G100001051425,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Agus 5 hydroelectric plant,L100001045662,hydropower,operating,55
+G100001051426,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Agus 7 hydroelectric plant,L100001045663,hydropower,operating,54
+G100001051444,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kabayan 2 hydroelectric plant,L100001045676,hydropower,pre_construction,52
+G100001053021,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta. Ana Cagayan Wind Power Project,L100001046791,wind,pre_construction,100
+G100001053022,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Panaon Wind Power Project,L100001046792,wind,pre_construction,340
+G100001053024,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon North Wind Power Project,L100001046793,wind,pre_construction,230
+G100001053076,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Miguel Bay (Energy Oasis) wind farm,L100001046817,wind,announced,1600
+G100001053077,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Miguel Bay (Energy Oasis) wind farm,L100001046817,wind,announced,1500
+G100001053078,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Vicente wind power project,L100001046818,wind,pre_construction,30
+G100001053080,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Panay Wind Power Project,L100001046820,wind,announced,300
+G100001053081,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos Norte Wind Power Project,L100001046821,wind,pre_construction,90
+G100001053132,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Balayan Nearshore Wind Power Project,L100001046850,wind,pre_construction,76
+G100001053444,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sangali diesel power station,L100000408111,oil/gas,construction,28
+G100001053455,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rizal Wind Power Project,L100000916775,wind,shelved,513
+G100001053491,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tablas Strait Offshore Wind Project,L100000922228,wind,pre_construction,600
+G100001053492,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tablas Strait Offshore Wind Project,L100000922228,wind,pre_construction,600
+G100001053578,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,cancelled,600
+G100001053579,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,cancelled,600
+G100001053580,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,cancelled,600
+G100001053581,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,cancelled,600
+G100001053582,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,cancelled,600
+G100001053583,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilijan power station,L100000405342,oil/gas,cancelled,600
+G100001053584,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Abra Wind Power Project,L100001047149,wind,announced,160
+G100001053585,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bayog - Buduan Wind Power Project,L100001047150,wind,pre_construction,240.5
+G100001053586,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagudpud I.N. Wind Power Project,L100001047151,wind,pre_construction,120
+G100001053604,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,North Pagudpud Offshore Wind Power Project,L100001047165,wind,pre_construction,380
+G100001053606,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Labrador Wind Power Project,L100001047166,wind,pre_construction,100
+G100001053607,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Vigan Offshore Wind Power Project,L100001047167,wind,pre_construction,300
+G100001053645,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Juan Wind Power Project,L100001047197,wind,pre_construction,100
+G100001053646,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Fuga Wind Power Project,L100001047198,wind,pre_construction,340
+G100001053647,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cagayan Wind Power Project,L100001047199,wind,pre_construction,500
+G100001053648,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cagayan West Offshore Wind Power Project,L100001047200,wind,pre_construction,1024
+G100001053654,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Claveria (Citicore) wind farm,L100001047201,wind,pre_construction,250
+G100001053655,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sierra Isabella Wind Power Project,L100001047204,wind,pre_construction,300
+G100001053656,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Botolan Wind Power Project,L100001047206,wind,pre_construction,300
+G100001053661,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Haraya Zambales wind farm,L100001047207,wind,pre_construction,370
+G100001053662,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,WPS Z1 Offshore Wind Power Project,L100001047208,wind,pre_construction,360
+G100001053663,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bagac Bay Onshore Wind Project,L100001047209,wind,pre_construction,500
+G100001053664,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bagac Wind Power Project,L100001047210,wind,pre_construction,155
+G100001053665,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Limay Wind Power Project,L100001047211,wind,pre_construction,100
+G100001053666,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nueva Ecija 1 Wind Power Project,L100001047212,wind,pre_construction,100
+G100001053667,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Palayan-Laur Wind Power Project,L100001047213,wind,pre_construction,100
+G100001053668,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nueva Ecija Wind Power Project,L100001047214,wind,pre_construction,100
+G100001053669,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Jose Wind Power Project,L100001047215,wind,pre_construction,300
+G100001053670,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulacan Wind Power Project,L100001047216,wind,pre_construction,187
+G100001053671,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulacan Wind Power Project,L100001047216,wind,pre_construction,237
+G100001053672,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zambales 2 Wind Power Project,L100001047217,wind,pre_construction,510
+G100001053678,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mayantoc Wind Project,L100001047222,wind,pre_construction,200
+G100001053679,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna 1 Onshore Wind Power Project,L100001047223,wind,pre_construction,36
+G100001053681,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cavite (Envision Energy) Wind Project,L100001047225,wind,pre_construction,200
+G100001053682,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maragondon (Cleantech) wind farm,L100001047226,wind,pre_construction,86.4
+G100001053683,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maragondon (Maragondon Wind) wind farm,L100001047227,wind,pre_construction,200
+G100001053686,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Asisan wind farm,L100001047228,wind,pre_construction,100
+G100001053687,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilijan Wind Power Project,L100001047229,wind,pre_construction,120
+G100001053688,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lobo (PacificWind Renewables) wind farm,L100001047230,wind,pre_construction,160
+G100001053689,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lobo (Amihan Power) wind farm,L100001047231,wind,pre_construction,112
+G100001053690,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tuy Wind Power Project,L100001047232,wind,pre_construction,25
+G100001053691,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon (First Gen Visayas) Wind Power Project,L100001047233,wind,pre_construction,100
+G100001053692,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilosong Wind Power Project,L100001047234,wind,pre_construction,512
+G100001053730,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gumaca-Pitogo Wind Power Project,L100001047254,wind,pre_construction,100
+G100001053731,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Viento Power Wind Project,L100001047255,wind,pre_construction,100
+G100001053738,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamon Bay Offshore Wind Power,L100001047261,wind,pre_construction,700
+G100001053739,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauban Offshore wind farm,L100001047262,wind,pre_construction,100
+G100001053740,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lucena Offshore Wind Power Project,L100001047263,wind,pre_construction,400
+G100001053741,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Real Offshore wind farm,L100001047264,wind,pre_construction,200
+G100001053750,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Wind Power Project,L100001047271,wind,pre_construction,100
+G100001053751,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sambong Onshore wind farm,L100001047273,wind,pre_construction,60
+G100001053752,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dapdap East wind farm,L100001047274,wind,pre_construction,100
+G100001053754,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao (PacificWind) Wind Power Project,L100001047276,wind,announced,100
+G100001053755,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao (PacificWind) Wind Power Project,L100001047276,wind,announced,80
+G100001053758,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao Two Wind Power Project,L100001047278,wind,pre_construction,112
+G100001053759,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mananao Wind Power Project,L100001047279,wind,pre_construction,80
+G100001053760,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mananao Wind Power Project,L100001047279,wind,pre_construction,70
+G100001053770,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Paluan Wind Power Project,L100001047285,wind,pre_construction,150
+G100001053771,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bataraza Wind Power Project,L100001047286,wind,pre_construction,20
+G100001053772,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,El Nido Wind Power Project,L100001047287,wind,pre_construction,30
+G100001053773,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Taytay Wind Power Project,L100001047288,wind,pre_construction,30
+G100001053774,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mindoro Offshore Wind Power Project,L100001047289,wind,pre_construction,1000
+G100001053775,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capalonga-Jose Panganiban Offshore Wind Power Project,L100001047290,wind,pre_construction,450
+G100001053778,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mercedes Offshore wind farm,L100001047291,wind,pre_construction,100
+G100001053779,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capalonga (Energy Oasis) wind farm,L100001047292,wind,pre_construction,400
+G100001053783,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Baao Wind Energy Project,L100001016862,wind,pre_construction,62
+G100001053835,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sorsogon (Econergy) wind farm,L100001047331,wind,pre_construction,100
+G100001053836,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sorsogon (Econergy) wind farm,L100001047331,wind,pre_construction,100
+G100001053837,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Fortune III Wind Power Project,L100001047332,wind,pre_construction,50
+G100001053838,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Abra Wind Power Project,L100001047149,wind,announced,50
+G100001053839,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Abra Wind Power Project,L100001047149,wind,announced,50
+G100001053843,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mt. Labo wind farm,L100001047334,wind,announced,200
+G100001053846,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mt. Labo wind farm,L100001047334,wind,announced,100
+G100001053848,energy_plants_gem_units,PHL,field,,,,,,,,true,abf-boundaries-v0.2.0,Bondoc Wind Power Project,L100001047337,wind,pre_construction,2000
+G100001053852,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cauayan Wind Project,L100001047340,wind,pre_construction,200
+G100001053854,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Don Salvador Benedicto Wind Power Project,L100001047341,wind,pre_construction,80
+G100001053855,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guimaras Strait (Triconti Southwind) Wind Power Project,L100001047342,wind,pre_construction,600
+G100001053862,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Negros Occidental (Energy Development) wind farm,L100001047343,wind,pre_construction,816
+G100001053863,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Negros Occidental (Haraya) wind farm,L100001047347,wind,pre_construction,1215
+G100001053914,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Terra solar farm (Philippines),L100000808731,utility-scale solar,pre_construction,1000
+G100001053919,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aguilar solar farm,L100001047382,utility-scale solar,announced,225
+G100001053931,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Daanbantayan (Freya Renewables) solar farm,L100001047388,utility-scale solar,construction,150
+G100001053935,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,AC Laguna Floating Solar Power Plant Project,L100001047392,utility-scale solar,announced,210
+G100001053936,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SolarAce4 Floating Solar Power Project,L100001047393,utility-scale solar,announced,104
+G100001053937,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,AC Subic Floating Solar Power Plant Project,L100001047394,utility-scale solar,announced,210
+G100001053938,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ingrid2 Floating Solar Power Plant Project,L100001047395,utility-scale solar,pre_construction,104
+G100001053939,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,GigaWind1 Floating Solar Power Plant Project,L100001047396,utility-scale solar,pre_construction,209
+G100001053940,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Luna Solar Power Project,L100001047397,utility-scale solar,announced,171
+G100001053982,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nks Solar One Floating Power Project,L100000801210,utility-scale solar,pre_construction,88
+G100001054004,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rita Solar Power Project,L100000808723,utility-scale solar,operating,25
+G100001054005,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rita Solar Power Project,L100000808723,utility-scale solar,operating,38.1
+G100001054027,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bolbok Solar Power Project,L100000801509,utility-scale solar,pre_construction,75
+G100001054028,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta. Barbara 1 Solar Power Project,L100000830878,utility-scale solar,pre_construction,35
+G100001054029,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Binalonan (Citicore) Solar Power Project,L100000830862,utility-scale solar,pre_construction,33
+G100001054030,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagbilao Solar Power Project,L100000830851,utility-scale solar,construction,27
+G100001054031,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pagbilao Solar Power Project,L100000830851,utility-scale solar,pre_construction,37
+G100001054107,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion 1 Solar Power Project,L100000830800,utility-scale solar,operating,76.9
+G100001054108,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion 1 Solar Power Project,L100000830800,utility-scale solar,pre_construction,12
+G100001054109,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Concepcion 1 Solar Power Project,L100000830800,utility-scale solar,pre_construction,30
+G100001054123,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kananga-Ormoc Solar Power Project,L100000801043,utility-scale solar,pre_construction,660
+G100001054125,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calamba Floating Solar Power Project,L100001047535,utility-scale solar,pre_construction,82.5
+G100001054126,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabuyao 3 Floating solar farm,L100001047536,utility-scale solar,pre_construction,105
+G100001054127,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabuyao 4 Floating solar farm,L100001047537,utility-scale solar,pre_construction,105
+G100001054128,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabuyao 2 Floating solar farm,L100001047538,utility-scale solar,pre_construction,105.6
+G100001054129,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabuyao 5 Floating solar farm,L100001047539,utility-scale solar,pre_construction,105.6
+G100001054130,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Victoria 1 Floating solar farm,L100001047540,utility-scale solar,pre_construction,105.6
+G100001054434,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Mariano Biomass power station,L100001047737,bioenergy,operating,19
+G100001054452,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cagayan Burgos power station,L100001047748,bioenergy,operating,15
+G100001054454,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bagac Biomass power station,L100001047749,bioenergy,operating,12
+G100001054456,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Jose Biomass power station,L100001047751,bioenergy,operating,24
+G100001054457,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Talavera Biomass power station,L100001047752,bioenergy,operating,18
+G100001054460,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Carlos Biomass power station,L100001047754,bioenergy,operating,20
+G100001054476,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Manapla North Negros Biomass power station,L100001047765,bioenergy,operating,25
+G100001054477,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Antonio Sugar power station,L100001047766,bioenergy,operating,15
+G100001054478,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,San Antonio Sugar power station,L100001047766,bioenergy,operating,8
+G100001054479,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Panay Biomass power station,L100001047767,bioenergy,pre_construction,15
+G100001054480,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bais Sugar power station,L100001047768,bioenergy,operating,25
+G100001054481,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cotabato Sugar power station,L100001047769,bioenergy,operating,10
+G100001054482,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Biotech Farms Banga power station,L100001047770,bioenergy,operating,12.4
+G100001054483,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bagac Biomass power station,L100001047749,bioenergy,shelved,12
+G100001054484,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Ana Biomass power station,L100001047771,bioenergy,shelved,7
+G100001054485,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Ana Biomass power station,L100001047771,bioenergy,shelved,3
+G100001054486,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Narra DMCI power station,L100001047772,bioenergy,operating,15
+G100001054499,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lamsan Biomass power station,L100001047781,bioenergy,operating,15
+G100001055125,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bataan nuclear power plant,L100000500432,nuclear,announced,621
+G100001055126,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bataan nuclear power plant,L100000500432,nuclear,announced,579
+G100001055727,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,General Santos (J&V Energy) solar farm,L100001048529,utility-scale solar,announced,180
+G100001055762,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cadiz 1 Solar Power Project,L100001048554,utility-scale solar,announced,43
+G100001055763,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mariveles Solar Power Project,L100001048555,utility-scale solar,announced,62
+G100001056897,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bulacan 3 solar farm,L100001049300,utility-scale solar,operating,11.3
+G100001056976,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Quezon North Wind Power Project,L100001046793,wind,announced,660
+G100001056982,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangui Bay wind farm,L100000900884,wind,operating,33
+G100001057007,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pasuquin (PacificWind) wind farm,L100001049404,wind,announced,100
+G100001057011,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos Norte Offshore Wind Power Project,L100001049407,wind,announced,900
+G100001057012,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mariveles (Airstream) wind farm,L100001049409,wind,announced,100
+G100001057014,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pantabangan (Gigawind2) wind farm,L100001049410,wind,announced,150
+G100001057019,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mansalay Bay wind farm,L100001049415,wind,announced,1000
+G100001057021,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Abra de Ilog (Mainstream) wind farm,L100001049417,wind,announced,375
+G100001057024,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Northern Wind Power Project,L100001049419,wind,announced,100
+G100001057026,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Eastern Wind Power Project,L100001049421,wind,announced,100
+G100001057035,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capalonga (Airstream) wind farm,L100001049430,wind,announced,100
+G100001057036,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilocos (wpd Philippines) wind farm,L100001049431,wind,announced,400
+G100001057037,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,E.B. Magalona wind farm,L100001049432,wind,announced,100
+G100001057038,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ibajay (Envision) wind farm,L100001049433,wind,announced,190
+G100001057039,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ibajay (Blue Circle) wind farm,L100001049434,wind,announced,80.6
+G100001057040,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aklan (PacificWind) wind farm,L100001049435,wind,announced,100
+G100001057043,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Malinao East wind farm,L100001049437,wind,announced,140
+G100001057044,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anini-y wind farm,L100001049438,wind,announced,150
+G100001057045,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Panay Strait wind farm,L100001049439,wind,announced,400
+G100001057046,energy_plants_gem_units,PHL,field,,,,,,,,true,abf-boundaries-v0.2.0,West Panay Gulf wind farm,L100001049440,wind,announced,400
+G100001057053,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iloilo wind farm,L100001049447,wind,announced,200
+G100001057054,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sebaste wind farm,L100001049448,wind,announced,300
+G100001057055,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Guihulngan wind farm,L100001049449,wind,announced,200
+G100001057056,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabinay wind farm,L100001049450,wind,announced,76
+G100001057057,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dumaguete wind farm,L100001049451,wind,announced,100
+G100001057058,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Alegria (MC Project Solutions) wind farm,L100001049452,wind,announced,100
+G100001057059,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Alegria (Tech Energie Reserves) wind farm,L100001049453,wind,announced,100
+G100001057060,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kandungaw wind farm,L100001049454,wind,announced,100
+G100001057061,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Carmen wind farm,L100001049455,wind,announced,88
+G100001057062,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cebu (Spark Grid) wind farm,L100001049456,wind,announced,150
+G100001057063,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ginatilan wind farm,L100001049457,wind,announced,100
+G100001057064,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Malabuyoc wind farm,L100001049458,wind,announced,100
+G100001057065,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coro Oslob (Coro Philippines Project 128) wind farm,L100001049459,wind,announced,96
+G100001057066,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bohol 2 Anda wind farm,L100001049460,wind,announced,50
+G100001057068,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Valencia wind farm,L100001049462,wind,announced,200
+G100001057069,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Leyte 4 wind farm,L100001049464,wind,announced,100
+G100001057070,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Leyte wind farm,L100001049465,wind,announced,200
+G100001057071,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Leyte 5 wind farm,L100001049466,wind,announced,200
+G100001057072,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bukidnon wind farm,L100001049467,wind,announced,200
+G100001057073,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kauswagan wind farm,L100001049468,wind,announced,100
+G100001057160,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Presentacion 2 Wind Power Project,L100001049541,wind,announced,49.5
+G100001057198,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caparispisan (Amihan) wind farm,L100001049576,wind,operating,70
+G100001061652,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aringay solar farm,L100001053858,utility-scale solar,announced,41.3
+G100001061653,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Astra solar farm,L100001053859,utility-scale solar,announced,56.2
+G100001061654,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Atimonan solar farm,L100001053860,utility-scale solar,announced,53.1
+G100001061655,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Banaybanay Davao solar farm,L100001053861,utility-scale solar,announced,49.7
+G100001061656,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Barotac Viejo solar farm,L100001053862,utility-scale solar,announced,175.3
+G100001061657,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bawing solar farm,L100001053863,utility-scale solar,announced,74.8
+G100001061658,energy_plants_gem_units,PHL,field,,,,,,,,true,abf-boundaries-v0.2.0,Bluefin solar farm,L100001053864,utility-scale solar,announced,150
+G100001061659,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bulalacao solar farm,L100001053865,utility-scale solar,announced,25
+G100001061660,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos 1 solar farm,L100001053866,utility-scale solar,announced,156.4
+G100001061661,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos 2 solar farm,L100001053867,utility-scale solar,announced,231.1
+G100001061662,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Burgos Dasol solar farm,L100001053868,utility-scale solar,announced,343.7
+G100001061663,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabcaben solar farm,L100001053869,utility-scale solar,announced,51
+G100001061664,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabiao solar farm,L100001053870,utility-scale solar,announced,261
+G100001061665,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cadiz  solar farm,L100001053871,utility-scale solar,announced,297
+G100001061666,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cagayan 2 solar farm,L100001053872,utility-scale solar,announced,525
+G100001061667,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cambitala solar farm,L100001053873,utility-scale solar,announced,185.6
+G100001061668,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capantolan solar farm,L100001053874,utility-scale solar,announced,47.4
+G100001061669,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capital1 Davao solar farm,L100001053875,utility-scale solar,announced,35.2
+G100001061670,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Capital1 Mabini solar farm,L100001053876,utility-scale solar,announced,59.6
+G100001061671,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caronsi solar farm,L100001053877,utility-scale solar,announced,50
+G100001061672,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castilla solar farm,L100001053878,utility-scale solar,announced,30
+G100001061673,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,CSFirst Green Dasol solar farm,L100001053879,utility-scale solar,announced,140.4
+G100001061674,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,CSFirst Green Infanta solar farm,L100001053880,utility-scale solar,announced,180.5
+G100001061675,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Fortune Lal-lo solar farm,L100001053881,utility-scale solar,announced,113.6
+G100001061676,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gigasol1 solar farm,L100001053882,utility-scale solar,announced,450
+G100001061677,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Haribon Floating solar farm,L100001053883,utility-scale solar,announced,22
+G100001061678,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Iguig solar farm,L100001053884,utility-scale solar,announced,121
+G100001061679,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Inara solar farm,L100001053885,utility-scale solar,announced,48.8
+G100001061680,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Inara solar farm,L100001053885,utility-scale solar,announced,39.4
+G100001061681,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,JASAAN solar farm,L100001053886,utility-scale solar,announced,58
+G100001061682,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalandagan solar farm,L100001053887,utility-scale solar,announced,81.2
+G100001061683,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kidlat solar farm,L100001053888,utility-scale solar,announced,245
+G100001061684,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,La Union solar farm (Philippines),L100001053889,utility-scale solar,announced,38.8
+G100001061685,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lake Mainit solar farm,L100001053890,utility-scale solar,announced,50
+G100001061686,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lake Mainit solar farm,L100001053890,utility-scale solar,announced,50
+G100001061687,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Libag Sur solar farm,L100001053891,utility-scale solar,announced,422.4
+G100001061688,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Liloan solar farm,L100001053892,utility-scale solar,announced,266.9
+G100001061689,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabini solar farm,L100001053893,utility-scale solar,announced,49.9
+G100001061690,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Macabebe solar farm,L100001053894,utility-scale solar,announced,139.7
+G100001061691,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Magahis solar farm,L100001053895,utility-scale solar,announced,364.3
+G100001061692,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Malasiqui solar farm,L100001053896,utility-scale solar,announced,48.1
+G100001061693,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Masinloc solar farm,L100001053897,utility-scale solar,announced,822.8
+G100001061694,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nueva Era solar farm,L100001053898,utility-scale solar,announced,87.5
+G100001061695,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Palayan solar farm,L100001053899,utility-scale solar,announced,136.5
+G100001061696,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pantabangan Floating solar farm,L100001053900,utility-scale solar,announced,464
+G100001061697,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Parcel floating solar farm,L100001053901,utility-scale solar,announced,832.5
+G100001061698,energy_plants_gem_units,PHL,field,,,,,,,,true,abf-boundaries-v0.2.0,Parcel floating solar farm,L100001053901,utility-scale solar,announced,832.5
+G100001061699,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pontevedra solar farm,L100001053902,utility-scale solar,announced,36.4
+G100001061700,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Esteban 1 solar farm,L100001053903,utility-scale solar,announced,91.6
+G100001061701,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Luis solar farm,L100001053904,utility-scale solar,announced,191.2
+G100001061702,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SanMar 4 solar farm,L100001053905,utility-scale solar,announced,532
+G100001061703,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinawal solar farm,L100001053906,utility-scale solar,announced,150.7
+G100001061704,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sison solar farm,L100001053907,utility-scale solar,announced,216
+G100001061705,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SolarAce2 solar farm,L100001053908,utility-scale solar,announced,120.3
+G100001061706,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SPPC solar farm,L100001053909,utility-scale solar,announced,105
+G100001061707,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta Rosa Nueva Ecija 1 solar farm,L100001053910,utility-scale solar,announced,80
+G100001061708,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sual solar farm,L100001053911,utility-scale solar,announced,49.5
+G100001061709,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Suncastle Baao solar farm,L100001053912,utility-scale solar,announced,495
+G100001061710,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tabango solar farm,L100001053913,utility-scale solar,announced,28.1
+G100001061711,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Talingaan-Laoag solar farm,L100001053914,utility-scale solar,announced,149.6
+G100001061712,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Telos Iba 1 solar farm,L100001053915,utility-scale solar,announced,38.4
+G100001061713,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tinang Tarlac solar farm,L100001053916,utility-scale solar,announced,217.2
+G100001061714,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,TITAN V solar farm,L100001053917,utility-scale solar,announced,150
+G100001061715,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Toledo Alpha solar farm,L100001053918,utility-scale solar,announced,149.1
+G100001061716,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,TPC I - San Carlos 2 solar farm,L100001053919,utility-scale solar,announced,49.4
+G100001061717,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tumauini solar farm,L100001053920,utility-scale solar,announced,52.8
+G100001061718,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ultra solar farm,L100001053921,utility-scale solar,announced,71.7
+G100001061719,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Umingan solar farm,L100001053922,utility-scale solar,announced,49.5
+G100001061720,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Viejo iloilo solar farm,L100001053923,utility-scale solar,announced,154.4
+G100001061721,energy_plants_gem_units,PHL,field,,,,,,,,true,abf-boundaries-v0.2.0,Villahermosa-Danlog solar farm,L100001053924,utility-scale solar,announced,80
+G100001061722,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zamboanguita solar farm,L100001053925,utility-scale solar,announced,50.1
+G100001061723,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,ZMW San Vicente Ubay solar farm,L100001053926,utility-scale solar,announced,200.4
+G100001062703,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Caliraya hydroelectric plant,L100001054811,hydropower,operating,37
+G100001072899,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bubunawan hydroelectric plant,L100001063438,hydropower,pre_construction,32
+G100001072902,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camanlangan hydroelectric plant,L100001063440,hydropower,announced,35
+G100001072904,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Caraga 4 hydroelectric plant,L100001063441,hydropower,pre_construction,35
+G100001072905,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Casauman hydroelectric plant,L100001063442,hydropower,pre_construction,34
+G100001072906,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maslog hydroelectric plant,L100001063444,hydropower,pre_construction,40
+G100001072908,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kibungan 2 hydroelectric plant,L100001063445,hydropower,pre_construction,40
+G100001072909,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Abuan hydroelectric plant,L100001063446,hydropower,announced,32
+G100001072910,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Buaya hydroelectric plant,L100001063447,hydropower,announced,40
+G100001072911,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Pasil hydroelectric plant,L100001063449,hydropower,announced,30
+G100001072914,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Botocan hydroelectric plant,L100001063451,hydropower,operating,21
+G100001072916,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sicapo hydroelectric plant,L100001063454,hydropower,announced,40
+G100001072918,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bago 3 hydroelectric plant,L100001063455,hydropower,pre_construction,35
+G100001072919,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Talayan hydroelectric plant,L100001063456,hydropower,announced,30
+G100001072920,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Balog Balog hydroelectric plant,L100001063457,hydropower,construction,44
+G100001072924,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Calanasan 1 hydroelectric plant,L100001063459,hydropower,pre_construction,30
+G100001073536,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Biliran geothermal power plant,L100000700227,geothermal,pre_construction,42
+G100001073547,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Southwest Kalinga geothermal power plant,L100001063953,geothermal,announced,50
+G100001090550,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,5MWp Tabuk Solar Power Project,L100001080629,utility-scale solar,announced,3.9
+G100001090551,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Holcim La Union Solar Rooftop,L100001080630,utility-scale solar,announced,1.8
+G100001090552,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Labrador Solar Power Project,L100001080631,utility-scale solar,announced,4
+G100001090553,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta. Barbara Solar Power Project,L100001080632,utility-scale solar,operating,15.3
+G100001090554,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bugallon Solar Power Project,L100001080633,utility-scale solar,construction,18.6
+G100001090555,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Robinsons Tuguegarao Roof-Mounted Solar Energy Project,L100001080634,utility-scale solar,announced,1.2
+G100001090556,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Villaverde Ground-Mounted Solar-Photovoltaic Project,L100001080635,utility-scale solar,announced,13.4
+G100001090557,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,"Greener Solar Power and Electric Motor, Inc. - Balanok 3 solar project",L100001080636,utility-scale solar,construction,2.8
+G100001090558,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Rafael Solar Power Project,L100001080637,utility-scale solar,operating,3.7
+G100001090559,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SM San Jose Del Monte Solar Rooftop Power Plant,L100001080638,utility-scale solar,operating,1
+G100001090560,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Holcim Bulacan Solar Rooftop Project,L100001080639,utility-scale solar,announced,2.9
+G100001090561,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bataan Solar Power Project II,L100001080640,utility-scale solar,operating,3.7
+G100001090562,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,PAVI Green Orion Solar Power Plant Project,L100001080641,utility-scale solar,operating,16.2
+G100001090563,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta. Ignacia Tarlac Solar Power Project,L100001080642,utility-scale solar,announced,9
+G100001090564,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sta. Ignacia Tarlac Solar Power Project - 2,L100001080643,utility-scale solar,announced,9
+G100001090565,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Agrosolis Solar Power Plant,L100001080644,utility-scale solar,construction,3.7
+G100001090566,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinait Solar Power Project,L100001080645,utility-scale solar,announced,9.9
+G100001090567,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,La Paz Solar Power Project,L100001080646,utility-scale solar,announced,4.2
+G100001090568,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pampanga Solar Power Project,L100001080647,utility-scale solar,operating,19
+G100001090569,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Universal Robina Pampanga 2 Roof-Mounted Solar Energy Project,L100001080648,utility-scale solar,announced,1.8
+G100001090570,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Jose  Solar Power Project 2,L100001080649,utility-scale solar,construction,15.3
+G100001090571,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Palauig 2 Solar Power Plant,L100001080650,utility-scale solar,announced,4.5
+G100001090572,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Palauig Solar Power Project II,L100001080651,utility-scale solar,operating,4
+G100001090573,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Magalang Solar Power Project,L100001080652,utility-scale solar,announced,10.2
+G100001090574,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Solana Solar Beta Inc. Solar Power Project,L100001080653,utility-scale solar,announced,17.2
+G100001090575,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Zenith Foods Corporation (Zen 3) Solar Power Project,L100001080654,utility-scale solar,operating,1.3
+G100001090576,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,C3 Solar Power Project,L100001080655,utility-scale solar,operating,2.3
+G100001090577,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anglo Watsons Glass Solar Rooftop Power Project,L100001080656,utility-scale solar,announced,1.6
+G100001090578,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mitsubishi Motors Philippines Corporation Solar Power Project,L100001080657,utility-scale solar,announced,3.2
+G100001090579,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SM Sta. Rosa Solar Rooftop Power Project,L100001080658,utility-scale solar,operating,2.4
+G100001090580,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nexperia Solar Rooftop Project,L100001080659,utility-scale solar,announced,2.5
+G100001090581,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Canlubang Baking Facility Solar Power Project,L100001080660,utility-scale solar,operating,2.6
+G100001090582,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Robinsons Galleria South Roof-Mounted Solar Energy Project,L100001080661,utility-scale solar,announced,1.3
+G100001090583,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Robinsons Antipolo Roof-Mounted Solar Energy Project,L100001080662,utility-scale solar,announced,1.6
+G100001090584,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lian Solar Power Project,L100001080663,utility-scale solar,operating,2
+G100001090585,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Batangas Agrivoltaics Lot 1-A Solar Power Project,L100001080664,utility-scale solar,announced,5.8
+G100001090586,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Inara Solar Power Project,L100001080665,utility-scale solar,announced,7.7
+G100001090587,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,"Mariwasa-Siam Ceramics, Inc. Solar Power Rooftop Project",L100001080666,utility-scale solar,operating,2.6
+G100001090588,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,"Mariwasa-Siam Ceramics, Inc. Solar Power Rooftop Project II",L100001080667,utility-scale solar,operating,1.1
+G100001090589,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ibaan Solar Power Project,L100001080668,utility-scale solar,announced,3.6
+G100001090590,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,3.8MW Palawan QTP solar project,L100001080669,utility-scale solar,announced,3.2
+G100001090591,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,SIPCOR Palawan Solar Power Plant,L100001080670,utility-scale solar,announced,18
+G100001090592,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Palawan 2 Solar Power Plant,L100001080671,utility-scale solar,announced,7.5
+G100001090593,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,YH Busuanga Solar Power Project,L100001080672,utility-scale solar,announced,3.7
+G100001090594,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,San Lorenzo Ruiz Solar Power Plant,L100001080673,utility-scale solar,announced,5.1
+G100001090595,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cataingan Solar Power Project,L100001080674,utility-scale solar,announced,4.1
+G100001090596,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Light Rail Manila Corporation Solar Power Project,L100001080675,utility-scale solar,announced,1
+G100001090597,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,MacroAsia Special Economic Zone Solar Power Project,L100001080676,utility-scale solar,operating,2
+G100001090598,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Victorias Ground Mounted Solar PV Project,L100001080677,utility-scale solar,announced,5
+G100001090599,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,IPC Solar Power Project,L100001080678,utility-scale solar,announced,10
+G100001090600,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,APO Solar PV Project,L100001080679,utility-scale solar,announced,8.2
+G100001090601,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mandaue Solar Power Project,L100001080680,utility-scale solar,announced,1.1
+G100001090602,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Universal Robina Cebu 2 Roof-Mounted Solar Energy Project,L100001080681,utility-scale solar,announced,2.2
+G100001090603,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Camotes Hybrid Solar Power Project,L100001080682,utility-scale solar,announced,1.7
+G100001090604,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bantayan Island Solar Power Plant,L100001080683,utility-scale solar,announced,5
+G100001090605,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jagna Solar Power Project,L100001080684,utility-scale solar,announced,4
+G100001090606,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Viking Solar Power Plant,L100001080685,utility-scale solar,announced,4.3
+G100001090607,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,1MW SAMELCO - Calbayog Solar Power Project,L100001080686,utility-scale solar,construction,1.1
+G100001090608,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Taft Solar Power Project,L100001080687,utility-scale solar,construction,17.5
+G100001090609,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Valencia Solar Power Plant,L100001080688,utility-scale solar,announced,14.2
+G100001090610,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Misamis Solar Power Project,L100001080689,utility-scale solar,pre_construction,17.2
+G100001090611,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Holcim Lugait Solar Rooftop Project,L100001080690,utility-scale solar,announced,2
+G100001090612,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,IGACOS SOLAR POWER PROJECT,L100001080691,utility-scale solar,announced,10.2
+G100001090613,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,President Quirino Solar Power Project,L100001080692,utility-scale solar,announced,5.3
+G100001090614,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Siana Gold TSF4 Ground-mount Solar Project,L100001080693,utility-scale solar,announced,4.2
+G100001091032,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mt. Sembrano geothermal power plant,L100001080988,geothermal,pre_construction,20
+G100001091038,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,Olongapo solar farm,L100000808706,utility-scale solar,announced,128
+G100001091042,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Subic New PV Solar Power Plant Project,L100000801422,utility-scale solar,construction,24.6
+G100001093776,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bacolod City WtE power station,L100001083096,bioenergy,pre_construction,15
+G100001093779,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,ATF Waste-to-Energy power station,L100001083098,bioenergy,announced,12
+G100001094401,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,"Therma Mobile, Inc. (TMO) power station",L100000408105,oil/gas,operating,60.5
+G100001094402,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,"Therma Mobile, Inc. (TMO) power station",L100000408105,oil/gas,mothballed,60.5
+G100001094403,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,"Therma Mobile, Inc. (TMO) power station",L100000408105,oil/gas,operating,60.5
+G100001094404,energy_plants_gem_units,PHL,point,,,,,,,,false,abf-boundaries-v0.2.0,"Therma Mobile, Inc. (TMO) power station",L100000408105,oil/gas,mothballed,60.5
+G100001094432,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,La Esperanza gas power station,L100001083479,oil/gas,announced,600
+G100001094433,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,La Esperanza gas power station,L100001083479,oil/gas,announced,600
+G100001094434,energy_plants_gem_units,PHL,point,,,,,,,,true,abf-boundaries-v0.2.0,La Esperanza gas power station,L100001083479,oil/gas,announced,600

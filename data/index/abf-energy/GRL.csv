@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000927204,energy_plants_gem_units,GRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anori wind farm,L100000921899,wind,pre_construction,1500
+G100001030373,energy_plants_gem_units,GRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Buksefjord hydroelectric plant,L100001025619,hydropower,operating,45
+G100001030374,energy_plants_gem_units,GRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Buksefjord hydroelectric plant,L100001025619,hydropower,pre_construction,77

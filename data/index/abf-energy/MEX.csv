@@ -1,0 +1,988 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101209,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,José López Portillo power station,L100000104797,coal,operating,300
+G100000101210,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,José López Portillo power station,L100000104797,coal,operating,300
+G100000101211,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,José López Portillo power station,L100000104797,coal,operating,300
+G100000101212,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,José López Portillo power station,L100000104797,coal,operating,300
+G100000101213,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carbón II power station,L100000103029,coal,operating,350
+G100000101214,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carbón II power station,L100000103029,coal,operating,350
+G100000101215,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carbón II power station,L100000103029,coal,operating,350
+G100000101216,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carbón II power station,L100000103029,coal,operating,350
+G100000103061,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,GMéxico Project,L100000103030,coal,cancelled,450
+G100000107715,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,operating,678
+G100000107716,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,cancelled,700
+G100000107717,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,cancelled,700
+G100000107934,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,operating,350
+G100000107935,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,operating,350
+G100000107936,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,operating,350
+G100000107937,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,operating,350
+G100000107938,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,operating,350
+G100000107939,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Petacalco power station,L100000103031,coal,operating,350
+G100000114955,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Coahuila power station,L100000104792,coal,cancelled,700
+G100000114956,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Coahuila power station,L100000104792,coal,cancelled,700
+G100000200390,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio Adolfo López Mateos power station,L100000200351,bioenergy,operating,50
+G100000200391,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio La Gloria power station,L100000200352,bioenergy,operating,45
+G100000200392,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio Pánuco power station,L100000200353,bioenergy,operating,40
+G100000200393,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio San Miguel del Naranjo power station,L100000200354,bioenergy,operating,49
+G100000200394,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Rafael de Pucté power station,L100000200355,bioenergy,operating,49
+G100000200395,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tres Valles power station,L100000200356,bioenergy,operating,40
+G100000200415,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,PTAR Atotonilco power station,L100000200375,bioenergy,operating,33
+G100000201570,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tampico Renewable Energy Tamaulipas power station,L100000201315,bioenergy,construction,74
+G100000401020,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamazunchale II power station,L100000406660,oil/gas,operating,514
+G100000401021,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Lerdo power station,L100000406657,oil/gas,construction,363.4
+G100000401022,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCC Norte-III power station,L100000406656,oil/gas,operating,453
+G100000401023,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCC Norte-III power station,L100000406656,oil/gas,operating,453
+G100000401024,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Prenergy El Salto power station,L100000406662,oil/gas,cancelled,1000
+G100000401025,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Topolobampo II power station,L100000406663,oil/gas,operating,458.5
+G100000401026,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tierra Mojada power station,L100000406659,oil/gas,operating,874
+G100000401028,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Carmen Nuevo Leon power station,L100000406652,oil/gas,operating,866
+G100000401029,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Noreste (Escobedo) power station,L100000406664,oil/gas,operating,878
+G100000401034,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,EVM-II power station,L100000406666,oil/gas,operating,850
+G100000401035,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Topolobampo III power station,L100000406658,oil/gas,operating,766
+G100000401036,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cogen Salamanca power station,L100000406199,oil/gas,operating,393
+G100000401038,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cogen Altamira power station,L100000406655,oil/gas,operating,414
+G100000401039,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ranman WTC power station,L100000406665,oil/gas,cancelled,343
+G100000401040,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Quirey Cogen power station,L100000406661,oil/gas,cancelled,100
+G100000401674,energy_plants_gem_units,MEX,point,USA,,,,,,,false,abf-boundaries-v0.2.0,Silas Ray power station,L100000401753,oil/gas,operating,75
+G100000402535,energy_plants_gem_units,MEX,point,USA,,,,,,,false,abf-boundaries-v0.2.0,Silas Ray power station,L100000401753,oil/gas,operating,61
+G100000403287,energy_plants_gem_units,MEX,point,USA,,,,,,,false,abf-boundaries-v0.2.0,Laredo power station,L100000402153,oil/gas,operating,132
+G100000403288,energy_plants_gem_units,MEX,point,USA,,,,,,,false,abf-boundaries-v0.2.0,Laredo power station,L100000402153,oil/gas,operating,132
+G100000406382,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Norte II power station,L100000406237,oil/gas,operating,433
+G100000406384,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Norte Durango power station,L100000406236,oil/gas,operating,570
+G100000406385,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Naco Nogales power station,L100000406219,oil/gas,operating,364
+G100000406387,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Caridad power station,L100000406233,oil/gas,operating,258.1
+G100000406388,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Caridad power station,L100000406233,oil/gas,operating,258.1
+G100000406390,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manzanillo (Manuel Álvarez Moreno) power station,L100000406229,oil/gas,operating,727
+G100000406391,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manzanillo (Manuel Álvarez Moreno) power station,L100000406229,oil/gas,operating,727
+G100000406393,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Rosita power station,L100000406227,oil/gas,operating,1068
+G100000406394,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Rosita power station,L100000406227,oil/gas,operating,337
+G100000406395,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Juandhó power station,L100000406648,oil/gas,cancelled,650
+G100000406396,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Jorge Luque power station,L100000406281,oil/gas,construction,115
+G100000406397,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Huinalá CC power station,L100000406674,oil/gas,operating,459
+G100000406398,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Huinalá CC power station,L100000406674,oil/gas,operating,378
+G100000406399,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Hermosillo power station,L100000406221,oil/gas,operating,227
+G100000406400,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,GP Energía power station,L100000406279,oil/gas,cancelled,240
+G100000406401,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC González Ortega power station,L100000406420,oil/gas,operating,768.8
+G100000406402,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Gómez Palacio power station,L100000406220,oil/gas,operating,239.8
+G100000406403,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Hermosillo Fuerza y Energía power station,L100000406218,oil/gas,operating,250
+G100000406405,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energy Legacy power station,L100000406274,oil/gas,cancelled,368
+G100000406406,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energía de Celaya power station,L100000406272,oil/gas,cancelled,1617
+G100000406408,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Empalme II power station,L100000406676,oil/gas,operating,791
+G100000406409,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Empalme I power station,L100000406209,oil/gas,operating,770
+G100000406410,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Sauz power station,L100000406207,oil/gas,operating,386
+G100000406411,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Sauz power station,L100000406207,oil/gas,operating,205
+G100000406413,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dos Bocas power station,L100000406204,oil/gas,operating,226
+G100000406414,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dos Bocas power station,L100000406204,oil/gas,operating,226
+G100000406415,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Chihuahua II (El Encino) power station,L100000406198,oil/gas,operating,619
+G100000406416,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Chihuahua III power station,L100000406682,oil/gas,operating,327
+G100000406417,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Campeche power station,L100000406193,oil/gas,operating,275
+G100000406418,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bajío power station,L100000406191,oil/gas,operating,728
+G100000406419,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Poza Rica power station,L100000406242,oil/gas,operating,232
+G100000406420,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Polo I power station,L100000406298,oil/gas,cancelled,150
+G100000406421,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Aguaprieta power station,L100000406284,oil/gas,cancelled,607.5
+G100000406422,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Presidente Juárez power station,L100000406243,oil/gas,operating,160
+G100000406423,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tajín Energía power station,L100000406305,oil/gas,cancelled,1146
+G100000406424,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC San Luis Río Colorado power station,L100000406251,oil/gas,construction,648
+G100000406425,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC San Luis Potosí power station,L100000406250,oil/gas,operating,437.2
+G100000406426,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Luis de la Paz power station,L100000406215,oil/gas,operating,242
+G100000406427,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Lorenzo Potencia power station,L100000406249,oil/gas,operating,382
+G100000406428,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Samalayuca power station,L100000406681,oil/gas,operating,174
+G100000406430,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Saltillo power station,L100000406247,oil/gas,operating,247.5
+G100000406431,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Salamanca power station,L100000406246,oil/gas,operating,927.1
+G100000406432,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cancún II (Riviera Maya) power station,L100000406195,oil/gas,cancelled,752
+G100000406433,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valladolid III power station,L100000406261,oil/gas,operating,525
+G100000406434,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Riviera Maya (Valladolid) power station,L100000406422,oil/gas,construction,1131.9
+G100000406435,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuxpan V power station,L100000406260,oil/gas,operating,495
+G100000406436,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuxpan III and IV power station,L100000406259,oil/gas,operating,590
+G100000406437,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuxpan III and IV power station,L100000406259,oil/gas,operating,590
+G100000406438,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuxpan II power station,L100000406258,oil/gas,operating,495
+G100000406439,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCC Tuxpan I power station,L100000406257,oil/gas,construction,1151.3
+G100000406440,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,retired,244
+G100000406441,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,retired,245
+G100000406442,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tractebel Monterrey power station,L100000406255,oil/gas,operating,284
+G100000406443,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Energía Infra cogeneration power station,L100000406273,oil/gas,operating,145
+G100000406453,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Complejo Petroquímico Morelos power station,L100000406241,oil/gas,operating,172
+G100000406454,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Complejo Petroquímico Independencia power station,L100000406289,oil/gas,operating,54
+G100000406455,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Complejo Petroquímico Cosoleacaque power station,L100000406288,oil/gas,operating,59.6
+G100000406456,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cogeneración Cangrejera power station,L100000406240,oil/gas,operating,163.5
+G100000406457,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Compañía de Nitrógeno de Cantarell power station,L100000406202,oil/gas,operating,362.6
+G100000406464,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Pesquería power station,L100000406196,oil/gas,operating,900
+G100000406466,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Ramones power station,L100000406282,oil/gas,operating,277
+G100000406467,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Deacero power station,L100000406214,oil/gas,operating,200
+G100000406468,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Potosino power station,L100000406271,oil/gas,cancelled,300
+G100000406470,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cancún I power station,L100000406194,oil/gas,operating,14
+G100000406471,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Braskem Idesa power station,L100000406192,oil/gas,operating,175.6
+G100000406472,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Acc4t power station,L100000406264,oil/gas,cancelled,696
+G100000406473,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Abent 3t power station,L100000406263,oil/gas,operating,266
+G100000406474,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cogeneración Tula power station,L100000406201,oil/gas,announced,794
+G100000406475,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Felipe Carrillo Puerto power station,L100000406217,oil/gas,operating,220
+G100000406476,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Emilio Portes Gil power station,L100000406208,oil/gas,operating,211
+G100000406477,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Emilio Portes Gil power station,L100000406208,oil/gas,operating,300
+G100000406478,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Mérida III power station,L100000406231,oil/gas,operating,505
+G100000406479,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Río Bravo IV (Valle Hermoso) power station,L100000406678,oil/gas,operating,500
+G100000406480,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Río Bravo III (Lomas del Real) power station,L100000406679,oil/gas,operating,495
+G100000406481,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Río Bravo II (Anahuac) power station,L100000406245,oil/gas,operating,495
+G100000406483,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Refinería Miguel Hidalgo power station,L100000406287,oil/gas,operating,133.7
+G100000406484,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Refinería Hector Lara Sosa power station,L100000406295,oil/gas,operating,79
+G100000406485,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Refinería General Lázaro Cárdenas power station,L100000406293,oil/gas,operating,64
+G100000406486,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Refinería Francisco Madero power station,L100000406292,oil/gas,operating,129
+G100000406488,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Refinería Antonio Dovalí Jaime power station,L100000406294,oil/gas,operating,115
+G100000406489,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Generadora Pondercel power station,L100000406277,oil/gas,operating,65
+G100000406491,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG Tijuana power station,L100000406254,oil/gas,operating,171
+G100000406492,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ternium Monterrey power station,L100000406297,oil/gas,operating,50
+G100000406495,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valle de México power station,L100000406262,oil/gas,operating,615
+G100000406496,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valle de México power station,L100000406262,oil/gas,operating,549
+G100000406497,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Samalayuca power station,L100000406681,oil/gas,operating,158
+G100000406498,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Salamanca CFE power station,L100000406267,oil/gas,operating,300
+G100000406499,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Libertad power station,L100000406300,oil/gas,operating,158
+G100000406500,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Mérida power station,L100000406230,oil/gas,operating,564.6
+G100000406501,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manzanillo (Manuel Álvarez Moreno) power station,L100000406229,oil/gas,operating,350
+G100000406502,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manzanillo (Manuel Álvarez Moreno) power station,L100000406229,oil/gas,operating,350
+G100000406503,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Juan de Dios Bátiz Paredes power station,L100000406647,oil/gas,operating,160
+G100000406504,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Juan de Dios Bátiz Paredes power station,L100000406647,oil/gas,operating,160
+G100000406505,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Josè Aceves Pozos power station,L100000406646,oil/gas,operating,300
+G100000406506,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,mothballed,330
+G100000406507,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dulces Nombres (Monterrey) power station,L100000406206,oil/gas,operating,252
+G100000406508,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dulces Nombres (Monterrey) power station,L100000406206,oil/gas,operating,252
+G100000406509,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Centro Morelos (Huexca) power station,L100000406197,oil/gas,operating,656
+G100000406510,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Baja California Sur power station,L100000406421,oil/gas,shelved,164
+G100000406511,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Baja California III power station,L100000406189,oil/gas,operating,324
+G100000406513,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira V power station,L100000406186,oil/gas,operating,577
+G100000406514,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira V power station,L100000406186,oil/gas,operating,578
+G100000406515,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira III and IV power station,L100000406185,oil/gas,operating,548
+G100000406516,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira III and IV power station,L100000406185,oil/gas,operating,548
+G100000406517,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Agua Prieta II power station,L100000406182,oil/gas,operating,409
+G100000406518,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dulces Nombres II power station,L100000406205,oil/gas,operating,300
+G100000406519,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dulces Nombres (Monterrey) power station,L100000406206,oil/gas,operating,252
+G100000406520,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dulces Nombres (Monterrey) power station,L100000406206,oil/gas,operating,252
+G100000406521,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tamazunchale power station,L100000406252,oil/gas,operating,589.5
+G100000406522,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tamazunchale power station,L100000406252,oil/gas,operating,589.5
+G100000406524,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Laguna II power station,L100000406224,oil/gas,operating,537
+G100000406525,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ramos cogeneration power station,L100000406244,oil/gas,operating,52
+G100000406527,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Enertek cogeneration power station,L100000406216,oil/gas,operating,144
+G100000406528,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cydsa cogeneration Plant,L100000406203,oil/gas,operating,57
+G100000406529,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cydsa cogeneration Plant,L100000406203,oil/gas,operating,57
+G100000406530,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CELCSA cogeneration power station,L100000406200,oil/gas,operating,104
+G100000406531,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bajío cogeneration power station,L100000406190,oil/gas,operating,52
+G100000406532,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Termoelectrica de Mexicali power station,L100000406253,oil/gas,operating,625
+G100000406533,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira II power station,L100000406184,oil/gas,operating,495
+G100000406944,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valle de México power station,L100000406262,oil/gas,retired,150
+G100000406945,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valle de México power station,L100000406262,oil/gas,retired,150
+G100000406946,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valle de México power station,L100000406262,oil/gas,retired,150
+G100000406947,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dos Bocas II power station,L100000406698,oil/gas,cancelled,1115.8
+G100000406948,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cogeneración Salina Cruz power station,L100000406697,oil/gas,announced,728
+G100000406949,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cogeneración Minatitlán power station,L100000406696,oil/gas,cancelled,870
+G100000406950,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cogen Altamira power station,L100000406655,oil/gas,cancelled,414
+G100000406951,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cactus Cogen power station,L100000406695,oil/gas,cancelled,530
+G100000406952,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira Dynasol cogeneration power station,L100000406694,oil/gas,operating,57
+G100000409736,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Amaunet power station,L100000407524,oil/gas,operating,135
+G100000410196,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Merida Kanasín CC power station,L100000407733,oil/gas,cancelled,573
+G100000410203,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC El Sauz II power station,L100000407736,oil/gas,operating,246.2
+G100000410814,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,construction,930
+G100000410815,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,operating,283
+G100000410816,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,operating,284
+G100000410817,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,mothballed,300
+G100000410818,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,mothballed,322
+G100000410819,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,operating,323
+G100000410820,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tula power station,L100000406256,oil/gas,mothballed,330
+G100000410821,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Salamanca CFE power station,L100000406267,oil/gas,operating,250
+G100000410822,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Ramones power station,L100000406282,oil/gas,operating,277
+G100000411135,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Atlantica Nuevo Pemex cogen power station,L100000408040,oil/gas,operating,150
+G100000411136,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Atlantica Nuevo Pemex cogen power station,L100000408040,oil/gas,operating,150
+G100000411235,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valle de México power station,L100000406262,oil/gas,shelved,397
+G100000411236,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tecate CC power station,L100000408036,oil/gas,shelved,150
+G100000411237,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Samalayuca power station,L100000406681,oil/gas,operating,158
+G100000411238,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Libertad power station,L100000406300,oil/gas,operating,158
+G100000411239,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Libertad power station,L100000406300,oil/gas,operating,158
+G100000411240,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Libertad power station,L100000406300,oil/gas,operating,158
+G100000411241,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Presidente Juárez power station,L100000406243,oil/gas,operating,265
+G100000411242,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Presidente Juárez power station,L100000406243,oil/gas,operating,248
+G100000411243,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Presidente Juárez power station,L100000406243,oil/gas,operating,262
+G100000411244,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Presidente Juárez power station,L100000406243,oil/gas,operating,160
+G100000411245,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manzanillo (Manuel Álvarez Moreno) power station,L100000406229,oil/gas,operating,346.1
+G100000411246,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cogeneración Refinería Olmeca Dos Bocas,L100000408037,oil/gas,construction,341
+G100000411247,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Baja California IV power station,L100000408038,oil/gas,cancelled,588
+G100000411990,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Villa de Reyes power station,L100000408605,oil/gas,operating,350
+G100000411991,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Villa de Reyes power station,L100000408605,oil/gas,operating,350
+G100000411994,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Parque Industrial power plant,L100000408606,oil/gas,operating,220
+G100000411995,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mexicali Oriente power plant,L100000408607,oil/gas,operating,441.6
+G100000411996,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manzanillo (Manuel Álvarez Moreno) power station,L100000406229,oil/gas,operating,300
+G100000411997,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manzanillo (Manuel Álvarez Moreno) power station,L100000406229,oil/gas,operating,300
+G100000411998,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Adolfo López Mateos power station,L100000408661,oil/gas,operating,350
+G100000411999,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Adolfo López Mateos power station,L100000408661,oil/gas,operating,350
+G100000412000,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Adolfo López Mateos power station,L100000408661,oil/gas,operating,350
+G100000412001,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Adolfo López Mateos power station,L100000408661,oil/gas,operating,350
+G100000412002,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Adolfo López Mateos power station,L100000408661,oil/gas,operating,350
+G100000412003,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Adolfo López Mateos power station,L100000408661,oil/gas,operating,350
+G100000413076,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Francisco Villa power station,L100000408888,oil/gas,operating,150
+G100000413077,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Francisco Villa power station,L100000408888,oil/gas,operating,150
+G100000413078,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Guadalupe Victoria power station,L100000408889,oil/gas,operating,160
+G100000413079,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Guadalupe Victoria power station,L100000408889,oil/gas,operating,160
+G100000413080,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Josè Aceves Pozos power station,L100000406646,oil/gas,operating,158
+G100000413081,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Josè Aceves Pozos power station,L100000406646,oil/gas,operating,158
+G100000413091,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Samalayuca power station,L100000406681,oil/gas,operating,174
+G100000413092,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Samalayuca power station,L100000406681,oil/gas,operating,174
+G100000413093,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Topolobampo II power station,L100000406663,oil/gas,operating,458.5
+G100000413094,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100000413095,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100000413096,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira power station,L100000408887,oil/gas,operating,250
+G100000413097,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira power station,L100000408887,oil/gas,operating,250
+G100000500372,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Laguna Verde nuclear power plant,L100000500160,nuclear,operating,805
+G100000500373,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Laguna Verde nuclear power plant,L100000500160,nuclear,operating,803
+G100000501223,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Laguna Verde nuclear power plant,L100000500160,nuclear,cancelled,1400
+G100000501224,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Laguna Verde nuclear power plant,L100000500160,nuclear,cancelled,1400
+G100000602494,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Aguamilpa Solidaridad hydroelectric plant,L100000602463,hydropower,operating,960
+G100000602495,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Alfredo Elías Ayub hydroelectric plant,L100000602464,hydropower,operating,750
+G100000602496,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ángel Albino Corzo hydroelectric plant,L100000602465,hydropower,operating,420
+G100000602497,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bacurato hydroelectric plant,L100000602466,hydropower,operating,92
+G100000602498,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Belisario Domínguez hydroelectric plant,L100000602467,hydropower,operating,900
+G100000602499,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carlos Ramírez Ulloa hydroelectric plant,L100000602468,hydropower,operating,600
+G100000602500,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Chicoasén 2 hydroelectric plant,L100000602469,hydropower,construction,240
+G100000602502,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Fernando Hiriart Balderrama hydroelectric plant,L100000602471,hydropower,operating,292
+G100000602503,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Humaya hydroelectric plant,L100000602472,hydropower,operating,90
+G100000602504,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Infiernillo hydroelectric plant,L100000602473,hydropower,operating,1200
+G100000602506,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Villita hydroelectric plant,L100000602475,hydropower,operating,320
+G100000602508,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Leonardo Rodríguez Alcaine hydroelectric plant,L100000602477,hydropower,operating,750
+G100000602509,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Luis Donaldo Colosio hydroelectric plant,L100000602478,hydropower,operating,422
+G100000602510,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Malpaso hydroelectric plant (Mexico),L100000602479,hydropower,operating,1080
+G100000602511,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manuel Moreno Torres hydroelectric plant,L100000602480,hydropower,operating,2400
+G100000602512,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Mazatepec hydroelectric plant,L100000602481,hydropower,operating,220
+G100000602513,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Necaxa hydroelectric plant,L100000602482,hydropower,operating,109
+G100000602515,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Plutarco Elías Calles hydroelectric plant,L100000602484,hydropower,operating,135
+G100000602516,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Raúl J. Marsal hydroelectric plant,L100000602485,hydropower,operating,100
+G100000602517,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Temascal hydroelectric plant,L100000602486,hydropower,operating,354
+G100000602519,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Valentín Gómez Farías hydroelectric plant,L100000602488,hydropower,operating,240
+G100000604368,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Naranjal hydroelectric plant,L100000602470,hydropower,cancelled,370
+G100000604530,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Parota hydroelectric plant,L100000602474,hydropower,cancelled,900
+G100000604542,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Cruces hydroelectric plant,L100000602476,hydropower,cancelled,240
+G100000604711,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Paso De La Reina hydroelectric plant,L100000602483,hydropower,cancelled,510
+G100000604878,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tenosique hydroelectric plant,L100000602487,hydropower,cancelled,420
+G100000700038,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 1 geothermal power plant,L100000700027,geothermal,retired,38
+G100000700039,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 1 geothermal power plant,L100000700027,geothermal,retired,38
+G100000700040,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 1 geothermal power plant,L100000700027,geothermal,retired,38
+G100000700041,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 1 geothermal power plant,L100000700027,geothermal,retired,38
+G100000700042,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 1 geothermal power plant,L100000700027,geothermal,operating,30
+G100000700043,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 2 geothermal power plant,L100000700028,geothermal,operating,110
+G100000700044,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 2 geothermal power plant,L100000700028,geothermal,operating,110
+G100000700045,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 3 geothermal power plant,L100000700029,geothermal,operating,110
+G100000700046,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 3 geothermal power plant,L100000700029,geothermal,operating,110
+G100000700047,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 5 geothermal power plant,L100000700030,geothermal,operating,50
+G100000700048,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 5 geothermal power plant,L100000700030,geothermal,operating,50
+G100000700145,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Azufres geothermal power plant,L100000700089,geothermal,operating,50
+G100000700392,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 4 geothermal power plant,L100000700221,geothermal,operating,25
+G100000700393,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 4 geothermal power plant,L100000700221,geothermal,operating,25
+G100000700394,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 4 geothermal power plant,L100000700221,geothermal,operating,25
+G100000700395,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cerro Prieto 4 geothermal power plant,L100000700221,geothermal,operating,25
+G100000700396,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Azufres geothermal power plant,L100000700089,geothermal,operating,26
+G100000700397,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Azufres geothermal power plant,L100000700089,geothermal,operating,26
+G100000700398,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Azufres geothermal power plant,L100000700089,geothermal,operating,26
+G100000700399,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Azufres geothermal power plant,L100000700089,geothermal,operating,27
+G100000700400,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Azufres geothermal power plant,L100000700089,geothermal,operating,5
+G100000700401,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Humeros 2 geothermal power plant,L100000700222,geothermal,operating,25
+G100000700402,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Humeros 2 geothermal power plant,L100000700222,geothermal,operating,25
+G100000700403,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Humeros 3 geothermal power plant,L100000700223,geothermal,operating,25
+G100000700404,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Humeros 3 geothermal power plant,L100000700223,geothermal,cancelled,25
+G100000807980,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Laguna Solar Park,L100000806956,utility-scale solar,operating,101.1
+G100000807995,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Libertad Solar Park Project,L100000806970,utility-scale solar,operating,180
+G100000807996,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Libertad Solar Park Project,L100000806970,utility-scale solar,operating,138
+G100000807997,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ahome solar farm,L100000806971,utility-scale solar,cancelled,30
+G100000808010,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Aleph Sonora solar farm,L100000806979,utility-scale solar,cancelled,180
+G100000808011,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alten Solem solar farm,L100000806980,utility-scale solar,operating,180
+G100000808012,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alten Solem solar farm,L100000806980,utility-scale solar,operating,168
+G100000808013,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Lázaro Cárdenas solar farm,L100000806981,utility-scale solar,operating,38
+G100000808022,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Aparse Sonora solar farm,L100000806989,utility-scale solar,shelved,24
+G100000808031,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Arenugal PV Solar Park,L100000806993,utility-scale solar,cancelled,33
+G100000808032,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Baca solar farm,L100000806994,utility-scale solar,cancelled,30
+G100000808033,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuerámaro solar farm,L100000806995,utility-scale solar,cancelled,30
+G100000808034,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Camargo solar farm,L100000806996,utility-scale solar,operating,30
+G100000808035,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,AT Solar Park,L100000806997,utility-scale solar,operating,180
+G100000808036,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Atlacomulco Solar Project,L100000806998,utility-scale solar,construction,113
+G100000808064,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Guajiro Solar Plant,L100000807011,utility-scale solar,operating,129.5
+G100000808085,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Avant Energías Renovables solar farm,L100000807016,utility-scale solar,operating,36
+G100000808086,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Luis Potosí PV solar farm,L100000807017,utility-scale solar,operating,39
+G100000808087,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Camargo solar farm,L100000806996,utility-scale solar,operating,36
+G100000808088,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Energía Limpia De La Laguna solar farm,L100000807018,utility-scale solar,operating,35
+G100000808091,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Aguascalientes Potencia PV Solar Park,L100000807021,utility-scale solar,operating,68
+G100000808094,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Villa Ahumada solar farm,L100000807023,utility-scale solar,operating,150
+G100000808095,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Villa Ahumada solar farm,L100000807023,utility-scale solar,shelved,200
+G100000808096,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bocas Solar Plant Durango,L100000807024,utility-scale solar,cancelled,31
+G100000808097,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bocas Solar Plant San Luis Potosí,L100000807025,utility-scale solar,operating,30
+G100000808098,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bocas Solar Plant Central Sonora,L100000807026,utility-scale solar,operating,30
+G100000808124,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ojocaliente solar farm,L100000807033,utility-scale solar,shelved,103
+G100000808161,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Border Solar Norte solar farm,L100000807052,utility-scale solar,operating,150
+G100000808172,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Peñasco Solar Project,L100000807055,utility-scale solar,operating,120
+G100000808173,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Chona solar farm,L100000807056,utility-scale solar,operating,172
+G100000808177,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ciudad Hidalgo PV solar farm,L100000807058,utility-scale solar,cancelled,30
+G100000808198,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cerro Prieto Solar Project,L100000807073,utility-scale solar,construction,150
+G100000808199,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cerro Prieto Solar Project,L100000807073,utility-scale solar,pre_construction,200
+G100000808217,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Controladora De Renovables solar farm,L100000807079,utility-scale solar,cancelled,30
+G100000808230,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Crison Jimenez solar farm,L100000807083,utility-scale solar,cancelled,30
+G100000808231,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Crison San Luis De La Paz solar farm,L100000807084,utility-scale solar,cancelled,30
+G100000808233,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Caborca solar farm,L100000807086,utility-scale solar,cancelled,30
+G100000808234,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Casas Grandes solar farm,L100000807087,utility-scale solar,cancelled,30
+G100000808235,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Ciudad Obregon solar farm,L100000807088,utility-scale solar,cancelled,30
+G100000808236,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Ezequiel Montes solar farm,L100000807089,utility-scale solar,cancelled,30
+G100000808237,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Fresnillo solar farm,L100000807090,utility-scale solar,cancelled,30
+G100000808238,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Hermosillo solar farm,L100000807091,utility-scale solar,cancelled,30
+G100000808239,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Los Mochis solar farm,L100000807092,utility-scale solar,cancelled,30
+G100000808240,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Mexicali solar farm,L100000807093,utility-scale solar,cancelled,30
+G100000808241,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Parral solar farm,L100000807094,utility-scale solar,cancelled,30
+G100000808242,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Penasco solar farm,L100000807095,utility-scale solar,cancelled,30
+G100000808243,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro San Juan Del Rio solar farm,L100000807096,utility-scale solar,cancelled,30
+G100000808244,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro San Luis Potosi solar farm,L100000807097,utility-scale solar,cancelled,30
+G100000808245,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuatro Tepeji Del Rio solar farm,L100000807098,utility-scale solar,cancelled,30
+G100000808246,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Solem Solar Power Plant,L100000807099,utility-scale solar,operating,150
+G100000808247,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Solem Solar Power Plant,L100000807099,utility-scale solar,operating,140
+G100000808252,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Palma Loca solar farm,L100000807104,utility-scale solar,operating,467
+G100000808254,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Solar Pinos solar farm,L100000807106,utility-scale solar,shelved,298
+G100000808255,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Degollado Aljaval solar farm,L100000807107,utility-scale solar,operating,384
+G100000808256,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Castaños Aljaval solar farm,L100000807108,utility-scale solar,operating,340
+G100000808257,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Saltillo Aljaval solar farm,L100000807109,utility-scale solar,cancelled,112
+G100000808258,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Gomez Farias Solar Park,L100000807110,utility-scale solar,shelved,99
+G100000808261,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Luis Potosí PV solar farm,L100000807017,utility-scale solar,pre_construction,1100
+G100000808263,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaixo Solar Park,L100000807113,utility-scale solar,operating,30
+G100000808280,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bluemex Power Solar Project,L100000807127,utility-scale solar,operating,120
+G100000808345,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Magdalena solar farm,L100000807150,utility-scale solar,operating,220
+G100000808346,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Jose Solar Plant,L100000807151,utility-scale solar,operating,250
+G100000808347,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Jose Solar Plant,L100000807151,utility-scale solar,operating,22
+G100000808348,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Villanueva Solar Park,L100000807152,utility-scale solar,operating,363
+G100000808349,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Villanueva Solar Park,L100000807152,utility-scale solar,operating,275
+G100000808439,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ahumada solar farm,L100000807186,utility-scale solar,operating,30
+G100000808440,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ahumada solar farm,L100000807186,utility-scale solar,operating,30
+G100000808441,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ahumada solar farm,L100000807186,utility-scale solar,operating,30
+G100000808442,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ahumada solar farm,L100000807186,utility-scale solar,operating,30
+G100000808443,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ahumada solar farm,L100000807186,utility-scale solar,operating,30
+G100000808446,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Andrés Quintana Roo Solar Park,L100000807189,utility-scale solar,cancelled,59
+G100000808448,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alaia Solar Park,L100000807191,utility-scale solar,construction,30
+G100000808449,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alaia Solar Park,L100000807191,utility-scale solar,construction,30
+G100000808450,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alaia Solar Park,L100000807191,utility-scale solar,construction,30
+G100000808451,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alaia Solar Park,L100000807191,utility-scale solar,construction,30
+G100000808452,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar Energy Of Hermosillo solar farm,L100000807192,utility-scale solar,cancelled,36
+G100000808453,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar Energy Of Hermosillo solar farm,L100000807192,utility-scale solar,cancelled,36
+G100000808461,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Nueva Xcala PV Solar Park,L100000807198,utility-scale solar,operating,200
+G100000808471,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Sol De Insurgentes solar farm,L100000807205,utility-scale solar,operating,27.8
+G100000808473,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Las Animas Solar Power Plant,L100000807207,utility-scale solar,operating,58
+G100000808474,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Versailles Cuatas solar farm,L100000807208,utility-scale solar,operating,22.5
+G100000808475,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,6.2
+G100000808476,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,23
+G100000808477,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,15
+G100000808478,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,30
+G100000808479,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Trinidad solar farm,L100000807210,utility-scale solar,operating,50
+G100000808480,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Trinidad solar farm,L100000807210,utility-scale solar,operating,30
+G100000808481,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Trinidad solar farm,L100000807210,utility-scale solar,cancelled,118
+G100000808482,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Marcos PV solar farm,L100000807211,utility-scale solar,cancelled,33
+G100000808500,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cola De León PV solar farm,L100000807221,utility-scale solar,shelved,150
+G100000808501,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Fernando PV solar farm,L100000807222,utility-scale solar,operating,150.1
+G100000808527,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ranchito Sur solar farm,L100000807226,utility-scale solar,operating,25
+G100000808531,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Potrero solar farm,L100000807230,utility-scale solar,operating,296
+G100000808532,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Potosi solar farm,L100000807231,utility-scale solar,operating,342
+G100000808541,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Garambullo solar farm,L100000807236,utility-scale solar,cancelled,30
+G100000808542,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Aura Solar,L100000807237,utility-scale solar,operating,27.6
+G100000808543,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Aura Solar,L100000807237,utility-scale solar,operating,32
+G100000808599,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Salsipuedes PV solar farm,L100000807254,utility-scale solar,operating,30
+G100000808600,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Gransolar Jalisco solar farm,L100000807255,utility-scale solar,cancelled,20
+G100000808601,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Gransolar Ocotlan solar farm,L100000807256,utility-scale solar,cancelled,30
+G100000808612,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Miguel De Allende Solar Photovoltaic Plant,L100000807263,utility-scale solar,operating,35
+G100000808616,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Baja California Sur Grupotec PV solar farm,L100000807267,utility-scale solar,operating,30
+G100000808626,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Helios solar farm (Mexico),L100000807272,utility-scale solar,operating,150
+G100000808627,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuli solar farm,L100000807273,utility-scale solar,operating,165
+G100000808628,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Trompezón solar farm,L100000807274,utility-scale solar,operating,126
+G100000808629,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Abril Photovoltaic Solar Project,L100000807275,utility-scale solar,operating,134.6
+G100000808631,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cuyoaco solar farm,L100000807277,utility-scale solar,operating,220.8
+G100000808632,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Galeana PV solar farm,L100000807278,utility-scale solar,cancelled,50
+G100000808633,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Hermosillo PV Solar Park,L100000807279,utility-scale solar,operating,100
+G100000808634,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Santiago Arriaga PV Solar Park,L100000807280,utility-scale solar,operating,200
+G100000808635,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Apaxco solar farm,L100000807281,utility-scale solar,shelved,112
+G100000808637,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Rumorosa Solar Project,L100000807283,utility-scale solar,operating,41
+G100000808638,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tepezalá Solar Project,L100000807284,utility-scale solar,operating,100
+G100000808639,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Pima Solar Project,L100000807285,utility-scale solar,operating,110
+G100000808640,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Diego solar farm,L100000807286,utility-scale solar,operating,125
+G100000808648,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Merida Isofoton solar farm,L100000807293,utility-scale solar,cancelled,150
+G100000808649,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Isolbaja PV solar farm,L100000807294,utility-scale solar,cancelled,30
+G100000808651,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Alejo Central Photovoltaic Solar Plant,L100000807296,utility-scale solar,operating,21
+G100000808675,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Concunul Yucatan Solar Park,L100000807300,utility-scale solar,operating,70
+G100000808680,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Koala solar farm,L100000807302,utility-scale solar,cancelled,55
+G100000808681,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Mayo Photovoltaic solar farm,L100000807303,utility-scale solar,operating,126
+G100000808682,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Horus Photovoltaic solar farm,L100000807304,utility-scale solar,operating,119
+G100000808683,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tastiota Photovoltaic solar farm,L100000807305,utility-scale solar,operating,125
+G100000808684,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Fátima PV solar farm,L100000807306,utility-scale solar,shelved,103
+G100000808685,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kronos Santa Barbara solar farm,L100000807307,utility-scale solar,cancelled,32
+G100000808686,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kronos Solar Park One Bufalo,L100000807308,utility-scale solar,cancelled,98
+G100000808723,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Coahuila Solar Park,L100000807325,utility-scale solar,operating,19.8
+G100000808751,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,México Lindo solar farm,L100000807341,utility-scale solar,shelved,81.9
+G100000808752,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,México Lindo solar farm,L100000807341,utility-scale solar,shelved,175
+G100000808753,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Yermo Solar Park,L100000807342,utility-scale solar,shelved,158
+G100000808765,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Betria PV solar farm,L100000807349,utility-scale solar,cancelled,63
+G100000808767,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Pachamama PV Solar Power Plant,L100000807350,utility-scale solar,operating,375
+G100000808768,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Llano PV Solar Installation,L100000807351,utility-scale solar,operating,375
+G100000808769,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Galeana solar farm,L100000807352,utility-scale solar,cancelled,30
+G100000808776,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Lucha Solar Project,L100000807356,utility-scale solar,operating,130
+G100000808777,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Estado De México solar farm,L100000807357,utility-scale solar,cancelled,30
+G100000808778,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Sonora solar farm,L100000807358,utility-scale solar,cancelled,30
+G100000808779,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Zacatecas solar farm,L100000807359,utility-scale solar,cancelled,30
+G100000808816,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Anivacachi PV Solar Park,L100000807367,utility-scale solar,cancelled,30
+G100000808817,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Anivacachi PV Solar Park,L100000807367,utility-scale solar,cancelled,30
+G100000808818,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Anivacachi PV Solar Park,L100000807367,utility-scale solar,cancelled,30
+G100000808819,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Anivacachi PV Solar Park,L100000807367,utility-scale solar,cancelled,30
+G100000808825,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Castillo PV Solar Park,L100000807373,utility-scale solar,cancelled,21
+G100000808826,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Galápago Solar Park,L100000807374,utility-scale solar,cancelled,30
+G100000808827,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Independencia Solar Park,L100000807375,utility-scale solar,cancelled,30
+G100000808828,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Lomas De Ocampo solar farm,L100000807376,utility-scale solar,cancelled,33
+G100000808829,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Lomas De Ocampo solar farm,L100000807376,utility-scale solar,cancelled,33
+G100000808830,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Lomas De Ocampo solar farm,L100000807376,utility-scale solar,cancelled,33
+G100000808831,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ojuelos Solar Park,L100000807377,utility-scale solar,cancelled,30
+G100000808836,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alchichica Solar Plant,L100000807382,utility-scale solar,shelved,280
+G100000808837,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Pollux Solar Plant,L100000807383,utility-scale solar,operating,29.9
+G100000808838,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tampico Proteus Solar Plant,L100000807384,utility-scale solar,operating,60
+G100000808839,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tampico PV solar farm,L100000807385,utility-scale solar,operating,30
+G100000808843,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Adanarg PV solar farm,L100000807389,utility-scale solar,cancelled,33
+G100000808845,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Villa De Reyes San Luis Potosí solar farm,L100000807391,utility-scale solar,cancelled,30
+G100000808846,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Carbonera Ojo De Agua solar farm,L100000807392,utility-scale solar,operating,37.4
+G100000808854,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Querétaro solar farm,L100000807398,utility-scale solar,cancelled,30
+G100000808855,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central San Luis Potosí solar farm,L100000807399,utility-scale solar,cancelled,30
+G100000808856,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Quinto Sol Chihuahua solar farm,L100000807400,utility-scale solar,cancelled,30
+G100000808860,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Rancho El Trece PV solar farm,L100000807403,utility-scale solar,operating,30
+G100000808861,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Calera solar farm,L100000807404,utility-scale solar,operating,80
+G100000808863,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Carmen Aljaval solar farm,L100000807406,utility-scale solar,operating,223
+G100000808865,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Rho Comondu solar farm,L100000807408,utility-scale solar,cancelled,30
+G100000808896,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Pasión PV solar farm,L100000807415,utility-scale solar,construction,30
+G100000808909,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Delicias (Chihuahua) Solar PV Plant,L100000807423,utility-scale solar,operating,35
+G100000808911,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Baja California Sur solar farm,L100000807425,utility-scale solar,cancelled,30
+G100000808912,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Hermosillo solar farm,L100000807426,utility-scale solar,cancelled,30
+G100000808948,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sol De Los Manzanos solar farm,L100000807438,utility-scale solar,cancelled,30
+G100000808949,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sol De San Jerónimo solar farm,L100000807439,utility-scale solar,cancelled,28
+G100000808975,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Las Viborillas solar farm,L100000807448,utility-scale solar,operating,137
+G100000808981,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Acatlan solar farm,L100000807454,utility-scale solar,cancelled,30
+G100000808982,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Altamira solar farm,L100000807455,utility-scale solar,cancelled,30
+G100000808983,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Amozoc solar farm,L100000807456,utility-scale solar,cancelled,30
+G100000808984,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Arriaga solar farm,L100000807457,utility-scale solar,cancelled,30
+G100000808985,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Calpulalpan solar farm,L100000807458,utility-scale solar,cancelled,30
+G100000808986,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Camargo solar farm,L100000807459,utility-scale solar,cancelled,30
+G100000808987,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Campeche solar farm,L100000807460,utility-scale solar,cancelled,30
+G100000808988,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Chihuahua solar farm,L100000807461,utility-scale solar,cancelled,30
+G100000808989,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Chilpancingo solar farm,L100000807462,utility-scale solar,cancelled,30
+G100000808990,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Ciudad Juarez solar farm,L100000807463,utility-scale solar,cancelled,30
+G100000808991,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Costa Rica solar farm,L100000807464,utility-scale solar,cancelled,30
+G100000808992,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Durango solar farm,L100000807465,utility-scale solar,cancelled,30
+G100000808993,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Guamuchil solar farm,L100000807466,utility-scale solar,cancelled,30
+G100000808994,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Guasave solar farm,L100000807467,utility-scale solar,cancelled,30
+G100000808995,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Guemez solar farm,L100000807468,utility-scale solar,cancelled,30
+G100000808996,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Hermosillo solar farm,L100000807469,utility-scale solar,cancelled,30
+G100000808997,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Macultepec solar farm,L100000807470,utility-scale solar,cancelled,30
+G100000808998,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Mante solar farm,L100000807471,utility-scale solar,cancelled,30
+G100000808999,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Manzanillo solar farm,L100000807472,utility-scale solar,cancelled,30
+G100000809000,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Mazatlan solar farm,L100000807473,utility-scale solar,cancelled,30
+G100000809001,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Mochis solar farm,L100000807474,utility-scale solar,cancelled,30
+G100000809002,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Monclova solar farm,L100000807475,utility-scale solar,cancelled,30
+G100000809003,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Navojoa solar farm,L100000807476,utility-scale solar,operating,223.9
+G100000809004,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Reynosa solar farm,L100000807477,utility-scale solar,cancelled,30
+G100000809005,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Sabinas solar farm,L100000807478,utility-scale solar,cancelled,30
+G100000809006,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Saltillo solar farm,L100000807479,utility-scale solar,cancelled,30
+G100000809007,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Samalayuca solar farm,L100000807480,utility-scale solar,cancelled,30
+G100000809008,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb San Luis Potosi solar farm,L100000807481,utility-scale solar,cancelled,30
+G100000809009,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Tecoman solar farm,L100000807482,utility-scale solar,cancelled,30
+G100000809010,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Tonala solar farm,L100000807483,utility-scale solar,cancelled,30
+G100000809011,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Torreon solar farm,L100000807484,utility-scale solar,cancelled,30
+G100000809012,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Zacatecas solar farm,L100000807485,utility-scale solar,cancelled,30
+G100000809095,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solenergize Zacatecas Solar Project,L100000807512,utility-scale solar,cancelled,30
+G100000809096,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solenergize Zacatecas Solar Project,L100000807512,utility-scale solar,cancelled,30
+G100000809097,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solenergize Zacatecas Solar Project,L100000807512,utility-scale solar,cancelled,30
+G100000809098,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solenergize Zacatecas Solar Project,L100000807512,utility-scale solar,cancelled,30
+G100000809099,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solenergize Zacatecas Solar Project,L100000807512,utility-scale solar,cancelled,30
+G100000809100,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tecate solar farm,L100000807513,utility-scale solar,cancelled,50
+G100000809127,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Carbonera De Guadalupe solar farm,L100000807531,utility-scale solar,operating,30
+G100000809128,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Vallecitos Solar Park,L100000807532,utility-scale solar,cancelled,30
+G100000809129,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Vallecitos Solar Park,L100000807532,utility-scale solar,cancelled,30
+G100000809131,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tequila Solar PV Park,L100000807533,utility-scale solar,cancelled,120
+G100000809132,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tequila Solar PV Park,L100000807533,utility-scale solar,cancelled,350
+G100000809133,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tequila Solar PV Park,L100000807533,utility-scale solar,cancelled,350
+G100000809135,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Torreoncitos PV solar farm,L100000807535,utility-scale solar,operating,30
+G100000809216,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ticul Solar Park,L100000807574,utility-scale solar,shelved,195.8
+G100000809217,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ticul Solar Park,L100000807574,utility-scale solar,shelved,96.8
+G100000809218,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Zacsol Project solar farm,L100000807575,utility-scale solar,cancelled,30
+G100000809219,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Villa Comaltitlán solar farm,L100000807576,utility-scale solar,cancelled,36
+G100000809253,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar Park Viborillas,L100000807585,utility-scale solar,operating,130
+G100000809257,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Perote Solar Photovoltaic Project,L100000807589,utility-scale solar,operating,119
+G100000809258,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Terranova-Conejos Medaros solar farm,L100000807590,utility-scale solar,operating,80
+G100000809259,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Guanajuato Mexsolar solar farm,L100000807591,utility-scale solar,operating,30
+G100000809260,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Xoxocotla solar farm,L100000807592,utility-scale solar,operating,70
+G100000809261,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Torreón solar farm,L100000807593,utility-scale solar,cancelled,30
+G100000809263,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Orejana PV solar farm,L100000807595,utility-scale solar,operating,162
+G100000809264,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa María PV solar farm,L100000807596,utility-scale solar,operating,166
+G100000809273,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Potencia Photovoltaic Solar Power Plant,L100000807601,utility-scale solar,cancelled,63
+G100000809276,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Aguascalientes Sur Photovoltaic Solar Power Plant,L100000807604,utility-scale solar,operating,29.7
+G100000809277,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Andalucía Solar Plant,L100000807605,utility-scale solar,operating,82.9
+G100000809290,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Munisol Solar Park,L100000807617,utility-scale solar,operating,20
+G100000809321,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bizani Solar Field,L100000807647,utility-scale solar,cancelled,100
+G100000809322,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,DCC Photovoltaic solar farm,L100000807648,utility-scale solar,cancelled,30
+G100000809323,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Magdalena solar farm,L100000807150,utility-scale solar,operating,220
+G100000809324,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Noacan solar farm,L100000807649,utility-scale solar,operating,22
+G100000809325,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,RMCS Comercio Y Altair solar farm,L100000807650,utility-scale solar,cancelled,32
+G100000810517,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Abasto solar farm,L100000808339,utility-scale solar,operating,16
+G100000810519,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Aldebarán solar farm,L100000808341,utility-scale solar,operating,15
+G100000810520,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Amerinnova de la Frontera solar farm,L100000808342,utility-scale solar,shelved,29.2
+G100000810521,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Argentum solar farm,L100000808343,utility-scale solar,cancelled,29.4
+G100000810523,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Baja California (Next Energy) solar farm,L100000808345,utility-scale solar,cancelled,385
+G100000810524,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bimbo Azcapotzalco solar farm,L100000808346,utility-scale solar,operating,1.8
+G100000810525,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,BMW San Luis Potosí solar farm,L100000808347,utility-scale solar,operating,5
+G100000810526,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cemex Zacatecas solar farm,L100000808348,utility-scale solar,cancelled,378
+G100000810528,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Coppel solar farm,L100000808349,utility-scale solar,operating,1
+G100000810529,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuquio solar farm,L100000808350,utility-scale solar,shelved,100
+G100000810530,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ecopur solar farm,L100000808351,utility-scale solar,operating,3
+G100000810531,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Tlacote solar farm,L100000808352,utility-scale solar,operating,1.4
+G100000810532,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Flextronics solar farm,L100000808353,utility-scale solar,operating,1
+G100000810533,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Guanajuato Mexsolar solar farm,L100000807591,utility-scale solar,operating,30
+G100000810535,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Iusasol solar farm,L100000808355,utility-scale solar,operating,18.3
+G100000810536,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Jalisco solar farm,L100000808356,utility-scale solar,operating,6.2
+G100000810537,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Jalisco Solar Garden,L100000808357,utility-scale solar,operating,12.4
+G100000810538,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Santos solar farm (Mexico),L100000808358,utility-scale solar,operating,20
+G100000810539,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Magdalena solar farm,L100000808359,utility-scale solar,operating,220
+G100000810541,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Palacio del Ayuntamiento solar farm,L100000808361,utility-scale solar,operating,27
+G100000810543,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Puerto Peñasco Solar Project,L100000807055,utility-scale solar,pre_construction,300
+G100000810544,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Puerto Peñasco Solar Project,L100000807055,utility-scale solar,announced,280
+G100000810545,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puerto Peñasco Solar Project,L100000807055,utility-scale solar,operating,300
+G100000810546,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Ignacio solar farm,L100000808363,utility-scale solar,operating,21.8
+G100000810547,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Rosalía solar farm (Mexico),L100000808364,utility-scale solar,operating,1
+G100000810548,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Sol de Sonora solar farm,L100000808365,utility-scale solar,operating,10
+G100000810549,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sol de Sonora solar farm,L100000808365,utility-scale solar,cancelled,30
+G100000810550,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Solar Apaseo PV farm,L100000808366,utility-scale solar,operating,1
+G100000810551,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Swb Navojoa solar farm,L100000808367,utility-scale solar,cancelled,30
+G100000810552,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,15.6
+G100000810553,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,3.5
+G100000810554,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,6.2
+G100000810555,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,10
+G100000810556,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tai Durango solar farm,L100000807209,utility-scale solar,operating,30
+G100000810557,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tepeyahualco solar farm,L100000808368,utility-scale solar,operating,100
+G100000810558,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuto solar farm,L100000808369,utility-scale solar,operating,137.5
+G100000810559,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Versailles Cuatas solar farm,L100000807208,utility-scale solar,operating,22.5
+G100000810560,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Versailles Cuatas solar farm,L100000807208,utility-scale solar,operating,22.5
+G100000810562,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Villanueva (Más Energía) Solar Park,L100000808371,utility-scale solar,pre_construction,142.8
+G100000838045,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Agua Prieta II solar project,L100000832483,utility-scale solar,operating,14
+G100000838046,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Aguascalientes Sur Photovoltaic Solar Power Plant,L100000807604,utility-scale solar,shelved,193.5
+G100000838047,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ahu solar farm,L100000832484,utility-scale solar,shelved,99.9
+G100000838048,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,AK KIN solar farm,L100000832485,utility-scale solar,shelved,109.8
+G100000838049,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alamito solar farm,L100000832486,utility-scale solar,shelved,90
+G100000838050,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alfa solar farm (Mexico),L100000832487,utility-scale solar,pre_construction,4.9
+G100000838051,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alsacia solar farm,L100000832488,utility-scale solar,pre_construction,300
+G100000838052,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alten Puebla solar farm,L100000832489,utility-scale solar,pre_construction,278.6
+G100000838053,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Apaxco solar farm,L100000807281,utility-scale solar,shelved,112
+G100000838054,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Armax Renewable Energies solar farm,L100000832490,utility-scale solar,shelved,30
+G100000838055,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ascención solar farm,L100000832491,utility-scale solar,shelved,29.2
+G100000838056,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Basol solar farm,L100000832492,utility-scale solar,cancelled,28
+G100000838057,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Black Creek Helios solar farm,L100000832493,utility-scale solar,shelved,32.9
+G100000838058,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Brembo solar farm,L100000832494,utility-scale solar,pre_construction,2.8
+G100000838060,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CAB solar farm,L100000832496,utility-scale solar,shelved,99.9
+G100000838061,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Camargo Santa Rosalia solar farm,L100000832497,utility-scale solar,shelved,110
+G100000838062,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cañada Honda solar farm (Mexico),L100000832498,utility-scale solar,construction,21.5
+G100000838063,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cañada solar farm,L100000832499,utility-scale solar,operating,7.8
+G100000838064,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Carranza solar farm,L100000832500,utility-scale solar,shelved,215.8
+G100000838065,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central de Abasto CDMX solar farm,L100000832501,utility-scale solar,operating,18
+G100000838066,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Grand Mayan Riviera Maya solar farm,L100000832502,utility-scale solar,operating,1.8
+G100000838067,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Hermosillo solar farm,L100000832503,utility-scale solar,shelved,108.5
+G100000838068,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Jabalí solar farm,L100000832504,utility-scale solar,shelved,50
+G100000838069,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Pedernal solar farm,L100000832505,utility-scale solar,shelved,105
+G100000838070,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CGS PV 02 solar farm,L100000832506,utility-scale solar,pre_construction,89
+G100000838071,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cimarron solar farm,L100000832507,utility-scale solar,pre_construction,300.2
+G100000838072,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Comercial Empresarial del Norte solar farm,L100000832508,utility-scale solar,pre_construction,1
+G100000838073,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Conejos solar farm,L100000832509,utility-scale solar,cancelled,50
+G100000838074,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Delicias (Guanajuato) solar farm,L100000832510,utility-scale solar,pre_construction,30
+G100000838075,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Huerto Solar Durango solar farm,L100000832511,utility-scale solar,mothballed,117
+G100000838076,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Angel solar farm,L100000832512,utility-scale solar,shelved,330
+G100000838077,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Cabrito solar farm,L100000832513,utility-scale solar,shelved,25.6
+G100000838078,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Chapote solar farm,L100000832514,utility-scale solar,pre_construction,65
+G100000838079,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Griton solar farm,L100000832515,utility-scale solar,pre_construction,314.4
+G100000838080,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Ramonal San Andrés solar farm,L100000832516,utility-scale solar,pre_construction,50.8
+G100000838081,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Trojano solar farm,L100000832517,utility-scale solar,shelved,82.6
+G100000838082,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Electricidad Solar de Hermosillo solar farm,L100000832518,utility-scale solar,shelved,30
+G100000838083,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energía Los Cabos solar farm,L100000832519,utility-scale solar,pre_construction,40
+G100000838084,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energías Renovables de México 3 solar farm,L100000832520,utility-scale solar,pre_construction,84.6
+G100000838085,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Hercules solar farm (Mexico),L100000832521,utility-scale solar,shelved,29.4
+G100000838086,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Hive Solar Tres Manantiales solar farm,L100000832522,utility-scale solar,shelved,119.5
+G100000838087,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,HQSB solar farm,L100000832523,utility-scale solar,construction,30
+G100000838088,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ingeniería y Proyectos MR solar farm,L100000832524,utility-scale solar,operating,2.1
+G100000838089,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Iscali solar farm,L100000832525,utility-scale solar,pre_construction,300
+G100000838090,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,JCM 37 solar farm,L100000832526,utility-scale solar,cancelled,37
+G100000838091,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,JCM Durango solar farm,L100000832527,utility-scale solar,cancelled,52.3
+G100000838092,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Juchitan solar farm,L100000832528,utility-scale solar,operating,28
+G100000838093,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Justicia Social (Kambul) solar farm,L100000832529,utility-scale solar,operating,30
+G100000838094,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kiin (Ticopá) solar farm,L100000832530,utility-scale solar,pre_construction,10
+G100000838095,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kiin solar farm,L100000832531,utility-scale solar,pre_construction,42.4
+G100000838096,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Barca solar farm,L100000832532,utility-scale solar,cancelled,200.2
+G100000838097,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Chona solar farm,L100000832533,utility-scale solar,shelved,150
+G100000838098,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Esperanza Edomex solar farm,L100000832534,utility-scale solar,shelved,101.4
+G100000838099,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Paloma solar farm,L100000832535,utility-scale solar,cancelled,200.2
+G100000838100,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Pimienta solar farm,L100000832536,utility-scale solar,operating,300
+G100000838101,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Santisima Trinidad de Las Cruces solar farm,L100000832537,utility-scale solar,cancelled,184
+G100000838102,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Sauceda solar farm,L100000832538,utility-scale solar,pre_construction,124
+G100000838103,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Toba solar farm,L100000832539,utility-scale solar,operating,35
+G100000838104,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Laborcilla solar farm,L100000832540,utility-scale solar,construction,585.2
+G100000838105,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Lagos solar farm,L100000832541,utility-scale solar,cancelled,100
+G100000838106,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna Salada solar farm,L100000832542,utility-scale solar,cancelled,200.7
+G100000838107,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna solar farm (Mexico),L100000832543,utility-scale solar,shelved,150.2
+G100000838108,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Jicamas Fortius solar farm,L100000832544,utility-scale solar,shelved,91.4
+G100000838109,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Palmas solar farm,L100000832545,utility-scale solar,shelved,28.5
+G100000838110,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Tinajas solar farm,L100000832546,utility-scale solar,pre_construction,10
+G100000838111,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Alpes solar farm,L100000832547,utility-scale solar,shelved,40
+G100000838112,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Amigos solar farm,L100000832548,utility-scale solar,shelved,189.8
+G100000838113,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Cuervos solar farm,L100000832549,utility-scale solar,operating,200
+G100000838114,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Magdalena solar farm,L100000808359,utility-scale solar,operating,500
+G100000838115,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Magdalena solar farm,L100000808359,utility-scale solar,shelved,142.9
+G100000838116,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Matamoros solar farm,L100000832550,utility-scale solar,shelved,30
+G100000838117,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Matamoros solar farm,L100000832550,utility-scale solar,shelved,30
+G100000838118,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Matamoros solar farm,L100000832550,utility-scale solar,shelved,30
+G100000838119,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mesolar solar farm,L100000832551,utility-scale solar,shelved,30
+G100000838120,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mesolar solar farm,L100000832551,utility-scale solar,shelved,30
+G100000838121,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Moctezuma (Chihuahua) solar farm,L100000832552,utility-scale solar,cancelled,96
+G100000838122,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Moctezuma (Chihuahua) solar farm,L100000832552,utility-scale solar,cancelled,234.4
+G100000838123,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Pachamama PV Solar Power Plant,L100000807350,utility-scale solar,pre_construction,330
+G100000838124,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Pacific Hermosillo solar farm,L100000832553,utility-scale solar,pre_construction,24.7
+G100000838125,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Padriceña solar farm,L100000832554,utility-scale solar,pre_construction,59.1
+G100000838126,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Palmillas solar farm,L100000832555,utility-scale solar,shelved,150
+G100000838127,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Palo Fierro solar farm,L100000832556,utility-scale solar,shelved,80
+G100000838128,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Parque de Tecnologia Electronica Ciudad Juarez solar farm,L100000832557,utility-scale solar,operating,1.9
+G100000838129,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Parque Industrial Parral solar farm,L100000832558,utility-scale solar,operating,2.2
+G100000838130,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Plan Sonora Caborca solar farm,L100000832559,utility-scale solar,announced,1000
+G100000838131,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Plan Sonora San Luis Río Colorado solar farm,L100000832560,utility-scale solar,announced,1000
+G100000838132,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Plan Sonora Fundición solar farm,L100000832561,utility-scale solar,announced,1000
+G100000838133,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Plasti-Envases solar farm,L100000832562,utility-scale solar,shelved,2
+G100000838134,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Polyuc solar farm,L100000832563,utility-scale solar,shelved,30
+G100000838135,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Procesos y Empacados de Veracruz solar farm,L100000832564,utility-scale solar,shelved,3.5
+G100000838136,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Promotora solar farm,L100000832565,utility-scale solar,shelved,1.9
+G100000838137,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Protón solar farm,L100000832566,utility-scale solar,construction,104.5
+G100000838138,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Puebla Audi solar farm,L100000832567,utility-scale solar,shelved,5.1
+G100000838139,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Quetzal solar farm,L100000832568,utility-scale solar,pre_construction,160.6
+G100000838140,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ranchitos solar farm,L100000832569,utility-scale solar,shelved,301.5
+G100000838141,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Rancho El Aguila solar farm,L100000832570,utility-scale solar,operating,15.2
+G100000838142,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Real del Castillo solar farm,L100000832571,utility-scale solar,pre_construction,43
+G100000838143,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Renovables del Norte Chihuahua solar farm,L100000832572,utility-scale solar,shelved,8
+G100000838144,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Rho Solar Sonora solar farm,L100000832573,utility-scale solar,cancelled,29.8
+G100000838145,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Rio Verde solar farm,L100000832574,utility-scale solar,cancelled,99.5
+G100000838146,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,SAAS solar farm,L100000832575,utility-scale solar,pre_construction,59.2
+G100000838147,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sam solar farm,L100000832576,utility-scale solar,shelved,99.9
+G100000838148,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Bartolo solar farm (Mexico),L100000832577,utility-scale solar,cancelled,54
+G100000838149,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Juan solar farm (Mexico),L100000832578,utility-scale solar,shelved,16
+G100000838150,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Pedro solar farm (Mexico),L100000832579,utility-scale solar,shelved,99.9
+G100000838151,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Silvestre solar farm (Mexico),L100000832580,utility-scale solar,shelved,19
+G100000838152,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Ana solar farm,L100000832581,utility-scale solar,shelved,26
+G100000838153,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Barbara solar farm,L100000832582,utility-scale solar,pre_construction,29.9
+G100000838154,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Lucia solar farm,L100000832583,utility-scale solar,pre_construction,198
+G100000838155,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Clara (Hidalgo) solar farm,L100000832584,utility-scale solar,pre_construction,188.7
+G100000838156,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rosalía solar farm (Mexico),L100000808364,utility-scale solar,shelved,9
+G100000838157,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sexto Sol Hercules solar farm,L100000832585,utility-scale solar,shelved,29.4
+G100000838158,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sol de Moctezuma solar farm,L100000832586,utility-scale solar,shelved,150
+G100000838159,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sol de Moctezuma solar farm,L100000832586,utility-scale solar,cancelled,234
+G100000838160,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Solem Solar Power Plant,L100000807099,utility-scale solar,cancelled,123.6
+G100000838161,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sucilá (San Francisco) solar farm,L100000832587,utility-scale solar,shelved,16
+G100000838162,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Supermercados Internacionales HEB solar farm,L100000832588,utility-scale solar,shelved,1.4
+G100000838163,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sys Energy Center solar farm,L100000832589,utility-scale solar,operating,31.6
+G100000838164,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tropica de Cancer solar farm,L100000832590,utility-scale solar,cancelled,30
+G100000838165,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tropica de Cancer solar farm,L100000832590,utility-scale solar,cancelled,30
+G100000838166,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tropica de Cancer solar farm,L100000832590,utility-scale solar,cancelled,30
+G100000838167,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tropica de Cancer solar farm,L100000832590,utility-scale solar,cancelled,30
+G100000838168,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,UABCS solar farm,L100000832591,utility-scale solar,operating,1.9
+G100000838169,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Victoria solar farm,L100000832592,utility-scale solar,shelved,30
+G100000838170,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Viga Rosarito solar farm,L100000832593,utility-scale solar,shelved,3
+G100000838171,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Villanueva solar farm,L100000832594,utility-scale solar,operating,150
+G100000838172,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Wisenergy solar farm,L100000832595,utility-scale solar,pre_construction,40
+G100000838173,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Yecapixtla solar farm,L100000832596,utility-scale solar,shelved,12
+G100000838174,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Yucatán solar farm,L100000832597,utility-scale solar,cancelled,70
+G100000838175,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Zacatecas 360 solar farm,L100000832598,utility-scale solar,shelved,76.5
+G100000838176,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Zacatecas solar farm,L100000832599,utility-scale solar,shelved,370.4
+G100000838177,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Zaragoza solar farm,L100000832600,utility-scale solar,shelved,215.8
+G100000906071,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Cortijo wind farm,L100000904945,wind,operating,183
+G100000906072,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Eurus wind farm (Mexico),L100000904946,wind,operating,38
+G100000906073,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Eurus wind farm (Mexico),L100000904946,wind,operating,213
+G100000906074,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Oaxaca wind farm,L100000904947,wind,operating,102
+G100000906075,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Oaxaca wind farm,L100000904947,wind,operating,102
+G100000906076,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Oaxaca wind farm,L100000904947,wind,operating,102
+G100000906077,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Mesa La Paz wind farm,L100000904948,wind,operating,310
+G100000906078,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ingenio wind farm,L100000904949,wind,operating,50
+G100000906176,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cadereyta wind farm,L100000904985,wind,shelved,30
+G100000906177,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Juchique wind farm,L100000904986,wind,cancelled,30
+G100000906178,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Jacinto wind farm,L100000904987,wind,operating,21
+G100000906209,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mesa Morenos wind farm,L100000905005,wind,operating,66
+G100000906281,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Aubanel wind farm,L100000905032,wind,cancelled,70
+G100000906325,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ventika wind farm,L100000905056,wind,operating,126
+G100000906326,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ventika wind farm,L100000905056,wind,operating,126
+G100000906351,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Porvenir wind farm,L100000905068,wind,operating,54
+G100000906480,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Venta wind farm,L100000905092,wind,operating,83
+G100000906481,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Oaxaca wind farm,L100000904947,wind,operating,102
+G100000906482,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sureste II And III wind farm,L100000905093,wind,cancelled,585
+G100000906483,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sureste IV And V wind farm,L100000905094,wind,cancelled,600
+G100000906598,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Mezquite wind farm,L100000905129,wind,operating,252
+G100000906665,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Gunaa Sicaru wind farm,L100000905146,wind,cancelled,302
+G100000906666,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Mata - La Ventosa wind farm,L100000905147,wind,operating,68
+G100000906678,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Pacifico wind farm (Mexico),L100000905149,wind,operating,160
+G100000906679,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bii Stinu wind farm,L100000905150,wind,operating,164
+G100000906682,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Coahuila wind farm,L100000905153,wind,operating,200
+G100000906729,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Pedro wind farm (Mexico),L100000905168,wind,operating,30
+G100000906845,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Amistad wind farm,L100000905219,wind,operating,200
+G100000906846,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Amistad wind farm,L100000905219,wind,mothballed,100
+G100000906847,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Amistad wind farm,L100000905219,wind,mothballed,100
+G100000906848,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Amistad wind farm,L100000905219,wind,mothballed,149
+G100000906849,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bii Nee Stipa wind farm,L100000905220,wind,operating,74
+G100000906850,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bii Nee Stipa wind farm,L100000905220,wind,operating,70
+G100000906851,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dolores wind farm,L100000905221,wind,operating,244
+G100000906852,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dominica wind farm,L100000905222,wind,operating,100
+G100000906853,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dominica wind farm,L100000905222,wind,operating,100
+G100000906854,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Palo Alto wind farm (Mexico),L100000905223,wind,operating,129
+G100000906855,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Salitrillos wind farm,L100000905224,wind,operating,104
+G100000906856,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Vientos Del Altiplano wind farm,L100000905225,wind,operating,100
+G100000906857,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sureste I wind farm,L100000905226,wind,operating,102
+G100000906887,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energeo Los Molinos wind farm,L100000905240,wind,cancelled,254
+G100000906888,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Sauzal wind farm,L100000905241,wind,cancelled,242
+G100000906890,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Parras wind farm,L100000905243,wind,construction,50
+G100000906920,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tres Mesas wind farm,L100000905252,wind,operating,52
+G100000906921,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tres Mesas wind farm,L100000905252,wind,operating,101
+G100000906926,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Peninsula wind farm,L100000905257,wind,operating,90
+G100000906935,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santo Domingo wind farm,L100000905265,wind,operating,160
+G100000906940,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Coyoles wind farm,L100000905270,wind,construction,50
+G100000906982,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Coromuel wind farm,L100000905281,wind,operating,56
+G100000907004,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ciudad Victoria wind farm,L100000905290,wind,operating,50
+G100000907005,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Mesa wind farm,L100000905291,wind,operating,36
+G100000907006,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Mesa wind farm,L100000905291,wind,operating,50
+G100000907007,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Mesa wind farm,L100000905291,wind,operating,50
+G100000907025,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Roble wind farm,L100000905302,wind,cancelled,24
+G100000907044,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Arriaga wind farm,L100000905315,wind,operating,29
+G100000907045,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Altos wind farm,L100000905316,wind,operating,50
+G100000907052,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Vergeles wind farm,L100000905322,wind,cancelled,161
+G100000907109,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bii Nee Stipa wind farm,L100000905220,wind,operating,26
+G100000907110,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bii Nee Stipa wind farm,L100000905220,wind,operating,74
+G100000907111,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dos Arbolitos wind farm,L100000905343,wind,operating,70
+G100000907112,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Venta wind farm,L100000905092,wind,operating,102
+G100000907113,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Ventosa wind farm,L100000905344,wind,operating,22
+G100000907114,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Ventosa wind farm,L100000905344,wind,operating,49
+G100000907115,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Ventosa wind farm,L100000905344,wind,operating,31
+G100000907116,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Parques Ecologicos De Mexico wind farm,L100000905345,wind,operating,80
+G100000907117,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Pier wind farm,L100000905346,wind,operating,220
+G100000907118,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Santiago Eolico wind farm,L100000905347,wind,operating,105
+G100000907146,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Sierra Juarez wind farm,L100000905354,wind,operating,155
+G100000907169,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Fuerza Eolica Del Istmo wind farm,L100000905367,wind,operating,50
+G100000907170,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Fuerza Eolica Del Istmo wind farm,L100000905367,wind,operating,30
+G100000907183,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Fenicias wind farm,L100000905373,wind,operating,168
+G100000907215,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cozumel wind farm,L100000905400,wind,cancelled,80
+G100000907220,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Atria wind farm,L100000905405,wind,shelved,150
+G100000907221,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Atria wind farm,L100000905405,wind,shelved,250
+G100000907222,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bii Hioxo wind farm,L100000905406,wind,operating,234
+G100000907286,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Calabacillal wind farm,L100000905424,wind,cancelled,300
+G100000907287,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Vicente Guerrero wind farm,L100000905425,wind,operating,118
+G100000907353,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Bufa wind farm,L100000905450,wind,operating,130
+G100000907411,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Piedra Larga wind farm,L100000905464,wind,operating,90
+G100000907412,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Piedra Larga wind farm,L100000905464,wind,operating,138
+G100000907469,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Fuerza Eolica San Matias wind farm,L100000905476,wind,operating,30
+G100000907498,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Molinos wind farm,L100000905492,wind,cancelled,171
+G100000907502,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Granja Sedena wind farm,L100000905496,wind,construction,15
+G100000907503,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Rumorosa wind farm,L100000905497,wind,operating,170
+G100000907542,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Dzilam Bravo wind farm,L100000905511,wind,operating,70
+G100000907614,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Reynosa wind farm,L100000905537,wind,operating,424
+G100000907616,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Aldesa Cardonal wind farm,L100000905539,wind,cancelled,30
+G100000907617,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Pinos wind farm,L100000905540,wind,cancelled,30
+G100000907618,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Temax wind farm,L100000905541,wind,cancelled,76
+G100000907619,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Chacabal wind farm,L100000905542,wind,construction,30
+G100000907620,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Chacabal wind farm,L100000905542,wind,construction,30
+G100000907621,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cienaga De Mata wind farm,L100000905543,wind,cancelled,325
+G100000907622,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Fuerza Y Energia Limpia De Kukulkan wind farm,L100000905544,wind,cancelled,151
+G100000907623,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Fuerza Y Energia Limpia De Mexico wind farm,L100000905545,wind,cancelled,76
+G100000907624,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Notus Energia wind farm,L100000905546,wind,cancelled,150
+G100000907625,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Luis De La Paz wind farm,L100000905547,wind,cancelled,30
+G100000907626,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Eolicse – Salinas Victoria wind farm,L100000905548,wind,cancelled,40
+G100000907634,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cansahcab wind farm,L100000905555,wind,cancelled,250
+G100000907640,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Canatlan wind farm,L100000905561,wind,cancelled,121
+G100000907641,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Papaloapan wind farm,L100000905562,wind,shelved,40
+G100000907642,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinanche wind farm,L100000905563,wind,cancelled,75.6
+G100000907643,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinanche wind farm,L100000905563,wind,cancelled,75.6
+G100000907644,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tres Mesas wind farm,L100000905252,wind,operating,63
+G100000907645,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tres Mesas wind farm,L100000905252,wind,operating,86
+G100000907646,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Vigil wind farm,L100000905564,wind,construction,40
+G100000907649,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Pier wind farm,L100000905346,wind,operating,66
+G100000907650,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Minera Bismark wind farm,L100000905567,wind,cancelled,30
+G100000907653,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Catarina wind farm,L100000905570,wind,operating,22
+G100000907655,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Guadalupe wind farm,L100000905572,wind,cancelled,300
+G100000907656,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tepetate wind farm,L100000905573,wind,cancelled,160
+G100000907659,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Delaro wind farm,L100000905576,wind,cancelled,117
+G100000907677,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Central Eolica Mexico 2 wind farm,L100000905588,wind,shelved,50.4
+G100000907678,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Eolica Del Sur wind farm,L100000905589,wind,operating,396
+G100000907679,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Julian wind farm,L100000905590,wind,shelved,40
+G100000907680,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tizimin wind farm,L100000905591,wind,operating,76
+G100000920224,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cerritos wind farm,L100000916391,wind,cancelled,76
+G100000920225,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Lecias wind farm,L100000916392,wind,cancelled,103.5
+G100000920226,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Cañones wind farm,L100000916393,wind,operating,96
+G100000920227,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Presa Nueva wind farm,L100000916394,wind,shelved,201.6
+G100000920228,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Presa Nueva wind farm,L100000916394,wind,shelved,201.6
+G100000920229,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Carlos wind farm (Mexico),L100000916395,wind,operating,198
+G100000920230,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Cruz wind farm (Mexico),L100000916396,wind,operating,138.6
+G100000920231,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Sierra Juarez wind farm,L100000905354,wind,operating,108
+G100000920232,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tinaja Azul wind farm,L100000916397,wind,shelved,229.4
+G100000920233,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Vientos del Caribe wind farm,L100000916398,wind,shelved,208
+G100001000247,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100001000248,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100001000249,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100001000250,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100001000251,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100001000252,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CTG González Ortega power station,L100000408897,oil/gas,operating,41.3
+G100001022721,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Arco y Donhi solar farm,L100001019985,utility-scale solar,pre_construction,100
+G100001022722,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cazadero solar farm,L100001019986,utility-scale solar,announced,132
+G100001022743,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dalia 3 solar farm,L100001020004,utility-scale solar,pre_construction,130
+G100001022747,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Moquel solar farm,L100001020008,utility-scale solar,announced,104
+G100001022794,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sierra Juarez wind farm,L100000905354,wind,construction,320
+G100001022800,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Nachi Cocom solar farm,L100001020029,utility-scale solar,operating,7.7
+G100001022801,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinaloa floating solar farm,L100001020030,utility-scale solar,pre_construction,120
+G100001022802,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Solar Akin solar farm,L100001020031,utility-scale solar,operating,100
+G100001022803,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Pedriceña solar farm,L100001020032,utility-scale solar,pre_construction,105.7
+G100001022913,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Viento De Bella Union solar farm,L100001020132,utility-scale solar,construction,50
+G100001023187,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Bernardo solar farm,L100001020350,utility-scale solar,pre_construction,134.9
+G100001023188,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Agua Nueva solar farm,L100001020351,utility-scale solar,pre_construction,573.6
+G100001023189,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tango Solar Norte solar farm,L100001020352,utility-scale solar,pre_construction,787
+G100001023190,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Plutón solar farm,L100001020353,utility-scale solar,pre_construction,177.2
+G100001023191,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Venus solar farm,L100001020354,utility-scale solar,pre_construction,260
+G100001023215,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Rios solar farm,L100001020376,utility-scale solar,pre_construction,150
+G100001023217,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Nogales solar farm,L100001020378,utility-scale solar,pre_construction,64
+G100001023218,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tetla solar farm,L100001020379,utility-scale solar,pre_construction,150
+G100001023222,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamesí solar farm,L100001020382,utility-scale solar,pre_construction,370
+G100001023403,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ikal solar farm,L100001020519,utility-scale solar,pre_construction,250
+G100001023443,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kukuul solar farm,L100001020549,utility-scale solar,pre_construction,71
+G100001023709,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Sierra Juarez wind farm,L100000905354,wind,pre_construction,300
+G100001023774,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCI Baja California Sur power station,L100001020822,oil/gas,operating,37.5
+G100001023775,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCI Baja California Sur power station,L100001020822,oil/gas,operating,43
+G100001023776,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCI Baja California Sur power station,L100001020822,oil/gas,operating,43
+G100001023777,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCI Baja California Sur power station,L100001020822,oil/gas,operating,43
+G100001023778,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCI Baja California Sur power station,L100001020822,oil/gas,operating,43
+G100001023779,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Punta Prieta II power station,L100001020823,oil/gas,operating,113
+G100001023781,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCI Baja California Sur power station,L100001020822,oil/gas,cancelled,43
+G100001023784,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,CCI Baja California Sur power station,L100001020822,oil/gas,operating,26
+G100001023785,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mexico Pacific power station,L100001020827,oil/gas,pre_construction,141
+G100001023786,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Mérida II power station,L100001020828,oil/gas,operating,84
+G100001023787,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Mérida II power station,L100001020828,oil/gas,operating,84
+G100001023788,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cancún I power station,L100000406194,oil/gas,operating,14
+G100001023790,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cancún I power station,L100000406194,oil/gas,operating,44
+G100001023791,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carlos Rodríguez Rivero power station,L100001020829,oil/gas,operating,84
+G100001023792,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carlos Rodríguez Rivero power station,L100001020829,oil/gas,operating,84
+G100001023793,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carlos Rodríguez Rivero power station,L100001020829,oil/gas,operating,158
+G100001023794,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Carlos Rodríguez Rivero power station,L100001020829,oil/gas,operating,158
+G100001023795,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Felipe Carrillo Puerto power station,L100000406217,oil/gas,operating,37.5
+G100001023796,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Felipe Carrillo Puerto power station,L100000406217,oil/gas,operating,37.5
+G100001023818,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Pemcorp Energy power station,L100001020849,oil/gas,operating,130.9
+G100001027327,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Cóbano hydroelectric plant,L100001023122,hydropower,operating,60
+G100001027328,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Colimilla hydroelectric plant,L100001023123,hydropower,operating,51
+G100001027329,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Fuerte hydroelectric plant,L100001023124,hydropower,operating,59
+G100001027330,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Lerma Tepuxtepec hydroelectric plant,L100001023125,hydropower,operating,49
+G100001027331,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Manuel M. Diéguez hydroelectric plant,L100001023126,hydropower,operating,70
+G100001030969,energy_plants_gem_units,MEX,point,USA,,,,,,,false,abf-boundaries-v0.2.0,Amistad Dam hydroelectric plant,L100001025888,hydropower,operating,66
+G100001048267,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cupatitzio hydroelectric plant,L100001042914,hydropower,operating,80
+G100001048499,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tres Virgenes geothermal power plant,L100001043020,geothermal,operating,5
+G100001048500,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tres Virgenes geothermal power plant,L100001043020,geothermal,operating,5
+G100001048503,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Domo San Pedro geothermal power plant,L100001043025,geothermal,operating,26
+G100001050415,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tropica de Cancer solar farm,L100000832590,utility-scale solar,cancelled,30
+G100001050416,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tropica de Cancer solar farm,L100000832590,utility-scale solar,cancelled,30
+G100001050515,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Plan Sonora Navojoa solar farm,L100001044953,utility-scale solar,announced,1000
+G100001050543,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Libres solar farm,L100001044968,utility-scale solar,pre_construction,100
+G100001050546,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Huerta PVC solar farm,L100001044971,utility-scale solar,pre_construction,60
+G100001050552,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San Cayetano solar farm,L100001044976,utility-scale solar,pre_construction,96.6
+G100001050557,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San José del Cabo Airport solar farm,L100001044980,utility-scale solar,pre_construction,16.5
+G100001050560,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energías Renovables de México Uno solar farm,L100001044983,utility-scale solar,pre_construction,67.6
+G100001050564,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Clara Solar (Veracruz) solar farm,L100001044986,utility-scale solar,pre_construction,61
+G100001050566,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Puerto Peñasco Solar Project,L100000807055,utility-scale solar,announced,1000
+G100001050579,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energías Renovables de Campeche solar farm,L100001044996,utility-scale solar,pre_construction,300
+G100001050581,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tecamachalco solar farm,L100001044997,utility-scale solar,pre_construction,32.5
+G100001050582,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Arriaga solar farm,L100001044998,utility-scale solar,pre_construction,72
+G100001050583,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Niño solar farm,L100001044999,utility-scale solar,pre_construction,106.6
+G100001050590,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,360 Energy Toluca solar farm,L100001045002,utility-scale solar,pre_construction,20.5
+G100001050591,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Saltillo Complex solar farm,L100001045003,utility-scale solar,pre_construction,34
+G100001050592,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Saltillo Complex solar farm,L100001045003,utility-scale solar,pre_construction,68
+G100001050593,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Vega Energy Project solar farm,L100001045004,utility-scale solar,pre_construction,58
+G100001050594,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Valle del Mezquital solar farm,L100001045005,utility-scale solar,pre_construction,54.6
+G100001050596,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Energías Renovables de México 4 solar farm,L100001045007,utility-scale solar,pre_construction,90
+G100001050597,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Alianza Derramadero solar farm,L100001045008,utility-scale solar,pre_construction,214.4
+G100001050599,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,PV Tacana solar farm,L100001045010,utility-scale solar,pre_construction,54
+G100001050600,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Pilar solar farm,L100001045012,utility-scale solar,pre_construction,96
+G100001050602,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Rumorosa II solar farm,L100001045014,utility-scale solar,pre_construction,72.1
+G100001050607,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Campeche Energy solar farm,L100001045017,utility-scale solar,pre_construction,80
+G100001050608,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Guadalupana solar farm,L100001045018,utility-scale solar,pre_construction,90
+G100001050609,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Luisa solar farm,L100001045019,utility-scale solar,pre_construction,240.9
+G100001050614,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Lucía solar farm,L100001045023,utility-scale solar,pre_construction,367.1
+G100001050615,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,San José de Arriba solar farm,L100001045024,utility-scale solar,pre_construction,680.5
+G100001050616,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Alaias solar farm,L100001045025,utility-scale solar,pre_construction,225
+G100001050617,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Loma Bonita solar farm,L100001045026,utility-scale solar,pre_construction,64
+G100001050618,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Salamanca solar farm (Mexico),L100001045027,utility-scale solar,pre_construction,100
+G100001050619,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mares Energía solar farm,L100001045028,utility-scale solar,pre_construction,25.2
+G100001050620,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Moctezuma (San Luis Potosí) solar farm,L100001045029,utility-scale solar,pre_construction,95.6
+G100001050621,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Álamo I solar farm (Mexico),L100001045030,utility-scale solar,pre_construction,58.5
+G100001050622,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Grullo solar farm,L100001045031,utility-scale solar,pre_construction,43.6
+G100001050623,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Valtierra solar farm (Mexico),L100001045032,utility-scale solar,pre_construction,183.5
+G100001050624,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Garzas I solar farm,L100001045033,utility-scale solar,pre_construction,149.1
+G100001050625,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Viesca solar farm,L100001045034,utility-scale solar,pre_construction,124.9
+G100001050626,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Guaname solar farm,L100001045035,utility-scale solar,pre_construction,182.1
+G100001050627,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dalia 2 solar farm,L100001045036,utility-scale solar,pre_construction,72.6
+G100001050628,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dzilam wind farm,L100001045037,wind,pre_construction,148.2
+G100001050629,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Jícamas Iluminare solar farm,L100001045038,utility-scale solar,pre_construction,20.9
+G100001052001,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Salamanca power station,L100000406246,oil/gas,pre_construction,498
+G100001052003,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Josè Aceves Pozos power station,L100000406646,oil/gas,pre_construction,582
+G100001052005,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Altamira power station,L100000408887,oil/gas,pre_construction,583
+G100001052006,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCI Los Cabos power station,L100001046102,oil/gas,pre_construction,240.5
+G100001052037,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Guadalajara power station,L100001046127,oil/gas,pre_construction,500
+G100001052038,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Cogeneración Cangrejera power station,L100000406240,oil/gas,announced,900
+G100001052199,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Belisario Domínguez hydroelectric plant,L100000602467,hydropower,construction,100
+G100001052380,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,PTAR Agua Prieta power station,L100001046365,bioenergy,operating,11.4
+G100001052381,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bioeléctrica de Occidente power station,L100001046366,bioenergy,operating,35.4
+G100001052382,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Portero power station,L100001046367,bioenergy,operating,10
+G100001052383,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Pedro Sugar power station,L100001046368,bioenergy,operating,10
+G100001052384,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Molino power station,L100001046370,bioenergy,operating,10
+G100001052386,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Nicolás Sugar power station,L100001046372,bioenergy,operating,11.5
+G100001052388,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Huixtla Sugar power station,L100001046373,bioenergy,operating,12
+G100001052389,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,BSM Energía power station,L100001046374,bioenergy,operating,12.8
+G100001052391,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Fé Sugar power station,L100001046375,bioenergy,operating,13
+G100001052394,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Presidente Benito Juárez power station,L100001046379,bioenergy,operating,14
+G100001052395,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Atencingo power station,L100001046380,bioenergy,operating,15
+G100001052396,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Margarita power station,L100001046381,bioenergy,operating,16
+G100001052401,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Plan de Ayala power station,L100001046383,bioenergy,operating,16
+G100001052402,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Plan de San Juis power station,L100001046384,bioenergy,operating,20
+G100001052403,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Nicolás Sugar power station,L100001046372,bioenergy,operating,20
+G100001052421,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tamazula power station,L100001046397,bioenergy,operating,20.6
+G100001052422,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Higo power station,L100001046398,bioenergy,operating,21.8
+G100001052423,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,San Cristóbal Sugar power station,L100001046399,bioenergy,operating,24
+G100001052424,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tala power station,L100001046400,bioenergy,operating,25
+G100001052425,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Rosalía de La Chontalpa power station,L100001046401,bioenergy,operating,25
+G100001052426,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Termo Waste-to-Energy power station,L100001046402,bioenergy,shelved,155
+G100001052427,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Motzorongo power station,L100001046403,bioenergy,operating,20
+G100001052428,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Atenquique Paper power station,L100001046404,bioenergy,operating,15.5
+G100001052429,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Orizaba power station,L100001046405,bioenergy,operating,12.5
+G100001052430,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Nuevo León power station,L100001046406,bioenergy,operating,12.7
+G100001055766,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Fermaca Digital City power plant,L100001048553,oil/gas,pre_construction,350
+G100001062033,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,EPM 24 wind farm,L100001054198,wind,announced,105
+G100001062054,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Panabá wind farm,L100001054221,wind,pre_construction,99
+G100001062059,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Vientos de Coahuila wind farm,L100001054224,wind,operating,90
+G100001062076,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Huizache wind farm,L100001054239,wind,announced,800
+G100001062211,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Altamira solar farm,L100001054350,utility-scale solar,announced,84.6
+G100001062215,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Azura solar farm,L100001054354,utility-scale solar,announced,111.6
+G100001062218,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,PV Presa Larga solar farm,L100001054356,utility-scale solar,announced,62
+G100001062223,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Esperanza (México) solar farm,L100001054358,utility-scale solar,announced,350.6
+G100001062227,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ocote solar farm,L100001054363,utility-scale solar,announced,195
+G100001062231,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ochkaan solar farm,L100001054366,utility-scale solar,announced,170
+G100001062233,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Chemax solar farm,L100001054367,utility-scale solar,announced,230
+G100001062239,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Carbón II solar farm,L100001054373,utility-scale solar,announced,608
+G100001062245,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Laguna solar farm,L100001054375,utility-scale solar,announced,105
+G100001062246,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Río Escondido solar farm,L100001054378,utility-scale solar,announced,200
+G100001062247,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Colibrí (Mexico) solar farm,L100001054379,utility-scale solar,pre_construction,100
+G100001062248,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Guacamayo solar farm,L100001054380,utility-scale solar,announced,150
+G100001062655,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,La Soledad hydroelectric plant,L100001054763,hydropower,operating,36
+G100001062656,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,El Gallo hydroelectric plant,L100001054764,hydropower,operating,30
+G100001062658,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Patla hydroelectric plant,L100001054766,hydropower,operating,45
+G100001062659,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tepexic hydroelectric plant,L100001054767,hydropower,operating,45
+G100001062660,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuxpango hydroelectric plant,L100001054768,hydropower,operating,36
+G100001064214,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Jorge Luque power station,L100000406281,oil/gas,shelved,511.5
+G100001064215,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Jorge Luque power station,L100000406281,oil/gas,shelved,1033.5
+G100001064360,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,El Salto I power station,L100001056305,oil/gas,pre_construction,544.6
+G100001064367,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Estrella mobile power station,L100001056338,oil/gas,operating,180.7
+G100001064371,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,La Herradura mobile power station,L100001056340,oil/gas,operating,176.4
+G100001064380,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Nizuc mobile power station,L100001056345,oil/gas,operating,56.5
+G100001064381,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Xcalacoco mobile power station,L100001056351,oil/gas,operating,52.8
+G100001071642,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tatatila hydroelectric plant,L100001062380,hydropower,construction,30
+G100001071645,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa María hydroelectric plant,L100001062382,hydropower,construction,30
+G100001071647,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ambrosio Figueroa hydroelectric plant,L100001062383,hydropower,operating,30
+G100001071650,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Acquavento hydroelectric plant,L100001062385,hydropower,pre_construction,30
+G100001071652,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,PCH Veracruz hydroelectric plant,L100001062386,hydropower,operating,35
+G100001071653,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Proyecto Atexcaco hydroelectric plant,L100001062387,hydropower,operating,36
+G100001071658,energy_plants_gem_units,MEX,point,,,,,,,,false,abf-boundaries-v0.2.0,Tingambato hydroelectric plant,L100001062390,hydropower,operating,45
+G100001071662,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Puebla 1 hydroelectric plant,L100001062393,hydropower,pre_construction,60
+G100001071666,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Boca del Cerro hydroelectric plant,L100001062398,hydropower,cancelled,420
+G100001071675,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,Santo Domingo hydroelectric plant,L100001062406,hydropower,cancelled,110
+G100001094587,energy_plants_gem_units,MEX,point,,,,,,,,true,abf-boundaries-v0.2.0,CCC Guadalajara power station,L100001046127,oil/gas,announced,500

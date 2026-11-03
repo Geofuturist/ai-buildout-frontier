@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001074594,energy_plants_gem_tzsam_units,LSO,point,,LSO-1-C,,point,,,,false,abf-boundaries-v0.2.0,Leribe District solar project,L100001064808,utility-scale solar,operating,2
+G100001074595,energy_plants_gem_tzsam_units,LSO,point,,LSO-1-A,,point,,,,false,abf-boundaries-v0.2.0,Maseru District solar project,L100001064809,utility-scale solar,operating,1.1

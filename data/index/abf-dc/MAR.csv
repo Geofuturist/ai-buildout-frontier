@@ -1,0 +1,11 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-03b22aa23b7b,dc_atlas_points,MAR,field,,,,,,,,true,abf-boundaries-v0.2.0,Orange Maroc Rabat DC3,Operating / Construction,telecom,,
+ATL-1302a5b92367,dc_atlas_points,MAR,field,,,,,,,,true,abf-boundaries-v0.2.0,Orange DC5,Operating / Construction,telecom,lt10,
+ATL-1608f14b6cd9,dc_atlas_points,MAR,field,,,,,,,,true,abf-boundaries-v0.2.0,inwi Rabat Technopolis DC2,Operating / Construction,telecom,lt10,
+ATL-3fb00fadb86e,dc_atlas_points,MAR,field,,,,,,,,,abf-boundaries-v0.2.0,Naver Morocco Campus,Planned,cloud,100_999,
+ATL-51de0378657c,dc_atlas_points,MAR,field,,,,,,,,,abf-boundaries-v0.2.0,UM6P Benguerir,Operating / Construction,other,lt10,
+ATL-88ac7404c386,dc_atlas_points,MAR,field,,,,,,,,true,abf-boundaries-v0.2.0,Naver Cloud Dakhla Data Center,Planned,other,100_999,
+ATL-a8496d5b9737,dc_atlas_points,MAR,field,,,,,,,,true,abf-boundaries-v0.2.0,Orange Maroc Tangier DC4,Operating / Construction,telecom,,
+ATL-bd293d04b249,dc_atlas_points,MAR,field,,,,,,,,true,abf-boundaries-v0.2.0,N+ONE Casablanca Data Center,Operating / Construction,colocation,lt10,
+ATL-c5f0eaced7e5,dc_atlas_points,MAR,field,,,,,,,,,abf-boundaries-v0.2.0,Orange DC2,Operating / Construction,telecom,lt10,
+ATL-ed9d5e7e9d56,dc_atlas_points,MAR,field,,,,,,,,,abf-boundaries-v0.2.0,Naver Morocco Campus,Operating / Construction,cloud,10_99,

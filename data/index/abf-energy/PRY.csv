@@ -1,0 +1,10 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200465,energy_plants_gem_units,PRY,point,,PRY-1-1,,point,,,,true,abf-boundaries-v0.2.0,Paracel power station,L100000200419,bioenergy,construction,220
+G100000604098,energy_plants_gem_units,PRY,point,ARG,PRY-1-8,,point,,,,true,abf-boundaries-v0.2.0,Brazo Aña Cuá hydroelectric plant,L100000604059,hydropower,shelved,270
+G100000604099,energy_plants_gem_units,PRY,point,ARG,PRY-1-7,,point,,,,true,abf-boundaries-v0.2.0,Corpus Christi hydroelectric plant,L100000604060,hydropower,announced,2880
+G100000604100,energy_plants_gem_units,PRY,point,ARG,PRY-1-8,,point,,,,false,abf-boundaries-v0.2.0,Yacyretá hydroelectric plant,L100000604061,hydropower,operating,3100
+G100000604197,energy_plants_gem_units,PRY,point,,PRY-1-10,,point,,,,false,abf-boundaries-v0.2.0,Acaray hydroelectric plant,L100000604157,hydropower,pre_construction,48
+G100000604198,energy_plants_gem_units,PRY,point,,PRY-1-10,,point,,,,false,abf-boundaries-v0.2.0,Acaray hydroelectric plant,L100000604157,hydropower,operating,210
+G100000838199,energy_plants_gem_units,PRY,point,,PRY-1-19,,point,,,,true,abf-boundaries-v0.2.0,Filadelfia solar farm,L100000832614,utility-scale solar,operating,1
+G100000838200,energy_plants_gem_units,PRY,point,,PRY-1-11,,point,,,,false,abf-boundaries-v0.2.0,Frigorífico Guaraní Self-Consumption solar farm,L100000832615,utility-scale solar,operating,1
+G100001018308,energy_plants_gem_units,PRY,point,,PRY-1-15,,point,,,,true,abf-boundaries-v0.2.0,PASH and ERIH solar farm,L100001016474,utility-scale solar,announced,100

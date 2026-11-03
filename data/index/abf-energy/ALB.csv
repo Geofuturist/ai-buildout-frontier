@@ -1,0 +1,76 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000108106,energy_plants_gem_units,ALB,point,,ALB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Porto Romano Power Station,L100000100001,coal,cancelled,800
+G100000406378,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,false,abf-boundaries-v0.2.0,Vlora power station,L100000406417,oil/gas,pre_construction,100
+G100000413018,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Vlora Floating Thermal Power Plant,L100000408826,oil/gas,operating,52.2
+G100000413019,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Roskovec power station,L100000408827,oil/gas,pre_construction,170
+G100000600004,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,false,abf-boundaries-v0.2.0,Fierza hydroelectric plant,L100000600004,hydropower,operating,500
+G100000600006,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,false,abf-boundaries-v0.2.0,Komani hydroelectric plant,L100000600006,hydropower,operating,600
+G100000600007,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,false,abf-boundaries-v0.2.0,Moglicë hydroelectric plant,L100000600007,hydropower,operating,197
+G100000600009,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,false,abf-boundaries-v0.2.0,Lekaj Vajvishti hydroelectric plant,L100000600009,hydropower,shelved,58
+G100000600010,energy_plants_gem_units,ALB,point,,ALB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Skavica hydroelectric plant,L100000600010,hydropower,shelved,210
+G100000600011,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,false,abf-boundaries-v0.2.0,Vau i Dejës hydroelectric plant,L100000600011,hydropower,operating,250
+G100000604491,energy_plants_gem_units,ALB,point,,ALB-1-05,,point,,,,false,abf-boundaries-v0.2.0,Kalivaci hydroelectric plant,L100000600005,hydropower,cancelled,108
+G100000604735,energy_plants_gem_units,ALB,point,,ALB-1-05,,point,,,,false,abf-boundaries-v0.2.0,Poçem hydroelectric plant,L100000600008,hydropower,cancelled,102
+G100000806914,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,false,abf-boundaries-v0.2.0,Project Blue 1 solar farm,L100000806005,utility-scale solar,operating,58
+G100000806915,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Project Blue 2 solar farm,L100000806006,utility-scale solar,pre_construction,58
+G100000806933,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,false,abf-boundaries-v0.2.0,Karavasta solar farm,L100000806022,utility-scale solar,operating,140
+G100000806934,energy_plants_gem_units,ALB,point,,ALB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Spitallë solar farm,L100000806023,utility-scale solar,construction,100
+G100000806974,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Darzezë E Re solar farm,L100000806055,utility-scale solar,shelved,150
+G100000807453,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Akerni solar farm,L100000806496,utility-scale solar,cancelled,50
+G100000807454,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Akerni solar farm,L100000806496,utility-scale solar,cancelled,50
+G100000807456,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Libofshë solar farm,L100000806498,utility-scale solar,shelved,50
+G100000818772,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Akërni solar farm,L100000815870,utility-scale solar,shelved,150
+G100000818773,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,ALB Solar 1 solar farm,L100000815871,utility-scale solar,shelved,50
+G100000818774,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Arsol solar farm,L100000815872,utility-scale solar,pre_construction,50
+G100000818775,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,GreNNat Solar Park,L100000815873,utility-scale solar,operating,25
+G100000818776,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Erseka solar farm,L100000815874,utility-scale solar,operating,20
+G100000818777,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Erseka solar farm,L100000815874,utility-scale solar,operating,20
+G100000818778,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Erseka solar farm,L100000815874,utility-scale solar,pre_construction,60
+G100000818779,energy_plants_gem_units,ALB,point,,ALB-1-05,,point,,,,true,abf-boundaries-v0.2.0,Libohova solar farm,L100000815875,utility-scale solar,pre_construction,93
+G100000818780,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Povelça solar farm,L100000815876,utility-scale solar,shelved,50
+G100000818781,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Premium solar farm,L100000815877,utility-scale solar,shelved,30
+G100000818782,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Seman solar farm,L100000815878,utility-scale solar,shelved,275
+G100000818783,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Sharp solar farm,L100000815879,utility-scale solar,shelved,20
+G100000917256,energy_plants_gem_units,ALB,point,,ALB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kurbin wind farm,L100000913899,wind,cancelled,36
+G100000917630,energy_plants_gem_units,ALB,point,,ALB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Kavaje wind farm,L100000914221,wind,cancelled,40
+G100000919105,energy_plants_gem_units,ALB,point,,ALB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Markat wind farm,L100000915447,wind,cancelled,72
+G100000919629,energy_plants_gem_units,ALB,point,,ALB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Kapshticë wind farm,L100000915885,wind,cancelled,150
+G100000919784,energy_plants_gem_units,ALB,point,,ALB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Lezhe wind farm,L100000916019,wind,cancelled,230
+G100000923766,energy_plants_gem_units,ALB,point,,ALB-1-05,,point,,,,true,abf-boundaries-v0.2.0,Dropull wind farm,L100000919283,wind,shelved,50
+G100000923767,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Karaburun Eurus wind farm,L100000919284,wind,cancelled,10
+G100000923768,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Karaburun WF wind farm,L100000919285,wind,cancelled,10
+G100000923769,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Karaburun wind farm (Albania),L100000919286,wind,shelved,10
+G100000923770,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Karaburun wind farm (Albania),L100000919286,wind,shelved,10
+G100000923771,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Karaburun wind farm (Albania),L100000919286,wind,shelved,10
+G100000923772,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Karaburun wind farm (Albania),L100000919286,wind,shelved,10
+G100000923773,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Karaburun wind farm (Albania),L100000919286,wind,shelved,10
+G100000923774,energy_plants_gem_units,ALB,point,,ALB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Lezhë wind farm,L100000919287,wind,construction,150
+G100000923775,energy_plants_gem_units,ALB,point,,ALB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Lezhë wind farm,L100000919287,wind,pre_construction,220
+G100001001628,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Fushor Airport solar farm,L100001001224,utility-scale solar,announced,27
+G100001006418,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,false,abf-boundaries-v0.2.0,Gryka solar project,L100001005381,utility-scale solar,operating,18
+G100001006518,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,false,abf-boundaries-v0.2.0,Vlora power station,L100000406417,oil/gas,pre_construction,150
+G100001006520,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,false,abf-boundaries-v0.2.0,Vlora power station,L100000406417,oil/gas,pre_construction,100
+G100001030375,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,false,abf-boundaries-v0.2.0,Moglicë Pumped Storage hydroelectric plant,L100001025620,hydropower,announced,1200
+G100001030376,energy_plants_gem_units,ALB,point,,ALB-1-03,,point,,,,false,abf-boundaries-v0.2.0,Banjë hydroelectric plant,L100001025621,hydropower,operating,72
+G100001030436,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,false,abf-boundaries-v0.2.0,Ashta 2 hydroelectric plant,L100001025651,hydropower,operating,45
+G100001030437,energy_plants_gem_units,ALB,point,,ALB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Fang hydroelectric plant,L100001025652,hydropower,operating,72
+G100001052178,energy_plants_gem_units,ALB,point,,ALB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Elbasan Waste to Energy power station,L100001046238,bioenergy,mothballed,2.9
+G100001053456,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Pogradec wind farm,L100001047069,wind,announced,120
+G100001053457,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Vau i Dejës wind farm,L100001047070,wind,announced,28.5
+G100001053459,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Devoll wind farm,L100001047071,wind,announced,450
+G100001053460,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Erseka wind farm,L100001047072,wind,announced,200
+G100001053461,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Korça wind farm,L100001047073,wind,announced,190
+G100001053462,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,South Wind Park,L100001047074,wind,announced,75
+G100001053463,energy_plants_gem_units,ALB,point,,ALB-1-11,,point,,,,true,abf-boundaries-v0.2.0,Gursi Energy wind farm,L100001047075,wind,announced,74.4
+G100001053464,energy_plants_gem_units,ALB,point,,ALB-1-11,,point,,,,true,abf-boundaries-v0.2.0,Kryevidh wind farm,L100001047076,wind,announced,72.6
+G100001053517,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,GreNNat Solar Park,L100000815873,utility-scale solar,pre_construction,75
+G100001053518,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Finiq solar farm,L100001047113,utility-scale solar,announced,50
+G100001053519,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Divjakë solar farm,L100001047114,utility-scale solar,announced,45
+G100001053520,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Fushë-Povelçë solar farm,L100001047115,utility-scale solar,announced,100
+G100001053521,energy_plants_gem_units,ALB,point,,ALB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Shmil solar farm,L100001047116,utility-scale solar,announced,40
+G100001053522,energy_plants_gem_units,ALB,point,,ALB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Vau i Dejës floating solar farm,L100001047117,utility-scale solar,operating,12.9
+G100001053523,energy_plants_gem_units,ALB,point,,ALB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Fier solar farm,L100001047118,utility-scale solar,pre_construction,30
+G100001053524,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Kolonje solar farm,L100001047119,utility-scale solar,pre_construction,24
+G100001057443,energy_plants_gem_units,ALB,point,,ALB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Taç Lartë solar farm,L100001049805,utility-scale solar,announced,62
+G100001070167,energy_plants_gem_units,ALB,point,,ALB-1-12,,point,,,,true,abf-boundaries-v0.2.0,Vlora Floating Thermal Power Plant,L100000408826,oil/gas,operating,58
+G100001092806,energy_plants_gem_units,ALB,point,,ALB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Peshqeshit hydroelectric plant,L100001082472,hydropower,operating,34

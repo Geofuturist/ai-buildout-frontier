@@ -1,0 +1,580 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100156,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Amer power station,L100000103090,coal,retired,701
+G100000101018,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Borssele power station,L100000103092,coal,retired,441
+G100000102596,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven power station,L100000103088,coal,operating,800
+G100000102597,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven power station,L100000103088,coal,operating,800
+G100000102975,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Nijmegen power station,L100000103087,coal,retired,632
+G100000103753,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Hemweg power station,L100000400533,coal,retired,685
+G100000106534,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte Power Station (Uniper),L100000103093,coal,operating,1100
+G100000106535,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte Power Station (Onyx Power),L100000103095,coal,operating,800
+G100000106536,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte Power Station (Uniper),L100000103093,coal,retired,603
+G100000106537,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte Power Station (Uniper),L100000103093,coal,retired,603
+G100000106562,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Magnum IGCC Power Station,L100000103089,coal,cancelled,1311
+G100000200240,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Afval Energie Bedrijf Amsterdam power station,L100000200212,bioenergy,operating,39
+G100000200241,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Afval Energie Bedrijf Amsterdam power station,L100000200212,bioenergy,operating,72
+G100000200247,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,AVR Duiven power station,L100000200217,bioenergy,operating,31
+G100000200248,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,AVR Rozenburg power station,L100000200218,bioenergy,operating,108
+G100000200251,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,BMC Moerdijk power station,L100000200221,bioenergy,operating,36
+G100000200265,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,EEW Delfzijl Waste-to-Energy power station,L100000200234,bioenergy,operating,36
+G100000200272,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eneco Bio Golden Raand power station,L100000200240,bioenergy,operating,49
+G100000200274,energy_plants_gem_units,NLD,point,DEU,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,EVI Abfallverwertung power station,L100000200242,bioenergy,operating,70
+G100000200283,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,HVC Dordrecht power station,L100000200250,bioenergy,operating,32
+G100000200314,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,PreZero ReEnergy Roosendal power station,L100000200281,bioenergy,operating,39
+G100000200347,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Twence Afval power station,L100000200311,bioenergy,operating,25
+G100000200355,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Wijster power station,L100000200319,bioenergy,operating,54
+G100000201408,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,AEC Moerdijk power station,L100000201185,bioenergy,operating,125
+G100000201409,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Alco Energy Rotterdam power station,L100000201186,bioenergy,operating,60
+G100000201412,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,HVC Alkmaar power station,L100000201189,bioenergy,operating,50
+G100000202522,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Amer power station,L100000103090,bioenergy,operating,500
+G100000400490,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Akzo Salinco power station,L100000400490,oil/gas,operating,50
+G100000400491,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Akzo Salinco power station,L100000400490,oil/gas,operating,50
+G100000400494,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Bergen op Zoom GE power station,L100000400494,oil/gas,operating,37
+G100000400495,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Bergen op Zoom GE power station,L100000400494,oil/gas,operating,40
+G100000400497,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Botlek power station,L100000400497,oil/gas,operating,45
+G100000400498,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Botlek Refinery power station,L100000400498,oil/gas,operating,49
+G100000400499,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Bergum power station,L100000400499,oil/gas,mothballed,332
+G100000400500,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Bergum power station,L100000400499,oil/gas,mothballed,332
+G100000400501,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,De Hoop Paper Mill power station,L100000400501,bioenergy,operating,71
+G100000400502,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Delesto power station,L100000400502,oil/gas,operating,180
+G100000400503,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Delesto power station,L100000400502,oil/gas,operating,343
+G100000400508,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Den Haag power station,L100000400508,oil/gas,operating,112
+G100000400509,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Diemen power station,L100000400509,oil/gas,operating,249
+G100000400510,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Diemen power station,L100000400509,oil/gas,operating,435
+G100000400512,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Dordrecht Dupont power station,L100000400512,oil/gas,operating,29
+G100000400513,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,EEM power station,L100000400513,oil/gas,operating,360
+G100000400514,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,EEM power station,L100000400513,oil/gas,operating,360
+G100000400515,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,EEM power station,L100000400513,oil/gas,operating,360
+G100000400516,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,EEM power station,L100000400513,oil/gas,operating,360
+G100000400517,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,EEM power station,L100000400513,oil/gas,operating,360
+G100000400519,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Elsta power station,L100000400519,oil/gas,operating,460
+G100000400521,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Emmtec Industry & Businesspark power station,L100000400521,oil/gas,operating,60
+G100000400522,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Enecogen power station,L100000400522,oil/gas,operating,435
+G100000400523,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Enecogen power station,L100000400522,oil/gas,operating,435
+G100000400524,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Enschede power station,L100000400524,bioenergy,operating,59
+G100000400525,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Foxhol Plant power station,L100000400525,oil/gas,operating,20
+G100000400526,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Gasselternijveen power station,L100000400526,oil/gas,operating,24.5
+G100000400530,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Helmond power station,L100000400530,oil/gas,operating,24.3
+G100000400531,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Helmond power station,L100000400530,oil/gas,operating,25.3
+G100000400533,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Hemweg power station,L100000400533,oil/gas,operating,440
+G100000400536,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Leiden power station,L100000400536,oil/gas,operating,85
+G100000400537,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasstroom power station,L100000400537,oil/gas,operating,426
+G100000400538,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Maastricht Mill power station,L100000400538,oil/gas,operating,22.4
+G100000400539,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Maastricht Mill power station,L100000400538,oil/gas,operating,52
+G100000400540,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte Ucml power station,L100000400540,oil/gas,operating,70
+G100000400541,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Magnum (Eemshaven) power station,L100000400541,oil/gas,operating,470
+G100000400542,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Magnum (Eemshaven) power station,L100000400541,oil/gas,operating,470
+G100000400543,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Magnum (Eemshaven) power station,L100000400541,oil/gas,operating,470
+G100000400544,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Maxima power station,L100000400544,oil/gas,operating,440
+G100000400545,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Maxima power station,L100000400544,oil/gas,operating,440
+G100000400547,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Merwedekanaal power station,L100000400546,oil/gas,operating,224
+G100000400548,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Moerdijk power station,L100000400548,oil/gas,mothballed,348
+G100000400549,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Moerdijk power station,L100000400548,oil/gas,operating,418
+G100000400550,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Nam Schoonebeek power station,L100000400550,oil/gas,operating,128
+G100000400551,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,true,abf-boundaries-v0.2.0,Parenco Paper Mill power station,L100000400551,bioenergy,operating,24
+G100000400552,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Pergen power station,L100000400552,oil/gas,operating,308
+G100000400553,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Pernis Refinery power station,L100000400553,oil/gas,operating,126
+G100000400554,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Pernis Refinery power station,L100000400553,oil/gas,operating,48
+G100000400555,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Pernis Refinery power station,L100000400553,oil/gas,operating,95
+G100000400557,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam Capelle (RoCa) power station,L100000400557,oil/gas,operating,24
+G100000400558,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam Capelle (RoCa) power station,L100000400557,oil/gas,operating,24
+G100000400559,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam Capelle (RoCa) power station,L100000400557,oil/gas,operating,220
+G100000400564,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Sloe power station,L100000400564,oil/gas,operating,435
+G100000400565,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Sloe power station,L100000400564,oil/gas,operating,435
+G100000400566,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Sluiskil Works power station,L100000400566,oil/gas,operating,38
+G100000400567,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Sluiskil Works power station,L100000400566,oil/gas,operating,30
+G100000400568,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Swentibold power station,L100000400568,oil/gas,operating,230
+G100000400569,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Ter Apelkanaal Siem power station,L100000400569,oil/gas,operating,40
+G100000400570,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Velsen Mill power station,L100000400570,oil/gas,operating,20
+G100000406336,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rijnmond power station,L100000406400,oil/gas,operating,810
+G100000409937,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Lage Weide 6 power station,L100000407615,oil/gas,operating,248
+G100000409939,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,EEM power station,L100000400513,oil/gas,operating,131
+G100000409940,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Claus power station,L100000407617,oil/gas,operating,1304
+G100000409941,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Bergum power station,L100000400499,oil/gas,operating,72
+G100000409942,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Bergum power station,L100000400499,oil/gas,operating,72
+G100000410763,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam IRP power station,L100000407930,oil/gas,operating,24
+G100000500496,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Borssele nuclear power plant,L100000500205,nuclear,operating,515
+G100000500594,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Dodewaard nuclear power plant,L100000500248,nuclear,retired,60
+G100000501225,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Borssele nuclear power plant,L100000500205,nuclear,pre_construction,1650
+G100000501226,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Borssele nuclear power plant,L100000500205,nuclear,pre_construction,1650
+G100000806583,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,true,abf-boundaries-v0.2.0,Lochem solar farm,L100000805719,utility-scale solar,operating,21
+G100000806584,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,true,abf-boundaries-v0.2.0,Losser solar farm,L100000805720,utility-scale solar,operating,27
+G100000806585,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Haringvliet Zuid solar farm,L100000805721,utility-scale solar,operating,37.8
+G100000806650,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Sunport Delfzijl solar farm,L100000805778,utility-scale solar,operating,30
+G100000806684,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Buinerveen solar farm,L100000805808,utility-scale solar,operating,44.7
+G100000806685,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Stadskanaal solar farm,L100000805809,utility-scale solar,operating,101
+G100000806951,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zuyderzon Almere solar farm,L100000806038,utility-scale solar,operating,34
+G100000807010,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Assen-Zuid solar farm,L100000806090,utility-scale solar,operating,21
+G100000807052,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Leek solar farm,L100000806131,utility-scale solar,operating,29
+G100000807053,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Midden-Groningen solar farm,L100000806132,utility-scale solar,operating,103
+G100000807081,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Roosendaal solar farm,L100000806159,utility-scale solar,operating,35
+G100000807207,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Groningen Airport Eelde solar farm,L100000806272,utility-scale solar,operating,21.8
+G100000807208,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Ooltgensplaat solar farm,L100000806273,utility-scale solar,operating,37.6
+G100000807209,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Vlagtwedde solar farm,L100000806274,utility-scale solar,operating,110
+G100000807210,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Nrystar Budel solar farm,L100000806275,utility-scale solar,operating,44
+G100000807222,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Bomhofsplas solar farm,L100000806287,utility-scale solar,operating,27
+G100000807264,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Borssele solar farm,L100000806327,utility-scale solar,operating,21.5
+G100000807290,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Exloo solar farm,L100000806351,utility-scale solar,operating,49
+G100000807362,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Sellingen solar farm,L100000806415,utility-scale solar,operating,41
+G100000807363,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Uivermeertjes solar farm,L100000806416,utility-scale solar,operating,30
+G100000807658,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Fluitenberg solar farm,L100000806685,utility-scale solar,operating,33
+G100000807659,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,Hollandscheveld solar farm,L100000806686,utility-scale solar,operating,50
+G100000807660,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Pesse - Zwarte Water solar farm,L100000806687,utility-scale solar,operating,32
+G100000807661,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Vlagtwedde solar farm,L100000806274,utility-scale solar,pre_construction,101
+G100000807741,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Moerdijk solar farm,L100000806763,utility-scale solar,operating,27
+G100000807742,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Pottendijk solar farm,L100000806764,utility-scale solar,operating,50
+G100000807774,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,Hollandia Nieuw-Buinen solar farm,L100000806795,utility-scale solar,operating,70
+G100000807837,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Ijmuiden Works solar farm,L100000806834,utility-scale solar,cancelled,22
+G100000807977,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,East Of N48 solar farm,L100000806953,utility-scale solar,cancelled,40
+G100000807978,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Hendrik Reindersweg solar farm,L100000806954,utility-scale solar,cancelled,35
+G100000827097,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Aadijk Almelo solar farm,L100000824031,utility-scale solar,operating,39.3
+G100000827099,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Coevorden solar farm,L100000824033,utility-scale solar,operating,24.7
+G100000827100,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,true,abf-boundaries-v0.2.0,Dokkum solar farm,L100000824034,utility-scale solar,operating,14
+G100000827101,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Harderwold-Zeewolde solar farm,L100000824035,utility-scale solar,operating,44
+G100000827102,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,true,abf-boundaries-v0.2.0,Hoogengraven solar farm,L100000824036,utility-scale solar,operating,3
+G100000827104,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Koegorspolder solar farm,L100000824038,utility-scale solar,operating,31.1
+G100000827105,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Leemslagen solar farm,L100000824039,utility-scale solar,construction,20
+G100000827106,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Lemsterhoek solar farm,L100000824040,utility-scale solar,operating,31
+G100000827107,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,Matsloot solar farm,L100000824041,utility-scale solar,pre_construction,50
+G100000827108,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Noordermeerdijk solar farm,L100000824042,utility-scale solar,operating,98
+G100000827109,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Oostburg solar farm,L100000824043,utility-scale solar,cancelled,25
+G100000827110,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Sas van Gent-Zuid solar farm,L100000824044,utility-scale solar,operating,30
+G100000827111,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Tractaatweg solar farm,L100000824045,utility-scale solar,operating,40
+G100000827112,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Wanneperveen solar farm,L100000824046,utility-scale solar,operating,28
+G100000907681,energy_plants_gem_units,NLD,point,,NLD-1-BQ1,,point,,,,false,abf-boundaries-v0.2.0,Bonaire wind farm,L100000905592,wind,operating,11
+G100000910638,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Laarakkerdijk wind farm,L100000907960,wind,operating,10
+G100000910704,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Martina Cornelia wind farm,L100000908017,wind,operating,10
+G100000910746,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,New Waterway wind farm,L100000908059,wind,operating,10
+G100000910749,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,true,abf-boundaries-v0.2.0,Nijmegen-Betuwe wind farm,L100000908062,wind,operating,10
+G100000910908,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Van Gogh Windpark,L100000908217,wind,operating,10
+G100000910935,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Windpark Hoofdplaatpolder BV,L100000908242,wind,operating,10
+G100000910955,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Zwartenbergseweg wind farm,L100000908262,wind,operating,10
+G100000911105,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Blaakweg wind farm,L100000908405,wind,operating,11
+G100000911129,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Futenweg wind farm,L100000908429,wind,operating,11
+G100000911258,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Windmolens Groetpolder wind farm,L100000908553,wind,retired,11
+G100000911460,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Barrepolder wind farm,L100000908742,wind,operating,12
+G100000911562,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,De Hondtocht wind farm,L100000908840,wind,operating,12
+G100000911569,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Dintelhaven wind farm,L100000908847,wind,cancelled,12
+G100000911650,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Groettocht wind farm,L100000908923,wind,cancelled,12
+G100000911675,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Hellegatsplein Windpark,L100000908946,wind,operating,12
+G100000911911,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Pijlstaartweg wind farm,L100000909172,wind,cancelled,12
+G100000911928,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Prinses Amalia offshore wind farm,L100000909188,wind,operating,120
+G100000911981,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Samen Voor De Wind wind farm,L100000909237,wind,retired,12
+G100000912098,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Westfrisia wind farm,L100000909352,wind,operating,12
+G100000912119,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zuiderzeehaven wind farm,L100000909371,wind,cancelled,12
+G100000912320,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Jacoba Rippolder wind farm,L100000909562,wind,retired,13
+G100000912322,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Jacoba Rippolder wind farm,L100000909562,wind,operating,14
+G100000912360,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Nieuw Prinsenland Windpark,L100000909592,wind,operating,13
+G100000912433,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Windmolens Groetpolder wind farm,L100000908553,wind,operating,13
+G100000912574,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Anna Maria Polder wind farm,L100000909789,wind,retired,14
+G100000912637,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Eemmeerdijk wind farm,L100000909848,wind,operating,14
+G100000912647,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Ewi wind farm,L100000909855,wind,operating,14
+G100000912864,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Van Pallandtpolder wind farm,L100000910048,wind,operating,14
+G100000912877,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Waterkaaptocht wind farm,L100000910061,wind,cancelled,14
+G100000912889,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeebiestocht wind farm,L100000910072,wind,retired,14
+G100000912979,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam-Westpoort wind farm,L100000910153,wind,operating,15
+G100000912981,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Anna Vosdijk Polder wind farm,L100000910155,wind,operating,15
+G100000913098,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Hoevensche Breemden wind farm,L100000910260,wind,operating,15
+G100000913124,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Landtong Rozenburg Wind Park,L100000910284,wind,retired,15
+G100000913214,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Rotterdamn-Distridam wind farm,L100000910365,wind,retired,10
+G100000913382,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Den Helder I wind farm,L100000910516,wind,cancelled,16
+G100000913416,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Haagen wind farm,L100000910547,wind,operating,16
+G100000913427,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Irene Vorrink wind farm,L100000910556,wind,retired,17
+G100000913578,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Zuidwal wind farm,L100000910688,wind,retired,16
+G100000914077,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad-Meeuwentocht wind farm,L100000911134,wind,operating,18
+G100000914479,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Borssele I & II offshore wind farm,L100000911495,wind,operating,376
+G100000914588,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Kluutmolen wind farm,L100000911593,wind,retired,20
+G100000914658,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Oudelandertocht wind farm,L100000911654,wind,cancelled,20
+G100000914945,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,New Waterway wind farm,L100000908059,wind,operating,21
+G100000914961,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Piet De Wit wind farm,L100000911923,wind,retired,21
+G100000915122,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Haringvliet South Energy Park wind farm,L100000912063,wind,operating,22
+G100000915332,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Mammoettocht wind farm,L100000912245,wind,operating,23
+G100000915343,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Neushoorntocht wind farm,L100000912256,wind,operating,23
+G100000915353,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rijnwoude wind farm,L100000912265,wind,operating,12
+G100000915487,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Epz wind farm,L100000912384,wind,operating,24
+G100000915506,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Greenchoice Hartel wind farm,L100000912401,wind,operating,21
+G100000915513,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Hartel Canal wind farm,L100000912407,wind,operating,24
+G100000915514,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Hartelbrug wind farm,L100000912408,wind,operating,24
+G100000915653,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Suurhoffbrug wind farm,L100000912530,wind,operating,12
+G100000915681,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Zuidwal wind farm,L100000910688,wind,operating,24
+G100000915721,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Binnenhaven wind farm,L100000912591,wind,cancelled,25
+G100000915732,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Deil Windpark,L100000912601,wind,operating,21
+G100000915789,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Moerdijk Wind Park,L100000912655,wind,operating,25
+G100000916005,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Slufterdam 2.0 wind farm,L100000912837,wind,retired,12
+G100000916048,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Afrikahaven wind farm,L100000912874,wind,operating,27
+G100000916094,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Landtong Rozenburg Wind Park,L100000910284,wind,operating,34
+G100000916105,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Oud Dintel Windpark,L100000912920,wind,operating,16
+G100000916282,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Sternweg wind farm,L100000913071,wind,operating,28
+G100000916480,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,ECN wind energy facilities B.V,L100000913241,wind,operating,30
+G100000916808,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Kubbeweg wind farm,L100000913518,wind,retired,34
+G100000916832,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Oostflakkee wind farm,L100000913536,wind,operating,32
+G100000916908,energy_plants_gem_units,NLD,point,DEU,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Emlichheim-Nord wind farm,L100000913595,wind,operating,33
+G100000917125,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,ECN wind energy facilities B.V,L100000913241,wind,operating,35
+G100000917168,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Samen Voor De Wind wind farm,L100000909237,wind,operating,13
+G100000917425,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Bouwdokken Wind Park,L100000914047,wind,operating,38
+G100000917449,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Jaap Rodenburg wind farm,L100000914070,wind,retired,17
+G100000917450,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Jaap Rodenburg wind farm,L100000914070,wind,operating,38
+G100000917534,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Mondriaan wind farm,L100000914140,wind,operating,39
+G100000917588,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Battenoert wind farm,L100000914187,wind,operating,14
+G100000917925,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Koegorspolder wind farm,L100000914468,wind,operating,44
+G100000918627,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Slufterdam 2.0 wind farm,L100000912837,wind,operating,50
+G100000918861,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Piet De Wit wind farm,L100000911923,wind,operating,32
+G100000918922,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Netterden-Azewijn wind farm,L100000915292,wind,operating,12
+G100000918961,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Delfzijl-Noord wind farm,L100000915324,wind,operating,46
+G100000918963,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Growind wind farm,L100000915326,wind,operating,63
+G100000918982,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Delfzijl-Zuid wind farm,L100000915340,wind,operating,32
+G100000919181,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Kreekraksluis wind farm,L100000915513,wind,operating,78
+G100000919200,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Den Tol Wind Park,L100000915530,wind,operating,34
+G100000919204,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Kroningswind wind farm,L100000915533,wind,operating,80
+G100000919401,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte 2 wind farm,L100000915696,wind,operating,100
+G100000919402,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Maasvlakte 2 wind farm,L100000915696,wind,operating,12
+G100000919429,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Krammer Wind Park,L100000915721,wind,operating,102
+G100000919468,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Delfzijl-Zuid wind farm,L100000915340,wind,construction,175
+G100000919486,energy_plants_gem_units,NLD,point,DEU,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Riffgat wind farm,L100000915763,wind,operating,113
+G100000919565,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Eneco Luchterduinen wind farm,L100000915830,wind,operating,129
+G100000919566,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Luchterduinen wind farm,L100000915831,wind,operating,129
+G100000919604,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Noordoostpolder-Westermeerwind Windpark,L100000915861,wind,operating,144
+G100000919657,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Westereems wind farm,L100000915910,wind,operating,150
+G100000919682,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Egmond Aan Zee wind farm,L100000915932,wind,operating,108
+G100000919690,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Westereems wind farm,L100000915910,wind,operating,12
+G100000919700,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Delfzijl-Zuid wind farm,L100000915340,wind,operating,65
+G100000919702,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,De Drentse Monden En Oostermoer wind farm,L100000915949,wind,operating,46.8
+G100000919889,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Callantsoog-Noord wind farm,L100000916111,wind,cancelled,303
+G100000919917,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Breeveertien II wind farm,L100000916133,wind,cancelled,349
+G100000919918,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Beaufort wind farm,L100000916134,wind,operating,350
+G100000919945,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Fryslân wind farm,L100000916156,wind,operating,383
+G100000920042,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Gemini Offshore Wind Park,L100000916239,wind,operating,600
+G100000920060,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Hollandse Kust Noord offshore wind farm,L100000916254,wind,operating,759
+G100000920069,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Hollandse Kust Zuid wind farm,L100000916262,wind,operating,385
+G100000920072,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Borssele I & II offshore wind farm,L100000911495,wind,operating,376
+G100000920074,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Hollandse Kust Zuid wind farm,L100000916262,wind,operating,350
+G100000925140,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Amazon Shell HKN offshore wind farm,L100000920473,wind,operating,759
+G100000925141,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Ansjovisstroom wind farm,L100000920474,wind,retired,13
+G100000925142,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Ansjovisstroom wind farm,L100000920474,wind,operating,32
+G100000925143,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Beaufort Katwijk offshore wind farm,L100000920475,wind,cancelled,279
+G100000925144,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Bijvanck wind farm,L100000920476,wind,operating,13
+G100000925145,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Neeltje Jans Binnenhaven wind farm,L100000920477,wind,operating,17
+G100000925146,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Binnenjijks wind farm,L100000920478,wind,operating,68
+G100000925149,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Clearcamp offshore wind farm,L100000920479,wind,cancelled,275
+G100000925150,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,De Drentse Monden En Oostermoer wind farm,L100000915949,wind,operating,47
+G100000925151,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,De Drentse Monden En Oostermoer wind farm,L100000915949,wind,operating,63
+G100000925152,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,De Kookepan wind farm,L100000920480,wind,operating,14
+G100000925153,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,De Rietvelden wind farm,L100000920481,wind,operating,11
+G100000925154,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,De Veenwieken wind farm,L100000920482,wind,operating,24
+G100000925155,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Deil Windpark,L100000912601,wind,operating,16
+G100000925156,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Delfzijl Midden wind farm,L100000920483,wind,operating,39
+G100000925157,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Delfzijl-Noord wind farm,L100000915324,wind,operating,17
+G100000925158,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Delfzijl-Zuid wind farm,L100000915340,wind,operating,12
+G100000925159,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Delfzijl-Zuid wind farm,L100000915340,wind,operating,12
+G100000925160,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Den Haag II offshore wind farm,L100000920484,wind,cancelled,255
+G100000925161,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Designated Wind Energy Area HK-NW wind farm,L100000920485,wind,cancelled,1400
+G100000925162,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Dodaarsweg wind farm,L100000920486,wind,operating,10
+G100000925163,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Doordewind offshore wind farm,L100000920487,wind,pre_construction,2000
+G100000925164,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Doordewind offshore wind farm,L100000920487,wind,pre_construction,2000
+G100000925165,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Dronten offshore wind farm,L100000920488,wind,operating,17
+G100000925166,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,ECN wind farm,L100000920489,wind,retired,12
+G100000925167,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Eemmerdijk Wind Park,L100000920490,wind,operating,19
+G100000925168,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven Zuidoost wind farm,L100000920491,wind,operating,18
+G100000925169,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Egchelse Heide wind farm,L100000920492,wind,operating,21
+G100000925170,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Etten-Leur wind farm,L100000920493,wind,operating,13
+G100000925171,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Flevo Ventum wind farm,L100000920494,wind,operating,32
+G100000925172,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Geefsweer wind farm,L100000920495,wind,operating,26
+G100000925173,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Geefsweer wind farm,L100000920495,wind,operating,30
+G100000925174,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Greenport Venlo wind farm,L100000920496,wind,operating,35
+G100000925175,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Haliade-X Massvlakte Prototype Onshore offshore wind farm,L100000920497,wind,operating,12
+G100000925176,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Hanze wind farm,L100000920498,wind,operating,90
+G100000925177,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,true,abf-boundaries-v0.2.0,Hattemerbroek wind farm,L100000920499,wind,operating,14
+G100000925178,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Hoge Vaart Zuid wind farm,L100000920500,wind,operating,60
+G100000925179,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Hogezandse Polder wind farm,L100000920501,wind,operating,30
+G100000925180,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Hollandse Kust Zuid wind farm,L100000916262,wind,operating,385
+G100000925181,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Hollandse Kust Zuid wind farm,L100000916262,wind,operating,380
+G100000925183,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Hondtocht wind farm,L100000920502,wind,retired,14
+G100000925184,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Hondtocht wind farm,L100000920502,wind,operating,14
+G100000925185,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Hondtocht Zuid wind farm,L100000920503,wind,operating,25
+G100000925186,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,IJmuiden offshore wind farm,L100000920504,wind,cancelled,153
+G100000925194,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Kabeljauwbeek wind farm,L100000920506,wind,operating,18
+G100000925195,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Katwijk Buiten offshore wind farm,L100000920507,wind,cancelled,325
+G100000925196,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,true,abf-boundaries-v0.2.0,Koningspleij wind farm,L100000920508,wind,operating,13
+G100000925197,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Kreekraksluis wind farm,L100000915513,wind,retired,13
+G100000925198,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Kubbeweg wind farm,L100000913518,wind,operating,74
+G100000925199,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Laaksche Vaart wind farm,L100000920509,wind,operating,10
+G100000925200,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Lutjewinkel wind farm,L100000920510,wind,retired,11
+G100000925201,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Lutjewinkel wind farm,L100000920510,wind,cancelled,20
+G100000925202,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Lutjewinkel wind farm,L100000920510,wind,cancelled,44
+G100000925203,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Mauve wind farm,L100000920511,wind,operating,30
+G100000925204,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Midlum wind farm (Netherlands),L100000920512,wind,operating,14
+G100000925205,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,N33 wind farm,L100000920513,wind,operating,58
+G100000925206,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,N33 wind farm,L100000920513,wind,operating,17
+G100000925207,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,N33 wind farm,L100000920513,wind,operating,17
+G100000925208,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,N33 wind farm,L100000920513,wind,operating,58
+G100000925209,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nederwiek I offshore wind farm,L100000920514,wind,pre_construction,1000
+G100000925212,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Neeltje Jans – Vluchtheuvel wind farm,L100000920515,wind,retired,12
+G100000925213,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Neeltje Jans – Vluchtheuvel wind farm,L100000920515,wind,operating,22
+G100000925214,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Nerefco Oil Refinery wind farm,L100000920516,wind,operating,12
+G100000925216,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Nieuwe Hemweg wind farm,L100000920518,wind,operating,13
+G100000925217,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Nieuwegein wind farm,L100000920519,wind,operating,10
+G100000925218,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Nij Hiddum-Houw wind farm,L100000920520,wind,operating,42
+G100000925219,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Nij Hiddum-Houw wind farm,L100000920520,wind,operating,19
+G100000925220,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Noordertocht wind farm,L100000920521,wind,operating,11
+G100000925221,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Noordoostpolder Buitendijks wind farm,L100000920522,wind,operating,15
+G100000925222,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,NOP Agrowind wind farm,L100000920523,wind,operating,195
+G100000925223,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Ten noorden van de Waddeneilanden offshore wind farm,L100000920524,wind,pre_construction,700
+G100000925225,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Oldebroekertocht wind farm,L100000920526,wind,retired,13.8
+G100000925226,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Oldebroekertocht wind farm,L100000920526,wind,operating,31
+G100000925227,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Olsterwind wind farm,L100000920527,wind,retired,12
+G100000925228,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Olsterwind wind farm,L100000920527,wind,operating,50
+G100000925229,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Ooievaarsweg wind farm,L100000920528,wind,operating,13
+G100000925230,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Oosterhorn wind farm,L100000920529,wind,operating,22
+G100000925231,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Oosterhorn wind farm,L100000920529,wind,operating,56
+G100000925232,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Oostpolder wind farm,L100000920530,wind,operating,96
+G100000925233,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Oude Maas wind farm,L100000920531,wind,operating,17.6
+G100000925234,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,P12 offshore wind farm,L100000920532,wind,cancelled,141
+G100000925235,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,Pottendijk Energiepark wind farm,L100000920533,wind,operating,50
+G100000925236,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Prinses Alexia Windpark,L100000920534,wind,operating,122
+G100000925237,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Prinses Ariane Windpark,L100000920535,wind,operating,301
+G100000925238,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Q4 offshore wind farm,L100000920536,wind,cancelled,78
+G100000925239,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Rietvelden/Treurenburg wind farm,L100000920537,wind,cancelled,14
+G100000925240,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,true,abf-boundaries-v0.2.0,Ritthem wind farm,L100000920538,wind,operating,14
+G100000925241,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Rivierduintocht wind farm,L100000920539,wind,retired,12
+G100000925242,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Roompotsluis wind farm,L100000920540,wind,operating,12
+G100000925243,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Rotterdam wind farm,L100000920541,wind,retired,23
+G100000925244,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Scheveningen Buiten offshore wind farm,L100000920542,wind,cancelled,212
+G100000925245,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Slufterdam 2.0 wind farm,L100000912837,wind,retired,14
+G100000925246,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Spinderwind wind farm,L100000920543,wind,operating,14
+G100000925247,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Spui wind farm,L100000920544,wind,operating,21
+G100000925248,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,St. Antoinedijk wind farm,L100000920545,wind,operating,10
+G100000925249,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Strekdammen wind farm,L100000920546,wind,operating,11
+G100000925250,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Suyderlandt wind farm,L100000920547,wind,operating,11
+G100000925251,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Tilburg wind farm,L100000920548,wind,operating,10
+G100000925252,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Vermeer wind farm,L100000920549,wind,operating,86
+G100000925253,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Vires Venti Windpark,L100000920550,wind,operating,19
+G100000925254,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Waardpolder wind farm,L100000920551,wind,operating,22
+G100000925255,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Waddenwind Dutch wind farm,L100000920552,wind,operating,54
+G100000925256,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,Weijerswold wind farm,L100000920553,wind,operating,21
+G100000925257,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Westerse Polder wind farm,L100000920554,wind,retired,25
+G100000925258,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Westerse Polder wind farm,L100000920554,wind,operating,20
+G100000925259,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Weststad III wind farm,L100000920555,wind,cancelled,15
+G100000925260,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Wieringermeer wind farm,L100000920556,wind,cancelled,25
+G100000925261,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Windplanblauw offshore wind farm,L100000920557,wind,operating,132
+G100000925262,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Windstroom wind farm,L100000920558,wind,operating,11
+G100000925263,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Wisse wind farm,L100000920559,wind,operating,12
+G100000925264,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,XY-Wind wind farm,L100000920560,wind,operating,35
+G100000925265,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeebiestocht wind farm,L100000910072,wind,operating,42
+G100000925266,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Zeeuws offshore wind farm,L100000920561,wind,cancelled,1400
+G100000925267,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeewolde wind farm,L100000920562,wind,operating,30.1
+G100000925268,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zierikzee wind farm,L100000920563,wind,operating,10
+G100000925269,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Zuidwester onshore wind farm,L100000920564,wind,operating,90
+G100001000002,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Ede power station,L100001000002,oil/gas,operating,50
+G100001000003,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Bergen op Zoom power station,L100001000003,oil/gas,retired,34
+G100001000004,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Schiphol power station,L100001000004,oil/gas,operating,61
+G100001000005,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Schiphol power station,L100001000004,oil/gas,operating,46
+G100001000007,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,true,abf-boundaries-v0.2.0,Berkelcentrale power station,L100001000006,oil/gas,operating,72
+G100001000008,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Ijmuiden Steel Works power station,L100001000007,oil/gas,operating,144
+G100001000009,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Velsen power station,L100001000008,oil/gas,operating,460
+G100001000010,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Velsen power station,L100001000008,oil/gas,operating,360
+G100001000793,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Koegorspolder solar farm,L100000824038,utility-scale solar,operating,40
+G100001000992,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Apeldoorn Beemte-Broekland solar farm,L100001000659,utility-scale solar,operating,27.6
+G100001000993,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Breda Bavelse Berg solar farm,L100001000661,utility-scale solar,operating,37
+G100001000994,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Duurkenakker solar farm,L100001000662,utility-scale solar,operating,64
+G100001000995,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven Vopak solar farm,L100001000663,utility-scale solar,operating,25
+G100001001004,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Mosselbanken Terneuzen solar farm,L100001000670,utility-scale solar,operating,60
+G100001001006,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Oosterveld Hoogeveen solar farm,L100001000673,utility-scale solar,operating,29.7
+G100001001007,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,Hoogeveen solar farm,L100001000674,utility-scale solar,shelved,35
+G100001001042,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Hoogezand solar farm,L100001000697,utility-scale solar,operating,35
+G100001001046,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,IJsselmuiden solar farm,L100001000700,utility-scale solar,operating,21.6
+G100001001049,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad Flevokust solar farm,L100001000703,utility-scale solar,operating,23.2
+G100001001051,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad Wisentweg solar farm,L100001000705,utility-scale solar,operating,31.7
+G100001001053,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte floating solar farm,L100001000707,utility-scale solar,pre_construction,96
+G100001001055,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Nieuw-Buinen 17a solar farm,L100001000709,utility-scale solar,operating,39.4
+G100001001056,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Nieuw-Buinen 18a solar farm,L100001000710,utility-scale solar,operating,50
+G100001001057,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Oosterwolde de Boer solar farm,L100001000711,utility-scale solar,operating,33.6
+G100001001059,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Oranjedorp solar farm,L100001000713,utility-scale solar,operating,30.7
+G100001001075,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Vleddermond solar farm,L100001000729,utility-scale solar,operating,20.1
+G100001001080,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Walibi solar farm,L100001000733,utility-scale solar,operating,39.2
+G100001001081,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Wilp 18a solar farm,L100001000734,utility-scale solar,operating,36
+G100001001116,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Fledderbosch solar farm,L100001000763,utility-scale solar,operating,103.5
+G100001001122,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,true,abf-boundaries-v0.2.0,Reimerswaal 2 Krekragweg solar farm,L100001000769,utility-scale solar,construction,22.5
+G100001001123,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Vlowijker Solar Park,L100001000770,utility-scale solar,operating,25
+G100001001124,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Oosterwolde solar park,L100001000771,utility-scale solar,operating,50
+G100001001125,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Attero Wijster solar farm,L100001000772,utility-scale solar,operating,31
+G100001001126,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Royal Pride Agri-PV Middenmeer solar farm,L100001000773,utility-scale solar,operating,31.2
+G100001001127,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Teersche Sluispolder solar farm,L100001000774,utility-scale solar,pre_construction,27.6
+G100001001129,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Ouwsterhaule solar farm,L100001000776,utility-scale solar,pre_construction,23.5
+G100001001130,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Maasvlakte solar rooftop project,L100001000777,utility-scale solar,operating,25
+G100001001132,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,true,abf-boundaries-v0.2.0,Lelystad Edelhertweg solar farm,L100001000779,utility-scale solar,construction,45
+G100001001156,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Aardbrandsven solar park,L100001000802,utility-scale solar,pre_construction,58
+G100001001157,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,true,abf-boundaries-v0.2.0,De Groenendaal solar park,L100001000803,utility-scale solar,shelved,21
+G100001001159,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Hooibroeken solar park,L100001000805,utility-scale solar,pre_construction,32.8
+G100001001160,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,ITC/PCT solar park,L100001000806,utility-scale solar,shelved,26
+G100001001163,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,true,abf-boundaries-v0.2.0,Lanakerveld solar park,L100001000809,utility-scale solar,shelved,59
+G100001001164,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Overbetuwe solar park,L100001000810,utility-scale solar,operating,43
+G100001001165,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Overbetuwe solar park,L100001000810,utility-scale solar,operating,43
+G100001001166,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Oosterlaak solar park,L100001000811,utility-scale solar,pre_construction,22
+G100001001167,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Zuidbroek Energie solar park,L100001000812,utility-scale solar,operating,48.8
+G100001001267,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Borssele Site V wind farm,L100001000906,wind,operating,19
+G100001001271,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Bosruitertocht wind farm,L100001000909,wind,operating,15.6
+G100001001272,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,De Kleine Trap wind farm,L100001000910,wind,operating,17.2
+G100001001273,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Energie A16 wind power project,L100001000911,wind,operating,34
+G100001001274,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Energie A16 wind power project,L100001000911,wind,operating,12.9
+G100001001275,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Energie A16 wind power project,L100001000911,wind,operating,22.8
+G100001001276,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Energie A16 wind power project,L100001000911,wind,operating,17.1
+G100001001310,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Spuisluis wind farm,L100001000942,wind,operating,21.6
+G100001001323,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Ecowende Offshore wind farm,L100001000953,wind,pre_construction,780
+G100001001354,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Vluchthaven wind farm,L100001000984,wind,operating,12.9
+G100001001355,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Vlissingen-Oost wind farm,L100001000986,wind,operating,21
+G100001001358,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Wagendorp wind farm,L100001000988,wind,operating,13.2
+G100001001392,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Epz wind farm,L100000912384,wind,retired,12.3
+G100001001438,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Noordoostpolder-Westermeerwind Windpark,L100000915861,wind,operating,285
+G100001001484,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,IJmuiden Ver Alpha Offshore wind farm,L100001001098,wind,pre_construction,2000
+G100001001487,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,IJmuiden Ver Beta Offshore wind farm,L100001001099,wind,pre_construction,2000
+G100001001491,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,IJmuiden Ver Gamma Offshore wind farm,L100001001104,wind,pre_construction,1000
+G100001001492,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nederwiek II Offshore wind farm,L100001001105,wind,pre_construction,2000
+G100001001493,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nederwiek III Offshore wind farm,L100001001106,wind,pre_construction,2000
+G100001001494,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Oranje Offshore wind farm,L100001001107,wind,pre_construction,760
+G100001001495,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Hollandse Kust West VIII Offshore wind farm,L100001001108,wind,announced,700
+G100001001496,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeewolde wind farm,L100000920562,wind,operating,30.1
+G100001001497,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeewolde wind farm,L100000920562,wind,operating,25.8
+G100001001498,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeewolde wind farm,L100000920562,wind,operating,79.8
+G100001001499,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeewolde wind farm,L100000920562,wind,operating,11
+G100001001500,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeewolde wind farm,L100000920562,wind,operating,51.6
+G100001001501,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Zeewolde wind farm,L100000920562,wind,operating,19
+G100001001502,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Borssele III & IV offshore wind farm,L100001001109,wind,operating,360
+G100001001503,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Borssele III & IV offshore wind farm,L100001001109,wind,operating,380
+G100001008497,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Barger-Compascuum 17a solar project,L100001007348,utility-scale solar,operating,11.9
+G100001008499,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Borger 19a solar project,L100001007350,utility-scale solar,operating,5.3
+G100001008500,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Borger 19b solar project,L100001007351,utility-scale solar,operating,6.1
+G100001008501,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Coevorden 17a solar project,L100001007352,utility-scale solar,operating,5.6
+G100001008503,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Coevorden 17c solar project,L100001007354,utility-scale solar,operating,11.9
+G100001008504,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Coevorden 19b solar project,L100001007355,utility-scale solar,operating,13.1
+G100001008506,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drouwenermond 19a solar project,L100001007357,utility-scale solar,operating,5.6
+G100001008510,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Exloërmond 18a solar project,L100001007361,utility-scale solar,operating,19.3
+G100001008513,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Lange Runde solar project,L100001007364,utility-scale solar,operating,14.2
+G100001008518,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Tynaarlo II solar project,L100001007369,utility-scale solar,operating,6.6
+G100001008520,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Almere 19b solar project,L100001007371,utility-scale solar,operating,17.2
+G100001008522,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad Ijsselmeerdijk solar project,L100001007373,utility-scale solar,operating,10.2
+G100001008524,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Luttelgeest 17b solar project,L100001007375,utility-scale solar,operating,6.2
+G100001008532,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,De Knipe 19a solar project,L100001007383,utility-scale solar,operating,14.5
+G100001008539,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Kollum 18a solar project,L100001007390,utility-scale solar,operating,6.7
+G100001008541,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Leeuwarden 17d solar project,L100001007392,utility-scale solar,operating,6.7
+G100001008548,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Water Friesland solar project,L100001007399,utility-scale solar,operating,11
+G100001008549,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Westeinde solar project,L100001007400,utility-scale solar,operating,4
+G100001008551,energy_plants_gem_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Zwette solar project,L100001007402,utility-scale solar,operating,18.2
+G100001008552,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Arnhem 18a solar project,L100001007403,utility-scale solar,operating,10
+G100001008555,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Borculo 19a solar project,L100001007406,utility-scale solar,operating,10.8
+G100001008557,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Ermelo 20a solar project,L100001007408,utility-scale solar,operating,7.8
+G100001008560,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gorssel 19a solar project,L100001007411,utility-scale solar,operating,15.7
+G100001008561,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Haarweg solar project,L100001007412,utility-scale solar,operating,6.1
+G100001008564,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Lienden 18a solar project,L100001007415,utility-scale solar,operating,4.9
+G100001008570,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Voorst 19a solar project,L100001007421,utility-scale solar,operating,15.7
+G100001008575,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven 17a solar project,L100001007426,utility-scale solar,operating,6.9
+G100001008577,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Farmsum 17a solar project,L100001007428,utility-scale solar,operating,11.7
+G100001008579,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Leek 17a solar project,L100001007430,utility-scale solar,operating,9.6
+G100001008581,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Nieuwe Pekela 16a solar project,L100001007432,utility-scale solar,operating,5.5
+G100001008583,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Onstwedde 16a solar project,L100001007434,utility-scale solar,operating,13.9
+G100001008584,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Onstwedde 19c solar project,L100001007435,utility-scale solar,operating,13.2
+G100001008585,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Roodehaan solar project,L100001007436,utility-scale solar,operating,10.8
+G100001008586,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Veendam solar project,L100001007437,utility-scale solar,operating,15.5
+G100001008590,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Born 17b solar project,L100001007441,utility-scale solar,operating,5
+G100001008591,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Heijen 18a solar project,L100001007442,utility-scale solar,operating,13.8
+G100001008592,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Heijen 21a solar project,L100001007443,utility-scale solar,operating,6
+G100001008593,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Herten 18a solar project,L100001007444,utility-scale solar,operating,7
+G100001008595,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Landgraaf 19a solar project,L100001007446,utility-scale solar,operating,12.4
+G100001008598,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo 17a solar project,L100001007449,utility-scale solar,operating,7.8
+G100001008599,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo 18e solar project,L100001007450,utility-scale solar,operating,4.7
+G100001008600,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo 19c solar project,L100001007451,utility-scale solar,operating,8.4
+G100001008601,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo 20a solar project,L100001007452,utility-scale solar,operating,5.7
+G100001008602,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo 20b solar project,L100001007453,utility-scale solar,operating,14.3
+G100001008603,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo 20e solar project,L100001007454,utility-scale solar,operating,11
+G100001008611,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Dongen 17a solar project,L100001007462,utility-scale solar,operating,15.4
+G100001008612,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Dongen 18a solar project,L100001007463,utility-scale solar,operating,13.2
+G100001008613,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Drunen 20a solar project,L100001007464,utility-scale solar,operating,5.1
+G100001008615,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Gemert 18a solar project,L100001007466,utility-scale solar,operating,5
+G100001008616,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Haps 20a solar project,L100001007467,utility-scale solar,operating,7.7
+G100001008618,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Kaatsheuvel 19a solar project,L100001007469,utility-scale solar,operating,4.8
+G100001008619,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Klundert 18a solar project,L100001007470,utility-scale solar,operating,6.2
+G100001008622,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Oirschot 18a solar project,L100001007473,utility-scale solar,operating,5.4
+G100001008623,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Oosterhout 17a solar project,L100001007474,utility-scale solar,operating,4.8
+G100001008624,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Oosterhout 18a solar project,L100001007475,utility-scale solar,operating,12.8
+G100001008626,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Someren 20b solar project,L100001007477,utility-scale solar,operating,12.1
+G100001008629,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg 19e solar project,L100001007480,utility-scale solar,operating,6.3
+G100001008630,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg 20a solar project,L100001007481,utility-scale solar,operating,5.8
+G100001008633,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Waalwijk 19b solar project,L100001007484,utility-scale solar,operating,5.8
+G100001008634,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Waalwijk 19c solar project,L100001007485,utility-scale solar,operating,4.6
+G100001008635,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Aalsmeerderbrug 17a solar project,L100001007486,utility-scale solar,operating,4.8
+G100001008636,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam 17b solar project,L100001007487,utility-scale solar,operating,4.8
+G100001008637,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam 18c solar project,L100001007488,utility-scale solar,operating,4.7
+G100001008639,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Burgerbrug 19a solar project,L100001007490,utility-scale solar,operating,4.8
+G100001008641,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Den Helder 18c solar project,L100001007492,utility-scale solar,operating,8.5
+G100001008642,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Den Helder 19a solar project,L100001007493,utility-scale solar,operating,12.7
+G100001008644,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Groene Hoek solar project,L100001007495,utility-scale solar,operating,15
+G100001008645,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Groene Hoek 2 solar project,L100001007496,utility-scale solar,operating,16
+G100001008649,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Warmenhuizen 19a solar project,L100001007500,utility-scale solar,operating,13.5
+G100001008651,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Zwaagdijk-Oost 18a solar project,L100001007502,utility-scale solar,operating,5.7
+G100001008660,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Hengelo 17a solar project,L100001007511,utility-scale solar,operating,9
+G100001008662,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Markelo 19a solar project,L100001007513,utility-scale solar,operating,7.8
+G100001008672,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Bunschoten-Spakenburg 17a solar project,L100001007523,utility-scale solar,operating,11
+G100001008678,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Wijk 20a solar project,L100001007529,utility-scale solar,operating,15
+G100001008680,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Nieuwdorp 16a solar project,L100001007531,utility-scale solar,operating,12
+G100001008681,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Nieuwdorp 17a solar project,L100001007532,utility-scale solar,operating,6.5
+G100001008682,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Nieuwdorp 17d solar project,L100001007533,utility-scale solar,operating,17.6
+G100001008683,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Rilland solar project,L100001007534,utility-scale solar,operating,11.8
+G100001008685,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Ritthem 17e solar project,L100001007536,utility-scale solar,operating,11.2
+G100001008689,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Bleiswijk 18c solar project,L100001007540,utility-scale solar,operating,9.1
+G100001008695,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Ridderkerk 18a solar project,L100001007546,utility-scale solar,operating,4.6
+G100001008696,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam 18a solar project,L100001007547,utility-scale solar,operating,5
+G100001008699,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Zwijndrecht 19a solar project,L100001007550,utility-scale solar,operating,5.6
+G100001020487,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Nijmegen power station,L100000103087,oil/gas,pre_construction,500
+G100001021429,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Amer power station,L100000103090,coal,retired,600
+G100001028015,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Groensebos solar project,L100001023529,utility-scale solar,operating,13.2
+G100001052295,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Afval Energie Bedrijf Amsterdam power station,L100000200212,bioenergy,operating,39
+G100001052306,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,AVR Rozenburg power station,L100000200218,bioenergy,operating,22
+G100001052308,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,HVC Alkmaar power station,L100000201189,bioenergy,operating,50
+G100001052312,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Cuijk power station,L100001046316,bioenergy,operating,20
+G100001052313,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Twence Afval power station,L100000200311,bioenergy,operating,20
+G100001052314,energy_plants_gem_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Twence Afval power station,L100000200311,bioenergy,operating,25
+G100001052320,energy_plants_gem_units,NLD,point,BEL,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Zandvliet solar farm,L100001046322,utility-scale solar,pre_construction,12
+G100001052769,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eekerpolder solar farm,L100001046627,utility-scale solar,construction,189
+G100001052779,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,IJmuiden Ver Gamma Offshore wind farm,L100001001104,wind,pre_construction,1000
+G100001052780,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nederwiek I offshore wind farm,L100000920514,wind,pre_construction,1000
+G100001052815,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Aardbrandsven solar park,L100001000802,utility-scale solar,pre_construction,42
+G100001052817,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,true,abf-boundaries-v0.2.0,Schapendrift solar farm,L100001046660,utility-scale solar,announced,24
+G100001052818,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Zevent solar farm,L100001046661,utility-scale solar,operating,35
+G100001052819,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Sambeeksedijk solar farm,L100001046662,utility-scale solar,operating,30
+G100001052820,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Boxmeer solar farm,L100001046663,utility-scale solar,operating,55
+G100001052821,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,true,abf-boundaries-v0.2.0,Swan solar farm,L100001046664,utility-scale solar,announced,145
+G100001052822,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Werkhoven solar farm,L100001046665,utility-scale solar,operating,25
+G100001052823,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Mariahoop solar farm,L100001046666,utility-scale solar,operating,25
+G100001052824,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Larendeel solar farm,L100001046667,utility-scale solar,operating,38
+G100001052825,energy_plants_gem_units,NLD,point,,NLD-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Bellingwolde solar farm,L100001046668,utility-scale solar,construction,74
+G100001052826,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Kabeljauwbeek solar farm,L100001046669,utility-scale solar,operating,51
+G100001052827,energy_plants_gem_units,NLD,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,IJmuiden Ver Beta Offshore solar farm,L100001046670,utility-scale solar,announced,50
+G100001056992,energy_plants_gem_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Oostzeedijk wind farm,L100001049389,wind,operating,15
+G100001057123,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Marknesse solar farm,L100001049511,utility-scale solar,operating,23.3
+G100001070809,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Flexpowernet Strijkviertel power station,L100001061751,oil/gas,pre_construction,60
+G100001084052,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project II,L100001074266,utility-scale solar,operating,1
+G100001084065,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam solar project II,L100001074279,utility-scale solar,operating,1.1
+G100001084066,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project IV,L100001074280,utility-scale solar,operating,1.2
+G100001084093,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project III,L100001074307,utility-scale solar,operating,1.5
+G100001084097,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XIII,L100001074311,utility-scale solar,operating,5.8
+G100001084105,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XVII,L100001074319,utility-scale solar,operating,1.8
+G100001084109,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Almere solar project II,L100001074323,utility-scale solar,operating,1.1
+G100001084111,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Haarlem solar project,L100001074325,utility-scale solar,operating,1.2
+G100001084112,energy_plants_gem_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Heerlen solar project I,L100001074326,utility-scale solar,operating,1
+G100001084115,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project IX,L100001074329,utility-scale solar,operating,1.3
+G100001084177,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project VI,L100001074391,utility-scale solar,operating,1
+G100001084196,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad solar project II,L100001074410,utility-scale solar,operating,4.8
+G100001084200,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg solar project III,L100001074414,utility-scale solar,operating,1.6
+G100001084214,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Delft solar project,L100001074428,utility-scale solar,operating,1.1
+G100001084233,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XVI,L100001074447,utility-scale solar,operating,1.1
+G100001084305,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project VI,L100001074519,utility-scale solar,operating,1.2
+G100001084310,energy_plants_gem_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Almere solar project IV,L100001074524,utility-scale solar,operating,1.4
+G100001084333,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LII,L100001074547,utility-scale solar,operating,1
+G100001084399,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LI,L100001074613,utility-scale solar,operating,4.9
+G100001084448,energy_plants_gem_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project IX,L100001074662,utility-scale solar,operating,4.3
+G100001084453,energy_plants_gem_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXVI,L100001074667,utility-scale solar,operating,8.3
+G100001084462,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXII,L100001074676,utility-scale solar,operating,3.7
+G100001084476,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXIII,L100001074690,utility-scale solar,operating,1.2
+G100001084492,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXV,L100001074706,utility-scale solar,operating,1.6
+G100001084505,energy_plants_gem_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Apeldoorn solar project III,L100001074719,utility-scale solar,operating,1.1
+G100001090854,energy_plants_gem_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,De Groene Energie Corridor solar farm,L100001080881,utility-scale solar,mothballed,149
+G100001090876,energy_plants_gem_units,NLD,point,,NLD-1-DR,,point,,,,true,abf-boundaries-v0.2.0,Hollandia Nieuw-Buinen solar farm,L100000806795,utility-scale solar,construction,5
+G100001093694,energy_plants_gem_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Maasvlakte Power Station (Onyx Power),L100000103095,bioenergy,announced,731

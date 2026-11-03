@@ -1,0 +1,27 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000114105,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Koniambo Nickel power station,L100000104547,coal,operating,135
+G100000114106,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Koniambo Nickel power station,L100000104547,coal,operating,135
+G100000114107,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Goro power station,L100000104548,coal,operating,50
+G100000114108,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Goro power station,L100000104548,coal,operating,50
+G100000115089,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Doniambo power station,L100000104836,coal,cancelled,90
+G100000115090,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Doniambo power station,L100000104836,coal,cancelled,90
+G100000411336,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Jacques Lekawe power station,L100000408148,oil/gas,operating,55
+G100000413355,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Koniambo Nickel power station,L100000104547,oil/gas,mothballed,40
+G100000413356,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Koniambo Nickel power station,L100000104547,oil/gas,mothballed,40
+G100000413357,energy_plants_gem_units,NCL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ducos thermal power plant,L100000408982,oil/gas,operating,26
+G100000413358,energy_plants_gem_units,NCL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ducos thermal power plant,L100000408982,oil/gas,operating,20
+G100000413359,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Doniambo power station,L100000104836,oil/gas,mothballed,160
+G100000806520,energy_plants_gem_units,NCL,point,,,,,,,,true,abf-boundaries-v0.2.0,Grand Sud solar farm,L100000805667,utility-scale solar,shelved,30
+G100000831001,energy_plants_gem_units,NCL,point,,,,,,,,true,abf-boundaries-v0.2.0,Grand Sud solar farm,L100000805667,utility-scale solar,shelved,130
+G100000831096,energy_plants_gem_units,NCL,point,,,,,,,,true,abf-boundaries-v0.2.0,Boulouparis 1 solar project,L100000827588,utility-scale solar,operating,6.8
+G100000831097,energy_plants_gem_units,NCL,point,,,,,,,,true,abf-boundaries-v0.2.0,Boulouparis 2 solar project,L100000827589,utility-scale solar,operating,11
+G100000908492,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Yaté wind farm,L100000906243,wind,operating,20
+G100000908493,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Col De Prony wind farm,L100000906244,wind,operating,2
+G100000921449,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Col De Prony wind farm,L100000906244,wind,operating,5
+G100000921450,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Col De Prony wind farm,L100000906244,wind,operating,6
+G100000921451,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Col De Prony wind farm,L100000906244,wind,operating,5
+G100000921452,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Col De Prony wind farm,L100000906244,wind,operating,5
+G100000921453,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kafeate wind farm,L100000917293,wind,operating,11.5
+G100000921454,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Negandi wind farm,L100000917294,wind,operating,4
+G100001018312,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Doniambo Floating power station,L100001016477,oil/gas,operating,198
+G100001030265,energy_plants_gem_units,NCL,point,,,,,,,,false,abf-boundaries-v0.2.0,Yaté hydroelectric plant,L100001025572,hydropower,operating,68

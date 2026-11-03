@@ -1,0 +1,9 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000604692,energy_plants_gem_units,LSO,point,,LSO-1-J,,point,,,,true,abf-boundaries-v0.2.0,Oxbow Polihali hydroelectric plant,L100000604305,hydropower,pre_construction,80
+G100000800166,energy_plants_gem_units,LSO,point,,LSO-1-E,,point,,,,false,abf-boundaries-v0.2.0,Ha Ramarothole solar farm,L100000800130,utility-scale solar,operating,30
+G100000800167,energy_plants_gem_units,LSO,point,,LSO-1-E,,point,,,,false,abf-boundaries-v0.2.0,Ha Ramarothole solar farm,L100000800130,utility-scale solar,pre_construction,40
+G100000800274,energy_plants_gem_units,LSO,point,,LSO-1-K,,point,,,,true,abf-boundaries-v0.2.0,Neo 1 solar farm,L100000800228,utility-scale solar,shelved,20
+G100001021551,energy_plants_gem_units,LSO,point,,LSO-1-K,,point,,,,true,abf-boundaries-v0.2.0,Clean and Renewable Energy Park (Lesotho) solar farm,L100001019123,utility-scale solar,announced,100
+G100001027323,energy_plants_gem_units,LSO,point,,LSO-1-B,,point,,,,false,abf-boundaries-v0.2.0,Muela hydroelectric plant,L100001023118,hydropower,mothballed,72
+G100001074452,energy_plants_gem_units,LSO,point,,LSO-1-F,,point,,,,true,abf-boundaries-v0.2.0,Mohale’s Hoek Wind Energy Project,L100001064679,wind,pre_construction,72
+G100001074453,energy_plants_gem_units,LSO,point,,LSO-1-A,,point,,,,false,abf-boundaries-v0.2.0,Masite Nek wind farm,L100001064680,wind,announced,48

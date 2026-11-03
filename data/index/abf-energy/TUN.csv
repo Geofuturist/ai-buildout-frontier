@@ -1,0 +1,88 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407507,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Thyna power station,L100000406180,oil/gas,operating,123
+G100000407508,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Thyna power station,L100000406180,oil/gas,operating,123
+G100000407509,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Thyna power station,L100000406180,oil/gas,operating,120
+G100000407510,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sousse D power station,L100000406179,oil/gas,operating,424
+G100000407511,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sousse C power station,L100000406178,oil/gas,operating,424
+G100000407512,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sousse B power station,L100000406177,oil/gas,operating,357
+G100000407515,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Skhira 2 power station,L100000406905,oil/gas,shelved,450
+G100000407516,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Skhira 1 power station,L100000406906,oil/gas,cancelled,450
+G100000407517,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rades II power station,L100000406171,oil/gas,operating,480
+G100000407519,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rades C power station,L100000406907,oil/gas,operating,450
+G100000407520,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rades B power station,L100000406908,oil/gas,operating,180
+G100000407521,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rades B power station,L100000406908,oil/gas,operating,180
+G100000407522,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rades A power station,L100000406175,oil/gas,operating,170
+G100000407523,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rades A power station,L100000406175,oil/gas,operating,170
+G100000407524,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mornaguia power station,L100000406174,oil/gas,operating,312
+G100000407525,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mornaguia power station,L100000406174,oil/gas,operating,312
+G100000407526,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Goulette power station,L100000406170,oil/gas,operating,120
+G100000407527,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghannouch power station,L100000406169,oil/gas,operating,400
+G100000407528,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Feriana power station,L100000406168,oil/gas,operating,120
+G100000407529,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Feriana power station,L100000406168,oil/gas,operating,120
+G100000407531,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bouchemma power station,L100000406167,oil/gas,operating,125
+G100000407532,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bouchemma power station,L100000406167,oil/gas,operating,125
+G100000407533,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bouchemma power station,L100000406167,oil/gas,operating,120
+G100000407535,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bir Mcherga power station,L100000406166,oil/gas,operating,128
+G100000407536,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bir Mcherga power station,L100000406166,oil/gas,operating,128
+G100000407537,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bir Mcherga power station,L100000406166,oil/gas,operating,120
+G100000407538,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bir Mcherga power station,L100000406166,oil/gas,operating,120
+G100000604853,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tabarka hydroelectric plant,L100000603576,hydropower,pre_construction,400
+G100000800085,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Borj Bourguiba Solar PV Plant,L100000800067,utility-scale solar,construction,200
+G100000800147,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Gabes Sud Solar Plant,L100000800113,utility-scale solar,pre_construction,10
+G100000800148,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Gafsa Solar Plant,L100000800114,utility-scale solar,pre_construction,130
+G100000800193,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kairouan Solar Plant,L100000800154,utility-scale solar,operating,120
+G100000800255,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mazarine Feriana solar farm,L100000800210,utility-scale solar,construction,10
+G100000800256,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Medenine Solar Plant,L100000800211,utility-scale solar,shelved,10
+G100000800320,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qair Feriana solar farm,L100000800268,utility-scale solar,operating,10
+G100000800352,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sidi Bouzid Solar Plant 1,L100000800298,utility-scale solar,operating,10
+G100000800392,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tataouine Solar Plant,L100000800322,utility-scale solar,pre_construction,200
+G100000800409,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tozeur (Tunisian Electicity And Gas Co) solar farm,L100000800337,utility-scale solar,operating,10
+G100000800410,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tozeur (Tunisian Electicity And Gas Co) solar farm,L100000800337,utility-scale solar,operating,10
+G100000800412,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tozeur-Scatec solar farm,L100000800339,utility-scale solar,construction,50
+G100000814237,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,ABO Wind Gabes solar farm,L100000811678,utility-scale solar,shelved,10
+G100000814239,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sidi Bouzid-Scatec solar farm,L100000811680,utility-scale solar,construction,50
+G100000814241,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,TuNur solar farm,L100000811681,utility-scale solar,construction,2250
+G100000814242,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,TuNur solar farm,L100000811681,utility-scale solar,construction,250
+G100000814243,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,TuNur solar farm,L100000811681,utility-scale solar,construction,2000
+G100000831297,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Adam solar project,L100000827746,utility-scale solar,operating,4.8
+G100000831298,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Mazzunah solar farm,L100000827747,utility-scale solar,pre_construction,162
+G100000831299,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Oudref solar farm,L100000827748,utility-scale solar,shelved,197
+G100000831300,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Voltalia-Menzel Habib solar farm,L100000827749,utility-scale solar,pre_construction,139
+G100000831301,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Qair-El Ksar solar farm,L100000827750,utility-scale solar,pre_construction,100
+G100000831302,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG solar farm 3,L100000827751,utility-scale solar,announced,100
+G100000831303,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG solar farm 4,L100000827752,utility-scale solar,announced,100
+G100000831304,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG solar farm 1,L100000827753,utility-scale solar,announced,100
+G100000831305,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Scatec-Al-Mazzunah solar farm,L100000827754,utility-scale solar,pre_construction,100
+G100000831306,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG solar farm 2,L100000827755,utility-scale solar,announced,100
+G100000900069,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sidi Daoud wind farm,L100000900053,wind,operating,10
+G100000900071,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bizerte Métline wind farm,L100000900054,wind,operating,60
+G100000900072,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bizerte Métline wind farm,L100000900054,wind,operating,34
+G100000900073,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bizerte Kchabta wind farm,L100000900055,wind,operating,60
+G100000900074,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bizerte Kchabta wind farm,L100000900055,wind,operating,34
+G100000900079,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mornag wind farm,L100000900060,wind,shelved,30
+G100000900124,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Jebel Kochbata wind farm,L100000900095,wind,shelved,30
+G100000900168,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sidi Mansour wind farm,L100000900128,wind,shelved,30
+G100000900169,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Jebel Sidi Bchir wind farm,L100000900129,wind,shelved,30
+G100000900174,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Batiha wind farm,L100000900134,wind,cancelled,30
+G100000900208,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Thala wind farm,L100000900160,wind,cancelled,60
+G100000927429,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chenenni wind farm,L100000922014,wind,pre_construction,75
+G100000927430,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sidi Daoud wind farm,L100000900053,wind,operating,55
+G100000927431,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG wind farm,L100000922015,wind,announced,75
+G100000927432,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG wind farm,L100000922015,wind,announced,75
+G100000927433,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG wind farm,L100000922015,wind,announced,75
+G100000927434,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG wind farm,L100000922015,wind,announced,75
+G100000927435,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG wind farm,L100000922015,wind,announced,75
+G100000927436,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG wind farm,L100000922015,wind,announced,75
+G100000927437,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG wind farm,L100000922015,wind,announced,75
+G100001023417,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qair Feriana solar farm,L100000800268,utility-scale solar,operating,10
+G100001030432,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Om El Ezam-Sabalah Power Plant,L100001025646,oil/gas,operating,40
+G100001030441,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,New El Biban Power Plant,L100001025650,oil/gas,operating,27
+G100001051198,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Qair -Khobna solar farm,L100001045487,utility-scale solar,pre_construction,200
+G100001051783,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sfax power station,L100001045933,oil/gas,retired,22
+G100001051785,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sfax power station,L100001045933,oil/gas,retired,22
+G100001062765,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sidi Salem hydroelectric plant,L100001054873,hydropower,operating,25
+G100001073237,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,As-Subayhah solar farm,L100001063711,utility-scale solar,construction,230
+G100001073247,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,World Bank solar farm,L100001063722,utility-scale solar,pre_construction,400
+G100001073257,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,SoleCrypt Tozeur solar farm,L100001063730,utility-scale solar,pre_construction,60
+G100001073267,energy_plants_gem_units,TUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sidi Daoud wind farm,L100000900053,wind,pre_construction,21.5
+G100001095152,energy_plants_gem_units,TUN,point,,,,,,,,true,abf-boundaries-v0.2.0,STEG power plant,L100001083882,oil/gas,announced,1400

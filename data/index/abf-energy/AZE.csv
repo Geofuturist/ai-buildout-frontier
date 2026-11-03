@@ -1,0 +1,68 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200723,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Balakhani power station,L100000200631,bioenergy,operating,37
+G100000407920,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Gobustan power station,L100000406937,oil/gas,cancelled,1400
+G100000407921,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Yashma power station,L100000406938,oil/gas,cancelled,460
+G100000407922,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Yashma power station,L100000406938,oil/gas,cancelled,460
+G100000407930,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Baku CHP power station,L100000406940,oil/gas,operating,53.5
+G100000407931,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Baku CHP power station,L100000406940,oil/gas,operating,53.5
+G100000407932,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Shimal power station,L100000406941,oil/gas,operating,400
+G100000407933,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Shimal power station,L100000406941,oil/gas,operating,400
+G100000407939,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Sumgayit power station,L100000406944,oil/gas,operating,525
+G100000407940,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Janub power station,L100000406945,oil/gas,operating,390
+G100000407941,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Janub power station,L100000406945,oil/gas,operating,390
+G100000407942,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000407943,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000407944,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000407945,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000407946,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000407947,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000407948,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000407949,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Azerbaijan thermal power plant,L100000406946,oil/gas,operating,300
+G100000411948,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Shaki power station,L100000408448,oil/gas,operating,87
+G100000411949,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Shahdagh power station,L100000408449,oil/gas,operating,104.4
+G100000411950,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Sangachal-2 power station,L100000408450,oil/gas,cancelled,389.4
+G100000411951,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Sangachal power station,L100000408451,oil/gas,operating,307.8
+G100000411952,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Nakhchivan power station,L100000408452,oil/gas,operating,87
+G100000411953,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Mingecevir power station,L100000408446,oil/gas,operating,320
+G100000411954,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Mingecevir power station,L100000408446,oil/gas,operating,320
+G100000411955,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Mingecevir power station,L100000408446,oil/gas,operating,320
+G100000411956,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Mingecevir power station,L100000408446,oil/gas,operating,320
+G100000411957,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Khachmaz power station,L100000408447,oil/gas,operating,87
+G100000411958,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Gobu power station,L100000408444,oil/gas,operating,384.3
+G100000411959,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Baku power station,L100000408445,oil/gas,operating,104.4
+G100000411960,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Astara power station,L100000408443,oil/gas,operating,87
+G100000501049,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Navai New nuclear power plant,L100000500382,nuclear,cancelled,1500
+G100000501050,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Navai Original nuclear power plant,L100000500383,nuclear,cancelled,1000
+G100000600050,energy_plants_gem_units,AZE,point,ARM,,,,,,,false,abf-boundaries-v0.2.0,Tatev hydroelectric plant,L100000600050,hydropower,operating,157
+G100000600145,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Mingechevir hydroelectric plant,L100000600145,hydropower,operating,424
+G100000600146,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Shamkir hydroelectric plant,L100000600146,hydropower,operating,380
+G100000600147,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Yenikend hydroelectric plant,L100000600147,hydropower,operating,150
+G100000700126,energy_plants_gem_units,AZE,point,ARM,,,,,,,false,abf-boundaries-v0.2.0,Karkar geothermal power plant,L100000700075,geothermal,cancelled,40
+G100000804553,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Garadagh Solar PV Plant,L100000803986,utility-scale solar,operating,230
+G100000804577,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Nakhchivan Solar Power Plant,L100000804008,utility-scale solar,operating,20
+G100000811265,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Shafag Solar Plant,L100000808957,utility-scale solar,pre_construction,240
+G100000907783,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Shurabad wind farm,L100000905673,wind,cancelled,84
+G100000907784,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeni Yashma wind farm,L100000905674,wind,operating,50
+G100000908030,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Pirallahi wind farm,L100000905866,wind,cancelled,198
+G100000908095,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Lokbatan wind farm,L100000905917,wind,cancelled,27
+G100000921224,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Baku wind farm,L100000917120,wind,cancelled,50
+G100000921225,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Gobustan Stx wind farm,L100000917121,wind,cancelled,20
+G100001004838,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Yashma power station,L100000406938,oil/gas,pre_construction,500
+G100001018658,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Bilasuvar solar farm,L100001016731,utility-scale solar,construction,445
+G100001018659,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Neftchala solar farm,L100001016735,utility-scale solar,pre_construction,315
+G100001018660,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Absheron-Garadagh wind farm,L100001016736,wind,pre_construction,240
+G100001018664,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Gobustan solar farm,L100001016740,utility-scale solar,pre_construction,100
+G100001018665,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Shams solar farm,L100001016741,utility-scale solar,announced,50
+G100001021609,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Khizi-Absheron wind farm,L100001019168,wind,pre_construction,162.5
+G100001021610,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Khizi-Absheron wind farm,L100001019168,wind,pre_construction,78
+G100001050776,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakhchivan solar farm,L100001045168,utility-scale solar,shelved,250
+G100001051956,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Sarsang hydroelectric plant,L100001046061,hydropower,operating,50
+G100001070784,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalbajar wind farm,L100001061727,wind,announced,240
+G100001070785,energy_plants_gem_units,AZE,field,,,,,,,,true,abf-boundaries-v0.2.0,Azerbaijan Caspian Sea wind farm,L100001061728,wind,announced,2000
+G100001070787,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Ufuq solar farm,L100001061730,utility-scale solar,announced,50
+G100001070788,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakhchivan (Nobel Energy) solar farm,L100001061731,utility-scale solar,announced,30
+G100001070790,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakhchivan (A-Z Czech Engineering) solar farm,L100001061733,utility-scale solar,announced,500
+G100001070791,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,East Zangezur wind farm,L100001061734,wind,shelved,250
+G100001070801,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Fuzuli solar farm,L100001061744,utility-scale solar,announced,160
+G100001070802,energy_plants_gem_units,AZE,point,,,,,,,,true,abf-boundaries-v0.2.0,Boyukshor solar farm,L100001061745,utility-scale solar,announced,100
+G100001072872,energy_plants_gem_units,AZE,point,,,,,,,,false,abf-boundaries-v0.2.0,Shamkirchay hydroelectric plant,L100001063421,hydropower,operating,25

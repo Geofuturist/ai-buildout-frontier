@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023895,energy_plants_gem_tzsam_units,NER,point,,NER-1-1,,point,,,,false,abf-boundaries-v0.2.0,Bilma solar project,L100001020926,utility-scale solar,operating,1.5
+G100001074633,energy_plants_gem_tzsam_units,NER,point,,NER-1-2,,point,,,,false,abf-boundaries-v0.2.0,N’Guigmi solar project,L100001064847,utility-scale solar,operating,1.8
+G100001074634,energy_plants_gem_tzsam_units,NER,point,,NER-1-8,,point,,,,false,abf-boundaries-v0.2.0,Niamey Kollo solar project,L100001064848,utility-scale solar,operating,18.1

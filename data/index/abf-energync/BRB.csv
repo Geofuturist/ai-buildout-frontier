@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001033549,energy_plants_gem_tzsam_units,BRB,point,,BRB-1-09,,point,,,,false,abf-boundaries-v0.2.0,Saint Peter solar project,L100001028278,utility-scale solar,operating,2.1
+G100001033550,energy_plants_gem_tzsam_units,BRB,point,,BRB-1-10,,point,,,,false,abf-boundaries-v0.2.0,Saint John solar project,L100001028279,utility-scale solar,operating,1.3
+G100001033552,energy_plants_gem_tzsam_units,BRB,point,,BRB-1-11,,point,,,,false,abf-boundaries-v0.2.0,Saint Thomas solar project,L100001028281,utility-scale solar,operating,3
+G100001033554,energy_plants_gem_tzsam_units,BRB,point,,BRB-1-10,,point,,,,false,abf-boundaries-v0.2.0,Saint Philip solar project II,L100001028283,utility-scale solar,operating,2.9
+G100001033556,energy_plants_gem_tzsam_units,BRB,point,,BRB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Saint Lucy solar project,L100001028285,utility-scale solar,operating,1.8
+G100001074784,energy_plants_gem_tzsam_units,BRB,point,,BRB-1-05,,point,,,,false,abf-boundaries-v0.2.0,Saint John solar project I,L100001064998,utility-scale solar,operating,1.1
+G100001074785,energy_plants_gem_tzsam_units,BRB,point,,BRB-1-03,,point,,,,false,abf-boundaries-v0.2.0,Saint George solar project I,L100001064999,utility-scale solar,operating,1.4

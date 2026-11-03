@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001006496,energy_plants_gem_units,JEY,point,,,,,,,,true,abf-boundaries-v0.2.0,Jersey Offshore wind farm,L100001005459,wind,pre_construction,1000
+G100001054472,energy_plants_gem_units,JEY,point,,,,,,,,true,abf-boundaries-v0.2.0,Moulin à Vent solar farm,L100001047761,utility-scale solar,operating,4.3
+G100001054473,energy_plants_gem_units,JEY,point,,,,,,,,true,abf-boundaries-v0.2.0,Mont Fondan solar farm,L100001047762,utility-scale solar,announced,2.5
+G100001054474,energy_plants_gem_units,JEY,point,,,,,,,,true,abf-boundaries-v0.2.0,La Rue de Sorel solar farm,L100001047763,utility-scale solar,pre_construction,3.6
+G100001054475,energy_plants_gem_units,JEY,point,,,,,,,,true,abf-boundaries-v0.2.0,Rue d’Olive solar farm,L100001047764,utility-scale solar,construction,3.2

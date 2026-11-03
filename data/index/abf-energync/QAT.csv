@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001030163,energy_plants_gem_tzsam_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Qatar solar project,L100001025482,utility-scale solar,operating,7.2
+G100001078902,energy_plants_gem_tzsam_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Lusail solar project,L100001069116,utility-scale solar,operating,4.2
+G100001078903,energy_plants_gem_tzsam_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Qatar solar project I,L100001069117,utility-scale solar,operating,1
+G100001078904,energy_plants_gem_tzsam_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Rayyan solar project,L100001069118,utility-scale solar,operating,2.5

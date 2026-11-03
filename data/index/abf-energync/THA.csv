@@ -1,0 +1,548 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000801291,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lopburi (EGCO) solar farm,L100000801118,utility-scale solar,operating,8
+G100000834978,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ayutthaya-1 solar project,L100000831074,utility-scale solar,operating,9.6
+G100000834979,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Baan-Kluai solar project,L100000831075,utility-scale solar,operating,11.2
+G100000834980,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bamnet Narong solar farm,L100000831076,utility-scale solar,operating,16
+G100000834991,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Nom Kho solar project,L100000831079,utility-scale solar,operating,4.7
+G100000834993,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bo-Thong solar project,L100000831081,utility-scale solar,operating,12.9
+G100000834994,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Buri Ram 1 (BR1) solar project,L100000831082,utility-scale solar,operating,14.9
+G100000834995,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Buri Ram 2 (BR2) solar project,L100000831083,utility-scale solar,operating,9.5
+G100000834996,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Buri Ram 3 (BR3) solar project,L100000831084,utility-scale solar,operating,10.1
+G100000834997,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Cham Phak Phaeo solar project,L100000831085,utility-scale solar,operating,6.4
+G100000834998,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chang Wat A solar project,L100000831086,utility-scale solar,operating,7.2
+G100000834999,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chongdan solar project,L100000831087,utility-scale solar,operating,11.4
+G100000835000,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Di Lang solar project,L100000831088,utility-scale solar,operating,18.7
+G100000835001,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Chedi solar project,L100000831089,utility-scale solar,operating,12.3
+G100000835002,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Dong Khon solar project,L100000831090,utility-scale solar,operating,7.1
+G100000835003,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Dong Phlap solar project,L100000831091,utility-scale solar,operating,4.8
+G100000835008,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hat Siao solar project,L100000831096,utility-scale solar,operating,9.7
+G100000835009,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Horseshoe Point solar project,L100000831097,utility-scale solar,operating,9.1
+G100000835010,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Huai Krachao solar project,L100000831098,utility-scale solar,operating,8.4
+G100000835011,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Huaihaeng solar project,L100000831099,utility-scale solar,operating,6
+G100000835012,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabin solar project,L100000831100,utility-scale solar,operating,4.5
+G100000835014,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Khlung solar project,L100000831102,utility-scale solar,operating,7
+G100000835015,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Pleuk solar project,L100000831103,utility-scale solar,operating,4.5
+G100000835016,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Wong A solar project,L100000831104,utility-scale solar,operating,10.7
+G100000835018,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Yao solar project,L100000831106,utility-scale solar,operating,9.5
+G100000835019,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khok Pi Khong B solar project,L100000831107,utility-scale solar,operating,5.7
+G100000835020,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khok Thai solar project,L100000831108,utility-scale solar,operating,15.2
+G100000835021,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 1 (KK1) solar project,L100000831109,utility-scale solar,operating,7.7
+G100000835022,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 10 (KK10) solar project,L100000831110,utility-scale solar,operating,10.5
+G100000835023,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 2 (KK2) solar project,L100000831111,utility-scale solar,operating,10.8
+G100000835024,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 3 (KK3) solar project,L100000831112,utility-scale solar,operating,9.3
+G100000835025,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 4 (KK4) solar project,L100000831113,utility-scale solar,operating,8.6
+G100000835026,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 5 (KK5) solar project,L100000831114,utility-scale solar,operating,6.9
+G100000835027,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 6 (KK6) solar project,L100000831115,utility-scale solar,operating,7.3
+G100000835028,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 7 (KK7) solar project,L100000831116,utility-scale solar,operating,8.5
+G100000835029,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 8 (KK8) solar project,L100000831117,utility-scale solar,operating,9.7
+G100000835030,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen 9 (KK9) solar project,L100000831118,utility-scale solar,operating,9.2
+G100000835031,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khorat III solar project,L100000831119,utility-scale solar,operating,12.7
+G100000835033,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korat 1 (KR1) solar project,L100000831121,utility-scale solar,operating,18.5
+G100000835035,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korat 3 (KR3) solar project,L100000831123,utility-scale solar,operating,7.5
+G100000835036,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korat 4 (KR4) solar project,L100000831124,utility-scale solar,operating,7.2
+G100000835037,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korat 5 (KR5) solar project,L100000831125,utility-scale solar,operating,14.1
+G100000835038,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korat 6 (KR6) solar project,L100000831126,utility-scale solar,operating,15.6
+G100000835039,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korat 7 (KR7) solar project,L100000831127,utility-scale solar,operating,8.4
+G100000835041,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korat 9 (KR9) solar project,L100000831129,utility-scale solar,operating,7
+G100000835042,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kui Buri solar project,L100000831130,utility-scale solar,operating,8.8
+G100000835043,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Loei 1 (LO1) solar project,L100000831131,utility-scale solar,operating,7.8
+G100000835044,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Loei 2 (LO2) solar project,L100000831132,utility-scale solar,operating,8.4
+G100000835046,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Muang Phai A solar project,L100000831134,utility-scale solar,operating,11.5
+G100000835047,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Sa Kaeo A solar project,L100000831135,utility-scale solar,operating,6
+G100000835048,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Suang SPP5 solar project,L100000831136,utility-scale solar,operating,16.4
+G100000835050,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nakhon Phanom 1 (NP1) solar project,L100000831138,utility-scale solar,operating,13.3
+G100000835052,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nakhon Phanom 3 (NP3) solar project,L100000831140,utility-scale solar,operating,7.3
+G100000835053,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Noen Po solar project,L100000831141,utility-scale solar,operating,8.2
+G100000835054,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khai 1 (NK1) solar project,L100000831142,utility-scale solar,operating,8.1
+G100000835057,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong On solar project,L100000831145,utility-scale solar,operating,11.6
+G100000835058,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nongyasai solar project,L100000831146,utility-scale solar,operating,16.3
+G100000835062,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phanom Thuan solar project,L100000831149,utility-scale solar,operating,11.5
+G100000835063,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phran Kratai 1 solar project,L100000831150,utility-scale solar,operating,8.7
+G100000835064,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phran Kratai 2 solar project,L100000831151,utility-scale solar,operating,11.6
+G100000835065,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phran Kratai 3 solar project,L100000831152,utility-scale solar,operating,17.8
+G100000835067,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phraya Banlue solar project,L100000831154,utility-scale solar,operating,4.8
+G100000835070,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rang Sali solar project,L100000831156,utility-scale solar,operating,15.5
+G100000835071,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sa Kaeo BG solar project,L100000831157,utility-scale solar,operating,7.8
+G100000835072,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Kyo solar project,L100000831158,utility-scale solar,operating,13.3
+G100000835074,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Prapa solar project,L100000831160,utility-scale solar,operating,11.1
+G100000835075,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Saphan solar project,L100000831161,utility-scale solar,operating,11.2
+G100000835076,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Thong solar project,L100000831162,utility-scale solar,operating,9.6
+G100000835077,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Yai solar project,L100000831163,utility-scale solar,operating,4.3
+G100000835080,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sakon Nakhon 1 (SN1) solar project,L100000831166,utility-scale solar,operating,7.5
+G100000835081,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sakon Nakhon 2 (SN2) solar project,L100000831167,utility-scale solar,operating,6.8
+G100000835083,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sam Ko A solar project,L100000831169,utility-scale solar,operating,8.8
+G100000835084,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sam Tum solar project,L100000831170,utility-scale solar,operating,4.5
+G100000835085,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sam Yaek solar project,L100000831171,utility-scale solar,operating,10.8
+G100000835086,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samut Sakhon solar project,L100000831172,utility-scale solar,operating,11.1
+G100000835087,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Saraburi SPP2 solar project,L100000831173,utility-scale solar,operating,15.4
+G100000835089,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Si Maha Phot I solar project,L100000831175,utility-scale solar,operating,11.8
+G100000835090,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Si Maha Phot II solar project,L100000831176,utility-scale solar,operating,7
+G100000835091,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sri Chula solar project,L100000831177,utility-scale solar,operating,11.3
+G100000835093,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surin 1 (SR1) solar project,L100000831178,utility-scale solar,operating,8.3
+G100000835094,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surin 2 (SR2) solar project,L100000831179,utility-scale solar,operating,7.1
+G100000835095,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surin 3 (SR3) solar project,L100000831180,utility-scale solar,operating,7.1
+G100000835096,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ta Khit solar project,L100000831181,utility-scale solar,operating,6.8
+G100000835097,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ta Sang solar project,L100000831182,utility-scale solar,operating,7.2
+G100000835098,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Takhian solar project,L100000831183,utility-scale solar,operating,11.3
+G100000835099,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Kwian A solar project,L100000831184,utility-scale solar,operating,8.8
+G100000835100,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Maprang solar project,L100000831185,utility-scale solar,operating,6
+G100000835102,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thap Sakae solar project,L100000831187,utility-scale solar,operating,12.4
+G100000835103,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Udon Thani 1 (UD1) solar project,L100000831188,utility-scale solar,operating,9.7
+G100000835104,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Udon Thani solar project,L100000831189,utility-scale solar,operating,1.6
+G100000835106,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Luek solar project,L100000831191,utility-scale solar,operating,12.5
+G100000835108,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Man II solar project,L100000831193,utility-scale solar,operating,16.9
+G100000835110,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Warin Chamraap I solar project,L100000831195,utility-scale solar,operating,7.6
+G100000835112,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Warin Chamraap III solar project,L100000831197,utility-scale solar,operating,11.7
+G100001029002,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project I,L100001024321,utility-scale solar,operating,6.4
+G100001029003,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project II,L100001024322,utility-scale solar,operating,4.9
+G100001029004,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project III,L100001024323,utility-scale solar,operating,14.7
+G100001029005,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lak Chai Subdistrict Lak Chai Subdistrict Administrative Organization solar project,L100001024324,utility-scale solar,operating,11.2
+G100001029006,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project IV,L100001024325,utility-scale solar,operating,1.5
+G100001029007,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project V,L100001024326,utility-scale solar,operating,1.6
+G100001029008,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project VI,L100001024327,utility-scale solar,operating,2.4
+G100001029009,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project VII,L100001024328,utility-scale solar,operating,1.3
+G100001029010,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project VIII,L100001024329,utility-scale solar,operating,3.7
+G100001029011,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project IX,L100001024330,utility-scale solar,operating,6.6
+G100001029012,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project X,L100001024331,utility-scale solar,operating,7.8
+G100001029013,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XI,L100001024332,utility-scale solar,operating,1.1
+G100001029014,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XII,L100001024333,utility-scale solar,operating,19.3
+G100001029015,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XIII,L100001024334,utility-scale solar,operating,6.9
+G100001029016,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XIV,L100001024335,utility-scale solar,operating,7
+G100001029018,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XVI,L100001024337,utility-scale solar,operating,7.2
+G100001029019,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XVII,L100001024338,utility-scale solar,operating,1.7
+G100001029020,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XVIII,L100001024339,utility-scale solar,operating,6
+G100001029021,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rayong solar project I,L100001024340,utility-scale solar,operating,3.4
+G100001029022,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XIX,L100001024341,utility-scale solar,operating,9.9
+G100001029023,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pa-In District solar project I,L100001024342,utility-scale solar,operating,5
+G100001029024,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khlong Khlung solar project I,L100001024343,utility-scale solar,operating,3.4
+G100001029025,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XX,L100001024344,utility-scale solar,operating,3.5
+G100001029026,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXI,L100001024345,utility-scale solar,operating,3.8
+G100001029027,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXII,L100001024346,utility-scale solar,operating,3.9
+G100001029028,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXIII,L100001024347,utility-scale solar,operating,4.7
+G100001029029,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rayong solar project II,L100001024348,utility-scale solar,operating,17.9
+G100001029030,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXIV,L100001024349,utility-scale solar,operating,1.9
+G100001029031,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nakhon Ratchasima solar project,L100001024350,utility-scale solar,operating,2.7
+G100001029032,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXV,L100001024351,utility-scale solar,operating,2.4
+G100001029033,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXVI,L100001024352,utility-scale solar,operating,13.1
+G100001029034,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXVII,L100001024353,utility-scale solar,operating,3.1
+G100001029035,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXVIII,L100001024354,utility-scale solar,operating,6.5
+G100001029036,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXIX,L100001024355,utility-scale solar,operating,1.7
+G100001029037,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXX,L100001024356,utility-scale solar,operating,1.3
+G100001029038,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXI,L100001024357,utility-scale solar,operating,5.7
+G100001029039,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXII,L100001024358,utility-scale solar,operating,5.5
+G100001029040,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXIII,L100001024359,utility-scale solar,operating,4.4
+G100001029041,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXIV,L100001024360,utility-scale solar,operating,3.2
+G100001029042,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXV,L100001024361,utility-scale solar,operating,3.3
+G100001029044,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Tamnak solar project,L100001024363,utility-scale solar,operating,4.6
+G100001029045,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXVI,L100001024364,utility-scale solar,operating,13.7
+G100001029046,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXVII,L100001024365,utility-scale solar,operating,5.9
+G100001029047,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XXXVIII,L100001024366,utility-scale solar,operating,2.7
+G100001029049,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XL,L100001024368,utility-scale solar,operating,4.5
+G100001029050,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLI,L100001024369,utility-scale solar,operating,3.8
+G100001029051,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLII,L100001024370,utility-scale solar,operating,10.9
+G100001029052,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLIII,L100001024371,utility-scale solar,operating,10.3
+G100001029054,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLV,L100001024373,utility-scale solar,operating,5.7
+G100001029055,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLVI,L100001024374,utility-scale solar,operating,4.7
+G100001029056,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLVII,L100001024375,utility-scale solar,operating,6.4
+G100001029057,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLVIII,L100001024376,utility-scale solar,operating,5.9
+G100001029058,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XLIX,L100001024377,utility-scale solar,operating,4.7
+G100001029059,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project L,L100001024378,utility-scale solar,operating,1.9
+G100001029060,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rahaeng Subdistrict Rahaeng Subdistrict Administrative Organization solar project,L100001024379,utility-scale solar,operating,5.3
+G100001029061,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LI,L100001024380,utility-scale solar,operating,2.4
+G100001029062,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LII,L100001024381,utility-scale solar,operating,7.1
+G100001029063,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LIII,L100001024382,utility-scale solar,operating,8
+G100001029064,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khun Si Subdistrict Khun Si Subdistrict Administrative Organization solar project,L100001024383,utility-scale solar,operating,4.6
+G100001029065,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LIV,L100001024384,utility-scale solar,operating,6.4
+G100001029066,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LV,L100001024385,utility-scale solar,operating,2.8
+G100001029067,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LVI,L100001024386,utility-scale solar,operating,4.6
+G100001029068,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LVII,L100001024387,utility-scale solar,operating,6.2
+G100001029069,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LVIII,L100001024388,utility-scale solar,operating,18.9
+G100001029070,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkok solar project I,L100001024389,utility-scale solar,operating,4.7
+G100001029071,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LIX,L100001024390,utility-scale solar,operating,4.1
+G100001029072,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LX,L100001024391,utility-scale solar,operating,5.4
+G100001029073,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXI,L100001024392,utility-scale solar,operating,2.8
+G100001029074,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXII,L100001024393,utility-scale solar,operating,4.7
+G100001029075,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXIII,L100001024394,utility-scale solar,operating,2.5
+G100001029076,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXIV,L100001024395,utility-scale solar,operating,6.8
+G100001029077,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXV,L100001024396,utility-scale solar,operating,4.7
+G100001029078,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXVI,L100001024397,utility-scale solar,operating,8.5
+G100001029080,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXVIII,L100001024399,utility-scale solar,operating,5.9
+G100001029081,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXIX,L100001024400,utility-scale solar,operating,18
+G100001029082,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXX,L100001024401,utility-scale solar,operating,2.2
+G100001029083,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXI,L100001024402,utility-scale solar,operating,2.9
+G100001029084,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXII,L100001024403,utility-scale solar,operating,3.6
+G100001029085,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXIII,L100001024404,utility-scale solar,operating,5.1
+G100001029086,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXIV,L100001024405,utility-scale solar,operating,4.8
+G100001029087,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXV,L100001024406,utility-scale solar,operating,5.2
+G100001029088,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXVI,L100001024407,utility-scale solar,operating,3.4
+G100001029089,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXVII,L100001024408,utility-scale solar,operating,8.3
+G100001029090,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXVIII,L100001024409,utility-scale solar,operating,4.4
+G100001029091,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXIX,L100001024410,utility-scale solar,operating,8.2
+G100001029092,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXX,L100001024411,utility-scale solar,operating,12.5
+G100001029093,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXI,L100001024412,utility-scale solar,operating,11.4
+G100001029094,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXII,L100001024413,utility-scale solar,operating,4.2
+G100001029095,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Luang Subdistrict Bang Luang Subdistrict Administrative Organization solar project,L100001024414,utility-scale solar,operating,4.8
+G100001029096,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXIII,L100001024415,utility-scale solar,operating,3.8
+G100001029098,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXV,L100001024417,utility-scale solar,operating,9.4
+G100001029099,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXVI,L100001024418,utility-scale solar,operating,5.8
+G100001029100,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXVII,L100001024419,utility-scale solar,operating,6.5
+G100001029101,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXVIII,L100001024420,utility-scale solar,operating,6.9
+G100001029102,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Nam Som Subdistrict Nong Nam Som Subdistrict Administrative Organization solar project,L100001024421,utility-scale solar,operating,11.6
+G100001029103,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXIX,L100001024422,utility-scale solar,operating,4.1
+G100001029104,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Huai Sai Nuea solar project,L100001024423,utility-scale solar,operating,8.3
+G100001029105,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XC,L100001024424,utility-scale solar,operating,6.6
+G100001029106,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCI,L100001024425,utility-scale solar,operating,5.8
+G100001029107,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCII,L100001024426,utility-scale solar,operating,6.1
+G100001029108,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCIII,L100001024427,utility-scale solar,operating,12.5
+G100001029109,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCIV,L100001024428,utility-scale solar,operating,4.9
+G100001029110,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCV,L100001024429,utility-scale solar,operating,9.4
+G100001029111,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCVI,L100001024430,utility-scale solar,operating,1.2
+G100001029112,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCVII,L100001024431,utility-scale solar,operating,18.5
+G100001029113,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCVIII,L100001024432,utility-scale solar,operating,1.7
+G100001029114,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project XCIX,L100001024433,utility-scale solar,operating,10
+G100001029115,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project C,L100001024434,utility-scale solar,operating,7.3
+G100001029116,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Han Sang Subdistrict Han Sang Subdistrict Administrative Organization solar project,L100001024435,utility-scale solar,operating,17.8
+G100001029118,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CII,L100001024437,utility-scale solar,operating,13.2
+G100001029119,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CIII,L100001024438,utility-scale solar,operating,1.8
+G100001029120,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CIV,L100001024439,utility-scale solar,operating,1.6
+G100001029121,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Phloeng Subdistrict Ban Khlo Subdistrict Administrative Organization solar project,L100001024440,utility-scale solar,operating,6.3
+G100001029122,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CV,L100001024441,utility-scale solar,operating,4.7
+G100001029123,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CVI,L100001024442,utility-scale solar,operating,6.4
+G100001029124,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CVII,L100001024443,utility-scale solar,operating,2
+G100001029126,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CIX,L100001024445,utility-scale solar,operating,7.2
+G100001029127,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samut Sakhon solar project I,L100001024446,utility-scale solar,operating,4.6
+G100001029128,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CX,L100001024447,utility-scale solar,operating,12.2
+G100001029129,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXI,L100001024448,utility-scale solar,operating,9.6
+G100001029130,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samut Sakhon solar project II,L100001024449,utility-scale solar,operating,6.1
+G100001029131,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXII,L100001024450,utility-scale solar,operating,2.2
+G100001029133,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXIV,L100001024452,utility-scale solar,operating,9.9
+G100001029135,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXVI,L100001024454,utility-scale solar,operating,2.4
+G100001029136,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXVII,L100001024455,utility-scale solar,operating,2.5
+G100001029137,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXVIII,L100001024456,utility-scale solar,operating,2.1
+G100001029138,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXIX,L100001024457,utility-scale solar,operating,1.4
+G100001029139,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXX,L100001024458,utility-scale solar,operating,2.1
+G100001029140,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXI,L100001024459,utility-scale solar,operating,4.6
+G100001029142,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXIII,L100001024461,utility-scale solar,operating,2.8
+G100001029143,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXIV,L100001024462,utility-scale solar,operating,7.9
+G100001029144,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thap Tai solar project,L100001024463,utility-scale solar,operating,3.5
+G100001029145,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXV,L100001024464,utility-scale solar,operating,5.3
+G100001029146,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXVI,L100001024465,utility-scale solar,operating,5.6
+G100001029147,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXVII,L100001024466,utility-scale solar,operating,7.9
+G100001029148,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Mai Subdistrict Ban Mai Subdistrict Administrative Organization solar project,L100001024467,utility-scale solar,operating,2.3
+G100001029149,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXVIII,L100001024468,utility-scale solar,operating,7.5
+G100001029150,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXIX,L100001024469,utility-scale solar,operating,8.1
+G100001029151,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXX,L100001024470,utility-scale solar,operating,8.3
+G100001029152,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXI,L100001024471,utility-scale solar,operating,1.9
+G100001029154,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXIII,L100001024473,utility-scale solar,operating,1.8
+G100001029155,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXIV,L100001024474,utility-scale solar,operating,1.4
+G100001029156,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXV,L100001024475,utility-scale solar,operating,1.9
+G100001029157,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Udon Thani solar project I,L100001024476,utility-scale solar,operating,1.2
+G100001029159,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXVII,L100001024478,utility-scale solar,operating,2
+G100001029160,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Udon Thani solar project II,L100001024479,utility-scale solar,operating,1.4
+G100001029162,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sam Phraya solar project,L100001024481,utility-scale solar,operating,3.3
+G100001029163,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXVIII,L100001024482,utility-scale solar,operating,1.4
+G100001029164,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXIX,L100001024483,utility-scale solar,operating,11
+G100001029166,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Phrao Ngai Subdistrict Nong Phrao Ngai Subdistrict Administrative Organization solar project,L100001024485,utility-scale solar,operating,5.4
+G100001029167,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLI,L100001024486,utility-scale solar,operating,2
+G100001029169,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLIII,L100001024488,utility-scale solar,operating,2.3
+G100001029172,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLVI,L100001024491,utility-scale solar,operating,3.3
+G100001029173,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLVII,L100001024492,utility-scale solar,operating,1.2
+G100001029174,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Rakat Subdistrict Ban Rakat Subdistrict Administrative Organization solar project,L100001024493,utility-scale solar,operating,3.2
+G100001029175,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkok solar project II,L100001024494,utility-scale solar,operating,4.5
+G100001029176,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkok solar project III,L100001024495,utility-scale solar,operating,4.4
+G100001029177,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLVIII,L100001024496,utility-scale solar,operating,5.3
+G100001029178,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLIX,L100001024497,utility-scale solar,operating,12.1
+G100001029179,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CL,L100001024498,utility-scale solar,operating,2.6
+G100001029180,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLI,L100001024499,utility-scale solar,operating,10.3
+G100001029182,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLIII,L100001024501,utility-scale solar,operating,1.3
+G100001029183,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLIV,L100001024502,utility-scale solar,operating,1.1
+G100001029184,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLV,L100001024503,utility-scale solar,operating,1.4
+G100001029185,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLVI,L100001024504,utility-scale solar,operating,3
+G100001029186,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLVII,L100001024505,utility-scale solar,operating,2.4
+G100001029187,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLVIII,L100001024506,utility-scale solar,operating,2.7
+G100001029188,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLIX,L100001024507,utility-scale solar,operating,1.5
+G100001029190,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXI,L100001024509,utility-scale solar,operating,3.8
+G100001029191,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXII,L100001024510,utility-scale solar,operating,8.3
+G100001029192,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samut Sakhon solar project III,L100001024511,utility-scale solar,operating,5.3
+G100001029193,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Bo District solar project,L100001024512,utility-scale solar,operating,11.4
+G100001029194,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXIII,L100001024513,utility-scale solar,operating,7.4
+G100001029195,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXIV,L100001024514,utility-scale solar,operating,5
+G100001029196,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pa-In District solar project II,L100001024515,utility-scale solar,operating,6.4
+G100001029197,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXV,L100001024516,utility-scale solar,operating,9.9
+G100001029198,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXVI,L100001024517,utility-scale solar,operating,11.8
+G100001029199,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXVII,L100001024518,utility-scale solar,operating,4.1
+G100001029200,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khlong Khwai Subdistrict Khlong Khwai Subdistrict Administrative Organization solar project,L100001024519,utility-scale solar,operating,6
+G100001029201,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXVIII,L100001024520,utility-scale solar,operating,3.4
+G100001029202,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXIX,L100001024521,utility-scale solar,operating,5.2
+G100001029203,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXX,L100001024522,utility-scale solar,operating,3.3
+G100001029204,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen City Municipality solar project,L100001024523,utility-scale solar,operating,2.8
+G100001029205,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXI,L100001024524,utility-scale solar,operating,4.4
+G100001029206,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXII,L100001024525,utility-scale solar,operating,5.1
+G100001029207,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Maha Rat District solar project,L100001024526,utility-scale solar,operating,1
+G100001029208,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samut Sakhon solar project IV,L100001024527,utility-scale solar,operating,7.4
+G100001029209,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khlong Khlung solar project II,L100001024528,utility-scale solar,operating,4.4
+G100001029210,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Yi Tho Subdistrict Bang Yi Tho Subdistrict Administrative Organization solar project,L100001024529,utility-scale solar,operating,5.6
+G100001029211,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXIII,L100001024530,utility-scale solar,operating,12.8
+G100001029212,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXIV,L100001024531,utility-scale solar,operating,4.2
+G100001029213,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXV,L100001024532,utility-scale solar,operating,1.6
+G100001029214,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXVI,L100001024533,utility-scale solar,operating,3.9
+G100001029215,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXVII,L100001024534,utility-scale solar,operating,2.4
+G100001029216,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXVIII,L100001024535,utility-scale solar,operating,1.7
+G100001029217,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXIX,L100001024536,utility-scale solar,operating,2.5
+G100001029218,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXX,L100001024537,utility-scale solar,operating,2.5
+G100001029219,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXI,L100001024538,utility-scale solar,operating,7.1
+G100001029220,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tam Subdistrict Mueang Phayao District solar project,L100001024539,utility-scale solar,operating,6.3
+G100001029221,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Yai Subdistrict Sai Yai Subdistrict Administrative Organization solar project,L100001024540,utility-scale solar,operating,2.1
+G100001029222,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXII,L100001024541,utility-scale solar,operating,1.9
+G100001029223,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXIII,L100001024542,utility-scale solar,operating,2.1
+G100001029224,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXIV,L100001024543,utility-scale solar,operating,4.9
+G100001029225,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXV,L100001024544,utility-scale solar,operating,2.3
+G100001029226,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXVI,L100001024545,utility-scale solar,operating,2.5
+G100001029228,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXVIII,L100001024547,utility-scale solar,operating,5.4
+G100001029229,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khlong Dan Subdistrict Khlong Dan Subdistrict Administrative Organization solar project,L100001024548,utility-scale solar,operating,4.5
+G100001029230,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLXXXIX,L100001024549,utility-scale solar,operating,5.4
+G100001029231,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXC,L100001024550,utility-scale solar,operating,2.4
+G100001029232,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCI,L100001024551,utility-scale solar,operating,2.4
+G100001029233,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCII,L100001024552,utility-scale solar,operating,1.2
+G100001029234,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCIII,L100001024553,utility-scale solar,operating,6
+G100001029235,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCIV,L100001024554,utility-scale solar,operating,2.2
+G100001029236,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCV,L100001024555,utility-scale solar,operating,2.4
+G100001029237,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCVI,L100001024556,utility-scale solar,operating,5
+G100001029239,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCVIII,L100001024558,utility-scale solar,operating,2.7
+G100001029240,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXCIX,L100001024559,utility-scale solar,operating,1.5
+G100001029241,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CC,L100001024560,utility-scale solar,operating,4.3
+G100001029242,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCI,L100001024561,utility-scale solar,operating,15.3
+G100001029243,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCII,L100001024562,utility-scale solar,operating,3.9
+G100001029244,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samut Sakhon solar project V,L100001024563,utility-scale solar,operating,4.7
+G100001029245,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCIII,L100001024564,utility-scale solar,operating,2.9
+G100001029246,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCIV,L100001024565,utility-scale solar,operating,1.6
+G100001029248,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCVI,L100001024567,utility-scale solar,operating,1.3
+G100001029249,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCVII,L100001024568,utility-scale solar,operating,2.5
+G100001029250,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCVIII,L100001024569,utility-scale solar,operating,7.9
+G100001029251,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCIX,L100001024570,utility-scale solar,operating,14.3
+G100001029252,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCX,L100001024571,utility-scale solar,operating,5.4
+G100001029253,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXI,L100001024572,utility-scale solar,operating,7.4
+G100001029254,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXII,L100001024573,utility-scale solar,operating,4.7
+G100001029255,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXIII,L100001024574,utility-scale solar,operating,9.2
+G100001029256,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXIV,L100001024575,utility-scale solar,operating,6.4
+G100001029257,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXV,L100001024576,utility-scale solar,operating,4.7
+G100001029258,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXVI,L100001024577,utility-scale solar,operating,5.6
+G100001029259,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXVII,L100001024578,utility-scale solar,operating,6.9
+G100001029260,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXVIII,L100001024579,utility-scale solar,operating,5
+G100001029261,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXIX,L100001024580,utility-scale solar,operating,1.4
+G100001029262,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXX,L100001024581,utility-scale solar,operating,2.2
+G100001029263,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXI,L100001024582,utility-scale solar,operating,1.1
+G100001029264,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXII,L100001024583,utility-scale solar,operating,2
+G100001029265,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXIII,L100001024584,utility-scale solar,operating,3.8
+G100001029266,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXIV,L100001024585,utility-scale solar,operating,4.5
+G100001029267,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXV,L100001024586,utility-scale solar,operating,3.7
+G100001029268,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXVI,L100001024587,utility-scale solar,operating,2.9
+G100001029269,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXVII,L100001024588,utility-scale solar,operating,4.5
+G100001029270,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXVIII,L100001024589,utility-scale solar,operating,2.7
+G100001029271,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXIX,L100001024590,utility-scale solar,operating,6.1
+G100001029272,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkok solar project IV,L100001024591,utility-scale solar,operating,5
+G100001029273,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXX,L100001024592,utility-scale solar,operating,3.8
+G100001029274,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXI,L100001024593,utility-scale solar,operating,1.3
+G100001029275,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXII,L100001024594,utility-scale solar,operating,5.9
+G100001029276,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXIII,L100001024595,utility-scale solar,operating,7
+G100001063728,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phran Kratai 4 solar project,L100001055811,utility-scale solar,operating,10
+G100001076469,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Pho District solar project,L100001066683,utility-scale solar,operating,4.9
+G100001076470,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Si Maha Phot District solar project,L100001066684,utility-scale solar,operating,8.7
+G100001076471,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Maka solar project I,L100001066685,utility-scale solar,operating,1.3
+G100001076472,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Nam Priao District solar project,L100001066686,utility-scale solar,operating,3.5
+G100001076473,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Prachin Buri District solar project,L100001066687,utility-scale solar,operating,3.9
+G100001076474,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phraek Sa Subdistrict Mueang Samut Prakan District solar project,L100001066688,utility-scale solar,operating,1.3
+G100001076475,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phanat Nikhom District solar project,L100001066689,utility-scale solar,operating,1.8
+G100001076476,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Si That solar project,L100001066690,utility-scale solar,operating,1.9
+G100001076477,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Bueng District solar project I,L100001066691,utility-scale solar,operating,2
+G100001076478,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXIV,L100001066692,utility-scale solar,operating,1.7
+G100001076479,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Don solar project,L100001066693,utility-scale solar,operating,4.2
+G100001076480,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Map Ta Phut Mueang Rayong District solar project,L100001066694,utility-scale solar,operating,2.2
+G100001076481,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabin Buri District solar project I,L100001066695,utility-scale solar,operating,3.7
+G100001076482,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaeng Khoi solar project I,L100001066696,utility-scale solar,operating,1.2
+G100001076483,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Lop Buri solar project I,L100001066697,utility-scale solar,operating,1.1
+G100001076484,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phan Thong District solar project,L100001066698,utility-scale solar,operating,4.4
+G100001076485,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phra Phutthabat solar project I,L100001066699,utility-scale solar,operating,2.8
+G100001076486,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabin Buri District solar project II,L100001066700,utility-scale solar,operating,1.8
+G100001076487,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phong solar project,L100001066701,utility-scale solar,operating,1.2
+G100001076488,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Chon Buri District solar project I,L100001066702,utility-scale solar,operating,2.8
+G100001076489,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Sa Kaeo District solar project,L100001066703,utility-scale solar,operating,2.1
+G100001076490,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Nakhon Phanom solar project,L100001066704,utility-scale solar,operating,1.1
+G100001076491,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phatthana Nikhom solar project I,L100001066705,utility-scale solar,operating,1.4
+G100001076492,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Muang solar project,L100001066706,utility-scale solar,operating,1.1
+G100001076493,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phunphin solar project I,L100001066707,utility-scale solar,operating,2.2
+G100001076494,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong District solar project I,L100001066708,utility-scale solar,operating,1.6
+G100001076495,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXV,L100001066709,utility-scale solar,operating,2.2
+G100001076496,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Khai District solar project,L100001066710,utility-scale solar,operating,1.9
+G100001076497,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaloem Phra Kiat solar project,L100001066711,utility-scale solar,operating,1.1
+G100001076498,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Kanchanaburi solar project I,L100001066712,utility-scale solar,operating,3.1
+G100001076499,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaeng Khoi solar project II,L100001066713,utility-scale solar,operating,7.3
+G100001076500,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Photharam solar project I,L100001066714,utility-scale solar,operating,2.9
+G100001076501,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Ratchaburi solar project I,L100001066715,utility-scale solar,operating,1.7
+G100001076502,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chanuman solar project,L100001066716,utility-scale solar,operating,1.7
+G100001076503,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Nom Kho Subdistrict Sena District solar project,L100001066717,utility-scale solar,operating,2.1
+G100001076504,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Bun Mak solar project,L100001066718,utility-scale solar,operating,2.1
+G100001076505,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae solar project I,L100001066719,utility-scale solar,operating,2
+G100001076506,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Damnoen Saduak solar project,L100001066720,utility-scale solar,operating,1.1
+G100001076507,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Prue Subdistrict Nong Prue Subdistrict Administrative Organization solar project,L100001066721,utility-scale solar,operating,2.5
+G100001076508,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXVI,L100001066722,utility-scale solar,operating,1.4
+G100001076509,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phra Phutthabat solar project II,L100001066723,utility-scale solar,operating,2
+G100001076510,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Muak Lek solar project,L100001066724,utility-scale solar,operating,1.5
+G100001076511,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Takhli solar project I,L100001066725,utility-scale solar,operating,1.8
+G100001076512,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXVII,L100001066726,utility-scale solar,operating,1.2
+G100001076513,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project I,L100001066727,utility-scale solar,operating,1.1
+G100001076514,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amphoe Phutthamonthon solar project,L100001066728,utility-scale solar,operating,2.4
+G100001076515,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong District solar project II,L100001066729,utility-scale solar,operating,1.2
+G100001076516,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ongkharak District solar project,L100001066730,utility-scale solar,operating,2.8
+G100001076517,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Bueng District solar project II,L100001066731,utility-scale solar,operating,3.1
+G100001076518,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Banphot Phisai solar project,L100001066732,utility-scale solar,operating,1.4
+G100001076519,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phrom Buri solar project,L100001066733,utility-scale solar,operating,2
+G100001076520,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Klaeng District solar project I,L100001066734,utility-scale solar,operating,1.6
+G100001076521,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkok solar project V,L100001066735,utility-scale solar,operating,1.7
+G100001076522,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Nakhon Ratchasima solar project I,L100001066736,utility-scale solar,operating,1.1
+G100001076523,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Krasan Subdistrict Bang Pa-In District solar project,L100001066737,utility-scale solar,operating,1.7
+G100001076524,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Chon Buri District solar project II,L100001066738,utility-scale solar,operating,1.2
+G100001076525,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Yoi solar project I,L100001066739,utility-scale solar,operating,1.1
+G100001076526,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khlong Luang District solar project,L100001066740,utility-scale solar,operating,1.8
+G100001076527,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae solar project II,L100001066741,utility-scale solar,operating,1
+G100001076528,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hua Hin District solar project,L100001066742,utility-scale solar,operating,1
+G100001076529,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Kanchanaburi solar project II,L100001066743,utility-scale solar,operating,2.3
+G100001076530,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amphawa solar project,L100001066744,utility-scale solar,operating,5.1
+G100001076531,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae solar project III,L100001066745,utility-scale solar,operating,2.2
+G100001076532,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Plaeng Yao District solar project I,L100001066746,utility-scale solar,operating,1.4
+G100001076533,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Tum solar project,L100001066747,utility-scale solar,operating,5.7
+G100001076534,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phraek Sa Mai Subdistrict Mueang Samut Prakan District solar project,L100001066748,utility-scale solar,operating,1.1
+G100001076535,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Maha Sarakham solar project,L100001066749,utility-scale solar,operating,1.2
+G100001076536,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXVIII,L100001066750,utility-scale solar,operating,3
+G100001076537,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phayu District solar project,L100001066751,utility-scale solar,operating,3
+G100001076538,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khok Samrong solar project,L100001066752,utility-scale solar,operating,2.5
+G100001076539,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phunphin solar project II,L100001066753,utility-scale solar,operating,2.3
+G100001076540,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Pong solar project I,L100001066754,utility-scale solar,operating,1.1
+G100001076541,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Yoi solar project II,L100001066755,utility-scale solar,operating,3
+G100001076542,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Chik solar project,L100001066756,utility-scale solar,operating,1
+G100001076543,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae solar project IV,L100001066757,utility-scale solar,operating,2.6
+G100001076544,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Khon Kaen solar project I,L100001066758,utility-scale solar,operating,1.1
+G100001076545,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaeng Khoi solar project III,L100001066759,utility-scale solar,operating,1.6
+G100001076546,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bua Lai solar project,L100001066760,utility-scale solar,operating,1.5
+G100001076547,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sak Lek solar project,L100001066761,utility-scale solar,operating,13.6
+G100001076548,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Nong Khai solar project,L100001066762,utility-scale solar,operating,1.7
+G100001076549,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXXXIX,L100001066763,utility-scale solar,operating,2.1
+G100001076550,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Tho solar project I,L100001066764,utility-scale solar,operating,1.3
+G100001076551,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Lamphun solar project I,L100001066765,utility-scale solar,operating,2
+G100001076552,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Khon Kaen solar project II,L100001066766,utility-scale solar,operating,1.5
+G100001076553,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thawon Watthana Sai Thong Watthana District solar project,L100001066767,utility-scale solar,operating,5.7
+G100001076554,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Nakhon Ratchasima solar project II,L100001066768,utility-scale solar,operating,1.3
+G100001076555,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Sai Subdistrict Bang Sai Subdistrict Administrative Organization solar project,L100001066769,utility-scale solar,operating,2.1
+G100001076556,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thanu Subdistrict Thanu Subdistrict Administrative Organization solar project,L100001066770,utility-scale solar,operating,1.7
+G100001076557,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Lop Buri solar project II,L100001066771,utility-scale solar,operating,2
+G100001076558,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Khon Kaen solar project III,L100001066772,utility-scale solar,operating,1.7
+G100001076559,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hang Chat solar project,L100001066773,utility-scale solar,operating,10.9
+G100001076560,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rangsit City Municipality Thanyaburi District solar project,L100001066774,utility-scale solar,operating,1
+G100001076561,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Khon Kaen solar project IV,L100001066775,utility-scale solar,operating,2
+G100001076562,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phatthana Nikhom solar project II,L100001066776,utility-scale solar,operating,3.4
+G100001076563,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kui Buri District solar project I,L100001066777,utility-scale solar,operating,3.2
+G100001076564,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Nakhon Ratchasima solar project III,L100001066778,utility-scale solar,operating,2.4
+G100001076565,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sisa Chorakhe Yai Subdistrict Sisa Chorakhe Yai Subdistrict Administrative Organization solar project,L100001066779,utility-scale solar,operating,2.5
+G100001076566,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tap Khlo solar project,L100001066780,utility-scale solar,operating,1.4
+G100001076567,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Suan Phrik Thai Subdistrict Suan Phrik Thai Subdistrict Administrative Organization solar project,L100001066781,utility-scale solar,operating,1.4
+G100001076568,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Wung solar project,L100001066782,utility-scale solar,operating,7.8
+G100001076569,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Bueng District solar project III,L100001066783,utility-scale solar,operating,1.6
+G100001076570,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Maka solar project II,L100001066784,utility-scale solar,operating,1.9
+G100001076571,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae solar project V,L100001066785,utility-scale solar,operating,2.1
+G100001076572,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sikhio solar project,L100001066786,utility-scale solar,operating,1.5
+G100001076573,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Duea Subdistrict Bang Duea Subdistrict Administrative Organization solar project,L100001066787,utility-scale solar,operating,1.4
+G100001076574,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Klaeng District solar project II,L100001066788,utility-scale solar,operating,1
+G100001076575,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pho Prathap Chang District solar project I,L100001066789,utility-scale solar,operating,1.3
+G100001076576,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Khon Kaen solar project V,L100001066790,utility-scale solar,operating,1.7
+G100001076577,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Pong solar project II,L100001066791,utility-scale solar,operating,1
+G100001076578,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Yi Tho Subdistrict Bang Yi Tho Subdistrict Administrative Organization solar project I,L100001066792,utility-scale solar,operating,6.3
+G100001076579,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project II,L100001066793,utility-scale solar,operating,2.7
+G100001076580,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Yai District solar project,L100001066794,utility-scale solar,operating,1.2
+G100001076581,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Phitsanulok District solar project,L100001066795,utility-scale solar,operating,1
+G100001076582,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hat Yai solar project I,L100001066796,utility-scale solar,operating,1.5
+G100001076583,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project III,L100001066797,utility-scale solar,operating,2.1
+G100001076584,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chok Chai solar project I,L100001066798,utility-scale solar,operating,4
+G100001076585,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXL,L100001066799,utility-scale solar,operating,1.1
+G100001076586,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Tho solar project II,L100001066800,utility-scale solar,operating,2.9
+G100001076587,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Maka solar project III,L100001066801,utility-scale solar,operating,2.2
+G100001076588,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hat Yai solar project II,L100001066802,utility-scale solar,operating,4.3
+G100001076589,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Buri solar project,L100001066803,utility-scale solar,operating,5.1
+G100001076590,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Thi solar project,L100001066804,utility-scale solar,operating,1.3
+G100001076591,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuet Udom Subdistrict Phuet Udom Subdistrict Administrative Organization solar project,L100001066805,utility-scale solar,operating,2.1
+G100001076592,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Takhli solar project II,L100001066806,utility-scale solar,operating,1.1
+G100001076593,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXLI,L100001066807,utility-scale solar,operating,2.8
+G100001076594,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaset Wisai solar project,L100001066808,utility-scale solar,operating,1
+G100001076595,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaeng Khoi solar project IV,L100001066809,utility-scale solar,operating,3.2
+G100001076596,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Mo solar project,L100001066810,utility-scale solar,operating,4.2
+G100001076597,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamphaeng Saen solar project,L100001066811,utility-scale solar,operating,1.6
+G100001076598,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Laem Chabang Si Racha District solar project,L100001066812,utility-scale solar,operating,2.5
+G100001076599,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Ratchaburi solar project II,L100001066813,utility-scale solar,operating,3.1
+G100001076600,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project IV,L100001066814,utility-scale solar,operating,1.4
+G100001076601,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bua Yai solar project,L100001066815,utility-scale solar,operating,1
+G100001076602,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chai Badan solar project,L100001066816,utility-scale solar,operating,1.1
+G100001076603,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Dan Khun Thot solar project,L100001066817,utility-scale solar,operating,1.2
+G100001076604,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kap Choeng solar project,L100001066818,utility-scale solar,operating,2
+G100001076605,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Lop Buri solar project III,L100001066819,utility-scale solar,operating,1.2
+G100001076606,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kui Buri District solar project II,L100001066820,utility-scale solar,operating,1.4
+G100001076607,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Kanchanaburi solar project III,L100001066821,utility-scale solar,operating,1
+G100001076608,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Krathum Baen solar project,L100001066822,utility-scale solar,operating,3.9
+G100001076609,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Udon Thani City Municipality Mueang Udon Thani District solar project,L100001066823,utility-scale solar,operating,1.1
+G100001076610,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samut Sakhon Mueang Samut Sakhon solar project,L100001066824,utility-scale solar,operating,3.6
+G100001076611,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thung Song solar project,L100001066825,utility-scale solar,operating,1.6
+G100001076612,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Yai Subdistrict Sai Yai Subdistrict Administrative Organization solar project I,L100001066826,utility-scale solar,operating,1.2
+G100001076613,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Samut Sakhon solar project,L100001066827,utility-scale solar,operating,1.2
+G100001076614,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae solar project VI,L100001066828,utility-scale solar,operating,2.6
+G100001076615,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Bueng District solar project IV,L100001066829,utility-scale solar,operating,1.2
+G100001076616,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Homok Subdistrict Bang Yi Tho Subdistrict Administrative Organization solar project,L100001066830,utility-scale solar,operating,3.5
+G100001076617,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Nakhon Sawan solar project,L100001066831,utility-scale solar,operating,3
+G100001076618,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project V,L100001066832,utility-scale solar,operating,1.5
+G100001076619,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hin Dat Pang Sila Thong District solar project,L100001066833,utility-scale solar,operating,1.6
+G100001076620,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Songkhla solar project,L100001066834,utility-scale solar,operating,1.6
+G100001076621,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Len solar project,L100001066835,utility-scale solar,operating,9.9
+G100001076622,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong District solar project III,L100001066836,utility-scale solar,operating,1.5
+G100001076623,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project VI,L100001066837,utility-scale solar,operating,2.1
+G100001076624,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Na San solar project,L100001066838,utility-scale solar,operating,1.1
+G100001076625,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Na Mon solar project,L100001066839,utility-scale solar,operating,1.2
+G100001076626,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lam Sai Subdistrict Lam Sai Subdistrict Administrative Organization solar project,L100001066840,utility-scale solar,operating,2.2
+G100001076627,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kao Liao solar project,L100001066841,utility-scale solar,operating,1.2
+G100001076628,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sanap Thuep Subdistrict Sanap Thuep Subdistrict Administrative Organization solar project,L100001066842,utility-scale solar,operating,1.1
+G100001076629,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pa Mok solar project,L100001066843,utility-scale solar,operating,2.2
+G100001076630,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaeng Khoi solar project V,L100001066844,utility-scale solar,operating,1
+G100001076631,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Kalasin solar project,L100001066845,utility-scale solar,operating,3
+G100001076632,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chok Chai solar project II,L100001066846,utility-scale solar,operating,1.1
+G100001076633,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phayakkhaphum Phisai solar project,L100001066847,utility-scale solar,operating,1
+G100001076634,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Pong solar project III,L100001066848,utility-scale solar,operating,1
+G100001076635,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Lop Buri solar project IV,L100001066849,utility-scale solar,operating,1.4
+G100001076636,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Photharam solar project II,L100001066850,utility-scale solar,operating,2.5
+G100001076637,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Mae Hong Son solar project,L100001066851,utility-scale solar,operating,3.9
+G100001076638,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khu Khwang Subdistrict Lat Lum Kaeo District solar project,L100001066852,utility-scale solar,operating,2.3
+G100001076639,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Yoi solar project III,L100001066853,utility-scale solar,operating,1.5
+G100001076640,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Yoi solar project IV,L100001066854,utility-scale solar,operating,1.1
+G100001076641,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project VII,L100001066855,utility-scale solar,operating,2.3
+G100001076642,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Nakhon Ratchasima solar project IV,L100001066856,utility-scale solar,operating,1
+G100001076643,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sam Bandit Subdistrict Sam Bandit Subdistrict Administrative Organization solar project,L100001066857,utility-scale solar,operating,9.4
+G100001076644,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Krasang Subdistrict Mueang Buri Ram District solar project,L100001066858,utility-scale solar,operating,1.3
+G100001076645,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wichit Mueang Phuket solar project,L100001066859,utility-scale solar,operating,1.5
+G100001076646,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Saraphi solar project,L100001066860,utility-scale solar,operating,1.7
+G100001076647,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hat Yai solar project III,L100001066861,utility-scale solar,operating,1.7
+G100001076648,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Phai District solar project,L100001066862,utility-scale solar,operating,3.6
+G100001076649,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkok solar project VI,L100001066863,utility-scale solar,operating,3.7
+G100001076650,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wat Bot District solar project,L100001066864,utility-scale solar,operating,8.2
+G100001076651,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Phae solar project,L100001066865,utility-scale solar,operating,1.1
+G100001076652,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae solar project VII,L100001066866,utility-scale solar,operating,1.2
+G100001076653,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Ratchaburi solar project III,L100001066867,utility-scale solar,operating,1.1
+G100001076654,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaophraya Surasak Si Racha District solar project VIII,L100001066868,utility-scale solar,operating,1.6
+G100001076655,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Plaeng Yao District solar project II,L100001066869,utility-scale solar,operating,1.3
+G100001076656,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Thong District solar project,L100001066870,utility-scale solar,operating,1
+G100001076657,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Mukdahan solar project,L100001066871,utility-scale solar,operating,3.1
+G100001076658,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pho Prathap Chang District solar project II,L100001066872,utility-scale solar,operating,5.3
+G100001076659,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phitsanulok Mueang Phitsanulok District solar project,L100001066873,utility-scale solar,operating,1.2
+G100001076660,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pathio solar project,L100001066874,utility-scale solar,operating,1
+G100001076661,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rattaphum solar project,L100001066875,utility-scale solar,operating,2.3
+G100001076662,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Tho solar project III,L100001066876,utility-scale solar,operating,2.9
+G100001076663,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CCXLII,L100001066877,utility-scale solar,operating,2.1
+G100001076664,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Lamphun solar project II,L100001066878,utility-scale solar,operating,2
+G100001076665,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Bueng District solar project V,L100001066879,utility-scale solar,operating,1.5
+G100001076666,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sida solar project,L100001066880,utility-scale solar,operating,1
+G100001076667,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phatthana Nikhom solar project III,L100001066881,utility-scale solar,operating,1.6
+G100001076668,energy_plants_gem_tzsam_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mueang Kanchanaburi solar project IV,L100001066882,utility-scale solar,operating,1.4

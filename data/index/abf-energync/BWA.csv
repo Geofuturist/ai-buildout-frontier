@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001022836,energy_plants_gem_tzsam_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gaborone solar project,L100001020063,utility-scale solar,operating,1.9
+G100001022837,energy_plants_gem_tzsam_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,North-West District solar project,L100001020064,utility-scale solar,operating,2
+G100001074552,energy_plants_gem_tzsam_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Central District solar project,L100001064766,utility-scale solar,operating,7.2
+G100001074554,energy_plants_gem_tzsam_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gaborone solar project I,L100001064768,utility-scale solar,operating,1
+G100001074555,energy_plants_gem_tzsam_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gaborone solar project II,L100001064769,utility-scale solar,operating,1.1

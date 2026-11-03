@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023551,energy_plants_gem_units,PYF,point,,,,,,,,true,abf-boundaries-v0.2.0,Taravao solar farm,L100001020649,utility-scale solar,construction,6
+G100001023552,energy_plants_gem_units,PYF,point,,,,,,,,false,abf-boundaries-v0.2.0,Taravao solar farm,L100001020649,utility-scale solar,construction,3
+G100001023553,energy_plants_gem_units,PYF,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahana O'hiupe solar farm,L100001020650,utility-scale solar,operating,8
+G100001023554,energy_plants_gem_units,PYF,point,,,,,,,,false,abf-boundaries-v0.2.0,Manasolar solar farm,L100001020651,utility-scale solar,operating,10.8

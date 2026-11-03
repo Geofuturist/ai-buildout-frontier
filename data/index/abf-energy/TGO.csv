@@ -1,0 +1,16 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407285,energy_plants_gem_units,TGO,point,,TGO-1-M,,point,,,,true,abf-boundaries-v0.2.0,Kékéli Efficient power plant,L100000406832,oil/gas,operating,65
+G100000413537,energy_plants_gem_units,TGO,point,,TGO-1-M,,point,,,,false,abf-boundaries-v0.2.0,Lomé Contour power station,L100000409045,oil/gas,operating,100
+G100000800029,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,true,abf-boundaries-v0.2.0,ARISE IIP solar farm,L100000800026,utility-scale solar,pre_construction,390
+G100000800108,energy_plants_gem_units,TGO,point,,TGO-1-S,,point,,,,true,abf-boundaries-v0.2.0,Dapaong solar farm,L100000800085,utility-scale solar,construction,25
+G100000800345,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,false,abf-boundaries-v0.2.0,Sheikh Mohamed Bin Zayed solar farm,L100000800292,utility-scale solar,operating,30
+G100000800346,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,false,abf-boundaries-v0.2.0,Sheikh Mohamed Bin Zayed solar farm,L100000800292,utility-scale solar,operating,20
+G100000814235,energy_plants_gem_units,TGO,point,,TGO-1-K,,point,,,,true,abf-boundaries-v0.2.0,Kpalassi Solar Power Station,L100000811676,utility-scale solar,shelved,42
+G100000814236,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,true,abf-boundaries-v0.2.0,Salimde solar farm,L100000811677,utility-scale solar,announced,50
+G100000831295,energy_plants_gem_units,TGO,point,,TGO-1-S,,point,,,,true,abf-boundaries-v0.2.0,Dalwak solar farm,L100000827745,utility-scale solar,pre_construction,25
+G100000831296,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,false,abf-boundaries-v0.2.0,Sheikh Mohamed Bin Zayed solar farm,L100000800292,utility-scale solar,operating,20
+G100000900006,energy_plants_gem_units,TGO,point,,TGO-1-M,,point,,,,false,abf-boundaries-v0.2.0,Lomé wind farm,L100000900006,wind,cancelled,24
+G100001021540,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,true,abf-boundaries-v0.2.0,Sokodé solar farm,L100001019116,utility-scale solar,pre_construction,64
+G100001027489,energy_plants_gem_units,TGO,point,,TGO-1-P,,point,,,,false,abf-boundaries-v0.2.0,Nangbeto hydroelectric plant,L100001023284,hydropower,operating,66
+G100001051388,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,false,abf-boundaries-v0.2.0,Sheikh Mohamed Bin Zayed solar farm,L100000800292,utility-scale solar,announced,30
+G100001074164,energy_plants_gem_units,TGO,point,,TGO-1-C,,point,,,,true,abf-boundaries-v0.2.0,Togo solar farm,L100001064438,utility-scale solar,announced,400

@@ -1,0 +1,39 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000404586,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Dur Power and Water Station,L100000405454,oil/gas,operating,750
+G100000404587,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Ezzel power station,L100000405455,oil/gas,operating,471
+G100000404588,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Ezzel power station,L100000405455,oil/gas,operating,471
+G100000404589,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Hidd Power and Water Station,L100000405457,oil/gas,operating,987
+G100000404590,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,50
+G100000404591,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,50
+G100000404592,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,50
+G100000404593,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,50
+G100000404594,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,50
+G100000404595,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,75
+G100000404596,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,75
+G100000404597,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,75
+G100000404598,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,75
+G100000404599,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,75
+G100000404600,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa Power and Water Station,L100000405458,oil/gas,operating,75
+G100000404601,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluminium Bahrain (ALBA) power station,L100000405456,oil/gas,operating,597.3
+G100000408589,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Dur Power and Water Station,L100000405454,oil/gas,operating,613
+G100000408590,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Dur Power and Water Station,L100000405454,oil/gas,operating,613
+G100000408591,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluminium Bahrain (ALBA) power station,L100000405456,oil/gas,operating,660
+G100000408592,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluminium Bahrain (ALBA) power station,L100000405456,oil/gas,operating,397
+G100000408593,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluminium Bahrain (ALBA) power station,L100000405456,oil/gas,operating,397
+G100000410553,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluminium Bahrain (ALBA) power station,L100000405456,oil/gas,operating,681
+G100000411177,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluminium Bahrain (ALBA) power station,L100000405456,oil/gas,operating,597.3
+G100000411178,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluminium Bahrain (ALBA) power station,L100000405456,oil/gas,operating,597.3
+G100000411179,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Dur Power and Water Station,L100000405454,oil/gas,operating,750
+G100000804671,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Askar IPP solar farm,L100000804089,utility-scale solar,pre_construction,100
+G100000833172,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,APM Terminals solar farm,L100000829383,utility-scale solar,pre_construction,11.4
+G100000833173,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,Awali solar project,L100000829384,utility-scale solar,operating,4.1
+G100000833174,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sakhir solar farm,L100000829385,utility-scale solar,pre_construction,72
+G100001005081,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Dur Power and Water Station,L100000405454,oil/gas,construction,1800
+G100001021325,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,Askar Waste-to-Energy power station,L100001018976,bioenergy,pre_construction,25
+G100001021426,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,Askar Landfill Remediation solar farm,L100001019037,utility-scale solar,announced,100
+G100001021427,energy_plants_gem_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Dur solar farm,L100001019038,utility-scale solar,construction,95
+G100001021462,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,Masdar-Bapco wind farm,L100001019058,wind,announced,2000
+G100001051458,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,University of Bahrain solar project,L100001045688,utility-scale solar,pre_construction,44
+G100001051799,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sitra Independent Water and Power Plant,L100001045943,oil/gas,pre_construction,600
+G100001051800,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sitra Independent Water and Power Plant,L100001045943,oil/gas,pre_construction,600
+G100001070823,energy_plants_gem_units,BHR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bilaj Al Jazayer solar farm,L100001061761,utility-scale solar,announced,100

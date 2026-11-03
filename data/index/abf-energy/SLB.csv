@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413351,energy_plants_gem_units,SLB,point,,,,,,,,false,abf-boundaries-v0.2.0,Lungga power station,L100000408978,oil/gas,operating,10
+G100000413352,energy_plants_gem_units,SLB,point,,,,,,,,false,abf-boundaries-v0.2.0,Lungga power station,L100000408978,oil/gas,operating,17
+G100001023593,energy_plants_gem_units,SLB,point,,,,,,,,false,abf-boundaries-v0.2.0,Henderson solar farm,L100001020683,utility-scale solar,operating,1
+G100001023594,energy_plants_gem_units,SLB,point,,,,,,,,true,abf-boundaries-v0.2.0,Ambu solar farm,L100001020684,utility-scale solar,announced,1.5
+G100001031218,energy_plants_gem_units,SLB,point,,,,,,,,true,abf-boundaries-v0.2.0,Solomon Islands geothermal power plant,L100001026011,geothermal,announced,30
+G100001062249,energy_plants_gem_units,SLB,point,,,,,,,,false,abf-boundaries-v0.2.0,Henderson solar farm,L100001020683,utility-scale solar,operating,2

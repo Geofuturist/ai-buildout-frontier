@@ -1,0 +1,125 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000103946,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Hongsa power station,L100000103007,coal,operating,626
+G100000103947,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Hongsa power station,L100000103007,coal,operating,626
+G100000103948,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Hongsa power station,L100000103007,coal,operating,626
+G100000103949,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Hongsa power station,L100000103007,coal,cancelled,626
+G100000111972,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Houaphanh power station,L100000104381,coal,shelved,350
+G100000114490,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Phonesack Xekong power station,L100000104671,coal,construction,300
+G100000114493,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,TSBP Sekong power station,L100000104672,coal,announced,300
+G100000114830,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Houaphanh power station,L100000104381,coal,cancelled,300
+G100000114888,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,TSBP Sekong power station,L100000104672,coal,announced,300
+G100000114889,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Sekong power station (EPIC),L100000104780,coal,announced,1000
+G100000115024,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Boualapha power station,L100000104816,coal,shelved,1000
+G100000115025,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Boualapha power station,L100000104816,coal,shelved,1000
+G100000115306,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phan power station,L100000104896,coal,shelved,330
+G100000115307,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phan power station,L100000104896,coal,shelved,330
+G100000602390,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Sahong hydroelectric plant,L100000602360,hydropower,operating,260
+G100000602391,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Houay Ho hydroelectric plant,L100000602361,hydropower,operating,152
+G100000602392,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Houay Lamphan Gnai hydroelectric plant,L100000602362,hydropower,operating,88
+G100000602394,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Bak 1 hydroelectric plant,L100000602364,hydropower,shelved,160
+G100000602395,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Chiane hydroelectric plant,L100000602365,hydropower,operating,104
+G100000602396,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Emoun hydroelectric plant,L100000602366,hydropower,operating,129
+G100000602400,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Khan 2 hydroelectric plant,L100000602370,hydropower,operating,130
+G100000602401,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Kong 1 hydroelectric plant,L100000602371,hydropower,operating,160
+G100000602402,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Lik 1-2 hydroelectric plant,L100000602372,hydropower,operating,100
+G100000602403,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Mo 2 hydroelectric plant,L100000602373,hydropower,construction,120
+G100000602405,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngiep 1 hydroelectric plant,L100000602375,hydropower,operating,290
+G100000602406,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngiep 2 hydroelectric plant,L100000602376,hydropower,operating,180
+G100000602407,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngum 1 hydroelectric plant,L100000602377,hydropower,operating,275
+G100000602408,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngum 2 hydroelectric plant,L100000602378,hydropower,operating,615
+G100000602409,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngum 3 hydroelectric plant,L100000602379,hydropower,construction,480
+G100000602410,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngum 4 hydroelectric plant,L100000602380,hydropower,operating,240
+G100000602411,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngum 5 hydroelectric plant,L100000602381,hydropower,operating,120
+G100000602412,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ou 1 hydroelectric plant,L100000602382,hydropower,operating,180
+G100000602413,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ou 2 hydroelectric plant,L100000602383,hydropower,operating,120
+G100000602414,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ou 3 hydroelectric plant,L100000602384,hydropower,operating,210
+G100000602415,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ou 4 hydroelectric plant,L100000602385,hydropower,operating,132
+G100000602416,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ou 5 hydroelectric plant,L100000602386,hydropower,operating,240
+G100000602417,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ou 6 hydroelectric plant,L100000602387,hydropower,operating,180
+G100000602418,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ou 7 hydroelectric plant,L100000602388,hydropower,operating,210
+G100000602419,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Pha hydroelectric plant,L100000602389,hydropower,pre_construction,180
+G100000602421,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phay hydroelectric plant,L100000602391,hydropower,operating,86
+G100000602423,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Sum 3 hydroelectric plant,L100000602393,hydropower,operating,156
+G100000602424,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Tha hydroelectric plant,L100000602394,hydropower,operating,168
+G100000602425,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Theun 1 hydroelectric plant,L100000602395,hydropower,operating,650
+G100000602426,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Theun 2 hydroelectric plant,L100000602396,hydropower,operating,1070
+G100000602428,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Lay hydroelectric plant,L100000602398,hydropower,construction,770
+G100000602429,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Phou Ngoy hydroelectric plant,L100000602399,hydropower,pre_construction,728
+G100000602430,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Sanakham hydroelectric plant,L100000602400,hydropower,pre_construction,684
+G100000602431,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Theun Hinboun hydroelectric plant,L100000602401,hydropower,operating,440
+G100000602432,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xayaburi hydroelectric plant,L100000602402,hydropower,operating,1285
+G100000602433,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xe Pian Xe Namnoy hydroelectric plant,L100000602403,hydropower,operating,410
+G100000602434,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekaman 1 hydroelectric plant,L100000602404,hydropower,operating,322
+G100000602436,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekaman 3 hydroelectric plant,L100000602406,hydropower,operating,250
+G100000602437,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekong 1A Downstream hydroelectric plant,L100000602407,hydropower,construction,86
+G100000602438,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekong 3A hydroelectric plant,L100000602408,hydropower,construction,140
+G100000602439,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekong 3B hydroelectric plant,L100000602409,hydropower,construction,147
+G100000602440,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekong 4A hydroelectric plant,L100000602410,hydropower,pre_construction,165
+G100000602441,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekong 4B hydroelectric plant,L100000602411,hydropower,pre_construction,175
+G100000602443,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xeset 2 hydroelectric plant,L100000602413,hydropower,operating,76
+G100000604228,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Koum hydroelectric plant,L100000604170,hydropower,pre_construction,1872
+G100000604576,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Luang Prabang hydroelectric plant,L100000602363,hydropower,construction,1460
+G100000604647,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Et 1 hydroelectric plant,L100000602367,hydropower,cancelled,136
+G100000604648,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Et 2 hydroelectric plant,L100000602368,hydropower,cancelled,166
+G100000604649,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Et 3 hydroelectric plant,L100000602369,hydropower,cancelled,110
+G100000604652,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Neun 1 hydroelectric plant,L100000602374,hydropower,construction,124
+G100000604655,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Phak hydroelectric plant,L100000602390,hydropower,construction,128
+G100000604656,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Seuang 2 hydroelectric plant,L100000602392,hydropower,shelved,108
+G100000604699,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Beng hydroelectric plant,L100000602397,hydropower,construction,912
+G100000604954,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Xekaman 2B hydroelectric plant,L100000602405,hydropower,announced,100
+G100000604955,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xekong 5 hydroelectric plant,L100000602412,hydropower,announced,330
+G100000700390,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Laos North geothermal power plant,L100000700219,geothermal,shelved,1000
+G100000700391,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Laos South geothermal power plant,L100000700220,geothermal,shelved,1000
+G100000801363,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Theun 2 floating solar farm,L100000801183,utility-scale solar,shelved,240
+G100000801541,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,SAPP solar farm,L100000801341,utility-scale solar,shelved,64
+G100000920802,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Sepon wind farm,L100000916748,wind,pre_construction,1200
+G100000927625,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Truong Son wind farm,L100000922149,wind,operating,250
+G100000927639,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Monsoon wind farm,L100000901169,wind,operating,600
+G100000927640,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Monsoon wind farm,L100000901169,wind,shelved,1000
+G100001027322,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Leuk hydroelectric plant,L100001023117,hydropower,operating,60
+G100001027681,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,AMI Savannakhet wind farm,L100001023432,wind,pre_construction,1220
+G100001027715,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Ngum 1 (Liankham) floating solar farm,L100001023438,utility-scale solar,announced,1500
+G100001027716,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Ngum 1 (Hangzhou) floating solar farm,L100001023439,utility-scale solar,shelved,1200
+G100001027718,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Lao solar farm,L100001023441,utility-scale solar,pre_construction,1200
+G100001027719,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Sekong solar farm,L100001023442,utility-scale solar,cancelled,500
+G100001048314,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Phonesack Xekong power station,L100000104671,coal,pre_construction,300
+G100001048315,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Phonesack Xekong power station,L100000104671,coal,pre_construction,300
+G100001048316,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Phonesack Xekong power station,L100000104671,coal,pre_construction,300
+G100001048317,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Phonesack Xekong power station,L100000104671,coal,pre_construction,300
+G100001048318,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Phonesack Xekong power station,L100000104671,coal,pre_construction,300
+G100001051332,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Chom hydroelectric plant,L100001045584,hydropower,pre_construction,1079
+G100001051333,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Emeun hydroelectric plant,L100001045585,hydropower,announced,75
+G100001051334,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Emeun hydroelectric plant,L100001045585,hydropower,announced,100
+G100001051335,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Houay La Ngae hydroelectric plant,L100001045586,hydropower,operating,60
+G100001051350,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Kong 2 hydroelectric plant,L100001045599,hydropower,operating,66
+G100001051351,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Kong 3 hydroelectric plant,L100001045601,hydropower,operating,53
+G100001051355,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Gnouang hydroelectric plant,L100001045604,hydropower,operating,60
+G100001051356,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Mang 1 hydroelectric plant,L100001045605,hydropower,operating,64
+G100001051358,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Neun 3 hydroelectric plant,L100001045607,hydropower,shelved,60
+G100001051360,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Sum 3A hydroelectric plant,L100001045609,hydropower,construction,45
+G100001051361,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Khan 3 hydroelectric plant,L100001045610,hydropower,operating,60
+G100001051363,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xeset 1 hydroelectric plant,L100001045612,hydropower,operating,45
+G100001051364,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Xe LaNong 1 hydroelectric plant,L100001045613,hydropower,operating,70
+G100001051365,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Lik 1 hydroelectric plant,L100001045614,hydropower,operating,65
+G100001051366,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phoun hydroelectric plant,L100001045615,hydropower,shelved,45
+G100001051368,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Dak E Meule 2 hydroelectric plant,L100001045618,hydropower,shelved,67
+G100001051369,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Dak E Meule 1 hydroelectric plant,L100001045617,hydropower,shelved,45
+G100001051370,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Bi 1 hydroelectric plant,L100001045619,hydropower,pre_construction,50
+G100001051371,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Nam Bi 2 hydroelectric plant,L100001045620,hydropower,pre_construction,68
+G100001051374,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Mo 1 hydroelectric plant,L100001045621,hydropower,construction,60
+G100001051375,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam San 3A hydroelectric plant,L100001045622,hydropower,operating,69
+G100001051376,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam San 3B hydroelectric plant,L100001045623,hydropower,operating,45
+G100001062652,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Ngiep 3A hydroelectric plant,L100001054760,hydropower,operating,44
+G100001062653,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nan Mang 3 hydroelectric plant,L100001054761,hydropower,operating,40
+G100001074068,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Hinboun 2 hydroelectric plant,L100001064385,hydropower,construction,30
+G100001074076,energy_plants_gem_units,LAO,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Beng hydroelectric plant,L100001064389,hydropower,operating,36
+G100001074077,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Xe Lanong 2 hydroelectric plant,L100001064390,hydropower,shelved,35
+G100001090623,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Oudomxay solar farm,L100001080701,utility-scale solar,operating,1000
+G100001090625,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Khammouane Sebangphi solar farm,L100001080703,utility-scale solar,operating,50
+G100001090630,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Truong Son wind farm,L100000922149,wind,construction,350
+G100001090631,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Phila wind farm,L100001080707,wind,announced,500
+G100001090633,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalong wind farm,L100001080708,wind,announced,750
+G100001090634,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Phakhao wind farm,L100001080709,wind,announced,750
+G100001090635,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Namtong wind farm,L100001080710,wind,announced,750
+G100001090636,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Chalo wind farm,L100001080711,wind,announced,500
+G100001090638,energy_plants_gem_units,LAO,point,,,,,,,,true,abf-boundaries-v0.2.0,Light wind farm,L100001080713,wind,announced,500

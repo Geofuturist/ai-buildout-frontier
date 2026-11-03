@@ -1,0 +1,55 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407971,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Jieh 2 power plant,L100000406952,oil/gas,cancelled,78
+G100000407974,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,operating,72
+G100000407975,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Karpowership (Lebanon) Orhan Bey power station,L100000406955,oil/gas,retired,202
+G100000407976,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zouk power plant,L100000406956,oil/gas,operating,198
+G100000407977,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Karpowership (Lebanon) Fatmagül Sultan power station,L100000406957,oil/gas,retired,202
+G100000407979,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salaata IPP power plant,L100000406958,oil/gas,shelved,825
+G100000407981,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zahrani 2 power plant,L100000406959,oil/gas,shelved,825
+G100000407982,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zahrani power plant,L100000406960,oil/gas,operating,465
+G100000407984,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Deir Ammar 2 power plant,L100000406961,oil/gas,pre_construction,825
+G100000407985,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Deir Ammar power plant,L100000406962,oil/gas,operating,465
+G100000411164,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hraishe Power plant,L100000408050,oil/gas,cancelled,50
+G100000411570,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zouk power plant,L100000406956,oil/gas,operating,172
+G100000411571,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zouk power plant,L100000406956,oil/gas,operating,145
+G100000411572,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zouk power plant,L100000406956,oil/gas,operating,145
+G100000411573,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zouk power plant,L100000406956,oil/gas,operating,145
+G100000411574,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,operating,72
+G100000411575,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,operating,72
+G100000411576,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,operating,72
+G100000411577,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,operating,65
+G100000411578,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,operating,65
+G100000414374,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zouk power plant,L100000406956,oil/gas,cancelled,380
+G100000414378,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zouk 2 power plant,L100000406953,oil/gas,cancelled,194
+G100000414383,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zahrani power plant,L100000406960,oil/gas,cancelled,485
+G100000414384,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tyr power plant,L100000409293,oil/gas,operating,35
+G100000414385,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tyr power plant,L100000409293,oil/gas,operating,35
+G100000414390,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tyr II power plant,L100000409285,oil/gas,cancelled,70
+G100000414395,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,cancelled,190
+G100000414408,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Deir Ammar power plant,L100000406962,oil/gas,cancelled,490
+G100000414410,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Deir Ammar III power plant,L100000409287,oil/gas,cancelled,520
+G100000414411,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Baalback power plant,L100000409291,oil/gas,operating,35
+G100000414412,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Baalback power plant,L100000409291,oil/gas,operating,35
+G100000414417,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Baalback II power plant,L100000409286,oil/gas,cancelled,74
+G100000602447,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Boulous Arqash hydroelectric plant,L100000602417,hydropower,operating,108
+G100000602448,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Janneh Dam hydroelectric plant,L100000602418,hydropower,construction,100
+G100000811436,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dawtec-Looop-Staunch solar farm,L100000809108,utility-scale solar,shelved,15
+G100000811437,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,E/One solar farm,L100000809109,utility-scale solar,shelved,15
+G100000811438,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecosys-Kaco solar farm,L100000809110,utility-scale solar,shelved,15
+G100000811439,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Elect-Stc-Solistis solar farm,L100000809111,utility-scale solar,shelved,15
+G100000811440,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Gds-Et-Nabatiyeh solar farm,L100000809112,utility-scale solar,shelved,15
+G100000811441,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Joun PV solar farm,L100000809113,utility-scale solar,shelved,15
+G100000811442,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kfifane Phoenix Solar Power Plant,L100000809114,utility-scale solar,shelved,15
+G100000811443,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Labwe solar farm,L100000809115,utility-scale solar,shelved,15
+G100000811444,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Rimat 15 solar farm,L100000809116,utility-scale solar,shelved,15
+G100000811445,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sibline solar farm,L100000809117,utility-scale solar,shelved,15
+G100000811446,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,South Power solar farm,L100000809118,utility-scale solar,shelved,15
+G100000908104,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hawa Akkar wind farm,L100000905925,wind,pre_construction,70
+G100000908121,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sustainable Akkar wind farm,L100000905940,wind,pre_construction,82
+G100000908142,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Lebanon Wind Power wind farm,L100000905957,wind,pre_construction,68
+G100001005261,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hraishe Power plant,L100000408050,oil/gas,operating,75
+G100001005332,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zahle Power Plant,L100001004543,oil/gas,operating,60
+G100001006039,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zouk power plant,L100000406956,oil/gas,operating,198
+G100001006042,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Jieh power plant,L100000406954,oil/gas,operating,198
+G100001051887,energy_plants_gem_units,LBN,point,,,,,,,,true,abf-boundaries-v0.2.0,Charles Helou hydroelectric plant,L100001046015,hydropower,operating,48
+G100001072947,energy_plants_gem_units,LBN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ibrahim Abdel Aal hydroelectric plant,L100001063479,hydropower,operating,34

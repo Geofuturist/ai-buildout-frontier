@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001029696,energy_plants_gem_tzsam_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Daman (Afghanistan) solar project,L100001025015,utility-scale solar,operating,13.9
+G100001029697,energy_plants_gem_tzsam_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Guzara solar project,L100001025016,utility-scale solar,operating,1.5
+G100001077275,energy_plants_gem_tzsam_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Jalalabad solar project,L100001067489,utility-scale solar,operating,1.6

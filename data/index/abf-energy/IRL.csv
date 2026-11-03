@@ -1,0 +1,623 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000106987,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moneypoint power station,L100000102837,coal,retired,305
+G100000106988,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moneypoint power station,L100000102837,coal,retired,305
+G100000106989,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moneypoint power station,L100000102837,coal,retired,305
+G100000200263,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dublin Waste power station,L100000200232,bioenergy,operating,68
+G100000400322,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aghada power station,L100000400322,oil/gas,operating,90
+G100000400323,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aghada power station,L100000400322,oil/gas,operating,90
+G100000400324,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aghada power station,L100000400322,oil/gas,operating,90
+G100000400325,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aghada power station,L100000400322,oil/gas,operating,431
+G100000400326,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dublin Bay power station,L100000400326,oil/gas,operating,405
+G100000400327,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Great Island power station,L100000400327,oil/gas,operating,460
+G100000400328,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntstown power station,L100000400328,oil/gas,operating,342
+G100000400329,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntstown power station,L100000400328,oil/gas,operating,404
+G100000400330,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Poolbeg power station,L100000400330,oil/gas,operating,245
+G100000400331,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Poolbeg power station,L100000400330,oil/gas,operating,245
+G100000400332,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sealrock power station,L100000400332,oil/gas,operating,85
+G100000400333,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sealrock power station,L100000400332,oil/gas,operating,85
+G100000400334,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tynagh power station,L100000400334,oil/gas,operating,404
+G100000400335,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whitegate power station,L100000400335,oil/gas,operating,445
+G100000400988,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Monksland power station,L100000401436,oil/gas,construction,100
+G100000409889,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tawnaghmore power station,L100000407582,oil/gas,operating,52
+G100000409890,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tawnaghmore power station,L100000407582,oil/gas,operating,52
+G100000409891,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rhode power station,L100000407583,oil/gas,operating,52
+G100000409892,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rhode power station,L100000407583,oil/gas,operating,52
+G100000410139,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Poolbeg power station,L100000400330,oil/gas,operating,65
+G100000410140,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,mothballed,108
+G100000410141,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,mothballed,108
+G100000410142,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shannon LNG Power Plant,L100000407710,oil/gas,pre_construction,600
+G100000410143,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cushaling power station,L100000407711,oil/gas,operating,56
+G100000410144,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cushaling power station,L100000407711,oil/gas,operating,56
+G100000410428,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tynagh power station,L100000400334,oil/gas,cancelled,299
+G100000410429,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tynagh North power station,L100000407816,oil/gas,pre_construction,350
+G100000410431,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Corduff Flexgen power station,L100000407817,oil/gas,operating,63.5
+G100000410432,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castlelost Flexgen power station,L100000407818,oil/gas,operating,55
+G100000410767,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Poolbeg power station,L100000400330,oil/gas,construction,299
+G100000410769,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aghada power station,L100000400322,oil/gas,retired,270
+G100000602211,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ardnacrusha hydroelectric plant,L100000602185,hydropower,operating,85
+G100000602212,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Silvermines hydroelectric plant,L100000602186,hydropower,pre_construction,360
+G100000602213,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Turlough Hill hydroelectric plant,L100000602187,hydropower,operating,292
+G100000807257,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Doonane solar farm,L100000806321,utility-scale solar,cancelled,20
+G100000807402,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rosspile solar farm,L100000806451,utility-scale solar,operating,95
+G100000807541,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Monaraha solar farm,L100000806574,utility-scale solar,operating,24
+G100000807796,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballinknockane solar farm,L100000806801,utility-scale solar,construction,61
+G100000825827,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballinrea solar farm,L100000822762,utility-scale solar,construction,65
+G100000825828,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballymacarney solar farm,L100000822763,utility-scale solar,operating,56
+G100000825829,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Monatooreen solar farm,L100000822764,utility-scale solar,pre_construction,34
+G100000825830,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Blusheens solar farm,L100000822765,utility-scale solar,operating,8
+G100000825831,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bord na Móna Energy Park solar farm,L100000822766,utility-scale solar,announced,47
+G100000825832,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Richfield solar farm (Ireland),L100000822767,utility-scale solar,pre_construction,21
+G100000825833,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castlegarden solar farm,L100000822768,utility-scale solar,shelved,68
+G100000825834,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coolroe solar farm,L100000822769,utility-scale solar,operating,5
+G100000825835,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Curraghmartin solar farm,L100000822770,utility-scale solar,operating,4
+G100000825836,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,East Laois solar farm,L100000822771,utility-scale solar,pre_construction,93
+G100000825837,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Garrenleen solar farm,L100000822772,utility-scale solar,construction,81
+G100000825838,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Garrenleen solar farm,L100000822772,utility-scale solar,pre_construction,79
+G100000825839,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Harristown solar farm,L100000822773,utility-scale solar,shelved,60
+G100000825840,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hilltown solar farm,L100000822774,utility-scale solar,operating,18
+G100000825841,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hortland solar farm,L100000822775,utility-scale solar,operating,25
+G100000825843,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Millvale solar farm,L100000822777,utility-scale solar,operating,15
+G100000825845,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Muckerstown solar farm,L100000822779,utility-scale solar,operating,48
+G100000825847,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,South Meath solar farm,L100000822781,utility-scale solar,operating,80.5
+G100000825848,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Stamullen solar farm,L100000822782,utility-scale solar,shelved,5.8
+G100000825849,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Taduff solar farm,L100000822783,utility-scale solar,pre_construction,80
+G100000825850,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Threecastles solar farm,L100000822784,utility-scale solar,pre_construction,19
+G100000910383,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Atlantic Marine Energy Test Site wind farm,L100000907716,wind,pre_construction,10
+G100000910390,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballywater wind farm,L100000907723,wind,operating,10
+G100000910462,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Corkermore wind farm,L100000907791,wind,operating,10
+G100000910490,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dromadda Beg wind farm,L100000907818,wind,operating,10
+G100000910492,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drumlough Hill wind farm,L100000907820,wind,operating,10
+G100000910710,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Meenwaun wind farm,L100000908023,wind,operating,10
+G100000910890,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Teevurcher wind farm,L100000908199,wind,operating,10
+G100000911114,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clogheravaddy wind farm,L100000908414,wind,operating,11
+G100000911123,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dunneill wind farm,L100000908423,wind,operating,11
+G100000911424,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Airoshin wind farm,L100000908711,wind,operating,12
+G100000911433,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,An Cnoc wind farm,L100000908719,wind,operating,12
+G100000911500,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Booltiagh wind farm,L100000908779,wind,operating,12
+G100000911525,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Carnsore wind farm,L100000908803,wind,operating,12
+G100000911552,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Culliagh wind farm,L100000908830,wind,operating,12
+G100000911565,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Derragh wind farm,L100000908843,wind,operating,12
+G100000912048,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullynamoyle wind farm,L100000909304,wind,operating,12
+G100000912337,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lee Strand wind farm,L100000909576,wind,operating,13
+G100000912348,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Milestone wind farm,L100000909582,wind,operating,13
+G100000912349,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moanmore wind farm,L100000909583,wind,operating,13
+G100000912381,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rathcahill wind farm,L100000909611,wind,operating,13
+G100000912586,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballybay wind farm,L100000909801,wind,operating,14
+G100000912594,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Beam Hill wind farm,L100000909809,wind,operating,14
+G100000912603,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Black Lough wind farm,L100000909817,wind,operating,14
+G100000912622,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clahane wind farm,L100000909835,wind,operating,14
+G100000912732,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Letteragh wind farm,L100000909932,wind,operating,14
+G100000912832,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Snugborough wind farm,L100000910020,wind,operating,14
+G100000912862,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullabrack wind farm,L100000910046,wind,operating,14
+G100000912988,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barnesmore wind farm,L100000910161,wind,operating,15
+G100000912995,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bilboa wind farm,L100000910168,wind,pre_construction,15
+G100000913014,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cark wind farm,L100000910185,wind,operating,15
+G100000913068,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gartnaneane wind farm,L100000910233,wind,operating,15
+G100000913071,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gibbet Hill wind farm,L100000910236,wind,operating,15
+G100000913074,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Glentanemacelligot wind farm,L100000910239,wind,operating,15
+G100000913081,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grouse Lodge wind farm,L100000910246,wind,operating,15
+G100000913159,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Muingnaminnane wind farm,L100000910316,wind,operating,15
+G100000913269,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tursillagh wind farm,L100000910415,wind,operating,15
+G100000913426,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Inchamore wind farm,L100000910555,wind,pre_construction,16
+G100000913674,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Acres wind farm,L100000910778,wind,operating,17
+G100000913767,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moneypoint wind farm,L100000910857,wind,operating,17
+G100000913778,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Old Mill wind farm,L100000910868,wind,operating,17
+G100000913944,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coollegrean wind farm,L100000911019,wind,operating,18
+G100000913950,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Currragh wind farm,L100000911023,wind,operating,18
+G100000914010,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gweedore wind farm,L100000911074,wind,operating,18
+G100000914076,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Leanamore wind farm,L100000911133,wind,operating,18
+G100000914324,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballycumber wind farm,L100000911356,wind,operating,19
+G100000914328,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Buttevant wind farm,L100000911359,wind,operating,19
+G100000914367,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Raheen Barr wind farm,L100000911393,wind,operating,19
+G100000914477,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Booltiagh wind farm,L100000908779,wind,operating,20
+G100000914551,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gortahile wind farm,L100000911558,wind,operating,20
+G100000914583,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Killala Community wind farm,L100000911588,wind,operating,20
+G100000914730,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tournafulla wind farm,L100000911716,wind,operating,20
+G100000914753,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Woodhouse wind farm,L100000911737,wind,operating,20
+G100000914859,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Carrickallen wind farm,L100000911834,wind,operating,21
+G100000915207,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullynahaw wind farm,L100000912135,wind,operating,22
+G100000915279,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Carrigcannon wind farm,L100000912197,wind,operating,23
+G100000915295,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Esk wind farm,L100000912212,wind,operating,23
+G100000915313,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilathmoy wind farm,L100000912227,wind,operating,23
+G100000915315,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Knockawarriga wind farm,L100000912229,wind,operating,23
+G100000915375,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Taghart wind farm,L100000912283,wind,operating,23
+G100000915433,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballycadden wind farm,L100000912334,wind,operating,24
+G100000915437,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bawnmore wind farm,L100000912338,wind,operating,24
+G100000915501,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Glenmore wind farm,L100000912397,wind,operating,24
+G100000915560,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lisheen wind farm,L100000912450,wind,operating,24
+G100000915714,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Arklow Bank wind farm,L100000912584,wind,operating,25
+G100000915733,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Derrykillew wind farm,L100000912602,wind,pre_construction,37.5
+G100000915766,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Killaveenoge wind farm,L100000912634,wind,operating,25
+G100000915767,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kingsmountain wind farm,L100000912635,wind,operating,25
+G100000915818,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Taurbeg wind farm,L100000912680,wind,operating,25
+G100000915919,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cleanrath wind farm,L100000912766,wind,mothballed,26
+G100000915939,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Garvagh Glebe wind farm,L100000912783,wind,operating,26
+G100000916059,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Behy wind farm,L100000912884,wind,cancelled,27
+G100000916115,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Richfield wind farm,L100000912927,wind,operating,27
+G100000916209,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bunnyconnellan wind farm,L100000913005,wind,operating,28
+G100000916224,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dromdeveen wind farm,L100000913019,wind,operating,28
+G100000916277,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Slievecallan East wind farm,L100000913066,wind,operating,28
+G100000916360,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lisheen wind farm,L100000912450,wind,operating,28.8
+G100000916529,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilranelagh wind farm,L100000913284,wind,cancelled,30
+G100000916555,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lenalea wind farm,L100000913307,wind,operating,30
+G100000916656,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ummeras wind farm,L100000913392,wind,cancelled,30
+G100000916692,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballymanus wind farm,L100000913425,wind,cancelled,31
+G100000916770,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballywater wind farm,L100000907723,wind,operating,32
+G100000916797,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Glanlee wind farm,L100000913508,wind,operating,32
+G100000916826,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mountain Lodge wind farm,L100000913532,wind,operating,32
+G100000916845,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sorne wind farm,L100000913547,wind,operating,32
+G100000916902,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Castlepook wind farm,L100000913590,wind,operating,33
+G100000916919,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Inchincoosh wind farm,L100000913604,wind,operating,33
+G100000917009,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Athea wind farm,L100000913681,wind,operating,34
+G100000917010,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barranafaddock wind farm,L100000913682,wind,operating,34
+G100000917016,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cloghan wind farm,L100000913686,wind,operating,34
+G100000917130,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Glenough wind farm,L100000913786,wind,operating,35
+G100000917137,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Knockalough wind farm,L100000913793,wind,operating,35
+G100000917159,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pinewoods wind farm,L100000913813,wind,pre_construction,49.5
+G100000917163,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Raheenleagh wind farm,L100000913816,wind,operating,35
+G100000917176,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Scartaglen wind farm,L100000913824,wind,operating,35
+G100000917234,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Glanaruddery wind farm,L100000913880,wind,operating,36
+G100000917235,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Glencarbry wind farm,L100000913881,wind,operating,36
+G100000917264,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lisheen wind farm,L100000912450,wind,operating,36
+G100000917274,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Monaincha wind farm,L100000913916,wind,operating,36
+G100000917355,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Boolynagleragh wind farm,L100000913984,wind,operating,37
+G100000917358,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Carrowleagh wind farm,L100000913987,wind,operating,37
+G100000917382,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tullahennel wind farm,L100000914008,wind,operating,37
+G100000917515,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Croaghaun wind farm,L100000914123,wind,cancelled,39
+G100000917707,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Castledockrell wind farm,L100000914286,wind,operating,41
+G100000917708,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clahane wind farm,L100000909835,wind,operating,41
+G100000917710,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coomacheo wind farm,L100000914288,wind,operating,41
+G100000917766,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bruckana wind farm,L100000914335,wind,operating,42
+G100000917877,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Garracummer wind farm,L100000914425,wind,operating,43
+G100000917881,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Keeper Hill wind farm,L100000914428,wind,cancelled,43
+G100000917886,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Magheramore wind farm,L100000914432,wind,operating,43
+G100000917924,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Knocknagoum wind farm,L100000914467,wind,operating,44
+G100000917932,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Leitir Guingaid wind farm,L100000914475,wind,operating,44
+G100000917983,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cullenagh wind farm,L100000914521,wind,cancelled,45
+G100000917995,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilgarvan wind farm,L100000914532,wind,operating,45
+G100000918043,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Slievecallan West wind farm,L100000914570,wind,operating,45
+G100000918070,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cloghboola wind farm,L100000914595,wind,operating,46
+G100000918146,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballybane wind farm,L100000914663,wind,operating,48
+G100000918148,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bindoo wind farm,L100000914665,wind,operating,48
+G100000918208,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Moanvane wind farm,L100000914715,wind,operating,57.6
+G100000918421,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cappawhite A wind farm,L100000914878,wind,operating,50
+G100000918624,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Shronowen wind farm,L100000915052,wind,pre_construction,50
+G100000918754,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Carrigdangan wind farm,L100000915149,wind,operating,54
+G100000918832,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Boggeragh wind farm,L100000915215,wind,operating,57
+G100000918865,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sliabh Bawn wind farm,L100000915241,wind,operating,58
+G100000918884,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barnesmore wind farm,L100000910161,wind,pre_construction,60
+G100000918897,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Derrybrien wind farm,L100000915269,wind,retired,60
+G100000918899,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Drumnahough wind farm,L100000915270,wind,pre_construction,60
+G100000918987,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Knockduff wind farm,L100000915345,wind,operating,65
+G100000918999,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Galway wind farm,L100000915355,wind,operating,66
+G100000919106,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Meentycat wind farm,L100000915448,wind,operating,72
+G100000919165,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cloncreen wind farm,L100000915502,wind,operating,76
+G100000919193,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upperchurch wind farm,L100000915523,wind,pre_construction,79
+G100000919238,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Oweninny wind farm,L100000915556,wind,operating,83
+G100000919249,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mount Lucas wind farm,L100000915566,wind,operating,84
+G100000919260,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castletownmoor wind farm,L100000915575,wind,cancelled,85
+G100000919262,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lyrenacarriga wind farm,L100000915577,wind,pre_construction,85
+G100000919283,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Knockacummer wind farm,L100000915594,wind,operating,88
+G100000919299,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Carrownagowan wind farm,L100000915607,wind,pre_construction,90
+G100000919300,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cordal wind farm,L100000915608,wind,operating,90
+G100000919315,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Oweninny wind farm,L100000915556,wind,pre_construction,90
+G100000919326,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Meenbog wind farm,L100000915630,wind,operating,91
+G100000919336,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Oweninny wind farm,L100000915556,wind,operating,93
+G100000919351,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Meenadreen wind farm,L100000915652,wind,operating,95
+G100000919357,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Derryadd wind farm,L100000915658,wind,pre_construction,106
+G100000919396,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grousemount wind farm,L100000915691,wind,operating,100
+G100000919422,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Yellow River wind farm,L100000915714,wind,operating,100
+G100000919461,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Galway wind farm,L100000915355,wind,operating,108
+G100000919496,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ardderroo wind farm,L100000915771,wind,operating,91
+G100000919550,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maighne wind farm,L100000915816,wind,cancelled,125
+G100000919865,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Emerald floating wind farm,L100000916088,wind,pre_construction,300
+G100000919935,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Oriel wind farm,L100000916148,wind,pre_construction,375
+G100000919960,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Moneypoint Offshore wind farm,L100000916170,wind,pre_construction,400
+G100000919966,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sceirde Rocks wind farm,L100000916175,wind,pre_construction,450
+G100000920011,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Clogherhead Offshore wind farm,L100000916213,wind,shelved,800
+G100000920012,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cooley Point wind farm,L100000916214,wind,shelved,500
+G100000920015,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilmichael Point Offshore wind farm,L100000916217,wind,shelved,500
+G100000920029,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Arklow Bank wind farm,L100000912584,wind,pre_construction,800
+G100000920032,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,North Irish Sea offshore wind farm,L100000916230,wind,pre_construction,500
+G100000920068,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dublin Array offshore wind farm,L100000916261,wind,pre_construction,824
+G100000920078,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Setanta offshore wind farm,L100000916269,wind,pre_construction,1000
+G100000920079,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Celtic Sea wind farm,L100000916270,wind,shelved,2100
+G100000920103,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Clarus offshore wind farm,L100000916291,wind,pre_construction,1000
+G100000920106,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Emerald floating wind farm,L100000916088,wind,pre_construction,1000
+G100000920107,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Greystones wind farm,L100000916294,wind,pre_construction,1200
+G100000920111,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Inis Ealga Offshore wind farm,L100000916298,wind,pre_construction,1000
+G100000920112,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Moneypoint Offshore wind farm,L100000916170,wind,pre_construction,1100
+G100000920116,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Shelmalere wind farm,L100000916302,wind,pre_construction,1000
+G100000920157,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Blackwater Floating wind farm,L100000916337,wind,announced,1500
+G100000920158,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Codling wind farm,L100000916338,wind,pre_construction,1300
+G100000924997,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Amazon Cork wind farm,L100000920339,wind,operating,23.2
+G100000924998,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Amazon Donegal wind farm,L100000920340,wind,construction,91
+G100000925000,energy_plants_gem_units,IRL,field,,,,,,,,false,abf-boundaries-v0.2.0,Aniar Offshore wind farm,L100000920342,wind,pre_construction,500
+G100000925001,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aniar Offshore wind farm,L100000920342,wind,pre_construction,500
+G100000925002,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballinagree wind farm,L100000920343,wind,pre_construction,106.4
+G100000925003,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballydermot wind farm,L100000920344,wind,shelved,240
+G100000925004,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Banba Offshore wind farm,L100000920345,wind,pre_construction,1000
+G100000925005,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bore Array Offshore wind farm,L100000920346,wind,cancelled,250
+G100000925006,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bore Array Offshore wind farm,L100000920346,wind,cancelled,250
+G100000925007,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bracklyn wind farm,L100000920347,wind,pre_construction,64.8
+G100000925008,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cahercullenagh wind farm,L100000920348,wind,operating,25
+G100000925009,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Castlebanny wind farm,L100000920349,wind,pre_construction,72
+G100000925010,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cloghaneleskirt wind farm,L100000920350,wind,operating,11.5
+G100000925011,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coole wind farm,L100000920351,wind,cancelled,88
+G100000925012,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cummeennabuddoge wind farm,L100000920352,wind,pre_construction,122
+G100000925013,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cushaling wind farm,L100000920353,wind,construction,56
+G100000925014,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Derrinlough wind farm,L100000920354,wind,operating,105
+G100000925015,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drehid wind farm,L100000920355,wind,pre_construction,45
+G100000925016,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,East Celtic Offshore wind farm,L100000920356,wind,pre_construction,900
+G100000925017,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Enterprize Energy Green Hydrogen wind farm,L100000920357,wind,shelved,4000
+G100000925018,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Freneystown wind farm,L100000920358,wind,shelved,50
+G100000925019,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gneeves wind farm,L100000920359,wind,operating,10
+G100000925020,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gort Uí Rathaile wind farm,L100000920360,wind,pre_construction,50
+G100000925022,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gougane Barra wind farm,L100000920362,wind,cancelled,21
+G100000925023,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Grove Hill wind farm,L100000920363,wind,operating,16.1
+G100000925024,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Helvick Head Offshore wind farm,L100000920364,wind,cancelled,800
+G100000925025,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kellystown wind farm,L100000920365,wind,pre_construction,30
+G100000925026,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kerry Offshore wind farm,L100000920366,wind,pre_construction,1000
+G100000925027,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilsallagh wind farm,L100000920367,wind,pre_construction,80
+G100000925028,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinsale Offshore wind farm,L100000920368,wind,pre_construction,1000
+G100000925029,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lackareagh wind farm,L100000920369,wind,pre_construction,50
+G100000925030,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Latitude 52 Offshore wind farm,L100000920370,wind,pre_construction,1000
+G100000925031,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Leinster Offshore wind farm,L100000920371,wind,pre_construction,500
+G100000925032,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lemanaghan wind farm,L100000920372,wind,pre_construction,80
+G100000925033,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lissinagroagh wind farm,L100000920373,wind,pre_construction,120
+G100000925034,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Loch Garman Offshore wind farm,L100000920374,wind,pre_construction,800
+G100000925035,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Munster Offshore wind farm,L100000920375,wind,shelved,1000
+G100000925036,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Péarla Offshore wind farm,L100000920376,wind,cancelled,1000
+G100000925037,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Réalt Na Mara Offshore wind farm,L100000920377,wind,shelved,1600
+G100000925038,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sea Stacks Offshore wind farm,L100000920378,wind,pre_construction,800
+G100000925039,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Seskin wind farm,L100000920379,wind,pre_construction,50
+G100000925040,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sheskin South wind farm,L100000920380,wind,pre_construction,126
+G100000925041,energy_plants_gem_units,IRL,field,,,,,,,,false,abf-boundaries-v0.2.0,Sunrise Offshore wind farm,L100000920381,wind,pre_construction,2000
+G100000925042,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullynamoyle wind farm,L100000909304,wind,operating,12
+G100000925045,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Versicherungskammer wind farm,L100000920384,wind,construction,17.5
+G100000925046,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Versicherungskammer wind farm,L100000920384,wind,pre_construction,10.5
+G100000925047,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,West Coast (Encavis) wind farm,L100000920385,wind,pre_construction,17.5
+G100000925048,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,West Coast (Encavis) wind farm,L100000920385,wind,pre_construction,10.1
+G100000925049,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Western Star Floating Offshore wind farm,L100000920386,wind,pre_construction,1350
+G100000925050,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wicklow Offshore wind farm,L100000920387,wind,pre_construction,500
+G100001000022,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Echelon DUB20 power station,L100001000016,oil/gas,construction,99.6
+G100001000023,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Echelon DUB20 power station,L100001000016,oil/gas,construction,149.4
+G100001000036,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntstown power station,L100000400328,oil/gas,pre_construction,75.4
+G100001000037,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntstown power station,L100000400328,oil/gas,pre_construction,75.4
+G100001000038,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,operating,35
+G100001000039,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntstown power station,L100000400328,oil/gas,operating,50
+G100001000040,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilshane power station,L100001000020,oil/gas,construction,293
+G100001000041,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,oil/gas,retired,60
+G100001000042,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,oil/gas,retired,60
+G100001000043,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,oil/gas,retired,250
+G100001000044,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,oil/gas,retired,250
+G100001000045,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,oil/gas,construction,50
+G100001000046,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,oil/gas,construction,50
+G100001000047,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,oil/gas,construction,50
+G100001000359,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Microsoft Dublin Data Center power station,L100001000017,oil/gas,construction,167.2
+G100001000360,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shannonbridge power station,L100001000154,oil/gas,operating,264
+G100001001066,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ringsend Flexgen power station,L100001000719,oil/gas,operating,65
+G100001001083,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Echelon DUB30 power station,L100001000737,oil/gas,pre_construction,90
+G100001001084,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grange Castle Echelon power station,L100001000738,oil/gas,operating,120
+G100001001085,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Derrygreenagh power plant,L100001000739,oil/gas,pre_construction,140
+G100001001086,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Derrygreenagh power plant,L100001000739,oil/gas,pre_construction,570
+G100001005339,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,East Laois solar farm,L100000822771,utility-scale solar,pre_construction,25
+G100001005344,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Clashwilliam Solar Project,L100001004554,utility-scale solar,pre_construction,24
+G100001005345,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tracystown solar park,L100001004555,utility-scale solar,pre_construction,101.1
+G100001005349,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Manusmore solar farm,L100001004558,utility-scale solar,announced,60
+G100001005350,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaskinstown solar farm,L100001004559,utility-scale solar,construction,93
+G100001005351,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Harlockstown solar farm,L100001004561,utility-scale solar,operating,31.5
+G100001005354,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Timahoe North solar farm,L100001004563,utility-scale solar,operating,108
+G100001005355,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lysaghtstown solar farm,L100001004564,utility-scale solar,operating,131
+G100001005356,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullabeg solar farm,L100001004565,utility-scale solar,operating,81.6
+G100001005357,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Derrycammagh solar farm,L100001004566,utility-scale solar,pre_construction,80
+G100001005358,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Straboe solar farm,L100001004567,utility-scale solar,pre_construction,95
+G100001005393,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Fidorfe solar farm,L100001004596,utility-scale solar,operating,68
+G100001005395,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilsallaghan solar farm,L100001004598,utility-scale solar,operating,30
+G100001006315,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Carrowkeel wind farm,L100001005302,wind,pre_construction,24
+G100001006316,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Danu offshore wind farm,L100001005303,wind,pre_construction,1000
+G100001006318,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Floating Cork Offshore Wind,L100001005305,wind,pre_construction,1000
+G100001006322,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coom Green Energy Park wind farm,L100001005307,wind,pre_construction,105.6
+G100001006323,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mac Lir Offshore wind farm,L100001005308,wind,pre_construction,700
+G100001006324,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Malin Head Offshore wind farm,L100001005309,wind,pre_construction,1000
+G100001006325,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Muirgen Offshore wind farm,L100001005310,wind,pre_construction,1000
+G100001006327,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,North Celtic Sea Offshore wind farm,L100001005312,wind,pre_construction,900
+G100001006329,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,South Irish Sea Offshore wind farm,L100001005314,wind,pre_construction,1330
+G100001006358,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tarbert Offshore wind farm,L100001005334,wind,announced,1000
+G100001006359,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Arranmore Floating wind farm,L100001005335,wind,pre_construction,1000
+G100001006360,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Celtic Horizon offshore wind farm,L100001005336,wind,cancelled,700
+G100001006795,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lettergull wind farm,L100001005658,wind,shelved,20
+G100001006798,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dooray wind farm,L100001005661,wind,pre_construction,45
+G100001006800,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Farranrory wind farm,L100001005663,wind,pre_construction,43.2
+G100001006802,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cloghercor wind farm,L100001005664,wind,cancelled,137
+G100001006803,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Craignagapple wind farm,L100001005666,wind,pre_construction,63.5
+G100001006806,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilgarvan wind farm,L100000914532,wind,pre_construction,79.2
+G100001006807,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Oatfield wind farm,L100001005668,wind,pre_construction,50
+G100001006854,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Corvoderry wind farm,L100001005708,wind,shelved,34
+G100001006855,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coolberrin wind farm,L100001005709,wind,pre_construction,33.1
+G100001006856,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Caherdowney wind farm,L100001005710,wind,operating,10
+G100001006857,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Crossmore wind farm,L100001005711,wind,construction,15
+G100001006858,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Crossmore wind farm,L100001005711,wind,construction,10.2
+G100001006859,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Raragh 2 wind farm,L100001005713,wind,operating,11.5
+G100001006860,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lissycasey wind farm,L100001005714,wind,operating,13.4
+G100001006864,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauricetown wind farm,L100001005715,wind,operating,13.8
+G100001008700,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullynamoyle wind farm,L100000909304,wind,pre_construction,16.4
+G100001008701,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Beenanaspuck and Tobertoreen wind farm,L100001007551,wind,operating,23.2
+G100001008702,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballylongford wind farm,L100001007552,wind,construction,25.2
+G100001008703,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Stacks Mountain wind farm,L100001007553,wind,construction,25.3
+G100001008791,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sheskin wind farm,L100000910893,wind,construction,16.8
+G100001008792,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Celtic Offshore Renewable Energy Floating wind farm,L100001007609,wind,pre_construction,1680
+G100001008796,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Wexford Offshore wind farm,L100001007613,wind,cancelled,2500
+G100001008797,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Voyage Offshore Array Floating wind farm,L100001007614,wind,cancelled,2900
+G100001008798,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Valentia Island Floating wind farm,L100001007615,wind,announced,920
+G100001008799,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Valentia Island Floating wind farm,L100001007615,wind,announced,620
+G100001008800,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Tulca Offshore Array Floating wind farm,L100001007616,wind,shelved,1650
+G100001008801,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Tulca Offshore Array Floating wind farm,L100001007616,wind,shelved,2240
+G100001008802,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tralee Offshore wind farm,L100001007617,wind,pre_construction,2500
+G100001008803,energy_plants_gem_units,IRL,field,,,,,,,,true,abf-boundaries-v0.2.0,Rian Offshore Array wind farm,L100001007618,wind,pre_construction,2500
+G100001008804,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lir Offshore Array wind farm,L100001007619,wind,shelved,2000
+G100001008805,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilen Array Offshore wind farm,L100001007620,wind,pre_construction,1500
+G100001010365,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Templerainy solar project,L100001008995,utility-scale solar,pre_construction,4
+G100001010367,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballydine solar project,L100001008997,utility-scale solar,operating,7.3
+G100001019989,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,operating,35
+G100001019990,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,operating,35
+G100001019991,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,operating,35
+G100001019992,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,operating,35
+G100001019993,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,North Wall power station,L100000407709,oil/gas,operating,35
+G100001020015,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Profile Park power station,L100001018003,oil/gas,construction,100
+G100001020016,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moneypoint power station,L100000102837,oil/gas,operating,305
+G100001020019,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moneypoint power station,L100000102837,oil/gas,operating,305
+G100001020020,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moneypoint power station,L100000102837,oil/gas,operating,305
+G100001020044,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bellacorick power station,L100001018020,oil/gas,shelved,57
+G100001028101,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castlelost Flexgen power station,L100000407818,oil/gas,operating,55
+G100001028102,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castlelost Flexgen power station,L100000407818,oil/gas,operating,55
+G100001028103,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castlelost Flexgen power station,L100000407818,oil/gas,operating,55
+G100001028104,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Castlelost Flexgen power station,L100000407818,oil/gas,operating,55
+G100001031201,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bellacorick power station,L100001018020,oil/gas,shelved,57
+G100001031366,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Winthrop Dublin power station,L100001026097,oil/gas,operating,59.4
+G100001045540,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Art Data Centre power station,L100001026098,oil/gas,pre_construction,120.6
+G100001046505,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Art Data Centre power station,L100001026098,oil/gas,pre_construction,79.2
+G100001051145,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clonfad solar farm,L100001045441,utility-scale solar,construction,175
+G100001051741,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cathaleen's Fall hydroelectric plant,L100001045900,hydropower,operating,45
+G100001053950,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Edenderry power station,L100001047406,bioenergy,operating,38.4
+G100001053951,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayo Biomass power station,L100001047407,bioenergy,pre_construction,50
+G100001053952,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Meath power station,L100001047409,bioenergy,operating,17
+G100001055261,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coolpowra power plant,L100001048191,oil/gas,announced,385
+G100001055262,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coolpowra power plant,L100001048191,oil/gas,announced,385
+G100001055263,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coolpowra power plant,L100001048191,oil/gas,announced,385
+G100001055339,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kentstown power plant,L100001048227,oil/gas,pre_construction,60
+G100001055340,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kentstown power plant,L100001048227,oil/gas,pre_construction,60
+G100001055341,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kentstown power plant,L100001048227,oil/gas,pre_construction,60
+G100001064406,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Irishtown solar farm,L100001056375,utility-scale solar,construction,32.6
+G100001070412,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Echelon DUB10 power station,L100001000015,oil/gas,operating,81
+G100001070413,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Echelon DUB10 power station,L100001000015,oil/gas,operating,21
+G100001070414,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Echelon DUB10 power station,L100001000015,oil/gas,operating,81
+G100001070416,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Echelon DUB10 power station,L100001000015,oil/gas,operating,21
+G100001070417,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Echelon DUB10 power station,L100001000015,oil/gas,operating,62.4
+G100001070484,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Microsoft Dublin Data Center power station,L100001000017,oil/gas,operating,60.9
+G100001070485,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Microsoft Dublin Data Center power station,L100001000017,oil/gas,operating,73.8
+G100001070486,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Microsoft Dublin Data Center power station,L100001000017,oil/gas,operating,123.5
+G100001070533,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Herbata Data Centre power station,L100001061550,oil/gas,pre_construction,180
+G100001071421,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyteige solar farm,L100001062199,utility-scale solar,pre_construction,115
+G100001071426,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Monvallet solar farm,L100001062200,utility-scale solar,announced,50
+G100001071436,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rathnaskillogue solar farm,L100001062213,utility-scale solar,construction,106
+G100001071483,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cookstown Great solar farm,L100001062248,utility-scale solar,announced,57
+G100001071485,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Greenhills solar farm,L100001062250,utility-scale solar,announced,250
+G100001071774,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ardderroo wind farm,L100000915771,wind,announced,18
+G100001071789,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullynamoyle wind farm,L100000909304,wind,announced,20
+G100001071790,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Carrigdangan wind farm,L100000915149,wind,announced,14
+G100001071791,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Great Island wind farm,L100001062504,wind,announced,378
+G100001071792,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Knockraha wind farm,L100001062505,wind,announced,378
+G100001071793,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cureeny wind farm,L100001062506,wind,announced,378
+G100001071794,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Firlough wind farm,L100001062493,wind,announced,27
+G100001071795,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Knockranny wind farm,L100001062507,wind,announced,47
+G100001071796,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Knocknamork wind farm,L100001062508,wind,announced,42
+G100001071797,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Seven Hills wind farm,L100001062509,wind,announced,122
+G100001071798,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Knockroe wind farm,L100001062510,wind,announced,34
+G100001071799,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,White Hill wind farm,L100001062511,wind,announced,50
+G100001071800,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dernacart wind farm,L100001062512,wind,announced,58
+G100001071801,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ardgoulbeg wind farm,L100001062513,wind,announced,54
+G100001071802,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Knockanarragh wind farm,L100001062514,wind,announced,50
+G100001071803,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Glenard wind farm,L100001062515,wind,announced,93
+G100001071804,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Borrisbeg wind farm,L100001062516,wind,announced,56
+G100001071805,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballivor wind farm,L100001062517,wind,announced,182
+G100001071851,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ballyfasy wind farm,L100001062564,wind,announced,72
+G100001074305,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cashla Peaker Power Station,L100001064543,oil/gas,pre_construction,334
+G100001074356,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dublin Bay power station,L100000400326,oil/gas,announced,30
+G100001074375,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Platin power station,L100001064615,bioenergy,pre_construction,56.5
+G100001074376,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Platin power station,L100001064615,oil/gas,pre_construction,56.5
+G100001074377,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Platin power station,L100001064615,oil/gas,pre_construction,56.5
+G100001086915,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Delamain solar farm,L100001077127,utility-scale solar,announced,210
+G100001086916,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Culmullin solar farm,L100001077128,utility-scale solar,announced,120
+G100001086917,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Culmullin solar farm,L100001077128,utility-scale solar,announced,70
+G100001086918,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Derrycarney solar farm,L100001077129,utility-scale solar,announced,105
+G100001086919,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mothel solar farm,L100001077130,utility-scale solar,announced,180
+G100001086920,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lumcloon solar farm,L100001077131,utility-scale solar,announced,95
+G100001086921,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballydonagh solar farm,L100001077132,utility-scale solar,announced,90
+G100001086922,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hawkinstown solar farm,L100001077133,utility-scale solar,announced,85
+G100001086923,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Moyvilla solar farm,L100001077134,utility-scale solar,announced,85
+G100001086924,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Creggs solar farm,L100001077135,utility-scale solar,announced,75
+G100001086925,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rathdrinagh solar farm,L100001077136,utility-scale solar,announced,72
+G100001086926,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Springmount solar farm,L100001077137,utility-scale solar,announced,65
+G100001086927,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rath solar farm,L100001077138,utility-scale solar,announced,119
+G100001086928,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rath solar farm,L100001077138,utility-scale solar,announced,96
+G100001086929,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Debsborough solar farm,L100001077139,utility-scale solar,announced,42
+G100001086930,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rahanisky solar farm,L100001077140,utility-scale solar,announced,39.9
+G100001086931,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilderry Solar solar farm,L100001077141,utility-scale solar,announced,35
+G100001086932,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rathduff solar farm,L100001077142,utility-scale solar,announced,25
+G100001086933,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishopswood solar farm,L100001077143,utility-scale solar,announced,25
+G100001086934,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grangeford solar farm,L100001077144,utility-scale solar,announced,22
+G100001086935,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grangeford solar farm,L100001077144,utility-scale solar,announced,48
+G100001086936,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coppenagh solar farm,L100001077145,utility-scale solar,announced,20
+G100001086937,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballymoneen solar farm,L100001077146,utility-scale solar,announced,20
+G100001086938,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballymoneen solar farm,L100001077146,utility-scale solar,announced,80
+G100001086939,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballymoneen solar farm,L100001077146,utility-scale solar,announced,100
+G100001086940,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballynahina solar farm,L100001077147,utility-scale solar,announced,30
+G100001086941,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilrue solar farm,L100001077148,utility-scale solar,announced,175
+G100001086942,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilrue solar farm,L100001077148,utility-scale solar,announced,195
+G100001086943,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Blackhall solar farm,L100001077149,utility-scale solar,announced,165.6
+G100001086944,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kildallan solar farm,L100001077150,utility-scale solar,announced,130
+G100001086945,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drummin solar farm,L100001077151,utility-scale solar,announced,35
+G100001086946,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drumgoolan solar farm,L100001077152,utility-scale solar,announced,115.5
+G100001086947,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Coolcarrigan solar farm,L100001077153,utility-scale solar,announced,180
+G100001086948,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tincurry solar farm,L100001077154,utility-scale solar,announced,169
+G100001086949,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Friarstown solar farm,L100001077155,utility-scale solar,announced,80
+G100001086950,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dromlivaun solar farm,L100001077156,utility-scale solar,announced,128
+G100001086951,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilcormac Solar solar farm,L100001077157,utility-scale solar,announced,125
+G100001086952,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyvalode Solar solar farm,L100001077158,utility-scale solar,announced,113
+G100001086953,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyglass solar farm,L100001077159,utility-scale solar,announced,80
+G100001086954,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Modelligo solar farm,L100001077160,utility-scale solar,announced,80
+G100001086955,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mill Farm solar farm,L100001077161,utility-scale solar,announced,63
+G100001086956,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Fieldstown solar farm,L100001077162,utility-scale solar,announced,60
+G100001086957,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Fieldstown solar farm,L100001077162,utility-scale solar,announced,75
+G100001086958,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyroe solar farm,L100001077163,utility-scale solar,announced,45
+G100001086959,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barnaleen solar farm,L100001077164,utility-scale solar,announced,35
+G100001086960,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barnaleen solar farm,L100001077164,utility-scale solar,announced,55
+G100001086961,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Reask solar farm,L100001077165,utility-scale solar,announced,30
+G100001086962,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Reask solar farm,L100001077165,utility-scale solar,announced,55
+G100001086963,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Reask solar farm,L100001077165,utility-scale solar,announced,80
+G100001086964,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Templemichael solar farm,L100001077166,utility-scale solar,announced,50
+G100001086965,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Milltown solar farm,L100001077167,utility-scale solar,announced,115
+G100001086966,energy_plants_gem_units,IRL,field,,,,,,,,false,abf-boundaries-v0.2.0,Old Court solar farm,L100001077168,utility-scale solar,announced,90
+G100001086967,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Killoran solar farm,L100001077169,utility-scale solar,announced,76
+G100001086968,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilcush solar farm,L100001077170,utility-scale solar,announced,50
+G100001086969,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Darthogue solar farm,L100001077171,utility-scale solar,announced,70
+G100001086970,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Darthogue solar farm,L100001077171,utility-scale solar,announced,47
+G100001086971,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Treascon solar farm,L100001077172,utility-scale solar,announced,60
+G100001086972,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilcurly Solar solar farm,L100001077173,utility-scale solar,announced,44.9
+G100001086973,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Toolestown Solar solar farm,L100001077174,utility-scale solar,announced,50
+G100001086974,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gortdrum solar farm,L100001077175,utility-scale solar,announced,48
+G100001086975,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rhode solar farm,L100001077176,utility-scale solar,announced,20
+G100001086976,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Killerrig solar farm,L100001077177,utility-scale solar,announced,20
+G100001086977,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gorman solar farm,L100001077178,utility-scale solar,announced,46
+G100001086978,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drombeg solar farm,L100001077179,utility-scale solar,announced,44
+G100001086979,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Cuilmore solar farm,L100001077180,utility-scale solar,announced,40
+G100001086980,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyroe Solar solar farm,L100001077181,utility-scale solar,announced,120
+G100001086981,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Erkina solar farm,L100001077182,utility-scale solar,announced,90
+G100001086982,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barnacurragh solar farm,L100001077183,utility-scale solar,announced,50
+G100001086983,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rathnaskillogeplus solar farm,L100001077184,utility-scale solar,announced,151
+G100001086984,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Garr solar farm,L100001077185,utility-scale solar,announced,85
+G100001086985,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Monart East solar farm,L100001077186,utility-scale solar,announced,50
+G100001086986,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tomsallagh solar farm,L100001077187,utility-scale solar,announced,50
+G100001087322,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyteige solar farm,L100001062199,utility-scale solar,announced,90
+G100001087323,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Manusmore solar farm,L100001004558,utility-scale solar,announced,60
+G100001087324,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullabeg solar farm,L100001004565,utility-scale solar,announced,30
+G100001087325,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullabeg solar farm,L100001004565,utility-scale solar,announced,105
+G100001087326,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lysaghtstown solar farm,L100001004564,utility-scale solar,announced,45
+G100001087328,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Timahoe North solar farm,L100001004563,utility-scale solar,announced,80
+G100001090439,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Poulbautia solar project,L100001080518,utility-scale solar,pre_construction,19
+G100001090440,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lissane West solar project,L100001080519,utility-scale solar,pre_construction,18.3
+G100001090441,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dysart PV solar project,L100001080520,utility-scale solar,pre_construction,17.5
+G100001090442,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Slanemore PV solar project,L100001080521,utility-scale solar,pre_construction,16.9
+G100001090443,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Confey solar project,L100001080522,utility-scale solar,pre_construction,15.5
+G100001090444,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drumroe East solar project,L100001080523,utility-scale solar,pre_construction,15
+G100001090445,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Farran South solar project I,L100001080524,utility-scale solar,pre_construction,15
+G100001090446,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyboughlin solar project,L100001080525,utility-scale solar,pre_construction,14
+G100001090447,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hortland PV solar project,L100001080526,utility-scale solar,operating,14
+G100001090448,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Berrings solar project,L100001080527,utility-scale solar,pre_construction,13.8
+G100001090449,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dunmurry Springs PV solar project,L100001080528,utility-scale solar,pre_construction,12
+G100001090450,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyedock solar project,L100001080529,utility-scale solar,pre_construction,12
+G100001090451,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grian PV Ballyboe solar project,L100001080530,utility-scale solar,pre_construction,12
+G100001090452,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballycunneen PV solar project,L100001080531,utility-scale solar,pre_construction,12
+G100001090453,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Carrigogna solar project,L100001080532,utility-scale solar,pre_construction,10
+G100001090454,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Johnstown solar project,L100001080533,utility-scale solar,pre_construction,10
+G100001090455,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyenaghty solar project,L100001080534,utility-scale solar,pre_construction,9.9
+G100001090456,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballykenny solar project,L100001080535,utility-scale solar,pre_construction,9
+G100001090457,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Macallian solar project,L100001080536,utility-scale solar,operating,9
+G100001090458,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pickardstown PV solar project,L100001080537,utility-scale solar,pre_construction,8.8
+G100001090459,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cahershaughnessy solar project,L100001080538,utility-scale solar,pre_construction,8.8
+G100001090460,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Finnis PV solar project,L100001080539,utility-scale solar,pre_construction,8.5
+G100001090461,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballinaclough solar project,L100001080540,utility-scale solar,pre_construction,8.5
+G100001090462,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bullstown solar project,L100001080541,utility-scale solar,pre_construction,8.4
+G100001090463,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Horsepasture solar project,L100001080542,utility-scale solar,pre_construction,8
+G100001090464,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Monroe East solar project,L100001080543,utility-scale solar,pre_construction,8
+G100001090465,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cleggill (Prev Newtownforbes) solar project,L100001080544,utility-scale solar,pre_construction,8
+G100001090466,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barryscourt solar project,L100001080545,utility-scale solar,pre_construction,8
+G100001090467,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballymoney PV solar project,L100001080546,utility-scale solar,pre_construction,7.6
+G100001090468,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Painestown Hill solar project,L100001080547,utility-scale solar,operating,7.1
+G100001090469,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballyduff PV solar project,L100001080548,utility-scale solar,pre_construction,7
+G100001090470,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drumman solar project,L100001080549,utility-scale solar,pre_construction,7
+G100001090471,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Knockadosan solar project,L100001080550,utility-scale solar,pre_construction,6
+G100001090472,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Keatingstown solar project,L100001080551,utility-scale solar,pre_construction,6
+G100001090473,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Farranmacedmond solar project,L100001080552,utility-scale solar,pre_construction,6
+G100001090474,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coolboy solar project,L100001080553,utility-scale solar,pre_construction,6
+G100001090475,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Callatrim South solar project,L100001080554,utility-scale solar,pre_construction,6
+G100001090476,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Carrick solar project,L100001080555,utility-scale solar,pre_construction,5.8
+G100001090477,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Farran South solar project II,L100001080556,utility-scale solar,pre_construction,5.5
+G100001090478,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Leacht Cross solar project I,L100001080557,utility-scale solar,pre_construction,5
+G100001090479,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballymac solar project,L100001080558,utility-scale solar,pre_construction,5
+G100001090480,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Martinstown solar project,L100001080559,utility-scale solar,pre_construction,5
+G100001090481,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Loan PV solar project,L100001080560,utility-scale solar,pre_construction,5
+G100001090482,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballingaddy solar project,L100001080561,utility-scale solar,pre_construction,5
+G100001090483,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Garryndruig solar project,L100001080562,utility-scale solar,pre_construction,5
+G100001090484,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballynacrusha solar project,L100001080563,utility-scale solar,pre_construction,5
+G100001090485,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Currabeha solar project,L100001080564,utility-scale solar,pre_construction,5
+G100001090486,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Leacht Cross solar project II,L100001080565,utility-scale solar,pre_construction,5
+G100001090487,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Farrangalway solar project,L100001080566,utility-scale solar,pre_construction,5
+G100001090488,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilcannon solar project,L100001080567,utility-scale solar,pre_construction,5
+G100001090489,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Islanduane solar project,L100001080568,utility-scale solar,pre_construction,5
+G100001090490,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coolyduff solar project,L100001080569,utility-scale solar,operating,5
+G100001090491,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shanagraigue solar project,L100001080570,utility-scale solar,operating,5
+G100001090492,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dromalour solar project,L100001080571,utility-scale solar,operating,5
+G100001090493,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Drumgarriff South solar project,L100001080572,utility-scale solar,operating,5
+G100001090494,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Crossfield solar project,L100001080573,utility-scale solar,operating,5
+G100001090495,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coppenagh solar project I,L100001080574,utility-scale solar,pre_construction,4.7
+G100001090496,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coppenagh solar project II,L100001080575,utility-scale solar,pre_construction,4.6
+G100001090497,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rathleg solar project,L100001080576,utility-scale solar,pre_construction,4
+G100001090498,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Muiniagh solar project I,L100001080577,utility-scale solar,pre_construction,4
+G100001090499,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lisnageeragh solar project,L100001080578,utility-scale solar,pre_construction,4
+G100001090500,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shanderry solar project,L100001080579,utility-scale solar,pre_construction,4
+G100001090501,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Liss solar project,L100001080580,utility-scale solar,pre_construction,4
+G100001090502,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Barnaderg solar project,L100001080581,utility-scale solar,pre_construction,4
+G100001090503,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Creevy solar project,L100001080582,utility-scale solar,pre_construction,4
+G100001090504,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maine solar project I,L100001080583,utility-scale solar,pre_construction,4
+G100001090505,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Carrickabane solar project,L100001080584,utility-scale solar,pre_construction,4
+G100001090506,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shannagh Beg solar project,L100001080585,utility-scale solar,pre_construction,4
+G100001090507,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bodenstown solar project,L100001080586,utility-scale solar,pre_construction,4
+G100001090508,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Marlinstown solar project,L100001080587,utility-scale solar,pre_construction,4
+G100001090509,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilkeelan solar project I,L100001080588,utility-scale solar,pre_construction,4
+G100001090510,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballycrissane solar project,L100001080589,utility-scale solar,pre_construction,4
+G100001090511,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballytobin solar project I,L100001080590,utility-scale solar,pre_construction,4
+G100001090512,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grangegeeth solar project I,L100001080591,utility-scale solar,pre_construction,4
+G100001090513,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Laghtane solar project,L100001080592,utility-scale solar,pre_construction,4
+G100001090514,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lisduff solar project,L100001080593,utility-scale solar,pre_construction,4
+G100001090515,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lisbrien solar project,L100001080594,utility-scale solar,pre_construction,4
+G100001090516,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Friarspark solar project,L100001080595,utility-scale solar,pre_construction,4
+G100001090517,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rooaun solar project,L100001080596,utility-scale solar,pre_construction,4
+G100001090518,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tullynally Estate solar project,L100001080597,utility-scale solar,pre_construction,4
+G100001090519,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Farranlahassery solar project,L100001080598,utility-scale solar,pre_construction,4
+G100001090520,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dromroe solar project,L100001080599,utility-scale solar,pre_construction,4
+G100001090521,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cluide solar project,L100001080600,utility-scale solar,pre_construction,4
+G100001090522,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilcarrig solar project,L100001080601,utility-scale solar,pre_construction,4
+G100001090523,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shanacool solar project,L100001080602,utility-scale solar,pre_construction,4
+G100001090524,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kerdiffstown PV solar project,L100001080603,utility-scale solar,pre_construction,4
+G100001090525,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballinalard solar project,L100001080604,utility-scale solar,pre_construction,4
+G100001090526,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dromsallagh solar project,L100001080605,utility-scale solar,pre_construction,4
+G100001090527,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cooltubbrid West solar project,L100001080606,utility-scale solar,pre_construction,4
+G100001090528,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Featherbed Lane solar project,L100001080607,utility-scale solar,pre_construction,4
+G100001090529,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Thomastown Road solar project,L100001080608,utility-scale solar,pre_construction,4
+G100001090530,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ardnadoman solar project,L100001080609,utility-scale solar,pre_construction,4
+G100001090531,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Claremorris 2 solar project,L100001080610,utility-scale solar,pre_construction,4
+G100001090532,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lehinch solar project,L100001080611,utility-scale solar,operating,4
+G100001090533,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Castlekelly solar project,L100001080612,utility-scale solar,operating,4
+G100001090534,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Willville solar project I,L100001080613,utility-scale solar,pre_construction,4
+G100001090535,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Foxhall PV solar project,L100001080614,utility-scale solar,pre_construction,4
+G100001090536,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Beaulieu PV solar project,L100001080615,utility-scale solar,operating,4
+G100001090537,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Keiloge solar project,L100001080616,utility-scale solar,pre_construction,4
+G100001090538,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tead More solar project,L100001080617,utility-scale solar,pre_construction,4
+G100001090539,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Magherareagh solar project,L100001080618,utility-scale solar,pre_construction,3.3
+G100001090540,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Friarspark 2 solar project,L100001080619,utility-scale solar,pre_construction,2.1
+G100001090541,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Muiniagh solar project II,L100001080620,utility-scale solar,pre_construction,1.8
+G100001090542,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sandford Energy solar project,L100001080621,utility-scale solar,pre_construction,1.4
+G100001090543,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kilkeelan solar project II,L100001080622,utility-scale solar,pre_construction,1.4
+G100001090544,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Monart Spa Ground Mount 3 solar project,L100001080623,utility-scale solar,pre_construction,1.3
+G100001090545,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Willville solar project II,L100001080624,utility-scale solar,pre_construction,1
+G100001090546,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Golden Forth solar project,L100001080625,utility-scale solar,pre_construction,1
+G100001090547,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ballytobin solar project II,L100001080626,utility-scale solar,pre_construction,1
+G100001090548,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maine solar project II,L100001080627,utility-scale solar,pre_construction,1
+G100001090549,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Grangegeeth solar project II,L100001080628,utility-scale solar,pre_construction,1
+G100001090914,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Poulaphuca hydroelectric plant,L100001080928,hydropower,operating,38
+G100001094957,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilshane power station,L100001000020,oil/gas,pre_construction,340
+G100001094958,energy_plants_gem_units,IRL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilshane power station,L100001000020,oil/gas,pre_construction,340
+G100001094959,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aghada power station,L100000400322,oil/gas,pre_construction,299
+G100001096835,energy_plants_gem_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarbert power station,L100001000021,bioenergy,construction,300

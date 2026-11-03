@@ -1,0 +1,371 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100598,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Barapukuria power station,L100000100079,coal,operating,125
+G100000100599,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Barapukuria power station,L100000100079,coal,mothballed,125
+G100000100600,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Barapukuria power station,L100000100079,coal,operating,275
+G100000100601,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaibandha Ashuganj power station,L100000100080,coal,cancelled,660
+G100000100602,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaibandha Ashuganj power station,L100000100080,coal,cancelled,660
+G100000100828,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Bhola power station (S Alam),L100000100054,coal,cancelled,217
+G100000100969,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Boalkhali power station (Beximco),L100000100061,coal,cancelled,660
+G100000101037,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (BPDB/TNB),L100000100064,coal,cancelled,660
+G100000101038,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (BPDB/TNB),L100000100064,coal,cancelled,660
+G100000101510,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chittagong power station (Orion),L100000100062,coal,cancelled,283
+G100000101511,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Banshkhali power station (S Alam),L100000100060,coal,operating,660
+G100000101512,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Banshkhali power station (S Alam),L100000100060,coal,operating,660
+G100000102964,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Orion power station,L100000100073,coal,cancelled,700
+G100000102965,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Gazaria power station (RPCL),L100000100074,coal,cancelled,350
+G100000105461,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Payra power station (BCPCL),L100000100056,coal,operating,660
+G100000105462,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Payra power station (BCPCL),L100000100056,coal,operating,660
+G100000105463,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Payra power station (BCPCL),L100000100056,coal,shelved,660
+G100000105464,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Payra power station (BCPCL),L100000100056,coal,shelved,660
+G100000105726,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Khulna power station (Orion),L100000100076,coal,cancelled,660
+G100000106577,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (PowerChina),L100000100067,coal,cancelled,660
+G100000106578,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (PowerChina),L100000100067,coal,cancelled,660
+G100000106579,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (KEPCO),L100000100066,coal,cancelled,660
+G100000106718,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari power station,L100000100069,coal,operating,600
+G100000106719,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari power station,L100000100069,coal,operating,600
+G100000106750,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mawa power station,L100000100075,coal,cancelled,635
+G100000106945,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirsarai power station,L100000100070,coal,cancelled,150
+G100000106946,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirsarai power station,L100000100070,coal,cancelled,150
+G100000107884,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (RPCL/NORINCO),L100000100057,coal,operating,660
+G100000107885,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (RPCL/NORINCO),L100000100057,coal,operating,660
+G100000107975,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Phulbari Coal Project (Asia Energy),L100000100081,coal,cancelled,1000
+G100000108473,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rampal power station,L100000100077,coal,operating,660
+G100000108474,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rampal power station,L100000100077,coal,operating,660
+G100000112636,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rampal power station,L100000100077,coal,cancelled,660
+G100000112637,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rampal power station,L100000100077,coal,cancelled,660
+G100000112681,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Banshkhali power station (Beximco),L100000100059,coal,cancelled,660
+G100000112682,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Daudkandi power station,L100000100063,coal,cancelled,660
+G100000112683,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Daudkandi power station,L100000100063,coal,cancelled,660
+G100000112684,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mirsarai power station (Hangzhou Jinjiang),L100000100071,coal,cancelled,660
+G100000112685,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mirsarai power station (Hangzhou Jinjiang),L100000100071,coal,cancelled,660
+G100000113095,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (Huadian),L100000100065,coal,cancelled,660
+G100000113096,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (Huadian),L100000100065,coal,cancelled,660
+G100000113388,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari Kohelia power station,L100000100068,coal,cancelled,700
+G100000113487,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (KEPCO),L100000100066,coal,cancelled,660
+G100000113488,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Barisal power station,L100000100053,coal,operating,350
+G100000113489,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Pekua power station,L100000100072,coal,cancelled,650
+G100000113490,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Pekua power station,L100000100072,coal,cancelled,650
+G100000113491,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,coal,cancelled,660
+G100000113492,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,coal,cancelled,660
+G100000113869,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Dighipara power station,L100000104380,coal,cancelled,1000
+G100000114019,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Phulbari power station (China Gezhouba),L100000104497,coal,cancelled,1000
+G100000114020,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Phulbari power station (Sinohydro),L100000104498,coal,announced,1000
+G100000114222,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari power station,L100000100069,coal,pre_construction,600
+G100000114223,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari power station,L100000100069,coal,pre_construction,600
+G100000114224,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sena Kalyan Sangstha power station,L100000104588,coal,cancelled,660
+G100000114225,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sena Kalyan Sangstha power station,L100000104588,coal,cancelled,660
+G100000114243,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Barisal power station,L100000100053,coal,shelved,350
+G100000114244,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,coal,cancelled,400
+G100000114245,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Phulbari power station (China Gezhouba),L100000104497,coal,cancelled,1000
+G100000114246,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Phulbari power station (Sinohydro),L100000104498,coal,announced,1000
+G100000114247,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Phulbari power station (Sinohydro),L100000104498,coal,announced,1000
+G100000114248,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Phulbari power station (Sinohydro),L100000104498,coal,announced,1000
+G100000114840,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari Kohelia power station,L100000100068,coal,cancelled,700
+G100000115059,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,CPGCBL-Sumitomo power station,L100000104827,coal,cancelled,600
+G100000115060,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,CPGCBL-Sumitomo power station,L100000104827,coal,cancelled,600
+G100000115097,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,coal,cancelled,660
+G100000115098,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,coal,cancelled,660
+G100000115099,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (RPCL/NORINCO),L100000100057,coal,cancelled,660
+G100000115100,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (RPCL/NORINCO),L100000100057,coal,cancelled,660
+G100000115101,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Pekua power station,L100000100072,coal,cancelled,650
+G100000115102,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Pekua power station,L100000100072,coal,cancelled,650
+G100000115141,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Maheshkhali power station (BPDB/RPCL),L100000104849,coal,cancelled,660
+G100000115142,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Maheshkhali power station (BPDB/RPCL),L100000104849,coal,cancelled,660
+G100000115143,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,coal,cancelled,400
+G100000200042,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaizpur City Waste-to-Energy power station,L100000200039,bioenergy,operating,42
+G100000400840,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Payra LNG power station,L100000100058,oil/gas,announced,1200
+G100000400841,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Payra LNG power station,L100000100058,oil/gas,cancelled,1200
+G100000400842,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Payra LNG power station,L100000100058,oil/gas,cancelled,1200
+G100000400843,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Matarbari Summit power station,L100000406361,oil/gas,cancelled,600
+G100000400844,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Matarbari Summit power station,L100000406361,oil/gas,cancelled,600
+G100000400845,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Matarbari Summit power station,L100000406361,oil/gas,cancelled,600
+G100000400846,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Matarbari Summit power station,L100000406361,oil/gas,cancelled,600
+G100000400847,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Pertamina Bangladesh power station,L100000406363,oil/gas,announced,1400
+G100000400848,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Reliance Meghnaghat power station,L100000406357,oil/gas,mothballed,750
+G100000400849,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rupsha power station,L100000406364,oil/gas,construction,400
+G100000400850,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rupsha power station,L100000406364,oil/gas,construction,400
+G100000400851,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Matarbari LNG power station,L100000406360,oil/gas,cancelled,600
+G100000400852,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Unique Meghnaghat power station,L100000406365,oil/gas,operating,584
+G100000400853,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Meghnaghat-II power station,L100000406362,oil/gas,operating,590
+G100000400854,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,UPGD Anwara power station,L100000406366,oil/gas,construction,590
+G100000400855,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj East power station,L100000406356,oil/gas,operating,420
+G100000400856,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bibiyana South power station,L100000406358,oil/gas,operating,383
+G100000400857,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Khulna power station,L100000406359,oil/gas,operating,330
+G100000406012,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,operating,225
+G100000406013,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,operating,450
+G100000406014,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,operating,450
+G100000406017,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,operating,150
+G100000406018,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,operating,150
+G100000406019,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,retired,150
+G100000406020,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Baghabari power station,L100000405984,oil/gas,retired,71
+G100000406021,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Baghabari power station,L100000405984,oil/gas,operating,100
+G100000406022,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bheramara power station,L100000405985,oil/gas,operating,410
+G100000406023,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bhola power station,L100000405986,oil/gas,operating,225
+G100000406024,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bhola power station,L100000405986,oil/gas,operating,220
+G100000406025,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bibiana II (Summit) power station,L100000405987,oil/gas,operating,341
+G100000406026,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bibiana III power station,L100000405988,oil/gas,operating,400
+G100000406027,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Chandpur power station,L100000405989,oil/gas,operating,163
+G100000406028,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Fenchuganj power station,L100000405990,oil/gas,operating,97
+G100000406029,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Fenchuganj power station,L100000405990,oil/gas,operating,104
+G100000406030,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,retired,55
+G100000406031,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,retired,55
+G100000406032,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,retired,210
+G100000406033,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,operating,210
+G100000406034,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,operating,365
+G100000406035,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,cancelled,225
+G100000406036,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,operating,260
+G100000406037,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,operating,210
+G100000406038,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Haripur (HPL) power station,L100000405992,oil/gas,operating,360
+G100000406039,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Haripur power station,L100000405993,oil/gas,operating,412
+G100000406040,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Haripur power station,L100000405993,oil/gas,cancelled,250
+G100000406041,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Khulna power station,L100000406359,oil/gas,operating,225
+G100000406042,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Kushiara power station,L100000405994,oil/gas,operating,163
+G100000406043,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Meghnaghat (MPL) power station,L100000405995,oil/gas,operating,450
+G100000406044,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Meghnaghat (Unlima) power station,L100000405996,oil/gas,cancelled,450
+G100000406045,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Meghnaghat-I power station,L100000406354,oil/gas,operating,335
+G100000406046,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Maheshkhali power station,L100000405997,oil/gas,shelved,1200
+G100000406047,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mymensingh power station,L100000405998,oil/gas,construction,420
+G100000406048,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mymensingh power station,L100000405998,oil/gas,operating,210
+G100000406049,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rauzan power station,L100000405999,oil/gas,operating,210
+G100000406050,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rauzan power station,L100000405999,oil/gas,operating,210
+G100000406051,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rauzan power station,L100000405999,oil/gas,cancelled,400
+G100000406052,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shajibazar power station,L100000406000,oil/gas,operating,330
+G100000406053,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shiddhirgonj Peaking power station,L100000406001,oil/gas,operating,105
+G100000406054,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shiddhirgonj Peaking power station,L100000406001,oil/gas,operating,105
+G100000406055,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shiddirgonj power station,L100000406002,oil/gas,cancelled,550
+G100000406056,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shiddirgonj power station,L100000406002,oil/gas,operating,335
+G100000406057,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sikalbaha Peaking power station,L100000406003,oil/gas,operating,150
+G100000406058,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sikalbaha power station,L100000406004,oil/gas,operating,225
+G100000406059,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirajgonj power station,L100000406005,oil/gas,operating,225
+G100000406060,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirajgonj power station,L100000406005,oil/gas,operating,225
+G100000406061,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirajgonj power station,L100000406005,oil/gas,operating,225
+G100000406062,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirajgonj power station,L100000406005,oil/gas,operating,414
+G100000406063,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sylhet power station,L100000406006,oil/gas,operating,225
+G100000406064,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Tongi power station,L100000406007,oil/gas,operating,105
+G100000406175,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shajibazar power station,L100000406000,oil/gas,operating,100
+G100000406245,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Maheshkhali power station,L100000405997,oil/gas,shelved,1200
+G100000406246,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Maheshkhali power station,L100000405997,oil/gas,shelved,1200
+G100000408632,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shiddhirgonj Thermal power station,L100000407141,oil/gas,operating,210
+G100000408633,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj (United) power station,L100000407142,oil/gas,operating,16
+G100000409972,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari Kohelia power station,L100000100068,oil/gas,cancelled,700
+G100000409973,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,CPGCBL-Sumitomo power station,L100000104827,oil/gas,cancelled,600
+G100000409974,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Maheshkhali power station (BPDB/TNB),L100000100064,oil/gas,cancelled,1320
+G100000409975,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,oil/gas,announced,600
+G100000410359,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Jamaldi Meghnaghat power station,L100000407788,oil/gas,cancelled,660
+G100000410360,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirsarai Chattogram power station,L100000407789,oil/gas,cancelled,660
+G100000410541,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,oil/gas,announced,600
+G100000410542,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,announced,600
+G100000410543,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,announced,600
+G100000410544,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,announced,600
+G100000410545,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,pre_construction,450
+G100000410686,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,oil/gas,announced,600
+G100000410687,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,ACWA LNG power station,L100000407904,oil/gas,cancelled,3600
+G100000410688,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Anwara Jalalabad power station,L100000407903,oil/gas,shelved,600
+G100000410689,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gazipur power station,L100000407909,oil/gas,cancelled,225
+G100000410690,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gazipur power station,L100000407909,oil/gas,announced,450
+G100000410691,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Gazaria power station (RPCL),L100000100074,oil/gas,announced,600
+G100000410693,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirsarai LNG power station,L100000407908,oil/gas,shelved,1800
+G100000410694,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Boalkhali power station,L100000407907,oil/gas,pre_construction,750
+G100000410695,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Boalkhali power station,L100000407907,oil/gas,cancelled,400
+G100000410696,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sonagazi Feni power station,L100000407906,oil/gas,announced,600
+G100000410697,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sonagazi Feni power station,L100000407906,oil/gas,announced,600
+G100000410698,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sonagazi Feni power station,L100000407906,oil/gas,cancelled,550
+G100000410700,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,oil/gas,announced,600
+G100000410701,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,oil/gas,cancelled,660
+G100000410702,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,oil/gas,cancelled,660
+G100000410703,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,oil/gas,cancelled,660
+G100000410704,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,oil/gas,cancelled,660
+G100000411104,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sonagazi Feni power station,L100000407906,oil/gas,cancelled,550
+G100000411105,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,oil/gas,announced,600
+G100000411106,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,oil/gas,announced,600
+G100000411107,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali power station (Ashuganj),L100000100055,oil/gas,announced,600
+G100000411783,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,United Payra power plant,L100000408387,oil/gas,operating,9.8
+G100000411784,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,United Payra power plant,L100000408387,oil/gas,operating,147.3
+G100000411785,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,UMPL Mymensingh power station,L100000408384,oil/gas,operating,205.4
+G100000411786,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,UJPL Jamalpur power station,L100000408385,oil/gas,operating,123.8
+G100000411787,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,UANPL Anwara power station,L100000408386,oil/gas,operating,24.1
+G100000411788,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,UANPL Anwara power station,L100000408386,oil/gas,operating,290
+G100000411789,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Summit Madanganj power plant,L100000408378,oil/gas,operating,11.3
+G100000411790,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Summit Madanganj power plant,L100000408378,oil/gas,operating,85.4
+G100000411791,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Summit Madanganj power plant,L100000408378,oil/gas,operating,102
+G100000411792,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Summit Khulna (KPCL) power station,L100000408379,oil/gas,operating,119
+G100000411793,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Summit Gazipur II power station,L100000408380,oil/gas,operating,307.4
+G100000411794,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Summit Gazipur I power station,L100000408381,oil/gas,operating,147.3
+G100000411795,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Summit Barisal power plant,L100000408382,oil/gas,operating,119.5
+G100000411796,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sreepur power station,L100000408383,oil/gas,operating,163
+G100000411797,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Shikalbaha power station,L100000408377,oil/gas,operating,110.5
+G100000411798,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sayedpur power station,L100000408375,oil/gas,construction,150
+G100000411799,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Santahar Peaking power station,L100000408376,oil/gas,operating,52.2
+G100000411800,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,RPCL Gazipur power station,L100000408374,oil/gas,operating,53.4
+G100000411801,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,RPCL Gazipur power station,L100000408374,oil/gas,operating,110.5
+G100000411802,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Precision energy power station,L100000408370,oil/gas,operating,60
+G100000411803,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,PowerPac Khulna power station,L100000408371,oil/gas,cancelled,100
+G100000411804,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,PowerPac Keraniganj power station,L100000408372,oil/gas,cancelled,160
+G100000411805,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,PowerPac Keraniganj power station,L100000408372,oil/gas,operating,108
+G100000411806,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,PowerPac Jamalpur power station,L100000408373,oil/gas,operating,107.1
+G100000411807,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Paramount Baghabari power station,L100000408361,oil/gas,operating,216
+G100000411808,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Pangaon power station,L100000408362,oil/gas,retired,307.2
+G100000411809,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Orion Power Sonargaon power station,L100000408363,oil/gas,operating,109.8
+G100000411810,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Orion Power Rupsha power station,L100000408364,oil/gas,operating,110.5
+G100000411811,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Orion Power Meghnaghat power station,L100000408365,oil/gas,operating,107.1
+G100000411812,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Orion Gagnagar power station,L100000408366,oil/gas,operating,107.1
+G100000411813,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Nawabganj power station,L100000408367,oil/gas,operating,57.9
+G100000411814,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Natore power station,L100000408368,oil/gas,operating,53.5
+G100000411815,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Narayanganj power station,L100000408369,oil/gas,operating,99.8
+G100000411816,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirsarai (Powergen) power station,L100000408360,oil/gas,operating,166.5
+G100000411817,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Midland East Power station,L100000408358,oil/gas,operating,161
+G100000411818,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Midland Ashuganj Power station,L100000408359,oil/gas,operating,56
+G100000411819,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Manikganj power station,L100000408356,oil/gas,operating,162
+G100000411820,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Manikganj (Northern) power station,L100000408357,oil/gas,operating,57.9
+G100000411821,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Madhumati power plant,L100000408355,oil/gas,operating,110.5
+G100000411822,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kumargaon power station,L100000408353,oil/gas,mothballed,50
+G100000411823,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Kodda power station,L100000408354,oil/gas,operating,153.5
+G100000411824,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Katpotti power station,L100000408344,oil/gas,operating,55.3
+G100000411825,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Katakhali power station,L100000408345,oil/gas,operating,52.2
+G100000411826,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Katakhali (Northern) power station,L100000408346,oil/gas,operating,53.4
+G100000411827,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Karnaphuli power station,L100000408347,oil/gas,operating,110.5
+G100000411828,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Kanchan Purbachal power station,L100000408348,oil/gas,operating,58.2
+G100000411829,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamalaghat power station,L100000408349,oil/gas,operating,56.1
+G100000411830,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Jhulda power plant,L100000408350,oil/gas,operating,105.6
+G100000411831,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Jhulda power plant,L100000408350,oil/gas,operating,105.6
+G100000411832,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Jhulda power plant,L100000408350,oil/gas,operating,105.6
+G100000411833,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Jangalia power station,L100000408351,oil/gas,operating,53.5
+G100000411834,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Jamuna Industrial Park power station,L100000408352,oil/gas,operating,78.4
+G100000411835,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Hathazari peaking power station,L100000408343,oil/gas,operating,97.9
+G100000411836,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Gopalganj power station,L100000408342,oil/gas,operating,111.7
+G100000411837,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorashal (Regent) power station,L100000408340,oil/gas,operating,113.9
+G100000411838,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Feni Lanka power station,L100000408341,oil/gas,operating,9.8
+G100000411839,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Feni Lanka power station,L100000408341,oil/gas,operating,128.9
+G100000411840,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Fenchuganj (BEDL) power station,L100000408333,oil/gas,operating,55.1
+G100000411841,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Faridpur peaking power station,L100000408334,oil/gas,operating,55.8
+G100000411842,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,EPV Thakurgaon power station,L100000408335,oil/gas,operating,112
+G100000411843,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,EPV Chittagong power station,L100000408336,oil/gas,operating,112
+G100000411844,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Energyprima Shahjibazar power station,L100000408337,oil/gas,operating,50
+G100000411845,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Energis Shikalbaha power station,L100000408338,oil/gas,retired,55
+G100000411846,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Dutch Bangla Siddhirganj power station,L100000408339,oil/gas,operating,106.8
+G100000411847,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Doreen Chandpur power station,L100000408329,oil/gas,operating,50.9
+G100000411848,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Doreen Chandpur power station,L100000408329,oil/gas,operating,74.1
+G100000411849,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Dohazari power station,L100000408330,oil/gas,operating,102
+G100000411850,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,DNPGL Manikganj power station,L100000408331,oil/gas,operating,57.9
+G100000411851,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Desh Chandpur power station,L100000408332,oil/gas,operating,221
+G100000411852,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Confidence Zodiac power station,L100000408327,oil/gas,operating,3.6
+G100000411853,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Confidence Zodiac power station,L100000408327,oil/gas,operating,55.8
+G100000411854,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Confidence Rangpur power station,L100000408328,oil/gas,operating,113
+G100000411855,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Confidence Bagura power station,L100000408323,oil/gas,operating,111.3
+G100000411856,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Confidence Bagura power station,L100000408323,oil/gas,operating,111.3
+G100000411857,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,CLC Bosila power station,L100000408324,oil/gas,operating,105.3
+G100000411858,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Chowmuhani power station,L100000408325,oil/gas,operating,117.4
+G100000411859,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Chapainawabganj power station,L100000408326,oil/gas,operating,107.1
+G100000411860,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Bhairab power station,L100000408321,oil/gas,operating,54.6
+G100000411861,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bera power station,L100000408322,oil/gas,operating,74.6
+G100000411862,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangla Trac Power Unit-2 power station,L100000408319,oil/gas,operating,107.8
+G100000411863,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangla Trac Power Unit-1 power station,L100000408320,oil/gas,operating,15.8
+G100000411864,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangla Trac Power Unit-1 power station,L100000408320,oil/gas,operating,60
+G100000411865,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangla Trac Power Unit-1 power station,L100000408320,oil/gas,operating,138.6
+G100000411866,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Anlima Energy power station,L100000408315,oil/gas,operating,126.4
+G100000411867,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,AGGREKO Bramhangoan power station,L100000408317,oil/gas,operating,87.3
+G100000411868,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,AGGREKO Bramhangoan power station,L100000408317,oil/gas,operating,19.6
+G100000411869,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,AGGREKO Aurahati power station,L100000408318,oil/gas,operating,87.3
+G100000411870,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,AGGREKO Aurahati power station,L100000408318,oil/gas,operating,19.6
+G100000412587,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj power station,L100000405983,oil/gas,operating,56
+G100000413086,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashuganj (United) power station,L100000407142,oil/gas,operating,194.6
+G100000414473,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Munshiganj power station,L100000104595,oil/gas,cancelled,660
+G100000500177,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rooppur nuclear power plant,L100000500091,nuclear,construction,1200
+G100000500178,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rooppur nuclear power plant,L100000500091,nuclear,construction,1200
+G100000600148,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Karnafuli hydroelectric plant,L100000600148,hydropower,operating,230
+G100000700286,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Thakurgain geothermal plant,L100000700175,geothermal,cancelled,200
+G100000800933,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Raipura solar farm,L100000800807,utility-scale solar,shelved,120
+G100000800953,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Baraiyarhat solar farm,L100000800826,utility-scale solar,pre_construction,50
+G100000801007,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chandpur solar farm,L100000800873,utility-scale solar,cancelled,100
+G100000801013,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Chuadanga solar farm,L100000800879,utility-scale solar,announced,50
+G100000801073,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Dharmapasa solar farm,L100000800926,utility-scale solar,shelved,32
+G100000801074,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhorola solar farm,L100000800927,utility-scale solar,cancelled,30
+G100000801099,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Faridpur solar farm,L100000800948,utility-scale solar,cancelled,100
+G100000801100,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Feni solar farm,L100000800949,utility-scale solar,pre_construction,100
+G100000801112,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Gaibandha Beximco solar farm,L100000800959,utility-scale solar,operating,200
+G100000801115,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangachara (Intraco) solar farm,L100000800961,utility-scale solar,cancelled,40
+G100000801116,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangachara (OCK) solar farm,L100000800962,utility-scale solar,cancelled,100
+G100000801121,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghosh Para solar farm,L100000800967,utility-scale solar,cancelled,50
+G100000801185,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Jamuna solar farm,L100000801025,utility-scale solar,operating,68
+G100000801209,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaptai Lake solar farm,L100000801048,utility-scale solar,cancelled,50
+G100000801224,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Khulna (Hero Future Energies) solar farm,L100000801063,utility-scale solar,pre_construction,70
+G100000801258,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kushtia solar farm,L100000801092,utility-scale solar,shelved,50
+G100000801303,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Madargonj (B-R Powergen) solar farm,L100000801130,utility-scale solar,shelved,100
+G100000801304,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Madargonj (RPCL) solar farm,L100000801131,utility-scale solar,shelved,140
+G100000801307,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Manikganj solar farm,L100000801134,utility-scale solar,operating,35
+G100000801316,energy_plants_gem_units,BGD,field,,,,,,,,false,abf-boundaries-v0.2.0,Matarbari solar farm,L100000801141,utility-scale solar,announced,50
+G100000801341,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mollahat solar farm,L100000801163,utility-scale solar,cancelled,100
+G100000801342,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mongla solar farm,L100000801164,utility-scale solar,operating,100
+G100000801371,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Netrokona solar farm,L100000801191,utility-scale solar,shelved,50
+G100000801378,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Nilphamari (Scatec) solar farm,L100000801198,utility-scale solar,cancelled,50
+G100000801379,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Nilphamari (Zhejiang Dunan) solar farm,L100000801199,utility-scale solar,cancelled,100
+G100000801420,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Pabna (BCRECL) solar farm,L100000801235,utility-scale solar,operating,65
+G100000801421,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Pabna (Dynamic Sun Energy) solar farm,L100000801236,utility-scale solar,pre_construction,100
+G100000801436,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Panchagarh (8Minutenergy) solar farm,L100000801251,utility-scale solar,shelved,50
+G100000801437,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Panchagarh (Beximco) solar farm,L100000801252,utility-scale solar,construction,30
+G100000801438,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Panchagarh (IB Vogt) solar farm,L100000801253,utility-scale solar,cancelled,47
+G100000801439,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Panchagarh (Rahimafrooz) solar farm,L100000801254,utility-scale solar,shelved,20
+G100000801440,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Panchagarh (RPCL) solar farm,L100000801255,utility-scale solar,shelved,30
+G100000801488,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sundarganj solar farm,L100000801292,utility-scale solar,operating,275
+G100000801489,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rangpur (BPDB) solar farm,L100000801293,utility-scale solar,shelved,90
+G100000801490,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rangpur (Intraco) solar farm,L100000801294,utility-scale solar,operating,30
+G100000801491,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rangunia solar farm,L100000801295,utility-scale solar,shelved,55
+G100000801593,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirajganji solar farm,L100000801389,utility-scale solar,operating,68
+G100000801622,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sonagazi (BPDB) solar farm,L100000801412,utility-scale solar,shelved,110
+G100000801623,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sonagazi (EGCB) solar farm,L100000801413,utility-scale solar,operating,75
+G100000801635,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sujanagar solar farm,L100000801423,utility-scale solar,cancelled,60
+G100000801649,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sutiakhali solar farm,L100000801435,utility-scale solar,operating,50
+G100000801683,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Teknaf (Sunedison) solar farm,L100000801464,utility-scale solar,cancelled,200
+G100000801684,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Teknaf (Tsel) solar farm,L100000801465,utility-scale solar,operating,20
+G100000810865,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Moidhara solar farm,L100000808617,utility-scale solar,operating,134
+G100000810866,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Pabna Solar Power,L100000808618,utility-scale solar,shelved,70
+G100000833175,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Barapkuria solar farm,L100000829386,utility-scale solar,pre_construction,50
+G100000833176,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Cox’s Bazar solar farm,L100000829387,utility-scale solar,shelved,30
+G100000833177,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Dimla solar farm,L100000829388,utility-scale solar,shelved,50
+G100000833178,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gazaria solar farm,L100000829389,utility-scale solar,shelved,50
+G100000833179,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Muktagacha solar farm,L100000829390,utility-scale solar,construction,22.2
+G100000833180,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mymensingh (Jiangsu Etern) solar farm,L100000829391,utility-scale solar,shelved,44
+G100000833181,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mymensingh (Joules Power) solar farm,L100000829392,utility-scale solar,pre_construction,20
+G100000833182,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Patuakhali solar farm,L100000829393,utility-scale solar,shelved,100
+G100000833183,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Rampal solar farm,L100000829394,utility-scale solar,shelved,300
+G100000833186,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Trishal solar farm,L100000829397,utility-scale solar,shelved,44
+G100000834030,energy_plants_gem_units,BGD,point,IND,,,,,,,false,abf-boundaries-v0.2.0,Teesta Canal solar project,L100000830181,utility-scale solar,operating,10
+G100000901274,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Regen Sonagazi wind farm,L100000901093,wind,shelved,30
+G100000901286,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Matarbari wind farm,L100000901104,wind,announced,42
+G100000901323,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mongla wind farm,L100000901133,wind,pre_construction,55
+G100000901349,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chittagong - Givent DLC Green Energy Offshore wind farm,L100000901156,wind,cancelled,400
+G100000901473,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Patuakhali wind farm,L100000901262,wind,pre_construction,100
+G100000901541,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Khurushkul wind farm,L100000901316,wind,operating,60
+G100000901567,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Chandpur wind farm,L100000901334,wind,shelved,50
+G100000901568,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Inani wind farm,L100000901335,wind,announced,50
+G100000927466,energy_plants_gem_units,BGD,field,,,,,,,,true,abf-boundaries-v0.2.0,Bay of Bengal wind farm,L100000922034,wind,announced,500
+G100001020761,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Aminbazar Waste-To-Energy power station,L100001018561,bioenergy,construction,35
+G100001020764,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Brahmanbaria Waste-to-Energy power station,L100001018564,bioenergy,pre_construction,11
+G100001021156,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Payra wind farm,L100001018860,wind,announced,20
+G100001021157,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Payra wind farm,L100001018860,wind,announced,30
+G100001021171,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chakaria wind farm,L100001018870,wind,pre_construction,220
+G100001021175,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Parki beach wind farm,L100001018872,wind,shelved,100
+G100001021189,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Barapkuria solar farm,L100000829386,utility-scale solar,pre_construction,150
+G100001021204,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Cox’s Bazar solar farm,L100000829387,utility-scale solar,shelved,170
+G100001021337,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chattogram solar farm,L100001018980,utility-scale solar,announced,34
+G100001021338,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chattogram solar farm,L100001018980,utility-scale solar,announced,34
+G100001021339,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chattogram solar farm,L100001018980,utility-scale solar,announced,32
+G100001021341,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Bay of Bengal solar farm,L100001018985,utility-scale solar,announced,160
+G100001021348,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Lama solar farm,L100001018989,utility-scale solar,cancelled,70
+G100001021362,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Trishal (Energon) solar farm,L100001018997,utility-scale solar,pre_construction,240
+G100001021363,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Chakaria solar farm,L100001018998,utility-scale solar,shelved,30
+G100001021364,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalapara solar farm,L100001018999,utility-scale solar,announced,100
+G100001021365,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Khulna (Energon Renewables) solar farm,L100001019000,utility-scale solar,announced,100
+G100001021366,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Moulvibazar solar farm,L100001019001,utility-scale solar,announced,100
+G100001021367,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Rajbari solar farm,L100001019002,utility-scale solar,announced,100
+G100001021368,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Moheshkhali solar farm,L100001019003,utility-scale solar,announced,500
+G100001030298,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,CPGCBL-Sumitomo power station,L100000104827,oil/gas,cancelled,600
+G100001057871,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Rangunia (Metito) solar farm,L100001050175,utility-scale solar,pre_construction,55
+G100001057874,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirsharai solar farm,L100001050178,utility-scale solar,announced,50
+G100001057876,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Padma Bridge solar farm,L100001050180,utility-scale solar,pre_construction,80
+G100001057877,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sonagazi (Beza) solar farm,L100001050181,utility-scale solar,announced,200
+G100001057878,energy_plants_gem_units,BGD,point,,,,,,,,true,abf-boundaries-v0.2.0,Robi Axiata solar farm,L100001050182,utility-scale solar,announced,100
+G100001093884,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Aminbazar Waste-To-Energy power station,L100001018561,bioenergy,construction,35
+G100001094627,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Gazaria power station (RPCL),L100000100074,oil/gas,announced,600
+G100001094645,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,construction,156
+G100001094646,energy_plants_gem_units,BGD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghorasal power station,L100000405991,oil/gas,construction,200

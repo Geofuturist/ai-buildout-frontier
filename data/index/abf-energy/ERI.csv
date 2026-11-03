@@ -1,0 +1,9 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413987,energy_plants_gem_units,ERI,point,,ERI-1-SK,,point,,,,false,abf-boundaries-v0.2.0,Hirgigo power plant,L100000409135,oil/gas,operating,46
+G100000413988,energy_plants_gem_units,ERI,point,,ERI-1-SK,,point,,,,false,abf-boundaries-v0.2.0,Hirgigo power plant,L100000409135,oil/gas,operating,88
+G100000413989,energy_plants_gem_units,ERI,point,,ERI-1-GB,,point,,,,true,abf-boundaries-v0.2.0,Bisha Mine hybrid power plant,L100000409136,oil/gas,operating,22
+G100000413990,energy_plants_gem_units,ERI,point,,ERI-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Beleza power plant,L100000409137,oil/gas,operating,12
+G100000814111,energy_plants_gem_units,ERI,point,,ERI-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Dekemhare solar farm,L100000811597,utility-scale solar,pre_construction,30
+G100001053117,energy_plants_gem_units,ERI,point,,ERI-1-GB,,point,,,,true,abf-boundaries-v0.2.0,Desert to Power Eritrea solar farm,L100001046843,utility-scale solar,announced,6
+G100001053118,energy_plants_gem_units,ERI,point,,ERI-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Desert to Power Eritrea solar farm,L100001046843,utility-scale solar,announced,3
+G100001053120,energy_plants_gem_units,ERI,point,,ERI-1-GB,,point,,,,true,abf-boundaries-v0.2.0,Desert to Power Eritrea solar farm,L100001046843,utility-scale solar,announced,3

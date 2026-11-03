@@ -1,0 +1,381 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100100,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,operating,300
+G100000100101,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,operating,325
+G100000100102,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,operating,325
+G100000100103,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,operating,310
+G100000100104,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,operating,325
+G100000100105,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,operating,325
+G100000100106,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,retired,300
+G100000100107,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,operating,300
+G100000100133,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,coal,operating,80
+G100000100134,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,coal,operating,80
+G100000100135,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,coal,operating,80
+G100000100136,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,coal,operating,50
+G100000100383,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-2 power station,L100000102977,coal,operating,80
+G100000100384,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-2 power station,L100000102977,coal,operating,80
+G100000100385,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-2 power station,L100000102977,coal,operating,80
+G100000100386,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-2 power station,L100000102977,coal,operating,120
+G100000100484,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Balkhash Ulken power station,L100000102992,coal,cancelled,660
+G100000100485,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Balkhash Ulken power station,L100000102992,coal,cancelled,660
+G100000102603,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,540
+G100000102604,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,500
+G100000102605,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,500
+G100000102606,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,500
+G100000102607,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,500
+G100000102608,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,500
+G100000102609,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-2 power station,L100000102988,coal,operating,500
+G100000102610,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-2 power station,L100000102988,coal,operating,500
+G100000102611,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-2 power station,L100000102988,coal,pre_construction,550
+G100000105562,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,retired,60
+G100000105563,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,retired,100
+G100000105564,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,100
+G100000105565,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,100
+G100000105566,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,86
+G100000105567,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,86
+G100000105568,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,86
+G100000105569,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,coal,operating,100
+G100000105570,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,coal,operating,100
+G100000105571,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,coal,operating,100
+G100000105572,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,coal,operating,135
+G100000105573,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-3 power station,L100000102982,coal,operating,110
+G100000105574,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-3 power station,L100000102982,coal,operating,110
+G100000105575,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-3 power station,L100000102982,coal,operating,110
+G100000105576,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-3 power station,L100000102982,coal,operating,110
+G100000105577,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-3 power station,L100000102982,coal,operating,120
+G100000105629,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kazakhmys Balkhash power station,L100000102993,coal,operating,60
+G100000105630,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kazakhmys Balkhash power station,L100000102993,coal,retired,30
+G100000107886,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-1 power station,L100000102989,coal,operating,60
+G100000107887,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-1 power station,L100000102989,coal,operating,60
+G100000107888,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-1 power station,L100000102989,coal,operating,50
+G100000107889,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-1 power station,L100000102989,coal,operating,50
+G100000107890,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-1 power station,L100000102989,coal,operating,50
+G100000107891,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-1 power station,L100000102989,coal,operating,80
+G100000107894,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-2 power station,L100000102990,coal,operating,60
+G100000107895,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-3 power station,L100000102991,coal,operating,65
+G100000107896,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-3 power station,L100000102991,coal,operating,65
+G100000107897,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-3 power station,L100000102991,coal,operating,130
+G100000107898,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-3 power station,L100000102991,coal,operating,130
+G100000107899,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-3 power station,L100000102991,coal,operating,125
+G100000107945,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Petropavlovsk-2 power station,L100000102985,coal,operating,63
+G100000107946,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Petropavlovsk-2 power station,L100000102985,coal,operating,60
+G100000107947,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Petropavlovsk-2 power station,L100000102985,coal,operating,60
+G100000107948,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Petropavlovsk-2 power station,L100000102985,coal,operating,63
+G100000107949,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Petropavlovsk-2 power station,L100000102985,coal,operating,95
+G100000107950,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Petropavlovsk-2 power station,L100000102985,coal,operating,100
+G100000107951,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Petropavlovsk-2 power station,L100000102985,coal,operating,100
+G100000110516,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ust-Kamenogorsk power station,L100000102978,coal,operating,50
+G100000110517,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ust-Kamenogorsk power station,L100000102978,coal,operating,100
+G100000110518,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ust-Kamenogorsk power station,L100000102978,coal,operating,120
+G100000110519,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ust-Kamenogorsk power station,L100000102978,coal,operating,38
+G100000111681,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,coal,operating,50
+G100000111682,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,coal,operating,42
+G100000111683,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,coal,operating,50
+G100000111684,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,coal,operating,60
+G100000112193,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,coal,retired,30
+G100000113444,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,500
+G100000113445,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-1 power station,L100000102987,coal,operating,500
+G100000114138,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-1 power station,L100000104559,coal,retired,60
+G100000114139,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-1 power station,L100000104559,coal,retired,60
+G100000114140,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,coal,operating,110
+G100000114141,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,coal,operating,110
+G100000114142,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-3 power station,L100000104560,coal,operating,41
+G100000114143,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-3 power station,L100000104560,coal,operating,41
+G100000114144,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-3 power station,L100000104560,coal,operating,41
+G100000114145,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-3 power station,L100000104560,coal,operating,50
+G100000114146,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-1 power station,L100000104561,coal,operating,42
+G100000114147,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-1 power station,L100000104561,coal,operating,42
+G100000114148,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,55
+G100000114149,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda Steel Works power station,L100000104562,coal,operating,65
+G100000114150,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda Steel Works power station,L100000104562,coal,operating,60
+G100000114151,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda Steel Works power station,L100000104562,coal,operating,60
+G100000114152,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ridder power station,L100000104563,coal,operating,30
+G100000114153,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Rudny power station,L100000104564,coal,operating,58
+G100000114154,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Rudny power station,L100000104564,coal,operating,50
+G100000114155,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Rudny power station,L100000104564,coal,operating,34
+G100000114156,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Rudny power station,L100000104564,coal,operating,63
+G100000115021,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-3 power station,L100000102982,coal,operating,110
+G100000115022,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Karaganda-4 power station,L100000104815,coal,cancelled,700
+G100000115023,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kazakhmys Balkhash power station,L100000102993,coal,operating,30
+G100000115085,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-2 power station,L100000102977,coal,operating,120
+G100000115086,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-2 power station,L100000102977,coal,operating,120
+G100000115087,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-3 power station,L100000104835,coal,cancelled,120
+G100000115088,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-3 power station,L100000104835,coal,cancelled,120
+G100000115113,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,130
+G100000115114,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,operating,130
+G100000115115,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Pavlodar-3 power station,L100000102991,coal,operating,50
+G100000115116,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,coal,operating,50
+G100000115117,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Sogrinsk power station,L100000104845,coal,operating,50
+G100000115432,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-3 power station,L100000102982,coal,construction,140
+G100000115433,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ust-Kamenogorsk power station,L100000102978,coal,pre_construction,100
+G100000115750,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kokshetau power station,L100000104981,coal,pre_construction,120
+G100000115751,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kokshetau power station,L100000104981,coal,pre_construction,120
+G100000115752,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,pre_construction,130
+G100000115753,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Topar power station,L100000102980,coal,cancelled,116
+G100000115754,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-2 power station,L100000102988,coal,pre_construction,550
+G100000115755,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-2 power station,L100000102988,coal,shelved,636
+G100000115756,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ekibastuz-2 power station,L100000102988,coal,shelved,636
+G100000115757,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ekibastuz-3 power station,L100000104982,coal,pre_construction,660
+G100000115758,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ekibastuz-3 power station,L100000104982,coal,pre_construction,660
+G100000115759,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Semey-3 power station,L100000104983,coal,pre_construction,135
+G100000115805,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Stepnogorsk power station,L100000104985,coal,operating,35
+G100000115806,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Stepnogorsk power station,L100000104985,coal,operating,35
+G100000115809,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Stepnogorsk power station,L100000104985,coal,operating,60
+G100000407441,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhanazhol 3 power station,L100000406889,oil/gas,operating,80
+G100000407442,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhanazhol 3 power station,L100000406889,oil/gas,operating,80
+G100000407443,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhambyl GRES power station,L100000406890,oil/gas,operating,210
+G100000407444,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhambyl GRES power station,L100000406890,oil/gas,operating,210
+G100000407445,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhambyl GRES power station,L100000406890,oil/gas,operating,210
+G100000407446,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhambyl GRES power station,L100000406890,oil/gas,operating,200
+G100000407447,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhambyl GRES power station,L100000406890,oil/gas,operating,200
+G100000407448,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhambyl GRES power station,L100000406890,oil/gas,operating,200
+G100000407449,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ust-Kamenogorsk power station,L100000102978,oil/gas,cancelled,308
+G100000407450,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tengizchevroil Future Growth Project power station,L100000406904,oil/gas,operating,130
+G100000407451,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tengizchevroil Future Growth Project power station,L100000406904,oil/gas,operating,130
+G100000407452,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tengizchevroil Future Growth Project power station,L100000406904,oil/gas,operating,130
+G100000407453,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tengizchevroil Future Growth Project power station,L100000406904,oil/gas,operating,130
+G100000407454,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tengizchevroil Future Growth Project power station,L100000406904,oil/gas,operating,130
+G100000407455,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tengizchevroil 3 power station,L100000406892,oil/gas,operating,121
+G100000407456,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tengizchevroil 3 power station,L100000406892,oil/gas,operating,121
+G100000407457,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shymkent CHP-3 power station,L100000406893,oil/gas,operating,80
+G100000407458,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shymkent CHP-3 power station,L100000406893,oil/gas,operating,80
+G100000407459,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shymkent CHP-3 power station,L100000406893,oil/gas,pre_construction,556
+G100000407463,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 3 power station,L100000406894,oil/gas,operating,215
+G100000407464,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 3 power station,L100000406894,oil/gas,operating,210
+G100000407465,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 3 power station,L100000406894,oil/gas,operating,200
+G100000407466,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,operating,60
+G100000407467,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,operating,60
+G100000407469,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,operating,50
+G100000407470,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,operating,50
+G100000407471,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,operating,100
+G100000407472,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,operating,60
+G100000407474,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,operating,80
+G100000407476,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,construction,160
+G100000407477,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kyzylorda CHP power station,L100000406896,oil/gas,operating,240
+G100000407478,energy_plants_gem_units,KAZ,field,,,,,,,,false,abf-boundaries-v0.2.0,Kashagan power station,L100000406897,oil/gas,operating,119
+G100000407479,energy_plants_gem_units,KAZ,field,,,,,,,,false,abf-boundaries-v0.2.0,Kashagan power station,L100000406897,oil/gas,operating,119
+G100000407480,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karabatan power station,L100000406898,oil/gas,operating,155
+G100000407481,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karabatan power station,L100000406898,oil/gas,operating,155
+G100000407483,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau CHP power station,L100000406900,oil/gas,operating,60
+G100000407484,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau CHP power station,L100000406900,oil/gas,operating,100
+G100000407486,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau CHP power station,L100000406900,oil/gas,retired,60
+G100000407487,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau CHP power station,L100000406900,oil/gas,operating,60
+G100000407494,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-3 power station,L100000104560,oil/gas,construction,270
+G100000407502,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-1 power station,L100000104559,oil/gas,pre_construction,112.5
+G100000407505,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Akturbo power station,L100000406902,oil/gas,operating,135
+G100000407506,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aktobe CHP power station,L100000406903,oil/gas,operating,57
+G100000407917,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana-3 power station,L100000104835,oil/gas,announced,500
+G100000409737,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,construction,200
+G100000410434,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Shalkiya power station,L100000407819,oil/gas,cancelled,80
+G100000411098,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Turkistan power station,L100000407929,oil/gas,construction,926.5
+G100000411945,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-3 power station,L100000104560,oil/gas,construction,270
+G100000411946,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,construction,179
+G100000411947,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,construction,179
+G100000413207,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 2 power station,L100000406895,oil/gas,pre_construction,65
+G100000413208,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karabatan power station,L100000406898,oil/gas,pre_construction,165
+G100000413209,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau CHP power station,L100000406900,oil/gas,operating,65
+G100000414458,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,MAEK 3 power station,L100000406894,oil/gas,shelved,230
+G100000414459,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,oil/gas,construction,75
+G100000500513,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aktau nuclear power plant,L100000500211,nuclear,retired,90
+G100000500994,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kurchatov nuclear power plant,L100000500360,nuclear,announced,1200
+G100000500995,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kurchatov nuclear power plant,L100000500360,nuclear,announced,1200
+G100000500996,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ulken nuclear power plant,L100000500361,nuclear,pre_construction,1200
+G100000501220,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ulken nuclear power plant,L100000500361,nuclear,announced,1200
+G100000602353,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bukhtarma hydroelectric plant,L100000602324,hydropower,operating,675
+G100000602354,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kapshagay hydroelectric plant,L100000602325,hydropower,operating,364
+G100000602355,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kerbulak hydroelectric plant,L100000602326,hydropower,announced,50
+G100000602356,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Moynak hydroelectric plant,L100000602327,hydropower,operating,300
+G100000602357,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Oskemen hydroelectric plant,L100000602328,hydropower,operating,331
+G100000602358,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shardara hydroelectric plant,L100000602329,hydropower,operating,126
+G100000602359,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shulbi hydroelectric plant,L100000602330,hydropower,operating,702
+G100000800915,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Akadyr solar farm,L100000800791,utility-scale solar,operating,50
+G100000800916,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Akadyr solar farm,L100000800791,utility-scale solar,operating,26
+G100000800943,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Baikonur solar farm,L100000800817,utility-scale solar,operating,50
+G100000800964,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Baydikbek solar farm,L100000800835,utility-scale solar,cancelled,40
+G100000800986,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Burnoye solar farm,L100000800855,utility-scale solar,operating,50
+G100000800987,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Burnoye solar farm,L100000800855,utility-scale solar,operating,50
+G100000801022,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Chulakkurgan solar farm,L100000800888,utility-scale solar,operating,50
+G100000801127,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Globalia Kft solar farm,L100000800973,utility-scale solar,cancelled,50
+G100000801131,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulshat solar farm,L100000800977,utility-scale solar,operating,40
+G100000801208,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kapshagay solar farm,L100000801047,utility-scale solar,cancelled,75
+G100000801214,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaskelen solar farm,L100000801053,utility-scale solar,operating,50
+G100000801219,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kentau (Hevel) solar farm,L100000801058,utility-scale solar,operating,35
+G100000801220,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kentau (Jiangsu Zhengfa) solar farm,L100000801059,utility-scale solar,cancelled,50
+G100000801254,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kulan solar farm,L100000801088,utility-scale solar,cancelled,29
+G100000801262,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyzylorda solar farm,L100000801096,utility-scale solar,cancelled,50
+G100000801300,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,M-Kat solar farm,L100000801127,utility-scale solar,operating,100
+G100000801395,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Nomad solar farm,L100000801212,utility-scale solar,operating,28
+G100000801401,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Nura solar farm,L100000801216,utility-scale solar,operating,100
+G100000801402,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Nurgisa solar farm,L100000801217,utility-scale solar,operating,100
+G100000801418,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Otrar (Eni) solar farm,L100000801233,utility-scale solar,operating,50
+G100000801419,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Otrar (Promondis Kazakhstan) solar farm,L100000801234,utility-scale solar,cancelled,35
+G100000801512,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Sairam solar farm,L100000801315,utility-scale solar,cancelled,30
+G100000801543,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Saran solar farm,L100000801343,utility-scale solar,operating,100
+G100000801544,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Saryagash solar farm,L100000801344,utility-scale solar,operating,20
+G100000801585,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shoktas solar farm,L100000801381,utility-scale solar,operating,50
+G100000801728,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Tupkaragan solar farm,L100000801507,utility-scale solar,cancelled,50
+G100000801794,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhambyl solar farm,L100000801559,utility-scale solar,cancelled,24
+G100000801795,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhangiz-Tobe solar farm,L100000801560,utility-scale solar,operating,30
+G100000801796,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhuldyz solar farm,L100000801561,utility-scale solar,cancelled,28
+G100000810904,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Aisha Kunshuak solar farm,L100000808652,utility-scale solar,operating,50
+G100000834560,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Balkhash solar farm,L100000830700,utility-scale solar,operating,50
+G100000834561,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Balkhash solar farm,L100000830700,utility-scale solar,pre_construction,50
+G100000834563,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shymkent solar farm,L100000830702,utility-scale solar,operating,20
+G100000834564,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Suzak solar farm,L100000830703,utility-scale solar,operating,63
+G100000834565,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zadarya solar project,L100000830704,utility-scale solar,operating,14
+G100000901269,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Badamsha wind farm,L100000901089,wind,operating,48
+G100000901313,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Dzungar Gates wind farm,L100000901127,wind,cancelled,72
+G100000901314,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shelek (Energia Semirechya) wind farm,L100000901128,wind,operating,60
+G100000901343,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ereymentau (First Wind Power Plant) wind farm,L100000901151,wind,operating,45
+G100000901406,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kentau wind farm,L100000901210,wind,cancelled,50
+G100000901408,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kostanay wind farm,L100000901212,wind,cancelled,48
+G100000901413,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Shevchenko (KT Rare-Metal Unexstroy) wind farm,L100000901215,wind,operating,43
+G100000901478,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Saikan wind farm,L100000901267,wind,cancelled,20
+G100000901479,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ereymentau (EWP) wind farm,L100000901268,wind,cancelled,50
+G100000901485,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mangystau wind farm,L100000901274,wind,cancelled,42
+G100000901489,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhanatas wind farm,L100000901278,wind,operating,100
+G100000901529,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana EXPO-2017 wind farm,L100000901307,wind,operating,50
+G100000901530,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Astana EXPO-2017 wind farm,L100000901307,wind,operating,50
+G100000901535,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Abay wind farm,L100000901311,wind,operating,100
+G100000901536,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Abay wind farm,L100000901311,wind,operating,50
+G100000901537,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ybyray wind farm,L100000901312,wind,operating,50
+G100000901548,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhuzimdyk wind farm,L100000901322,wind,cancelled,40
+G100000901549,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Badamsha wind farm,L100000901089,wind,operating,48
+G100000901572,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Baidibek wind farm,L100000901339,wind,cancelled,50
+G100000901573,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Baidibek-1 wind farm,L100000901340,wind,cancelled,120
+G100000901574,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Borovskaya wind farm,L100000901341,wind,cancelled,30
+G100000901575,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Esil wind farm,L100000901342,wind,cancelled,50
+G100000901576,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Fort Shevchenko 1 wind farm,L100000901343,wind,cancelled,20
+G100000901577,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Fort Shevchenko wind farm,L100000901344,wind,cancelled,50
+G100000901578,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Gulshat wind farm,L100000901345,wind,cancelled,50
+G100000901580,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kuryk wind farm,L100000901346,wind,cancelled,50
+G100000901581,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyzylorda wind farm,L100000901347,wind,cancelled,10
+G100000901582,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Saryagash wind farm,L100000901348,wind,cancelled,100
+G100000901583,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Shokpar wind farm,L100000901349,wind,operating,100
+G100000901584,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainshinsky wind farm,L100000901350,wind,cancelled,35
+G100000901585,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Yuzhshakhtostroy wind farm,L100000901351,wind,cancelled,75
+G100000904713,energy_plants_gem_units,KAZ,point,CHN,,,,,,,false,abf-boundaries-v0.2.0,Xinjiang Bozhou Alashankou (Longyuan) wind farm,L100000903794,wind,operating,50
+G100000920792,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Borey wind farm,L100000916740,wind,operating,100
+G100000920794,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Khromtau wind farm,L100000916741,wind,operating,155
+G100000920795,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Korday (Vetro Invest) wind farm,L100000916742,wind,operating,30.7
+G100000920796,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Korday (Vista International) wind farm,L100000916743,wind,operating,21
+G100000920797,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Makat wind farm,L100000916744,wind,shelved,48
+G100000920798,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Manash wind farm,L100000916745,wind,operating,52
+G100000920799,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirny wind farm,L100000916746,wind,announced,200
+G100000920800,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirny wind farm,L100000916746,wind,announced,800
+G100000927600,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jetisu wind farm,L100000922133,wind,announced,1000
+G100000927768,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhambyl wind farm,L100000922270,wind,pre_construction,500
+G100000927769,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhambyl wind farm,L100000922270,wind,announced,500
+G100001000229,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,announced,325
+G100001000356,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ust-Kamenogorsk-2 power station,L100001000152,coal,pre_construction,360
+G100001000645,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kazakhmys Balkhash power station,L100000102993,coal,operating,30
+G100001006108,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau Oil Refinery power station,L100001005175,oil/gas,pre_construction,154
+G100001006152,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Atyrau 2 power station,L100001005206,oil/gas,pre_construction,250
+G100001006162,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau CHP power station,L100000406900,oil/gas,operating,65
+G100001006268,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,GTPP-500 Uralsk power station,L100001005270,oil/gas,operating,100
+G100001006269,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,GTPP-500 Uralsk power station,L100001005270,oil/gas,pre_construction,132
+G100001006270,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,GTPP-500 Uralsk power station,L100001005270,oil/gas,pre_construction,132
+G100001006271,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,GTPP-500 Uralsk power station,L100001005270,oil/gas,pre_construction,132
+G100001006272,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Karachaganak power station,L100001005271,oil/gas,announced,200
+G100001006302,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Eni hybrid power station,L100001005295,oil/gas,construction,120
+G100001006306,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Taraz power station,L100001005298,oil/gas,pre_construction,200
+G100001006308,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyzylorda 2 power station,L100001005299,oil/gas,pre_construction,1100
+G100001006309,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Aktobe 2 power station,L100001005300,oil/gas,pre_construction,250
+G100001006310,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Aktobe 2 power station,L100001005300,oil/gas,announced,250
+G100001006494,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhezkazgan-2 power station,L100001005457,coal,announced,500
+G100001017876,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,oil/gas,construction,100
+G100001017880,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,oil/gas,construction,100
+G100001017881,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,oil/gas,construction,100
+G100001017883,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Rudny power station,L100000104564,oil/gas,cancelled,58
+G100001017884,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Rudny power station,L100000104564,oil/gas,cancelled,63
+G100001017885,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Rudny power station,L100000104564,oil/gas,cancelled,50
+G100001017886,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,oil/gas,shelved,60
+G100001017912,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,cancelled,80
+G100001017913,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,cancelled,80
+G100001017914,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,cancelled,80
+G100001017915,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,cancelled,50
+G100001017916,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,cancelled,110
+G100001017917,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-2 power station,L100000102976,oil/gas,cancelled,110
+G100001017928,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-1 power station,L100000104559,oil/gas,operating,60
+G100001017929,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-1 power station,L100000104559,oil/gas,operating,60
+G100001017950,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda-2 power station,L100000102981,oil/gas,construction,135
+G100001017970,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda Steel Works power station,L100000104562,oil/gas,construction,65
+G100001018023,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda Steel Works power station,L100000104562,oil/gas,construction,60
+G100001018024,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karaganda Steel Works power station,L100000104562,oil/gas,construction,60
+G100001018038,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,oil/gas,shelved,50
+G100001018040,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,oil/gas,shelved,50
+G100001018041,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,oil/gas,shelved,50
+G100001018288,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhanaozen solar farm,L100001016460,utility-scale solar,operating,50
+G100001018289,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One solar farm,L100001016462,utility-scale solar,announced,1600
+G100001018293,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One solar farm,L100001016462,utility-scale solar,announced,4900
+G100001018294,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One solar farm,L100001016462,utility-scale solar,announced,3500
+G100001018295,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One solar farm,L100001016462,utility-scale solar,announced,1800
+G100001018296,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One solar farm,L100001016462,utility-scale solar,announced,1300
+G100001018465,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhanaozen wind farm,L100001016587,wind,construction,77
+G100001018480,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One wind farm,L100001016589,wind,announced,4000
+G100001018481,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One wind farm,L100001016589,wind,announced,11000
+G100001018483,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One wind farm,L100001016589,wind,announced,5200
+G100001018484,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One wind farm,L100001016589,wind,announced,3700
+G100001018485,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyrasia One wind farm,L100001016589,wind,announced,3000
+G100001018509,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Golden Energy wind farm,L100001016622,wind,operating,30
+G100001018528,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,EcoWind wind farm,L100001016633,wind,announced,200
+G100001018529,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Shual wind farm,L100001016634,wind,announced,10
+G100001018530,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Neptune Wind wind farm,L100001016635,wind,pre_construction,90
+G100001028095,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Aksa Enerji Shymkent power station,L100001023561,oil/gas,pre_construction,500
+G100001028211,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Aktobe Generatsiya steel plant power station,L100001023589,oil/gas,shelved,85
+G100001028697,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shymkent Ordabasy District solar project,L100001024016,utility-scale solar,operating,2.9
+G100001031338,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kazakhmys Balkhash power station,L100000102993,coal,pre_construction,50
+G100001031365,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Stepnogorsk power station,L100000104985,coal,announced,30
+G100001048186,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Yelikti wind farm,L100001042856,wind,operating,18.2
+G100001048187,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Arkalyk (Aqmola) wind farm,L100001042857,wind,operating,7
+G100001048188,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Arkalyk (Aqmola) wind farm,L100001042857,wind,operating,10
+G100001048189,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Vostok Veter wind farm,L100001042858,wind,operating,10
+G100001048190,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Energo Trust wind farm,L100001042859,wind,operating,50
+G100001048191,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Sofievskaya wind farm,L100001042860,wind,operating,39
+G100001048192,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jasil Jel Energy wind farm,L100001042861,wind,operating,10
+G100001048193,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jasil Jel Energy wind farm,L100001042861,wind,operating,5
+G100001048194,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Dzhungarskiye Vorota wind farm,L100001042862,wind,operating,50
+G100001048195,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Arkalyk (Kostanay) wind farm,L100001042863,wind,operating,48
+G100001048196,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Sarkylmas Kuat wind farm,L100001042864,wind,operating,50
+G100001048197,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jambyl solar farm,L100001042865,utility-scale solar,operating,20
+G100001050646,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Varvarinskoye solar farm,L100001045051,utility-scale solar,announced,22.6
+G100001050647,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Damona solar farm,L100001045052,utility-scale solar,announced,100
+G100001051927,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aktobe Ferroalloy Plant power station,L100001046044,oil/gas,construction,80
+G100001052014,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Semipalatinsk hydroelectric plant,L100001046105,hydropower,pre_construction,300
+G100001052016,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Shulbi Stage 2 hydroelectric plant,L100001046107,hydropower,pre_construction,348
+G100001052019,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Almaty-1 power station,L100000104559,oil/gas,pre_construction,112.5
+G100001053234,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksu power station,L100000102986,coal,pre_construction,325
+G100001053240,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ekibastuz-3 power station,L100000104982,coal,pre_construction,660
+G100001053241,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ekibastuz-3 power station,L100000104982,coal,pre_construction,660
+G100001053292,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Sogrinsk power station,L100000104845,coal,announced,50
+G100001062153,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Astana Combined Cycle power station,L100001054307,oil/gas,pre_construction,500
+G100001062327,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jiangbuer power station,L100001054450,oil/gas,construction,50
+G100001062334,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jiangbuer power station,L100001054450,oil/gas,announced,150
+G100001062361,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atyrau CHP power station,L100000406900,oil/gas,announced,210
+G100001062363,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Atyrau 3 power station,L100001054479,oil/gas,pre_construction,250
+G100001062366,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Atyrau 4 power station,L100001054481,oil/gas,announced,500
+G100001062392,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Altaaqa Global Makat power station,L100001054505,oil/gas,operating,40
+G100001062394,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Altaaqa Global Makat power station,L100001054505,oil/gas,announced,39
+G100001062397,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Altaaqa Global Aktobe power station,L100001054507,oil/gas,operating,82.8
+G100001070690,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Aisha Kunshuak solar farm,L100000808652,utility-scale solar,operating,20
+G100001070701,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Alkhena solar farm,L100001061669,utility-scale solar,announced,20
+G100001070702,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Vigor Holding solar farm,L100001061670,utility-scale solar,announced,20
+G100001070703,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jetisu solar farm,L100001061671,utility-scale solar,announced,20
+G100001070705,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Dala solar farm,L100001061673,utility-scale solar,announced,20
+G100001070706,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Shetpe solar farm,L100001061675,utility-scale solar,pre_construction,20
+G100001070708,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Turkestan solar farm,L100001061676,utility-scale solar,announced,300
+G100001070712,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Turan wind energy wind farm,L100001061678,wind,announced,1000
+G100001070720,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Darmen Shuak wind farm,L100001061685,wind,announced,50
+G100001070721,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Next Green Energy wind farm,L100001061686,wind,announced,50
+G100001070722,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Argest wind farm,L100001061687,wind,announced,50
+G100001090354,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Shelek hydroelectric plant,L100001080443,hydropower,announced,70
+G100001090355,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Turgusun II hydroelectric plant,L100001080444,hydropower,announced,44
+G100001090852,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Osakarovka wind farm,L100001080879,wind,announced,150
+G100001090853,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ulytau wind farm,L100001080880,wind,announced,100
+G100001090983,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kurchatov power station,L100001080964,coal,announced,350
+G100001090984,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kurchatov power station,L100001080964,coal,announced,350
+G100001093869,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhambyl GRES power station,L100000406890,oil/gas,pre_construction,210
+G100001093894,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Astana WtE Ecopark power station,L100001083193,bioenergy,announced,50
+G100001093896,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Almaty WtE power station,L100001083195,bioenergy,announced,60
+G100001094039,energy_plants_gem_units,KAZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhezkazgan power station,L100000102983,coal,pre_construction,50
+G100001094311,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Semey-3 power station,L100000104983,coal,pre_construction,135
+G100001094312,energy_plants_gem_units,KAZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Semey-3 power station,L100000104983,coal,pre_construction,135

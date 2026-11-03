@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001006445,energy_plants_gem_tzsam_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo solar project I,L100001005408,utility-scale solar,operating,3.5
+G100001006446,energy_plants_gem_tzsam_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo solar project II,L100001005409,utility-scale solar,operating,10.6
+G100001006447,energy_plants_gem_tzsam_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo solar project III,L100001005410,utility-scale solar,operating,2.8
+G100001083689,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project I,L100001073903,utility-scale solar,operating,10.6
+G100001083693,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project II,L100001073907,utility-scale solar,operating,3.5
+G100001083695,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project III,L100001073909,utility-scale solar,operating,1.3
+G100001083710,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project IV,L100001073924,utility-scale solar,operating,2.8

@@ -1,0 +1,119 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100011,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Aboano power station,L100000101997,coal,cancelled,350
+G100000100012,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Aboano power station,L100000101997,coal,cancelled,350
+G100000100013,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Aboano power station,L100000101997,coal,cancelled,1400
+G100000200022,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tema W2E power station,L100000200020,bioenergy,pre_construction,60
+G100000201689,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Atebubu power station,L100000201403,bioenergy,shelved,60
+G100000407077,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Aboadze Rotan power station,L100000406745,oil/gas,pre_construction,300
+G100000407078,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Aboadze Rotan power station,L100000406745,oil/gas,announced,300
+G100000407079,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amandi power station,L100000406746,oil/gas,operating,203
+G100000407086,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bridge power station,L100000406748,oil/gas,operating,194
+G100000407087,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bridge power station,L100000406748,oil/gas,operating,200
+G100000407091,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghana 1000 power station,L100000406751,oil/gas,cancelled,750
+G100000407092,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghana 1000 power station,L100000406751,oil/gas,cancelled,550
+G100000407094,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kpone IPP (KIPP) power station,L100000406753,oil/gas,operating,350
+G100000407095,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kpone Thermal power plant,L100000406754,oil/gas,operating,110
+G100000407096,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kpone Thermal power plant,L100000406754,oil/gas,operating,110
+G100000407099,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sunon Asogli power station,L100000406757,oil/gas,operating,200
+G100000407100,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sunon Asogli power station,L100000406757,oil/gas,operating,360
+G100000407101,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Takoradi (TAPCO) 1 Thermal power plant,L100000406758,oil/gas,operating,330
+G100000407102,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Takoradi (TAPCO) 3 Thermal power plant,L100000406759,oil/gas,operating,132
+G100000407103,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Takoradi (TICO) Thermal power plant,L100000406760,oil/gas,operating,320
+G100000407104,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tema CENIT Thermal power plant (TCTPP),L100000406761,oil/gas,operating,110
+G100000407105,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tema Thermal Power Complex,L100000406762,oil/gas,operating,110
+G100000408641,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Karpowership (Ghana) Osman Khan power station,L100000407150,oil/gas,operating,450
+G100000410017,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tema Thermal Power Complex,L100000406762,oil/gas,operating,80
+G100000413980,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Aksa Ghana HFO power plant,L100000409168,oil/gas,operating,370
+G100000601767,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Akosombo hydroelectric plant,L100000601748,hydropower,operating,1020
+G100000601768,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui hydroelectric plant,L100000601749,hydropower,operating,404
+G100000601769,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Juale hydroelectric plant,L100000601750,hydropower,announced,90
+G100000601770,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kpong hydroelectric plant,L100000601751,hydropower,operating,160
+G100000800077,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Blue Power Energy solar farm,L100000800059,utility-scale solar,operating,100
+G100000800079,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bodi solar farm,L100000800061,utility-scale solar,cancelled,50
+G100000800088,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui Floating solar farm,L100000800070,utility-scale solar,operating,50
+G100000800089,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui Floating solar farm,L100000800070,utility-scale solar,cancelled,50
+G100000800090,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui Floating solar farm,L100000800070,utility-scale solar,cancelled,50
+G100000800091,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui Floating solar farm,L100000800070,utility-scale solar,cancelled,50
+G100000800092,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui Floating solar farm,L100000800070,utility-scale solar,cancelled,50
+G100000800096,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bxc Solar Power Station,L100000800074,utility-scale solar,operating,20
+G100000800159,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gomoa Onyadze solar farm,L100000800123,utility-scale solar,operating,20
+G100000800182,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Jema solar farm,L100000800143,utility-scale solar,cancelled,70
+G100000800231,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kusawgu solar farm,L100000800186,utility-scale solar,shelved,400
+G100000800246,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mahe-Obomshai solar farm,L100000800201,utility-scale solar,shelved,30
+G100000800270,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nabogu solar farm,L100000800224,utility-scale solar,shelved,40
+G100000800273,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nante Solar Energy Project,L100000800227,utility-scale solar,shelved,20
+G100000800306,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nyimbale-Sankana Solar Power Farm,L100000800254,utility-scale solar,cancelled,100
+G100000800307,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nzema solar farm,L100000800255,utility-scale solar,cancelled,155
+G100000800317,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Prampram solar farm,L100000800265,utility-scale solar,shelved,157
+G100000800319,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pwalugu Solar Component,L100000800267,utility-scale solar,shelved,50
+G100000800335,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sede solar farm,L100000800283,utility-scale solar,shelved,100
+G100000800354,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Siginik Solar PV Farm,L100000800300,utility-scale solar,cancelled,50
+G100000800388,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamale solar farm,L100000800318,utility-scale solar,cancelled,20
+G100000800390,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tampion solar farm,L100000800320,utility-scale solar,shelved,100
+G100000800399,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tilli solar farm,L100000800328,utility-scale solar,cancelled,20
+G100000814120,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,operating,50
+G100000814121,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,announced,30
+G100000814122,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,announced,30
+G100000814123,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,announced,30
+G100000814124,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,announced,30
+G100000814125,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,announced,30
+G100000814126,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,announced,30
+G100000814127,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bui solar farm,L100000811606,utility-scale solar,announced,30
+G100000814128,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,construction,100
+G100000814129,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,construction,100
+G100000814130,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814131,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814132,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814133,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814134,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814135,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814136,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814137,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814138,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000814139,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghana Meinergy solar project,L100000811607,utility-scale solar,announced,80
+G100000831165,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bui Hydro Dam solar farm,L100000827637,utility-scale solar,operating,5
+G100000831166,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bui Hydro Dam solar farm,L100000827637,utility-scale solar,announced,60
+G100000831167,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dagbon solar farm,L100000827638,utility-scale solar,operating,50
+G100000831168,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Gushie Solar Power Project,L100000827639,utility-scale solar,shelved,20
+G100000831169,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaleo solar project,L100000827640,utility-scale solar,operating,13
+G100000831170,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lawra solar project,L100000827641,utility-scale solar,operating,6.5
+G100000900019,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Windstar (Ghana) wind farm,L100000900017,wind,shelved,50
+G100000900115,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Osudoku Wind Project,L100000900090,wind,shelved,70
+G100000900142,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Amlakpo wind farm,L100000900109,wind,pre_construction,200
+G100000900143,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Koluedor wind farm,L100000900110,wind,cancelled,160
+G100000900144,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Madavunu wind farm,L100000900111,wind,pre_construction,200
+G100000900145,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Togbloku wind farm,L100000900112,wind,pre_construction,280
+G100000900146,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Konikablo wind farm,L100000900113,wind,shelved,250
+G100000900147,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ayitepa wind farm,L100000900114,wind,pre_construction,150
+G100000900148,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ayitepa wind farm,L100000900114,wind,pre_construction,75
+G100000927403,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Anloga (VRA) wind farm,L100000921993,wind,cancelled,76
+G100000927404,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Wokumagbe and Goi wind farm,L100000921994,wind,cancelled,76.5
+G100001018531,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaleo solar project,L100000827640,utility-scale solar,operating,15
+G100001018532,energy_plants_gem_units,GHA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tema Freezone rooftop solar,L100001016636,utility-scale solar,operating,16.8
+G100001051947,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tanoso hydroelectric plant,L100001046057,hydropower,pre_construction,86
+G100001051949,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Awisam hydroelectric plant,L100001046058,hydropower,pre_construction,60
+G100001051950,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Pwalugu hydroelectric plant,L100001046059,hydropower,pre_construction,60
+G100001053816,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Marsi power station,L100001047322,bioenergy,shelved,300
+G100001055166,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,1200
+G100001055168,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055169,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055170,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055171,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055172,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055173,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055174,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055175,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055176,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055177,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055178,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001055179,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nsuban nuclear power plant,L100001048150,nuclear,pre_construction,77
+G100001072748,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Norbert Anku solar park,L100001063323,utility-scale solar,construction,100
+G100001072749,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Norbert Anku solar park,L100001063323,utility-scale solar,announced,100
+G100001072750,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Norbert Anku solar park,L100001063323,utility-scale solar,announced,800
+G100001072752,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bole Solar PV Park,L100001063325,utility-scale solar,announced,250
+G100001072754,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tianjin Power Ghana solar farm,L100001063326,utility-scale solar,pre_construction,130
+G100001072756,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sege solar farm,L100001063329,utility-scale solar,pre_construction,130
+G100001090867,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dawa Industrial Park solar farm,L100001080892,utility-scale solar,pre_construction,200
+G100001090868,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dawa Industrial Park solar farm,L100001080892,utility-scale solar,announced,800
+G100001092060,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Daboya hydroelectric plant,L100001081774,hydropower,announced,96
+G100001093289,energy_plants_gem_units,GHA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kumasi power station,L100001082787,oil/gas,operating,350

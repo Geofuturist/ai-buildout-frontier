@@ -1,0 +1,31 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000102517,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Dushanbe-2 power station,L100000103559,coal,operating,50
+G100000102518,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Dushanbe-2 power station,L100000103559,coal,operating,50
+G100000109336,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Shurab power station,L100000103560,coal,cancelled,300
+G100000113809,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Dushanbe-2 power station,L100000103559,coal,operating,150
+G100000113810,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Dushanbe-2 power station,L100000103559,coal,operating,150
+G100000113811,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Rasht power station,L100000104435,coal,cancelled,175
+G100000113812,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Rasht power station,L100000104435,coal,cancelled,175
+G100000407437,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Yavan power station,L100000406887,oil/gas,operating,60
+G100000407438,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Yavan power station,L100000406887,oil/gas,operating,60
+G100000407440,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Dushanbe-1 power station,L100000406888,oil/gas,operating,86
+G100000603582,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Yovon hydroelectric plant,L100000603547,hydropower,construction,160
+G100000603583,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Baipaza hydroelectric plant,L100000603548,hydropower,operating,600
+G100000603584,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Fandaryo hydroelectric plant,L100000603549,hydropower,construction,135
+G100000603585,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Kairakkum hydroelectric plant,L100000603550,hydropower,operating,174
+G100000603586,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Nurek hydroelectric plant,L100000603551,hydropower,operating,2700
+G100000603587,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Nurobod-1 hydroelectric plant,L100000603552,hydropower,announced,200
+G100000603588,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Nurobod-2 hydroelectric plant,L100000603553,hydropower,announced,160
+G100000603589,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Rogun hydroelectric plant,L100000603554,hydropower,operating,1200
+G100000603590,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Sangtuda-1 hydroelectric plant,L100000603555,hydropower,operating,670
+G100000603591,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Sangtuda-2 hydroelectric plant,L100000603556,hydropower,operating,220
+G100000603592,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Sanobod hydroelectric plant,L100000603557,hydropower,pre_construction,200
+G100000603593,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Sarband hydroelectric plant,L100000603558,hydropower,operating,240
+G100000603594,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Shurob hydroelectric plant,L100000603559,hydropower,announced,850
+G100000604146,energy_plants_gem_units,TJK,point,UZB,,,,,,,false,abf-boundaries-v0.2.0,Farkhad hydroelectric plant,L100000604107,hydropower,operating,127
+G100001000791,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Fon-Yagnob power station,L100001000509,coal,shelved,600
+G100001018354,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Panj solar farm,L100001016506,utility-scale solar,announced,200
+G100001051929,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Rogun hydroelectric plant,L100000603554,hydropower,construction,2400
+G100001070746,energy_plants_gem_units,TJK,point,KGZ,,,,,,,true,abf-boundaries-v0.2.0,Ak-Tatyr solar farm,L100001061705,utility-scale solar,announced,600
+G100001090162,energy_plants_gem_units,TJK,point,,,,,,,,false,abf-boundaries-v0.2.0,Sharshara hydroelectric plant,L100001080275,hydropower,operating,30
+G100001090794,energy_plants_gem_units,TJK,point,,,,,,,,true,abf-boundaries-v0.2.0,Sughd (China Datang) solar farm,L100001080839,utility-scale solar,announced,500

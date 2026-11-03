@@ -1,0 +1,442 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001007669,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Urziceni solar project,L100001006520,utility-scale solar,operating,12
+G100001007671,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Bradu solar project,L100001006522,utility-scale solar,operating,8.1
+G100001007672,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Lechința solar project,L100001006523,utility-scale solar,operating,15.8
+G100001007673,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Maxineni solar project,L100001006524,utility-scale solar,operating,8.1
+G100001007674,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Ucea de Sus E solar project,L100001006525,utility-scale solar,operating,14.2
+G100001007675,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Fundulea solar project,L100001006526,utility-scale solar,operating,5.7
+G100001007676,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Lehliu 3 solar project,L100001006527,utility-scale solar,operating,19.8
+G100001007677,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Modelu solar project,L100001006528,utility-scale solar,operating,5.2
+G100001007678,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj N solar project,L100001006529,utility-scale solar,operating,5.5
+G100001007679,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj S solar project,L100001006530,utility-scale solar,operating,7
+G100001007680,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Butimanu solar project,L100001006531,utility-scale solar,operating,8.5
+G100001007681,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Costestii din Vale solar project,L100001006532,utility-scale solar,operating,9.5
+G100001007683,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Şimnicu de Sus solar project,L100001006534,utility-scale solar,operating,8.6
+G100001007686,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Stanesti solar project,L100001006537,utility-scale solar,operating,9
+G100001007687,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Vieru solar project,L100001006538,utility-scale solar,operating,9
+G100001007689,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Cristuru Secuiesc solar project,L100001006540,utility-scale solar,operating,11
+G100001007690,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Coșereni A solar project,L100001006541,utility-scale solar,operating,8
+G100001007691,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Fierbinti solar project,L100001006542,utility-scale solar,operating,12.7
+G100001007695,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Darvari solar project,L100001006546,utility-scale solar,operating,7.5
+G100001007696,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Dumbrava solar project,L100001006547,utility-scale solar,operating,7.6
+G100001007697,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Păuleşti solar project,L100001006548,utility-scale solar,operating,10.7
+G100001007698,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Ploiesti solar project,L100001006549,utility-scale solar,operating,12.9
+G100001007699,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Doba solar project,L100001006550,utility-scale solar,operating,8.1
+G100001007700,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Mavrodin solar project,L100001006551,utility-scale solar,operating,9.1
+G100001007702,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Isaccea solar project,L100001006553,utility-scale solar,operating,9.9
+G100001007703,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Balcesti solar project,L100001006554,utility-scale solar,operating,15.6
+G100001007704,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project I,L100001006555,utility-scale solar,operating,4.5
+G100001007705,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project I,L100001006556,utility-scale solar,operating,7.7
+G100001007706,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project I,L100001006557,utility-scale solar,operating,9.2
+G100001007707,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project I,L100001006558,utility-scale solar,operating,3.7
+G100001007708,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project I,L100001006559,utility-scale solar,operating,12.2
+G100001007709,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project II,L100001006560,utility-scale solar,operating,7.7
+G100001007710,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project II,L100001006561,utility-scale solar,operating,17.4
+G100001007712,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project I,L100001006563,utility-scale solar,operating,17.4
+G100001007713,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project II,L100001006564,utility-scale solar,operating,10.4
+G100001007714,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Dej Cluj solar project I,L100001006565,utility-scale solar,operating,5.8
+G100001007715,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project I,L100001006566,utility-scale solar,operating,7.5
+G100001007717,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Constanța solar project I,L100001006568,utility-scale solar,operating,2.2
+G100001007718,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project II,L100001006569,utility-scale solar,operating,7.8
+G100001007720,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project I,L100001006571,utility-scale solar,operating,6.9
+G100001007721,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project I,L100001006572,utility-scale solar,operating,3.4
+G100001007722,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project III,L100001006573,utility-scale solar,operating,5.1
+G100001007723,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project I,L100001006574,utility-scale solar,operating,3.6
+G100001007724,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project II,L100001006575,utility-scale solar,operating,5.7
+G100001007725,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project II,L100001006576,utility-scale solar,operating,11.6
+G100001007726,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project III,L100001006577,utility-scale solar,operating,7.6
+G100001007727,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project III,L100001006578,utility-scale solar,operating,2.6
+G100001007729,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project IV,L100001006580,utility-scale solar,operating,6.4
+G100001007730,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project IV,L100001006581,utility-scale solar,operating,9.8
+G100001007731,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Dej Cluj solar project II,L100001006582,utility-scale solar,operating,8
+G100001007732,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project V,L100001006583,utility-scale solar,operating,8.3
+G100001007733,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project I,L100001006584,utility-scale solar,operating,3.8
+G100001007734,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița-Năsăud solar project I,L100001006585,utility-scale solar,operating,8.1
+G100001007735,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project IV,L100001006586,utility-scale solar,operating,5.9
+G100001007736,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project I,L100001006587,utility-scale solar,operating,4.3
+G100001007737,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project I,L100001006588,utility-scale solar,operating,3.5
+G100001007738,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project VI,L100001006589,utility-scale solar,operating,2.6
+G100001007739,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project V,L100001006590,utility-scale solar,operating,4.2
+G100001007740,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project III,L100001006591,utility-scale solar,operating,3.5
+G100001007741,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project I,L100001006592,utility-scale solar,operating,6.2
+G100001007742,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SJ,,point,,,,false,abf-boundaries-v0.2.0,Sălaj solar project,L100001006593,utility-scale solar,operating,4.8
+G100001007743,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project II,L100001006594,utility-scale solar,operating,6.3
+G100001007744,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project III,L100001006595,utility-scale solar,operating,6.8
+G100001007745,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project III,L100001006596,utility-scale solar,operating,2.7
+G100001007746,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project III,L100001006597,utility-scale solar,operating,15.5
+G100001007747,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project IV,L100001006598,utility-scale solar,operating,4.9
+G100001007748,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Constanța solar project II,L100001006599,utility-scale solar,operating,3.7
+G100001007749,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project IV,L100001006600,utility-scale solar,operating,11
+G100001007750,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project VI,L100001006601,utility-scale solar,operating,3.8
+G100001007751,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CV,,point,,,,false,abf-boundaries-v0.2.0,Covasna solar project,L100001006602,utility-scale solar,operating,3.4
+G100001007752,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VN,,point,,,,false,abf-boundaries-v0.2.0,Vrancea solar project I,L100001006603,utility-scale solar,operating,3.3
+G100001007753,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Băilești Dolj solar project I,L100001006604,utility-scale solar,operating,13.9
+G100001007754,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project II,L100001006605,utility-scale solar,operating,4
+G100001007755,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project II,L100001006606,utility-scale solar,operating,2.6
+G100001007756,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project VII,L100001006607,utility-scale solar,operating,5.6
+G100001007757,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project VII,L100001006608,utility-scale solar,operating,3.9
+G100001007758,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VN,,point,,,,false,abf-boundaries-v0.2.0,Vrancea solar project II,L100001006609,utility-scale solar,operating,3
+G100001007759,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project II,L100001006610,utility-scale solar,operating,3.3
+G100001007760,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project III,L100001006611,utility-scale solar,operating,3.5
+G100001007761,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project IV,L100001006612,utility-scale solar,operating,19.2
+G100001007762,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Roșiorii De Vede Teleorman solar project I,L100001006613,utility-scale solar,operating,9.4
+G100001007763,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project I,L100001006614,utility-scale solar,operating,4.3
+G100001007764,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project IV,L100001006615,utility-scale solar,operating,15.7
+G100001007765,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project V,L100001006616,utility-scale solar,operating,4.5
+G100001007766,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project IV,L100001006617,utility-scale solar,operating,6.6
+G100001007767,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project V,L100001006618,utility-scale solar,operating,3.6
+G100001007768,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project V,L100001006619,utility-scale solar,operating,4.3
+G100001007769,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project V,L100001006620,utility-scale solar,operating,3.4
+G100001007770,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project VI,L100001006621,utility-scale solar,operating,2.8
+G100001007771,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project VI,L100001006622,utility-scale solar,operating,5.1
+G100001007772,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project III,L100001006623,utility-scale solar,operating,5
+G100001007773,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project VI,L100001006624,utility-scale solar,operating,9.3
+G100001007774,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project II,L100001006625,utility-scale solar,operating,3.8
+G100001007775,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project VII,L100001006626,utility-scale solar,operating,8.1
+G100001007777,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project II,L100001006628,utility-scale solar,operating,6.7
+G100001007778,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project VII,L100001006629,utility-scale solar,operating,3.9
+G100001007779,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project II,L100001006630,utility-scale solar,operating,3.1
+G100001007780,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project II,L100001006631,utility-scale solar,operating,2.8
+G100001007781,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project VIII,L100001006632,utility-scale solar,operating,6.2
+G100001007782,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Codlea Brașov solar project,L100001006633,utility-scale solar,operating,3.6
+G100001007783,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Tulcea solar project I,L100001006634,utility-scale solar,operating,6.8
+G100001007784,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BT,,point,,,,false,abf-boundaries-v0.2.0,Botoșani solar project,L100001006635,utility-scale solar,operating,5.3
+G100001007785,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project II,L100001006636,utility-scale solar,operating,8.2
+G100001007786,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project IX,L100001006637,utility-scale solar,operating,4.2
+G100001007787,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project III,L100001006638,utility-scale solar,operating,3.8
+G100001007788,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Buzău solar project I,L100001006639,utility-scale solar,operating,6.5
+G100001007789,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project VII,L100001006640,utility-scale solar,operating,6.6
+G100001007790,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project IV,L100001006641,utility-scale solar,operating,4.1
+G100001007791,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project IV,L100001006642,utility-scale solar,operating,7.7
+G100001007793,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project I,L100001006644,utility-scale solar,operating,4.1
+G100001007794,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project III,L100001006645,utility-scale solar,operating,4.7
+G100001007795,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project V,L100001006646,utility-scale solar,operating,4.4
+G100001007796,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VN,,point,,,,false,abf-boundaries-v0.2.0,Vrancea solar project III,L100001006647,utility-scale solar,operating,7.9
+G100001007797,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project V,L100001006648,utility-scale solar,operating,4.9
+G100001007798,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project V,L100001006649,utility-scale solar,operating,8.3
+G100001007799,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project VIII,L100001006650,utility-scale solar,operating,6.4
+G100001007801,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project IV,L100001006652,utility-scale solar,operating,3.7
+G100001007802,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project III,L100001006653,utility-scale solar,operating,13.7
+G100001007803,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project V,L100001006654,utility-scale solar,operating,4.5
+G100001007804,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Sebeș Alba solar project I,L100001006655,utility-scale solar,operating,2.9
+G100001007805,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project III,L100001006656,utility-scale solar,operating,12.5
+G100001007806,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project VI,L100001006657,utility-scale solar,operating,3.9
+G100001007807,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project V,L100001006658,utility-scale solar,operating,10.9
+G100001007808,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project VII,L100001006659,utility-scale solar,operating,6.9
+G100001007809,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project IX,L100001006660,utility-scale solar,operating,9
+G100001007810,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project X,L100001006661,utility-scale solar,operating,4.2
+G100001007811,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project VIII,L100001006662,utility-scale solar,operating,4.1
+G100001007812,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project VI,L100001006663,utility-scale solar,operating,3.9
+G100001007813,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project IV,L100001006664,utility-scale solar,operating,5.3
+G100001007814,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project IX,L100001006665,utility-scale solar,operating,4.6
+G100001007815,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Reghin Mureș solar project,L100001006666,utility-scale solar,operating,3.1
+G100001007816,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project X,L100001006667,utility-scale solar,operating,5.3
+G100001007817,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project I,L100001006668,utility-scale solar,operating,3.3
+G100001007818,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project VI,L100001006669,utility-scale solar,operating,3.1
+G100001007820,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project VII,L100001006671,utility-scale solar,operating,3.4
+G100001007821,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XI,L100001006672,utility-scale solar,operating,5.9
+G100001007823,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project III,L100001006674,utility-scale solar,operating,6.7
+G100001007825,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XII,L100001006676,utility-scale solar,operating,4.1
+G100001007826,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project I,L100001006677,utility-scale solar,operating,1.4
+G100001007827,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project VII,L100001006678,utility-scale solar,operating,8.4
+G100001007828,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project IX,L100001006679,utility-scale solar,operating,3.9
+G100001007829,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project III,L100001006680,utility-scale solar,operating,4.3
+G100001007830,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project VII,L100001006681,utility-scale solar,operating,3.1
+G100001007831,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project IX,L100001006682,utility-scale solar,operating,4.6
+G100001007832,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project VIII,L100001006683,utility-scale solar,operating,2.7
+G100001007833,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MM,,point,,,,false,abf-boundaries-v0.2.0,Maramureș solar project I,L100001006684,utility-scale solar,operating,5.6
+G100001007834,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project II,L100001006685,utility-scale solar,operating,3.1
+G100001007835,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MM,,point,,,,false,abf-boundaries-v0.2.0,Maramureș solar project II,L100001006686,utility-scale solar,operating,6.3
+G100001007836,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CV,,point,,,,false,abf-boundaries-v0.2.0,Sfântu Gheorghe Covasna solar project,L100001006687,utility-scale solar,operating,4.9
+G100001007837,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Buzău solar project II,L100001006688,utility-scale solar,operating,1.9
+G100001007838,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project X,L100001006689,utility-scale solar,operating,2
+G100001007840,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project X,L100001006691,utility-scale solar,operating,3.4
+G100001007841,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Ialomița solar project,L100001006692,utility-scale solar,operating,2.1
+G100001007842,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project VI,L100001006693,utility-scale solar,operating,4.7
+G100001007844,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Slatina Olt solar project,L100001006695,utility-scale solar,operating,1.9
+G100001007845,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XI,L100001006696,utility-scale solar,operating,3.1
+G100001007846,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project VIII,L100001006697,utility-scale solar,operating,2.1
+G100001007847,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița-Năsăud solar project II,L100001006698,utility-scale solar,operating,5
+G100001007848,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project X,L100001006699,utility-scale solar,operating,3.4
+G100001007849,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Roșiorii De Vede Teleorman solar project III,L100001006700,utility-scale solar,operating,5.3
+G100001007850,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Constanța solar project III,L100001006701,utility-scale solar,operating,1.7
+G100001007851,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Salonta Bihor solar project I,L100001006702,utility-scale solar,operating,4.1
+G100001007852,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XI,L100001006703,utility-scale solar,operating,7.8
+G100001007853,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project IX,L100001006704,utility-scale solar,operating,14.6
+G100001007854,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project IV,L100001006705,utility-scale solar,operating,2.4
+G100001007855,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project VII,L100001006706,utility-scale solar,operating,3.7
+G100001007856,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Slobozia Ialomița solar project,L100001006707,utility-scale solar,operating,3.2
+G100001007857,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Turnu Măgurele Teleorman solar project,L100001006708,utility-scale solar,operating,3.4
+G100001007858,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project II,L100001006709,utility-scale solar,operating,2.1
+G100001007860,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project III,L100001006711,utility-scale solar,operating,1.8
+G100001007861,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Tulcea solar project II,L100001006712,utility-scale solar,operating,2.7
+G100001007862,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project II,L100001006713,utility-scale solar,operating,7.3
+G100001007863,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project IX,L100001006714,utility-scale solar,operating,2.7
+G100001007864,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project IX,L100001006715,utility-scale solar,operating,10
+G100001007865,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project V,L100001006716,utility-scale solar,operating,4.9
+G100001007866,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Salonta Bihor solar project II,L100001006717,utility-scale solar,operating,6.8
+G100001007867,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project III,L100001006718,utility-scale solar,operating,5.6
+G100001007869,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project I,L100001006720,utility-scale solar,operating,6.7
+G100001007870,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project VIII,L100001006721,utility-scale solar,operating,5.8
+G100001007871,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project IX,L100001006722,utility-scale solar,operating,11.7
+G100001007872,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project IV,L100001006723,utility-scale solar,operating,1.6
+G100001007873,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XII,L100001006724,utility-scale solar,operating,14.7
+G100001007874,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project IV,L100001006725,utility-scale solar,operating,9.1
+G100001007875,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XIII,L100001006726,utility-scale solar,operating,3.3
+G100001007876,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project V,L100001006727,utility-scale solar,operating,2.1
+G100001007877,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project X,L100001006728,utility-scale solar,operating,4.1
+G100001007878,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project V,L100001006729,utility-scale solar,operating,5.9
+G100001007879,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project IX,L100001006730,utility-scale solar,operating,1.8
+G100001007880,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project X,L100001006731,utility-scale solar,operating,4.2
+G100001007882,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XII,L100001006733,utility-scale solar,operating,4.8
+G100001007883,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Buzău solar project III,L100001006734,utility-scale solar,operating,6.3
+G100001007884,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Mehedinți solar project II,L100001006735,utility-scale solar,operating,15.7
+G100001007885,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project VI,L100001006736,utility-scale solar,operating,8.2
+G100001007886,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XIV,L100001006737,utility-scale solar,operating,17.2
+G100001007888,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XIV,L100001006739,utility-scale solar,operating,4.7
+G100001007889,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project VI,L100001006740,utility-scale solar,operating,4.5
+G100001007890,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XIII,L100001006741,utility-scale solar,operating,1.9
+G100001007891,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XIV,L100001006742,utility-scale solar,operating,1.9
+G100001007893,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XVI,L100001006744,utility-scale solar,operating,5.7
+G100001007894,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project X,L100001006745,utility-scale solar,operating,3
+G100001007895,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XI,L100001006746,utility-scale solar,operating,2.2
+G100001007896,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Mehedinți solar project IV,L100001006747,utility-scale solar,operating,2.8
+G100001007897,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project IV,L100001006748,utility-scale solar,operating,5.5
+G100001007898,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Sebeș Alba solar project II,L100001006749,utility-scale solar,operating,4.9
+G100001007899,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Caracal Olt solar project,L100001006750,utility-scale solar,operating,17.8
+G100001007900,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project IV,L100001006751,utility-scale solar,operating,2.7
+G100001007901,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project VII,L100001006752,utility-scale solar,operating,5.5
+G100001007902,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project II,L100001006753,utility-scale solar,operating,18.5
+G100001007904,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XV,L100001006755,utility-scale solar,operating,2.5
+G100001007905,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Ilfov solar project,L100001006756,utility-scale solar,operating,2.7
+G100001007906,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XV,L100001006757,utility-scale solar,operating,8.2
+G100001007908,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project V,L100001006759,utility-scale solar,operating,1.8
+G100001007909,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Buzău solar project IV,L100001006760,utility-scale solar,operating,2.1
+G100001007910,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Bacău solar project,L100001006761,utility-scale solar,operating,13.8
+G100001007911,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project X,L100001006762,utility-scale solar,operating,3.4
+G100001007914,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project VI,L100001006765,utility-scale solar,operating,19.5
+G100001007915,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Alexandria Teleorman solar project,L100001006766,utility-scale solar,operating,18
+G100001007916,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project XI,L100001006767,utility-scale solar,operating,3.3
+G100001007917,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Mehedinți solar project V,L100001006768,utility-scale solar,operating,14.4
+G100001007918,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project X,L100001006769,utility-scale solar,operating,8.5
+G100001007919,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project III,L100001006770,utility-scale solar,operating,9.8
+G100001007920,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XVII,L100001006771,utility-scale solar,operating,8.8
+G100001007921,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project VI,L100001006772,utility-scale solar,operating,7.7
+G100001007923,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XVI,L100001006774,utility-scale solar,operating,4.8
+G100001007924,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XVII,L100001006775,utility-scale solar,operating,4.1
+G100001007925,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XIII,L100001006776,utility-scale solar,operating,3.7
+G100001007927,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Harghita solar project,L100001006778,utility-scale solar,operating,5.3
+G100001007928,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XI,L100001006779,utility-scale solar,operating,5.2
+G100001007930,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project VIII,L100001006781,utility-scale solar,operating,10.7
+G100001007931,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XVIII,L100001006782,utility-scale solar,operating,3.9
+G100001007932,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XIX,L100001006783,utility-scale solar,operating,5.6
+G100001007933,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița-Năsăud solar project III,L100001006784,utility-scale solar,operating,2.6
+G100001007934,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XVII,L100001006785,utility-scale solar,operating,11.6
+G100001007935,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XX,L100001006786,utility-scale solar,operating,2.8
+G100001007936,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project VII,L100001006787,utility-scale solar,operating,3.3
+G100001007937,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project V,L100001006788,utility-scale solar,operating,5
+G100001007939,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Roșiorii De Vede Teleorman solar project IV,L100001006790,utility-scale solar,operating,6
+G100001059640,energy_plants_gem_tzsam_units,ROU,point,HUN,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Békés solar project XXXV,L100001051846,utility-scale solar,operating,1.2
+G100001059874,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project XII,L100001052080,utility-scale solar,operating,5.6
+G100001059875,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brasov Brașov solar project,L100001052081,utility-scale solar,operating,15.2
+G100001059876,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CV,,point,,,,false,abf-boundaries-v0.2.0,Sfântu Gheorghe Covasna solar project I,L100001052082,utility-scale solar,operating,3.9
+G100001059877,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project III,L100001052083,utility-scale solar,operating,1.6
+G100001059878,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița-Năsăud solar project IV,L100001052084,utility-scale solar,operating,2.5
+G100001059879,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XVIII,L100001052085,utility-scale solar,operating,6.3
+G100001059880,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XI,L100001052086,utility-scale solar,operating,1.9
+G100001059881,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Constanța solar project IV,L100001052087,utility-scale solar,operating,4.6
+G100001059883,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XIX,L100001052089,utility-scale solar,operating,2.7
+G100001059884,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Harghita solar project I,L100001052090,utility-scale solar,operating,1.3
+G100001059885,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Slobozia Ialomița solar project I,L100001052091,utility-scale solar,operating,1.2
+G100001059886,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project IV,L100001052092,utility-scale solar,operating,2.8
+G100001059887,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project XI,L100001052093,utility-scale solar,operating,3.7
+G100001059888,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project VI,L100001052094,utility-scale solar,operating,1.3
+G100001059889,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project IV,L100001052095,utility-scale solar,operating,2
+G100001059890,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XI,L100001052096,utility-scale solar,operating,5
+G100001059891,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alba solar project I,L100001052097,utility-scale solar,operating,1.1
+G100001059892,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XII,L100001052098,utility-scale solar,operating,1
+G100001059893,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project V,L100001052099,utility-scale solar,operating,2.6
+G100001059894,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project V,L100001052100,utility-scale solar,operating,3
+G100001059895,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Sighișoara Mureș solar project I,L100001052101,utility-scale solar,operating,1
+G100001059896,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița-Năsăud solar project V,L100001052102,utility-scale solar,operating,2.2
+G100001059897,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Buzău solar project V,L100001052103,utility-scale solar,operating,2.3
+G100001059898,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project VIII,L100001052104,utility-scale solar,operating,4.4
+G100001059899,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Mehedinți solar project VI,L100001052105,utility-scale solar,operating,4.9
+G100001059900,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXI,L100001052106,utility-scale solar,operating,1
+G100001059901,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SV,,point,,,,false,abf-boundaries-v0.2.0,Suceava solar project,L100001052107,utility-scale solar,operating,2
+G100001059902,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project IX,L100001052108,utility-scale solar,operating,11.9
+G100001059903,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project VIII,L100001052109,utility-scale solar,operating,1.2
+G100001059904,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Hunedoara solar project I,L100001052110,utility-scale solar,operating,1.3
+G100001059905,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XVIII,L100001052111,utility-scale solar,operating,3.7
+G100001059907,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XIII,L100001052113,utility-scale solar,operating,1
+G100001059908,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XII,L100001052114,utility-scale solar,operating,7
+G100001059909,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iași solar project I,L100001052115,utility-scale solar,operating,2.2
+G100001059910,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project XIII,L100001052116,utility-scale solar,operating,4.2
+G100001059911,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XX,L100001052117,utility-scale solar,operating,1.1
+G100001059912,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XXI,L100001052118,utility-scale solar,operating,2
+G100001059913,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project IX,L100001052119,utility-scale solar,operating,2.1
+G100001059914,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Medgidia Constanța solar project,L100001052120,utility-scale solar,operating,1.7
+G100001059915,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XIV,L100001052121,utility-scale solar,operating,3.5
+G100001059916,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Sebeș Alba solar project III,L100001052122,utility-scale solar,operating,1.3
+G100001059917,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Carei Satu Mare solar project,L100001052123,utility-scale solar,operating,1.3
+G100001059918,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iași solar project II,L100001052124,utility-scale solar,operating,2.4
+G100001059919,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BT,,point,,,,false,abf-boundaries-v0.2.0,Botoșani solar project I,L100001052125,utility-scale solar,operating,1
+G100001059922,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project IV,L100001052128,utility-scale solar,operating,2.1
+G100001059923,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Constanța solar project V,L100001052129,utility-scale solar,operating,1
+G100001059924,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project VI,L100001052130,utility-scale solar,operating,10.9
+G100001059925,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project VI,L100001052131,utility-scale solar,operating,1.2
+G100001059926,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project V,L100001052132,utility-scale solar,operating,3.3
+G100001059927,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XII,L100001052133,utility-scale solar,operating,2.1
+G100001059928,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXII,L100001052134,utility-scale solar,operating,4
+G100001059929,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project VII,L100001052135,utility-scale solar,operating,2
+G100001059930,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Sighișoara Mureș solar project II,L100001052136,utility-scale solar,operating,2.5
+G100001059931,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project VIII,L100001052137,utility-scale solar,operating,3.3
+G100001059932,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alba solar project II,L100001052138,utility-scale solar,operating,1.2
+G100001059934,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XIV,L100001052140,utility-scale solar,operating,1.1
+G100001059935,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project XII,L100001052141,utility-scale solar,operating,6.3
+G100001059936,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project VII,L100001052142,utility-scale solar,operating,2
+G100001059938,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest solar project II,L100001052144,utility-scale solar,operating,3.2
+G100001059939,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project VIII,L100001052145,utility-scale solar,operating,2.3
+G100001059940,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project IX,L100001052146,utility-scale solar,operating,17.7
+G100001059941,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project V,L100001052147,utility-scale solar,operating,1.5
+G100001059942,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XV,L100001052148,utility-scale solar,operating,4.4
+G100001059943,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Tulcea solar project III,L100001052149,utility-scale solar,operating,1.2
+G100001059944,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project X,L100001052150,utility-scale solar,operating,1
+G100001059945,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project VI,L100001052151,utility-scale solar,operating,3.7
+G100001059946,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Reghin Mureș solar project I,L100001052152,utility-scale solar,operating,5.1
+G100001059947,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XXII,L100001052153,utility-scale solar,operating,2.1
+G100001059948,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project VI,L100001052154,utility-scale solar,operating,2.2
+G100001059949,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project VI,L100001052155,utility-scale solar,operating,4
+G100001059950,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brăila solar project XIV,L100001052156,utility-scale solar,operating,2
+G100001059951,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Turda Cluj solar project,L100001052157,utility-scale solar,operating,2.4
+G100001059952,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Codlea Brașov solar project I,L100001052158,utility-scale solar,operating,3.1
+G100001059953,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project XI,L100001052159,utility-scale solar,operating,1.3
+G100001059954,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXIII,L100001052160,utility-scale solar,operating,8.5
+G100001059955,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest solar project III,L100001052161,utility-scale solar,operating,1.5
+G100001059956,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project VII,L100001052162,utility-scale solar,operating,11.5
+G100001059957,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXIV,L100001052163,utility-scale solar,operating,3.7
+G100001059958,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Marghita Bihor solar project,L100001052164,utility-scale solar,operating,7
+G100001059959,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XVI,L100001052165,utility-scale solar,operating,1.1
+G100001059960,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project XII,L100001052166,utility-scale solar,operating,1.5
+G100001059961,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Vaslui solar project,L100001052167,utility-scale solar,operating,2.9
+G100001059962,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XXIII,L100001052168,utility-scale solar,operating,2.6
+G100001059963,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project X,L100001052169,utility-scale solar,operating,1.2
+G100001059964,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CS,,point,,,,false,abf-boundaries-v0.2.0,Caraș-Severin solar project I,L100001052170,utility-scale solar,operating,2.1
+G100001059965,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project XIII,L100001052171,utility-scale solar,operating,3.9
+G100001059966,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Mehedinți solar project VII,L100001052172,utility-scale solar,operating,11.6
+G100001059967,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project VII,L100001052173,utility-scale solar,operating,2.5
+G100001059968,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XII,L100001052174,utility-scale solar,operating,4.4
+G100001059969,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project XIV,L100001052175,utility-scale solar,operating,1.7
+G100001059970,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-NT,,point,,,,false,abf-boundaries-v0.2.0,Neamț solar project,L100001052176,utility-scale solar,operating,1.6
+G100001059971,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Sebeș Alba solar project IV,L100001052177,utility-scale solar,operating,8.3
+G100001059972,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XIII,L100001052178,utility-scale solar,operating,2.3
+G100001059973,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brașov solar project XIII,L100001052179,utility-scale solar,operating,1
+G100001059974,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Tulcea solar project IV,L100001052180,utility-scale solar,operating,1.1
+G100001059975,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Domnești Argeș solar project,L100001052181,utility-scale solar,operating,5.1
+G100001059976,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XV,L100001052182,utility-scale solar,operating,1
+G100001059977,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XIII,L100001052183,utility-scale solar,operating,1.4
+G100001059978,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Reghin Mureș solar project II,L100001052184,utility-scale solar,operating,2.9
+G100001059979,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XVII,L100001052185,utility-scale solar,operating,18.4
+G100001059980,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project X,L100001052186,utility-scale solar,operating,1.7
+G100001059981,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XXIV,L100001052187,utility-scale solar,operating,1.7
+G100001059982,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XXV,L100001052188,utility-scale solar,operating,1.7
+G100001059983,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXV,L100001052189,utility-scale solar,operating,4.3
+G100001059984,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XIX,L100001052190,utility-scale solar,operating,2.3
+G100001059985,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project VIII,L100001052191,utility-scale solar,operating,2.3
+G100001059986,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Sibiu solar project XI,L100001052192,utility-scale solar,operating,1.7
+G100001059987,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project VII,L100001052193,utility-scale solar,operating,1.9
+G100001059988,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iași solar project III,L100001052194,utility-scale solar,operating,1.8
+G100001059989,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Miercurea Ciuc Harghita solar project,L100001052195,utility-scale solar,operating,2.9
+G100001059990,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Oltenița Călărași solar project,L100001052196,utility-scale solar,operating,7.9
+G100001059991,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Târgu Jiu Gorj solar project,L100001052197,utility-scale solar,operating,2.5
+G100001059992,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project IX,L100001052198,utility-scale solar,operating,1.5
+G100001059993,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest solar project IV,L100001052199,utility-scale solar,operating,1.6
+G100001059994,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project VII,L100001052200,utility-scale solar,operating,5.7
+G100001059995,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project XI,L100001052201,utility-scale solar,operating,2.5
+G100001059996,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project IX,L100001052202,utility-scale solar,operating,1.3
+G100001059997,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XIII,L100001052203,utility-scale solar,operating,3.8
+G100001059998,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project VIII,L100001052204,utility-scale solar,operating,2
+G100001059999,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XVI,L100001052205,utility-scale solar,operating,1.2
+G100001060000,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project IX,L100001052206,utility-scale solar,operating,11.2
+G100001060001,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița-Năsăud solar project VI,L100001052207,utility-scale solar,operating,1.6
+G100001060002,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XIV,L100001052208,utility-scale solar,operating,2.3
+G100001060003,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alba Iulia Alba solar project,L100001052209,utility-scale solar,operating,1.3
+G100001060004,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project X,L100001052210,utility-scale solar,operating,1.4
+G100001060005,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Gorj solar project VIII,L100001052211,utility-scale solar,operating,2.2
+G100001060006,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project VIII,L100001052212,utility-scale solar,operating,10.5
+G100001060007,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XIV,L100001052213,utility-scale solar,operating,19.2
+G100001060008,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project X,L100001052214,utility-scale solar,operating,1.2
+G100001060009,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CL,,point,,,,false,abf-boundaries-v0.2.0,Călărași solar project X,L100001052215,utility-scale solar,operating,9.7
+G100001060010,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Buzău solar project VI,L100001052216,utility-scale solar,operating,3.5
+G100001060011,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Tulcea solar project V,L100001052217,utility-scale solar,operating,1.4
+G100001060012,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XVIII,L100001052218,utility-scale solar,operating,6.6
+G100001060013,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XIV,L100001052219,utility-scale solar,operating,1.7
+G100001060014,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XV,L100001052220,utility-scale solar,operating,1.7
+G100001060015,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XV,L100001052221,utility-scale solar,operating,5
+G100001060016,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Dâmbovița solar project XXVI,L100001052222,utility-scale solar,operating,4.4
+G100001060017,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project XV,L100001052223,utility-scale solar,operating,5.7
+G100001060018,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XVII,L100001052224,utility-scale solar,operating,2.5
+G100001060019,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Caracal Olt solar project I,L100001052225,utility-scale solar,operating,15.4
+G100001060020,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project IX,L100001052226,utility-scale solar,operating,2
+G100001060021,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iași solar project IV,L100001052227,utility-scale solar,operating,1.9
+G100001060022,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Buzău solar project VII,L100001052228,utility-scale solar,operating,2.5
+G100001060023,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project VII,L100001052229,utility-scale solar,operating,4.9
+G100001060024,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project XII,L100001052230,utility-scale solar,operating,1
+G100001060025,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project X,L100001052231,utility-scale solar,operating,1.3
+G100001060026,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XVIII,L100001052232,utility-scale solar,operating,4.5
+G100001060027,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Râmnicu Vâlcea Vâlcea solar project,L100001052233,utility-scale solar,operating,2
+G100001060028,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Reghin Mureș solar project III,L100001052234,utility-scale solar,operating,5.3
+G100001060029,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad solar project XVI,L100001052235,utility-scale solar,operating,6.6
+G100001060030,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project XI,L100001052236,utility-scale solar,operating,5.6
+G100001060031,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XIX,L100001052237,utility-scale solar,operating,1.6
+G100001060032,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Hunedoara solar project II,L100001052238,utility-scale solar,operating,12.1
+G100001060033,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TR,,point,,,,false,abf-boundaries-v0.2.0,Teleorman solar project XI,L100001052239,utility-scale solar,operating,1.9
+G100001060034,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Cluj solar project XI,L100001052240,utility-scale solar,operating,4.2
+G100001060036,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project XII,L100001052242,utility-scale solar,operating,5.3
+G100001060037,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project IX,L100001052243,utility-scale solar,operating,1.2
+G100001060038,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Onești Bacău solar project,L100001052244,utility-scale solar,operating,13.8
+G100001060039,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Ploiești Prahova solar project,L100001052245,utility-scale solar,operating,4.3
+G100001060040,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Dolj solar project XIX,L100001052246,utility-scale solar,operating,2
+G100001060041,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXVI,L100001052247,utility-scale solar,operating,1.4
+G100001060042,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Calafat Dolj solar project II,L100001052248,utility-scale solar,operating,4.3
+G100001060043,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Ialomița solar project II,L100001052249,utility-scale solar,operating,1.1
+G100001060044,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project X,L100001052250,utility-scale solar,operating,9.4
+G100001060045,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița Bistrița-Năsăud solar project I,L100001052251,utility-scale solar,operating,2.8
+G100001060046,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XV,L100001052252,utility-scale solar,operating,1.5
+G100001060047,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XVI,L100001052253,utility-scale solar,operating,5
+G100001060048,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vâlcea solar project VIII,L100001052254,utility-scale solar,operating,4
+G100001060049,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXVII,L100001052255,utility-scale solar,operating,1.4
+G100001060050,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VN,,point,,,,false,abf-boundaries-v0.2.0,Vrancea solar project IV,L100001052256,utility-scale solar,operating,2.6
+G100001060051,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CS,,point,,,,false,abf-boundaries-v0.2.0,Caraș-Severin solar project II,L100001052257,utility-scale solar,operating,1.2
+G100001060052,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Ialomița solar project III,L100001052258,utility-scale solar,operating,4.1
+G100001060053,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Argeș solar project XIII,L100001052259,utility-scale solar,operating,1.4
+G100001060054,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XVI,L100001052260,utility-scale solar,operating,4.1
+G100001060055,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXVIII,L100001052261,utility-scale solar,operating,3.3
+G100001060056,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest solar project V,L100001052262,utility-scale solar,operating,1.1
+G100001060057,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XVI,L100001052263,utility-scale solar,operating,2.4
+G100001060058,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XVII,L100001052264,utility-scale solar,operating,1.8
+G100001060059,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Constanța solar project VI,L100001052265,utility-scale solar,operating,4.7
+G100001060060,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest solar project VI,L100001052266,utility-scale solar,operating,2.5
+G100001060062,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XVIII,L100001052268,utility-scale solar,operating,1.1
+G100001060063,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu solar project XIX,L100001052269,utility-scale solar,operating,2.6
+G100001060065,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XVII,L100001052271,utility-scale solar,operating,5.2
+G100001060066,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița Bistrița-Năsăud solar project II,L100001052272,utility-scale solar,operating,3.5
+G100001060067,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Tulcea solar project VI,L100001052273,utility-scale solar,operating,1
+G100001060068,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iași solar project V,L100001052274,utility-scale solar,operating,5.9
+G100001060069,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-CS,,point,,,,false,abf-boundaries-v0.2.0,Caraș-Severin solar project III,L100001052275,utility-scale solar,operating,1.1
+G100001060070,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Mureș solar project XVIII,L100001052276,utility-scale solar,operating,2.4
+G100001060071,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Hunedoara solar project III,L100001052277,utility-scale solar,operating,2.9
+G100001060072,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Tulcea solar project VII,L100001052278,utility-scale solar,operating,1.4
+G100001060073,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-VN,,point,,,,false,abf-boundaries-v0.2.0,Vrancea solar project V,L100001052279,utility-scale solar,operating,8.5
+G100001060074,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Târgu Mureș Mureș solar project,L100001052280,utility-scale solar,operating,1.5
+G100001060075,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița Bistrița-Năsăud solar project III,L100001052281,utility-scale solar,operating,1.9
+G100001060076,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Satu Mare solar project XIII,L100001052282,utility-scale solar,operating,16.8
+G100001060077,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-MM,,point,,,,false,abf-boundaries-v0.2.0,Maramureș solar project,L100001052283,utility-scale solar,operating,1.5
+G100001060078,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XVII,L100001052284,utility-scale solar,operating,3.7
+G100001060079,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXIX,L100001052285,utility-scale solar,operating,2.2
+G100001060080,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BN,,point,,,,false,abf-boundaries-v0.2.0,Bistrița-Năsăud solar project VII,L100001052286,utility-scale solar,operating,1.9
+G100001060081,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-TM,,point,,,,false,abf-boundaries-v0.2.0,Timiș solar project XXX,L100001052287,utility-scale solar,operating,1.9
+G100001060082,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Sebeș Alba solar project V,L100001052288,utility-scale solar,operating,6.4
+G100001060083,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Bacău solar project I,L100001052289,utility-scale solar,operating,1.4
+G100001060084,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Ilfov solar project XI,L100001052290,utility-scale solar,operating,1.5
+G100001060085,energy_plants_gem_tzsam_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Olt solar project XVIII,L100001052291,utility-scale solar,operating,1.8

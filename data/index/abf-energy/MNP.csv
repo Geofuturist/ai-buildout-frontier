@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023584,energy_plants_gem_units,MNP,point,,,,,,,,true,abf-boundaries-v0.2.0,Saipan solar farm,L100001020677,utility-scale solar,announced,20
+G100001023586,energy_plants_gem_units,MNP,point,,,,,,,,true,abf-boundaries-v0.2.0,Tinian solar farm,L100001020678,utility-scale solar,announced,5
+G100001023587,energy_plants_gem_units,MNP,point,,,,,,,,true,abf-boundaries-v0.2.0,Rota solar farm,L100001020679,utility-scale solar,announced,3

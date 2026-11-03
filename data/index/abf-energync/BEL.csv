@@ -1,0 +1,201 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001008393,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Dessel Floating PV solar project,L100001007244,utility-scale solar,operating,4.1
+G100001008394,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Moha solar project,L100001007245,utility-scale solar,operating,3.9
+G100001008396,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Namur solar project,L100001007247,utility-scale solar,operating,4.1
+G100001008397,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project I,L100001007248,utility-scale solar,operating,7.8
+G100001008398,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project I,L100001007249,utility-scale solar,operating,6.9
+G100001008400,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project II,L100001007251,utility-scale solar,operating,2.8
+G100001008401,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project I,L100001007252,utility-scale solar,operating,7.6
+G100001008402,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-BRU,,point,,,,false,abf-boundaries-v0.2.0,Brussels-Capital solar project I,L100001007253,utility-scale solar,operating,3.7
+G100001008403,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ostend solar project I,L100001007254,utility-scale solar,operating,3.8
+G100001008404,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project II,L100001007255,utility-scale solar,operating,3.5
+G100001008405,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Virton solar project,L100001007256,utility-scale solar,operating,1.7
+G100001008406,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project III,L100001007257,utility-scale solar,operating,3.5
+G100001008407,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project I,L100001007258,utility-scale solar,operating,5.8
+G100001008408,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project I,L100001007259,utility-scale solar,operating,3.8
+G100001008409,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Dendermonde solar project,L100001007260,utility-scale solar,operating,5.5
+G100001008410,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Ath solar project I,L100001007261,utility-scale solar,operating,5.6
+G100001008411,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project I,L100001007262,utility-scale solar,operating,2.7
+G100001008412,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Arlon solar project,L100001007263,utility-scale solar,operating,4.4
+G100001008413,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ostend solar project II,L100001007264,utility-scale solar,operating,3.2
+G100001008414,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Soignies solar project,L100001007265,utility-scale solar,operating,1.8
+G100001008415,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Roeselare solar project,L100001007266,utility-scale solar,operating,2.9
+G100001008416,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Nivelles solar project I,L100001007267,utility-scale solar,operating,1.5
+G100001008417,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Sint-Niklaas solar project II,L100001007268,utility-scale solar,operating,1.8
+G100001008418,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project IV,L100001007269,utility-scale solar,operating,4.2
+G100001008419,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project II,L100001007270,utility-scale solar,operating,1.3
+G100001008420,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-BRU,,point,,,,false,abf-boundaries-v0.2.0,Brussels Brussels-Capital solar project,L100001007271,utility-scale solar,operating,8.3
+G100001008421,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Charleroi solar project I,L100001007272,utility-scale solar,operating,1.7
+G100001008422,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-BRU,,point,,,,false,abf-boundaries-v0.2.0,Brussels-Capital solar project II,L100001007273,utility-scale solar,operating,2.8
+G100001008423,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Sint-Niklaas solar project III,L100001007274,utility-scale solar,operating,1.8
+G100001008424,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project III,L100001007275,utility-scale solar,operating,2.5
+G100001008425,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project III,L100001007276,utility-scale solar,operating,5.1
+G100001008426,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project IV,L100001007277,utility-scale solar,operating,2.2
+G100001008427,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Neufchâteau solar project I,L100001007278,utility-scale solar,operating,4.6
+G100001008428,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-BRU,,point,,,,false,abf-boundaries-v0.2.0,Brussels-Capital solar project III,L100001007279,utility-scale solar,operating,2
+G100001008429,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project II,L100001007280,utility-scale solar,operating,1.1
+G100001008430,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project IV,L100001007281,utility-scale solar,operating,2.8
+G100001008431,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,La Louvière solar project,L100001007282,utility-scale solar,operating,2
+G100001008432,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project I,L100001007283,utility-scale solar,operating,1.2
+G100001008433,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project II,L100001007284,utility-scale solar,operating,6
+G100001008434,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tongeren solar project I,L100001007285,utility-scale solar,operating,6.8
+G100001008435,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project II,L100001007286,utility-scale solar,operating,6.1
+G100001008436,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Oudenaarde solar project,L100001007287,utility-scale solar,operating,3.1
+G100001008438,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project III,L100001007289,utility-scale solar,operating,1.6
+G100001008439,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project III,L100001007290,utility-scale solar,operating,11.6
+G100001008440,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Bruges Brugge solar project,L100001007291,utility-scale solar,operating,1.5
+G100001008441,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project I,L100001007292,utility-scale solar,operating,5.2
+G100001008442,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tongeren solar project II,L100001007293,utility-scale solar,operating,3.9
+G100001008443,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project IV,L100001007294,utility-scale solar,operating,3.1
+G100001008444,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tielt solar project I,L100001007295,utility-scale solar,operating,8.2
+G100001008445,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project V,L100001007296,utility-scale solar,operating,6.4
+G100001008446,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project VI,L100001007297,utility-scale solar,operating,8
+G100001008447,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Veurne solar project I,L100001007298,utility-scale solar,operating,4.2
+G100001008448,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project V,L100001007299,utility-scale solar,operating,3.4
+G100001008449,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Aalst solar project,L100001007300,utility-scale solar,operating,2.1
+G100001008450,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project VI,L100001007301,utility-scale solar,operating,4.6
+G100001008451,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project IV,L100001007302,utility-scale solar,operating,7.6
+G100001008452,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Nivelles solar project II,L100001007303,utility-scale solar,operating,2.5
+G100001008454,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project II,L100001007305,utility-scale solar,operating,14.1
+G100001008455,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ghent Gent solar project I,L100001007306,utility-scale solar,operating,8.7
+G100001008461,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project I,L100001007312,utility-scale solar,operating,1.6
+G100001008462,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project V,L100001007313,utility-scale solar,operating,4.4
+G100001008463,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Charleroi solar project II,L100001007314,utility-scale solar,operating,2.9
+G100001008464,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Ath solar project II,L100001007315,utility-scale solar,operating,2.8
+G100001008465,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Nivelles solar project III,L100001007316,utility-scale solar,operating,2.5
+G100001008466,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Brussels-Capital solar project IV,L100001007317,utility-scale solar,operating,2.1
+G100001008468,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project I,L100001007319,utility-scale solar,operating,5.3
+G100001008472,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project II,L100001007323,utility-scale solar,operating,1.1
+G100001008473,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ghent Gent solar project II,L100001007324,utility-scale solar,operating,5.5
+G100001008474,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project VI,L100001007325,utility-scale solar,operating,1.4
+G100001008481,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Liège solar project I,L100001007332,utility-scale solar,operating,5
+G100001008482,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project VI,L100001007333,utility-scale solar,operating,1.9
+G100001008485,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Nivelles solar project IV,L100001007336,utility-scale solar,operating,10.2
+G100001008486,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tielt solar project II,L100001007337,utility-scale solar,operating,4.7
+G100001008489,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ieper solar project,L100001007340,utility-scale solar,operating,3.7
+G100001008490,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project VII,L100001007341,utility-scale solar,operating,11.7
+G100001083895,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project VII,L100001074109,utility-scale solar,operating,1.6
+G100001083896,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tielt solar project III,L100001074110,utility-scale solar,operating,1.1
+G100001083897,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Waremme solar project,L100001074111,utility-scale solar,operating,2.3
+G100001083898,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project III,L100001074112,utility-scale solar,operating,9.3
+G100001083899,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project VI,L100001074113,utility-scale solar,operating,1.2
+G100001083901,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ronse Oudenaarde solar project,L100001074115,utility-scale solar,operating,1
+G100001083902,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Liège solar project II,L100001074116,utility-scale solar,operating,1.5
+G100001083903,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Soignies solar project I,L100001074117,utility-scale solar,operating,1.8
+G100001083904,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Liège solar project III,L100001074118,utility-scale solar,operating,1.3
+G100001083905,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project VII,L100001074119,utility-scale solar,operating,1.6
+G100001083906,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project II,L100001074120,utility-scale solar,operating,1
+G100001083907,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project IV,L100001074121,utility-scale solar,operating,2.5
+G100001083908,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Sint-Niklaas solar project IV,L100001074122,utility-scale solar,operating,1.1
+G100001083909,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project VIII,L100001074123,utility-scale solar,operating,1
+G100001083910,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project VIII,L100001074124,utility-scale solar,operating,3.2
+G100001083911,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Oudenaarde solar project I,L100001074125,utility-scale solar,operating,1.1
+G100001083912,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project VIII,L100001074126,utility-scale solar,operating,2.5
+G100001083913,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project III,L100001074127,utility-scale solar,operating,2.3
+G100001083914,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project V,L100001074128,utility-scale solar,operating,1.4
+G100001083915,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project III,L100001074129,utility-scale solar,operating,1
+G100001083917,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Sint-Niklaas solar project V,L100001074131,utility-scale solar,operating,1.3
+G100001083918,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project IX,L100001074132,utility-scale solar,operating,1.6
+G100001083919,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Philippeville solar project,L100001074133,utility-scale solar,operating,2.9
+G100001083920,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project II,L100001074134,utility-scale solar,operating,1.6
+G100001083921,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Nivelles solar project V,L100001074135,utility-scale solar,operating,1.9
+G100001083922,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,La Louvière solar project II,L100001074136,utility-scale solar,operating,3.2
+G100001083924,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Namur solar project I,L100001074138,utility-scale solar,operating,1.2
+G100001083925,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Bastogne solar project,L100001074139,utility-scale solar,operating,1.1
+G100001083926,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Sint-Niklaas solar project VI,L100001074140,utility-scale solar,operating,2.2
+G100001083927,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project III,L100001074141,utility-scale solar,operating,2.4
+G100001083928,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project III,L100001074142,utility-scale solar,operating,4.9
+G100001083930,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Diksmuide solar project,L100001074144,utility-scale solar,operating,1.1
+G100001083931,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project IX,L100001074145,utility-scale solar,operating,1.5
+G100001083932,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Roeselare solar project I,L100001074146,utility-scale solar,operating,1.2
+G100001083933,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ostend solar project III,L100001074147,utility-scale solar,operating,6.8
+G100001083934,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Eeklo solar project,L100001074148,utility-scale solar,operating,1.5
+G100001083936,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ieper solar project I,L100001074150,utility-scale solar,operating,3.3
+G100001083937,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project VII,L100001074151,utility-scale solar,operating,2.7
+G100001083938,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Ath solar project III,L100001074152,utility-scale solar,operating,1
+G100001083939,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project X,L100001074153,utility-scale solar,operating,3.1
+G100001083940,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project X,L100001074154,utility-scale solar,operating,1.6
+G100001083941,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Verviers solar project I,L100001074155,utility-scale solar,operating,1.3
+G100001083943,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project IV,L100001074157,utility-scale solar,operating,4
+G100001083944,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project IX,L100001074158,utility-scale solar,operating,1.1
+G100001083945,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tielt solar project IV,L100001074159,utility-scale solar,operating,1.2
+G100001083946,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project V,L100001074160,utility-scale solar,operating,1
+G100001083947,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project VII,L100001074161,utility-scale solar,operating,3.4
+G100001083948,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Soignies solar project II,L100001074162,utility-scale solar,operating,1.9
+G100001083949,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Verviers solar project II,L100001074163,utility-scale solar,operating,2
+G100001083950,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Roeselare solar project II,L100001074164,utility-scale solar,operating,1.9
+G100001083952,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ghent Gent solar project III,L100001074166,utility-scale solar,operating,1.5
+G100001083953,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project XI,L100001074167,utility-scale solar,operating,1.4
+G100001083954,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project VI,L100001074168,utility-scale solar,operating,1.1
+G100001083955,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Verviers solar project III,L100001074169,utility-scale solar,operating,1.1
+G100001083956,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ghent Gent solar project IV,L100001074170,utility-scale solar,operating,1.3
+G100001083957,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Aalst solar project I,L100001074171,utility-scale solar,operating,1.2
+G100001083958,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project V,L100001074172,utility-scale solar,operating,4.3
+G100001083959,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project VII,L100001074173,utility-scale solar,operating,3.2
+G100001083960,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ieper solar project II,L100001074174,utility-scale solar,operating,3.7
+G100001083961,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Verviers solar project IV,L100001074175,utility-scale solar,operating,1.3
+G100001083962,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project XI,L100001074176,utility-scale solar,operating,1.7
+G100001083964,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mons solar project VIII,L100001074178,utility-scale solar,operating,1.9
+G100001083965,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project VI,L100001074179,utility-scale solar,operating,1.2
+G100001083966,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-BRU,,point,,,,false,abf-boundaries-v0.2.0,Brussels Brussels-Capital solar project I,L100001074180,utility-scale solar,operating,3.6
+G100001083968,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Oudenaarde solar project II,L100001074182,utility-scale solar,operating,1.2
+G100001083969,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project VI,L100001074183,utility-scale solar,operating,1.4
+G100001083970,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project VII,L100001074184,utility-scale solar,operating,2.4
+G100001083971,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project IX,L100001074185,utility-scale solar,operating,1.8
+G100001083972,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lauwe Kortrijk solar project I,L100001074186,utility-scale solar,operating,2.7
+G100001083973,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project VIII,L100001074187,utility-scale solar,operating,2.3
+G100001083974,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lauwe Kortrijk solar project II,L100001074188,utility-scale solar,operating,1.3
+G100001083975,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project X,L100001074189,utility-scale solar,operating,3.9
+G100001083976,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project V,L100001074190,utility-scale solar,operating,5.7
+G100001083977,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Namur solar project III,L100001074191,utility-scale solar,operating,3.6
+G100001083978,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Aalst solar project II,L100001074192,utility-scale solar,operating,1.3
+G100001083979,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project X,L100001074193,utility-scale solar,operating,1.6
+G100001083980,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project V,L100001074194,utility-scale solar,operating,2.2
+G100001083981,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project VI,L100001074195,utility-scale solar,operating,1.7
+G100001083982,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project VII,L100001074196,utility-scale solar,operating,4.3
+G100001083983,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project IX,L100001074197,utility-scale solar,operating,1.4
+G100001083984,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Dinant solar project,L100001074198,utility-scale solar,operating,1.2
+G100001083985,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project XII,L100001074199,utility-scale solar,operating,1.2
+G100001083986,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Bruges Brugge solar project II,L100001074200,utility-scale solar,operating,1.1
+G100001083987,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project XI,L100001074201,utility-scale solar,operating,1.9
+G100001083988,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Namur solar project IV,L100001074202,utility-scale solar,operating,9.7
+G100001083989,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-BRU,,point,,,,false,abf-boundaries-v0.2.0,Brussels-Capital solar project V,L100001074203,utility-scale solar,operating,2.7
+G100001083990,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project VI,L100001074204,utility-scale solar,operating,1
+G100001083991,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-BRU,,point,,,,false,abf-boundaries-v0.2.0,Brussels-Capital solar project VI,L100001074205,utility-scale solar,operating,5.6
+G100001083992,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maaseik solar project VIII,L100001074206,utility-scale solar,operating,1.7
+G100001083993,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project XI,L100001074207,utility-scale solar,operating,2.7
+G100001083994,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project X,L100001074208,utility-scale solar,operating,1.1
+G100001083996,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project VII,L100001074210,utility-scale solar,operating,10.9
+G100001083997,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Ath solar project IV,L100001074211,utility-scale solar,operating,1.3
+G100001083998,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Verviers solar project V,L100001074212,utility-scale solar,operating,3.5
+G100001083999,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project XII,L100001074213,utility-scale solar,operating,2.2
+G100001084000,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project VIII,L100001074214,utility-scale solar,operating,9.7
+G100001084001,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Charleroi solar project III,L100001074215,utility-scale solar,operating,1.3
+G100001084002,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halle-Vilvoorde solar project VIII,L100001074216,utility-scale solar,operating,1.7
+G100001084004,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tielt solar project V,L100001074218,utility-scale solar,operating,5.1
+G100001084005,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Arlon solar project II,L100001074219,utility-scale solar,operating,2.8
+G100001084006,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Liège solar project IV,L100001074220,utility-scale solar,operating,1.8
+G100001084007,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Sint-Niklaas solar project VII,L100001074221,utility-scale solar,operating,1.2
+G100001084008,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project XII,L100001074222,utility-scale solar,operating,1.2
+G100001084009,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ostend solar project IV,L100001074223,utility-scale solar,operating,1.5
+G100001084010,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project XII,L100001074224,utility-scale solar,operating,1.2
+G100001084011,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tongeren solar project,L100001074225,utility-scale solar,operating,2.4
+G100001084012,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Charleroi solar project IV,L100001074226,utility-scale solar,operating,1.5
+G100001084013,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project XIII,L100001074227,utility-scale solar,operating,1.6
+G100001084014,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ieper solar project III,L100001074228,utility-scale solar,operating,1.4
+G100001084015,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Roeselare solar project III,L100001074229,utility-scale solar,operating,5.9
+G100001084016,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project XIII,L100001074230,utility-scale solar,operating,5.2
+G100001084017,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ostend solar project V,L100001074231,utility-scale solar,operating,1.8
+G100001084018,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project IX,L100001074232,utility-scale solar,operating,1.2
+G100001084019,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tournai-Mouscron solar project,L100001074233,utility-scale solar,operating,1.7
+G100001084020,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mechelen solar project XIV,L100001074234,utility-scale solar,operating,1.5
+G100001084021,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Charleroi solar project V,L100001074235,utility-scale solar,operating,2.3
+G100001084022,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project XI,L100001074236,utility-scale solar,operating,6.7
+G100001084023,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project XIII,L100001074237,utility-scale solar,operating,1.1
+G100001084024,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project XII,L100001074238,utility-scale solar,operating,3.3
+G100001084025,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project XIV,L100001074239,utility-scale solar,operating,11.3
+G100001084026,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hasselt solar project XIV,L100001074240,utility-scale solar,operating,3.7
+G100001084027,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Nivelles solar project VI,L100001074241,utility-scale solar,operating,1.3
+G100001084028,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project IX,L100001074242,utility-scale solar,operating,4
+G100001084029,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project XIII,L100001074243,utility-scale solar,operating,1.7
+G100001084031,energy_plants_gem_tzsam_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerp solar project XIV,L100001074245,utility-scale solar,operating,1

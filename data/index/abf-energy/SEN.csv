@@ -1,0 +1,55 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000102916,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Gallen Cement power station,L100000103398,coal,operating,30
+G100000105195,energy_plants_gem_units,SEN,point,,SEN-1-TC,,point,,,,true,abf-boundaries-v0.2.0,Jindal power station (Senegal),L100000103400,coal,cancelled,175
+G100000105196,energy_plants_gem_units,SEN,point,,SEN-1-TC,,point,,,,true,abf-boundaries-v0.2.0,Jindal power station (Senegal),L100000103400,coal,cancelled,175
+G100000105675,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,true,abf-boundaries-v0.2.0,Kepco Sendou power station,L100000103396,coal,cancelled,125
+G100000105676,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,true,abf-boundaries-v0.2.0,Kepco Sendou power station,L100000103396,coal,cancelled,125
+G100000106766,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,true,abf-boundaries-v0.2.0,Mboro power station,L100000103399,coal,cancelled,250
+G100000108916,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Sendou power station,L100000103397,coal,operating,125
+G100000407254,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Cap des Biches (engine) power station,L100000406813,oil/gas,operating,86
+G100000407255,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,true,abf-boundaries-v0.2.0,Cap des Biches power station,L100000406814,oil/gas,construction,366
+G100000407256,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Malicounda power station,L100000406815,oil/gas,operating,120
+G100000407257,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Tobène power station,L100000406816,oil/gas,operating,115
+G100000408642,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Karpowership (Senegal) Aysegul Sultan power station,L100000407151,oil/gas,operating,235
+G100000411356,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Bel-Air C6 power station,L100000408166,oil/gas,operating,90
+G100000413543,energy_plants_gem_units,SEN,point,,SEN-1-KE,,point,,,,true,abf-boundaries-v0.2.0,Sadobala-Massawa Gold Mine power plant,L100000409038,oil/gas,operating,36
+G100000413544,energy_plants_gem_units,SEN,point,,SEN-1-KE,,point,,,,true,abf-boundaries-v0.2.0,Sadobala-Massawa Gold Mine power plant,L100000409038,oil/gas,operating,18
+G100000413545,energy_plants_gem_units,SEN,point,,SEN-1-KA,,point,,,,true,abf-boundaries-v0.2.0,Kyrene Cement power station,L100000409039,oil/gas,operating,35
+G100000413926,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Kounoune power station,L100000409160,oil/gas,operating,67.5
+G100000603334,energy_plants_gem_units,SEN,point,,SEN-1-KE,,point,,,,false,abf-boundaries-v0.2.0,Sambangalou hydroelectric plant,L100000603299,hydropower,construction,128
+G100000800081,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,false,abf-boundaries-v0.2.0,Bokhol solar farm,L100000800063,utility-scale solar,operating,20
+G100000800190,energy_plants_gem_units,SEN,point,,SEN-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Kaél solar farm,L100000800151,utility-scale solar,operating,35
+G100000800191,energy_plants_gem_units,SEN,point,,SEN-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Kahone Solaire Sa solar farm,L100000800152,utility-scale solar,operating,35
+G100000800192,energy_plants_gem_units,SEN,point,,SEN-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Kahone solar farm,L100000800153,utility-scale solar,operating,25
+G100000800248,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Malicounda solar farm,L100000800203,utility-scale solar,operating,22
+G100000800276,energy_plants_gem_units,SEN,point,,SEN-1-FK,,point,,,,true,abf-boundaries-v0.2.0,Niakhar solar farm,L100000800230,utility-scale solar,pre_construction,30
+G100000800328,energy_plants_gem_units,SEN,point,,SEN-1-LG,,point,,,,false,abf-boundaries-v0.2.0,Sakal solar farm,L100000800276,utility-scale solar,operating,20
+G100000800330,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Santhiou Mékhé solar farm,L100000800278,utility-scale solar,operating,30
+G100000800396,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Ten Merina solar farm,L100000800325,utility-scale solar,operating,30
+G100000814195,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Diass solar farm,L100000811643,utility-scale solar,operating,23
+G100000831267,energy_plants_gem_units,SEN,point,,SEN-1-KE,,point,,,,true,abf-boundaries-v0.2.0,Sabodala-Massawa Mine solar farm,L100000827721,utility-scale solar,construction,37
+G100000900099,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Léona wind farm,L100000900078,wind,operating,50
+G100000900120,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Taiba N’Diaye wind farm,L100000900094,wind,pre_construction,100
+G100000900121,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Taiba N’Diaye wind farm,L100000900094,wind,operating,55
+G100000900122,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Taiba N’Diaye wind farm,L100000900094,wind,operating,55
+G100000900123,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,false,abf-boundaries-v0.2.0,Taiba N’Diaye wind farm,L100000900094,wind,operating,48
+G100000900193,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Saint Louis - Gantour wind farm,L100000900149,wind,cancelled,15
+G100000900194,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Saint Louis - Mboye wind farm,L100000900150,wind,cancelled,35
+G100001017958,energy_plants_gem_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Sendou power station,L100000103397,oil/gas,announced,125
+G100001021266,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,true,abf-boundaries-v0.2.0,Mékhé and Keur Momar Sarr solar farms,L100001018938,utility-scale solar,pre_construction,10
+G100001021267,energy_plants_gem_units,SEN,point,,SEN-1-LG,,point,,,,true,abf-boundaries-v0.2.0,Mékhé and Keur Momar Sarr solar farms,L100001018938,utility-scale solar,pre_construction,10
+G100001054269,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Compagnie Sucriere Senegalaise power station,L100001047644,bioenergy,announced,15
+G100001054270,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Compagnie Sucriere Senegalaise power station,L100001047644,bioenergy,announced,15
+G100001054271,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Compagnie Sucriere Senegalaise power station,L100001047644,bioenergy,announced,6
+G100001054272,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Compagnie Sucriere Senegalaise power station,L100001047644,bioenergy,announced,6
+G100001054279,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Compagnie Sucriere Senegalaise power station,L100001047644,bioenergy,operating,15
+G100001054280,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Compagnie Sucriere Senegalaise power station,L100001047644,bioenergy,operating,25
+G100001054281,energy_plants_gem_units,SEN,point,,SEN-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Touba power station,L100001047647,bioenergy,pre_construction,10
+G100001073794,energy_plants_gem_units,SEN,point,,SEN-1-SL,,point,,,,true,abf-boundaries-v0.2.0,Walo Storage solar farm,L100001064158,utility-scale solar,operating,16
+G100001073796,energy_plants_gem_units,SEN,point,,SEN-1-SE,,point,,,,true,abf-boundaries-v0.2.0,NEA Kolda solar farm,L100001064161,utility-scale solar,construction,60
+G100001073801,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,true,abf-boundaries-v0.2.0,Grande Côte Mine solar farm,L100001064166,utility-scale solar,announced,20
+G100001073805,energy_plants_gem_units,SEN,point,,SEN-1-MT,,point,,,,true,abf-boundaries-v0.2.0,CNTIC (Senegal) solar farm,L100001064170,utility-scale solar,announced,50
+G100001073807,energy_plants_gem_units,SEN,point,,SEN-1-MT,,point,,,,true,abf-boundaries-v0.2.0,CNTIC (Senegal) solar farm,L100001064170,utility-scale solar,announced,50
+G100001073809,energy_plants_gem_units,SEN,point,,SEN-1-MT,,point,,,,true,abf-boundaries-v0.2.0,PowerChina (Senegal) solar farm,L100001064175,utility-scale solar,announced,300
+G100001090966,energy_plants_gem_units,SEN,point,,SEN-1-TH,,point,,,,true,abf-boundaries-v0.2.0,Tivaouane solar farm,L100001080957,utility-scale solar,announced,10
+G100001090968,energy_plants_gem_units,SEN,point,,SEN-1-FK,,point,,,,true,abf-boundaries-v0.2.0,Terenga Niakhar Storage (TNS) solar farm,L100001080958,utility-scale solar,announced,30

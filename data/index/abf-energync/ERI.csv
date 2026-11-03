@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000831164,energy_plants_gem_tzsam_units,ERI,point,,ERI-1-GB,,point,,,,false,abf-boundaries-v0.2.0,Bisha solar project,L100000827636,utility-scale solar,operating,8.6
+G100001023857,energy_plants_gem_tzsam_units,ERI,point,,ERI-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Asmara solar project,L100001020888,utility-scale solar,operating,2.3
+G100001023858,energy_plants_gem_tzsam_units,ERI,point,,ERI-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Debub Region solar project,L100001020889,utility-scale solar,operating,1.4
+G100001023859,energy_plants_gem_tzsam_units,ERI,point,,ERI-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Maekel Region solar project,L100001020890,utility-scale solar,operating,4.1
+G100001074572,energy_plants_gem_tzsam_units,ERI,point,,ERI-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Debub Region solar project I,L100001064786,utility-scale solar,operating,1.1
+G100001074573,energy_plants_gem_tzsam_units,ERI,point,,ERI-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Debub Region solar project II,L100001064787,utility-scale solar,operating,5.3

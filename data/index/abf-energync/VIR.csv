@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000809539,energy_plants_gem_tzsam_units,VIR,point,,,,,,,,false,abf-boundaries-v0.2.0,Donoe solar farm,L100000807824,utility-scale solar,operating,4.4
+G100001074928,energy_plants_gem_tzsam_units,VIR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Croix District solar project I,L100001065142,utility-scale solar,operating,9.9
+G100001074929,energy_plants_gem_tzsam_units,VIR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Croix District solar project II,L100001065143,utility-scale solar,operating,2.1
+G100001074930,energy_plants_gem_tzsam_units,VIR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Croix District solar project III,L100001065144,utility-scale solar,operating,1.3

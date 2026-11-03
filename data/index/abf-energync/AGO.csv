@@ -1,0 +1,10 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001022827,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Huambo Province solar project I,L100001020054,utility-scale solar,operating,2.6
+G100001022828,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Huambo Province solar project II,L100001020055,utility-scale solar,operating,2.2
+G100001022829,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-BGU,,point,,,,false,abf-boundaries-v0.2.0,Benguela Province solar project,L100001020056,utility-scale solar,operating,1.9
+G100001022830,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-NAM,,point,,,,false,abf-boundaries-v0.2.0,Namibe Province solar project,L100001020057,utility-scale solar,operating,2.8
+G100001022831,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-CNN,,point,,,,false,abf-boundaries-v0.2.0,Cunene Province solar project,L100001020058,utility-scale solar,operating,2.3
+G100001022832,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-LSU,,point,,,,false,abf-boundaries-v0.2.0,Saurimo solar project,L100001020059,utility-scale solar,operating,3
+G100001022833,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-UIG,,point,,,,false,abf-boundaries-v0.2.0,Uíge Province solar project,L100001020060,utility-scale solar,operating,2.3
+G100001074548,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Huíla Province solar project,L100001064762,utility-scale solar,operating,4.9
+G100001074549,energy_plants_gem_tzsam_units,AGO,point,,AGO-1-CNN,,point,,,,false,abf-boundaries-v0.2.0,Cunene Province solar project I,L100001064763,utility-scale solar,operating,1.4

@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000809540,energy_plants_gem_units,VIR,point,,,,,,,,false,abf-boundaries-v0.2.0,Spanish Town solar farm,L100000807825,utility-scale solar,operating,4
+G100000809541,energy_plants_gem_units,VIR,point,,,,,,,,true,abf-boundaries-v0.2.0,St. Croix solar farm,L100000807826,utility-scale solar,operating,12
+G100001090762,energy_plants_gem_units,VIR,point,,,,,,,,true,abf-boundaries-v0.2.0,Fortuna solar farm,L100001080821,utility-scale solar,pre_construction,44

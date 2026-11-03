@@ -1,0 +1,80 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000412107,energy_plants_gem_units,CRI,point,,CRI-1-P,,point,,,,false,abf-boundaries-v0.2.0,Termolectrica Garabito power station,L100000408583,oil/gas,operating,202.4
+G100000601454,energy_plants_gem_units,CRI,point,,CRI-1-C,,point,,,,false,abf-boundaries-v0.2.0,Angostura hydroelectric plant (Costa Rica),L100000601436,hydropower,operating,172
+G100000601455,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Arenal hydroelectric plant (Costa Rica),L100000601437,hydropower,operating,157
+G100000601457,energy_plants_gem_units,CRI,point,,CRI-1-C,,point,,,,false,abf-boundaries-v0.2.0,Cachí hydroelectric plant,L100000601439,hydropower,operating,102
+G100000601458,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Cariblanco hydroelectric plant,L100000601440,hydropower,operating,82
+G100000601459,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Ventanas-Garita hydroelectric plant,L100000601441,hydropower,operating,97
+G100000601460,energy_plants_gem_units,CRI,point,,CRI-1-SJ,,point,,,,true,abf-boundaries-v0.2.0,Los Llanos hydroelectric plant,L100000601442,hydropower,cancelled,93
+G100000601461,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Miguel Pablo Dengo hydroelectric plant,L100000601443,hydropower,operating,174
+G100000601463,energy_plants_gem_units,CRI,point,,CRI-1-SJ,,point,,,,false,abf-boundaries-v0.2.0,Pirrís hydroelectric plant,L100000601445,hydropower,operating,134
+G100000601464,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Reventazón hydroelectric plant,L100000601446,hydropower,operating,305
+G100000601465,energy_plants_gem_units,CRI,point,,CRI-1-C,,point,,,,false,abf-boundaries-v0.2.0,Río Macho hydroelectric plant,L100000601447,hydropower,operating,140
+G100000603102,energy_plants_gem_units,CRI,point,PAN,CRI-1-L,,point,,,,true,abf-boundaries-v0.2.0,Bocas Del Toro hydroelectric plant,L100000603068,hydropower,construction,224
+G100000604227,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,true,abf-boundaries-v0.2.0,Balsa Superior hydroelectric plant,L100000601438,hydropower,cancelled,130
+G100000604695,energy_plants_gem_units,CRI,point,,CRI-1-C,,point,,,,true,abf-boundaries-v0.2.0,Pacuare hydroelectric plant,L100000601444,hydropower,cancelled,170
+G100000604788,energy_plants_gem_units,CRI,point,,CRI-1-P,,point,,,,true,abf-boundaries-v0.2.0,Savegre hydroelectric plant,L100000601448,hydropower,cancelled,200
+G100000700027,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Borinquen geothermal power project,L100000700018,geothermal,construction,55
+G100000700028,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Borinquen geothermal power project,L100000700018,geothermal,pre_construction,55
+G100000700140,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Las Pailas geothermal power plant,L100000700086,geothermal,operating,55
+G100000700141,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Las Pailas geothermal power plant,L100000700086,geothermal,operating,35
+G100000700180,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Miravalles geothermal power plant,L100000700107,geothermal,operating,55
+G100000700181,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Miravalles geothermal power plant,L100000700107,geothermal,operating,55
+G100000700329,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Miravalles geothermal power plant,L100000700107,geothermal,operating,29
+G100000700330,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Miravalles geothermal power plant,L100000700107,geothermal,retired,19
+G100000837964,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Valle Escondido CR solar project,L100000832412,utility-scale solar,operating,4
+G100000906054,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Altamira wind farm (Costa Rica),L100000904931,wind,operating,20
+G100000906055,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Campos Azules wind farm,L100000904932,wind,operating,20
+G100000906056,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Vientos De La Perla wind farm,L100000904933,wind,operating,20
+G100000906057,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Vientos Del Miramar wind farm,L100000904934,wind,operating,20
+G100000906070,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Chiripa wind farm,L100000904944,wind,operating,50
+G100000906511,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Cacao wind farm,L100000905104,wind,operating,21
+G100000906512,energy_plants_gem_units,CRI,point,,CRI-1-C,,point,,,,false,abf-boundaries-v0.2.0,Los Santos wind farm,L100000905105,wind,operating,13
+G100000906541,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Tilaran wind farm,L100000905111,wind,operating,23
+G100000907040,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Guanacaste wind farm,L100000905311,wind,operating,50
+G100000907046,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Vientos Del Este wind farm,L100000905317,wind,operating,12
+G100000907051,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Tejona wind farm,L100000905321,wind,operating,13.2
+G100000907061,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Mogote wind farm,L100000905331,wind,operating,20
+G100000907198,energy_plants_gem_units,CRI,point,,CRI-1-SJ,,point,,,,false,abf-boundaries-v0.2.0,Valle Central wind farm,L100000905383,wind,operating,15
+G100000907217,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Molinos Viento Del Arenal wind farm,L100000905402,wind,operating,24
+G100000907219,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Tilawind wind farm,L100000905404,wind,operating,21
+G100000907636,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Orosi wind farm,L100000905557,wind,operating,50
+G100000920602,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Aeroenergía wind farm,L100000916580,wind,operating,6.8
+G100000920603,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Rio Naranjo wind farm,L100000916581,wind,operating,9
+G100001018281,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Numu solar farm,L100001016456,utility-scale solar,announced,20
+G100001018282,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Los Tecales solar farm,L100001016457,utility-scale solar,announced,20
+G100001018283,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Las Cañas solar farm,L100001016458,utility-scale solar,announced,20
+G100001027219,energy_plants_gem_units,CRI,point,,CRI-1-C,,point,,,,false,abf-boundaries-v0.2.0,La Joya hydroelectric plant,L100001023014,hydropower,operating,50
+G100001027220,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Toro II hydroelectric plant,L100001023015,hydropower,operating,65
+G100001028069,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,36.1
+G100001028070,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,36.1
+G100001028071,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,36.1
+G100001028072,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,45
+G100001028073,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,45
+G100001028074,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,36.5
+G100001028075,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,36.5
+G100001028076,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,operating,36.5
+G100001028078,energy_plants_gem_units,CRI,point,,CRI-1-P,,point,,,,false,abf-boundaries-v0.2.0,Termolectrica Garabito power station,L100000408583,oil/gas,operating,36.5
+G100001028083,energy_plants_gem_units,CRI,point,,CRI-1-L,,point,,,,false,abf-boundaries-v0.2.0,Moín power station,L100001023556,oil/gas,mothballed,48.2
+G100001031182,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Chucas hydroelectric plant,L100001025992,hydropower,operating,50
+G100001031304,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Boca de Pozo geothermal power plant,L100001026057,geothermal,operating,5
+G100001048232,energy_plants_gem_units,CRI,point,,CRI-1-C,,point,,,,false,abf-boundaries-v0.2.0,Torito hydroelectric plant,L100001042892,hydropower,operating,50
+G100001048233,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Toro III hydroelectric plant,L100001042893,hydropower,operating,49
+G100001048240,energy_plants_gem_units,CRI,point,,CRI-1-P,,point,,,,true,abf-boundaries-v0.2.0,Diquis hydroelectric plant,L100001042899,hydropower,cancelled,650
+G100001051712,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,ICE Colorado solar farm,L100001045874,utility-scale solar,announced,66
+G100001051713,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Energova Colorado solar farm,L100001045875,utility-scale solar,announced,16
+G100001051714,energy_plants_gem_units,CRI,point,,CRI-1-P,,point,,,,true,abf-boundaries-v0.2.0,Las Delicias solar farm,L100001045876,utility-scale solar,announced,78
+G100001051715,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Los Mangos solar farm,L100001045877,utility-scale solar,announced,10
+G100001051716,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Tejona wind farm,L100000905321,wind,announced,28.8
+G100001051717,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,El Quijote wind farm,L100001045878,wind,operating,34.4
+G100001053053,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,El Viejo Sugar power station,L100001046800,bioenergy,operating,17
+G100001053058,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Taboga Sugar power station,L100001046803,bioenergy,operating,32.5
+G100001062565,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Penas Blancas hydroelectric plant,L100001054673,hydropower,operating,38
+G100001062566,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,false,abf-boundaries-v0.2.0,Sandillal hydroelectric plant,L100001054674,hydropower,operating,32
+G100001072167,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Brasil hydroelectric plant,L100001062824,hydropower,operating,27
+G100001072168,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,La Garita hydroelectric plant,L100001062825,hydropower,operating,38
+G100001072170,energy_plants_gem_units,CRI,point,,CRI-1-A,,point,,,,false,abf-boundaries-v0.2.0,Balsa Inferior hydroelectric plant,L100001062827,hydropower,operating,38
+G100001090725,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Las Pavas wind farm,L100001080788,wind,pre_construction,20
+G100001090727,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,La Montosa wind farm,L100001080789,wind,pre_construction,20
+G100001090728,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,San Jorge (Costa Rica) wind farm,L100001080790,wind,pre_construction,20
+G100001090732,energy_plants_gem_units,CRI,point,,CRI-1-G,,point,,,,true,abf-boundaries-v0.2.0,Movasa II wind farm,L100001080794,wind,pre_construction,20

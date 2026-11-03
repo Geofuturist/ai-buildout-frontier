@@ -1,0 +1,111 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000106238,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,true,abf-boundaries-v0.2.0,Lelchitsy power station,L100000100082,coal,cancelled,400
+G100000111547,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,true,abf-boundaries-v0.2.0,Zelwa power station,L100000100083,coal,cancelled,1000
+G100000407002,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Svetlogorsk CHP power station,L100000406718,oil/gas,operating,60
+G100000407003,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Orsha CHP power station,L100000406719,oil/gas,operating,67
+G100000407004,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,operating,51.6
+G100000407005,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,operating,51.6
+G100000407006,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,operating,60
+G100000407007,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,operating,60
+G100000407008,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Mozyr CHP power station,L100000406713,oil/gas,operating,135
+G100000407009,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Mozyr CHP power station,L100000406713,oil/gas,operating,70
+G100000407010,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mogilev CHP-2 power station,L100000406712,oil/gas,operating,60
+G100000407011,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,320
+G100000407012,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,54
+G100000407013,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,54
+G100000407014,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,54
+G100000407015,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,54
+G100000407016,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,54
+G100000407017,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,54
+G100000407018,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-5 power station,L100000406711,oil/gas,operating,400
+G100000407019,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-4 power station,L100000406710,oil/gas,operating,250
+G100000407020,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-4 power station,L100000406710,oil/gas,operating,250
+G100000407021,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-4 power station,L100000406710,oil/gas,operating,250
+G100000407022,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-4 power station,L100000406710,oil/gas,operating,60
+G100000407023,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-3 power station,L100000406708,oil/gas,operating,222
+G100000407025,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-2 power station,L100000406709,oil/gas,operating,65
+G100000407026,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,52
+G100000407027,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,52
+G100000407028,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,52
+G100000407029,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,427
+G100000407030,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,300
+G100000407031,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,300
+G100000407032,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,300
+G100000407033,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,300
+G100000407034,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,315
+G100000407035,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,310
+G100000407036,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,315
+G100000407037,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Lukoml GRES power station,L100000406707,oil/gas,operating,315
+G100000407038,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Grodno CHP-2 power station,L100000406706,oil/gas,operating,122
+G100000407039,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Grodno CHP-2 power station,L100000406706,oil/gas,operating,70
+G100000407040,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Grodno CHP-2 power station,L100000406706,oil/gas,operating,80
+G100000407041,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Gomel CHP-2 power station,L100000406704,oil/gas,operating,184
+G100000407042,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Gomel CHP-2 power station,L100000406704,oil/gas,operating,180
+G100000407043,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Gomel CHP-2 power station,L100000406704,oil/gas,operating,180
+G100000407044,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Borisov CHP power station,L100000406705,oil/gas,operating,65
+G100000407045,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Bobruisk CHP-2 power station,L100000406703,oil/gas,operating,60
+G100000407046,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Bobruisk CHP-2 power station,L100000406703,oil/gas,operating,60
+G100000407047,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Bobruisk CHP-2 power station,L100000406703,oil/gas,operating,60
+G100000407048,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,57
+G100000407049,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,57
+G100000407050,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,57
+G100000407051,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,57
+G100000407052,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,57
+G100000407053,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,427
+G100000407054,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,238
+G100000407055,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,215
+G100000407056,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Berezovskaya (Belarus) power station,L100000406702,oil/gas,operating,215
+G100000409614,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-3 power station,L100000406708,oil/gas,operating,100
+G100000409617,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-4 power station,L100000406710,oil/gas,pre_construction,60
+G100000409618,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Svetlogorsk CHP power station,L100000406718,oil/gas,operating,50
+G100000409621,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,operating,50
+G100000409622,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,operating,50
+G100000409623,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,operating,50
+G100000409624,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,retired,50
+G100000409626,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mogilev CHP-2 power station,L100000406712,oil/gas,operating,135
+G100000409627,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mogilev CHP-2 power station,L100000406712,oil/gas,operating,50
+G100000409628,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mogilev CHP-2 power station,L100000406712,oil/gas,retired,50
+G100000409629,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mogilev CHP-2 power station,L100000406712,oil/gas,operating,50
+G100000409630,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-4 power station,L100000406710,oil/gas,operating,110
+G100000409631,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-4 power station,L100000406710,oil/gas,operating,110
+G100000409632,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-3 power station,L100000406708,oil/gas,operating,115
+G100000410811,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-3 power station,L100000406708,oil/gas,operating,60
+G100000410812,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-3 power station,L100000406708,oil/gas,retired,60
+G100000410813,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Grodno CHP-2 power station,L100000406706,oil/gas,operating,50
+G100000413016,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Novopolotsk CHP power station,L100000406714,oil/gas,pre_construction,50
+G100000500159,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Astravets nuclear power plant,L100000500085,nuclear,operating,1194
+G100000500179,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Astravets nuclear power plant,L100000500085,nuclear,operating,1194
+G100000501051,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,true,abf-boundaries-v0.2.0,Minsk nuclear power plant,L100000500384,nuclear,cancelled,1000
+G100000501052,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,true,abf-boundaries-v0.2.0,Minsk nuclear power plant,L100000500384,nuclear,cancelled,1000
+G100000807043,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Rechitsa solar farm,L100000806122,utility-scale solar,operating,58.8
+G100000807764,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Cherikov solar farm,L100000806786,utility-scale solar,operating,109
+G100000818786,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Brahin I solar farm,L100000815882,utility-scale solar,operating,4.2
+G100000818787,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Brahin II solar farm,L100000815883,utility-scale solar,operating,18.5
+G100000818788,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Bychaw solar farm,L100000815884,utility-scale solar,operating,10
+G100000818789,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,true,abf-boundaries-v0.2.0,Byerastavitsa solar farm,L100000815885,utility-scale solar,cancelled,5
+G100000818790,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Cherykaw solar farm,L100000815886,utility-scale solar,operating,3
+G100000818791,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Hrodna solar farm,L100000815887,utility-scale solar,operating,1.2
+G100000818792,energy_plants_gem_units,BLR,point,,BLR-1-BR,,point,,,,true,abf-boundaries-v0.2.0,Kamenets solar farm,L100000815888,utility-scale solar,cancelled,1.6
+G100000818793,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Kastsyukovichy I solar farm,L100000815889,utility-scale solar,operating,1.5
+G100000818794,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Kastsyukovichy II solar farm,L100000815890,utility-scale solar,operating,1.5
+G100000818795,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Mazyr solar farm,L100000815891,utility-scale solar,operating,2.5
+G100000818796,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,true,abf-boundaries-v0.2.0,Minsk solar farm,L100000815892,utility-scale solar,shelved,2
+G100000818797,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mogilev solar farm,L100000815893,utility-scale solar,operating,2
+G100000818798,energy_plants_gem_units,BLR,point,,BLR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mstsislaw solar farm,L100000815894,utility-scale solar,operating,1.6
+G100000818799,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Myadzel I solar farm,L100000815895,utility-scale solar,operating,2.3
+G100000818800,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Myadzel II solar farm,L100000815896,utility-scale solar,operating,3.3
+G100000818801,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Navahrudak solar farm,L100000815897,utility-scale solar,operating,1.2
+G100000818802,energy_plants_gem_units,BLR,point,,BLR-1-MI,,point,,,,false,abf-boundaries-v0.2.0,Nesvizh solar farm,L100000815898,utility-scale solar,operating,1.6
+G100000818803,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Rechitsa I solar farm,L100000815899,utility-scale solar,operating,3.8
+G100000818804,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Shchuchyn I solar farm,L100000815900,utility-scale solar,operating,2.6
+G100000818805,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Shchuchyn II solar farm,L100000815901,utility-scale solar,operating,1.2
+G100000818806,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Shchuchyn III solar farm,L100000815902,utility-scale solar,operating,1.2
+G100000818807,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Smarhon' solar farm,L100000815903,utility-scale solar,operating,18.6
+G100000818808,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Syanno solar farm,L100000815904,utility-scale solar,operating,1.6
+G100000818809,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Yelsk solar farm,L100000815905,utility-scale solar,operating,14.2
+G100000915828,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,true,abf-boundaries-v0.2.0,Veleshkovichi wind farm,L100000912690,wind,cancelled,25
+G100001009556,energy_plants_gem_units,BLR,point,,BLR-1-HO,,point,,,,false,abf-boundaries-v0.2.0,Chechevicy solar project,L100001008186,utility-scale solar,operating,11.4
+G100001090911,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,true,abf-boundaries-v0.2.0,Beshenkovichi hydroelectric plant,L100001080925,hydropower,shelved,33
+G100001090912,energy_plants_gem_units,BLR,point,,BLR-1-VI,,point,,,,false,abf-boundaries-v0.2.0,Vitebsk Dvina hydroelectric plant,L100001080926,hydropower,operating,40
+G100001093790,energy_plants_gem_units,BLR,point,,BLR-1-HM,,point,,,,false,abf-boundaries-v0.2.0,Minsk CHP-3 power station,L100000406708,oil/gas,pre_construction,65
+G100001095313,energy_plants_gem_units,BLR,point,,BLR-1-HR,,point,,,,false,abf-boundaries-v0.2.0,Astravets nuclear power plant,L100000500085,nuclear,pre_construction,1200

@@ -1,0 +1,137 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100447,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bakony power station,L100000102020,coal,retired,30
+G100000100448,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bakony power station,L100000102020,coal,retired,30
+G100000101012,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsod power station,L100000102027,coal,retired,30
+G100000101013,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsod power station,L100000102027,coal,retired,30
+G100000101014,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsod power station,L100000102027,coal,retired,30
+G100000101016,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsod power station,L100000102027,coal,cancelled,165
+G100000101017,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsod power station,L100000102027,coal,cancelled,165
+G100000106732,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,coal,operating,100
+G100000106733,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,coal,operating,100
+G100000106734,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,coal,operating,220
+G100000106735,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,coal,operating,232
+G100000106736,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,coal,operating,232
+G100000106738,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,coal,cancelled,500
+G100000106739,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Matraterenye power station,L100000102025,coal,cancelled,49.9
+G100000106778,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mecsek Hills power station,L100000102028,coal,cancelled,400
+G100000106973,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mohacs power station,L100000102029,coal,cancelled,1200
+G100000107677,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Oroszlány power station,L100000102024,coal,retired,55
+G100000107678,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Oroszlány power station,L100000102024,coal,retired,65
+G100000107679,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Oroszlány power station,L100000102024,coal,mothballed,65
+G100000107680,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Oroszlány power station,L100000102024,coal,mothballed,65
+G100000107903,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pecs power station,L100000102021,coal,retired,60
+G100000110197,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiszapalkonya power station,L100000102026,coal,retired,50
+G100000110198,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiszapalkonya power station,L100000102026,coal,retired,50
+G100000110199,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiszapalkonya power station,L100000102026,coal,retired,55
+G100000110295,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Torony power station,L100000102030,coal,cancelled,600
+G100000112548,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiszapalkonya power station,L100000102026,coal,retired,55
+G100000112549,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiszapalkonya power station,L100000102026,coal,retired,55
+G100000114610,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Banhida-II power station,L100000104703,coal,retired,100
+G100000201400,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dunaújváros power station,L100000201179,bioenergy,operating,40
+G100000201404,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pecs power station,L100000102021,bioenergy,operating,50
+G100000202494,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bakony power station,L100000102020,bioenergy,operating,30
+G100000202495,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bakony power station,L100000102020,bioenergy,operating,30
+G100000202496,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Oroszlány power station,L100000102024,bioenergy,operating,50
+G100000202497,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Oroszlány power station,L100000102024,bioenergy,operating,50
+G100000202498,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pecs power station,L100000102021,bioenergy,operating,35
+G100000400304,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ajka power station,L100000400304,oil/gas,operating,57
+G100000400305,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ajka power station,L100000400304,oil/gas,operating,57
+G100000400306,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsodchem power station,L100000400306,oil/gas,operating,50
+G100000400307,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Csepel power station,L100000400307,oil/gas,operating,402
+G100000400308,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Debrecen power station,L100000400308,oil/gas,operating,95
+G100000400309,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dunamenti power station,L100000400309,oil/gas,operating,297
+G100000400310,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dunamenti power station,L100000400309,oil/gas,operating,401
+G100000400311,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Gönyűi power station,L100000400311,oil/gas,operating,427
+G100000400312,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kelenföldi Erőmű power station,L100000400312,oil/gas,operating,178
+G100000400313,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kispesti Erőmű power station,L100000400313,oil/gas,operating,109
+G100000400314,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Liter power station,L100000400314,oil/gas,operating,123
+G100000400315,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,oil/gas,operating,30
+G100000400316,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,oil/gas,operating,30
+G100000400317,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miskolc Hold power station,L100000400317,oil/gas,operating,64
+G100000400318,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Nyíregyházi power station,L100000400318,oil/gas,operating,47
+G100000400319,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sajoszoged power station,L100000400319,oil/gas,operating,155
+G100000400320,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,TVK Industrial power station,L100000400320,oil/gas,operating,34
+G100000400321,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Újpesti power station,L100000400321,oil/gas,operating,110
+G100000400896,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Szeged Energy power station,L100000401435,oil/gas,cancelled,460
+G100000400897,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Szeged Energy power station,L100000401435,oil/gas,cancelled,460
+G100000406348,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lőrinci power station,L100000406402,oil/gas,operating,173
+G100000406349,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tisza power station,L100000406403,oil/gas,construction,500
+G100000406350,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,oil/gas,construction,540
+G100000406351,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,North Buda power station,L100000406404,oil/gas,operating,50
+G100000406352,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dufi power station,L100000406405,oil/gas,cancelled,860
+G100000410435,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,ISD Power station,L100000407820,oil/gas,operating,64.5
+G100000414426,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tisza power station,L100000406403,oil/gas,construction,500
+G100000500454,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paks nuclear power plant,L100000500197,nuclear,operating,509
+G100000500455,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paks nuclear power plant,L100000500197,nuclear,operating,506
+G100000500456,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paks nuclear power plant,L100000500197,nuclear,operating,506
+G100000500457,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paks nuclear power plant,L100000500197,nuclear,operating,506
+G100000500623,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paks nuclear power plant,L100000500197,nuclear,construction,1265
+G100000500624,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paks nuclear power plant,L100000500197,nuclear,construction,1265
+G100000601814,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sima Mountain hydroelectric plant,L100000601795,hydropower,shelved,1000
+G100000700303,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Turawell geothermal power plant,L100000700183,geothermal,announced,50
+G100000806741,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabai solar farm,L100000805859,utility-scale solar,operating,43
+G100000807252,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kapuvár solar farm,L100000806316,utility-scale solar,operating,25
+G100000807302,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaposvár solar farm,L100000806363,utility-scale solar,operating,100
+G100000807358,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bátonyterenye solar farm,L100000806411,utility-scale solar,operating,20
+G100000807359,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bocfölde solar farm,L100000806412,utility-scale solar,operating,24
+G100000807360,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mátraverebély solar farm,L100000806413,utility-scale solar,operating,20
+G100000807588,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dunai solar farm,L100000806619,utility-scale solar,operating,21
+G100000807589,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Felsőzsolca solar farm,L100000806620,utility-scale solar,operating,20
+G100000807590,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paks solar farm,L100000806621,utility-scale solar,operating,25
+G100000807591,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bükkábrány solar farm,L100000806622,utility-scale solar,operating,20
+G100000807961,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Halmajugra solar farm,L100000806941,utility-scale solar,construction,20
+G100000825821,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Buzsák solar farm,L100000822756,utility-scale solar,operating,77
+G100000825822,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Gerjen solar farm,L100000822757,utility-scale solar,operating,51
+G100000825823,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,LAFARGE factory solar farm,L100000822758,utility-scale solar,operating,28.5
+G100000825824,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Nyirseg solar farm,L100000822759,utility-scale solar,shelved,25
+G100000825825,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Söjtör solar farm,L100000822760,utility-scale solar,operating,45
+G100000825826,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Szügy solar farm,L100000822761,utility-scale solar,operating,65
+G100000912984,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bábolna wind farm,L100000910157,wind,operating,15
+G100000914436,energy_plants_gem_units,HUN,point,AUT,,,,,,,false,abf-boundaries-v0.2.0,Nikitsch wind farm,L100000911456,wind,operating,20
+G100000915368,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sopronkövesd wind farm,L100000912276,wind,operating,23
+G100000915556,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Levél wind farm,L100000912447,wind,operating,24
+G100000915590,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mosonmagyaróvár wind farm,L100000912477,wind,operating,24
+G100000915591,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Movár wind farm,L100000912478,wind,operating,24
+G100000915722,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bőny wind farm,L100000912592,wind,operating,25
+G100000915901,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Amundsen wind farm,L100000912751,wind,operating,26
+G100000916242,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hódmezővásárhely wind farm,L100000913035,wind,cancelled,28
+G100000916897,energy_plants_gem_units,HUN,point,AUT,,,,,,,false,abf-boundaries-v0.2.0,Andau wind farm,L100000913588,wind,operating,33
+G100000916916,energy_plants_gem_units,HUN,point,AUT,,,,,,,false,abf-boundaries-v0.2.0,Halbturn Puszta wind farm,L100000913602,wind,operating,33
+G100000917032,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ikervár wind farm,L100000913701,wind,operating,34
+G100000917240,energy_plants_gem_units,HUN,point,AUT,,,,,,,false,abf-boundaries-v0.2.0,Halbturn Neuriss wind farm,L100000913885,wind,operating,36
+G100000917302,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Scott wind farm,L100000913938,wind,operating,36
+G100000917436,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Csoma wind farm,L100000914058,wind,operating,38
+G100000917991,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hárskút wind farm,L100000914528,wind,cancelled,45
+G100000918505,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kisigmand wind farm,L100000914953,wind,operating,50
+G100000918580,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pannonia Ring wind farm,L100000915015,wind,cancelled,50
+G100001000472,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mezőcsát solar farm,L100001000256,utility-scale solar,operating,304
+G100001000477,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Uniper solar farm,L100001000261,utility-scale solar,announced,46
+G100001000533,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kat-A solar farm,L100001000317,utility-scale solar,operating,23
+G100001000534,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,ACDC Solar,L100001000318,utility-scale solar,operating,26
+G100001000535,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Attila solar farm,L100001000319,utility-scale solar,operating,57
+G100001000536,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tapolca solar farm,L100001000320,utility-scale solar,operating,60
+G100001000559,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Galgaguta solar farm,L100001000338,utility-scale solar,operating,66
+G100001000562,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tázlár solar farm,L100001000341,utility-scale solar,operating,63
+G100001000563,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Senyö solar farm,L100001000343,utility-scale solar,operating,63
+G100001001087,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Uniper solar farm,L100001000261,utility-scale solar,announced,46
+G100001001088,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Uniper solar farm,L100001000261,utility-scale solar,announced,46
+G100001001089,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Uniper solar farm,L100001000261,utility-scale solar,announced,46
+G100001001090,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Uniper solar farm,L100001000261,utility-scale solar,announced,46
+G100001001091,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Uniper solar farm,L100001000261,utility-scale solar,announced,46
+G100001006866,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Szolnok solar project,L100001005717,utility-scale solar,operating,19
+G100001006867,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zalaszentiván solar project,L100001005718,utility-scale solar,operating,19.9
+G100001022658,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hungary Tokaj solar farm,L100001019959,utility-scale solar,operating,200
+G100001023746,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabai solar farm,L100000805859,utility-scale solar,operating,23.4
+G100001031367,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsodchem power station,L100000400306,oil/gas,operating,50
+G100001031368,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tatabanya power station,L100001026099,oil/gas,operating,21
+G100001048274,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Turawell Cogeneration geothermal power plant,L100001042920,geothermal,operating,3.4
+G100001053192,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tét solar farm,L100001046882,utility-scale solar,pre_construction,90
+G100001053193,energy_plants_gem_units,HUN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dunaföldvár solar farm,L100001046883,utility-scale solar,pre_construction,61
+G100001053925,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Budapest Waste power station,L100001047385,bioenergy,operating,24
+G100001059453,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Csongrád-Csanád solar project XXIV,L100001051659,utility-scale solar,operating,3.2
+G100001059578,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Budapest solar project I,L100001051784,utility-scale solar,operating,1
+G100001059646,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Veszprém solar project XXV,L100001051852,utility-scale solar,operating,1.2
+G100001059686,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pest solar project LVI,L100001051892,utility-scale solar,operating,1.1
+G100001059688,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Szabolcs-Szatmár-Bereg solar project LIV,L100001051894,utility-scale solar,operating,1.1
+G100001059820,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Borsod-Abaúj-Zemplén solar project XLVIII,L100001052026,utility-scale solar,operating,1
+G100001094495,energy_plants_gem_units,HUN,point,,,,,,,,false,abf-boundaries-v0.2.0,Matra power station,L100000102023,bioenergy,pre_construction,38

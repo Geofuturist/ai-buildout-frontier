@@ -1,0 +1,116 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200214,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ciro Redondo power station,L100000200189,bioenergy,operating,60
+G100000201543,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio 30 de Noviembre power station,L100000201296,bioenergy,cancelled,50
+G100000201544,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio 5 de Septiembre power station,L100000201297,bioenergy,cancelled,50
+G100000201545,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio Antonio Guiteras power station,L100000201298,bioenergy,cancelled,50
+G100000201546,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Ingenio Batalla de las Guásimas power station,L100000201299,bioenergy,cancelled,50
+G100000201547,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio Héctor Molina power station,L100000201300,bioenergy,cancelled,50
+G100000201548,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ingenio Uruguay power station,L100000201301,bioenergy,cancelled,50
+G100000406686,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Varadero power station,L100000406587,oil/gas,operating,173
+G100000406687,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Boca de Jaruco power station,L100000406588,oil/gas,operating,313
+G100000412073,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Termoeléctrica de Santa Cruz power station,L100000408608,oil/gas,mothballed,95
+G100000412074,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Termoeléctrica de Santa Cruz power station,L100000408608,oil/gas,mothballed,100
+G100000412075,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Termoeléctrica de Santa Cruz power station,L100000408608,oil/gas,mothballed,100
+G100000412076,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Powership Suheyla Sultan power station,L100000408609,oil/gas,retired,240
+G100000412077,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Powership Esra Sultan power station,L100000408610,oil/gas,retired,80
+G100000412078,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Powership Erin Sultan (Cuba) power station,L100000408611,oil/gas,retired,130
+G100000412079,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Powership Ela Sultan (Cuba) power station,L100000408612,oil/gas,retired,80
+G100000412080,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Otto Parellada power station,L100000408613,oil/gas,retired,60
+G100000412081,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,EG Felton Fuel Oil power station,L100000408614,oil/gas,mothballed,60
+G100000412083,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Máximo Gómez power station,L100000408616,oil/gas,mothballed,90
+G100000412084,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Máximo Gómez power station,L100000408616,oil/gas,retired,90
+G100000412085,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Máximo Gómez power station,L100000408616,oil/gas,mothballed,100
+G100000412086,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Máximo Gómez power station,L100000408616,oil/gas,mothballed,90
+G100000412088,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Lidio Ramón Pérez power station,L100000408617,oil/gas,mothballed,230
+G100000412089,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Lidio Ramón Pérez power station,L100000408617,oil/gas,operating,250
+G100000412090,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Carlos Manuel de Céspedes power station,L100000408618,oil/gas,mothballed,158
+G100000412091,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CTE Carlos Manuel de Céspedes power station,L100000408618,oil/gas,operating,158
+G100000412092,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CT 10 de Octubre power station,L100000408587,oil/gas,operating,125
+G100000412093,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CT 10 de Octubre power station,L100000408587,oil/gas,mothballed,125
+G100000412094,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,CT 10 de Octubre power station,L100000408587,oil/gas,mothballed,125
+G100000412098,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Central Eléctrica Diésel Moa power station,L100000408588,oil/gas,mothballed,184
+G100000412099,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Camilo Cienfuegos power station,L100000408896,oil/gas,operating,84
+G100000412101,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Antonio Maceo Thermoelectric Power Plant,L100000408582,oil/gas,mothballed,95
+G100000412102,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Antonio Maceo Thermoelectric Power Plant,L100000408582,oil/gas,mothballed,95
+G100000412103,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Antonio Maceo Thermoelectric Power Plant,L100000408582,oil/gas,mothballed,95
+G100000412106,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Antonio Guiteras Thermoelectric Power Plant (CTE),L100000408584,oil/gas,operating,330
+G100000413140,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,EG Mariel power station,L100000408918,oil/gas,mothballed,147.4
+G100000501167,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Juragua nuclear power plant,L100000500411,nuclear,cancelled,440
+G100000501168,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Juragua nuclear power plant,L100000500411,nuclear,cancelled,440
+G100000809275,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Exim solar farm (Cuba),L100000807603,utility-scale solar,cancelled,75
+G100000809279,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Mariel solar farm,L100000807607,utility-scale solar,operating,38.7
+G100000809334,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Camaguey solar farm,L100000807659,utility-scale solar,operating,2.5
+G100000809336,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Guasimal solar farm,L100000807661,utility-scale solar,operating,4.4
+G100000809337,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Mariel solar farm,L100000807607,utility-scale solar,operating,10.5
+G100000809338,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Mariel solar farm,L100000807607,utility-scale solar,operating,12.7
+G100000809339,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Sancti Spitirus solar farm,L100000807662,utility-scale solar,operating,1.2
+G100000809340,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Sancti Spitirus solar farm,L100000807662,utility-scale solar,operating,1.2
+G100000837966,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Cumbre (NTPC) solar farm,L100000832414,utility-scale solar,pre_construction,25
+G100000837967,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Distancia (NTPC) solar farm,L100000832415,utility-scale solar,pre_construction,10
+G100000837968,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Paloma (NTPC) solar farm,L100000832416,utility-scale solar,pre_construction,5
+G100000837969,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Cristales solar farm,L100000832417,utility-scale solar,construction,2.2
+G100000837970,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Macún (NTPC) solar farm,L100000832418,utility-scale solar,pre_construction,10
+G100000837971,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Minidustria 2 (NTPC) solar farm,L100000832419,utility-scale solar,pre_construction,5
+G100000837974,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Program-06 ISA solar farm,L100000832422,utility-scale solar,announced,784.5
+G100000837975,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Quemado Hilario (NTPC) solar farm,L100000832423,utility-scale solar,pre_construction,5
+G100000837976,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,TBD Guajaibón solar farm,L100000832424,utility-scale solar,operating,23
+G100000837977,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,TBD Guajaibón solar farm,L100000832424,utility-scale solar,pre_construction,127
+G100000906204,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Manatí wind farm,L100000905000,wind,announced,122
+G100000906735,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,La Herradura wind farm,L100000905174,wind,construction,33
+G100000906736,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,La Herradura wind farm,L100000905174,wind,construction,50
+G100000906737,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Herradura wind farm,L100000905174,wind,announced,30
+G100000906738,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Jagüeyes wind farm,L100000905175,wind,announced,35
+G100000906739,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Playa Piloto wind farm,L100000905176,wind,cancelled,40
+G100000906740,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Rio Seco wind farm,L100000905177,wind,construction,50
+G100000907613,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Gibara wind farm,L100000905536,wind,announced,50
+G100000907662,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banes wind farm,L100000905579,wind,cancelled,30
+G100000907663,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banes wind farm,L100000905579,wind,cancelled,30
+G100000907664,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banes wind farm,L100000905579,wind,cancelled,30
+G100000907665,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabo Lucrecia wind farm,L100000905580,wind,announced,50
+G100000907666,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Camagüey wind farm,L100000905581,wind,cancelled,30
+G100000907667,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Punta De Mulas wind farm,L100000905582,wind,announced,50
+G100000907668,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Punta Fraile wind farm,L100000905583,wind,announced,52.5
+G100000907669,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Punta Fraile wind farm,L100000905583,wind,announced,35
+G100000907670,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Punta Quemado wind farm,L100000905584,wind,announced,52
+G100000907671,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Punta Quemado wind farm,L100000905584,wind,announced,35
+G100000907672,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Rio Seco wind farm,L100000905177,wind,announced,96
+G100000920604,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Gibara wind farm,L100000905536,wind,operating,5.1
+G100000920605,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Gibara wind farm,L100000905536,wind,operating,4.5
+G100000920606,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Isla de la Juventud wind farm,L100000916582,wind,operating,1.6
+G100000920607,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Jiguey wind farm,L100000916583,wind,shelved,51
+G100000920609,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Nuevas Grandes wind farm,L100000916585,wind,shelved,51
+G100000920610,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Turiguanó Norte wind farm,L100000916586,wind,shelved,51
+G100001008741,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Powership Erol Bey power station,L100001007573,oil/gas,mothballed,63
+G100001023636,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Criolla solar plant,L100001020714,utility-scale solar,operating,4.4
+G100001023734,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,BioCubaFarma solar farm,L100001020785,utility-scale solar,announced,5
+G100001023764,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Cívica solar farm,L100001020814,utility-scale solar,construction,20
+G100001023765,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Mayarí solar farm,L100001020815,utility-scale solar,operating,21.8
+G100001023768,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Jovellanos II solar farm,L100001020818,utility-scale solar,operating,21.9
+G100001051572,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Alcalde Mayor solar farm,L100001045759,utility-scale solar,operating,21.9
+G100001051574,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Escuela de Enfermería solar farm,L100001045760,utility-scale solar,operating,21.9
+G100001057374,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Calabazar de Sagua solar farm,L100001049742,utility-scale solar,operating,21.9
+G100001057379,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Santiago Rojas Salinas solar farm,L100001049748,utility-scale solar,operating,21.9
+G100001057380,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Hoyo Colorado solar farm,L100001049750,utility-scale solar,operating,21.9
+G100001057381,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Mal Tiempo solar farm,L100001049751,utility-scale solar,operating,21.9
+G100001057383,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Carolina solar farm,L100001049752,utility-scale solar,operating,21.9
+G100001057384,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Mango Dulce solar farm,L100001049753,utility-scale solar,operating,21.9
+G100001057385,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,La Sábana solar farm,L100001049754,utility-scale solar,operating,21.9
+G100001057386,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Remedios solar farm,L100001049755,utility-scale solar,operating,21.9
+G100001057387,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Cruce de la Trocha solar farm,L100001049756,utility-scale solar,operating,21.9
+G100001057431,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Tapias solar farm,L100001049795,utility-scale solar,construction,21.8
+G100001057433,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Camilo Cienfuegos solar farm,L100001049797,utility-scale solar,operating,21.8
+G100001057434,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Barbarita solar farm,L100001049798,utility-scale solar,operating,21.8
+G100001057966,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Luaces solar farm,L100001050262,utility-scale solar,operating,23.8
+G100001058012,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,El Santuario solar farm,L100001050295,utility-scale solar,operating,21.8
+G100001070581,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Antonio Maceo Thermoelectric Power Plant,L100000408582,oil/gas,mothballed,95
+G100001071087,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Termoeléctrica de Santa Cruz power station,L100000408608,oil/gas,announced,200
+G100001071866,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanabanilla hydroelectric plant,L100001062577,hydropower,mothballed,43
+G100001074843,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Colón solar project,L100001065057,utility-scale solar,operating,13.1
+G100001091043,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Tuinucú solar farm,L100001080995,utility-scale solar,operating,21.8
+G100001091044,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Cabaiguán solar farm,L100001080996,utility-scale solar,operating,21.9
+G100001091045,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,El Meso solar farm,L100001080997,utility-scale solar,operating,21.8
+G100001091046,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,La Lucila solar farm,L100001080998,utility-scale solar,operating,21.8
+G100001091051,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,El Rincón solar farm,L100001081003,utility-scale solar,operating,21.9
+G100001091054,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Colón (Cuba) solar farm,L100001081006,utility-scale solar,operating,21.8
+G100001091055,energy_plants_gem_units,CUB,point,,,,,,,,true,abf-boundaries-v0.2.0,Guanábana II solar farm,L100001081007,utility-scale solar,construction,21.8
+G100001094904,energy_plants_gem_units,CUB,point,,,,,,,,false,abf-boundaries-v0.2.0,Powership Belgin Sultán power station,L100001083739,oil/gas,mothballed,61

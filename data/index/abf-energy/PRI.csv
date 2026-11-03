@@ -1,0 +1,92 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100057,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,AES Puerto Rico power station,L100000104168,coal,operating,255
+G100000100058,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,AES Puerto Rico power station,L100000104168,coal,operating,255
+G100000200212,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Arecibo Waste-to-Energy power station,L100000200187,bioenergy,shelved,38.5
+G100000402109,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,EcoElectrica power station,L100000402537,oil/gas,operating,574
+G100000403439,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Costa Sur power station,L100000402238,oil/gas,operating,410
+G100000403440,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Costa Sur power station,L100000402238,oil/gas,operating,410
+G100000407338,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,San Juan (PR) power station,L100000406862,oil/gas,operating,220
+G100000407339,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,San Juan (PR) power station,L100000406862,oil/gas,operating,220
+G100000407340,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Palo Seco power station,L100000406863,oil/gas,operating,150
+G100000414193,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,San Juan (PR) power station,L100000406862,oil/gas,operating,100
+G100000414194,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,San Juan (PR) power station,L100000406862,oil/gas,operating,100
+G100000414195,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,San Juan (PR) power station,L100000406862,oil/gas,operating,100
+G100000414196,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,San Juan (PR) power station,L100000406862,oil/gas,operating,100
+G100000414214,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Palo Seco power station,L100000406863,oil/gas,operating,216
+G100000414215,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Palo Seco power station,L100000406863,oil/gas,operating,216
+G100000414216,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Palo Seco power station,L100000406863,oil/gas,operating,85
+G100000414217,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Palo Seco power station,L100000406863,oil/gas,operating,85
+G100000414240,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayaguez power station,L100000409267,oil/gas,operating,55
+G100000414241,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayaguez power station,L100000409267,oil/gas,operating,55
+G100000414242,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayaguez power station,L100000409267,oil/gas,operating,55
+G100000414243,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayaguez power station,L100000409267,oil/gas,operating,55
+G100000414293,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Cambalache power station,L100000409216,oil/gas,operating,82
+G100000414294,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Cambalache power station,L100000409216,oil/gas,operating,82
+G100000414295,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Cambalache power station,L100000409216,oil/gas,operating,82
+G100000414314,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Aguirre power station,L100000409205,oil/gas,operating,296
+G100000414315,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Aguirre power station,L100000409205,oil/gas,operating,296
+G100000414316,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Aguirre power station,L100000409205,oil/gas,operating,450
+G100000414317,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Aguirre power station,L100000409205,oil/gas,operating,450
+G100000500613,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Boiling Nuclear Superheater (BONUS) nuclear power plant,L100000500261,nuclear,retired,18
+G100000501404,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,North Coast nuclear power plant,L100000500489,nuclear,cancelled,583
+G100000808715,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Humacao 1 solar farm,L100000807322,utility-scale solar,operating,20
+G100000808835,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Montalva Solar,L100000807381,utility-scale solar,pre_construction,160
+G100000809265,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Oriana solar farm,L100000807597,utility-scale solar,operating,45
+G100000809272,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Ciro One solar farm,L100000807600,utility-scale solar,mothballed,140
+G100000809278,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Xzerta-Tec Solar,L100000807606,utility-scale solar,announced,60
+G100000809284,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Quebradillas solar farm,L100000807611,utility-scale solar,cancelled,20
+G100000809286,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Vega Serena Solar Plant,L100000807613,utility-scale solar,cancelled,20
+G100000809287,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Bareloneta solar farm,L100000807614,utility-scale solar,cancelled,20
+G100000809288,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,San German solar farm,L100000807615,utility-scale solar,pre_construction,45
+G100000809289,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Dorado solar farm,L100000807616,utility-scale solar,cancelled,20
+G100000809293,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,San Fermin Solar Project,L100000807620,utility-scale solar,operating,20
+G100000809294,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Yabucoa Solar,L100000807621,utility-scale solar,construction,32
+G100000809295,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Rosa Solar,L100000807622,utility-scale solar,cancelled,20
+G100000809296,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Morovis Solar,L100000807623,utility-scale solar,pre_construction,51
+G100000809331,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Blue Beetle solar farm,L100000807656,utility-scale solar,cancelled,20
+G100000809332,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Moca solar farm,L100000807657,utility-scale solar,cancelled,20
+G100000809524,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Arecibo Filtration Plant solar farm,L100000807809,utility-scale solar,operating,1
+G100000809525,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Canovanas Filtration Plant solar farm,L100000807810,utility-scale solar,operating,1
+G100000809526,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Coama solar farm,L100000807811,utility-scale solar,pre_construction,100
+G100000809527,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Coto Laurel solar farm,L100000807812,utility-scale solar,operating,10
+G100000809528,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,El Yunque Filtration Plant solar farm,L100000807813,utility-scale solar,operating,2
+G100000809529,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Buchanan Distributed Generation solar farm,L100000807814,utility-scale solar,operating,5.8
+G100000809530,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Gasna 18P solar farm,L100000807815,utility-scale solar,operating,5
+G100000809531,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Horizon Energy Hybrid solar farm,L100000807816,utility-scale solar,operating,10
+G100000809532,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilumina (AES) solar farm,L100000807817,utility-scale solar,operating,20
+G100000809533,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Janssen Ortho solar farm,L100000807818,utility-scale solar,operating,2.2
+G100000809534,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Martino solar farm (Puerto Rico),L100000807819,utility-scale solar,operating,3.6
+G100000809535,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Medtronic Solar Plant,L100000807820,utility-scale solar,operating,4
+G100000809536,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Pfizer Guayama solar farm,L100000807821,utility-scale solar,operating,5
+G100000809537,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Pfizer Vega Baja solar farm,L100000807822,utility-scale solar,operating,3.1
+G100000809538,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,USCG Puerto Rico solar farm,L100000807823,utility-scale solar,retired,2.3
+G100000838222,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Bayamon Ave Zaya Verde solar farm,L100000832634,utility-scale solar,construction,2
+G100000838223,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Bemoga solar farm,L100000832635,utility-scale solar,shelved,25
+G100000838224,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabo Rojo (Diverxia) solar farm,L100000832636,utility-scale solar,shelved,20.7
+G100000838225,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Cabo Rojo (Uriel Canadian) solar farm,L100000832637,utility-scale solar,shelved,100
+G100000838226,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Ciro Two solar farm,L100000832638,utility-scale solar,shelved,33
+G100000838227,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Eaton Corp Arecibo Puerto Rico Hybrid solar farm,L100000832639,utility-scale solar,operating,2.2
+G100000838228,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Eaton Corp Arecibo Puerto Rico Hybrid solar farm,L100000832639,utility-scale solar,operating,2.2
+G100000838229,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Esmeralda solar farm (Puerto Rico),L100000832640,utility-scale solar,cancelled,60
+G100000838230,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Guayama solar farm,L100000832641,utility-scale solar,shelved,25
+G100000838231,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Hatillo solar farm,L100000832642,utility-scale solar,pre_construction,20.5
+G100000838232,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Humacao 2 solar farm,L100000832643,utility-scale solar,operating,20
+G100000838233,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Jobos solar farm,L100000832644,utility-scale solar,pre_construction,80.3
+G100000838234,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Lily del Caribe solar farm,L100000832645,utility-scale solar,operating,2
+G100000838235,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Mayaguez solar farm,L100000832646,utility-scale solar,shelved,25
+G100000838236,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Naguabo solar farm,L100000832647,utility-scale solar,shelved,25
+G100000838237,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Naguabo solar farm,L100000832647,utility-scale solar,shelved,20
+G100000838238,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Pattern Barceloneta solar farm,L100000832648,utility-scale solar,shelved,60
+G100000838239,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Salinas solar farm,L100000832649,utility-scale solar,pre_construction,120
+G100000838240,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Tetris Power solar farm,L100000832650,utility-scale solar,shelved,20
+G100000838241,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Vega Baja solar farm,L100000832651,utility-scale solar,shelved,25
+G100000838242,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Yabucoa Energy Park solar farm,L100000832652,utility-scale solar,shelved,38.7
+G100000908763,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Punta Lima wind farm,L100000906481,wind,operating,26
+G100000908950,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Dorado-Toa Baja wind farm,L100000906639,wind,cancelled,44
+G100000909458,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Santa Isabel wind farm,L100000907034,wind,operating,101
+G100001054241,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,San Juan II power plant,L100001047619,oil/gas,pre_construction,560
+G100001054326,energy_plants_gem_units,PRI,point,,,,,,,,true,abf-boundaries-v0.2.0,Arecibo Waste-to-Energy power station,L100000200187,bioenergy,shelved,38.5
+G100001071052,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Costa Sur power station,L100000402238,oil/gas,construction,50
+G100001071053,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Costa Sur power station,L100000402238,oil/gas,construction,50
+G100001071468,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Yauco hydroelectric plant,L100001062233,hydropower,operating,34
+G100001094983,energy_plants_gem_units,PRI,point,,,,,,,,false,abf-boundaries-v0.2.0,Costa Sur power station,L100000402238,oil/gas,announced,600

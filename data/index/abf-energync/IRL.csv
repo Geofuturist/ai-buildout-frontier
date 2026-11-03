@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001010366,energy_plants_gem_tzsam_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dunderrow solar project,L100001008996,utility-scale solar,operating,6.6
+G100001010368,energy_plants_gem_tzsam_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Davidstown solar project,L100001008998,utility-scale solar,operating,4.9
+G100001010370,energy_plants_gem_tzsam_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lurrig solar project,L100001009000,utility-scale solar,operating,3.6
+G100001010371,energy_plants_gem_tzsam_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Knockglass solar project,L100001009001,utility-scale solar,operating,4
+G100001010380,energy_plants_gem_tzsam_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,County Monaghan solar project,L100001009010,utility-scale solar,operating,1
+G100001010381,energy_plants_gem_tzsam_units,IRL,point,,,,,,,,false,abf-boundaries-v0.2.0,Courtown solar project,L100001009011,utility-scale solar,operating,4

@@ -1,0 +1,219 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100971,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Bobov Dol power station,L100000100137,coal,operating,210
+G100000100972,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Bobov Dol power station,L100000100137,coal,operating,210
+G100000100973,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Bobov Dol power station,L100000100137,coal,operating,210
+G100000100974,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Bobov Dol power station,L100000100137,coal,cancelled,200
+G100000100975,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Bobov Dol power station,L100000100137,coal,cancelled,200
+G100000101051,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Brikel power station,L100000100142,coal,operating,50
+G100000101052,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Brikel power station,L100000100142,coal,operating,50
+G100000101053,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Brikel power station,L100000100142,coal,operating,50
+G100000101054,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Brikel power station,L100000100142,coal,operating,50
+G100000101055,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Brikel power station,L100000100142,coal,mothballed,50
+G100000101056,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Brikel power station,L100000100142,coal,mothballed,50
+G100000102332,energy_plants_gem_units,BGR,point,,BGR-1-21,,point,,,,true,abf-boundaries-v0.2.0,Deven power station,L100000100141,coal,operating,121
+G100000102333,energy_plants_gem_units,BGR,point,,BGR-1-21,,point,,,,true,abf-boundaries-v0.2.0,Deven power station,L100000100141,coal,operating,53
+G100000106383,energy_plants_gem_units,BGR,point,,BGR-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lom Power Station,L100000100150,coal,cancelled,400
+G100000106668,energy_plants_gem_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Maritsa 3 power station,L100000100136,coal,mothballed,120
+G100000106669,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,177
+G100000106670,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,165
+G100000106671,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,177
+G100000106672,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,177
+G100000106673,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,210
+G100000106674,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,232
+G100000106675,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,232
+G100000106676,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,operating,232
+G100000106677,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-3 power station,L100000100144,coal,retired,227
+G100000106678,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-3 power station,L100000100144,coal,retired,227
+G100000106679,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-3 power station,L100000100144,coal,operating,227
+G100000106680,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-3 power station,L100000100144,coal,operating,227
+G100000106681,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-1 power station,L100000100148,coal,mothballed,345
+G100000106682,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-1 power station,L100000100148,coal,mothballed,345
+G100000106683,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,cancelled,280
+G100000106684,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,coal,cancelled,280
+G100000106685,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-3 power station,L100000100144,coal,cancelled,700
+G100000106686,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-4 power station,L100000100153,coal,cancelled,600
+G100000108557,energy_plants_gem_units,BGR,point,,BGR-1-14,,point,,,,false,abf-boundaries-v0.2.0,Republika power station,L100000100138,coal,operating,105
+G100000108664,energy_plants_gem_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse Iztok power station,L100000100139,coal,mothballed,30
+G100000108665,energy_plants_gem_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse Iztok power station,L100000100139,coal,mothballed,30
+G100000108666,energy_plants_gem_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse Iztok power station,L100000100139,coal,mothballed,110
+G100000108667,energy_plants_gem_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse Iztok power station,L100000100139,coal,operating,110
+G100000108668,energy_plants_gem_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse Iztok power station,L100000100139,coal,operating,60
+G100000108669,energy_plants_gem_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse Iztok power station,L100000100139,coal,operating,60
+G100000109485,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven power station,L100000100140,coal,operating,30
+G100000109769,energy_plants_gem_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Svilosa power station,L100000100146,coal,retired,60
+G100000109770,energy_plants_gem_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Svilosa power station,L100000100146,coal,retired,60
+G100000110558,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,coal,retired,210
+G100000110559,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,coal,retired,210
+G100000110560,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,coal,retired,210
+G100000110561,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,coal,retired,210
+G100000110562,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,coal,retired,210
+G100000110563,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,coal,retired,210
+G100000110587,energy_plants_gem_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin Works power station,L100000100147,coal,mothballed,60
+G100000110588,energy_plants_gem_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin Works power station,L100000100147,coal,mothballed,60
+G100000114241,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven power station,L100000100140,coal,mothballed,30
+G100000400041,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Neftochim Refinery power station,L100000400041,oil/gas,operating,25
+G100000400042,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Neftochim Refinery power station,L100000400041,oil/gas,operating,65
+G100000400043,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Neftochim Refinery power station,L100000400041,oil/gas,operating,63
+G100000400044,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Neftochim Refinery power station,L100000400041,oil/gas,operating,63
+G100000400045,energy_plants_gem_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv North power station,L100000400045,oil/gas,operating,50
+G100000400046,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Sofia power station,L100000400046,oil/gas,operating,50
+G100000400047,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Sofia power station,L100000400046,oil/gas,operating,25
+G100000400048,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Sofia Iztok power station,L100000400048,oil/gas,operating,167
+G100000406325,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,oil/gas,operating,210
+G100000406326,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,oil/gas,mothballed,210
+G100000406327,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,oil/gas,mothballed,210
+G100000406328,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Toplofikacia Pleven power station,L100000406397,oil/gas,operating,43
+G100000407334,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,oil/gas,cancelled,275
+G100000407335,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna power station,L100000100145,oil/gas,cancelled,275
+G100000407336,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Bobov Dol power station,L100000100137,oil/gas,cancelled,180
+G100000410436,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Sofia Iztok power station,L100000400048,oil/gas,announced,240
+G100000410437,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Sofia power station,L100000400046,oil/gas,shelved,240
+G100000410443,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Maritsa Iztok-2 power station,L100000100143,oil/gas,cancelled,1000
+G100000410801,energy_plants_gem_units,BGR,point,,BGR-1-01,,point,,,,true,abf-boundaries-v0.2.0,Rupite power station,L100000408020,oil/gas,shelved,276
+G100000500191,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,operating,1040
+G100000500192,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,operating,1040
+G100000500492,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,retired,440
+G100000500493,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,retired,440
+G100000500494,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,retired,440
+G100000500495,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,retired,440
+G100000500712,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Belene nuclear power plant,L100000500295,nuclear,cancelled,1000
+G100000500713,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Belene nuclear power plant,L100000500295,nuclear,cancelled,1000
+G100000500717,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,pre_construction,1000
+G100000500718,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kozloduy nuclear power plant,L100000500097,nuclear,pre_construction,1000
+G100000501053,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Belene Original nuclear power plant,L100000500385,nuclear,cancelled,1000
+G100000501054,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Belene Original nuclear power plant,L100000500385,nuclear,cancelled,1000
+G100000600364,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Belmeken hydroelectric plant,L100000600363,hydropower,operating,375
+G100000600365,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Chaira hydroelectric plant,L100000600364,hydropower,operating,864
+G100000600366,energy_plants_gem_units,BGR,point,,BGR-1-21,,point,,,,false,abf-boundaries-v0.2.0,Devin hydroelectric plant,L100000600365,hydropower,operating,88
+G100000600367,energy_plants_gem_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Ivailovgrad hydroelectric plant,L100000600366,hydropower,operating,114
+G100000600368,energy_plants_gem_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kardjali hydroelectric plant,L100000600367,hydropower,operating,110
+G100000600369,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Krichim hydroelectric plant,L100000600368,hydropower,operating,80
+G100000600370,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Momina Klisura hydroelectric plant,L100000600369,hydropower,operating,120
+G100000600371,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Orfeus hydroelectric plant,L100000600370,hydropower,operating,160
+G100000600372,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Peshtera hydroelectric plant,L100000600371,hydropower,operating,135
+G100000600373,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Sestrimo hydroelectric plant,L100000600372,hydropower,operating,240
+G100000600374,energy_plants_gem_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Studen Kladenets hydroelectric plant,L100000600373,hydropower,operating,81
+G100000600375,energy_plants_gem_units,BGR,point,,BGR-1-21,,point,,,,false,abf-boundaries-v0.2.0,Tsankov Kamak hydroelectric plant,L100000600374,hydropower,operating,85
+G100000604898,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,true,abf-boundaries-v0.2.0,Turnu Magurele - Nikopol hydroelectric plant,L100000604074,hydropower,pre_construction,840
+G100000604988,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,true,abf-boundaries-v0.2.0,Batak Pumped Storage hydroelectric plant,L100000604406,hydropower,announced,800
+G100000604989,energy_plants_gem_units,BGR,point,,BGR-1-21,,point,,,,true,abf-boundaries-v0.2.0,Dospat hydroelectric plant,L100000604407,hydropower,announced,800
+G100000806548,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Cherganovo solar farm,L100000805693,utility-scale solar,operating,30
+G100000806549,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pobeda solar farm,L100000805694,utility-scale solar,operating,51
+G100000806580,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Kazanlak solar farm,L100000805717,utility-scale solar,operating,25
+G100000806581,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Kazanlak solar farm,L100000805717,utility-scale solar,operating,26
+G100000806801,energy_plants_gem_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Karadzhalovo solar farm,L100000805912,utility-scale solar,operating,60
+G100000806840,energy_plants_gem_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,PES PV solar farm,L100000805942,utility-scale solar,operating,21
+G100000806851,energy_plants_gem_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,ASM PV solar farm,L100000805950,utility-scale solar,operating,21
+G100000806952,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Devnya solar farm,L100000806039,utility-scale solar,cancelled,65
+G100000806953,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Devnya solar farm,L100000806039,utility-scale solar,cancelled,110
+G100000806969,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Silistra solar farm,L100000806050,utility-scale solar,cancelled,80
+G100000807156,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Granitovo solar farm,L100000806225,utility-scale solar,cancelled,21
+G100000807245,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Haskovo solar farm,L100000806309,utility-scale solar,cancelled,400
+G100000807246,energy_plants_gem_units,BGR,point,,BGR-1-26,,point,,,,true,abf-boundaries-v0.2.0,Dimitrovgrad solar farm,L100000806310,utility-scale solar,cancelled,65
+G100000807270,energy_plants_gem_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Tenevo solar farm,L100000806333,utility-scale solar,operating,65
+G100000807962,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Apriltsi solar farm,L100000806942,utility-scale solar,operating,57
+G100000818821,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Apriltsi solar farm,L100000806942,utility-scale solar,operating,93
+G100000818822,energy_plants_gem_units,BGR,point,,BGR-1-23,,point,,,,true,abf-boundaries-v0.2.0,Verila solar farm,L100000815913,utility-scale solar,operating,124
+G100000910388,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Balchik wind farm,L100000907721,wind,operating,10
+G100000910687,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Long Man Wind Park,L100000908002,wind,operating,10
+G100000911715,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kardam wind farm,L100000908985,wind,operating,12
+G100000911736,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Krupen wind farm,L100000909006,wind,operating,12
+G100000912228,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Karnobat Wind Park,L100000909473,wind,operating,13
+G100000912695,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Hrabrovo wind farm,L100000909900,wind,operating,14
+G100000913474,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Mogilishte-Zapad wind farm,L100000910597,wind,operating,16
+G100000913548,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Silistra wind farm,L100000910659,wind,cancelled,16
+G100000914058,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Krapelit wind farm,L100000911116,wind,operating,18
+G100000914236,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Vranino wind farm,L100000911275,wind,operating,18
+G100000914497,energy_plants_gem_units,BGR,point,,BGR-1-09,,point,,,,true,abf-boundaries-v0.2.0,Chernichevo wind farm,L100000911510,wind,cancelled,20
+G100000914807,energy_plants_gem_units,BGR,point,GRC,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Phadaros wind farm,L100000911785,wind,operating,20.7
+G100000914898,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kamen Bryag (Enel) wind farm,L100000911868,wind,operating,21
+G100000914983,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Shabla wind farm,L100000911940,wind,operating,21
+G100000915254,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Vetrocom wind farm,L100000912175,wind,operating,22
+G100000915829,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Vetrocom wind farm,L100000912175,wind,operating,25
+G100000915830,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Vetrocom wind farm,L100000912175,wind,operating,25
+G100000916012,energy_plants_gem_units,BGR,point,,BGR-1-09,,point,,,,true,abf-boundaries-v0.2.0,Taushan Tepe wind farm,L100000912843,wind,cancelled,26
+G100000916018,energy_plants_gem_units,BGR,point,,BGR-1-09,,point,,,,true,abf-boundaries-v0.2.0,Tumbata wind farm,L100000912848,wind,cancelled,26
+G100000916112,energy_plants_gem_units,BGR,point,,BGR-1-09,,point,,,,true,abf-boundaries-v0.2.0,Popsko wind farm,L100000912924,wind,cancelled,27
+G100000916496,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Evn Bulgarevo wind farm,L100000913257,wind,operating,30
+G100000916887,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Stanata wind farm,L100000913579,wind,cancelled,32
+G100000916992,energy_plants_gem_units,BGR,point,GRC,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mikronoros wind farm,L100000913667,wind,operating,33.6
+G100000917135,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Kaliakra Cape wind farm,L100000913791,wind,operating,35
+G100000917181,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Trigortsi wind farm,L100000913829,wind,cancelled,35
+G100000917189,energy_plants_gem_units,BGR,point,,BGR-1-01,,point,,,,true,abf-boundaries-v0.2.0,Alaburun wind farm,L100000913837,wind,cancelled,36
+G100000917662,energy_plants_gem_units,BGR,point,,BGR-1-27,,point,,,,true,abf-boundaries-v0.2.0,Ruzhitsa wind farm,L100000914249,wind,cancelled,40
+G100000917680,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Tcherga wind farm,L100000914264,wind,operating,40
+G100000917859,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Wp Gurkovo wind farm,L100000914409,wind,cancelled,42
+G100000917910,energy_plants_gem_units,BGR,point,,BGR-1-01,,point,,,,true,abf-boundaries-v0.2.0,Belasitsa wind farm,L100000914454,wind,cancelled,44
+G100000918057,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Wpd Sokolovo wind farm,L100000914584,wind,cancelled,45
+G100000918476,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Evn Bulgarevo wind farm,L100000913257,wind,operating,50
+G100000918503,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kavarna (Italgen) wind farm,L100000914951,wind,cancelled,50
+G100000918732,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Vidno wind farm,L100000915132,wind,cancelled,52
+G100000918744,energy_plants_gem_units,BGR,point,,BGR-1-27,,point,,,,true,abf-boundaries-v0.2.0,Krasen Dol wind farm,L100000915142,wind,cancelled,53
+G100000918816,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Chengene Kale wind farm,L100000915203,wind,cancelled,56
+G100000918933,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Suvorovo wind farm,L100000915303,wind,operating,60
+G100000918949,energy_plants_gem_units,BGR,point,,BGR-1-01,,point,,,,true,abf-boundaries-v0.2.0,Belasitsa wind farm,L100000914454,wind,cancelled,62
+G100000918976,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Silistra wind farm,L100000910659,wind,cancelled,64
+G100000919003,energy_plants_gem_units,BGR,point,SRB,BGR-1-10,,point,,,,true,abf-boundaries-v0.2.0,Milevska wind farm,L100000915359,wind,cancelled,66
+G100000919080,energy_plants_gem_units,BGR,point,,BGR-1-01,,point,,,,true,abf-boundaries-v0.2.0,Orgyuak wind farm,L100000915426,wind,cancelled,70
+G100000919363,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kamen Bryag (NT Energy) wind farm,L100000915664,wind,cancelled,96
+G100000919399,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,true,abf-boundaries-v0.2.0,Kyustendil wind farm,L100000915694,wind,cancelled,100
+G100000919406,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,true,abf-boundaries-v0.2.0,Murgash wind farm,L100000915700,wind,cancelled,100
+G100000919479,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,true,abf-boundaries-v0.2.0,Kavarna (EVN) wind farm,L100000915756,wind,cancelled,111
+G100000919503,energy_plants_gem_units,BGR,point,,BGR-1-12,,point,,,,true,abf-boundaries-v0.2.0,Dalgi Del wind farm,L100000915777,wind,cancelled,116
+G100000919521,energy_plants_gem_units,BGR,point,,BGR-1-12,,point,,,,true,abf-boundaries-v0.2.0,Chiprovtsi wind farm,L100000915789,wind,cancelled,120
+G100000919541,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,true,abf-boundaries-v0.2.0,W.Power Milkovitsa wind farm,L100000915808,wind,cancelled,120
+G100000919595,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,true,abf-boundaries-v0.2.0,Lozenets wind farm,L100000915854,wind,cancelled,140
+G100000919625,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,true,abf-boundaries-v0.2.0,Dobrudzha wind farm,L100000915881,wind,cancelled,150
+G100000919639,energy_plants_gem_units,BGR,point,,BGR-1-20,,point,,,,true,abf-boundaries-v0.2.0,Sliven wind farm,L100000915894,wind,cancelled,150
+G100000919655,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Saint Nikola wind farm,L100000915908,wind,operating,156
+G100000919670,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,CPC Spasovo wind farm,L100000915921,wind,cancelled,162
+G100000919717,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Volkswind Dabrava wind farm,L100000915962,wind,cancelled,182
+G100000919885,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Wind Farm General Toshevo,L100000916108,wind,cancelled,300
+G100000923842,energy_plants_gem_units,BGR,point,,BGR-1-03,,point,,,,true,abf-boundaries-v0.2.0,Dobrotich wind farm,L100000919346,wind,shelved,592
+G100001004678,energy_plants_gem_units,BGR,point,,BGR-1-16,,point,,,,true,abf-boundaries-v0.2.0,Kaloyanovo solar farm,L100001004023,utility-scale solar,operating,66
+G100001004679,energy_plants_gem_units,BGR,point,,BGR-1-16,,point,,,,true,abf-boundaries-v0.2.0,Kaloyanovo solar farm,L100001004023,utility-scale solar,operating,50
+G100001004680,energy_plants_gem_units,BGR,point,,BGR-1-16,,point,,,,true,abf-boundaries-v0.2.0,Kaloyanovo solar farm,L100001004023,utility-scale solar,operating,92
+G100001004681,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Galabovo solar farm,L100001004025,utility-scale solar,operating,201
+G100001004682,energy_plants_gem_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Karlovo solar farm,L100001004026,utility-scale solar,operating,107
+G100001004683,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Chirpan solar farm,L100001004027,utility-scale solar,shelved,160
+G100001004684,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,true,abf-boundaries-v0.2.0,Bobov Dol solar farm,L100001004028,utility-scale solar,shelved,100
+G100001004685,energy_plants_gem_units,BGR,point,,BGR-1-19,,point,,,,true,abf-boundaries-v0.2.0,St George solar farm,L100001004029,utility-scale solar,construction,229
+G100001004686,energy_plants_gem_units,BGR,point,,BGR-1-12,,point,,,,true,abf-boundaries-v0.2.0,Ogosta solar farm,L100001004030,utility-scale solar,shelved,800
+G100001004687,energy_plants_gem_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Razlog solar farm,L100001004031,utility-scale solar,operating,33
+G100001004688,energy_plants_gem_units,BGR,point,,BGR-1-18,,point,,,,true,abf-boundaries-v0.2.0,Tsenovo solar farm,L100001004032,utility-scale solar,operating,112.5
+G100001004689,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Maglizh solar farm,L100001004033,utility-scale solar,pre_construction,100
+G100001004690,energy_plants_gem_units,BGR,point,,BGR-1-28,,point,,,,true,abf-boundaries-v0.2.0,Tenevo wind farm,L100001004034,wind,announced,250
+G100001004691,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Gorichane Prolez wind farm,L100001004035,wind,pre_construction,56
+G100001004692,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Prolez wind farm,L100001004036,wind,cancelled,40
+G100001005206,energy_plants_gem_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Bobov Dol power station,L100000100137,oil/gas,pre_construction,42
+G100001009565,energy_plants_gem_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Letnitsa solar project,L100001008195,utility-scale solar,operating,11
+G100001009573,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Dupinovi solar project,L100001008203,utility-scale solar,operating,15
+G100001009578,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project,L100001008208,utility-scale solar,operating,18
+G100001009579,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa N solar project,L100001008209,utility-scale solar,operating,4.9
+G100001023568,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,true,abf-boundaries-v0.2.0,Apriltsi solar farm,L100000806942,utility-scale solar,operating,250
+G100001030681,energy_plants_gem_units,BGR,point,,BGR-1-21,,point,,,,false,abf-boundaries-v0.2.0,Teshel hydroelectric plant,L100001025788,hydropower,operating,60
+G100001030683,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Aleko hydroelectric plant,L100001025789,hydropower,operating,71
+G100001050736,energy_plants_gem_units,BGR,point,,BGR-1-26,,point,,,,true,abf-boundaries-v0.2.0,Simeonovgrad solar farm,L100001045134,utility-scale solar,announced,70
+G100001050737,energy_plants_gem_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Polyanovo solar farm,L100001045135,utility-scale solar,announced,180
+G100001050738,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,true,abf-boundaries-v0.2.0,Sinitovo solar farm,L100001045136,utility-scale solar,announced,50
+G100001050743,energy_plants_gem_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Kaolinovo solar project,L100001008199,utility-scale solar,operating,50
+G100001050748,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,General Toshevo wind farm,L100001045144,wind,announced,400
+G100001053989,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,true,abf-boundaries-v0.2.0,Sofia Incinerator power station,L100001047440,bioenergy,cancelled,21
+G100001058930,energy_plants_gem_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XXII,L100001051136,utility-scale solar,operating,3.6
+G100001058934,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XIII,L100001051140,utility-scale solar,operating,1.1
+G100001058939,energy_plants_gem_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XIII,L100001051145,utility-scale solar,operating,1.1
+G100001059014,energy_plants_gem_units,BGR,point,,BGR-1-07,,point,,,,false,abf-boundaries-v0.2.0,Gabrovo solar project II,L100001051220,utility-scale solar,operating,1.3
+G100001059058,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Sofia Serdika solar project,L100001051264,utility-scale solar,operating,2
+G100001059089,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXXI,L100001051295,utility-scale solar,operating,1
+G100001073317,energy_plants_gem_units,BGR,point,,BGR-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kremena wind farm,L100001063779,wind,announced,72
+G100001073327,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,true,abf-boundaries-v0.2.0,Strandzha solar farm,L100001063789,utility-scale solar,pre_construction,45
+G100001073328,energy_plants_gem_units,BGR,point,,BGR-1-24,,point,,,,true,abf-boundaries-v0.2.0,Colosseum solar park,L100001063790,utility-scale solar,announced,165
+G100001073329,energy_plants_gem_units,BGR,point,,BGR-1-16,,point,,,,true,abf-boundaries-v0.2.0,Vedrare solar farm,L100001063791,utility-scale solar,construction,88
+G100001073384,energy_plants_gem_units,BGR,point,,BGR-1-05,,point,,,,true,abf-boundaries-v0.2.0,Gramada solar farm,L100001063833,utility-scale solar,announced,41
+G100001073394,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,true,abf-boundaries-v0.2.0,Selanovtsi solar farm,L100001063840,utility-scale solar,operating,60
+G100001073396,energy_plants_gem_units,BGR,point,,BGR-1-06,,point,,,,true,abf-boundaries-v0.2.0,Gabare solar farm,L100001063841,utility-scale solar,pre_construction,400
+G100001073425,energy_plants_gem_units,BGR,point,,BGR-1-27,,point,,,,true,abf-boundaries-v0.2.0,Kamenyak solar farm,L100001063872,utility-scale solar,construction,75
+G100001073430,energy_plants_gem_units,BGR,point,,BGR-1-02,,point,,,,true,abf-boundaries-v0.2.0,Vratitsa solar farm,L100001063877,utility-scale solar,announced,130
+G100001091078,energy_plants_gem_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Tenevo solar farm,L100000806333,utility-scale solar,pre_construction,173
+G100001092943,energy_plants_gem_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Batak hydroelectric plant,L100001082561,hydropower,operating,47
+G100001092944,energy_plants_gem_units,BGR,point,,BGR-1-22,,point,,,,false,abf-boundaries-v0.2.0,Pasarel hydroelectric plant,L100001082562,hydropower,operating,31

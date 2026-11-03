@@ -1,0 +1,35 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100149,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ambatovy Nickel power station,L100000103010,coal,operating,40
+G100000100150,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ambatovy Nickel power station,L100000103010,coal,operating,40
+G100000100151,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ambatovy Nickel power station,L100000103010,coal,operating,40
+G100000113414,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Imaloto Coal power station,L100000103009,coal,shelved,30
+G100000413959,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Mandroseza (repower) power plant,L100000409177,oil/gas,operating,40
+G100000413960,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Joneva Noor power plant,L100000409178,oil/gas,operating,28
+G100000413961,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Joneva Noor power plant,L100000409178,oil/gas,operating,48
+G100000413962,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Ambohimanambola (Trigu) power plant,L100000409179,oil/gas,operating,105
+G100000413963,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Ambohimanambola (Aksaf) power plant,L100000409180,oil/gas,operating,66
+G100000602455,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Andekaleka hydroelectric plant,L100000602424,hydropower,operating,91
+G100000602457,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Sahofika hydroelectric plant,L100000602426,hydropower,pre_construction,192
+G100000604212,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Antetezambato hydroelectric plant,L100000602425,hydropower,pre_construction,142
+G100000604936,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Volobe Amont hydroelectric plant,L100000602427,hydropower,pre_construction,120
+G100000800021,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ambatolampy solar farm,L100000800020,utility-scale solar,operating,20
+G100000800022,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ambatolampy solar farm,L100000800020,utility-scale solar,operating,20
+G100000831186,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Ihazolava solar farm,L100000827654,utility-scale solar,announced,200
+G100000831187,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Mahajanga solar farm,L100000827655,utility-scale solar,announced,10
+G100000900010,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Ehoala wind farm,L100000900009,wind,operating,16
+G100000927407,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Andranotakatra wind farm,L100000921997,wind,shelved,240
+G100001021490,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Ehoala solar farm,L100001019076,utility-scale solar,operating,8
+G100001021491,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Ehoala solar farm,L100001019076,utility-scale solar,pre_construction,6
+G100001030407,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Mandraka hydroelectric plant,L100001025637,hydropower,operating,24
+G100001074121,energy_plants_gem_units,MDG,point,,,,,,,,false,abf-boundaries-v0.2.0,Andranotakatra solar farm,L100001064418,utility-scale solar,operating,17
+G100001074123,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Malile (REPP) solar farm,L100001064420,utility-scale solar,operating,2.4
+G100001074124,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Malile (REPP) solar farm,L100001064420,utility-scale solar,pre_construction,10
+G100001074125,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Malile (REPP) solar farm,L100001064420,utility-scale solar,operating,1.2
+G100001074126,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Malile (REPP) solar farm,L100001064420,utility-scale solar,pre_construction,12
+G100001074129,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Malile (REPP) solar farm,L100001064420,utility-scale solar,pre_construction,20
+G100001074130,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Moramanga (GSU) solar farm,L100001064421,utility-scale solar,pre_construction,50
+G100001074132,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Madiro solar farm,L100001064422,utility-scale solar,construction,5
+G100001074134,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Moramanga (GSU) solar farm,L100001064421,utility-scale solar,pre_construction,250
+G100001074135,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Tsarasaotra solar farm,L100001064423,utility-scale solar,construction,100
+G100001090885,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Moramanga (Afripower) solar farm,L100001080904,utility-scale solar,construction,15
+G100001090886,energy_plants_gem_units,MDG,point,,,,,,,,true,abf-boundaries-v0.2.0,Moramanga (Afripower) solar farm,L100001080904,utility-scale solar,announced,25

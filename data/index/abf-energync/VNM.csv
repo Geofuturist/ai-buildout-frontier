@@ -1,0 +1,1018 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000835515,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Binh Hoa solar project,L100000831565,utility-scale solar,operating,13.3
+G100000835525,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Duc Minh solar project,L100000831570,utility-scale solar,operating,19.6
+G100000835546,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuan An solar project,L100000831591,utility-scale solar,operating,9.9
+G100000835551,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vinh Tan port solar project,L100000831596,utility-scale solar,operating,5
+G100001029277,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sóc Trăng Province solar project,L100001024596,utility-scale solar,operating,7.9
+G100001029278,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Lắk Province solar project I,L100001024597,utility-scale solar,operating,5.2
+G100001029279,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Thọ District solar project,L100001024598,utility-scale solar,operating,6.6
+G100001029280,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project,L100001024599,utility-scale solar,operating,5.5
+G100001029281,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tây Ninh Province solar project,L100001024600,utility-scale solar,operating,6.3
+G100001029282,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Song District solar project I,L100001024601,utility-scale solar,operating,7.3
+G100001029283,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Châu Thành A District solar project,L100001024602,utility-scale solar,operating,4.9
+G100001029284,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project I,L100001024603,utility-scale solar,operating,4.2
+G100001029285,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đông Hải District solar project I,L100001024604,utility-scale solar,operating,5.6
+G100001029286,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project I,L100001024605,utility-scale solar,operating,2.9
+G100001029287,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hon Dat District solar project I,L100001024606,utility-scale solar,operating,6.1
+G100001029288,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dầu Tiếng District solar project I,L100001024607,utility-scale solar,operating,3.3
+G100001029289,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Linh District solar project I,L100001024608,utility-scale solar,operating,3.6
+G100001029290,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project II,L100001024609,utility-scale solar,operating,5.9
+G100001029291,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project III,L100001024610,utility-scale solar,operating,2
+G100001029292,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tân Châu District solar project I,L100001024611,utility-scale solar,operating,4.3
+G100001029293,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project II,L100001024612,utility-scale solar,operating,2.1
+G100001029294,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project I,L100001024613,utility-scale solar,operating,3
+G100001029295,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project IV,L100001024614,utility-scale solar,operating,3.3
+G100001029296,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Hà District solar project,L100001024615,utility-scale solar,operating,4.1
+G100001029297,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project I,L100001024616,utility-scale solar,operating,2.5
+G100001029298,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Đức District solar project I,L100001024617,utility-scale solar,operating,1.5
+G100001029299,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xã Xuân Phú Xuân Lộc District solar project,L100001024618,utility-scale solar,operating,11.7
+G100001029300,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project II,L100001024619,utility-scale solar,operating,1
+G100001029301,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuyên Mộc District solar project I,L100001024620,utility-scale solar,operating,2.3
+G100001029302,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đăk Tô District solar project,L100001024621,utility-scale solar,operating,1.3
+G100001029303,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đại Lộc District solar project,L100001024622,utility-scale solar,operating,2.2
+G100001029304,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tân Uyên solar project I,L100001024623,utility-scale solar,operating,3.6
+G100001029305,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Mil District solar project I,L100001024624,utility-scale solar,operating,3.5
+G100001029306,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Păh District solar project I,L100001024625,utility-scale solar,operating,2.6
+G100001029307,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Đức District solar project II,L100001024626,utility-scale solar,operating,2.3
+G100001029308,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Định Quán District solar project I,L100001024627,utility-scale solar,operating,1.4
+G100001029309,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Yên Châu District solar project,L100001024628,utility-scale solar,operating,2.2
+G100001029310,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phú Riềng District solar project I,L100001024629,utility-scale solar,operating,1.2
+G100001029311,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vĩnh Cửu District solar project I,L100001024630,utility-scale solar,operating,2.9
+G100001029312,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phước Long District solar project I,L100001024631,utility-scale solar,operating,11.9
+G100001029313,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chau Duc District solar project I,L100001024632,utility-scale solar,operating,1.5
+G100001029314,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ea Kar District solar project I,L100001024633,utility-scale solar,operating,2.1
+G100001029315,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project I,L100001024634,utility-scale solar,operating,4.6
+G100001029316,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hải District solar project I,L100001024635,utility-scale solar,operating,9.3
+G100001029317,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Sê District solar project I,L100001024636,utility-scale solar,operating,2.3
+G100001029318,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thạch Hà District solar project I,L100001024637,utility-scale solar,operating,2.4
+G100001029319,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project V,L100001024638,utility-scale solar,operating,1.7
+G100001029320,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghi Lộc District solar project I,L100001024639,utility-scale solar,operating,2.4
+G100001029321,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project VI,L100001024640,utility-scale solar,operating,2
+G100001029322,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phú Riềng District solar project II,L100001024641,utility-scale solar,operating,3.7
+G100001029323,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phước Long District solar project II,L100001024642,utility-scale solar,operating,6.1
+G100001029324,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project VII,L100001024643,utility-scale solar,operating,3.3
+G100001029325,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tân Châu District solar project II,L100001024644,utility-scale solar,operating,4.3
+G100001029326,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Châu Thành District solar project I,L100001024645,utility-scale solar,operating,3.7
+G100001029327,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Phước Province solar project I,L100001024646,utility-scale solar,operating,5.4
+G100001029328,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cẩm Mỹ District solar project,L100001024647,utility-scale solar,operating,4.9
+G100001029329,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project II,L100001024648,utility-scale solar,operating,3.9
+G100001029330,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hương Khê District solar project,L100001024649,utility-scale solar,operating,15.8
+G100001029331,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hòa Bình District solar project I,L100001024650,utility-scale solar,operating,5.1
+G100001029332,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project III,L100001024651,utility-scale solar,operating,4.8
+G100001029334,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuân Lộc District solar project I,L100001024653,utility-scale solar,operating,3.8
+G100001029336,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ia Grai District solar project I,L100001024655,utility-scale solar,operating,3.5
+G100001029337,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Păh District solar project II,L100001024656,utility-scale solar,operating,4
+G100001029338,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ea Kar District solar project II,L100001024657,utility-scale solar,operating,6.6
+G100001029339,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Mil District solar project II,L100001024658,utility-scale solar,operating,2.8
+G100001029340,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Buôn Đôn District solar project II,L100001024659,utility-scale solar,operating,3.7
+G100001029341,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lâm Hà District solar project I,L100001024660,utility-scale solar,operating,4.1
+G100001029342,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Nô District solar project I,L100001024661,utility-scale solar,operating,4.3
+G100001029343,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lâm Hà District solar project II,L100001024662,utility-scale solar,operating,4
+G100001029344,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xã Xuân Hưng Xuân Lộc District solar project,L100001024663,utility-scale solar,operating,7.8
+G100001029345,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project I,L100001024664,utility-scale solar,operating,2.2
+G100001029346,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ia Grai District solar project II,L100001024665,utility-scale solar,operating,2.4
+G100001029347,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Mil District solar project III,L100001024666,utility-scale solar,operating,7.5
+G100001029348,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuân Lộc District solar project II,L100001024667,utility-scale solar,operating,5.6
+G100001029349,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Di Linh District solar project I,L100001024668,utility-scale solar,operating,10.9
+G100001029350,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Yên Định District solar project I,L100001024669,utility-scale solar,operating,9.4
+G100001029351,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project I,L100001024670,utility-scale solar,operating,2.8
+G100001029352,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Đức District solar project III,L100001024671,utility-scale solar,operating,3
+G100001029353,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Prông District solar project I,L100001024672,utility-scale solar,operating,2.2
+G100001029354,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Nô District solar project II,L100001024673,utility-scale solar,operating,2.9
+G100001029355,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngọc Hồi District solar project I,L100001024674,utility-scale solar,operating,3.5
+G100001029356,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Gia Mập District solar project I,L100001024675,utility-scale solar,operating,4.8
+G100001029357,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dầu Tiếng District solar project II,L100001024676,utility-scale solar,operating,2.9
+G100001029358,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bạc Liêu Province solar project,L100001024677,utility-scale solar,operating,4.7
+G100001029359,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Di Linh District solar project II,L100001024678,utility-scale solar,operating,2.6
+G100001029360,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Prông District solar project II,L100001024679,utility-scale solar,operating,2.2
+G100001029361,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Mil District solar project IV,L100001024680,utility-scale solar,operating,10
+G100001029362,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Nô District solar project III,L100001024681,utility-scale solar,operating,3.1
+G100001029363,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đông Hải District solar project II,L100001024682,utility-scale solar,operating,5.6
+G100001029364,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Huyện Gò Quao solar project I,L100001024683,utility-scale solar,operating,3.2
+G100001029365,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kbang District solar project I,L100001024684,utility-scale solar,operating,14.8
+G100001029366,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project I,L100001024685,utility-scale solar,operating,3.3
+G100001029367,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuyên Mộc District solar project II,L100001024686,utility-scale solar,operating,4.2
+G100001029368,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ia Grai District solar project III,L100001024687,utility-scale solar,operating,4.4
+G100001029369,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Păh District solar project III,L100001024688,utility-scale solar,operating,5.1
+G100001029370,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project IV,L100001024689,utility-scale solar,operating,3.9
+G100001029371,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghi Lộc District solar project II,L100001024690,utility-scale solar,operating,3.3
+G100001029372,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Giồng Riềng District solar project,L100001024691,utility-scale solar,operating,3.6
+G100001029373,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Đăng District solar project,L100001024692,utility-scale solar,operating,4.2
+G100001029374,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bạc Liêu solar project I,L100001024693,utility-scale solar,operating,1.2
+G100001029375,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tân Uyên solar project II,L100001024694,utility-scale solar,operating,2.4
+G100001029376,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bạc Liêu solar project II,L100001024695,utility-scale solar,operating,4.7
+G100001029377,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Bắc District solar project I,L100001024696,utility-scale solar,operating,3.6
+G100001029378,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phù Cát District solar project,L100001024697,utility-scale solar,operating,4.8
+G100001029379,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thạch Hà District solar project II,L100001024698,utility-scale solar,operating,9.4
+G100001029380,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Buôn Đôn District solar project III,L100001024699,utility-scale solar,operating,1.6
+G100001029381,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project VIII,L100001024700,utility-scale solar,operating,2.8
+G100001029382,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuyên Mộc District solar project III,L100001024701,utility-scale solar,operating,10.3
+G100001029383,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Pắc District solar project I,L100001024702,utility-scale solar,operating,2.7
+G100001029384,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hòa solar project I,L100001024703,utility-scale solar,operating,2.3
+G100001029385,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project I,L100001024704,utility-scale solar,operating,3
+G100001029386,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mai Sơn District solar project,L100001024705,utility-scale solar,operating,3.2
+G100001029387,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project I,L100001024706,utility-scale solar,operating,1.2
+G100001029388,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project II,L100001024707,utility-scale solar,operating,2.8
+G100001029389,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project III,L100001024708,utility-scale solar,operating,3.1
+G100001029390,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Đức District solar project IV,L100001024709,utility-scale solar,operating,2.5
+G100001029391,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project II,L100001024710,utility-scale solar,operating,1.8
+G100001029392,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Pắc District solar project II,L100001024711,utility-scale solar,operating,3.5
+G100001029393,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Gia Mập District solar project II,L100001024712,utility-scale solar,operating,4.8
+G100001029394,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Lắk Province solar project II,L100001024713,utility-scale solar,operating,1.4
+G100001029395,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đak Pơ District solar project I,L100001024714,utility-scale solar,operating,2.1
+G100001029396,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vĩnh Linh District solar project I,L100001024715,utility-scale solar,operating,4.2
+G100001029397,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Định Quán District solar project II,L100001024716,utility-scale solar,operating,6.3
+G100001029398,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quảng Trạch District solar project I,L100001024717,utility-scale solar,operating,2.2
+G100001029399,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Bắc District solar project I,L100001024718,utility-scale solar,operating,2.4
+G100001029400,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Gia Mập District solar project III,L100001024719,utility-scale solar,operating,2.3
+G100001029401,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Phong District solar project I,L100001024720,utility-scale solar,operating,4.5
+G100001029402,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Huyện Gò Quao solar project II,L100001024721,utility-scale solar,operating,6.8
+G100001029404,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Phong District solar project II,L100001024723,utility-scale solar,operating,14.9
+G100001029406,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project III,L100001024725,utility-scale solar,operating,10.9
+G100001029407,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project IV,L100001024726,utility-scale solar,operating,2
+G100001029408,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bà Rịa - Vũng Tàu Province solar project,L100001024727,utility-scale solar,operating,4.6
+G100001029409,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bến Lức District solar project I,L100001024728,utility-scale solar,operating,15.9
+G100001029410,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cam Ranh solar project,L100001024729,utility-scale solar,operating,2.9
+G100001029411,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cam Ranh Cam Lâm District solar project,L100001024730,utility-scale solar,operating,1.7
+G100001029412,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Phước District solar project I,L100001024731,utility-scale solar,operating,6.6
+G100001029413,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Phước District solar project II,L100001024732,utility-scale solar,operating,2.2
+G100001029414,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Phước District solar project III,L100001024733,utility-scale solar,operating,4
+G100001029415,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Hòa District solar project,L100001024734,utility-scale solar,operating,3.1
+G100001029416,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tân Châu District solar project III,L100001024735,utility-scale solar,operating,2.8
+G100001029417,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kien Luong District solar project I,L100001024736,utility-scale solar,operating,6.6
+G100001029418,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kien Luong District solar project II,L100001024737,utility-scale solar,operating,2.3
+G100001029419,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kien Luong District solar project III,L100001024738,utility-scale solar,operating,6
+G100001029420,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hon Dat District solar project II,L100001024739,utility-scale solar,operating,3.4
+G100001029421,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Giang Thành District solar project,L100001024740,utility-scale solar,operating,4.6
+G100001029422,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xã Lương An Trà Tri Tôn District solar project,L100001024741,utility-scale solar,operating,8.3
+G100001029423,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hương Sơn District solar project,L100001024742,utility-scale solar,operating,3
+G100001029424,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Huyện Vị Thủy solar project,L100001024743,utility-scale solar,operating,3.7
+G100001029425,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phước Long District solar project III,L100001024744,utility-scale solar,operating,8.3
+G100001029426,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phước Long District solar project IV,L100001024745,utility-scale solar,operating,5
+G100001029427,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lương Sơn District solar project,L100001024746,utility-scale solar,operating,1.6
+G100001029428,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bạc Liêu solar project III,L100001024747,utility-scale solar,operating,3.3
+G100001029429,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bạc Liêu solar project IV,L100001024748,utility-scale solar,operating,4.2
+G100001029430,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghi Xuân District solar project,L100001024749,utility-scale solar,operating,2.9
+G100001029431,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Yên Định District solar project II,L100001024750,utility-scale solar,operating,4.5
+G100001029432,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kế Sách District solar project,L100001024751,utility-scale solar,operating,4.1
+G100001029433,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bến Lức District solar project II,L100001024752,utility-scale solar,operating,7.7
+G100001029434,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hướng Hóa District solar project,L100001024753,utility-scale solar,operating,2.4
+G100001029435,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quảng Trạch District solar project II,L100001024754,utility-scale solar,operating,5.1
+G100001029436,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project II,L100001024755,utility-scale solar,operating,4.5
+G100001029437,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project III,L100001024756,utility-scale solar,operating,5
+G100001029438,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project IV,L100001024757,utility-scale solar,operating,1.6
+G100001029439,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project V,L100001024758,utility-scale solar,operating,3.5
+G100001029440,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuyên Mộc District solar project IV,L100001024759,utility-scale solar,operating,2.5
+G100001029441,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuân Lộc District solar project III,L100001024760,utility-scale solar,operating,4.6
+G100001029442,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Định Quán District solar project III,L100001024761,utility-scale solar,operating,2.6
+G100001029443,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Song District solar project II,L100001024762,utility-scale solar,operating,1.5
+G100001029444,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project II,L100001024763,utility-scale solar,operating,1.9
+G100001029445,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngọc Hồi District solar project II,L100001024764,utility-scale solar,operating,1.9
+G100001029446,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngọc Hồi District solar project III,L100001024765,utility-scale solar,operating,1.4
+G100001029447,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngọc Hồi District solar project IV,L100001024766,utility-scale solar,operating,1.7
+G100001029448,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quảng Điền District solar project I,L100001024767,utility-scale solar,operating,4.2
+G100001029449,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project V,L100001024768,utility-scale solar,operating,2.6
+G100001029450,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Bắc District solar project II,L100001024769,utility-scale solar,operating,2.3
+G100001029451,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project III,L100001024770,utility-scale solar,operating,8.4
+G100001029452,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project IV,L100001024771,utility-scale solar,operating,2.7
+G100001029453,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Trọng District solar project,L100001024772,utility-scale solar,operating,9.6
+G100001029455,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project IV,L100001024774,utility-scale solar,operating,3.5
+G100001029456,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Ana District solar project I,L100001024775,utility-scale solar,operating,4
+G100001029457,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project V,L100001024776,utility-scale solar,operating,2.3
+G100001029458,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Buôn Đôn District solar project IV,L100001024777,utility-scale solar,operating,3.3
+G100001029459,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Buôn Đôn District solar project V,L100001024778,utility-scale solar,operating,2.1
+G100001029460,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Búk District solar project I,L100001024779,utility-scale solar,operating,1.8
+G100001029461,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Prông District solar project III,L100001024780,utility-scale solar,operating,2.2
+G100001029462,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Pưh District solar project,L100001024781,utility-scale solar,operating,1.6
+G100001029463,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Prông District solar project IV,L100001024782,utility-scale solar,operating,1.5
+G100001029464,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Pleiku Ia Grai District solar project,L100001024783,utility-scale solar,operating,2.7
+G100001029465,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Păh District solar project IV,L100001024784,utility-scale solar,operating,1.7
+G100001029466,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Păh District solar project V,L100001024785,utility-scale solar,operating,1.4
+G100001029467,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tiên Phước District solar project,L100001024786,utility-scale solar,operating,3.2
+G100001029468,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project V,L100001024787,utility-scale solar,operating,7.2
+G100001029469,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project V,L100001024788,utility-scale solar,operating,1.7
+G100001029470,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Phong District solar project III,L100001024789,utility-scale solar,operating,1.8
+G100001029471,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project II,L100001024790,utility-scale solar,operating,13.2
+G100001029472,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ea Kar District solar project III,L100001024791,utility-scale solar,operating,2
+G100001029473,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ia Pa District solar project I,L100001024792,utility-scale solar,operating,6.4
+G100001029474,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đak Pơ District solar project II,L100001024793,utility-scale solar,operating,3.1
+G100001029475,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kbang District solar project II,L100001024794,utility-scale solar,operating,2.2
+G100001029476,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project VI,L100001024795,utility-scale solar,operating,7
+G100001029477,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Bắc District solar project II,L100001024796,utility-scale solar,operating,12.2
+G100001029478,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project III,L100001024797,utility-scale solar,operating,2.9
+G100001029479,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project IV,L100001024798,utility-scale solar,operating,4.2
+G100001029480,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hòa solar project II,L100001024799,utility-scale solar,operating,6.1
+G100001029481,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Xuân District solar project,L100001024800,utility-scale solar,operating,5.8
+G100001029482,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sơn Hòa District solar project,L100001024801,utility-scale solar,operating,6.2
+G100001029483,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mộ Đức District solar project I,L100001024802,utility-scale solar,operating,9.9
+G100001029484,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Sơn District solar project,L100001024803,utility-scale solar,operating,10.4
+G100001029485,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Long Dat District solar project I,L100001024804,utility-scale solar,operating,1.4
+G100001029486,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Thuận Province solar project,L100001024805,utility-scale solar,operating,4.1
+G100001029487,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xã Xuân Bắc Xuân Lộc District solar project,L100001024806,utility-scale solar,operating,3.7
+G100001029488,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project VI,L100001024807,utility-scale solar,operating,8.7
+G100001029489,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Đại District solar project,L100001024808,utility-scale solar,operating,6.3
+G100001029490,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project VII,L100001024809,utility-scale solar,operating,6.4
+G100001029491,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project V,L100001024810,utility-scale solar,operating,4.5
+G100001029492,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Di Linh District solar project III,L100001024811,utility-scale solar,operating,5.5
+G100001029493,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Xoài solar project I,L100001024812,utility-scale solar,operating,8.8
+G100001029494,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đak Đoa District solar project I,L100001024813,utility-scale solar,operating,3.4
+G100001029495,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hải District solar project II,L100001024814,utility-scale solar,operating,4.3
+G100001029496,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project VI,L100001024815,utility-scale solar,operating,2
+G100001029497,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Pắc District solar project III,L100001024816,utility-scale solar,operating,2.6
+G100001029498,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bác Ái District solar project I,L100001024817,utility-scale solar,operating,17
+G100001029499,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Pa District solar project,L100001024818,utility-scale solar,operating,2
+G100001029500,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sơn Tịnh District solar project I,L100001024819,utility-scale solar,operating,6.6
+G100001029501,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project VI,L100001024820,utility-scale solar,operating,3.6
+G100001029502,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vĩnh Cửu District solar project II,L100001024821,utility-scale solar,operating,2.6
+G100001029503,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hải District solar project III,L100001024822,utility-scale solar,operating,3.8
+G100001029504,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Sê District solar project II,L100001024823,utility-scale solar,operating,1.3
+G100001029505,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Phước Province solar project II,L100001024824,utility-scale solar,operating,5.4
+G100001029506,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project III,L100001024825,utility-scale solar,operating,3.4
+G100001029507,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Châu Thành District solar project II,L100001024826,utility-scale solar,operating,2.4
+G100001029508,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vĩnh Hưng District solar project,L100001024827,utility-scale solar,operating,7.6
+G100001029510,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Gia Nghĩa solar project,L100001024829,utility-scale solar,operating,3.4
+G100001029511,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Định Quán District solar project IV,L100001024830,utility-scale solar,operating,1.4
+G100001029512,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Phước District solar project IV,L100001024831,utility-scale solar,operating,2.3
+G100001029513,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project IV,L100001024832,utility-scale solar,operating,2.3
+G100001029514,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Đốp District solar project I,L100001024833,utility-scale solar,operating,3.7
+G100001029515,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Linh District solar project II,L100001024834,utility-scale solar,operating,4.6
+G100001029516,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Định Quán District solar project V,L100001024835,utility-scale solar,operating,1.6
+G100001029517,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Song District solar project III,L100001024836,utility-scale solar,operating,4.1
+G100001029518,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk R'Lấp District solar project I,L100001024837,utility-scale solar,operating,3
+G100001029519,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phong Điền District solar project,L100001024838,utility-scale solar,operating,5.1
+G100001029520,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Sê District solar project III,L100001024839,utility-scale solar,operating,3
+G100001029521,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Sê District solar project IV,L100001024840,utility-scale solar,operating,2.7
+G100001029522,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quế Sơn District solar project I,L100001024841,utility-scale solar,operating,2.2
+G100001029523,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kien Luong District solar project IV,L100001024842,utility-scale solar,operating,4.4
+G100001029524,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hon Dat District solar project III,L100001024843,utility-scale solar,operating,3.7
+G100001029525,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thạch Hà District solar project III,L100001024844,utility-scale solar,operating,3
+G100001029526,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Moc Hoa District solar project I,L100001024845,utility-scale solar,operating,4.2
+G100001029527,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vĩnh Linh District solar project II,L100001024846,utility-scale solar,operating,1.6
+G100001029528,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project IX,L100001024847,utility-scale solar,operating,3.9
+G100001029529,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Cơ District solar project,L100001024848,utility-scale solar,operating,4.7
+G100001029530,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Buôn Đôn District solar project VI,L100001024849,utility-scale solar,operating,1.9
+G100001029531,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project VI,L100001024850,utility-scale solar,operating,2.3
+G100001029532,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phú Hòa District solar project I,L100001024851,utility-scale solar,operating,4.1
+G100001029533,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Định Province solar project I,L100001024852,utility-scale solar,operating,9.5
+G100001029534,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Bắc District solar project III,L100001024853,utility-scale solar,operating,14.1
+G100001029535,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Búk District solar project II,L100001024854,utility-scale solar,operating,4.2
+G100001029536,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project VII,L100001024855,utility-scale solar,operating,1.7
+G100001029537,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Gia Mập District solar project IV,L100001024856,utility-scale solar,operating,13
+G100001029538,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thăng Bình District solar project,L100001024857,utility-scale solar,operating,2.2
+G100001029539,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project VII,L100001024858,utility-scale solar,operating,5.6
+G100001029540,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sơn Tịnh District solar project II,L100001024859,utility-scale solar,operating,13.3
+G100001029541,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project II,L100001024860,utility-scale solar,operating,5.2
+G100001029542,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project VIII,L100001024861,utility-scale solar,operating,1.5
+G100001029543,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sơn Tịnh District solar project III,L100001024862,utility-scale solar,operating,7.2
+G100001029544,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project VIII,L100001024863,utility-scale solar,operating,5.9
+G100001029545,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Ana District solar project II,L100001024864,utility-scale solar,operating,3
+G100001029546,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project III,L100001024865,utility-scale solar,operating,4.3
+G100001029547,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project VI,L100001024866,utility-scale solar,operating,3.5
+G100001029548,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hòa Bình District solar project II,L100001024867,utility-scale solar,operating,5.6
+G100001029549,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Đức District solar project V,L100001024868,utility-scale solar,operating,2.9
+G100001029550,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Bắc District solar project III,L100001024869,utility-scale solar,operating,3.2
+G100001029551,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project IV,L100001024870,utility-scale solar,operating,6
+G100001029552,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Linh District solar project III,L100001024871,utility-scale solar,operating,4.5
+G100001029553,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đơn Dương District solar project,L100001024872,utility-scale solar,operating,5.7
+G100001029554,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project VII,L100001024873,utility-scale solar,operating,4.7
+G100001029555,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Phổ solar project I,L100001024874,utility-scale solar,operating,9.1
+G100001029556,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project X,L100001024875,utility-scale solar,operating,6.2
+G100001029557,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Định Province solar project II,L100001024876,utility-scale solar,operating,3.7
+G100001029558,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hòa solar project III,L100001024877,utility-scale solar,operating,5.4
+G100001029559,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Bông District solar project I,L100001024878,utility-scale solar,operating,2.5
+G100001029560,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project VIII,L100001024879,utility-scale solar,operating,2.5
+G100001029561,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xã Suối Cao Xuân Lộc District solar project,L100001024880,utility-scale solar,operating,7.3
+G100001029562,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project VII,L100001024881,utility-scale solar,operating,3.8
+G100001029563,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project V,L100001024882,utility-scale solar,operating,5.6
+G100001029564,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Di Linh District solar project IV,L100001024883,utility-scale solar,operating,3.7
+G100001029565,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project VIII,L100001024884,utility-scale solar,operating,6.1
+G100001029566,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project IX,L100001024885,utility-scale solar,operating,4.7
+G100001029567,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project VI,L100001024886,utility-scale solar,operating,5.2
+G100001029568,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dầu Tiếng District solar project III,L100001024887,utility-scale solar,operating,5.3
+G100001029569,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project X,L100001024888,utility-scale solar,operating,4.7
+G100001029570,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phú Hòa District solar project II,L100001024889,utility-scale solar,operating,5.7
+G100001029571,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project XI,L100001024890,utility-scale solar,operating,2
+G100001029572,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project XI,L100001024891,utility-scale solar,operating,4.6
+G100001029573,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dầu Tiếng District solar project IV,L100001024892,utility-scale solar,operating,5
+G100001029574,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Phước District solar project V,L100001024893,utility-scale solar,operating,3.4
+G100001029575,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project IV,L100001024894,utility-scale solar,operating,2.9
+G100001029576,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project V,L100001024895,utility-scale solar,operating,2
+G100001029577,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mộ Đức District solar project II,L100001024896,utility-scale solar,operating,4.5
+G100001029578,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project VII,L100001024897,utility-scale solar,operating,1.6
+G100001029579,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Khánh Vĩnh District solar project I,L100001024898,utility-scale solar,operating,3.9
+G100001029580,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project VIII,L100001024899,utility-scale solar,operating,6.9
+G100001029581,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ia Pa District solar project II,L100001024900,utility-scale solar,operating,3.8
+G100001029582,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Xoài solar project II,L100001024901,utility-scale solar,operating,2.4
+G100001029583,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project XII,L100001024902,utility-scale solar,operating,3.4
+G100001029584,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hòa solar project IV,L100001024903,utility-scale solar,operating,4
+G100001029585,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mộ Đức District solar project III,L100001024904,utility-scale solar,operating,11.3
+G100001029586,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cam Lâm District solar project I,L100001024905,utility-scale solar,operating,2.8
+G100001029587,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ea H'Leo District solar project,L100001024906,utility-scale solar,operating,2.4
+G100001029588,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy An District solar project,L100001024907,utility-scale solar,operating,6
+G100001029589,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phú Giáo District solar project I,L100001024908,utility-scale solar,operating,4.5
+G100001029590,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project IX,L100001024909,utility-scale solar,operating,3
+G100001029591,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Tân Uyên District solar project,L100001024910,utility-scale solar,operating,12.5
+G100001029592,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project IX,L100001024911,utility-scale solar,operating,3.2
+G100001029593,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Di Linh District solar project V,L100001024912,utility-scale solar,operating,2.7
+G100001029594,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hòa Bình District solar project III,L100001024913,utility-scale solar,operating,3
+G100001029595,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đức Phổ solar project II,L100001024914,utility-scale solar,operating,1.9
+G100001029596,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project VII,L100001024915,utility-scale solar,operating,1.8
+G100001029597,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project V,L100001024916,utility-scale solar,operating,2.6
+G100001029598,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bác Ái District solar project II,L100001024917,utility-scale solar,operating,2.7
+G100001029599,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Đốp District solar project II,L100001024918,utility-scale solar,operating,2
+G100001029600,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Buôn Ma Thuột Krông Ana District solar project,L100001024919,utility-scale solar,operating,3.7
+G100001029601,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vị Thanh solar project,L100001024920,utility-scale solar,operating,7.1
+G100001029602,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk R'Lấp District solar project II,L100001024921,utility-scale solar,operating,6.6
+G100001029603,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Búk District solar project III,L100001024922,utility-scale solar,operating,2.8
+G100001029604,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Song District solar project IV,L100001024923,utility-scale solar,operating,2.7
+G100001029605,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuy Phong District solar project IV,L100001024924,utility-scale solar,operating,1.8
+G100001029606,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project XIII,L100001024925,utility-scale solar,operating,1.6
+G100001029607,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project X,L100001024926,utility-scale solar,operating,3.7
+G100001029608,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Đốp District solar project III,L100001024927,utility-scale solar,operating,4.2
+G100001029609,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project VI,L100001024928,utility-scale solar,operating,3.4
+G100001029610,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tân Châu District solar project IV,L100001024929,utility-scale solar,operating,2.4
+G100001029611,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quảng Điền District solar project II,L100001024930,utility-scale solar,operating,2.4
+G100001029612,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tịnh Biên solar project,L100001024931,utility-scale solar,operating,6.7
+G100001029613,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hàm Thuận Nam District solar project IX,L100001024932,utility-scale solar,operating,3
+G100001029614,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project X,L100001024933,utility-scale solar,operating,1.7
+G100001029615,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cam Lâm District solar project II,L100001024934,utility-scale solar,operating,3.3
+G100001029616,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Duy Xuyên District solar project,L100001024935,utility-scale solar,operating,4.5
+G100001029617,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project VII,L100001024936,utility-scale solar,operating,3.2
+G100001029618,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tánh Linh District solar project,L100001024937,utility-scale solar,operating,5
+G100001029619,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lâm Hà District solar project III,L100001024938,utility-scale solar,operating,2.8
+G100001029620,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Bắc District solar project IV,L100001024939,utility-scale solar,operating,2.7
+G100001029621,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Đốp District solar project IV,L100001024940,utility-scale solar,operating,6.5
+G100001029622,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mang Yang District solar project I,L100001024941,utility-scale solar,operating,2.2
+G100001029623,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Diên Khánh District solar project I,L100001024942,utility-scale solar,operating,1.8
+G100001029624,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hòa solar project V,L100001024943,utility-scale solar,operating,1.4
+G100001029625,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cam Lâm District solar project III,L100001024944,utility-scale solar,operating,5.6
+G100001029626,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project VI,L100001024945,utility-scale solar,operating,1.9
+G100001029627,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phụng Hiệp District solar project,L100001024946,utility-scale solar,operating,4.1
+G100001029628,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bác Ái District solar project III,L100001024947,utility-scale solar,operating,6.7
+G100001029629,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Khánh Vĩnh District solar project II,L100001024948,utility-scale solar,operating,1.7
+G100001029630,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hớn Quản District solar project VIII,L100001024949,utility-scale solar,operating,4.7
+G100001029631,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đắk Song District solar project V,L100001024950,utility-scale solar,operating,3.3
+G100001029632,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Xoài solar project III,L100001024951,utility-scale solar,operating,2
+G100001029633,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Diên Khánh District solar project II,L100001024952,utility-scale solar,operating,1.8
+G100001029634,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Sê District solar project V,L100001024953,utility-scale solar,operating,1.5
+G100001029635,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Khánh Vĩnh District solar project III,L100001024954,utility-scale solar,operating,4.8
+G100001029636,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cam Lâm District solar project IV,L100001024955,utility-scale solar,operating,2.9
+G100001029637,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đạ Huoai District solar project VIII,L100001024956,utility-scale solar,operating,1.6
+G100001029638,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đak Pơ District solar project III,L100001024957,utility-scale solar,operating,1.7
+G100001029639,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Hòa solar project VI,L100001024958,utility-scale solar,operating,2
+G100001029640,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project XII,L100001024959,utility-scale solar,operating,3.1
+G100001029641,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Định Quán District solar project VI,L100001024960,utility-scale solar,operating,1.4
+G100001029642,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Ana District solar project III,L100001024961,utility-scale solar,operating,2.6
+G100001029644,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Ana District solar project IV,L100001024963,utility-scale solar,operating,2.6
+G100001029645,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project XIII,L100001024964,utility-scale solar,operating,2
+G100001029646,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuận Nam District solar project IX,L100001024965,utility-scale solar,operating,1.5
+G100001029647,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Búk District solar project IV,L100001024966,utility-scale solar,operating,1.7
+G100001029648,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Phước District solar project VI,L100001024967,utility-scale solar,operating,2.4
+G100001029649,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Năng District solar project,L100001024968,utility-scale solar,operating,1.5
+G100001029650,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bác Ái District solar project IV,L100001024969,utility-scale solar,operating,2.6
+G100001029651,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Sơn District solar project XI,L100001024970,utility-scale solar,operating,4.8
+G100001029652,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Moc Hoa District solar project II,L100001024971,utility-scale solar,operating,6.4
+G100001029653,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuyên Mộc District solar project VI,L100001024972,utility-scale solar,operating,1.9
+G100001029654,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bắc Bình District solar project VIII,L100001024973,utility-scale solar,operating,3.6
+G100001029655,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đồng Phú District solar project XIV,L100001024974,utility-scale solar,operating,5.1
+G100001029656,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mang Yang District solar project II,L100001024975,utility-scale solar,operating,3
+G100001029657,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Sê District solar project VI,L100001024976,utility-scale solar,operating,1.6
+G100001029658,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project VII,L100001024977,utility-scale solar,operating,3.2
+G100001029659,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vĩnh Lợi District solar project,L100001024978,utility-scale solar,operating,2.3
+G100001029661,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Đốp District solar project V,L100001024980,utility-scale solar,operating,2.3
+G100001029662,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đăk Hà District solar project,L100001024981,utility-scale solar,operating,2.7
+G100001029663,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mang Yang District solar project III,L100001024982,utility-scale solar,operating,1.7
+G100001029664,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Diên Khánh District solar project III,L100001024983,utility-scale solar,operating,3.4
+G100001029665,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project VIII,L100001024984,utility-scale solar,operating,1.4
+G100001029666,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kon Tum solar project,L100001024985,utility-scale solar,operating,1.6
+G100001029668,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Ana District solar project V,L100001024987,utility-scale solar,operating,1.6
+G100001029669,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Long Dat District solar project II,L100001024988,utility-scale solar,operating,2.6
+G100001029670,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xuyên Mộc District solar project VII,L100001024989,utility-scale solar,operating,2.8
+G100001029671,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Vạn Ninh District solar project,L100001024990,utility-scale solar,operating,1.5
+G100001029672,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tân Biên District solar project,L100001024991,utility-scale solar,operating,3.4
+G100001029673,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sơn La solar project,L100001024992,utility-scale solar,operating,3.2
+G100001029674,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Bông District solar project II,L100001024993,utility-scale solar,operating,6
+G100001029675,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chau Duc District solar project II,L100001024994,utility-scale solar,operating,4
+G100001029676,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lộc Ninh District solar project XIV,L100001024995,utility-scale solar,operating,1.9
+G100001029677,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Điện Biên Phủ solar project,L100001024996,utility-scale solar,operating,4.6
+G100001029678,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dầu Tiếng District solar project V,L100001024997,utility-scale solar,operating,2
+G100001029679,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phú Giáo District solar project II,L100001024998,utility-scale solar,operating,3.9
+G100001029680,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phú Giáo District solar project III,L100001024999,utility-scale solar,operating,2.6
+G100001029681,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bình Phước Province solar project III,L100001025000,utility-scale solar,operating,2.6
+G100001029682,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bù Đốp District solar project VI,L100001025001,utility-scale solar,operating,3.2
+G100001029683,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xã Túc Trưng Định Quán District solar project,L100001025002,utility-scale solar,operating,5.7
+G100001029684,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư Jút District solar project XI,L100001025003,utility-scale solar,operating,1.7
+G100001029685,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Krông Pắc District solar project IV,L100001025004,utility-scale solar,operating,1.4
+G100001029686,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Buôn Đôn District solar project VII,L100001025005,utility-scale solar,operating,6
+G100001029687,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cư M'Gar District solar project IX,L100001025006,utility-scale solar,operating,1.5
+G100001029688,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mang Yang District solar project IV,L100001025007,utility-scale solar,operating,1.6
+G100001029689,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Đak Đoa District solar project II,L100001025008,utility-scale solar,operating,1.4
+G100001029690,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chư Păh District solar project VI,L100001025009,utility-scale solar,operating,1.9
+G100001029691,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quế Sơn District solar project II,L100001025010,utility-scale solar,operating,2.6
+G100001029692,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thủ Dầu Một solar project,L100001025011,utility-scale solar,operating,7.3
+G100001076669,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project I,L100001066883,utility-scale solar,operating,5.6
+G100001076670,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,An Binh Ward Phuong An Binh solar project,L100001066884,utility-scale solar,operating,1.2
+G100001076671,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Phoi solar project,L100001066885,utility-scale solar,operating,1.3
+G100001076672,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Trang Dai solar project,L100001066886,utility-scale solar,operating,3.6
+G100001076673,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project II,L100001066887,utility-scale solar,operating,1.1
+G100001076674,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bo Y solar project I,L100001066888,utility-scale solar,operating,3.2
+G100001076675,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoi Son solar project,L100001066889,utility-scale solar,operating,3.2
+G100001076676,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thanh Hoa Province solar project I,L100001066890,utility-scale solar,operating,1.9
+G100001076677,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chau Son Ward solar project,L100001066891,utility-scale solar,operating,1.3
+G100001076678,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Sup solar project I,L100001066892,utility-scale solar,operating,3.2
+G100001076679,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project I,L100001066893,utility-scale solar,operating,1.4
+G100001076680,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Tul solar project,L100001066894,utility-scale solar,operating,2.6
+G100001076681,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project I,L100001066895,utility-scale solar,operating,2.9
+G100001076682,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bao Loc Phuong 1 Bao Loc solar project,L100001066896,utility-scale solar,operating,1.2
+G100001076683,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Huong solar project,L100001066897,utility-scale solar,operating,2.4
+G100001076684,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Luong Son solar project I,L100001066898,utility-scale solar,operating,2.4
+G100001076685,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cam Lam solar project I,L100001066899,utility-scale solar,operating,1.8
+G100001076686,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Cat solar project I,L100001066900,utility-scale solar,operating,1.1
+G100001076687,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project III,L100001066901,utility-scale solar,operating,2.8
+G100001076688,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,West Quy Nhon Ward Phuong Quy Nhon Tay solar project I,L100001066902,utility-scale solar,operating,1.6
+G100001076689,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cam Hiep solar project,L100001066903,utility-scale solar,operating,2
+G100001076690,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Long Ha solar project I,L100001066904,utility-scale solar,operating,3
+G100001076691,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project II,L100001066905,utility-scale solar,operating,2.2
+G100001076692,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak To solar project I,L100001066906,utility-scale solar,operating,2
+G100001076693,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Hang Gon solar project,L100001066907,utility-scale solar,operating,1.6
+G100001076694,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Boong solar project I,L100001066908,utility-scale solar,operating,2.1
+G100001076695,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bau Can solar project I,L100001066909,utility-scale solar,operating,1.4
+G100001076696,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tay Ninh Hoa solar project,L100001066910,utility-scale solar,operating,2.4
+G100001076697,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project III,L100001066911,utility-scale solar,operating,2.4
+G100001076698,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Luong Hoa solar project,L100001066912,utility-scale solar,operating,1.1
+G100001076699,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,South Hoai Nhon Ward Phuong Hoai Nhon Nam solar project,L100001066913,utility-scale solar,operating,2.7
+G100001076700,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ong Phu solar project I,L100001066914,utility-scale solar,operating,1.9
+G100001076701,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tho Phong solar project,L100001066915,utility-scale solar,operating,4.5
+G100001076702,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Long Ha solar project II,L100001066916,utility-scale solar,operating,2.9
+G100001076703,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Trung Khanh Vinh solar project I,L100001066917,utility-scale solar,operating,1.1
+G100001076704,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Mang Yang solar project I,L100001066918,utility-scale solar,operating,1.5
+G100001076705,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Kiem solar project,L100001066919,utility-scale solar,operating,4.1
+G100001076706,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dur Kmal solar project I,L100001066920,utility-scale solar,operating,1.9
+G100001076707,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bac Ninh Province solar project I,L100001066921,utility-scale solar,operating,3.4
+G100001076708,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Bac solar project I,L100001066922,utility-scale solar,operating,2.7
+G100001076709,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Minh Hung solar project I,L100001066923,utility-scale solar,operating,6.4
+G100001076710,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Inh Trang Thuong solar project,L100001066924,utility-scale solar,operating,8.4
+G100001076711,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Binh Province solar project I,L100001066925,utility-scale solar,operating,1.7
+G100001076712,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Le solar project,L100001066926,utility-scale solar,operating,1.2
+G100001076713,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Uong Hao Ward solar project,L100001066927,utility-scale solar,operating,1.7
+G100001076714,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thanh Loc solar project I,L100001066928,utility-scale solar,operating,2.6
+G100001076715,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Phu solar project I,L100001066929,utility-scale solar,operating,1
+G100001076716,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tram Chim solar project,L100001066930,utility-scale solar,operating,4.9
+G100001076717,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cam Lam solar project II,L100001066931,utility-scale solar,operating,3.4
+G100001076718,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hru solar project I,L100001066932,utility-scale solar,operating,3.2
+G100001076719,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project IV,L100001066933,utility-scale solar,operating,1
+G100001076720,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project V,L100001066934,utility-scale solar,operating,1.5
+G100001076721,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Khanh Hoa Province solar project I,L100001066935,utility-scale solar,operating,1
+G100001076722,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project VI,L100001066936,utility-scale solar,operating,2.7
+G100001076723,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuan An solar project I,L100001066937,utility-scale solar,operating,2
+G100001076724,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea H'Leo solar project I,L100001066938,utility-scale solar,operating,2.3
+G100001076725,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bac Ninh Province solar project II,L100001066939,utility-scale solar,operating,2.6
+G100001076726,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Nguyet Hoa solar project,L100001066940,utility-scale solar,operating,1
+G100001076727,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thanh Uc solar project,L100001066941,utility-scale solar,operating,2.5
+G100001076728,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project I,L100001066942,utility-scale solar,operating,2.4
+G100001076729,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ninh Ien solar project,L100001066943,utility-scale solar,operating,1.9
+G100001076730,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Ong Xoai solar project,L100001066944,utility-scale solar,operating,1.8
+G100001076731,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Pal solar project,L100001066945,utility-scale solar,operating,1.9
+G100001076732,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project I,L100001066946,utility-scale solar,operating,1
+G100001076733,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Kar solar project I,L100001066947,utility-scale solar,operating,1.3
+G100001076734,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Giao Long solar project,L100001066948,utility-scale solar,operating,2.7
+G100001076735,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Khanh An solar project I,L100001066949,utility-scale solar,operating,5
+G100001076736,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,An Giang Province solar project I,L100001066950,utility-scale solar,operating,3.6
+G100001076737,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Krong No solar project I,L100001066951,utility-scale solar,operating,1.6
+G100001076738,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ro Wa solar project I,L100001066952,utility-scale solar,operating,1.6
+G100001076739,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project IV,L100001066953,utility-scale solar,operating,1.4
+G100001076740,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project II,L100001066954,utility-scale solar,operating,1.6
+G100001076741,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Luong The Tran solar project I,L100001066955,utility-scale solar,operating,1.4
+G100001076742,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project I,L100001066956,utility-scale solar,operating,1.1
+G100001076743,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Rbol solar project,L100001066957,utility-scale solar,operating,4.1
+G100001076744,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Khanh Hoa Province solar project II,L100001066958,utility-scale solar,operating,1.2
+G100001076745,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project I,L100001066959,utility-scale solar,operating,1.3
+G100001076746,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project I,L100001066960,utility-scale solar,operating,1.5
+G100001076747,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project V,L100001066961,utility-scale solar,operating,1.2
+G100001076748,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tra Bong solar project,L100001066962,utility-scale solar,operating,1.2
+G100001076749,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nhon Trach solar project,L100001066963,utility-scale solar,operating,1.3
+G100001076750,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project VII,L100001066964,utility-scale solar,operating,5.9
+G100001076751,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Thach Ward solar project,L100001066965,utility-scale solar,operating,1.8
+G100001076752,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nhan Co solar project,L100001066966,utility-scale solar,operating,1.4
+G100001076753,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Phu solar project II,L100001066967,utility-scale solar,operating,4.3
+G100001076754,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Thanh Nhat solar project,L100001066968,utility-scale solar,operating,1
+G100001076755,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project VIII,L100001066969,utility-scale solar,operating,4.3
+G100001076756,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thanh Hoa Province solar project II,L100001066970,utility-scale solar,operating,1.6
+G100001076757,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project IX,L100001066971,utility-scale solar,operating,4.2
+G100001076758,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project X,L100001066972,utility-scale solar,operating,1.8
+G100001076759,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project VI,L100001066973,utility-scale solar,operating,1.5
+G100001076760,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cam Lam solar project III,L100001066974,utility-scale solar,operating,1.1
+G100001076761,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Hoa solar project I,L100001066975,utility-scale solar,operating,1.4
+G100001076762,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thanh Loi solar project,L100001066976,utility-scale solar,operating,11
+G100001076763,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Liem solar project I,L100001066977,utility-scale solar,operating,1.8
+G100001076764,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Pleiku solar project,L100001066978,utility-scale solar,operating,2.2
+G100001076765,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Trang Bom solar project I,L100001066979,utility-scale solar,operating,1.1
+G100001076766,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project II,L100001066980,utility-scale solar,operating,1.3
+G100001076767,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kdang solar project I,L100001066981,utility-scale solar,operating,1.7
+G100001076768,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thu Uc solar project I,L100001066982,utility-scale solar,operating,3.9
+G100001076769,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Hoa Lu Ward solar project,L100001066983,utility-scale solar,operating,1.5
+G100001076770,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project II,L100001066984,utility-scale solar,operating,2.5
+G100001076771,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project II,L100001066985,utility-scale solar,operating,2.9
+G100001076772,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa An Trach solar project,L100001066986,utility-scale solar,operating,7.8
+G100001076773,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project III,L100001066987,utility-scale solar,operating,1
+G100001076774,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Truong Xuan solar project,L100001066988,utility-scale solar,operating,1
+G100001076775,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hru solar project II,L100001066989,utility-scale solar,operating,4.3
+G100001076776,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea O solar project I,L100001066990,utility-scale solar,operating,1.9
+G100001076777,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Tuc solar project I,L100001066991,utility-scale solar,operating,2.9
+G100001076778,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thanh Loc solar project II,L100001066992,utility-scale solar,operating,1
+G100001076779,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa A Teh 2 solar project I,L100001066993,utility-scale solar,operating,1.5
+G100001076780,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kong Chro solar project,L100001066994,utility-scale solar,operating,5.2
+G100001076781,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Loc solar project I,L100001066995,utility-scale solar,operating,1.2
+G100001076782,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phu Quoc solar project I,L100001066996,utility-scale solar,operating,1.3
+G100001076783,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Ea Kao solar project,L100001066997,utility-scale solar,operating,1.3
+G100001076784,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ganh Hao solar project,L100001066998,utility-scale solar,operating,5.2
+G100001076785,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project III,L100001066999,utility-scale solar,operating,1.2
+G100001076786,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thu Uc solar project II,L100001067000,utility-scale solar,operating,1.4
+G100001076787,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Ho Co solar project I,L100001067001,utility-scale solar,operating,5.1
+G100001076788,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Tor solar project,L100001067002,utility-scale solar,operating,1.4
+G100001076789,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ta Nang solar project,L100001067003,utility-scale solar,operating,1.3
+G100001076790,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project III,L100001067004,utility-scale solar,operating,2.5
+G100001076791,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Hoa solar project I,L100001067005,utility-scale solar,operating,1.3
+G100001076792,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bu Ang solar project,L100001067006,utility-scale solar,operating,1.8
+G100001076793,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,An Giang Province solar project II,L100001067007,utility-scale solar,operating,3.6
+G100001076794,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Phu solar project III,L100001067008,utility-scale solar,operating,2.1
+G100001076795,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Thanh solar project I,L100001067009,utility-scale solar,operating,1.3
+G100001076796,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thanh Hoa Province solar project III,L100001067010,utility-scale solar,operating,2.2
+G100001076797,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Vinh Hau solar project I,L100001067011,utility-scale solar,operating,1.8
+G100001076798,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bo Y solar project II,L100001067012,utility-scale solar,operating,1.1
+G100001076799,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XI,L100001067013,utility-scale solar,operating,4.2
+G100001076800,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Binh Uc solar project,L100001067014,utility-scale solar,operating,2.4
+G100001076801,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Noi solar project I,L100001067015,utility-scale solar,operating,1.3
+G100001076802,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Mang Yang solar project II,L100001067016,utility-scale solar,operating,1.7
+G100001076803,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phong Thai Ward solar project,L100001067017,utility-scale solar,operating,2.7
+G100001076804,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project VII,L100001067018,utility-scale solar,operating,2.2
+G100001076805,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project IV,L100001067019,utility-scale solar,operating,1.6
+G100001076806,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Bac solar project II,L100001067020,utility-scale solar,operating,1.3
+G100001076807,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Inh solar project I,L100001067021,utility-scale solar,operating,1.8
+G100001076808,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Long Thuan solar project I,L100001067022,utility-scale solar,operating,3.8
+G100001076809,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Nam Gia Nghia solar project I,L100001067023,utility-scale solar,operating,1.2
+G100001076810,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Canh Vinh solar project,L100001067024,utility-scale solar,operating,2.6
+G100001076811,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Long Phuoc solar project,L100001067025,utility-scale solar,operating,1.4
+G100001076812,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Hoa solar project II,L100001067026,utility-scale solar,operating,3.2
+G100001076813,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nha Bich solar project,L100001067027,utility-scale solar,operating,4.3
+G100001076814,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Song Ma Commune solar project,L100001067028,utility-scale solar,operating,2.3
+G100001076815,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Thanh solar project I,L100001067029,utility-scale solar,operating,1.8
+G100001076816,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thien Hung solar project I,L100001067030,utility-scale solar,operating,2.3
+G100001076817,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Loc Thanh solar project I,L100001067031,utility-scale solar,operating,2.4
+G100001076818,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,An Giang Province solar project III,L100001067032,utility-scale solar,operating,8.8
+G100001076819,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XII,L100001067033,utility-scale solar,operating,2.6
+G100001076820,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong An Tinh solar project I,L100001067034,utility-scale solar,operating,3.6
+G100001076821,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Boong solar project II,L100001067035,utility-scale solar,operating,2
+G100001076822,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Vinh An solar project,L100001067036,utility-scale solar,operating,3.8
+G100001076823,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Loc Tan solar project,L100001067037,utility-scale solar,operating,4.8
+G100001076824,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hue solar project I,L100001067038,utility-scale solar,operating,2.9
+G100001076825,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XIII,L100001067039,utility-scale solar,operating,1.1
+G100001076826,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kien Uc solar project,L100001067040,utility-scale solar,operating,2.7
+G100001076827,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XIV,L100001067041,utility-scale solar,operating,4.3
+G100001076828,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XV,L100001067042,utility-scale solar,operating,7.1
+G100001076829,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Binh Tan solar project I,L100001067043,utility-scale solar,operating,1.3
+G100001076830,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hru solar project III,L100001067044,utility-scale solar,operating,2.7
+G100001076831,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project II,L100001067045,utility-scale solar,operating,3
+G100001076832,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Lam Son solar project,L100001067046,utility-scale solar,operating,3.9
+G100001076833,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Hoa solar project III,L100001067047,utility-scale solar,operating,4.5
+G100001076834,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Hoi solar project I,L100001067048,utility-scale solar,operating,3.1
+G100001076835,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dien Tho solar project,L100001067049,utility-scale solar,operating,1.3
+G100001076836,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XVI,L100001067050,utility-scale solar,operating,3.3
+G100001076837,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XVII,L100001067051,utility-scale solar,operating,3.6
+G100001076838,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Thang solar project,L100001067052,utility-scale solar,operating,1.9
+G100001076839,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ha solar project I,L100001067053,utility-scale solar,operating,1.5
+G100001076840,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ro Koi solar project,L100001067054,utility-scale solar,operating,1.8
+G100001076841,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ninh Phuoc solar project,L100001067055,utility-scale solar,operating,1.6
+G100001076842,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Pa solar project,L100001067056,utility-scale solar,operating,5.1
+G100001076843,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Chia solar project,L100001067057,utility-scale solar,operating,2.1
+G100001076844,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Uc Trong solar project,L100001067058,utility-scale solar,operating,10.1
+G100001076845,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kbang solar project,L100001067059,utility-scale solar,operating,3.4
+G100001076846,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XVIII,L100001067060,utility-scale solar,operating,1.3
+G100001076847,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Van Ninh solar project,L100001067061,utility-scale solar,operating,1.4
+G100001076848,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Gia Hiep solar project I,L100001067062,utility-scale solar,operating,3.9
+G100001076849,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hong Son solar project I,L100001067063,utility-scale solar,operating,8.2
+G100001076850,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XIX,L100001067064,utility-scale solar,operating,17.2
+G100001076851,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kien Luong solar project I,L100001067065,utility-scale solar,operating,2
+G100001076852,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Wer solar project I,L100001067066,utility-scale solar,operating,1.1
+G100001076853,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Gao solar project I,L100001067067,utility-scale solar,operating,2.3
+G100001076854,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kien Luong solar project II,L100001067068,utility-scale solar,operating,4.6
+G100001076855,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tra Tan solar project,L100001067069,utility-scale solar,operating,1.1
+G100001076856,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Gao solar project II,L100001067070,utility-scale solar,operating,2.3
+G100001076857,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project V,L100001067071,utility-scale solar,operating,2.9
+G100001076858,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dur Kmal solar project II,L100001067072,utility-scale solar,operating,2.6
+G100001076859,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Thuan Nam solar project I,L100001067073,utility-scale solar,operating,2.5
+G100001076860,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bac Ninh Hoa solar project I,L100001067074,utility-scale solar,operating,13.2
+G100001076861,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XX,L100001067075,utility-scale solar,operating,3.5
+G100001076862,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Uc Co solar project,L100001067076,utility-scale solar,operating,1.3
+G100001076863,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nam Dong solar project I,L100001067077,utility-scale solar,operating,4.2
+G100001076864,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Hoa solar project I,L100001067078,utility-scale solar,operating,3.6
+G100001076865,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Binh solar project,L100001067079,utility-scale solar,operating,3.4
+G100001076866,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXI,L100001067080,utility-scale solar,operating,1.5
+G100001076867,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project VI,L100001067081,utility-scale solar,operating,4
+G100001076868,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Liem solar project II,L100001067082,utility-scale solar,operating,3.8
+G100001076869,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project III,L100001067083,utility-scale solar,operating,2
+G100001076870,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Chu Se solar project I,L100001067084,utility-scale solar,operating,1.4
+G100001076871,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dien Lam solar project,L100001067085,utility-scale solar,operating,2
+G100001076872,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hon At solar project,L100001067086,utility-scale solar,operating,5.3
+G100001076873,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Trung Khanh Vinh solar project II,L100001067087,utility-scale solar,operating,1.6
+G100001076874,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXII,L100001067088,utility-scale solar,operating,5.2
+G100001076875,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Anh Dung solar project,L100001067089,utility-scale solar,operating,1
+G100001076876,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXIII,L100001067090,utility-scale solar,operating,2.8
+G100001076877,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cu Jut solar project I,L100001067091,utility-scale solar,operating,5.8
+G100001076878,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Chau Thanh solar project,L100001067092,utility-scale solar,operating,3.2
+G100001076879,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea O solar project II,L100001067093,utility-scale solar,operating,2.1
+G100001076880,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Binh Thanh solar project,L100001067094,utility-scale solar,operating,4.1
+G100001076881,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Ong solar project I,L100001067095,utility-scale solar,operating,3.8
+G100001076882,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Minh Uc solar project I,L100001067096,utility-scale solar,operating,4.3
+G100001076883,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ro Wa solar project II,L100001067097,utility-scale solar,operating,2.1
+G100001076884,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Hoi solar project,L100001067098,utility-scale solar,operating,7.8
+G100001076885,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Hoi solar project II,L100001067099,utility-scale solar,operating,1.5
+G100001076886,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project III,L100001067100,utility-scale solar,operating,6.7
+G100001076887,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hoa Binh Hoa Binh Ward solar project,L100001067101,utility-scale solar,operating,1.1
+G100001076888,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Kar solar project II,L100001067102,utility-scale solar,operating,1.3
+G100001076889,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Uc An solar project,L100001067103,utility-scale solar,operating,1.5
+G100001076890,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project II,L100001067104,utility-scale solar,operating,2.7
+G100001076891,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chieng Mung Commune solar project,L100001067105,utility-scale solar,operating,5.5
+G100001076892,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Sup solar project II,L100001067106,utility-scale solar,operating,2.6
+G100001076893,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Binh Tan solar project II,L100001067107,utility-scale solar,operating,1.3
+G100001076894,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hru solar project IV,L100001067108,utility-scale solar,operating,1.5
+G100001076895,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project III,L100001067109,utility-scale solar,operating,2.5
+G100001076896,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thien Hung solar project II,L100001067110,utility-scale solar,operating,6.3
+G100001076897,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Phu solar project I,L100001067111,utility-scale solar,operating,2.2
+G100001076898,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ya Ly solar project,L100001067112,utility-scale solar,operating,2.6
+G100001076899,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hue solar project II,L100001067113,utility-scale solar,operating,7
+G100001076900,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Nghia solar project,L100001067114,utility-scale solar,operating,1
+G100001076901,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Khanh Hoa Province solar project III,L100001067115,utility-scale solar,operating,11.8
+G100001076902,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thong Nhat Ward solar project,L100001067116,utility-scale solar,operating,1
+G100001076903,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Inh solar project II,L100001067117,utility-scale solar,operating,3
+G100001076904,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kon Gang solar project I,L100001067118,utility-scale solar,operating,1.8
+G100001076905,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Song Ray solar project,L100001067119,utility-scale solar,operating,5.7
+G100001076906,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Tuc solar project II,L100001067120,utility-scale solar,operating,2.1
+G100001076907,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Ly solar project,L100001067121,utility-scale solar,operating,7.6
+G100001076908,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Hoa Hiep solar project,L100001067122,utility-scale solar,operating,1.5
+G100001076909,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Ong solar project,L100001067123,utility-scale solar,operating,8.2
+G100001076910,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Suoi Trai solar project I,L100001067124,utility-scale solar,operating,2.1
+G100001076911,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hung Thinh solar project,L100001067125,utility-scale solar,operating,1.3
+G100001076912,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Loc solar project II,L100001067126,utility-scale solar,operating,2.4
+G100001076913,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Po To solar project,L100001067127,utility-scale solar,operating,1.9
+G100001076914,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dray Bhang solar project,L100001067128,utility-scale solar,operating,8.8
+G100001076915,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ong Thap Province solar project,L100001067129,utility-scale solar,operating,3.3
+G100001076916,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project VIII,L100001067130,utility-scale solar,operating,1.2
+G100001076917,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Mang Yang solar project III,L100001067131,utility-scale solar,operating,5.3
+G100001076918,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Thanh solar project II,L100001067132,utility-scale solar,operating,6.4
+G100001076919,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Loc Hung solar project,L100001067133,utility-scale solar,operating,2.4
+G100001076920,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project IV,L100001067134,utility-scale solar,operating,3.3
+G100001076921,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa My Son solar project I,L100001067135,utility-scale solar,operating,2.1
+G100001076922,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Quang Tan solar project,L100001067136,utility-scale solar,operating,1
+G100001076923,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Mil solar project I,L100001067137,utility-scale solar,operating,1.3
+G100001076924,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXIV,L100001067138,utility-scale solar,operating,1.3
+G100001076925,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Buon Ma Thuot solar project I,L100001067139,utility-scale solar,operating,1
+G100001076926,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Phu solar project IV,L100001067140,utility-scale solar,operating,1.9
+G100001076927,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project IX,L100001067141,utility-scale solar,operating,3.8
+G100001076928,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Na solar project I,L100001067142,utility-scale solar,operating,1.4
+G100001076929,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Lau solar project,L100001067143,utility-scale solar,operating,8.3
+G100001076930,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Hoa solar project II,L100001067144,utility-scale solar,operating,1.8
+G100001076931,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak To solar project II,L100001067145,utility-scale solar,operating,2.2
+G100001076932,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong La Gi solar project,L100001067146,utility-scale solar,operating,1
+G100001076933,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bac Ninh solar project,L100001067147,utility-scale solar,operating,5.3
+G100001076934,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Sup solar project III,L100001067148,utility-scale solar,operating,1.6
+G100001076935,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project VII,L100001067149,utility-scale solar,operating,1.5
+G100001076936,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Binh Phuoc solar project I,L100001067150,utility-scale solar,operating,1.2
+G100001076937,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ha solar project II,L100001067151,utility-scale solar,operating,1.4
+G100001076938,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa An Cu solar project,L100001067152,utility-scale solar,operating,3.6
+G100001076939,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Ninh solar project,L100001067153,utility-scale solar,operating,2.7
+G100001076940,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Po solar project I,L100001067154,utility-scale solar,operating,4
+G100001076941,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Phu solar project II,L100001067155,utility-scale solar,operating,7.5
+G100001076942,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Loc Thanh solar project II,L100001067156,utility-scale solar,operating,3.2
+G100001076943,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nat Son Commune solar project,L100001067157,utility-scale solar,operating,2.8
+G100001076944,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nghia Trung solar project,L100001067158,utility-scale solar,operating,1.6
+G100001076945,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Mo Uc solar project,L100001067159,utility-scale solar,operating,1.9
+G100001076946,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Chu Se solar project II,L100001067160,utility-scale solar,operating,2.2
+G100001076947,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Binh Phuoc solar project II,L100001067161,utility-scale solar,operating,2.8
+G100001076948,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Mil solar project II,L100001067162,utility-scale solar,operating,2.4
+G100001076949,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Pho Yen Ward solar project,L100001067163,utility-scale solar,operating,8.2
+G100001076950,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nghia Hanh solar project,L100001067164,utility-scale solar,operating,1.1
+G100001076951,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Mil solar project III,L100001067165,utility-scale solar,operating,6.1
+G100001076952,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Thoi Son solar project,L100001067166,utility-scale solar,operating,2.4
+G100001076953,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Krong No solar project II,L100001067167,utility-scale solar,operating,1.7
+G100001076954,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kdang solar project II,L100001067168,utility-scale solar,operating,2.8
+G100001076955,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project IV,L100001067169,utility-scale solar,operating,6.1
+G100001076956,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Quan solar project I,L100001067170,utility-scale solar,operating,1.4
+G100001076957,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Trung Khanh Vinh solar project III,L100001067171,utility-scale solar,operating,1.7
+G100001076958,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Khanh An solar project II,L100001067172,utility-scale solar,operating,2.2
+G100001076959,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Phu Ward solar project,L100001067173,utility-scale solar,operating,4.2
+G100001076960,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project IV,L100001067174,utility-scale solar,operating,6.5
+G100001076961,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa My Son solar project II,L100001067175,utility-scale solar,operating,1
+G100001076962,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXV,L100001067176,utility-scale solar,operating,8.7
+G100001076963,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa On Duong solar project I,L100001067177,utility-scale solar,operating,9.3
+G100001076964,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thanh Hoa Province solar project IV,L100001067178,utility-scale solar,operating,2.6
+G100001076965,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project X,L100001067179,utility-scale solar,operating,6.6
+G100001076966,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Giang Thanh solar project,L100001067180,utility-scale solar,operating,5.9
+G100001076967,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Vinh Thong solar project,L100001067181,utility-scale solar,operating,4.6
+G100001076968,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Inh Quan solar project I,L100001067182,utility-scale solar,operating,4
+G100001076969,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Quang Tin solar project,L100001067183,utility-scale solar,operating,7.1
+G100001076970,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project V,L100001067184,utility-scale solar,operating,2.6
+G100001076971,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXVI,L100001067185,utility-scale solar,operating,2.2
+G100001076972,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XI,L100001067186,utility-scale solar,operating,2
+G100001076973,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Thuan Nam solar project II,L100001067187,utility-scale solar,operating,3.1
+G100001076974,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project V,L100001067188,utility-scale solar,operating,1.8
+G100001076975,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project V,L100001067189,utility-scale solar,operating,2.4
+G100001076976,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Sao solar project,L100001067190,utility-scale solar,operating,1.1
+G100001076977,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Minh Uc solar project II,L100001067191,utility-scale solar,operating,2.8
+G100001076978,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ta Hine solar project,L100001067192,utility-scale solar,operating,12
+G100001076979,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ien Ban Ong Ward solar project I,L100001067193,utility-scale solar,operating,2.4
+G100001076980,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Hoi solar project III,L100001067194,utility-scale solar,operating,4.1
+G100001076981,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project VI,L100001067195,utility-scale solar,operating,1.4
+G100001076982,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Chu Se solar project III,L100001067196,utility-scale solar,operating,2.1
+G100001076983,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXVII,L100001067197,utility-scale solar,operating,1
+G100001076984,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Thanh solar project II,L100001067198,utility-scale solar,operating,3.9
+G100001076985,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bac Ai Tay solar project,L100001067199,utility-scale solar,operating,1.7
+G100001076986,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hai Phong solar project I,L100001067200,utility-scale solar,operating,3.7
+G100001076987,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ong Phu solar project II,L100001067201,utility-scale solar,operating,2.5
+G100001076988,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXVIII,L100001067202,utility-scale solar,operating,3.3
+G100001076989,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hong Son solar project II,L100001067203,utility-scale solar,operating,3.6
+G100001076990,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXIX,L100001067204,utility-scale solar,operating,10.4
+G100001076991,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Boong solar project III,L100001067205,utility-scale solar,operating,1
+G100001076992,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Na solar project II,L100001067206,utility-scale solar,operating,4.4
+G100001076993,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project VII,L100001067207,utility-scale solar,operating,1.5
+G100001076994,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Ko solar project I,L100001067208,utility-scale solar,operating,3.1
+G100001076995,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXX,L100001067209,utility-scale solar,operating,2.5
+G100001076996,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thai Binh solar project,L100001067210,utility-scale solar,operating,5.1
+G100001076997,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXI,L100001067211,utility-scale solar,operating,2.3
+G100001076998,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project VIII,L100001067212,utility-scale solar,operating,5.8
+G100001076999,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXII,L100001067213,utility-scale solar,operating,1
+G100001077000,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XII,L100001067214,utility-scale solar,operating,3.9
+G100001077001,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phan Ri Cua solar project I,L100001067215,utility-scale solar,operating,1
+G100001077002,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project VIII,L100001067216,utility-scale solar,operating,1.5
+G100001077003,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa My Son solar project III,L100001067217,utility-scale solar,operating,1.2
+G100001077004,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ba Sao solar project,L100001067218,utility-scale solar,operating,1.7
+G100001077005,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa D'Ran solar project,L100001067219,utility-scale solar,operating,1.3
+G100001077006,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Inh Van Lam Ha solar project,L100001067220,utility-scale solar,operating,7
+G100001077007,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thanh Nam Ward solar project,L100001067221,utility-scale solar,operating,3.2
+G100001077008,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project IX,L100001067222,utility-scale solar,operating,2.9
+G100001077009,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phuoc Dinh solar project,L100001067223,utility-scale solar,operating,2.5
+G100001077010,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXIII,L100001067224,utility-scale solar,operating,3
+G100001077011,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Gia Nghia Phuong Bac Gia Nghia solar project,L100001067225,utility-scale solar,operating,1.7
+G100001077012,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Gao solar project III,L100001067226,utility-scale solar,operating,1.2
+G100001077013,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project X,L100001067227,utility-scale solar,operating,5.3
+G100001077014,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa My Qui solar project,L100001067228,utility-scale solar,operating,2
+G100001077015,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project VI,L100001067229,utility-scale solar,operating,2.4
+G100001077016,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Phe solar project,L100001067230,utility-scale solar,operating,1.4
+G100001077017,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Thanh solar project III,L100001067231,utility-scale solar,operating,1.6
+G100001077018,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nui Cam solar project,L100001067232,utility-scale solar,operating,1.9
+G100001077019,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Minh Hung solar project II,L100001067233,utility-scale solar,operating,1.2
+G100001077020,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chieng Sinh Ward solar project,L100001067234,utility-scale solar,operating,2.6
+G100001077021,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Tien solar project,L100001067235,utility-scale solar,operating,2
+G100001077022,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project VI,L100001067236,utility-scale solar,operating,1.8
+G100001077023,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Ktur solar project,L100001067237,utility-scale solar,operating,1.4
+G100001077024,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XIII,L100001067238,utility-scale solar,operating,2.3
+G100001077025,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project XI,L100001067239,utility-scale solar,operating,4.1
+G100001077026,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,West Quy Nhon Ward Phuong Quy Nhon Tay solar project II,L100001067240,utility-scale solar,operating,16.9
+G100001077027,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project IV,L100001067241,utility-scale solar,operating,5.9
+G100001077028,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Van Hoa solar project,L100001067242,utility-scale solar,operating,1.7
+G100001077029,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Ho Nai solar project,L100001067243,utility-scale solar,operating,2.6
+G100001077030,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Lanh solar project,L100001067244,utility-scale solar,operating,2.3
+G100001077031,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project IV,L100001067245,utility-scale solar,operating,4.6
+G100001077032,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Suoi Dau solar project,L100001067246,utility-scale solar,operating,2.6
+G100001077033,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Luong The Tran solar project II,L100001067247,utility-scale solar,operating,2
+G100001077034,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Muong La Commune solar project,L100001067248,utility-scale solar,operating,1
+G100001077035,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kien Luong solar project III,L100001067249,utility-scale solar,operating,5.5
+G100001077036,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXIV,L100001067250,utility-scale solar,operating,2.1
+G100001077037,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Son Kien solar project,L100001067251,utility-scale solar,operating,3.2
+G100001077038,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Chu A Thai solar project,L100001067252,utility-scale solar,operating,5.6
+G100001077039,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan An solar project,L100001067253,utility-scale solar,operating,2.3
+G100001077040,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXV,L100001067254,utility-scale solar,operating,2.4
+G100001077041,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXVI,L100001067255,utility-scale solar,operating,1.3
+G100001077042,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Hoa solar project II,L100001067256,utility-scale solar,operating,1.1
+G100001077043,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Gia Hiep solar project II,L100001067257,utility-scale solar,operating,7.4
+G100001077044,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Hoi solar project IV,L100001067258,utility-scale solar,operating,1.4
+G100001077045,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Mang Yang solar project IV,L100001067259,utility-scale solar,operating,1.5
+G100001077046,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project VII,L100001067260,utility-scale solar,operating,1.3
+G100001077047,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Ko solar project II,L100001067261,utility-scale solar,operating,1.4
+G100001077048,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ha solar project III,L100001067262,utility-scale solar,operating,2.2
+G100001077049,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cu Jut solar project II,L100001067263,utility-scale solar,operating,2.3
+G100001077050,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project VIII,L100001067264,utility-scale solar,operating,1.6
+G100001077051,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ro Wa solar project III,L100001067265,utility-scale solar,operating,2.2
+G100001077052,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ha solar project IV,L100001067266,utility-scale solar,operating,2
+G100001077053,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Ong solar project II,L100001067267,utility-scale solar,operating,4.2
+G100001077054,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project IX,L100001067268,utility-scale solar,operating,1.6
+G100001077055,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ong Phu solar project III,L100001067269,utility-scale solar,operating,2.4
+G100001077056,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa A Kia solar project,L100001067270,utility-scale solar,operating,2.9
+G100001077057,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Ha Lam Ha solar project,L100001067271,utility-scale solar,operating,2.4
+G100001077058,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Po solar project II,L100001067272,utility-scale solar,operating,1.9
+G100001077059,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XIV,L100001067273,utility-scale solar,operating,2.6
+G100001077060,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thai Nguyen Province solar project,L100001067274,utility-scale solar,operating,1.9
+G100001077061,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Mil solar project IV,L100001067275,utility-scale solar,operating,3.6
+G100001077062,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Son Ha solar project,L100001067276,utility-scale solar,operating,2.4
+G100001077063,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project V,L100001067277,utility-scale solar,operating,2
+G100001077064,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Lap solar project I,L100001067278,utility-scale solar,operating,3.2
+G100001077065,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Quoi solar project,L100001067279,utility-scale solar,operating,1.1
+G100001077066,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Buon Ma Thuot solar project II,L100001067280,utility-scale solar,operating,1.1
+G100001077067,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hru solar project V,L100001067281,utility-scale solar,operating,1.7
+G100001077068,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kim Long Ward solar project,L100001067282,utility-scale solar,operating,2.5
+G100001077069,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thuan An solar project,L100001067283,utility-scale solar,operating,2.1
+G100001077070,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Rok solar project,L100001067284,utility-scale solar,operating,3.8
+G100001077071,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XV,L100001067285,utility-scale solar,operating,2.7
+G100001077072,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXVII,L100001067286,utility-scale solar,operating,7.8
+G100001077073,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Phu solar project V,L100001067287,utility-scale solar,operating,6.2
+G100001077074,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project V,L100001067288,utility-scale solar,operating,2.4
+G100001077075,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cong Hai solar project I,L100001067289,utility-scale solar,operating,1
+G100001077076,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bo Ngoong solar project,L100001067290,utility-scale solar,operating,2.1
+G100001077077,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Son Hoa solar project I,L100001067291,utility-scale solar,operating,4.2
+G100001077078,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cong Hai solar project II,L100001067292,utility-scale solar,operating,1.4
+G100001077079,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XVI,L100001067293,utility-scale solar,operating,1.8
+G100001077080,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Di An solar project,L100001067294,utility-scale solar,operating,3.2
+G100001077081,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Son My solar project I,L100001067295,utility-scale solar,operating,1.8
+G100001077082,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXVIII,L100001067296,utility-scale solar,operating,1.3
+G100001077083,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Thanh solar project III,L100001067297,utility-scale solar,operating,2.3
+G100001077084,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XXXIX,L100001067298,utility-scale solar,operating,1.6
+G100001077085,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Kar solar project III,L100001067299,utility-scale solar,operating,4.8
+G100001077086,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Binh Province solar project II,L100001067300,utility-scale solar,operating,3.6
+G100001077087,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Vinh Quang solar project,L100001067301,utility-scale solar,operating,3.3
+G100001077088,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Noi solar project II,L100001067302,utility-scale solar,operating,2.3
+G100001077089,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Wer solar project II,L100001067303,utility-scale solar,operating,2.8
+G100001077090,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project XII,L100001067304,utility-scale solar,operating,2.1
+G100001077091,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Nghia Lo solar project,L100001067305,utility-scale solar,operating,1.3
+G100001077092,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Tuc solar project III,L100001067306,utility-scale solar,operating,1.9
+G100001077093,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project X,L100001067307,utility-scale solar,operating,3.5
+G100001077094,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Hoa solar project III,L100001067308,utility-scale solar,operating,1.8
+G100001077095,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bac Ninh Hoa solar project II,L100001067309,utility-scale solar,operating,1.6
+G100001077096,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project IX,L100001067310,utility-scale solar,operating,2.7
+G100001077097,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea H'Leo solar project II,L100001067311,utility-scale solar,operating,4.3
+G100001077098,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XL,L100001067312,utility-scale solar,operating,1.3
+G100001077099,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ong Tam solar project,L100001067313,utility-scale solar,operating,2.7
+G100001077100,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kon Gang solar project II,L100001067314,utility-scale solar,operating,2.3
+G100001077101,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project X,L100001067315,utility-scale solar,operating,2.1
+G100001077102,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Sup solar project IV,L100001067316,utility-scale solar,operating,8.8
+G100001077103,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLI,L100001067317,utility-scale solar,operating,2.7
+G100001077104,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLII,L100001067318,utility-scale solar,operating,1
+G100001077105,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mai Son Commune solar project,L100001067319,utility-scale solar,operating,4.2
+G100001077106,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLIII,L100001067320,utility-scale solar,operating,2.8
+G100001077107,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,An Giang Province solar project IV,L100001067321,utility-scale solar,operating,3.4
+G100001077108,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Chon Thanh solar project I,L100001067322,utility-scale solar,operating,2.6
+G100001077109,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Luong Son solar project II,L100001067323,utility-scale solar,operating,1.7
+G100001077110,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project VII,L100001067324,utility-scale solar,operating,3.7
+G100001077111,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Inh Quan solar project II,L100001067325,utility-scale solar,operating,1.8
+G100001077112,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLIV,L100001067326,utility-scale solar,operating,2.5
+G100001077113,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak To solar project III,L100001067327,utility-scale solar,operating,1.6
+G100001077114,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ngok Reo solar project,L100001067328,utility-scale solar,operating,1
+G100001077115,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phan Ri Cua solar project II,L100001067329,utility-scale solar,operating,1.9
+G100001077116,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Liem solar project III,L100001067330,utility-scale solar,operating,2.5
+G100001077117,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project VI,L100001067331,utility-scale solar,operating,1.4
+G100001077118,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project VI,L100001067332,utility-scale solar,operating,1
+G100001077119,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hru solar project VI,L100001067333,utility-scale solar,operating,2.9
+G100001077120,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Binh Hiep solar project,L100001067334,utility-scale solar,operating,4.5
+G100001077121,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Vinh Hoa Hung solar project,L100001067335,utility-scale solar,operating,1.8
+G100001077122,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bac Ai solar project,L100001067336,utility-scale solar,operating,1.6
+G100001077123,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Vinh Hau solar project II,L100001067337,utility-scale solar,operating,1.4
+G100001077124,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phong Dinh Ward Phong Thai Ward solar project,L100001067338,utility-scale solar,operating,1.7
+G100001077125,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project XI,L100001067339,utility-scale solar,operating,2.7
+G100001077126,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Noi solar project III,L100001067340,utility-scale solar,operating,1.7
+G100001077127,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLV,L100001067341,utility-scale solar,operating,1.6
+G100001077128,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project VII,L100001067342,utility-scale solar,operating,4.5
+G100001077129,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLVI,L100001067343,utility-scale solar,operating,15.4
+G100001077130,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Bang solar project I,L100001067344,utility-scale solar,operating,1.8
+G100001077131,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Hong solar project,L100001067345,utility-scale solar,operating,3.1
+G100001077132,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Wer solar project III,L100001067346,utility-scale solar,operating,1.7
+G100001077133,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong An Tinh solar project II,L100001067347,utility-scale solar,operating,6
+G100001077134,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Mo Rai solar project,L100001067348,utility-scale solar,operating,2.1
+G100001077135,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Nan solar project,L100001067349,utility-scale solar,operating,3.6
+G100001077136,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Suoi Trai solar project II,L100001067350,utility-scale solar,operating,6.4
+G100001077137,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Loi solar project I,L100001067351,utility-scale solar,operating,2.1
+G100001077138,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Chu Puh solar project,L100001067352,utility-scale solar,operating,8.2
+G100001077139,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Am Rong 1 solar project,L100001067353,utility-scale solar,operating,4.2
+G100001077140,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,An Khe Ward Phuong An Khe solar project,L100001067354,utility-scale solar,operating,2.7
+G100001077141,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bau Can solar project II,L100001067355,utility-scale solar,operating,1.6
+G100001077142,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Sup solar project V,L100001067356,utility-scale solar,operating,2.7
+G100001077143,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,An Nghia Commune solar project,L100001067357,utility-scale solar,operating,2.3
+G100001077144,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Hoa solar project IV,L100001067358,utility-scale solar,operating,2.2
+G100001077145,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Trang Bom solar project II,L100001067359,utility-scale solar,operating,2.1
+G100001077146,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Rieng solar project,L100001067360,utility-scale solar,operating,2.4
+G100001077147,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Uc Lap solar project I,L100001067361,utility-scale solar,operating,2.2
+G100001077148,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ro Wa solar project IV,L100001067362,utility-scale solar,operating,3.6
+G100001077149,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Tinh Province solar project XI,L100001067363,utility-scale solar,operating,1.9
+G100001077150,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cu M'Gar solar project,L100001067364,utility-scale solar,operating,3.6
+G100001077151,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Son My solar project II,L100001067365,utility-scale solar,operating,2.2
+G100001077152,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sam Mun Commune solar project,L100001067366,utility-scale solar,operating,2
+G100001077153,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Uar solar project,L100001067367,utility-scale solar,operating,2.8
+G100001077154,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Lap solar project II,L100001067368,utility-scale solar,operating,5.6
+G100001077155,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project VII,L100001067369,utility-scale solar,operating,1.3
+G100001077156,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Son Hoa solar project II,L100001067370,utility-scale solar,operating,3.7
+G100001077157,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Sa Binh solar project,L100001067371,utility-scale solar,operating,2.7
+G100001077158,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Tan solar project,L100001067372,utility-scale solar,operating,1.4
+G100001077159,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kdang solar project III,L100001067373,utility-scale solar,operating,1.5
+G100001077160,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ong Phu solar project IV,L100001067374,utility-scale solar,operating,2.1
+G100001077161,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLVII,L100001067375,utility-scale solar,operating,4.7
+G100001077162,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hue solar project III,L100001067376,utility-scale solar,operating,1.5
+G100001077163,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Binh Province solar project III,L100001067377,utility-scale solar,operating,3.2
+G100001077164,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hung Hoi solar project,L100001067378,utility-scale solar,operating,2.6
+G100001077165,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tam Nong solar project I,L100001067379,utility-scale solar,operating,2.5
+G100001077166,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Lap Vo solar project I,L100001067380,utility-scale solar,operating,3.7
+G100001077167,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Kiet solar project,L100001067381,utility-scale solar,operating,2.6
+G100001077168,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa A Teh 2 solar project II,L100001067382,utility-scale solar,operating,2.1
+G100001077169,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ha Noi solar project IV,L100001067383,utility-scale solar,operating,1.9
+G100001077170,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phu Quoc solar project II,L100001067384,utility-scale solar,operating,2.5
+G100001077171,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ninh Son solar project,L100001067385,utility-scale solar,operating,2.7
+G100001077172,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bo Y solar project III,L100001067386,utility-scale solar,operating,1.7
+G100001077173,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLVIII,L100001067387,utility-scale solar,operating,1.2
+G100001077174,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa My Hanh solar project,L100001067388,utility-scale solar,operating,2.4
+G100001077175,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ninh Binh Province solar project IV,L100001067389,utility-scale solar,operating,1.6
+G100001077176,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa On Duong solar project II,L100001067390,utility-scale solar,operating,1.1
+G100001077177,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project XLIX,L100001067391,utility-scale solar,operating,3.6
+G100001077178,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Pia solar project,L100001067392,utility-scale solar,operating,3.6
+G100001077179,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dau Giay solar project,L100001067393,utility-scale solar,operating,1.2
+G100001077180,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cam An solar project,L100001067394,utility-scale solar,operating,1.6
+G100001077181,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,A Nang solar project XII,L100001067395,utility-scale solar,operating,2.7
+G100001077182,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Bang solar project II,L100001067396,utility-scale solar,operating,2.4
+G100001077183,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Uc Lap solar project II,L100001067397,utility-scale solar,operating,4.6
+G100001077184,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bao Lam 3 solar project,L100001067398,utility-scale solar,operating,1.1
+G100001077185,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Song Loc solar project,L100001067399,utility-scale solar,operating,3.6
+G100001077186,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Cho Vam solar project,L100001067400,utility-scale solar,operating,3.1
+G100001077187,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa On Duong solar project III,L100001067401,utility-scale solar,operating,11.1
+G100001077188,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Minh Hung solar project III,L100001067402,utility-scale solar,operating,1.1
+G100001077189,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dlie Ya solar project,L100001067403,utility-scale solar,operating,2.6
+G100001077190,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa A Teh 3 solar project,L100001067404,utility-scale solar,operating,2.1
+G100001077191,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ien Ban Ong Ward solar project II,L100001067405,utility-scale solar,operating,1.1
+G100001077192,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project VIII,L100001067406,utility-scale solar,operating,1.7
+G100001077193,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project XIII,L100001067407,utility-scale solar,operating,4.3
+G100001077194,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XVII,L100001067408,utility-scale solar,operating,3.6
+G100001077195,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Ha solar project V,L100001067409,utility-scale solar,operating,1.4
+G100001077196,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project L,L100001067410,utility-scale solar,operating,5
+G100001077197,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XVIII,L100001067411,utility-scale solar,operating,1.8
+G100001077198,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Quan solar project II,L100001067412,utility-scale solar,operating,2.3
+G100001077199,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Nam Dong solar project II,L100001067413,utility-scale solar,operating,2.3
+G100001077200,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Long Thuan solar project II,L100001067414,utility-scale solar,operating,1.6
+G100001077201,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project VIII,L100001067415,utility-scale solar,operating,2.9
+G100001077202,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XIX,L100001067416,utility-scale solar,operating,3.7
+G100001077203,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LI,L100001067417,utility-scale solar,operating,2.9
+G100001077204,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hoa Hoi solar project V,L100001067418,utility-scale solar,operating,1.3
+G100001077205,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thuan Nam solar project,L100001067419,utility-scale solar,operating,1.7
+G100001077206,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Thanh solar project IV,L100001067420,utility-scale solar,operating,3
+G100001077207,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hai Phong solar project II,L100001067421,utility-scale solar,operating,2.5
+G100001077208,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phuong Thinh solar project,L100001067422,utility-scale solar,operating,2.3
+G100001077209,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak Oa solar project,L100001067423,utility-scale solar,operating,2.7
+G100001077210,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thuan An solar project II,L100001067424,utility-scale solar,operating,1
+G100001077211,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Dok solar project,L100001067425,utility-scale solar,operating,2.4
+G100001077212,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project XIV,L100001067426,utility-scale solar,operating,1.8
+G100001077213,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Luong Son solar project III,L100001067427,utility-scale solar,operating,10.5
+G100001077214,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Loc solar project III,L100001067428,utility-scale solar,operating,1.7
+G100001077215,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thuan Loi solar project I,L100001067429,utility-scale solar,operating,3.2
+G100001077216,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Gia Hiep solar project III,L100001067430,utility-scale solar,operating,3.6
+G100001077217,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Phu Cat solar project II,L100001067431,utility-scale solar,operating,2.8
+G100001077218,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tam Nong solar project II,L100001067432,utility-scale solar,operating,4.7
+G100001077219,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak To solar project IV,L100001067433,utility-scale solar,operating,2
+G100001077220,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XX,L100001067434,utility-scale solar,operating,1.1
+G100001077221,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LII,L100001067435,utility-scale solar,operating,1.3
+G100001077222,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa An Phuoc solar project,L100001067436,utility-scale solar,operating,1.9
+G100001077223,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Ly solar project,L100001067437,utility-scale solar,operating,3.3
+G100001077224,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Thanh Hoa Province solar project V,L100001067438,utility-scale solar,operating,1
+G100001077225,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Chon Thanh solar project II,L100001067439,utility-scale solar,operating,3.6
+G100001077226,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tay Ninh Province solar project IX,L100001067440,utility-scale solar,operating,1
+G100001077227,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Krong Ana solar project,L100001067441,utility-scale solar,operating,1
+G100001077228,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LIII,L100001067442,utility-scale solar,operating,5.8
+G100001077229,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hrung solar project I,L100001067443,utility-scale solar,operating,1.6
+G100001077230,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Kong Bo La solar project,L100001067444,utility-scale solar,operating,1.9
+G100001077231,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thuan Loi solar project II,L100001067445,utility-scale solar,operating,1.4
+G100001077232,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LIV,L100001067446,utility-scale solar,operating,1.2
+G100001077233,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project IX,L100001067447,utility-scale solar,operating,1.4
+G100001077234,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hung Yen Province solar project VIII,L100001067448,utility-scale solar,operating,1.5
+G100001077235,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Dur Kmal solar project III,L100001067449,utility-scale solar,operating,2.7
+G100001077236,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Tri Province solar project XV,L100001067450,utility-scale solar,operating,3.1
+G100001077237,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lien Chieu Ward solar project I,L100001067451,utility-scale solar,operating,3.4
+G100001077238,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Loc Thanh solar project III,L100001067452,utility-scale solar,operating,2.4
+G100001077239,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Sup solar project VI,L100001067453,utility-scale solar,operating,1.7
+G100001077240,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Loi solar project II,L100001067454,utility-scale solar,operating,1.6
+G100001077241,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Lap Vo solar project II,L100001067455,utility-scale solar,operating,4.3
+G100001077242,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Bom Bo solar project,L100001067456,utility-scale solar,operating,1.4
+G100001077243,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lien Chieu Ward solar project II,L100001067457,utility-scale solar,operating,2.1
+G100001077244,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Chieng Mai Commune solar project,L100001067458,utility-scale solar,operating,1.4
+G100001077245,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Hai Ninh solar project,L100001067459,utility-scale solar,operating,1.1
+G100001077246,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Quang Ngai Province solar project,L100001067460,utility-scale solar,operating,2.1
+G100001077247,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Bac solar project III,L100001067461,utility-scale solar,operating,4.1
+G100001077248,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Nam Gia Nghia solar project II,L100001067462,utility-scale solar,operating,2.8
+G100001077249,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Bac Gia Nghia solar project,L100001067463,utility-scale solar,operating,1.3
+G100001077250,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LV,L100001067464,utility-scale solar,operating,1.8
+G100001077251,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XXI,L100001067465,utility-scale solar,operating,1.9
+G100001077252,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Inh solar project III,L100001067466,utility-scale solar,operating,1.8
+G100001077253,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Ong solar project III,L100001067467,utility-scale solar,operating,2.8
+G100001077254,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LVI,L100001067468,utility-scale solar,operating,1.5
+G100001077255,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ak To solar project V,L100001067469,utility-scale solar,operating,1.7
+G100001077256,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ea Na solar project III,L100001067470,utility-scale solar,operating,1.9
+G100001077257,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Pleiku Ward Phuong Pleiku solar project,L100001067471,utility-scale solar,operating,1.9
+G100001077258,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Ho Co solar project II,L100001067472,utility-scale solar,operating,2.7
+G100001077259,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tan Phuoc 3 solar project,L100001067473,utility-scale solar,operating,3.8
+G100001077260,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LVII,L100001067474,utility-scale solar,operating,1.1
+G100001077261,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Xuan Truong - A Lat solar project,L100001067475,utility-scale solar,operating,1.5
+G100001077262,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho Chi Minh City solar project LVIII,L100001067476,utility-scale solar,operating,1.4
+G100001077263,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Nghe An Province solar project X,L100001067477,utility-scale solar,operating,4
+G100001077264,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Long Uc solar project,L100001067478,utility-scale solar,operating,1.8
+G100001077265,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Xuan Loc solar project IV,L100001067479,utility-scale solar,operating,2.8
+G100001077266,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Hrung solar project II,L100001067480,utility-scale solar,operating,4.3
+G100001077267,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Song Luy solar project,L100001067481,utility-scale solar,operating,3
+G100001077268,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Can Tho solar project XXII,L100001067482,utility-scale solar,operating,3.4
+G100001077269,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ham Thanh solar project,L100001067483,utility-scale solar,operating,1.8
+G100001077270,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phuong Phuoc Long solar project,L100001067484,utility-scale solar,operating,2.1
+G100001077271,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Tuy An Tay solar project,L100001067485,utility-scale solar,operating,1.4
+G100001077272,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Ia Grai solar project,L100001067486,utility-scale solar,operating,2.3
+G100001077273,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Khanh Vinh solar project,L100001067487,utility-scale solar,operating,1.5
+G100001077274,energy_plants_gem_tzsam_units,VNM,point,,,,,,,,false,abf-boundaries-v0.2.0,Xa Thanh My Tay solar project,L100001067488,utility-scale solar,operating,1.4

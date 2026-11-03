@@ -1,0 +1,153 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000102498,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Duqum Independent Water and Power Project,L100000103111,coal,cancelled,600
+G100000114157,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Duqum Independent Water and Power Project,L100000103111,coal,cancelled,600
+G100000200802,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Barka power station,L100000200706,bioenergy,pre_construction,100
+G100000404682,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Kamil power plant,L100000405503,oil/gas,operating,95
+G100000404683,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Kamil power plant,L100000405503,oil/gas,operating,95
+G100000404684,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Kamil power plant,L100000405503,oil/gas,operating,95
+G100000404685,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Barka I Independent Water and power plant,L100000405505,oil/gas,operating,456
+G100000404686,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Barka II Independent Water and power plant,L100000405518,oil/gas,operating,688
+G100000404687,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Barka III Independent power plant,L100000405506,oil/gas,operating,766
+G100000404688,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ibri Independent power plant,L100000405508,oil/gas,operating,1539
+G100000404689,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Manah power plant,L100000405510,oil/gas,operating,90
+G100000404690,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Manah power plant,L100000405510,oil/gas,operating,90
+G100000404691,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Misfah Independent power plant,L100000405511,oil/gas,construction,1700
+G100000404692,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,retired,80
+G100000404693,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,retired,80
+G100000404694,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,retired,80
+G100000404695,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,retired,80
+G100000404696,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,retired,80
+G100000404697,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,retired,80
+G100000404698,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,operating,93
+G100000404699,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusail power plant,L100000405517,oil/gas,operating,93
+G100000404700,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Salalah Independent Water and power plant,L100000405521,oil/gas,operating,445
+G100000404702,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Salalah 2 Independent power plant,L100000405520,oil/gas,operating,225
+G100000404703,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sohar Aluminum power plant,L100000405522,oil/gas,operating,500
+G100000404704,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sohar power plant,L100000405525,oil/gas,operating,597
+G100000404705,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sohar II power plant,L100000405523,oil/gas,operating,766
+G100000404706,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sohar III power plant,L100000405524,oil/gas,operating,870.5
+G100000404707,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sur Independent power plant,L100000405526,oil/gas,operating,800
+G100000404708,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Amal power plant,L100000405504,oil/gas,operating,126
+G100000404709,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Amal power plant,L100000405504,oil/gas,operating,126
+G100000404710,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Amal power plant,L100000405504,oil/gas,cancelled,132
+G100000404711,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Duqm Independent Water and power plant,L100000405507,oil/gas,operating,326
+G100000404714,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lekhwair power station,L100000405509,oil/gas,operating,110
+G100000404715,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mukhaizna power plant,L100000405512,oil/gas,operating,126
+G100000404716,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mukhaizna power plant,L100000405512,oil/gas,operating,126
+G100000404717,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qarn Alam power plant,L100000405515,oil/gas,operating,70
+G100000404718,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qarn Alam power plant,L100000405515,oil/gas,operating,70
+G100000404719,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qarn Alam power plant,L100000405515,oil/gas,operating,125
+G100000404720,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qarn Alam power plant,L100000405515,oil/gas,operating,126
+G100000404721,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qarn Alam power plant,L100000405515,oil/gas,operating,132
+G100000404722,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Saih Rawl power plant,L100000405519,oil/gas,operating,185
+G100000404723,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rabab Harweel Project power plant,L100000405516,oil/gas,operating,75
+G100000404724,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rabab Harweel Project power plant,L100000405516,oil/gas,operating,75
+G100000408542,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Haima West power station,L100000407105,oil/gas,operating,67
+G100000410072,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qalhat LNG power station,L100000407694,oil/gas,operating,280
+G100000411165,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sur Independent power plant,L100000405526,oil/gas,operating,400
+G100000411166,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sur Independent power plant,L100000405526,oil/gas,operating,800
+G100000411167,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sohar III power plant,L100000405524,oil/gas,operating,870.5
+G100000411168,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sohar Aluminum power plant,L100000405522,oil/gas,operating,500
+G100000411169,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Salalah 2 Independent power plant,L100000405520,oil/gas,operating,225
+G100000411532,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,New Qalhat LNG power station,L100000408234,oil/gas,operating,119.7
+G100000411533,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Masirah New power plant,L100000408235,oil/gas,operating,57.6
+G100000411534,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Khasab New power plant,L100000408238,oil/gas,operating,84
+G100000604938,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Wadi Dayqah Dam hydroelectric plant,L100000604387,hydropower,cancelled,250
+G100000804621,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Amin Solar PV Power Plant,L100000804048,utility-scale solar,operating,105
+G100000804653,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Madayn-Sohar solar farm,L100000804071,utility-scale solar,announced,100
+G100000804669,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Duqm Solar,L100000804087,utility-scale solar,cancelled,400
+G100000804670,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ibri 2 Solar,L100000804088,utility-scale solar,operating,500
+G100000804673,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Oman Green Energy solar farm,L100000804091,utility-scale solar,pre_construction,2000
+G100000804685,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Scatec-Duqm Solar,L100000804098,utility-scale solar,shelved,500
+G100000804716,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar 2022 IPP,L100000804124,utility-scale solar,cancelled,500
+G100000804717,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Paew solar farm,L100000804125,utility-scale solar,construction,100
+G100000804725,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sohar Solar Qabas,L100000804133,utility-scale solar,operating,25
+G100000804728,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Manah solar farm,L100000804136,utility-scale solar,operating,500
+G100000804729,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Manah solar farm,L100000804136,utility-scale solar,operating,500
+G100000811447,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Adam solar farm,L100000809119,utility-scale solar,pre_construction,500
+G100000811448,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al Namaa Poultry solar farm,L100000809120,utility-scale solar,shelved,15
+G100000811450,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Duqm-OPWP solar farm,L100000809122,utility-scale solar,pre_construction,600
+G100000811451,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hyport Duqm solar farm,L100000809123,utility-scale solar,pre_construction,650
+G100000811452,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miraah solar farm,L100000809124,utility-scale solar,operating,100
+G100000811453,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miraah solar farm,L100000809124,utility-scale solar,operating,300
+G100000811454,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miraah solar farm,L100000809124,utility-scale solar,operating,621
+G100000811456,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sur solar farm,L100000809126,utility-scale solar,operating,17
+G100000811457,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tanweer solar farm,L100000809127,utility-scale solar,pre_construction,46
+G100000834609,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al Mazyunah solar farm,L100000830742,utility-scale solar,operating,558
+G100000834610,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Amnah-Duqm solar farm,L100000830743,utility-scale solar,pre_construction,2250
+G100000834611,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,BP Oman-Dhofar solar farm,L100000830744,utility-scale solar,pre_construction,1750
+G100000834612,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,BP Oman-Duqm solar farm,L100000830745,utility-scale solar,pre_construction,1750
+G100000834614,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Engie - Posco Hyport Duqm solar farm,L100000830747,utility-scale solar,pre_construction,2600
+G100000834615,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,H2Oman solar farm,L100000830748,utility-scale solar,pre_construction,4150
+G100000834616,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hydrogen Oman solar farm,L100000830749,utility-scale solar,announced,650
+G100000834617,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hyport Duqm solar farm,L100000809123,utility-scale solar,pre_construction,1350
+G100000834618,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ibri 3 solar farm,L100000830750,utility-scale solar,pre_construction,500
+G100000834619,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Liwa solar farm,L100000830751,utility-scale solar,construction,93
+G100000834621,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,MIS Solar IPP 2025,L100000830753,utility-scale solar,pre_construction,500
+G100000834622,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,MIS Solar IPP 2027,L100000830754,utility-scale solar,announced,500
+G100000834624,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Oman Green Energy solar farm,L100000804091,utility-scale solar,pre_construction,7650
+G100000834625,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,OWWSC solar farm,L100000830756,utility-scale solar,shelved,15
+G100000834626,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Hydrogen solar farm,L100000830757,utility-scale solar,pre_construction,1900
+G100000834627,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,SalalaH2 solar farm,L100000830758,utility-scale solar,pre_construction,1550
+G100000834628,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Scatec-Duqm Solar,L100000804098,utility-scale solar,shelved,5000
+G100000834629,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sohar Port solar farm,L100000830759,utility-scale solar,pre_construction,35
+G100000834630,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sohar Port solar farm,L100000830759,utility-scale solar,announced,350
+G100000834631,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sur Hydrogen Cluster solar farm,L100000830760,utility-scale solar,announced,1900
+G100000834632,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sur Hydrogen Cluster solar farm,L100000830760,utility-scale solar,announced,1900
+G100000927449,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Amnah-Duqm wind farm,L100000922024,wind,pre_construction,2250
+G100000927478,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,BP Oman-Dhofar wind farm,L100000922043,wind,pre_construction,1750
+G100000927479,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,BP Oman-Duqm wind farm,L100000922044,wind,pre_construction,1750
+G100000927529,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhofar II wind farm,L100000922077,wind,pre_construction,123
+G100000927530,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhofar wind farm,L100000905967,wind,operating,50
+G100000927532,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ras Madrakah wind farm,L100000922079,wind,pre_construction,270
+G100000927533,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Duqm wind IPP farm,L100000917194,wind,pre_construction,250
+G100000927535,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Engie - Posco Hyport wind farm,L100000922081,wind,pre_construction,2500
+G100000927561,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,H2Oman wind farm,L100000922101,wind,pre_construction,4150
+G100000927583,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hydrogen Oman wind farm,L100000922120,wind,pre_construction,2225
+G100000927584,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hyport Duqm wind farm,L100000922121,wind,construction,650
+G100000927585,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hyport Duqm wind farm,L100000922121,wind,pre_construction,675
+G100000927597,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Jalan Bani Bu Ali IPP wind farm,L100000922130,wind,pre_construction,100
+G100000927644,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mahout wind farm,L100000922164,wind,pre_construction,400
+G100000927664,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Oman Green Energy wind farm,L100000922180,wind,pre_construction,2000
+G100000927694,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Hydrogen wind farm,L100000922204,wind,pre_construction,2250
+G100000927695,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,SalalaH2 wind farm,L100000922205,wind,pre_construction,1550
+G100001008754,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Saih Al-Khairat New Power Station,L100001007584,oil/gas,operating,48
+G100001008816,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hubara Power Station,L100001007626,oil/gas,operating,30
+G100001008817,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hubara Power Station,L100001007626,oil/gas,operating,30
+G100001008818,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hubara Power Station,L100001007626,oil/gas,operating,30
+G100001008820,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Marmul Power Plant,L100001007628,oil/gas,operating,20
+G100001008821,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Marmul Power Plant,L100001007628,oil/gas,operating,20
+G100001008822,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Marmul Power Plant,L100001007628,oil/gas,operating,20
+G100001008826,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yibal Khuff Power Plant,L100001007630,oil/gas,operating,28.2
+G100001008827,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yibal Khuff Power Plant,L100001007630,oil/gas,operating,28.2
+G100001008828,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yibal Khuff Power Plant,L100001007630,oil/gas,operating,7.8
+G100001008829,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yibal Khuff Power Plant,L100001007630,oil/gas,operating,7.8
+G100001008830,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yibal Khuff Power Plant,L100001007630,oil/gas,operating,7.8
+G100001020495,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar PV IPPs 2029 solar farm,L100001018383,utility-scale solar,announced,500
+G100001020496,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar PV IPPs 2029 solar farm,L100001018383,utility-scale solar,announced,500
+G100001020517,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Block 60 solar project,L100001018390,utility-scale solar,construction,35
+G100001020586,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Shinas solar farm,L100001018444,utility-scale solar,announced,300
+G100001020654,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Oman Green Energy wind farm,L100000922180,wind,announced,10000
+G100001020683,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sadah wind farm,L100001018513,wind,pre_construction,99
+G100001020698,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Riyah I wind farm,L100001018524,wind,construction,100
+G100001020701,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Riyah II wind farm,L100001018525,wind,construction,100
+G100001020717,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Wind IPP 2029,L100001018533,wind,announced,200
+G100001028096,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yibal Khuff Power Plant,L100001007630,oil/gas,operating,13
+G100001028098,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Manah power plant,L100000405510,oil/gas,operating,27
+G100001028099,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Manah power plant,L100000405510,oil/gas,operating,27
+G100001028100,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Manah power plant,L100000405510,oil/gas,operating,27
+G100001028161,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,33
+G100001028162,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,33
+G100001028163,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,33
+G100001028164,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,33
+G100001028165,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,33
+G100001028166,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,33
+G100001028167,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,30
+G100001028168,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salalah Power Plant,L100001023570,oil/gas,operating,28
+G100001051441,energy_plants_gem_units,OMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sinaw solar farm,L100001045673,utility-scale solar,pre_construction,300
+G100001051442,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al Kamil Solar IPP,L100001045674,utility-scale solar,pre_construction,280
+G100001052093,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,New Duqm Independent Water and power plant,L100001046171,oil/gas,construction,877
+G100001072715,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhofar wind farm,L100000905967,wind,pre_construction,130
+G100001072755,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Saih Nahaydah solar farm,L100001063328,utility-scale solar,construction,105
+G100001072758,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,GameChange-Duqm solar farm,L100001063331,utility-scale solar,construction,450
+G100001072763,energy_plants_gem_units,OMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Polysilicon-OQ solar farm,L100001063336,utility-scale solar,announced,700

@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001021847,energy_plants_gem_units,STP,point,,,,,,,,false,abf-boundaries-v0.2.0,Santo Amaro solar farm,L100001019347,utility-scale solar,operating,1.2
+G100001021849,energy_plants_gem_units,STP,point,,,,,,,,true,abf-boundaries-v0.2.0,Sao Tome Airport solar farm,L100001019350,utility-scale solar,announced,1.1
+G100001021853,energy_plants_gem_units,STP,field,,,,,,,,true,abf-boundaries-v0.2.0,Dominique Floating CSP solar farm,L100001019354,utility-scale solar,announced,1.5
+G100001021854,energy_plants_gem_units,STP,field,,,,,,,,true,abf-boundaries-v0.2.0,Dominique Floating CSP solar farm,L100001019354,utility-scale solar,announced,8.5
+G100001090052,energy_plants_gem_units,STP,point,,,,,,,,true,abf-boundaries-v0.2.0,Água Casada solar farm,L100001080202,utility-scale solar,operating,11

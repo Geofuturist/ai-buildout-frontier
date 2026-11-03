@@ -1,0 +1,252 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100112,energy_plants_gem_units,CHE,point,DEU,CHE-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Albbruck Mill power station,L100000101872,coal,retired,31
+G100000400175,energy_plants_gem_units,CHE,point,DEU,CHE-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Grenzach-Wyhlen power station,L100000400175,oil/gas,operating,39
+G100000410168,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Monthey power station,L100000407725,oil/gas,operating,55
+G100000500087,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Leibstadt nuclear power plant,L100000500051,nuclear,operating,1275
+G100000500203,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Goesgen nuclear power plant,L100000500106,nuclear,operating,1060
+G100000500504,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Beznau nuclear power plant,L100000500207,nuclear,operating,380
+G100000500505,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Beznau nuclear power plant,L100000500207,nuclear,operating,380
+G100000500506,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Muehleberg nuclear power plant,L100000500208,nuclear,retired,390
+G100000500618,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,false,abf-boundaries-v0.2.0,Lucens nuclear power plant,L100000500266,nuclear,retired,7
+G100000501291,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Beznau nuclear power plant,L100000500207,nuclear,cancelled,1600
+G100000501292,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Graben nuclear power plant,L100000500447,nuclear,cancelled,1140
+G100000501293,energy_plants_gem_units,CHE,point,,CHE-1-BL,,point,,,,true,abf-boundaries-v0.2.0,Kaiseraugst nuclear power plant,L100000500448,nuclear,cancelled,950
+G100000501294,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Muehleberg nuclear power plant,L100000500208,nuclear,cancelled,1600
+G100000501295,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Niederamt nuclear power plant,L100000500449,nuclear,cancelled,1600
+G100000601737,energy_plants_gem_units,CHE,point,DEU,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Albbruck-Dogern hydroelectric plant,L100000601718,hydropower,operating,105
+G100000603509,energy_plants_gem_units,CHE,point,,CHE-1-UR,,point,,,,false,abf-boundaries-v0.2.0,Amsteg hydroelectric plant,L100000603474,hydropower,operating,120
+G100000603510,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Barenburg hydroelectric plant,L100000603475,hydropower,operating,220
+G100000603511,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Bavona hydroelectric plant,L100000603476,hydropower,operating,140
+G100000603512,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Biasca hydroelectric plant,L100000603477,hydropower,operating,324
+G100000603513,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Bieudron hydroelectric plant,L100000603478,hydropower,operating,1260
+G100000603515,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Bitsch hydroelectric plant,L100000603480,hydropower,operating,340
+G100000603516,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Castasegna hydroelectric plant,L100000603481,hydropower,operating,100
+G100000603517,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Cavergno hydroelectric plant,L100000603482,hydropower,operating,114
+G100000603519,energy_plants_gem_units,CHE,point,,CHE-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Etzelwerk Altendorf hydroelectric plant,L100000603484,hydropower,operating,135
+G100000603520,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Ferrera 1 hydroelectric plant,L100000603485,hydropower,operating,180
+G100000603521,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Fionnay-Dixence hydroelectric plant,L100000603486,hydropower,operating,306
+G100000603522,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Fionnay-Mauvoisin hydroelectric plant,L100000603487,hydropower,operating,140
+G100000603523,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Gordola hydroelectric plant,L100000603488,hydropower,operating,133
+G100000603524,energy_plants_gem_units,CHE,point,,CHE-1-UR,,point,,,,false,abf-boundaries-v0.2.0,Göscheneralp hydroelectric plant,L100000603489,hydropower,operating,165
+G100000603525,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Grimsel 2 hydroelectric plant,L100000603490,hydropower,operating,388
+G100000603527,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Handeck I hydroelectric plant,L100000603492,hydropower,operating,100
+G100000603528,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Handeck II E hydroelectric plant,L100000603493,hydropower,operating,90
+G100000603529,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Handeck II hydroelectric plant,L100000603494,hydropower,operating,126
+G100000603530,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Hopflauenen Trift hydroelectric plant,L100000603495,hydropower,operating,85
+G100000603531,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Innertkirchen-I E hydroelectric plant,L100000603496,hydropower,operating,150
+G100000603532,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Innertkirchen-I hydroelectric plant,L100000603497,hydropower,operating,240
+G100000603533,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,La Batiaz hydroelectric plant,L100000603498,hydropower,operating,170
+G100000603534,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Lavey hydroelectric plant,L100000603499,hydropower,operating,93
+G100000603535,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Le Chatelard hydroelectric plant,L100000603500,hydropower,operating,112
+G100000603536,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Limmern hydroelectric plant,L100000603501,hydropower,operating,1000
+G100000603537,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Löbbia Albigna hydroelectric plant,L100000603502,hydropower,operating,86
+G100000603538,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Löntsch hydroelectric plant,L100000603503,hydropower,operating,81
+G100000603539,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Lötschen hydroelectric plant,L100000603504,hydropower,operating,122
+G100000603540,energy_plants_gem_units,CHE,point,,CHE-1-SG,,point,,,,false,abf-boundaries-v0.2.0,Mapragg hydroelectric plant,L100000603505,hydropower,operating,280
+G100000603541,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Mittelbünden hydroelectric plant,L100000603506,hydropower,operating,198
+G100000603542,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Nant De Drance hydroelectric plant,L100000603507,hydropower,operating,900
+G100000603543,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Nendaz hydroelectric plant,L100000603508,hydropower,operating,392
+G100000603544,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Tierfehd Umwaelzwerk hydroelectric plant,L100000603509,hydropower,operating,131
+G100000603545,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Nuova Biaschina hydroelectric plant,L100000603510,hydropower,operating,141
+G100000603546,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Olivone hydroelectric plant,L100000603511,hydropower,operating,102
+G100000603547,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Pradella hydroelectric plant,L100000603512,hydropower,operating,300
+G100000603548,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Riddes hydroelectric plant,L100000603513,hydropower,operating,258
+G100000603549,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Ritom Nuova hydroelectric plant,L100000603514,hydropower,construction,120
+G100000603550,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Robiei hydroelectric plant,L100000603515,hydropower,operating,192
+G100000603551,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Rothenbrunnen hydroelectric plant,L100000603516,hydropower,operating,135
+G100000603552,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Safien hydroelectric plant,L100000603517,hydropower,operating,86
+G100000603553,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Sarelli hydroelectric plant,L100000603518,hydropower,operating,100
+G100000603554,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Sedrun hydroelectric plant,L100000603519,hydropower,operating,150
+G100000603555,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Sils hydroelectric plant,L100000603520,hydropower,operating,247
+G100000603556,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Soazza hydroelectric plant,L100000603521,hydropower,operating,83
+G100000603557,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Stalden hydroelectric plant,L100000603522,hydropower,operating,185
+G100000603558,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Tavanasa hydroelectric plant,L100000603523,hydropower,operating,180
+G100000603559,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Tierfehd Limmern hydroelectric plant,L100000603524,hydropower,operating,352
+G100000603560,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Trift hydroelectric plant,L100000603525,hydropower,pre_construction,80
+G100000603561,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Verbano 1 hydroelectric plant,L100000603526,hydropower,operating,119
+G100000603562,energy_plants_gem_units,CHE,point,,CHE-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Verbois hydroelectric plant,L100000603527,hydropower,operating,103
+G100000603563,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Vernayaz hydroelectric plant,L100000603528,hydropower,operating,107
+G100000603564,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,false,abf-boundaries-v0.2.0,Veytaux hydroelectric plant,L100000603529,hydropower,operating,240
+G100000603565,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,false,abf-boundaries-v0.2.0,Veytaux II hydroelectric plant,L100000603530,hydropower,operating,240
+G100000604126,energy_plants_gem_units,CHE,point,FRA,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Châtelard-Vallorcine hydroelectric plant,L100000604087,hydropower,operating,260
+G100000604128,energy_plants_gem_units,CHE,point,DEU,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Laufenburg hydroelectric plant,L100000604089,hydropower,operating,106
+G100000604129,energy_plants_gem_units,CHE,point,DEU,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Rheinfelden hydroelectric plant,L100000604090,hydropower,operating,100
+G100000604130,energy_plants_gem_units,CHE,point,DEU,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Ryburg-Schwörstadt hydroelectric plant,L100000604091,hydropower,operating,120
+G100000604298,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Chandoline hydroelectric plant,L100000603483,hydropower,retired,150
+G100000604407,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Grimsel 3 hydroelectric plant,L100000604229,hydropower,cancelled,660
+G100000604408,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Grimsel 4 hydroelectric plant,L100000603491,hydropower,pre_construction,118
+G100000604534,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Lago Bianco hydroelectric plant,L100000604261,hydropower,pre_construction,1000
+G100000604608,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Mauvoisin 2 hydroelectric plant,L100000604283,hydropower,cancelled,550
+G100000604635,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Mottec hydroelectric plant,L100000604290,hydropower,operating,89
+G100000823968,energy_plants_gem_units,CHE,point,DEU,CHE-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Solarpark am Rhein bei Herten/Rheinfelden solar farm,L100000820952,utility-scale solar,operating,3
+G100000824375,energy_plants_gem_units,CHE,point,DEU,CHE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Solarpark Klettgau solar farm,L100000821358,utility-scale solar,operating,2.1
+G100000911408,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,true,abf-boundaries-v0.2.0,San Gottardo wind farm,L100000908695,wind,operating,12
+G100000912461,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Mt Crosin wind farm,L100000909683,wind,operating,13
+G100000912570,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,false,abf-boundaries-v0.2.0,Sainte-Croix wind farm,L100000909785,wind,operating,14
+G100000912643,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Eoljorat Nord wind farm,L100000909853,wind,shelved,14
+G100000912758,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Montagne De Tramelan wind farm,L100000909954,wind,pre_construction,14
+G100000913480,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Mt Crosin wind farm,L100000909683,wind,operating,16
+G100000915028,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Lindenberg wind farm (Switzerland),L100000911981,wind,pre_construction,21
+G100000915697,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Tous-Vents wind farm,L100000912568,wind,pre_construction,24
+G100000916060,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Bel Coster wind farm,L100000912885,wind,pre_construction,27
+G100000916230,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Eoljorat Sud wind farm,L100000913025,wind,pre_construction,28
+G100000917273,energy_plants_gem_units,CHE,point,,CHE-1-OW,,point,,,,true,abf-boundaries-v0.2.0,Mollendruz wind farm,L100000913915,wind,pre_construction,50
+G100000925656,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Grandsonnaz wind farm,L100000920823,wind,pre_construction,63
+G100000925657,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Grenchen wind farm,L100000920824,wind,pre_construction,16
+G100000925658,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Jeanbrenin wind farm,L100000920825,wind,pre_construction,12
+G100000925659,energy_plants_gem_units,CHE,point,,CHE-1-TG,,point,,,,true,abf-boundaries-v0.2.0,Wellenberg wind farm,L100000920826,wind,shelved,45
+G100001001110,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Ovra Solara Rueun solar farm,L100001000757,utility-scale solar,cancelled,30
+G100001001112,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Belpmoos solar farm,L100001000759,utility-scale solar,pre_construction,35
+G100001001115,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Scuol solar farm,L100001000762,utility-scale solar,pre_construction,34
+G100001011966,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Bobst Mex SA solar project,L100001010596,utility-scale solar,operating,1
+G100001011967,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Saxon Soleil SA solar project,L100001010597,utility-scale solar,operating,1
+G100001011968,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Coop Genossenschaft Olten solar project,L100001010598,utility-scale solar,operating,1
+G100001011969,energy_plants_gem_units,CHE,point,,CHE-1-FR,,point,,,,true,abf-boundaries-v0.2.0,Groupe E Greenwatt SA Châtel-St-Denis solar project,L100001010599,utility-scale solar,operating,1
+G100001011970,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Bösiger Gemüsekulturen AG Niederbipp solar project,L100001010600,utility-scale solar,operating,1
+G100001011971,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Hanspeter Müller Muri solar project,L100001010601,utility-scale solar,operating,1
+G100001011972,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,IKEA AG Allaman solar project,L100001010602,utility-scale solar,operating,1
+G100001011973,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,PSP Real Estate AG Urdorf solar project,L100001010603,utility-scale solar,operating,1.1
+G100001011974,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,true,abf-boundaries-v0.2.0,IKEA AG Spreitenbach solar project,L100001010604,utility-scale solar,operating,1.1
+G100001011975,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,WK Paletten AG Schüpbach solar project,L100001010605,utility-scale solar,operating,1.1
+G100001011976,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Genedis SA Saxon solar project,L100001010606,utility-scale solar,operating,1.1
+G100001011977,energy_plants_gem_units,CHE,point,,CHE-1-LU,,point,,,,true,abf-boundaries-v0.2.0,Stadion Luzern AG Horw solar project,L100001010607,utility-scale solar,operating,1.1
+G100001011978,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Groupe E Greenwatt SA Conthey solar project,L100001010608,utility-scale solar,operating,1.1
+G100001011979,energy_plants_gem_units,CHE,point,,CHE-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Pilatus Aircraft Ltd Stans solar project,L100001010609,utility-scale solar,operating,1.1
+G100001011980,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Migros Verteilbetrieb Neuendorf AG solar project,L100001010610,utility-scale solar,operating,1.1
+G100001011981,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Migros Verteilbetrieb Neuendorf AG solar project,L100001010610,utility-scale solar,operating,2.4
+G100001011982,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Migros Verteilbetrieb Neuendorf AG solar project,L100001010610,utility-scale solar,operating,3.6
+G100001011983,energy_plants_gem_units,CHE,point,,CHE-1-LU,,point,,,,true,abf-boundaries-v0.2.0,Valisun AG Hergiswil solar project,L100001010611,utility-scale solar,operating,1.1
+G100001011984,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,OIKEN SA solar project,L100001010612,utility-scale solar,operating,1.2
+G100001011985,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Manuela Mehli Solarstrom Chur solar project,L100001010613,utility-scale solar,operating,1.2
+G100001011986,energy_plants_gem_units,CHE,point,,CHE-1-TG,,point,,,,true,abf-boundaries-v0.2.0,August Brühwiler AG Bissegg solar project,L100001010614,utility-scale solar,operating,1.2
+G100001011987,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Airsolaire SA Evionnaz solar project,L100001010615,utility-scale solar,operating,1.2
+G100001011988,energy_plants_gem_units,CHE,point,,CHE-1-SG,,point,,,,true,abf-boundaries-v0.2.0,Grobau Wattwil solar project,L100001010616,utility-scale solar,operating,1.2
+G100001011989,energy_plants_gem_units,CHE,point,,CHE-1-SG,,point,,,,true,abf-boundaries-v0.2.0,Grobau Wattwil AG solar project,L100001010617,utility-scale solar,operating,1.2
+G100001011990,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Trend Verde SA Wolfwil solar project,L100001010618,utility-scale solar,operating,1.2
+G100001011991,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Post Immobilien Management und Services AG Daillens solar project,L100001010619,utility-scale solar,operating,1.2
+G100001011992,energy_plants_gem_units,CHE,point,,CHE-1-SG,,point,,,,true,abf-boundaries-v0.2.0,Fuchs Immo Concept GmbH Wil solar project,L100001010620,utility-scale solar,operating,1.2
+G100001011993,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Terralog AG Rüdtligen solar project,L100001010621,utility-scale solar,operating,1.3
+G100001011994,energy_plants_gem_units,CHE,point,,CHE-1-FR,,point,,,,true,abf-boundaries-v0.2.0,SunnySun SA Domdidier solar project,L100001010622,utility-scale solar,operating,1.3
+G100001011995,energy_plants_gem_units,CHE,point,,CHE-1-TG,,point,,,,true,abf-boundaries-v0.2.0,Swiss Photovoltaik GmbH Affeltrangen solar project,L100001010623,utility-scale solar,operating,1.3
+G100001011996,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,EKZ Contracting AG Payerne solar project,L100001010624,utility-scale solar,operating,1.4
+G100001011997,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Alp-Sun SA Martigny solar project,L100001010625,utility-scale solar,operating,1.4
+G100001011998,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,true,abf-boundaries-v0.2.0,Post Immobilien Management und Services AG Zürich-Mülligen solar project,L100001010626,utility-scale solar,operating,1.5
+G100001011999,energy_plants_gem_units,CHE,point,,CHE-1-LU,,point,,,,true,abf-boundaries-v0.2.0,Krieger AG Ruswil solar project,L100001010627,utility-scale solar,operating,1.5
+G100001012000,energy_plants_gem_units,CHE,point,,CHE-1-LU,,point,,,,true,abf-boundaries-v0.2.0,IKEA AG Rothenburg solar project,L100001010628,utility-scale solar,operating,1.5
+G100001012001,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,true,abf-boundaries-v0.2.0,Agere SA Bioggio -Soldini Sudacciai SA solar project,L100001010629,utility-scale solar,operating,1.5
+G100001012002,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,OLWO Lädrach Otto AG Worb solar project,L100001010630,utility-scale solar,operating,1.6
+G100001012003,energy_plants_gem_units,CHE,point,,CHE-1-GE,,point,,,,true,abf-boundaries-v0.2.0,SGI AG Vernier solar project,L100001010631,utility-scale solar,operating,1.6
+G100001012004,energy_plants_gem_units,CHE,point,,CHE-1-JU,,point,,,,true,abf-boundaries-v0.2.0,FLASA Alle solar project,L100001010632,utility-scale solar,operating,1.7
+G100001012005,energy_plants_gem_units,CHE,point,,CHE-1-BS,,point,,,,true,abf-boundaries-v0.2.0,Sungate Investment AG Basel solar project,L100001010633,utility-scale solar,operating,1.7
+G100001012006,energy_plants_gem_units,CHE,point,,CHE-1-SG,,point,,,,true,abf-boundaries-v0.2.0,SFS Pensionskasse Heerbrugg solar project,L100001010634,utility-scale solar,operating,1.8
+G100001012007,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Genedis SA Evionnaz solar project,L100001010635,utility-scale solar,operating,2
+G100001012008,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Birseck Solar AG Rheinfelden solar project,L100001010636,utility-scale solar,operating,2.1
+G100001012009,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Energie Service Biel/Bienne solar project,L100001010637,utility-scale solar,operating,2.1
+G100001012010,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Die Sonnenstrom AG Landquart solar project,L100001010638,utility-scale solar,operating,2.1
+G100001012011,energy_plants_gem_units,CHE,point,,CHE-1-TG,,point,,,,true,abf-boundaries-v0.2.0,Rieser Vetter Lagerhaus AG Frauenfeld solar project,L100001010639,utility-scale solar,operating,2.3
+G100001012012,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Romande Energie SA Yvonand solar project,L100001010640,utility-scale solar,operating,2.5
+G100001012013,energy_plants_gem_units,CHE,point,,CHE-1-SG,,point,,,,true,abf-boundaries-v0.2.0,Energie 360° AG Schwarzenbach solar project,L100001010641,utility-scale solar,operating,2.7
+G100001012014,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,true,abf-boundaries-v0.2.0,ADEV Solarstrom AG Wohlen solar project,L100001010642,utility-scale solar,operating,3
+G100001012015,energy_plants_gem_units,CHE,point,,CHE-1-GE,,point,,,,true,abf-boundaries-v0.2.0,Services Industriels de Genève (SIG) Grand-Saconnex solar project,L100001010643,utility-scale solar,operating,4.2
+G100001012016,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Swiss Prime Anlagestiftung Zuchwil solar project,L100001010644,utility-scale solar,operating,5.8
+G100001012017,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Chasseral Solar AG Onnens solar project,L100001010645,utility-scale solar,operating,8.3
+G100001020494,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001020500,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001020501,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001020502,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001020503,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001020504,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001020505,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001020506,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Birr power station,L100001018384,oil/gas,mothballed,31.3
+G100001027468,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Lucendro hydroelectric plant,L100001023263,hydropower,operating,60
+G100001027469,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Ardon hydroelectric plant,L100001023264,hydropower,operating,52
+G100001027472,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Croix hydroelectric plant,L100001023267,hydropower,operating,66
+G100001027473,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Eglisau hydroelectric plant,L100001023268,hydropower,operating,47
+G100001027474,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Fieschertal hydroelectric plant,L100001023269,hydropower,operating,64
+G100001027475,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Filisur hydroelectric plant,L100001023270,hydropower,operating,65
+G100001027477,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Handeck III hydroelectric plant,L100001023272,hydropower,operating,55
+G100001027478,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Ilanz hydroelectric plant,L100001023273,hydropower,operating,50
+G100001027479,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Innertkirchen 2 hydroelectric plant,L100001023274,hydropower,operating,62
+G100001027480,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Peccia hydroelectric plant,L100001023275,hydropower,operating,54
+G100001027481,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Piottino hydroelectric plant,L100001023276,hydropower,operating,73
+G100001027482,energy_plants_gem_units,CHE,point,,CHE-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Rempen hydroelectric plant,L100001023277,hydropower,operating,66
+G100001027483,energy_plants_gem_units,CHE,point,,CHE-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Siebnen hydroelectric plant,L100001023278,hydropower,operating,52
+G100001027484,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Tinizong hydroelectric plant,L100001023279,hydropower,operating,70
+G100001027485,energy_plants_gem_units,CHE,point,,CHE-1-OW,,point,,,,false,abf-boundaries-v0.2.0,Unteraa Lungerersee hydroelectric plant,L100001023280,hydropower,operating,54
+G100001027486,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Vissoie hydroelectric plant,L100001023281,hydropower,operating,50
+G100001027487,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Zermeiggern hydroelectric plant,L100001023282,hydropower,operating,74
+G100001027890,energy_plants_gem_units,CHE,point,,CHE-1-NE,,point,,,,false,abf-boundaries-v0.2.0,Cornaux power station,L100001023496,oil/gas,operating,43.8
+G100001049226,energy_plants_gem_units,CHE,point,DEU,CHE-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Qair SP Volkertshausen solar project,L100001043709,utility-scale solar,operating,1.4
+G100001050086,energy_plants_gem_units,CHE,point,DEU,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Freiflächenanlage Steinlebach solar project,L100001044569,utility-scale solar,operating,2.8
+G100001050379,energy_plants_gem_units,CHE,point,,CHE-1-JU,,point,,,,true,abf-boundaries-v0.2.0,Haute-Sorne geothermal power plant,L100001044851,geothermal,pre_construction,5
+G100001052028,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Ackersand hydroelectric plant,L100001046118,hydropower,operating,64
+G100001052029,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Mühleberg hydroelectric plant,L100001046119,hydropower,operating,45
+G100001052031,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Navizence hydroelectric plant,L100001046121,hydropower,operating,70
+G100001052060,energy_plants_gem_units,CHE,point,,CHE-1-UR,,point,,,,false,abf-boundaries-v0.2.0,Wassen hydroelectric plant,L100001046139,hydropower,operating,57
+G100001052063,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Wildegg-Brugg hydroelectric plant,L100001046142,hydropower,operating,50
+G100001052300,energy_plants_gem_units,CHE,point,,CHE-1-VD,,point,,,,false,abf-boundaries-v0.2.0,Lausanne Waste to Energy power station,L100001046307,bioenergy,operating,20
+G100001052303,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Hagenholz Waste to Energy power station,L100001046309,bioenergy,operating,18
+G100001052305,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Forsthaus West power station,L100001046311,bioenergy,operating,28
+G100001052310,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Thun Waste to Energy power station,L100001046313,bioenergy,operating,12
+G100001052311,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Buchs Aargau power station,L100001046315,bioenergy,operating,11
+G100001052348,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Winterthur Waste to Energy power station,L100001046340,bioenergy,operating,30
+G100001052353,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Linth Waste to Energy power station,L100001046346,bioenergy,operating,12.5
+G100001052357,energy_plants_gem_units,CHE,point,,CHE-1-LU,,point,,,,false,abf-boundaries-v0.2.0,Renergia power station,L100001046349,bioenergy,operating,33
+G100001052359,energy_plants_gem_units,CHE,point,,CHE-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Cheneviers power station,L100001046351,bioenergy,operating,12
+G100001052360,energy_plants_gem_units,CHE,point,,CHE-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Cheneviers power station,L100001046351,bioenergy,operating,19
+G100001052361,energy_plants_gem_units,CHE,point,,CHE-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Cheneviers power station,L100001046351,bioenergy,pre_construction,31
+G100001052367,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,false,abf-boundaries-v0.2.0,KEBAG Enova Emmenspitz power station,L100001046355,bioenergy,construction,25
+G100001052372,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Aubrugg power station,L100001046358,bioenergy,operating,11
+G100001052373,energy_plants_gem_units,CHE,point,,CHE-1-BS,,point,,,,false,abf-boundaries-v0.2.0,Basel Wood power station,L100001046359,bioenergy,operating,30
+G100001052374,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Sisslerfeld power station,L100001046360,bioenergy,operating,7
+G100001052375,energy_plants_gem_units,CHE,point,,CHE-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Horgen power station,L100001046361,bioenergy,operating,3
+G100001052904,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Grengiols solar farm,L100001046718,utility-scale solar,pre_construction,92
+G100001052905,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Gibidum solar farm,L100001046719,utility-scale solar,pre_construction,25
+G100001052906,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Wysse-Bode/Sattel solar farm,L100001046720,utility-scale solar,pre_construction,30
+G100001052907,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Mäsweide solar farm,L100001046721,utility-scale solar,pre_construction,30
+G100001062754,energy_plants_gem_units,CHE,point,,CHE-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Augst hydroelectric plant,L100001054862,hydropower,operating,35
+G100001062755,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Grimsel 1 hydroelectric plant,L100001054863,hydropower,operating,33
+G100001062757,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Grono hydroelectric plant,L100001054865,hydropower,operating,38
+G100001062758,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Klingnau hydroelectric plant,L100001054866,hydropower,operating,43
+G100001062759,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Linthal hydroelectric plant,L100001054867,hydropower,operating,34
+G100001062760,energy_plants_gem_units,CHE,point,,CHE-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Montbovon hydroelectric plant,L100001054868,hydropower,operating,31
+G100001062761,energy_plants_gem_units,CHE,point,,CHE-1-OW,,point,,,,false,abf-boundaries-v0.2.0,Obermatt hydroelectric plant,L100001054869,hydropower,operating,32
+G100001062762,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Reckingen hydroelectric plant,L100001054870,hydropower,operating,40
+G100001062763,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Ritom hydroelectric plant,L100001054871,hydropower,operating,44
+G100001065578,energy_plants_gem_units,CHE,point,DEU,CHE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,SP Gailingen Innerer Winkel solar project,L100001057410,utility-scale solar,operating,7.3
+G100001084523,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Hohsaas solar project,L100001074737,utility-scale solar,announced,7.5
+G100001084524,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Gletschersolar Matterhorn solar project,L100001074738,utility-scale solar,announced,7.7
+G100001084525,energy_plants_gem_units,CHE,point,,CHE-1-UR,,point,,,,false,abf-boundaries-v0.2.0,APV Sidenplangg solar project,L100001074739,utility-scale solar,pre_construction,8
+G100001084526,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,NalpSolar solar project,L100001074740,utility-scale solar,pre_construction,8.1
+G100001084527,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Belalp Solar solar project,L100001074741,utility-scale solar,announced,8.1
+G100001084528,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Alpines Solarprojekt Morgeten solar project,L100001074742,utility-scale solar,announced,8.3
+G100001084529,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,PV Alpin Parsenn solar project,L100001074743,utility-scale solar,announced,8.3
+G100001084530,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Grand Chasseral  solar project,L100001074744,utility-scale solar,announced,8.5
+G100001084531,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Vorab solar project,L100001074745,utility-scale solar,pre_construction,8.6
+G100001084532,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,PVA Gries solar project,L100001074746,utility-scale solar,announced,8.8
+G100001084533,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Solara Magriel solar project,L100001074747,utility-scale solar,announced,9
+G100001084534,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Parc solaire de Prafleuri solar project,L100001074748,utility-scale solar,announced,9.2
+G100001084535,energy_plants_gem_units,CHE,point,,CHE-1-SG,,point,,,,false,abf-boundaries-v0.2.0,Photovoltaik-Grossanlage Felsenstrom solar project,L100001074749,utility-scale solar,announced,9.4
+G100001084536,energy_plants_gem_units,CHE,point,,CHE-1-TI,,point,,,,false,abf-boundaries-v0.2.0,Parco Solare Alpino Duragno solar project,L100001074750,utility-scale solar,announced,9.9
+G100001084537,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Solaranlage Hanenmoosbärgli solar project,L100001074751,utility-scale solar,announced,10
+G100001084538,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Alpine Photovoltaik-Anlage Hintisberg solar project,L100001074752,utility-scale solar,announced,10.1
+G100001084539,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Madrisa solar project,L100001074753,utility-scale solar,pre_construction,10.8
+G100001084540,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Bernina solar project,L100001074754,utility-scale solar,announced,12.6
+G100001084541,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Solarkraftwerk Samedan solar project,L100001074755,utility-scale solar,announced,14.5
+G100001084543,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,SedrunSolar solar project,L100001074757,utility-scale solar,pre_construction,19.2
+G100001092122,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Ilanz hydroelectric plant,L100001023273,hydropower,operating,35
+G100001092123,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Pallazuit hydroelectric plant,L100001081827,hydropower,operating,32
+G100001092124,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Saint Léonard hydroelectric plant,L100001081828,hydropower,operating,36
+G100001092135,energy_plants_gem_units,CHE,point,,CHE-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Grimsel 1 hydroelectric plant,L100001054863,hydropower,operating,35
+G100001092138,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Ackersand hydroelectric plant,L100001046118,hydropower,operating,29
+G100001092143,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Tierfehd Hintersand hydroelectric plant,L100001081839,hydropower,operating,46
+G100001092164,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Bramois hydroelectric plant,L100001081859,hydropower,operating,32
+G100001092165,energy_plants_gem_units,CHE,point,,CHE-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Schwanden Niederenbach hydroelectric plant,L100001081860,hydropower,operating,34
+G100001092166,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Russein hydroelectric plant,L100001081861,hydropower,operating,25
+G100001092167,energy_plants_gem_units,CHE,point,,CHE-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Rupperswil Auenstein hydroelectric plant,L100001081862,hydropower,operating,40
+G100001092168,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Chippis Rhone hydroelectric plant,L100001081863,hydropower,operating,48
+G100001092169,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Ernen hydroelectric plant,L100001081864,hydropower,operating,33
+G100001092170,energy_plants_gem_units,CHE,point,,CHE-1-SO,,point,,,,false,abf-boundaries-v0.2.0,Gösgen hydroelectric plant,L100001081865,hydropower,operating,51
+G100001092171,energy_plants_gem_units,CHE,point,,CHE-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Heiligkreuz hydroelectric plant,L100001081866,hydropower,operating,39
+G100001092172,energy_plants_gem_units,CHE,point,,CHE-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Küblis hydroelectric plant,L100001081867,hydropower,operating,46
+G100001092251,energy_plants_gem_units,CHE,point,DEU,CHE-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Wyhlen hydroelectric plant,L100001081928,hydropower,operating,39

@@ -1,0 +1,269 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100481,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Balingian New power station,L100000103019,coal,operating,300
+G100000100482,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Balingian New power station,L100000103019,coal,operating,300
+G100000100483,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Balingian New power station,L100000103019,coal,cancelled,300
+G100000105181,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jimah East power station,L100000103015,coal,operating,1000
+G100000105182,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jimah East power station,L100000103015,coal,operating,1000
+G100000105183,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jimah power station,L100000103016,coal,operating,700
+G100000105184,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jimah power station,L100000103016,coal,operating,700
+G100000106103,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lahad Datu power station,L100000103018,coal,cancelled,75
+G100000106629,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Manjung power station,L100000103017,coal,operating,700
+G100000106630,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Manjung power station,L100000103017,coal,operating,700
+G100000106631,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Manjung power station,L100000103017,coal,operating,700
+G100000106632,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Manjung power station,L100000103017,coal,operating,1000
+G100000106633,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Manjung power station,L100000103017,coal,operating,1000
+G100000106878,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Merit Pila power station,L100000103020,coal,cancelled,300
+G100000107089,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Mukah coal power station,L100000103021,coal,operating,135
+G100000107090,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Mukah coal power station,L100000103021,coal,operating,135
+G100000107091,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Mukah West power station,L100000103022,coal,cancelled,600
+G100000107092,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Mukah West power station,L100000103022,coal,cancelled,600
+G100000108909,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Sejingkat power station,L100000103023,coal,operating,50
+G100000108910,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Sejingkat power station,L100000103023,coal,operating,50
+G100000108911,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Sejingkat power station,L100000103023,coal,operating,55
+G100000108912,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Sejingkat power station,L100000103023,coal,operating,55
+G100000109681,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sultan Aziz power station,L100000103024,coal,operating,300
+G100000109682,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sultan Aziz power station,L100000103024,coal,operating,300
+G100000109683,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sultan Aziz power station,L100000103024,coal,operating,500
+G100000109684,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sultan Aziz power station,L100000103024,coal,operating,500
+G100000109948,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Tanjung Bin power station,L100000103014,coal,operating,700
+G100000109949,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Tanjung Bin power station,L100000103014,coal,operating,700
+G100000109950,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Tanjung Bin power station,L100000103014,coal,operating,700
+G100000109951,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Tanjung Bin power station,L100000103014,coal,operating,1000
+G100000114168,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lahad Datu power station,L100000103018,coal,cancelled,75
+G100000114169,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lahad Datu power station,L100000103018,coal,cancelled,75
+G100000114170,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lahad Datu power station,L100000103018,coal,cancelled,75
+G100000115137,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Unnamed Malaysia coal projects,L100000104848,coal,cancelled,700
+G100000115138,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Unnamed Malaysia coal projects,L100000104848,coal,cancelled,700
+G100000115139,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Unnamed Malaysia coal projects,L100000104848,coal,cancelled,700
+G100000115140,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Unnamed Malaysia coal projects,L100000104848,coal,cancelled,700
+G100000401005,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Alor Gajah (Melaka) power station,L100000405295,oil/gas,operating,747.4
+G100000401006,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Alor Gajah (Melaka) power station,L100000405295,oil/gas,operating,747.4
+G100000401007,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Alor Gajah (Melaka) power station,L100000405295,oil/gas,operating,747.4
+G100000401008,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pasir Gudang SIPP power station,L100000405309,oil/gas,operating,720
+G100000401009,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pasir Gudang SIPP power station,L100000405309,oil/gas,operating,720
+G100000401010,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pengerang Co-generation plant,L100000405312,oil/gas,operating,950
+G100000401011,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pengerang Co-generation plant,L100000405312,oil/gas,operating,950
+G100000401014,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Kedah Project power station,L100000405299,oil/gas,shelved,1200
+G100000401015,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Tanjung Kidurong power station,L100000405321,oil/gas,operating,421
+G100000401016,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Tanjung Kidurong power station,L100000405321,oil/gas,operating,421
+G100000404319,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Connaught Bridge power station,L100000405297,oil/gas,operating,375
+G100000404320,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Connaught Bridge power station,L100000405297,oil/gas,retired,800
+G100000404321,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Lumut GB3 power station,L100000405304,oil/gas,operating,640
+G100000404322,energy_plants_gem_units,MYS,point,,MYS-1-07,,point,,,,false,abf-boundaries-v0.2.0,Gelugor power station,L100000405298,oil/gas,retired,310
+G100000404325,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Miri power station,L100000405306,oil/gas,operating,104
+G100000404326,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Tanjung Kidurong power station,L100000405321,oil/gas,operating,317
+G100000404327,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,false,abf-boundaries-v0.2.0,Pahlawan power station,L100000405307,oil/gas,operating,322
+G100000404332,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,false,abf-boundaries-v0.2.0,Telok Gong 2 power station,L100000405323,oil/gas,operating,720
+G100000404333,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kuala Langat power station,L100000405302,oil/gas,operating,720
+G100000404334,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Paka (YTL) power station,L100000405326,oil/gas,retired,293
+G100000404335,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Paka (YTL) power station,L100000405326,oil/gas,retired,293
+G100000404336,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pasir Gudang (YTL) power station,L100000405310,oil/gas,retired,404
+G100000404337,energy_plants_gem_units,MYS,point,,MYS-1-15,,point,,,,true,abf-boundaries-v0.2.0,Patau-Patau power station,L100000405311,oil/gas,operating,112
+G100000404338,energy_plants_gem_units,MYS,point,,MYS-1-07,,point,,,,false,abf-boundaries-v0.2.0,Prai power station,L100000405315,oil/gas,operating,350
+G100000404342,energy_plants_gem_units,MYS,point,,MYS-1-16,,point,,,,false,abf-boundaries-v0.2.0,Putrajaya power station,L100000405316,oil/gas,operating,135
+G100000404343,energy_plants_gem_units,MYS,point,,MYS-1-16,,point,,,,false,abf-boundaries-v0.2.0,Putrajaya power station,L100000405316,oil/gas,operating,135
+G100000404345,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Ranhill Powertron power station,L100000405317,oil/gas,operating,190
+G100000404346,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Ranhill Powertron power station,L100000405317,oil/gas,operating,190
+G100000404347,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Lumut SEV power station,L100000405318,oil/gas,operating,652
+G100000404348,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Lumut SEV power station,L100000405318,oil/gas,operating,652
+G100000404349,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Sepangar Bay Power Corporation (IPP) power station,L100000405319,oil/gas,operating,113.8
+G100000404350,energy_plants_gem_units,MYS,point,,MYS-1-09,,point,,,,false,abf-boundaries-v0.2.0,Perlis power station,L100000405313,oil/gas,retired,650
+G100000404351,energy_plants_gem_units,MYS,point,,MYS-1-07,,point,,,,false,abf-boundaries-v0.2.0,Prai (TNB) power station,L100000405314,oil/gas,operating,536
+G100000404352,energy_plants_gem_units,MYS,point,,MYS-1-07,,point,,,,false,abf-boundaries-v0.2.0,Prai (TNB) power station,L100000405314,oil/gas,operating,536
+G100000404353,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Tuanku Jaafar power station,L100000405324,oil/gas,operating,750
+G100000404354,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Tuanku Jaafar power station,L100000405324,oil/gas,operating,750
+G100000404355,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kimanis power station,L100000405300,oil/gas,operating,95
+G100000404356,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kimanis power station,L100000405300,oil/gas,operating,95
+G100000404357,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kimanis power station,L100000405300,oil/gas,operating,95
+G100000404358,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kimanis SPR power station,L100000405301,oil/gas,operating,100
+G100000404359,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Kulim power station,L100000405303,oil/gas,operating,220
+G100000404361,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,false,abf-boundaries-v0.2.0,Melaka Refinery power station,L100000405305,oil/gas,operating,150
+G100000404362,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pasir Gudang (TNB) power station,L100000405320,oil/gas,retired,275
+G100000404367,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Palua Indah power station,L100000405308,oil/gas,operating,600
+G100000404368,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Palua Indah power station,L100000405308,oil/gas,operating,600
+G100000404571,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,425
+G100000404572,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,425
+G100000404573,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,360
+G100000404574,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,360
+G100000404575,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,360
+G100000404576,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,431
+G100000404577,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,431
+G100000405939,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Kedah (THB Power) power station,L100000405953,oil/gas,cancelled,1400
+G100000406233,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Sultan Ismail power station,L100000406348,oil/gas,retired,1400
+G100000406296,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sultan Aziz power station,L100000103024,oil/gas,operating,282
+G100000406297,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sultan Aziz power station,L100000103024,oil/gas,operating,282
+G100000410705,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,New Kapar power plant,L100000407902,oil/gas,construction,2100
+G100000410708,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Pulau Bunting power station,L100000407901,oil/gas,pre_construction,1600
+G100000411110,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Powertek power station,L100000407900,oil/gas,operating,110
+G100000411111,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Powertek power station,L100000407900,oil/gas,operating,110
+G100000411112,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Powertek power station,L100000407900,oil/gas,operating,110
+G100000411113,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Powertek power station,L100000407900,oil/gas,operating,110
+G100000413179,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,250
+G100000413180,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko power station,L100000405353,oil/gas,operating,250
+G100000602464,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Bakun Extension hydroelectric plant,L100000602433,hydropower,announced,300
+G100000602466,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Baleh hydroelectric plant,L100000602435,hydropower,construction,1285
+G100000602468,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Batang Ai hydroelectric plant,L100000602437,hydropower,operating,108
+G100000602470,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Hulu Terengganu hydroelectric plant,L100000602439,hydropower,operating,265
+G100000602471,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Kenering hydroelectric plant,L100000602440,hydropower,operating,120
+G100000602476,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Murum hydroelectric plant,L100000602445,hydropower,operating,944
+G100000602477,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Nenggiri hydroelectric plant,L100000602446,hydropower,construction,300
+G100000602479,energy_plants_gem_units,MYS,point,,MYS-1-03,,point,,,,false,abf-boundaries-v0.2.0,Pergau hydroelectric plant,L100000602448,hydropower,operating,600
+G100000602480,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Sultan Idris II Woh hydroelectric plant,L100000602449,hydropower,operating,150
+G100000602481,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Sultan Idris Woh hydroelectric plant,L100000602450,hydropower,operating,150
+G100000602482,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Sultan Mahmud Kenyir hydroelectric plant,L100000602451,hydropower,operating,400
+G100000602483,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Sultan Yussuf Jor hydroelectric plant,L100000602452,hydropower,operating,100
+G100000602484,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Sungai Padas hydroelectric plant,L100000602453,hydropower,announced,162
+G100000602486,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Temenggor hydroelectric plant,L100000602455,hydropower,operating,348
+G100000602487,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Tenom Pangi hydroelectric plant,L100000602456,hydropower,operating,75
+G100000602490,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,false,abf-boundaries-v0.2.0,Ulu Jelai hydroelectric plant,L100000602459,hydropower,operating,372
+G100000602491,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Upper Padas hydroelectric plant,L100000602460,hydropower,pre_construction,188
+G100000604225,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Bakun hydroelectric plant,L100000602434,hydropower,operating,2400
+G100000604231,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Baram 3 hydroelectric plant,L100000602436,hydropower,shelved,300
+G100000604245,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Belaga hydroelectric plant,L100000602438,hydropower,shelved,160
+G100000604555,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Limbang 2 hydroelectric plant,L100000602441,hydropower,shelved,130
+G100000604556,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Linau hydroelectric plant,L100000602442,hydropower,shelved,182
+G100000604558,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Liwagu hydroelectric plant,L100000602443,hydropower,shelved,165
+G100000604620,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Metjawah hydroelectric plant,L100000602444,hydropower,cancelled,300
+G100000604720,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Pelagus hydroelectric plant,L100000602447,hydropower,shelved,410
+G100000604873,energy_plants_gem_units,MYS,point,,MYS-1-14,,point,,,,true,abf-boundaries-v0.2.0,Tekai hydroelectric plant,L100000602454,hydropower,cancelled,163
+G100000604893,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Trusan 2 hydroelectric plant,L100000602457,hydropower,shelved,240
+G100000604894,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Trusan hydroelectric plant,L100000602458,hydropower,cancelled,275
+G100000800958,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Ranhill solar farm,L100000800829,utility-scale solar,operating,50
+G100000800981,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Bukit Selambau solar farm,L100000800851,utility-scale solar,operating,30
+G100000800982,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Bukit Selambau solar farm,L100000800851,utility-scale solar,operating,50
+G100000800983,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Bukit Tagar solar farm,L100000800852,utility-scale solar,cancelled,100
+G100000801024,energy_plants_gem_units,MYS,point,,MYS-1-09,,point,,,,true,abf-boundaries-v0.2.0,Chuping (Classic) solar farm,L100000800890,utility-scale solar,cancelled,50
+G100000801025,energy_plants_gem_units,MYS,point,,MYS-1-09,,point,,,,true,abf-boundaries-v0.2.0,Chuping (Hanwha) solar farm,L100000800891,utility-scale solar,operating,30
+G100000801031,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Coara Marang solar farm,L100000800896,utility-scale solar,operating,116
+G100000801056,energy_plants_gem_units,MYS,point,,MYS-1-03,,point,,,,true,abf-boundaries-v0.2.0,Danau Tok Uban (Cove Suria) solar farm,L100000800914,utility-scale solar,cancelled,30
+G100000801057,energy_plants_gem_units,MYS,point,,MYS-1-03,,point,,,,true,abf-boundaries-v0.2.0,Danau Tok Uban (Cypark) solar farm,L100000800915,utility-scale solar,operating,30
+G100000801118,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,false,abf-boundaries-v0.2.0,Gebeng solar farm,L100000800964,utility-scale solar,operating,38
+G100000801129,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Gopeng solar farm,L100000800975,utility-scale solar,shelved,50
+G100000801132,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Gurun solar farm,L100000800978,utility-scale solar,operating,65
+G100000801162,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Serendah solar farm,L100000801006,utility-scale solar,operating,20
+G100000801187,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jasin solar farm,L100000801027,utility-scale solar,operating,65
+G100000801218,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,BKH solar plant,L100000801057,utility-scale solar,shelved,330
+G100000801222,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kevian solar farm,L100000801061,utility-scale solar,cancelled,50
+G100000801235,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Klang solar farm,L100000801073,utility-scale solar,shelved,50
+G100000801244,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Kuala Ketil solar farm,L100000801082,utility-scale solar,operating,50
+G100000801245,energy_plants_gem_units,MYS,point,,MYS-1-14,,point,,,,true,abf-boundaries-v0.2.0,Kuala Langat (Advancecon) solar farm,L100000801083,utility-scale solar,operating,26
+G100000801253,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kudat solar farm,L100000801087,utility-scale solar,operating,48
+G100000801255,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Junjong solar farm,L100000801089,utility-scale solar,operating,21
+G100000801298,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Lumut solar farm,L100000801125,utility-scale solar,cancelled,29
+G100000801310,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Manjung solar farm,L100000801136,utility-scale solar,operating,25
+G100000801320,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Merchang solar farm,L100000801145,utility-scale solar,operating,66
+G100000801346,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Mukim Kuala Pahang solar farm,L100000801168,utility-scale solar,shelved,50
+G100000801347,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Mukim Tanjung solar farm,L100000801169,utility-scale solar,operating,50
+G100000801448,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Pekan (Hanwha Energy) solar farm,L100000801263,utility-scale solar,operating,155
+G100000801449,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,Pekan (Ragawang) solar farm,L100000801264,utility-scale solar,shelved,50
+G100000801450,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Pekan (ReNIKOLA) solar farm,L100000801265,utility-scale solar,operating,45
+G100000801479,energy_plants_gem_units,MYS,point,,MYS-1-07,,point,,,,false,abf-boundaries-v0.2.0,Pulau Burung solar farm,L100000801286,utility-scale solar,operating,20
+G100000801492,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Redsol solar farm,L100000801296,utility-scale solar,operating,47
+G100000801588,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Sik solar farm,L100000801384,utility-scale solar,operating,30
+G100000801640,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,Sultan Ibrahim solar farm,L100000801426,utility-scale solar,cancelled,450
+G100000801642,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Sungai Petani (Leader) solar farm,L100000801428,utility-scale solar,operating,29
+G100000801643,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Sungai Siput solar farm,L100000801429,utility-scale solar,operating,49
+G100000801647,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Suria Sungai Petani solar farm,L100000801433,utility-scale solar,operating,116
+G100000801735,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,false,abf-boundaries-v0.2.0,UiTM I solar farm,L100000801514,utility-scale solar,operating,61
+G100000801736,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,UiTM II solar farm,L100000801515,utility-scale solar,operating,31
+G100000801740,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Sungai Petani (Uzma) solar farm,L100000801519,utility-scale solar,operating,50
+G100000801793,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Zec solar farm,L100000801558,utility-scale solar,operating,29
+G100000810908,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Batang Ai floating solar farm,L100000808656,utility-scale solar,operating,50
+G100000810909,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Durian Tunggal Dam floating solar farm,L100000808657,utility-scale solar,shelved,75
+G100000810911,energy_plants_gem_units,MYS,point,,MYS-1-03,,point,,,,false,abf-boundaries-v0.2.0,Machang solar farm,L100000808659,utility-scale solar,operating,45
+G100000810913,energy_plants_gem_units,MYS,point,,MYS-1-07,,point,,,,true,abf-boundaries-v0.2.0,Seberang solar farm,L100000808661,utility-scale solar,pre_construction,50
+G100000810914,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Tanjung Dua Belas solar farm,L100000808662,utility-scale solar,shelved,26
+G100000834576,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Nextenaga solar farm,L100000830710,utility-scale solar,operating,30
+G100000834577,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Bidor solar farm,L100000830711,utility-scale solar,operating,30
+G100000834579,energy_plants_gem_units,MYS,point,,MYS-1-04,,point,,,,true,abf-boundaries-v0.2.0,Durian Tunggal Dam floating solar farm,L100000808657,utility-scale solar,shelved,75
+G100000834583,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,TNB Bukit Selambau Dua (TBSS2) solar farm,L100000830716,utility-scale solar,operating,75
+G100000834584,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,true,abf-boundaries-v0.2.0,Kenyir solar farm,L100000830717,utility-scale solar,operating,30
+G100000834585,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Kerian solar farm,L100000830718,utility-scale solar,operating,136
+G100000834586,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kinta solar project,L100000830719,utility-scale solar,operating,10
+G100000834587,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Kuala Lumpur KUL solar project,L100000830720,utility-scale solar,operating,19
+G100000834588,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,true,abf-boundaries-v0.2.0,Marang LSS3 Cypark solar farm,L100000830721,utility-scale solar,operating,100
+G100000834589,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Mukim Sura solar farm,L100000830722,utility-scale solar,operating,30
+G100000834591,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Sandakan solar farm,L100000830724,utility-scale solar,shelved,20
+G100000834592,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Sparks Kuala Muda solar farm,L100000830725,utility-scale solar,operating,30
+G100000834595,energy_plants_gem_units,MYS,point,,MYS-1-03,,point,,,,true,abf-boundaries-v0.2.0,Danau Tok Uban floating solar farm,L100000830728,utility-scale solar,operating,60
+G100000834596,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,true,abf-boundaries-v0.2.0,Tasik Kenyir floating solar farm,L100000830729,utility-scale solar,pre_construction,2000
+G100000834597,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Teluk Kalong solar farm,L100000830730,utility-scale solar,operating,24
+G100001020630,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko Waste to Energy power station,L100001018481,bioenergy,operating,28
+G100001020631,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Senoko Waste to Energy power station,L100001018481,bioenergy,operating,28
+G100001023713,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Chenderoh Reservior floating solar farm,L100001020769,utility-scale solar,pre_construction,30
+G100001023769,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Pahang solar farm,L100001020819,utility-scale solar,announced,2000
+G100001023770,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,UEM Lestra solar farm,L100001020820,utility-scale solar,pre_construction,500
+G100001027024,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Keystone Cable solar project,L100001022822,utility-scale solar,operating,2
+G100001027026,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,Tat Seng Packaging solar project,L100001022824,utility-scale solar,operating,1.1
+G100001027032,energy_plants_gem_units,MYS,point,SGP,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,TYJ Food Hub Senoko solar project,L100001022830,utility-scale solar,operating,1.2
+G100001027324,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Bersia hydroelectric plant,L100001023119,hydropower,operating,72
+G100001027325,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Sungai Piah Lower hydroelectric plant,L100001023120,hydropower,operating,54
+G100001028938,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Lahad Datu solar project,L100001024257,utility-scale solar,operating,2.9
+G100001028953,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,false,abf-boundaries-v0.2.0,Pahang solar project II,L100001024272,utility-scale solar,operating,4.6
+G100001028956,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Perak solar project VI,L100001024275,utility-scale solar,operating,2.6
+G100001028958,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pontian solar project,L100001024277,utility-scale solar,operating,2.3
+G100001030269,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Eastern Steel Kemaman plant power station,L100001025574,oil/gas,operating,55
+G100001030270,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Eastern Steel Kemaman plant power station,L100001025574,oil/gas,operating,50
+G100001030271,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Eastern Steel Kemaman plant power station,L100001025574,oil/gas,operating,50
+G100001050544,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,Gebeng (Eden) solar farm,L100001044969,utility-scale solar,pre_construction,30
+G100001054383,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Kulim power station,L100000405303,oil/gas,operating,90
+G100001054387,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Miri combined cycle power station,L100001047721,oil/gas,construction,500
+G100001055313,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,true,abf-boundaries-v0.2.0,Bandar Baru power station,L100001048219,bioenergy,operating,13
+G100001055314,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,true,abf-boundaries-v0.2.0,BTM Chukai power station,L100001048220,bioenergy,cancelled,10
+G100001055315,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,IOI power station,L100001048221,bioenergy,operating,15
+G100001055321,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,false,abf-boundaries-v0.2.0,Jengka power station,L100001048223,bioenergy,operating,12.5
+G100001055322,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kunak power station,L100001048224,bioenergy,operating,14
+G100001055324,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Lahad Datu Mill power station,L100001048226,bioenergy,operating,7.5
+G100001055333,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Ladang Tanah Merah (Cypark) power station,L100001048230,bioenergy,operating,19.7
+G100001055336,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Sandakan 2 power station,L100001048231,bioenergy,operating,13.4
+G100001055337,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Sandakan 4 power station,L100001048232,bioenergy,operating,15
+G100001055338,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Sandakan Kina Steam Plant,L100001048233,bioenergy,operating,11.4
+G100001055342,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,false,abf-boundaries-v0.2.0,Sibu Subur power station,L100001048235,bioenergy,operating,12
+G100001055344,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,KAB Kulim power station,L100001048236,bioenergy,pre_construction,30
+G100001055345,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Sabah Forest Industries power station,L100001048237,bioenergy,mothballed,79.5
+G100001055377,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,Bell ECO power station,L100001048252,bioenergy,operating,11
+G100001055379,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Teluk Intan powe station,L100001048253,bioenergy,operating,12.5
+G100001055382,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Chenderoh Reservior floating solar farm,L100001020769,utility-scale solar,announced,40
+G100001055386,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Tawau power station,L100001048259,bioenergy,operating,12
+G100001055387,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Bumbiopower (Pantai Remis) power station,L100001048260,bioenergy,operating,11.5
+G100001055388,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,FNI Biofiel Sdn Bhd power station,L100001048261,bioenergy,operating,10
+G100001055389,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Gula Padang Terap power station,L100001048262,bioenergy,operating,10.3
+G100001055390,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Cash Horse power station,L100001048263,bioenergy,operating,12
+G100001055391,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,UEM Lestra solar farm,L100001020820,utility-scale solar,announced,500
+G100001055398,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,false,abf-boundaries-v0.2.0,FTJ power station,L100001048269,bioenergy,operating,12.5
+G100001055399,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Maju Intan power station,L100001048270,bioenergy,operating,12.5
+G100001055400,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Seguntor power station,L100001048271,bioenergy,operating,13.5
+G100001055401,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,VibroPower Green Energy power station,L100001048272,bioenergy,operating,12.5
+G100001055402,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Agni Power power station,L100001048273,bioenergy,operating,13
+G100001055403,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,false,abf-boundaries-v0.2.0,Majunaka Eco Energy power station,L100001048274,bioenergy,operating,10
+G100001055404,energy_plants_gem_units,MYS,point,,MYS-1-06,,point,,,,true,abf-boundaries-v0.2.0,DFB power station,L100001048275,bioenergy,operating,10
+G100001073192,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Baram solar farm,L100001063680,utility-scale solar,announced,310
+G100001073219,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Sungai Petani solar farm,L100001063695,utility-scale solar,pre_construction,30
+G100001073220,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Tanjung Malim solar farm,L100001063696,utility-scale solar,announced,100
+G100001073221,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Bukit Kayu Hitam solar farm,L100001063697,utility-scale solar,announced,30
+G100001073222,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,RE Industrial Park solar farm,L100001063698,utility-scale solar,announced,1000
+G100001073223,energy_plants_gem_units,MYS,point,,MYS-1-02,,point,,,,true,abf-boundaries-v0.2.0,Mukim Padang Meha solar farm,L100001063699,utility-scale solar,announced,30
+G100001073224,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Lumut (Solarvest) solar farm,L100001063700,utility-scale solar,announced,30
+G100001073278,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Perak floating solar farm,L100001063743,utility-scale solar,announced,130
+G100001073280,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Perak floating solar farm,L100001063743,utility-scale solar,announced,130
+G100001073281,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,true,abf-boundaries-v0.2.0,Mukim Belanja solar farm,L100001063744,utility-scale solar,announced,30
+G100001073284,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,true,abf-boundaries-v0.2.0,Southern Johor Renewable Energy Corridor solar farm,L100001063748,utility-scale solar,announced,4000
+G100001073307,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Kudat wind farm,L100001063752,wind,announced,100
+G100001073552,energy_plants_gem_units,MYS,point,,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Pasir Gudang (TNB) power station,L100000405320,oil/gas,pre_construction,750
+G100001073575,energy_plants_gem_units,MYS,point,,MYS-1-11,,point,,,,false,abf-boundaries-v0.2.0,Paka (YTL) power station,L100000405326,oil/gas,pre_construction,1400
+G100001073585,energy_plants_gem_units,MYS,point,,MYS-1-05,,point,,,,false,abf-boundaries-v0.2.0,Port Dickson Power Station,L100001063989,oil/gas,announced,1400
+G100001073594,energy_plants_gem_units,MYS,point,,MYS-1-09,,point,,,,false,abf-boundaries-v0.2.0,Perlis power station,L100000405313,oil/gas,construction,1500
+G100001073748,energy_plants_gem_units,MYS,point,,MYS-1-15,,point,,,,true,abf-boundaries-v0.2.0,Labuan power station,L100001064119,oil/gas,construction,120.4
+G100001073780,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kimanis power station,L100000405300,oil/gas,construction,100.2
+G100001073790,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Tawau LNG power station,L100001064155,oil/gas,pre_construction,160
+G100001073840,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kibing Solar Sabah power station,L100001064198,oil/gas,operating,64
+G100001073841,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kibing Solar Sabah power station,L100001064198,oil/gas,pre_construction,18
+G100001074000,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Samalaju Combined Cycle power plant,L100001064305,oil/gas,construction,500
+G100001074064,energy_plants_gem_units,MYS,point,,MYS-1-13,,point,,,,true,abf-boundaries-v0.2.0,Samalaju Combined Cycle power plant,L100001064305,oil/gas,construction,500
+G100001074128,energy_plants_gem_units,MYS,point,,MYS-1-07,,point,,,,false,abf-boundaries-v0.2.0,Gelugor power station,L100000405298,oil/gas,pre_construction,375
+G100001076449,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Shah Alam solar project III,L100001066663,utility-scale solar,operating,1.2
+G100001090083,energy_plants_gem_units,MYS,point,,MYS-1-08,,point,,,,false,abf-boundaries-v0.2.0,Chenderoh hydroelectric plant,L100001080231,hydropower,operating,41
+G100001096772,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Jeram WtE power station,L100001085147,bioenergy,operating,25
+G100001096773,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,false,abf-boundaries-v0.2.0,Jeram WtE power station,L100001085147,bioenergy,construction,25
+G100001096774,energy_plants_gem_units,MYS,point,,MYS-1-10,,point,,,,true,abf-boundaries-v0.2.0,Batu Arang WtE power station,L100001085149,bioenergy,announced,40
+G100001096805,energy_plants_gem_units,MYS,point,,MYS-1-12,,point,,,,true,abf-boundaries-v0.2.0,Kimanis Microalgae power station,L100001085175,bioenergy,pre_construction,30

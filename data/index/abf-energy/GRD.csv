@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000927205,energy_plants_gem_units,GRD,point,,GRD-1-01,,point,,,,true,abf-boundaries-v0.2.0,Grenada Wind Energy Project,L100000921900,wind,pre_construction,15
+G100001022795,energy_plants_gem_units,GRD,point,,GRD-1-03,,point,,,,false,abf-boundaries-v0.2.0,Maurice Bishop International Airport solar farm,L100001020027,utility-scale solar,announced,4.6
+G100001022796,energy_plants_gem_units,GRD,point,,GRD-1-03,,point,,,,false,abf-boundaries-v0.2.0,Maurice Bishop International Airport solar farm,L100001020027,utility-scale solar,announced,3.4
+G100001022797,energy_plants_gem_units,GRD,point,,GRD-1-03,,point,,,,false,abf-boundaries-v0.2.0,Maurice Bishop International Airport solar farm,L100001020027,utility-scale solar,announced,7.1
+G100001070481,energy_plants_gem_units,GRD,point,,GRD-1-01,,point,,,,true,abf-boundaries-v0.2.0,Grenada geothermal power plant,L100001061516,geothermal,announced,15

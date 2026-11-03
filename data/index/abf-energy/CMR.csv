@@ -1,0 +1,36 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407066,energy_plants_gem_units,CMR,point,,CMR-1-SW,,point,,,,false,abf-boundaries-v0.2.0,Limbé power station,L100000406737,oil/gas,pre_construction,265
+G100000410888,energy_plants_gem_units,CMR,point,,CMR-1-SW,,point,,,,false,abf-boundaries-v0.2.0,Limbé power station,L100000406737,oil/gas,pre_construction,85
+G100000411376,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,true,abf-boundaries-v0.2.0,Ahala power station,L100000408149,oil/gas,operating,60
+G100000413540,energy_plants_gem_units,CMR,point,,CMR-1-LT,,point,,,,false,abf-boundaries-v0.2.0,Dibabmba power station,L100000409048,oil/gas,operating,88
+G100000413541,energy_plants_gem_units,CMR,point,,CMR-1-SU,,point,,,,false,abf-boundaries-v0.2.0,Kribi power station,L100000409049,oil/gas,operating,216
+G100000600388,energy_plants_gem_units,CMR,point,,CMR-1-LT,,point,,,,false,abf-boundaries-v0.2.0,Edea hydroelectric plant,L100000600387,hydropower,operating,276
+G100000600389,energy_plants_gem_units,CMR,point,,CMR-1-LT,,point,,,,false,abf-boundaries-v0.2.0,Grand Eweng hydroelectric plant,L100000600388,hydropower,pre_construction,1800
+G100000600390,energy_plants_gem_units,CMR,point,,CMR-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Kpep hydroelectric plant,L100000600389,hydropower,pre_construction,283
+G100000600391,energy_plants_gem_units,CMR,point,,CMR-1-SU,,point,,,,false,abf-boundaries-v0.2.0,Memve'ele hydroelectric plant,L100000600390,hydropower,operating,211
+G100000600392,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,false,abf-boundaries-v0.2.0,Nachtigal hydroelectric plant,L100000600391,hydropower,operating,420
+G100000600394,energy_plants_gem_units,CMR,point,,CMR-1-LT,,point,,,,false,abf-boundaries-v0.2.0,Song Loulou hydroelectric plant,L100000600393,hydropower,operating,396
+G100000604256,energy_plants_gem_units,CMR,point,,CMR-1-AD,,point,,,,true,abf-boundaries-v0.2.0,Bini à Warak hydroelectric plant,L100000600385,hydropower,pre_construction,75
+G100000604309,energy_plants_gem_units,CMR,point,,CMR-1-ES,,point,,,,true,abf-boundaries-v0.2.0,Chollet hydroelectric plant,L100000600386,hydropower,announced,600
+G100000604665,energy_plants_gem_units,CMR,point,,CMR-1-ES,,point,,,,true,abf-boundaries-v0.2.0,Ngoila hydroelectric plant,L100000600392,hydropower,shelved,84
+G100000604824,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,true,abf-boundaries-v0.2.0,Song Mbong hydroelectric plant,L100000600394,hydropower,cancelled,180
+G100000800156,energy_plants_gem_units,CMR,point,,CMR-1-NO,,point,,,,false,abf-boundaries-v0.2.0,Garoua solar farm,L100000800120,utility-scale solar,operating,30
+G100000800232,energy_plants_gem_units,CMR,point,,CMR-1-NO,,point,,,,true,abf-boundaries-v0.2.0,Lagdo solar farm,L100000800187,utility-scale solar,shelved,20
+G100000800381,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,true,abf-boundaries-v0.2.0,South Grid solar farm,L100000800311,utility-scale solar,cancelled,72
+G100000814078,energy_plants_gem_units,CMR,point,,CMR-1-NO,,point,,,,true,abf-boundaries-v0.2.0,Elan solar farm,L100000811570,utility-scale solar,cancelled,50
+G100000814079,energy_plants_gem_units,CMR,point,,CMR-1-NO,,point,,,,false,abf-boundaries-v0.2.0,Guider solar farm,L100000811571,utility-scale solar,operating,17.9
+G100000814080,energy_plants_gem_units,CMR,point,,CMR-1-EN,,point,,,,false,abf-boundaries-v0.2.0,Maroua solar farm,L100000811572,utility-scale solar,operating,17.9
+G100000831137,energy_plants_gem_units,CMR,point,,CMR-1-AD,,point,,,,true,abf-boundaries-v0.2.0,Ngaoundéré solar farm,L100000827615,utility-scale solar,announced,20
+G100000927390,energy_plants_gem_units,CMR,point,,CMR-1-OU,,point,,,,true,abf-boundaries-v0.2.0,Bamboutos Mountains wind farm,L100000921983,wind,announced,40
+G100000927391,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,true,abf-boundaries-v0.2.0,Cameroon wind farm,L100000921984,wind,operating,100
+G100001021387,energy_plants_gem_units,CMR,point,,CMR-1-NO,,point,,,,false,abf-boundaries-v0.2.0,Guider solar farm,L100000811571,utility-scale solar,construction,8.8
+G100001021389,energy_plants_gem_units,CMR,point,,CMR-1-EN,,point,,,,false,abf-boundaries-v0.2.0,Maroua solar farm,L100000811572,utility-scale solar,construction,19.8
+G100001021403,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,true,abf-boundaries-v0.2.0,Infinity Power (Cameroon) solar farms,L100001019020,utility-scale solar,announced,1000
+G100001021404,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,true,abf-boundaries-v0.2.0,Infinity Power (Cameroon) wind farms,L100001019022,wind,announced,1000
+G100001023853,energy_plants_gem_units,CMR,point,,CMR-1-LT,,point,,,,false,abf-boundaries-v0.2.0,Douala Ii Wouri solar project,L100001020884,utility-scale solar,operating,1.1
+G100001051675,energy_plants_gem_units,CMR,point,,CMR-1-LT,,point,,,,true,abf-boundaries-v0.2.0,Bekoko power station,L100001045846,oil/gas,announced,350
+G100001051676,energy_plants_gem_units,CMR,point,,CMR-1-LT,,point,,,,true,abf-boundaries-v0.2.0,Douala power station,L100001045847,oil/gas,announced,150
+G100001051931,energy_plants_gem_units,CMR,point,,CMR-1-NO,,point,,,,false,abf-boundaries-v0.2.0,Lagdo hydroelectric plant,L100001046045,hydropower,operating,72
+G100001051932,energy_plants_gem_units,CMR,point,,CMR-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Menchum hydroelectric plant,L100001046046,hydropower,pre_construction,72
+G100001090855,energy_plants_gem_units,CMR,point,,CMR-1-CE,,point,,,,true,abf-boundaries-v0.2.0,Yaoundé solar farm,L100001080882,utility-scale solar,operating,10
+G100001092292,energy_plants_gem_units,CMR,point,,CMR-1-ES,,point,,,,false,abf-boundaries-v0.2.0,Lom Pangar hydroelectric plant,L100001081967,hydropower,operating,30

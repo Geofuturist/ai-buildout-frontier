@@ -1,0 +1,313 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000102476,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Duernrohr power station,L100000100046,coal,retired,450
+G100000102477,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Duernrohr power station,L100000100046,coal,retired,352
+G100000102659,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,true,abf-boundaries-v0.2.0,Enns Power Station,L100000100045,coal,cancelled,800
+G100000106840,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Mellach power station,L100000100047,coal,retired,246
+G100000108571,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Riedersbach power station,L100000100051,coal,retired,55
+G100000108572,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Riedersbach power station,L100000100051,coal,retired,165
+G100000109577,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,St Andrae power station,L100000100044,coal,retired,68
+G100000109578,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,St Andrae power station,L100000100044,coal,retired,124
+G100000110177,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Timelkam power station,L100000100052,coal,retired,66
+G100000110645,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Voitsberg power station,L100000100048,coal,retired,330
+G100000111546,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Zeltweg power station,L100000100049,coal,retired,137
+G100000400000,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Donaustadt power station,L100000400000,oil/gas,operating,395
+G100000400001,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Gratkorn Mill power station,L100000400001,oil/gas,operating,70
+G100000400002,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Laakirchen Paper Mill power station,L100000400002,oil/gas,operating,60
+G100000400003,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Leopoldau power station,L100000400003,oil/gas,operating,140
+G100000400004,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Linz Mitte power station,L100000400004,oil/gas,operating,103
+G100000400005,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Linz Mitte power station,L100000400004,oil/gas,operating,114
+G100000400006,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Linz Süd power station,L100000400006,oil/gas,operating,172
+G100000400007,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Mellach power station,L100000100047,oil/gas,operating,421
+G100000400008,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Mellach power station,L100000100047,oil/gas,operating,417
+G100000400009,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Salzburg Mitte power station,L100000400009,oil/gas,operating,84
+G100000400010,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Simmering power station,L100000400010,oil/gas,operating,840
+G100000400011,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Simmering power station,L100000400010,oil/gas,operating,340
+G100000400012,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Theiss power station,L100000400012,oil/gas,operating,260
+G100000400013,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Timelkam power station,L100000100052,oil/gas,operating,405
+G100000400014,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Wels District Heating power station,L100000400014,oil/gas,retired,43
+G100000400015,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Werk Linz power station,L100000400015,oil/gas,operating,153
+G100000410145,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Theiss power station,L100000400012,oil/gas,operating,225
+G100000410438,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Lenzing Energy power station,L100000407821,oil/gas,operating,70
+G100000410439,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Korneuberg power station,L100000407822,oil/gas,mothballed,158
+G100000410442,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Steyrermuhl Paper Mill power station,L100000407825,oil/gas,operating,40
+G100000410471,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Theiss power station,L100000400012,oil/gas,mothballed,240
+G100000501048,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Zwentendorf nuclear power plant,L100000500381,nuclear,cancelled,723
+G100000600091,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Abwinden-Asten hydroelectric plant,L100000600091,hydropower,operating,168
+G100000600092,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Achensee Jenbach hydroelectric plant,L100000600092,hydropower,operating,79
+G100000600093,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Altenwörth hydroelectric plant,L100000600093,hydropower,operating,328
+G100000600094,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Annabrücke hydroelectric plant,L100000600094,hydropower,operating,90
+G100000600095,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Aschach hydroelectric plant,L100000600095,hydropower,operating,287
+G100000600096,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Ausserfragant hydroelectric plant,L100000600096,hydropower,operating,100
+G100000600097,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Edling hydroelectric plant,L100000600097,hydropower,operating,87
+G100000600098,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Enzingerboden hydroelectric plant,L100000600098,hydropower,operating,81
+G100000600099,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Feistritz-Ludmannsdorf hydroelectric plant,L100000600099,hydropower,operating,88
+G100000600100,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Feldsee hydroelectric plant,L100000600100,hydropower,operating,140
+G100000600101,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Ferlach Maria Rain hydroelectric plant,L100000600101,hydropower,operating,75
+G100000600102,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Freudenau hydroelectric plant,L100000600102,hydropower,operating,172
+G100000600103,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Gerlos hydroelectric plant,L100000600103,hydropower,operating,200
+G100000600104,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Greifenstein hydroelectric plant,L100000600104,hydropower,operating,293
+G100000600105,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Häusling hydroelectric plant,L100000600105,hydropower,operating,360
+G100000600106,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Hintermuhr hydroelectric plant,L100000600106,hydropower,operating,107
+G100000600107,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,true,abf-boundaries-v0.2.0,Imst Haiming hydroelectric plant,L100000600107,hydropower,pre_construction,97
+G100000600108,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Imst hydroelectric plant,L100000600108,hydropower,operating,89
+G100000600109,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Innerfragant Oschenik hydroelectric plant,L100000600109,hydropower,operating,114
+G100000600110,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Kaprun Haupstufe hydroelectric plant,L100000600110,hydropower,operating,260
+G100000600111,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Kaprun Limberg II hydroelectric plant,L100000600111,hydropower,operating,480
+G100000600112,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Kaprun Limberg III hydroelectric plant,L100000600112,hydropower,operating,480
+G100000600113,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Kaprun Oberstufe hydroelectric plant,L100000600113,hydropower,operating,260
+G100000600114,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Kaprun Schwarzach hydroelectric plant,L100000600114,hydropower,operating,120
+G100000600115,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Kops I hydroelectric plant,L100000600115,hydropower,operating,288
+G100000600116,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Kops II hydroelectric plant,L100000600116,hydropower,operating,525
+G100000600118,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Kühtai 2 hydroelectric plant,L100000600118,hydropower,construction,190
+G100000600119,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Kühtai hydroelectric plant,L100000600119,hydropower,operating,289
+G100000600120,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Lunersee hydroelectric plant,L100000600120,hydropower,operating,280
+G100000600121,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Lunersee II hydroelectric plant,L100000600121,hydropower,pre_construction,1000
+G100000600122,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Malta Hauptstufe hydroelectric plant,L100000600122,hydropower,operating,730
+G100000600123,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Malta Oberstufe hydroelectric plant,L100000600123,hydropower,operating,120
+G100000600124,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Mayrhofen hydroelectric plant,L100000600124,hydropower,operating,355
+G100000600125,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Melk hydroelectric plant,L100000600125,hydropower,operating,187
+G100000600126,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Obervermunt II hydroelectric plant,L100000600126,hydropower,operating,380
+G100000600127,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Ottensheim-Wilhering hydroelectric plant,L100000600127,hydropower,operating,179
+G100000600129,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Prutz 2 hydroelectric plant,L100000600129,hydropower,pre_construction,500
+G100000600130,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Prutz hydroelectric plant,L100000600130,hydropower,operating,392
+G100000600131,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Prutz Ried hydroelectric plant,L100000600131,hydropower,operating,89
+G100000600132,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Reissek II hydroelectric plant,L100000600132,hydropower,operating,430
+G100000600133,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Rodund I hydroelectric plant,L100000600133,hydropower,operating,198
+G100000600134,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Rodund II hydroelectric plant,L100000600134,hydropower,operating,295
+G100000600135,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Rosegg St Jakob hydroelectric plant,L100000600135,hydropower,operating,86
+G100000600136,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Rosshag hydroelectric plant,L100000600136,hydropower,operating,231
+G100000600137,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Schwabeck hydroelectric plant,L100000600137,hydropower,operating,79
+G100000600138,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Silz hydroelectric plant,L100000600138,hydropower,operating,500
+G100000600139,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Tauernmoos hydroelectric plant,L100000600139,hydropower,construction,170
+G100000600140,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Vermunt hydroelectric plant,L100000600140,hydropower,operating,157
+G100000600141,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Versetz hydroelectric plant,L100000600141,hydropower,pre_construction,400
+G100000600142,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Walgauwerk hydroelectric plant,L100000600142,hydropower,operating,86
+G100000600143,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Wallsee-Mitterkirchen hydroelectric plant,L100000600143,hydropower,operating,210
+G100000600144,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Ybbs-Persenbeug hydroelectric plant,L100000600144,hydropower,operating,237
+G100000604102,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Braunau-Simbach hydroelectric plant,L100000604063,hydropower,operating,100
+G100000604103,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Egglfing-Obernberg hydroelectric plant,L100000604064,hydropower,operating,84
+G100000604104,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Jochenstein hydroelectric plant,L100000604065,hydropower,operating,132
+G100000604106,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Schärding Neuhaus hydroelectric plant,L100000604067,hydropower,operating,100
+G100000604518,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Koralm hydroelectric plant,L100000600117,hydropower,shelved,1000
+G100000604726,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Pfaffenboden hydroelectric plant,L100000600128,hydropower,pre_construction,300
+G100000604761,energy_plants_gem_units,AUT,point,DEU,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Riedl hydroelectric plant,L100000601737,hydropower,pre_construction,300
+G100000807938,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Vienna International Airport solar farm,L100000806918,utility-scale solar,operating,24
+G100000818784,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Grafenwörth solar farm,L100000815880,utility-scale solar,operating,24
+G100000818785,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,true,abf-boundaries-v0.2.0,Nickelsdorf Solar Power Plant,L100000815881,utility-scale solar,operating,14
+G100000820571,energy_plants_gem_units,AUT,point,DEU,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,27 FFA Eham solar farm,L100000817595,utility-scale solar,operating,1.4
+G100000822006,energy_plants_gem_units,AUT,point,DEU,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Obernzell 1 solar farm,L100000819011,utility-scale solar,operating,1.5
+G100000910529,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Gänserndorf Nord wind farm,L100000907857,wind,operating,10
+G100000910723,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mönchhof wind farm,L100000908036,wind,retired,10
+G100000910772,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Pama wind farm,L100000908084,wind,operating,10
+G100000910794,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Potzneusiedl wind farm,L100000908106,wind,operating,10
+G100000910994,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Dürnkrut wind farm,L100000908299,wind,operating,10
+G100000911064,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hoher Kölbling wind farm,L100000908367,wind,operating,11
+G100000911273,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Pillichsdorf wind farm,L100000908568,wind,pre_construction,56
+G100000911345,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Moschkogel wind farm,L100000908636,wind,operating,12
+G100000911366,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Schildberg wind farm,L100000908654,wind,operating,13
+G100000911413,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Poysdorf-Wilfersdorf wind farm,L100000908700,wind,operating,16
+G100000911624,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Gattendorf Nord wind farm,L100000908897,wind,operating,12
+G100000911640,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Gols wind farm,L100000908913,wind,retired,12
+G100000911682,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Höflein wind farm,L100000908953,wind,operating,12
+G100000911684,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hohenruppersdorf wind farm,L100000908955,wind,operating,12
+G100000911821,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Maustrenk wind farm,L100000909087,wind,operating,12
+G100000911897,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Parndorf wind farm,L100000909158,wind,retired,12
+G100000911929,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Prinzendorf wind farm,L100000909189,wind,operating,12
+G100000912041,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Trautmannsdorf Nord wind farm,L100000909297,wind,operating,12
+G100000912145,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Neuhof wind farm,L100000909396,wind,operating,12
+G100000912147,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Parbasdorf wind farm,L100000909398,wind,operating,12
+G100000912151,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Spannberg wind farm,L100000909401,wind,operating,12
+G100000912213,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Velm-Götzendorf wind farm,L100000909460,wind,operating,12
+G100000912227,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Haindorf-Inning wind farm,L100000909472,wind,operating,13
+G100000912242,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Großengersdorf wind farm,L100000909487,wind,operating,13
+G100000912243,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Pottenbrunn wind farm,L100000909488,wind,operating,13
+G100000912244,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Prellenkirchen wind farm,L100000909489,wind,operating,13
+G100000912245,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Dürnkrut wind farm,L100000908299,wind,operating,13
+G100000912249,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pretul wind farm,L100000909493,wind,construction,16
+G100000912412,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Steinriegel wind farm,L100000909640,wind,operating,13
+G100000912464,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Spannberg wind farm,L100000909401,wind,operating,17
+G100000912491,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Gols wind farm,L100000908913,wind,operating,14
+G100000912519,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Dürnkrut Götzendorf wind farm,L100000909738,wind,operating,14
+G100000912526,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Großhofen wind farm,L100000909745,wind,operating,14
+G100000912532,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kittsee wind farm,L100000909750,wind,operating,14
+G100000912629,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Deutchkreuz wind farm,L100000909842,wind,operating,14
+G100000912699,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Japons wind farm,L100000909904,wind,operating,14
+G100000912746,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Matzen/Klein-Harras wind farm,L100000909946,wind,operating,14
+G100000912946,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Prellenkirchen wind farm,L100000909489,wind,operating,14
+G100000912989,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,true,abf-boundaries-v0.2.0,Baumgarten wind farm,L100000910162,wind,operating,15
+G100000913099,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hof wind farm,L100000910261,wind,operating,15
+G100000913100,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hollern Wind Park,L100000910262,wind,operating,15
+G100000913160,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Munderfing wind farm,L100000910317,wind,operating,15
+G100000913327,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Paasdorf-Lanzendorf II wind farm,L100000910465,wind,operating,16
+G100000913505,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Pillichsdorf wind farm,L100000908568,wind,operating,16
+G100000913554,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Tattendorf wind farm,L100000910664,wind,operating,16
+G100000913557,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Trautmannsdorf wind farm,L100000910667,wind,operating,16
+G100000913570,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Weinviertel Süd wind farm,L100000910680,wind,operating,16
+G100000913661,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Kettlasbrunn wind farm,L100000910766,wind,operating,17
+G100000913848,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Bruckneudorf wind farm,L100000910931,wind,operating,17
+G100000913849,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Furstkogel wind farm,L100000910932,wind,operating,17
+G100000913954,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Deutsch Haslau wind farm,L100000911027,wind,operating,18
+G100000914024,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hollern Wind Park,L100000910262,wind,operating,18
+G100000914122,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Neuhof wind farm,L100000909396,wind,operating,18
+G100000914151,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Prinzendorf wind farm,L100000909189,wind,retired,18
+G100000914258,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Au Am Leithaberge wind farm,L100000911296,wind,operating,18
+G100000914299,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Hochpürschtling wind farm,L100000911333,wind,operating,18
+G100000914304,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Zistersdorf Ost wind farm,L100000911338,wind,operating,18
+G100000914309,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Haunoldstein wind farm,L100000911342,wind,cancelled,18
+G100000914360,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Paasdorf-Lanzendorf wind farm,L100000911388,wind,operating,19
+G100000914382,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Ghw Rannersdorf II wind farm,L100000911407,wind,operating,19
+G100000914401,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Tauern wind farm,L100000911423,wind,retired,19
+G100000914439,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Sallingberg wind farm,L100000911459,wind,operating,20
+G100000914444,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Herrenstein wind farm,L100000911464,wind,operating,20
+G100000914461,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Auersthal wind farm,L100000911481,wind,operating,20
+G100000914472,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Berg Bruck wind farm,L100000911489,wind,retired,20
+G100000914593,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Kreuzstetten wind farm,L100000911598,wind,operating,20
+G100000914759,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Markgrafneusiedl wind farm,L100000911741,wind,operating,20
+G100000914764,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Glinzendorf wind farm,L100000911746,wind,operating,20
+G100000914805,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Oberwaltersdorf wind farm,L100000911783,wind,operating,21
+G100000914837,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Bad Deutsch-Altenburg Carnuntum wind farm,L100000911814,wind,operating,21
+G100000914850,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Bruck-Göttlesbrunn wind farm,L100000911826,wind,operating,21
+G100000914951,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Obersiebenbrunn wind farm,L100000911913,wind,operating,21
+G100000914959,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Petronell-Carnuntum wind farm,L100000911921,wind,operating,21
+G100000914980,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Seibersdorf wind farm,L100000911937,wind,operating,21
+G100000915023,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Gattendorf Nord wind farm,L100000908897,wind,operating,21
+G100000915039,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kittsee wind farm,L100000909750,wind,operating,22
+G100000915158,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mönchhof wind farm,L100000908036,wind,operating,22
+G100000915164,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Neudorf wind farm,L100000912100,wind,operating,22
+G100000915165,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Neudorf wind farm,L100000912100,wind,operating,22
+G100000915176,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Petronell-Carnuntum wind farm,L100000911921,wind,operating,22
+G100000915231,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Kreuzstetten wind farm,L100000911598,wind,operating,22
+G100000915503,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Gols wind farm,L100000908913,wind,retired,24
+G100000915512,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Halbturn Heide wind farm,L100000912406,wind,operating,24
+G100000915627,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Rohrau wind farm,L100000912509,wind,operating,24
+G100000915638,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Scharndorf wind farm,L100000912517,wind,operating,24
+G100000915690,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,true,abf-boundaries-v0.2.0,Zurndorf wind farm,L100000912561,wind,cancelled,24
+G100000915879,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Steinriegel wind farm,L100000909640,wind,operating,25
+G100000915891,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Poysdorf-Wilfersdorf wind farm,L100000908700,wind,operating,26
+G100000915976,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Obersiebenbrunn wind farm,L100000911913,wind,operating,26
+G100000916032,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Zagging wind farm,L100000912859,wind,operating,26
+G100000916039,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Loidesthal wind farm,L100000912865,wind,operating,26
+G100000916106,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Parndorf wind farm,L100000909158,wind,operating,27
+G100000916185,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Söllneräcker wind farm,L100000912987,wind,operating,28
+G100000916269,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Poysdorf-Wilfersdorf wind farm,L100000908700,wind,operating,28
+G100000916407,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,true,abf-boundaries-v0.2.0,Stanglalm wind farm,L100000913178,wind,operating,30
+G100000916440,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Albrechtsfeld wind farm,L100000913208,wind,operating,30
+G100000916581,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mönchhof Dreijoch wind farm,L100000913328,wind,operating,30
+G100000916731,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Tauern wind farm,L100000911423,wind,operating,31
+G100000916875,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Neusiedl Am See wind farm,L100000913571,wind,operating,32
+G100000916917,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hohenruppersdorf wind farm,L100000908955,wind,operating,33
+G100000917095,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Sommerein wind farm,L100000913757,wind,operating,34
+G100000917160,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Prellenkirchen wind farm,L100000909489,wind,pre_construction,48
+G100000917239,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Haadfeld wind farm,L100000913884,wind,operating,36
+G100000917246,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Höflein Ost wind farm,L100000913890,wind,operating,36
+G100000917282,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Parndorf wind farm,L100000909158,wind,retired,36
+G100000917331,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Pottendorf wind farm,L100000913965,wind,operating,37
+G100000917332,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Prottes-Ollersdorf wind farm,L100000913966,wind,operating,37
+G100000917506,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Andlersdorf/Orth wind farm,L100000914118,wind,operating,39
+G100000917520,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Handalm wind farm,L100000914127,wind,operating,39
+G100000917522,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Heidäcker Mönchhof wind farm,L100000914129,wind,operating,39
+G100000917632,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Kettlasbrunn wind farm,L100000910766,wind,operating,40
+G100000917656,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Prinzendorf wind farm,L100000909189,wind,operating,40
+G100000917741,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Parndorf wind farm,L100000909158,wind,operating,41
+G100000917819,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Nickelsdorf wind farm,L100000914380,wind,operating,42
+G100000917829,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pretul wind farm,L100000909493,wind,operating,42
+G100000917868,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Marchfeld Mitte wind farm,L100000914418,wind,operating,43
+G100000917989,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Halbturn Nord wind farm,L100000914526,wind,operating,45
+G100000918060,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hohenruppersdorf wind farm,L100000908955,wind,shelved,45
+G100000918112,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Weiden wind farm,L100000914632,wind,operating,47
+G100000918124,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Hagn wind farm,L100000914643,wind,operating,47
+G100000918704,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mönchhof Ost wind farm,L100000915106,wind,operating,51
+G100000918946,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Spannberg wind farm,L100000909401,wind,pre_construction,62
+G100000919055,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mönchhof Nord wind farm,L100000915404,wind,operating,69
+G100000919217,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Andau wind farm,L100000913588,wind,operating,81
+G100000919602,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Gols wind farm,L100000908913,wind,operating,143
+G100000923776,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Dürnkrut Götzendorf wind farm,L100000909738,wind,operating,17
+G100000923777,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Dürnkrut wind farm,L100000908299,wind,operating,17
+G100000923778,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Grafenschlag wind farm,L100000919288,wind,operating,12
+G100000923779,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Grosskrut-Altlichtenwarth wind farm,L100000919289,wind,operating,25
+G100000923780,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Matzen/Klein-Harras wind farm,L100000909946,wind,operating,13
+G100000923781,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,true,abf-boundaries-v0.2.0,Nickelsdorf Hybrid wind farm,L100000919290,wind,pre_construction,44
+G100000923782,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Palterndorf-Dobermannsdorf wind farm,L100000919291,wind,operating,42
+G100000923783,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Trumau wind farm,L100000919292,wind,operating,28
+G100001000103,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Krems Industriepark power station,L100001000037,oil/gas,operating,41
+G100001000104,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Schwechat Refinery power station,L100001000039,oil/gas,operating,170
+G100001000105,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Simmering power station,L100000400010,oil/gas,operating,60
+G100001001194,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Ladendorf wind farm,L100001000838,wind,operating,18
+G100001001195,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Großinzersdorf wind farm,L100001000839,wind,operating,10
+G100001001263,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,true,abf-boundaries-v0.2.0,Engelhartstetten wind farm,L100001000903,wind,operating,46
+G100001001341,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Pillichsdorf wind farm,L100000908568,wind,operating,11
+G100001001360,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,true,abf-boundaries-v0.2.0,Steinberger Alpe & Soboth wind farm,L100001000990,wind,operating,26
+G100001001361,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,true,abf-boundaries-v0.2.0,Lavamünd wind farm,L100001000991,wind,pre_construction,40
+G100001008324,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,true,abf-boundaries-v0.2.0,Baernbach solar project,L100001007175,utility-scale solar,operating,17.2
+G100001018037,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Mellach power station,L100000100047,oil/gas,operating,246
+G100001027071,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Amlach hydroelectric plant,L100001022866,hydropower,operating,60
+G100001027072,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Ering-Frauenstein hydroelectric plant,L100001022867,hydropower,operating,72
+G100001027073,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Hieflau hydroelectric plant,L100001022868,hydropower,operating,63
+G100001027074,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Kreuzeck hydroelectric plant,L100001022869,hydropower,operating,45
+G100001027076,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,St. Pantaleon hydroelectric plant,L100001022871,hydropower,operating,52
+G100001027259,energy_plants_gem_units,AUT,point,DEU,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Alzwerke hydroelectric plant,L100001023054,hydropower,operating,45
+G100001049656,energy_plants_gem_units,AUT,point,DEU,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,PVAnlage Aufdachanlagen Werk BGH solar project,L100001044139,utility-scale solar,operating,1.5
+G100001052090,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Großraming hydroelectric plant,L100001046168,hydropower,operating,72
+G100001052091,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Koralpe hydroelectric plant,L100001046169,hydropower,operating,50
+G100001052095,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Langenegg hydroelectric plant,L100001046172,hydropower,operating,73
+G100001052097,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Reißeck hydroelectric plant,L100001046173,hydropower,operating,68
+G100001052099,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Sölk hydroelectric plant,L100001046174,hydropower,operating,61
+G100001052100,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Traun-Pucking hydroelectric plant,L100001046175,hydropower,operating,46
+G100001052101,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Uttendorf II hydroelectric plant,L100001046176,hydropower,operating,66
+G100001052869,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,true,abf-boundaries-v0.2.0,Nickelsdorf Solar Power Plant,L100000815881,utility-scale solar,construction,68
+G100001052870,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,true,abf-boundaries-v0.2.0,Wallern-Tadten solar farm,L100001046699,utility-scale solar,operating,164
+G100001053005,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Loidesthal wind farm,L100000912865,wind,announced,68
+G100001053008,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,true,abf-boundaries-v0.2.0,Neusiedl-Weiden wind farm,L100001046781,wind,announced,84
+G100001053009,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,true,abf-boundaries-v0.2.0,Bärofen wind farm,L100001046782,wind,construction,25
+G100001053010,energy_plants_gem_units,AUT,point,,AUT-1-1,,point,,,,false,abf-boundaries-v0.2.0,Halbturn Heide wind farm,L100000912406,wind,construction,12.6
+G100001053011,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Gaweinstal wind farm,L100001046783,wind,operating,17
+G100001053012,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Groß Schweinbarth wind farm,L100001046784,wind,operating,13
+G100001053013,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,true,abf-boundaries-v0.2.0,Freilaenderalm wind farm,L100001046785,wind,construction,102
+G100001053943,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Gratkorn Mill power station,L100000400001,bioenergy,pre_construction,70
+G100001053944,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Wels Waste power station,L100001047401,bioenergy,operating,31
+G100001053945,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Simmering power station,L100000400010,bioenergy,operating,24.5
+G100001053947,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Nettingsdorf Paper Mill power station,L100001047403,bioenergy,operating,28
+G100001053948,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Bruk Mill power station,L100001047404,bioenergy,operating,50
+G100001055293,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Egger Unterradlberg Dampfanlage power station,L100001048204,bioenergy,operating,10
+G100001055295,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Frantschach power station,L100001048205,bioenergy,operating,33
+G100001055296,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Fundermax power station,L100001048206,bioenergy,operating,10
+G100001055306,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Linz AG power station,L100001048213,bioenergy,operating,17
+G100001055307,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Pfaffenau power station,L100001048214,bioenergy,operating,14
+G100001055308,energy_plants_gem_units,AUT,point,,AUT-1-9,,point,,,,false,abf-boundaries-v0.2.0,Spittelau power station,L100001048215,bioenergy,operating,13
+G100001055309,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Timelkam (Energie AG) power station,L100001048216,bioenergy,operating,9.5
+G100001055310,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Zistersdorf power station,L100001048217,bioenergy,operating,15
+G100001062432,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Arnstein hydroelectric plant,L100001054540,hydropower,operating,30
+G100001062433,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Krippau hydroelectric plant,L100001054541,hydropower,operating,30
+G100001062434,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Losenstein hydroelectric plant,L100001054542,hydropower,operating,39
+G100001062435,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Obervermuntwerk 1 hydroelectric plant,L100001054543,hydropower,operating,30
+G100001062436,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Rosenau hydroelectric plant,L100001054544,hydropower,operating,34
+G100001062437,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Schonau hydroelectric plant,L100001054545,hydropower,operating,30
+G100001062438,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Staning hydroelectric plant,L100001054546,hydropower,operating,43
+G100001062439,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Ternberg hydroelectric plant,L100001054547,hydropower,operating,40
+G100001062440,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Weyer hydroelectric plant,L100001054548,hydropower,operating,37
+G100001083748,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Bezirk Salzburg-Umgebung solar project I,L100001073962,utility-scale solar,operating,2.1
+G100001083755,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Bezirk Mödling solar project I,L100001073969,utility-scale solar,operating,1.1
+G100001083766,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Bezirk Baden solar project V,L100001073980,utility-scale solar,operating,1.3
+G100001083768,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Dobl-Zwaring Bezirk Graz-Umgebung solar project,L100001073982,utility-scale solar,operating,9.6
+G100001083771,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Bezirk Kirchdorf solar project I,L100001073985,utility-scale solar,operating,1.8
+G100001083772,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Bezirk Amstetten solar project II,L100001073986,utility-scale solar,operating,1.5
+G100001083782,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Bezirk Baden solar project VI,L100001073996,utility-scale solar,operating,4.4
+G100001083785,energy_plants_gem_units,AUT,point,,AUT-1-3,,point,,,,false,abf-boundaries-v0.2.0,Bezirk Neunkirchen solar project I,L100001073999,utility-scale solar,operating,3.9
+G100001083790,energy_plants_gem_units,AUT,point,,AUT-1-6,,point,,,,false,abf-boundaries-v0.2.0,Graz solar project I,L100001074004,utility-scale solar,operating,2.6
+G100001090806,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Alberschwende hydroelectric plant,L100001080851,hydropower,operating,28
+G100001090807,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Langkampfen hydroelectric plant,L100001080852,hydropower,operating,32
+G100001090808,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Spullersee hydroelectric plant,L100001080853,hydropower,operating,36
+G100001090819,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Böckstein hydroelectric plant,L100001080860,hydropower,operating,45
+G100001090821,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Garsten hydroelectric plant,L100001080862,hydropower,operating,38
+G100001090823,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Marchtrenk hydroelectric plant,L100001080864,hydropower,operating,43
+G100001090824,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Partenstein hydroelectric plant,L100001080865,hydropower,operating,34
+G100001090825,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Malta Unterstufe hydroelectric plant,L100001080866,hydropower,operating,41
+G100001090826,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Nassfeld hydroelectric plant,L100001080867,hydropower,operating,32
+G100001090827,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Remsach hydroelectric plant,L100001080868,hydropower,operating,31
+G100001090828,energy_plants_gem_units,AUT,point,,AUT-1-7,,point,,,,false,abf-boundaries-v0.2.0,Kirchbichl hydroelectric plant,L100001080869,hydropower,operating,38
+G100001091808,energy_plants_gem_units,AUT,point,DEU,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Solarpark Kirchenwegstr. Ainring solar project,L100001081561,utility-scale solar,operating,1.3
+G100001092116,energy_plants_gem_units,AUT,point,,AUT-1-4,,point,,,,false,abf-boundaries-v0.2.0,Traunfall hydroelectric plant,L100001081822,hydropower,construction,30
+G100001092117,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Klammstein hydroelectric plant,L100001081823,hydropower,operating,31
+G100001092118,energy_plants_gem_units,AUT,point,,AUT-1-8,,point,,,,false,abf-boundaries-v0.2.0,Braz hydroelectric plant,L100001081824,hydropower,operating,20
+G100001092120,energy_plants_gem_units,AUT,point,,AUT-1-2,,point,,,,false,abf-boundaries-v0.2.0,Obervellach hydroelectric plant,L100001081825,hydropower,operating,37
+G100001092121,energy_plants_gem_units,AUT,point,,AUT-1-5,,point,,,,false,abf-boundaries-v0.2.0,Schneiderau hydroelectric plant,L100001081826,hydropower,operating,35

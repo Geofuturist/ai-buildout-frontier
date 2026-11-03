@@ -1,0 +1,73 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000106370,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Te-Tol power station,L100000400643,coal,operating,42
+G100000106371,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Te-Tol power station,L100000400643,coal,operating,32
+G100000106372,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Te-Tol power station,L100000400643,coal,operating,50
+G100000109536,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,coal,retired,30
+G100000109537,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,coal,retired,30
+G100000109538,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,coal,retired,75
+G100000109539,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,coal,retired,275
+G100000109540,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,coal,mothballed,345
+G100000109541,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,coal,operating,600
+G100000110308,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Trbovlje power station,L100000103420,coal,retired,125
+G100000201405,energy_plants_gem_units,SVN,point,ITA,,,,,,,true,abf-boundaries-v0.2.0,Gorizia Pulita power station,L100000201182,bioenergy,cancelled,34
+G100000400634,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brestanica (TEB) power station,L100000400634,oil/gas,retired,23
+G100000400635,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brestanica (TEB) power station,L100000400634,oil/gas,retired,23
+G100000400636,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brestanica (TEB) power station,L100000400634,oil/gas,retired,23
+G100000400637,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brestanica (TEB) power station,L100000400634,oil/gas,operating,114
+G100000400638,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brestanica (TEB) power station,L100000400634,oil/gas,operating,114
+G100000400639,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brestanica (TEB) power station,L100000400634,oil/gas,operating,53
+G100000400640,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brestanica (TEB) power station,L100000400634,oil/gas,operating,56
+G100000400641,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,oil/gas,operating,42
+G100000400642,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sostanj power station,L100000400641,oil/gas,operating,42
+G100000400643,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Te-Tol power station,L100000400643,oil/gas,operating,57
+G100000412810,energy_plants_gem_units,SVN,point,ITA,,,,,,,true,abf-boundaries-v0.2.0,Gorizia CHP power station,L100000408800,oil/gas,operating,70
+G100000500380,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Krško nuclear power plant,L100000500165,nuclear,operating,727
+G100000500381,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Krško nuclear power plant,L100000500165,nuclear,announced,1100
+G100000603346,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Avče hydroelectric plant,L100000603311,hydropower,operating,180
+G100000603347,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Formin hydroelectric plant,L100000603312,hydropower,operating,116
+G100000603348,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kozjak hydroelectric plant (Slovenia),L100000603313,hydropower,pre_construction,440
+G100000603349,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zlatoličje hydroelectric plant,L100000603314,hydropower,operating,116
+G100000826470,energy_plants_gem_units,SVN,point,ITA,,,,,,,true,abf-boundaries-v0.2.0,Monfalcone Gorizia solar farm,L100000823404,utility-scale solar,operating,1.5
+G100000910483,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dolenja Vas wind farm,L100000907811,wind,pre_construction,66
+G100000910718,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mislinja wind farm,L100000908031,wind,cancelled,10
+G100000910762,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ojstrica wind farm,L100000908074,wind,pre_construction,20
+G100000910788,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Plešivec wind farm,L100000908100,wind,cancelled,10
+G100000910854,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Senožeška Brda wind farm,L100000908163,wind,pre_construction,120
+G100000910952,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zajčica wind farm,L100000908259,wind,cancelled,10
+G100000912773,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Paski Kozjak wind farm,L100000909968,wind,pre_construction,14
+G100000915051,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Rogatec wind farm,L100000912002,wind,pre_construction,22
+G100000919539,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Volovja Reber wind farm,L100000915806,wind,cancelled,120
+G100000925537,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohorje wind farm,L100000920725,wind,cancelled,122
+G100000925538,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohorje wind farm,L100000920725,wind,cancelled,73
+G100001000532,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Golič wind farm,L100001000316,wind,announced,90
+G100001020166,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Te-Tol power station,L100000400643,oil/gas,operating,57
+G100001023802,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ponovice hydroelectric plant,L100001020835,hydropower,cancelled,68
+G100001030412,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fala hydroelectric plant,L100001025641,hydropower,operating,58
+G100001052142,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mariborski Otok hydroelectric plant,L100001046211,hydropower,operating,60
+G100001052144,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ozbalt hydroelectric plant,L100001046212,hydropower,operating,73
+G100001052145,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Vuhred hydroelectric plant,L100001046213,hydropower,operating,72
+G100001052146,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Vuzenica hydroelectric plant,L100001046214,hydropower,operating,56
+G100001053088,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Družmirje Floating solar farm,L100001046826,utility-scale solar,announced,140
+G100001053122,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Griže–Veliko Polje wind farm,L100001046845,wind,pre_construction,49
+G100001053123,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilirska Bistrica wind farm,L100001046846,wind,pre_construction,63
+G100001053124,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Košuta wind farm,L100001046847,wind,announced,20
+G100001057437,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kanalski Vrh solar farm,L100001049802,utility-scale solar,operating,2.9
+G100001057438,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kanalski Vrh solar farm,L100001049802,utility-scale solar,announced,5.1
+G100001057439,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Maribor solar farm,L100001049803,utility-scale solar,pre_construction,10
+G100001057440,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zlatoličje-Formin solar farm,L100001049804,utility-scale solar,operating,2.5
+G100001057441,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zlatoličje-Formin solar farm,L100001049804,utility-scale solar,pre_construction,28
+G100001083713,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Slovenia solar project IX,L100001073927,utility-scale solar,operating,1.2
+G100001083719,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Slovenia solar project XII,L100001073933,utility-scale solar,operating,2.3
+G100001092255,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Boštanj hydroelectric plant,L100001081932,hydropower,operating,33
+G100001092256,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Brežice hydroelectric plant,L100001081933,hydropower,operating,45
+G100001092258,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Krško hydroelectric plant,L100001081935,hydropower,operating,39
+G100001092259,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Arto-Blanca hydroelectric plant,L100001081936,hydropower,operating,39
+G100001092260,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Doblar hydroelectric plant,L100001081937,hydropower,operating,30
+G100001092261,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Doblar hydroelectric plant,L100001081937,hydropower,operating,40
+G100001092262,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Solkan hydroelectric plant,L100001081938,hydropower,operating,32
+G100001092263,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Vrhovo hydroelectric plant,L100001081939,hydropower,operating,43
+G100001092264,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mavčiče hydroelectric plant,L100001081940,hydropower,operating,38
+G100001092265,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tacen hydroelectric plant,L100001081941,hydropower,cancelled,33
+G100001092266,energy_plants_gem_units,SVN,point,,,,,,,,true,abf-boundaries-v0.2.0,Suhadol hydroelectric plant,L100001081942,hydropower,announced,39
+G100001093050,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Formin hydroelectric plant,L100000603312,hydropower,pre_construction,14
+G100001094592,energy_plants_gem_units,SVN,point,,,,,,,,false,abf-boundaries-v0.2.0,Te-Tol power station,L100000400643,bioenergy,pre_construction,20

@@ -1,0 +1,562 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000835600,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-BQ3,,point,,,,false,abf-boundaries-v0.2.0,Sint Eustatius solar project,L100000831631,utility-scale solar,operating,8.5
+G100001008496,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Assen solar project,L100001007347,utility-scale solar,operating,7.8
+G100001008498,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Beilen solar project,L100001007349,utility-scale solar,operating,12.9
+G100001008502,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Coevorden 17b solar project,L100001007353,utility-scale solar,operating,7.9
+G100001008505,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Coevorden 19c solar project,L100001007356,utility-scale solar,operating,13.2
+G100001008507,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Emmen 17a solar project,L100001007358,utility-scale solar,operating,1.5
+G100001008508,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Emmen 18a solar project,L100001007359,utility-scale solar,operating,4.4
+G100001008509,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Emmen 18b solar project,L100001007360,utility-scale solar,operating,12.5
+G100001008511,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Hijken 18a solar project,L100001007362,utility-scale solar,operating,8.4
+G100001008514,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Leemdijk solar project,L100001007365,utility-scale solar,operating,5.7
+G100001008515,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Noordscheschut solar project,L100001007366,utility-scale solar,operating,10.2
+G100001008516,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Sleen 17a solar project,L100001007367,utility-scale solar,operating,10.1
+G100001008517,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Tynaarlo I solar project,L100001007368,utility-scale solar,operating,13.3
+G100001008519,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Wachtum 17a solar project,L100001007370,utility-scale solar,operating,9.6
+G100001008521,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Emmeloord solar project,L100001007372,utility-scale solar,operating,12.5
+G100001008523,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Luttelgeest 17a solar project,L100001007374,utility-scale solar,operating,4
+G100001008525,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Luttelgeest 18a solar project,L100001007376,utility-scale solar,operating,13
+G100001008526,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Rutten 17a solar project,L100001007377,utility-scale solar,operating,6
+G100001008527,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Ameland solar project,L100001007378,utility-scale solar,operating,10.1
+G100001008528,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Appelscha solar project,L100001007379,utility-scale solar,operating,14.5
+G100001008529,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Blitsaerd solar project,L100001007380,utility-scale solar,operating,5.1
+G100001008530,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Buitenpost 17a solar project,L100001007381,utility-scale solar,operating,12
+G100001008531,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Burgum solar project,L100001007382,utility-scale solar,operating,11.3
+G100001008533,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Franeker 16a solar project,L100001007384,utility-scale solar,operating,10.7
+G100001008534,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Garyp 14a solar project,L100001007385,utility-scale solar,operating,6.8
+G100001008535,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Haulerwijk solar project,L100001007386,utility-scale solar,operating,6.8
+G100001008536,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Heerenveen 17a solar project,L100001007387,utility-scale solar,operating,19
+G100001008537,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Heerenveen 18a solar project,L100001007388,utility-scale solar,operating,8.7
+G100001008538,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Jumaheerd solar project,L100001007389,utility-scale solar,operating,9.7
+G100001008540,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Leeuwarden 17a solar project,L100001007391,utility-scale solar,operating,13.8
+G100001008542,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Libbe Gabrielsplas solar project,L100001007393,utility-scale solar,operating,11.1
+G100001008543,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Makkinga 19a solar project,L100001007394,utility-scale solar,operating,11.4
+G100001008544,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Nij Beets solar project,L100001007395,utility-scale solar,operating,11.7
+G100001008545,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Oostrum 18b solar project,L100001007396,utility-scale solar,operating,13.2
+G100001008546,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Oudehaske solar project,L100001007397,utility-scale solar,operating,18.7
+G100001008547,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Vegelinsoord solar project,L100001007398,utility-scale solar,operating,10
+G100001008550,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Wolvega 18a solar project,L100001007401,utility-scale solar,operating,12.7
+G100001008553,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Barneveld 18a solar project,L100001007404,utility-scale solar,operating,4
+G100001008554,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Bemmel 17a solar project,L100001007405,utility-scale solar,operating,17.6
+G100001008556,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Eerbeek 18a solar project,L100001007407,utility-scale solar,operating,7
+G100001008558,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Ewijk solar project,L100001007409,utility-scale solar,operating,8.5
+G100001008559,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Geldermalsen 14a solar project,L100001007410,utility-scale solar,operating,14
+G100001008562,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Hernen 19a solar project,L100001007413,utility-scale solar,operating,11.1
+G100001008563,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Klarenbeek solar project,L100001007414,utility-scale solar,operating,16.9
+G100001008565,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Lochem Ampsenseweg solar project,L100001007416,utility-scale solar,operating,9.6
+G100001008566,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Lochem Armhoede solar project,L100001007417,utility-scale solar,operating,13.8
+G100001008567,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Lochem Berkelweide solar project,L100001007418,utility-scale solar,operating,8.9
+G100001008568,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Medel solar project,L100001007419,utility-scale solar,operating,12.8
+G100001008569,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Tiel 16a solar project,L100001007420,utility-scale solar,operating,4.1
+G100001008571,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Zaltbommel 18a solar project,L100001007422,utility-scale solar,operating,17.4
+G100001008572,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Zutphen 17a solar project,L100001007423,utility-scale solar,operating,7.2
+G100001008574,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Alteveer solar project,L100001007425,utility-scale solar,operating,10
+G100001008576,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven 17b solar project,L100001007427,utility-scale solar,operating,3.9
+G100001008578,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Foxhol 19a solar project,L100001007429,utility-scale solar,operating,14
+G100001008580,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Marum 17a solar project,L100001007431,utility-scale solar,operating,9.3
+G100001008582,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Ommelanderwijk solar project,L100001007433,utility-scale solar,operating,7.5
+G100001008587,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Wagenborgen 17a solar project,L100001007438,utility-scale solar,operating,6.2
+G100001008588,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Woldjerspoor solar project,L100001007439,utility-scale solar,operating,11.9
+G100001008589,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Beringe 17a solar project,L100001007440,utility-scale solar,operating,17.3
+G100001008596,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Maasbree 17a solar project,L100001007447,utility-scale solar,operating,4.3
+G100001008597,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Maastricht 18a solar project,L100001007448,utility-scale solar,operating,9.2
+G100001008604,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venray 18a solar project,L100001007455,utility-scale solar,operating,1.5
+G100001008605,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venray 19a solar project,L100001007456,utility-scale solar,operating,4.9
+G100001008606,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Water Limburg solar project,L100001007457,utility-scale solar,operating,2.3
+G100001008607,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Beek 20a solar project,L100001007458,utility-scale solar,operating,10.3
+G100001008608,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Best 18a solar project,L100001007459,utility-scale solar,operating,4.9
+G100001008609,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Breda 18a solar project,L100001007460,utility-scale solar,operating,2.3
+G100001008610,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Breugel 17b solar project,L100001007461,utility-scale solar,operating,15.4
+G100001008614,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Etten-Leur 18a solar project,L100001007465,utility-scale solar,operating,4.3
+G100001008617,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Hertogenbosch 17a solar project,L100001007468,utility-scale solar,operating,4
+G100001008620,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Lierop 19a solar project,L100001007471,utility-scale solar,operating,10.9
+G100001008621,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Moerdijk 19a solar project,L100001007472,utility-scale solar,operating,7
+G100001008625,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Roosendaal 19d solar project,L100001007476,utility-scale solar,operating,4.8
+G100001008627,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg 18d solar project,L100001007478,utility-scale solar,operating,17.7
+G100001008628,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg 19d solar project,L100001007479,utility-scale solar,operating,1.3
+G100001008631,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Uden solar project,L100001007482,utility-scale solar,operating,12.3
+G100001008632,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Waalwijk 17a solar project,L100001007483,utility-scale solar,operating,5.7
+G100001008638,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Andijk solar project,L100001007489,utility-scale solar,operating,11
+G100001008640,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Den Helder 18a solar project,L100001007491,utility-scale solar,operating,10.3
+G100001008643,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Graveland 18a solar project,L100001007494,utility-scale solar,operating,7.3
+G100001008646,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Heerhugowaard 16a solar project,L100001007497,utility-scale solar,operating,9.2
+G100001008647,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Medemblik 18a solar project,L100001007498,utility-scale solar,operating,19.5
+G100001008648,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Purmerend 14a solar project,L100001007499,utility-scale solar,operating,10
+G100001008650,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Wervershoof 18a solar project,L100001007501,utility-scale solar,operating,4.8
+G100001008652,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Almelo 18a solar project,L100001007503,utility-scale solar,operating,5.6
+G100001008653,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Ambt 18a solar project,L100001007504,utility-scale solar,operating,18.9
+G100001008654,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Daarle 19a solar project,L100001007505,utility-scale solar,operating,6.6
+G100001008655,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Enschede 18a solar project,L100001007506,utility-scale solar,operating,16.2
+G100001008656,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Flierbelten solar project,L100001007507,utility-scale solar,operating,5.5
+G100001008657,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Geesteren 19a solar project,L100001007508,utility-scale solar,operating,10.5
+G100001008658,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Goor 17a solar project,L100001007509,utility-scale solar,operating,9.1
+G100001008659,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Goor 18a solar project,L100001007510,utility-scale solar,operating,11.1
+G100001008663,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Rheezerveen 17a solar project,L100001007514,utility-scale solar,operating,8.3
+G100001008664,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Rijssen 18a solar project,L100001007515,utility-scale solar,operating,15.5
+G100001008665,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Sekdoorn flt solar project,L100001007516,utility-scale solar,operating,13.6
+G100001008666,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Vriezenveen 17a solar project,L100001007517,utility-scale solar,operating,13.8
+G100001008667,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zunneveld solar project,L100001007518,utility-scale solar,operating,11.4
+G100001008668,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zwolle 17d solar project,L100001007519,utility-scale solar,operating,9.1
+G100001008669,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zwolle 18b solar project,L100001007520,utility-scale solar,operating,15.4
+G100001008670,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zwolle Scania solar project,L100001007521,utility-scale solar,operating,6
+G100001008671,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Amersfoort 20a solar project,L100001007522,utility-scale solar,operating,11.6
+G100001008673,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Eemnes 17a solar project,L100001007524,utility-scale solar,operating,8.3
+G100001008674,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Hoogland 19a solar project,L100001007525,utility-scale solar,operating,7.6
+G100001008675,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Houten Groenedijkje solar project,L100001007526,utility-scale solar,operating,13.9
+G100001008677,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Nieuwegein 17a solar project,L100001007528,utility-scale solar,operating,11.9
+G100001008679,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Mortiere II solar project,L100001007530,utility-scale solar,operating,12
+G100001008684,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Rilland 17b solar project,L100001007535,utility-scale solar,operating,8.9
+G100001008686,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Tholen 17a solar project,L100001007537,utility-scale solar,operating,10.6
+G100001008687,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zierikzee solar project,L100001007538,utility-scale solar,operating,9.9
+G100001008688,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Alblasserdam 20a solar project,L100001007539,utility-scale solar,operating,5
+G100001008690,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Bleiswijk 20b solar project,L100001007541,utility-scale solar,operating,2.8
+G100001008691,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Dordrecht 17b solar project,L100001007542,utility-scale solar,operating,14.5
+G100001008692,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Dordrecht 18a solar project,L100001007543,utility-scale solar,operating,12
+G100001008693,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Melissant 17a solar project,L100001007544,utility-scale solar,operating,8.2
+G100001008694,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Puttershoek 18a solar project,L100001007545,utility-scale solar,operating,17.9
+G100001008697,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam RTM solar project,L100001007548,utility-scale solar,operating,3.7
+G100001008698,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Zevenhuizen 17a solar project,L100001007549,utility-scale solar,operating,16.8
+G100001083942,energy_plants_gem_tzsam_units,NLD,point,BEL,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project IV,L100001074156,utility-scale solar,operating,1.7
+G100001083951,energy_plants_gem_tzsam_units,NLD,point,BEL,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project,L100001074165,utility-scale solar,operating,1.5
+G100001084049,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project I,L100001074263,utility-scale solar,operating,4.3
+G100001084050,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project I,L100001074264,utility-scale solar,operating,2.3
+G100001084051,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Ambt Delden solar project,L100001074265,utility-scale solar,operating,1.1
+G100001084053,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project I,L100001074267,utility-scale solar,operating,2
+G100001084054,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project I,L100001074268,utility-scale solar,operating,1.5
+G100001084055,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project III,L100001074269,utility-scale solar,operating,1.5
+G100001084056,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project IV,L100001074270,utility-scale solar,operating,2
+G100001084057,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project I,L100001074271,utility-scale solar,operating,1.1
+G100001084058,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Eindhoven solar project I,L100001074272,utility-scale solar,operating,1.2
+G100001084059,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project II,L100001074273,utility-scale solar,operating,12.4
+G100001084060,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project II,L100001074274,utility-scale solar,operating,1.5
+G100001084061,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam solar project I,L100001074275,utility-scale solar,operating,2.8
+G100001084062,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project III,L100001074276,utility-scale solar,operating,1.8
+G100001084063,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project I,L100001074277,utility-scale solar,operating,3.4
+G100001084064,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project I,L100001074278,utility-scale solar,operating,1.7
+G100001084067,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project I,L100001074281,utility-scale solar,operating,4.2
+G100001084068,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project III,L100001074282,utility-scale solar,operating,2.3
+G100001084069,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project IV,L100001074283,utility-scale solar,operating,1
+G100001084071,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project V,L100001074285,utility-scale solar,operating,4.6
+G100001084072,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project I,L100001074286,utility-scale solar,operating,1.2
+G100001084073,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Almere solar project I,L100001074287,utility-scale solar,operating,2.8
+G100001084074,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project VI,L100001074288,utility-scale solar,operating,6.3
+G100001084075,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project VII,L100001074289,utility-scale solar,operating,1.1
+G100001084076,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project II,L100001074290,utility-scale solar,operating,1.1
+G100001084077,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project VIII,L100001074291,utility-scale solar,operating,2.7
+G100001084078,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project III,L100001074292,utility-scale solar,operating,1.9
+G100001084079,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project IX,L100001074293,utility-scale solar,operating,2.7
+G100001084080,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project II,L100001074294,utility-scale solar,operating,1.3
+G100001084081,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Mastenbroek solar project,L100001074295,utility-scale solar,operating,1.4
+G100001084082,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project II,L100001074296,utility-scale solar,operating,10.3
+G100001084083,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project II,L100001074297,utility-scale solar,operating,1.1
+G100001084084,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project V,L100001074298,utility-scale solar,operating,1.6
+G100001084085,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project IV,L100001074299,utility-scale solar,operating,1.9
+G100001084086,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project V,L100001074300,utility-scale solar,operating,1
+G100001084087,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project III,L100001074301,utility-scale solar,operating,11.2
+G100001084089,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Flevoland solar project I,L100001074303,utility-scale solar,operating,1.2
+G100001084090,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Zoeterwoude solar project,L100001074304,utility-scale solar,operating,1.5
+G100001084091,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project X,L100001074305,utility-scale solar,operating,1.1
+G100001084092,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XI,L100001074306,utility-scale solar,operating,10.9
+G100001084094,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Ellertshaar solar project,L100001074308,utility-scale solar,operating,4.6
+G100001084095,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project VI,L100001074309,utility-scale solar,operating,2.2
+G100001084096,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XII,L100001074310,utility-scale solar,operating,2.3
+G100001084098,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XIV,L100001074312,utility-scale solar,operating,1.1
+G100001084099,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project II,L100001074313,utility-scale solar,operating,2.4
+G100001084100,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project VII,L100001074314,utility-scale solar,operating,11.1
+G100001084101,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project VI,L100001074315,utility-scale solar,operating,2
+G100001084102,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XV,L100001074316,utility-scale solar,operating,1.1
+G100001084103,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XVI,L100001074317,utility-scale solar,operating,10
+G100001084104,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project VII,L100001074318,utility-scale solar,operating,2.6
+G100001084106,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project II,L100001074320,utility-scale solar,operating,1.1
+G100001084107,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XVIII,L100001074321,utility-scale solar,operating,10.4
+G100001084108,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Arnhem solar project I,L100001074322,utility-scale solar,operating,9.1
+G100001084110,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XIX,L100001074324,utility-scale solar,operating,2.6
+G100001084113,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project VIII,L100001074327,utility-scale solar,operating,1
+G100001084114,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project III,L100001074328,utility-scale solar,operating,3.5
+G100001084116,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project VIII,L100001074330,utility-scale solar,operating,13.5
+G100001084117,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project IV,L100001074331,utility-scale solar,operating,15.9
+G100001084118,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project IV,L100001074332,utility-scale solar,operating,1
+G100001084119,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project I,L100001074333,utility-scale solar,operating,5.3
+G100001084120,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project IX,L100001074334,utility-scale solar,operating,2.3
+G100001084121,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project II,L100001074335,utility-scale solar,operating,5.7
+G100001084122,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project X,L100001074336,utility-scale solar,operating,2.2
+G100001084123,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XX,L100001074337,utility-scale solar,operating,7.8
+G100001084124,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXI,L100001074338,utility-scale solar,operating,3.2
+G100001084125,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project VII,L100001074339,utility-scale solar,operating,1.7
+G100001084126,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project III,L100001074340,utility-scale solar,operating,1.7
+G100001084127,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXII,L100001074341,utility-scale solar,operating,18.4
+G100001084128,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project III,L100001074342,utility-scale solar,operating,3.1
+G100001084129,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project VIII,L100001074343,utility-scale solar,operating,7.8
+G100001084130,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project IV,L100001074344,utility-scale solar,operating,1.4
+G100001084131,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project V,L100001074345,utility-scale solar,operating,5.5
+G100001084132,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXIII,L100001074346,utility-scale solar,operating,6.6
+G100001084133,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Eindhoven solar project II,L100001074347,utility-scale solar,operating,5.6
+G100001084134,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXIV,L100001074348,utility-scale solar,operating,3.9
+G100001084135,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad solar project I,L100001074349,utility-scale solar,operating,5
+G100001084136,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project III,L100001074350,utility-scale solar,operating,5
+G100001084137,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XI,L100001074351,utility-scale solar,operating,2
+G100001084138,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project IV,L100001074352,utility-scale solar,operating,2.5
+G100001084139,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project V,L100001074353,utility-scale solar,operating,1.7
+G100001084140,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam solar project III,L100001074354,utility-scale solar,operating,1.2
+G100001084141,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXV,L100001074355,utility-scale solar,operating,3.9
+G100001084142,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zwolle solar project I,L100001074356,utility-scale solar,operating,6.3
+G100001084143,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project IX,L100001074357,utility-scale solar,operating,1.3
+G100001084144,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XII,L100001074358,utility-scale solar,operating,3.9
+G100001084145,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XIII,L100001074359,utility-scale solar,operating,2.1
+G100001084146,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XIV,L100001074360,utility-scale solar,operating,9.5
+G100001084147,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXVI,L100001074361,utility-scale solar,operating,6.5
+G100001084148,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXVII,L100001074362,utility-scale solar,operating,8
+G100001084149,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam solar project I,L100001074363,utility-scale solar,operating,1.5
+G100001084150,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project V,L100001074364,utility-scale solar,operating,18
+G100001084151,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XV,L100001074365,utility-scale solar,operating,3.3
+G100001084152,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg solar project I,L100001074366,utility-scale solar,operating,13.2
+G100001084153,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project X,L100001074367,utility-scale solar,operating,2
+G100001084154,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project V,L100001074368,utility-scale solar,operating,2.8
+G100001084155,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project VI,L100001074369,utility-scale solar,operating,1
+G100001084156,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project IV,L100001074370,utility-scale solar,operating,2.5
+G100001084157,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXVIII,L100001074371,utility-scale solar,operating,1.7
+G100001084158,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam solar project II,L100001074372,utility-scale solar,operating,3.8
+G100001084159,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XI,L100001074373,utility-scale solar,operating,3.5
+G100001084160,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XII,L100001074374,utility-scale solar,operating,2.7
+G100001084161,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXIX,L100001074375,utility-scale solar,operating,1.2
+G100001084162,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project X,L100001074376,utility-scale solar,operating,2.9
+G100001084163,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven solar project I,L100001074377,utility-scale solar,operating,1.4
+G100001084164,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XVI,L100001074378,utility-scale solar,operating,1
+G100001084165,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Almere solar project III,L100001074379,utility-scale solar,operating,4.7
+G100001084166,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project IV,L100001074380,utility-scale solar,operating,7.9
+G100001084167,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Enschede solar project I,L100001074381,utility-scale solar,operating,7.4
+G100001084168,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXX,L100001074382,utility-scale solar,operating,6.7
+G100001084169,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg solar project II,L100001074383,utility-scale solar,operating,4.1
+G100001084170,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXI,L100001074384,utility-scale solar,operating,9.8
+G100001084171,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project VI,L100001074385,utility-scale solar,operating,1.6
+G100001084172,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project VII,L100001074386,utility-scale solar,operating,9.5
+G100001084173,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Alkmaar solar project I,L100001074387,utility-scale solar,operating,2.1
+G100001084174,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXII,L100001074388,utility-scale solar,operating,1.1
+G100001084175,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project V,L100001074389,utility-scale solar,operating,10.6
+G100001084176,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXIII,L100001074390,utility-scale solar,operating,10
+G100001084178,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project VII,L100001074392,utility-scale solar,operating,1.2
+G100001084179,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project I,L100001074393,utility-scale solar,operating,2.6
+G100001084180,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XVII,L100001074394,utility-scale solar,operating,3.9
+G100001084181,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXIV,L100001074395,utility-scale solar,operating,3.1
+G100001084182,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XVIII,L100001074396,utility-scale solar,operating,3.7
+G100001084183,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXV,L100001074397,utility-scale solar,operating,1.2
+G100001084184,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project VI,L100001074398,utility-scale solar,operating,1.1
+G100001084185,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project VII,L100001074399,utility-scale solar,operating,5.1
+G100001084186,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project VII,L100001074400,utility-scale solar,operating,3.7
+G100001084187,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXVI,L100001074401,utility-scale solar,operating,10.5
+G100001084188,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project V,L100001074402,utility-scale solar,operating,1.2
+G100001084189,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XI,L100001074403,utility-scale solar,operating,6.8
+G100001084190,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XIX,L100001074404,utility-scale solar,operating,1.7
+G100001084191,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Assen solar project I,L100001074405,utility-scale solar,operating,3.9
+G100001084192,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XIII,L100001074406,utility-scale solar,operating,3.6
+G100001084193,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXVII,L100001074407,utility-scale solar,operating,1.5
+G100001084194,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project VIII,L100001074408,utility-scale solar,operating,3
+G100001084195,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,'S-Hertogenbosch solar project I,L100001074409,utility-scale solar,operating,5.9
+G100001084197,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project IX,L100001074411,utility-scale solar,operating,2.1
+G100001084198,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Apeldoorn solar project I,L100001074412,utility-scale solar,operating,11.1
+G100001084199,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project VIII,L100001074413,utility-scale solar,operating,4.2
+G100001084201,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project VI,L100001074415,utility-scale solar,operating,1.2
+G100001084202,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project VI,L100001074416,utility-scale solar,operating,3.3
+G100001084203,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo solar project I,L100001074417,utility-scale solar,operating,16.7
+G100001084204,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project X,L100001074418,utility-scale solar,operating,2
+G100001084205,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project IX,L100001074419,utility-scale solar,operating,13.7
+G100001084206,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XII,L100001074420,utility-scale solar,operating,3.8
+G100001084207,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XX,L100001074421,utility-scale solar,operating,2.4
+G100001084208,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Breda solar project,L100001074422,utility-scale solar,operating,4.9
+G100001084209,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project VIII,L100001074423,utility-scale solar,operating,1.2
+G100001084210,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXI,L100001074424,utility-scale solar,operating,10.8
+G100001084211,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXVIII,L100001074425,utility-scale solar,operating,1
+G100001084212,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XXXIX,L100001074426,utility-scale solar,operating,2.8
+G100001084213,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XIV,L100001074427,utility-scale solar,operating,6.9
+G100001084215,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXII,L100001074429,utility-scale solar,operating,14
+G100001084216,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Leeuwarden solar project I,L100001074430,utility-scale solar,operating,10.9
+G100001084217,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project VII,L100001074431,utility-scale solar,operating,1.9
+G100001084218,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project VIII,L100001074432,utility-scale solar,operating,2
+G100001084219,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XI,L100001074433,utility-scale solar,operating,2.9
+G100001084220,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XII,L100001074434,utility-scale solar,operating,1
+G100001084221,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXIII,L100001074435,utility-scale solar,operating,1.5
+G100001084222,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XL,L100001074436,utility-scale solar,operating,11.9
+G100001084223,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXIV,L100001074437,utility-scale solar,operating,2.1
+G100001084224,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven solar project II,L100001074438,utility-scale solar,operating,5.2
+G100001084225,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLI,L100001074439,utility-scale solar,operating,6.9
+G100001084226,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XV,L100001074440,utility-scale solar,operating,2.1
+G100001084227,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXV,L100001074441,utility-scale solar,operating,1.1
+G100001084229,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XI,L100001074443,utility-scale solar,operating,5.1
+G100001084230,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XIII,L100001074444,utility-scale solar,operating,7
+G100001084231,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project IX,L100001074445,utility-scale solar,operating,2.5
+G100001084232,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXVI,L100001074446,utility-scale solar,operating,17.7
+G100001084234,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo solar project II,L100001074448,utility-scale solar,operating,2.7
+G100001084235,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XII,L100001074449,utility-scale solar,operating,14
+G100001084236,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project II,L100001074450,utility-scale solar,operating,12
+G100001084237,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXVII,L100001074451,utility-scale solar,operating,1.2
+G100001084238,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XIV,L100001074452,utility-scale solar,operating,2.1
+G100001084239,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project IX,L100001074453,utility-scale solar,operating,1.1
+G100001084240,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project VIII,L100001074454,utility-scale solar,operating,2.9
+G100001084241,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXVIII,L100001074455,utility-scale solar,operating,18.5
+G100001084242,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XIII,L100001074456,utility-scale solar,operating,1.4
+G100001084243,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XV,L100001074457,utility-scale solar,operating,1.6
+G100001084244,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XIV,L100001074458,utility-scale solar,operating,10.7
+G100001084245,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XV,L100001074459,utility-scale solar,operating,4
+G100001084246,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLII,L100001074460,utility-scale solar,operating,2.7
+G100001084247,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XVI,L100001074461,utility-scale solar,operating,3.2
+G100001084248,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XVII,L100001074462,utility-scale solar,operating,5.4
+G100001084249,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project X,L100001074463,utility-scale solar,operating,1.8
+G100001084250,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Helmond solar project I,L100001074464,utility-scale solar,operating,2.3
+G100001084251,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XVII,L100001074465,utility-scale solar,operating,1.1
+G100001084252,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXIX,L100001074466,utility-scale solar,operating,6.1
+G100001084253,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XVIII,L100001074467,utility-scale solar,operating,2.7
+G100001084254,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XIII,L100001074468,utility-scale solar,operating,1
+G100001084255,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXX,L100001074469,utility-scale solar,operating,2.3
+G100001084256,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XIX,L100001074470,utility-scale solar,operating,1.7
+G100001084257,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLIII,L100001074471,utility-scale solar,operating,1.5
+G100001084258,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XVIII,L100001074472,utility-scale solar,operating,14.8
+G100001084259,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXI,L100001074473,utility-scale solar,operating,8.3
+G100001084260,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XIV,L100001074474,utility-scale solar,operating,1.7
+G100001084261,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXII,L100001074475,utility-scale solar,operating,3.9
+G100001084262,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project X,L100001074476,utility-scale solar,operating,2.8
+G100001084263,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XVI,L100001074477,utility-scale solar,operating,2.7
+G100001084264,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XIX,L100001074478,utility-scale solar,operating,1.1
+G100001084265,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLIV,L100001074479,utility-scale solar,operating,5.1
+G100001084266,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project III,L100001074480,utility-scale solar,operating,15.8
+G100001084267,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XVII,L100001074481,utility-scale solar,operating,2
+G100001084268,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXIII,L100001074482,utility-scale solar,operating,2.8
+G100001084269,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XX,L100001074483,utility-scale solar,operating,4.7
+G100001084270,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project IX,L100001074484,utility-scale solar,operating,5.6
+G100001084271,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXI,L100001074485,utility-scale solar,operating,4.8
+G100001084272,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Eindhoven solar project III,L100001074486,utility-scale solar,operating,1.7
+G100001084273,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Flevoland solar project II,L100001074487,utility-scale solar,operating,10.2
+G100001084274,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,The Hague solar project I,L100001074488,utility-scale solar,operating,3
+G100001084275,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project IV,L100001074489,utility-scale solar,operating,1.4
+G100001084276,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XI,L100001074490,utility-scale solar,operating,2.5
+G100001084277,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project X,L100001074491,utility-scale solar,operating,3.1
+G100001084278,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XII,L100001074492,utility-scale solar,operating,1.3
+G100001084279,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXII,L100001074493,utility-scale solar,operating,3.5
+G100001084280,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXIV,L100001074494,utility-scale solar,operating,3.5
+G100001084281,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXV,L100001074495,utility-scale solar,operating,2.3
+G100001084282,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XIII,L100001074496,utility-scale solar,operating,3.4
+G100001084283,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo solar project III,L100001074497,utility-scale solar,operating,3.7
+G100001084284,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XX,L100001074498,utility-scale solar,operating,5.8
+G100001084285,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XI,L100001074499,utility-scale solar,operating,9
+G100001084286,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXVI,L100001074500,utility-scale solar,operating,1.4
+G100001084287,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXI,L100001074501,utility-scale solar,operating,1.8
+G100001084288,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXIII,L100001074502,utility-scale solar,operating,3.8
+G100001084289,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Klarenbeek solar project I,L100001074503,utility-scale solar,operating,12.6
+G100001084290,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLV,L100001074504,utility-scale solar,operating,7.1
+G100001084291,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLVI,L100001074505,utility-scale solar,operating,2.3
+G100001084292,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XII,L100001074506,utility-scale solar,operating,18.1
+G100001084293,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XVIII,L100001074507,utility-scale solar,operating,1.1
+G100001084294,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XIV,L100001074508,utility-scale solar,operating,1.1
+G100001084295,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad solar project III,L100001074509,utility-scale solar,operating,4.2
+G100001084296,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XIX,L100001074510,utility-scale solar,operating,14.6
+G100001084297,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XX,L100001074511,utility-scale solar,operating,4.8
+G100001084298,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project VII,L100001074512,utility-scale solar,operating,4
+G100001084299,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLVII,L100001074513,utility-scale solar,operating,2.2
+G100001084300,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam solar project IV,L100001074514,utility-scale solar,operating,3.2
+G100001084301,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Alkmaar solar project II,L100001074515,utility-scale solar,operating,1.8
+G100001084302,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project V,L100001074516,utility-scale solar,operating,10.4
+G100001084303,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XI,L100001074517,utility-scale solar,operating,12.2
+G100001084304,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project VIII,L100001074518,utility-scale solar,operating,3.2
+G100001084306,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXVII,L100001074520,utility-scale solar,operating,3.7
+G100001084307,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXVIII,L100001074521,utility-scale solar,operating,2.7
+G100001084308,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLVIII,L100001074522,utility-scale solar,operating,1.1
+G100001084309,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXII,L100001074523,utility-scale solar,operating,5.1
+G100001084311,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XXXIX,L100001074525,utility-scale solar,operating,1.1
+G100001084312,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXIII,L100001074526,utility-scale solar,operating,3.3
+G100001084313,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXIV,L100001074527,utility-scale solar,operating,1.1
+G100001084314,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project VII,L100001074528,utility-scale solar,operating,5
+G100001084315,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XV,L100001074529,utility-scale solar,operating,1.1
+G100001084317,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XII,L100001074531,utility-scale solar,operating,3.7
+G100001084318,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XL,L100001074532,utility-scale solar,operating,7.5
+G100001084319,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXV,L100001074533,utility-scale solar,operating,1
+G100001084320,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Apeldoorn solar project II,L100001074534,utility-scale solar,operating,3.8
+G100001084321,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project XLIX,L100001074535,utility-scale solar,operating,3.4
+G100001084322,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project L,L100001074536,utility-scale solar,operating,9.7
+G100001084323,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLI,L100001074537,utility-scale solar,operating,5.6
+G100001084324,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XIII,L100001074538,utility-scale solar,operating,7.3
+G100001084325,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XIII,L100001074539,utility-scale solar,operating,12.1
+G100001084326,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg solar project IV,L100001074540,utility-scale solar,operating,8.8
+G100001084327,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Lelystad solar project IV,L100001074541,utility-scale solar,operating,4.3
+G100001084328,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XIV,L100001074542,utility-scale solar,operating,3.3
+G100001084329,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LI,L100001074543,utility-scale solar,operating,2.3
+G100001084330,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Eemshaven solar project III,L100001074544,utility-scale solar,operating,2.4
+G100001084331,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXV,L100001074545,utility-scale solar,operating,9.8
+G100001084332,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XV,L100001074546,utility-scale solar,operating,9.9
+G100001084334,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Flevoland solar project III,L100001074548,utility-scale solar,operating,2.7
+G100001084335,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Roermond solar project I,L100001074549,utility-scale solar,operating,1.6
+G100001084336,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXI,L100001074550,utility-scale solar,operating,1.9
+G100001084337,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LIII,L100001074551,utility-scale solar,operating,2
+G100001084338,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLII,L100001074552,utility-scale solar,operating,14.6
+G100001084339,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XV,L100001074553,utility-scale solar,operating,1.5
+G100001084340,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Dordrecht solar project,L100001074554,utility-scale solar,operating,4.4
+G100001084341,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XVI,L100001074555,utility-scale solar,operating,3
+G100001084342,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Enschede solar project II,L100001074556,utility-scale solar,operating,5
+G100001084343,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLIII,L100001074557,utility-scale solar,operating,11.3
+G100001084344,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LIV,L100001074558,utility-scale solar,operating,1.2
+G100001084345,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XVI,L100001074559,utility-scale solar,operating,10.2
+G100001084346,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LV,L100001074560,utility-scale solar,operating,4.4
+G100001084347,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LVI,L100001074561,utility-scale solar,operating,6.8
+G100001084348,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XVI,L100001074562,utility-scale solar,operating,3.2
+G100001084349,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LVII,L100001074563,utility-scale solar,operating,8.4
+G100001084350,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLIV,L100001074564,utility-scale solar,operating,1.8
+G100001084351,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XVII,L100001074565,utility-scale solar,operating,2.9
+G100001084352,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Vethuizen solar project,L100001074566,utility-scale solar,operating,2.7
+G100001084353,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXII,L100001074567,utility-scale solar,operating,1.2
+G100001084354,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Nijmegen solar project I,L100001074568,utility-scale solar,operating,3.6
+G100001084355,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLV,L100001074569,utility-scale solar,operating,1.7
+G100001084356,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXIII,L100001074570,utility-scale solar,operating,7.5
+G100001084357,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XVII,L100001074571,utility-scale solar,operating,1.5
+G100001084358,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XVIII,L100001074572,utility-scale solar,operating,12.8
+G100001084359,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg solar project V,L100001074573,utility-scale solar,operating,1
+G100001084360,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Nijmegen solar project II,L100001074574,utility-scale solar,operating,1
+G100001084361,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLVI,L100001074575,utility-scale solar,operating,2.9
+G100001084362,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XVIII,L100001074576,utility-scale solar,operating,1.5
+G100001084363,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XIX,L100001074577,utility-scale solar,operating,2.8
+G100001084364,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLVII,L100001074578,utility-scale solar,operating,17.2
+G100001084365,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXVI,L100001074579,utility-scale solar,operating,2.4
+G100001084366,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXVI,L100001074580,utility-scale solar,operating,2.4
+G100001084367,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLVIII,L100001074581,utility-scale solar,operating,3.8
+G100001084368,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXVII,L100001074582,utility-scale solar,operating,3.8
+G100001084369,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Flevoland solar project IV,L100001074583,utility-scale solar,operating,7.2
+G100001084370,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project XLIX,L100001074584,utility-scale solar,operating,6.7
+G100001084371,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XIX,L100001074585,utility-scale solar,operating,5.5
+G100001084372,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project IX,L100001074586,utility-scale solar,operating,4
+G100001084373,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project L,L100001074587,utility-scale solar,operating,2.3
+G100001084374,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXIV,L100001074588,utility-scale solar,operating,3.1
+G100001084375,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LVIII,L100001074589,utility-scale solar,operating,2.8
+G100001084376,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXVIII,L100001074590,utility-scale solar,operating,7.7
+G100001084377,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XX,L100001074591,utility-scale solar,operating,1.5
+G100001084378,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LIX,L100001074592,utility-scale solar,operating,2.6
+G100001084379,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXIX,L100001074593,utility-scale solar,operating,2
+G100001084380,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XVII,L100001074594,utility-scale solar,operating,5.4
+G100001084381,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXV,L100001074595,utility-scale solar,operating,9.3
+G100001084382,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XX,L100001074596,utility-scale solar,operating,2
+G100001084383,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXX,L100001074597,utility-scale solar,operating,4.8
+G100001084384,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LX,L100001074598,utility-scale solar,operating,3.3
+G100001084385,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Flevoland solar project V,L100001074599,utility-scale solar,operating,2.3
+G100001084386,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XXI,L100001074600,utility-scale solar,operating,7.7
+G100001084387,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XVIII,L100001074601,utility-scale solar,operating,3.7
+G100001084388,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Emmen solar project,L100001074602,utility-scale solar,operating,4.8
+G100001084389,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project X,L100001074603,utility-scale solar,operating,2.6
+G100001084390,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXVI,L100001074604,utility-scale solar,operating,1.3
+G100001084391,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XIV,L100001074605,utility-scale solar,operating,10.8
+G100001084392,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXI,L100001074606,utility-scale solar,operating,3.5
+G100001084393,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project VIII,L100001074607,utility-scale solar,operating,1.1
+G100001084394,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXI,L100001074608,utility-scale solar,operating,2.5
+G100001084395,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXII,L100001074609,utility-scale solar,operating,1.6
+G100001084396,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XXI,L100001074610,utility-scale solar,operating,2.4
+G100001084397,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project XI,L100001074611,utility-scale solar,operating,5
+G100001084398,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXIII,L100001074612,utility-scale solar,operating,9.5
+G100001084400,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LII,L100001074614,utility-scale solar,operating,7.7
+G100001084401,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXIV,L100001074615,utility-scale solar,operating,6.1
+G100001084402,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXVII,L100001074616,utility-scale solar,operating,8.6
+G100001084403,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXV,L100001074617,utility-scale solar,operating,1.8
+G100001084404,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XXII,L100001074618,utility-scale solar,operating,2.9
+G100001084406,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXVI,L100001074620,utility-scale solar,operating,1.6
+G100001084407,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XXIII,L100001074621,utility-scale solar,operating,2.1
+G100001084408,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project XII,L100001074622,utility-scale solar,operating,2.1
+G100001084409,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXVII,L100001074623,utility-scale solar,operating,4.9
+G100001084410,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XXIV,L100001074624,utility-scale solar,operating,1.7
+G100001084411,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXVII,L100001074625,utility-scale solar,operating,13.3
+G100001084412,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXVIII,L100001074626,utility-scale solar,operating,2
+G100001084413,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Flevoland solar project VI,L100001074627,utility-scale solar,operating,1.6
+G100001084414,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LIII,L100001074628,utility-scale solar,operating,9.8
+G100001084415,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XV,L100001074629,utility-scale solar,operating,3.6
+G100001084416,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXVIII,L100001074630,utility-scale solar,operating,1.1
+G100001084417,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XVI,L100001074631,utility-scale solar,operating,5.3
+G100001084418,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXIX,L100001074632,utility-scale solar,operating,2.5
+G100001084419,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project XIII,L100001074633,utility-scale solar,operating,2.7
+G100001084420,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XXV,L100001074634,utility-scale solar,operating,3.3
+G100001084421,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LIV,L100001074635,utility-scale solar,operating,3.5
+G100001084422,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXX,L100001074636,utility-scale solar,operating,3.8
+G100001084423,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXVIII,L100001074637,utility-scale solar,operating,1.6
+G100001084424,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LV,L100001074638,utility-scale solar,operating,9.4
+G100001084425,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FL,,point,,,,false,abf-boundaries-v0.2.0,Flevoland solar project VII,L100001074639,utility-scale solar,operating,7.9
+G100001084426,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXII,L100001074640,utility-scale solar,operating,12.2
+G100001084427,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LVI,L100001074641,utility-scale solar,operating,2.2
+G100001084428,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XVII,L100001074642,utility-scale solar,operating,3.2
+G100001084429,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,'S-Hertogenbosch solar project II,L100001074643,utility-scale solar,operating,2.5
+G100001084430,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Heerlen solar project II,L100001074644,utility-scale solar,operating,5
+G100001084431,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXIX,L100001074645,utility-scale solar,operating,5.1
+G100001084432,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXIX,L100001074646,utility-scale solar,operating,4.2
+G100001084433,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XXVI,L100001074647,utility-scale solar,operating,1.8
+G100001084434,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XXII,L100001074648,utility-scale solar,operating,1
+G100001084435,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Enschede solar project III,L100001074649,utility-scale solar,operating,6.8
+G100001084436,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zwolle solar project II,L100001074650,utility-scale solar,operating,7.5
+G100001084437,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LVII,L100001074651,utility-scale solar,operating,1.4
+G100001084438,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam solar project III,L100001074652,utility-scale solar,operating,4.3
+G100001084439,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXI,L100001074653,utility-scale solar,operating,8.6
+G100001084440,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXII,L100001074654,utility-scale solar,operating,2.1
+G100001084441,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXIII,L100001074655,utility-scale solar,operating,10
+G100001084442,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZE,,point,,,,false,abf-boundaries-v0.2.0,Zeeland solar project XIV,L100001074656,utility-scale solar,operating,2.1
+G100001084443,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXIV,L100001074657,utility-scale solar,operating,3.5
+G100001084445,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Heemserveen solar project,L100001074659,utility-scale solar,operating,12.7
+G100001084446,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXV,L100001074660,utility-scale solar,operating,1.5
+G100001084447,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XVIII,L100001074661,utility-scale solar,operating,1.2
+G100001084449,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Helmond solar project II,L100001074663,utility-scale solar,operating,2.1
+G100001084450,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XIX,L100001074664,utility-scale solar,operating,1.7
+G100001084451,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project X,L100001074665,utility-scale solar,operating,4.4
+G100001084452,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXX,L100001074666,utility-scale solar,operating,1.3
+G100001084454,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXI,L100001074668,utility-scale solar,operating,12.2
+G100001084455,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXX,L100001074669,utility-scale solar,operating,11.5
+G100001084457,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Leeuwarden solar project II,L100001074671,utility-scale solar,operating,1.8
+G100001084458,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam solar project V,L100001074672,utility-scale solar,operating,3.7
+G100001084459,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Utrecht solar project XI,L100001074673,utility-scale solar,operating,1
+G100001084460,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LVIII,L100001074674,utility-scale solar,operating,4.1
+G100001084461,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,The Hague solar project II,L100001074675,utility-scale solar,operating,3
+G100001084463,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXXI,L100001074677,utility-scale solar,operating,2.4
+G100001084464,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Ede solar project,L100001074678,utility-scale solar,operating,3.1
+G100001084465,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LIX,L100001074679,utility-scale solar,operating,12.4
+G100001084466,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXVII,L100001074680,utility-scale solar,operating,1.9
+G100001084467,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LX,L100001074681,utility-scale solar,operating,8.9
+G100001084468,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXXII,L100001074682,utility-scale solar,operating,1.4
+G100001084469,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXI,L100001074683,utility-scale solar,operating,7.2
+G100001084470,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-DR,,point,,,,false,abf-boundaries-v0.2.0,Drenthe solar project XX,L100001074684,utility-scale solar,operating,1.6
+G100001084471,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXXIII,L100001074685,utility-scale solar,operating,13.3
+G100001084472,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXVIII,L100001074686,utility-scale solar,operating,3.2
+G100001084473,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXII,L100001074687,utility-scale solar,operating,3.2
+G100001084474,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXIII,L100001074688,utility-scale solar,operating,15.2
+G100001084475,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXIV,L100001074689,utility-scale solar,operating,1.1
+G100001084477,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Deventer solar project,L100001074691,utility-scale solar,operating,1.1
+G100001084478,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo solar project IV,L100001074692,utility-scale solar,operating,2.8
+G100001084479,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XXIII,L100001074693,utility-scale solar,operating,1.4
+G100001084480,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Venlo solar project V,L100001074694,utility-scale solar,operating,2.8
+G100001084481,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Tilburg solar project VI,L100001074695,utility-scale solar,operating,1.7
+G100001084482,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXIV,L100001074696,utility-scale solar,operating,1.1
+G100001084483,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXIV,L100001074697,utility-scale solar,operating,1.3
+G100001084484,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXV,L100001074698,utility-scale solar,operating,11.9
+G100001084485,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Zwolle solar project III,L100001074699,utility-scale solar,operating,2.1
+G100001084486,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXVI,L100001074700,utility-scale solar,operating,5.9
+G100001084487,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXIX,L100001074701,utility-scale solar,operating,1.6
+G100001084488,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXV,L100001074702,utility-scale solar,operating,3.2
+G100001084489,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXVI,L100001074703,utility-scale solar,operating,2.5
+G100001084490,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXX,L100001074704,utility-scale solar,operating,6.7
+G100001084491,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XIX,L100001074705,utility-scale solar,operating,1.3
+G100001084493,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXVII,L100001074707,utility-scale solar,operating,6.7
+G100001084494,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-FR,,point,,,,false,abf-boundaries-v0.2.0,Frisia solar project XX,L100001074708,utility-scale solar,operating,3.3
+G100001084495,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXXI,L100001074709,utility-scale solar,operating,1.5
+G100001084496,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXXIV,L100001074710,utility-scale solar,operating,1.4
+G100001084497,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXXII,L100001074711,utility-scale solar,operating,7.1
+G100001084498,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXVI,L100001074712,utility-scale solar,operating,3.2
+G100001084499,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXXIII,L100001074713,utility-scale solar,operating,9.1
+G100001084500,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Arnhem solar project II,L100001074714,utility-scale solar,operating,1.9
+G100001084501,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXVII,L100001074715,utility-scale solar,operating,9.3
+G100001084502,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXXIV,L100001074716,utility-scale solar,operating,1.4
+G100001084503,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXXV,L100001074717,utility-scale solar,operating,1.6
+G100001084504,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXVIII,L100001074718,utility-scale solar,operating,1.6
+G100001084506,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Arnhem solar project III,L100001074720,utility-scale solar,operating,1
+G100001084507,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXIX,L100001074721,utility-scale solar,operating,2.2
+G100001084508,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXVII,L100001074722,utility-scale solar,operating,2.8
+G100001084509,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,Rotterdam solar project IV,L100001074723,utility-scale solar,operating,1.5
+G100001084510,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-ZH,,point,,,,false,abf-boundaries-v0.2.0,South Holland solar project XXVII,L100001074724,utility-scale solar,operating,3.6
+G100001084511,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,Amsterdam solar project VI,L100001074725,utility-scale solar,operating,1.2
+G100001084512,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXXV,L100001074726,utility-scale solar,operating,5
+G100001084513,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXXVI,L100001074727,utility-scale solar,operating,1.2
+G100001084514,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XXIV,L100001074728,utility-scale solar,operating,7.9
+G100001084515,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXVIII,L100001074729,utility-scale solar,operating,2.6
+G100001084516,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Overijssel solar project XXXVI,L100001074730,utility-scale solar,operating,1.3
+G100001084517,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Roermond solar project II,L100001074731,utility-scale solar,operating,1
+G100001084518,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GE,,point,,,,false,abf-boundaries-v0.2.0,Gelderland solar project LXX,L100001074732,utility-scale solar,operating,15.1
+G100001084519,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project XXV,L100001074733,utility-scale solar,operating,1.6
+G100001084520,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-OV,,point,,,,false,abf-boundaries-v0.2.0,Enschede solar project IV,L100001074734,utility-scale solar,operating,1.2
+G100001084521,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NH,,point,,,,false,abf-boundaries-v0.2.0,North Holland solar project XXXVIII,L100001074735,utility-scale solar,operating,1.8
+G100001084522,energy_plants_gem_tzsam_units,NLD,point,,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,North Brabant solar project LXXXVII,L100001074736,utility-scale solar,operating,2.3

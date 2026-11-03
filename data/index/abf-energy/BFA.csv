@@ -1,0 +1,25 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413533,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kossodo power plant,L100000409057,oil/gas,operating,54.9
+G100000413534,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Komsilga power plant,L100000409043,oil/gas,operating,36
+G100000413535,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Komsilga power plant,L100000409043,oil/gas,operating,54
+G100000413536,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Essakane Gold Mine power station,L100000409044,oil/gas,operating,57
+G100000800220,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kodeni solar farm,L100000800176,utility-scale solar,operating,38
+G100000800229,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Koudougou solar farm,L100000800184,utility-scale solar,pre_construction,20
+G100000800272,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nagréongo solar farm,L100000800226,utility-scale solar,operating,30
+G100000800312,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pâ Solar Mouhon solar farm,L100000800260,utility-scale solar,operating,30
+G100000800430,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeleen solar farm,L100000800354,utility-scale solar,pre_construction,42
+G100000800432,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Zagtouli solar farm,L100000800356,utility-scale solar,operating,37
+G100000800433,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Zano solar farm,L100000800357,utility-scale solar,operating,24
+G100000800436,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Zina solar farm,L100000800360,utility-scale solar,operating,26.6
+G100000814077,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Zagtouli solar farm,L100000800356,utility-scale solar,operating,13
+G100000831131,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Essakane solar project,L100000827609,utility-scale solar,operating,14.9
+G100000831132,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaya solar farm,L100000827610,utility-scale solar,shelved,75
+G100000831133,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Koupéla solar farm,L100000827611,utility-scale solar,shelved,75
+G100000831134,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ouagadougou solar farm,L100000827612,utility-scale solar,announced,150
+G100001020847,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Matourkou solar farm,L100001018635,utility-scale solar,pre_construction,30
+G100001020882,energy_plants_gem_units,BFA,point,,,,,,,,false,abf-boundaries-v0.2.0,Donsin solar farm,L100001018662,utility-scale solar,pre_construction,25
+G100001020889,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Souri solar farm,L100001018668,utility-scale solar,pre_construction,18
+G100001051879,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Noumbiel hydroelectric plant,L100001046009,hydropower,announced,60
+G100001074229,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Burkina Faso (Gutami) solar farm,L100001064483,utility-scale solar,announced,150
+G100001093517,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaya power station,L100001082935,oil/gas,announced,50
+G100001093518,energy_plants_gem_units,BFA,point,,,,,,,,true,abf-boundaries-v0.2.0,Koudougou power station,L100001082936,oil/gas,announced,50

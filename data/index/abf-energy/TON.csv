@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000831098,energy_plants_gem_units,TON,point,,TON-1-04,,point,,,,true,abf-boundaries-v0.2.0,Tongatapu solar project,L100000827590,utility-scale solar,operating,4.7
+G100001023595,energy_plants_gem_units,TON,point,,TON-1-04,,point,,,,false,abf-boundaries-v0.2.0,Manumataongo wind farm,L100001020685,wind,operating,1.4

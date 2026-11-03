@@ -1,0 +1,9 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413489,energy_plants_gem_units,MDV,point,,,,,,,,false,abf-boundaries-v0.2.0,Hulhumale power station,L100000408995,oil/gas,operating,80
+G100000801590,energy_plants_gem_units,MDV,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinamale' Bridge solar farm,L100000801386,utility-scale solar,pre_construction,10
+G100000901563,energy_plants_gem_units,MDV,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaafaru Island wind farm,L100000901331,wind,cancelled,75
+G100000920803,energy_plants_gem_units,MDV,point,,,,,,,,true,abf-boundaries-v0.2.0,Hulhumalé wind farm,L100000916749,wind,cancelled,50
+G100001021730,energy_plants_gem_units,MDV,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinamale' Bridge solar farm,L100000801386,utility-scale solar,pre_construction,15
+G100001054586,energy_plants_gem_units,MDV,point,,,,,,,,false,abf-boundaries-v0.2.0,Addu City WtE power station,L100001047841,bioenergy,operating,1.5
+G100001058038,energy_plants_gem_units,MDV,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar city floating solar farm,L100001050313,utility-scale solar,pre_construction,100
+G100001090126,energy_plants_gem_units,MDV,point,,,,,,,,false,abf-boundaries-v0.2.0,Male’ power station,L100001080259,oil/gas,operating,62

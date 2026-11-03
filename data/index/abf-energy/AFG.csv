@@ -1,0 +1,97 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000411871,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Mazar IPP power station,L100000408316,oil/gas,shelved,59
+G100000413490,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarakhil power station,L100000408996,oil/gas,operating,105
+G100000413491,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Bayat IPP power station,L100000408997,oil/gas,operating,40
+G100000600002,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Naghlu hydroelectric plant,L100000600002,hydropower,operating,94
+G100000604221,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Baghdara hydroelectric plant,L100000600001,hydropower,pre_construction,227
+G100000604480,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kajaki 2 hydroelectric plant,L100000604252,hydropower,operating,100
+G100000604785,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Sarobi 2 hydroelectric plant,L100000600003,hydropower,announced,180
+G100000800948,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Balkh solar farm,L100000800821,utility-scale solar,construction,40
+G100000801049,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Dab Pal 4 solar farm,L100000800908,utility-scale solar,shelved,3000
+G100000801145,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Herat (DABS) solar farm,L100000800990,utility-scale solar,cancelled,25
+G100000801146,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Herat (Guzara) solar farm,L100000800991,utility-scale solar,cancelled,50
+G100000801150,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Hisar-E-Shahi Industrial Park solar farm,L100000800995,utility-scale solar,cancelled,40
+G100000801360,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Naghlu solar farm,L100000801180,utility-scale solar,operating,22.8
+G100000810804,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ayno Mena solar farm,L100000808559,utility-scale solar,cancelled,33
+G100000810805,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Badghis Solar Power Plant,L100000808560,utility-scale solar,cancelled,32
+G100000810806,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Baghlan Markazi District Solar PV Project,L100000808561,utility-scale solar,cancelled,16
+G100000810807,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Behsood solar farm,L100000808562,utility-scale solar,cancelled,60
+G100000810808,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Daman solar farm,L100000808563,utility-scale solar,cancelled,100
+G100000810809,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Dand solar farm,L100000808564,utility-scale solar,cancelled,100
+G100000810810,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Daykundi solar power plant,L100000808565,utility-scale solar,cancelled,36
+G100000810811,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Dehdadi solar project,L100000808566,utility-scale solar,cancelled,50
+G100000810812,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Dihdadi District Solar PV Project,L100000808567,utility-scale solar,cancelled,25
+G100000810813,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,East of Aybak City Solar PV Project,L100000808568,utility-scale solar,cancelled,16
+G100000810814,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Enjil solar farm,L100000808569,utility-scale solar,cancelled,100
+G100000810815,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Farah Solar Power Plant,L100000808570,utility-scale solar,cancelled,21
+G100000810816,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Farah Solar Project,L100000808571,utility-scale solar,cancelled,10
+G100000810817,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Faryab Solar Power Plant,L100000808572,utility-scale solar,cancelled,27
+G100000810818,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghazni Solar Power Plant,L100000808573,utility-scale solar,cancelled,24
+G100000810819,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghazni Solar Project,L100000808574,utility-scale solar,cancelled,15
+G100000810820,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghor Solar Power Plant,L100000808575,utility-scale solar,cancelled,50
+G100000810821,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Guzara solar farm,L100000808576,utility-scale solar,cancelled,100
+G100000810822,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Helmand Solar Project,L100000808577,utility-scale solar,cancelled,10
+G100000810823,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Hesar-e-Shahi Mini Grid Solar Plant,L100000808578,utility-scale solar,cancelled,40
+G100000810824,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabul East Solar PV Project,L100000808579,utility-scale solar,cancelled,1
+G100000810825,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Kabul Solar Park,L100000808580,utility-scale solar,cancelled,100
+G100000810826,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kama (20MW) solar farm,L100000808581,utility-scale solar,cancelled,20
+G100000810827,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kama (40MW) solar farm,L100000808582,utility-scale solar,cancelled,40
+G100000810828,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Kandahar solar farm,L100000801044,utility-scale solar,operating,10
+G100000810829,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kapisa Solar Power Plant,L100000808583,utility-scale solar,cancelled,18
+G100000810830,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Karokh solar farm,L100000808584,utility-scale solar,cancelled,100
+G100000810831,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Khogyani solar farm,L100000808585,utility-scale solar,cancelled,30
+G100000810832,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Khogyani solar farm,L100000808585,utility-scale solar,cancelled,30
+G100000810833,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Khost Solar Project,L100000808586,utility-scale solar,cancelled,10
+G100000810834,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Khulm Solar Project,L100000808587,utility-scale solar,cancelled,100
+G100000810835,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kunar Solar Project,L100000808588,utility-scale solar,cancelled,5
+G100000810836,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Kundoz City Solar PV Project,L100000808589,utility-scale solar,cancelled,10
+G100000810837,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Laghman Solar PV project,L100000808590,utility-scale solar,cancelled,80
+G100000810838,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Logar Solar Power Plant,L100000808591,utility-scale solar,cancelled,49
+G100000810839,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Marmul Solar project,L100000808592,utility-scale solar,cancelled,100
+G100000810840,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Mohmandara (10MW) solar farm,L100000808593,utility-scale solar,cancelled,10
+G100000810841,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Mohmandara (20MW) solar farm,L100000808594,utility-scale solar,cancelled,20
+G100000810842,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Mohmandara solar farm,L100000808595,utility-scale solar,cancelled,20
+G100000810843,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Mohmandara solar farm,L100000808595,utility-scale solar,cancelled,10
+G100000810844,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Mydan Haway solar farm,L100000808596,utility-scale solar,cancelled,17
+G100000810845,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Naghlo Solar PV Project,L100000808597,utility-scale solar,cancelled,10
+G100000810846,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Naghlu solar project,L100000808598,utility-scale solar,cancelled,20
+G100000810847,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Nahr-ee Shahi solar project,L100000808599,utility-scale solar,cancelled,200
+G100000810848,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Nimroz Solar Power Plant,L100000808600,utility-scale solar,cancelled,59
+G100000810849,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Noristan Solar Project,L100000808601,utility-scale solar,cancelled,5
+G100000810850,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Paktia Solar Project,L100000808602,utility-scale solar,cancelled,5
+G100000810851,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Paktika Solar Power Plant,L100000808603,utility-scale solar,cancelled,49
+G100000810852,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Panj Wahi solar farm,L100000808604,utility-scale solar,cancelled,11
+G100000810853,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Pulkhumri City Solar PV Project,L100000808605,utility-scale solar,cancelled,16
+G100000810854,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Sarepol Solar Power Plant,L100000808606,utility-scale solar,cancelled,32
+G100000810855,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Sharanah Solar PV Project,L100000808607,utility-scale solar,cancelled,5
+G100000810856,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Shiwa solar farm,L100000808608,utility-scale solar,cancelled,100
+G100000810857,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Spin Boldak solar farm,L100000808609,utility-scale solar,cancelled,14
+G100000810858,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Surkhrud solar farm,L100000808610,utility-scale solar,cancelled,20
+G100000810859,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Taliqan City Solar PV Project,L100000808611,utility-scale solar,cancelled,2
+G100000810860,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Tarakhail Solar PV Project,L100000808612,utility-scale solar,cancelled,4
+G100000810861,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Urozgan Solar PV Project,L100000808613,utility-scale solar,cancelled,5
+G100000810862,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Uruzgan Solar Power Plant,L100000808614,utility-scale solar,cancelled,31
+G100000810863,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Zabul Solar Project,L100000808615,utility-scale solar,cancelled,10
+G100000810864,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Zindajan solar farm,L100000808616,utility-scale solar,cancelled,100
+G100000833170,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kandahar (77) solar farm,L100000829381,utility-scale solar,operating,12
+G100000833171,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kandahar (Zularistan) solar farm,L100000829382,utility-scale solar,operating,12
+G100000900812,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Herat wind farm,L100000900709,wind,construction,43
+G100000901101,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Iran-Afghanistan wind farm,L100000900959,wind,shelved,25
+G100000908161,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Iran-Afghanistan wind farm,L100000900959,wind,shelved,25
+G100001019966,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Bayat IPP power station,L100000408997,oil/gas,announced,80
+G100001019967,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Bayat IPP power station,L100000408997,oil/gas,announced,80
+G100001021647,energy_plants_gem_units,AFG,point,IRN,,,,,,,true,abf-boundaries-v0.2.0,Iran-Afghanistan wind farm (Iran),L100000922852,wind,shelved,12.5
+G100001027056,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahipar hydroelectric plant,L100001022851,hydropower,operating,66
+G100001029693,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kang solar project,L100001025012,utility-scale solar,operating,9.1
+G100001029694,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Shahidi Hassas solar project,L100001025013,utility-scale solar,operating,1
+G100001029695,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,La‘L Wa Sar Jangal solar project,L100001025014,utility-scale solar,operating,1.3
+G100001051942,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kajaki 1 hydroelectric plant,L100001046054,hydropower,operating,52
+G100001053546,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,North West Kabul thermal power plant,L100001047131,oil/gas,operating,95
+G100001053626,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Tuti-Maidan power plant,L100001047181,oil/gas,construction,100
+G100001054335,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Herat wind farm,L100000900709,wind,announced,157
+G100001057899,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Baghlan power station,L100001050201,coal,announced,350
+G100001057956,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Dehdadi (DABS) solar farm,L100001050254,utility-scale solar,construction,40
+G100001071442,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Azizi Energy power station,L100001062217,oil/gas,pre_construction,3700
+G100001071453,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Kandahar City power station,L100001062224,oil/gas,operating,26.6
+G100001072766,energy_plants_gem_units,AFG,point,,,,,,,,false,abf-boundaries-v0.2.0,Salma hydroelectric plant,L100001063340,hydropower,operating,42
+G100001095765,energy_plants_gem_units,AFG,point,,,,,,,,true,abf-boundaries-v0.2.0,Takhar power station,L100001084359,coal,announced,165

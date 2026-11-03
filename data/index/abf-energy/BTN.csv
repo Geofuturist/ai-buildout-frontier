@@ -1,0 +1,31 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000600156,energy_plants_gem_units,BTN,point,,BTN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Chhukha hydroelectric plant,L100000600156,hydropower,operating,336
+G100000600157,energy_plants_gem_units,BTN,point,,BTN-1-22,,point,,,,false,abf-boundaries-v0.2.0,Dagachhu hydroelectric plant,L100000600157,hydropower,operating,126
+G100000600158,energy_plants_gem_units,BTN,point,,BTN-1-44,,point,,,,true,abf-boundaries-v0.2.0,Dorjilung hydroelectric plant,L100000600158,hydropower,pre_construction,1125
+G100000600159,energy_plants_gem_units,BTN,point,,BTN-1-34,,point,,,,true,abf-boundaries-v0.2.0,Kheng Shingkhar hydroelectric plant,L100000600159,hydropower,shelved,570
+G100000600160,energy_plants_gem_units,BTN,point,,BTN-1-TY,,point,,,,false,abf-boundaries-v0.2.0,Kholongchu hydroelectric plant,L100000600160,hydropower,pre_construction,600
+G100000600161,energy_plants_gem_units,BTN,point,,BTN-1-42,,point,,,,true,abf-boundaries-v0.2.0,Kuri Gongri hydroelectric plant,L100000600161,hydropower,pre_construction,2640
+G100000600162,energy_plants_gem_units,BTN,point,,BTN-1-32,,point,,,,false,abf-boundaries-v0.2.0,Mangdechhu hydroelectric plant,L100000600162,hydropower,operating,720
+G100000600163,energy_plants_gem_units,BTN,point,,BTN-1-33,,point,,,,false,abf-boundaries-v0.2.0,Nikachhu hydroelectric plant,L100000600163,hydropower,operating,118
+G100000600164,energy_plants_gem_units,BTN,point,,BTN-1-24,,point,,,,false,abf-boundaries-v0.2.0,Punatsangchhu I hydroelectric plant,L100000600164,hydropower,construction,1200
+G100000600165,energy_plants_gem_units,BTN,point,,BTN-1-24,,point,,,,false,abf-boundaries-v0.2.0,Punatsangchhu II hydroelectric plant,L100000600165,hydropower,operating,1020
+G100000600166,energy_plants_gem_units,BTN,point,,BTN-1-22,,point,,,,true,abf-boundaries-v0.2.0,Sankosh hydroelectric plant,L100000600166,hydropower,pre_construction,4060
+G100000600167,energy_plants_gem_units,BTN,point,,BTN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Tala hydroelectric plant,L100000600167,hydropower,operating,1020
+G100000600168,energy_plants_gem_units,BTN,point,,BTN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Wangchu hydroelectric plant,L100000600168,hydropower,pre_construction,570
+G100000604209,energy_plants_gem_units,BTN,point,,BTN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Amochu hydroelectric plant,L100000600153,hydropower,cancelled,540
+G100000604275,energy_plants_gem_units,BTN,point,,BTN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Bunakha hydroelectric plant,L100000600154,hydropower,cancelled,180
+G100000604296,energy_plants_gem_units,BTN,point,,BTN-1-34,,point,,,,true,abf-boundaries-v0.2.0,Chamkharchhu I hydroelectric plant,L100000600155,hydropower,pre_construction,770
+G100000801023,energy_plants_gem_units,BTN,point,,BTN-1-33,,point,,,,true,abf-boundaries-v0.2.0,Chumey solar farm,L100000800889,utility-scale solar,cancelled,42
+G100000801081,energy_plants_gem_units,BTN,point,,BTN-1-41,,point,,,,true,abf-boundaries-v0.2.0,Doongmanma solar farm,L100000800933,utility-scale solar,cancelled,32
+G100000801128,energy_plants_gem_units,BTN,point,,BTN-1-32,,point,,,,true,abf-boundaries-v0.2.0,Gogona solar farm,L100000800974,utility-scale solar,pre_construction,65
+G100000801579,energy_plants_gem_units,BTN,point,,BTN-1-33,,point,,,,true,abf-boundaries-v0.2.0,Shingkhar solar farm,L100000801375,utility-scale solar,cancelled,30
+G100000801675,energy_plants_gem_units,BTN,point,,BTN-1-33,,point,,,,true,abf-boundaries-v0.2.0,Tang solar farm,L100000801457,utility-scale solar,cancelled,92
+G100000801685,energy_plants_gem_units,BTN,point,,BTN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Tenchekha solar farm,L100000801466,utility-scale solar,cancelled,59
+G100000833187,energy_plants_gem_units,BTN,point,,BTN-1-24,,point,,,,false,abf-boundaries-v0.2.0,Sephu solar farm,L100000829398,utility-scale solar,operating,17.4
+G100000901569,energy_plants_gem_units,BTN,point,,BTN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Gaselo wind farm,L100000901336,wind,cancelled,23
+G100001027077,energy_plants_gem_units,BTN,point,,BTN-1-24,,point,,,,false,abf-boundaries-v0.2.0,Basochhu hydroelectric plant,L100001022872,hydropower,operating,64
+G100001027078,energy_plants_gem_units,BTN,point,,BTN-1-42,,point,,,,false,abf-boundaries-v0.2.0,Kurichhu hydroelectric plant,L100001022873,hydropower,operating,60
+G100001057118,energy_plants_gem_units,BTN,point,,BTN-1-24,,point,,,,false,abf-boundaries-v0.2.0,Sephu solar farm,L100000829398,utility-scale solar,pre_construction,5
+G100001057930,energy_plants_gem_units,BTN,point,,BTN-1-32,,point,,,,true,abf-boundaries-v0.2.0,Reliance Power and Green Digital solar farm,L100001050232,utility-scale solar,announced,500
+G100001057931,energy_plants_gem_units,BTN,point,,BTN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Jamjee solar farm,L100001050233,utility-scale solar,construction,120
+G100001062627,energy_plants_gem_units,BTN,point,IND,BTN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Jaldhaka hydroelectric plant,L100001054735,hydropower,operating,36

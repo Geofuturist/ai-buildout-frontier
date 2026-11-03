@@ -1,0 +1,12 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413499,energy_plants_gem_units,GMB,point,,GMB-1-B,,point,,,,true,abf-boundaries-v0.2.0,Goktay Bey (Karpowership) power plant,L100000409033,oil/gas,operating,36
+G100000413500,energy_plants_gem_units,GMB,point,,GMB-1-W,,point,,,,false,abf-boundaries-v0.2.0,Brikama (NAWEC) power plant,L100000409034,oil/gas,operating,20
+G100000413501,energy_plants_gem_units,GMB,point,,GMB-1-W,,point,,,,false,abf-boundaries-v0.2.0,Brikama (GEG) power plant,L100000409035,oil/gas,operating,24
+G100000413502,energy_plants_gem_units,GMB,point,,GMB-1-B,,point,,,,false,abf-boundaries-v0.2.0,Kotu power station,L100000409036,oil/gas,operating,41
+G100000800180,energy_plants_gem_units,GMB,point,,GMB-1-W,,point,,,,false,abf-boundaries-v0.2.0,Jambur solar farm,L100000800141,utility-scale solar,operating,23
+G100000800377,energy_plants_gem_units,GMB,point,,GMB-1-L,,point,,,,true,abf-boundaries-v0.2.0,Soma solar farm (The Gambia),L100000800308,utility-scale solar,pre_construction,80
+G100000800378,energy_plants_gem_units,GMB,point,,GMB-1-L,,point,,,,true,abf-boundaries-v0.2.0,Soma solar farm (The Gambia),L100000800308,utility-scale solar,pre_construction,70
+G100001021545,energy_plants_gem_units,GMB,point,,GMB-1-N,,point,,,,true,abf-boundaries-v0.2.0,The Gambia NEK onshore wind farm,L100001019119,wind,pre_construction,200
+G100001021546,energy_plants_gem_units,GMB,point,,GMB-1-W,,point,,,,true,abf-boundaries-v0.2.0,The Gambia NEK offshore wind farm,L100001019120,wind,pre_construction,350
+G100001090070,energy_plants_gem_units,GMB,point,,GMB-1-W,,point,,,,true,abf-boundaries-v0.2.0,Tanji solar farm,L100001080219,utility-scale solar,announced,5
+G100001091008,energy_plants_gem_units,GMB,point,,GMB-1-N,,point,,,,true,abf-boundaries-v0.2.0,Neo Themis solar farm,L100001080975,utility-scale solar,announced,25

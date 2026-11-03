@@ -1,0 +1,429 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000602604,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Adhikhola Storage hydroelectric plant,L100000602573,hydropower,pre_construction,180
+G100000602605,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Akhu Khola 2 hydroelectric plant,L100000602574,hydropower,pre_construction,20
+G100000602606,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ankhu Khola hydroelectric plant,L100000602575,hydropower,pre_construction,43
+G100000602607,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Arun 3 hydroelectric plant,L100000602576,hydropower,construction,900
+G100000602608,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Arun 4 hydroelectric plant,L100000602577,hydropower,announced,490
+G100000602609,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Badigad Khola hydroelectric plant,L100000602578,hydropower,pre_construction,25
+G100000602610,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bagmati Nadi hydroelectric plant,L100000602579,hydropower,operating,22
+G100000602611,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Begnas-Rupa hydroelectric plant,L100000602580,hydropower,pre_construction,150
+G100000602612,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Betan Karnali hydroelectric plant,L100000602581,hydropower,pre_construction,439
+G100000602613,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bharbung hydroelectric plant,L100000602582,hydropower,announced,512
+G100000602614,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bheri 1 hydroelectric plant,L100000602583,hydropower,pre_construction,270
+G100000602616,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bhotekoshi 1 hydroelectric plant,L100000602585,hydropower,construction,40
+G100000602617,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Botekoshi 5 hydroelectric plant,L100000602586,hydropower,pre_construction,62
+G100000602618,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Budhi Gandaki hydroelectric plant,L100000602587,hydropower,pre_construction,1200
+G100000602619,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Budhi Gandaki Ka hydroelectric plant,L100000602588,hydropower,pre_construction,130
+G100000602620,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Budhi Gandaki Nadi hydroelectric plant,L100000602589,hydropower,pre_construction,91
+G100000602622,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Budum Khola hydroelectric plant,L100000602591,hydropower,pre_construction,15
+G100000602623,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Chainpur Seti hydroelectric plant,L100000602592,hydropower,construction,210
+G100000602624,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Chameliya hydroelectric plant,L100000602593,hydropower,operating,30
+G100000602625,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Chilime hydroelectric plant,L100000602594,hydropower,operating,22
+G100000602626,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Chunchet Syar Khola hydroelectric plant,L100000602595,hydropower,pre_construction,56
+G100000602627,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dadagau Khalanga Bheri hydroelectric plant,L100000602596,hydropower,announced,97
+G100000602628,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Devighat hydroelectric plant,L100000602597,hydropower,operating,14
+G100000602630,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dordi Khola hydroelectric plant,L100000602599,hydropower,operating,27
+G100000602631,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudh Khola hydroelectric plant,L100000602600,hydropower,construction,65
+G100000602634,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudhkoshi 6 hydroelectric plant,L100000602603,hydropower,pre_construction,171
+G100000602635,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudhkoshi 9 hydroelectric plant,L100000602604,hydropower,cancelled,166
+G100000602636,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudhkoshi hydroelectric plant,L100000602605,hydropower,pre_construction,600
+G100000602638,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Durbang Myagdi Khola hydroelectric plant,L100000602607,hydropower,construction,25
+G100000602639,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gandak hydroelectric plant,L100000602608,hydropower,operating,15
+G100000602642,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hewa Khola A hydroelectric plant,L100000602611,hydropower,operating,15
+G100000602643,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Himchuli Dordi hydroelectric plant,L100000602612,hydropower,construction,57
+G100000602644,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Humla Karnali Cascade hydroelectric plant,L100000602613,hydropower,announced,675
+G100000602646,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ilep Tatopani Khola hydroelectric plant,L100000602615,hydropower,pre_construction,25
+G100000602647,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Irkhuwa Khola B hydroelectric plant,L100000602616,hydropower,construction,16
+G100000602648,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Isuwa Khola hydroelectric plant,L100000602617,hydropower,construction,97
+G100000602649,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Isuwa Khola PRoR Cascade hydroelectric plant,L100000602618,hydropower,construction,38
+G100000602650,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jagdulla hydroelectric plant,L100000602619,hydropower,construction,106
+G100000602651,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jaldigad hydroelectric plant,L100000602620,hydropower,pre_construction,21
+G100000602652,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Jhimruk Khola hydroelectric plant,L100000602621,hydropower,operating,12
+G100000602653,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jum Khola hydroelectric plant,L100000602622,hydropower,construction,56
+G100000602654,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabeli 3 hydroelectric plant,L100000602623,hydropower,operating,22
+G100000602655,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kabeli B1 hydroelectric plant,L100000602624,hydropower,operating,25
+G100000602659,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaligandaki A hydroelectric plant,L100000602628,hydropower,operating,144
+G100000602661,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaligandaki Storage hydroelectric plant,L100000602630,hydropower,announced,640
+G100000602663,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kankai hydroelectric plant,L100000602632,hydropower,announced,90
+G100000602665,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Karuwa Seti hydroelectric plant,L100000602634,hydropower,operating,32
+G100000602666,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kasuwa Khola hydroelectric plant,L100000602635,hydropower,construction,45
+G100000602667,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Khani Khola - Dolakha hydroelectric plant,L100000602636,hydropower,construction,30
+G100000602668,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Khani Khola 1 hydroelectric plant,L100000602637,hydropower,construction,40
+G100000602670,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Khimti I hydroelectric plant,L100000602639,hydropower,operating,60
+G100000602671,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Khimti II hydroelectric plant,L100000602640,hydropower,construction,49
+G100000602672,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Khimti Shivalaya Storage hydroelectric plant,L100000602641,hydropower,announced,1216
+G100000602674,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kimathanka Arun hydroelectric plant,L100000602643,hydropower,pre_construction,454
+G100000602675,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kokhajor hydroelectric plant,L100000602644,hydropower,announced,63
+G100000602676,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kule Khani III hydroelectric plant,L100000602645,hydropower,operating,14
+G100000602677,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kulekhani I hydroelectric plant,L100000602646,hydropower,operating,60
+G100000602678,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kulekhani II hydroelectric plant,L100000602647,hydropower,operating,32
+G100000602680,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kunaban Khola hydroelectric plant,L100000602649,hydropower,pre_construction,20
+G100000602681,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Landruk Modi hydroelectric plant,L100000602650,hydropower,pre_construction,86
+G100000602682,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lantang Khola Yeti hydroelectric plant,L100000602651,hydropower,pre_construction,310
+G100000602683,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lapche Khola hydroelectric plant,L100000602652,hydropower,construction,160
+G100000602684,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Likhu 1 hydroelectric plant,L100000602653,hydropower,operating,77
+G100000602685,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Likhu 2 hydroelectric plant,L100000602654,hydropower,operating,55
+G100000602686,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Likhu 4 hydroelectric plant,L100000602655,hydropower,operating,52
+G100000602687,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Likhu Khola A hydroelectric plant,L100000602656,hydropower,operating,51
+G100000602689,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Arun hydroelectric plant,L100000602658,hydropower,announced,679
+G100000602690,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Badigad Storage hydroelectric plant,L100000602659,hydropower,announced,350
+G100000602691,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Barun Khola hydroelectric plant,L100000602660,hydropower,pre_construction,132
+G100000602692,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Hewa hydroelectric plant,L100000602661,hydropower,operating,22
+G100000602693,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Irkhuwa Khola hydroelectric plant,L100000602662,hydropower,construction,14
+G100000602694,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Khare hydroelectric plant,L100000602663,hydropower,operating,11
+G100000602696,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Manang Marsyangdi hydroelectric plant,L100000602665,hydropower,pre_construction,139
+G100000602697,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lower Modi 1 hydroelectric plant,L100000602666,hydropower,operating,10
+G100000602698,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Modi Khola hydroelectric plant,L100000602667,hydropower,operating,20
+G100000602699,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Nyadi hydroelectric plant,L100000602668,hydropower,construction,13
+G100000602700,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lower Seti hydroelectric plant,L100000602669,hydropower,pre_construction,126
+G100000602701,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lower Solu hydroelectric plant,L100000602670,hydropower,operating,82
+G100000602702,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Madhya Bhotekoshi hydroelectric plant,L100000602671,hydropower,operating,102
+G100000602703,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Madhya Marsyangdi hydroelectric plant,L100000602672,hydropower,operating,70
+G100000602707,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mai hydroelectric plant,L100000602676,hydropower,operating,22
+G100000602708,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Manang Marsyangdi hydroelectric plant,L100000602677,hydropower,construction,135
+G100000602709,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Marsyangd hydroelectric plant,L100000602678,hydropower,operating,69
+G100000602710,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Marsyangdi Besi hydroelectric plant,L100000602679,hydropower,construction,50
+G100000602711,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Marsyangdi River hydroelectric plant,L100000602680,hydropower,pre_construction,90
+G100000602712,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Kabeli hydroelectric plant,L100000602681,hydropower,construction,28
+G100000602713,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mathillo Thulo Khola A hydroelectric plant,L100000602682,hydropower,pre_construction,15
+G100000602716,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,United Mewakhola hydroelectric plant,L100000602684,hydropower,construction,50
+G100000602718,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Middle Chameliya hydroelectric plant,L100000602686,hydropower,construction,35
+G100000602719,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Middle Hongu Khola B hydroelectric plant,L100000602687,hydropower,construction,23
+G100000602720,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Middle Kaligandaki hydroelectric plant,L100000602688,hydropower,construction,54
+G100000602721,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Middle Mewa hydroelectric plant,L100000602689,hydropower,construction,74
+G100000602722,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Middle Modi hydroelectric plant,L100000602690,hydropower,operating,18
+G100000602723,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Middle Tamor hydroelectric plant,L100000602691,hydropower,operating,73
+G100000602724,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Midim 1 hydroelectric plant,L100000602692,hydropower,construction,13
+G100000602725,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mistri Khola 2 hydroelectric plant,L100000602693,hydropower,mothballed,12
+G100000602726,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mistri Khola hydroelectric plant,L100000602694,hydropower,operating,42
+G100000602727,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Modi Khola hydroelectric plant,L100000602695,hydropower,operating,15
+G100000602728,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mristi Khola hydroelectric plant,L100000602696,hydropower,operating,42
+G100000602730,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mugu Karnali hydroelectric plant,L100000602698,hydropower,pre_construction,141
+G100000602731,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mugu Karnali Storage hydroelectric plant,L100000602699,hydropower,pre_construction,1902
+G100000602732,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Myagdi Khola hydroelectric plant,L100000602700,hydropower,construction,57
+G100000602733,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nalsyaugad hydroelectric plant,L100000602701,hydropower,pre_construction,410
+G100000602734,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Namarjun Madi hydroelectric plant,L100000602702,hydropower,operating,12
+G100000602735,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Namlan Khola hydroelectric plant,L100000602703,hydropower,pre_construction,135
+G100000602736,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Naumure hydroelectric plant,L100000602704,hydropower,announced,218
+G100000602737,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nilgiri Khola 2 hydroelectric plant,L100000602705,hydropower,operating,71
+G100000602738,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nilgiri Khola hydroelectric plant,L100000602706,hydropower,operating,38
+G100000602739,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nupche Likhu hydroelectric plant,L100000602707,hydropower,construction,58
+G100000602740,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nyadi Khola hydroelectric plant,L100000602708,hydropower,operating,30
+G100000602742,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nyasim hydroelectric plant,L100000602710,hydropower,construction,35
+G100000602743,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Palun Khola Small hydroelectric plant,L100000602711,hydropower,pre_construction,21
+G100000602744,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Phalakhu Khola hydroelectric plant,L100000602712,hydropower,construction,15
+G100000602745,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Phukot Karnali hydroelectric plant,L100000602713,hydropower,pre_construction,480
+G100000602746,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rahughat hydroelectric plant,L100000602714,hydropower,construction,40
+G100000602747,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rahughat Mangale hydroelectric plant,L100000602715,hydropower,operating,36
+G100000602748,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rasuwa Bhotekoshi hydroelectric plant,L100000602716,hydropower,construction,120
+G100000602749,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rasuwagadhi hydroelectric plant,L100000602717,hydropower,operating,111
+G100000602750,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rolwaling Khola hydroelectric plant,L100000602718,hydropower,pre_construction,88
+G100000602751,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ruru Banchu 1 hydroelectric plant,L100000602719,hydropower,pre_construction,16
+G100000602752,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ruru Banchu Khola 2 hydroelectric plant,L100000602720,hydropower,pre_construction,12
+G100000602753,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sabha Khola B hydroelectric plant,L100000602721,hydropower,construction,15
+G100000602754,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sagu Khola hydroelectric plant,L100000602722,hydropower,operating,20
+G100000602755,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sanjen hydroelectric plant,L100000602723,hydropower,operating,43
+G100000602756,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sanjen Khola hydroelectric plant,L100000602724,hydropower,operating,78
+G100000602758,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapta Koshi High Dam hydroelectric plant,L100000602726,hydropower,pre_construction,3000
+G100000602760,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Seti Nadi 3 hydroelectric plant,L100000602728,hydropower,pre_construction,87
+G100000602761,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Seti River 6 hydroelectric plant,L100000602729,hydropower,shelved,450
+G100000602762,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Setikhola hydroelectric plant,L100000602730,hydropower,construction,22
+G100000602764,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Simbuwa Khola hydroelectric plant,L100000602732,hydropower,pre_construction,70
+G100000602765,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Singati Khola hydroelectric plant,L100000602733,hydropower,operating,25
+G100000602766,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sipring Khola hydroelectric plant,L100000602734,hydropower,operating,10
+G100000602767,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Solu hydroelectric plant,L100000602735,hydropower,operating,24
+G100000602768,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Solu Khola hydroelectric plant,L100000602736,hydropower,operating,86
+G100000602769,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sun Koshi hydroelectric plant,L100000602737,hydropower,operating,11
+G100000602777,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Super Inkhu hydroelectric plant,L100000602745,hydropower,pre_construction,24
+G100000602779,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Super Kabeli Khola hydroelectric plant,L100000602747,hydropower,operating,12
+G100000602780,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Super Lower Bagmati hydroelectric plant,L100000602748,hydropower,construction,42
+G100000602782,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Super Melamchi hydroelectric plant,L100000602750,hydropower,pre_construction,24
+G100000602783,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Super Nyadi hydroelectric plant,L100000602751,hydropower,construction,43
+G100000602784,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Super Tamor hydroelectric plant,L100000602752,hydropower,pre_construction,166
+G100000602785,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Super Trishuli hydroelectric plant,L100000602753,hydropower,construction,100
+G100000602786,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Syar Khola hydroelectric plant,L100000602754,hydropower,pre_construction,45
+G100000602787,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamakoshi 3 hydroelectric plant,L100000602755,hydropower,announced,200
+G100000602788,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamakoshi 5 hydroelectric plant,L100000602756,hydropower,construction,100
+G100000602789,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamakoshi 9 hydroelectric plant,L100000602757,hydropower,cancelled,24
+G100000602790,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamor Khola 5 hydroelectric plant,L100000602758,hydropower,pre_construction,38
+G100000602793,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tanahu hydroelectric plant,L100000602761,hydropower,construction,140
+G100000602794,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Thapa Khola hydroelectric plant,L100000602762,hydropower,operating,11
+G100000602795,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Thulo Khola hydroelectric plant,L100000602763,hydropower,operating,21
+G100000602796,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tila 1 hydroelectric plant,L100000602764,hydropower,pre_construction,440
+G100000602797,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tila 2 hydroelectric plant,L100000602765,hydropower,pre_construction,420
+G100000602801,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Trishuli hydroelectric plant,L100000602769,hydropower,operating,24
+G100000602803,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Arun hydroelectric plant,L100000602771,hydropower,pre_construction,1061
+G100000602804,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Balephi A hydroelectric plant,L100000602772,hydropower,operating,36
+G100000602805,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mathillo Balephi hydroelectric plant,L100000602773,hydropower,construction,46
+G100000602806,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Bheri hydroelectric plant,L100000602774,hydropower,pre_construction,325
+G100000602807,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Bhote Koshi hydroelectric plant,L100000602775,hydropower,operating,45
+G100000602808,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Brahmayeni hydroelectric plant,L100000602776,hydropower,pre_construction,15
+G100000602809,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Chaku A hydroelectric plant,L100000602777,hydropower,operating,22
+G100000602811,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Dordi A hydroelectric plant,L100000602779,hydropower,operating,25
+G100000602812,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Irkhuwa hydroelectric plant,L100000602780,hydropower,pre_construction,15
+G100000602816,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Karnali hydroelectric plant,L100000602784,hydropower,announced,900
+G100000602817,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Khimti hydroelectric plant,L100000602785,hydropower,operating,12
+G100000602819,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Lapche Khola hydroelectric plant,L100000602787,hydropower,pre_construction,52
+G100000602820,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Madi 0 hydroelectric plant,L100000602788,hydropower,pre_construction,43
+G100000602821,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Madi hydroelectric plant,L100000602789,hydropower,operating,25
+G100000602822,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Mai hydroelectric plant,L100000602790,hydropower,operating,12
+G100000602824,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Maiwa hydroelectric plant,L100000602792,hydropower,pre_construction,18
+G100000602825,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Marsyangdi 1 hydroelectric plant,L100000602793,hydropower,pre_construction,102
+G100000602826,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Marsyangdi 2 hydroelectric plant,L100000602794,hydropower,pre_construction,600
+G100000602827,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Marsyangdi A hydroelectric plant,L100000602795,hydropower,operating,50
+G100000602830,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Mugu Karnali hydroelectric plant,L100000602798,hydropower,pre_construction,306
+G100000602831,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Myagdi hydroelectric plant,L100000602799,hydropower,construction,37
+G100000602832,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Myagdi I hydroelectric plant,L100000602800,hydropower,construction,54
+G100000602834,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Rahughat hydroelectric plant,L100000602802,hydropower,operating,48
+G100000602837,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Seti 1 hydroelectric plant,L100000602805,hydropower,pre_construction,13
+G100000602838,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Seti hydroelectric plant,L100000602806,hydropower,pre_construction,20
+G100000602840,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Tamakoshi hydroelectric plant,L100000602808,hydropower,operating,456
+G100000602841,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Tamor A hydroelectric plant,L100000602809,hydropower,pre_construction,72
+G100000602842,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Tamor hydroelectric plant,L100000602810,hydropower,construction,255
+G100000602845,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Trishuli 3A hydroelectric plant,L100000602813,hydropower,operating,60
+G100000602846,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Trishuli 3B hydroelectric plant,L100000602814,hydropower,construction,37
+G100000602847,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Uttar Ganga hydroelectric plant,L100000602815,hydropower,pre_construction,828
+G100000602848,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,West Seti hydroelectric plant,L100000602816,hydropower,announced,750
+G100000604131,energy_plants_gem_units,NPL,point,IND,,,,,,,true,abf-boundaries-v0.2.0,Pancheshwar hydroelectric plant,L100000604092,hydropower,pre_construction,6480
+G100000604196,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Aayu Chhatigad hydroelectric plant,L100000602572,hydropower,announced,14
+G100000604251,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bheri 2 hydroelectric plant,L100000602584,hydropower,announced,256
+G100000604252,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bheri Nadi 8 hydroelectric plant,L100000604175,hydropower,cancelled,140
+G100000604353,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dordi 1 hydroelectric plant,L100000602598,hydropower,operating,12
+G100000604356,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudhkoshi 2 - Jaleswar hydroelectric plant,L100000602601,hydropower,construction,70
+G100000604357,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudhkoshi 5 hydroelectric plant,L100000602602,hydropower,pre_construction,110
+G100000604358,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudhkunda Khola hydroelectric plant,L100000602606,hydropower,operating,12
+G100000604393,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghar Khola hydroelectric plant,L100000602609,hydropower,operating,14
+G100000604394,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghunsa Khola (Remit Hydro) hydroelectric plant,L100000602610,hydropower,construction,78
+G100000604443,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ikhuwa Khola hydroelectric plant,L100000602614,hydropower,pre_construction,36
+G100000604485,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kalanga hydroelectric plant,L100000602625,hydropower,operating,15
+G100000604486,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kali Gandaki B hydroelectric plant,L100000602626,hydropower,announced,650
+G100000604487,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kali Gandaki Kowan hydroelectric plant,L100000602627,hydropower,cancelled,400
+G100000604489,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaligandaki Gorge hydroelectric plant,L100000602629,hydropower,pre_construction,180
+G100000604490,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaligandaki Upper hydroelectric plant,L100000602631,hydropower,cancelled,65
+G100000604498,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Karnali Chisapani hydroelectric plant,L100000602633,hydropower,shelved,10800
+G100000604507,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Khare hydroelectric plant,L100000602638,hydropower,pre_construction,24
+G100000604525,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kulekhani Sisneri hydroelectric plant,L100000602648,hydropower,cancelled,100
+G100000604570,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lower Likhu hydroelectric plant,L100000602664,hydropower,operating,28
+G100000604583,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Madi Storage hydroelectric plant,L100000602673,hydropower,cancelled,156
+G100000604584,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Madkyu Khola hydroelectric plant,L100000604095,hydropower,operating,13
+G100000604585,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Madme Khola hydroelectric plant,L100000602675,hydropower,construction,24
+G100000604609,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maya Khola hydroelectric plant,L100000602683,hydropower,operating,15
+G100000604622,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mid Hongu Khola A hydroelectric plant,L100000602685,hydropower,construction,22
+G100000604640,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mudi Khola hydroelectric plant,L100000602697,hydropower,pre_construction,15
+G100000604678,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nyadi Phidi hydroelectric plant,L100000602709,hydropower,construction,21
+G100000604784,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sapta Gandaki hydroelectric plant,L100000602725,hydropower,cancelled,225
+G100000604795,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Seti hydroelectric plant,L100000602727,hydropower,operating,25
+G100000604800,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sharada Babai Storage hydroelectric plant,L100000602731,hydropower,shelved,93
+G100000604838,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunigad hydroelectric plant,L100000602738,hydropower,construction,11
+G100000604839,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sunkoshi 2 hydroelectric plant,L100000602739,hydropower,cancelled,1116
+G100000604840,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunkoshi 3 hydroelectric plant,L100000602740,hydropower,announced,683
+G100000604842,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Super Aankhu Khola hydroelectric plant,L100000602741,hydropower,construction,24
+G100000604843,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Super Budhigandaki hydroelectric plant,L100000602742,hydropower,announced,52
+G100000604844,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Super Dordi hydroelectric plant,L100000602743,hydropower,operating,54
+G100000604845,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Super Humla Karnali Nadi hydroelectric plant,L100000602744,hydropower,announced,153
+G100000604846,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Super Kabeli Khola A hydroelectric plant,L100000602746,hydropower,operating,14
+G100000604847,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Super Madi hydroelectric plant,L100000602749,hydropower,operating,44
+G100000604848,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Surke Dudhkoshi hydroelectric plant,L100000604365,hydropower,pre_construction,188
+G100000604856,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamor Mewa hydroelectric plant,L100000602759,hydropower,pre_construction,128
+G100000604857,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tamor Storage hydroelectric plant,L100000602760,hydropower,announced,756
+G100000604883,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tiplyang Kaligandaki hydroelectric plant,L100000602766,hydropower,construction,58
+G100000604886,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tom Dogar - Budhi Gandaki hydroelectric plant,L100000602767,hydropower,cancelled,43
+G100000604891,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Trishuli Galchi hydroelectric plant,L100000602768,hydropower,announced,30
+G100000604906,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Ankhu Khola hydroelectric plant,L100000602770,hydropower,pre_construction,38
+G100000604907,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Chameliya hydroelectric plant,L100000602778,hydropower,operating,40
+G100000604910,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Jhimruk Storage hydroelectric plant,L100000602781,hydropower,shelved,100
+G100000604911,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Kabeli 2 hydroelectric plant,L100000602782,hydropower,pre_construction,23
+G100000604912,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Kalangad hydroelectric plant,L100000602783,hydropower,operating,38
+G100000604913,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Khudi hydroelectric plant,L100000602786,hydropower,construction,21
+G100000604915,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Mailun Khola hydroelectric plant,L100000602791,hydropower,operating,14
+G100000604916,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Modi A hydroelectric plant,L100000602796,hydropower,construction,42
+G100000604917,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Modi Cascade hydroelectric plant,L100000602797,hydropower,pre_construction,18
+G100000604919,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Nyasim Khola hydroelectric plant,L100000602801,hydropower,pre_construction,43
+G100000604920,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Sanjen hydroelectric plant,L100000602803,hydropower,operating,15
+G100000604921,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Sankhuwa Khola hydroelectric plant,L100000602804,hydropower,pre_construction,40
+G100000604923,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Upper Solu Khola hydroelectric plant,L100000602807,hydropower,operating,20
+G100000604925,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Trishuli 1 hydroelectric plant,L100000602811,hydropower,construction,216
+G100000604926,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Trishuli 2 hydroelectric plant,L100000602812,hydropower,construction,102
+G100000801071,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Devighat solar farm,L100000800924,utility-scale solar,operating,25
+G100001030448,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Beni Kaligandaki hydroelectric plant,L100001025657,hydropower,pre_construction,50
+G100001030616,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bheri Babai hydroelectric plant,L100001025737,hydropower,construction,46
+G100001030623,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mewa Khola (Union Mewa Hydro) hydroelectric plant,L100001025747,hydropower,pre_construction,23
+G100001030719,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Surainaka hydroelectric plant,L100001025812,hydropower,announced,55
+G100001030813,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ghunsa Khola (RM Group) hydroelectric plant,L100001025824,hydropower,announced,156
+G100001030815,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Barun River hydroelectric plant,L100001025826,hydropower,announced,109
+G100001030817,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Yanma Khola hydroelectric plant,L100001025828,hydropower,shelved,64
+G100001030825,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bheri 4 hydroelectric plant,L100001025830,hydropower,cancelled,300
+G100001030826,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Chujung Khola hydroelectric plant,L100001025832,hydropower,construction,48
+G100001030829,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dudhkoshi 10 hydroelectric plant,L100001025833,hydropower,shelved,75
+G100001030831,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Humla Karnali hydroelectric plant,L100001025835,hydropower,announced,62
+G100001030832,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Humla Karnali 1 hydroelectric plant,L100001025836,hydropower,pre_construction,235
+G100001030833,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Humla Karnali 2 hydroelectric plant,L100001025837,hydropower,pre_construction,335
+G100001030834,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Marshyangdi 7 hydroelectric plant,L100001025839,hydropower,announced,50
+G100001030835,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nar Khola hydroelectric plant,L100001025840,hydropower,pre_construction,59
+G100001030836,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Upper Sani Bheri hydroelectric plant,L100001025841,hydropower,announced,90
+G100001030837,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rukum Sani Bheri hydroelectric plant,L100001025842,hydropower,announced,45
+G100001030838,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sani Bheri hydroelectric plant,L100001025843,hydropower,pre_construction,45
+G100001030839,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sani Bheri 3 hydroelectric plant,L100001025844,hydropower,pre_construction,47
+G100001047977,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kohalpur and Banganga solar farm,L100001042679,utility-scale solar,pre_construction,250
+G100001047978,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nepalgunj solar farm I,L100001042680,utility-scale solar,announced,100
+G100001047979,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jhapa Saurya Vidyut Aayojana solar farm,L100001042681,utility-scale solar,announced,100
+G100001047980,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Saurya Vidyut Aayojana Rolpa solar farm,L100001042682,utility-scale solar,announced,50
+G100001047981,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Arghakhachi solar farm,L100001042683,utility-scale solar,announced,50
+G100001047982,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rolpa solar farm,L100001042684,utility-scale solar,announced,50
+G100001047983,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Khungri solar farm,L100001042685,utility-scale solar,announced,50
+G100001047984,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhalkebar solar farm,L100001042686,utility-scale solar,announced,50
+G100001047985,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kushaha solar farm,L100001042687,utility-scale solar,announced,50
+G100001047986,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kohalpur solar farm,L100001042688,utility-scale solar,pre_construction,40
+G100001047987,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bhurigau solar farm,L100001042689,utility-scale solar,pre_construction,40
+G100001047988,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Godawari - Attariya solar farm,L100001042690,utility-scale solar,pre_construction,40
+G100001047989,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kapilvastu 30 MW solar farm,L100001042691,utility-scale solar,pre_construction,30
+G100001047990,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pahalmanpur solar farm,L100001042692,utility-scale solar,pre_construction,30
+G100001047991,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anand Barju solar farm,L100001042693,utility-scale solar,announced,25
+G100001047992,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kabhra Hill solar farm,L100001042694,utility-scale solar,announced,25
+G100001047993,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gulariya solar farm,L100001042695,utility-scale solar,pre_construction,25
+G100001047994,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Nepalgunj solar farm II,L100001042696,utility-scale solar,pre_construction,25
+G100001047995,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dullu Malika Saurya Vidyut Aayojana solar project,L100001042697,utility-scale solar,pre_construction,15
+G100001047996,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dharamnagar solar project I,L100001042698,utility-scale solar,operating,15
+G100001047997,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anand Rangeli solar project,L100001042699,utility-scale solar,announced,10
+G100001047998,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anand Gramthan solar project,L100001042700,utility-scale solar,announced,10
+G100001047999,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Eastern solar project,L100001042701,utility-scale solar,announced,10
+G100001048000,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bright solar project,L100001042702,utility-scale solar,announced,10
+G100001048001,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamahi 1 solar project,L100001042703,utility-scale solar,pre_construction,10
+G100001048002,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ganeshpur solar project,L100001042704,utility-scale solar,pre_construction,10
+G100001048003,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamahi solar project,L100001042705,utility-scale solar,pre_construction,10
+G100001048004,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Belbari On Grid solar project,L100001042706,utility-scale solar,announced,10
+G100001048005,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Farahadawa solar project,L100001042707,utility-scale solar,announced,10
+G100001048006,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lahan solar farm I,L100001042708,utility-scale solar,announced,10
+G100001048007,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhalkebar Janda Devi Saurya Vidyut Aayojana solar project,L100001042709,utility-scale solar,announced,10
+G100001048008,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Udayapur On Grid Saurya Vidyut Aayojana solar project,L100001042710,utility-scale solar,pre_construction,10
+G100001048009,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kharbang Saurya Vidyut Aayojana solar project,L100001042711,utility-scale solar,pre_construction,10
+G100001048010,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kharbang Saurya Vidyut Aayojana solar project,L100001042711,utility-scale solar,pre_construction,10
+G100001048011,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Saurya Vidyut Aayojana solar project,L100001042712,utility-scale solar,pre_construction,10
+G100001048012,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Parwat Saurya Vidyut Aayojana solar project,L100001042713,utility-scale solar,pre_construction,10
+G100001048013,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Parwat Saurya Vidyut Aayojana solar project,L100001042713,utility-scale solar,pre_construction,10
+G100001048014,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bheri solar project,L100001042714,utility-scale solar,pre_construction,10
+G100001048015,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamahi Saurya Vidyut Aayojana I solar project,L100001042715,utility-scale solar,pre_construction,10
+G100001048016,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Arga Saurya Vidyut Aayojana solar project,L100001042716,utility-scale solar,pre_construction,10
+G100001048017,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shantinagar solar project,L100001042717,utility-scale solar,pre_construction,10
+G100001048018,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Attariya solar project,L100001042718,utility-scale solar,pre_construction,10
+G100001048019,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Attariya solar project,L100001042718,utility-scale solar,pre_construction,10
+G100001048020,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kailali solar project,L100001042719,utility-scale solar,pre_construction,10
+G100001048021,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kailali solar project,L100001042719,utility-scale solar,pre_construction,10
+G100001048022,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Solududhakuna solar project,L100001042720,utility-scale solar,pre_construction,10
+G100001048023,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lalbandhi solar project,L100001042721,utility-scale solar,pre_construction,10
+G100001048024,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Jhimruk On Grid solar project,L100001042722,utility-scale solar,pre_construction,10
+G100001048025,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pratappur solar project,L100001042723,utility-scale solar,pre_construction,10
+G100001048026,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Shivasatakshi Jhapa solar project,L100001042724,utility-scale solar,operating,10
+G100001048027,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dharamnagar solar project II,L100001042725,utility-scale solar,operating,10
+G100001048028,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mithila solar project I,L100001042726,utility-scale solar,construction,10
+G100001048029,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kapilbastu solar project,L100001042727,utility-scale solar,construction,10
+G100001048030,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Raniyapur solar project,L100001042728,utility-scale solar,operating,10
+G100001048031,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Banke solar project,L100001042729,utility-scale solar,operating,10
+G100001048032,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaurigunj solar project,L100001042730,utility-scale solar,announced,10
+G100001048033,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Subha solar project,L100001042731,utility-scale solar,pre_construction,9.9
+G100001048034,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bhrikuti solar project,L100001042732,utility-scale solar,construction,9
+G100001048035,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Butwal solar project,L100001042733,utility-scale solar,operating,8.5
+G100001048036,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kathmandu solar project I,L100001042734,utility-scale solar,operating,8.3
+G100001048037,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Parwanipur solar project,L100001042735,utility-scale solar,announced,8
+G100001048038,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Duhabi solar project I,L100001042736,utility-scale solar,pre_construction,8
+G100001048039,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Duhabi solar project II,L100001042737,utility-scale solar,construction,8
+G100001048040,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Jira Bhawani Sedawa solar project,L100001042738,utility-scale solar,operating,7.7
+G100001048041,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tulsi Saurya Vidyut Aayojana solar project,L100001042739,utility-scale solar,pre_construction,7.5
+G100001048042,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalikhola solar project I,L100001042740,utility-scale solar,announced,7
+G100001048043,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Morang solar project,L100001042741,utility-scale solar,operating,6.8
+G100001048044,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Durbarmarga Kathmandu solar project,L100001042742,utility-scale solar,operating,6.5
+G100001048045,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gandak solar project,L100001042743,utility-scale solar,pre_construction,5.8
+G100001048046,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kathmandu solar project II,L100001042744,utility-scale solar,operating,5.1
+G100001048047,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Anarmani solar project,L100001042745,utility-scale solar,announced,5
+G100001048048,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Manpur solar project,L100001042746,utility-scale solar,announced,5
+G100001048049,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Utkrishta Attariya Saurya Vidyut Aayojana solar project,L100001042747,utility-scale solar,pre_construction,5
+G100001048050,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mithila solar project II,L100001042748,utility-scale solar,pre_construction,5
+G100001048051,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhalkebar solar project I,L100001042749,utility-scale solar,pre_construction,5
+G100001048052,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Baigundhara solar project,L100001042750,utility-scale solar,construction,5
+G100001048053,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nawalpara solar project,L100001042751,utility-scale solar,operating,5
+G100001048054,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bel Chautara solar project,L100001042752,utility-scale solar,operating,5
+G100001048055,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Som Radha Krishna solar project,L100001042753,utility-scale solar,operating,4.4
+G100001048056,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lahan solar farm II,L100001042754,utility-scale solar,pre_construction,4
+G100001048057,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Chandranigahpur solar project,L100001042755,utility-scale solar,operating,4
+G100001048058,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Durbarmarg Kathmandu solar project,L100001042756,utility-scale solar,operating,3.1
+G100001048059,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gami solar project,L100001042757,utility-scale solar,pre_construction,3
+G100001048060,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalikhola solar project II,L100001042758,utility-scale solar,pre_construction,3
+G100001048061,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dhalkebar solar project II,L100001042759,utility-scale solar,operating,3
+G100001048062,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,DDB Saurya Vidyut Aayojana solar project,L100001042760,utility-scale solar,operating,2.3
+G100001048063,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jhupra Saurya Vidyut solar project,L100001042761,utility-scale solar,pre_construction,2
+G100001048064,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ramgram Nawalparasi solar project,L100001042762,utility-scale solar,operating,2
+G100001048065,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Madhya Marsyangdi solar project,L100001042763,utility-scale solar,pre_construction,1.6
+G100001048066,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nuwakot solar project,L100001042764,utility-scale solar,operating,1.4
+G100001048067,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Birendranagar Surkhet solar project,L100001042765,utility-scale solar,pre_construction,1.2
+G100001048068,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Juropani Saurya Urja Pariyojana solar project,L100001042766,utility-scale solar,pre_construction,1
+G100001048069,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dhalkebar solar project III,L100001042767,utility-scale solar,operating,1
+G100001048070,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Simara solar project,L100001042768,utility-scale solar,operating,1
+G100001048071,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gadhwa solar project,L100001042769,utility-scale solar,announced,1
+G100001048072,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Malta solar project,L100001042770,utility-scale solar,announced,1
+G100001048073,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwaldubba solar project,L100001042771,utility-scale solar,announced,1
+G100001048074,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishnu solar project,L100001042772,utility-scale solar,operating,1
+G100001058853,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Greenzo Energy solar farm,L100001051064,utility-scale solar,announced,120
+G100001070992,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Balephi Khola hydroelectric plant,L100001061895,hydropower,pre_construction,40
+G100001071108,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Marsyangdi III hydroelectric plant,L100001061988,hydropower,announced,41
+G100001071132,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sankhuwa Khola hydroelectric plant,L100001062012,hydropower,pre_construction,41
+G100001071136,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lower Hongu Khola hydroelectric plant,L100001062016,hydropower,announced,30
+G100001071175,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bhimdang hydroelectric plant,L100001062050,hydropower,announced,25
+G100001071302,energy_plants_gem_units,NPL,point,,,,,,,,true,abf-boundaries-v0.2.0,Lapche Tamakoshi hydroelectric plant,L100001062119,hydropower,pre_construction,42
+G100001090381,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dhalkebar 2 solar project,L100001080460,utility-scale solar,operating,1
+G100001090382,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lamahi Saurya Vidyut Aayojana solar project II,L100001080461,utility-scale solar,pre_construction,10
+G100001090383,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Gadhawa solar project,L100001080462,utility-scale solar,announced,1
+G100001090384,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Baika solar project,L100001080463,utility-scale solar,announced,5
+G100001090385,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Markhu solar project,L100001080464,utility-scale solar,announced,3.8
+G100001090386,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dhalkebar solar project,L100001080465,utility-scale solar,construction,5
+G100001090387,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Duhabi 2 solar project,L100001080466,utility-scale solar,construction,8
+G100001090388,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lamjung solar project,L100001080467,utility-scale solar,construction,1.6
+G100001090389,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Surkhet solar project,L100001080468,utility-scale solar,construction,2
+G100001090390,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ganeshpur K solar project,L100001080469,utility-scale solar,construction,10
+G100001090391,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Arghakhachi solar project,L100001080470,utility-scale solar,construction,10
+G100001090392,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Parasi Saurya Vidyut Aayojana solar project,L100001080471,utility-scale solar,pre_construction,15
+G100001090393,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sunwal Saurya Vidyut Aayojana solar project,L100001080472,utility-scale solar,pre_construction,15
+G100001090394,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Krishnapur Saurya Vidyut Aayojana solar project,L100001080473,utility-scale solar,pre_construction,15
+G100001090395,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rakathum Saurya Vidyut Aayojana solar project,L100001080474,utility-scale solar,pre_construction,10
+G100001090396,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Baidehi Saurya Vidyut Aayojana solar project,L100001080475,utility-scale solar,pre_construction,10
+G100001090397,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sitalpati Saurya Vidyut Aayojana solar project,L100001080476,utility-scale solar,pre_construction,10
+G100001090398,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nawalpur Helio Saurya Vidyut Aayojana solar project,L100001080477,utility-scale solar,pre_construction,10
+G100001090399,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lahan Helio Saurya Vidyut Aayojana solar project,L100001080478,utility-scale solar,pre_construction,10
+G100001090400,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bhairavnath Saurya Vidyut Aayojana solar project,L100001080479,utility-scale solar,pre_construction,10
+G100001090401,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tilaurakot Saurya Vidyut Aayojana solar project,L100001080480,utility-scale solar,pre_construction,10
+G100001090402,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Badaiyataal Saurya Vidyut Aayojana solar project,L100001080481,utility-scale solar,pre_construction,10
+G100001090403,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lord Buddha Saurya Vidyut Aayojana solar project,L100001080482,utility-scale solar,pre_construction,10
+G100001090404,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Babai Saurya Vidyut Aayojana solar project,L100001080483,utility-scale solar,pre_construction,10
+G100001090405,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Krishnasar Saurya Vidyut Aayojana solar project,L100001080484,utility-scale solar,pre_construction,10
+G100001090406,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bardiya Saurya Vidyut Aayojana solar project,L100001080485,utility-scale solar,pre_construction,10
+G100001090407,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Banganga Saurya Vidyut Aayojana solar project,L100001080486,utility-scale solar,pre_construction,10
+G100001090408,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lumbini Saurya Vidyut Aayojana solar project,L100001080487,utility-scale solar,pre_construction,10
+G100001090409,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lahan Saurya Vidyut Aayojana solar project,L100001080488,utility-scale solar,pre_construction,10
+G100001090410,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bageshwori Saurya Vidyut Aayojana solar project,L100001080489,utility-scale solar,pre_construction,10
+G100001090411,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahabharat Saurya Vidyut Aayojana solar project,L100001080490,utility-scale solar,pre_construction,10
+G100001090412,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Simraungadh Sunsolar Saurya Vidyut Aayojana solar project,L100001080491,utility-scale solar,pre_construction,10
+G100001090413,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kolhawi Sunsolar Saurya Vidyut Aayojana solar project,L100001080492,utility-scale solar,pre_construction,10
+G100001090414,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pokhariya Sunsolar Saurya Vidyut Aayojana solar project,L100001080493,utility-scale solar,pre_construction,10
+G100001090415,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Haripur Saurya Vidyut Aayojana solar project,L100001080494,utility-scale solar,pre_construction,10
+G100001090416,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Beldiya Saurya Vidyut Aayojana solar project,L100001080495,utility-scale solar,pre_construction,10
+G100001090417,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Amargadi Saurya Vidyut Aayojana solar project,L100001080496,utility-scale solar,pre_construction,10
+G100001090418,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sainik Kalyankari Sainamaina Saurya Vidyut Aayojana - Block 1 solar project,L100001080497,utility-scale solar,pre_construction,10
+G100001090419,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Birat Barju Saurya Vidyut Aayojana solar project,L100001080498,utility-scale solar,pre_construction,10
+G100001090420,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangihat Battery Sahitko Saurya Vidyut Aayojana solar project,L100001080499,utility-scale solar,pre_construction,10
+G100001090421,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Banganga - 2 Saurya Vidyut Aayojana solar project,L100001080500,utility-scale solar,pre_construction,10
+G100001090422,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dhanushadham Saurya Vidyut Aayojana solar project,L100001080501,utility-scale solar,pre_construction,9.5
+G100001090423,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bardibas Saurya Vidyut Aayojana solar project,L100001080502,utility-scale solar,pre_construction,9.5
+G100001090424,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Baniyani Saurya Vidyut Aayojana solar project,L100001080503,utility-scale solar,pre_construction,9.5
+G100001090425,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Dhulabari Saurya Vidyut Aayojana solar project,L100001080504,utility-scale solar,pre_construction,9.5
+G100001090426,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ganeshman Saurya Vidyut Aayojana solar project,L100001080505,utility-scale solar,pre_construction,9.5
+G100001090427,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Belauri Saurya Vidyut Aayojana solar project,L100001080506,utility-scale solar,pre_construction,9
+G100001090428,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sainik Kalyankari Sainamaina Saurya Vidyut Aayojana - Block 2 solar project,L100001080507,utility-scale solar,pre_construction,8.5
+G100001090429,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Parwanipur Saurya Vidyut Aayojana solar project,L100001080508,utility-scale solar,pre_construction,8
+G100001090430,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Saghutar Saurya Vidyut Aayojana solar project,L100001080509,utility-scale solar,pre_construction,5
+G100001090431,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aurahi Saurya Vidyut Aayojana solar project,L100001080510,utility-scale solar,pre_construction,5
+G100001090432,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Garuda Saurya Vidyut Aayojana solar project,L100001080511,utility-scale solar,pre_construction,5
+G100001090433,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bodhimai Saurya Vidyut Aayojana solar project,L100001080512,utility-scale solar,pre_construction,5
+G100001090434,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayadevi Saurya Vidyut Aayojana solar project,L100001080513,utility-scale solar,pre_construction,5
+G100001090435,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aurahi - 2 Saurya Vidyut Aayojana solar project,L100001080514,utility-scale solar,pre_construction,5
+G100001090436,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Janaki Saurya Vidyut Aayojana solar project,L100001080515,utility-scale solar,pre_construction,5
+G100001090437,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sainik Kalyankari Sainamaina Saurya Vidyut Aayojana - Block 3 solar project,L100001080516,utility-scale solar,pre_construction,5
+G100001090438,energy_plants_gem_units,NPL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ridi solar project,L100001080517,utility-scale solar,pre_construction,1

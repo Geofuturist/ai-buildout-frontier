@@ -1,0 +1,233 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000106125,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Lakvijaya Power Plant,L100000103520,coal,operating,300
+G100000106126,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Lakvijaya Power Plant,L100000103520,coal,operating,300
+G100000106127,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Lakvijaya Power Plant,L100000103520,coal,operating,300
+G100000106757,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Mawella Coal Power Development Project,L100000103518,coal,cancelled,300
+G100000106758,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Mawella Coal Power Development Project,L100000103518,coal,cancelled,300
+G100000108772,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Sampur power station,L100000103519,coal,cancelled,300
+G100000108773,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Sampur power station,L100000103519,coal,cancelled,300
+G100000108774,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Sampur power station,L100000103519,coal,cancelled,250
+G100000108775,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Sampur power station,L100000103519,coal,cancelled,250
+G100000108776,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Sampur power station,L100000103519,coal,cancelled,300
+G100000108777,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Sampur power station,L100000103519,coal,cancelled,300
+G100000109552,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,true,abf-boundaries-v0.2.0,Southern Coal Power Project,L100000103521,coal,cancelled,1200
+G100000110483,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,true,abf-boundaries-v0.2.0,CEB Long Term Generation Expansion Plan unnamed plants,L100000103522,coal,cancelled,1200
+G100000114355,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Lakvijaya Power Plant,L100000103520,coal,cancelled,300
+G100000114356,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Foul Point power station,L100000104621,coal,cancelled,300
+G100000114357,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Foul Point power station,L100000104621,coal,cancelled,300
+G100000114688,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Lakvijaya Power Plant,L100000103520,coal,cancelled,300
+G100000407327,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,true,abf-boundaries-v0.2.0,Kelanitissa LNG power station,L100000406857,oil/gas,cancelled,500
+G100000407328,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Yugadanavi power station,L100000406858,oil/gas,operating,300
+G100000407333,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Hambantota power station,L100000406861,oil/gas,cancelled,400
+G100000409995,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Sojitz Kelanitissa power station,L100000407660,oil/gas,operating,163
+G100000411724,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Sapugaskanda power station,L100000408415,oil/gas,operating,80
+G100000411725,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Sapugaskanda power station,L100000408415,oil/gas,operating,80
+G100000411728,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kelanitissa power station,L100000408416,oil/gas,operating,20
+G100000411729,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kelanitissa power station,L100000408416,oil/gas,operating,20
+G100000411730,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kelanitissa power station,L100000408416,oil/gas,operating,20
+G100000411731,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kelanitissa power station,L100000408416,oil/gas,operating,20
+G100000411732,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kelanitissa power station,L100000408416,oil/gas,operating,20
+G100000411733,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kelanitissa power station,L100000408416,oil/gas,operating,20
+G100000411735,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kelanitissa Combined Cycle power plant,L100000408417,oil/gas,operating,165
+G100000411736,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Colombo Port Power Station,L100000408418,oil/gas,operating,62.4
+G100000411737,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,false,abf-boundaries-v0.2.0,Ace Embilipitiya power station,L100000408419,oil/gas,operating,105
+G100000413488,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,true,abf-boundaries-v0.2.0,Kerawalapitiya LNG power station,L100000406856,oil/gas,operating,350
+G100000603435,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Kotmale hydroelectric plant,L100000603400,hydropower,operating,201
+G100000603436,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kukule Ganga hydroelectric plant,L100000603401,hydropower,operating,70
+G100000603437,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,New Laxapana hydroelectric plant,L100000603402,hydropower,operating,100
+G100000603438,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Polpitiya hydroelectric plant,L100000603403,hydropower,operating,75
+G100000603439,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Randenigala hydroelectric plant,L100000603404,hydropower,operating,122
+G100000603440,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,false,abf-boundaries-v0.2.0,Samanalawewa hydroelectric plant,L100000603405,hydropower,operating,120
+G100000603442,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Upper Kotmale hydroelectric plant,L100000603407,hydropower,operating,150
+G100000603443,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Sri Lanka Victoria hydroelectric plant,L100000603408,hydropower,operating,210
+G100000604904,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Uma Oya hydroelectric plant,L100000603406,hydropower,operating,120
+G100000801274,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Laugfs solar farm,L100000801108,utility-scale solar,operating,20
+G100000801477,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Pooneryn solar farm,L100000801285,utility-scale solar,announced,100
+G100000801478,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Pooneryn solar farm,L100000801285,utility-scale solar,announced,50
+G100000801595,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Rividhanavi solar farm,L100000801391,utility-scale solar,construction,100
+G100000811035,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Ampara 2 solar farm,L100000808757,utility-scale solar,announced,25
+G100000811036,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Hambantota solar farm,L100000808758,utility-scale solar,pre_construction,100
+G100000811037,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Kilinochchi GSS solar farm,L100000808759,utility-scale solar,cancelled,20
+G100000811038,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Maduru Oya floating solar project,L100000808760,utility-scale solar,cancelled,100
+G100000811039,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,true,abf-boundaries-v0.2.0,Mahiyanganaya solar farm,L100000808761,utility-scale solar,cancelled,100
+G100000811040,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,true,abf-boundaries-v0.2.0,Musalai solar farm,L100000808762,utility-scale solar,cancelled,100
+G100000811041,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,true,abf-boundaries-v0.2.0,Ninattan solar farm,L100000808763,utility-scale solar,cancelled,25
+G100000811042,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,true,abf-boundaries-v0.2.0,Polonnaruwa solar farm,L100000808764,utility-scale solar,cancelled,100
+G100000811043,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,true,abf-boundaries-v0.2.0,Puttalam solar farm,L100000808765,utility-scale solar,shelved,125
+G100000811044,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Sampoor Solar Power Project,L100000808766,utility-scale solar,pre_construction,50
+G100000834895,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,true,abf-boundaries-v0.2.0,Arrow Prime Solar Power Project,L100000831000,utility-scale solar,pre_construction,10
+G100000834896,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Batticaloa Floating Solar Power Project,L100000831001,utility-scale solar,pre_construction,10
+G100000834897,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Blue Crest Solar Power Project,L100000831002,utility-scale solar,pre_construction,10
+G100000834898,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Cambrian Solar Power Project,L100000831003,utility-scale solar,pre_construction,10
+G100000834899,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,CI Kokkilai Solar Power Project at Multive,L100000831004,utility-scale solar,pre_construction,5
+G100000834900,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Circleline Solar Energy Project,L100000831005,utility-scale solar,pre_construction,10
+G100000834901,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Clean Energy Solar Power Project,L100000831006,utility-scale solar,pre_construction,10
+G100000834902,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Crystalline Solar Power Project,L100000831007,utility-scale solar,pre_construction,10
+G100000834903,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,DS Solar Power Project,L100000831008,utility-scale solar,pre_construction,10
+G100000834904,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,East Edge Solar Energy Project,L100000831009,utility-scale solar,pre_construction,10
+G100000834905,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Eco Energy Solar Power Project,L100000831010,utility-scale solar,pre_construction,10
+G100000834906,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Electrolite Solar Power Project,L100000831011,utility-scale solar,pre_construction,10
+G100000834907,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Elephant Solar Power Project,L100000831012,utility-scale solar,pre_construction,10
+G100000834908,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Foulpoint Solar Power Project,L100000831013,utility-scale solar,pre_construction,10
+G100000834909,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Geneco Solar Power Project,L100000831014,utility-scale solar,pre_construction,10
+G100000834910,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Greenline Solar Project,L100000831015,utility-scale solar,pre_construction,10
+G100000834911,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Harbour View Solar Power Project,L100000831016,utility-scale solar,pre_construction,10
+G100000834912,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Leisure Solar Power Project,L100000831017,utility-scale solar,pre_construction,10
+G100000834913,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Madunagala Solar Agro Power Project,L100000831018,utility-scale solar,pre_construction,10
+G100000834915,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,true,abf-boundaries-v0.2.0,Mahindagama 2 Solar Power Project,L100000831020,utility-scale solar,pre_construction,5
+G100000834916,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,true,abf-boundaries-v0.2.0,Mahindagama 2 Solar Power Project,L100000831020,utility-scale solar,pre_construction,5
+G100000834917,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Mount Edge Solar Power Project,L100000831021,utility-scale solar,pre_construction,10
+G100000834918,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,true,abf-boundaries-v0.2.0,Negombo Floating Solar Power Project,L100000831022,utility-scale solar,pre_construction,10
+G100000834919,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Nilaveli solar farm,L100000831023,utility-scale solar,announced,100
+G100000834920,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Northeastern Solar Power Project,L100000831024,utility-scale solar,pre_construction,10
+G100000834921,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Northview Solar Power Project,L100000831025,utility-scale solar,pre_construction,10
+G100000834922,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Photon Valley Solar Power Project,L100000831026,utility-scale solar,pre_construction,10
+G100000834923,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Photowatt Solar Power Project,L100000831027,utility-scale solar,pre_construction,10
+G100000834924,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Powerwall Solar Power Project,L100000831028,utility-scale solar,pre_construction,10
+G100000834925,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Radiant Star Solar Power Project,L100000831029,utility-scale solar,pre_construction,10
+G100000834926,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Sagasolar,L100000831030,utility-scale solar,operating,10
+G100000834927,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,true,abf-boundaries-v0.2.0,Sakura Saltern Solar Power Project,L100000831031,utility-scale solar,pre_construction,10
+G100000834928,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Sampoor Solar Power Project,L100000808766,utility-scale solar,announced,70
+G100000834929,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Skysource Solar Power Project,L100000831032,utility-scale solar,pre_construction,10
+G100000834930,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Solargen Solar Power Project,L100000831033,utility-scale solar,pre_construction,10
+G100000834931,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Stallion Solar Power Project,L100000831034,utility-scale solar,pre_construction,10
+G100000834932,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Sundrop Solar Power Project,L100000831035,utility-scale solar,pre_construction,10
+G100000834933,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Sunstar Solar Power Project,L100000831036,utility-scale solar,pre_construction,10
+G100000834934,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Talna Solar Power Project,L100000831037,utility-scale solar,pre_construction,10
+G100000834935,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Thanamalwila Solar Power Project,L100000831038,utility-scale solar,pre_construction,10
+G100000834936,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Uva Solar Power Project,L100000831039,utility-scale solar,pre_construction,10
+G100000834937,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Uva Sunbeam Solar Power Project,L100000831040,utility-scale solar,pre_construction,10
+G100000834938,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Vivint Solar Power Project,L100000831041,utility-scale solar,pre_construction,10
+G100000834939,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,VV Solar Energy Project,L100000831042,utility-scale solar,pre_construction,10
+G100000834940,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Wishwin Solar Energy Project,L100000831043,utility-scale solar,pre_construction,10
+G100000901148,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pawan Danavi wind farm,L100000900996,wind,operating,10
+G100000901166,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Mampuri wind farm,L100000901011,wind,operating,10
+G100000901167,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Mampuri wind farm,L100000901011,wind,operating,10
+G100000901168,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Mampuri wind farm,L100000901011,wind,operating,10
+G100000901225,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Nirmalpura wind farm,L100000901051,wind,operating,10
+G100000901226,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Pollupalai wind farm,L100000901052,wind,operating,10
+G100000901227,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Powergen Lank wind farm,L100000901053,wind,operating,10
+G100000901228,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Seguwantivu wind farm,L100000901054,wind,operating,10
+G100000901229,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Vallimunai wind farm,L100000901055,wind,operating,10
+G100000901230,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Vidatamunai wind farm,L100000901056,wind,operating,10
+G100000901257,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Arinma Holdings wind farm,L100000901079,wind,shelved,300
+G100000901279,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Mannar wind farm,L100000901098,wind,operating,100
+G100000901488,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Adani Poonakary Onshore wind farm,L100000901277,wind,cancelled,234
+G100000927573,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Hiruras wind farm,L100000922111,wind,operating,15
+G100000927632,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Mannar (Adani) wind farm,L100000922155,wind,cancelled,250
+G100000927642,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Musalpetti wind farm,L100000922162,wind,operating,10
+G100001021510,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,North Eastern Mannar wind farm,L100001019089,wind,announced,50
+G100001021516,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Veravil wind farm,L100001019094,wind,pre_construction,210
+G100001021578,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,true,abf-boundaries-v0.2.0,Samanalawewa reservoir solar farm,L100001019141,utility-scale solar,announced,100
+G100001021579,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,true,abf-boundaries-v0.2.0,Samanalawewa reservoir solar farm,L100001019141,utility-scale solar,announced,100
+G100001021580,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Poonakary Lake solar farm,L100001019142,utility-scale solar,announced,700
+G100001021581,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,true,abf-boundaries-v0.2.0,Parakrama Samudra floating solar power plant,L100001019143,utility-scale solar,announced,103
+G100001021582,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,true,abf-boundaries-v0.2.0,Uda Walawe floating solar farm,L100001019144,utility-scale solar,announced,99.6
+G100001021584,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Batticaloa Manmunai South-West solar farm,L100001019145,utility-scale solar,announced,30
+G100001021585,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Batticaloa Manmunai West solar farm,L100001019146,utility-scale solar,announced,35.3
+G100001021586,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Hambantota Sooriyawewa solar farm,L100001019147,utility-scale solar,announced,122.2
+G100001021587,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Kilinochchi solar farm,L100001019148,utility-scale solar,announced,200
+G100001021595,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Mullativu Puthukudiyiruppu solar farm,L100001019155,utility-scale solar,announced,31.9
+G100001021596,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,true,abf-boundaries-v0.2.0,Mullativu Thunukkai solar power plant 39,L100001019157,utility-scale solar,pre_construction,42.3
+G100001021598,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Trincomalee Muttur solar farm,L100001019158,utility-scale solar,announced,25.5
+G100001021599,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Trincomalee Trincomalee Town and Gravets solar farm,L100001019161,utility-scale solar,announced,35.8
+G100001027449,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Canyon hydroelectric plant,L100001023244,hydropower,operating,60
+G100001027450,energy_plants_gem_units,LKA,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Old Laxapana hydroelectric plant,L100001023245,hydropower,operating,50
+G100001027451,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Rantembe hydroelectric plant,L100001023246,hydropower,operating,52
+G100001027452,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Wimalasurendra hydroelectric plant,L100001023247,hydropower,operating,50
+G100001051179,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,true,abf-boundaries-v0.2.0,Hambantota solar farm,L100000808758,utility-scale solar,announced,250
+G100001051207,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Mannar wind farm,L100000901098,wind,announced,100
+G100001051211,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Mannar wind farm,L100000901098,wind,announced,100
+G100001051213,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Pooneryn wind farm,L100001045499,wind,announced,100
+G100001051214,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Pooneryn wind farm,L100001045499,wind,announced,100
+G100001054660,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Trincomalee Biomass power station,L100001047869,bioenergy,operating,10
+G100001054661,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Trincomalee Biomass power station,L100001047869,bioenergy,operating,8
+G100001054665,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Dendro Biomass power station,L100001047871,bioenergy,operating,10
+G100001054667,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kerawalapitiya WtE power station,L100001047873,bioenergy,operating,10
+G100001055215,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Sri Lanka nuclear power plant,L100001048165,nuclear,announced,150
+G100001055216,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,true,abf-boundaries-v0.2.0,Sri Lanka nuclear power plant,L100001048165,nuclear,announced,150
+G100001062736,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Bowatenna hydroelectric plant,L100001054844,hydropower,operating,40
+G100001062737,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,false,abf-boundaries-v0.2.0,Broadlands hydroelectric plant,L100001054845,hydropower,operating,35
+G100001062738,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Ukuwela hydroelectric plant,L100001054846,hydropower,operating,40
+G100001072769,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Moragolla hydroelectric plant,L100001063342,hydropower,construction,31
+G100001078506,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Anorchi Lanka (Baruthankanda) solar project,L100001068720,utility-scale solar,operating,10
+G100001078507,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Iris (Baruthankanda) solar project,L100001068721,utility-scale solar,operating,10
+G100001078508,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Vavunathivu solar project,L100001068722,utility-scale solar,operating,10
+G100001078509,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Nedunkulam Solar Thermal Power Plant,L100001068723,utility-scale solar,operating,10
+G100001078510,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Kebithigollewa solar project,L100001068724,utility-scale solar,operating,10
+G100001078511,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,"Trincomalee 4,5,6,7 solar project",L100001068725,utility-scale solar,operating,1
+G100001078512,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Vavuniya 3 solar project,L100001068726,utility-scale solar,operating,1
+G100001078513,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Vavuniya 2 solar project,L100001068727,utility-scale solar,operating,1
+G100001078514,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,false,abf-boundaries-v0.2.0,Embilipitiya 3 solar project,L100001068728,utility-scale solar,operating,1
+G100001078515,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,false,abf-boundaries-v0.2.0,Embilipitiya 2 solar project,L100001068729,utility-scale solar,operating,1
+G100001078516,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Horana 2 solar project,L100001068730,utility-scale solar,operating,1
+G100001078517,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 3 solar project,L100001068731,utility-scale solar,operating,1
+G100001078518,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pannala 1 solar project,L100001068732,utility-scale solar,operating,1
+G100001078519,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Anuradhapura 1 solar project,L100001068733,utility-scale solar,operating,1
+G100001078520,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Anuradhapura 2 solar project,L100001068734,utility-scale solar,operating,1
+G100001078521,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mathugama 1 solar project,L100001068735,utility-scale solar,operating,1
+G100001078522,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mathugama 3 solar project,L100001068736,utility-scale solar,operating,1
+G100001078523,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Galle 2 solar project,L100001068737,utility-scale solar,operating,1
+G100001078524,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Galle 3 solar project,L100001068738,utility-scale solar,operating,1
+G100001078525,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Vavuniya 1 solar project,L100001068739,utility-scale solar,operating,1
+G100001078526,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mathugama 2 solar project,L100001068740,utility-scale solar,operating,1
+G100001078527,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Matara 1 solar project,L100001068741,utility-scale solar,operating,1
+G100001078528,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Anuradhapura 3 solar project,L100001068742,utility-scale solar,operating,1
+G100001078529,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Polonnaruwa 1 solar project,L100001068743,utility-scale solar,operating,1
+G100001078530,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 5 solar project,L100001068744,utility-scale solar,operating,1
+G100001078531,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Beliatta 1 solar project,L100001068745,utility-scale solar,operating,1
+G100001078532,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 1 solar project,L100001068746,utility-scale solar,operating,1
+G100001078533,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Matara 2 solar project,L100001068747,utility-scale solar,operating,1
+G100001078534,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Matara 3 solar project,L100001068748,utility-scale solar,operating,1
+G100001078535,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Horana 3 solar project,L100001068749,utility-scale solar,operating,1
+G100001078536,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 6 solar project,L100001068750,utility-scale solar,operating,1
+G100001078537,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 7 solar project,L100001068751,utility-scale solar,operating,1
+G100001078538,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Beliatta 2 solar project,L100001068752,utility-scale solar,operating,1
+G100001078539,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Pallekele 1 solar project,L100001068753,utility-scale solar,operating,1
+G100001078540,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Kilinochchi 1 solar project,L100001068754,utility-scale solar,operating,1
+G100001078541,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Kilinochchi 2 solar project,L100001068755,utility-scale solar,operating,1
+G100001078542,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Kilinochchi 3 solar project,L100001068756,utility-scale solar,operating,1
+G100001078543,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pannala 2 solar project,L100001068757,utility-scale solar,operating,1
+G100001078544,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Vavuniya 4 solar project,L100001068758,utility-scale solar,operating,1
+G100001078545,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Pallekelle 1 solar project,L100001068759,utility-scale solar,operating,1
+G100001078546,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Valachchenai (New) 1 solar project,L100001068760,utility-scale solar,operating,1
+G100001078547,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Mathugama 4 solar project,L100001068761,utility-scale solar,operating,1
+G100001078548,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,false,abf-boundaries-v0.2.0,Panadura 1 solar project,L100001068762,utility-scale solar,operating,1
+G100001078549,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Monaragala 1 solar project,L100001068763,utility-scale solar,operating,1
+G100001078550,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Ampara 1 solar project,L100001068764,utility-scale solar,operating,1
+G100001078551,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 2 solar project,L100001068765,utility-scale solar,operating,1
+G100001078552,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 1 solar project,L100001068766,utility-scale solar,operating,1
+G100001078553,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 2 solar project,L100001068767,utility-scale solar,operating,1
+G100001078554,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 3 solar project,L100001068768,utility-scale solar,operating,1
+G100001078555,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Monaragala 2 solar project,L100001068769,utility-scale solar,operating,1
+G100001078556,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Monaragala 3 solar project,L100001068770,utility-scale solar,operating,1
+G100001078557,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Beliatta 3 solar project,L100001068771,utility-scale solar,operating,1
+G100001078558,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 4 solar project,L100001068772,utility-scale solar,operating,1
+G100001078559,energy_plants_gem_units,LKA,point,,LKA-1-3,,point,,,,false,abf-boundaries-v0.2.0,Galle 1 solar project,L100001068773,utility-scale solar,operating,1
+G100001078560,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Anuradhapura 4 solar project,L100001068774,utility-scale solar,operating,1
+G100001078561,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Valachchenai (New) 2 solar project,L100001068775,utility-scale solar,operating,1
+G100001078562,energy_plants_gem_units,LKA,point,,LKA-1-5,,point,,,,false,abf-boundaries-v0.2.0,Valachchenai (New) 3 solar project,L100001068776,utility-scale solar,operating,1
+G100001078563,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pannala 4 solar project,L100001068777,utility-scale solar,operating,1
+G100001078564,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pannala 5 solar project,L100001068778,utility-scale solar,operating,1
+G100001078565,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 4 solar project,L100001068779,utility-scale solar,operating,1
+G100001078566,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 5 solar project,L100001068780,utility-scale solar,operating,1
+G100001078567,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 6 solar project,L100001068781,utility-scale solar,operating,1
+G100001078568,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 7 solar project,L100001068782,utility-scale solar,operating,1
+G100001078569,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 8 solar project,L100001068783,utility-scale solar,operating,1
+G100001078570,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Mahiyanganaya 9 solar project,L100001068784,utility-scale solar,operating,1
+G100001078571,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Anuradhapura 5 solar project,L100001068785,utility-scale solar,operating,1
+G100001078572,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Pannala 3 solar project,L100001068786,utility-scale solar,operating,1
+G100001078573,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Pallekele 2 solar project,L100001068787,utility-scale solar,operating,1
+G100001078574,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,Pallekele 3 solar project,L100001068788,utility-scale solar,operating,1
+G100001078575,energy_plants_gem_units,LKA,point,,LKA-1-2,,point,,,,false,abf-boundaries-v0.2.0,"Pallekele 4, 5 solar project",L100001068789,utility-scale solar,operating,1
+G100001078576,energy_plants_gem_units,LKA,point,,LKA-1-4,,point,,,,false,abf-boundaries-v0.2.0,Vavuniya 5 solar project,L100001068790,utility-scale solar,operating,1
+G100001078577,energy_plants_gem_units,LKA,point,,LKA-1-7,,point,,,,false,abf-boundaries-v0.2.0,Habarana 3 solar project,L100001068791,utility-scale solar,operating,1
+G100001078578,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,false,abf-boundaries-v0.2.0,Horana 1 solar project,L100001068792,utility-scale solar,operating,1
+G100001078579,energy_plants_gem_units,LKA,point,,LKA-1-6,,point,,,,false,abf-boundaries-v0.2.0,Maho 8 solar project,L100001068793,utility-scale solar,operating,1
+G100001078580,energy_plants_gem_units,LKA,point,,LKA-1-8,,point,,,,false,abf-boundaries-v0.2.0,Ampara 2 solar project,L100001068794,utility-scale solar,operating,1
+G100001078581,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,false,abf-boundaries-v0.2.0,Embilipitiya 1 solar project,L100001068795,utility-scale solar,operating,1
+G100001078582,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,true,abf-boundaries-v0.2.0,Kiri Ibban Wewa Floating solar project,L100001068796,utility-scale solar,pre_construction,1
+G100001078583,energy_plants_gem_units,LKA,point,,LKA-1-9,,point,,,,true,abf-boundaries-v0.2.0,Chandrika Wewa Floating solar project,L100001068797,utility-scale solar,pre_construction,1
+G100001095242,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,true,abf-boundaries-v0.2.0,Kerawalapitiya IC power plant,L100001083937,oil/gas,pre_construction,200
+G100001095245,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,true,abf-boundaries-v0.2.0,Kerawalapitiya CC power plant 2,L100001083938,oil/gas,pre_construction,350
+G100001095254,energy_plants_gem_units,LKA,point,,LKA-1-1,,point,,,,true,abf-boundaries-v0.2.0,Kelanithissa Gas power station,L100001083942,oil/gas,pre_construction,130

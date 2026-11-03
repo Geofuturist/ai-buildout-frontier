@@ -1,0 +1,78 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000105808,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Koh Kong power station,L100000100154,coal,cancelled,2400
+G100000107727,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Pailin power station,L100000100155,coal,cancelled,200
+G100000109368,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CEL power station,L100000100157,coal,operating,50
+G100000109369,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CEL power station,L100000100157,coal,operating,50
+G100000109370,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station,L100000100158,coal,operating,135
+G100000109371,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station,L100000100158,coal,operating,135
+G100000109372,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station,L100000100158,coal,operating,135
+G100000109373,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station,L100000100158,coal,cancelled,135
+G100000109374,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station,L100000100158,coal,cancelled,135
+G100000109375,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station,L100000100158,coal,cancelled,135
+G100000109376,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station,L100000100158,coal,cancelled,135
+G100000109377,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sihanoukville CSG power station,L100000100159,coal,cancelled,300
+G100000109378,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sihanoukville CSG power station,L100000100159,coal,cancelled,300
+G100000109379,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sihanoukville CSG power station,L100000100159,coal,cancelled,300
+G100000109380,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sihanoukville CSG power station,L100000100159,coal,cancelled,300
+G100000111973,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Botum Sakor power station,L100000100156,coal,cancelled,350
+G100000113072,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CEL power station,L100000100157,coal,operating,150
+G100000114128,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station 2,L100000104533,coal,operating,350
+G100000114129,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville CIIDG power station 2,L100000104533,coal,operating,350
+G100000114298,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Botum Sakor power station,L100000100156,coal,cancelled,350
+G100000114299,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Han Seng power station,L100000104608,coal,construction,132.5
+G100000114300,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Han Seng power station,L100000104608,coal,construction,132.5
+G100000114891,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampot power station,L100000104781,coal,cancelled,135
+G100000114892,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampot power station,L100000104781,coal,cancelled,135
+G100000114893,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampot power station,L100000104781,coal,cancelled,135
+G100000114894,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampot power station,L100000104781,coal,cancelled,135
+G100000114895,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville SEZ power station,L100000104782,coal,operating,50
+G100000115158,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihanoukville SEZ power station,L100000104782,coal,operating,50
+G100000405905,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,EDC Combined Cycle power station,L100000405935,oil/gas,cancelled,1200
+G100000405906,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,EDC Combined Cycle power station,L100000405935,oil/gas,cancelled,1200
+G100000405907,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,EDC Combined Cycle power station,L100000405935,oil/gas,cancelled,1200
+G100000405908,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,EDC Combined Cycle power station,L100000405935,oil/gas,cancelled,1200
+G100000412609,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phom Penh power sation,L100000408457,oil/gas,operating,200.2
+G100000412610,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,C7 power station,L100000408458,oil/gas,operating,200.3
+G100000413348,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kandal power station,L100000408953,oil/gas,operating,200
+G100000413349,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kandal power station,L100000408953,oil/gas,operating,200
+G100000414318,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Botum Sakor power station,L100000100156,oil/gas,construction,450
+G100000600376,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamchay hydroelectric plant,L100000600375,hydropower,operating,194
+G100000600377,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lower Sesan 2 hydroelectric plant,L100000600376,hydropower,operating,400
+G100000600378,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Russei Chrum Krom Lower hydroelectric plant,L100000600377,hydropower,operating,132
+G100000600379,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Russei Chrum Krom Upper hydroelectric plant,L100000600378,hydropower,operating,206
+G100000600381,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Stung Atay hydroelectric plant,L100000600380,hydropower,operating,120
+G100000600382,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Stung Pursat hydroelectric plant,L100000600381,hydropower,construction,80
+G100000600384,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Stung Tatay hydroelectric plant,L100000600383,hydropower,operating,246
+G100000604775,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sambor hydroelectric plant,L100000600379,hydropower,announced,2600
+G100000604833,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Stung Tatai Leu hydroelectric plant,L100000600382,hydropower,construction,150
+G100000604834,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Stung Treng hydroelectric plant,L100000600384,hydropower,announced,1400
+G100000604835,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Stung Veay Thmar Kambot hydroelectric plant,L100000604362,hydropower,pre_construction,100
+G100000800960,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Battambang solar farm,L100000800831,utility-scale solar,operating,60
+G100000800999,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Cambodia National Solar Park,L100000800866,utility-scale solar,operating,60
+G100000801000,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Cambodia National Solar Park,L100000800866,utility-scale solar,operating,40
+G100000801200,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kampong Speu solar farm,L100000801040,utility-scale solar,operating,60
+G100000801201,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampong Speu solar farm,L100000801040,utility-scale solar,operating,20
+G100000801236,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Koh Kong solar farm,L100000801074,utility-scale solar,cancelled,150
+G100000801343,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Svay Rieng solar farm,L100000801165,utility-scale solar,operating,20
+G100000801480,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Pursat solar farm,L100000801287,utility-scale solar,operating,60
+G100000801481,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Pursat solar farm,L100000801287,utility-scale solar,operating,30
+G100000801557,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Serie Saophoan solar farm,L100000801353,utility-scale solar,operating,39
+G100000801711,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kampong Chhnang solar farm,L100000801491,utility-scale solar,operating,60
+G100000810868,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Pursat solar farm,L100000801287,utility-scale solar,announced,150
+G100000833189,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Aoral Eco-City Solar Power Plant,L100000829400,utility-scale solar,cancelled,200
+G100000833191,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,National Solar Park Project,L100000829401,utility-scale solar,announced,100
+G100000833193,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Prey Veng (Lucky Solar Power) solar farm,L100000829403,utility-scale solar,pre_construction,80
+G100000833194,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Soma Energy 5MW solar project,L100000829404,utility-scale solar,operating,5
+G100000833195,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Bavet City Solar PV Plant,L100000829405,utility-scale solar,operating,10
+G100000901505,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampot wind farm,L100000901289,wind,cancelled,80
+G100000901506,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mondulkiri (Blue Circle) wind farm,L100000901290,wind,announced,100
+G100000901564,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mondulkiri (XME) wind farm,L100000901332,wind,cancelled,100
+G100001035708,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Phnom Penh solar project,L100001030437,utility-scale solar,operating,1.4
+G100001054556,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Botum Sakor power station,L100000100156,oil/gas,construction,450
+G100001055405,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mizuda Siem Reap power station,L100001048276,bioenergy,pre_construction,12
+G100001055406,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampong Speu power station,L100001048277,bioenergy,pre_construction,50
+G100001055407,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,BECIS power station,L100001048278,bioenergy,operating,9
+G100001055408,energy_plants_gem_units,KHM,point,,,,,,,,false,abf-boundaries-v0.2.0,Kampong Speu Sugar power station,L100001048279,bioenergy,operating,52
+G100001090153,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Stung Russey Chrum Kandal hydroelectric plant,L100001080270,hydropower,pre_construction,70
+G100001090792,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mondulkiri (HK OASIS) wind farm,L100001080837,wind,announced,150
+G100001090793,energy_plants_gem_units,KHM,point,,,,,,,,true,abf-boundaries-v0.2.0,Prey Veng (CEEC) solar farm,L100001080838,utility-scale solar,announced,250

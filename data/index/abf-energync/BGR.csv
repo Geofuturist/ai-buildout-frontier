@@ -1,0 +1,412 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001009557,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Hadjidimovo solar project,L100001008187,utility-scale solar,operating,19.2
+G100001009558,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Kameno solar project,L100001008188,utility-scale solar,operating,12.2
+G100001009559,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project,L100001008189,utility-scale solar,operating,16.9
+G100001009560,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Dimitrovgrad A solar project,L100001008190,utility-scale solar,operating,4
+G100001009561,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Ostar Kamak solar project,L100001008191,utility-scale solar,operating,8.9
+G100001009562,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Yerusalimovo solar project,L100001008192,utility-scale solar,operating,7.7
+G100001009563,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Zdravets solar project,L100001008193,utility-scale solar,operating,15.6
+G100001009564,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sapareva A solar project,L100001008194,utility-scale solar,operating,6.4
+G100001009566,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Solsbor solar project,L100001008196,utility-scale solar,operating,13.3
+G100001009567,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Asenovgrad solar project,L100001008197,utility-scale solar,operating,3.3
+G100001009568,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv A solar project,L100001008198,utility-scale solar,operating,10.4
+G100001009569,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Kaolinovo solar project,L100001008199,utility-scale solar,operating,10
+G100001009570,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Kolarovo solar project,L100001008200,utility-scale solar,operating,9.2
+G100001009571,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Montan-Renar solar project,L100001008201,utility-scale solar,operating,10.4
+G100001009572,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Skobelevo solar project,L100001008202,utility-scale solar,operating,6
+G100001009575,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Pirdop I solar project,L100001008205,utility-scale solar,operating,7.7
+G100001009577,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Resen A solar project,L100001008207,utility-scale solar,operating,16.9
+G100001009580,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Bezmer solar project,L100001008210,utility-scale solar,operating,12.9
+G100001009581,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Palauzovo solar project,L100001008211,utility-scale solar,operating,6.8
+G100001009582,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project,L100001008212,utility-scale solar,operating,12.2
+G100001009583,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project I,L100001008213,utility-scale solar,operating,3.9
+G100001009584,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project I,L100001008214,utility-scale solar,operating,10.2
+G100001009586,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project III,L100001008216,utility-scale solar,operating,3.4
+G100001009588,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project II,L100001008218,utility-scale solar,operating,5.4
+G100001009589,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project III,L100001008219,utility-scale solar,operating,13.4
+G100001009590,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project I,L100001008220,utility-scale solar,operating,9.2
+G100001009591,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project I,L100001008221,utility-scale solar,operating,6.1
+G100001009592,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project I,L100001008222,utility-scale solar,operating,8.8
+G100001009593,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project II,L100001008223,utility-scale solar,operating,3.8
+G100001009594,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project I,L100001008224,utility-scale solar,operating,4.2
+G100001009595,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project II,L100001008225,utility-scale solar,operating,5
+G100001009596,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project II,L100001008226,utility-scale solar,operating,1.3
+G100001009597,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project I,L100001008227,utility-scale solar,operating,6.6
+G100001009598,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project I,L100001008228,utility-scale solar,operating,5.2
+G100001009599,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project IV,L100001008229,utility-scale solar,operating,2.4
+G100001009600,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project V,L100001008230,utility-scale solar,operating,3.7
+G100001009601,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project I,L100001008231,utility-scale solar,operating,4.2
+G100001009602,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project II,L100001008232,utility-scale solar,operating,4.3
+G100001009603,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pernik solar project,L100001008233,utility-scale solar,operating,3.3
+G100001009604,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project I,L100001008234,utility-scale solar,operating,3.9
+G100001009605,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project I,L100001008235,utility-scale solar,operating,7.9
+G100001009606,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project VI,L100001008236,utility-scale solar,operating,6.2
+G100001009607,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project I,L100001008237,utility-scale solar,operating,13.4
+G100001009608,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project IV,L100001008238,utility-scale solar,operating,5.3
+G100001009609,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project III,L100001008239,utility-scale solar,operating,4.4
+G100001009610,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project II,L100001008240,utility-scale solar,operating,5.3
+G100001009611,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project III,L100001008241,utility-scale solar,operating,3.7
+G100001009612,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project II,L100001008242,utility-scale solar,operating,3.1
+G100001009613,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project IV,L100001008243,utility-scale solar,operating,6.1
+G100001009614,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project III,L100001008244,utility-scale solar,operating,3.9
+G100001009615,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project V,L100001008245,utility-scale solar,operating,9
+G100001009616,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project IV,L100001008246,utility-scale solar,operating,5.9
+G100001009617,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project VII,L100001008247,utility-scale solar,operating,3.1
+G100001009618,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project VIII,L100001008248,utility-scale solar,operating,15.1
+G100001009619,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project II,L100001008249,utility-scale solar,operating,4
+G100001009620,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project I,L100001008250,utility-scale solar,operating,3.7
+G100001009621,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project II,L100001008251,utility-scale solar,operating,9.9
+G100001009622,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project IV,L100001008252,utility-scale solar,operating,2.8
+G100001009623,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project V,L100001008253,utility-scale solar,operating,3.9
+G100001009624,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project VI,L100001008254,utility-scale solar,operating,3.5
+G100001009625,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project VI,L100001008255,utility-scale solar,operating,1.7
+G100001009626,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project VII,L100001008256,utility-scale solar,operating,3.3
+G100001009627,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project V,L100001008257,utility-scale solar,operating,6.1
+G100001009628,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project VII,L100001008258,utility-scale solar,operating,5.6
+G100001009629,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project III,L100001008259,utility-scale solar,operating,4.8
+G100001009630,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project IX,L100001008260,utility-scale solar,operating,4.8
+G100001009631,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project VIII,L100001008261,utility-scale solar,operating,13.3
+G100001009632,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project III,L100001008262,utility-scale solar,operating,3.1
+G100001009633,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project IX,L100001008263,utility-scale solar,operating,4.4
+G100001009634,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project I,L100001008264,utility-scale solar,operating,6.3
+G100001009635,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project X,L100001008265,utility-scale solar,operating,12.6
+G100001009636,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project X,L100001008266,utility-scale solar,operating,8.3
+G100001009637,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project II,L100001008267,utility-scale solar,operating,8.9
+G100001009638,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project VI,L100001008268,utility-scale solar,operating,4.3
+G100001009639,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project IV,L100001008269,utility-scale solar,operating,5.9
+G100001009640,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project III,L100001008270,utility-scale solar,operating,6.9
+G100001009641,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project VII,L100001008271,utility-scale solar,operating,2.1
+G100001009642,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XI,L100001008272,utility-scale solar,operating,3.8
+G100001009643,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XI,L100001008273,utility-scale solar,operating,3.8
+G100001009644,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project VIII,L100001008274,utility-scale solar,operating,5.7
+G100001009645,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project I,L100001008275,utility-scale solar,operating,2.1
+G100001009646,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XII,L100001008276,utility-scale solar,operating,3.8
+G100001009647,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project V,L100001008277,utility-scale solar,operating,5.1
+G100001009648,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project III,L100001008278,utility-scale solar,operating,6.6
+G100001009649,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project IX,L100001008279,utility-scale solar,operating,2.2
+G100001009650,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project V,L100001008280,utility-scale solar,operating,3.7
+G100001009651,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project X,L100001008281,utility-scale solar,operating,3.3
+G100001009652,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project VIII,L100001008282,utility-scale solar,operating,3.8
+G100001009653,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kardzhali solar project I,L100001008283,utility-scale solar,operating,7.8
+G100001009654,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XII,L100001008284,utility-scale solar,operating,1.6
+G100001009655,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XIII,L100001008285,utility-scale solar,operating,4.7
+G100001009656,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XI,L100001008286,utility-scale solar,operating,1.4
+G100001009657,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XII,L100001008287,utility-scale solar,operating,3
+G100001009658,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XIII,L100001008288,utility-scale solar,operating,1.8
+G100001009659,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project III,L100001008289,utility-scale solar,operating,2.2
+G100001009660,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna solar project I,L100001008290,utility-scale solar,operating,10.4
+G100001009661,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project IV,L100001008291,utility-scale solar,operating,4.8
+G100001009662,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XIV,L100001008292,utility-scale solar,operating,3.9
+G100001009663,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project IV,L100001008293,utility-scale solar,operating,6.1
+G100001009664,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project II,L100001008294,utility-scale solar,operating,5.9
+G100001009665,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XIII,L100001008295,utility-scale solar,operating,4.9
+G100001009666,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project VI,L100001008296,utility-scale solar,operating,2.5
+G100001009667,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XV,L100001008297,utility-scale solar,operating,7.2
+G100001009668,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project II,L100001008298,utility-scale solar,operating,3.8
+G100001009669,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XIV,L100001008299,utility-scale solar,operating,3.1
+G100001009670,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project VI,L100001008300,utility-scale solar,operating,3.4
+G100001009671,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project I,L100001008301,utility-scale solar,operating,2.6
+G100001009672,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XV,L100001008302,utility-scale solar,operating,4.7
+G100001009673,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XIV,L100001008303,utility-scale solar,operating,5.2
+G100001009674,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XV,L100001008304,utility-scale solar,operating,6.7
+G100001009675,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project IX,L100001008305,utility-scale solar,operating,2.3
+G100001009676,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XVI,L100001008306,utility-scale solar,operating,3.3
+G100001009677,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project II,L100001008307,utility-scale solar,operating,4
+G100001009678,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project V,L100001008308,utility-scale solar,operating,5.1
+G100001009679,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XVI,L100001008309,utility-scale solar,operating,2.7
+G100001009680,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XVI,L100001008310,utility-scale solar,operating,9
+G100001009681,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project III,L100001008311,utility-scale solar,operating,1.8
+G100001009682,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XVII,L100001008312,utility-scale solar,operating,3.7
+G100001009683,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project VI,L100001008313,utility-scale solar,operating,6.2
+G100001009684,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XVIII,L100001008314,utility-scale solar,operating,2.7
+G100001009685,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project II,L100001008315,utility-scale solar,operating,2.3
+G100001009686,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project VII,L100001008316,utility-scale solar,operating,3.9
+G100001009687,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project VII,L100001008317,utility-scale solar,operating,10.8
+G100001009688,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project IV,L100001008318,utility-scale solar,operating,1.5
+G100001009689,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project VIII,L100001008319,utility-scale solar,operating,7.7
+G100001009690,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project X,L100001008320,utility-scale solar,operating,2.1
+G100001009692,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project VIII,L100001008322,utility-scale solar,operating,4.3
+G100001009693,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project VII,L100001008323,utility-scale solar,operating,5.5
+G100001009694,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project V,L100001008324,utility-scale solar,operating,8.2
+G100001009695,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project IV,L100001008325,utility-scale solar,operating,1.7
+G100001009696,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XI,L100001008326,utility-scale solar,operating,6.3
+G100001009697,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project IV,L100001008327,utility-scale solar,operating,6.6
+G100001009698,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project III,L100001008328,utility-scale solar,operating,3.4
+G100001009700,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XVII,L100001008330,utility-scale solar,operating,2.8
+G100001009701,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project III,L100001008331,utility-scale solar,operating,4.8
+G100001009702,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project II,L100001008332,utility-scale solar,operating,2.1
+G100001009703,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project IX,L100001008333,utility-scale solar,operating,2.6
+G100001009704,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XIX,L100001008334,utility-scale solar,operating,1.7
+G100001009705,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project V,L100001008335,utility-scale solar,operating,3.3
+G100001009706,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XII,L100001008336,utility-scale solar,operating,4.6
+G100001009707,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XIII,L100001008337,utility-scale solar,operating,3.3
+G100001009708,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project VIII,L100001008338,utility-scale solar,operating,2.1
+G100001009709,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project IV,L100001008339,utility-scale solar,operating,4.1
+G100001009710,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project X,L100001008340,utility-scale solar,operating,2.8
+G100001009711,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project III,L100001008341,utility-scale solar,operating,1.9
+G100001009712,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project IX,L100001008342,utility-scale solar,operating,2.4
+G100001009713,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XVII,L100001008343,utility-scale solar,operating,1.2
+G100001009714,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project IV,L100001008344,utility-scale solar,operating,2.8
+G100001009715,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XIV,L100001008345,utility-scale solar,operating,6.9
+G100001009716,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project V,L100001008346,utility-scale solar,operating,15.2
+G100001009717,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project IX,L100001008347,utility-scale solar,operating,4.2
+G100001009718,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XVIII,L100001008348,utility-scale solar,operating,3.1
+G100001009720,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project VI,L100001008350,utility-scale solar,operating,4.5
+G100001009721,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project III,L100001008351,utility-scale solar,operating,7.2
+G100001009722,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project I,L100001008352,utility-scale solar,operating,2.8
+G100001009723,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project X,L100001008353,utility-scale solar,operating,3.6
+G100001009724,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XVIII,L100001008354,utility-scale solar,operating,2.5
+G100001009725,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XIX,L100001008355,utility-scale solar,operating,5.7
+G100001009726,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna solar project II,L100001008356,utility-scale solar,operating,7.8
+G100001009727,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XIX,L100001008357,utility-scale solar,operating,3.9
+G100001009728,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project IV,L100001008358,utility-scale solar,operating,5.6
+G100001009730,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XX,L100001008360,utility-scale solar,operating,4.2
+G100001009731,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project V,L100001008361,utility-scale solar,operating,9
+G100001009732,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project VII,L100001008362,utility-scale solar,operating,1.6
+G100001009733,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XVI,L100001008363,utility-scale solar,operating,1.8
+G100001009735,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XX,L100001008365,utility-scale solar,operating,7.2
+G100001009737,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project V,L100001008367,utility-scale solar,operating,3.7
+G100001009738,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project XI,L100001008368,utility-scale solar,operating,6.8
+G100001009739,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project I,L100001008369,utility-scale solar,operating,9.8
+G100001009741,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kyustendil solar project I,L100001008371,utility-scale solar,operating,2.4
+G100001009742,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kyustendil solar project II,L100001008372,utility-scale solar,operating,3.5
+G100001009744,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project XII,L100001008374,utility-scale solar,operating,7.8
+G100001009745,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project VII,L100001008375,utility-scale solar,operating,4.1
+G100001009746,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project VIII,L100001008376,utility-scale solar,operating,4.6
+G100001009747,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project II,L100001008377,utility-scale solar,operating,5.6
+G100001009748,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project VI,L100001008378,utility-scale solar,operating,2.4
+G100001009749,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project II,L100001008379,utility-scale solar,operating,1.8
+G100001009750,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project X,L100001008380,utility-scale solar,operating,8
+G100001009751,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XI,L100001008381,utility-scale solar,operating,5.2
+G100001009752,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XII,L100001008382,utility-scale solar,operating,2.2
+G100001009753,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XIII,L100001008383,utility-scale solar,operating,15.9
+G100001009754,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XIV,L100001008384,utility-scale solar,operating,5.8
+G100001009755,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XV,L100001008385,utility-scale solar,operating,2.2
+G100001009757,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project III,L100001008387,utility-scale solar,operating,6.4
+G100001009758,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project IV,L100001008388,utility-scale solar,operating,3
+G100001009759,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project V,L100001008389,utility-scale solar,operating,1.4
+G100001009760,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kardzhali solar project II,L100001008390,utility-scale solar,operating,2.7
+G100001009762,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XVII,L100001008392,utility-scale solar,operating,1.9
+G100001009763,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XII,L100001008393,utility-scale solar,operating,19.9
+G100001009764,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project III,L100001008394,utility-scale solar,operating,4.6
+G100001009765,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project IV,L100001008395,utility-scale solar,operating,3.6
+G100001009766,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project V,L100001008396,utility-scale solar,operating,5.1
+G100001009769,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project VIII,L100001008399,utility-scale solar,operating,6.8
+G100001009770,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XVIII,L100001008400,utility-scale solar,operating,2.8
+G100001009771,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XX,L100001008401,utility-scale solar,operating,3.3
+G100001009772,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXI,L100001008402,utility-scale solar,operating,4.7
+G100001009773,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXII,L100001008403,utility-scale solar,operating,6.2
+G100001009774,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-25,,point,,,,false,abf-boundaries-v0.2.0,Targovishte solar project I,L100001008404,utility-scale solar,operating,1.7
+G100001009776,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXI,L100001008406,utility-scale solar,operating,2.1
+G100001009777,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project IV,L100001008407,utility-scale solar,operating,3.5
+G100001009778,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-25,,point,,,,false,abf-boundaries-v0.2.0,Targovishte solar project II,L100001008408,utility-scale solar,operating,5.1
+G100001009779,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project V,L100001008409,utility-scale solar,operating,6.2
+G100001009780,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-25,,point,,,,false,abf-boundaries-v0.2.0,Targovishte solar project III,L100001008410,utility-scale solar,operating,3.1
+G100001009781,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXI,L100001008411,utility-scale solar,operating,2.8
+G100001009782,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXII,L100001008412,utility-scale solar,operating,8.6
+G100001009783,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project IV,L100001008413,utility-scale solar,operating,10.7
+G100001009784,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project VI,L100001008414,utility-scale solar,operating,1.4
+G100001009785,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna solar project IV,L100001008415,utility-scale solar,operating,4
+G100001009786,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XVI,L100001008416,utility-scale solar,operating,15.7
+G100001009787,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXIII,L100001008417,utility-scale solar,operating,8.4
+G100001009788,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project VI,L100001008418,utility-scale solar,operating,5
+G100001009789,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project VI,L100001008419,utility-scale solar,operating,6.8
+G100001009790,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project VI,L100001008420,utility-scale solar,operating,18
+G100001009792,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project VII,L100001008422,utility-scale solar,operating,4.7
+G100001009793,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project VII,L100001008423,utility-scale solar,operating,18.9
+G100001009794,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXIV,L100001008424,utility-scale solar,operating,9.2
+G100001009795,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project IX,L100001008425,utility-scale solar,operating,12.4
+G100001009796,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XIX,L100001008426,utility-scale solar,operating,11.5
+G100001009797,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project VIII,L100001008427,utility-scale solar,operating,6.6
+G100001009798,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project X,L100001008428,utility-scale solar,operating,4.6
+G100001009799,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project V,L100001008429,utility-scale solar,operating,13.5
+G100001009800,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project III,L100001008430,utility-scale solar,operating,5.3
+G100001009801,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project IV,L100001008431,utility-scale solar,operating,9.5
+G100001009803,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project VIII,L100001008433,utility-scale solar,operating,4.8
+G100001009804,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project VI,L100001008434,utility-scale solar,operating,6.2
+G100001009805,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXV,L100001008435,utility-scale solar,operating,7.1
+G100001009806,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XI,L100001008436,utility-scale solar,operating,5.5
+G100001009809,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project VII,L100001008439,utility-scale solar,operating,3.9
+G100001009810,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project VIII,L100001008440,utility-scale solar,operating,4.7
+G100001009811,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XX,L100001008441,utility-scale solar,operating,2.3
+G100001009813,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project IX,L100001008443,utility-scale solar,operating,3.4
+G100001009814,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XVIII,L100001008444,utility-scale solar,operating,5.6
+G100001009815,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XIX,L100001008445,utility-scale solar,operating,14.4
+G100001009816,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project VIII,L100001008446,utility-scale solar,operating,4.5
+G100001009817,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project X,L100001008447,utility-scale solar,operating,6.6
+G100001009818,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XI,L100001008448,utility-scale solar,operating,2.9
+G100001009819,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kardzhali solar project III,L100001008449,utility-scale solar,operating,3.3
+G100001058925,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna solar project V,L100001051131,utility-scale solar,operating,1.2
+G100001058926,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna solar project VI,L100001051132,utility-scale solar,operating,1.6
+G100001058927,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XXI,L100001051133,utility-scale solar,operating,1.2
+G100001058928,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XX,L100001051134,utility-scale solar,operating,1.3
+G100001058929,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXI,L100001051135,utility-scale solar,operating,1.6
+G100001058931,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXIV,L100001051137,utility-scale solar,operating,2
+G100001058932,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-25,,point,,,,false,abf-boundaries-v0.2.0,Targovishte solar project IV,L100001051138,utility-scale solar,operating,2.2
+G100001058933,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXII,L100001051139,utility-scale solar,operating,1.1
+G100001058935,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XII,L100001051141,utility-scale solar,operating,1
+G100001058936,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project V,L100001051142,utility-scale solar,operating,1.9
+G100001058937,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project VI,L100001051143,utility-scale solar,operating,2.2
+G100001058938,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project IX,L100001051144,utility-scale solar,operating,1.2
+G100001058940,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XIV,L100001051146,utility-scale solar,operating,2
+G100001058941,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXV,L100001051147,utility-scale solar,operating,1
+G100001058942,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XIV,L100001051148,utility-scale solar,operating,2.8
+G100001058943,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project VII,L100001051149,utility-scale solar,operating,2.6
+G100001058944,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXIII,L100001051150,utility-scale solar,operating,1.7
+G100001058945,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XII,L100001051151,utility-scale solar,operating,2
+G100001058946,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXVI,L100001051152,utility-scale solar,operating,1.3
+G100001058947,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project VIII,L100001051153,utility-scale solar,operating,1.1
+G100001058948,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project IX,L100001051154,utility-scale solar,operating,1.3
+G100001058949,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project IX,L100001051155,utility-scale solar,operating,1
+G100001058950,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-07,,point,,,,false,abf-boundaries-v0.2.0,Gabrovo solar project I,L100001051156,utility-scale solar,operating,2
+G100001058951,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XIII,L100001051157,utility-scale solar,operating,1
+G100001058952,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project IX,L100001051158,utility-scale solar,operating,3
+G100001058953,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-25,,point,,,,false,abf-boundaries-v0.2.0,Targovishte solar project V,L100001051159,utility-scale solar,operating,2
+G100001058954,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project X,L100001051160,utility-scale solar,operating,1.1
+G100001058955,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XIV,L100001051161,utility-scale solar,operating,4.9
+G100001058956,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project IX,L100001051162,utility-scale solar,operating,1.2
+G100001058957,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project V,L100001051163,utility-scale solar,operating,8.3
+G100001058958,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXII,L100001051164,utility-scale solar,operating,6.2
+G100001058959,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XV,L100001051165,utility-scale solar,operating,1.6
+G100001058960,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project VIII,L100001051166,utility-scale solar,operating,19.4
+G100001058961,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project X,L100001051167,utility-scale solar,operating,1.5
+G100001058962,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXVI,L100001051168,utility-scale solar,operating,1.9
+G100001058963,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project VII,L100001051169,utility-scale solar,operating,1
+G100001058964,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XV,L100001051170,utility-scale solar,operating,1
+G100001058965,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXVII,L100001051171,utility-scale solar,operating,1
+G100001058966,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kyustendil solar project IV,L100001051172,utility-scale solar,operating,1.1
+G100001058967,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XV,L100001051173,utility-scale solar,operating,4.6
+G100001058968,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XVI,L100001051174,utility-scale solar,operating,1.5
+G100001058969,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project VI,L100001051175,utility-scale solar,operating,1.2
+G100001058970,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project XI,L100001051176,utility-scale solar,operating,1
+G100001058971,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXIII,L100001051177,utility-scale solar,operating,1.3
+G100001058972,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXIV,L100001051178,utility-scale solar,operating,1
+G100001058973,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-25,,point,,,,false,abf-boundaries-v0.2.0,Targovishte solar project VI,L100001051179,utility-scale solar,operating,1.1
+G100001058974,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XVI,L100001051180,utility-scale solar,operating,1.2
+G100001058975,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XVI,L100001051181,utility-scale solar,operating,2.5
+G100001058976,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project X,L100001051182,utility-scale solar,operating,2.8
+G100001058977,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXVIII,L100001051183,utility-scale solar,operating,1
+G100001058978,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXIX,L100001051184,utility-scale solar,operating,2.8
+G100001058979,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXV,L100001051185,utility-scale solar,operating,6
+G100001058980,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XVII,L100001051186,utility-scale solar,operating,3.3
+G100001058981,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXX,L100001051187,utility-scale solar,operating,1.3
+G100001058982,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XVII,L100001051188,utility-scale solar,operating,1
+G100001058983,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project VIII,L100001051189,utility-scale solar,operating,7.5
+G100001058984,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXVI,L100001051190,utility-scale solar,operating,12.4
+G100001058985,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project XII,L100001051191,utility-scale solar,operating,1.7
+G100001058986,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XXIII,L100001051192,utility-scale solar,operating,1.5
+G100001058987,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project VI,L100001051193,utility-scale solar,operating,3.6
+G100001058988,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXVII,L100001051194,utility-scale solar,operating,5.3
+G100001058989,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project VII,L100001051195,utility-scale solar,operating,4
+G100001058990,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXVIII,L100001051196,utility-scale solar,operating,3.8
+G100001058991,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXIV,L100001051197,utility-scale solar,operating,3.1
+G100001058992,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXV,L100001051198,utility-scale solar,operating,5.1
+G100001058993,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project XIII,L100001051199,utility-scale solar,operating,2.4
+G100001058994,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project XIV,L100001051200,utility-scale solar,operating,6.5
+G100001058995,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project VII,L100001051201,utility-scale solar,operating,2.4
+G100001058996,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XVII,L100001051202,utility-scale solar,operating,1.9
+G100001058997,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XVIII,L100001051203,utility-scale solar,operating,2.1
+G100001058998,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project VIII,L100001051204,utility-scale solar,operating,1.1
+G100001058999,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXVI,L100001051205,utility-scale solar,operating,1.7
+G100001059000,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Войводино solar project,L100001051206,utility-scale solar,operating,1.5
+G100001059001,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXIX,L100001051207,utility-scale solar,operating,8.4
+G100001059002,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project XI,L100001051208,utility-scale solar,operating,2.7
+G100001059003,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-21,,point,,,,false,abf-boundaries-v0.2.0,Smolyan solar project I,L100001051209,utility-scale solar,operating,1.7
+G100001059004,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXX,L100001051210,utility-scale solar,operating,1.2
+G100001059005,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXVII,L100001051211,utility-scale solar,operating,6.5
+G100001059006,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXXI,L100001051212,utility-scale solar,operating,1.2
+G100001059007,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vidin solar project,L100001051213,utility-scale solar,operating,1.4
+G100001059008,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XIX,L100001051214,utility-scale solar,operating,1.8
+G100001059009,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XVIII,L100001051215,utility-scale solar,operating,14.9
+G100001059010,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXVIII,L100001051216,utility-scale solar,operating,6.8
+G100001059011,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXI,L100001051217,utility-scale solar,operating,1.2
+G100001059012,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project IX,L100001051218,utility-scale solar,operating,1.6
+G100001059013,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXII,L100001051219,utility-scale solar,operating,1.1
+G100001059015,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXIII,L100001051221,utility-scale solar,operating,1.7
+G100001059016,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project XV,L100001051222,utility-scale solar,operating,1.9
+G100001059017,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXVII,L100001051223,utility-scale solar,operating,4.1
+G100001059018,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pernik solar project I,L100001051224,utility-scale solar,operating,3.3
+G100001059019,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project XII,L100001051225,utility-scale solar,operating,5.2
+G100001059020,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XX,L100001051226,utility-scale solar,operating,2.1
+G100001059021,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project XVI,L100001051227,utility-scale solar,operating,1.3
+G100001059022,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XXIV,L100001051228,utility-scale solar,operating,14.7
+G100001059023,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-21,,point,,,,false,abf-boundaries-v0.2.0,Smolyan solar project II,L100001051229,utility-scale solar,operating,1.1
+G100001059024,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project XIII,L100001051230,utility-scale solar,operating,1.2
+G100001059025,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XXI,L100001051231,utility-scale solar,operating,1.2
+G100001059026,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXIX,L100001051232,utility-scale solar,operating,1.2
+G100001059027,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXVIII,L100001051233,utility-scale solar,operating,2.8
+G100001059028,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project X,L100001051234,utility-scale solar,operating,2.9
+G100001059029,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kardzhali solar project,L100001051235,utility-scale solar,operating,1.2
+G100001059030,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XVIII,L100001051236,utility-scale solar,operating,1.4
+G100001059031,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-07,,point,,,,false,abf-boundaries-v0.2.0,Gabrovo solar project III,L100001051237,utility-scale solar,operating,1
+G100001059032,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pernik solar project II,L100001051238,utility-scale solar,operating,2
+G100001059033,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXIX,L100001051239,utility-scale solar,operating,2.4
+G100001059034,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XIX,L100001051240,utility-scale solar,operating,2.5
+G100001059035,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXX,L100001051241,utility-scale solar,operating,1.9
+G100001059036,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXI,L100001051242,utility-scale solar,operating,4.2
+G100001059037,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXII,L100001051243,utility-scale solar,operating,2.1
+G100001059038,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XIX,L100001051244,utility-scale solar,operating,6.8
+G100001059039,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXX,L100001051245,utility-scale solar,operating,3.1
+G100001059040,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project IX,L100001051246,utility-scale solar,operating,1.9
+G100001059041,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXIII,L100001051247,utility-scale solar,operating,1.3
+G100001059042,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXIV,L100001051248,utility-scale solar,operating,1.7
+G100001059043,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XX,L100001051249,utility-scale solar,operating,2.8
+G100001059044,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXV,L100001051250,utility-scale solar,operating,1.6
+G100001059045,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XXII,L100001051251,utility-scale solar,operating,2.4
+G100001059046,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XX,L100001051252,utility-scale solar,operating,1.9
+G100001059047,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project VII,L100001051253,utility-scale solar,operating,5.1
+G100001059048,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project X,L100001051254,utility-scale solar,operating,1.4
+G100001059049,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XXIII,L100001051255,utility-scale solar,operating,2.7
+G100001059050,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXIV,L100001051256,utility-scale solar,operating,1.4
+G100001059051,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXXII,L100001051257,utility-scale solar,operating,1
+G100001059052,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pernik solar project III,L100001051258,utility-scale solar,operating,18.1
+G100001059053,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project XI,L100001051259,utility-scale solar,operating,13.5
+G100001059054,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XXI,L100001051260,utility-scale solar,operating,8.2
+G100001059055,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project XIV,L100001051261,utility-scale solar,operating,3.2
+G100001059056,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXV,L100001051262,utility-scale solar,operating,3.5
+G100001059057,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXVI,L100001051263,utility-scale solar,operating,1.3
+G100001059059,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kyustendil solar project V,L100001051265,utility-scale solar,operating,1.1
+G100001059060,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-08,,point,,,,false,abf-boundaries-v0.2.0,Dobrich solar project VIII,L100001051266,utility-scale solar,operating,7.9
+G100001059061,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project XII,L100001051267,utility-scale solar,operating,4
+G100001059062,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project XIII,L100001051268,utility-scale solar,operating,1.2
+G100001059063,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project X,L100001051269,utility-scale solar,operating,1.3
+G100001059064,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project VIII,L100001051270,utility-scale solar,operating,1
+G100001059065,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XXII,L100001051271,utility-scale solar,operating,2.1
+G100001059066,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XXIV,L100001051272,utility-scale solar,operating,1.2
+G100001059067,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XXI,L100001051273,utility-scale solar,operating,2.1
+G100001059068,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXXIII,L100001051274,utility-scale solar,operating,2.4
+G100001059069,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XXII,L100001051275,utility-scale solar,operating,1.2
+G100001059070,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project X,L100001051276,utility-scale solar,operating,1.1
+G100001059071,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXVI,L100001051277,utility-scale solar,operating,1.2
+G100001059072,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ruse solar project IX,L100001051278,utility-scale solar,operating,5.8
+G100001059073,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XXV,L100001051279,utility-scale solar,operating,4.9
+G100001059074,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-03,,point,,,,false,abf-boundaries-v0.2.0,Varna solar project VII,L100001051280,utility-scale solar,operating,1.3
+G100001059075,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project XIV,L100001051281,utility-scale solar,operating,1
+G100001059076,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-07,,point,,,,false,abf-boundaries-v0.2.0,Gabrovo solar project IV,L100001051282,utility-scale solar,operating,2
+G100001059077,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XXV,L100001051283,utility-scale solar,operating,2
+G100001059078,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXVII,L100001051284,utility-scale solar,operating,1.9
+G100001059079,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-12,,point,,,,false,abf-boundaries-v0.2.0,Montana solar project XI,L100001051285,utility-scale solar,operating,4.1
+G100001059080,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project XV,L100001051286,utility-scale solar,operating,1.7
+G100001059081,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pleven solar project XXIII,L100001051287,utility-scale solar,operating,2.1
+G100001059082,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-04,,point,,,,false,abf-boundaries-v0.2.0,Veliko Tarnovo solar project XXVI,L100001051288,utility-scale solar,operating,2.8
+G100001059083,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project XVI,L100001051289,utility-scale solar,operating,2.4
+G100001059084,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-28,,point,,,,false,abf-boundaries-v0.2.0,Yambol solar project XXXIV,L100001051290,utility-scale solar,operating,1.2
+G100001059085,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XXIII,L100001051291,utility-scale solar,operating,2.1
+G100001059086,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vratsa solar project IX,L100001051292,utility-scale solar,operating,7.1
+G100001059087,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-01,,point,,,,false,abf-boundaries-v0.2.0,Blagoevgrad solar project XVII,L100001051293,utility-scale solar,operating,1.4
+G100001059088,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-27,,point,,,,false,abf-boundaries-v0.2.0,Shumen solar project XI,L100001051294,utility-scale solar,operating,3.6
+G100001059090,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXVII,L100001051296,utility-scale solar,operating,3.2
+G100001059091,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXVIII,L100001051297,utility-scale solar,operating,3.7
+G100001059092,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-20,,point,,,,false,abf-boundaries-v0.2.0,Sliven solar project XXXVIII,L100001051298,utility-scale solar,operating,10.3
+G100001059093,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XXVI,L100001051299,utility-scale solar,operating,2.2
+G100001059094,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-16,,point,,,,false,abf-boundaries-v0.2.0,Plovdiv solar project XXXIX,L100001051300,utility-scale solar,operating,1.2
+G100001059095,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-19,,point,,,,false,abf-boundaries-v0.2.0,Silistra solar project XI,L100001051301,utility-scale solar,operating,4.3
+G100001059096,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pernik solar project IV,L100001051302,utility-scale solar,operating,1.3
+G100001059097,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lovech solar project XI,L100001051303,utility-scale solar,operating,4.5
+G100001059098,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-24,,point,,,,false,abf-boundaries-v0.2.0,Stara Zagora solar project XXIV,L100001051304,utility-scale solar,operating,2.3
+G100001059099,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-23,,point,,,,false,abf-boundaries-v0.2.0,Sofia solar project XV,L100001051305,utility-scale solar,operating,1.2
+G100001059100,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXXII,L100001051306,utility-scale solar,operating,1.4
+G100001059101,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-02,,point,,,,false,abf-boundaries-v0.2.0,Burgas solar project XXXIII,L100001051307,utility-scale solar,operating,1.5
+G100001059102,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-17,,point,,,,false,abf-boundaries-v0.2.0,Razgrad solar project,L100001051308,utility-scale solar,operating,2.3
+G100001059103,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pazardzhik solar project XVII,L100001051309,utility-scale solar,operating,1.3
+G100001059104,energy_plants_gem_tzsam_units,BGR,point,,BGR-1-26,,point,,,,false,abf-boundaries-v0.2.0,Haskovo solar project XXVII,L100001051310,utility-scale solar,operating,2.5

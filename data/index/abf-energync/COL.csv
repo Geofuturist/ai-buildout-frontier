@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000810345,energy_plants_gem_tzsam_units,COL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pétalo Del Córdoba solar farm,L100000808197,utility-scale solar,operating,9.9
+G100000810363,energy_plants_gem_tzsam_units,COL,point,,,,,,,,false,abf-boundaries-v0.2.0,Proyecto Fotovoltáico Celsia Solar Bolivar solar farm,L100000808213,utility-scale solar,operating,9.9
+G100000810453,energy_plants_gem_tzsam_units,COL,point,,,,,,,,false,abf-boundaries-v0.2.0,Yumbo solar farm,L100000808282,utility-scale solar,operating,9.9
+G100000837879,energy_plants_gem_tzsam_units,COL,point,,,,,,,,false,abf-boundaries-v0.2.0,El Carmelo solar project,L100000832331,utility-scale solar,operating,4.9
+G100000837907,energy_plants_gem_tzsam_units,COL,point,,,,,,,,false,abf-boundaries-v0.2.0,La Paila solar project,L100000832358,utility-scale solar,operating,5

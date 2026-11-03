@@ -1,0 +1,14 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-19126647149c,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,Borealis Norðurland vestra,Operating / Construction,colocation,10_99,
+ATL-3b2f4bf80345,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,atNorth ICE03 Campus,Planned,colocation,10_99,
+ATL-4cdb2b6c8ddc,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,atNorth ICE03 Campus,Operating / Construction,colocation,10_99,
+ATL-6dc7e1d1a9bd,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,atNorth ReykjanesbA Campus,Operating / Construction,colocation,10_99,
+ATL-79f68ba62429,dc_atlas_points,ISL,field,,,,,,,,true,abf-boundaries-v0.2.0,atNorth Reykjavík,Operating / Construction,colocation,lt10,
+ATL-a2e39bf70583,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,atNorth ReykjanesbA Campus,Planned,colocation,10_99,
+ATL-b43063259134,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,Borealis Vesturland,Operating / Construction,colocation,lt10,
+ATL-b96777006f77,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,Nebius Suðurnes,Operating / Construction,ai_compute,10_99,
+ATL-bc54cf1fad8a,dc_atlas_points,ISL,field,,,,,,,,true,abf-boundaries-v0.2.0,Opin Kerfi Hf Reykjavík,Operating / Construction,enterprise_it,lt10,
+ATL-c130ccdb2234,dc_atlas_points,ISL,field,,,,,,,,true,abf-boundaries-v0.2.0,GIGA-42 Bakki AI Data Centre,Planned,developer_investor,10_99,
+ATL-e5742c83e956,dc_atlas_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,Verne Global Keflavik Campus,Operating / Construction,colocation,10_99,
+ATL-ec1bc9fe6a26,dc_atlas_points,ISL,field,,,,,,,,true,abf-boundaries-v0.2.0,Verne Global Keflavik Campus,Planned,colocation,10_99,
+EPO-nscale-keflavik,dc_epoch_points,ISL,field,,,,,,,,,abf-boundaries-v0.2.0,Nscale Keflavik,,,,5.11

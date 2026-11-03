@@ -1,0 +1,15 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200001,energy_plants_gem_units,GNB,point,,GNB-1-OI,,point,,,,true,abf-boundaries-v0.2.0,Mansôa power station,L100000200001,bioenergy,cancelled,30
+G100000800154,energy_plants_gem_units,GNB,point,,GNB-1-BA,,point,,,,true,abf-boundaries-v0.2.0,Gardete solar farm,L100000800118,utility-scale solar,shelved,20
+G100000814140,energy_plants_gem_units,GNB,point,,GNB-1-BS,,point,,,,true,abf-boundaries-v0.2.0,FREAD solar farm,L100000811608,utility-scale solar,cancelled,20
+G100000814141,energy_plants_gem_units,GNB,point,,GNB-1-BS,,point,,,,true,abf-boundaries-v0.2.0,Helios Solar solar farm,L100000811609,utility-scale solar,operating,10
+G100000814142,energy_plants_gem_units,GNB,point,,GNB-1-BS,,point,,,,true,abf-boundaries-v0.2.0,Helios Solar solar farm,L100000811609,utility-scale solar,shelved,10
+G100000831174,energy_plants_gem_units,GNB,point,,GNB-1-BA,,point,,,,true,abf-boundaries-v0.2.0,Bafatá solar farm,L100000827645,utility-scale solar,announced,15
+G100000831175,energy_plants_gem_units,GNB,point,,GNB-1-BS,,point,,,,true,abf-boundaries-v0.2.0,Bissau solar farm,L100000827646,utility-scale solar,announced,30
+G100000831176,energy_plants_gem_units,GNB,point,,GNB-1-CA,,point,,,,true,abf-boundaries-v0.2.0,Cacheu solar farm,L100000827647,utility-scale solar,announced,6
+G100000831177,energy_plants_gem_units,GNB,point,,GNB-1-GA,,point,,,,true,abf-boundaries-v0.2.0,Gabu solar farm,L100000827648,utility-scale solar,cancelled,15
+G100001074439,energy_plants_gem_units,GNB,point,,GNB-1-BL,,point,,,,true,abf-boundaries-v0.2.0,Bolama Solar Initiative,L100001064668,utility-scale solar,announced,5
+G100001074440,energy_plants_gem_units,GNB,point,,GNB-1-BS,,point,,,,true,abf-boundaries-v0.2.0,Bissau solar farm,L100000827646,utility-scale solar,announced,8
+G100001074441,energy_plants_gem_units,GNB,point,,GNB-1-BA,,point,,,,true,abf-boundaries-v0.2.0,Bafatá Microgrid solar farm,L100001064669,utility-scale solar,announced,3
+G100001074442,energy_plants_gem_units,GNB,point,,GNB-1-QU,,point,,,,true,abf-boundaries-v0.2.0,Quinara Community solar farm,L100001064670,utility-scale solar,announced,2
+G100001090869,energy_plants_gem_units,GNB,point,,GNB-1-BA,,point,,,,true,abf-boundaries-v0.2.0,AIC Green Energy (Guinea-Bissau) solar farm,L100001080893,utility-scale solar,announced,10

@@ -1,0 +1,25 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000113980,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,true,abf-boundaries-v0.2.0,Keita power station,L100000104478,coal,cancelled,100
+G100000114994,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,true,abf-boundaries-v0.2.0,Salkadamna power station,L100000103097,coal,pre_construction,50
+G100000114995,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,true,abf-boundaries-v0.2.0,Salkadamna power station,L100000103097,coal,pre_construction,50
+G100000114996,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,true,abf-boundaries-v0.2.0,Salkadamna power station,L100000103097,coal,pre_construction,50
+G100000114997,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,true,abf-boundaries-v0.2.0,Salkadamna power station,L100000103097,coal,pre_construction,50
+G100000114998,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,true,abf-boundaries-v0.2.0,Salkadamna power station,L100000103097,coal,announced,400
+G100000413515,energy_plants_gem_units,NER,point,,NER-1-7,,point,,,,false,abf-boundaries-v0.2.0,Zinder power plant,L100000409063,oil/gas,operating,23
+G100000413516,energy_plants_gem_units,NER,point,,NER-1-8,,point,,,,true,abf-boundaries-v0.2.0,Niamey Issoufou power station,L100000409064,oil/gas,operating,89
+G100000413521,energy_plants_gem_units,NER,point,,NER-1-8,,point,,,,false,abf-boundaries-v0.2.0,Gorou Banda power plant,L100000409065,oil/gas,operating,100
+G100000413522,energy_plants_gem_units,NER,point,,NER-1-7,,point,,,,true,abf-boundaries-v0.2.0,Soraz Zinder Refinery power plant,L100000409058,oil/gas,operating,25
+G100000604494,energy_plants_gem_units,NER,point,,NER-1-6,,point,,,,false,abf-boundaries-v0.2.0,Kandadji hydroelectric plant,L100000602851,hydropower,mothballed,130
+G100000800160,energy_plants_gem_units,NER,point,,NER-1-8,,point,,,,false,abf-boundaries-v0.2.0,Gorou Banda solar farm,L100000800124,utility-scale solar,operating,30
+G100000800163,energy_plants_gem_units,NER,point,,NER-1-6,,point,,,,true,abf-boundaries-v0.2.0,Guéssélbodi solar farm,L100000800127,utility-scale solar,cancelled,30
+G100000814183,energy_plants_gem_units,NER,point,,NER-1-4,,point,,,,false,abf-boundaries-v0.2.0,Maradi solar farm,L100000811636,utility-scale solar,announced,20
+G100000831246,energy_plants_gem_units,NER,point,,NER-1-3,,point,,,,true,abf-boundaries-v0.2.0,Dosso solar plant,L100000827700,utility-scale solar,pre_construction,10
+G100000831247,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,false,abf-boundaries-v0.2.0,Malbaza solar project,L100000827701,utility-scale solar,operating,6
+G100000831248,energy_plants_gem_units,NER,point,,NER-1-4,,point,,,,true,abf-boundaries-v0.2.0,Maradi (Savannah Energy) solar farm,L100000827702,utility-scale solar,announced,100
+G100000831249,energy_plants_gem_units,NER,point,,NER-1-1,,point,,,,true,abf-boundaries-v0.2.0,Niger (NTPC) solar farm,L100000827703,utility-scale solar,shelved,50
+G100000831250,energy_plants_gem_units,NER,point,,NER-1-7,,point,,,,true,abf-boundaries-v0.2.0,Zinder solar farm,L100000827704,utility-scale solar,announced,100
+G100000920664,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,true,abf-boundaries-v0.2.0,Tarka wind farm,L100000916626,wind,announced,250
+G100001021406,energy_plants_gem_units,NER,point,,NER-1-2,,point,,,,true,abf-boundaries-v0.2.0,Diffa solar farm,L100001019024,utility-scale solar,announced,10
+G100001031066,energy_plants_gem_units,NER,point,,NER-1-5,,point,,,,false,abf-boundaries-v0.2.0,Badaguichiri Cement Plant power station,L100001025919,coal,operating,30
+G100001074467,energy_plants_gem_units,NER,point,,NER-1-1,,point,,,,true,abf-boundaries-v0.2.0,Niger (AfDB) solar farm,L100001064695,utility-scale solar,announced,50
+G100001074468,energy_plants_gem_units,NER,point,,NER-1-1,,point,,,,true,abf-boundaries-v0.2.0,Niger (AfDB) solar farm,L100001064695,utility-scale solar,announced,190

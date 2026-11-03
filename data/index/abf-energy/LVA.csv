@@ -1,0 +1,51 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000106036,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kurzeme power station,L100000103008,coal,cancelled,435
+G100000400480,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Imanta power station,L100000400480,oil/gas,operating,48
+G100000400481,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Riga-1 power station,L100000400481,oil/gas,operating,158
+G100000400482,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Riga-2 power station,L100000400482,oil/gas,operating,441
+G100000400483,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Riga-2 power station,L100000400482,oil/gas,operating,440
+G100000602444,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kegums hydroelectric plant,L100000602414,hydropower,operating,240
+G100000602445,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Plavinas hydroelectric plant,L100000602415,hydropower,operating,894
+G100000602446,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Riga hydroelectric plant,L100000602416,hydropower,operating,402
+G100000830149,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Jekabpils solar farm,L100000826754,utility-scale solar,pre_construction,100
+G100000830150,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tārgale solar farm,L100000826755,utility-scale solar,pre_construction,148
+G100000914431,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Grobina wind farm,L100000911451,wind,operating,20
+G100000914809,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pope wind farm,L100000911787,wind,operating,21
+G100000918458,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dundaga wind farm,L100000914909,wind,cancelled,50
+G100000919111,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rapsoil wind farm,L100000915452,wind,cancelled,72
+G100000919735,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Baltic wind farm,L100000915976,wind,cancelled,200
+G100000919740,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Pienava wind farm,L100000915981,wind,pre_construction,158
+G100000920097,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,JK Energy wind farm,L100000916285,wind,cancelled,900
+G100000925124,energy_plants_gem_units,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Kurzeme wind farm,L100000920460,wind,shelved,1000
+G100000925125,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Targale wind farm,L100000920461,wind,operating,59
+G100001004693,energy_plants_gem_units,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Elwind wind farm (Latvia),L100000922853,wind,announced,1000
+G100001004694,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Balvi solar farm,L100001004037,utility-scale solar,announced,400
+G100001004695,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Vārme solar farm,L100001004038,utility-scale solar,operating,94
+G100001004696,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Stelpe solar farm,L100001004039,utility-scale solar,operating,72.5
+G100001004697,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Brocēni solar farm,L100001004040,utility-scale solar,announced,115
+G100001028066,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Matīši solar farm,L100001023553,utility-scale solar,construction,54
+G100001028067,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dagda solar farm,L100001023554,utility-scale solar,construction,90
+G100001028068,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Barkava 2 solar farm,L100001023555,utility-scale solar,construction,81
+G100001051593,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Valmiera wind farm,L100001045770,wind,announced,24.8
+G100001051594,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Aizpute solar farm,L100001045771,utility-scale solar,announced,265
+G100001051595,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tume solar farm,L100001045772,utility-scale solar,announced,174
+G100001051596,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Port of Riga solar farm,L100001045773,utility-scale solar,announced,100
+G100001053966,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gren Jelgava power station,L100001047421,bioenergy,operating,23
+G100001053967,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Acone Waste power station,L100001047422,bioenergy,announced,20
+G100001090673,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Limbaži wind farm,L100001080742,wind,pre_construction,81.6
+G100001090676,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Valmiera-Valka wind farm,L100001080744,wind,announced,480
+G100001090677,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata un Bērzkrogs wind farm,L100001080745,wind,pre_construction,344
+G100001090682,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Smikši wind farm,L100001080746,wind,pre_construction,112
+G100001090684,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sējas wind farm,L100001080750,wind,pre_construction,136
+G100001090688,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,TVE-2 wind farm,L100001080755,wind,pre_construction,84
+G100001090689,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Aizpute wind farm,L100001080756,wind,pre_construction,86
+G100001090691,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Apriķi wind farm,L100001080758,wind,pre_construction,150
+G100001090692,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Cīrava wind farm,L100001080759,wind,pre_construction,50
+G100001090693,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Latgola wind farm,L100001080760,wind,pre_construction,210
+G100001090694,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ošenieki wind farm,L100001080761,wind,announced,129.6
+G100001090695,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kūkas wind farm,L100001080762,wind,announced,184
+G100001090699,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Līvāni wind farm,L100001080763,wind,announced,104
+G100001090703,energy_plants_gem_units,LVA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nīcgale wind farm,L100001080769,wind,announced,425
+G100001090718,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zirņu solar farm,L100001080783,utility-scale solar,announced,104
+G100001090722,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Lazas solar farm,L100001080784,utility-scale solar,announced,400
+G100001090932,energy_plants_gem_units,LVA,point,,,,,,,,true,abf-boundaries-v0.2.0,Stelpe solar farm,L100001004039,utility-scale solar,operating,72.5

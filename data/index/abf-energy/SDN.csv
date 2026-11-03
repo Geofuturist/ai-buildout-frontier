@@ -1,0 +1,61 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100341,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Arkyiai power station,L100000103523,coal,cancelled,300
+G100000100342,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Arkyiai power station,L100000103523,coal,cancelled,300
+G100000200017,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,White Nile Sugar Factory power station,L100000200015,bioenergy,operating,31
+G100000201699,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kenana power station,L100000201411,bioenergy,operating,76
+G100000201701,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,White Nile Sugar Factory power station,L100000200015,bioenergy,operating,31
+G100000407269,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Fulah power station,L100000408252,oil/gas,shelved,135
+G100000407270,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Fulah power station,L100000408252,oil/gas,shelved,135
+G100000407271,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Fulah power station,L100000408252,oil/gas,shelved,135
+G100000407272,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Albagair power station,L100000406822,oil/gas,cancelled,350
+G100000410065,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Albagair power station,L100000406822,oil/gas,cancelled,250
+G100000410066,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Albagair power station,L100000406822,oil/gas,cancelled,150
+G100000410067,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Port Sudan power station,L100000407693,oil/gas,construction,170
+G100000410068,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Port Sudan power station,L100000407693,oil/gas,operating,187
+G100000410069,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Port Sudan power station,L100000407693,oil/gas,operating,187
+G100000411155,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Port Sudan power station,L100000407693,oil/gas,announced,500
+G100000411156,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Port Sudan power station,L100000407693,oil/gas,announced,500
+G100000411157,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Fulah power station,L100000408252,oil/gas,cancelled,450
+G100000411398,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosti power plant,L100000408267,oil/gas,operating,125
+G100000411399,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosti power plant,L100000408267,oil/gas,operating,125
+G100000411400,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosti power plant,L100000408267,oil/gas,operating,125
+G100000411401,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosti power plant,L100000408267,oil/gas,operating,125
+G100000411402,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilo-X Dit power plant,L100000408260,oil/gas,operating,256.9
+G100000411403,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahmoud Sharif power station,L100000408263,oil/gas,mothballed,100
+G100000411404,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahmoud Sharif power station,L100000408263,oil/gas,mothballed,100
+G100000411405,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahmoud Sharif power station,L100000408263,oil/gas,mothballed,60
+G100000411406,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahmoud Sharif power station,L100000408263,oil/gas,mothballed,60
+G100000411407,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 4 Power Plant,L100000408262,oil/gas,operating,55
+G100000411408,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 4 Power Plant,L100000408262,oil/gas,operating,55
+G100000411409,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 3 Power Plant,L100000408256,oil/gas,cancelled,187
+G100000411410,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 3 Power Plant,L100000408256,oil/gas,cancelled,187
+G100000411411,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 3 Power Plant,L100000408256,oil/gas,cancelled,187
+G100000411412,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 2 Power Plant,L100000408257,oil/gas,mothballed,110
+G100000411413,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 2 Power Plant,L100000408257,oil/gas,mothballed,110
+G100000411414,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 1 Power Plant,L100000408258,oil/gas,mothballed,110
+G100000411415,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 1 Power Plant,L100000408258,oil/gas,mothballed,110
+G100000413141,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garri 3 Power Plant,L100000408256,oil/gas,cancelled,240
+G100000603444,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Merowe Dam hydroelectric plant,L100000603409,hydropower,operating,1250
+G100000603445,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Roseires Dam hydroelectric plant,L100000603410,hydropower,operating,280
+G100000603446,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rumela hydroelectric plant,L100000603411,hydropower,operating,320
+G100000800210,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Khartoum Solar Power Project,L100000800168,utility-scale solar,shelved,10
+G100000900195,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dongola wind farm,L100000900151,wind,shelved,20
+G100000900196,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dongola wind farm,L100000900151,wind,shelved,80
+G100000900200,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Khartoum wind farm,L100000900152,wind,cancelled,20
+G100000900201,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Nyala wind farm,L100000900153,wind,pre_construction,20
+G100000900202,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Red Sea wind farm,L100000900154,wind,pre_construction,180
+G100001018716,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Karadeniz Powership,L100001016777,oil/gas,operating,150
+G100001030577,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,New Nyala Power Plant,L100001025718,oil/gas,operating,30
+G100001030676,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Nyala Power Plant,L100001025719,oil/gas,operating,14
+G100001030680,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Nyala Power Plant,L100001025719,oil/gas,shelved,20
+G100001030682,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Nyala Power Plant,L100001025719,oil/gas,shelved,20
+G100001030692,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,El Geneina Power Plant,L100001025795,oil/gas,operating,8
+G100001030693,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,El Geneina Power Plant,L100001025795,oil/gas,operating,4.8
+G100001030694,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,El Geneina Power Plant,L100001025795,oil/gas,operating,1.6
+G100001030696,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Nyala Power Plant,L100001025719,oil/gas,operating,1.5
+G100001052405,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,North Cement Factory Solar Power Plant,L100001046385,utility-scale solar,operating,54
+G100001054067,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Assalaya Cogen power plant,L100001047486,bioenergy,operating,6.8
+G100001054068,energy_plants_gem_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Assalaya Cogen power plant,L100001047486,bioenergy,operating,13
+G100001054102,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,El Guneid power station,L100001047520,bioenergy,operating,6
+G100001054103,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sennar power plant,L100001047521,bioenergy,operating,6
+G100001054104,energy_plants_gem_units,SDN,point,,,,,,,,true,abf-boundaries-v0.2.0,New Halfa power station,L100001047522,bioenergy,operating,6

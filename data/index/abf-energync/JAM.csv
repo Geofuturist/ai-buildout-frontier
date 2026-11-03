@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001074911,energy_plants_gem_tzsam_units,JAM,point,,JAM-1-02,,point,,,,false,abf-boundaries-v0.2.0,Kingston solar project,L100001065125,utility-scale solar,operating,2.8
+G100001074912,energy_plants_gem_tzsam_units,JAM,point,,JAM-1-02,,point,,,,false,abf-boundaries-v0.2.0,Saint Andrew solar project,L100001065126,utility-scale solar,operating,1.1
+G100001074913,energy_plants_gem_tzsam_units,JAM,point,,JAM-1-13,,point,,,,false,abf-boundaries-v0.2.0,Saint Catherine solar project,L100001065127,utility-scale solar,operating,1.6

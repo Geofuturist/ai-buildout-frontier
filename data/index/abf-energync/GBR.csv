@@ -1,0 +1,32 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000828380,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-NIR,,point,,,,false,abf-boundaries-v0.2.0,Ballinderry Road Solar,L100000825098,utility-scale solar,operating,13.5
+G100000829578,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Pitchford solar farm,L100000826218,utility-scale solar,operating,10.2
+G100000829904,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Thornham solar farm,L100000826526,utility-scale solar,cancelled,15
+G100001001636,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Appleton Stripe solar project,L100001001232,utility-scale solar,operating,11.6
+G100001001643,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Balcombe solar project,L100001001239,utility-scale solar,operating,4.6
+G100001001644,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Bardon Hill solar project,L100001001240,utility-scale solar,operating,6.6
+G100001001661,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Bradley Upper solar project,L100001001257,utility-scale solar,operating,13.4
+G100001001721,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Edwinstowe solar project,L100001001317,utility-scale solar,operating,5.4
+G100001001743,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Frowick Lane solar project,L100001001339,utility-scale solar,operating,10.3
+G100001001751,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Great Ponton solar project,L100001001347,utility-scale solar,operating,7.8
+G100001001759,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Hamptworth solar project,L100001001355,utility-scale solar,operating,8.5
+G100001001767,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Heywood solar project,L100001001363,utility-scale solar,operating,3.6
+G100001001785,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Hydes solar project,L100001001380,utility-scale solar,operating,12.4
+G100001001786,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Irby-In-The-Marsh solar project,L100001001381,utility-scale solar,operating,13.2
+G100001001795,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Kingston St Mary solar project,L100001001389,utility-scale solar,operating,5.7
+G100001001810,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Linden Hill solar project,L100001001404,utility-scale solar,operating,4.9
+G100001001831,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Mendip solar project,L100001001425,utility-scale solar,operating,6.3
+G100001001834,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Middleton St George solar project,L100001001428,utility-scale solar,operating,6.9
+G100001001855,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,North Baddesley solar project,L100001001448,utility-scale solar,operating,5.9
+G100001001869,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-WLS,,point,,,,false,abf-boundaries-v0.2.0,Pen-Y-Fan A solar project,L100001001462,utility-scale solar,operating,7.2
+G100001001870,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-WLS,,point,,,,false,abf-boundaries-v0.2.0,Penley solar project,L100001001463,utility-scale solar,operating,9.1
+G100001001874,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Popplemire Lane solar project,L100001001467,utility-scale solar,operating,4.3
+G100001001875,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Poulshot solar project,L100001001468,utility-scale solar,operating,15.8
+G100001001884,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Redbridge Road solar project,L100001001477,utility-scale solar,operating,13.4
+G100001001916,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Spreyton solar project,L100001001508,utility-scale solar,operating,11
+G100001001918,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Stanton-under-Bardon solar project,L100001001510,utility-scale solar,operating,3.6
+G100001001931,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-WLS,,point,,,,false,abf-boundaries-v0.2.0,Teyrdan solar project,L100001001523,utility-scale solar,operating,8.7
+G100001001964,energy_plants_gem_tzsam_units,GBR,point,,GBR-1-ENG,,point,,,,false,abf-boundaries-v0.2.0,Weston Longville Airfield solar project,L100001001556,utility-scale solar,operating,10.2
+G100001029954,energy_plants_gem_tzsam_units,GBR,point,CYP,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Akrotiri British Sovereign Base Area solar project I,L100001025273,utility-scale solar,operating,3.2
+G100001029955,energy_plants_gem_tzsam_units,GBR,point,CYP,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Akrotiri British Sovereign Base Area solar project II,L100001025274,utility-scale solar,operating,7.5
+G100001078705,energy_plants_gem_tzsam_units,GBR,point,CYP,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Agia Napa Municipality solar project II,L100001068919,utility-scale solar,operating,2.6
