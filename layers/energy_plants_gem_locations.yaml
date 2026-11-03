@@ -308,7 +308,11 @@ coverage:
   - 'Thresholds by type and the dates of GEM''s trackers: as in energy_plants_gem_units. Smaller plants and distributed
     solar below 1 MW are not in the layer.'
   - 67,148 of the 138,504 rows (48.5%) take their point from a unit whose location GEM gives as approximate, based on “using
-    nearest city or other information in research”. On the map such points are labeled as approximate.
+    nearest city or other information in research”. The map does not set these points apart; the plant window says which they
+    are.
+  - Many approximate points are shared by several plants. 134 points carry 20 or more different GEM plants each, 5,198 plants
+    in all, 3,941 of them in China; the largest, at 120°E, 33°N in Jiangsu, carries 165. Such a point is GEM's approximate
+    location, not the site of any of these plants.
   - Units of one plant can have different points. Where they are more than 1 km apart, the rows are kept apart rather than
     averaged. For 400 plants of the GEM file the points are more than 1° apart; some of these may be errors in the source,
     which the project does not correct.

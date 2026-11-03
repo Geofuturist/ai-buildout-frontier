@@ -226,6 +226,29 @@ class GemRelease(unittest.TestCase):
         self.assertNotIn("symbol", d)
         self.assertIn("not in “Power plants”", d["legend_note"])
 
+    def test_patch_gem_texts_r3(self):
+        # RES r3: the known_gaps of the plant layer (sentence on the map fixed, item on shared points added), idempotent
+        import patch_gem_texts_r3 as pg
+        import yaml
+        rows = [("L%d" % i, "120.0", "33.0", "CHN", "approximate", "Jiangsu") for i in range(25)]
+        rows += [("L%d" % i, "10.5", "-3.0", "BRA", "approximate", "") for i in range(100, 122)]
+        rows += [("L900", "1.0", "2.0", "FRA", "site", "X"), ("L901", "1.0", "2.0", "FRA", "site", "X")]
+        df = pd.DataFrame(rows, columns=["location_id", "lon", "lat", "iso3_source", "coord_precision", "subnational_unit"])
+        st = pg.shared_points(df)
+        self.assertEqual((st["points"], st["plants"], st["china"], st["largest"], st["place"]), (2, 47, 25, 25, "Jiangsu"))
+        self.assertTrue(st["all_approximate"])
+        old = (ROOT / "layers" / "energy_plants_gem_locations.yaml").read_text(encoding="utf-8")
+        if pg.APPROX_DONE in old:
+            self.skipTest("texts already patched in this checkout")
+        new, done = pg.patch_text(old, st)
+        self.assertEqual(len(done), 2)
+        gaps = yaml.safe_load(new)["coverage"]["known_gaps"]
+        self.assertFalse(any("labeled as approximate" in g for g in gaps))
+        self.assertTrue(any("Many approximate points are shared by several plants. 2 points carry 20 or more" in g for g in gaps))
+        self.assertTrue(any("120°E, 33°N in Jiangsu, carries 25" in g for g in gaps))
+        again, done2 = pg.patch_text(new, st)
+        self.assertEqual((done2, again), ([], new))
+
     def test_class_minzoom_checks(self):
         def high(c):
             c["tiles"]["maxzoom"] = 4   # lt10 appears at zoom 5
