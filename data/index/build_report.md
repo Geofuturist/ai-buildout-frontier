@@ -1,6 +1,6 @@
 # abf-index 0.1.0 · build report
 
-Index version 0.1.0; frame abf-boundaries-v0.2.0; rule: SPEC_INDEX_territory_v0_1 r3.
+Index version 0.1.0; frame abf-boundaries-v0.2.0; rule: SPEC_INDEX_territory_v0_1 r5.
 
 ## Inputs
 
@@ -51,7 +51,8 @@ Index version 0.1.0; frame abf-boundaries-v0.2.0; rule: SPEC_INDEX_territory_v0_
 - OK · adm0_other rows abf-energync: 102 (pre-flight: 102)
 - OK · Atlas USA: adm2 = county_records.csv on all matched records: 3914 records with adm2 (expected 3914)
 - OK · Atlas USA records: 4038 (expected 4038)
-- OK · Atlas in table countries: every record is 'field' or 'region_not_matched': 
+- OK · Atlas in table countries: field (note empty or region_only) / point (note empty) / empty (region_not_matched without a point, no_unit_near with one): 
+- OK · region_only only where the record is by the field and the country has ADM2 (adm2 empty): 
 - OK · abf-dc: every record is in exactly one country file: 9,959 rows, 9,959 records
 - OK · abf-dc: sum of Epoch power_mw equals the source: 14,076.431 MW
 - OK · abf-dc: Atlas records by status_raw equal the source: 
@@ -68,60 +69,62 @@ Index version 0.1.0; frame abf-boundaries-v0.2.0; rule: SPEC_INDEX_territory_v0_
 
 | Set | Layer | Records | with point | adm0 by point | adm0 by field | adm0_other | adm1 filled | adm2 filled | approximate |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| abf-dc | dc_atlas_points | 9,865 | 6,087 | 0 | 9,865 | 4 | 8,199 | 4,221 | 6,087 |
+| abf-dc | dc_atlas_points | 9,865 | 6,087 | 0 | 9,865 | 4 | 8,208 | 4,221 | 6,087 |
 | abf-dc | dc_epoch_points | 94 | 71 | 71 | 23 | 0 | 70 | 61 | 71 |
 | abf-energy | energy_plants_gem_units | 164,672 | 164,672 | 163,814 | 858 | 291 | 147,269 | 22,439 | 73,268 |
 | abf-energync | energy_plants_gem_tzsam_units | 18,732 | 18,732 | 18,732 | 0 | 102 | 11,654 | 68 | 426 |
 
 ## unit_basis and unit_note
 
-| Set | Layer | field | point | empty | ambiguous_name | connecticut | no_county_field | no_point | no_state | no_unit_near | point_in_other_country | region_not_matched |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| abf-dc | dc_atlas_points | 7,269 | 930 | 1,666 | 70 | 21 | 32 | 582 | 1 | 0 | 4 | 22 |
-| abf-dc | dc_epoch_points | 0 | 70 | 24 | 0 | 0 | 0 | 22 | 0 | 0 | 0 | 0 |
-| abf-energy | energy_plants_gem_units | 0 | 147,269 | 17,403 | 0 | 0 | 0 | 0 | 0 | 668 | 0 | 0 |
-| abf-energync | energy_plants_gem_tzsam_units | 0 | 11,654 | 7,078 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 |
+| Set | Layer | field | point | empty | ambiguous_name | connecticut | no_county_field | no_point | no_state | no_unit_near | point_in_other_country | region_not_matched | region_only |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| abf-dc | dc_atlas_points | 7,269 | 939 | 1,657 | 70 | 21 | 32 | 582 | 1 | 0 | 4 | 13 | 15 |
+| abf-dc | dc_epoch_points | 0 | 70 | 24 | 0 | 0 | 0 | 22 | 0 | 0 | 0 | 0 | 0 |
+| abf-energy | energy_plants_gem_units | 0 | 147,269 | 17,403 | 0 | 0 | 0 | 0 | 0 | 668 | 0 | 0 | 0 |
+| abf-energync | energy_plants_gem_tzsam_units | 0 | 11,654 | 7,078 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
 
 unit_note is empty when the frame has no unit level for the country (P2) or when the unit was found.
 
 ## Atlas regions by the field (table countries)
 
-| Country | matched | region_not_matched |
-|---|---:|---:|
-| AGO (adm1) | 2 | 0 |
-| ARM (adm1) | 6 | 0 |
-| AUS (adm1) | 281 | 0 |
-| BOL (adm1) | 1 | 0 |
-| BRA (adm1) | 123 | 5 |
-| CAN (adm1) | 283 | 0 |
-| CHN (adm1) | 768 | 2 |
-| CMR (adm1) | 1 | 0 |
-| CRI (adm1) | 7 | 0 |
-| DJI (adm1) | 3 | 0 |
-| FIN (adm1) | 101 | 5 |
-| FRA (adm1_or_adm2) | 284 | 1 |
-| GBR (adm1) | 466 | 1 |
-| GEO (adm1) | 2 | 0 |
-| GTM (adm1) | 4 | 0 |
-| HND (adm1) | 2 | 0 |
-| IND (adm1) | 286 | 0 |
-| JPN (adm1) | 192 | 1 |
-| KWT (adm1) | 2 | 0 |
-| MNG (adm1) | 3 | 0 |
-| MYS (adm1) | 149 | 6 |
-| NGA (adm1) | 16 | 1 |
-| PRY (adm1) | 5 | 0 |
-| ROU (adm1) | 16 | 0 |
-| SGP (adm1) | 69 | 0 |
-| SLV (adm1) | 2 | 0 |
-| SUR (adm1) | 2 | 0 |
-| SWE (adm1) | 80 | 0 |
-| TGO (adm1) | 1 | 0 |
-| TTO (adm1) | 1 | 0 |
-| TUR (adm1) | 28 | 0 |
-| URY (adm1) | 3 | 0 |
-| ZAF (adm1) | 42 | 0 |
-| ZWE (adm1) | 1 | 0 |
+| Country | matched (field) | region_only | region not matched: by point | region_not_matched (no point) |
+|---|---:|---:|---:|---:|
+| AGO (adm1) | 2 | 0 | 0 | 0 |
+| ARM (adm1) | 6 | 0 | 0 | 0 |
+| AUS (adm1) | 281 | 0 | 0 | 0 |
+| BOL (adm1) | 1 | 0 | 0 | 0 |
+| BRA (adm1) | 123 | 0 | 0 | 5 |
+| CAN (adm1) | 283 | 0 | 0 | 0 |
+| CHN (adm1) | 768 | 0 | 1 | 1 |
+| CMR (adm1) | 1 | 0 | 0 | 0 |
+| CRI (adm1) | 7 | 0 | 0 | 0 |
+| DJI (adm1) | 3 | 0 | 0 | 0 |
+| FIN (adm1) | 101 | 0 | 4 | 1 |
+| FRA (adm1_or_adm2) | 284 | 15 | 0 | 1 |
+| GBR (adm1) | 466 | 0 | 1 | 0 |
+| GEO (adm1) | 2 | 0 | 0 | 0 |
+| GTM (adm1) | 4 | 0 | 0 | 0 |
+| HND (adm1) | 2 | 0 | 0 | 0 |
+| IND (adm1) | 286 | 0 | 0 | 0 |
+| JPN (adm1) | 192 | 0 | 1 | 0 |
+| KWT (adm1) | 2 | 0 | 0 | 0 |
+| MNG (adm1) | 3 | 0 | 0 | 0 |
+| MYS (adm1) | 149 | 0 | 2 | 4 |
+| NGA (adm1) | 16 | 0 | 0 | 1 |
+| PRY (adm1) | 5 | 0 | 0 | 0 |
+| ROU (adm1) | 16 | 0 | 0 | 0 |
+| SGP (adm1) | 69 | 0 | 0 | 0 |
+| SLV (adm1) | 2 | 0 | 0 | 0 |
+| SUR (adm1) | 2 | 0 | 0 | 0 |
+| SWE (adm1) | 80 | 0 | 0 | 0 |
+| TGO (adm1) | 1 | 0 | 0 | 0 |
+| TTO (adm1) | 1 | 0 | 0 | 0 |
+| TUR (adm1) | 28 | 0 | 0 | 0 |
+| URY (adm1) | 3 | 0 | 0 | 0 |
+| ZAF (adm1) | 42 | 0 | 0 | 0 |
+| ZWE (adm1) | 1 | 0 | 0 | 0 |
+
+Total: region not matched and the row moved to the point: 9; region_only: 15; region_not_matched without a point: 13.
 
 ## Rows with adm1_point (Atlas: adm0 by the field, point in another country)
 
@@ -170,16 +173,16 @@ Ten largest country files (CSV bytes / gzip bytes):
 | File | sha256 |
 |---|---|
 | abf-dc/adm0_other.csv | `fa50fdff1f8e9add2d830b2902a8115944a753d9293ffdcea7d1bee5c3dae7e8` |
-| abf-dc/index_abf-dc.zip | `03594d356ef28c1ac36c4f2ddaa292a3d8e49e1eba2c4ca30a786b36152e1c5c` |
-| abf-dc/meta.json | `34311febd77290d446debc72b9eba4d1cb63b242a04def6f4b635be1ad62b2a2` |
-| abf-dc/summary.csv | `53037097f18c561d6b83bcf2c73ba7524bc4034a79141476e33120bef6e7d380` |
+| abf-dc/index_abf-dc.zip | `5be07f1cf26d75332c4a902f018e4bfcd60297fdca22aa7f12ca232b231368a8` |
+| abf-dc/meta.json | `1eddbeb135f2865b5cc63b217c0895805e9801d4259162e150a65621126b9721` |
+| abf-dc/summary.csv | `d0b433c2be84c5fb0e2047869b6c89bd0d20ac387d1d5202be389c714d453601` |
 | abf-energy/adm0_other.csv | `80c77eca5930e7f6a375a72223d791af1098d3ff4870ea078da94d3be8489980` |
-| abf-energy/index_abf-energy.zip | `4abbc68dabd19fe662a59fa7d89ce17dc57f57e8b221d9b5e533f93d949d2043` |
-| abf-energy/meta.json | `22b4abecf7377714c1d6dff998d90df03f0f87db4727582fa1e6fc641eab7e9f` |
+| abf-energy/index_abf-energy.zip | `6dfd97e2d95d0d8d535c2015a8cc28e00eb03e04c9b744ac24efce512145bfd2` |
+| abf-energy/meta.json | `4a2931c412c43709fd27a48b7104f118369f8ce993126d41c7dfd216191e409a` |
 | abf-energy/summary.csv | `0bd9777b5e8ff267ce8ebd81a4e88a869f5203f7f103866450d816f3b8bf3788` |
 | abf-energync/adm0_other.csv | `fdeb48d59835b6c8613d77475b1a64cde73da5636708a8b30cd2ff670e99bf0b` |
-| abf-energync/index_abf-energync.zip | `3d9c667584b6eb51f0313ae7240d6859059e110bfe02815b10744655b9ac9002` |
-| abf-energync/meta.json | `37e294c5202b1662557613fe8f5dffdab8776f76f0e16178e31a865a62cf521d` |
+| abf-energync/index_abf-energync.zip | `ff2661d842c7263078bfd258a15907bb78f680c42fde552d7d41b42c16efe7a3` |
+| abf-energync/meta.json | `26b5e5d47a36503e15b14ad2e515d59b281837f29382ba3db082a0e3fa15fa69` |
 | abf-energync/summary.csv | `faff888e6932b0923dcd83f0a216c0ab326476cf66b5463c80487e009211d00b` |
 
 All 1013 output files with SHA-256 are in `build_hashes.json` (country files, `.csv.gz`, summary, meta, zip).

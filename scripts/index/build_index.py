@@ -1,5 +1,5 @@
 r"""abf-index 0.1.0: build the index that links every record of the world point layers to units ADM0-ADM2 of abf-boundaries v0.2.0
-(SPEC_INDEX_territory_v0_1 r3).
+(SPEC_INDEX_territory_v0_1 r5).
 
 Indexed: Atlas (dc_atlas_points) and Epoch (dc_epoch_points) of abf-dc 0.2.0 -> set abf-dc; GEM units -> set abf-energy;
 GEM units with TransitionZero ids -> set abf-energync (CC BY-NC, kept apart, P3).
@@ -56,7 +56,7 @@ EXPECTED_US_ATLAS = 4038
 SOFT = {"adm1_point rows": 4, "adm0_other abf-dc": 4, "adm0_other abf-energy": 291, "adm0_other abf-energync": 102}
 ANALYSIS = {1: {"USA": "USA_adm1_cb2023_500k.parquet", "NOR": "NOR_adm1_inndelingsbase_20260101.parquet"},
             2: {"USA": "USA_adm2_cb2023_500k.parquet", "NOR": "NOR_adm2_inndelingsbase_20260101.parquet"}}
-NOTES = {"", "ambiguous_name", "connecticut", "no_county_field", "no_state", "region_not_matched", "no_unit_near", "no_point", "point_in_other_country"}
+NOTES = {"", "ambiguous_name", "connecticut", "no_county_field", "no_state", "region_not_matched", "region_only", "no_unit_near", "no_point", "point_in_other_country"}
 COMMON = ["record_id", "layer_id", "adm0", "adm0_basis", "adm0_other", "adm1", "adm2", "unit_basis", "unit_note", "adm1_point", "adm2_point",
           "approximate", "boundary_release"]
 SETFIELDS = {"abf-dc": ["name", "status_raw", "type_group", "power_class", "power_mw"],
@@ -420,6 +420,7 @@ def main() -> int:
         p1 = np.full(n, "", dtype=object)
         p2 = np.full(n, "", dtype=object)
         stat = Counter()
+        to_pt = np.zeros(n, dtype=bool)                    # Atlas, table country: region not matched, the row goes by the point (SPEC r5)
         rid, raw1 = R["record_id"].to_numpy(), R["adm1_raw"].to_numpy()
         for i in range(n):
             c = adm0[i]
@@ -460,6 +461,17 @@ def main() -> int:
                         a2[i] = cand[0]
                         a1[i] = F.parent.get(cand[0], "")
                     stat[f"table_matched:{c}"] += 1
+                    if clev == "adm1" and lv2:             # the record names a region, the country has ADM2: ADM2 is not added by point (one basis per row)
+                        un[i] = "region_only"
+                        stat[f"region_only:{c}"] += 1
+                elif has_pt[i]:                            # region not matched, but there is a point: the whole row by the point, note empty
+                    a1[i], a2[i] = u1p[i], u2p[i]
+                    to_pt[i] = True
+                    if a1[i] or a2[i]:
+                        ub[i] = "point"
+                    if (lv2 and not a2[i]) or (lv1 and not a1[i]):
+                        un[i] = "no_unit_near"
+                    stat[f"table_not_matched_to_point:{c}"] += 1
                 else:
                     un[i] = "region_not_matched"
                     stat[f"table_not_matched:{c}"] += 1
@@ -477,6 +489,7 @@ def main() -> int:
                 p1[i], p2[i] = u1o[i], u2o[i]
                 un[i] = "point_in_other_country"
         R["adm1"], R["adm2"], R["unit_basis"], R["unit_note"], R["adm1_point"], R["adm2_point"] = a1, a2, ub, un, p1, p2
+        R["to_point"] = to_pt
         R["approximate"] = np.where(~has_pt, "", np.where(kind == "gem", np.where(R["acc"].to_numpy() == "approximate", "true", "false"), "true"))
         R["boundary_release"] = BOUNDARY_RELEASE
 
@@ -510,8 +523,15 @@ def main() -> int:
         check("Atlas USA records", ok_, f"{len(usa)} (expected {EXPECTED_US_ATLAS})")
         if table:
             tb_ = R[(R["kind"] == "atlas") & R["adm0"].isin(table.keys()) & (R["unit_note"] != "point_in_other_country")]
-            ok_ = all((x == "field") == (n_ == "") for x, n_ in zip(tb_["unit_basis"], tb_["unit_note"]))
-            check("Atlas in table countries: every record is 'field' or 'region_not_matched'", ok_)
+            hp_ = tb_["lon"].notna().to_numpy() & tb_["lat"].notna().to_numpy()
+            ok_ = all(((x == "field") and (n_ in ("", "region_only"))) or ((x == "point") and n_ == "") or
+                      ((x == "") and ((n_ == "region_not_matched" and not h_) or (n_ == "no_unit_near" and h_))) or ((x == "") and n_ == "" and not (lv_))
+                      for x, n_, h_, lv_ in zip(tb_["unit_basis"], tb_["unit_note"], hp_, [c_ in F.has[1] or c_ in F.has[2] for c_ in tb_["adm0"]]))
+            check("Atlas in table countries: field (note empty or region_only) / point (note empty) / empty (region_not_matched without a point, no_unit_near with one)", ok_)
+            check("region_only only where the record is by the field and the country has ADM2 (adm2 empty)",
+                  all((nn != "region_only") or (ub_ == "field" and a2_ == "" and c_ in F.has[2]) for nn, ub_, a2_, c_ in zip(un, ub, a2, adm0)))
+            ntp, nro = int(to_pt.sum()), int((np.array(un, dtype=object) == "region_only").sum())
+            log(f"  Atlas, table countries: region not matched, row moved to the point: {ntp}; region_only: {nro}")
 
         # Q5: computed geometry (USA, NOR) against display geometry
         diff = {}
@@ -649,7 +669,7 @@ def main() -> int:
 
 
 def make_report(a, inputs, checks, R, per_set, fsize, hashes, diff, dis, table, F, same, secs) -> str:
-    L = ["# abf-index 0.1.0 · build report", "", f"Index version {INDEX_VERSION}; frame {BOUNDARY_RELEASE}; rule: SPEC_INDEX_territory_v0_1 r3.", "",
+    L = ["# abf-index 0.1.0 · build report", "", f"Index version {INDEX_VERSION}; frame {BOUNDARY_RELEASE}; rule: SPEC_INDEX_territory_v0_1 r5.", "",
          "## Inputs", "", "| Input | Bytes | sha256 (as it lies) | sha256_lf |", "|---|---:|---|---|"]
     for k, v in sorted(inputs.items()):
         L.append(f"| {k} | {v['bytes']:,} | `{v['sha256']}` | `{v['sha256_lf']}` |")
@@ -665,12 +685,14 @@ def make_report(a, inputs, checks, R, per_set, fsize, hashes, diff, dis, table, 
                  " | ".join(str(int((g['unit_note'] == nn).sum())) for nn in sorted(NOTES - {''})) + " |")
     L += ["", "unit_note is empty when the frame has no unit level for the country (P2) or when the unit was found.", ""]
     if table:
-        L += ["## Atlas regions by the field (table countries)", "", "| Country | matched | region_not_matched |", "|---|---:|---:|"]
+        L += ["## Atlas regions by the field (table countries)", "", "| Country | matched (field) | region_only | region not matched: by point | region_not_matched (no point) |", "|---|---:|---:|---:|---:|"]
         A = R[(R["kind"] == "atlas") & R["adm0"].isin(table)]
         for c in sorted(table):
             g = A[A["adm0"] == c]
-            L.append(f"| {c} ({table[c]}) | {int((g['unit_basis'] == 'field').sum())} | {int((g['unit_note'] == 'region_not_matched').sum())} |")
-        L.append("")
+            L.append(f"| {c} ({table[c]}) | {int((g['unit_basis'] == 'field').sum())} | {int((g['unit_note'] == 'region_only').sum())} | "
+                     f"{int(g['to_point'].sum())} | {int((g['unit_note'] == 'region_not_matched').sum())} |")
+        L += ["", f"Total: region not matched and the row moved to the point: {int(A['to_point'].sum())}; region_only: {int((A['unit_note'] == 'region_only').sum())}; "
+                  f"region_not_matched without a point: {int((A['unit_note'] == 'region_not_matched').sum())}.", ""]
     L += ["## Rows with adm1_point (Atlas: adm0 by the field, point in another country)", "", "| record_id | adm0 | adm0_other | adm1_point | adm2_point |", "|---|---|---|---|---|"]
     for r in R[R["adm1_point"] != ""].itertuples(index=False):
         L.append(f"| {r.record_id} | {r.adm0} | {r.adm0_other} | {r.adm1_point} | {r.adm2_point} |")

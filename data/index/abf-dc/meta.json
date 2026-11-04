@@ -186,10 +186,10 @@
    "sha256": "69e9f78c7cbd99ce963f57f21ecf2459ff91fad62717ac1a438f2ce4eb6a4561"
   },
   "CHN": {
-   "csv_bytes": 131438,
-   "csv_gz_bytes": 19622,
+   "csv_bytes": 131433,
+   "csv_gz_bytes": 19610,
    "rows": 774,
-   "sha256": "d19e1c32dc4a599d4452906c2fb1f38b032f8058bf76097637c7526f695554dc"
+   "sha256": "60230d6516f69d187a421d404cd2516b8d98f7188b1730ca5325b32cdbc4b8ec"
   },
   "CIV": {
    "csv_bytes": 582,
@@ -294,16 +294,16 @@
    "sha256": "f22d7a88f7710261947f879f5b45f63aabd07d29f00b2d785faf840d80c3f3d8"
   },
   "FIN": {
-   "csv_bytes": 16091,
-   "csv_gz_bytes": 2935,
+   "csv_bytes": 16071,
+   "csv_gz_bytes": 2940,
    "rows": 107,
-   "sha256": "0b130ae979ef5668c9d1120f8e773f1445a8c61fd1b2b1b9e1b2ee1c382e98b0"
+   "sha256": "fcaba1a0cdde275741f507d1c70893e34b948ad9a0176b3de7af5c910a3d3aed"
   },
   "FRA": {
-   "csv_bytes": 47080,
-   "csv_gz_bytes": 7747,
+   "csv_bytes": 47245,
+   "csv_gz_bytes": 7760,
    "rows": 285,
-   "sha256": "7ad2e36c9b7d4fa77e294ecca6df90b1d74536b828f0955c7d28d6bd3721f3b5"
+   "sha256": "d625cb0920276119da94f0d62aa4677d7d327315b8e333d767b2aaf82ccaab47"
   },
   "FRO": {
    "csv_bytes": 333,
@@ -312,10 +312,10 @@
    "sha256": "8a3079c2a3182534c5b573fc5fe32f506f516d1fd44ded329d5ee6d7e4416c60"
   },
   "GBR": {
-   "csv_bytes": 72006,
-   "csv_gz_bytes": 11191,
+   "csv_bytes": 72002,
+   "csv_gz_bytes": 11177,
    "rows": 468,
-   "sha256": "45f0253d66a1a649bfce8addbf808cbd2ac2fb066bdb9f51dc0612bc46a653dd"
+   "sha256": "1d645422b10f539531f0973b54f8a0af56892fd90f7fc8029115a5d7b7dc3106"
   },
   "GEO": {
    "csv_bytes": 495,
@@ -432,10 +432,10 @@
    "sha256": "8d2ae1904b89482955f3ffa94aa5e4a19d00219ba975a01d8b1c1abd6b5de373"
   },
   "JPN": {
-   "csv_bytes": 29276,
-   "csv_gz_bytes": 4363,
+   "csv_bytes": 29271,
+   "csv_gz_bytes": 4353,
    "rows": 193,
-   "sha256": "c394bb248761500e276a782026ecdbb3e8426d9cae1b3e0b6b7114496b141fdd"
+   "sha256": "9165a169852a724540b8ec2a72eb94e8bc647df9861f10598d577cd440b60551"
   },
   "KAZ": {
    "csv_bytes": 1156,
@@ -558,10 +558,10 @@
    "sha256": "8f2f313f82bec7e23d0f1ceac595926f0b2bd005c115f4727f5cbb59e08bdb35"
   },
   "MYS": {
-   "csv_bytes": 24489,
-   "csv_gz_bytes": 4113,
+   "csv_bytes": 24479,
+   "csv_gz_bytes": 4119,
    "rows": 158,
-   "sha256": "77c482f0b59d3222387a7e5573022dbdafa1b75412d0b6c398c75e7f22fa9f1d"
+   "sha256": "2cd1ebb55d1b84c5faefd8b26f224725a7e27726df0c1ddaeaccf605fa7d0b71"
   },
   "NGA": {
    "csv_bytes": 2735,
@@ -1743,6 +1743,7 @@
   "no_state",
   "no_unit_near",
   "point_in_other_country",
-  "region_not_matched"
+  "region_not_matched",
+  "region_only"
  ]
 }
