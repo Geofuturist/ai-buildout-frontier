@@ -16,7 +16,7 @@ import RecordDownload, { sourceTexts } from './RecordDownload';
 import type { MapData, UnitRef } from './types';
 
 /** "Download ... inside this state: CSV" - rows of a published layer whose unit lies inside the chosen unit. */
-function InsideButton({ layer, meta, unit, territory, label }: { layer: LayerEntry; meta: Meta; unit: UnitRef; territory: Territory; label: string }) {
+export function InsideButton({ layer, meta, unit, territory, label }: { layer: LayerEntry; meta: Meta; unit: UnitRef; territory: Territory; label: string }) {
   const [state, setState] = useState<'idle' | 'busy' | 'error'>('idle');
   const csv = layer.files.csv;
   if (!csv) return null;

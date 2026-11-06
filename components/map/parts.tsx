@@ -38,9 +38,10 @@ export function sourceLine(meta: Meta): string {
   return `Source: ${p.product} · ${p.edition}${through ? ` · data through ${through}` : ''} · built ${isoDate(meta.freshness.built_at)}`;
 }
 
-export function Downloads({ layer }: { layer: LayerEntry }) {
+export function Downloads({ layer, note }: { layer: LayerEntry; note?: string }) {
   return (
     <div className="mt-3">
+      {note && <p className="mb-1 text-xs font-semibold text-ink">{note}</p>}
       <p className="text-xs text-muted">Download layer</p>
       <div className="mt-1 flex flex-wrap gap-2">
         {FORMATS.filter((f) => layer.files[f.key]).map((f) => (

@@ -3,7 +3,7 @@ import SiteHeader from '@/components/SiteHeader';
 import SiteFooter from '@/components/SiteFooter';
 import { getData } from '@/lib/data';
 import { orderedDatasetNames } from '@/lib/layers';
-import type { AttributionSource } from '@/lib/data';
+import type { AttributionSource, SourceLogo } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Sources and licenses',
@@ -14,9 +14,10 @@ const GROUP_TITLE: Record<string, string> = {
   public_domain: 'Public domain',
   attribution: 'Attribution licenses',
   share_alike: 'Share-alike licenses',
+  non_commercial: 'Non-commercial licenses',
 };
 
-function SourceBlock({ s }: { s: AttributionSource }) {
+function SourceBlock({ s, logo }: { s: AttributionSource; logo?: SourceLogo }) {
   return (
     <article id={s.source_id} className="my-6 border-t border-line pt-4">
       <h3>
@@ -38,6 +39,12 @@ function SourceBlock({ s }: { s: AttributionSource }) {
       </dl>
       <p className="mt-3 text-sm text-muted">Attribution text:</p>
       <blockquote className="mt-1 border-l-4 border-line pl-3 text-sm">{s.license.attribution_text}</blockquote>
+      {logo && (
+        <a href={logo.href} className="mt-3 inline-block" rel="noopener noreferrer">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={`/${logo.file}`} alt={logo.alt} className="h-8 w-auto" />
+        </a>
+      )}
     </article>
   );
 }
@@ -74,7 +81,8 @@ export default function AttributionPage() {
           {data.attribution.map((g) => (
             <section key={g.family}>
               <h2>{GROUP_TITLE[g.family]}</h2>
-              {g.sources.map((s) => <SourceBlock key={s.source_id} s={s} />)}
+              {g.family === 'non_commercial' && <p className="text-sm">Layers made from these sources are for non-commercial use only. They are off by default on the map, and nothing paid is built on them.</p>}
+              {g.sources.map((s) => <SourceBlock key={s.source_id} s={s} logo={data.source_logos[s.source_id]} />)}
             </section>
           ))}
 
