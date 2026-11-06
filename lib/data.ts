@@ -185,7 +185,7 @@ export interface LayerEntry {
 export interface DatasetInfo {
   dataset: string;
   /** 'boundaries' when the metadata of the dataset have kind = boundaries, otherwise 'layers' */
-  kind: 'boundaries' | 'layers';
+  kind: 'boundaries' | 'layers' | 'index';
   version: string;
   tag: string;
   doi: string | null;
@@ -208,6 +208,20 @@ export interface AttributionSource {
   rights_basis_text: string;
   publication_mode: string;
   layers: string[];
+}
+
+/** one index of a manifest, as fetch-data reads it (scripts/web/index-manifest.mjs) */
+export interface IndexSourceEntry {
+  id: string;
+  index_id: string;
+  dataset: string;
+  version: string;
+  index_version: string | null;
+  license: string | null;
+  /** URL with {iso3} */
+  country_url: string;
+  adm0_other_url: string;
+  meta: import('./indexCard').IndexSetMeta;
 }
 
 export interface AbfData {
@@ -233,6 +247,8 @@ export interface AbfData {
   /** logos of sources (content/site.json source_logos): source_id -> file in public/, alt, link */
   source_logos: Record<string, SourceLogo>;
   /** texts of the Status block of the legend (content/site.json status_styles): title, note, lines of a source (layer_ids, optional kind) */
+  /** territory indexes found in the manifests of the pointer (`indexes`); the card reads them (empty until an index is published) */
+  index_sources: IndexSourceEntry[];
   status_legend: { title: string; note: string; lines: { layers: string[]; kind?: string; text: string }[] };
   /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
   unit_words: Record<string, Record<string, string>>;
