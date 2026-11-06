@@ -1,0 +1,148 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-energy",
+  "version": "0.1.0",
+  "tag": "abf-energy-v0.1.0",
+  "doi": "10.5281/zenodo.23943099",
+  "published_at": "2026-11-06",
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "base_path": "abf-energy/v0.1.0/",
+  "layers": [
+    {
+      "layer_id": "energy_plants_gem_units",
+      "title": "Power plants · Global Energy Monitor · generating units",
+      "domain": "energy",
+      "level": "point",
+      "bbox": [
+        -175.3292,
+        -53.7021,
+        179.3878,
+        71.5402
+      ],
+      "meta": {
+        "path": "energy_plants_gem_units.meta.json",
+        "bytes": 26526,
+        "sha256": "57e0eea7b34838bde84124f0e9ca410fad38aa73a929916c71cceefcc9a37c5f"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_plants_gem_units.parquet",
+          "bytes": 8137684,
+          "sha256": "9078a69b941d2463e3429479302e8b7a4a15572b998db2f7a92e29cbc568a7d8"
+        },
+        "geojson.gz": {
+          "path": "energy_plants_gem_units.geojson.gz",
+          "bytes": 9616834,
+          "sha256": "ad159ab6569847f096bf127c803bc6bcf320d50fe6b650694a8f33d2aaff6aed"
+        },
+        "csv": {
+          "path": "energy_plants_gem_units.csv",
+          "bytes": 51356619,
+          "sha256": "b57f0d363456ce8ffdfe01e84df456a8051d6a3e834a0048e29994a1d9df13f9"
+        },
+        "pmtiles": {
+          "path": "energy_plants_gem_units.pmtiles",
+          "bytes": 2476621,
+          "sha256": "10b790fe8664ec958d6846c65a7638b198ae241d6582446a3bab36b0a4b008e8"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_plants_gem_units.pmtiles",
+        "source_layer": "energy_plants_gem_units",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 5,
+        "fields": [
+          "record_id"
+        ]
+      }
+    },
+    {
+      "layer_id": "energy_plants_gem_locations",
+      "title": "Power plants · Global Energy Monitor · plants",
+      "domain": "energy",
+      "level": "point",
+      "bbox": [
+        -175.3292,
+        -53.7021,
+        179.3878,
+        71.5402
+      ],
+      "meta": {
+        "path": "energy_plants_gem_locations.meta.json",
+        "bytes": 27343,
+        "sha256": "df3e23495ceadfd9f6b2fb77cde8eb7a0e3766469b4351161c57f5ce417be235"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_plants_gem_locations.parquet",
+          "bytes": 6327187,
+          "sha256": "730fbf1ae36419ed64f95b497c849a4d5954a5baf65a06e63bc5ff256c625ed4"
+        },
+        "geojson.gz": {
+          "path": "energy_plants_gem_locations.geojson.gz",
+          "bytes": 6628375,
+          "sha256": "e35a5f3042b6dd52c2ca5979d8bcfd8a6d4f6bb23dd2db778621a611cf38a9ef"
+        },
+        "csv": {
+          "path": "energy_plants_gem_locations.csv",
+          "bytes": 38842498,
+          "sha256": "1c7c2e7e8946e9192f0ce580880e6f6caba1cf74ecced2165b4be24732e5708a"
+        },
+        "pmtiles": {
+          "path": "energy_plants_gem_locations.pmtiles",
+          "bytes": 65638717,
+          "sha256": "1fba30e6d83e851a01ae8d808951ac6478dc2901177db3423605974e473086db"
+        }
+      },
+      "extra_files": [
+        {
+          "path": "gem_status_groups.csv",
+          "bytes": 371,
+          "sha256": "1403c78c9b5e9e64a77f2684d72a637d957f1aef7ce51db625836f3b14755dec",
+          "description": "The table of GEM statuses: each of GEM's ten statuses and the GEM base status (status_group) and label that the project assigns to it."
+        },
+        {
+          "path": "gem_country_table.csv",
+          "bytes": 3808,
+          "sha256": "66f204d04cae0a8966365d2e8e27d2885c34b579cc73a8d0a21d767d33910abd",
+          "description": "The country table of GEM's own file (sheet Regions, area, and countries): the name of each country or area and its ISO 3166-1 alpha-3 code (iso3_gem)."
+        },
+        {
+          "path": "gem_iso3_to_adm0.csv",
+          "bytes": 316,
+          "sha256": "73cacdfadebebd3c94edb332d75dee3cd827162c7de051716e55345b62af214d",
+          "description": "The territories that GEM lists separately and the boundary frame includes in a country: iso3_gem, the code of the country of the frame (iso3_source) and the reason."
+        }
+      ],
+      "tiles": {
+        "file": "energy_plants_gem_locations.pmtiles",
+        "source_layer": "energy_plants_gem_locations",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "record_id",
+          "plant_name",
+          "wiki_url",
+          "type",
+          "status_group",
+          "statuses",
+          "technologies",
+          "capacity_mw",
+          "capacity_class",
+          "n_units",
+          "capacity_ratings",
+          "start_year_min",
+          "start_year_max",
+          "coord_precision",
+          "n_units_dc_link",
+          "dc_links"
+        ]
+      }
+    }
+  ],
+  "extra_files": [],
+  "source_archives": []
+}
