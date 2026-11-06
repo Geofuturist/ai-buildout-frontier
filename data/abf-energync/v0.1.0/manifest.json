@@ -1,0 +1,148 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-energync",
+  "version": "0.1.0",
+  "tag": "abf-energync-v0.1.0",
+  "doi": "10.5281/zenodo.23980589",
+  "published_at": "2026-11-06",
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "base_path": "abf-energync/v0.1.0/",
+  "layers": [
+    {
+      "layer_id": "energy_plants_gem_tzsam_units",
+      "title": "Solar plants · GEM / TransitionZero · generating units",
+      "domain": "energy",
+      "level": "point",
+      "bbox": [
+        -122.9784,
+        -41.6488,
+        177.9816,
+        63.344
+      ],
+      "meta": {
+        "path": "energy_plants_gem_tzsam_units.meta.json",
+        "bytes": 24181,
+        "sha256": "61f14a258ecc16dd2bdc8e4c5eac2826a26983b72643c58c1789ab2361d0cd68"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_plants_gem_tzsam_units.parquet",
+          "bytes": 1283396,
+          "sha256": "31758608f83a5bd8ebd00a43308e6bfe7a41bac4e1ddbb78aa45aa5fa36e0559"
+        },
+        "geojson.gz": {
+          "path": "energy_plants_gem_tzsam_units.geojson.gz",
+          "bytes": 1311720,
+          "sha256": "f328e13d9943e27444d0eb067494ec625925c7ba4158da63f84d7aafb46898aa"
+        },
+        "csv": {
+          "path": "energy_plants_gem_tzsam_units.csv",
+          "bytes": 6303133,
+          "sha256": "5c38f22585b0b1d2630bd0fcaeb5654cb45c309d016c2992da9c25ab41982c40"
+        },
+        "pmtiles": {
+          "path": "energy_plants_gem_tzsam_units.pmtiles",
+          "bytes": 210532,
+          "sha256": "3e65487331c124811232ef5f8b40b44a6c915393de63cd63b50de1ba2b3ee713"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_plants_gem_tzsam_units.pmtiles",
+        "source_layer": "energy_plants_gem_tzsam_units",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 5,
+        "fields": [
+          "record_id"
+        ]
+      }
+    },
+    {
+      "layer_id": "energy_plants_gem_tzsam_locations",
+      "title": "Solar plants · GEM / TransitionZero · plants",
+      "domain": "energy",
+      "level": "point",
+      "bbox": [
+        -122.9784,
+        -41.6488,
+        177.9816,
+        63.344
+      ],
+      "meta": {
+        "path": "energy_plants_gem_tzsam_locations.meta.json",
+        "bytes": 25471,
+        "sha256": "7be9995c5a7e8fe0694e2ee6604552c9435395d507f0957faf83a1a0f3b73329"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_plants_gem_tzsam_locations.parquet",
+          "bytes": 866690,
+          "sha256": "90a2d7cf57d1c37af8b7269a0c5b1c2712b0b24647c87075ad120786f6e1cbbb"
+        },
+        "geojson.gz": {
+          "path": "energy_plants_gem_tzsam_locations.geojson.gz",
+          "bytes": 792775,
+          "sha256": "7e3fea164c5b5237fec13b31fb3dc2e27a47f895e2494b9a5eb9af0fb8dd56ff"
+        },
+        "csv": {
+          "path": "energy_plants_gem_tzsam_locations.csv",
+          "bytes": 5253429,
+          "sha256": "4ff4ff821925f973274632dabc40fd88f97ccccac83443b0f1693bee2d2d754e"
+        },
+        "pmtiles": {
+          "path": "energy_plants_gem_tzsam_locations.pmtiles",
+          "bytes": 8182777,
+          "sha256": "0917de33e3a1240c4a625e508c94069cd11ad5e23699cdb9b86dbe7e8d5691ae"
+        }
+      },
+      "extra_files": [
+        {
+          "path": "gem_status_groups.csv",
+          "bytes": 371,
+          "sha256": "1403c78c9b5e9e64a77f2684d72a637d957f1aef7ce51db625836f3b14755dec",
+          "description": "The table of GEM statuses: each of GEM's ten statuses and the GEM base status (status_group) and label that the project assigns to it."
+        },
+        {
+          "path": "gem_country_table.csv",
+          "bytes": 3808,
+          "sha256": "66f204d04cae0a8966365d2e8e27d2885c34b579cc73a8d0a21d767d33910abd",
+          "description": "The country table of GEM's own file (sheet Regions, area, and countries): the name of each country or area and its ISO 3166-1 alpha-3 code (iso3_gem)."
+        },
+        {
+          "path": "gem_iso3_to_adm0.csv",
+          "bytes": 316,
+          "sha256": "73cacdfadebebd3c94edb332d75dee3cd827162c7de051716e55345b62af214d",
+          "description": "The territories that GEM lists separately and the boundary frame includes in a country: iso3_gem, the code of the country of the frame (iso3_source) and the reason."
+        }
+      ],
+      "tiles": {
+        "file": "energy_plants_gem_tzsam_locations.pmtiles",
+        "source_layer": "energy_plants_gem_tzsam_locations",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "record_id",
+          "plant_name",
+          "wiki_url",
+          "type",
+          "status_group",
+          "statuses",
+          "technologies",
+          "capacity_mw",
+          "capacity_class",
+          "n_units",
+          "capacity_ratings",
+          "start_year_min",
+          "start_year_max",
+          "coord_precision",
+          "n_units_dc_link",
+          "dc_links"
+        ]
+      }
+    }
+  ],
+  "extra_files": [],
+  "source_archives": []
+}
