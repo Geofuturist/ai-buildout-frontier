@@ -94,6 +94,24 @@ def compose_manifest(plan: dict[str, Any], work: Path) -> dict[str, Any]:
     }
 
 
+def files_for_git(manifest: dict[str, Any], plan: dict[str, Any]) -> list[str]:
+    """Paths (relative to the release folder) that go to git in the final channel.
+
+    Per layer, plan git_copy {csv, extra_files} (default true both, SPEC_GEM r6 Q6): csv=false keeps the CSV of the layer
+    in R2 and Zenodo only (the files are big). The root extra CSV files are copied unless every layer has extra_files=false.
+    """
+    flags = {lp["layer_id"]: lp.get("git_copy") or {} for lp in plan["layers"]}
+    out: list[str] = []
+    for lp in manifest["layers"]:
+        out.append(lp["meta"]["path"])
+        if "csv" in lp["files"] and flags.get(lp["layer_id"], {}).get("csv", True):
+            out.append(lp["files"]["csv"]["path"])
+    if any(f.get("extra_files", True) for f in flags.values()):
+        out += [e["path"] for e in manifest.get("extra_files", []) if e["path"].endswith(".csv")]
+    out.append("manifest.json")
+    return out
+
+
 def validate_manifest(manifest: dict[str, Any]) -> None:
     import jsonschema
 
@@ -246,14 +264,8 @@ def run(args: argparse.Namespace) -> int:
     if args.channel == "final" and args.git_out:
         dst = Path(args.git_out) / args.dataset / f"v{args.version}"
         dst.mkdir(parents=True, exist_ok=True)
-        for lp in manifest["layers"]:
-            shutil.copyfile(work / lp["meta"]["path"], dst / lp["meta"]["path"])
-            if "csv" in lp["files"]:
-                shutil.copyfile(work / lp["files"]["csv"]["path"], dst / lp["files"]["csv"]["path"])
-        for e in manifest.get("extra_files", []):
-            if e["path"].endswith(".csv"):
-                shutil.copyfile(work / e["path"], dst / e["path"])
-        shutil.copyfile(work / "manifest.json", dst / "manifest.json")
+        for rel in files_for_git(manifest, plan):
+            shutil.copyfile(work / rel, dst / rel)
         log.info("copied CSV, meta and manifest to %s", dst)
     return 0
 

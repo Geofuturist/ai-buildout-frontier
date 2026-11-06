@@ -212,6 +212,7 @@ class LayerOutput:
     geometry_type: str = "polygon"
     tile_cfg: dict[str, Any] = field(default_factory=dict)
     carries_power: bool = False   # G3b: the layer has fields from the ADR 6.2 power list
+    git_copy: dict[str, bool] = field(default_factory=lambda: {"csv": True, "extra_files": True})   # what finalize copies to git
 
 
 # --------------------------------------------------------------------------- helpers
@@ -322,6 +323,16 @@ def gate_licences(layer_id: str, sources: list[dict[str, Any]]) -> None:
             raise GateError("G5", f"{layer_id}: source {src['source_id']} licence is not publishable")
         if family == "share_alike" and len(sources) > 1:
             raise GateError("G5", f"{layer_id}: share-alike source {src['source_id']} cannot be combined (P3)")
+    families = {src["license"]["family"] for src in sources}
+    if "non_commercial" in families:
+        # SPEC_GEM r6 Q2: the licence of the layer is the licence of its primary source, so a non-commercial source
+        # must be the primary one; non-commercial and share-alike cannot be combined.
+        primary = next((s for s in sources if s["role"] == "primary"), sources[0])
+        if primary["license"]["family"] != "non_commercial":
+            raise GateError("G5", f"{layer_id}: a source is non_commercial but the primary source (the licence of the layer) is "
+                                  f"{primary['license']['family']}: the layer would be published under a weaker licence")
+        if "share_alike" in families:
+            raise GateError("G5", f"{layer_id}: non_commercial and share_alike sources cannot be combined")
     for src in sources:
         if src["publication_mode"] == "status_only":
             raise GateError("G5", f"{layer_id}: status_only source {src['source_id']} is not allowed in a value layer")
@@ -469,7 +480,7 @@ def assemble_meta(
         "sources": sources,
         "license": layer_license(sources),
         "boundary_release": (ctx.release.get("boundary_release")
-                             if cfg["level"] not in ("line", "point") or cfg["domain"] == "dc" else None),
+                             if cfg["level"] not in ("line", "point") or cfg["domain"] == "dc" or cfg.get("uses_boundary_frame") else None),
         "freshness": {
             "source_current_through": primary["current_through"],
             "source_cadence": fresh_cfg["source_cadence"],
@@ -569,8 +580,11 @@ def assemble_meta_boundaries(
     return meta
 
 
-def gate_field_names(layer_id: str, names: list[str]) -> None:
-    """G3: P9 field-name regular expression."""
+def gate_field_names(layer_id: str, names: list[str], domain: str = "dc") -> None:
+    """G3: P9 field-name regular expression. Only for the domain dc (SPEC_GEM r6 Q1): the pattern was written for the
+    fuel and autonomy of a data center; the field fuel of a power plant (domain energy) is the fuel of the plant."""
+    if domain != "dc":
+        return
     hits = p9_hits(names)
     if hits:
         raise GateError("G3", f"{layer_id}: field names match the P9 pattern: {hits}")
@@ -789,7 +803,7 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     check_allowed_values(layer_id, table, cfg["fields"])
     gate_g7_table(cfg, table, report)
     fields = full_fields(cfg, adm=True)
-    gate_field_names(layer_id, [f["name"] for f in fields])
+    gate_field_names(layer_id, [f["name"] for f in fields], cfg["domain"])
     for f in fields:
         if f.get("nullable") and "null_meaning" not in f:
             raise GateError("G1", f"{layer_id}: field {f['name']} is nullable but has no null_meaning")
@@ -812,7 +826,7 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     display = copy.deepcopy(cfg.get("display", {}))
     tile_base = ["unit_id", "name", "coverage_status", "coverage_note"]
     tile_fields = tile_base + [t for t in (display.get("tile_fields") or [f["name"] for f in value_specs]) if t not in tile_base]
-    gate_field_names(layer_id + " (tile fields)", tile_fields)
+    gate_field_names(layer_id + " (tile fields)", tile_fields, cfg["domain"])
     display["tile_fields"] = tile_fields
     tile_in = out / "_tiles_input" / f"{layer_id}.geojsonseq.gz"
     tilesio.write_geojsonseq_gz(tgdf, tile_in, tile_fields, ctx.tmp_dir)
@@ -1299,7 +1313,7 @@ def gate_reference_csv(cfg, ctx, report) -> None:  # noqa: ANN001
             raise GateError("G6", f"{layer_id}: reference file not found: {path}")
         hash_input(ctx, path)  # G6: re-hashed at the end of the build
         df = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
-        gate_field_names(f"{layer_id} (reference file {path.name})", list(df.columns))
+        gate_field_names(f"{layer_id} (reference file {path.name})", list(df.columns), cfg["domain"])
         skip = list(arch.get("g7_skip_columns") or [])
         absent = [c for c in skip if c not in df.columns]
         if absent:
@@ -1622,6 +1636,85 @@ def check_display_keys(cfg, display, names, table) -> None:  # noqa: ANN001
             raise GateError("G1", f"{layer_id}: display.size_classes does not list the values {missing} of {sf}")
 
 
+def git_copy_cfg(cfg: dict[str, Any]) -> dict[str, bool]:
+    """yaml git_copy: {csv, extra_files} (SPEC_GEM r6 Q6): which files of the layer finalize copies to git in the final channel."""
+    raw = cfg.get("git_copy") or {}
+    bad = sorted(set(raw) - {"csv", "extra_files"})
+    if bad:
+        raise GateError("G1", f"{cfg['layer_id']}: git_copy has unknown keys {bad}; allowed: csv, extra_files")
+    return {"csv": bool(raw.get("csv", True)), "extra_files": bool(raw.get("extra_files", True))}
+
+
+def class_minzoom_series(cfg, display, table):  # noqa: ANN001
+    """Per-record minzoom from display.class_minzoom (SPEC_GEM r4 section 3 item 4); None when the key is absent.
+
+    The classes are the values of display.size_field. Returns an int Series aligned with table.
+    """
+    cm = display.get("class_minzoom")
+    if cm is None:
+        return None
+    layer_id = cfg["layer_id"]
+    sf = display.get("size_field")
+    if not sf:
+        raise GateError("G1", f"{layer_id}: display.class_minzoom needs display.size_field (the field that holds the classes)")
+    present = set(table[sf].dropna().astype(str))
+    missing = sorted(present - set(cm))
+    if missing:
+        raise GateError("G1", f"{layer_id}: display.class_minzoom does not list the values {missing} of {sf}")
+    maxzoom = int(cfg.get("tiles", {}).get("maxzoom", 12))
+    too_high = {k: v for k, v in cm.items() if v > maxzoom}
+    if too_high:
+        raise GateError("G1", f"{layer_id}: display.class_minzoom {too_high} is above tiles.maxzoom {maxzoom}: those records would never be drawn")
+    if table[sf].isna().any():
+        raise GateError("G1", f"{layer_id}: {sf} has empty values, class_minzoom cannot place those records")
+    return table[sf].astype(str).map(cm).astype(int)
+
+
+def check_display_gem(cfg, display, names, table) -> None:  # noqa: ANN001
+    """display.filters / popup / zoom_hint / legend_size_labels: names refer to real fields and values (SPEC_GEM r7)."""
+    layer_id = cfg["layer_id"]
+    for flt in display.get("filters") or []:
+        f = flt["field"]
+        if f not in names:
+            raise GateError("G1", f"{layer_id}: display.filters field {f} is not a field of the layer")
+        listed = [v["value"] for v in flt.get("values", [])]
+        if len(set(listed)) != len(listed):
+            raise GateError("G1", f"{layer_id}: display.filters {f}: values repeat: {listed}")
+        if listed and flt.get("mode", "equals") == "equals":
+            present = {str(v) for v in table[f].dropna() if str(v) != ""}
+            if present - set(listed):
+                raise GateError("G1", f"{layer_id}: display.filters {f} does not list the values {sorted(present - set(listed))}")
+        dflt = flt.get("default")
+        if dflt is not None and listed and any(d not in listed for d in ([dflt] if isinstance(dflt, str) else dflt)):
+            raise GateError("G1", f"{layer_id}: display.filters {f}: default {dflt!r} is not among the values")
+    for item in display.get("popup") or []:
+        when = item.get("when", {})
+        refs = [when.get("field"), when.get("ne_field"), item.get("link")]   # fields named in the condition; the link is a field with a URL
+        for fld in refs:
+            if fld is not None and fld not in names:
+                raise GateError("G1", f"{layer_id}: display.popup refers to {fld}, which is not a field of the layer")
+    lsl = display.get("legend_size_labels")
+    if lsl is not None:
+        classes = display.get("size_classes") or []
+        if set(lsl) != {str(c) for c in classes}:
+            raise GateError("G1", f"{layer_id}: display.legend_size_labels must have exactly the keys of size_classes {classes}, got {list(lsl)}")
+    for key in ("tile_fields",):
+        for t in display.get(key) or []:
+            if t not in names:
+                raise GateError("G1", f"{layer_id}: display.{key} lists {t}, which is not a field of the layer")
+    zh = display.get("zoom_hint")
+    cm = display.get("class_minzoom")
+    if zh is not None:
+        if cm is None:
+            raise GateError("G1", f"{layer_id}: display.zoom_hint needs display.class_minzoom (the build computes below from it)")
+        # below = the smallest class_minzoom among the classes that the layer has: before that zoom the layer shows nothing
+        present = set(table[display["size_field"]].dropna().astype(str))
+        computed = min(v for k, v in cm.items() if k in present)
+        if "below" in zh and zh["below"] != computed:
+            raise GateError("G1", f"{layer_id}: display.zoom_hint.below = {zh['below']} but the build computes {computed} from class_minzoom; remove it from the yaml")
+        zh["below"] = computed
+
+
 def build_layer_extras(cfg, ctx, out, table, checks, report):  # noqa: ANN001
     """Reference tables published at the root of the release as extra_files of the layer (checks.csv, groups.csv).
 
@@ -1640,7 +1733,7 @@ def build_layer_extras(cfg, ctx, out, table, checks, report):  # noqa: ANN001
             raise GateError("G2", f"{layer_id}: extra file {name}: only CSV files are supported")
         hash_input(ctx, src)
         df = pd.read_csv(src, dtype=str, keep_default_na=False, encoding="utf-8-sig")
-        gate_field_names(f"{layer_id} (extra file {name})", list(df.columns))
+        gate_field_names(f"{layer_id} (extra file {name})", list(df.columns), cfg["domain"])
         cyr = find_cyrillic({"columns": list(df.columns), **{c: list(df[c].unique()) for c in df.columns}}, ())
         if cyr:
             raise GateError("G7", f"{layer_id}: Cyrillic in the extra file {name}: {cyr[:8]}")
@@ -1762,7 +1855,7 @@ def build_line_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
             raise GateError("G4", f"{layer_id}: {spec['name']} has {n_null} empty values but is not nullable")
 
     fields = full_fields(cfg, adm=False)
-    gate_field_names(layer_id, [f["name"] for f in fields])
+    gate_field_names(layer_id, [f["name"] for f in fields], cfg["domain"])
 
     out = ctx.out_dir
     files = {"csv": out / f"{layer_id}.csv", "parquet": out / f"{layer_id}.parquet",
@@ -1775,7 +1868,7 @@ def build_line_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
 
     display = copy.deepcopy(cfg.get("display", {}))
     tile_fields = display.get("tile_fields") or names
-    gate_field_names(layer_id + " (tile fields)", tile_fields)
+    gate_field_names(layer_id + " (tile fields)", tile_fields, cfg["domain"])
     display["tile_fields"] = tile_fields
     tiles_cfg = cfg.get("tiles", {})
     mz_map = tiles_cfg.get("minzoom_by_band", {})
@@ -1883,9 +1976,12 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     missing = [n for n in names if n not in raw.columns]
     if missing:
         raise GateError("G2", f"{layer_id}: declared fields are not in the input: {missing}; columns: {list(raw.columns)[:30]}")
+    if cfg.get("input_columns_exact") and list(raw.columns) != names:
+        raise GateError("G2", f"{layer_id}: input columns differ from fields[] (input_columns_exact): input {list(raw.columns)}, fields {names}")
     table = raw[names].copy()
     for spec in specs:
         table[spec["name"]] = cast_series(table[spec["name"]], spec["type"])
+    input_sorted = bool(table["record_id"].is_monotonic_increasing)   # csv_identical_to_input needs the input already in record_id order
     table = table.sort_values("record_id", kind="stable").reset_index(drop=True)
 
     rid = table["record_id"].astype(object)
@@ -1980,7 +2076,7 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     checks.append({"id": "ref_present", "description": f"Every record has a non-empty {ref_field} (reference to the source record)."})
 
     fields = full_fields(cfg, adm=False)
-    gate_field_names(layer_id, [f["name"] for f in fields])
+    gate_field_names(layer_id, [f["name"] for f in fields], cfg["domain"])
     carries_power = False
     if cfg["domain"] == "dc":
         carries_power = apply_g3b(cfg, [f["name"] for f in fields], table, checks)
@@ -1988,7 +2084,25 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     out = ctx.out_dir
     files = {"csv": out / f"{layer_id}.csv", "parquet": out / f"{layer_id}.parquet",
              "geojson.gz": out / f"{layer_id}.geojson.gz"}
-    tilesio.write_csv(table, files["csv"])
+    if cfg.get("csv_identical_to_input"):
+        # SPEC_GEM r7 section 3 item 8: the released CSV is the file of the data step, byte for byte (its SHA-256 is in
+        # build_hashes.json). All checks above ran on the parsed table; the file itself is copied, not re-written by pandas
+        # (pandas would turn 800 into 800.0). Allowed only if the order is the order the build would write and the file has LF.
+        raw_bytes = table_path.read_bytes()
+        problems = []
+        if not input_sorted:
+            problems.append("its rows are not sorted by record_id")
+        if raw_bytes.split(b"\n", 1)[0].endswith(b"\r"):   # a CR inside a quoted value is the source's own text: not checked
+            problems.append("its lines end with CRLF (on Windows set `-text` for the file in .gitattributes)")
+        if not raw_bytes.endswith(b"\n"):
+            problems.append("it does not end with a line feed")
+        if problems:
+            raise GateError("G6", f"{layer_id}: the input CSV cannot be released as it is: " + "; ".join(problems))
+        shutil.copyfile(table_path, files["csv"])
+        checks.append({"id": "csv_identical_to_input", "description":
+                       "The published CSV is byte-identical to the file of the data step (same SHA-256)."})
+    else:
+        tilesio.write_csv(table, files["csv"])
     from shapely.geometry import Point
     geoms = [Point(x, y) if ok else None for x, y, ok in zip(lon, lat, has_xy)]
     out_gdf = gpd.GeoDataFrame(table.copy(), geometry=gpd.GeoSeries(geoms, crs="EPSG:4326"), crs="EPSG:4326")
@@ -2001,16 +2115,21 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
 
     display = copy.deepcopy(cfg.get("display", {}))
     tile_fields = display.get("tile_fields") or names
-    gate_field_names(layer_id + " (tile fields)", tile_fields)
+    gate_field_names(layer_id + " (tile fields)", tile_fields, cfg["domain"])
     if cfg["domain"] == "dc":
         bad_t, _ = power_field_names(tile_fields)
         if bad_t:
             raise GateError("G3b", f"{layer_id}: tile fields look like power but are not on the ADR 6.2 list: {bad_t}")
     display["tile_fields"] = tile_fields
     check_display_keys(cfg, display, names, table)
+    check_display_gem(cfg, display, names, table)
     tiles_cfg = cfg.get("tiles", {})
     tile_in = out / "_tiles_input" / f"{layer_id}.geojsonseq.gz"
-    tilesio.write_geojsonseq_gz(with_geom, tile_in, tile_fields, ctx.tmp_dir)
+    mz_all = class_minzoom_series(cfg, display, table)
+    mz = mz_all[has_xy.values].reset_index(drop=True) if mz_all is not None else None
+    n_tiles = tilesio.write_geojsonseq_gz(with_geom, tile_in, tile_fields, ctx.tmp_dir, mz)
+    if mz is not None:
+        report.note(f"{layer_id}: class_minzoom set on {n_tiles} tile features: {mz.value_counts().sort_index().to_dict()}")
 
     gate_columns(layer_id, names, {"csv": files["csv"], "parquet": files["parquet"]})
     gj_cols = read_geojson_columns(files["geojson.gz"])
@@ -2052,4 +2171,5 @@ def build_point_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
     lo = LayerOutput(layer_id, meta, out / f"{layer_id}.meta.json", files, tile_in, build, bbox,
                      archives, plan_extra, cfg["title"], cfg["domain"], cfg["level"], tile_fields, layer_id, "point", tiles_cfg)
     lo.carries_power = carries_power
+    lo.git_copy = git_copy_cfg(cfg)
     return lo

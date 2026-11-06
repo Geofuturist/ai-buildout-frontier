@@ -1,0 +1,588 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_plants_gem_tzsam_units",
+  "title": "Solar plants · GEM / TransitionZero · generating units",
+  "title_ru": "Солнечные станции · GEM / TransitionZero · энергоблоки",
+  "domain": "energy",
+  "level": "point",
+  "description": "Utility-scale solar units and phases of the Global Integrated Power Tracker of Global Energy Monitor (GEM), September 2026 release, that GEM marks as partially or fully sourced from the Solar Asset Mapper of TransitionZero (TZ-SAM), August 2025: one row for each of the 18,732 such units, 84,304 MW. A unit is in this layer when GEM lists a TZ identifier among its identifiers in other datasets (column Other IDs (unit/phase)). GEM distributes these records under CC BY-NC 4.0, so they are published apart from abf-energy (CC BY 4.0), in a dataset of their own under CC BY-NC 4.0: non-commercial use only. The fields are those of energy_plants_gem_units. TZ-SAM is derived in part from Copernicus Sentinel-2 imagery and from datasets by Kruitwagen et al. (2021), Dunnett et al. (2020), Fujita et al. (2024), Ortiz et al. (2022) and Zhang et al. (2020). This layer is published as files; the map shows energy_plants_gem_tzsam_locations.",
+  "fields": [
+    {
+      "name": "record_id",
+      "type": "string",
+      "nullable": false,
+      "description": "GEM unit/phase ID: GEM's key of the unit or phase (G followed by 11 digits)."
+    },
+    {
+      "name": "location_id",
+      "type": "string",
+      "nullable": false,
+      "description": "GEM location ID: GEM's key of the plant. All units of a plant share it."
+    },
+    {
+      "name": "plant_name",
+      "type": "string",
+      "nullable": false,
+      "description": "Name of the plant or project, as GEM gives it."
+    },
+    {
+      "name": "unit_name",
+      "type": "string",
+      "nullable": false,
+      "description": "Name or number of the unit or phase, as GEM gives it."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "nullable": false,
+      "description": "One of GEM's eight power technology groups: coal, oil/gas, utility-scale solar, wind, hydropower, nuclear, bioenergy, geothermal."
+    },
+    {
+      "name": "technology",
+      "type": "string",
+      "nullable": false,
+      "description": "Technology as GEM gives it, for example run-of-river, pumped storage or offshore hard mount. Offshore wind and pumped-storage hydropower are told apart only in this field."
+    },
+    {
+      "name": "fuel",
+      "type": "string",
+      "nullable": true,
+      "description": "Fuel of a combustion unit, as GEM gives it.",
+      "null_meaning": "Empty for all units: solar units have no fuel."
+    },
+    {
+      "name": "capacity_mw",
+      "type": "number",
+      "nullable": false,
+      "description": "Capacity in megawatts as GEM gives it. GEM defines it as “Total nameplate capacity, or best available data, of the project, in megawatts”. For solar units, see capacity_rating."
+    },
+    {
+      "name": "capacity_rating",
+      "type": "string",
+      "nullable": false,
+      "description": "Solar units only: whether GEM gives the capacity as an AC value (MWac), as a DC or peak value (MWp/dc), or unknown."
+    },
+    {
+      "name": "capacity_class",
+      "type": "string",
+      "nullable": false,
+      "description": "Size class of capacity_mw: lt10 (under 10 MW), 10_99 (10 to under 100 MW), 100_999 (100 to under 1,000 MW), ge1000 (1,000 MW and more). A capacity of 0 is in lt10."
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "nullable": false,
+      "description": "Status as GEM gives it: one of GEM's eight base statuses or one of two statuses that GEM infers, shelved - inferred 2 y and cancelled - inferred 4 y."
+    },
+    {
+      "name": "status_group",
+      "type": "string",
+      "nullable": false,
+      "description": "GEM base status: announced, pre_construction, construction, operating, shelved, cancelled, mothballed or retired. The two inferred statuses are counted under shelved and cancelled."
+    },
+    {
+      "name": "start_year",
+      "type": "integer",
+      "nullable": true,
+      "description": "Start year, as GEM gives it.",
+      "null_meaning": "GEM gives no start year."
+    },
+    {
+      "name": "retired_year",
+      "type": "integer",
+      "nullable": true,
+      "description": "Year of retirement, as GEM gives it.",
+      "null_meaning": "Empty for all units: none is retired."
+    },
+    {
+      "name": "owners",
+      "type": "string",
+      "nullable": true,
+      "description": "Owners as GEM gives them, with their shares in brackets.",
+      "null_meaning": "GEM names no owner."
+    },
+    {
+      "name": "operators",
+      "type": "string",
+      "nullable": true,
+      "description": "Operators as GEM gives them.",
+      "null_meaning": "GEM names no operator."
+    },
+    {
+      "name": "country_area",
+      "type": "string",
+      "nullable": false,
+      "description": "Country or area as GEM names it. GEM notes that this column “presents energy data within various economic contexts, and the geographical unit does not strictly follow political boundaries”."
+    },
+    {
+      "name": "subnational_unit",
+      "type": "string",
+      "nullable": true,
+      "description": "State or province, as GEM gives it.",
+      "null_meaning": "GEM names no state or province."
+    },
+    {
+      "name": "iso3_gem",
+      "type": "string",
+      "nullable": false,
+      "description": "ISO 3166-1 alpha-3 code of country_area, from the country table in GEM's own file (sheet Regions, area, and countries)."
+    },
+    {
+      "name": "iso3_source",
+      "type": "string",
+      "nullable": false,
+      "description": "Country of the record in the project's boundary frame (ADM0 of abf-boundaries v0.2.0). It equals iso3_gem except for six territories that GEM lists separately and the frame includes in a country: Réunion, Guadeloupe, Martinique, French Guiana and Mayotte are FRA; Bonaire, Sint Eustatius and Saba are NLD (gem_iso3_to_adm0.csv)."
+    },
+    {
+      "name": "iso3_frame",
+      "type": "string",
+      "nullable": false,
+      "description": "Country of the frame in which the point lies. For a point outside all countries, the nearest country if it is within 22.2 km (12 nautical miles, the breadth of the territorial sea)."
+    },
+    {
+      "name": "iso3_frame_rule",
+      "type": "string",
+      "nullable": false,
+      "description": "How iso3_frame was found: within (the point lies inside the country) or nearest_12nmi (the point lies outside all countries, and this is the nearest one within 22.2 km)."
+    },
+    {
+      "name": "control_iso3",
+      "type": "string",
+      "nullable": true,
+      "description": "State in control, for a point inside an area of disputed control of abf-boundaries v0.2.0 (contested_areas). In this version: Crimea, under Russian control (RUS), claimed by Ukraine.",
+      "null_meaning": "The point does not lie in an area of disputed control (true of all units in this version)."
+    },
+    {
+      "name": "location_accuracy",
+      "type": "string",
+      "nullable": false,
+      "description": "exact or approximate, as GEM gives it. GEM: “Approximate based on using nearest city or other information in research, or exact based on visibility on map or given in research”."
+    },
+    {
+      "name": "coord_precision",
+      "type": "string",
+      "nullable": false,
+      "description": "site where GEM gives the location as exact; approximate where GEM gives it as approximate."
+    },
+    {
+      "name": "coord_source",
+      "type": "string",
+      "nullable": false,
+      "description": "gem: the point is GEM's."
+    },
+    {
+      "name": "lon",
+      "type": "number",
+      "nullable": false,
+      "description": "Longitude in decimal degrees, as GEM gives it. The project does not move or round points."
+    },
+    {
+      "name": "lat",
+      "type": "number",
+      "nullable": false,
+      "description": "Latitude in decimal degrees, as GEM gives it. The project does not move or round points."
+    },
+    {
+      "name": "captive_industry_type",
+      "type": "string",
+      "nullable": true,
+      "description": "Industry that a captive plant serves, as GEM gives it, for example data center, aluminum or chemicals.",
+      "null_meaning": "Empty for all units: GEM lists none of them as a captive plant."
+    },
+    {
+      "name": "data_center_ppa",
+      "type": "string",
+      "nullable": true,
+      "description": "yes where GEM lists the unit as connected to a data center through a power purchase agreement. GEM keeps this field for nuclear and geothermal units only.",
+      "null_meaning": "Empty for all units: GEM keeps this field for nuclear and geothermal units only."
+    },
+    {
+      "name": "dc_link",
+      "type": "string",
+      "nullable": true,
+      "description": "The project's code for GEM's two data-center flags: captive_dc where captive_industry_type contains “data center”; dc_ppa where data_center_ppa is yes. The flags are GEM's; the project does not check them.",
+      "null_meaning": "Empty for all units: none carries a data-center flag of GEM."
+    },
+    {
+      "name": "river",
+      "type": "string",
+      "nullable": true,
+      "description": "Hydropower units only: river or watercourse, as GEM gives it.",
+      "null_meaning": "Empty for all units: not hydropower."
+    },
+    {
+      "name": "other_ids_location",
+      "type": "string",
+      "nullable": true,
+      "description": "Identifiers of the plant in other datasets, as GEM lists them (for example OpenStreetMap).",
+      "null_meaning": "GEM lists no other identifier of the plant."
+    },
+    {
+      "name": "other_ids_unit",
+      "type": "string",
+      "nullable": false,
+      "description": "Identifiers of the unit in other datasets, as GEM lists them (for example OpenStreetMap, or TZ for the TransitionZero Solar Asset Mapper)."
+    },
+    {
+      "name": "wiki_url",
+      "type": "string",
+      "nullable": false,
+      "description": "Page of the plant on GEM.wiki, with GEM's references."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "gem_gipt_sep2026_tz",
+      "role": "primary",
+      "publisher": "Global Energy Monitor",
+      "product": "Global Integrated Power Tracker, units with a TZ ID",
+      "url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/",
+      "edition": "September 2026 release (file Global Integrated Power September 2026 V2.xlsx)",
+      "current_through": null,
+      "retrieved_at": "2026-10-31",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-NC-4.0",
+        "name": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "family": "non_commercial",
+        "attribution_text": "Copyright © Global Energy Monitor. Global Integrated Power Tracker, September 2026 release. Distributed under a Creative Commons Attribution 4.0 International License. GEM notes that records with a “TZ ID” in the Other IDs (unit/phase) column were partially or fully sourced from the TransitionZero, Solar Asset Mapper, August 2025."
+      },
+      "rights_basis": {
+        "type": "publisher_statement",
+        "checked_by": "agent:RES",
+        "checked_at": "2026-10-31",
+        "evidence_url": "https://globalenergymonitor.org/projects/global-integrated-power-tracker/",
+        "text": "The licenses are stated in the About sheet of the GEM file. TransitionZero's terms of use for TZ-SAM ask for attribution, a statement of the changes made and the TransitionZero logo on visual content; the project website shows the logo with this layer. The layer is not part of any paid product. The About sheet gives the recommended citation: \"Global Energy Monitor, Global Integrated Power Tracker, September 2026 release.\""
+      },
+      "inputs": [
+        {
+          "file": "energy_plants_gem_tzsam_units.csv",
+          "bytes": 6303133,
+          "sha256": "5c38f22585b0b1d2630bd0fcaeb5654cb45c309d016c2992da9c25ab41982c40"
+        },
+        {
+          "file": "Global Integrated Power September 2026 V2.xlsx",
+          "bytes": 34439868,
+          "sha256": "34749042643b15cac4423ae67864ad36c391013aa2d5acc65ae7492c5e33ee27"
+        }
+      ]
+    },
+    {
+      "source_id": "transitionzero_tzsam_aug2025",
+      "role": "attribute",
+      "publisher": "TransitionZero",
+      "product": "Solar Asset Mapper (TZ-SAM)",
+      "url": "https://www.transitionzero.org/terms/tz-sam-terms-of-use",
+      "edition": "August 2025 release",
+      "current_through": null,
+      "retrieved_at": "2026-10-31",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-NC-4.0",
+        "name": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "family": "non_commercial",
+        "attribution_text": "Copyright © TransitionZero, Solar Asset Mapper, August 2025. Distributed under a Creative Commons Attribution-Non-Commercial 4.0 International License (CC BY-NC 4.0). TransitionZero Solar Asset Mapper, TransitionZero, August 2025 release. Changes by AI Buildout Frontier: records selected from the GEM Global Integrated Power Tracker, September 2026 release (the units with a TZ ID), grouped by plant, GEM base status and point, with size classes and country codes in the project's boundary frame added. TZ-SAM is derived in part from Copernicus Sentinel-2 imagery and from datasets by Kruitwagen et al. (2021), Dunnett et al. (2020), Fujita et al. (2024), Ortiz et al. (2022) and Zhang et al. (2020)."
+      },
+      "rights_basis": {
+        "type": "publisher_statement",
+        "checked_by": "agent:RES",
+        "checked_at": "2026-10-31",
+        "evidence_url": "https://www.transitionzero.org/terms/tz-sam-terms-of-use",
+        "text": "The About sheet of the GEM file gives the license of the TransitionZero records: Copyright © TransitionZero, Solar Asset Mapper, August 2025. Distributed under a Creative Commons Attribution-Non-Commercial 4.0 International License (CC BY-NC 4.0). TransitionZero's terms of use for TZ-SAM ask for attribution, a statement of the changes made and the TransitionZero logo on visual content."
+      },
+      "inputs": []
+    },
+    {
+      "source_id": "abf_boundaries_v0_2_0",
+      "role": "reference",
+      "publisher": "AI Buildout Frontier",
+      "product": "abf-boundaries v0.2.0",
+      "url": "https://doi.org/10.5281/zenodo.23454136",
+      "edition": "v0.2.0",
+      "current_through": null,
+      "retrieved_at": "2026-10-22",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Countries and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "agent:CODE-PUB",
+        "checked_at": "2026-10-23",
+        "evidence_url": "https://doi.org/10.5281/zenodo.23454136",
+        "text": "abf-boundaries v0.2.0 is published by this project under CC BY 4.0 (Zenodo record 10.5281/zenodo.23454136); the sources of its outlines are listed in its own meta.json."
+      },
+      "inputs": []
+    }
+  ],
+  "license": {
+    "id": "CC-BY-NC-4.0",
+    "name": "Creative Commons Attribution-NonCommercial 4.0 International",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "family": "non_commercial",
+    "attribution_text": "Copyright © Global Energy Monitor. Global Integrated Power Tracker, September 2026 release. Distributed under a Creative Commons Attribution 4.0 International License. GEM notes that records with a “TZ ID” in the Other IDs (unit/phase) column were partially or fully sourced from the TransitionZero, Solar Asset Mapper, August 2025. Copyright © TransitionZero, Solar Asset Mapper, August 2025. Distributed under a Creative Commons Attribution-Non-Commercial 4.0 International License (CC BY-NC 4.0). TransitionZero Solar Asset Mapper, TransitionZero, August 2025 release. Changes by AI Buildout Frontier: records selected from the GEM Global Integrated Power Tracker, September 2026 release (the units with a TZ ID), grouped by plant, GEM base status and point, with size classes and country codes in the project's boundary frame added. TZ-SAM is derived in part from Copernicus Sentinel-2 imagery and from datasets by Kruitwagen et al. (2021), Dunnett et al. (2020), Fujita et al. (2024), Ortiz et al. (2022) and Zhang et al. (2020). Countries and areas of disputed control: AI Buildout Frontier, abf-boundaries v0.2.0, DOI 10.5281/zenodo.23454136, CC BY 4.0."
+  },
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "freshness": {
+    "source_current_through": null,
+    "source_cadence": "irregular",
+    "built_at": "2026-11-01T12:00:00Z",
+    "next_check": "2027-01-31"
+  },
+  "coverage": {
+    "geography": "Solar plants of the world (GEM / TransitionZero)",
+    "iso3": [
+      "ABW",
+      "AFG",
+      "AGO",
+      "AIA",
+      "ALB",
+      "AND",
+      "ARE",
+      "ARG",
+      "ATG",
+      "AUS",
+      "AUT",
+      "AZE",
+      "BEL",
+      "BEN",
+      "BFA",
+      "BGD",
+      "BGR",
+      "BHR",
+      "BHS",
+      "BIH",
+      "BLZ",
+      "BOL",
+      "BRB",
+      "BRN",
+      "BWA",
+      "CAN",
+      "CHE",
+      "CHL",
+      "CHN",
+      "COD",
+      "COL",
+      "COM",
+      "CPV",
+      "CRI",
+      "CUB",
+      "CYM",
+      "CYP",
+      "CZE",
+      "DJI",
+      "DNK",
+      "DZA",
+      "ECU",
+      "EGY",
+      "ERI",
+      "ESH",
+      "ESP",
+      "EST",
+      "ETH",
+      "FRA",
+      "GBR",
+      "GEO",
+      "GHA",
+      "GRC",
+      "GTM",
+      "HND",
+      "HRV",
+      "HUN",
+      "IDN",
+      "IND",
+      "IOT",
+      "IRL",
+      "IRN",
+      "IRQ",
+      "ISR",
+      "ITA",
+      "JAM",
+      "JOR",
+      "KAZ",
+      "KEN",
+      "KHM",
+      "KIR",
+      "KOR",
+      "KWT",
+      "LAO",
+      "LBN",
+      "LKA",
+      "LSO",
+      "LTU",
+      "LVA",
+      "MAR",
+      "MDA",
+      "MDG",
+      "MDV",
+      "MEX",
+      "MKD",
+      "MLI",
+      "MLT",
+      "MMR",
+      "MNE",
+      "MNG",
+      "MRT",
+      "MUS",
+      "MWI",
+      "MYS",
+      "NAM",
+      "NCL",
+      "NER",
+      "NGA",
+      "NIC",
+      "NLD",
+      "NOR",
+      "NPL",
+      "NZL",
+      "OMN",
+      "PAK",
+      "PAN",
+      "PER",
+      "PHL",
+      "POL",
+      "PRT",
+      "PRY",
+      "PSE",
+      "QAT",
+      "ROU",
+      "RUS",
+      "RWA",
+      "SAU",
+      "SDN",
+      "SEN",
+      "SGP",
+      "SLE",
+      "SLV",
+      "SOM",
+      "SRB",
+      "SSD",
+      "SUR",
+      "SVK",
+      "SVN",
+      "SWZ",
+      "SYC",
+      "SYR",
+      "TCD",
+      "TGO",
+      "THA",
+      "TJK",
+      "TKM",
+      "TUN",
+      "TUR",
+      "TWN",
+      "TZA",
+      "UGA",
+      "UKR",
+      "URY",
+      "USA",
+      "UZB",
+      "VCT",
+      "VEN",
+      "VIR",
+      "VNM",
+      "XKX",
+      "YEM",
+      "ZAF",
+      "ZMB"
+    ],
+    "frame": null,
+    "n_units_frame": null,
+    "n_units_covered": null,
+    "n_records": 18732,
+    "known_gaps": [
+      "These are only the TZ-SAM records that GEM took into its tracker, not TZ-SAM as published by TransitionZero. GEM's solar threshold applies: 1 MW for operating projects, more than 20 MW for projects not yet operating. The GEM solar tracker in this release is of February 2026.",
+      "18,730 units are operating, 1 is in pre-construction and 1 is cancelled. All are 20 MW or less: 16,643 are under 10 MW and 2,089 from 10 to 20 MW.",
+      "GEM names an owner for 72 of the 18,732 units and an operator for 60. For 18,584 units GEM gives the technology as “Assumed PV”.",
+      "18,704 units are given in MWac, 3 in MWp/dc and 25 with unknown basis (capacity_rating).",
+      "GEM gives an approximate location for 426 units (2.3%).",
+      "The country is given by GEM's table and by the point. 173 units lie outside the generalized country outlines but within 22.2 km of a country and get the nearest one. For 102 units the point lies in another country of the frame than the one GEM names; some lie near borders, where generalized outlines can put a point across the line. Neither is a position of the project.",
+      "15 plants have units in both datasets; their other units are in abf-energy (CC BY 4.0)."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-energync",
+    "version": "0.1.0",
+    "tag": "abf-energync-v0.1.0",
+    "doi": "10.5281/zenodo.23980589",
+    "published_at": "2026-11-06"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0,
+      "agent_sample": 0.0
+    },
+    "method": "The units are selected by script from the sheet Power facilities of the GEM file with the stated SHA-256: a unit belongs here if its Other IDs (unit/phase) contain an identifier that begins with TZ: (for example TZ: 984606), which GEM's About sheet calls a “TZ ID”. The build stops unless the rule selects 18,732 units with 84,304 MW, as counted before the build in GEM's Global Solar Power Tracker, which the integrated tracker includes. All other checks are those of energy_plants_gem_units. A second run gives byte-identical files. The project did not check the records against TZ-SAM or other sources: the values are GEM's.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "record_id_unique",
+        "description": "record_id is present and unique in all 18,732 records."
+      },
+      {
+        "id": "coords_match_precision",
+        "description": "Records with coord_precision  have no coordinates; every other record has a longitude and a latitude in range."
+      },
+      {
+        "id": "iso3_in_boundaries",
+        "description": "Every value of iso3_source, iso3_frame, control_iso3 is the ISO 3166 alpha-3 code of a country or territory of the boundaries release."
+      },
+      {
+        "id": "listed_values_only",
+        "description": "The fields type, capacity_class, status_group, iso3_frame_rule, location_accuracy, coord_precision, coord_source hold only the values listed in their descriptions."
+      },
+      {
+        "id": "counts_match_texts",
+        "description": "Recomputed from the published file and equal to the numbers in the texts of this layer: the number of records (18,732); the counts by coord_precision, iso3_frame_rule, capacity_rating, status_group, capacity_class, technology; the numbers of records and groups with owners, operators; the totals of capacity_mw."
+      },
+      {
+        "id": "ref_present",
+        "description": "Every record has a non-empty wiki_url (reference to the source record)."
+      },
+      {
+        "id": "csv_identical_to_input",
+        "description": "The published CSV is byte-identical to the file of the data step (same SHA-256)."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Solar plants · GEM / TransitionZero · generating units (version 0.1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23980589",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_plants_gem_tzsam_units, record {record_key}, version 0.1.0. https://doi.org/10.5281/zenodo.23980589"
+  },
+  "display": {
+    "geometry_type": "point",
+    "map": false,
+    "size_field": "capacity_class",
+    "class_minzoom": {
+      "ge1000": 0,
+      "100_999": 3,
+      "10_99": 5,
+      "lt10": 5
+    },
+    "tile_fields": [
+      "record_id"
+    ]
+  }
+}
