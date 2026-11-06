@@ -310,16 +310,17 @@ coverage:
   - 67,148 of the 138,504 rows (48.5%) take their point from a unit whose location GEM gives as approximate, based on “using
     nearest city or other information in research”. The map does not set these points apart; the plant window says which they
     are.
-  - Many approximate points are shared by several plants. 134 points carry 20 or more different GEM plants each, 5,198 plants
-    in all, 3,941 of them in China; the largest, at 120°E, 33°N in Jiangsu, carries 165. Such a point is GEM's approximate
+  - Many approximate points are shared by several plants. 134 points carry 20 or more different GEM plants each, 5,198 different
+    plants in all, 3,941 of them in China; the largest, at 120°E, 33°N in Jiangsu, carries 165. Such a point is GEM's approximate
     location, not the site of any of these plants.
   - Units of one plant can have different points. Where they are more than 1 km apart, the rows are kept apart rather than
-    averaged. For 400 plants of the GEM file the points are more than 1° apart; some of these may be errors in the source,
-    which the project does not correct.
+    averaged. For 399 GEM plants the latitudes or longitudes of the units differ by more than 1°; some of these may be errors
+    in the source, which the project does not correct.
   - The country is given by GEM's table and by the point. 3,256 rows lie outside the generalized country outlines but within
     22.2 km of a country and get the nearest one. For 233 rows the point lies in another country of the frame than the one
-    GEM names, among them 20 rows in Crimea (Ukraine in GEM; under Russian control in the frame, which records Ukraine's
-    claim). Neither is a position of the project.
+    GEM names, among them 23 rows in Crimea or just off its coast (Ukraine in GEM; Russia in the frame). 20 of them lie inside
+    the area of disputed control, where the frame records Ukraine's claim (control_iso3); 3 offshore wind farms share one
+    approximate point at sea and get Russia by the 22.2 km rule without control_iso3. Neither is a position of the project.
   - 'Hydropower includes pumped storage, and offshore wind is not a type of its own: both are told apart only in technologies.'
   - Solar capacity mixes AC and DC values. Of the 79,730 solar rows, 26,698 hold only units given in MWac, 21,774 only units
     in MWp/dc, 31,037 only units of unknown basis, and 221 a mix.

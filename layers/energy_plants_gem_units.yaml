@@ -357,15 +357,16 @@ coverage:
   - 'The tracker joins GEM trackers of different dates: utility-scale solar and wind of February 2026, hydropower and geothermal
     of March 2026, coal of July 2026, oil and gas and nuclear of August 2026, bioenergy of September 2026. A status or capacity
     may have changed since the date of its tracker.'
-  - GEM gives an approximate location for 73,268 of the 164,672 units (44.5%), which GEM bases on “using nearest city or
-    other information in research”. Units of one plant can have different points. For 400 plants of the GEM file, the points
-    of their units are more than 1° apart; some of these may be errors in the source. The project does not correct points.
+  - 'GEM gives an approximate location for 73,268 of the 164,672 units (44.5%), which GEM bases on “using nearest city or
+    other information in research”. Units of one plant can have different points: for 399 GEM plants, the latitudes or longitudes
+    of their units differ by more than 1°. Some of these may be errors in the source. The project does not correct points.'
   - 'The country is given twice: by GEM''s country table (iso3_gem, iso3_source) and by the point (iso3_frame). 4,609 units
-    lie outside the generalized 1:10 million country outlines but within 22.2 km of a country, and get the nearest one;
-    858 units lie farther out, most of them offshore wind, and have no iso3_frame. For 291 units the point lies in another
-    country of the frame than the one GEM names. Some of them lie near borders, where generalized outlines can put a point
-    across the line; others lie in areas that GEM and the frame assign differently, such as Crimea (31 units, listed by
-    GEM under Ukraine and shown in the frame under Russian control). Neither is a position of the project.'
+    lie outside the generalized 1:10 million country outlines but within 22.2 km of a country, and get the nearest one; 858
+    units lie farther out, most of them offshore wind, and have no iso3_frame. For 291 units the point lies in another country
+    of the frame than the one GEM names. Some of them lie near borders, where generalized outlines can put a point across
+    the line; others lie in areas that GEM and the frame assign differently, such as Crimea: 34 units that GEM lists under
+    Ukraine lie in Crimea or just off its coast, which the frame shows under Russian control; 31 of them lie inside the area
+    of disputed control and carry control_iso3. Neither is a position of the project.'
   - Hydropower includes pumped storage, in which, as GEM defines it, “The project generates electricity using water which
     is cycled between a lower and an upper reservoir by a pumping system.” Offshore wind is not a type of its own. Both
     are told apart only by technology.

@@ -302,7 +302,7 @@ sources:
   role: attribute
   publisher: TransitionZero
   product: Solar Asset Mapper (TZ-SAM)
-  url: https://transition-zero.vercel.app/terms/tz-sam-terms-of-use
+  url: https://www.transitionzero.org/terms/tz-sam-terms-of-use
   edition: August 2025 release
   current_through: null
   retrieved_at: '2026-10-31'
@@ -323,7 +323,7 @@ sources:
     type: publisher_statement
     checked_by: agent:RES
     checked_at: '2026-10-31'
-    evidence_url: https://transition-zero.vercel.app/terms/tz-sam-terms-of-use
+    evidence_url: https://www.transitionzero.org/terms/tz-sam-terms-of-use
     text: 'The About sheet of the GEM file gives the license of the TransitionZero records: Copyright © TransitionZero,
       Solar Asset Mapper, August 2025. Distributed under a Creative Commons Attribution-Non-Commercial 4.0 International
       License (CC BY-NC 4.0). TransitionZero''s terms of use for TZ-SAM ask for attribution, a statement of the changes
