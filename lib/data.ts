@@ -210,7 +210,23 @@ export interface AttributionSource {
   layers: string[];
 }
 
+/** The territory index (abf-index) as the territory card reads it; null while the index is not in the pointer */
+export interface IndexSource {
+  /** where the files lie: <base>/<set>/<ISO3>.csv.gz, <base>/<set>/adm0_other.csv.gz */
+  base: string;
+  sets: { id: string; version: string; license: string; meta: import('./indexCard').IndexSetMeta }[];
+  card: {
+    title: string;
+    layer_titles: Record<string, string>;
+    title_fields: string[];
+    detail_fields: string[];
+    list_max: number;
+    texts: Record<string, any>;
+  };
+}
+
 export interface AbfData {
+  index: IndexSource | null;
   generated_at: string;
   channel: 'final' | 'dev';
   base_url: string;

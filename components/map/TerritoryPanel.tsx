@@ -15,6 +15,7 @@ import type { PanelRow } from '@/lib/panel';
 import LayersPanel from './LayersPanel';
 import TerritoryDownloads, { InsideButton } from './TerritoryDownloads';
 import UnitValues from './UnitValues';
+import UnitIndex from './UnitIndex';
 import type { MapData, UnitRef } from './types';
 
 interface Props {
@@ -148,6 +149,8 @@ export default function TerritoryPanel(p: Props) {
                 {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
               </div>
             )}
+
+            {unit && data.index && <UnitIndex index={data.index} iso3={p.countryIso} unit={unit} countryName={p.countryName} />}
 
             {/* Files of the country itself; files of the whole world are on the world card */}
             {unit && p.hiddenIndicators.map((h) => {

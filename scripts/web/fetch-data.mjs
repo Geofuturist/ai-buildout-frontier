@@ -310,6 +310,34 @@ async function main() {
     for (const [f, map] of Object.entries(styles.fields || {})) for (const [v, k] of Object.entries(map)) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.fields.${f}.${v}: "${k}" is not a kind (${KINDS.join(', ')})`);
     for (const [f, k] of styles.counts || []) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.counts.${f}: "${k}" is not a kind`);
   }
+  // Territory index (abf-index): the card is hidden while it is not available. PREVIEW ONLY for now: files in
+  // public/index-preview/<set>/ (meta.json, <ISO3>.csv.gz, adm0_other.csv.gz) made by scripts/web/make-index-preview.py.
+  // The release of the index in the pointer replaces this (the manifest shape is for CODE-PUB2 / ARCH7 to settle).
+  let indexSource = null;
+  const prevDir = path.join(ROOT, 'public', 'index-preview');
+  if (fs.existsSync(prevDir) && site.index_card) {
+    const sets = [];
+    for (const id of fs.readdirSync(prevDir).sort()) {
+      const mp = path.join(prevDir, id, 'meta.json');
+      if (!fs.existsSync(mp)) continue;
+      const m = JSON.parse(fs.readFileSync(mp, 'utf8'));
+      sets.push({
+        id: m.set,
+        version: m.index_version,
+        license: m.set.endsWith('nc') ? 'CC BY-NC 4.0' : 'CC BY 4.0',
+        meta: {
+          aggregations: m.aggregations,
+          levels_by_country: m.levels_by_country,
+          layers: m.layers,
+          countries: Object.keys(m.files).sort(),
+          index_version: m.index_version,
+        },
+      });
+    }
+    const c = site.index_card;
+    if (sets.length) indexSource = { base: '/index-preview', sets, card: { title: c.title, layer_titles: c.layer_titles, title_fields: c.title_fields, detail_fields: c.detail_fields, list_max: c.list_max, texts: c.texts } };
+  }
+
   // Texts of the Status block of the legend (status_styles.title, note, lines; RES_texts_site_legend)
   const statusLegend = { title: 'Status', note: '', lines: [] };
   if (styles) {
@@ -542,6 +570,7 @@ async function main() {
     fan_max: fanMax,
     source_logos: sourceLogos,
     status_legend: statusLegend,
+    index: indexSource,
     unit_words: unitWords,
     countries,
     attribution: groups,
