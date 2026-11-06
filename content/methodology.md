@@ -1,7 +1,7 @@
 # Methodology
 
 **Datasets:** abf-layers, United States, version {version_layers} (DOI: {DOI_layers}) ·
-abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France, version {version:abf-fra} (DOI: {DOI:abf-fra}) · abf-dc, data centers of the world, version {version:abf-dc} (DOI: {DOI:abf-dc}). Each dataset has its own DOI and is cited on its own.
+abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France, version {version:abf-fra} (DOI: {DOI:abf-fra}) · abf-dc, data centers of the world, version {version:abf-dc} (DOI: {DOI:abf-dc}) · abf-energy, power plants of the world, version {version:abf-energy} (DOI: {DOI:abf-energy}) · abf-energync, solar plants of the world (non-commercial), version {version:abf-energync} (DOI: {DOI:abf-energync}). Each dataset has its own DOI and is cited on its own.
 
 ## What this site is
 
@@ -458,6 +458,38 @@ both units of the Fairfax, Baltimore, St. Louis and Franklin pairs. 0 elsewhere 
 county, which is a statement about the Atlas. For 160 of the 2,331 U.S. records that have both a point and a county, the
 point lies in another county than the one the record names. This is one reason we count by the record and not by the point.
 
+## World · Power plants
+
+Two datasets from the Global Integrated Power Tracker of Global Energy Monitor (GEM), September 2026 release, a table of 183,404 generating units and phases. The tracker compiles GEM's eight trackers: coal, oil and gas, utility-scale solar, wind, hydropower, nuclear, bioenergy and geothermal power. Each tracker includes plants above its own capacity threshold and has its own date, from February 2026 for solar and wind to September 2026 for bioenergy. Smaller plants and distributed solar below 1 MW are not included, so the totals are not national capacity.
+
+GEM distributes the tracker under CC BY 4.0, but notes that records with a “TZ ID” were partially or fully sourced from TransitionZero's Solar Asset Mapper, which is under CC BY-NC 4.0. We keep the two apart. The 164,672 other units form abf-energy (CC BY 4.0), shown as “Power plants”. The 18,732 TransitionZero units, all utility-scale solar (84,304 MW), form abf-energync (CC BY-NC 4.0, non-commercial use only), shown as “Solar plants”. 15 plants have units in both.
+
+### Power plants · Global Energy Monitor · plants
+
+**What a row is.** A row holds the units of one GEM plant that have the same type and the same status and lie at one point; its capacity is their sum. A plant with units of two statuses has two rows. Units of a plant whose points are more than 1 km apart form separate rows, and each row keeps the point GEM gives for its first unit. We make no new coordinates.
+
+**Status.** We use GEM's eight base statuses: announced, pre-construction, construction, operating, shelved, cancelled, mothballed and retired. GEM also infers two statuses from lack of observed progress, shelved after two years and cancelled after four; we count them under shelved and cancelled and keep GEM's exact status in the files. The map shows operating plants by default, and other statuses can be added. Each status has its own symbol: filled for operating, pale for mothballed or retired, hatched for construction, an outline for announced or pre-construction, an outline with a question mark for shelved and with a cross for cancelled.
+
+**Country.** GEM's country names do not always follow political boundaries, as GEM itself notes. We give the country twice. The first comes from the country table in GEM's own file, mapped to our boundary frame; six territories that GEM lists separately are part of France or the Netherlands in the frame. The second is the country of the frame in which the point lies, or, for a point just off the generalized coast, the nearest country within 22.2 km (12 nautical miles). Points farther out, mostly offshore wind, have no country by point. Where the two differ, both are kept.
+
+**Locations.** GEM gives the location of 48.5% of the rows as approximate, “based on using nearest city or other information in research”. The map does not set these points apart; the plant window says which they are. Many approximate points are shared: 134 points carry 20 or more plants each, most of them in China. Such a point marks GEM's approximate location, not a plant's site.
+
+**Data-center flags.** GEM flags two different links between plants and data centers, and we publish both as GEM gives them, without checking them: captive plants that serve a data center (399 units, 390 of them oil and gas, from announced to retired), and nuclear and geothermal units connected to a data center through a power purchase agreement (32 units). The first is a plant within the facility it supplies, as GEM defines captive plants; the second is a contract to buy a plant's power. A plant without a flag may still supply a data center.
+
+**United States.** The U.S. plants of this layer and our U.S. layers from Form EIA-860 are separate sources. We do not reconcile them, and their figures for a state can differ.
+
+### Power plants · Global Energy Monitor · generating units
+
+The 164,672 units behind “Power plants”, one row per GEM unit or phase, with GEM's fields unchanged and the codes we add: base status, size class, countries and data-center flag. GEM gives 44.5% of them an approximate location. The layer is published as files and is not drawn on the map; its rows make up the plants described above.
+
+### Solar plants · GEM / TransitionZero · plants
+
+The TransitionZero units, built into rows by the same rule as “Power plants”. In this version each row holds one unit: 18,732 rows, almost all operating. All are 20 MW or less, so on the map they appear only as you zoom in, at the same zoom levels as plants of the same size in “Power plants”. GEM gives 2.3% of their locations as approximate. The layer is off by default and carries TransitionZero's attribution and logo when switched on. It is licensed for non-commercial use only.
+
+### Solar plants · GEM / TransitionZero · generating units
+
+The 18,732 units behind “Solar plants”, one row per GEM unit or phase with GEM's fields unchanged, under CC BY-NC 4.0. Published as files; not drawn on the map.
+
 ## Administrative boundaries · ADM0, ADM1, ADM2
 
 - **One frame for the whole world.** Natural Earth at 1:10 million, version 5.1.2. Where borders are
@@ -607,6 +639,11 @@ equal-area projections.
 - power: at most one layer of the release gives megawatts, and no site has two power values;
 - a random sample of places and of checks.csv cells was checked by an independent AI agent (see the layer section).
 
+**World power plants:**
+- the units of both datasets add up to the 183,404 units of GEM's table, and the capacity by type and status to the table's capacity; the TransitionZero rule selects exactly the units with a TZ ID;
+- the plant rows add up to the units of their dataset, and every unit is in one row;
+- every unit has a country by GEM's table and in our frame; a second build gives identical files.
+
 **Against our earlier Virginia pipeline.** When we first built these layers in September 2026, on
 the 2024 edition of EIA-860 and the 2025 edition of Queued Up, we compared them with the pipeline
 behind version 1.0 for Virginia's 133 county-equivalents:
@@ -633,6 +670,7 @@ publication checks them by checksum. Corrections come as a new version.
 - **France, data centers** is a lower bound: data centers registered under names and operators we
   could not identify are missed, and the points are at commune precision.
 - **World data centers** are placed at towns, not at sites; 22.3% of Atlas records have no place below the country, and a town taken from the record name is the same town as the address gives in about 87% of tested cases. The county counts follow the county each Atlas record names; 124 U.S. records name none we can identify, and 17 units are shown as not covered.
+- **World power plants:** GEM's thresholds leave out small plants; GEM's trackers have different dates; about half of the plant points in abf-energy are approximate, and the map does not set them apart; solar capacities mix AC and DC values; data-center flags are GEM's and unchecked; U.S. figures are not reconciled with EIA-860.
 - **Boundaries** outside the United States and Norway are generalized at 1:10 million. First levels
   of 104 countries follow CLDR release-48-2 and may miss later reforms; 134 countries and
   territories have national borders only. Crimea and Sevastopol are shown under Russia, the state in

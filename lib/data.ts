@@ -15,7 +15,7 @@ export interface LicenseInfo {
   id: string;
   name: string;
   url: string;
-  family: 'public_domain' | 'attribution' | 'share_alike';
+  family: 'public_domain' | 'attribution' | 'share_alike' | 'non_commercial';
   attribution_text: string;
 }
 
@@ -106,7 +106,60 @@ export interface Meta {
     /** panel topic; absent in older metas (then derived from the domain) */
     topic?: string;
     series?: string;
+    /** filters by the value of a field of the object (abf-energy 0.1.0): `equals` one value at a time, `contains` any of the ticked codes */
+    filters?: DisplayFilter[];
+    /** text under the layer's legend while the map is zoomed out below `below` (smaller objects appear as you zoom in) */
+    zoom_hint?: { below: number; text: string };
+    /** window of an object made of the fields of the object itself: nothing is counted in the browser */
+    popup?: PopupRow[];
+    /** template of the window title, "{plant_name}" */
+    popup_title?: string;
+    /** size class (value of size_field) -> legend label */
+    legend_size_labels?: Record<string, string>;
+    /** shape of the point icons by the domain of the layer (content/site.json point_shapes, put here by fetch-data) */
+    shape?: 'circle' | 'square';
+    /** how the status of an object becomes a kind of icon (content/site.json status_styles, put here by fetch-data): by the value of `field`, or by the count columns that stand at 1; `labels`: kind -> legend line */
+    status_style?: { field?: string; values?: Record<string, string>; counts?: [string, string][]; labels: Record<string, string>; rowFields?: Record<string, Record<string, string>> };
+    /** class value -> colour (content/site.json type_colors, put here by fetch-data); a class without one takes the palette by its place */
+    type_colors?: Record<string, string>;
+    /** legend line of the frame that marks an approximate position */
+    legend_approximate?: string;
+    /** one line on the licence of the layer ("CC BY-NC 4.0 — non-commercial use only"): the layer window, Download, /data */
+    license_note?: string;
+    /** line for the strip under the map while the layer is on */
+    map_attribution?: string;
   };
+}
+
+export interface DisplayFilterValue {
+  value: string;
+  label: string;
+}
+
+export interface DisplayFilter {
+  field: string;
+  mode: 'equals' | 'contains';
+  default?: string | null;
+  title?: string;
+  note?: string;
+  values: DisplayFilterValue[];
+}
+
+export interface PopupWhen {
+  field: string;
+  nonempty?: boolean;
+  gt?: number;
+  contains?: string;
+  equals?: string | number | boolean;
+  ne_field?: string;
+}
+
+export type PopupRow = { text: string; when?: PopupWhen } | { link: string; text: string; when?: PopupWhen };
+
+export interface SourceLogo {
+  file: string;
+  alt: string;
+  href: string;
 }
 
 export interface LayerEntry {
@@ -177,6 +230,10 @@ export interface AbfData {
   world_zoom: number;
   /** a click on a place with more records than this opens the list only, no fan (content/site.json fan_max) */
   fan_max: number;
+  /** logos of sources (content/site.json source_logos): source_id -> file in public/, alt, link */
+  source_logos: Record<string, SourceLogo>;
+  /** texts of the Status block of the legend (content/site.json status_styles): title, note, lines of a source (layer_ids, optional kind) */
+  status_legend: { title: string; note: string; lines: { layers: string[]; kind?: string; text: string }[] };
   /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
   unit_words: Record<string, Record<string, string>>;
   /** every country of the boundaries (name from units.csv) with its box [w, s, e, n] (e may exceed 180), for the search */

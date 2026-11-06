@@ -5,7 +5,7 @@ Run command (from the repository root, Windows):
 
 Looks for: British spelling (licence, kilometre), [RES], {placeholders} outside citation templates,
 "0 more", and the wrong spellings "License Ouverte" / "Open License" / "open_license".
-The names "Licence Ouverte" / "Open Licence" / "International Licence" (the Atlas title of CC BY 4.0), the code open_licence and script names (script:06_licences.py) are allowed; so is the {n} of display.unit_card_line (filled in by the site). Nothing is changed.
+The names "Licence Ouverte" / "Open Licence" / "International Licence" (the Atlas title of CC BY 4.0), the code open_licence and script names (script:06_licences.py) are allowed; so are the {n} of display.unit_card_line and the {field} slots of display.popup and display.popup_title (filled in by the site). Nothing is changed.
 """
 from __future__ import annotations
 
@@ -25,6 +25,7 @@ CHECKS = [
     ("wrong 'open_license'", re.compile(r"open_license"), False),
 ]
 PLACEHOLDER = re.compile(r"\{[^{}]*\}")
+POPUP_TEXT = re.compile(r"display\.popup\[\d+\]\.text$")   # {field} of display.popup: filled in by the site from the properties of the object (abf-energy)
 
 
 def walk(node, path=""):  # noqa: ANN001, ANN201
@@ -53,7 +54,7 @@ def main(argv: list[str]) -> int:
                     if rx.search(cleaned if use_cleaned else flat):
                         print(f"FOUND {label}: {f.name} {path}: ...{flat[:120]}...")
                         total += 1
-                if "citation" not in path and not path.endswith(("display.unit_card_line", "display.list_title")) and PLACEHOLDER.search(flat):  # {n}: filled in by the site (abf-dc)
+                if "citation" not in path and not path.endswith(("display.unit_card_line", "display.list_title", "display.popup_title")) and not POPUP_TEXT.search(path) and PLACEHOLDER.search(flat):  # {n}: filled in by the site (abf-dc)
                     print(f"FOUND placeholder: {f.name} {path}: ...{flat[:120]}...")
                     total += 1
             print(f"checked {f.name}")

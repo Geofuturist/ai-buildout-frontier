@@ -29,7 +29,7 @@ function Card({ card, open, onToggle, worldNote }: { card: DataCard; open: boole
         <dt className="text-muted">Data</dt>
         <dd>{card.through}</dd>
         <dt className="text-muted">License</dt>
-        <dd><a href={card.license.url}>{card.license.name}</a></dd>
+        <dd><a href={card.license.url}>{card.license.name}</a>{card.licenseNote && <span className="block font-semibold">{card.licenseNote}</span>}</dd>
         <dt className="text-muted">Dataset</dt>
         <dd>{card.dataset.name} v{card.dataset.version} · {card.dataset.doiUrl ? <a href={card.dataset.doiUrl}>{card.dataset.doi}</a> : 'DOI not assigned'}</dd>
       </dl>

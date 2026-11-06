@@ -5,6 +5,9 @@
 // here is stored, put in an address or downloaded. A line runs from each record to the point of the place, which stays
 // where it is. The fan closes when the map moves or zooms, or when something else is clicked (MapApp).
 // Colour by operator type (the groups file) and size by size class come from the rows of the published CSV.
+import { Mark } from './modules/symbols';
+import { FINE_KINDS as FINE } from '@/lib/icons';
+import { kindOfRow, shapeOf } from '@/lib/pointStatus';
 import { useEffect, useMemo, useState } from 'react';
 import type { LayerEntry } from '@/lib/data';
 import { PLACE_KEY, loadPlaceIndex, loadTypeGroups, GROUPS_FILE, placeRowsLayer, rowsOfGroup, rowsOfPlace } from '@/lib/placeRows';
@@ -82,7 +85,7 @@ export default function Fan({ data, spot, typeFilter, onOpen }: { data: MapData;
     const col = i >= 0 ? typeColor(i) : TYPE_GREY;
     const ci = classes.indexOf(str(row.power_class));
     const known = ci >= 0 && str(row.power_status) !== 'not_found';
-    return { col, r: known ? SIZE_RADII[Math.min(ci, SIZE_RADII.length - 1)] : UNKNOWN_RADIUS };
+    return { col, r: known ? SIZE_RADII[Math.min(ci, SIZE_RADII.length - 1)] : UNKNOWN_RADIUS, kind: kindOfRow(d, row) };
   };
   const reach = Math.max(0, ...spots.map((q) => Math.hypot(q.dx, q.dy))) + MARK + 14;
 
@@ -111,10 +114,7 @@ export default function Fan({ data, spot, typeFilter, onOpen }: { data: MapData;
               onOpen(rowsLayer, row);
             }}
           >
-            <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden>
-              <circle cx="14" cy="14" r={m.r + RING_EXTRA} fill={COLORS.surface} fillOpacity="0.9" />
-              <circle cx="14" cy="14" r={m.r} fill={m.col.fill} fillOpacity="0.7" stroke={m.col.stroke} strokeWidth="1.2" />
-            </svg>
+            <Mark shape={shapeOf(d) ?? 'circle'} kind={m.kind} color={m.col.fill} r={FINE.includes(m.kind) && m.r <= SIZE_RADII[0] ? SIZE_RADII[1] : m.r} />
           </button>
         );
       })}

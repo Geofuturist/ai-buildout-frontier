@@ -267,6 +267,72 @@ async function main() {
     if (m.display && m.display.map === false) { console.warn(`NOTE: content/site.json hidden_layers "${id}" is already display.map = false in its meta; the line can go`); continue; }
     m.display = { ...(m.display || {}), map: false };
   }
+  // Logos some source terms ask for (content/site.json source_logos): source_id -> { file in public/, alt, href }. The
+  // file is a resource of the site, not a data file. An entry whose file is missing is dropped (final mode stops).
+  const sourceLogos = {};
+  const knownSources = new Set(Object.values(metas).flatMap((m) => m.sources.map((x) => x.source_id)));
+  for (const [sid, v] of Object.entries(site.source_logos && typeof site.source_logos === 'object' ? site.source_logos : {})) {
+    if (!v || typeof v.file !== 'string' || typeof v.alt !== 'string' || typeof v.href !== 'string' || !/^https:\/\//.test(v.href)) {
+      strict(`content/site.json: source_logos.${sid} needs file, alt and an https href`);
+      continue;
+    }
+    if (!/^[\w.-]+$/.test(v.file) || !fs.existsSync(path.join(ROOT, 'public', v.file))) {
+      strict(`content/site.json: source_logos.${sid}: public/${v.file} does not exist`);
+      continue;
+    }
+    if (!knownSources.has(sid)) console.warn(`NOTE: content/site.json source_logos.${sid} is not a source of any layer of the pointer (yet)`);
+    sourceLogos[sid] = { file: v.file, alt: v.alt, href: v.href };
+  }
+  // Colours by the value of a type (content/site.json type_colors: value -> #rrggbb), for the layers that colour by type.
+  // Applied to the data the site gets, never to the published files; a value no layer has is reported.
+  const typeColors = site.type_colors && typeof site.type_colors === 'object' ? site.type_colors : {};
+  for (const [v, c] of Object.entries(typeColors)) {
+    if (typeof c !== 'string' || !/^#[0-9a-fA-F]{6}$/.test(c)) { strict(`content/site.json: type_colors."${v}" must be #rrggbb`); delete typeColors[v]; }
+  }
+  const usedTypes = new Set();
+  for (const m of Object.values(metas)) {
+    const d = m.display;
+    if (!d || !d.color_field || !Array.isArray(d.color_classes)) continue;
+    const own = Object.fromEntries(d.color_classes.filter((c) => typeColors[c]).map((c) => [c, typeColors[c]]));
+    d.color_classes.forEach((c) => { if (typeColors[c]) usedTypes.add(c); });
+    if (Object.keys(own).length) d.type_colors = own;
+  }
+  for (const v of Object.keys(typeColors)) if (!usedTypes.has(v)) console.warn(`NOTE: content/site.json type_colors."${v}" is not a class of any layer (yet)`);
+  // Point icons (SPEC_WEB_territory r11 par. 18): the shape by the domain of the layer (content/site.json point_shapes) and
+  // how the status of an object becomes a kind of icon (status_styles). Put into display of the layers that are drawn as
+  // icons (point layers with a size or a colour class); the published files stay as they are.
+  const shapes = site.point_shapes && typeof site.point_shapes === 'object' ? site.point_shapes : {};
+  const KINDS = ['fill', 'pale', 'hatch', 'outline', 'q', 'x'];
+  const styles = site.status_styles && typeof site.status_styles === 'object' ? site.status_styles : null;
+  const labels = styles && styles.labels && typeof styles.labels === 'object' ? styles.labels : {};
+  for (const [dom, sh] of Object.entries(shapes)) if (sh !== 'circle' && sh !== 'square') { strict(`content/site.json: point_shapes.${dom} must be circle or square`); delete shapes[dom]; }
+  if (styles) {
+    for (const [f, map] of Object.entries(styles.fields || {})) for (const [v, k] of Object.entries(map)) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.fields.${f}.${v}: "${k}" is not a kind (${KINDS.join(', ')})`);
+    for (const [f, k] of styles.counts || []) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.counts.${f}: "${k}" is not a kind`);
+  }
+  // Texts of the Status block of the legend (status_styles.title, note, lines; RES_texts_site_legend)
+  const statusLegend = { title: 'Status', note: '', lines: [] };
+  if (styles) {
+    if (typeof styles.title === 'string') statusLegend.title = styles.title;
+    if (typeof styles.note === 'string') statusLegend.note = styles.note;
+    for (const ln of Array.isArray(styles.lines) ? styles.lines : []) {
+      const ok = ln && typeof ln.text === 'string' && Array.isArray(ln.layers) && ln.layers.every((x) => typeof x === 'string') && (ln.kind === undefined || KINDS.includes(ln.kind));
+      if (!ok) { strict('content/site.json: status_styles.lines needs text, layers (layer_ids) and, if given, a kind'); continue; }
+      statusLegend.lines.push({ layers: ln.layers, ...(ln.kind ? { kind: ln.kind } : {}), text: ln.text });
+    }
+  }
+  for (const l of layers) {
+    const m = metas[l.meta_id];
+    const d = m && m.display;
+    if (!d || d.geometry_type !== 'point' || d.map === false || !(d.size_field || d.color_field) || !shapes[l.domain]) continue;
+    d.shape = shapes[l.domain];
+    if (!styles) continue;
+    const have = new Set([...(d.tile_fields || []), ...((l.tiles && l.tiles.fields) || [])]);
+    const byField = Object.entries(styles.fields || {}).find(([f]) => have.has(f));
+    const counts = (styles.counts || []).filter(([f]) => have.has(f));
+    if (byField) d.status_style = { field: byField[0], values: byField[1], labels };
+    else if (counts.length > 0) d.status_style = { counts, labels, rowFields: styles.fields || {} };
+  }
   const worldZoom = num(site.world_zoom, 1.2, 'world_zoom');
   const fanMax = num(site.fan_max, 30, 'fan_max');
 
@@ -445,7 +511,7 @@ async function main() {
       }
     }
   }
-  const families = ['public_domain', 'attribution', 'share_alike'];
+  const families = ['public_domain', 'attribution', 'share_alike', 'non_commercial'];
   const groups = families
     .map((family) => ({
       family,
@@ -474,6 +540,8 @@ async function main() {
     level_zoom: levelZoom,
     world_zoom: worldZoom,
     fan_max: fanMax,
+    source_logos: sourceLogos,
+    status_legend: statusLegend,
     unit_words: unitWords,
     countries,
     attribution: groups,

@@ -1,9 +1,126 @@
 {
   "default_layer": "energy_generation_eia860_adm2",
-  "default_view": { "country": null },
-  "level_zoom": { "ADM1": 3.0, "ADM2": 5.5 },
+  "default_view": {
+    "country": null
+  },
+  "level_zoom": {
+    "ADM1": 3.0,
+    "ADM2": 5.5
+  },
   "world_zoom": 1.2,
   "fan_max": 30,
-  "hidden_layers": ["dc_atlas_count_adm0"],
-  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. world_zoom: below this zoom a click on the globe chooses the whole world. hidden_layers: layer_ids kept off the map from here, a temporary stand-in for display.map = false in the meta (the layer stays in the files, on /data and in the card values). fan_max: a place with more records than this opens as a list only, with no fan. default_view.country: an ISO3 code to open on a country, null for the world."
+  "hidden_layers": [
+    "dc_atlas_count_adm0",
+    "dc_atlas_count_usa_adm2"
+  ],
+  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. world_zoom: below this zoom a click on the globe chooses the whole world. hidden_layers: layer_ids kept off the map from here, a temporary stand-in for display.map = false in the meta (the layer stays in the files, on /data and in the card values). fan_max: a place with more records than this opens as a list only, with no fan. default_view.country: an ISO3 code to open on a country, null for the world. type_colors: colour of a class by its value (for layers that colour by type, such as the power plants); a class not listed takes the palette by its place. point_shapes: shape of the point icons by the domain of the layer. status_styles: how a status field (or the count columns of a place) becomes a kind of icon: fill = works, pale = built but not working, hatch = under construction, outline = announced, q = shelved, x = cancelled; labels are working texts until [RES] gives the legend texts. status_styles.title/note/lines: legend texts of the Status block (RES, RES_texts_site_legend); a line is shown while one of its layers is on (and, if it has a kind, that kind is in use). Keys are layer_ids.",
+  "type_colors": {
+    "utility-scale solar": "#F2C500",
+    "wind": "#2E9E44",
+    "geothermal": "#D6403A",
+    "hydropower": "#0072B2",
+    "nuclear": "#7B3FA0",
+    "coal": "#7A4A21",
+    "oil/gas": "#1A1A1A",
+    "bioenergy": "#F28C1E"
+  },
+  "point_shapes": {
+    "energy": "circle",
+    "dc": "square"
+  },
+  "status_styles": {
+    "fields": {
+      "status_group": {
+        "operating": "fill",
+        "mothballed": "pale",
+        "retired": "pale",
+        "construction": "hatch",
+        "announced": "outline",
+        "pre_construction": "outline",
+        "shelved": "q",
+        "cancelled": "x"
+      },
+      "status_raw": {
+        "Operating / Construction": "fill",
+        "Retired": "pale",
+        "Planned": "outline"
+      }
+    },
+    "counts": [
+      [
+        "n_operating_or_construction",
+        "fill"
+      ],
+      [
+        "n_planned",
+        "outline"
+      ],
+      [
+        "n_retired",
+        "pale"
+      ]
+    ],
+    "labels": {
+      "fill": "Operating",
+      "pale": "Built, not operating",
+      "hatch": "Under construction",
+      "outline": "Announced or planned",
+      "q": "Shelved",
+      "x": "Cancelled"
+    },
+    "title": "Status",
+    "note": "Each source has its own statuses; the lines below say how they are drawn.",
+    "lines": [
+      {
+        "layers": [
+          "energy_plants_gem_locations",
+          "energy_plants_gem_tzsam_locations"
+        ],
+        "kind": "pale",
+        "text": "GEM: Built, not operating (mothballed or retired)"
+      },
+      {
+        "layers": [
+          "energy_plants_gem_locations",
+          "energy_plants_gem_tzsam_locations"
+        ],
+        "kind": "q",
+        "text": "GEM: Shelved: suspended, or no progress for two years"
+      },
+      {
+        "layers": [
+          "energy_plants_gem_locations",
+          "energy_plants_gem_tzsam_locations"
+        ],
+        "text": "Shelved and Cancelled include projects that GEM classes so itself after two or four years without observed progress."
+      },
+      {
+        "layers": [
+          "dc_atlas_count_places"
+        ],
+        "text": "Atlas of Data Center Politics: our copies of the Atlas tables give one status, “Operating / Construction”, for operating sites and sites under construction; both are drawn as Operating. Planned sites are drawn as Announced or planned, retired sites as Built, not operating."
+      },
+      {
+        "layers": [
+          "dc_epoch_points"
+        ],
+        "kind": "fill",
+        "text": "Epoch AI: IT power in operation (Epoch AI's estimate)"
+      },
+      {
+        "layers": [
+          "dc_epoch_points"
+        ],
+        "kind": "outline",
+        "text": "Epoch AI: no IT power in operation yet. Epoch AI gives no status, so the site may be planned or under construction."
+      }
+    ]
+  },
+  "source_logos": {
+    "transitionzero_tzsam_aug2025": {
+      "file": "transitionzero.svg",
+      "alt": "TransitionZero",
+      "href": "https://www.transitionzero.org/"
+    }
+  }
 }

@@ -15,6 +15,7 @@ import { capitalize, recordNoun, unitWord } from '@/lib/layers';
 import { GROUPS_FILE, PLACE_KEY, loadPlaceIndex, loadTypeGroups, placeRowsLayer, rowsOfGroup, rowsOfPlace } from '@/lib/placeRows';
 import { filterColumn } from '@/lib/pointSize';
 import { epochTags, parseLinks } from '@/lib/dcTexts';
+import { popupLines, popupTitle } from '@/lib/popup';
 import { countryNameFromIso3 } from '@/lib/iso3';
 import DcPointRows, { capacityShort, str } from './DcPointRows';
 import { MODULE_BY_TYPE } from './modules';
@@ -60,6 +61,47 @@ export function RecordShell({ data, layer, props: p, onClose, onBack }: { data: 
   );
 }
 
+/**
+ * The window of an object described by display.popup: rows of its own fields (no CSV, nothing counted), then source,
+ * licence (with the layer's licence note), citation, methodology.
+ */
+export function PopupCard({ data, layer, props: p, onClose, onBack }: { data: MapData; layer: LayerEntry; props: Props; onClose: () => void; onBack?: () => void }) {
+  const meta = data.metas[layer.meta_id];
+  const anchor = data.anchors[layer.layer_id];
+  const key = String(p.record_id ?? '');
+  const title = popupTitle(meta, p) ?? (typeof p.name === 'string' && p.name ? p.name : key);
+  const lines = popupLines(meta, p);
+  // The type of the object (the value of color_field) with the label of the legend: "Wind (onshore and offshore)"
+  const typeValue = meta.display?.color_field ? p[meta.display.color_field] : undefined;
+  const typeLabel = typeof typeValue === 'string' && typeValue ? meta.display?.legend_type_labels?.[typeValue] ?? typeValue : '';
+  return (
+    <Shell title={title} subtitle={layer.title} onClose={onClose}>
+      {onBack && (
+        <button type="button" className={`mt-2 ${BACK}`} onClick={onBack}>
+          ← Back to the list
+        </button>
+      )}
+      <ul className="mt-2 space-y-1">
+        {typeLabel && <li className="font-semibold text-ink">{typeLabel}</li>}
+        {lines.map((l, i) => (
+          <li key={i}>{l.kind === 'link' ? <a href={l.href} target="_blank" rel="noopener noreferrer">{l.text}</a> : l.text}</li>
+        ))}
+      </ul>
+      <p className="mt-4 text-xs text-ink2">{sourceLine(meta)}</p>
+      <p className="mt-1 text-xs text-ink2">
+        License: <a href={meta.license.url}>{meta.license.name}</a>
+        {meta.display?.license_note && <span className="block font-semibold text-ink">{meta.display.license_note}</span>}
+      </p>
+      <p className="mt-1 text-xs text-ink2">{checkedByLine(meta)}</p>
+      <div className="mt-3 flex flex-wrap items-center gap-3">
+        <CopyButton text={recordCitation(meta, key)} label="Cite this record" />
+        {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
+      </div>
+      <p className="mt-3 text-sm"><Link href={`/data/#${layer.layer_id}`}>All files of this layer</Link></p>
+    </Shell>
+  );
+}
+
 /** Rows of a list: name, who (operator or owner), status, class or power, links. A row opens the window of its record. */
 export function RecordList({ data, layer, items, onOpen }: { data: MapData; layer: LayerEntry; items: Props[]; onOpen: (i: number) => void }) {
   const meta = data.metas[layer.meta_id];
@@ -68,13 +110,16 @@ export function RecordList({ data, layer, items, onOpen }: { data: MapData; laye
     <ul className="mt-2">
       {items.map((p, i) => {
         const key = String(p[keyField] ?? i);
-        const who = str(p.operator) || epochTags(str(p.owner));
-        const line = [who, str(p.status_raw), meta.display?.size_field ? capacityShort(meta, p) : ''].filter(Boolean).join(' · ');
+        const popup = Boolean(meta.display?.popup);
+        const typeKey = meta.display?.color_field ? str(p[meta.display.color_field]) : '';
+        const who = popup ? meta.display?.legend_type_labels?.[typeKey] ?? typeKey : str(p.operator) || epochTags(str(p.owner));
+        const line = [who, popup ? '' : str(p.status_raw), meta.display?.size_field && !popup ? capacityShort(meta, p) : ''].filter(Boolean).join(' · ');
+        const name = (popup ? popupTitle(meta, p) : undefined) ?? str(p.name);
         const links = parseLinks(str(p.source_urls) || str(p.selected_sources));
         return (
           <li key={key} className="border-t border-line py-2">
             <button type="button" className="block min-h-[44px] w-full text-left" onClick={() => onOpen(i)}>
-              <span className="block font-semibold text-ink">{str(p.name) || key}</span>
+              <span className="block font-semibold text-ink">{name || key}</span>
               {line && <span className="block text-xs text-ink2">{line}</span>}
             </button>
             {links.length > 0 && (
@@ -99,7 +144,11 @@ export function RecordList({ data, layer, items, onOpen }: { data: MapData; laye
 /** Objects of one layer at the same spot, taken from the tiles. */
 export function ItemsCard({ data, layer, items, onClose }: { data: MapData; layer: LayerEntry; items: Props[]; onClose: () => void }) {
   const [open, setOpen] = useState<number | null>(null);
-  if (open !== null && items[open]) return <RecordShell data={data} layer={layer} props={items[open]} onClose={onClose} onBack={() => setOpen(null)} />;
+  if (open !== null && items[open]) {
+    return data.metas[layer.meta_id].display?.popup
+      ? <PopupCard data={data} layer={layer} props={items[open]} onClose={onClose} onBack={() => setOpen(null)} />
+      : <RecordShell data={data} layer={layer} props={items[open]} onClose={onClose} onBack={() => setOpen(null)} />;
+  }
   return (
     <Shell title={`${items.length} ${unitWord(layer)} at this spot`} subtitle={layer.title} onClose={onClose}>
       <RecordList data={data} layer={layer} items={items} onOpen={setOpen} />
