@@ -37,8 +37,13 @@ def _session():  # noqa: ANN202
     return s
 
 
-def files_of(manifest: dict[str, Any]) -> dict[str, dict[str, Any]]:
+def files_of(manifest: dict[str, Any], listings: dict[str, list[dict[str, Any]]] | None = None) -> dict[str, dict[str, Any]]:
     out: dict[str, dict[str, Any]] = {}
+    for ix in manifest.get("indexes", []):
+        for ref in (ix["meta"], ix["adm0_other"], ix["summary"], ix["archive"], ix["country_files"]["listing"]):
+            out[ref["path"]] = ref
+        for f in (listings or {}).get(ix["index_id"], []):
+            out[f["path"]] = {"path": f["path"], "bytes": f["bytes"], "sha256": f["sha256"]}
     for layer in manifest["layers"]:
         for ref in [layer["meta"], *layer["files"].values(), *layer["extra_files"]]:
             out[ref["path"]] = ref
@@ -68,7 +73,17 @@ def verify(url: str, save_to: Path | None, quick: bool = False) -> int:
     if manifest["doi"] is None:
         log.warning("manifest has doi = null (channel dev)")
     meta_schema = read_json(SCHEMA_DIR / "meta.schema.json")
-    for rel, ref in sorted(files_of(manifest).items()):
+    listings: dict[str, list[dict[str, Any]]] = {}
+    for ix in manifest.get("indexes", []):
+        lr = sess.get(base_url + manifest["base_path"] + ix["country_files"]["listing"]["path"], timeout=60)
+        if lr.status_code != 200:
+            raise GateError("verify", f"listing.json of {ix['index_id']} not reachable: HTTP {lr.status_code}")
+        listing = lr.json()["files"]
+        if len(listing) != ix["country_files"]["count"]:
+            problems.append(f"{ix['index_id']}: listing.json has {len(listing)} files, manifest count {ix['country_files']['count']}")
+        listings[ix["index_id"]] = listing
+    all_files = files_of(manifest, listings)
+    for rel, ref in sorted(all_files.items()):
         furl = base_url + manifest["base_path"] + rel
         if quick and not rel.endswith(".meta.json") and ref["bytes"] >= 5_000_000:
             # Quick mode (dev only): no download of big files; status, size and cache header from a HEAD request.
@@ -88,7 +103,7 @@ def verify(url: str, save_to: Path | None, quick: bool = False) -> int:
             if resp.status_code != 200:
                 problems.append(f"{rel}: HTTP {resp.status_code}")
                 continue
-            body = bytearray() if rel.endswith(".meta.json") else None
+            body = bytearray() if rel.endswith(".meta.json") else None  # layer meta only; index meta.json is checked by SHA
             for chunk in resp.iter_content(1 << 20):
                 digest.update(chunk)
                 size += len(chunk)
@@ -143,7 +158,7 @@ def verify(url: str, save_to: Path | None, quick: bool = False) -> int:
             log.error("PROBLEM %s", p)
         print(f"\nНайдено проблем: {len(problems)}. Релиз не принимать.")
         return 1
-    print(f"\nВсё сходится: {len(files_of(manifest))} файлов" + (" (быстрая проверка: SHA-256 только у файлов меньше 5 МБ)." if quick else ", размеры и SHA-256 как в манифесте."))
+    print(f"\nВсё сходится: {len(all_files)} файлов" + (" (быстрая проверка: SHA-256 только у файлов меньше 5 МБ)." if quick else ", размеры и SHA-256 как в манифесте."))
     return 0
 
 

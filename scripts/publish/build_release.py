@@ -30,6 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import boundaries_build
 import check_dc_phrases
 import check_gem_phrases
+import index_build
 import layer_build
 from common import (
     DOI_REGEX,
@@ -444,8 +445,12 @@ def run(args: argparse.Namespace) -> int:
     tmp_dir = out.parent / f"_tmp_{tag}"
     tmp_dir.mkdir(parents=True, exist_ok=True)
 
-    boundaries = load_boundaries(rel)
-    registry_report(boundaries, report)
+    # a release of the kind index (abf-index) has no layers and needs no boundary files: only the index files (SPEC_INDEX r8 section 7)
+    if rel.get("kind") == "index" and rel.get("layers"):
+        raise GateError("G14", "a release of the kind index must not list layers")
+    boundaries = load_boundaries(rel) if rel.get("layers") or dataset == "abf-boundaries" else None
+    if boundaries is not None:
+        registry_report(boundaries, report)
     overrides = dict(item.split("=", 1) for item in (args.override or []))
     ctx = BuildContext(release=rel, channel=channel, out_dir=out, built_at=built_at, published_at=published_at,
                        doi=doi, boundaries=boundaries, report=report, overrides=overrides, tmp_dir=tmp_dir)
@@ -471,7 +476,7 @@ def run(args: argparse.Namespace) -> int:
         all_layers += bo.layers
         check_lists[cfg["layer_id"]] = [c["id"] for c in bo.meta["verification"]["automated_checks"]]
     else:
-        for layer_yaml in rel["layers"]:
+        for layer_yaml in rel.get("layers") or []:
             cfg = load_yaml(resolve_path(layer_yaml))
             if "git_copy" in rel and "git_copy" not in cfg:   # release key: what goes to git for every layer (SPEC_GEM r6 Q6)
                 cfg["git_copy"] = rel["git_copy"]
@@ -505,6 +510,10 @@ def run(args: argparse.Namespace) -> int:
         raise GateError("G3b", f"the dc layers of the release have different display.size_breaks: {breaks}")
     if rel.get("cross_checks"):
         run_cross_checks(rel["cross_checks"], out, boundaries, report)
+    index_entries = index_build.build_indexes(rel, out, report)
+    if index_entries:
+        plan_extra += [{"path": e["listing_file"], "description": f"List of the country files of {e['index_id']} with their SHA-256 and row counts"}
+                       for e in index_entries]
     if rel.get("identity"):
         run_identity(rel["identity"], out, report)
     if rel.get("phrase_check"):
@@ -535,6 +544,14 @@ def run(args: argparse.Namespace) -> int:
         "layers": plan_layers, "extra_files": plan_extra, "source_archives": source_archives,
         "tile_builds": tile_builds,
     }
+    if rel.get("kind") == "index":
+        plan["kind"] = "index"
+    if index_entries:
+        plan["indexes"] = index_entries
+    if rel.get("license"):
+        plan["license"] = rel["license"]
+    elif rel.get("kind") == "index":
+        raise GateError("G14", "a release of the kind index needs a license block in the release yaml")
     write_json(out / PLAN_NAME, plan)
 
     # --- zenodo_files.txt (no PMTiles)
@@ -543,8 +560,9 @@ def run(args: argparse.Namespace) -> int:
         names += [p.name for p in lo.files.values()]
         names += [e["path"] for e in lo.extra_files]
     names += sorted({p.name for p, _ in metas})
-    names += [e["path"] for e in plan_extra]
+    names += [e["path"] for e in plan_extra if not e["path"].startswith("index/")]
     names += [a["path"] for a in source_archives]
+    names += index_build.index_zenodo_names(index_entries)
     names.append("manifest.json  (after verify_release.py --save-manifest)")
     seen: list[str] = []
     for n in names:
@@ -564,7 +582,7 @@ def run(args: argparse.Namespace) -> int:
         "packages": _versions(),
         "inputs": {k: v for k, v in sorted(ctx.input_hashes.items())},
         "overrides": overrides,
-        "boundaries_dir": str(boundaries.root),
+        "boundaries_dir": str(boundaries.root) if boundaries is not None else None,
         "release_yaml": str(rel_path),
     }
     write_json(out / "build_log.json", log_obj)

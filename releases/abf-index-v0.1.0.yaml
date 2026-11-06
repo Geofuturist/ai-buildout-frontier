@@ -1,0 +1,22 @@
+# Release of the dataset abf-index, version 0.1.0 (SPEC_INDEX_territory section 7): a new Zenodo record, kind index, no layers.
+# It holds the territory index of abf-dc 0.2.0 and abf-energy 0.1.0 (CC BY 4.0); the index of abf-energync (CC BY-NC) is in abf-energync 0.1.1.
+# Reserve the DOI, then, before the final build:
+#   python scripts\publish\set_release_doi.py releases\abf-index-v0.1.0.yaml 10.5281/zenodo.<number> 2026-MM-DD
+dataset: abf-index
+version: 0.1.0
+tag: abf-index-v0.1.0
+doi: null
+published_at: "2026-11-07"
+built_at: "2026-11-06T12:00:00Z"
+boundary_release: abf-boundaries-v0.2.0
+kind: index
+license:
+  id: CC-BY-4.0
+  name: Creative Commons Attribution 4.0 International
+  url: https://creativecommons.org/licenses/by/4.0/
+  family: attribution
+indexes_dir: 'C:\Users\PGS\Documents\AI\index_work\data\index'
+indexes:
+  - {set: abf-dc, of_dataset: abf-dc, of_version: "0.2.0"}
+  - {set: abf-energy, of_dataset: abf-energy, of_version: "0.1.0"}
+layers: []
