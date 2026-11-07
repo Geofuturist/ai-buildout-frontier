@@ -1,0 +1,48 @@
+# Release of the dataset abf-energync, version 0.1.1: a NEW VERSION of the Zenodo record of 0.1.0 (the concept DOI stays, the version DOI is new).
+# The layers are those of 0.1.0 (identity below) plus the territory index index_abf-energync (SPEC_INDEX_territory section 7), CC BY-NC.
+# Two layers: units (files only) and locations (the map layer). Reserve the DOI, then, before the final build:
+#   python scripts\publish\set_release_doi.py releases\abf-energync-v0.1.1.yaml 10.5281/zenodo.<number> 2026-MM-DD
+dataset: abf-energync
+version: 0.1.1
+tag: abf-energync-v0.1.1
+doi: 10.5281/zenodo.24030943
+published_at: "2026-11-07"
+built_at: "2026-11-01T12:00:00Z"
+boundary_release: abf-boundaries-v0.2.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\energy_plants_gem_tzsam_units.yaml'
+  - 'layers\energy_plants_gem_tzsam_locations.yaml'
+# SPEC_GEM r6 Q6: only meta.json and the manifest go to git; the CSV files are on R2 and in Zenodo (the data step keeps them in data\gem\).
+git_copy: {csv: false, extra_files: false}
+# Quoted phrases of the texts against the About sheet of the GEM file (RES_texts_GEM section 10 item 1): a stop in final.
+phrase_check:
+  kind: gem
+  xlsx: 'D:\GISData\Energy\GEM\Global Integrated Power September 2026 V2.xlsx'
+  layers: 'layers'
+# The layers of 0.1.1 are the files of 0.1.0: CSV byte-identical, GeoParquet and GeoJSON.gz by SHA-256 or by values. A difference is a stop (G9).
+identity:
+  manifest: 'data\abf-energync\v0.1.0\manifest.json'
+  layers: [energy_plants_gem_tzsam_units, energy_plants_gem_tzsam_locations]
+  old_release_dir: 'D:\GISData\release\abf-energync-v0.1.0'
+# Territory index of this dataset: files made by the data step of CODE-GEM (scripts/index/build_index.py).
+license:
+  id: CC-BY-NC-4.0
+  name: Creative Commons Attribution-NonCommercial 4.0 International
+  url: https://creativecommons.org/licenses/by-nc/4.0/
+  family: non_commercial
+indexes_dir: 'C:\Users\PGS\Documents\AI\index_work\data\index'
+release_texts:
+  version_note: >-
+    0.1.1 adds the territory index of the 18,732 units: the country, first-level unit and second-level unit of each in
+    abf-boundaries v0.2.0, by the rule of abf-index 0.1.0. The units, the plants and their files are the same as in
+    0.1.0.
+indexes:
+  - set: abf-energync
+    of_dataset: abf-energync
+    of_version: "0.1.0"
+    texts: ['releases\index_texts\common.yaml', 'releases\index_texts\abf-energync.yaml']
+    layer_metas:
+      energy_plants_gem_tzsam_units: 'data\abf-energync\v0.1.0\energy_plants_gem_tzsam_units.meta.json'

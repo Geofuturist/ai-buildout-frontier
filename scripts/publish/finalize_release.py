@@ -81,17 +81,46 @@ def compose_manifest(plan: dict[str, Any], work: Path) -> dict[str, Any]:
         if lp.get("home_bbox") is not None:
             entry["home_bbox"] = lp["home_bbox"]
         layers.append(entry)
-    return {
+    manifest = {
         "schema_version": "abf-manifest-1.0",
         "dataset": plan["dataset"], "version": plan["version"], "tag": plan["tag"],
         "doi": plan["doi"], "published_at": plan["published_at"],
         "boundary_release": plan.get("boundary_release"),
         "base_path": plan["base_path"],
         "layers": layers,
-        "extra_files": [{**file_ref(work / e["path"]), "description": e["description"]} for e in plan.get("extra_files", [])],
+        "extra_files": [{**file_ref(work / e["path"], e["path"]), "description": e["description"]} for e in plan.get("extra_files", [])],
         "source_archives": [{**file_ref(work / a["path"], a["path"]), "description": a["description"]}
                             for a in plan.get("source_archives", [])],
     }
+    if plan.get("kind") == "index":
+        manifest["kind"] = "index"
+    if plan.get("license"):
+        manifest["license"] = plan["license"]
+    if plan.get("indexes"):
+        manifest["indexes"] = [{
+            "index_id": ix["index_id"], "set": ix["set"], "of_dataset": ix["of_dataset"], "of_version": ix["of_version"],
+            "layer_ids": ix["layer_ids"],
+            "meta": file_ref(work / ix["meta"], ix["meta"]),
+            "build_meta": file_ref(work / ix["build_meta"], ix["build_meta"]),
+            "country_files": {"path_pattern": ix["country_files"]["path_pattern"], "count": ix["country_files"]["count"],
+                              "listing": file_ref(work / ix["country_files"]["listing"], ix["country_files"]["listing"])},
+            "adm0_other": file_ref(work / ix["adm0_other"], ix["adm0_other"]),
+            "summary": file_ref(work / ix["summary"], ix["summary"]),
+            "archive": file_ref(work / ix["archive"], ix["archive"]),
+            **({"rules": [file_ref(work / r, r) for r in ix["rules"]]} if ix.get("rules") else {}),
+        } for ix in plan["indexes"]]
+    return manifest
+
+
+def index_country_refs(manifest: dict[str, Any], work: Path) -> list[dict[str, Any]]:
+    """Country files of the indexes (path, bytes, sha256) from the listing.json files in the work folder."""
+    out: list[dict[str, Any]] = []
+    for ix in manifest.get("indexes", []):
+        listing = read_json(work / ix["country_files"]["listing"]["path"])
+        if len(listing["files"]) != ix["country_files"]["count"]:
+            raise GateError("G14", f"{ix['index_id']}: listing.json has {len(listing['files'])} files, the manifest says {ix['country_files']['count']}")
+        out += [{"path": f["path"], "bytes": f["bytes"], "sha256": f["sha256"]} for f in listing["files"]]
+    return out
 
 
 def files_for_git(manifest: dict[str, Any], plan: dict[str, Any]) -> list[str]:
@@ -108,6 +137,8 @@ def files_for_git(manifest: dict[str, Any], plan: dict[str, Any]) -> list[str]:
             out.append(lp["files"]["csv"]["path"])
     if any(f.get("extra_files", True) for f in flags.values()):
         out += [e["path"] for e in manifest.get("extra_files", []) if e["path"].endswith(".csv")]
+    for ix in manifest.get("indexes", []):
+        out.append(ix["meta"]["path"])   # of the index only meta.json (CSV of the countries are in data/index/ made by CODE-GEM)
     out.append("manifest.json")
     return out
 
@@ -122,8 +153,9 @@ def validate_manifest(manifest: dict[str, Any]) -> None:
         raise GateError("G1", f"manifest.json does not match the schema: {text}")
 
 
-def manifest_files(manifest: dict[str, Any]) -> dict[str, dict[str, Any]]:
-    """Every file of the manifest: path -> {bytes, sha256}. Only these go to the public bucket."""
+def manifest_files(manifest: dict[str, Any], work: Path | None = None) -> dict[str, dict[str, Any]]:
+    """Every file of the manifest: path -> {bytes, sha256}. Only these go to the public bucket.
+    The country files of an index are not in the manifest one by one; they come from listing.json in the work folder."""
     out: dict[str, dict[str, Any]] = {}
 
     def add(ref: dict[str, Any]) -> None:
@@ -142,6 +174,13 @@ def manifest_files(manifest: dict[str, Any]) -> dict[str, dict[str, Any]]:
         add(ref)
     for ref in manifest["source_archives"]:
         add(ref)
+    for ix in manifest.get("indexes", []):
+        for ref in (ix["meta"], ix["build_meta"], ix["adm0_other"], ix["summary"], ix["archive"], ix["country_files"]["listing"],
+                    *ix.get("rules", [])):
+            add(ref)
+    if work is not None:
+        for ref in index_country_refs(manifest, work):
+            add(ref)
     return out
 
 
@@ -152,7 +191,7 @@ def publish(manifest: dict[str, Any], work: Path, channel: str) -> None:
     mkey = base + "manifest.json"
     existing = store.head(mkey)
     new_manifest_bytes = (work / "manifest.json").read_bytes()
-    files = manifest_files(manifest)
+    files = manifest_files(manifest, work)
     complete = existing is not None
     if complete and channel == "final":
         for rel, ref in files.items():
@@ -236,6 +275,12 @@ def run(args: argparse.Namespace) -> int:
             if not (work / name).exists():
                 raise GateError("stage", f"file of the plan is missing in staging: {name}")
 
+    for lp in plan.get("indexes", []):
+        for name in (lp["meta"], lp["build_meta"], lp["adm0_other"], lp["summary"], lp["archive"], lp["country_files"]["listing"],
+                     *lp.get("rules", [])):
+            if not (work / name).exists():
+                raise GateError("stage", f"file of the plan is missing in staging: {name}")
+
     version_line = tippecanoe_version(args.tippecanoe)
     log.info("tippecanoe: %s", version_line)
     for spec in plan["tile_builds"]:
@@ -265,6 +310,7 @@ def run(args: argparse.Namespace) -> int:
         dst = Path(args.git_out) / args.dataset / f"v{args.version}"
         dst.mkdir(parents=True, exist_ok=True)
         for rel in files_for_git(manifest, plan):
+            (dst / rel).parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(work / rel, dst / rel)
         log.info("copied CSV, meta and manifest to %s", dst)
     return 0
