@@ -1,0 +1,22 @@
+# Index of abf-energync, published in abf-energync 0.1.1 (RES_texts_INDEX_v0_1_0 r4 section 2.5).
+title: "Territory index · Solar plants (abf-energync 0.1.1) · generating units"
+description: >-
+  Where each of the 18,732 units of energy_plants_gem_tzsam_units lies in abf-boundaries v0.2.0, by the rule of the
+  territory index of abf-energy (abf-index 0.1.0). GEM gives an approximate location for 426 units (2.3%). For 102
+  units GEM names another country than the one in which the point lies; they are listed in adm0_other.csv.
+  Non-commercial use only (CC BY-NC 4.0).
+known_gaps:
+  - "3 units lie more than 22.2 km from every first-level unit of their country and have none (no_unit_near)."
+  - >-
+    A plant can have units in two units of the frame. The number of plants of a unit therefore does not add up to the
+    number of plants of its country.
+  - "ADM1 exists in this frame for 108 countries and ADM2 for the United States, France and Norway."
+verification:
+  method: >-
+    Built by script from the files of abf-energync 0.1.0 and abf-boundaries v0.2.0, by the rule of the territory index
+    of abf-energy. The build stops if a unit is missing or appears in two country files, if the capacity by type and
+    status differs from the layer, or if an input differs from the published file. Points are assigned with the
+    calculation geometry of the United States and Norway and the display geometry of the frame elsewhere. A second run
+    gives byte-identical files.
+copied_fields:
+  energy_plants_gem_tzsam_units: [plant_name, location_id, type, status_group, capacity_mw]

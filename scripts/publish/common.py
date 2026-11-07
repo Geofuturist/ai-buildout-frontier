@@ -285,6 +285,10 @@ def content_headers(key: str) -> dict[str, str]:
     elif lower.endswith(".geojson.gz"):
         headers["Content-Type"] = "application/gzip"
         headers["Content-Disposition"] = f'attachment; filename="{name}"'
+    elif lower.endswith(".csv.gz"):
+        # no Content-Encoding: the file is downloaded as a gzip file, not unpacked by the browser (SPEC INDEX section 7)
+        headers["Content-Type"] = "application/gzip"
+        headers["Content-Disposition"] = f'attachment; filename="{name}"'
     elif lower.endswith(".csv"):
         headers["Content-Type"] = "text/csv; charset=utf-8"
         headers["Content-Disposition"] = f'attachment; filename="{name}"'

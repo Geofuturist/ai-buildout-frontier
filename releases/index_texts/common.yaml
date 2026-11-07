@@ -1,0 +1,71 @@
+# Texts common to the three territory indexes (RES_texts_INDEX_v0_1_0 r4 sections 2.1, 2.2, 3). Public texts: English, American spelling.
+# Read by scripts/publish/index_build.py; the public meta.json of every index set is made from them (SPEC_INDEX r10 section 7).
+fields:
+  record_id: "Key of the record in its layer."
+  layer_id: "Layer of the record: dc_atlas_points, dc_epoch_points, energy_plants_gem_units or energy_plants_gem_tzsam_units."
+  adm0: "Country of the record in the frame (unit_id of ADM0)."
+  adm0_basis: >-
+    How the country was assigned: field (the country the record names) or point (the country of the frame in which the
+    point lies).
+  adm0_other: >-
+    The other country, where the country the record names and the country of its point differ. Such rows are also
+    listed in adm0_other.csv.
+  adm1: "First-level unit of the record in the frame (unit_id), inside adm0."
+  adm2: "Second-level unit of the record in the frame (unit_id), inside adm1."
+  unit_basis: >-
+    How adm1 and adm2 were assigned: field (the unit the record names) or point (the unit of the frame in which the
+    point lies, among the units of adm0, or the nearest such unit within 22.2 km).
+  unit_note: "Why the first level that the country has in the frame is empty for this record (see null_meaning)."
+  adm1_point: >-
+    For a record assigned to adm0 by the country it names whose point lies inside another country: the first-level
+    unit of that other country in which the point lies.
+  adm2_point: "As adm1_point, at the second level."
+  approximate: >-
+    true where the point is not a site: the town point of an Atlas or Epoch AI record, or a GEM unit whose location
+    GEM gives as approximate.
+  boundary_release: "Version of the boundary frame used: abf-boundaries v0.2.0."
+null_meaning:
+  adm0_other: "The country the record names and the country of its point are the same, or the record has no point."
+  adm1: >-
+    The record has no first-level unit: the country has no first-level units in this frame (unit_note is empty), or the
+    reason is given in unit_note.
+  adm2: >-
+    The record has no second-level unit: the country has no second-level units in this frame (only the United States,
+    France and Norway have them in v0.2.0), or the reason is given in unit_note.
+  unit_basis: "No unit below the country was assigned."
+  unit_note: "Nothing is missing, or the level does not exist for the country in this frame."
+  adm1_point: "The point lies in the country assigned as adm0, or the record has no point."
+  adm2_point: "As adm1_point."
+  approximate: "The record has no point."
+unit_note_descriptions:
+  ambiguous_name: >-
+    The record names a U.S. county that shares its name with an independent city of the same state, without saying
+    which; it is counted in its state only.
+  connecticut: >-
+    A Connecticut record: the Atlas gives the state's former counties, and the frame has the planning regions that
+    replaced them; it is counted in the state only.
+  no_county_field: "The record names no U.S. county; it is counted in its state only."
+  no_state: "The record names no U.S. state; it is counted in the country only."
+  region_not_matched: >-
+    The record gives no region, or one that matches no unit of the frame by exact name, and has no point to assign it
+    by.
+  no_unit_near: "The point lies more than 22.2 km from every unit of its country."
+  no_point: "The record has no point below the country."
+  point_in_other_country: >-
+    The source lists the record under one country, and its point lies inside another; see adm1_point and adm2_point.
+  region_only: >-
+    The record names a first-level unit (a French region), and each row has one basis, so no second-level unit is
+    taken from its point.
+aggregations_labels:
+  atlas_records: "Atlas records"
+  atlas_by_status: "Atlas records by status"
+  atlas_by_type_group: "Atlas records by operator type"
+  atlas_by_power_class: "Atlas records by size class (classes are not added up as MW)"
+  epoch_sites: "Epoch AI sites"
+  epoch_power: "Sum of Epoch AI site IT power, MW (Epoch AI's estimates)"
+  gem_units: "GEM generating units, by type and status"
+  gem_capacity: "GEM capacity, MW, by type and status"
+  gem_plants: "GEM plants with at least one unit here (not additive across units)"
+totals_note: >-
+  Counted by the website from {index_file} ({version}). Only records of one layer are added, and GEM capacity only
+  within one type and one status.

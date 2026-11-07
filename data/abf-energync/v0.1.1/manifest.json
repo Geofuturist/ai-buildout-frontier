@@ -1,0 +1,206 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-energync",
+  "version": "0.1.1",
+  "tag": "abf-energync-v0.1.1",
+  "doi": "10.5281/zenodo.24030943",
+  "published_at": "2026-11-07",
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "base_path": "abf-energync/v0.1.1/",
+  "layers": [
+    {
+      "layer_id": "energy_plants_gem_tzsam_units",
+      "title": "Solar plants · GEM / TransitionZero · generating units",
+      "domain": "energy",
+      "level": "point",
+      "bbox": [
+        -122.9784,
+        -41.6488,
+        177.9816,
+        63.344
+      ],
+      "meta": {
+        "path": "energy_plants_gem_tzsam_units.meta.json",
+        "bytes": 24181,
+        "sha256": "fbe65183f76e396e76f9a30e1d5172d898e24efeb86bf21a1be1a93ed1958b93"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_plants_gem_tzsam_units.parquet",
+          "bytes": 1283396,
+          "sha256": "31758608f83a5bd8ebd00a43308e6bfe7a41bac4e1ddbb78aa45aa5fa36e0559"
+        },
+        "geojson.gz": {
+          "path": "energy_plants_gem_tzsam_units.geojson.gz",
+          "bytes": 1311720,
+          "sha256": "f328e13d9943e27444d0eb067494ec625925c7ba4158da63f84d7aafb46898aa"
+        },
+        "csv": {
+          "path": "energy_plants_gem_tzsam_units.csv",
+          "bytes": 6303133,
+          "sha256": "5c38f22585b0b1d2630bd0fcaeb5654cb45c309d016c2992da9c25ab41982c40"
+        },
+        "pmtiles": {
+          "path": "energy_plants_gem_tzsam_units.pmtiles",
+          "bytes": 210532,
+          "sha256": "1fd8780e94222bebd4ac7a3dbc10e2f646d25b43b8b7a0570be27e009fb611a7"
+        }
+      },
+      "extra_files": [],
+      "tiles": {
+        "file": "energy_plants_gem_tzsam_units.pmtiles",
+        "source_layer": "energy_plants_gem_tzsam_units",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 5,
+        "fields": [
+          "record_id"
+        ]
+      }
+    },
+    {
+      "layer_id": "energy_plants_gem_tzsam_locations",
+      "title": "Solar plants · GEM / TransitionZero · plants",
+      "domain": "energy",
+      "level": "point",
+      "bbox": [
+        -122.9784,
+        -41.6488,
+        177.9816,
+        63.344
+      ],
+      "meta": {
+        "path": "energy_plants_gem_tzsam_locations.meta.json",
+        "bytes": 25471,
+        "sha256": "b043640003928a2a282f4a9354754face3f744e49b752ba7f01603e6b95876b5"
+      },
+      "files": {
+        "parquet": {
+          "path": "energy_plants_gem_tzsam_locations.parquet",
+          "bytes": 866690,
+          "sha256": "90a2d7cf57d1c37af8b7269a0c5b1c2712b0b24647c87075ad120786f6e1cbbb"
+        },
+        "geojson.gz": {
+          "path": "energy_plants_gem_tzsam_locations.geojson.gz",
+          "bytes": 792775,
+          "sha256": "7e3fea164c5b5237fec13b31fb3dc2e27a47f895e2494b9a5eb9af0fb8dd56ff"
+        },
+        "csv": {
+          "path": "energy_plants_gem_tzsam_locations.csv",
+          "bytes": 5253429,
+          "sha256": "4ff4ff821925f973274632dabc40fd88f97ccccac83443b0f1693bee2d2d754e"
+        },
+        "pmtiles": {
+          "path": "energy_plants_gem_tzsam_locations.pmtiles",
+          "bytes": 8182778,
+          "sha256": "b64e8e9d50e261c0186c01c076165bb2e19ad449e2a7dd43d0e95c0b19e69f26"
+        }
+      },
+      "extra_files": [
+        {
+          "path": "gem_status_groups.csv",
+          "bytes": 371,
+          "sha256": "1403c78c9b5e9e64a77f2684d72a637d957f1aef7ce51db625836f3b14755dec",
+          "description": "The table of GEM statuses: each of GEM's ten statuses and the GEM base status (status_group) and label that the project assigns to it."
+        },
+        {
+          "path": "gem_country_table.csv",
+          "bytes": 3808,
+          "sha256": "66f204d04cae0a8966365d2e8e27d2885c34b579cc73a8d0a21d767d33910abd",
+          "description": "The country table of GEM's own file (sheet Regions, area, and countries): the name of each country or area and its ISO 3166-1 alpha-3 code (iso3_gem)."
+        },
+        {
+          "path": "gem_iso3_to_adm0.csv",
+          "bytes": 316,
+          "sha256": "73cacdfadebebd3c94edb332d75dee3cd827162c7de051716e55345b62af214d",
+          "description": "The territories that GEM lists separately and the boundary frame includes in a country: iso3_gem, the code of the country of the frame (iso3_source) and the reason."
+        }
+      ],
+      "tiles": {
+        "file": "energy_plants_gem_tzsam_locations.pmtiles",
+        "source_layer": "energy_plants_gem_tzsam_locations",
+        "geometry_type": "point",
+        "minzoom": 0,
+        "maxzoom": 10,
+        "fields": [
+          "record_id",
+          "plant_name",
+          "wiki_url",
+          "type",
+          "status_group",
+          "statuses",
+          "technologies",
+          "capacity_mw",
+          "capacity_class",
+          "n_units",
+          "capacity_ratings",
+          "start_year_min",
+          "start_year_max",
+          "coord_precision",
+          "n_units_dc_link",
+          "dc_links"
+        ]
+      }
+    }
+  ],
+  "extra_files": [
+    {
+      "path": "index/abf-energync/listing.json",
+      "bytes": 45029,
+      "sha256": "6377230b5ab7718b0bc19269619c69369bb499620e210398c702fe659307e935",
+      "description": "List of the country files of index_abf-energync with their SHA-256 and row counts"
+    }
+  ],
+  "source_archives": [],
+  "license": {
+    "id": "CC-BY-NC-4.0",
+    "name": "Creative Commons Attribution-NonCommercial 4.0 International",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "family": "non_commercial"
+  },
+  "indexes": [
+    {
+      "index_id": "index_abf-energync",
+      "set": "abf-energync",
+      "of_dataset": "abf-energync",
+      "of_version": "0.1.0",
+      "layer_ids": [
+        "energy_plants_gem_tzsam_units"
+      ],
+      "meta": {
+        "path": "index/abf-energync/meta.json",
+        "bytes": 55739,
+        "sha256": "a213fd5f402655584529541511d71c5e1abfe71ad944e11f655ea21122c61d72"
+      },
+      "build_meta": {
+        "path": "index/abf-energync/build_meta.json",
+        "bytes": 37704,
+        "sha256": "26b5e5d47a36503e15b14ad2e515d59b281837f29382ba3db082a0e3fa15fa69"
+      },
+      "country_files": {
+        "path_pattern": "index/abf-energync/{iso3}.csv.gz",
+        "count": 155,
+        "listing": {
+          "path": "index/abf-energync/listing.json",
+          "bytes": 45029,
+          "sha256": "6377230b5ab7718b0bc19269619c69369bb499620e210398c702fe659307e935"
+        }
+      },
+      "adm0_other": {
+        "path": "index/abf-energync/adm0_other.csv.gz",
+        "bytes": 2274,
+        "sha256": "f060d26e750e56ca6ff9d7149fef56c2b81b06267719a24cf13b10a40378696a"
+      },
+      "summary": {
+        "path": "index/abf-energync/summary.csv",
+        "bytes": 5320,
+        "sha256": "faff888e6932b0923dcd83f0a216c0ab326476cf66b5463c80487e009211d00b"
+      },
+      "archive": {
+        "path": "index/abf-energync/index_abf-energync.zip",
+        "bytes": 363706,
+        "sha256": "519cc4d29bdb98c8e19fe7c2276366899717af0ae75b3f4195a8acaab25e1693"
+      }
+    }
+  ]
+}
