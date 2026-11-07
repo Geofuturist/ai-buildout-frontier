@@ -1,6 +1,6 @@
 // Territory index in the manifests (SPEC_INDEX_territory r6 7): a manifest may carry `indexes`, one entry per index
 // (index_id, set, of_dataset, of_version, layer_ids, meta / adm0_other / summary / archive / country_files.listing as
-// {path, bytes, sha256}, country_files{path_pattern, count, listing}); `license` of the manifest is {id, name, url, family}
+// {path, bytes, sha256}, build_meta {path, bytes, sha256}, rules [{path, bytes, sha256}] (abf-dc), country_files{path_pattern, count, listing}); `license` of the manifest is {id, name, url, family}
 // (SPEC r9; a plain string is still read). A dataset with kind "index" has no layers. Nothing here knows a dataset or country name.
 // Pure: the caller hands in the readers, so the checks can be tested without a network.
 
@@ -22,6 +22,9 @@ export async function readIndexes(man, dsName, { getJson, sha256, strict, fail, 
       fail(`${dsName}: an entry of indexes lacks index_id, meta {path, sha256}, country_files.path_pattern or adm0_other {path, sha256}`);
       continue;
     }
+    // build_meta (the file of the build, unchanged) and rules (tables the build used; abf-dc) are files {path, sha256}, both optional
+    if (ix.build_meta !== undefined && !isFile(ix.build_meta)) fail(`${dsName}: ${id}: build_meta must be {path, bytes, sha256}`);
+    if (ix.rules !== undefined && !(Array.isArray(ix.rules) && ix.rules.every(isFile))) fail(`${dsName}: ${id}: rules must be a list of {path, bytes, sha256}`);
     if (!/\.csv\.gz$/.test(ix.adm0_other.path)) fail(`${dsName}: ${id}: adm0_other must be a .csv.gz file (${ix.adm0_other.path})`);
     if (!/\{iso3\}/.test(ix.country_files.path_pattern)) fail(`${dsName}: ${id}: path_pattern has no {iso3}`);
     const { json: meta, bytes } = await getJson(man.base_path + ix.meta.path);
