@@ -1,0 +1,146 @@
+{
+  "snapshot_date": "20261107",
+  "layers": {
+    "generation_eia860": {
+      "inputs": {
+        "eia860_plant_xlsx": {
+          "path": "D:\\GISData\\Energy\\USA\\eia8602025\\2___Plant_Y2025.xlsx",
+          "size": 4629134,
+          "sha256": "3c338f5e9d2647bb487dee8b3f4ed5c3fdd3e82db3b1bc5fdf206cee5470e059"
+        },
+        "eia860_generator_xlsx": {
+          "path": "D:\\GISData\\Energy\\USA\\eia8602025\\3_1_Generator_Y2025.xlsx",
+          "size": 11223392,
+          "sha256": "931e1ed0be2c6706794c196f158f779b5c8a32d08c61d748a823dfc25a3201a8"
+        },
+        "county_shp.shp": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+          "size": 16728876,
+          "sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+        },
+        "county_shp.dbf": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.dbf",
+          "size": 1181193,
+          "sha256": "c4871e89eee267954eb2ca1c6950377b6106d5baba2811adf7bcd542ac0f3c37"
+        },
+        "county_shp.shx": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shx",
+          "size": 25980,
+          "sha256": "b2d883586af561832873abf9054eb64a5fc6b979ee389aa82356ea25a837e070"
+        },
+        "county_shp.prj": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.prj",
+          "size": 165,
+          "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+        }
+      },
+      "output_csv": {
+        "file": "layer_generation_eia860_adm1_20261107.csv",
+        "sha256": "3e63d5847eeac2dfe24768fb7d5bc1387e319c8c232d39fe3bababac78a7e060"
+      }
+    },
+    "queue_lbnl": {
+      "inputs": {
+        "lbnl_queue_xlsx": {
+          "path": "D:\\GISData\\Energy\\USA\\lbnl_ix_queue_data_file_thru2025.xlsx",
+          "size": 15571236,
+          "sha256": "794582d3281c6a305e9615fcfec3fae9dc85be2165216d33760b677e976a08b6"
+        },
+        "code_crosswalk_exact_csv": {
+          "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\boundaries\\code_crosswalk_exact.csv",
+          "size": 415,
+          "sha256": "acab7e8f87d1f55052fad8dcbf3ca24dd143e223c8892ab8b271d6f7e333a8e9"
+        },
+        "county_shp.shp": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+          "size": 16728876,
+          "sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+        },
+        "county_shp.dbf": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.dbf",
+          "size": 1181193,
+          "sha256": "c4871e89eee267954eb2ca1c6950377b6106d5baba2811adf7bcd542ac0f3c37"
+        },
+        "county_shp.shx": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shx",
+          "size": 25980,
+          "sha256": "b2d883586af561832873abf9054eb64a5fc6b979ee389aa82356ea25a837e070"
+        },
+        "county_shp.prj": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.prj",
+          "size": 165,
+          "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+        }
+      },
+      "output_csv": {
+        "file": "layer_queue_lbnl_adm1_20261107.csv",
+        "sha256": "c1d4fb6284f3d5d5e42bf7ceaf82df954c22e84f07458547808521b33e7b38f9"
+      }
+    },
+    "demand_nrel8562": {
+      "inputs": {
+        "nrel_oedi8562_h5": {
+          "path": "D:\\GISData\\Energy\\USA\\historic_load_hourly_2016_2023_county.h5",
+          "size": 1744827268,
+          "sha256": "565b6182432c60c6e6fa9f68b1db5f490cec3fe2f11e41fad41d47d3c301e403"
+        }
+      },
+      "output_csv": {
+        "file": "layer_demand_nrel8562_adm1_20261107.csv",
+        "sha256": "9d3ebc8fa051087ea6b24b952d830f6f1966c57eab4fd74707aa6d2a5971292a"
+      }
+    },
+    "transmission_hifld": {
+      "inputs": {
+        "hifld_lines.shp": {
+          "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.shp",
+          "size": 50938336,
+          "sha256": "64de5918e808135f25bcf6d284e4e3b3334c9bb0225d7ded1b493f29ffa77b78"
+        },
+        "hifld_lines.dbf": {
+          "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.dbf",
+          "size": 58002025,
+          "sha256": "fdb2bf6f6132b669cd795895059feab0ca214b8448dd0a76285480e8bc559de3"
+        },
+        "hifld_lines.shx": {
+          "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.shx",
+          "size": 757052,
+          "sha256": "1105714dfaf2adb49c6469ced6cd8bd09b15d24eb02c4a4e205af9160790d872"
+        },
+        "hifld_lines.prj": {
+          "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.prj",
+          "size": 427,
+          "sha256": "71c125e355ef7e1cba72ea4c3efe85ed18f93b810238aea60d78d8a685f94679"
+        },
+        "county_shp.shp": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+          "size": 16728876,
+          "sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+        },
+        "county_shp.dbf": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.dbf",
+          "size": 1181193,
+          "sha256": "c4871e89eee267954eb2ca1c6950377b6106d5baba2811adf7bcd542ac0f3c37"
+        },
+        "county_shp.shx": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shx",
+          "size": 25980,
+          "sha256": "b2d883586af561832873abf9054eb64a5fc6b979ee389aa82356ea25a837e070"
+        },
+        "county_shp.prj": {
+          "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.prj",
+          "size": 165,
+          "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+        }
+      },
+      "output_csv": {
+        "file": "layer_transmission_hifld_adm1_20261107.csv",
+        "sha256": "fda86eb7a7fdcf3b5504390b75a76109319d97f7861a6db598240640182570b6"
+      }
+    }
+  },
+  "state_reconciliation": {
+    "file": "state_reconciliation_20261107.csv",
+    "sha256": "df6222224bdfb6f55e7f9ed5c9d6b36ac545c03d199ea4a7cb3543d4bdb9f22f"
+  }
+}

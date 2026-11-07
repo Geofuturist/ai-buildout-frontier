@@ -1,0 +1,75 @@
+{
+  "source": "HIFLD Transmission Lines (nationwide feature class)",
+  "source_url": "https://gii.dhs.gov/HIFLD",
+  "vintage": "archive export 2026-02-26 (see the provenance report); SOURCEDATE/VAL_DATE up to 2024-09-26",
+  "license": "public HIFLD/DHS data; terms of use questions: hifld@hq.dhs.gov",
+  "coverage": "48 states + DC (the 49 units); Alaska and Hawaii not_covered",
+  "rule": "segments with STATUS IN SERVICE or NOT AVAILABLE, cut by the county polygons (EPSG:5070); state km = sum of unrounded fragment lengths of the state's counties, rounded once; km_total = sum of the published class columns",
+  "n_units_covered": 49,
+  "n_units_not_covered": 2,
+  "known_gaps": "Length is counted inside county polygons only: 1,445 km of segments in the CONUS frame lie in no county (over water beyond the cb 500k coastline, or across the border) and are in neither the county nor the state values. Km are rounded to whole km. Factual draft; wording by [RES]7.",
+  "inputs": {
+    "hifld_lines.shp": {
+      "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.shp",
+      "size": 50938336,
+      "sha256": "64de5918e808135f25bcf6d284e4e3b3334c9bb0225d7ded1b493f29ffa77b78"
+    },
+    "hifld_lines.dbf": {
+      "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.dbf",
+      "size": 58002025,
+      "sha256": "fdb2bf6f6132b669cd795895059feab0ca214b8448dd0a76285480e8bc559de3"
+    },
+    "hifld_lines.shx": {
+      "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.shx",
+      "size": 757052,
+      "sha256": "1105714dfaf2adb49c6469ced6cd8bd09b15d24eb02c4a4e205af9160790d872"
+    },
+    "hifld_lines.prj": {
+      "path": "D:\\GISData\\Energy\\USA\\US_Electric_Power_Transmission_Lines_-8378795084787321001\\Electric_Power_Transmission_Lines_A.prj",
+      "size": 427,
+      "sha256": "71c125e355ef7e1cba72ea4c3efe85ed18f93b810238aea60d78d8a685f94679"
+    },
+    "county_shp.shp": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+      "size": 16728876,
+      "sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+    },
+    "county_shp.dbf": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.dbf",
+      "size": 1181193,
+      "sha256": "c4871e89eee267954eb2ca1c6950377b6106d5baba2811adf7bcd542ac0f3c37"
+    },
+    "county_shp.shx": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shx",
+      "size": 25980,
+      "sha256": "b2d883586af561832873abf9054eb64a5fc6b979ee389aa82356ea25a837e070"
+    },
+    "county_shp.prj": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.prj",
+      "size": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    }
+  },
+  "boundary_file": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+  "identity_with_release_0_1_0": {
+    "status": "OK",
+    "n_counties_compared": 3109,
+    "columns": [
+      "km_ge765",
+      "km_v500",
+      "km_v345",
+      "km_v230",
+      "km_v138",
+      "km_v115",
+      "km_v69",
+      "km_lt69_unknown",
+      "max_voltage_kv",
+      "frac_km_unknown_voltage",
+      "has_any_line"
+    ],
+    "release_file_dir": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\abf-layers\\v0.1.0"
+  },
+  "snapshot_date": "20261107",
+  "output_file": "layer_transmission_hifld_adm1_20261107.csv",
+  "output_sha256": "fda86eb7a7fdcf3b5504390b75a76109319d97f7861a6db598240640182570b6"
+}
