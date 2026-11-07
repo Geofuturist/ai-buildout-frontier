@@ -4,7 +4,10 @@ title: "Interconnection queue · LBNL Queued Up · county"
 title_ru: "Очередь на подключение · LBNL Queued Up · округа"
 domain: energy
 level: ADM2
-frame: {iso3: USA, level: ADM2}
+frame:
+  iso3: USA
+  level: ADM2
+  outside_note: "Not processed: this release covers only the contiguous United States and the District of Columbia."
 input:
   # Built by [CODE-PILOT] on 2026-10-09 from lbnl_ix_queue_data_file_thru2025.xlsx (file with _r2; the
   # file without _r2 is an intermediate one and must not be used).
@@ -12,7 +15,8 @@ input:
   key: fips
   legacy_meta: 'data\conus\layer_queue_lbnl_20261009_r2_meta.json'
   coverage_column: coverage_status        # per-row coverage given by the table (Connecticut = not_covered)
-  coverage_note_column: coverage_note     # goes to the report only, not published as a field
+  coverage_note_column: coverage_note
+  coverage_note_text: "Not covered: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions. The seven active Connecticut requests are counted in the Connecticut state value."   # RES_texts_USA_states r1 section 1; published as coverage_note of the nine Connecticut units
 description: >-
   Capacity of the active interconnection requests in the Queued Up data file (2026 edition), summed
   by county, with the number of those requests. These are generation and storage projects asking
@@ -136,6 +140,7 @@ display:
   value_field: queue_mw_active
   unit: MW
   breaks: [150, 300, 600, 1250]
+  series: "Interconnection queue · LBNL Queued Up"
   zero_class: true
   legend_title: "Active queue capacity, MW"
   tile_fields: [unit_id, name, coverage_status, queue_mw_active, n_active_projects]

@@ -2,9 +2,11 @@ r"""Check that the values of the layers kept from an earlier release did not cha
 
 Run command (from the repository root, Windows):
     python scripts\publish\compare_release_values.py "D:\GISData\release\abf-fra-v0.1.0" "D:\GISData\release\abf-fra-v0.2.0"
+    python scripts\publish\compare_release_values.py "D:\GISData\release\abf-layers-v0.1.0" "D:\GISData\release\abf-layers-v0.2.0" --allow-added-columns coverage_note
 
 For every layer that is in both folders it compares
-  - the CSV file: same columns in the same order, same rows, every value equal as written (text comparison);
+  - the CSV file: same columns in the same order, same rows, every value equal as written (text comparison); with
+    --allow-added-columns the new file may have the listed extra columns (empty for covered units, given for not_covered);
   - the GeoParquet file: the same geometry of every row;
   - the layer meta file: the list of text paths that differ (listed for review, not a stop).
 The result is written as a section "Comparison with <old release>" into release_report.md of the NEW folder
@@ -37,12 +39,27 @@ def flatten(obj: Any, path: str = "") -> dict[str, Any]:
     return out
 
 
-def compare_csv(old: Path, new: Path) -> list[str]:
+def compare_csv(old: Path, new: Path, allow_added: tuple[str, ...] = ()) -> list[str]:
+    """Text comparison of two CSV files. `allow_added`: columns that the new file may have in addition (abf-layers 0.2.0:
+    coverage_note). The columns of the old file must stay in the same order with equal values; an added column must be
+    empty in every covered row and given in every not_covered row."""
     a = pd.read_csv(old, dtype=str, keep_default_na=False, encoding="utf-8-sig")
     b = pd.read_csv(new, dtype=str, keep_default_na=False, encoding="utf-8-sig")
     problems: list[str] = []
-    if list(a.columns) != list(b.columns):
+    added = [c for c in b.columns if c in allow_added and c not in a.columns]
+    b_kept = b.drop(columns=added)
+    if list(a.columns) != list(b_kept.columns):
         return [f"columns differ: {list(a.columns)} vs {list(b.columns)}"]
+    if added:
+        if "coverage_status" not in b.columns:
+            return [f"added columns {added} need coverage_status in the new file"]
+        for col in added:
+            cov = b["coverage_status"] == "covered"
+            if (b.loc[cov, col] != "").any():
+                problems.append(f"added column {col} is not empty in {int((b.loc[cov, col] != '').sum())} covered rows")
+            if (b.loc[~cov, col] == "").any():
+                problems.append(f"added column {col} is empty in {int((b.loc[~cov, col] == '').sum())} not_covered rows")
+        b = b_kept
     key = next((k for k in KEY_CANDIDATES if k in a.columns), None)
     if key is None:
         return ["no key column (unit_id or record_id)"]
@@ -93,7 +110,12 @@ def compare_meta(old: Path, new: Path) -> list[str]:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) != 3:
+    allow_added: tuple[str, ...] = ()
+    if "--allow-added-columns" in argv:
+        i = argv.index("--allow-added-columns")
+        allow_added = tuple(c for c in argv[i + 1].split(",") if c) if i + 1 < len(argv) else ()
+        argv = argv[:i] + argv[i + 2:]
+    if len(argv) != 3 or (allow_added == () and "--allow-added-columns" in sys.argv):
         print(__doc__)
         return 2
     old_dir, new_dir = Path(argv[1]), Path(argv[2])
@@ -111,7 +133,7 @@ def main(argv: list[str]) -> int:
     failed = False
     for lid in ids:
         res = {
-            "csv": compare_csv(old_dir / f"{lid}.csv", new_dir / f"{lid}.csv"),
+            "csv": compare_csv(old_dir / f"{lid}.csv", new_dir / f"{lid}.csv", allow_added),
             "geometry": compare_geometry(old_dir / f"{lid}.parquet", new_dir / f"{lid}.parquet"),
         }
         bad = any(res.values())

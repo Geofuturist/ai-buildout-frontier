@@ -90,6 +90,7 @@ display:
   value_field: voltage_band
   tile_fields: [record_id, voltage_kv, voltage_class, owner, status, voltage_band]
   legend_title: "Voltage band, kV"
+  series: "Transmission lines · HIFLD"
 tiles:
   minzoom: 0
   maxzoom: 10
