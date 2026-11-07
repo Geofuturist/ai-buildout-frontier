@@ -1,0 +1,26 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200006,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Makeni Bioethanol Plant power station,L100000200006,bioenergy,operating,32
+G100000407258,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Nant Energy power project,L100000406817,oil/gas,pre_construction,105
+G100000413495,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Doğan Bey PowerShip power station,L100000409029,oil/gas,operating,162
+G100000413496,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Marampa Mine power station,L100000409030,oil/gas,operating,24
+G100000413497,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Kingtom power station,L100000409031,oil/gas,operating,34
+G100000413498,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Blackhall Road power station,L100000409032,oil/gas,operating,17
+G100000603340,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Bumbuna II hydroelectric plant,L100000603305,hydropower,pre_construction,88
+G100000604244,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Bekongor III hydroelectric plant,L100000603304,hydropower,pre_construction,160
+G100000800078,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Bo-Kenema solar farm,L100000800060,utility-scale solar,shelved,20
+G100000800145,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Freetown solar farm,L100000800111,utility-scale solar,cancelled,50
+G100000800247,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Makarie solar farm,L100000800202,utility-scale solar,cancelled,25
+G100000831269,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Bo-Kenema solar farm,L100000800060,utility-scale solar,operating,5
+G100001021327,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Planet Solar Energy Project solar farm,L100001018978,utility-scale solar,construction,12
+G100001021329,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Planet Solar Energy Project solar farm,L100001018978,utility-scale solar,construction,25
+G100001021330,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Planet Solar Energy Project solar farm,L100001018978,utility-scale solar,construction,10
+G100001021332,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Baomahun gold mine solar farm,L100001018979,utility-scale solar,announced,23.8
+G100001021344,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Sierra Leone (RESPITE) solar farm,L100001018988,utility-scale solar,announced,30
+G100001021347,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Sierra Leone (RESPITE) solar farm,L100001018988,utility-scale solar,announced,10
+G100001021371,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Infinity Power (Sierra Leone) solar farms,L100001019007,utility-scale solar,announced,80
+G100001021372,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Infinity Power (Sierra Leone) solar farms,L100001019007,utility-scale solar,announced,60
+G100001021376,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Infinity Power (Sierra Leone) wind farms,L100001019010,wind,announced,267
+G100001027412,energy_plants_gem_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Bumbuna hydroelectric plant,L100001023207,hydropower,operating,50
+G100001051953,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Bumbuna II Yiben hydroelectric plant,L100001046060,hydropower,pre_construction,55
+G100001090063,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Moyamba solar farm,L100001080213,utility-scale solar,announced,1
+G100001090064,energy_plants_gem_units,SLE,point,,,,,,,,true,abf-boundaries-v0.2.0,Sierra Leone (Scatec) solar farm,L100001080214,utility-scale solar,announced,40

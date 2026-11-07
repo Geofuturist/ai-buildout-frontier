@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-53d4b635c55f,dc_atlas_points,DJI,field,,DJI-1-DJ,,field,,,,true,abf-boundaries-v0.2.0,Wingu Africa Djibouti,Operating / Construction,colocation,lt10,
+ATL-6a7888b091ad,dc_atlas_points,DJI,field,,DJI-1-TA,,field,,,,,abf-boundaries-v0.2.0,Wingu Africa Tadjourah,Operating / Construction,colocation,lt10,
+ATL-8507c7c907eb,dc_atlas_points,DJI,field,,DJI-1-DJ,,field,,,,true,abf-boundaries-v0.2.0,Wingu Africa Djibouti Data Centre (DDC),Operating / Construction,colocation,,

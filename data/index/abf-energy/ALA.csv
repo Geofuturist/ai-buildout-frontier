@@ -1,0 +1,11 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000912593,energy_plants_gem_units,ALA,point,,,,,,,,false,abf-boundaries-v0.2.0,Båtskär wind farm,L100000909808,wind,operating,14
+G100000914717,energy_plants_gem_units,ALA,point,,,,,,,,false,abf-boundaries-v0.2.0,Stenarna wind farm,L100000911703,wind,shelved,20
+G100000917884,energy_plants_gem_units,ALA,point,,,,,,,,false,abf-boundaries-v0.2.0,Långnabba wind farm,L100000914431,wind,operating,40
+G100000923761,energy_plants_gem_units,ALA,field,,,,,,,,true,abf-boundaries-v0.2.0,Noatun Nord wind farm,L100000919278,wind,pre_construction,5000
+G100000923762,energy_plants_gem_units,ALA,field,,,,,,,,true,abf-boundaries-v0.2.0,Noatun Syd wind farm,L100000919279,wind,pre_construction,3000
+G100000923763,energy_plants_gem_units,ALA,field,,,,,,,,true,abf-boundaries-v0.2.0,Stormskär wind farm,L100000919280,wind,pre_construction,2000
+G100000923764,energy_plants_gem_units,ALA,field,,,,,,,,true,abf-boundaries-v0.2.0,Väderskär wind farm,L100000919281,wind,pre_construction,460
+G100000923765,energy_plants_gem_units,ALA,field,,,,,,,,true,abf-boundaries-v0.2.0,Vågskär wind farm,L100000919282,wind,pre_construction,1200
+G100001090776,energy_plants_gem_units,ALA,field,,,,,,,,true,abf-boundaries-v0.2.0,Sunnanvind wind farm,L100001080830,wind,announced,4000
+G100001090786,energy_plants_gem_units,ALA,field,,,,,,,,true,abf-boundaries-v0.2.0,Åland Energy Island wind farm,L100001080832,wind,announced,1000

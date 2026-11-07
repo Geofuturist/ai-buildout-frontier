@@ -1,0 +1,12 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413503,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Paloch Oil Field power plant,L100000409037,oil/gas,operating,85
+G100000413504,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Juba diesel power plant,L100000409069,oil/gas,shelved,67
+G100000413505,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Juba diesel power plant,L100000409069,oil/gas,operating,33
+G100000603373,energy_plants_gem_units,SSD,point,,SSD-1-EE,,point,,,,true,abf-boundaries-v0.2.0,Grand Fula hydroelectric plant,L100000603338,hydropower,pre_construction,1080
+G100000604243,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Bedden hydroelectric plant,L100000603337,hydropower,cancelled,570
+G100000604540,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Lakki hydroelectric plant,L100000603339,hydropower,cancelled,410
+G100000604809,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Shukoli hydroelectric plant,L100000603340,hydropower,cancelled,235
+G100000800185,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Juba (Elsewedy Power) solar farm,L100000800146,utility-scale solar,shelved,20
+G100000814234,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Juba Ezra (Aptech Africa) solar farm,L100000811675,utility-scale solar,operating,12
+G100001021594,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Juba Ezra (Aptech Africa) solar farm,L100000811675,utility-scale solar,operating,14
+G100001090068,energy_plants_gem_units,SSD,point,,SSD-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Juba (Ezra) solar farm,L100001080218,utility-scale solar,operating,20

@@ -1,0 +1,21 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000104952,energy_plants_gem_units,JAM,point,,JAM-1-13,,point,,,,false,abf-boundaries-v0.2.0,Jamalco power station,L100000102866,coal,cancelled,50
+G100000107191,energy_plants_gem_units,JAM,point,,JAM-1-11,,point,,,,true,abf-boundaries-v0.2.0,Nain power station,L100000102868,coal,cancelled,1000
+G100000108663,energy_plants_gem_units,JAM,point,,JAM-1-14,,point,,,,true,abf-boundaries-v0.2.0,Rusal power station,L100000102867,coal,cancelled,90
+G100000406670,energy_plants_gem_units,JAM,point,,JAM-1-14,,point,,,,false,abf-boundaries-v0.2.0,South Jamaica Power Centre,L100000406599,oil/gas,operating,194
+G100000406671,energy_plants_gem_units,JAM,point,,JAM-1-08,,point,,,,false,abf-boundaries-v0.2.0,Bogue power station,L100000406600,oil/gas,operating,120
+G100000406935,energy_plants_gem_units,JAM,point,,JAM-1-13,,point,,,,false,abf-boundaries-v0.2.0,Jamalco power station,L100000102866,oil/gas,operating,150
+G100000411248,energy_plants_gem_units,JAM,point,,JAM-1-01,,point,,,,false,abf-boundaries-v0.2.0,Hunts Bay power station,L100000407910,oil/gas,shelved,143
+G100000412008,energy_plants_gem_units,JAM,point,,JAM-1-01,,point,,,,false,abf-boundaries-v0.2.0,West Kingston power station,L100000408646,oil/gas,operating,65.5
+G100000412009,energy_plants_gem_units,JAM,point,,JAM-1-01,,point,,,,false,abf-boundaries-v0.2.0,Rockfort Private power station,L100000408647,oil/gas,operating,60
+G100000412010,energy_plants_gem_units,JAM,point,,JAM-1-14,,point,,,,false,abf-boundaries-v0.2.0,Doctor Bird II power station,L100000408648,oil/gas,operating,50.1
+G100000412011,energy_plants_gem_units,JAM,point,,JAM-1-14,,point,,,,false,abf-boundaries-v0.2.0,Doctor Bird I power station,L100000408649,oil/gas,operating,74.4
+G100000808760,energy_plants_gem_units,JAM,point,,JAM-1-13,,point,,,,true,abf-boundaries-v0.2.0,MPC Solar Plant,L100000807345,utility-scale solar,shelved,72.5
+G100000808761,energy_plants_gem_units,JAM,point,,JAM-1-10,,point,,,,false,abf-boundaries-v0.2.0,Paradise Park solar farm,L100000807346,utility-scale solar,operating,52
+G100000809254,energy_plants_gem_units,JAM,point,,JAM-1-13,,point,,,,false,abf-boundaries-v0.2.0,Content solar farm,L100000807586,utility-scale solar,operating,20
+G100000907598,energy_plants_gem_units,JAM,point,,JAM-1-12,,point,,,,false,abf-boundaries-v0.2.0,Wigton wind farm,L100000905526,wind,operating,21
+G100000907599,energy_plants_gem_units,JAM,point,,JAM-1-12,,point,,,,false,abf-boundaries-v0.2.0,Wigton wind farm,L100000905526,wind,operating,18
+G100000907600,energy_plants_gem_units,JAM,point,,JAM-1-12,,point,,,,false,abf-boundaries-v0.2.0,Wigton wind farm,L100000905526,wind,operating,24
+G100001022367,energy_plants_gem_units,JAM,point,,JAM-1-07,,point,,,,true,abf-boundaries-v0.2.0,Trelawny solar farm,L100001019738,utility-scale solar,pre_construction,50
+G100001022368,energy_plants_gem_units,JAM,point,,JAM-1-11,,point,,,,false,abf-boundaries-v0.2.0,Jamaica wind farm,L100001019739,wind,operating,36.3
+G100001022369,energy_plants_gem_units,JAM,point,,JAM-1-13,,point,,,,true,abf-boundaries-v0.2.0,Clarendon solar farm,L100001019740,utility-scale solar,pre_construction,49.8

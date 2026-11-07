@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000809546,energy_plants_gem_tzsam_units,ARG,point,,ARG-1-D,,point,,,,false,abf-boundaries-v0.2.0,Cerros del Sol solar farm,L100000807828,utility-scale solar,operating,12.2
+G100000809549,energy_plants_gem_tzsam_units,ARG,point,,ARG-1-K,,point,,,,false,abf-boundaries-v0.2.0,Fiambalá solar farm,L100000807831,utility-scale solar,operating,15.4
+G100000835573,energy_plants_gem_tzsam_units,ARG,point,,ARG-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Costa AR solar project,L100000831608,utility-scale solar,operating,15.2
+G100000835587,energy_plants_gem_tzsam_units,ARG,point,,ARG-1-M,,point,,,,false,abf-boundaries-v0.2.0,Santa Rosa AR solar project,L100000831620,utility-scale solar,operating,9.6

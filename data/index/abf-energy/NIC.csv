@@ -1,0 +1,62 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200217,energy_plants_gem_units,NIC,point,,NIC-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Ingenio Benjamín Zeledón power station,L100000200192,bioenergy,operating,40
+G100000200220,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Ingenio Montelimar power station,L100000200195,bioenergy,operating,42
+G100000201571,energy_plants_gem_units,NIC,point,,NIC-1-CI,,point,,,,false,abf-boundaries-v0.2.0,Ingenio Monte Rosa power station,L100000201316,bioenergy,operating,54
+G100000406936,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Puerto Sandino LNG power plant,L100000406684,oil/gas,construction,315
+G100000411985,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Tipitapa power station,L100000408601,oil/gas,operating,52
+G100000411986,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Planta Nicaragua power station,L100000408602,oil/gas,operating,53
+G100000411987,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Planta Nicaragua power station,L100000408602,oil/gas,operating,53
+G100000411988,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Planta MAN 140 power station,L100000408603,oil/gas,operating,148
+G100000411989,energy_plants_gem_units,NIC,point,,NIC-1-CI,,point,,,,false,abf-boundaries-v0.2.0,Corinto Barge power station,L100000408604,oil/gas,operating,74
+G100000413134,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,CENSA power station,L100000408912,oil/gas,retired,68.3
+G100000602869,energy_plants_gem_units,NIC,point,,NIC-1-AS,,point,,,,true,abf-boundaries-v0.2.0,Copalar Alto hydroelectric plant,L100000602837,hydropower,shelved,281
+G100000602870,energy_plants_gem_units,NIC,point,,NIC-1-AS,,point,,,,true,abf-boundaries-v0.2.0,Copalar Bajo hydroelectric plant,L100000602838,hydropower,pre_construction,150
+G100000602872,energy_plants_gem_units,NIC,point,,NIC-1-BO,,point,,,,false,abf-boundaries-v0.2.0,El Carmen hydroelectric plant,L100000602840,hydropower,announced,83
+G100000602874,energy_plants_gem_units,NIC,point,,NIC-1-MT,,point,,,,true,abf-boundaries-v0.2.0,Mojolka hydroelectric plant,L100000602842,hydropower,announced,120
+G100000604272,energy_plants_gem_units,NIC,point,,NIC-1-SJ,,point,,,,true,abf-boundaries-v0.2.0,Brito hydroelectric plant,L100000602836,hydropower,cancelled,260
+G100000604321,energy_plants_gem_units,NIC,point,,NIC-1-JI,,point,,,,true,abf-boundaries-v0.2.0,Corriente Lira hydroelectric plant,L100000602839,hydropower,shelved,94
+G100000604492,energy_plants_gem_units,NIC,point,,NIC-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Kamaná hydroelectric plant,L100000602841,hydropower,shelved,210
+G100000604698,energy_plants_gem_units,NIC,point,,NIC-1-MT,,point,,,,true,abf-boundaries-v0.2.0,Paiwas hydroelectric plant,L100000602843,hydropower,shelved,205
+G100000604730,energy_plants_gem_units,NIC,point,,NIC-1-AS,,point,,,,true,abf-boundaries-v0.2.0,Piedra Fina hydroelectric plant,L100000602844,hydropower,shelved,102
+G100000604733,energy_plants_gem_units,NIC,point,,NIC-1-JI,,point,,,,true,abf-boundaries-v0.2.0,Pintada hydroelectric plant,L100000602845,hydropower,shelved,203
+G100000604734,energy_plants_gem_units,NIC,point,,NIC-1-MT,,point,,,,true,abf-boundaries-v0.2.0,Piñuela hydroelectric plant,L100000602846,hydropower,shelved,500
+G100000604745,energy_plants_gem_units,NIC,point,,NIC-1-MT,,point,,,,true,abf-boundaries-v0.2.0,Pusi Pusi hydroelectric plant,L100000602847,hydropower,shelved,408
+G100000604877,energy_plants_gem_units,NIC,point,,NIC-1-AS,,point,,,,true,abf-boundaries-v0.2.0,Tendido hydroelectric plant,L100000602848,hydropower,cancelled,94
+G100000604897,energy_plants_gem_units,NIC,point,,NIC-1-AS,,point,,,,true,abf-boundaries-v0.2.0,Tumarin hydroelectric plant,L100000602849,hydropower,cancelled,424
+G100000604948,energy_plants_gem_units,NIC,point,,NIC-1-MT,,point,,,,true,abf-boundaries-v0.2.0,Wilike hydroelectric plant,L100000602850,hydropower,cancelled,100
+G100000700035,energy_plants_gem_units,NIC,point,,NIC-1-CI,,point,,,,true,abf-boundaries-v0.2.0,Casita - San Cristóbal geothermal power plant,L100000700024,geothermal,cancelled,35
+G100000700184,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Momotombo geothermal power plant,L100000700110,geothermal,operating,35
+G100000700185,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Momotombo geothermal power plant,L100000700110,geothermal,operating,35
+G100000700252,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,San Jacinto - Tizate geothermal power plant,L100000700154,geothermal,operating,36
+G100000700253,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,San Jacinto - Tizate geothermal power plant,L100000700154,geothermal,operating,36
+G100000808341,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,true,abf-boundaries-v0.2.0,San Benito solar farm,L100000807148,utility-scale solar,cancelled,50
+G100000808342,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,true,abf-boundaries-v0.2.0,San Benito solar farm,L100000807148,utility-scale solar,cancelled,50
+G100000809326,energy_plants_gem_units,NIC,point,,NIC-1-BO,,point,,,,true,abf-boundaries-v0.2.0,Assú Solar Farm (Nicaragua),L100000807651,utility-scale solar,cancelled,36
+G100000809327,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Government Solar Project Nicaragua 1,L100000807652,utility-scale solar,cancelled,15
+G100000809329,energy_plants_gem_units,NIC,point,,NIC-1-MT,,point,,,,true,abf-boundaries-v0.2.0,San Isidro Enesolar solar farm (Nicaragua),L100000807654,utility-scale solar,construction,61.5
+G100000809330,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Helios Power solar farm,L100000807655,utility-scale solar,announced,50
+G100000809411,energy_plants_gem_units,NIC,point,,NIC-1-AS,,point,,,,false,abf-boundaries-v0.2.0,Caribbean Pride solar farm,L100000807723,utility-scale solar,operating,2.1
+G100000809412,energy_plants_gem_units,NIC,point,,NIC-1-CA,,point,,,,false,abf-boundaries-v0.2.0,La Trinidad solar farm (Nicaragua),L100000807724,utility-scale solar,operating,1.4
+G100000838178,energy_plants_gem_units,NIC,point,,NIC-1-AS,,point,,,,true,abf-boundaries-v0.2.0,Corn Island solar farm,L100000832601,utility-scale solar,operating,2.5
+G100000838179,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,true,abf-boundaries-v0.2.0,Puerto Sandino solar farm,L100000832602,utility-scale solar,pre_construction,100
+G100000906175,energy_plants_gem_units,NIC,point,,NIC-1-RI,,point,,,,true,abf-boundaries-v0.2.0,Alba Rivas wind farm,L100000904984,wind,operating,42
+G100000906234,energy_plants_gem_units,NIC,point,,NIC-1-RI,,point,,,,false,abf-boundaries-v0.2.0,La Fe wind farm,L100000905015,wind,operating,40
+G100000907214,energy_plants_gem_units,NIC,point,,NIC-1-BO,,point,,,,true,abf-boundaries-v0.2.0,Hato Grande Wind Power Project,L100000905399,wind,cancelled,40
+G100000907627,energy_plants_gem_units,NIC,point,,NIC-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Amayo wind farm,L100000905549,wind,operating,40
+G100000907628,energy_plants_gem_units,NIC,point,,NIC-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Amayo wind farm,L100000905549,wind,operating,23
+G100000907629,energy_plants_gem_units,NIC,point,,NIC-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Eolo De Nicaragua Wind Facility,L100000905550,wind,operating,44
+G100001022362,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,true,abf-boundaries-v0.2.0,El Jaguar solar farm,L100001019734,utility-scale solar,operating,16
+G100001022363,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,true,abf-boundaries-v0.2.0,El Jaguar solar farm,L100001019734,utility-scale solar,pre_construction,20
+G100001022364,energy_plants_gem_units,NIC,point,,NIC-1-MT,,point,,,,true,abf-boundaries-v0.2.0,El Hato solar farm,L100001019735,utility-scale solar,pre_construction,67.4
+G100001022366,energy_plants_gem_units,NIC,point,,NIC-1-ES,,point,,,,true,abf-boundaries-v0.2.0,El Barro wind farm,L100001019736,wind,pre_construction,55.2
+G100001027346,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Carlos Fonesca hydroelectric plant,L100001023141,hydropower,operating,54
+G100001027347,energy_plants_gem_units,NIC,point,,NIC-1-JI,,point,,,,false,abf-boundaries-v0.2.0,Centroamérica hydroelectric plant,L100001023142,hydropower,operating,50
+G100001027991,energy_plants_gem_units,NIC,point,,NIC-1-MN,,point,,,,true,abf-boundaries-v0.2.0,San Benito power station,L100001023516,oil/gas,shelved,150
+G100001030814,energy_plants_gem_units,NIC,point,,NIC-1-JI,,point,,,,true,abf-boundaries-v0.2.0,Kayaska hydroelectric plant,L100001025825,hydropower,shelved,54
+G100001030818,energy_plants_gem_units,NIC,point,,NIC-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Kuikuinita hydroelectric plant,L100001025827,hydropower,shelved,63
+G100001048521,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Momotombo geothermal power plant,L100000700110,geothermal,operating,6.2
+G100001048522,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,San Jacinto - Tizate geothermal power plant,L100000700154,geothermal,operating,10.4
+G100001051674,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,true,abf-boundaries-v0.2.0,San Isidro Nordic solar farm,L100001045845,utility-scale solar,construction,14
+G100001053302,energy_plants_gem_units,NIC,point,,NIC-1-CI,,point,,,,false,abf-boundaries-v0.2.0,Ingenio San Antonio power station,L100001046969,bioenergy,operating,15
+G100001090293,energy_plants_gem_units,NIC,point,,NIC-1-MS,,point,,,,true,abf-boundaries-v0.2.0,Enesolar 3 solar farm,L100001080392,utility-scale solar,construction,70
+G100001090298,energy_plants_gem_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Sun Power solar farm,L100001080396,utility-scale solar,construction,30

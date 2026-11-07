@@ -1,0 +1,20 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000406628,energy_plants_gem_units,TTO,point,,TTO-1-SIP,,point,,,,false,abf-boundaries-v0.2.0,Union Estate power station,L100000406619,oil/gas,operating,360
+G100000406629,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Trinity power station,L100000406620,oil/gas,operating,75
+G100000406630,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,105
+G100000406631,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,105
+G100000406632,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,62.5
+G100000406633,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,62.5
+G100000406634,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,62.5
+G100000406635,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,62.5
+G100000406636,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,88
+G100000406637,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,88
+G100000406638,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,88
+G100000406639,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Point Lisas power station,L100000406614,oil/gas,operating,88
+G100000406640,energy_plants_gem_units,TTO,point,,TTO-1-PED,,point,,,,false,abf-boundaries-v0.2.0,Penal power station,L100000406615,oil/gas,operating,234
+G100000411232,energy_plants_gem_units,TTO,point,,TTO-1-SIP,,point,,,,false,abf-boundaries-v0.2.0,Union Estate power station,L100000406619,oil/gas,operating,360
+G100000411233,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Trinity power station,L100000406620,oil/gas,operating,75
+G100000411234,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,false,abf-boundaries-v0.2.0,Trinity power station,L100000406620,oil/gas,operating,75
+G100000411975,energy_plants_gem_units,TTO,point,,TTO-1-TOB,,point,,,,false,abf-boundaries-v0.2.0,Cove Power Station,L100000408595,oil/gas,operating,65.6
+G100000808713,energy_plants_gem_units,TTO,point,,TTO-1-CTT,,point,,,,true,abf-boundaries-v0.2.0,Brechin Castle Solar Project,L100000807320,utility-scale solar,construction,92
+G100000808714,energy_plants_gem_units,TTO,point,,TTO-1-TUP,,point,,,,true,abf-boundaries-v0.2.0,Orange Grove solar farm (Trinidad and Tobago),L100000807321,utility-scale solar,cancelled,20

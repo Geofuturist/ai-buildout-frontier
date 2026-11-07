@@ -1,0 +1,9 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-4fe3ea28e536,dc_atlas_points,ECU,field,,ECU-1-G,,point,,,,true,abf-boundaries-v0.2.0,CNT EP Guayaquil Data Center,Operating / Construction,telecom,,
+ATL-5db094ac27ea,dc_atlas_points,ECU,field,,ECU-1-G,,point,,,,true,abf-boundaries-v0.2.0,Cirion Tele-Puerto Guayaquil,Operating / Construction,telecom,,
+ATL-61a450b31854,dc_atlas_points,ECU,field,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Universidad Nacional de Loja Data Center,Operating / Construction,other,,
+ATL-7562ca9961aa,dc_atlas_points,ECU,field,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Cirion Quito QUI1 / Tele-Puerto Quito,Operating / Construction,telecom,,
+ATL-8140bf1bc534,dc_atlas_points,ECU,field,,ECU-1-G,,point,,,,true,abf-boundaries-v0.2.0,Telconet Cloud Center I Guayaquil,Operating / Construction,telecom,lt10,
+ATL-b5a947d9618c,dc_atlas_points,ECU,field,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,EdgeUno Quito (New Access) Data Center,Operating / Construction,colocation,,
+ATL-bf9e247011a7,dc_atlas_points,ECU,field,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Telconet Cloud Center II Quito,Operating / Construction,telecom,,
+ATL-e2f085131163,dc_atlas_points,ECU,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Cirion Technologies Pichincha,Operating / Construction,telecom,lt10,

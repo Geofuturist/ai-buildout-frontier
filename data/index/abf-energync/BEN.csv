@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001074550,energy_plants_gem_tzsam_units,BEN,point,,BEN-1-BO,,point,,,,false,abf-boundaries-v0.2.0,Borgou Department solar project,L100001064764,utility-scale solar,operating,1.7
+G100001074551,energy_plants_gem_tzsam_units,BEN,point,,BEN-1-AL,,point,,,,false,abf-boundaries-v0.2.0,Gogounou solar project,L100001064765,utility-scale solar,operating,1.2

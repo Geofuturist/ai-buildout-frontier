@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001006448,energy_plants_gem_tzsam_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Old Royal Capital Cetinje solar project,L100001005411,utility-scale solar,operating,5.1
+G100001083561,energy_plants_gem_tzsam_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Podgorica Podgorica Capital City solar project I,L100001073775,utility-scale solar,operating,1.2
+G100001083563,energy_plants_gem_tzsam_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Podgorica Podgorica Capital City solar project II,L100001073777,utility-scale solar,operating,1.6

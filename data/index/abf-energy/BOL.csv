@@ -1,0 +1,106 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000406832,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Warnes power station,L100000406480,oil/gas,operating,132.5
+G100000406836,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Guaracachi power station,L100000406476,oil/gas,operating,207
+G100000406837,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Guaracachi power station,L100000406476,oil/gas,operating,62
+G100000406838,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Entre Ríos power station,L100000406477,oil/gas,operating,136.8
+G100000406839,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,El Alto power station,L100000406478,oil/gas,operating,52.8
+G100000406840,energy_plants_gem_units,BOL,point,,BOL-1-T,,point,,,,false,abf-boundaries-v0.2.0,Del Sur power station,L100000406475,oil/gas,operating,127
+G100000406841,energy_plants_gem_units,BOL,point,,BOL-1-T,,point,,,,false,abf-boundaries-v0.2.0,Del Sur power station,L100000406475,oil/gas,operating,127
+G100000406842,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Carrasco power station,L100000406472,oil/gas,operating,62.5
+G100000406843,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Carrasco power station,L100000406472,oil/gas,operating,62.5
+G100000406844,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Bulo Bulo power station,L100000406473,oil/gas,operating,50
+G100000410156,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Carrasco power station,L100000406472,oil/gas,cancelled,52
+G100000410157,energy_plants_gem_units,BOL,point,,BOL-1-T,,point,,,,false,abf-boundaries-v0.2.0,Del Sur power station,L100000406475,oil/gas,operating,127
+G100000410158,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Warnes power station,L100000406480,oil/gas,operating,132.5
+G100000410159,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Warnes power station,L100000406480,oil/gas,operating,132.5
+G100000410160,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Warnes power station,L100000406480,oil/gas,operating,132.5
+G100000410161,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Entre Ríos power station,L100000406477,oil/gas,operating,136.8
+G100000410162,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Entre Ríos power station,L100000406477,oil/gas,operating,136.8
+G100000410163,energy_plants_gem_units,BOL,point,,BOL-1-T,,point,,,,false,abf-boundaries-v0.2.0,Del Sur power station,L100000406475,oil/gas,operating,127
+G100000600175,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,true,abf-boundaries-v0.2.0,Chayanta hydroelectric plant,L100000600175,hydropower,cancelled,177
+G100000600177,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,true,abf-boundaries-v0.2.0,Juntas hydroelectric plant,L100000600177,hydropower,construction,92
+G100000600180,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Misicuni hydroelectric plant,L100000600180,hydropower,operating,120
+G100000600184,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Palillada hydroelectric plant,L100000600184,hydropower,operating,118
+G100000600186,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Rositas hydroelectric plant,L100000600186,hydropower,pre_construction,600
+G100000600187,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Santa Isabel hydroelectric plant,L100000600187,hydropower,operating,91
+G100000600188,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,true,abf-boundaries-v0.2.0,Sehuencas hydroelectric plant,L100000600188,hydropower,construction,200
+G100000600190,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Umapalca hydroelectric plant,L100000600190,hydropower,operating,85
+G100000604208,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,true,abf-boundaries-v0.2.0,Ambrosia hydroelectric plant,L100000600169,hydropower,cancelled,85
+G100000604229,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,true,abf-boundaries-v0.2.0,Banda Azul hydroelectric plant,L100000600170,hydropower,cancelled,147
+G100000604281,energy_plants_gem_units,BOL,point,,BOL-1-N,,point,,,,true,abf-boundaries-v0.2.0,Cachuela Esperanza hydroelectric plant,L100000600171,hydropower,cancelled,990
+G100000604288,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Cañahuecal hydroelectric plant,L100000600173,hydropower,announced,380
+G100000604441,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,true,abf-boundaries-v0.2.0,Icona hydroelectric plant,L100000600176,hydropower,announced,342
+G100000604532,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,La Pesca hydroelectric plant,L100000600178,hydropower,cancelled,160
+G100000604543,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Las Juntas hydroelectric plant,L100000600179,hydropower,cancelled,150
+G100000604629,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,true,abf-boundaries-v0.2.0,Molineros hydroelectric plant,L100000600181,hydropower,cancelled,101
+G100000604681,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Ocampo hydroelectric plant,L100000600182,hydropower,cancelled,150
+G100000604687,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Oquitas hydroelectric plant,L100000600183,hydropower,cancelled,125
+G100000604722,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Peña Blanca hydroelectric plant,L100000600185,hydropower,cancelled,380
+G100000604794,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Seripona hydroelectric plant,L100000600189,hydropower,cancelled,400
+G100000700137,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,false,abf-boundaries-v0.2.0,Laguna Colorada geothermal power plant,L100000700084,geothermal,construction,50
+G100000700138,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,false,abf-boundaries-v0.2.0,Laguna Colorada geothermal power plant,L100000700084,geothermal,construction,50
+G100000808338,energy_plants_gem_units,BOL,point,,BOL-1-O,,point,,,,false,abf-boundaries-v0.2.0,Oruru Photovoltaic Solar Plant,L100000807146,utility-scale solar,operating,50
+G100000808339,energy_plants_gem_units,BOL,point,,BOL-1-O,,point,,,,false,abf-boundaries-v0.2.0,Oruru Photovoltaic Solar Plant,L100000807146,utility-scale solar,operating,50
+G100000808340,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,false,abf-boundaries-v0.2.0,Uyuni PV Solar Plant,L100000807147,utility-scale solar,operating,60
+G100000809569,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Contorno Bajo solar farm,L100000807845,utility-scale solar,pre_construction,40
+G100000809570,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,true,abf-boundaries-v0.2.0,Santivañez solar farm,L100000807846,utility-scale solar,construction,66
+G100000809571,energy_plants_gem_units,BOL,point,,BOL-1-O,,point,,,,true,abf-boundaries-v0.2.0,Vinto solar farm,L100000807847,utility-scale solar,construction,132
+G100000835596,energy_plants_gem_units,BOL,point,,BOL-1-O,,point,,,,false,abf-boundaries-v0.2.0,Oruru Photovoltaic Solar Plant,L100000807146,utility-scale solar,operating,2.5
+G100000835597,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Patacamaya solar farm,L100000831628,utility-scale solar,construction,80
+G100000835598,energy_plants_gem_units,BOL,point,,BOL-1-T,,point,,,,false,abf-boundaries-v0.2.0,Yunchará solar farm,L100000831629,utility-scale solar,operating,5
+G100000906236,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,El Dorado wind farm,L100000905017,wind,operating,54
+G100000906237,energy_plants_gem_units,BOL,point,,BOL-1-T,,point,,,,true,abf-boundaries-v0.2.0,La Ventolera Wind Project,L100000905018,wind,cancelled,24
+G100000906238,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Qollpana wind farm,L100000905019,wind,operating,24
+G100000906239,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,San Julián wind farm,L100000905020,wind,operating,40
+G100000906240,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Warnes wind farm,L100000905021,wind,operating,14
+G100000920248,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Qollpana wind farm,L100000905019,wind,operating,3
+G100000920249,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Warnes wind farm,L100000905021,wind,construction,45
+G100001022640,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Viru Viru solar farm,L100001019946,utility-scale solar,construction,20
+G100001027079,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,Yanacachi Norte hydroelectric plant,L100001022874,hydropower,operating,51
+G100001027909,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Warnes power station,L100000406480,oil/gas,operating,40
+G100001027911,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Entre Ríos power station,L100000406477,oil/gas,operating,29.1
+G100001027912,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Entre Ríos power station,L100000406477,oil/gas,operating,29.1
+G100001027914,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Entre Ríos power station,L100000406477,oil/gas,operating,29.1
+G100001027915,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Entre Ríos power station,L100000406477,oil/gas,operating,29.1
+G100001027917,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Guaracachi power station,L100000406476,oil/gas,operating,18.6
+G100001027918,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Guaracachi power station,L100000406476,oil/gas,operating,17.6
+G100001027919,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Guaracachi power station,L100000406476,oil/gas,operating,20
+G100001027920,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Guaracachi power station,L100000406476,oil/gas,operating,20.7
+G100001027921,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Bulo Bulo power station,L100000406473,oil/gas,operating,45
+G100001027922,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Bulo Bulo power station,L100000406473,oil/gas,operating,45
+G100001027923,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Carrasco power station,L100000406472,oil/gas,operating,27.6
+G100001027924,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,El Alto power station,L100000406478,oil/gas,operating,27.6
+G100001027925,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,Mutún power station,L100001023502,oil/gas,mothballed,108
+G100001030531,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,Corani hydroelectric plant (Bolivia),L100001025691,hydropower,operating,70
+G100001030548,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,false,abf-boundaries-v0.2.0,San José hydroelectric plant,L100001025697,hydropower,operating,124
+G100001053040,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,San Buenaventura Sugar power station,L100001046795,bioenergy,operating,30
+G100001053041,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,San Aurelio power station,L100001046796,bioenergy,operating,3
+G100001053140,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Caranavi power station,L100001046855,oil/gas,announced,140
+G100001062441,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,Cahua hydroelectric plant,L100001054549,hydropower,operating,30
+G100001062442,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,Chojlla hydroelectric plant,L100001054550,hydropower,operating,38
+G100001062443,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,Chururaqui hydroelectric plant,L100001054551,hydropower,operating,34
+G100001062444,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,Harca hydroelectric plant,L100001054552,hydropower,operating,30
+G100001062445,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,false,abf-boundaries-v0.2.0,Huaji hydroelectric plant,L100001054553,hydropower,operating,34
+G100001070439,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,false,abf-boundaries-v0.2.0,Laguna Colorada geothermal power plant,L100000700084,geothermal,operating,5
+G100001074497,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,false,abf-boundaries-v0.2.0,El Dorado wind farm,L100000905017,wind,pre_construction,54
+G100001074498,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Santa Cruz wind farm,L100001064716,wind,pre_construction,160
+G100001090007,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,La Guardia wind farm,L100001080162,wind,pre_construction,50
+G100001090016,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Cordillera wind farm,L100001080170,wind,announced,50
+G100001090020,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Andrés Ibáñez wind farm,L100001080173,wind,announced,104
+G100001090024,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Cabezas wind farm,L100001080177,wind,announced,50
+G100001090034,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Zanja Honda wind farm,L100001080186,wind,announced,50
+G100001090035,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Basilo wind farm,L100001080187,wind,announced,50
+G100001090036,energy_plants_gem_units,BOL,point,,BOL-1-S,,point,,,,true,abf-boundaries-v0.2.0,Brechas wind farm,L100001080188,wind,announced,58
+G100001090057,energy_plants_gem_units,BOL,point,,BOL-1-H,,point,,,,true,abf-boundaries-v0.2.0,Occidente solar farm,L100001080206,utility-scale solar,announced,30
+G100001090059,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,true,abf-boundaries-v0.2.0,Colcha K solar farm,L100001080208,utility-scale solar,announced,120
+G100001090060,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,true,abf-boundaries-v0.2.0,Chichas solar farm,L100001080210,utility-scale solar,pre_construction,120
+G100001090061,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,true,abf-boundaries-v0.2.0,Calerías solar farm,L100001080211,utility-scale solar,announced,120
+G100001090072,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,true,abf-boundaries-v0.2.0,Antonio Quijarro solar farm,L100001080221,utility-scale solar,announced,120
+G100001090073,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Aroma solar farm,L100001080223,utility-scale solar,announced,120
+G100001090076,energy_plants_gem_units,BOL,point,,BOL-1-P,,point,,,,true,abf-boundaries-v0.2.0,Nor Lipez solar farm,L100001080226,utility-scale solar,announced,120
+G100001090084,energy_plants_gem_units,BOL,point,,BOL-1-O,,point,,,,true,abf-boundaries-v0.2.0,Corque solar farm,L100001080228,utility-scale solar,announced,120
+G100001090085,energy_plants_gem_units,BOL,point,,BOL-1-O,,point,,,,true,abf-boundaries-v0.2.0,Toledo solar farm,L100001080232,utility-scale solar,announced,120
+G100001090086,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Umala solar farm,L100001080233,utility-scale solar,announced,50
+G100001090087,energy_plants_gem_units,BOL,point,,BOL-1-L,,point,,,,true,abf-boundaries-v0.2.0,Calamarca solar farm,L100001080234,utility-scale solar,announced,50
+G100001090088,energy_plants_gem_units,BOL,point,,BOL-1-C,,point,,,,true,abf-boundaries-v0.2.0,Toco solar farm,L100001080235,utility-scale solar,announced,50
+G100001090089,energy_plants_gem_units,BOL,point,,BOL-1-O,,point,,,,true,abf-boundaries-v0.2.0,Quillacas solar farm,L100001080236,utility-scale solar,announced,120

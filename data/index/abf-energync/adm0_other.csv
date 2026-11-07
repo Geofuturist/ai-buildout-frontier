@@ -1,0 +1,103 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000834844,energy_plants_gem_tzsam_units,MYS,point,SGP,MYS-1-01,,point,,,,false,abf-boundaries-v0.2.0,Straits of Johor solar project,L100000830951,utility-scale solar,operating,5.4
+G100000835595,energy_plants_gem_tzsam_units,BRA,point,BOL,BRA-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Cobija solar project,L100000831627,utility-scale solar,operating,6.7
+G100001008222,energy_plants_gem_tzsam_units,RUS,point,EST,RUS-1-LEN,,point,,,,false,abf-boundaries-v0.2.0,Narva Ida-Viru Maakond solar project II,L100001007073,utility-scale solar,operating,5.1
+G100001029954,energy_plants_gem_tzsam_units,GBR,point,CYP,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Akrotiri British Sovereign Base Area solar project I,L100001025273,utility-scale solar,operating,3.2
+G100001029955,energy_plants_gem_tzsam_units,GBR,point,CYP,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Akrotiri British Sovereign Base Area solar project II,L100001025274,utility-scale solar,operating,7.5
+G100001029975,energy_plants_gem_tzsam_units,JOR,point,ISR,JOR-1-AT,,point,,,,false,abf-boundaries-v0.2.0,Arava Tichona Regional Council solar project I,L100001025294,utility-scale solar,operating,3.8
+G100001029984,energy_plants_gem_tzsam_units,JOR,point,ISR,JOR-1-AT,,point,,,,false,abf-boundaries-v0.2.0,Arava Tichona Regional Council solar project II,L100001025303,utility-scale solar,operating,12.7
+G100001029985,energy_plants_gem_tzsam_units,PSE,point,ISR,,,,,,,false,abf-boundaries-v0.2.0,Bnei Shimon Regional Council solar project III,L100001025304,utility-scale solar,operating,3.4
+G100001029990,energy_plants_gem_tzsam_units,JOR,point,ISR,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Eilat solar project I,L100001025309,utility-scale solar,operating,7
+G100001030002,energy_plants_gem_tzsam_units,JOR,point,ISR,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Hevel Eilot Regional Council (Israel) solar project I,L100001025321,utility-scale solar,operating,1.8
+G100001030051,energy_plants_gem_tzsam_units,JOR,point,ISR,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Eilat solar project II,L100001025370,utility-scale solar,operating,8.4
+G100001030065,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Arvot Hayarden Regional Council Area C solar project I,L100001025384,utility-scale solar,operating,4
+G100001030088,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project I,L100001025407,utility-scale solar,operating,2.3
+G100001030091,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Megilot Yam Hamelakh Regional Council Area C solar project,L100001025410,utility-scale solar,operating,8.8
+G100001030093,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project I,L100001025412,utility-scale solar,operating,1.2
+G100001030094,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project II,L100001025413,utility-scale solar,operating,5.7
+G100001030096,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project II,L100001025415,utility-scale solar,operating,3.3
+G100001030097,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project III,L100001025416,utility-scale solar,operating,1.2
+G100001030098,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project I,L100001025417,utility-scale solar,operating,7.2
+G100001030099,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project III,L100001025418,utility-scale solar,operating,8.7
+G100001030100,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project IV,L100001025419,utility-scale solar,operating,1.7
+G100001030118,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project V,L100001025437,utility-scale solar,operating,6.2
+G100001030122,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project IV,L100001025441,utility-scale solar,operating,7.3
+G100001030128,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project VI,L100001025447,utility-scale solar,operating,1.7
+G100001030129,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project V,L100001025448,utility-scale solar,operating,5.7
+G100001030130,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project VII,L100001025449,utility-scale solar,operating,3.8
+G100001030134,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Arvot Hayarden Regional Council Area C solar project III,L100001025453,utility-scale solar,operating,10.7
+G100001030138,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Arvot Hayarden Regional Council Area C solar project IV,L100001025457,utility-scale solar,operating,3.4
+G100001030139,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project VIII,L100001025458,utility-scale solar,operating,2.9
+G100001030150,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Arvot Hayarden Regional Council Area C solar project V,L100001025469,utility-scale solar,operating,1.9
+G100001030160,energy_plants_gem_tzsam_units,ISR,point,PSE,ISR-1-D,,point,,,,false,abf-boundaries-v0.2.0,Eshkol Regional Council solar project,L100001025479,utility-scale solar,operating,3.4
+G100001030162,energy_plants_gem_tzsam_units,ISR,point,PSE,ISR-1-D,,point,,,,false,abf-boundaries-v0.2.0,Palestine solar project II,L100001025481,utility-scale solar,operating,2.1
+G100001030180,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project I,L100001025499,utility-scale solar,operating,7.1
+G100001030181,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project II,L100001025500,utility-scale solar,operating,6.5
+G100001030186,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project III,L100001025505,utility-scale solar,operating,4.3
+G100001030187,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project IV,L100001025506,utility-scale solar,operating,13.3
+G100001030192,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project V,L100001025511,utility-scale solar,operating,12.5
+G100001059204,energy_plants_gem_tzsam_units,DEU,point,CZE,DEU-1-SN,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project IV,L100001051410,utility-scale solar,operating,6.7
+G100001059237,energy_plants_gem_tzsam_units,DEU,point,CZE,DEU-1-SN,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project IX,L100001051443,utility-scale solar,operating,3
+G100001059314,energy_plants_gem_tzsam_units,DEU,point,CZE,DEU-1-SN,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XV,L100001051520,utility-scale solar,operating,5.5
+G100001059434,energy_plants_gem_tzsam_units,POL,point,CZE,POL-1-02,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project X,L100001051640,utility-scale solar,operating,1.1
+G100001059563,energy_plants_gem_tzsam_units,HRV,point,HUN,,,,,,,false,abf-boundaries-v0.2.0,Somogy solar project XXX,L100001051769,utility-scale solar,operating,5.1
+G100001059640,energy_plants_gem_tzsam_units,ROU,point,HUN,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Békés solar project XXXV,L100001051846,utility-scale solar,operating,1.2
+G100001059733,energy_plants_gem_tzsam_units,SVK,point,HUN,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Borsod-Abaúj-Zemplén solar project XLIII,L100001051939,utility-scale solar,operating,2.2
+G100001059906,energy_plants_gem_tzsam_units,SRB,point,ROU,,,,,,,false,abf-boundaries-v0.2.0,Drobeta-Turnu Severin Mehedinți solar project,L100001052112,utility-scale solar,operating,1
+G100001059933,energy_plants_gem_tzsam_units,HUN,point,ROU,,,,,,,false,abf-boundaries-v0.2.0,Szabolcs-Szatmár-Bereg solar project,L100001052139,utility-scale solar,operating,1.1
+G100001060064,energy_plants_gem_tzsam_units,SRB,point,ROU,,,,,,,false,abf-boundaries-v0.2.0,Mehedinți solar project VIII,L100001052270,utility-scale solar,operating,2.9
+G100001060121,energy_plants_gem_tzsam_units,CZE,point,SVK,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project,L100001052327,utility-scale solar,operating,6.1
+G100001060557,energy_plants_gem_tzsam_units,SVN,point,HRV,,,,,,,false,abf-boundaries-v0.2.0,Krapina-Zagorje County solar project III,L100001052763,utility-scale solar,operating,1.4
+G100001074553,energy_plants_gem_tzsam_units,ZAF,point,BWA,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Lephalale Local Municipality Waterberg District Municipality solar project,L100001064767,utility-scale solar,operating,1.2
+G100001078328,energy_plants_gem_tzsam_units,BGD,point,IND,,,,,,,false,abf-boundaries-v0.2.0,Chopra solar project,L100001068542,utility-scale solar,operating,8.3
+G100001078705,energy_plants_gem_tzsam_units,GBR,point,CYP,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Agia Napa Municipality solar project II,L100001068919,utility-scale solar,operating,2.6
+G100001078770,energy_plants_gem_tzsam_units,JOR,point,ISR,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Hevel Eilot Regional Council (Israel) solar project II,L100001068984,utility-scale solar,operating,8.4
+G100001078806,energy_plants_gem_tzsam_units,PSE,point,ISR,,,,,,,false,abf-boundaries-v0.2.0,Center District solar project IV,L100001069020,utility-scale solar,operating,1
+G100001078818,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project V,L100001069032,utility-scale solar,operating,2.7
+G100001078820,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project VI,L100001069034,utility-scale solar,operating,2.1
+G100001078823,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Arvot Hayarden Regional Council Area C solar project VI,L100001069037,utility-scale solar,operating,2.6
+G100001078829,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project VI,L100001069043,utility-scale solar,operating,1.4
+G100001078834,energy_plants_gem_tzsam_units,ISR,point,JOR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Emek Hamaayanot Regional Council (Jordan) solar project I,L100001069048,utility-scale solar,operating,6.8
+G100001078836,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project IX,L100001069050,utility-scale solar,operating,3.3
+G100001078837,energy_plants_gem_tzsam_units,ISR,point,JOR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Emek Hamaayanot Regional Council (Jordan) solar project II,L100001069051,utility-scale solar,operating,13.3
+G100001078838,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Arvot Hayarden Regional Council Area C solar project VII,L100001069052,utility-scale solar,operating,1.7
+G100001078843,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project VII,L100001069057,utility-scale solar,operating,1
+G100001078844,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project X,L100001069058,utility-scale solar,operating,1.3
+G100001078847,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project VII,L100001069061,utility-scale solar,operating,1.3
+G100001078852,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Megilot Yam Hamelakh Regional Council Area C solar project I,L100001069066,utility-scale solar,operating,5.6
+G100001078854,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Megilot Yam Hamelakh Regional Council Area C solar project II,L100001069068,utility-scale solar,operating,3.8
+G100001078855,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project VIII,L100001069069,utility-scale solar,operating,5
+G100001078856,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project IX,L100001069070,utility-scale solar,operating,1.6
+G100001078859,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project X,L100001069073,utility-scale solar,operating,1
+G100001078860,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Arvot Hayarden Regional Council Area C solar project VIII,L100001069074,utility-scale solar,operating,5.5
+G100001078861,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Shomron Regional Council Area C solar project,L100001069075,utility-scale solar,operating,9.3
+G100001078862,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project VIII,L100001069076,utility-scale solar,operating,1.6
+G100001078865,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project XI,L100001069079,utility-scale solar,operating,1.3
+G100001078866,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project IX,L100001069080,utility-scale solar,operating,2.2
+G100001078869,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project XI,L100001069083,utility-scale solar,operating,2.2
+G100001078871,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project X,L100001069085,utility-scale solar,operating,1
+G100001078872,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project XII,L100001069086,utility-scale solar,operating,1.2
+G100001078874,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project XII,L100001069088,utility-scale solar,operating,1
+G100001078875,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project XI,L100001069089,utility-scale solar,operating,3.2
+G100001078877,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project XII,L100001069091,utility-scale solar,operating,1
+G100001078881,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area B solar project XIII,L100001069095,utility-scale solar,operating,1.2
+G100001078882,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project XIII,L100001069096,utility-scale solar,operating,1.1
+G100001078885,energy_plants_gem_tzsam_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area A solar project XIII,L100001069099,utility-scale solar,operating,1.3
+G100001078936,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project VI,L100001069150,utility-scale solar,operating,3.2
+G100001078941,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project VIII,L100001069155,utility-scale solar,operating,2.7
+G100001078948,energy_plants_gem_tzsam_units,ISR,point,SYR,ISR-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Golan Regional Council solar project IX,L100001069162,utility-scale solar,operating,1.5
+G100001083689,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project I,L100001073903,utility-scale solar,operating,10.6
+G100001083693,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project II,L100001073907,utility-scale solar,operating,3.5
+G100001083695,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project III,L100001073909,utility-scale solar,operating,1.3
+G100001083710,energy_plants_gem_tzsam_units,XKX,point,SRB,,,,,,,false,abf-boundaries-v0.2.0,Serbia solar project IV,L100001073924,utility-scale solar,operating,2.8
+G100001083890,energy_plants_gem_tzsam_units,HUN,point,AUT,,,,,,,false,abf-boundaries-v0.2.0,Vas solar project,L100001074104,utility-scale solar,operating,1.3
+G100001083942,energy_plants_gem_tzsam_units,NLD,point,BEL,NLD-1-NB,,point,,,,false,abf-boundaries-v0.2.0,Turnhout solar project IV,L100001074156,utility-scale solar,operating,1.7
+G100001083951,energy_plants_gem_tzsam_units,NLD,point,BEL,NLD-1-LI,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project,L100001074165,utility-scale solar,operating,1.5
+G100001083967,energy_plants_gem_tzsam_units,LUX,point,BEL,,,,,,,false,abf-boundaries-v0.2.0,Arlon solar project I,L100001074181,utility-scale solar,operating,1.2
+G100001084070,energy_plants_gem_tzsam_units,DEU,point,NLD,DEU-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project V,L100001074284,utility-scale solar,operating,1.3
+G100001084088,energy_plants_gem_tzsam_units,DEU,point,NLD,DEU-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project VI,L100001074302,utility-scale solar,operating,14.7
+G100001084228,energy_plants_gem_tzsam_units,DEU,point,NLD,DEU-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Groningen solar project X,L100001074442,utility-scale solar,operating,17.7
+G100001084316,energy_plants_gem_tzsam_units,DEU,point,NLD,DEU-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXIV,L100001074530,utility-scale solar,operating,10.4
+G100001084405,energy_plants_gem_tzsam_units,DEU,point,NLD,DEU-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Landkreis Emsland solar project,L100001074619,utility-scale solar,operating,2
+G100001084444,energy_plants_gem_tzsam_units,DEU,point,NLD,DEU-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Limburg solar project XXXIII,L100001074658,utility-scale solar,operating,1.3
+G100001084456,energy_plants_gem_tzsam_units,DEU,point,NLD,DEU-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Heerlen solar project III,L100001074670,utility-scale solar,operating,1.1

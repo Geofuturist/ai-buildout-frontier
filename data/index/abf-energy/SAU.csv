@@ -1,0 +1,678 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000401074,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,cancelled,3000
+G100000401075,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 2 IPP power station,L100000401075,oil/gas,operating,686.5
+G100000401076,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 2 IPP power station,L100000401075,oil/gas,operating,686.5
+G100000401078,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh City-13 power station,L100000401078,oil/gas,operating,900
+G100000401079,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh City-13 power station,L100000401078,oil/gas,operating,900
+G100000401080,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh City-14 power station,L100000401080,oil/gas,operating,990
+G100000401081,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh City-14 power station,L100000401080,oil/gas,operating,990
+G100000401090,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Abqaiq cogeneration power station,L100000401090,oil/gas,operating,180
+G100000401091,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Hawiyah cogeneration power station,L100000401091,oil/gas,operating,80
+G100000401092,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Tanura cogeneration power station,L100000401092,oil/gas,operating,178
+G100000404751,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Fadhili cogeneration power plant,L100000405542,oil/gas,operating,1520
+G100000404756,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah CC power plant,L100000405553,oil/gas,operating,683
+G100000404757,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah CC power plant,L100000405553,oil/gas,operating,683
+G100000404758,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah CC power plant,L100000405553,oil/gas,operating,683
+G100000404759,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah CC power plant,L100000405553,oil/gas,operating,683
+G100000404760,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah CC power plant,L100000405553,oil/gas,operating,683
+G100000404761,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah CC power plant,L100000405553,oil/gas,operating,683
+G100000404777,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,142
+G100000404778,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,142
+G100000404779,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,142
+G100000404780,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,142
+G100000404782,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail cogeneration power plant,L100000405547,oil/gas,operating,125
+G100000404783,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail cogeneration power plant,L100000405547,oil/gas,operating,125
+G100000404784,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,MARAFIQ Independent Water and power plant,L100000405550,oil/gas,operating,686
+G100000404785,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,MARAFIQ Independent Water and power plant,L100000405550,oil/gas,operating,686
+G100000404786,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404787,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404788,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404789,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404790,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404791,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404792,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404793,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404794,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404795,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,60
+G100000404796,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,60
+G100000404797,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,60
+G100000404798,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,60
+G100000404799,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,60
+G100000404800,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,60
+G100000404801,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail (SWCC) power station,L100000401074,oil/gas,operating,121
+G100000404802,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khair power plant,L100000405556,oil/gas,operating,450
+G100000404803,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khair power plant,L100000405556,oil/gas,operating,450
+G100000404804,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khair power plant,L100000405556,oil/gas,operating,450
+G100000404805,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khair power plant,L100000405556,oil/gas,operating,450
+G100000404806,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khair power plant,L100000405556,oil/gas,operating,450
+G100000404807,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khair power plant,L100000405556,oil/gas,operating,220
+G100000404808,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khair power plant,L100000405556,oil/gas,operating,220
+G100000404809,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Berri Gas power plant,L100000405541,oil/gas,operating,149
+G100000404810,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Berri Gas power plant,L100000405541,oil/gas,operating,149
+G100000404811,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Karan Gas power plant,L100000405548,oil/gas,operating,150
+G100000404812,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Khursaniyah power plant,L100000405549,oil/gas,operating,185
+G100000404813,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Khursaniyah power plant,L100000405549,oil/gas,operating,185
+G100000404815,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Manifa cogeneration power plant,L100000405551,oil/gas,operating,420
+G100000404818,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Qatif G-1 power plant,L100000405552,oil/gas,operating,72
+G100000404819,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Qatif G-1 power plant,L100000405552,oil/gas,operating,72
+G100000404820,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Shaybah Gas power plant,L100000405563,oil/gas,operating,750
+G100000404821,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Shaybah Gas power plant,L100000405563,oil/gas,operating,750
+G100000404839,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,75
+G100000404840,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,75
+G100000404841,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,139
+G100000404842,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,139
+G100000404843,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,139
+G100000404844,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,139
+G100000404845,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,75
+G100000404846,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Wasit Gas power plant,L100000405569,oil/gas,operating,75
+G100000404850,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000404851,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000404852,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000404853,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000404854,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000404855,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,90
+G100000404856,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,90
+G100000404857,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,90
+G100000404858,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,90
+G100000404859,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,90
+G100000404860,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,140
+G100000404861,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,140
+G100000404862,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,140
+G100000404863,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,140
+G100000404864,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,400
+G100000404865,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,400
+G100000404866,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,400
+G100000404867,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,400
+G100000404868,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,664
+G100000404869,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,664
+G100000404870,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,664
+G100000404871,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,operating,664
+G100000404872,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Green Duba ISCC power plant,L100000405545,oil/gas,operating,290
+G100000404873,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah ll power plant,L100000405555,oil/gas,operating,629
+G100000404874,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah ll power plant,L100000405555,oil/gas,operating,629
+G100000404875,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah ll power plant,L100000405555,oil/gas,operating,629
+G100000404876,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah ll power plant,L100000405555,oil/gas,operating,629
+G100000404877,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah ll power plant,L100000405555,oil/gas,operating,629
+G100000404878,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah ll power plant,L100000405555,oil/gas,operating,629
+G100000404879,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah Thermal power plant,L100000405554,oil/gas,operating,625
+G100000404880,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah Thermal power plant,L100000405554,oil/gas,operating,625
+G100000404881,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah Thermal power plant,L100000405554,oil/gas,operating,625
+G100000404882,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah Thermal power plant,L100000405554,oil/gas,operating,625
+G100000404883,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 12 power plant,L100000405557,oil/gas,operating,1087.5
+G100000404884,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 12 power plant,L100000405557,oil/gas,operating,1087.5
+G100000404895,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404896,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404897,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404898,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404899,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404900,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404901,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404902,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404903,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404904,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404905,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404906,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404907,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404908,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404909,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404910,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,50
+G100000404911,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,57.6
+G100000404912,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,57.6
+G100000404913,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,57.6
+G100000404914,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,57.6
+G100000404915,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,57.6
+G100000404916,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,57.6
+G100000404917,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,85
+G100000404918,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 7 power plant,L100000405559,oil/gas,operating,85
+G100000404919,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404920,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404921,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404922,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404923,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404924,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404925,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404926,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404927,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404928,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000404929,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,122.7
+G100000404930,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,122.7
+G100000404931,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,122.7
+G100000404932,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,122.7
+G100000404933,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404934,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404935,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404936,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404937,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404938,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404939,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404940,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404941,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404942,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404943,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404944,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404945,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404946,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404947,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404948,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404949,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404950,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404951,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404952,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404953,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404954,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000404957,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404958,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404959,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404960,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404961,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404962,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404963,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404964,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404965,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404966,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404967,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404968,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404969,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,68.5
+G100000404970,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404971,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404972,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404973,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shedgum power plant,L100000405565,oil/gas,operating,60.5
+G100000404974,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah power station,L100000405567,oil/gas,operating,51.1
+G100000404975,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah power station,L100000405567,oil/gas,operating,51.1
+G100000404976,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah power station,L100000405567,oil/gas,operating,51.1
+G100000404977,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah power station,L100000405567,oil/gas,operating,51.1
+G100000404978,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah power station,L100000405567,oil/gas,operating,51.1
+G100000404979,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Waad Al Shamal power station,L100000405568,oil/gas,operating,1390
+G100000404980,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah cogeneration Gas power plant,L100000405566,oil/gas,operating,155
+G100000404981,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah cogeneration Gas power plant,L100000405566,oil/gas,operating,155
+G100000404982,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Uthmaniyah cogeneration Gas power plant,L100000405566,oil/gas,operating,186.7
+G100000404983,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Juaymah cogeneration Gas power plant,L100000405546,oil/gas,operating,186.7
+G100000404984,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Juaymah cogeneration Gas power plant,L100000405546,oil/gas,operating,155
+G100000404985,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Juaymah cogeneration Gas power plant,L100000405546,oil/gas,operating,155
+G100000404986,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Shedgum cogeneration Gas power plant,L100000405564,oil/gas,operating,155
+G100000404987,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Shedgum cogeneration Gas power plant,L100000405564,oil/gas,operating,155
+G100000404988,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Shedgum cogeneration Gas power plant,L100000405564,oil/gas,operating,186.7
+G100000406249,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Abqaiq cogeneration power station,L100000401090,oil/gas,operating,180
+G100000406250,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Hawiyah cogeneration power station,L100000401091,oil/gas,operating,80
+G100000406254,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 2 IPP power station,L100000401075,oil/gas,operating,686.5
+G100000406257,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Tanura cogeneration power station,L100000401092,oil/gas,operating,178
+G100000410092,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410093,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410094,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410095,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410096,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410097,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410098,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410099,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410100,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410101,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410102,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410103,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410104,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410105,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410106,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410107,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,50
+G100000410108,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Tanura Tihama power station,L100000407703,oil/gas,operating,75
+G100000410109,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Tanura Tihama power station,L100000407703,oil/gas,operating,75
+G100000410110,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,MARAFIQ Independent Water and power plant,L100000405550,oil/gas,operating,686
+G100000410111,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,MARAFIQ Independent Water and power plant,L100000405550,oil/gas,operating,686
+G100000410112,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000410113,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000410114,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Faras power plant,L100000405543,oil/gas,operating,75
+G100000410126,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Yamama power plant,L100000407707,oil/gas,operating,161
+G100000410127,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh PP11 power station,L100000407708,oil/gas,operating,824
+G100000410128,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh PP11 power station,L100000407708,oil/gas,operating,981
+G100000410129,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410130,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410131,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410132,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 8 power plant,L100000405560,oil/gas,operating,59
+G100000410446,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al Qurayyat power plant,L100000407826,oil/gas,operating,77
+G100000410447,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al Qurayyat power plant,L100000407826,oil/gas,operating,77
+G100000410448,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al Qurayyat power plant,L100000407826,oil/gas,operating,70
+G100000410449,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al Qurayyat power plant,L100000407826,oil/gas,operating,70
+G100000410889,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Yanbu 3 power plant,L100000408049,oil/gas,operating,627
+G100000410890,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Yanbu 3 power plant,L100000408049,oil/gas,operating,627
+G100000410891,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Yanbu 3 power plant,L100000408049,oil/gas,operating,627
+G100000410892,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Yanbu 3 power plant,L100000408049,oil/gas,operating,627
+G100000410893,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Yanbu 3 power plant,L100000408049,oil/gas,operating,627
+G100000410894,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Taiba Independent Power Plant,L100000408013,oil/gas,construction,1800
+G100000410895,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,60
+G100000410896,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,60
+G100000410897,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,60
+G100000410898,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,60
+G100000410899,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Tanajib Cogeneration and Desalination power plant,L100000408011,oil/gas,operating,940
+G100000410900,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,62
+G100000410901,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,62
+G100000410902,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,62
+G100000410903,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,62
+G100000410904,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,78
+G100000410905,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,78
+G100000410906,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,60
+G100000410907,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,60
+G100000410924,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410928,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410932,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410936,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410940,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410944,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410948,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410952,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410956,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410960,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 10 power plant,L100000408009,oil/gas,operating,352
+G100000410961,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Rafha power plant,L100000408008,oil/gas,operating,70
+G100000410962,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Rafha power plant,L100000408008,oil/gas,operating,77.5
+G100000410963,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Rafha power plant,L100000408008,oil/gas,operating,69
+G100000410964,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Rafha power plant,L100000408008,oil/gas,operating,69
+G100000410965,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,56
+G100000410966,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,56
+G100000410967,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,52
+G100000410968,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Juba power plant,L100000408004,oil/gas,operating,55
+G100000410969,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Juba power plant,L100000408004,oil/gas,operating,55
+G100000410970,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan IGCC power plant,L100000407706,oil/gas,operating,770
+G100000410971,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan IGCC power plant,L100000407706,oil/gas,operating,770
+G100000410972,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan IGCC power plant,L100000407706,oil/gas,operating,770
+G100000410973,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan IGCC power plant,L100000407706,oil/gas,operating,770
+G100000410974,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan IGCC power plant,L100000407706,oil/gas,operating,770
+G100000410975,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000410976,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000410977,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000410978,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000410979,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000410980,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410981,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410982,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410983,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410984,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410985,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410986,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410987,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,60
+G100000410988,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Jafurah Cogeneration power plant,L100000408001,oil/gas,operating,320
+G100000410989,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Hofuf (KSA) Captive power plant,L100000408002,oil/gas,operating,36
+G100000410990,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Hofuf (KSA) Captive power plant,L100000408002,oil/gas,operating,36
+G100000410991,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Hofuf (KSA) Captive power plant,L100000408002,oil/gas,operating,36
+G100000410992,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,55.5
+G100000410997,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,64
+G100000410998,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,64
+G100000410999,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bisha Central power plant,L100000407997,oil/gas,operating,73
+G100000411000,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bisha Central power plant,L100000407997,oil/gas,operating,73
+G100000411001,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bisha Central power plant,L100000407997,oil/gas,operating,73
+G100000411002,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Asir Central power plant,L100000407995,oil/gas,operating,70
+G100000411003,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Asir Central power plant,L100000407995,oil/gas,operating,70
+G100000411004,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Asir Central power plant,L100000407995,oil/gas,operating,66
+G100000411005,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Asir Central power plant,L100000407995,oil/gas,operating,55
+G100000411006,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,false,abf-boundaries-v0.2.0,Arar power plant,L100000407993,oil/gas,operating,77
+G100000411007,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,false,abf-boundaries-v0.2.0,Arar power plant,L100000407993,oil/gas,operating,77
+G100000411008,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,false,abf-boundaries-v0.2.0,Arar power plant,L100000407993,oil/gas,operating,60
+G100000411009,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,false,abf-boundaries-v0.2.0,Arar power plant,L100000407993,oil/gas,operating,60
+G100000411010,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Al Wajh power station,L100000407994,oil/gas,operating,60
+G100000411011,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Al Wajh power station,L100000407994,oil/gas,operating,60
+G100000411012,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Al Wajh power station,L100000407994,oil/gas,operating,60
+G100000411013,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,false,abf-boundaries-v0.2.0,Al-Qassim power plant,L100000407990,oil/gas,operating,365
+G100000411014,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,false,abf-boundaries-v0.2.0,Al-Qassim power plant,L100000407990,oil/gas,operating,365
+G100000411015,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,false,abf-boundaries-v0.2.0,Al-Qassim power plant,L100000407990,oil/gas,operating,350
+G100000411016,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,true,abf-boundaries-v0.2.0,Al-Qassim IPP power plant,L100000407992,oil/gas,construction,1800
+G100000411017,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al-Jouf power plant,L100000409125,oil/gas,operating,60
+G100000411018,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al-Jouf power plant,L100000409125,oil/gas,operating,60
+G100000411019,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al-Jouf power plant,L100000409125,oil/gas,operating,60
+G100000411182,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411183,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411184,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411185,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411186,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411187,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411188,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411189,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411190,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411191,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411192,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411193,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411194,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411195,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411196,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411197,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411198,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411199,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,60
+G100000411200,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,340
+G100000411201,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,340
+G100000411202,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,340
+G100000411203,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 9 power plant,L100000405561,oil/gas,operating,340
+G100000411416,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu Cement power plant,L100000408259,oil/gas,operating,93.6
+G100000411417,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 2 SWCC power plant,L100000408253,oil/gas,operating,75
+G100000411418,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 2 SWCC power plant,L100000408253,oil/gas,operating,75
+G100000411419,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 2 power plant,L100000408254,oil/gas,operating,275
+G100000411420,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 2 power plant,L100000408254,oil/gas,operating,275
+G100000411421,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 2 power plant,L100000408254,oil/gas,operating,275
+G100000411422,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 1 power plant,L100000408255,oil/gas,operating,424
+G100000411423,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 1 power plant,L100000408255,oil/gas,operating,424
+G100000411424,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,false,abf-boundaries-v0.2.0,Yanbu 1 power plant,L100000408255,oil/gas,operating,301
+G100000411427,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Cement Power Plant,L100000408249,oil/gas,operating,32
+G100000411428,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Cement Power Plant,L100000408249,oil/gas,operating,65.7
+G100000411429,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Taiba Independent Power Plant,L100000408013,oil/gas,construction,1800
+G100000411430,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,60
+G100000411431,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,60
+G100000411432,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,60
+G100000411433,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Shuqaiq SWCC power plant,L100000408251,oil/gas,retired,54
+G100000411434,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Shuqaiq SWCC power plant,L100000408251,oil/gas,retired,54
+G100000411435,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Shuqaiq Steam Power Plant,L100000408247,oil/gas,operating,660
+G100000411436,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Shuqaiq Steam Power Plant,L100000408247,oil/gas,operating,660
+G100000411437,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Shuqaiq Steam Power Plant,L100000408247,oil/gas,operating,660
+G100000411438,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Shuqaiq Steam Power Plant,L100000408247,oil/gas,operating,660
+G100000411439,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Shuqaiq 2 Independent Water and Power Project,L100000408248,oil/gas,operating,340
+G100000411440,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Shuqaiq 2 Independent Water and Power Project,L100000408248,oil/gas,operating,340
+G100000411441,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Shuqaiq 2 Independent Water and Power Project,L100000408248,oil/gas,operating,340
+G100000411442,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaibah Independent Water and Power Project,L100000408246,oil/gas,retired,400
+G100000411443,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaibah Independent Water and Power Project,L100000408246,oil/gas,retired,400
+G100000411444,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaibah Independent Water and Power Project,L100000408246,oil/gas,retired,400
+G100000411445,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,100
+G100000411446,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,100
+G100000411447,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,100
+G100000411448,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,100
+G100000411449,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,100
+G100000411450,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,62
+G100000411451,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,62
+G100000411452,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,62
+G100000411453,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,62
+G100000411454,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaiba SWCC power plant,L100000408242,oil/gas,operating,62
+G100000411455,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shoaiba power plant,L100000408244,oil/gas,operating,1440
+G100000411456,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shoaiba power plant,L100000408244,oil/gas,operating,1200
+G100000411457,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Shoaiba power plant,L100000408244,oil/gas,operating,1200
+G100000411458,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shoaiba II CCPP Project,L100000408243,oil/gas,operating,600
+G100000411459,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shoaiba II CCPP Project,L100000408243,oil/gas,operating,600
+G100000411460,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sharurah power plant,L100000408245,oil/gas,operating,64
+G100000411461,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sharurah power plant,L100000408245,oil/gas,operating,64
+G100000411462,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh Cement Company power plant,L100000408237,oil/gas,operating,97.2
+G100000411463,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,700
+G100000411464,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,700
+G100000411465,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,700
+G100000411466,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,700
+G100000411467,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411468,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411469,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411470,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411471,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411472,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411473,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411474,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411475,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411476,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411477,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411478,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411479,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411480,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411481,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411482,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411483,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411484,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411485,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411486,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411487,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411488,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411489,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411490,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411491,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411492,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411493,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411494,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,operating,60
+G100000411495,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh IPP power station,L100000408240,oil/gas,operating,602
+G100000411496,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh IPP power station,L100000408240,oil/gas,operating,602
+G100000411497,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Petro-Rabigh Independent Water Steam and Power Project,L100000408229,oil/gas,operating,120
+G100000411498,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Petro-Rabigh Independent Water Steam and Power Project,L100000408229,oil/gas,operating,120
+G100000411499,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Petro-Rabigh Independent Water Steam and Power Project,L100000408229,oil/gas,operating,118
+G100000411500,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Petro-Rabigh Independent Water Steam and Power Project,L100000408229,oil/gas,operating,118
+G100000411501,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Petro-Rabigh Independent Water Steam and Power Project,L100000408229,oil/gas,operating,118
+G100000411502,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Petro-Rabigh Independent Water Steam and Power Project,L100000408229,oil/gas,operating,118
+G100000411503,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Petro-Rabigh Independent Water Steam and Power Project,L100000408229,oil/gas,operating,118
+G100000411504,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,51.5
+G100000411505,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Mansourah Massarah power plant,L100000408241,oil/gas,operating,57.6
+G100000411506,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Juba power plant,L100000408004,oil/gas,operating,62
+G100000411507,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Juba power plant,L100000408004,oil/gas,operating,62
+G100000411508,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,60
+G100000411509,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,60
+G100000411510,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000411511,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000411512,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000411513,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,66
+G100000411514,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,60
+G100000411515,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Cement Company power plant,L100000408226,oil/gas,operating,58.4
+G100000411516,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah South power plant,L100000408227,oil/gas,operating,660
+G100000411517,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah South power plant,L100000408227,oil/gas,operating,660
+G100000411518,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah South power plant,L100000408227,oil/gas,operating,660
+G100000411519,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah South power plant,L100000408227,oil/gas,operating,660
+G100000411520,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,400
+G100000411521,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail Cement Company power plant,L100000408232,oil/gas,operating,51.8
+G100000411522,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Asir Central power plant,L100000407995,oil/gas,operating,66
+G100000411523,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Asir Central power plant,L100000407995,oil/gas,operating,55
+G100000411524,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Asir Central power plant,L100000407995,oil/gas,operating,50
+G100000411525,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,120
+G100000411526,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,120
+G100000411527,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,120
+G100000411528,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,120
+G100000411529,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Alkhobar power plant,L100000405539,oil/gas,operating,142
+G100000411530,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,true,abf-boundaries-v0.2.0,Al-Qassim IPP power plant,L100000407992,oil/gas,construction,1800
+G100000413554,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,60
+G100000413555,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,80
+G100000413556,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,80
+G100000413557,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413558,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413559,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413560,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413561,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413562,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413563,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413564,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413565,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413566,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413567,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413568,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413569,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,45
+G100000413570,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,36.5
+G100000413571,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,36.5
+G100000413572,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,36.5
+G100000413573,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tehama Central power station,L100000408010,oil/gas,operating,36.5
+G100000413574,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk Cement power plant,L100000409071,oil/gas,operating,49
+G100000413584,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,58
+G100000413585,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,58
+G100000413586,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,31
+G100000413587,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,27
+G100000413588,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,27
+G100000413589,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,17
+G100000413590,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,17
+G100000413591,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,17
+G100000413592,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,60
+G100000413593,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,60
+G100000413594,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,59
+G100000413595,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk 1 power plant,L100000409025,oil/gas,operating,17
+G100000413596,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,20
+G100000413597,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Tabuk PP2 power plant,L100000408012,oil/gas,operating,20
+G100000413598,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sharurah power plant,L100000408245,oil/gas,operating,17
+G100000413599,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sharurah power plant,L100000408245,oil/gas,operating,34
+G100000413600,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sharurah power plant,L100000408245,oil/gas,operating,34
+G100000413601,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50
+G100000413602,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50
+G100000413603,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50
+G100000413604,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50
+G100000413605,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413606,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413607,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413608,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413609,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413610,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413611,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413612,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 5 power plant,L100000409072,oil/gas,operating,50.8
+G100000413613,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh-2 power plant,L100000409073,oil/gas,operating,383
+G100000413614,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh-2 power plant,L100000409073,oil/gas,operating,353
+G100000413615,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh-2 power plant,L100000409073,oil/gas,operating,353
+G100000413616,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 2 IPP power station,L100000401075,oil/gas,construction,2313
+G100000413617,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,51.5
+G100000413618,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,51.5
+G100000413619,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,51.5
+G100000413620,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,22.5
+G100000413621,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,22.5
+G100000413622,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,22.5
+G100000413623,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,22.5
+G100000413624,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,false,abf-boundaries-v0.2.0,Najran power plant,L100000409131,oil/gas,operating,22.5
+G100000413625,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,46
+G100000413626,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,46
+G100000413627,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,40
+G100000413628,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,40
+G100000413629,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,40
+G100000413630,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,40
+G100000413631,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,22
+G100000413632,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,22
+G100000413633,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,53
+G100000413634,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,53
+G100000413635,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,53
+G100000413636,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,53
+G100000413637,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,53
+G100000413638,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,56
+G100000413639,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,49
+G100000413640,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,49
+G100000413641,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,46
+G100000413642,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Makkah 2 power plant,L100000409074,oil/gas,operating,18
+G100000413643,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Madinah PP2 power plant,L100000409077,oil/gas,operating,270
+G100000413644,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Juaymah power plant,L100000409078,oil/gas,operating,121
+G100000413645,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,23.3
+G100000413646,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,23.3
+G100000413647,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,23.3
+G100000413648,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,false,abf-boundaries-v0.2.0,Jizan Central power plant,L100000408003,oil/gas,operating,23.3
+G100000413649,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413650,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413651,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413652,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413653,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413654,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413655,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413656,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413657,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413658,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413659,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413660,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413661,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413662,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413663,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413664,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,51.7
+G100000413665,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413666,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413667,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413668,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413669,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413670,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413671,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413672,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413673,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413674,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413675,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah PP3 power plant,L100000409133,oil/gas,operating,44.6
+G100000413676,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,68
+G100000413677,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,68
+G100000413678,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,68
+G100000413679,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,68
+G100000413680,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hail-2 power plant,L100000409127,oil/gas,operating,70
+G100000413681,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,Green Duba ISCC power plant,L100000405545,oil/gas,operating,260
+G100000413682,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bisha Central power plant,L100000407997,oil/gas,operating,22.5
+G100000413683,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bisha Central power plant,L100000407997,oil/gas,operating,22.5
+G100000413684,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bisha Central power plant,L100000407997,oil/gas,operating,49.5
+G100000413685,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bisha Central power plant,L100000407997,oil/gas,operating,49.5
+G100000413686,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 3 Mobile power plant,L100000409079,oil/gas,operating,30
+G100000413687,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 3 Mobile power plant,L100000409079,oil/gas,operating,30
+G100000413688,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 3 Mobile power plant,L100000409079,oil/gas,operating,30
+G100000413689,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 3 Mobile power plant,L100000409079,oil/gas,operating,30
+G100000413690,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 3 Mobile power plant,L100000409079,oil/gas,operating,30
+G100000413691,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 3 Mobile power plant,L100000409079,oil/gas,operating,30
+G100000413692,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 2 Mobile power plant,L100000409080,oil/gas,operating,110
+G100000413693,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 1 Mobile power plant,L100000409081,oil/gas,operating,95
+G100000413694,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Altaaqa 4 Mobile power plant,L100000409082,oil/gas,operating,125
+G100000413695,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,AL-Sadiya Cement power plant,L100000409083,oil/gas,operating,55
+G100000413701,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Al-Jouf power plant,L100000409125,oil/gas,operating,168
+G100000413703,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Al Dammam power plant,L100000409084,oil/gas,operating,397.9
+G100000413704,energy_plants_gem_units,SAU,point,,SAU-1-11,,point,,,,false,abf-boundaries-v0.2.0,AL Baha power plant,L100000409126,oil/gas,operating,81.3
+G100000804602,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,false,abf-boundaries-v0.2.0,Ar Rass Solar PV,L100000804031,utility-scale solar,operating,700
+G100000804605,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,true,abf-boundaries-v0.2.0,Red Sea Solar Plant,L100000804033,utility-scale solar,operating,400
+G100000804617,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Madinah PV IPP solar farm,L100000804044,utility-scale solar,announced,50
+G100000804626,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh Solar PV,L100000804053,utility-scale solar,operating,400
+G100000804638,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Nadec Solar PV IPP,L100000804059,utility-scale solar,operating,30
+G100000804639,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Yanbu 4 Iwp solar farm,L100000804060,utility-scale solar,operating,11
+G100000804640,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Jubail 3B Solar PV Plant,L100000804061,utility-scale solar,operating,61
+G100000804646,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Saad Solar PV Plant,L100000804067,utility-scale solar,construction,300
+G100000804665,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Jeddah Solar Project,L100000804083,utility-scale solar,operating,300
+G100000804672,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Sakaka Solar,L100000804090,utility-scale solar,operating,300
+G100000804698,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,true,abf-boundaries-v0.2.0,Qurayyat PV IPP solar farm,L100000804106,utility-scale solar,pre_construction,200
+G100000804699,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Al-Faisaliah (Shuaibah) Solar,L100000804107,utility-scale solar,operating,600
+G100000804700,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Sudair Solar PV Project,L100000804108,utility-scale solar,operating,450
+G100000804712,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Mecca Solar,L100000804120,utility-scale solar,cancelled,100
+G100000804713,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Kacst Solar,L100000804121,utility-scale solar,operating,10
+G100000804720,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ras Al-Khafji Desalination Solar Facility,L100000804128,utility-scale solar,operating,20
+G100000804726,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Rafha PV IPP solar farm,L100000804134,utility-scale solar,construction,20
+G100000804737,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,true,abf-boundaries-v0.2.0,Al Jouf Solar Plant,L100000804144,utility-scale solar,cancelled,50
+G100000804738,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Rafha solar farm,L100000804145,utility-scale solar,cancelled,50
+G100000804739,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Layla Solar PV Plant,L100000804146,utility-scale solar,construction,80
+G100000804741,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Wadi Ad Dawasir Solar PV Plant,L100000804148,utility-scale solar,operating,119
+G100000811462,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,ISCC Duba 1 solar farm,L100000809132,utility-scale solar,operating,43
+G100000811463,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,false,abf-boundaries-v0.2.0,ISCC Waad Al Shamal CSP solar farm,L100000809133,utility-scale solar,operating,50
+G100000811464,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Layla Solar PV Plant,L100000804146,utility-scale solar,operating,10
+G100000811465,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,NEOM Green Hydrogen solar farm,L100000809134,utility-scale solar,construction,2200
+G100000811466,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Rabigh 2 solar farm,L100000809135,utility-scale solar,pre_construction,300
+G100000811467,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Shuaibah 2 solar farm,L100000809136,utility-scale solar,operating,2060
+G100000811468,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Sudair Solar PV Project,L100000804108,utility-scale solar,operating,1050
+G100000834785,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Al Henakiyah 1 solar farm,L100000830896,utility-scale solar,pre_construction,1100
+G100000834786,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Al Jubail-2 solar farm,L100000830897,utility-scale solar,pre_construction,110
+G100000834787,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,false,abf-boundaries-v0.2.0,Al Kahfah solar farm,L100000830898,utility-scale solar,operating,1425
+G100000834788,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,false,abf-boundaries-v0.2.0,Ar Rass Solar PV 2,L100000830899,utility-scale solar,operating,2000
+G100000834789,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Jubail 3A Solar PV Plant,L100000830900,utility-scale solar,operating,45.5
+G100000834790,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Saad Solar PV Plant 2,L100000830901,utility-scale solar,operating,1125
+G100000834791,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,true,abf-boundaries-v0.2.0,Tubarjal solar farm,L100000830902,utility-scale solar,pre_construction,400
+G100000908119,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,false,abf-boundaries-v0.2.0,Dumat Al Jandal wind farm,L100000905938,wind,operating,400
+G100000908150,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,true,abf-boundaries-v0.2.0,Plambeck Emirates wind farm,L100000905965,wind,cancelled,500
+G100000927447,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Al Ghat wind farm,L100000922022,wind,pre_construction,600
+G100000927650,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,false,abf-boundaries-v0.2.0,NEOM Green Hydrogen wind farm,L100000922170,wind,construction,1670
+G100000927747,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Waad Al Shamal wind farm,L100000922252,wind,pre_construction,500
+G100000927753,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Yanbu wind farm,L100000922258,wind,pre_construction,700
+G100001004865,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Rumah IPP Power Plant,L100001004179,oil/gas,construction,1800
+G100001004866,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Rumah IPP Power Plant,L100001004179,oil/gas,construction,1800
+G100001004868,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Nairyah IPP Power Plant,L100001004183,oil/gas,construction,1800
+G100001004869,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Nairyah IPP Power Plant,L100001004183,oil/gas,construction,1800
+G100001021005,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Al Masa'a solar farm,L100001018741,utility-scale solar,pre_construction,1000
+G100001021007,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Al Sadawi solar farm,L100001018745,utility-scale solar,pre_construction,2000
+G100001021032,energy_plants_gem_units,SAU,point,,SAU-1-05,,point,,,,true,abf-boundaries-v0.2.0,Al-Khushaybi Solar PV Park,L100001018767,utility-scale solar,construction,1500
+G100001021033,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Al-Muwaih Solar PV,L100001018768,utility-scale solar,construction,2000
+G100001021035,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Haden solar farm,L100001018770,utility-scale solar,construction,2000
+G100001021038,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Al Henakiyah 2 solar farm,L100001018773,utility-scale solar,pre_construction,400
+G100001021044,energy_plants_gem_units,SAU,point,,SAU-1-07,,point,,,,true,abf-boundaries-v0.2.0,Amaala solar farm,L100001018775,utility-scale solar,operating,250
+G100001030168,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh Region solar project II,L100001025487,utility-scale solar,operating,1.5
+G100001030171,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh Region solar project IV,L100001025490,utility-scale solar,operating,2
+G100001030174,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh Region solar project VI,L100001025493,utility-scale solar,operating,4.4
+G100001051245,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Dawadmi wind farm,L100001045519,wind,pre_construction,1500
+G100001051283,energy_plants_gem_units,SAU,point,,SAU-1-10,,point,,,,true,abf-boundaries-v0.2.0,Najran solar farm,L100001045544,utility-scale solar,pre_construction,1400
+G100001051284,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Ad Darb solar farm,L100001045545,utility-scale solar,pre_construction,600
+G100001051285,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,true,abf-boundaries-v0.2.0,Al Sufun solar farm,L100001045546,utility-scale solar,pre_construction,400
+G100001051286,energy_plants_gem_units,SAU,point,,SAU-1-09,,point,,,,true,abf-boundaries-v0.2.0,Samtah solar farm,L100001045547,utility-scale solar,pre_construction,600
+G100001051297,energy_plants_gem_units,SAU,point,,SAU-1-08,,point,,,,true,abf-boundaries-v0.2.0,Al Jouf Cement solar farm,L100001045559,utility-scale solar,pre_construction,22
+G100001053159,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Qurayyah CC power plant,L100000405553,oil/gas,construction,3010
+G100001053175,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,construction,1600
+G100001053176,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riyadh 12 power plant,L100000405557,oil/gas,construction,1800
+G100001053204,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh 16 power plant,L100001046890,oil/gas,pre_construction,3600
+G100001053206,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Al-Rais power plant,L100001046893,oil/gas,pre_construction,2400
+G100001053262,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Al-Tuwairqi  power plant,L100001046938,oil/gas,operating,78
+G100001053276,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,SASREF power plant,L100001046942,oil/gas,operating,45
+G100001053340,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Umm AlQura Cement power plant,L100001046998,oil/gas,operating,47
+G100001053356,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Saudi Cement power plant,L100001047011,oil/gas,operating,220.9
+G100001053404,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,SATORP power plant,L100001047046,oil/gas,construction,475
+G100001053453,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,true,abf-boundaries-v0.2.0,Tabarjal power plant,L100001047068,oil/gas,operating,103
+G100001054299,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ghazlan power plant,L100000405544,oil/gas,construction,2900
+G100001072529,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Bisha solar farm,L100001063143,utility-scale solar,pre_construction,3000
+G100001072534,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Humaji solar farm,L100001063148,utility-scale solar,pre_construction,3000
+G100001072535,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Khulis solar farm,L100001063151,utility-scale solar,pre_construction,2000
+G100001072537,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Afif 1 solar farm,L100001063152,utility-scale solar,pre_construction,2000
+G100001072540,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Afif 2 solar farm,L100001063155,utility-scale solar,pre_construction,2000
+G100001072613,energy_plants_gem_units,SAU,point,,SAU-1-12,,point,,,,true,abf-boundaries-v0.2.0,Tabarjal 2 PV solar plant,L100001063220,utility-scale solar,pre_construction,1400
+G100001072643,energy_plants_gem_units,SAU,point,,SAU-1-06,,point,,,,true,abf-boundaries-v0.2.0,Mawqaq PV solar plant,L100001063245,utility-scale solar,pre_construction,600
+G100001072644,energy_plants_gem_units,SAU,point,,SAU-1-14,,point,,,,true,abf-boundaries-v0.2.0,Tathleeth PV solar plant,L100001063246,utility-scale solar,pre_construction,600
+G100001072645,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,South Al Ula PV solar plant,L100001063247,utility-scale solar,pre_construction,500
+G100001072646,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Bilghah wind farm,L100001063248,wind,pre_construction,1300
+G100001072653,energy_plants_gem_units,SAU,point,,SAU-1-03,,point,,,,true,abf-boundaries-v0.2.0,Shagran wind farm,L100001063253,wind,pre_construction,900
+G100001072666,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Starah wind farm,L100001063265,wind,pre_construction,2000
+G100001072671,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Shaqra wind farm,L100001063269,wind,pre_construction,1000
+G100001093704,energy_plants_gem_units,SAU,point,,SAU-1-01,,point,,,,true,abf-boundaries-v0.2.0,Riyadh WtE power station,L100001083044,bioenergy,pre_construction,200
+G100001093705,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,true,abf-boundaries-v0.2.0,Jeddah WtE power station,L100001083045,bioenergy,announced,100
+G100001095007,energy_plants_gem_units,SAU,point,,SAU-1-02,,point,,,,false,abf-boundaries-v0.2.0,Rabigh 1 power plant,L100000408239,oil/gas,construction,1200
+G100001095317,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Duwaiheen nuclear power plant,L100001083991,nuclear,announced,1400
+G100001095318,energy_plants_gem_units,SAU,point,,SAU-1-04,,point,,,,true,abf-boundaries-v0.2.0,Duwaiheen nuclear power plant,L100001083991,nuclear,announced,1400

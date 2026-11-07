@@ -1,0 +1,99 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100306,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Arandis Erongo power station,L100000103084,coal,cancelled,125
+G100000100307,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Arandis Erongo power station,L100000103084,coal,cancelled,125
+G100000107616,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Okakarara power station,L100000103086,coal,cancelled,150
+G100000107617,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Okakarara power station,L100000103086,coal,cancelled,150
+G100000110548,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Van Eck power station,L100000103085,coal,operating,30
+G100000110549,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Van Eck power station,L100000103085,coal,operating,30
+G100000110550,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Van Eck power station,L100000103085,coal,operating,30
+G100000110551,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Van Eck power station,L100000103085,coal,operating,30
+G100000200002,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Otjikoto Biomass power station,L100000200002,bioenergy,construction,40
+G100000201693,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Otjiwarongo power station,L100000201407,bioenergy,pre_construction,40
+G100000407120,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Arandis Erongo power station,L100000103084,oil/gas,cancelled,250
+G100000407121,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kudu power station,L100000406771,oil/gas,pre_construction,475
+G100000411360,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Anixas II power station,L100000408173,oil/gas,operating,49.5
+G100000604241,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Baynes hydroelectric plant,L100000602571,hydropower,pre_construction,880
+G100000800027,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Arandis solar farm,L100000800024,utility-scale solar,pre_construction,81
+G100000800209,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Khan solar farm,L100000800167,utility-scale solar,operating,20
+G100000800252,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mariental solar farm,L100000800207,utility-scale solar,operating,46
+G100000800308,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Omburu solar farm,L100000800256,utility-scale solar,operating,20
+G100000800415,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Tses solar farm,L100000800341,utility-scale solar,cancelled,80
+G100000800427,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Windhoek solar farm,L100000800351,utility-scale solar,announced,25
+G100000814177,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mega Solar Initiative solar farm (Namibia),L100000811632,utility-scale solar,pre_construction,250
+G100000814178,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mega Solar Initiative solar farm (Namibia),L100000811632,utility-scale solar,pre_construction,1125
+G100000814179,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mega Solar Initiative solar farm (Namibia),L100000811632,utility-scale solar,pre_construction,1125
+G100000814180,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,SCDI Green Hydrogen solar farm,L100000811633,utility-scale solar,pre_construction,3500
+G100000814181,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Schonau solar farm,L100000811634,utility-scale solar,pre_construction,125
+G100000814182,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Swakopmund Green Hydrogen solar farm,L100000811635,utility-scale solar,pre_construction,85
+G100000831235,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Gerus solar farm,L100000827690,utility-scale solar,operating,19.3
+G100000831236,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Gerus solar farm,L100000827690,utility-scale solar,announced,100
+G100000831237,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Keetmanshoop solar project,L100000827691,utility-scale solar,operating,6
+G100000831238,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,NamPower CSP solar farm,L100000827692,utility-scale solar,announced,130
+G100000831239,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ohorongo solar project,L100000827693,utility-scale solar,operating,6.6
+G100000831240,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Otjikoto solar project,L100000827694,utility-scale solar,operating,5.8
+G100000831242,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Rosh Pinah solar farm,L100000827696,utility-scale solar,construction,100
+G100000831243,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Rosh Pinah solar project,L100000827697,utility-scale solar,operating,5.7
+G100000831244,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Trekkopje solar project,L100000827698,utility-scale solar,operating,5.8
+G100000831245,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Windhoek (UMDF) solar farm,L100000827699,utility-scale solar,pre_construction,60
+G100000900011,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Diaz wind farm,L100000900010,wind,construction,44
+G100000900012,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Diaz wind farm,L100000900010,wind,shelved,46
+G100000900051,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Lüderitz Wind Power Plant,L100000900042,wind,shelved,50
+G100000900096,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Walvis Bay wind farm,L100000900076,wind,cancelled,50
+G100000900112,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Tsau Khaeb National Park (Innosun Energy Holding) wind farm,L100000900088,wind,pre_construction,50
+G100000900137,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Rosh Pinah wind farm,L100000900104,wind,cancelled,40
+G100000900167,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Tsau Khaeb National Park (United Africa) wind farm,L100000900127,wind,pre_construction,40
+G100000920663,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,SCDI Green Hydrogen wind farm,L100000916625,wind,pre_construction,3500
+G100000927420,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Oranjemund wind farm,L100000922008,wind,pre_construction,34
+G100000927421,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Tsau Khaeb National Park (Nampower) wind farm,L100000900105,wind,pre_construction,40
+G100000927422,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Tsau Khaeb National Park (Nampower) wind farm,L100000900105,wind,pre_construction,50
+G100001018730,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Project Oshivela Green Iron solar farm,L100001016794,utility-scale solar,operating,25
+G100001018731,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Project Oshivela Green Iron solar farm,L100001016794,utility-scale solar,announced,180
+G100001018732,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Project Oshivela Green Iron wind farm,L100001016795,wind,announced,18
+G100001020592,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Keetmanshoop solar farm,L100001018450,utility-scale solar,pre_construction,60
+G100001020617,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Windhoek (O&L Nexentury) solar farm,L100001018470,utility-scale solar,construction,100
+G100001020643,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Daures Green Hydrogen Village solar farm,L100001018489,utility-scale solar,construction,3500
+G100001020644,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Daures Green Hydrogen Village wind farm,L100001018490,wind,construction,3500
+G100001020685,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Namibia Bundled Wind Project,L100001018515,wind,announced,6
+G100001020686,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Namibia Bundled Wind Project,L100001018515,wind,announced,4
+G100001020687,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Obib Namib wind project,L100001018516,wind,announced,300
+G100001020688,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Obib solar farm,L100001018519,utility-scale solar,announced,100
+G100001020690,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,NamPower solar farm,L100001018520,utility-scale solar,announced,120
+G100001020691,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,NamPower solar farm,L100001018520,utility-scale solar,announced,150
+G100001020693,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Ombepo wind farm,L100001018521,wind,operating,6
+G100001022353,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Otjikoto solar project,L100000827694,utility-scale solar,pre_construction,10
+G100001023887,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Otjozondjupa solar project III,L100001020918,utility-scale solar,operating,12.4
+G100001053994,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kupferberg power station,L100001047445,bioenergy,pre_construction,8.5
+G100001072783,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Omaheke solar project,L100001020912,utility-scale solar,operating,6
+G100001072784,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Oshikoto solar project II,L100001020921,utility-scale solar,operating,5.7
+G100001073423,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kokerboom (GreeNam) solar farm,L100001063870,utility-scale solar,operating,12.6
+G100001073429,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kokerboom (ANIREP) solar farm,L100001063873,utility-scale solar,announced,100
+G100001073503,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sores Gaib solar farm,L100001063921,utility-scale solar,construction,100
+G100001073511,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Otjozondjupa (Solarcentury) solar farm,L100001063925,utility-scale solar,construction,20
+G100001073517,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Maxwell solar farm,L100001063930,utility-scale solar,operating,10
+G100001074607,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sun Water solar project,L100001064821,utility-scale solar,pre_construction,1
+G100001074608,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Gobasol Energy solar project,L100001064822,utility-scale solar,pre_construction,4
+G100001074609,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,CGN Renewable Energy solar project,L100001064823,utility-scale solar,pre_construction,12
+G100001074610,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunchem Alpha Investments Namibia solar project,L100001064824,utility-scale solar,pre_construction,2
+G100001074611,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,ISPS Solar Namibia Operations solar project,L100001064825,utility-scale solar,construction,13
+G100001074612,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Southern Africa Renewable Energy solar project,L100001064826,utility-scale solar,pre_construction,15
+G100001074613,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Zikomo Power Energy solar project,L100001064827,utility-scale solar,pre_construction,12.1
+G100001074614,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Alensy Capital solar project,L100001064828,utility-scale solar,pre_construction,4
+G100001074615,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Welwitschia Property Holdings solar project,L100001064829,utility-scale solar,pre_construction,1.6
+G100001074616,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Premier Energy solar project,L100001064830,utility-scale solar,pre_construction,10
+G100001074617,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Cleanergy Solutions Namibia solar project,L100001064831,utility-scale solar,pre_construction,5
+G100001074618,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mirach Energy solar project,L100001064832,utility-scale solar,pre_construction,16.2
+G100001074619,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Rossing Uranium solar project,L100001064833,utility-scale solar,pre_construction,18
+G100001074620,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,GC Power Solutions solar project,L100001064834,utility-scale solar,pre_construction,8.6
+G100001074621,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Dunes Mall solar project,L100001064835,utility-scale solar,pre_construction,1.3
+G100001074622,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hardap solar project,L100001064836,utility-scale solar,operating,12.6
+G100001074623,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Aloe Investment solar project,L100001064837,utility-scale solar,operating,5.7
+G100001074624,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,OLC Arandis solar project,L100001064838,utility-scale solar,operating,3.8
+G100001074625,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Namib Poultry Industries solar project,L100001064839,utility-scale solar,operating,3.1
+G100001074626,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Grove Mall solar project,L100001064840,utility-scale solar,operating,2.8
+G100001074627,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,NovaNam solar project,L100001064841,utility-scale solar,operating,2.6
+G100001074628,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Wernhil Park solar project,L100001064842,utility-scale solar,operating,2.1
+G100001074629,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Maerua Mall solar project,L100001064843,utility-scale solar,operating,2
+G100001074630,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Namibia Breweries Limited solar project,L100001064844,utility-scale solar,operating,1.2
+G100001074631,energy_plants_gem_units,NAM,point,,,,,,,,false,abf-boundaries-v0.2.0,Namibia Breweries Limited solar project II,L100001064845,utility-scale solar,operating,1
+G100001074632,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,P Two Properties solar project,L100001064846,utility-scale solar,operating,1
+G100001090906,energy_plants_gem_units,NAM,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhero Molecules Walvis Bay green hydrogen solar farm,L100001080919,utility-scale solar,pre_construction,3000

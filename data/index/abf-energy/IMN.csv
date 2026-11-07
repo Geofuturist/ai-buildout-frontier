@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407290,energy_plants_gem_units,IMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pulrose power station,L100000406845,oil/gas,operating,87
+G100000825851,energy_plants_gem_units,IMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Billown solar farm (Isle of Man),L100000822785,utility-scale solar,announced,26
+G100000920061,energy_plants_gem_units,IMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mooir Vannin Offshore wind farm,L100000916255,wind,pre_construction,1400
+G100001008864,energy_plants_gem_units,IMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sulby And Druidale wind farm,L100001007654,wind,pre_construction,20
+G100001008865,energy_plants_gem_units,IMN,point,,,,,,,,true,abf-boundaries-v0.2.0,Cair Vie wind farm,L100001007655,wind,pre_construction,20
+G100001031019,energy_plants_gem_units,IMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pulrose power station,L100000406845,oil/gas,operating,48.5
+G100001031020,energy_plants_gem_units,IMN,point,,,,,,,,false,abf-boundaries-v0.2.0,Peel power station,L100001025907,oil/gas,operating,38.4

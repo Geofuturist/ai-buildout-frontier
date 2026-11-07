@@ -1,0 +1,84 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000400075,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,IRU Elektrijaam power station,L100000400075,oil/gas,operating,207
+G100000412942,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiisa ERPP power station,L100000408763,oil/gas,operating,251.1
+G100000601590,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Ida-Virumaa hydroelectric plant,L100000601572,hydropower,pre_construction,225
+G100000604979,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Zero Terrain hydroelectric plant,L100000604401,hydropower,pre_construction,550
+G100000830147,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Laaneranna solar farm,L100000826752,utility-scale solar,operating,70
+G100000830148,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Purtse solar farm,L100000826753,utility-scale solar,operating,32
+G100000910801,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Purtse wind farm,L100000908112,wind,operating,21
+G100000911602,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Esivere I wind farm,L100000908876,wind,operating,12
+G100000913556,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Tooma wind farm,L100000910666,wind,operating,16
+G100000914098,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Tamba-Mäli wind farm,L100000911153,wind,operating,18
+G100000914293,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Pakri wind farm,L100000911327,wind,operating,18
+G100000914774,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Baltic Blue wind farm,L100000911755,wind,cancelled,420
+G100000915008,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Viru-Nigula wind farm,L100000911964,wind,operating,21
+G100000915032,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Baltic Blue wind farm,L100000911755,wind,cancelled,700
+G100000915247,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Paldiski wind farm,L100000912170,wind,operating,22
+G100000915248,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Paldiski wind farm,L100000912170,wind,operating,22
+G100000915430,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Aseriaru wind farm,L100000912331,wind,operating,24
+G100000917509,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Aulepa wind farm,L100000914120,wind,operating,39
+G100000917684,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Udria wind farm,L100000914267,wind,operating,40
+G100000919116,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw10 wind farm,L100000915457,wind,cancelled,72
+G100000919254,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw1 wind farm,L100000915570,wind,cancelled,84
+G100000919255,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw5 wind farm,L100000915571,wind,cancelled,84
+G100000919427,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Aidu wind farm,L100000915719,wind,operating,102
+G100000919494,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw2 wind farm,L100000915770,wind,cancelled,114
+G100000919537,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw8 wind farm,L100000915804,wind,cancelled,120
+G100000919538,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw9 wind farm,L100000915805,wind,cancelled,120
+G100000919580,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw4 wind farm,L100000915844,wind,cancelled,132
+G100000919608,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw3 wind farm,L100000915865,wind,cancelled,144
+G100000919819,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw7 wind farm,L100000916047,wind,cancelled,252
+G100000919894,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Hiiumaa Onshore wind farm,L100000916114,wind,cancelled,310
+G100000919941,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Neugrund wind farm,L100000916153,wind,cancelled,380
+G100000920003,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunly Sw6 wind farm,L100000916205,wind,cancelled,492
+G100000920044,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Saare wind farm,L100000916241,wind,pre_construction,1400
+G100000920105,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Elwind wind farm,L100000916293,wind,pre_construction,500
+G100000920108,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf Of Riga wind farm,L100000916295,wind,pre_construction,1000
+G100000920121,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Tuuletraal wind farm,L100000916307,wind,cancelled,380
+G100000920146,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sorve 2 wind farm,L100000916328,wind,cancelled,1200
+G100000920147,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sorve wind farm,L100000916329,wind,cancelled,1200
+G100000920187,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Baltic Blue wind farm,L100000911755,wind,cancelled,196
+G100000920188,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Baltic Blue wind farm,L100000911755,wind,cancelled,350
+G100000923893,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Saarde wind farm,L100000919396,wind,operating,39
+G100000923894,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Saare Liivi wind farm,L100000919397,wind,pre_construction,1200
+G100000923895,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Saare Liivi wind farm,L100000919397,wind,cancelled,1200
+G100000923896,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Saare Liivi wind farm,L100000919397,wind,cancelled,1200
+G100000923897,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Saare Liivi wind farm,L100000919397,wind,cancelled,1200
+G100000923898,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Sopi-Tootsi wind farm,L100000919398,wind,operating,255
+G100000925123,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Elwind wind farm,L100000916293,wind,pre_construction,500
+G100001001619,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Sopi solar farm,L100001001212,utility-scale solar,operating,73.9
+G100001001621,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Rummu solar farm,L100001001217,utility-scale solar,operating,20
+G100001001627,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Respect Energy Offshore wind farm,L100001001223,wind,announced,820
+G100001003651,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Liivi 2 wind farm,L100001003185,wind,announced,1400
+G100001003659,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Liivi 1 wind farm,L100001003192,wind,announced,900
+G100001003671,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Saare 1 wind farm,L100001003204,wind,pre_construction,900
+G100001003685,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Saare 2.1 wind farm,L100001003216,wind,pre_construction,1560
+G100001003687,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Saare 2.2 wind farm,L100001003218,wind,pre_construction,840
+G100001003688,energy_plants_gem_units,EST,field,,,,,,,,true,abf-boundaries-v0.2.0,Saare 3 wind farm,L100001003219,wind,announced,149
+G100001030961,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Narva peaking power plant,L100001025886,oil/gas,pre_construction,100
+G100001030965,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Iru peaking power plant,L100001025887,oil/gas,announced,200
+G100001052952,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Pihlaka solar farm,L100001046750,utility-scale solar,operating,53
+G100001052953,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Estiko Raadi solar farm,L100001046751,utility-scale solar,construction,100
+G100001052954,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Risti solar farm,L100001046752,utility-scale solar,construction,244
+G100001052955,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Kirikmäe solar farm,L100001046753,utility-scale solar,operating,77
+G100001053083,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Püssi wind farm,L100001046823,wind,pre_construction,39
+G100001053084,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Maima wind farm,L100001046824,wind,pre_construction,31.1
+G100001053995,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Väo power station,L100001047446,bioenergy,operating,25
+G100001053996,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Väo power station,L100001047446,bioenergy,operating,21
+G100001053997,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Mustamäe power station,L100001047447,bioenergy,operating,10
+G100001053998,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Pärnu power station,L100001047448,bioenergy,operating,24
+G100001053999,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Tartu power station,L100001047449,bioenergy,operating,25
+G100001055160,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Fermi Energia nuclear power plant,L100001048147,nuclear,announced,300
+G100001055164,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Fermi Energia nuclear power plant,L100001048147,nuclear,announced,300
+G100001060196,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Tartu County solar project II,L100001052402,utility-scale solar,operating,2.2
+G100001060203,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Võru County solar project I,L100001052409,utility-scale solar,operating,1.3
+G100001060211,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Tartu County solar project III,L100001052417,utility-scale solar,operating,1.3
+G100001060235,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Harju County solar project IV,L100001052441,utility-scale solar,operating,1.5
+G100001060243,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Valga County solar project III,L100001052449,utility-scale solar,operating,1.9
+G100001060276,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Jõgeva County solar project IX,L100001052482,utility-scale solar,operating,5.1
+G100001060278,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Viljandi County solar project IX,L100001052484,utility-scale solar,operating,2.3
+G100001060286,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Harju County solar project X,L100001052492,utility-scale solar,operating,1.1
+G100001060293,energy_plants_gem_units,EST,point,,,,,,,,false,abf-boundaries-v0.2.0,Tallinn Harju County solar project II,L100001052499,utility-scale solar,operating,1.1
+G100001073442,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Raba solar farm,L100001063886,utility-scale solar,operating,45
+G100001073453,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Tuul wind farm,L100001063897,wind,announced,1000
+G100001093097,energy_plants_gem_units,EST,point,,,,,,,,true,abf-boundaries-v0.2.0,Ida-Viru County Pulp Mill power station,L100001082662,bioenergy,announced,91

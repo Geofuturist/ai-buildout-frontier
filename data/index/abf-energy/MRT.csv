@@ -1,0 +1,49 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000408005,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Banda Gas-to-Power Project,L100000406843,oil/gas,pre_construction,120
+G100000411158,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Somolec power plant,L100000408046,oil/gas,operating,180
+G100000412249,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Tasiast Mine power plant,L100000408667,oil/gas,operating,60
+G100000412250,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Nouadhibou Thermal power plant,L100000408665,oil/gas,operating,120
+G100000412251,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Guelbs II power plant,L100000408666,oil/gas,operating,60
+G100000800301,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Nouakchott solar farm,L100000800250,utility-scale solar,cancelled,30
+G100000800406,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Toujounine solar farm,L100000800334,utility-scale solar,operating,50
+G100000814157,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Tasiast mine solar farm,L100000811619,utility-scale solar,operating,34
+G100000831192,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Conjuncta and Infinity hybrid solar farm,L100000827660,utility-scale solar,announced,200
+G100000831193,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Conjuncta and Infinity hybrid solar farm,L100000827660,utility-scale solar,announced,4800
+G100000831194,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Project Nour hybrid solar farm,L100000827661,utility-scale solar,announced,1500
+G100000831195,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Seven 12MW solar farm,L100000827662,utility-scale solar,operating,1
+G100000831196,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Seven 12MW solar farm,L100000827662,utility-scale solar,operating,1
+G100000831197,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Seven 12MW solar farm,L100000827662,utility-scale solar,operating,1
+G100000831198,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Seven 12MW solar farm,L100000827662,utility-scale solar,operating,2
+G100000831199,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Seven 12MW solar farm,L100000827662,utility-scale solar,operating,2
+G100000831200,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Seven 12MW solar farm,L100000827662,utility-scale solar,operating,2
+G100000831201,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Seven 12MW solar farm,L100000827662,utility-scale solar,operating,3
+G100000900018,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Boulenouar wind farm,L100000900016,wind,operating,100
+G100000900163,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Nouakchott wind farm,L100000900125,wind,operating,30
+G100000927410,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Conjuncta and Infinity hybrid wind farm,L100000922000,wind,announced,200
+G100000927411,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Conjuncta and Infinity hybrid wind farm,L100000922000,wind,announced,4900
+G100000927412,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Project Nour hybrid wind farm,L100000922001,wind,announced,1500
+G100001018733,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,AMAN Green Hydrogen solar farm,L100001016796,utility-scale solar,pre_construction,12000
+G100001018734,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,AMAN Green Hydrogen wind farm,L100001016797,wind,pre_construction,18000
+G100001020551,energy_plants_gem_units,MRT,point,,,,,,,,false,abf-boundaries-v0.2.0,Project Nour hybrid wind farm,L100000922001,wind,announced,3500
+G100001020552,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Project Nour hybrid solar farm,L100000827661,utility-scale solar,announced,3500
+G100001020559,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Megaton Moon Hybrid Solar project,L100001018417,utility-scale solar,announced,600
+G100001020560,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Megaton Moon Hybrid Wind project,L100001018418,wind,announced,29400
+G100001021091,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Megaton Moon Hybrid Solar project,L100001018417,utility-scale solar,announced,29400
+G100001051236,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Megaton Moon Hybrid Wind project,L100001018418,wind,pre_construction,600
+G100001055031,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Madkour Group power station,L100001048086,oil/gas,announced,200
+G100001073289,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Ewa Green solar farm,L100001063753,utility-scale solar,pre_construction,160
+G100001073308,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Ewa Green Boulenouar wind farm,L100001063770,wind,pre_construction,60
+G100001073368,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,NAYRAH wind farm,L100001063821,wind,pre_construction,50
+G100001073373,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,NAYRAH wind farm,L100001063821,wind,pre_construction,450
+G100001073397,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Port of Nouakchott solar farm,L100001063842,utility-scale solar,pre_construction,276
+G100001073403,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Hynfra Nouakchott wind farm,L100001063849,wind,pre_construction,276
+G100001090887,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritania (Iwa Green Energy) hybrid solar farm,L100001080905,utility-scale solar,announced,39
+G100001090888,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritania solar farm,L100001080906,utility-scale solar,announced,160
+G100001090889,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritania (Iwa Green Energy) hybrid wind farm,L100001080907,wind,announced,30
+G100001090890,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritania wind farm,L100001080908,wind,announced,60
+G100001090891,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,NAYRAH green hydrogen wind farm,L100001080909,wind,announced,50
+G100001090892,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,NAYRAH green hydrogen wind farm,L100001080909,wind,announced,450
+G100001090893,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,NAYRAH green hydrogen solar farm,L100001080910,utility-scale solar,announced,50
+G100001090894,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,NAYRAH green hydrogen solar farm,L100001080910,utility-scale solar,announced,450
+G100001093290,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,Nouakchott power station,L100001082788,oil/gas,construction,74
+G100001093291,energy_plants_gem_units,MRT,point,,,,,,,,true,abf-boundaries-v0.2.0,N’Diago power station,L100001082789,oil/gas,announced,230

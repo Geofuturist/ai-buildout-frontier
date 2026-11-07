@@ -1,0 +1,335 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100158,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Amercoeur power station,L100000100087,coal,retired,125
+G100000100159,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Amercoeur power station,L100000100087,coal,retired,127
+G100000100278,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Antwerp Power Station,L100000100093,coal,cancelled,1100
+G100000100362,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Awirs power station,L100000100090,coal,retired,300
+G100000102984,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Genk-Langerlo power station,L100000100092,coal,retired,280
+G100000102985,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Genk-Langerlo power station,L100000100092,coal,retired,280
+G100000106980,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mol power station,L100000100084,coal,retired,124
+G100000106981,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Mol power station,L100000100084,coal,retired,131
+G100000106984,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Monceau-Sur-Sambre power station,L100000100089,coal,retired,50
+G100000106985,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Monceau-Sur-Sambre power station,L100000100089,coal,retired,116
+G100000106986,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Monceau-Sur-Sambre power station,L100000100089,coal,retired,50
+G100000108657,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ruien power station,L100000100086,coal,retired,130
+G100000108658,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ruien power station,L100000100086,coal,retired,130
+G100000108659,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ruien power station,L100000100086,coal,retired,290
+G100000113447,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Awirs power station,L100000100090,coal,retired,125
+G100000113448,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Farciennes power station,L100000100088,coal,retired,92
+G100000113449,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Farciennes power station,L100000100088,coal,retired,110
+G100000114630,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Rodenhuize power station,L100000104712,coal,retired,133
+G100000114631,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Schelle power station,L100000104713,coal,retired,136
+G100000114632,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Schelle power station,L100000104713,coal,retired,136
+G100000200329,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,SLECO Waste-to-Energy power station,L100000200294,bioenergy,operating,40
+G100000200348,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Uvelia power station,L100000200312,bioenergy,operating,30
+G100000201354,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Burgo Ardennes power station,L100000201140,bioenergy,operating,42
+G100000201355,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Stora Langerbrugge power station,L100000201141,bioenergy,operating,45
+G100000202519,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Awirs power station,L100000100090,bioenergy,retired,80
+G100000202520,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Rodenhuize power station,L100000104712,bioenergy,retired,205
+G100000400016,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Aalst Syral power station,L100000400016,oil/gas,operating,48
+G100000400017,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Amercoeur power station,L100000100087,oil/gas,operating,451
+G100000400018,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Angleur power station,L100000400018,oil/gas,operating,25
+G100000400019,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Angleur power station,L100000400018,oil/gas,operating,25
+G100000400020,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Angleur power station,L100000400018,oil/gas,operating,64
+G100000400021,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Angleur power station,L100000400018,oil/gas,operating,64
+G100000400023,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Beveren Ineos Phenolchemie power station,L100000400023,oil/gas,retired,23.8
+G100000400024,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Drogenbos power station,L100000400024,oil/gas,operating,460
+G100000400025,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ham (Gent) power station,L100000400025,oil/gas,operating,58
+G100000400026,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ham (Gent) power station,L100000400025,oil/gas,operating,58
+G100000400027,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Herdersbrug power station,L100000400027,oil/gas,operating,465
+G100000400028,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Inesco power station,L100000400028,oil/gas,operating,138
+G100000400029,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Jemeppe-sur-Sambre power station,L100000400029,oil/gas,operating,106
+G100000400030,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lillo Degussa power station,L100000400030,oil/gas,operating,42
+G100000400031,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Marcinelle Energie (Carsid) power station,L100000400031,oil/gas,operating,413
+G100000400032,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ringvaart power station,L100000400032,oil/gas,operating,385
+G100000400033,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Saint-Ghislain power station,L100000400033,oil/gas,operating,350
+G100000400034,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Scheldelaan Exxonmobil power station,L100000400034,oil/gas,operating,140
+G100000400035,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Seraing power station,L100000400035,oil/gas,operating,150
+G100000400036,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,T-power Beringen power station,L100000400036,oil/gas,operating,422
+G100000400037,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Vilvoorde power station,L100000400037,oil/gas,mothballed,255
+G100000400038,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Zandvliet power station,L100000400038,oil/gas,operating,386.2
+G100000400039,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Zeebrugge 2 Fluxys power station,L100000400039,oil/gas,retired,40
+G100000400040,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Zwijndrecht Lanxess power station,L100000400040,oil/gas,operating,58
+G100000406271,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Seraing power station,L100000400035,oil/gas,construction,870
+G100000406272,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ham (Gent) power station,L100000400025,oil/gas,operating,43
+G100000406273,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Vilvoorde power station,L100000400037,oil/gas,shelved,870
+G100000406274,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Monsanto Oud-Lillo power station,L100000406368,oil/gas,operating,43
+G100000406275,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Covestro Oorderen power station,L100000406369,oil/gas,operating,43
+G100000406276,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Sappi Lanaken power station,L100000406370,oil/gas,operating,43
+G100000406277,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Wilmarsdonk Total power station,L100000406371,oil/gas,operating,43
+G100000406278,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Wilmarsdonk Total power station,L100000406371,oil/gas,operating,43
+G100000406279,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Wilmarsdonk Total power station,L100000406371,oil/gas,operating,43
+G100000406280,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Izegem power station,L100000406372,oil/gas,operating,20
+G100000406282,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Amercoeur power station,L100000100087,oil/gas,cancelled,320
+G100000406335,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,BASF Antwerp power station,L100000406399,oil/gas,cancelled,850
+G100000409988,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Zelzate 2 Knippegroen power station,L100000407649,oil/gas,operating,315
+G100000409989,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Manage Seneffe power station,L100000407650,oil/gas,cancelled,870
+G100000409990,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Dils Energie power station,L100000407651,oil/gas,cancelled,920
+G100000409991,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,T-power Beringen power station,L100000400036,oil/gas,pre_construction,900
+G100000410395,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ringvaart power station,L100000400032,oil/gas,cancelled,235
+G100000410396,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lillo Degussa power station,L100000400030,oil/gas,operating,43
+G100000500194,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tihange nuclear power plant,L100000500099,nuclear,retired,1055
+G100000500197,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Doel nuclear power plant,L100000500101,nuclear,retired,1056
+G100000500205,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tihange nuclear power plant,L100000500099,nuclear,operating,1089
+G100000500234,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Doel nuclear power plant,L100000500101,nuclear,operating,1090
+G100000500257,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tihange nuclear power plant,L100000500099,nuclear,operating,1009
+G100000500499,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Doel nuclear power plant,L100000500101,nuclear,operating,454
+G100000500500,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Doel nuclear power plant,L100000500101,nuclear,operating,454
+G100000500616,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,BR3 nuclear power plant,L100000500264,nuclear,retired,12
+G100000600149,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Coo I hydroelectric plant,L100000600149,hydropower,operating,474
+G100000600150,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Coo II hydroelectric plant,L100000600150,hydropower,operating,690
+G100000600151,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,La Plate Taille hydroelectric plant,L100000600151,hydropower,operating,144
+G100000604444,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,ILand hydroelectric plant,L100000604238,hydropower,shelved,550
+G100000806686,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kristal solar farm,L100000805810,utility-scale solar,operating,100
+G100000807016,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Arcelormittal solar farm,L100000806096,utility-scale solar,operating,10
+G100000807510,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kateon Natie Rooftop solar farm,L100000806545,utility-scale solar,operating,38.4
+G100000807630,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Pairi Daiza Zoo solar farm,L100000806659,utility-scale solar,operating,20
+G100000910376,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Amel wind farm,L100000907709,wind,operating,10
+G100000910454,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Chimay wind farm,L100000907783,wind,operating,10
+G100000910487,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Dour-Quiévrain-Hensies wind farm,L100000907815,wind,operating,40
+G100000910696,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lummen wind farm,L100000908011,wind,operating,10
+G100000910826,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Salazine wind farm,L100000908137,wind,operating,10
+G100000910833,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Sankt-Vith wind farm,L100000908143,wind,operating,10
+G100000910865,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Sivry Rance wind farm,L100000908174,wind,operating,10
+G100000910922,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Warisoulx wind farm,L100000908229,wind,operating,10
+G100000910975,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Meerhout wind farm,L100000908281,wind,operating,10
+G100000910983,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Rebaix wind farm,L100000908288,wind,operating,10
+G100000910989,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Rieme-Noord wind farm,L100000908294,wind,operating,10
+G100000911019,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tinlot wind farm,L100000908324,wind,operating,10
+G100000911021,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Bilzen-Riemst wind farm,L100000908326,wind,operating,10
+G100000911063,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Fernelmont 2 wind farm,L100000908366,wind,operating,11
+G100000911128,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Mettet wind farm,L100000908428,wind,operating,11
+G100000911279,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Geel West wind farm,L100000908574,wind,operating,11
+G100000911299,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Bruges Pathoekeweg wind farm,L100000908594,wind,operating,12
+G100000911316,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Diest-Bekkevoort wind farm,L100000908610,wind,operating,12
+G100000911324,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Gouvy wind farm,L100000908618,wind,operating,12
+G100000911326,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Halen-Diest wind farm,L100000908620,wind,operating,12
+G100000911327,energy_plants_gem_units,BEL,point,LUX,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Harel-Walter-Eeschpelt wind farm,L100000908621,wind,pre_construction,12
+G100000911436,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerpen Haven Linkeroever wind farm,L100000908722,wind,operating,12
+G100000911442,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Assenede wind farm,L100000908727,wind,operating,12
+G100000911471,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Beaumont wind farm,L100000908752,wind,operating,12
+G100000911518,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Bullingen wind farm,L100000908796,wind,operating,12
+G100000911568,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Dinant Yvoir wind farm,L100000908846,wind,operating,12
+G100000911690,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hoogstraten wind farm,L100000908961,wind,retired,12
+G100000912112,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Zandvliet Basf wind farm,L100000909364,wind,operating,12
+G100000912122,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Perwez wind farm,L100000909374,wind,operating,12
+G100000912123,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Eeklo wind farm,L100000909375,wind,operating,12
+G100000912222,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Brugge 3 wind farm,L100000909467,wind,operating,13
+G100000912226,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gingelom (Aspiravi) wind farm,L100000909471,wind,pre_construction,13
+G100000912248,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Modave wind farm,L100000909492,wind,operating,13
+G100000912251,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerpen Haven Rechteroever wind farm,L100000909495,wind,operating,13
+G100000912452,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hoogstraten - Wuustwezel wind farm,L100000909674,wind,operating,13
+G100000912472,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Chimay wind farm,L100000907783,wind,operating,14
+G100000912511,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Chastre wind farm,L100000909730,wind,cancelled,14
+G100000912538,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Lommel (EDF) wind farm,L100000909756,wind,operating,14
+G100000912545,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Olen Umicore wind farm,L100000909763,wind,operating,14
+G100000912546,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Olen-Geel wind farm,L100000909764,wind,operating,14
+G100000912602,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Bièvre wind farm,L100000909816,wind,operating,14
+G100000912651,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Feluy wind farm,L100000909859,wind,operating,14
+G100000912664,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Gingelom (Engie) wind farm,L100000909872,wind,operating,14
+G100000912910,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tessenderlo wind farm,L100000910091,wind,operating,14
+G100000912982,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerpen Haven Rechteroever wind farm,L100000909495,wind,operating,15
+G100000913019,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Ciney (ENECO) wind farm,L100000910190,wind,operating,15
+G100000913216,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Sainte Ode wind farm,L100000910367,wind,operating,18
+G100000913356,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Berloz wind farm,L100000910492,wind,operating,16
+G100000913358,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Beveren wind farm,L100000910494,wind,operating,16
+G100000913363,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Boussu wind farm,L100000910498,wind,shelved,11
+G100000913458,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lommel (Aspiravi) wind farm,L100000910583,wind,operating,16
+G100000913510,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Pont-À-Celles (Eneco) wind farm,L100000910627,wind,operating,16
+G100000913580,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Arendonk Oud-Turnhout wind farm,L100000910690,wind,operating,16
+G100000913586,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Floreffe wind farm,L100000910695,wind,operating,16
+G100000913594,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Maldegem wind farm,L100000910703,wind,operating,16
+G100000913850,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent Haven – Arcelor Mittal wind farm,L100000910933,wind,operating,17
+G100000913855,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Zelzate 3 wind farm,L100000910938,wind,operating,17
+G100000913871,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Plateau De Bourcy wind farm,L100000910953,wind,operating,18
+G100000913883,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tournai wind farm,L100000910964,wind,operating,18
+G100000913916,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Boneffe wind farm,L100000910993,wind,operating,18
+G100000913991,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Glabais wind farm,L100000911057,wind,cancelled,18
+G100000913993,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Glons wind farm,L100000911059,wind,cancelled,18
+G100000914002,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Greensky Lincent wind farm,L100000911067,wind,operating,18
+G100000914159,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Quévy-Mons wind farm,L100000911207,wind,operating,18
+G100000914216,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Tongeren-Vreren wind farm,L100000911256,wind,shelved,18
+G100000914256,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Zeebruges Cobelfret wind farm,L100000911294,wind,operating,18
+G100000914385,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Couvin wind farm,L100000911410,wind,pre_construction,30
+G100000914386,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Gesves Ohey wind farm,L100000911411,wind,operating,19
+G100000914388,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kallo KN wind farm,L100000911413,wind,operating,19
+G100000914391,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Lierneux wind farm,L100000911416,wind,operating,19
+G100000914763,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Ciney (EDF) wind farm,L100000911745,wind,operating,20
+G100000914800,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Leuze-En-Hainaut wind farm,L100000911778,wind,operating,21
+G100000914924,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Liernu wind farm,L100000911892,wind,construction,21
+G100000914994,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tourpes-Thumaide wind farm,L100000911950,wind,operating,21
+G100000915092,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Cerfontaine wind farm,L100000912037,wind,operating,22
+G100000915121,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Hannut wind farm,L100000912062,wind,operating,22
+G100000915151,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Marbais wind farm,L100000912088,wind,operating,22
+G100000915224,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Noorderkempen wind farm,L100000912149,wind,operating,22
+G100000915270,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerpen Haven Linkeroever wind farm,L100000908722,wind,operating,23
+G100000915411,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Bassenge wind farm,L100000912315,wind,operating,24
+G100000915580,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Merbes-Le-Chateau Lobbes wind farm,L100000912468,wind,shelved,24
+G100000915746,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Froidchapelle wind farm,L100000912615,wind,operating,25
+G100000916138,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerpen Haven Rechteroever wind farm,L100000909495,wind,operating,27
+G100000916298,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent Kluizendok wind farm,L100000913084,wind,operating,28
+G100000916314,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Chastrès wind farm,L100000913099,wind,pre_construction,15
+G100000916461,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,C-Power Offshore Wind Project,L100000913226,wind,operating,30
+G100000917920,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,ICO Terminal wind farm,L100000914463,wind,operating,44
+G100000917965,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Villers 4 wind farm,L100000914503,wind,operating,45
+G100000918259,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Antwerpen Haven Linkeroever wind farm,L100000908722,wind,operating,48
+G100000918677,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Zeebrugge Offshore wind farm,L100000915088,wind,cancelled,50
+G100000918678,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Zeebrugge Offshore wind farm,L100000915088,wind,cancelled,50
+G100000918919,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Merbes wind farm,L100000915289,wind,cancelled,60
+G100000919219,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Estinnes wind farm,L100000915543,wind,operating,81
+G100000919477,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,C-Power Offshore Wind Project,L100000913226,wind,operating,111
+G100000919680,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Belwind Offshore Wind Project,L100000915931,wind,operating,165
+G100000919685,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Nobelwind Offshore Wind Project,L100000915935,wind,operating,165
+G100000919720,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,C-Power Offshore Wind Project,L100000913226,wind,operating,184
+G100000919768,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Northwind wind farm,L100000916005,wind,operating,216
+G100000919772,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,The Northwester 2 Offshore Wind Project,L100000916008,wind,operating,219
+G100000919789,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Seamade Mermaid wind farm,L100000916024,wind,operating,235
+G100000919818,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Seamade Seastar wind farm,L100000916046,wind,operating,252
+G100000919893,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Rentel wind farm,L100000916113,wind,operating,309
+G100000919934,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Norther Offshore Wind Project,L100000916147,wind,operating,370
+G100000920127,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Fairybank wind farm,L100000916312,wind,shelved,1400
+G100000920128,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Noordhinder Noord wind farm,L100000916313,wind,pre_construction,700
+G100000920129,energy_plants_gem_units,BEL,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Noordhinder Zuid wind farm,L100000916314,wind,pre_construction,1400
+G100000923784,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Assesse wind farm,L100000919293,wind,pre_construction,16
+G100000923785,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Bande wind farm,L100000919294,wind,cancelled,54
+G100000923786,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Bernissart wind farm,L100000919295,wind,cancelled,12
+G100000923787,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Bra wind farm,L100000919296,wind,pre_construction,12
+G100000923788,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Braine-le-Comte wind farm,L100000919297,wind,pre_construction,12
+G100000923789,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Bütgenbach wind farm,L100000919298,wind,cancelled,24
+G100000923790,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Clavier I wind farm,L100000919299,wind,pre_construction,21
+G100000923791,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Courrière wind farm,L100000919300,wind,operating,11
+G100000923792,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Denée wind farm,L100000919301,wind,cancelled,29
+G100000923793,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Dhuy wind farm,L100000919302,wind,operating,14
+G100000923794,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Dinant-Houyet wind farm,L100000919303,wind,pre_construction,12
+G100000923795,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Fexhe-Slins Est wind farm,L100000919304,wind,pre_construction,25
+G100000923796,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Frameries-Mons wind farm,L100000919305,wind,cancelled,22
+G100000923797,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Gembloux wind farm,L100000919306,wind,pre_construction,20
+G100000923798,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Gembloux-Sombreffe wind farm,L100000919307,wind,shelved,25
+G100000923799,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Grune wind farm,L100000919308,wind,cancelled,30
+G100000923800,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Habay I wind farm,L100000919309,wind,pre_construction,40
+G100000923801,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Hammont-Achel wind farm,L100000919310,wind,pre_construction,14
+G100000923802,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Hélécine wind farm,L100000919311,wind,pre_construction,35
+G100000923803,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Komen-Waasten wind farm,L100000919312,wind,cancelled,18
+G100000923804,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Lanaken wind farm,L100000919313,wind,shelved,19
+G100000923805,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Léglise I wind farm,L100000919314,wind,pre_construction,12
+G100000923806,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Léglise II wind farm,L100000919315,wind,pre_construction,28
+G100000923807,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Libramont-Chevigny wind farm,L100000919316,wind,pre_construction,18
+G100000923808,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lommel Kristalpark wind farm,L100000919317,wind,operating,22
+G100000923809,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Lommel Kristalpark wind farm,L100000919317,wind,operating,22
+G100000923810,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Mabompré wind farm,L100000919318,wind,pre_construction,14
+G100000923811,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Mabompré wind farm,L100000919318,wind,pre_construction,21
+G100000923812,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Malmedy wind farm,L100000919319,wind,pre_construction,20
+G100000923813,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Manhay wind farm,L100000919320,wind,pre_construction,25
+G100000923814,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Meerhout (Wind4Flanders) wind farm,L100000919321,wind,pre_construction,26
+G100000923815,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Mons-Estinnes wind farm,L100000919322,wind,pre_construction,42
+G100000923816,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Mourcourt wind farm,L100000919323,wind,pre_construction,11
+G100000923817,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Nivelles wind farm,L100000919324,wind,operating,14
+G100000923818,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Onhaye wind farm,L100000919325,wind,pre_construction,13
+G100000923819,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Perwez wind farm,L100000909374,wind,cancelled,29
+G100000923820,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Pont-À-Celles (Engie) wind farm,L100000919326,wind,operating,24
+G100000923821,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Quévy-Mons wind farm,L100000911207,wind,operating,25
+G100000923822,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Quévy wind farm,L100000919327,wind,pre_construction,36
+G100000923823,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Retie wind farm,L100000919328,wind,operating,12
+G100000923824,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Rodenhuize-Ghent wind farm,L100000919329,wind,operating,12
+G100000923825,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Rumillies wind farm,L100000919330,wind,pre_construction,13
+G100000923826,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Saint Ode (Aspiravi) wind farm,L100000919331,wind,operating,18
+G100000923827,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Sint-Gillis-Waas wind farm,L100000919332,wind,pre_construction,17
+G100000923828,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Tilly wind farm (Belgium),L100000919333,wind,pre_construction,25
+G100000923829,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Vaux-sur-Sûre wind farm,L100000919334,wind,pre_construction,4
+G100000923830,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Vaux-sur-Sûre wind farm,L100000919334,wind,pre_construction,25
+G100000923831,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Ventori wind farm,L100000919335,wind,pre_construction,75
+G100000923832,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Villers-la-Ville wind farm,L100000919336,wind,pre_construction,24
+G100000923833,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Vorselaar-Lille wind farm,L100000919337,wind,cancelled,27
+G100000923834,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Westerlo wind farm,L100000919338,wind,operating,10
+G100000923835,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Wondelgem wind farm,L100000919339,wind,operating,10
+G100000923836,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Xhoût si-Ploût wind farm,L100000919340,wind,pre_construction,21
+G100001000098,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Geel power station,L100001000034,oil/gas,retired,43
+G100001000099,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Clabecq Steel Works power station,L100001000035,oil/gas,mothballed,40
+G100001000100,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Drogenbos power station,L100000400024,oil/gas,mothballed,112
+G100001000101,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Beerse power station,L100001000036,oil/gas,operating,33
+G100001001170,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Ostend-Bruges Airport solar farm,L100001000816,utility-scale solar,construction,37
+G100001001171,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Obourg Floating solar farm,L100001000817,utility-scale solar,construction,31
+G100001001597,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Momignies wind farm,L100001001196,wind,pre_construction,18
+G100001001598,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Estaimpuis wind farm,L100001001197,wind,operating,11
+G100001001599,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Vielsam wind farm,L100001001198,wind,pre_construction,56
+G100001001600,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Bastogne wind farm,L100001001199,wind,pre_construction,50
+G100001001602,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Fleurus wind farm,L100001001201,wind,pre_construction,36
+G100001003675,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Habay II wind farm,L100001003208,wind,pre_construction,30
+G100001003677,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Hoogstraten wind farm,L100000908961,wind,operating,21
+G100001003678,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Malmedy wind farm,L100000919319,wind,pre_construction,35
+G100001003680,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Clavier II wind farm,L100001003211,wind,pre_construction,33
+G100001003682,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Pelt wind farm,L100001003213,wind,operating,12
+G100001003683,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Dinez-Fontenaille wind farm,L100001003214,wind,pre_construction,12
+G100001003713,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tournai wind farm,L100000910964,wind,operating,14
+G100001003715,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tournai-Antoing-Brunehaut wind farm,L100001003242,wind,operating,11
+G100001003716,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Tournai-Antoing-Brunehaut wind farm,L100001003242,wind,operating,13
+G100001003717,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Gaurain-Ramecroix-Fontenoy wind farm,L100001003244,wind,operating,11
+G100001003719,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,De Creke wind farm,L100001003245,wind,pre_construction,22.5
+G100001003720,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Middelkerke-Gistel wind farm,L100001003246,wind,pre_construction,81
+G100001003721,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Aalter Kanaal Gent-Oostende wind farm,L100001003248,wind,pre_construction,37.5
+G100001003723,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Oudenburg-Gistel wind farm,L100001003249,wind,pre_construction,27
+G100001003724,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Walhain wind farm,L100001003250,wind,pre_construction,30
+G100001003725,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Landen wind farm,L100001003251,wind,pre_construction,15
+G100001003726,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Nevele-Hansbeke wind farm,L100001003252,wind,pre_construction,25
+G100001003727,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Veurne-De Panne wind farm,L100001003253,wind,pre_construction,76.5
+G100001003728,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Veurne-Nieuwpoort-Koksijde wind farm,L100001003254,wind,pre_construction,83
+G100001020389,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Awirs power station,L100000100090,oil/gas,operating,875
+G100001023550,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Pairi Daiza Zoo solar farm,L100000806659,utility-scale solar,operating,20
+G100001030246,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Seraing power station,L100000400035,oil/gas,operating,150
+G100001030247,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Seraing power station,L100000400035,oil/gas,retired,170
+G100001030248,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Vilvoorde power station,L100000400037,oil/gas,retired,105
+G100001030346,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Beveren Ineos Phenolchemie power station,L100000400023,oil/gas,operating,23.8
+G100001048911,energy_plants_gem_units,BEL,point,FRA,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Arfr Mont-St-Martin PV solar project,L100001043406,utility-scale solar,operating,1.2
+G100001052315,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Profondeville solar farm,L100001046317,utility-scale solar,pre_construction,11
+G100001052316,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Turnhout (Storm) solar farm,L100001046318,utility-scale solar,pre_construction,6
+G100001052317,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Jabbeke solar farm,L100001046319,utility-scale solar,pre_construction,13.3
+G100001052318,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Zedelgem solar farm,L100001046320,utility-scale solar,pre_construction,10.6
+G100001052319,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Sint-Gillis-Waas solar farm,L100001046321,utility-scale solar,pre_construction,5.2
+G100001052331,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,NIRAS-Belgoprocess solar farm,L100001046329,utility-scale solar,construction,2.2
+G100001052332,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,INEOS Oligomers solar farm,L100001046330,utility-scale solar,operating,3.8
+G100001052333,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,INEOS Oligomers solar farm,L100001046330,utility-scale solar,announced,17
+G100001052334,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,North Sea Three (NS3) Offshore solar farm,L100001046331,utility-scale solar,operating,3
+G100001052335,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Jemeppe solar farm,L100001046332,utility-scale solar,operating,60
+G100001052499,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Gesves Ohey wind farm,L100000911411,wind,announced,24
+G100001052501,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Tongeren-Oost wind farm,L100001046464,wind,construction,14
+G100001052503,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Laplaigne wind farm,L100001046466,wind,announced,25
+G100001052504,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Fauvillers wind farm,L100001046467,wind,operating,10
+G100001052505,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Melle-Wetteren (De Poortmolens) wind farm,L100001046468,wind,pre_construction,12
+G100001052506,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Neufchâteau wind farm,L100001046469,wind,operating,11
+G100001052508,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Dour-Quiévrain-Hensies wind farm,L100000907815,wind,pre_construction,86
+G100001052509,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Sprimont wind farm,L100001046471,wind,operating,18
+G100001052511,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Biesmérée wind farm,L100001046472,wind,pre_construction,38
+G100001052512,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Guélenne-Nord wind farm,L100001046473,wind,pre_construction,18
+G100001052513,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Lokeren wind farm,L100001046474,wind,pre_construction,15
+G100001052514,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Morelmont wind farm,L100001046475,wind,pre_construction,25
+G100001052515,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Riethof wind farm,L100001046476,wind,announced,40.5
+G100001052516,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Rouveroy wind farm,L100001046477,wind,pre_construction,37
+G100001052517,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Wachtebeke wind farm,L100001046478,wind,operating,11
+G100001052518,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Awans-Crisnée wind farm,L100001046479,wind,announced,56
+G100001052519,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Gouvy wind farm,L100000908618,wind,announced,42
+G100001052520,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Bertogne Longchamps wind farm,L100001046480,wind,pre_construction,16
+G100001052521,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Sint-Lievens-Houtem wind farm,L100001046481,wind,pre_construction,13
+G100001052522,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Berlare wind farm,L100001046482,wind,pre_construction,22
+G100001052523,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Ieper wind farm,L100001046483,wind,pre_construction,12
+G100001052524,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Ieper Noorderring wind farm,L100001046484,wind,pre_construction,13
+G100001052532,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Hannut wind farm,L100000912062,wind,operating,18
+G100001052533,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Juprelle-Ans-Awans wind farm,L100001046490,wind,announced,63
+G100001052534,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Thommen-Crombach wind farm,L100001046491,wind,announced,28
+G100001052535,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Wanlin-Houyet wind farm,L100001046492,wind,pre_construction,17.5
+G100001052536,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Clavier Bois-et-Borsu wind farm,L100001046493,wind,pre_construction,14
+G100001052537,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,true,abf-boundaries-v0.2.0,Lille-Kasterlee wind farm,L100001046494,wind,pre_construction,30
+G100001052897,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,A&S Energie power station,L100001046714,bioenergy,operating,25
+G100001052900,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,A&U Energie power station,L100001046716,bioenergy,operating,20
+G100001052969,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,true,abf-boundaries-v0.2.0,Vielsalm power station,L100001046761,bioenergy,announced,100
+G100001052973,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,BioWanze power station,L100001046763,bioenergy,operating,26
+G100001052974,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Thumaide power station,L100001046764,bioenergy,operating,18.9
+G100001052975,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Thumaide power station,L100001046764,bioenergy,operating,18.5
+G100001083900,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,La Louvière solar project I,L100001074114,utility-scale solar,operating,1.6
+G100001083916,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project IV,L100001074130,utility-scale solar,operating,1.7
+G100001083923,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Bruges Brugge solar project I,L100001074137,utility-scale solar,operating,1.8
+G100001083929,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project IV,L100001074143,utility-scale solar,operating,1
+G100001083935,energy_plants_gem_units,BEL,point,,BEL-1-WAL,,point,,,,false,abf-boundaries-v0.2.0,Namur solar project II,L100001074149,utility-scale solar,operating,1.2
+G100001083963,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Kortrijk solar project VIII,L100001074177,utility-scale solar,operating,1.3
+G100001083995,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project VII,L100001074209,utility-scale solar,operating,3.8
+G100001084003,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Leuven solar project VIII,L100001074217,utility-scale solar,operating,1.1
+G100001084030,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Gent solar project X,L100001074244,utility-scale solar,operating,1.6
+G100001093070,energy_plants_gem_units,BEL,point,,BEL-1-VLG,,point,,,,false,abf-boundaries-v0.2.0,Bio Energy Base power station,L100001082646,bioenergy,operating,20

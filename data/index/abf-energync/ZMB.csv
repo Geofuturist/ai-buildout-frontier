@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001074779,energy_plants_gem_tzsam_units,ZMB,point,,ZMB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Copperbelt Province solar project,L100001064993,utility-scale solar,operating,4.6
+G100001074780,energy_plants_gem_tzsam_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Southern Province solar project,L100001064994,utility-scale solar,operating,2.3

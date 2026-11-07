@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-2ac71994f095,dc_atlas_points,BGD,field,,,,,,,,true,abf-boundaries-v0.2.0,BDCCL IV Tier National Data Center Gazipur,Operating / Construction,other,lt10,
+ATL-52aebce3c2d7,dc_atlas_points,BGD,field,,,,,,,,true,abf-boundaries-v0.2.0,Felicity IDC Gazipur,Operating / Construction,colocation,lt10,
+ATL-94ace1499e77,dc_atlas_points,BGD,field,,,,,,,,true,abf-boundaries-v0.2.0,DevoTech Technology Park Dhaka (Zenlayer DAC2),Operating / Construction,enterprise_it,,
+ATL-a25a61452c89,dc_atlas_points,BGD,field,,,,,,,,true,abf-boundaries-v0.2.0,Intercloud Kaliakoir Cloud Data Center,Operating / Construction,colocation,lt10,
+ATL-d910a594f815,dc_atlas_points,BGD,field,,,,,,,,true,abf-boundaries-v0.2.0,BTCL Mogbazar Data Center (Zenlayer DAC3),Operating / Construction,telecom,,

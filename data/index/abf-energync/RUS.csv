@@ -1,0 +1,13 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001008222,energy_plants_gem_tzsam_units,RUS,point,EST,RUS-1-LEN,,point,,,,false,abf-boundaries-v0.2.0,Narva Ida-Viru Maakond solar project II,L100001007073,utility-scale solar,operating,5.1
+G100001009883,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-AST,,point,,,,false,abf-boundaries-v0.2.0,Enotaevka solar project,L100001008513,utility-scale solar,operating,15.5
+G100001009884,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-AST,,point,,,,false,abf-boundaries-v0.2.0,Promstroimaterialy solar project,L100001008514,utility-scale solar,operating,15
+G100001009887,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-BA,,point,,,,false,abf-boundaries-v0.2.0,Isyangulovo solar project,L100001008517,utility-scale solar,operating,9.4
+G100001009889,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-BU,,point,,,,false,abf-boundaries-v0.2.0,Bichur solar project,L100001008519,utility-scale solar,operating,10
+G100001009890,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-BU,,point,,,,false,abf-boundaries-v0.2.0,Kabanskaya solar project,L100001008520,utility-scale solar,operating,15
+G100001009891,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-BU,,point,,,,false,abf-boundaries-v0.2.0,Khyagt solar project,L100001008521,utility-scale solar,operating,15
+G100001009892,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Abakan solar project,L100001008522,utility-scale solar,operating,5
+G100001009893,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-ORE,,point,,,,false,abf-boundaries-v0.2.0,Grachevskaya solar project,L100001008523,utility-scale solar,operating,16.1
+G100001009895,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-ORE,,point,,,,false,abf-boundaries-v0.2.0,Grigorievka solar project,L100001008525,utility-scale solar,operating,10
+G100001009900,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-ORE,,point,,,,false,abf-boundaries-v0.2.0,Perevolotskaya solar project,L100001008530,utility-scale solar,operating,5
+G100001009901,energy_plants_gem_tzsam_units,RUS,point,,RUS-1-ORE,,point,,,,false,abf-boundaries-v0.2.0,Pleshanovskaya solar project,L100001008531,utility-scale solar,operating,10

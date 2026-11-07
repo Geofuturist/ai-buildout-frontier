@@ -1,0 +1,173 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000201551,energy_plants_gem_units,ECU,point,,ECU-1-F,,point,,,,false,abf-boundaries-v0.2.0,Ingenio La Troncal power station,L100000201303,bioenergy,operating,30
+G100000201552,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Ingenio San Carlos power station,L100000201304,bioenergy,operating,43
+G100000406674,energy_plants_gem_units,ECU,point,,ECU-1-O,,point,,,,false,abf-boundaries-v0.2.0,Termogas Machala 1 power station,L100000406591,oil/gas,announced,110
+G100000406675,energy_plants_gem_units,ECU,point,,ECU-1-O,,point,,,,false,abf-boundaries-v0.2.0,Termogas Machala 1 power station,L100000406591,oil/gas,announced,77
+G100000406676,energy_plants_gem_units,ECU,point,,ECU-1-O,,point,,,,false,abf-boundaries-v0.2.0,Termogas Machala 1 power station,L100000406591,oil/gas,operating,65
+G100000406677,energy_plants_gem_units,ECU,point,,ECU-1-O,,point,,,,false,abf-boundaries-v0.2.0,Termogas Machala 1 power station,L100000406591,oil/gas,operating,65
+G100000406678,energy_plants_gem_units,ECU,point,,ECU-1-SE,,point,,,,true,abf-boundaries-v0.2.0,Bloque CCGN (Ecuador) power station,L100000406592,oil/gas,announced,400
+G100000412041,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,true,abf-boundaries-v0.2.0,Victoria II power station,L100000408643,oil/gas,mothballed,115
+G100000412042,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Trinitaria power station,L100000408633,oil/gas,operating,133
+G100000412046,energy_plants_gem_units,ECU,point,,ECU-1-SE,,point,,,,false,abf-boundaries-v0.2.0,Santa Elena II power station,L100000408630,oil/gas,operating,90.1
+G100000412047,energy_plants_gem_units,ECU,point,,ECU-1-R,,point,,,,false,abf-boundaries-v0.2.0,Quevedo II Thermoelectric Power Plant,L100000408631,oil/gas,operating,47.6
+G100000412048,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Guangopolo II power station,L100000408632,oil/gas,operating,52.4
+G100000412049,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Gonzalo Zevallos power station,L100000408634,oil/gas,operating,73
+G100000412050,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Gonzalo Zevallos power station,L100000408634,oil/gas,operating,73
+G100000412051,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,false,abf-boundaries-v0.2.0,Esmeraldas II Thermoelectric Power Plant,L100000408635,oil/gas,operating,100.2
+G100000412052,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,false,abf-boundaries-v0.2.0,Esmeraldas I Thermoelectric Power Plant,L100000408636,oil/gas,operating,132.5
+G100000412053,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Enrique Garcia thermal power station,L100000408637,oil/gas,operating,102
+G100000412054,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Electroquil Thermal power station,L100000408625,oil/gas,retired,45
+G100000412055,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Electroquil Thermal power station,L100000408625,oil/gas,retired,45
+G100000412056,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Electroquil Thermal power station,L100000408625,oil/gas,retired,45
+G100000412057,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Electroquil Thermal power station,L100000408625,oil/gas,retired,45
+G100000412058,energy_plants_gem_units,ECU,point,,ECU-1-M,,point,,,,false,abf-boundaries-v0.2.0,Central Jaramijó power station,L100000408626,oil/gas,operating,149.3
+G100000413137,energy_plants_gem_units,ECU,point,,ECU-1-U,,point,,,,true,abf-boundaries-v0.2.0,TPP Andes Petro power station,L100000408915,oil/gas,operating,75.8
+G100000413138,energy_plants_gem_units,ECU,point,,ECU-1-D,,point,,,,false,abf-boundaries-v0.2.0,Eden Yuturi power station,L100000408916,oil/gas,operating,119.6
+G100000601506,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,false,abf-boundaries-v0.2.0,Abanico hydroelectric plant (Ecuador),L100000601488,hydropower,operating,38
+G100000601507,energy_plants_gem_units,ECU,point,,ECU-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Abitagua hydroelectric plant,L100000601489,hydropower,pre_construction,165
+G100000601508,energy_plants_gem_units,ECU,point,,ECU-1-T,,point,,,,false,abf-boundaries-v0.2.0,Agoyàn hydroelectric plant,L100000601490,hydropower,operating,160
+G100000601509,energy_plants_gem_units,ECU,point,,ECU-1-H,,point,,,,false,abf-boundaries-v0.2.0,Alao hydroelectric plant,L100000601491,hydropower,operating,11
+G100000601510,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,true,abf-boundaries-v0.2.0,Alto Tambo hydroelectric plant,L100000601492,hydropower,announced,60
+G100000601511,energy_plants_gem_units,ECU,point,,ECU-1-X,,point,,,,false,abf-boundaries-v0.2.0,Angamarca-Sinde hydroelectric plant,L100000601493,hydropower,pre_construction,30
+G100000601512,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Arenal hydroelectric plant (Ecuador),L100000601494,hydropower,cancelled,40
+G100000601513,energy_plants_gem_units,ECU,point,,ECU-1-R,,point,,,,false,abf-boundaries-v0.2.0,Baba hydroelectric plant,L100000601495,hydropower,operating,42
+G100000601514,energy_plants_gem_units,ECU,point,,ECU-1-X,,point,,,,false,abf-boundaries-v0.2.0,Calope hydroelectric plant,L100000601496,hydropower,operating,17
+G100000601515,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,false,abf-boundaries-v0.2.0,Cardenillo hydroelectric plant,L100000601497,hydropower,pre_construction,595
+G100000601516,energy_plants_gem_units,ECU,point,,ECU-1-H,,point,,,,false,abf-boundaries-v0.2.0,Chanchan hydroelectric plant,L100000601498,hydropower,shelved,10
+G100000601517,energy_plants_gem_units,ECU,point,,ECU-1-B,,point,,,,true,abf-boundaries-v0.2.0,Chaumala hydroelectric plant,L100000601499,hydropower,shelved,40
+G100000601518,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Chespí-Palma Real hydroelectric plant,L100000601500,hydropower,pre_construction,468
+G100000601519,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,false,abf-boundaries-v0.2.0,Chinambi hydroelectric plant,L100000601501,hydropower,pre_construction,10
+G100000601521,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Chontal hydroelectric plant,L100000601503,hydropower,pre_construction,194
+G100000601523,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,false,abf-boundaries-v0.2.0,Coca Codo Sinclair hydroelectric plant,L100000601505,hydropower,operating,1500
+G100000601525,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Cumbayá hydroelectric plant,L100000601507,hydropower,operating,40
+G100000601526,energy_plants_gem_units,ECU,point,,ECU-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Delsitanisagua hydroelectric plant,L100000601508,hydropower,operating,180
+G100000601527,energy_plants_gem_units,ECU,point,,ECU-1-U,,point,,,,false,abf-boundaries-v0.2.0,Due hydroelectric plant,L100000601509,hydropower,operating,64
+G100000601528,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,El Salto hydroelectric plant,L100000601510,hydropower,pre_construction,30
+G100000601529,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,false,abf-boundaries-v0.2.0,Escudillas hydroelectric plant,L100000601511,hydropower,shelved,12
+G100000601530,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Guangopolo hydroelectric plant,L100000601512,hydropower,operating,21
+G100000601531,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,false,abf-boundaries-v0.2.0,Hidronormandía hydroelectric plant,L100000601513,hydropower,operating,50
+G100000601532,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,false,abf-boundaries-v0.2.0,Hidrosanbartolo hydroelectric plant,L100000601514,hydropower,operating,50
+G100000601533,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,false,abf-boundaries-v0.2.0,Infiernillos hydroelectric plant,L100000601515,hydropower,pre_construction,20
+G100000601535,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Ipnegal hydroelectric plant,L100000601517,hydropower,operating,10
+G100000601537,energy_plants_gem_units,ECU,point,,ECU-1-F,,point,,,,false,abf-boundaries-v0.2.0,Juval Pulpito hydroelectric plant,L100000601519,hydropower,pre_construction,27
+G100000601538,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,false,abf-boundaries-v0.2.0,La Merced De Jondachi hydroelectric plant,L100000601520,hydropower,pre_construction,19
+G100000601539,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Manduriacu hydroelectric plant,L100000601521,hydropower,operating,63
+G100000601540,energy_plants_gem_units,ECU,point,,ECU-1-M,,point,,,,false,abf-boundaries-v0.2.0,Marcel Laniado hydroelectric plant,L100000601522,hydropower,operating,213
+G100000601541,energy_plants_gem_units,ECU,point,,ECU-1-F,,point,,,,false,abf-boundaries-v0.2.0,Mazàr hydroelectric plant,L100000601523,hydropower,operating,170
+G100000601542,energy_plants_gem_units,ECU,point,,ECU-1-A,,point,,,,false,abf-boundaries-v0.2.0,Minas San Francisco hydroelectric plant,L100000601524,hydropower,operating,276
+G100000601546,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Nayón hydroelectric plant,L100000601528,hydropower,operating,30
+G100000601547,energy_plants_gem_units,ECU,point,,ECU-1-F,,point,,,,false,abf-boundaries-v0.2.0,Ocaña I hydroelectric plant,L100000601529,hydropower,operating,26
+G100000601548,energy_plants_gem_units,ECU,point,,ECU-1-F,,point,,,,true,abf-boundaries-v0.2.0,Ocaña II hydroelectric plant,L100000601530,hydropower,pre_construction,29
+G100000601549,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,false,abf-boundaries-v0.2.0,Pamplona hydroelectric plant,L100000601531,hydropower,announced,41
+G100000601552,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,false,abf-boundaries-v0.2.0,Paute Molino hydroelectric plant,L100000601534,hydropower,operating,1075
+G100000601553,energy_plants_gem_units,ECU,point,,ECU-1-X,,point,,,,false,abf-boundaries-v0.2.0,Pilaton-Sarapullo hydroelectric plant,L100000601535,hydropower,operating,48
+G100000601554,energy_plants_gem_units,ECU,point,,ECU-1-T,,point,,,,false,abf-boundaries-v0.2.0,Pucará hydroelectric plant (Ecuador),L100000601536,hydropower,operating,73
+G100000601555,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,false,abf-boundaries-v0.2.0,Pusuno hydroelectric plant,L100000601537,hydropower,operating,38
+G100000601556,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,false,abf-boundaries-v0.2.0,Quijos hydroelectric plant,L100000601538,hydropower,shelved,51
+G100000601557,energy_plants_gem_units,ECU,point,,ECU-1-SD,,point,,,,false,abf-boundaries-v0.2.0,Rayo I hydroelectric plant,L100000601539,hydropower,pre_construction,10
+G100000601558,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Recuperadora hydroelectric plant,L100000601540,hydropower,operating,15
+G100000601559,energy_plants_gem_units,ECU,point,,ECU-1-T,,point,,,,false,abf-boundaries-v0.2.0,Rio Verde Chico hydroelectric plant,L100000601541,hydropower,operating,10
+G100000601560,energy_plants_gem_units,ECU,point,,ECU-1-T,,point,,,,false,abf-boundaries-v0.2.0,San Francisco hydroelectric plant (Ecuador),L100000601542,hydropower,operating,230
+G100000601561,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,true,abf-boundaries-v0.2.0,Santa Cruz hydroelectric plant,L100000601543,hydropower,shelved,129
+G100000601562,energy_plants_gem_units,ECU,point,,ECU-1-A,,point,,,,false,abf-boundaries-v0.2.0,Saucay hydroelectric plant,L100000601544,hydropower,operating,24
+G100000601563,energy_plants_gem_units,ECU,point,,ECU-1-A,,point,,,,false,abf-boundaries-v0.2.0,Saymirín hydroelectric plant,L100000601545,hydropower,operating,16
+G100000601564,energy_plants_gem_units,ECU,point,,ECU-1-R,,point,,,,false,abf-boundaries-v0.2.0,Sibimbe hydroelectric plant,L100000601546,hydropower,operating,15
+G100000601565,energy_plants_gem_units,ECU,point,,ECU-1-X,,point,,,,false,abf-boundaries-v0.2.0,Sigchos hydroelectric plant,L100000601547,hydropower,operating,19
+G100000601566,energy_plants_gem_units,ECU,point,,ECU-1-A,,point,,,,false,abf-boundaries-v0.2.0,Sopladora hydroelectric plant,L100000601548,hydropower,operating,487
+G100000601568,energy_plants_gem_units,ECU,point,,ECU-1-SD,,point,,,,false,abf-boundaries-v0.2.0,Toachi-Alluriquin hydroelectric plant,L100000601550,hydropower,operating,204
+G100000601570,energy_plants_gem_units,ECU,point,,ECU-1-T,,point,,,,false,abf-boundaries-v0.2.0,Topo hydroelectric plant,L100000601552,hydropower,operating,29
+G100000601571,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,true,abf-boundaries-v0.2.0,Tortugo-Tigre hydroelectric plant,L100000601553,hydropower,shelved,281
+G100000601574,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,false,abf-boundaries-v0.2.0,Victoria hydroelectric plant,L100000601556,hydropower,operating,10
+G100000601576,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,true,abf-boundaries-v0.2.0,Zamora G10 hydroelectric plant,L100000601558,hydropower,announced,1955
+G100000601577,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,true,abf-boundaries-v0.2.0,Zamora G8 hydroelectric plant,L100000601559,hydropower,pre_construction,3600
+G100000601578,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,true,abf-boundaries-v0.2.0,Zamora G9 hydroelectric plant,L100000601560,hydropower,announced,1670
+G100000604307,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Chirapi hydroelectric plant,L100000601502,hydropower,cancelled,110
+G100000604315,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Cinto hydroelectric plant,L100000601504,hydropower,pre_construction,46
+G100000604319,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Corazón II hydroelectric plant,L100000601506,hydropower,shelved,18
+G100000604450,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Intag hydroelectric plant,L100000601516,hydropower,shelved,15
+G100000604474,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,true,abf-boundaries-v0.2.0,Jondachi-Sardinas hydroelectric plant,L100000601518,hydropower,pre_construction,24
+G100000604625,energy_plants_gem_units,ECU,point,,ECU-1-C,,point,,,,false,abf-boundaries-v0.2.0,Mira hydroelectric plant,L100000601525,hydropower,pre_construction,41
+G100000604626,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Miravalle hydroelectric plant,L100000601526,hydropower,pre_construction,48
+G100000604627,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,true,abf-boundaries-v0.2.0,Misahaullí hydroelectric plant,L100000601527,hydropower,pre_construction,120
+G100000604712,energy_plants_gem_units,ECU,point,,ECU-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Pastaza 1 Simón Bolívar hydroelectric plant,L100000601532,hydropower,pre_construction,40
+G100000604713,energy_plants_gem_units,ECU,point,,ECU-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Pastaza 2 Kumay hydroelectric plant,L100000601533,hydropower,pre_construction,40
+G100000604884,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,true,abf-boundaries-v0.2.0,Tiwintza hydroelectric plant,L100000601549,hydropower,pre_construction,150
+G100000604885,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,true,abf-boundaries-v0.2.0,Tobar Donoso hydroelectric plant,L100000601551,hydropower,pre_construction,80
+G100000604905,energy_plants_gem_units,ECU,point,,ECU-1-S,,point,,,,true,abf-boundaries-v0.2.0,Upano hydroelectric plant,L100000601554,hydropower,pre_construction,20
+G100000604964,energy_plants_gem_units,ECU,point,,ECU-1-A,,point,,,,false,abf-boundaries-v0.2.0,Yanuncay hydroelectric plant,L100000601557,hydropower,announced,15
+G100000700049,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Chachimbiro geothermal power plant,L100000700031,geothermal,pre_construction,5
+G100000808037,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,true,abf-boundaries-v0.2.0,Lagarto solar farm,L100000806999,utility-scale solar,cancelled,25
+G100000808038,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,true,abf-boundaries-v0.2.0,Tonchigue solar farm,L100000807000,utility-scale solar,cancelled,25
+G100000808127,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Mitad Del Mundo solar farm,L100000807036,utility-scale solar,cancelled,25
+G100000808273,energy_plants_gem_units,ECU,point,,ECU-1-O,,point,,,,true,abf-boundaries-v0.2.0,Imbabura-Pimán solar farm,L100000807122,utility-scale solar,cancelled,25
+G100000808274,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Rancho Solar Catamayo,L100000807123,utility-scale solar,cancelled,20
+G100000808454,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Gpsa PV Solar Project,L100000807193,utility-scale solar,cancelled,20
+G100000808455,energy_plants_gem_units,ECU,point,,ECU-1-M,,point,,,,true,abf-boundaries-v0.2.0,Los Bajos solar farm,L100000807194,utility-scale solar,cancelled,30
+G100000808622,energy_plants_gem_units,ECU,point,,ECU-1-SE,,point,,,,true,abf-boundaries-v0.2.0,Vaiana solar farm,L100000807269,utility-scale solar,cancelled,20
+G100000808647,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Calderón solar farm,L100000807292,utility-scale solar,cancelled,54
+G100000808966,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,true,abf-boundaries-v0.2.0,Los Bajos Solar Project,L100000807445,utility-scale solar,cancelled,30
+G100000809026,energy_plants_gem_units,ECU,point,,ECU-1-M,,point,,,,true,abf-boundaries-v0.2.0,El Aromo Solar Project,L100000807494,utility-scale solar,pre_construction,200
+G100000809115,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Rancho Solar Villa Cayambe solar farm,L100000807525,utility-scale solar,cancelled,20
+G100000809291,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Condor Solar PV Plant,L100000807618,utility-scale solar,cancelled,30
+G100000809292,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Solar Connection PV Plant,L100000807619,utility-scale solar,cancelled,20
+G100000809312,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,true,abf-boundaries-v0.2.0,Chongón solar farm,L100000807638,utility-scale solar,cancelled,80
+G100000809313,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Chota-Pimán solar farm,L100000807639,utility-scale solar,cancelled,20
+G100000809314,energy_plants_gem_units,ECU,point,,ECU-1-R,,point,,,,true,abf-boundaries-v0.2.0,Enersol solar farm (Ecuador),L100000807640,utility-scale solar,cancelled,50
+G100000809315,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Illapa solar farm,L100000807641,utility-scale solar,cancelled,50
+G100000809316,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Marifer solar farm,L100000807642,utility-scale solar,cancelled,50
+G100000809317,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Milenio solar farm,L100000807643,utility-scale solar,cancelled,20
+G100000809318,energy_plants_gem_units,ECU,point,,ECU-1-SE,,point,,,,true,abf-boundaries-v0.2.0,Santa Elena solar farm,L100000807644,utility-scale solar,cancelled,25
+G100000809319,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,true,abf-boundaries-v0.2.0,Shyri solar farm,L100000807645,utility-scale solar,cancelled,50
+G100000810458,energy_plants_gem_units,ECU,point,,ECU-1-W,,point,,,,false,abf-boundaries-v0.2.0,Conolophus solar project,L100000808287,utility-scale solar,pre_construction,14.8
+G100000838012,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Ambi solar farm,L100000832453,utility-scale solar,pre_construction,60
+G100000838013,energy_plants_gem_units,ECU,point,,ECU-1-N,,point,,,,true,abf-boundaries-v0.2.0,Aroma Santo solar farm,L100000832454,utility-scale solar,shelved,17.6
+G100000838014,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Imbabura solar farm,L100000832455,utility-scale solar,pre_construction,120
+G100000838015,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Intiyana solar farm,L100000832456,utility-scale solar,pre_construction,60
+G100000838016,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Ñañapura solar farm,L100000832457,utility-scale solar,pre_construction,60
+G100000838017,energy_plants_gem_units,ECU,point,,ECU-1-SE,,point,,,,false,abf-boundaries-v0.2.0,Tugaduaja solar farm,L100000832458,utility-scale solar,shelved,30
+G100000838018,energy_plants_gem_units,ECU,point,,ECU-1-SE,,point,,,,false,abf-boundaries-v0.2.0,Tugaduaja solar farm,L100000832458,utility-scale solar,shelved,30
+G100000838019,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Urcuqui solar farm,L100000832459,utility-scale solar,pre_construction,60
+G100000906322,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,false,abf-boundaries-v0.2.0,Villonaco wind farm,L100000905055,wind,operating,16
+G100000906323,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Villonaco wind farm,L100000905055,wind,announced,80
+G100000906324,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Villonaco wind farm,L100000905055,wind,pre_construction,110
+G100000906730,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,false,abf-boundaries-v0.2.0,Minas De Huascachaca wind farm,L100000905169,wind,operating,50
+G100000920588,energy_plants_gem_units,ECU,point,,ECU-1-C,,point,,,,false,abf-boundaries-v0.2.0,Garcia Moreno wind farm,L100000916567,wind,shelved,33
+G100000920589,energy_plants_gem_units,ECU,point,,ECU-1-A,,point,,,,true,abf-boundaries-v0.2.0,Pimo wind farm,L100000916568,wind,announced,150
+G100000920590,energy_plants_gem_units,ECU,point,,ECU-1-C,,point,,,,false,abf-boundaries-v0.2.0,Salinas wind farm,L100000916569,wind,shelved,25
+G100000927197,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,false,abf-boundaries-v0.2.0,Cachipamba wind farm,L100000921892,wind,shelved,80
+G100000927198,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Cochapamba wind farm,L100000921893,wind,shelved,100
+G100000927199,energy_plants_gem_units,ECU,point,,ECU-1-B,,point,,,,false,abf-boundaries-v0.2.0,El Arenal wind farm,L100000921894,wind,shelved,57
+G100000927200,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,false,abf-boundaries-v0.2.0,Huacacocha wind farm,L100000921895,wind,shelved,62
+G100000927201,energy_plants_gem_units,ECU,point,,ECU-1-X,,point,,,,false,abf-boundaries-v0.2.0,Maca Grande wind farm,L100000921896,wind,shelved,100
+G100000927202,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Posorja wind farm,L100000921897,wind,shelved,100
+G100000927203,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Yanahurco wind farm,L100000921898,wind,pre_construction,44.8
+G100001028029,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Karpowership (Ecuador) Emre Bey,L100001023538,oil/gas,operating,101.4
+G100001028032,energy_plants_gem_units,ECU,point,,ECU-1-R,,point,,,,true,abf-boundaries-v0.2.0,Quevedo IC power station,L100001023539,oil/gas,construction,50
+G100001028033,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,true,abf-boundaries-v0.2.0,El Salitral power station,L100001023540,oil/gas,construction,60
+G100001028034,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,true,abf-boundaries-v0.2.0,Esmeraldas IC power station,L100001023541,oil/gas,construction,91.2
+G100001028051,energy_plants_gem_units,ECU,point,,ECU-1-E,,point,,,,false,abf-boundaries-v0.2.0,Esmeraldas IV power station,L100001023542,oil/gas,announced,150
+G100001028052,energy_plants_gem_units,ECU,point,,ECU-1-M,,point,,,,false,abf-boundaries-v0.2.0,San Juan de Manta power station,L100001023543,oil/gas,shelved,100
+G100001028053,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Pascuales power station,L100001023544,oil/gas,announced,50
+G100001028054,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Durán power station,L100001023545,oil/gas,announced,120
+G100001028055,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Esclusas II power station,L100001023546,oil/gas,operating,119.7
+G100001028297,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,false,abf-boundaries-v0.2.0,Gonzanamá solar farm,L100001023647,utility-scale solar,operating,2
+G100001028298,energy_plants_gem_units,ECU,point,,ECU-1-O,,point,,,,false,abf-boundaries-v0.2.0,San Antonio (Ecuador) solar farm,L100001023648,utility-scale solar,operating,3
+G100001028299,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,false,abf-boundaries-v0.2.0,Salinas y Tren de Salinas solar farm,L100001023649,utility-scale solar,operating,3
+G100001028300,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,false,abf-boundaries-v0.2.0,Paragachi solar farm,L100001023650,utility-scale solar,operating,1
+G100001028301,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Sansau-Wildtecsa solar farm,L100001023651,utility-scale solar,operating,1
+G100001028302,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,false,abf-boundaries-v0.2.0,Loja Energy solar farm,L100001023652,utility-scale solar,operating,1.2
+G100001051584,energy_plants_gem_units,ECU,point,,ECU-1-L,,point,,,,true,abf-boundaries-v0.2.0,Matala solar farm (Ecuador),L100001045765,utility-scale solar,announced,100
+G100001051585,energy_plants_gem_units,ECU,point,,ECU-1-A,,point,,,,true,abf-boundaries-v0.2.0,Pimo wind farm,L100000916568,wind,announced,50
+G100001051588,energy_plants_gem_units,ECU,point,,ECU-1-F,,point,,,,true,abf-boundaries-v0.2.0,Mazar Floating Photovoltaic solar farm,L100001045766,utility-scale solar,pre_construction,201
+G100001052871,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Esclusas II power station,L100001023546,oil/gas,operating,101.64
+G100001053090,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Valdez Sugar power station,L100001046828,bioenergy,operating,27.5
+G100001053091,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Valdez Sugar power station,L100001046828,bioenergy,operating,6
+G100001053098,energy_plants_gem_units,ECU,point,,ECU-1-G,,point,,,,false,abf-boundaries-v0.2.0,Ingenio San Carlos power station,L100000201304,bioenergy,operating,35
+G100001057250,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Tocachi solar farm,L100001049622,utility-scale solar,pre_construction,45
+G100001057256,energy_plants_gem_units,ECU,point,,ECU-1-P,,point,,,,false,abf-boundaries-v0.2.0,Malchinguí solar farm,L100001049632,utility-scale solar,pre_construction,105.9
+G100001057261,energy_plants_gem_units,ECU,point,,ECU-1-H,,point,,,,false,abf-boundaries-v0.2.0,Ilapo solar farm,L100001049637,utility-scale solar,pre_construction,76.7
+G100001057262,energy_plants_gem_units,ECU,point,,ECU-1-H,,point,,,,false,abf-boundaries-v0.2.0,Ilapo solar farm,L100001049637,utility-scale solar,pre_construction,76.7
+G100001070467,energy_plants_gem_units,ECU,point,,ECU-1-I,,point,,,,true,abf-boundaries-v0.2.0,Chachimbiro geothermal power plant,L100000700031,geothermal,pre_construction,50
+G100001070468,energy_plants_gem_units,ECU,point,,ECU-1-C,,point,,,,true,abf-boundaries-v0.2.0,Tufiño-Chiles-Cerro Negro geothermal power plant,L100001061503,geothermal,announced,138
+G100001071827,energy_plants_gem_units,ECU,point,,ECU-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Sabanilla hydroelectric plant,L100001062539,hydropower,operating,32
+G100001071834,energy_plants_gem_units,ECU,point,,ECU-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Piatúa hydroelectric plant,L100001062548,hydropower,shelved,30

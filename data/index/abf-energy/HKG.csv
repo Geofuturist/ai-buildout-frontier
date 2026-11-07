@@ -1,0 +1,57 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101230,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,retired,350
+G100000101231,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,retired,350
+G100000101232,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,retired,350
+G100000101233,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,operating,350
+G100000101234,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,operating,677.5
+G100000101235,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,operating,677.5
+G100000101236,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,operating,677.5
+G100000101237,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Peak power station,L100000102018,coal,operating,677.5
+G100000101596,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,retired,250
+G100000101597,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,retired,250
+G100000101598,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,retired,250
+G100000101599,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,retired,350
+G100000101600,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,retired,350
+G100000101601,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,operating,350
+G100000101602,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,operating,350
+G100000101603,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,coal,operating,350
+G100000200724,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Shek Kwu Chau power station,L100000200632,bioenergy,operating,60
+G100000200725,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Shek Kwu Chau power station,L100000200632,bioenergy,construction,60
+G100000200726,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Shek Kwu Chau power station,L100000200632,bioenergy,construction,60
+G100000407296,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,337.5
+G100000407297,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,337.5
+G100000407298,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,337.5
+G100000407299,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,337.5
+G100000407300,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,337.5
+G100000407301,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,337.5
+G100000407302,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,313
+G100000407303,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,312.5
+G100000407304,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,380
+G100000407305,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,380
+G100000407306,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,380
+G100000407307,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,300
+G100000407308,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,retired,365
+G100000407309,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,600
+G100000407310,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point power station,L100000406847,oil/gas,operating,550
+G100000412397,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,55
+G100000412398,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,125
+G100000412399,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,125
+G100000412400,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,125
+G100000412401,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,operating,125
+G100000412608,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Penny's Bay power station,L100000408459,oil/gas,operating,100
+G100000413115,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Penny's Bay power station,L100000408459,oil/gas,operating,100
+G100000413116,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,Penny's Bay power station,L100000408459,oil/gas,operating,100
+G100000413117,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,pre_construction,130
+G100000413118,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,construction,130
+G100000413119,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,construction,130
+G100000413120,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,construction,130
+G100000801800,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Black Point solar farm,L100000801563,utility-scale solar,shelved,85
+G100000801801,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Castle Peak solar farm,L100000801564,utility-scale solar,shelved,29
+G100000801802,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Penny's Bay solar farm,L100000801565,utility-scale solar,shelved,116
+G100000810869,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Plover Cove Reservoir solar farm,L100000808620,utility-scale solar,operating,1
+G100000903008,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Hong Kong (Wind Prospect) Offshore wind farm,L100000902442,wind,cancelled,200
+G100000904022,energy_plants_gem_units,HKG,point,CHN,,,,,,,true,abf-boundaries-v0.2.0,Guangdong Zhuhai Guishan Offshore Wind Demonstration Project,L100000903269,wind,operating,120
+G100000906011,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Sai Kung Offshore wind farm,L100000904895,wind,cancelled,200
+G100000926373,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamma Offshore wind farm,L100000921421,wind,announced,150
+G100000926374,energy_plants_gem_units,HKG,point,,,,,,,,true,abf-boundaries-v0.2.0,Hong Kong (CLP) Offshore wind farm,L100000921422,wind,announced,250
+G100001018067,energy_plants_gem_units,HKG,point,,,,,,,,false,abf-boundaries-v0.2.0,CKI Lamma power station,L100000102019,oil/gas,construction,380

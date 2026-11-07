@@ -1,0 +1,499 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101324,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changgong power station,L100000103533,coal,cancelled,800
+G100000101325,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changgong power station,L100000103533,coal,cancelled,800
+G100000101327,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changhua power station,L100000103534,coal,retired,101
+G100000101328,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changhua power station,L100000103534,coal,retired,113
+G100000101456,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chiayi Plant CY power station,L100000103535,coal,retired,40
+G100000101513,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chiutang Mill power station,L100000103538,coal,operating,44
+G100000103554,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Haifeng power station,L100000103555,coal,operating,100
+G100000103555,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Haifeng power station,L100000103555,coal,operating,100
+G100000103556,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Haifeng power station,L100000103555,coal,operating,100
+G100000103902,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho-Ping power station,L100000103537,coal,operating,660
+G100000103903,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ho-Ping power station,L100000103537,coal,operating,660
+G100000103973,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Houli Mill power station,L100000103545,coal,operating,48
+G100000103980,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinkang SK power station,L100000103536,coal,operating,56
+G100000103981,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinkang SK power station,L100000103536,coal,operating,56
+G100000103982,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinkang SK power station,L100000103536,coal,operating,101
+G100000103983,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinkang SK power station,L100000103536,coal,operating,148
+G100000103984,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,coal,cancelled,1000
+G100000103985,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,coal,cancelled,1000
+G100000103986,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,coal,mothballed,500
+G100000103987,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,coal,mothballed,500
+G100000103988,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,coal,mothballed,550
+G100000103989,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,coal,mothballed,550
+G100000104798,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hwa Ya Cogen power station,L100000103543,coal,operating,148
+G100000104799,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hwa Ya Cogen power station,L100000103543,coal,operating,152
+G100000105015,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jenwu power station,L100000103540,coal,retired,127
+G100000105016,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jenwu power station,L100000103540,coal,retired,101
+G100000105017,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jenwu power station,L100000103540,coal,retired,101
+G100000105265,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jinshin power station,L100000103553,coal,operating,57
+G100000105266,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jinshin power station,L100000103553,coal,operating,57
+G100000105999,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kuan-Tien power station,L100000103548,coal,operating,48
+G100000106311,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Linkou Plant TP power station,L100000103549,coal,retired,36
+G100000106312,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Linkou power station,L100000103544,coal,operating,800
+G100000106313,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Linkou power station,L100000103544,coal,operating,800
+G100000106314,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Linkou power station,L100000103544,coal,operating,800
+G100000106315,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Linkou power station,L100000103544,coal,retired,300
+G100000106316,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Linkou power station,L100000103544,coal,retired,300
+G100000106336,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Linyuan Plant power station,L100000103541,coal,operating,46
+G100000106406,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Longder power station,L100000103554,coal,operating,162
+G100000106582,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao Formosa Petrochemical power station,L100000103556,coal,operating,96
+G100000106583,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao Formosa Petrochemical power station,L100000103556,coal,operating,33
+G100000106584,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao Formosa Petrochemical power station,L100000103556,coal,operating,69
+G100000106585,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao Formosa Petrochemical power station,L100000103556,coal,operating,33
+G100000106586,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao Formosa Petrochemical power station,L100000103556,coal,operating,69
+G100000106590,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,coal,operating,600
+G100000106591,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,coal,retired,600
+G100000106592,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,coal,operating,600
+G100000109097,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Shen'ao power station,L100000103550,coal,cancelled,600
+G100000109098,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Shen'ao power station,L100000103550,coal,cancelled,600
+G100000109311,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Shu-Lin power station,L100000103551,coal,retired,52
+G100000109822,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109823,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109824,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109825,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109826,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109827,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109828,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109829,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109830,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109831,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,operating,550
+G100000109832,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,cancelled,800
+G100000109833,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,coal,cancelled,800
+G100000109836,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipei Port power station,L100000103552,coal,cancelled,1000
+G100000109837,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipei Port power station,L100000103552,coal,cancelled,1000
+G100000109838,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipei Port power station,L100000103552,coal,cancelled,1000
+G100000109839,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipei Port power station,L100000103552,coal,cancelled,1000
+G100000109840,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipei Port power station,L100000103552,coal,cancelled,1000
+G100000109841,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipei Port power station,L100000103552,coal,cancelled,1000
+G100000109895,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,coal,retired,300
+G100000109896,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,coal,cancelled,800
+G100000109897,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,coal,retired,300
+G100000109901,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,coal,operating,800
+G100000109902,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,coal,operating,800
+G100000109903,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,coal,cancelled,800
+G100000113102,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,CCPC Miaoli Factory power station,L100000103558,coal,operating,49
+G100000113293,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Shen'ao power station,L100000103550,coal,retired,75
+G100000113294,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Shen'ao power station,L100000103550,coal,retired,125
+G100000113295,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Shen'ao power station,L100000103550,coal,retired,200
+G100000113303,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jenwu power station,L100000103540,coal,retired,33.7
+G100000113305,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changhua power station,L100000103534,coal,retired,57
+G100000113307,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Longder power station,L100000103554,coal,operating,162
+G100000113426,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,coal,retired,600
+G100000113427,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,coal,operating,600
+G100000113428,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,coal,operating,600
+G100000113429,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,coal,operating,600
+G100000113689,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Houli Mill power station,L100000103545,coal,operating,35
+G100000200049,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bali Refuse Incineration power station,L100000200046,bioenergy,operating,41
+G100000200056,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaohsiung South Incinerator power station,L100000200053,bioenergy,operating,49
+G100000200057,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Renwu Refuse incineration power station,L100000200054,bioenergy,operating,33
+G100000200071,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangshan EfW power station,L100000200067,bioenergy,operating,38
+G100000200100,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Beitou Refuse incinerator power station,L100000200095,bioenergy,operating,48
+G100000200821,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taoyuan EfW power station,L100000200721,bioenergy,operating,40
+G100000406176,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,retired,386
+G100000406177,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,retired,386
+G100000406178,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,operating,320
+G100000406179,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,operating,893
+G100000406180,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,operating,893
+G100000406181,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,operating,893
+G100000406182,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,743
+G100000406183,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,743
+G100000406184,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,723
+G100000406185,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,723
+G100000406186,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,723
+G100000406187,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,723
+G100000406190,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,913
+G100000406191,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,1124
+G100000406192,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Datan power station,L100000406335,oil/gas,operating,1124
+G100000406193,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,operating,445.2
+G100000406194,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,operating,445.2
+G100000406195,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,operating,445.2
+G100000406196,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,operating,445.2
+G100000406197,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,operating,445.2
+G100000406198,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,operating,1300
+G100000406199,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,construction,1300
+G100000406200,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,construction,1300
+G100000406201,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,construction,1300
+G100000406202,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,construction,1300
+G100000406203,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,NanPu power station,L100000406338,oil/gas,operating,289
+G100000406204,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,NanPu power station,L100000406338,oil/gas,operating,289
+G100000406205,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,NanPu power station,L100000406338,oil/gas,operating,289
+G100000406206,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,NanPu power station,L100000406338,oil/gas,operating,251
+G100000406207,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,oil/gas,mothballed,500
+G100000406208,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,oil/gas,operating,550
+G100000406209,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsieh-Ho power station,L100000406340,oil/gas,pre_construction,1300
+G100000406210,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsieh-Ho power station,L100000406340,oil/gas,pre_construction,1300
+G100000406211,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fong Der power station,L100000406341,oil/gas,operating,490
+G100000406212,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fong Der power station,L100000406341,oil/gas,operating,490
+G100000406213,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chang-Bin power station,L100000406345,oil/gas,operating,490
+G100000406214,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Star Buck power station,L100000406344,oil/gas,operating,490
+G100000406215,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kuo Kuang power station,L100000406343,oil/gas,operating,480
+G100000406216,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hai-Fu power station,L100000406342,oil/gas,operating,536
+G100000406217,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hai-Fu power station,L100000406342,oil/gas,retired,536
+G100000406218,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chia-Hui power station,L100000406346,oil/gas,operating,700
+G100000406219,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chia-Hui power station,L100000406346,oil/gas,operating,510
+G100000406220,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsin Tao power station,L100000406347,oil/gas,operating,600
+G100000409389,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fong Der power station,L100000406341,oil/gas,operating,1100
+G100000409950,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,oil/gas,construction,1200
+G100000409951,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hsin Yu cogeneration power station,L100000407624,oil/gas,operating,155
+G100000410185,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mailiao power station,L100000103557,oil/gas,construction,1200
+G100000410598,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chia-Hui 3 power station,L100000407868,oil/gas,pre_construction,1282
+G100000410599,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chungchia power station,L100000407867,oil/gas,construction,611
+G100000410600,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,pre_construction,560
+G100000410601,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,pre_construction,560
+G100000410602,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,pre_construction,560
+G100000410603,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,pre_construction,560
+G100000410604,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,pre_construction,560
+G100000410605,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tunghsiao power station,L100000406334,oil/gas,operating,180
+G100000410606,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hai-Fu power station,L100000406342,oil/gas,pre_construction,1100
+G100000411230,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,oil/gas,construction,550
+G100000411231,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Talin power station,L100000103542,oil/gas,construction,550
+G100000412611,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,operating,70
+G100000412612,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsieh-Ho power station,L100000406340,oil/gas,operating,500
+G100000413100,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,22.2
+G100000413101,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,33
+G100000413102,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,31.6
+G100000413103,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,14
+G100000413104,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,6.4
+G100000413105,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,3.1
+G100000413106,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,1
+G100000413107,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,1
+G100000413108,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tashan power plant,L100000408901,oil/gas,operating,1
+G100000413109,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chienshan power plant,L100000408903,oil/gas,operating,41.6
+G100000413110,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chienshan power plant,L100000408903,oil/gas,operating,88
+G100000413111,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,operating,70
+G100000413112,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,operating,70
+G100000413113,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,operating,70
+G100000413114,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsieh-Ho power station,L100000406340,oil/gas,operating,500
+G100000414011,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Jiuwei Nanke power station,L100000409185,oil/gas,shelved,600
+G100000414012,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Jiuwei Nanke power station,L100000409185,oil/gas,shelved,600
+G100000414013,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,pre_construction,1300
+G100000414014,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,pre_construction,1300
+G100000414015,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kuo Kuang power station,L100000406343,oil/gas,pre_construction,1250
+G100000500626,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kuosheng nuclear power plant,L100000500268,nuclear,retired,985
+G100000500627,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kuosheng nuclear power plant,L100000500268,nuclear,retired,985
+G100000500628,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Maanshan nuclear power plant,L100000500269,nuclear,retired,951
+G100000500629,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Maanshan nuclear power plant,L100000500269,nuclear,retired,951
+G100000500633,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jinshan nuclear power plant,L100000500271,nuclear,retired,636
+G100000500634,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jinshan nuclear power plant,L100000500271,nuclear,retired,636
+G100000501296,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Longmen nuclear power plant,L100000500450,nuclear,cancelled,1350
+G100000501297,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Longmen nuclear power plant,L100000500450,nuclear,cancelled,1350
+G100000603570,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Daguan I hydroelectric plant,L100000603535,hydropower,operating,110
+G100000603571,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Daguan II hydroelectric plant,L100000603536,hydropower,operating,1000
+G100000603572,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dajia River Chingshan hydroelectric plant,L100000603537,hydropower,operating,368
+G100000603573,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dajia River Deji hydroelectric plant,L100000603538,hydropower,operating,234
+G100000603574,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dajia River Guangming hydroelectric plant,L100000603539,hydropower,pre_construction,610
+G100000603575,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dajia River Kukuan hydroelectric plant,L100000603540,hydropower,operating,218
+G100000603576,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dajia River Ma'an hydroelectric plant,L100000603541,hydropower,operating,134
+G100000603577,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dajia River Tienlun hydroelectric plant,L100000603542,hydropower,operating,195
+G100000603578,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mingtan hydroelectric plant,L100000603543,hydropower,operating,1602
+G100000603579,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Shimen hydroelectric plant,L100000603544,hydropower,operating,90
+G100000603580,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tungpu Longjian hydroelectric plant,L100000603545,hydropower,operating,97
+G100000603581,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhuolan hydroelectric plant,L100000603546,hydropower,operating,80
+G100000801008,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changbin Lunwei East solar farm,L100000800874,utility-scale solar,operating,181
+G100000801009,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changhua Coastal solar farm,L100000800875,utility-scale solar,operating,100
+G100000801010,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changhua General Energy solar farm,L100000800876,utility-scale solar,cancelled,40
+G100000801017,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chiayi Fishery solar farm,L100000800883,utility-scale solar,operating,21.2
+G100000801653,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Syuejia solar farm,L100000801439,utility-scale solar,operating,75.9
+G100000801659,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Salt Fields solar farm,L100000801444,utility-scale solar,operating,151.8
+G100000801660,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Solar Power City solar farm,L100000801445,utility-scale solar,operating,252
+G100000801661,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Solar Power City solar farm,L100000801445,utility-scale solar,operating,260
+G100000801745,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Vena Mingus solar farm,L100000801523,utility-scale solar,operating,70
+G100000811046,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Budai solar farm,L100000808767,utility-scale solar,construction,115
+G100000811047,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cole solar farm,L100000808768,utility-scale solar,operating,42
+G100000811048,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Deyang solar farm,L100000808769,utility-scale solar,pre_construction,80
+G100000811051,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaiyang solar farm,L100000808771,utility-scale solar,operating,25
+G100000811052,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Meiyang solar farm,L100000808772,utility-scale solar,pre_construction,40
+G100000811053,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Riyang solar farm,L100000808773,utility-scale solar,pre_construction,40
+G100000811054,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taixi solar farm,L100000808774,utility-scale solar,pre_construction,500
+G100000811055,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tianquan solar farm,L100000808775,utility-scale solar,operating,25
+G100000811056,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tianren solar farm,L100000808776,utility-scale solar,operating,50
+G100000811057,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tianxin solar farm,L100000808777,utility-scale solar,operating,50
+G100000811058,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tianyang solar farm,L100000808778,utility-scale solar,construction,100
+G100000811059,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Xinyang solar farm,L100000808779,utility-scale solar,pre_construction,56
+G100000811060,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yaoguang solar farm,L100000808780,utility-scale solar,operating,24
+G100000811061,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yingyang solar farm,L100000808781,utility-scale solar,pre_construction,40
+G100000811062,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yiyang Taiyuan solar farm,L100000808782,utility-scale solar,construction,99
+G100000811063,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yuheng solar farm,L100000808783,utility-scale solar,operating,25
+G100000834946,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Budai Xinwen Floating solar farm,L100000831048,utility-scale solar,operating,35.5
+G100000834947,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changbin Industrial park Lunwei East FPV solar farm,L100000831049,utility-scale solar,operating,192.3
+G100000834948,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changbin Lunwei East solar farm,L100000800874,utility-scale solar,operating,67
+G100000834949,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changhua Haijing solar farm,L100000831050,utility-scale solar,construction,34
+G100000834950,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chiayi Yizhu Sunnyrich Fishery solar farm,L100000831051,utility-scale solar,operating,130
+G100000834951,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chiayi Yizhu Sunnyrich Fishery solar farm,L100000831051,utility-scale solar,pre_construction,132
+G100000834952,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chiayi Yizhu Sunnyrich Tai Yang Fishery solar farm,L100000831052,utility-scale solar,operating,50
+G100000834953,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Coltrane solar project,L100000831053,utility-scale solar,operating,10
+G100000834954,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Fangliao solar farm,L100000831054,utility-scale solar,construction,33
+G100000834955,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Fenglin solar farm,L100000831055,utility-scale solar,operating,75
+G100000834956,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kouhu Maozheng and Maoxin solar farm,L100000831056,utility-scale solar,operating,178
+G100000834957,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kouhu solar project,L100000831057,utility-scale solar,operating,5
+G100000834958,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Maxinsolar Yunlin Kouhu solar farm,L100000831058,utility-scale solar,operating,40
+G100000834959,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Penghu solar farm,L100000831059,utility-scale solar,construction,30
+G100000834960,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Qigu Jhih Guang solar farm,L100000831060,utility-scale solar,operating,85
+G100000834961,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Qigu Jhih Guang solar farm,L100000831060,utility-scale solar,construction,35
+G100000834962,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Qigu Jhih Guang solar farm,L100000831060,utility-scale solar,pre_construction,35
+G100000834963,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Qigu Riyun solar farm,L100000831061,utility-scale solar,construction,43
+G100000834964,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Shizi Township HeFeng solar farm,L100000831062,utility-scale solar,construction,42
+G100000834966,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Beimen Fishery solar farm,L100000831064,utility-scale solar,operating,128
+G100000834967,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Dafu solar farm,L100000831065,utility-scale solar,operating,22
+G100000834968,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Jiangjun Indoor Fishery solar farm,L100000831066,utility-scale solar,construction,120
+G100000834969,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Qigu Nanxu and Xinritai solar farm,L100000831067,utility-scale solar,construction,100
+G100000834970,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Qigu Nanxu and Xinritai solar farm,L100000831067,utility-scale solar,pre_construction,60
+G100000834973,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tainan solar project,L100000831069,utility-scale solar,operating,10
+G100000834974,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tianchu solar farm,L100000831070,utility-scale solar,operating,50
+G100000834975,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tianjui solar farm,L100000831071,utility-scale solar,operating,50
+G100000834976,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yunlin E2 solar farm,L100000831072,utility-scale solar,operating,272
+G100000900839,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Changfang And Xidao Offshore wind farm,L100000900733,wind,operating,48
+G100000900842,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changfang And Xidao Offshore wind farm,L100000900733,wind,operating,100
+G100000900843,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changfang And Xidao Offshore wind farm,L100000900733,wind,operating,452
+G100000900871,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,EOLFI Offshore wind farm,L100000900763,wind,cancelled,500
+G100000900872,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,EOLFI Offshore wind farm,L100000900763,wind,cancelled,500
+G100000900873,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,EOLFI Offshore wind farm,L100000900763,wind,cancelled,500
+G100000900874,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,EOLFI Offshore wind farm,L100000900763,wind,cancelled,500
+G100000900875,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tai-Hai Taoyuan W1N Offshore wind farm,L100000900764,wind,cancelled,500
+G100000900877,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,New Taipei Offshore wind farm,L100000900766,wind,cancelled,256
+G100000900966,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipower Offshore wind farm,L100000900849,wind,operating,109.2
+G100000901008,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Hai Long Offshore wind farm,L100000900883,wind,operating,300
+G100000901009,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Hai Long Offshore wind farm,L100000900883,wind,operating,232
+G100000901010,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Hai Long Offshore wind farm,L100000900883,wind,construction,512
+G100000901141,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Greater Changhua Northeast wind farm,L100000900991,wind,cancelled,570
+G100000901142,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Greater Changhua Southwest wind farm,L100000900992,wind,operating,295
+G100000901144,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Greater Changhua Southeast wind farm,L100000900993,wind,operating,605
+G100000901145,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Greater Changhua Southwest wind farm,L100000900992,wind,construction,337
+G100000901146,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Greater Changhua Northwest wind farm,L100000900994,wind,construction,583
+G100000901161,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chu Feng Offshore wind farm,L100000901006,wind,shelved,448
+G100000901196,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Miaoli wind farm,L100000901030,wind,cancelled,50
+G100000901197,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Haixia Offshore wind farm,L100000901031,wind,cancelled,300
+G100000901217,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changwang wind farm,L100000901044,wind,operating,14
+G100000901232,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinfeng wind farm,L100000901058,wind,operating,12
+G100000901233,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tao Hsin Offshore wind farm,L100000901059,wind,cancelled,152
+G100000901234,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changbin wind farm,L100000901060,wind,operating,96.6
+G100000901235,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Guanyin Offshore wind farm,L100000901061,wind,cancelled,350
+G100000901236,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Guanyin wind farm,L100000901062,wind,operating,32
+G100000901237,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Guanyin wind farm,L100000901062,wind,operating,12
+G100000901238,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Leadway wind farm,L100000901063,wind,operating,25
+G100000901239,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Lugang wind farm,L100000901064,wind,cancelled,21
+G100000901240,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung wind farm,L100000901065,wind,operating,46
+G100000901241,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung wind farm,L100000901065,wind,operating,30
+G100000901242,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tongyuan wind farm,L100000901066,wind,operating,23
+G100000901243,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yunlin Offshore wind farm,L100000901067,wind,operating,640
+G100000901244,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mei Sen wind farm,L100000901068,wind,cancelled,240
+G100000901246,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhong Neng wind farm,L100000901070,wind,operating,300
+G100000901249,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changkong wind farm,L100000901073,wind,operating,46
+G100000901250,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changkong wind farm,L100000901073,wind,operating,16
+G100000901251,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Datan wind farm,L100000901074,wind,operating,15
+G100000901253,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Penghu wind farm,L100000901075,wind,shelved,32
+G100000901254,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Starwind wind farm,L100000901076,wind,operating,11
+G100000901255,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihu wind farm,L100000901077,wind,operating,28
+G100000901256,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Fuhai Offshore wind farm,L100000901078,wind,shelved,120
+G100000920968,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Bei Neng Offshore wind farm,L100000916898,wind,cancelled,1204
+G100000920974,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chu Tin Offshore wind farm,L100000916902,wind,cancelled,600
+G100000920975,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chu Tin Offshore wind farm,L100000916902,wind,cancelled,600
+G100000920976,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chuangwei wind farm,L100000916903,wind,operating,29
+G100000920977,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chuangwei wind farm,L100000916903,wind,operating,20.4
+G100000920978,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Da Chungbu floating wind farm,L100000916904,wind,cancelled,1800
+G100000920979,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Datian Youde Offshore wind farm,L100000916905,wind,pre_construction,700
+G100000920980,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,EOLFI Offshore wind farm,L100000900763,wind,cancelled,500
+G100000920981,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Feng Cheng Offshore wind farm,L100000916906,wind,cancelled,750
+G100000920982,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Feng Fan Offshore wind farm,L100000916907,wind,cancelled,750
+G100000920983,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Feng Li Offshore wind farm,L100000916908,wind,cancelled,1800
+G100000920985,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Feng You Offshore wind farm,L100000916910,wind,pre_construction,600
+G100000920987,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 2 offshore wind farm,L100000916912,wind,operating,376
+G100000920988,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 3 offshore wind farm,L100000916913,wind,cancelled,360
+G100000920989,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 3 offshore wind farm,L100000916913,wind,pre_construction,600
+G100000920990,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 3 offshore wind farm,L100000916913,wind,announced,720
+G100000920991,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 4 offshore wind farm,L100000916914,wind,cancelled,1360
+G100000920992,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 4 offshore wind farm,L100000916914,wind,pre_construction,495
+G100000920993,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 5 offshore wind farm,L100000916915,wind,pre_construction,1536
+G100000920996,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Fufang Offshore wind farm,L100000916918,wind,cancelled,600
+G100000920997,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Guanyuan wind farm,L100000916919,wind,operating,30
+G100000920998,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Guo Feng Offshore wind farm,L100000916920,wind,cancelled,375
+G100000920999,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Haian Offshore wind farm,L100000916921,wind,cancelled,2500
+G100000921000,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,He Er North Floating wind farm,L100000916922,wind,cancelled,2400
+G100000921001,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,He Er South Floating wind farm,L100000916923,wind,cancelled,2400
+G100000921002,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,He Yi Offshore wind farm,L100000916924,wind,cancelled,2600
+G100000921003,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hsinchu Xiangshan wind farm,L100000916925,wind,operating,12
+G100000921004,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hsinyuan wind farm,L100000916926,wind,operating,25
+G100000921005,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Huan Ya Floating wind farm,L100000916927,wind,cancelled,1200
+G100000921006,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Huanyang  Wei Lan Hai Changhua Offshore wind farm,L100000916928,wind,pre_construction,440
+G100000921008,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Huanyu Offshore wind farm,L100000916930,wind,cancelled,460
+G100000921009,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Jia Neng Offshore wind farm,L100000916931,wind,cancelled,600
+G100000921011,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ju Dao Offshore wind farm,L100000916933,wind,cancelled,2400
+G100000921012,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Laizhong Offshore wind farm,L100000916934,wind,cancelled,600
+G100000921013,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Leadway wind farm,L100000901063,wind,shelved,50
+G100000921014,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Lei Feng Offshore wind farm,L100000916935,wind,shelved,950
+G100000921017,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Taichung Fengmiao Floating wind farm,L100000916938,wind,pre_construction,500
+G100000921018,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Taichung Offshore wind farm,L100000916939,wind,cancelled,1100
+G100000921019,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung Port wind farm,L100000916940,wind,operating,36
+G100000921021,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Winds of September floating wind farm,L100000916942,wind,announced,820
+G100000921022,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Wo Neng Offshore wind farm,L100000916943,wind,pre_construction,2400
+G100000921023,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Wo Neng Offshore wind farm,L100000916943,wind,announced,600
+G100000921024,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Xinfeng Offshore wind farm,L100000916944,wind,shelved,900
+G100000921025,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Xu Feng No. 1 Offshore wind farm,L100000916945,wind,announced,600
+G100000921026,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Xu Feng No. 2 Offshore wind farm,L100000916946,wind,announced,750
+G100000921027,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Xu Feng No. 3 Offshore wind farm,L100000916947,wind,announced,750
+G100000921029,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yunlin Mailiao wind farm,L100000916949,wind,operating,30
+G100000921030,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yunlin Mailiao wind farm,L100000916949,wind,operating,16
+G100000921032,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Zhangfeng Offshore wind farm,L100000916951,wind,shelved,900
+G100000921033,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Zhong Mei Offshore wind farm,L100000916952,wind,cancelled,3000
+G100000921034,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhong Neng wind farm,L100000901070,wind,announced,180
+G100000921035,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhong Qian (InfraVest) Offshore wind farm,L100000916953,wind,cancelled,580
+G100000927778,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chu Tin Offshore wind farm,L100000916902,wind,pre_construction,100
+G100000927779,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Formosa 1 offshore wind farm,L100000916911,wind,operating,128
+G100000927780,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Houlong wind farm,L100000922278,wind,operating,34
+G100000927781,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhu Ting Offshore wind farm,L100000922279,wind,announced,1000
+G100000927782,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taipower Offshore wind farm,L100000900849,wind,construction,294.5
+G100000927783,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miaoli Dapeng wind farm,L100000922280,wind,operating,42
+G100000927784,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tongyuan wind farm,L100000901066,wind,operating,5
+G100000927785,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changkong wind farm,L100000901073,wind,operating,9
+G100000927786,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Wanggong wind farm,L100000922281,wind,operating,23
+G100000927787,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Penghu Longmen wind farm,L100000922282,wind,operating,18
+G100000927788,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tung Kang wind farm,L100000922283,wind,operating,12
+G100000927789,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Houlong wind farm,L100000922278,wind,operating,10
+G100000927790,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhunan wind farm,L100000922284,wind,operating,8
+G100000927791,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Zhunan wind farm,L100000922284,wind,operating,7
+G100000927792,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Taichung wind farm,L100000901065,wind,operating,12
+G100000927793,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Anwei Dajia wind farm,L100000922285,wind,operating,12
+G100000927794,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Beiyuan wind farm,L100000922286,wind,operating,14
+G100000927795,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changyuan wind farm,L100000922287,wind,operating,14
+G100000927796,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changkong wind farm,L100000901073,wind,operating,15
+G100000927798,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sihu (Kewei) wind farm,L100000922289,wind,pre_construction,25
+G100000927799,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kouhu wind farm,L100000922290,wind,pre_construction,71
+G100000927800,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Heyuan wind farm,L100000922291,wind,pre_construction,34
+G100000927801,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Budai wind farm,L100000922292,wind,cancelled,10
+G100000927802,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changbin (TCC) wind farm,L100000922293,wind,operating,7.2
+G100000927803,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changbin (TCC) wind farm,L100000922293,wind,operating,9
+G100000927804,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fangyuan wind farm,L100000922294,wind,cancelled,36
+G100000927805,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fuhan wind farm,L100000922295,wind,pre_construction,72
+G100000927806,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fangyuan Hongwei wind farm,L100000922296,wind,cancelled,17
+G100001017848,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Shu-Lin power station,L100000103551,oil/gas,operating,52
+G100001017858,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jinshin power station,L100000103553,oil/gas,announced,57
+G100001017932,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,CCPC Miaoli Factory power station,L100000103558,oil/gas,construction,34
+G100001017985,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jinshin power station,L100000103553,oil/gas,announced,57
+G100001018020,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,bioenergy,cancelled,500
+G100001018076,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chia-Hui power station,L100000406346,oil/gas,announced,1282
+G100001018112,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,pre_construction,1300
+G100001018113,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Taichung power station,L100000103546,oil/gas,pre_construction,1300
+G100001020609,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sungen Central Taiwan Science Park AUO Rooftop solar farm,L100001018464,utility-scale solar,operating,24.4
+G100001020625,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ye Heng Salt Industry Land solar farm,L100001018476,utility-scale solar,operating,20
+G100001020645,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,AcSacca Floating solar farm,L100001018491,utility-scale solar,operating,4.4
+G100001020648,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,AcSacca Floating solar farm,L100001018491,utility-scale solar,operating,2.8
+G100001020650,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,AcSacca Floating solar farm,L100001018491,utility-scale solar,operating,18.5
+G100001020651,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,AcSacca Floating solar farm,L100001018491,utility-scale solar,operating,4.1
+G100001020652,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,AcSacca Floating solar farm,L100001018491,utility-scale solar,operating,32.6
+G100001020707,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Whole Sun No.1 Taiwan solar farm,L100001018530,utility-scale solar,operating,37.4
+G100001020721,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Whole Sun No.1 Taiwan solar farm,L100001018530,utility-scale solar,operating,11.1
+G100001020722,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Whole Sun No.1 Taiwan solar farm,L100001018530,utility-scale solar,operating,6.5
+G100001020724,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yunlin Mailiao Tienji solar farm,L100001018537,utility-scale solar,operating,26.4
+G100001020725,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yunlin Mailiao Tienji solar farm,L100001018537,utility-scale solar,operating,5.9
+G100001020727,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tienpeng Tainan Qigu solar farm,L100001018538,utility-scale solar,operating,67.9
+G100001020729,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tienpeng Tainan Qigu solar farm,L100001018538,utility-scale solar,operating,12.1
+G100001020741,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tienqin  Tainan Qigu solar farm,L100001018548,utility-scale solar,operating,19.6
+G100001020742,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tienchong Tainan Qigu solar farm,L100001018549,utility-scale solar,operating,93.6
+G100001020745,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tienchong Tainan Qigu solar farm,L100001018549,utility-scale solar,operating,22.9
+G100001020748,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,CSC Solar Corp Rooftop solar project,L100001018553,utility-scale solar,operating,17.2
+G100001020755,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,CSC Solar Corp Rooftop solar project,L100001018553,utility-scale solar,operating,80.2
+G100001020756,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,CSC Solar Corp Rooftop solar project,L100001018553,utility-scale solar,operating,2
+G100001020757,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Xin Sheng Rooftop Fishery solar farm,L100001018557,utility-scale solar,pre_construction,119.4
+G100001020801,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Beimen (Maohong) solar farm,L100001018597,utility-scale solar,operating,21.2
+G100001020820,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chien Yao Tainan Guantian solar farm,L100001018614,utility-scale solar,operating,19.4
+G100001020827,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yuan Yu solar farm,L100001018618,utility-scale solar,operating,33.8
+G100001020828,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Yuan Yu solar farm,L100001018618,utility-scale solar,operating,3.8
+G100001020836,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pingtung Gaoshu (Yu Shu) solar farm,L100001018625,utility-scale solar,operating,30.6
+G100001020839,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pingtung Gaoshu (Yu Shu) solar farm,L100001018625,utility-scale solar,operating,8.4
+G100001020846,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tainan Wushantou Dam solar farm,L100001018634,utility-scale solar,operating,13.7
+G100001020857,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mituo Fishery solar farm,L100001018644,utility-scale solar,operating,69
+G100001020860,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mituo Fishery solar farm,L100001018644,utility-scale solar,pre_construction,64
+G100001020863,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhao Young CSBC Corporation Rooftop solar farm,L100001018649,utility-scale solar,operating,13.8
+G100001020864,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chimei Green Energy Area solar farm,L100001018650,utility-scale solar,operating,8.5
+G100001020869,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chimei Green Energy Area solar farm,L100001018650,utility-scale solar,operating,6.7
+G100001020875,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changhua Yongyao solar farm,L100001018661,utility-scale solar,operating,13.3
+G100001020877,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Changhua Yongyao solar farm,L100001018661,utility-scale solar,pre_construction,35
+G100001020896,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaiyang solar farm,L100000808771,utility-scale solar,pre_construction,1
+G100001020916,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Linbian Zhen'an solar farm,L100001018692,utility-scale solar,operating,6.8
+G100001020919,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Linbian Zhen'an solar farm,L100001018692,utility-scale solar,operating,8.5
+G100001020956,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Linbian Zhen'an solar farm,L100001018692,utility-scale solar,construction,44.2
+G100001020957,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Fangliao (INA Energy) solar farm,L100001018722,utility-scale solar,operating,18.4
+G100001020958,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Linbian Zhen'an solar farm,L100001018692,utility-scale solar,operating,17
+G100001020959,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Fangliao (INA Energy) solar farm,L100001018722,utility-scale solar,operating,28.2
+G100001020960,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Fangliao (INA Energy) solar farm,L100001018722,utility-scale solar,pre_construction,12.5
+G100001020981,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Linbian Floating solar farm,L100001018729,utility-scale solar,operating,17
+G100001020994,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fangliao solar farm,L100000831054,utility-scale solar,operating,7
+G100001021144,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Taichung Fengmiao Floating wind farm,L100000916938,wind,pre_construction,600
+G100001021158,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Formosa 6 Haiguang Offshore wind farm,L100001018861,wind,pre_construction,800
+G100001021211,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miaoli Dapeng wind farm,L100000922280,wind,operating,8
+G100001021216,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanxing wind farm,L100001018898,wind,pre_construction,25.8
+G100001028726,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changhua County solar project I,L100001024045,utility-scale solar,operating,1.2
+G100001028741,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pingtung County solar project IV,L100001024060,utility-scale solar,operating,1.1
+G100001028760,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pingtung County solar project XI,L100001024079,utility-scale solar,operating,1
+G100001028767,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaohsiung solar project IX,L100001024086,utility-scale solar,operating,2
+G100001028791,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miaoli County solar project IV,L100001024110,utility-scale solar,operating,1.1
+G100001028802,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tainan solar project XVI,L100001024121,utility-scale solar,operating,1
+G100001028828,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Miaoli County solar project XIV,L100001024147,utility-scale solar,operating,1
+G100001030552,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Feicui hydroelectric plant,L100001025700,hydropower,operating,70
+G100001030559,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cengwen hydroelectric plant,L100001025705,hydropower,operating,50
+G100001030560,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bihai hydroelectric plant,L100001025706,hydropower,operating,61
+G100001030561,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Wanda hydroelectric plant,L100001025707,hydropower,operating,56
+G100001031197,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,CCP Dafa Factory power station,L100001026004,oil/gas,construction,34
+G100001031219,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihuangziping geothermal power plant,L100001026013,geothermal,operating,1
+G100001031220,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sihuangziping geothermal power plant,L100001026013,geothermal,construction,4
+G100001050384,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Qingshui geothermal power plant,L100001044854,geothermal,operating,4.2
+G100001054321,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ta-Yuan Cogen power station,L100001047684,oil/gas,operating,30
+G100001054324,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,China Steel power station,L100001047685,oil/gas,operating,143.8
+G100001054348,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dragon Steel power station,L100001047701,oil/gas,operating,320
+G100001054417,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Budai (RenewableErgon) solar farm,L100001047729,utility-scale solar,announced,150
+G100001054437,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changhua (Taini) solar farm,L100001047739,utility-scale solar,operating,2
+G100001054438,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changhua (Taini) solar farm,L100001047739,utility-scale solar,operating,10.1
+G100001054442,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Qigu (Xingwei) solar farm,L100001047742,utility-scale solar,operating,77.5
+G100001054444,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chiayi (Guangyu) solar farm,L100001047744,utility-scale solar,operating,26.8
+G100001054445,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chiayi (Guangyu) solar farm,L100001047744,utility-scale solar,operating,22.3
+G100001054447,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Beimen (Enfu) solar farm,L100001047745,utility-scale solar,operating,21.8
+G100001054448,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Beimen (Enfu) solar farm,L100001047745,utility-scale solar,operating,20.2
+G100001054449,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Beimen (Enfu) solar farm,L100001047745,utility-scale solar,operating,86.2
+G100001054450,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Qigu (Nanxu) solar farm,L100001047747,utility-scale solar,operating,52.5
+G100001054508,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Rui Li 1 Floating Offshore wind farm,L100001047790,wind,announced,180
+G100001054509,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Huanpeng wind farm,L100001047791,wind,announced,360
+G100001054510,energy_plants_gem_units,TWN,field,,,,,,,,true,abf-boundaries-v0.2.0,Huanpeng wind farm,L100001047791,wind,announced,340
+G100001054958,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Yongkang Municipal Waste power station,L100001048042,bioenergy,operating,22.5
+G100001054959,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Xindian WtE power station,L100001048044,bioenergy,operating,16
+G100001054978,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Wenshan Waste Incineration power station,L100001048061,bioenergy,operating,14.5
+G100001054980,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tainan WtE power station,L100001048062,bioenergy,operating,14.3
+G100001054981,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Shulin Refuse power station,L100001048064,bioenergy,operating,24.8
+G100001054983,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Muzha Refuse power station,L100001048067,bioenergy,operating,13.5
+G100001054984,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jhunan Incineration power station,L100001048068,bioenergy,operating,11.8
+G100001054986,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lutsao Refuse power station,L100001048069,bioenergy,operating,28
+G100001054987,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lize Incineration power station,L100001048070,bioenergy,operating,16.2
+G100001054991,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaohsiung Central MSW power station,L100001048074,bioenergy,operating,23.1
+G100001054992,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kanding Incineration power station,L100001048075,bioenergy,operating,22.5
+G100001054995,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinchu Refuse power station,L100001048076,bioenergy,operating,24
+G100001054996,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Houli Incineration power station,L100001048077,bioenergy,operating,22.6
+G100001055465,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Haifeng power station,L100000103555,coal,operating,52
+G100001055466,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Haifeng power station,L100000103555,coal,operating,52
+G100001063913,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Google Baseload Power geothermal power station,L100001055958,geothermal,announced,10
+G100001070637,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chimei power station,L100001061626,oil/gas,operating,64
+G100001070639,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Wei Lan Hai Miaoli Offshore wind farm,L100001061628,wind,pre_construction,1360
+G100001070640,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Winds of September floating wind farm,L100000916942,wind,pre_construction,180
+G100001070688,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Leadway wind farm,L100000901063,wind,operating,8.4
+G100001070697,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Guanyin wind farm,L100000901062,wind,operating,4.6
+G100001070911,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Round 3.3 Auction of Offshore wind project,L100001061833,wind,announced,3900
+G100001070914,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Linbian Zhen'an solar farm,L100001018692,utility-scale solar,operating,9.7
+G100001070915,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Linbian Zhen'an solar farm,L100001018692,utility-scale solar,operating,12.8
+G100001070935,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pingtung Fangliao (INA Energy) solar farm,L100001018722,utility-scale solar,operating,15.7
+G100001070961,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ping-E Highway solar farm,L100001061871,utility-scale solar,operating,18.7
+G100001070963,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ping-E Highway solar farm,L100001061871,utility-scale solar,construction,23.3
+G100001070964,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Chiayi Fishery solar farm,L100000800883,utility-scale solar,construction,22
+G100001070990,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changbin Lunwei Xinglun solar farm,L100001061893,utility-scale solar,operating,119.7
+G100001070993,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaohsiung Dashu Heshan solar farm,L100001061897,utility-scale solar,construction,30
+G100001070994,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaohsiung Dashu Heshan solar farm,L100001061897,utility-scale solar,cancelled,15
+G100001071024,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Daping Green Energy Pingtung Fangliao BIPV solar farm,L100001061924,utility-scale solar,pre_construction,25
+G100001072714,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Liwu hydroelectric plant,L100001063302,hydropower,operating,32
+G100001072717,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mingtan Jugong hydroelectric plant,L100001063305,hydropower,operating,43
+G100001072720,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Shimen Yixing hydroelectric plant,L100001063307,hydropower,operating,40
+G100001076152,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tainan solar project XXXI,L100001066366,utility-scale solar,operating,1.4
+G100001092058,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Formosa Petrochemical Utility Station No.4,L100001081773,coal,operating,150
+G100001092059,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Formosa Petrochemical Utility Station No.4,L100001081773,coal,operating,150
+G100001092999,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Jinshan Acmepoint geothermal power plant,L100001082597,geothermal,pre_construction,12.5
+G100001093939,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Houli Mill power station,L100000103545,bioenergy,construction,107
+G100001093952,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,announced,1400
+G100001093953,energy_plants_gem_units,TWN,point,,,,,,,,false,abf-boundaries-v0.2.0,Hsinta power station,L100000103539,oil/gas,announced,1400
+G100001094015,energy_plants_gem_units,TWN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tainan Jiuwei Nanke power station,L100000409185,oil/gas,shelved,600

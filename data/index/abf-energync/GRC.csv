@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001005577,energy_plants_gem_tzsam_units,GRC,point,,GRC-1-E,,point,,,,false,abf-boundaries-v0.2.0,Karditsa Gorgovites solar project,L100001004734,utility-scale solar,operating,11.9
+G100001005579,energy_plants_gem_tzsam_units,GRC,point,,GRC-1-C,,point,,,,false,abf-boundaries-v0.2.0,Kastoria Ayia Kyriaki solar project,L100001004736,utility-scale solar,operating,19.4

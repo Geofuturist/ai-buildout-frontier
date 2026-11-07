@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-66cb43fea722,dc_atlas_points,LTU,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Telia Lietuva Raisteniškės Data Center,Operating / Construction,telecom,lt10,
+ATL-73c85923ed28,dc_atlas_points,LTU,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Delska DC3,Operating / Construction,colocation,lt10,
+ATL-9bceafef87ce,dc_atlas_points,LTU,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Delska DC1,Operating / Construction,colocation,lt10,
+ATL-e337f4a6f524,dc_atlas_points,LTU,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Delska DC2,Operating / Construction,colocation,lt10,

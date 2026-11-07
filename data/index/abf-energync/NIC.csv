@@ -1,0 +1,12 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000809413,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Solaris solar farm,L100000807725,utility-scale solar,operating,14.2
+G100001033605,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project I,L100001028334,utility-scale solar,operating,2.8
+G100001033606,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project II,L100001028335,utility-scale solar,operating,2.8
+G100001033608,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project III,L100001028337,utility-scale solar,operating,6
+G100001033609,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-CA,,point,,,,false,abf-boundaries-v0.2.0,Masaya solar project,L100001028338,utility-scale solar,operating,2.2
+G100001074915,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project IV,L100001065129,utility-scale solar,operating,1.1
+G100001074916,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project V,L100001065130,utility-scale solar,operating,1.2
+G100001074917,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project VI,L100001065131,utility-scale solar,operating,1.4
+G100001074918,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,León solar project,L100001065132,utility-scale solar,operating,2.6
+G100001074919,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project VII,L100001065133,utility-scale solar,operating,1.3
+G100001074920,energy_plants_gem_tzsam_units,NIC,point,,NIC-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Managua solar project VIII,L100001065134,utility-scale solar,operating,1.4

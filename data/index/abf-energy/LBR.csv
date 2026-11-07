@@ -1,0 +1,12 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413964,energy_plants_gem_units,LBR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bushrod power plant,L100000409163,oil/gas,operating,10
+G100000413965,energy_plants_gem_units,LBR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bushrod power plant,L100000409163,oil/gas,operating,18
+G100000413966,energy_plants_gem_units,LBR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bushrod power plant,L100000409163,oil/gas,operating,10
+G100000602449,energy_plants_gem_units,LBR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mount Coffee hydroelectric plant,L100000602419,hydropower,operating,88
+G100000602450,energy_plants_gem_units,LBR,point,,,,,,,,true,abf-boundaries-v0.2.0,St John River hydroelectric plant,L100000602420,hydropower,pre_construction,300
+G100000800264,energy_plants_gem_units,LBR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mount Coffee solar farm,L100000800218,utility-scale solar,construction,20
+G100000831179,energy_plants_gem_units,LBR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mount Coffee solar farm,L100000800218,utility-scale solar,announced,40
+G100000831180,energy_plants_gem_units,LBR,point,,,,,,,,true,abf-boundaries-v0.2.0,Roberts International Airport solar farm,L100000827650,utility-scale solar,announced,15
+G100001021557,energy_plants_gem_units,LBR,point,,,,,,,,true,abf-boundaries-v0.2.0,Liberia (SCATEC) solar farm,L100001019127,utility-scale solar,announced,20
+G100001054307,energy_plants_gem_units,LBR,point,,,,,,,,false,abf-boundaries-v0.2.0,Port of Buchanan Combined Cycle power station,L100001047671,oil/gas,pre_construction,270
+G100001074458,energy_plants_gem_units,LBR,point,,,,,,,,true,abf-boundaries-v0.2.0,Duazon solar farm,L100001064686,utility-scale solar,announced,24

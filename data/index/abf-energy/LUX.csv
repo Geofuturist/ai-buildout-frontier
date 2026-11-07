@@ -1,0 +1,61 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000602454,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Vianden hydroelectric plant,L100000602423,hydropower,operating,1294
+G100000911294,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bënzelt wind farm,L100000908589,wind,operating,12
+G100000911967,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Rulljen-Géisdref wind farm,L100000909225,wind,operating,12
+G100000912229,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kehmen-Heischent wind farm,L100000909474,wind,operating,13
+G100000913192,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Aerenzdall wind farm,L100000910347,wind,operating,12.6
+G100000913307,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Miersch wind farm,L100000910445,wind,pre_construction,17
+G100000913647,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Housen-Pëtschent wind farm,L100000910754,wind,operating,17
+G100000914418,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Duelem Wind Park,L100000911438,wind,operating,21
+G100000915010,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Weiler wind farm,L100000911966,wind,operating,21
+G100000915391,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Wincrange wind farm,L100000912298,wind,operating,23
+G100000924006,energy_plants_gem_units,LUX,point,FRA,,,,,,,true,abf-boundaries-v0.2.0,Audunois nord wind farm,L100000919503,wind,construction,18
+G100000925137,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Canton Réiden wind farm,L100000920470,wind,pre_construction,17.5
+G100001001178,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Jonglënster wind farm,L100001000823,wind,pre_construction,24
+G100001011938,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mamer solar project,L100001010568,utility-scale solar,operating,1.3
+G100001011939,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Steinfort solar project,L100001010569,utility-scale solar,operating,1
+G100001011940,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bettembourg solar project,L100001010570,utility-scale solar,operating,2.4
+G100001011941,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Differdange solar project I,L100001010571,utility-scale solar,operating,5
+G100001011942,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Differdange solar project II,L100001010572,utility-scale solar,operating,3
+G100001011943,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Differdange solar project III,L100001010573,utility-scale solar,operating,1.7
+G100001011944,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Differdange solar project IV,L100001010574,utility-scale solar,operating,1.6
+G100001011945,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Differdange solar project V,L100001010575,utility-scale solar,operating,1.7
+G100001011946,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project I,L100001010576,utility-scale solar,operating,1.2
+G100001011947,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project II,L100001010577,utility-scale solar,operating,1.2
+G100001011948,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project III,L100001010578,utility-scale solar,operating,2.1
+G100001011949,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project IV,L100001010579,utility-scale solar,operating,1.5
+G100001011950,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project V,L100001010580,utility-scale solar,operating,1.2
+G100001011951,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mondercange solar project,L100001010581,utility-scale solar,operating,1.1
+G100001011952,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Contern solar project I,L100001010582,utility-scale solar,operating,3.6
+G100001011953,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Contern solar project II,L100001010583,utility-scale solar,operating,2.7
+G100001011954,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Colmar-Berg solar project,L100001010584,utility-scale solar,operating,1.4
+G100001011955,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bissen solar project,L100001010585,utility-scale solar,operating,1.4
+G100001011956,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Clervaux solar project,L100001010586,utility-scale solar,operating,1.4
+G100001011957,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Wincrange solar project I,L100001010587,utility-scale solar,operating,1
+G100001011958,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Wincrange solar project II,L100001010588,utility-scale solar,operating,1.4
+G100001011959,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Diekirch solar project,L100001010589,utility-scale solar,operating,1.8
+G100001011960,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Redange-Sur-Attert solar project,L100001010590,utility-scale solar,operating,1
+G100001011961,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Betzdorf solar project,L100001010591,utility-scale solar,operating,1
+G100001011962,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Junglinster solar project I,L100001010592,utility-scale solar,operating,2.3
+G100001011963,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Junglinster solar project II,L100001010593,utility-scale solar,operating,5
+G100001011964,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Junglinster solar project III,L100001010594,utility-scale solar,operating,2.9
+G100001011965,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mondorf-Les-Bains solar project,L100001010595,utility-scale solar,operating,1.2
+G100001052220,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiowatt power station,L100001046255,bioenergy,operating,2.8
+G100001052222,energy_plants_gem_units,LUX,point,,,,,,,,false,abf-boundaries-v0.2.0,Leudelange Waste to Energy power station,L100001046257,bioenergy,operating,15
+G100001052420,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Niederanven wind farm,L100001046396,wind,announced,17
+G100001084032,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dippach solar project,L100001074246,utility-scale solar,operating,3.5
+G100001084033,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Käerjeng solar project,L100001074247,utility-scale solar,operating,5
+G100001084034,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mamer solar project I,L100001074248,utility-scale solar,operating,1.3
+G100001084035,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Bettembourg solar project I,L100001074249,utility-scale solar,operating,2.4
+G100001084036,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Differdange solar project VI,L100001074250,utility-scale solar,operating,5
+G100001084037,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project VI,L100001074251,utility-scale solar,operating,1.2
+G100001084038,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project VII,L100001074252,utility-scale solar,operating,2.1
+G100001084039,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dudelange solar project VIII,L100001074253,utility-scale solar,operating,1.5
+G100001084040,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Mondercange solar project I,L100001074254,utility-scale solar,operating,1.1
+G100001084041,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Colmar-Berg solar project I,L100001074255,utility-scale solar,operating,2.2
+G100001084042,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Colmar-Berg solar project II,L100001074256,utility-scale solar,operating,2.5
+G100001084043,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Colmar-Berg solar project IV,L100001074257,utility-scale solar,operating,1.4
+G100001084044,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Colmar-Berg solar project V,L100001074258,utility-scale solar,operating,4.4
+G100001084045,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Parc Hosingen solar project,L100001074259,utility-scale solar,operating,1.9
+G100001084046,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Tandel solar project,L100001074260,utility-scale solar,operating,4.1
+G100001084048,energy_plants_gem_units,LUX,point,,,,,,,,true,abf-boundaries-v0.2.0,Junglinster solar project IV,L100001074262,utility-scale solar,operating,2.9

@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413365,energy_plants_gem_units,ASM,point,,,,,,,,false,abf-boundaries-v0.2.0,Satala (repower) power plant,L100000408986,oil/gas,operating,23
+G100000908933,energy_plants_gem_units,ASM,point,,,,,,,,true,abf-boundaries-v0.2.0,A'Asu Wind One Power Project,L100000906625,wind,announced,42
+G100001023491,energy_plants_gem_units,ASM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ta'u solar farm,L100001020598,utility-scale solar,operating,1.4
+G100001023494,energy_plants_gem_units,ASM,point,,,,,,,,false,abf-boundaries-v0.2.0,Tāfuna Veterans Memorial Stadium solar farm,L100001020601,utility-scale solar,construction,20

@@ -1,0 +1,14 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000411378,energy_plants_gem_units,BEN,point,,BEN-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Maria Gleta power station II,L100000408151,oil/gas,shelved,144
+G100000411379,energy_plants_gem_units,BEN,point,,BEN-1-AQ,,point,,,,true,abf-boundaries-v0.2.0,Maria Gleta power station I,L100000408152,oil/gas,operating,127.4
+G100000600152,energy_plants_gem_units,BEN,point,,BEN-1-PL,,point,,,,true,abf-boundaries-v0.2.0,Ketou-Dogo Bis hydroelectric plant,L100000600152,hydropower,shelved,128
+G100000604199,energy_plants_gem_units,BEN,point,,BEN-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Adjarala hydroelectric plant,L100000604069,hydropower,cancelled,148
+G100000800176,energy_plants_gem_units,BEN,point,,BEN-1-PL,,point,,,,true,abf-boundaries-v0.2.0,Illoulofin Solar,L100000800138,utility-scale solar,operating,25
+G100000800177,energy_plants_gem_units,BEN,point,,BEN-1-PL,,point,,,,true,abf-boundaries-v0.2.0,Illoulofin Solar,L100000800138,utility-scale solar,construction,25
+G100001021618,energy_plants_gem_units,BEN,point,,BEN-1-PL,,point,,,,true,abf-boundaries-v0.2.0,Pobè solar farm,L100001019173,utility-scale solar,construction,25
+G100001021620,energy_plants_gem_units,BEN,point,,BEN-1-BO,,point,,,,true,abf-boundaries-v0.2.0,Parakou solar farm,L100001019175,utility-scale solar,pre_construction,15
+G100001021621,energy_plants_gem_units,BEN,point,,BEN-1-ZO,,point,,,,true,abf-boundaries-v0.2.0,Bohicon solar farm,L100001019176,utility-scale solar,pre_construction,15
+G100001021622,energy_plants_gem_units,BEN,point,,BEN-1-DO,,point,,,,true,abf-boundaries-v0.2.0,Djougou solar farm,L100001019177,utility-scale solar,pre_construction,10
+G100001021623,energy_plants_gem_units,BEN,point,,BEN-1-AK,,point,,,,true,abf-boundaries-v0.2.0,Natitingou solar farm,L100001019178,utility-scale solar,pre_construction,10
+G100001062351,energy_plants_gem_units,BEN,point,,BEN-1-AQ,,point,,,,true,abf-boundaries-v0.2.0,Glo Djigbé power plant,L100001054471,oil/gas,announced,200
+G100001090858,energy_plants_gem_units,BEN,point,,BEN-1-LI,,point,,,,true,abf-boundaries-v0.2.0,Port of Cotonou wind farm,L100001080885,wind,announced,27

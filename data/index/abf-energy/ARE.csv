@@ -1,0 +1,225 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100085,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,true,abf-boundaries-v0.2.0,Ajman Coal power station,L100000103748,coal,cancelled,1000
+G100000103675,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,coal,retired,600
+G100000103676,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,coal,retired,600
+G100000103677,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,coal,cancelled,600
+G100000103678,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,coal,cancelled,600
+G100000103679,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,coal,cancelled,600
+G100000103680,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,coal,cancelled,600
+G100000108462,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,true,abf-boundaries-v0.2.0,RAK power station,L100000103750,coal,cancelled,270
+G100000113443,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,true,abf-boundaries-v0.2.0,Ras al-Khaimah power station,L100000103751,coal,cancelled,1800
+G100000200358,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Al Dhafra Waste Incinerator power station,L100000200322,bioenergy,pre_construction,80
+G100000200360,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Dubai Waste Management Centre power station,L100000200324,bioenergy,operating,190
+G100000200361,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Sharjah Waste-to-Energy Plant,L100000200325,bioenergy,operating,30
+G100000200362,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Tadweer Al Ain Waste Incinerator power station,L100000200326,bioenergy,announced,60
+G100000404993,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Al-Zawra power plant,L100000405575,oil/gas,operating,100
+G100000404994,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Al-Zawra power plant,L100000405575,oil/gas,operating,100
+G100000404995,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,101.2
+G100000404996,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,101.2
+G100000404997,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,101.2
+G100000404998,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,101.2
+G100000404999,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,101.2
+G100000405000,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,101.2
+G100000405001,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,140.3
+G100000405002,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,140.3
+G100000405003,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,140.3
+G100000405004,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,242
+G100000405005,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,242
+G100000405006,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,242
+G100000405007,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,242
+G100000405008,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,271.7
+G100000405009,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,271.7
+G100000405010,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Aweer H Power and Desalination Station,L100000405573,oil/gas,operating,271.7
+G100000405011,energy_plants_gem_units,ARE,point,,ARE-1-FU,,point,,,,false,abf-boundaries-v0.2.0,Fujairah F1 Integrated Water and power plant,L100000405576,oil/gas,operating,882
+G100000405012,energy_plants_gem_units,ARE,point,,ARE-1-FU,,point,,,,false,abf-boundaries-v0.2.0,Fujairah F2 Integrated Water and power plant,L100000405577,oil/gas,operating,867
+G100000405013,energy_plants_gem_units,ARE,point,,ARE-1-FU,,point,,,,false,abf-boundaries-v0.2.0,Fujairah F2 Integrated Water and power plant,L100000405577,oil/gas,operating,432
+G100000405014,energy_plants_gem_units,ARE,point,,ARE-1-FU,,point,,,,false,abf-boundaries-v0.2.0,Fujairah F2 Integrated Water and power plant,L100000405577,oil/gas,operating,867
+G100000405015,energy_plants_gem_units,ARE,point,,ARE-1-FU,,point,,,,true,abf-boundaries-v0.2.0,Fujairah F3 Integrated Water and power plant,L100000405578,oil/gas,operating,2400
+G100000405016,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah power station,L100000408276,oil/gas,operating,126
+G100000405017,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah power station,L100000408276,oil/gas,operating,126
+G100000405018,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali D Power and Desalination Station,L100000405580,oil/gas,operating,1027
+G100000405019,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali E Power and Desalination Station,L100000405581,oil/gas,operating,616
+G100000405020,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali G Power and Desalination Station,L100000405582,oil/gas,operating,818
+G100000405021,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Jebel Ali K Power and Desalination Station,L100000405583,oil/gas,operating,948
+G100000405022,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Jebel Ali K Power and Desalination Station,L100000405583,oil/gas,construction,290
+G100000405023,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Jebel Ali K Power and Desalination Station,L100000405583,oil/gas,construction,290
+G100000405024,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali L Power and Desalination Station,L100000405584,oil/gas,operating,969
+G100000405025,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali L Power and Desalination Station,L100000405584,oil/gas,operating,1432
+G100000405026,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali M Power and Desalination Station,L100000405585,oil/gas,operating,728.3
+G100000405027,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali M Power and Desalination Station,L100000405585,oil/gas,operating,728
+G100000405028,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali M Power and Desalination Station,L100000405585,oil/gas,operating,728.3
+G100000405029,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Jebel Ali M Power and Desalination Station,L100000405585,oil/gas,operating,700
+G100000405031,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,123
+G100000405032,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,123
+G100000405033,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,75
+G100000405034,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,75
+G100000405035,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,75
+G100000405036,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,75
+G100000405037,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,retired,345
+G100000405038,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Mirfa Independent Water and Power Project,L100000405588,oil/gas,operating,1337
+G100000405039,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Mirfa Independent Water and Power Project,L100000405588,oil/gas,operating,90
+G100000405040,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Mirfa Independent Water and Power Project,L100000405588,oil/gas,operating,90
+G100000405041,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Mirfa Independent Water and Power Project,L100000405588,oil/gas,operating,90
+G100000405042,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Mirfa Independent Water and Power Project,L100000405588,oil/gas,operating,90
+G100000405043,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Ruwais General Utilities Plant,L100000405589,oil/gas,operating,173.2
+G100000405044,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Ruwais General Utilities Plant,L100000405589,oil/gas,operating,173.2
+G100000405045,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah IPP power station,L100000405579,oil/gas,operating,600
+G100000405046,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah IPP power station,L100000405579,oil/gas,operating,600
+G100000405047,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah IPP power station,L100000405579,oil/gas,operating,600
+G100000405048,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Shuweihat S1 power plant,L100000405592,oil/gas,operating,1615
+G100000405049,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Shuweihat S2 power plant,L100000405593,oil/gas,operating,820.5
+G100000405050,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Shuweihat S2 power plant,L100000405593,oil/gas,operating,820.5
+G100000405051,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Shuweihat S3 power plant,L100000405594,oil/gas,operating,823.5
+G100000405052,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Shuweihat S3 power plant,L100000405594,oil/gas,operating,823.5
+G100000405053,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah A1 power plant,L100000405595,oil/gas,operating,1672.5
+G100000405054,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah A2 power plant,L100000405596,oil/gas,retired,710
+G100000405055,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,337.9
+G100000405056,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,146
+G100000405057,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,146
+G100000405058,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,146
+G100000405059,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,146
+G100000405060,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,146
+G100000405061,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,146
+G100000405062,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Taweelah B Power and Desalination Station,L100000405597,oil/gas,operating,1041
+G100000405064,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,60
+G100000405065,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,60
+G100000405066,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,60
+G100000405067,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,60
+G100000405068,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,60
+G100000405069,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,60
+G100000405070,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,150
+G100000405071,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,150
+G100000405072,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,59
+G100000405073,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,retired,59
+G100000405074,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100000405075,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100000405076,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100000405077,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100000405078,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100000405079,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,80
+G100000405080,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,80
+G100000405081,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,50
+G100000405082,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,50
+G100000410075,energy_plants_gem_units,ARE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Zirku ADMA-OPCO power station,L100000407697,oil/gas,operating,66
+G100000410076,energy_plants_gem_units,ARE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Zirku ADMA-OPCO power station,L100000407697,oil/gas,operating,66
+G100000410077,energy_plants_gem_units,ARE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Zirku ADMA-OPCO power station,L100000407697,oil/gas,operating,66
+G100000410078,energy_plants_gem_units,ARE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Zirku ADMA-OPCO power station,L100000407697,oil/gas,operating,66
+G100000410079,energy_plants_gem_units,ARE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Zirku ADMA-OPCO power station,L100000407697,oil/gas,operating,66
+G100000410080,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Emirates Global Aluminum Smelter power station,L100000407698,oil/gas,operating,640
+G100000410081,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Emirates Global Aluminum Smelter power station,L100000407698,oil/gas,operating,2350
+G100000410082,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Emirates Aluminum Smelter Complex power station,L100000407699,oil/gas,operating,1550
+G100000410083,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Emirates Aluminum Smelter Complex power station,L100000407699,oil/gas,operating,265
+G100000410084,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Emirates Aluminum Smelter Complex power station,L100000407699,oil/gas,operating,265
+G100000410085,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Emirates Aluminum Smelter Complex power station,L100000407699,oil/gas,operating,825
+G100000410086,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Emirates Aluminum Smelter Complex power station,L100000407699,oil/gas,operating,825
+G100000410087,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Ruwais General Utilities Plant,L100000405589,oil/gas,operating,230
+G100000410088,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Ruwais General Utilities Plant,L100000405589,oil/gas,operating,173.2
+G100000410089,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Ruwais General Utilities Plant,L100000405589,oil/gas,operating,173.2
+G100000410090,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,1026
+G100000410091,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,retired,345
+G100000410458,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Umm Al Nar West and East Integrated Water and power plant,L100000405598,oil/gas,operating,1706
+G100000410539,energy_plants_gem_units,ARE,point,OMN,ARE-1-RK,,point,,,,false,abf-boundaries-v0.2.0,Musandam power plant,L100000407856,oil/gas,operating,120
+G100000411381,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,false,abf-boundaries-v0.2.0,Al Nakheel power station,L100000408268,oil/gas,operating,187
+G100000411709,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,false,abf-boundaries-v0.2.0,Al Nakheel power station,L100000408268,oil/gas,operating,100
+G100000411710,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,false,abf-boundaries-v0.2.0,Al Nakheel power station,L100000408268,oil/gas,operating,100
+G100000414018,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,33
+G100000414019,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,33
+G100000414020,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,33
+G100000414021,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,33
+G100000414022,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,31
+G100000414023,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,31
+G100000414024,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,31
+G100000414025,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,31
+G100000414026,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,31
+G100000414027,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,31
+G100000414028,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Layyah power station,L100000405587,oil/gas,operating,31
+G100000414029,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Khorfakkan power station,L100000409197,oil/gas,operating,29.2
+G100000500018,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Barakah nuclear power plant,L100000500011,nuclear,operating,1417
+G100000500020,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Barakah nuclear power plant,L100000500011,nuclear,operating,1417
+G100000500021,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Barakah nuclear power plant,L100000500011,nuclear,operating,1417
+G100000500022,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Barakah nuclear power plant,L100000500011,nuclear,operating,1417
+G100000603732,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Hattawi Dam hydroelectric plant,L100000603694,hydropower,operating,250
+G100000804601,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Al Dhafra solar farm,L100000804030,utility-scale solar,operating,2000
+G100000804603,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,300
+G100000804604,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,300
+G100000804628,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,13
+G100000804629,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,417
+G100000804630,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,100
+G100000804631,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,250
+G100000804635,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,true,abf-boundaries-v0.2.0,Al Saja Landfill solar farm,L100000804058,utility-scale solar,construction,60
+G100000804636,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,true,abf-boundaries-v0.2.0,Al Saja Landfill solar farm,L100000804058,utility-scale solar,announced,30
+G100000804637,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,true,abf-boundaries-v0.2.0,Al Saja Landfill solar farm,L100000804058,utility-scale solar,announced,30
+G100000804686,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Shams 1 solar farm,L100000804099,utility-scale solar,operating,100
+G100000804688,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,200
+G100000804689,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,200
+G100000804690,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,300
+G100000804691,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,300
+G100000804694,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Noor Abu Dhabi solar farm,L100000804102,utility-scale solar,operating,1177
+G100000811471,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Al Ajban PV solar farm,L100000809137,utility-scale solar,construction,1500
+G100000811472,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Al Taweelah solar farm,L100000809138,utility-scale solar,operating,70
+G100000811473,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Shams Dubai solar farm,L100000809139,utility-scale solar,operating,299
+G100000835485,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Al Fattan Green Hydrogen solar farm,L100000831547,utility-scale solar,announced,200
+G100000835486,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Brooge Green Ammonia solar farm,L100000831548,utility-scale solar,pre_construction,650
+G100000835487,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Helios Green Ammonia solar farm,L100000831549,utility-scale solar,shelved,100
+G100000835488,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Helios Green Ammonia solar farm,L100000831549,utility-scale solar,shelved,700
+G100000835489,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Hydrogen Hub solar farm,L100000831550,utility-scale solar,shelved,1000
+G100000835490,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Masdar-Engie Green Hydrogen solar farm,L100000831551,utility-scale solar,shelved,200
+G100000835491,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Masdar-Engie Green Hydrogen solar farm,L100000831551,utility-scale solar,announced,1800
+G100000835492,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,183
+G100000835493,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,300
+G100000835494,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,operating,600
+G100000835495,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,construction,1200
+G100000835496,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Taqa-KIZAD Green Ammonia solar farm,L100000831552,utility-scale solar,shelved,2000
+G100000908143,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Sir Bani Yas Island wind farm,L100000905958,wind,operating,45
+G100000927569,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Hatta wind farm,L100000922107,wind,shelved,28
+G100001006634,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100001006635,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100001006636,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,100
+G100001006637,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Wasit power station,L100000405599,oil/gas,operating,44
+G100001006655,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Khorfakkan power station,L100000409197,oil/gas,operating,29.2
+G100001006656,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Khorfakkan power station,L100000409197,oil/gas,operating,29.2
+G100001006657,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Khorfakkan power station,L100000409197,oil/gas,operating,29.2
+G100001006658,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Khorfakkan power station,L100000409197,oil/gas,operating,29.2
+G100001006659,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Khorfakkan power station,L100000409197,oil/gas,operating,6
+G100001006671,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Kalba power station,L100001005581,oil/gas,operating,29
+G100001006672,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Kalba power station,L100001005581,oil/gas,operating,29
+G100001006673,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Kalba power station,L100001005581,oil/gas,operating,29
+G100001006674,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Kalba power station,L100001005581,oil/gas,operating,29
+G100001006712,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah power station,L100000408276,oil/gas,operating,126
+G100001006713,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah power station,L100000408276,oil/gas,operating,126
+G100001006714,energy_plants_gem_units,ARE,point,,ARE-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Hamriyah power station,L100000408276,oil/gas,operating,23
+G100001006808,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,true,abf-boundaries-v0.2.0,Al Hamra Independent Power Plant,L100001005665,oil/gas,operating,40
+G100001006814,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,true,abf-boundaries-v0.2.0,Al Hamra Independent Power Plant,L100001005665,oil/gas,operating,60
+G100001006829,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,true,abf-boundaries-v0.2.0,Independent Khor Khuwair Power Plant,L100001005682,oil/gas,operating,22
+G100001006832,energy_plants_gem_units,ARE,point,,ARE-1-RK,,point,,,,true,abf-boundaries-v0.2.0,Independent Khor Khuwair Power Plant,L100001005682,oil/gas,operating,22
+G100001017844,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,oil/gas,operating,600
+G100001018043,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,oil/gas,operating,600
+G100001018044,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,oil/gas,operating,600
+G100001018045,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Hassyan Clean-Coal Power Project,L100000103749,oil/gas,operating,600
+G100001021094,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Al Khazna solar farm,L100001018813,utility-scale solar,pre_construction,1500
+G100001021099,energy_plants_gem_units,ARE,point,,ARE-1-UQ,,point,,,,true,abf-boundaries-v0.2.0,Umm Al Quwain solar farm,L100001018818,utility-scale solar,announced,500
+G100001021106,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Uniper-Masdar Hydrogen solar farm,L100001018824,utility-scale solar,pre_construction,1300
+G100001021109,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Emerge-SNOC solar farm,L100001018827,utility-scale solar,operating,60
+G100001021115,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Delma Island wind farm,L100001018832,wind,operating,27
+G100001021117,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Al Sila wind farm,L100001018834,wind,operating,27
+G100001021369,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Qusais Landfill power station,L100001019004,bioenergy,retired,1
+G100001027993,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Madinat Zayed Independent Power Producer (IPP),L100001023517,oil/gas,pre_construction,1500
+G100001027995,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Taweelah C Independent Power Producer (IPP),L100001023521,oil/gas,pre_construction,2500
+G100001028056,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Dhafra Power Plant,L100001023547,oil/gas,construction,1000
+G100001028057,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Al-Nouf Power Plant,L100001023548,oil/gas,pre_construction,3300
+G100001030194,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Sweihan Al Ain solar project,L100001025513,utility-scale solar,operating,3
+G100001030195,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Abu Dhabi solar project I,L100001025514,utility-scale solar,operating,16.1
+G100001030197,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Dubai solar project II,L100001025516,utility-scale solar,operating,1.3
+G100001030203,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Dubai solar project V,L100001025522,utility-scale solar,operating,7.1
+G100001051527,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Etihad-Dubai Airports solar farm,L100001045731,utility-scale solar,announced,39
+G100001051529,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,pre_construction,1600
+G100001051531,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,true,abf-boundaries-v0.2.0,Mohammed Bin Rashid Al Maktoum Solar Park,L100000804032,utility-scale solar,pre_construction,400
+G100001051534,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Abu Dhabi solar farm,L100001045733,utility-scale solar,construction,1000
+G100001051535,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Zarraf Solar PV farm,L100001045734,utility-scale solar,pre_construction,1500
+G100001051536,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,New Al Sila wind farm,L100001045735,wind,pre_construction,140
+G100001070307,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Ruwais LNG Facilities power station,L100001061365,oil/gas,construction,75
+G100001070571,energy_plants_gem_units,ARE,point,,ARE-1-DU,,point,,,,false,abf-boundaries-v0.2.0,Al Qusais Landfill power station,L100001019004,bioenergy,cancelled,12
+G100001073128,energy_plants_gem_units,ARE,point,,ARE-1-SH,,point,,,,true,abf-boundaries-v0.2.0,Al Faya solar farm,L100001063623,utility-scale solar,announced,1500
+G100001073136,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Masdar-Abu Dhabi solar farm,L100001063627,utility-scale solar,construction,5200
+G100001073145,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,EMSTEEL solar PV rooftop,L100001063639,utility-scale solar,pre_construction,31.5
+G100001094007,energy_plants_gem_units,ARE,point,,ARE-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Volta Cogeneration Power Station,L100001083275,oil/gas,construction,300

@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001078713,energy_plants_gem_tzsam_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Rustavi solar project I,L100001068927,utility-scale solar,operating,2.3
+G100001078714,energy_plants_gem_tzsam_units,GEO,point,,GEO-1-SK,,point,,,,false,abf-boundaries-v0.2.0,Gori Municipality solar project I,L100001068928,utility-scale solar,operating,1.8
+G100001078715,energy_plants_gem_tzsam_units,GEO,point,,GEO-1-SJ,,point,,,,false,abf-boundaries-v0.2.0,Aspindza Municipality solar project,L100001068929,utility-scale solar,operating,2.2
+G100001078716,energy_plants_gem_tzsam_units,GEO,point,,GEO-1-SK,,point,,,,false,abf-boundaries-v0.2.0,Gori Municipality solar project II,L100001068930,utility-scale solar,operating,1.9
+G100001078717,energy_plants_gem_tzsam_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Rustavi solar project II,L100001068931,utility-scale solar,operating,3.4
+G100001078718,energy_plants_gem_tzsam_units,GEO,point,,GEO-1-MM,,point,,,,false,abf-boundaries-v0.2.0,Mtskheta Municipality solar project,L100001068932,utility-scale solar,operating,1.3

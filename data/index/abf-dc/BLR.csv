@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-225801a4db9e,dc_atlas_points,BLR,field,,BLR-1-HM,,point,,,,true,abf-boundaries-v0.2.0,Mts City of Minsk,Operating / Construction,telecom,lt10,
+ATL-766e517e54a0,dc_atlas_points,BLR,field,,BLR-1-HM,,point,,,,true,abf-boundaries-v0.2.0,Beltelecom Central Data Center Minsk,Operating / Construction,telecom,lt10,
+ATL-aa896021df39,dc_atlas_points,BLR,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Belarussian Cloud Technologies Калодзішчы,Operating / Construction,telecom,lt10,
+ATL-b3abc03706f3,dc_atlas_points,BLR,field,,BLR-1-HM,,point,,,,true,abf-boundaries-v0.2.0,Datahata City of Minsk,Operating / Construction,colocation,lt10,
+ATL-d9db79ea8be0,dc_atlas_points,BLR,field,,BLR-1-HM,,point,,,,true,abf-boundaries-v0.2.0,Velcom City of Minsk,Operating / Construction,colocation,lt10,
+ATL-da043ddf7733,dc_atlas_points,BLR,field,,BLR-1-HM,,point,,,,true,abf-boundaries-v0.2.0,A1 Telekom Minsk,Operating / Construction,telecom,lt10,

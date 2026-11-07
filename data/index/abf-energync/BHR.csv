@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001078689,energy_plants_gem_tzsam_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Southern Governorate solar project I,L100001068903,utility-scale solar,operating,1
+G100001078690,energy_plants_gem_tzsam_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Southern Governorate solar project II,L100001068904,utility-scale solar,operating,1.4
+G100001078691,energy_plants_gem_tzsam_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Capital Governorate solar project,L100001068905,utility-scale solar,operating,1.4
+G100001078692,energy_plants_gem_tzsam_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Riffa solar project I,L100001068906,utility-scale solar,operating,1.9
+G100001078693,energy_plants_gem_tzsam_units,BHR,point,,,,,,,,false,abf-boundaries-v0.2.0,Southern Governorate solar project IV,L100001068907,utility-scale solar,operating,1.8

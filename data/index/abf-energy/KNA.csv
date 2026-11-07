@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000700425,energy_plants_gem_units,KNA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nevis geothermal power plant,L100000700237,geothermal,pre_construction,10
+G100000700426,energy_plants_gem_units,KNA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nevis geothermal power plant,L100000700237,geothermal,announced,30
+G100000808705,energy_plants_gem_units,KNA,point,,,,,,,,true,abf-boundaries-v0.2.0,Basseterre Valley solar farm,L100000807317,utility-scale solar,construction,38
+G100001023716,energy_plants_gem_units,KNA,point,,,,,,,,false,abf-boundaries-v0.2.0,Maddens wind farm,L100001020772,wind,operating,2.2
+G100001023717,energy_plants_gem_units,KNA,point,,,,,,,,true,abf-boundaries-v0.2.0,Belle Vue wind farm,L100001020773,wind,announced,6.6

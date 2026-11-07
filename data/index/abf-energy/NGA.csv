@@ -1,0 +1,308 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100083,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Agu-Amorji power station,L100000103099,coal,cancelled,115
+G100000102664,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Enugu power station (One Nation Energy),L100000103100,coal,cancelled,500
+G100000103084,energy_plants_gem_units,NGA,point,,NGA-1-GO,,point,,,,true,abf-boundaries-v0.2.0,Gombe power station,L100000103101,coal,cancelled,500
+G100000105803,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000105805,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000105806,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000105807,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000111947,energy_plants_gem_units,NGA,point,,NGA-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Ezinmo power station,L100000103098,coal,cancelled,500
+G100000111948,energy_plants_gem_units,NGA,point,,NGA-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Ezinmo power station,L100000103098,coal,cancelled,500
+G100000113384,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000113385,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000113386,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000113387,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,150
+G100000113797,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Enugu power station (Milhouse),L100000104371,coal,cancelled,30
+G100000113798,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Kogi power station,L100000103102,coal,cancelled,1200
+G100000115146,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Obajana Cement power station,L100000104851,coal,operating,45
+G100000115147,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Obajana Cement power station,L100000104851,coal,operating,45
+G100000115148,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Obajana Cement power station,L100000104851,coal,operating,45
+G100000115149,energy_plants_gem_units,NGA,point,,NGA-1-OG,,point,,,,false,abf-boundaries-v0.2.0,Ibese Cement power station,L100000104852,coal,operating,37
+G100000115150,energy_plants_gem_units,NGA,point,,NGA-1-OG,,point,,,,false,abf-boundaries-v0.2.0,Ibese Cement power station,L100000104852,coal,operating,37
+G100000115151,energy_plants_gem_units,NGA,point,,NGA-1-OG,,point,,,,false,abf-boundaries-v0.2.0,Ibese Cement power station,L100000104852,coal,operating,37
+G100000115152,energy_plants_gem_units,NGA,point,,NGA-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Gboko Cement power station,L100000104853,coal,operating,38.5
+G100000115920,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Ugbabo power station,L100000105010,coal,pre_construction,600
+G100000115923,energy_plants_gem_units,NGA,point,,NGA-1-GO,,point,,,,true,abf-boundaries-v0.2.0,Ashaka/TPGL power station,L100000105012,coal,cancelled,250
+G100000115924,energy_plants_gem_units,NGA,point,,NGA-1-GO,,point,,,,true,abf-boundaries-v0.2.0,Ashaka/TPGL power station,L100000105012,coal,cancelled,250
+G100000115925,energy_plants_gem_units,NGA,point,,NGA-1-NA,,point,,,,true,abf-boundaries-v0.2.0,Nasarawa Coal power station,L100000105013,coal,cancelled,500
+G100000115926,energy_plants_gem_units,NGA,point,,NGA-1-GO,,point,,,,true,abf-boundaries-v0.2.0,Ashaka power station,L100000105014,coal,cancelled,64
+G100000407122,energy_plants_gem_units,NGA,point,,NGA-1-FC,,point,,,,true,abf-boundaries-v0.2.0,Abuja power station,L100000406772,oil/gas,pre_construction,350
+G100000407123,energy_plants_gem_units,NGA,point,,NGA-1-FC,,point,,,,true,abf-boundaries-v0.2.0,Abuja power station,L100000406772,oil/gas,construction,450
+G100000407124,energy_plants_gem_units,NGA,point,,NGA-1-FC,,point,,,,true,abf-boundaries-v0.2.0,Abuja power station,L100000406772,oil/gas,construction,450
+G100000407125,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam (FIPL) power station,L100000406773,oil/gas,operating,180
+G100000407126,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam (FIPL) power station,L100000406773,oil/gas,operating,180
+G100000407127,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam IV power station,L100000406774,oil/gas,operating,75
+G100000407128,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam IV power station,L100000406774,oil/gas,operating,75
+G100000407129,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam IV power station,L100000406774,oil/gas,operating,75
+G100000407130,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam IV power station,L100000406774,oil/gas,operating,75
+G100000407131,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam IV power station,L100000406774,oil/gas,operating,75
+G100000407132,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam IV power station,L100000406774,oil/gas,operating,75
+G100000407133,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam V power station,L100000406775,oil/gas,operating,138
+G100000407134,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam V power station,L100000406775,oil/gas,operating,138
+G100000407135,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Afam VI power station,L100000406776,oil/gas,operating,650
+G100000407139,energy_plants_gem_units,NGA,point,,NGA-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alaoji power station,L100000406777,oil/gas,operating,124
+G100000407140,energy_plants_gem_units,NGA,point,,NGA-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alaoji power station,L100000406777,oil/gas,operating,124
+G100000407141,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,mothballed,90
+G100000407142,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,mothballed,90
+G100000407143,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,mothballed,90
+G100000407144,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,mothballed,90
+G100000407145,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,operating,90
+G100000407146,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,operating,90
+G100000407147,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Azura-Edo IPP power station,L100000406779,oil/gas,operating,154
+G100000407148,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Azura-Edo IPP power station,L100000406779,oil/gas,operating,154
+G100000407149,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Azura-Edo IPP power station,L100000406779,oil/gas,operating,154
+G100000407150,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,operating,113
+G100000407151,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,operating,113
+G100000407152,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,operating,113
+G100000407153,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,operating,113
+G100000407154,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,operating,113
+G100000407161,energy_plants_gem_units,NGA,point,,NGA-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Egbema power station,L100000406783,oil/gas,construction,126.9
+G100000407162,energy_plants_gem_units,NGA,point,,NGA-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Egbema power station,L100000406783,oil/gas,construction,126.9
+G100000407163,energy_plants_gem_units,NGA,point,,NGA-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Egbema power station,L100000406783,oil/gas,construction,126.9
+G100000407164,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,false,abf-boundaries-v0.2.0,Egbin power station,L100000406784,oil/gas,operating,220
+G100000407165,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,false,abf-boundaries-v0.2.0,Egbin power station,L100000406784,oil/gas,operating,220
+G100000407166,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,false,abf-boundaries-v0.2.0,Egbin power station,L100000406784,oil/gas,operating,220
+G100000407167,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,false,abf-boundaries-v0.2.0,Egbin power station,L100000406784,oil/gas,operating,220
+G100000407168,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,false,abf-boundaries-v0.2.0,Egbin power station,L100000406784,oil/gas,operating,220
+G100000407169,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,false,abf-boundaries-v0.2.0,Egbin power station,L100000406784,oil/gas,operating,220
+G100000407170,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,false,abf-boundaries-v0.2.0,Egbin power station,L100000406784,oil/gas,shelved,1800
+G100000407171,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Ekrokpe-Erkrejegbe power station,L100000406785,oil/gas,cancelled,200
+G100000407172,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Ekrokpe-Erkrejegbe power station,L100000406785,oil/gas,cancelled,200
+G100000407173,energy_plants_gem_units,NGA,point,,NGA-1-BY,,point,,,,false,abf-boundaries-v0.2.0,Gbarain Gas power station,L100000406786,oil/gas,operating,126
+G100000407174,energy_plants_gem_units,NGA,point,,NGA-1-BY,,point,,,,false,abf-boundaries-v0.2.0,Gbarain Gas power station,L100000406786,oil/gas,operating,126
+G100000407175,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu I power station,L100000406787,oil/gas,operating,145
+G100000407176,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu I power station,L100000406787,oil/gas,operating,145
+G100000407177,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu I power station,L100000406787,oil/gas,operating,145
+G100000407178,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu II power station,L100000406788,oil/gas,operating,169
+G100000407179,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu II power station,L100000406788,oil/gas,operating,169
+G100000407180,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu II power station,L100000406788,oil/gas,operating,169
+G100000407181,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,Ibom power station,L100000406789,oil/gas,operating,63
+G100000407182,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,Ibom power station,L100000406789,oil/gas,operating,63
+G100000407183,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,Ibom power station,L100000406789,oil/gas,operating,63
+G100000407184,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,Ibom power station,L100000406789,oil/gas,announced,500
+G100000407185,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Ihovbor power station,L100000406790,oil/gas,operating,113
+G100000407186,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Ihovbor power station,L100000406790,oil/gas,operating,113
+G100000407187,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Ihovbor power station,L100000406790,oil/gas,operating,113
+G100000407188,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Ihovbor power station,L100000406790,oil/gas,operating,113
+G100000407189,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Kaduna power station,L100000406791,oil/gas,announced,900
+G100000407190,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,true,abf-boundaries-v0.2.0,Kano power station,L100000406792,oil/gas,announced,450
+G100000407191,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,true,abf-boundaries-v0.2.0,Kano power station,L100000406792,oil/gas,announced,450
+G100000407192,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,true,abf-boundaries-v0.2.0,Kano power station,L100000406792,oil/gas,announced,450
+G100000407194,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,true,abf-boundaries-v0.2.0,Kingline Ondo power station,L100000406794,oil/gas,cancelled,550
+G100000407195,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,true,abf-boundaries-v0.2.0,Kingline Ondo power station,L100000406794,oil/gas,cancelled,550
+G100000407196,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lekki Project power station,L100000406795,oil/gas,announced,500
+G100000407197,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lekki Project power station,L100000406795,oil/gas,announced,500
+G100000407198,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lekki Project power station,L100000406795,oil/gas,announced,500
+G100000407199,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lekki Refinery power station,L100000406796,oil/gas,operating,570
+G100000407201,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Oando Kwale power station,L100000406798,oil/gas,operating,480
+G100000407202,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Oando Kwale power station,L100000406798,oil/gas,shelved,450
+G100000407203,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Oghareki power station,L100000406799,oil/gas,shelved,100
+G100000407204,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Oghareki power station,L100000406799,oil/gas,shelved,100
+G100000407205,energy_plants_gem_units,NGA,point,,NGA-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Okija power station,L100000406800,oil/gas,announced,495
+G100000407206,energy_plants_gem_units,NGA,point,,NGA-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Okija power station,L100000406800,oil/gas,shelved,255
+G100000407207,energy_plants_gem_units,NGA,point,,NGA-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Okija power station,L100000406800,oil/gas,shelved,750
+G100000407208,energy_plants_gem_units,NGA,point,,NGA-1-OG,,point,,,,false,abf-boundaries-v0.2.0,Olorunsogo II power station,L100000406801,oil/gas,operating,377
+G100000407209,energy_plants_gem_units,NGA,point,,NGA-1-OG,,point,,,,false,abf-boundaries-v0.2.0,Olorunsogo II power station,L100000406801,oil/gas,operating,377
+G100000407215,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Omoku-II power station,L100000406803,oil/gas,operating,113
+G100000407216,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Omoku-II power station,L100000406803,oil/gas,operating,113
+G100000407217,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,false,abf-boundaries-v0.2.0,Omotosho II power station,L100000406804,oil/gas,operating,128
+G100000407218,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,false,abf-boundaries-v0.2.0,Omotosho II power station,L100000406804,oil/gas,operating,128
+G100000407219,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,false,abf-boundaries-v0.2.0,Omotosho II power station,L100000406804,oil/gas,operating,128
+G100000407220,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,false,abf-boundaries-v0.2.0,Omotosho II power station,L100000406804,oil/gas,operating,128
+G100000407221,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Proton Delta Sunrise power station,L100000406805,oil/gas,pre_construction,50
+G100000407222,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Proton Delta Sunrise power station,L100000406805,oil/gas,pre_construction,50
+G100000407223,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Proton Delta Sunrise power station,L100000406805,oil/gas,pre_construction,50
+G100000407224,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Proton Delta Sunrise power station,L100000406805,oil/gas,pre_construction,350
+G100000407225,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,Qua Iboe power plant,L100000406806,oil/gas,shelved,540
+G100000407226,energy_plants_gem_units,NGA,point,,NGA-1-OG,,point,,,,true,abf-boundaries-v0.2.0,Sagamu power station,L100000406807,oil/gas,cancelled,250
+G100000407227,energy_plants_gem_units,NGA,point,,NGA-1-OG,,point,,,,true,abf-boundaries-v0.2.0,Sagamu power station,L100000406807,oil/gas,cancelled,150
+G100000407228,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele II power station,L100000406808,oil/gas,operating,113
+G100000407229,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele II power station,L100000406808,oil/gas,operating,113
+G100000407230,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele II power station,L100000406808,oil/gas,operating,113
+G100000407231,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele II power station,L100000406808,oil/gas,operating,113
+G100000407232,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,mothballed,75
+G100000407233,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,mothballed,75
+G100000407234,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,mothballed,75
+G100000407235,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,mothballed,75
+G100000407236,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,operating,120
+G100000407237,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,operating,120
+G100000407238,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,operating,120
+G100000407239,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,mothballed,120
+G100000407240,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,mothballed,120
+G100000407241,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele power station,L100000406809,oil/gas,operating,120
+G100000407242,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Ughelli power station,L100000406810,oil/gas,operating,100
+G100000407243,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Ughelli power station,L100000406810,oil/gas,operating,100
+G100000407244,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Ughelli power station,L100000406810,oil/gas,operating,100
+G100000407245,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Ughelli power station,L100000406810,oil/gas,operating,100
+G100000407246,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Ughelli power station,L100000406810,oil/gas,operating,100
+G100000407247,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Ughelli power station,L100000406810,oil/gas,operating,100
+G100000409644,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Agura power station,L100000407499,oil/gas,announced,75
+G100000409645,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Agura power station,L100000407499,oil/gas,announced,75
+G100000409646,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Agura power station,L100000407499,oil/gas,announced,75
+G100000409647,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Agura power station,L100000407499,oil/gas,announced,165
+G100000409648,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Agura power station,L100000407499,oil/gas,announced,165
+G100000409649,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Agura power station,L100000407499,oil/gas,announced,165
+G100000409650,energy_plants_gem_units,NGA,point,,NGA-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alaoji power station,L100000406777,oil/gas,pre_construction,286
+G100000409651,energy_plants_gem_units,NGA,point,,NGA-1-BY,,point,,,,false,abf-boundaries-v0.2.0,Azikel power station,L100000407502,oil/gas,announced,125
+G100000409652,energy_plants_gem_units,NGA,point,,NGA-1-BY,,point,,,,false,abf-boundaries-v0.2.0,Azikel power station,L100000407502,oil/gas,announced,38
+G100000409653,energy_plants_gem_units,NGA,point,,NGA-1-BY,,point,,,,false,abf-boundaries-v0.2.0,Azikel power station,L100000407502,oil/gas,announced,125
+G100000409654,energy_plants_gem_units,NGA,point,,NGA-1-BY,,point,,,,false,abf-boundaries-v0.2.0,Azikel power station,L100000407502,oil/gas,announced,125
+G100000409655,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Asco power station,L100000407501,oil/gas,operating,55
+G100000409656,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Asco power station,L100000407501,oil/gas,operating,55
+G100000409657,energy_plants_gem_units,NGA,point,,NGA-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Anambra power station,L100000407500,oil/gas,shelved,124
+G100000409658,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,announced,130
+G100000409659,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,announced,130
+G100000409660,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,ALSCON Smelter power plant,L100000406778,oil/gas,announced,100
+G100000409661,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Bresson power station,L100000407503,oil/gas,announced,150
+G100000409662,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Bresson power station,L100000407503,oil/gas,announced,150
+G100000409663,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Bresson power station,L100000407503,oil/gas,announced,150
+G100000409664,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,announced,141
+G100000409665,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,announced,141
+G100000409666,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,announced,141
+G100000409667,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,announced,141
+G100000409668,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,announced,127
+G100000409669,energy_plants_gem_units,NGA,point,,NGA-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Calabar power station,L100000406780,oil/gas,announced,127
+G100000409670,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Delta IV 2 power station,L100000407505,oil/gas,announced,148.5
+G100000409671,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Delta IV 2 power station,L100000407505,oil/gas,announced,148.5
+G100000409672,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Delta IV 2 power station,L100000407505,oil/gas,announced,148.5
+G100000409673,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Delta IV 2 power station,L100000407505,oil/gas,announced,148.5
+G100000409674,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Delta III 2 power station,L100000407504,oil/gas,announced,143
+G100000409675,energy_plants_gem_units,NGA,point,,NGA-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Egbema power station,L100000406783,oil/gas,announced,127
+G100000409677,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,true,abf-boundaries-v0.2.0,Ethiope power station,L100000407506,oil/gas,shelved,500
+G100000409678,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,true,abf-boundaries-v0.2.0,Ethiope power station,L100000407506,oil/gas,shelved,500
+G100000409679,energy_plants_gem_units,NGA,point,,NGA-1-BY,,point,,,,false,abf-boundaries-v0.2.0,Gbarain Gas power station,L100000406786,oil/gas,announced,115
+G100000409680,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu I power station,L100000406787,oil/gas,announced,138
+G100000409681,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu I power station,L100000406787,oil/gas,announced,138
+G100000409682,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu I power station,L100000406787,oil/gas,announced,138
+G100000409683,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Hudson power station,L100000407507,oil/gas,announced,150
+G100000409684,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu II power station,L100000406788,oil/gas,announced,434
+G100000409685,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,false,abf-boundaries-v0.2.0,Geregu II power station,L100000406788,oil/gas,announced,285
+G100000409686,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,Ikot Abasi power station,L100000407508,oil/gas,announced,125
+G100000409687,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,false,abf-boundaries-v0.2.0,Ikot Abasi power station,L100000407508,oil/gas,announced,125
+G100000409688,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Ihovbor power station,L100000406790,oil/gas,announced,127
+G100000409689,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Ihovbor power station,L100000406790,oil/gas,announced,127
+G100000409690,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lafarge power station,L100000407510,oil/gas,announced,110
+G100000409691,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lafarge power station,L100000407510,oil/gas,announced,110
+G100000409692,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lafarge power station,L100000407510,oil/gas,shelved,50
+G100000409693,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Knox power station,L100000407509,oil/gas,shelved,167
+G100000409694,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Knox power station,L100000407509,oil/gas,shelved,167
+G100000409695,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Knox power station,L100000407509,oil/gas,shelved,167
+G100000409696,energy_plants_gem_units,NGA,point,,NGA-1-BO,,point,,,,true,abf-boundaries-v0.2.0,Maiduguri power plant,L100000407511,oil/gas,operating,50
+G100000409697,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,MBH power station,L100000407512,oil/gas,announced,150
+G100000409698,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,MBH power station,L100000407512,oil/gas,announced,150
+G100000409699,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Oats power station,L100000407513,oil/gas,shelved,100
+G100000409700,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Oats power station,L100000407513,oil/gas,shelved,100
+G100000409701,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Oats power station,L100000407513,oil/gas,shelved,100
+G100000409702,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Oats power station,L100000407513,oil/gas,shelved,100
+G100000409703,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Oats power station,L100000407513,oil/gas,shelved,100
+G100000409704,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Oats power station,L100000407513,oil/gas,shelved,100
+G100000409705,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Oats power station,L100000407513,oil/gas,shelved,100
+G100000409706,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Oghareki power station,L100000406799,oil/gas,shelved,100
+G100000409707,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Oghareki power station,L100000406799,oil/gas,shelved,100
+G100000409708,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Oghareki power station,L100000406799,oil/gas,shelved,100
+G100000409709,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,false,abf-boundaries-v0.2.0,Omotosho II power station,L100000406804,oil/gas,announced,127
+G100000409710,energy_plants_gem_units,NGA,point,,NGA-1-ON,,point,,,,false,abf-boundaries-v0.2.0,Omotosho II power station,L100000406804,oil/gas,announced,127
+G100000409711,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele II power station,L100000406808,oil/gas,announced,151
+G100000409712,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele II power station,L100000406808,oil/gas,announced,151
+G100000409713,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Sapele II power station,L100000406808,oil/gas,announced,151
+G100000409714,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Supertek power station,L100000407514,oil/gas,announced,100
+G100000409715,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Supertek power station,L100000407514,oil/gas,announced,100
+G100000409716,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Supertek power station,L100000407514,oil/gas,announced,100
+G100000409717,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Supertek power station,L100000407514,oil/gas,announced,100
+G100000409718,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Supertek power station,L100000407514,oil/gas,announced,100
+G100000409719,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Yellow Stone power station,L100000407516,oil/gas,shelved,180
+G100000409720,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Yellow Stone power station,L100000407516,oil/gas,shelved,180
+G100000409721,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Westcom power station,L100000407515,oil/gas,shelved,250
+G100000409722,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Westcom power station,L100000407515,oil/gas,shelved,250
+G100000409770,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Bonny Island LNG power plant,L100000407534,oil/gas,operating,90
+G100000409771,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,false,abf-boundaries-v0.2.0,Bonny Island LNG power plant,L100000407534,oil/gas,operating,90
+G100000410625,energy_plants_gem_units,NGA,point,,NGA-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alaoji power station,L100000406777,oil/gas,operating,124
+G100000410626,energy_plants_gem_units,NGA,point,,NGA-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alaoji power station,L100000406777,oil/gas,operating,124
+G100000410627,energy_plants_gem_units,NGA,point,,NGA-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Alaoji power station,L100000406777,oil/gas,pre_construction,286
+G100000500890,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Geregu nuclear power plant,L100000500337,nuclear,announced,1200
+G100000500891,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Geregu nuclear power plant,L100000500337,nuclear,announced,1200
+G100000500892,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,true,abf-boundaries-v0.2.0,Itu nuclear power plant,L100000500338,nuclear,shelved,1200
+G100000500893,energy_plants_gem_units,NGA,point,,NGA-1-AK,,point,,,,true,abf-boundaries-v0.2.0,Itu nuclear power plant,L100000500338,nuclear,shelved,1200
+G100000602884,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,false,abf-boundaries-v0.2.0,Gurara II hydroelectric plant,L100000602852,hydropower,pre_construction,360
+G100000602885,energy_plants_gem_units,NGA,point,,NGA-1-KW,,point,,,,false,abf-boundaries-v0.2.0,Jebba hydroelectric plant,L100000602853,hydropower,operating,578
+G100000602886,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Kainji hydroelectric plant,L100000602854,hydropower,operating,760
+G100000602889,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Shiroro hydroelectric plant,L100000602857,hydropower,operating,600
+G100000602890,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Zungeru hydroelectric plant,L100000602858,hydropower,operating,700
+G100000604239,energy_plants_gem_units,NGA,point,,NGA-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Bawarku hydroelectric plant,L100000604173,hydropower,pre_construction,182
+G100000604338,energy_plants_gem_units,NGA,point,,NGA-1-AD,,point,,,,true,abf-boundaries-v0.2.0,Dasin Hausa hydroelectric plant,L100000604208,hydropower,announced,138
+G100000604389,energy_plants_gem_units,NGA,point,,NGA-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Garin Dalli hydroelectric plant,L100000604222,hydropower,announced,92
+G100000604403,energy_plants_gem_units,NGA,point,,NGA-1-BE,,point,,,,true,abf-boundaries-v0.2.0,Grand Katsina Ala hydroelectric plant,L100000604226,hydropower,pre_construction,460
+G100000604560,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Lokoja hydroelectric plant,L100000604265,hydropower,construction,750
+G100000604592,energy_plants_gem_units,NGA,point,,NGA-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Makurdi hydroelectric plant,L100000602855,hydropower,construction,1650
+G100000604595,energy_plants_gem_units,NGA,point,,NGA-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Mambilla hydroelectric plant,L100000602856,hydropower,pre_construction,3050
+G100000604597,energy_plants_gem_units,NGA,point,,NGA-1-PL,,point,,,,true,abf-boundaries-v0.2.0,Mangu hydroelectric plant,L100000604275,hydropower,construction,182
+G100000604603,energy_plants_gem_units,NGA,point,,NGA-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Manya hydroelectric plant,L100000604278,hydropower,pre_construction,136
+G100000604682,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Oguma hydroelectric plant,L100000604299,hydropower,announced,700
+G100000604685,energy_plants_gem_units,NGA,point,,NGA-1-AN,,point,,,,true,abf-boundaries-v0.2.0,Onitsha hydroelectric plant,L100000604300,hydropower,announced,441
+G100000604763,energy_plants_gem_units,NGA,point,,NGA-1-NA,,point,,,,true,abf-boundaries-v0.2.0,River Mada hydroelectric plant,L100000604332,hydropower,pre_construction,220
+G100000604867,energy_plants_gem_units,NGA,point,,NGA-1-OY,,point,,,,true,abf-boundaries-v0.2.0,Tede hydroelectric plant,L100000604370,hydropower,announced,220
+G100000800002,energy_plants_gem_units,NGA,point,,NGA-1-PL,,point,,,,false,abf-boundaries-v0.2.0,Abiba solar farm,L100000800002,utility-scale solar,announced,50
+G100000800030,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Ashama solar farm,L100000800027,utility-scale solar,announced,200
+G100000800136,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Enugu (GreenWish) solar farm,L100000800105,utility-scale solar,cancelled,100
+G100000800150,energy_plants_gem_units,NGA,point,,NGA-1-BA,,point,,,,true,abf-boundaries-v0.2.0,Ganjuwa solar farm,L100000800115,utility-scale solar,cancelled,100
+G100000800153,energy_plants_gem_units,NGA,point,,NGA-1-NA,,point,,,,true,abf-boundaries-v0.2.0,Garaku solar farm,L100000800117,utility-scale solar,cancelled,50
+G100000800183,energy_plants_gem_units,NGA,point,,NGA-1-JI,,point,,,,true,abf-boundaries-v0.2.0,Jigawa (Oriental) solar farm,L100000800144,utility-scale solar,shelved,50
+G100000800184,energy_plants_gem_units,NGA,point,,NGA-1-JI,,point,,,,true,abf-boundaries-v0.2.0,Jigawa (Scatec) solar farm,L100000800145,utility-scale solar,cancelled,80
+G100000800188,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Kaduna (DLO) solar farm,L100000800149,utility-scale solar,operating,30
+G100000800189,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Kaduna (Greenwish) solar farm,L100000800150,utility-scale solar,cancelled,50
+G100000800197,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,true,abf-boundaries-v0.2.0,Kano solar farm,L100000800157,utility-scale solar,cancelled,100
+G100000800201,energy_plants_gem_units,NGA,point,,NGA-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Katsina solar farm,L100000800161,utility-scale solar,cancelled,75
+G100000800233,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lagos solar farm (Nigeria),L100000800188,utility-scale solar,pre_construction,360
+G100000800243,energy_plants_gem_units,NGA,point,,NGA-1-KO,,point,,,,true,abf-boundaries-v0.2.0,Lokoja solar farm,L100000800198,utility-scale solar,shelved,157
+G100000800309,energy_plants_gem_units,NGA,point,,NGA-1-NA,,point,,,,true,abf-boundaries-v0.2.0,Onyi solar farm,L100000800257,utility-scale solar,cancelled,50
+G100000800314,energy_plants_gem_units,NGA,point,,NGA-1-PL,,point,,,,true,abf-boundaries-v0.2.0,Panyam solar farm,L100000800262,utility-scale solar,shelved,70
+G100000800363,energy_plants_gem_units,NGA,point,,NGA-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Sokoto solar farm,L100000800305,utility-scale solar,pre_construction,55
+G100000814184,energy_plants_gem_units,NGA,point,,NGA-1-FC,,point,,,,true,abf-boundaries-v0.2.0,Abuja (LR Aaron Power) solar farm,L100000811637,utility-scale solar,shelved,100
+G100000814185,energy_plants_gem_units,NGA,point,,NGA-1-BA,,point,,,,true,abf-boundaries-v0.2.0,Bauchi (Nigerian Solar Capital Partners) solar farm,L100000811638,utility-scale solar,shelved,100
+G100000814186,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Enugu (Motir Dusable Limited) solar farm,L100000811639,utility-scale solar,shelved,100
+G100000814187,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Enugu (Motir Dusable Limited) solar farm,L100000811639,utility-scale solar,cancelled,200
+G100000814188,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Kaduna (Anjeed) solar farm,L100000811640,utility-scale solar,shelved,100
+G100000814189,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Kaduna (EN Africa) solar farm,L100000811641,utility-scale solar,shelved,50
+G100000814190,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Sterling and Wilson solar farm,L100000811642,utility-scale solar,announced,192
+G100000814191,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Sterling and Wilson solar farm,L100000811642,utility-scale solar,announced,192
+G100000814192,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Sterling and Wilson solar farm,L100000811642,utility-scale solar,announced,192
+G100000814193,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Sterling and Wilson solar farm,L100000811642,utility-scale solar,announced,192
+G100000814194,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Sterling and Wilson solar farm,L100000811642,utility-scale solar,announced,192
+G100000831251,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,false,abf-boundaries-v0.2.0,Bayero University Kano solar project,L100000827705,utility-scale solar,operating,3.5
+G100000831252,energy_plants_gem_units,NGA,point,,NGA-1-JI,,point,,,,true,abf-boundaries-v0.2.0,Nova Scotia NG solar farm,L100000827706,utility-scale solar,shelved,100
+G100000831253,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Snake Island Integrated Free Zone solar farm,L100000827707,utility-scale solar,operating,20
+G100000831254,energy_plants_gem_units,NGA,point,,NGA-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Tingo Foods solar farm,L100000827708,utility-scale solar,pre_construction,110
+G100000900126,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,true,abf-boundaries-v0.2.0,Kano wind farm,L100000900097,wind,cancelled,30
+G100000900154,energy_plants_gem_units,NGA,point,,NGA-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Katsina wind farm,L100000900116,wind,operating,10
+G100001018688,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,false,abf-boundaries-v0.2.0,Bayero University (ECOWAS) solar farm,L100001016759,utility-scale solar,operating,7.9
+G100001018783,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,true,abf-boundaries-v0.2.0,Shiroro solar farm,L100001016839,utility-scale solar,pre_construction,20
+G100001018784,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,true,abf-boundaries-v0.2.0,Shiroro solar farm,L100001016839,utility-scale solar,announced,280
+G100001018787,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,true,abf-boundaries-v0.2.0,West Africa Container Terminal solar farm,L100001016841,utility-scale solar,operating,5.5
+G100001018788,energy_plants_gem_units,NGA,point,,NGA-1-RI,,point,,,,true,abf-boundaries-v0.2.0,West Africa Container Terminal solar farm,L100001016841,utility-scale solar,operating,5.5
+G100001018789,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,true,abf-boundaries-v0.2.0,PRIME Teknologies solar farm,L100001016842,utility-scale solar,pre_construction,25
+G100001018791,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,true,abf-boundaries-v0.2.0,Edo State (Nigeria) wind farm,L100001016844,wind,pre_construction,175
+G100001018793,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lekki Hybrid wind farm,L100001016845,wind,announced,15
+G100001018794,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Lekki Hybrid solar farm,L100001016846,utility-scale solar,announced,15
+G100001018795,energy_plants_gem_units,NGA,point,,NGA-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Sokoto Hybrid Pilot wind farm,L100001016847,wind,announced,30
+G100001051760,energy_plants_gem_units,NGA,point,,NGA-1-KE,,point,,,,true,abf-boundaries-v0.2.0,Zamfara hydroelectric plant,L100001045914,hydropower,operating,100
+G100001052797,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Okpella Cement power station,L100001046646,coal,operating,30
+G100001052798,energy_plants_gem_units,NGA,point,,NGA-1-ED,,point,,,,false,abf-boundaries-v0.2.0,Okpella Cement power station,L100001046646,coal,operating,30
+G100001052832,energy_plants_gem_units,NGA,point,,NGA-1-BA,,point,,,,true,abf-boundaries-v0.2.0,Resident Cement Gwana power station,L100001046673,coal,announced,100
+G100001053953,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Epe power station,L100001047408,bioenergy,pre_construction,75
+G100001053954,energy_plants_gem_units,NGA,point,,NGA-1-KW,,point,,,,false,abf-boundaries-v0.2.0,Lafiagi power station,L100001047410,bioenergy,construction,35
+G100001054263,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,true,abf-boundaries-v0.2.0,Niger State power station,L100001047638,bioenergy,shelved,20
+G100001073560,energy_plants_gem_units,NGA,point,,NGA-1-KN,,point,,,,false,abf-boundaries-v0.2.0,Haske solar farm,L100001063967,utility-scale solar,operating,10
+G100001073561,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,true,abf-boundaries-v0.2.0,Kaduna (Kaduna Electric) solar farm,L100001063968,utility-scale solar,announced,60
+G100001073563,energy_plants_gem_units,NGA,point,,NGA-1-SO,,point,,,,true,abf-boundaries-v0.2.0,Sokoto (Kaduna Electric) solar farm,L100001063969,utility-scale solar,announced,20
+G100001073564,energy_plants_gem_units,NGA,point,,NGA-1-ZA,,point,,,,true,abf-boundaries-v0.2.0,Zamfara (Kaduna Electric) solar farm,L100001063970,utility-scale solar,announced,10
+G100001073565,energy_plants_gem_units,NGA,point,,NGA-1-KE,,point,,,,true,abf-boundaries-v0.2.0,Kebbi (Kaduna Electric) solar farm,L100001063971,utility-scale solar,announced,10
+G100001090907,energy_plants_gem_units,NGA,point,,NGA-1-NI,,point,,,,true,abf-boundaries-v0.2.0,Kainji Reservoir floating solar farm,L100001080920,utility-scale solar,announced,100
+G100001090931,energy_plants_gem_units,NGA,point,,NGA-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Lambar Rimi solar farm,L100001080941,utility-scale solar,announced,10
+G100001092139,energy_plants_gem_units,NGA,point,,NGA-1-KD,,point,,,,false,abf-boundaries-v0.2.0,Gurara I hydroelectric plant,L100001081835,hydropower,operating,30
+G100001092173,energy_plants_gem_units,NGA,point,,NGA-1-GO,,point,,,,false,abf-boundaries-v0.2.0,Dadin Kowa hydroelectric plant,L100001081868,hydropower,operating,40
+G100001092174,energy_plants_gem_units,NGA,point,,NGA-1-NA,,point,,,,true,abf-boundaries-v0.2.0,Farin Ruwa hydroelectric plant,L100001081869,hydropower,pre_construction,40
+G100001092175,energy_plants_gem_units,NGA,point,,NGA-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Kashimbila hydroelectric plant,L100001081870,hydropower,operating,40
+G100001093998,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Enugu State power station,L100001083269,coal,announced,660
+G100001095531,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Dahua Power Agbara power station,L100001084163,coal,pre_construction,30
+G100001095532,energy_plants_gem_units,NGA,point,,NGA-1-LA,,point,,,,true,abf-boundaries-v0.2.0,Dahua Power Agbara power station,L100001084163,coal,pre_construction,30
+G100001095541,energy_plants_gem_units,NGA,point,,NGA-1-EN,,point,,,,true,abf-boundaries-v0.2.0,Niels and Stanley Enugu power station,L100001084174,coal,announced,150

@@ -1,0 +1,42 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100978,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,true,abf-boundaries-v0.2.0,Boffa Alumina power station,L100000102017,coal,cancelled,250
+G100000113793,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,true,abf-boundaries-v0.2.0,Garafiri power station,L100000104367,coal,cancelled,80
+G100000413968,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,false,abf-boundaries-v0.2.0,Tè-Power power plant,L100000409165,oil/gas,operating,50
+G100000413969,energy_plants_gem_units,GIN,point,,GIN-1-K,,point,,,,true,abf-boundaries-v0.2.0,Siguiri Gold Mine power plant,L100000409166,oil/gas,operating,30
+G100000413970,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,false,abf-boundaries-v0.2.0,Kipé power plant,L100000409167,oil/gas,operating,54
+G100000413971,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,true,abf-boundaries-v0.2.0,Kamsar power plant,L100000409147,oil/gas,operating,32
+G100000413972,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,true,abf-boundaries-v0.2.0,Kamsar power plant,L100000409147,oil/gas,operating,24
+G100000413973,energy_plants_gem_units,GIN,point,,GIN-1-C,,point,,,,false,abf-boundaries-v0.2.0,Kaloum 5 power plant,L100000409148,oil/gas,operating,30
+G100000413974,energy_plants_gem_units,GIN,point,,GIN-1-C,,point,,,,false,abf-boundaries-v0.2.0,Kaloum 3 power plant,L100000409149,oil/gas,operating,44
+G100000413975,energy_plants_gem_units,GIN,point,,GIN-1-C,,point,,,,false,abf-boundaries-v0.2.0,Kaloum 2 power plant,L100000409150,oil/gas,operating,26
+G100000413976,energy_plants_gem_units,GIN,point,,GIN-1-C,,point,,,,false,abf-boundaries-v0.2.0,Kaloum 1 power plant,L100000409151,oil/gas,operating,24
+G100000413977,energy_plants_gem_units,GIN,point,,GIN-1-C,,point,,,,false,abf-boundaries-v0.2.0,Conakry K-Energie power plant,L100000409152,oil/gas,operating,25
+G100000413978,energy_plants_gem_units,GIN,point,,GIN-1-C,,point,,,,false,abf-boundaries-v0.2.0,Conakry K-Energie power plant,L100000409152,oil/gas,operating,25
+G100000413979,energy_plants_gem_units,GIN,point,,GIN-1-C,,point,,,,false,abf-boundaries-v0.2.0,Conakry K-Energie power plant,L100000409152,oil/gas,operating,25
+G100000601796,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Amaria hydroelectric plant,L100000601777,hydropower,construction,300
+G100000601799,energy_plants_gem_units,GIN,point,,GIN-1-M,,point,,,,false,abf-boundaries-v0.2.0,Garafiri hydroelectric plant,L100000601780,hydropower,operating,80
+G100000601800,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Kaleta hydroelectric plant,L100000601781,hydropower,operating,240
+G100000601801,energy_plants_gem_units,GIN,point,,GIN-1-M,,point,,,,false,abf-boundaries-v0.2.0,Koukoutamba hydroelectric plant,L100000601782,hydropower,pre_construction,294
+G100000601803,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Souapiti hydroelectric plant,L100000601784,hydropower,operating,450
+G100000604268,energy_plants_gem_units,GIN,point,,GIN-1-F,,point,,,,false,abf-boundaries-v0.2.0,Boureya hydroelectric plant,L100000601778,hydropower,shelved,160
+G100000604376,energy_plants_gem_units,GIN,point,,GIN-1-K,,point,,,,true,abf-boundaries-v0.2.0,Fomi hydroelectric plant,L100000601779,hydropower,pre_construction,90
+G100000604634,energy_plants_gem_units,GIN,point,,GIN-1-K,,point,,,,false,abf-boundaries-v0.2.0,Morisanako hydroelectric plant,L100000601783,hydropower,pre_construction,100
+G100000604881,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Tiopo hydroelectric plant,L100000601785,hydropower,shelved,105
+G100000800195,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,true,abf-boundaries-v0.2.0,Kamsar solar farm,L100000800156,utility-scale solar,announced,41
+G100000800196,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,true,abf-boundaries-v0.2.0,Kamsar solar farm,L100000800156,utility-scale solar,announced,41
+G100000800212,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,true,abf-boundaries-v0.2.0,Khoumagueli solar farm,L100000800170,utility-scale solar,announced,40
+G100000831171,energy_plants_gem_units,GIN,point,,GIN-1-K,,point,,,,true,abf-boundaries-v0.2.0,Kankan solar farm,L100000827642,utility-scale solar,shelved,20
+G100000831172,energy_plants_gem_units,GIN,point,,GIN-1-L,,point,,,,true,abf-boundaries-v0.2.0,Labe solar farm,L100000827643,utility-scale solar,cancelled,60
+G100000831173,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,true,abf-boundaries-v0.2.0,Sougueta solar farm,L100000827644,utility-scale solar,cancelled,85
+G100001021052,energy_plants_gem_units,GIN,point,,GIN-1-L,,point,,,,true,abf-boundaries-v0.2.0,Guinea-Conakry solar project,L100001018782,utility-scale solar,announced,500
+G100001021055,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,true,abf-boundaries-v0.2.0,Boffa wind farm,L100001018785,wind,shelved,120
+G100001027268,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Boke hydroelectric plant,L100001023063,hydropower,operating,45
+G100001074426,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,true,abf-boundaries-v0.2.0,Conakry Solar Initiative,L100001064658,utility-scale solar,announced,10
+G100001074427,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,true,abf-boundaries-v0.2.0,Boké solar farm,L100001064659,utility-scale solar,announced,15
+G100001074429,energy_plants_gem_units,GIN,point,,GIN-1-D,,point,,,,true,abf-boundaries-v0.2.0,Kindia solar project,L100001064661,utility-scale solar,announced,5
+G100001074430,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,true,abf-boundaries-v0.2.0,Fria Solar Energy Project,L100001064662,utility-scale solar,announced,7
+G100001074436,energy_plants_gem_units,GIN,point,,GIN-1-L,,point,,,,true,abf-boundaries-v0.2.0,Labe Solar Power Station,L100001064665,utility-scale solar,announced,3
+G100001074437,energy_plants_gem_units,GIN,point,,GIN-1-N,,point,,,,true,abf-boundaries-v0.2.0,N'Zérékoré Solar Project,L100001064666,utility-scale solar,announced,4
+G100001074438,energy_plants_gem_units,GIN,point,,GIN-1-K,,point,,,,true,abf-boundaries-v0.2.0,Siguiri Solar Power Plant,L100001064667,utility-scale solar,announced,6
+G100001090777,energy_plants_gem_units,GIN,point,,GIN-1-B,,point,,,,true,abf-boundaries-v0.2.0,West Africa Kamsar power station,L100001080831,oil/gas,announced,1800
+G100001092291,energy_plants_gem_units,GIN,point,,GIN-1-K,,point,,,,true,abf-boundaries-v0.2.0,Kogbèdou hydroelectric plant,L100001081966,hydropower,pre_construction,102

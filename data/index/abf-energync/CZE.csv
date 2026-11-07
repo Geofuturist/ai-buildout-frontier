@@ -1,0 +1,698 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001009132,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Chrudichromy solar project,L100001007762,utility-scale solar,operating,12.5
+G100001009133,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Hrušovany solar project,L100001007763,utility-scale solar,operating,9.1
+G100001009134,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Mastířovice solar project,L100001007764,utility-scale solar,operating,8.2
+G100001009135,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Oslavany solar project,L100001007765,utility-scale solar,operating,10.7
+G100001009136,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Sokolnice Papeno solar project,L100001007766,utility-scale solar,operating,19.8
+G100001009138,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Vlkoš solar project,L100001007768,utility-scale solar,operating,9.4
+G100001009140,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Vrbice solar project,L100001007770,utility-scale solar,operating,4.6
+G100001009141,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Žabčice solar project,L100001007771,utility-scale solar,operating,7.1
+G100001009142,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Zakřany solar project,L100001007772,utility-scale solar,operating,7.3
+G100001009143,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Smiřice solar project,L100001007773,utility-scale solar,operating,8.3
+G100001009145,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Jabloneček Ra1b solar project,L100001007775,utility-scale solar,operating,9.3
+G100001009146,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Mimoň Liglass solar project,L100001007776,utility-scale solar,operating,7.5
+G100001009149,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Stráž pod Ralskem solar project,L100001007779,utility-scale solar,operating,7.3
+G100001009150,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Raková u Konice solar project,L100001007780,utility-scale solar,operating,8.4
+G100001009151,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Kameničná solar project,L100001007781,utility-scale solar,operating,7.3
+G100001009152,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Klenovka solar project,L100001007782,utility-scale solar,operating,8.9
+G100001009153,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pohledy solar project,L100001007783,utility-scale solar,operating,7.5
+G100001009154,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Bělá nad Radbuzou solar project,L100001007784,utility-scale solar,operating,9.1
+G100001009155,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Letkov solar project,L100001007785,utility-scale solar,operating,13.5
+G100001009157,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Sulkov solar project,L100001007787,utility-scale solar,operating,19.7
+G100001009158,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Kutná Hora solar project,L100001007788,utility-scale solar,operating,8.8
+G100001009161,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Dubí solar project,L100001007791,utility-scale solar,operating,4.1
+G100001009162,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Jeníkov solar project,L100001007792,utility-scale solar,operating,5.8
+G100001009163,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Světec solar project,L100001007793,utility-scale solar,operating,6.6
+G100001009164,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Břest solar project,L100001007794,utility-scale solar,operating,3.2
+G100001009165,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Napajedla solar project,L100001007795,utility-scale solar,operating,8
+G100001009166,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Slušovice solar project,L100001007796,utility-scale solar,operating,6.7
+G100001009167,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Uhersky Brod solar project,L100001007797,utility-scale solar,operating,13.5
+G100001009168,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Velké Těšany solar project,L100001007798,utility-scale solar,operating,7.6
+G100001009169,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zašová solar project,L100001007799,utility-scale solar,operating,9.4
+G100001009170,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project I,L100001007800,utility-scale solar,operating,5.4
+G100001009171,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project I,L100001007801,utility-scale solar,operating,4.5
+G100001009172,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project II,L100001007802,utility-scale solar,operating,5.5
+G100001009173,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-10,,point,,,,false,abf-boundaries-v0.2.0,Prague solar project,L100001007803,utility-scale solar,operating,5.5
+G100001009174,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project I,L100001007804,utility-scale solar,operating,10.7
+G100001009175,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project I,L100001007805,utility-scale solar,operating,3.7
+G100001009176,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project I,L100001007806,utility-scale solar,operating,2.7
+G100001009177,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project I,L100001007807,utility-scale solar,operating,7.2
+G100001009178,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project I,L100001007808,utility-scale solar,operating,6.9
+G100001009179,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project I,L100001007809,utility-scale solar,operating,5.2
+G100001009180,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project II,L100001007810,utility-scale solar,operating,4.8
+G100001009181,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project I,L100001007811,utility-scale solar,operating,5.2
+G100001009182,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project II,L100001007812,utility-scale solar,operating,7.2
+G100001009183,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project III,L100001007813,utility-scale solar,operating,5.6
+G100001009184,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project III,L100001007814,utility-scale solar,operating,9.1
+G100001009185,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project II,L100001007815,utility-scale solar,operating,5
+G100001009186,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project IV,L100001007816,utility-scale solar,operating,6.2
+G100001009187,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project V,L100001007817,utility-scale solar,operating,7.8
+G100001009188,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project II,L100001007818,utility-scale solar,operating,6.6
+G100001009189,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project II,L100001007819,utility-scale solar,operating,5.2
+G100001009190,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project VI,L100001007820,utility-scale solar,operating,4.1
+G100001009191,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project VII,L100001007821,utility-scale solar,operating,2.8
+G100001009192,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project VIII,L100001007822,utility-scale solar,operating,4.4
+G100001009193,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project II,L100001007823,utility-scale solar,operating,2.9
+G100001009194,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project III,L100001007824,utility-scale solar,operating,7.4
+G100001009195,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project IV,L100001007825,utility-scale solar,operating,3.7
+G100001009196,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project III,L100001007826,utility-scale solar,operating,2.1
+G100001009197,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project III,L100001007827,utility-scale solar,operating,2
+G100001009198,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project III,L100001007828,utility-scale solar,operating,6.1
+G100001009199,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project IX,L100001007829,utility-scale solar,operating,5.4
+G100001009200,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project V,L100001007830,utility-scale solar,operating,4.4
+G100001009201,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project VI,L100001007831,utility-scale solar,operating,4.2
+G100001009202,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project X,L100001007832,utility-scale solar,operating,4.8
+G100001009203,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project III,L100001007833,utility-scale solar,operating,1.8
+G100001009204,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project IV,L100001007834,utility-scale solar,operating,8.4
+G100001009205,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XI,L100001007835,utility-scale solar,operating,2.7
+G100001009206,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project I,L100001007836,utility-scale solar,operating,2.7
+G100001009207,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project V,L100001007837,utility-scale solar,operating,7.7
+G100001009208,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XII,L100001007838,utility-scale solar,operating,5.6
+G100001009209,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XIII,L100001007839,utility-scale solar,operating,6.5
+G100001009210,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XIV,L100001007840,utility-scale solar,operating,6.4
+G100001009211,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XV,L100001007841,utility-scale solar,operating,10.2
+G100001009212,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XVI,L100001007842,utility-scale solar,operating,4.9
+G100001009214,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XVIII,L100001007844,utility-scale solar,operating,5.5
+G100001009215,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project IV,L100001007845,utility-scale solar,operating,5.1
+G100001009216,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XIX,L100001007846,utility-scale solar,operating,6.3
+G100001009217,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project VI,L100001007847,utility-scale solar,operating,8.9
+G100001009218,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project VII,L100001007848,utility-scale solar,operating,8.8
+G100001009219,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project VII,L100001007849,utility-scale solar,operating,5.1
+G100001009220,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project V,L100001007850,utility-scale solar,operating,6.4
+G100001009221,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project IV,L100001007851,utility-scale solar,operating,2.3
+G100001009222,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project II,L100001007852,utility-scale solar,operating,3.5
+G100001009223,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project IV,L100001007853,utility-scale solar,operating,2.1
+G100001009224,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XX,L100001007854,utility-scale solar,operating,4.3
+G100001009225,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project VIII,L100001007855,utility-scale solar,operating,4.6
+G100001009226,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project IX,L100001007856,utility-scale solar,operating,6.8
+G100001009227,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXI,L100001007857,utility-scale solar,operating,3.6
+G100001009228,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXII,L100001007858,utility-scale solar,operating,3.2
+G100001009229,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project VI,L100001007859,utility-scale solar,operating,3.6
+G100001009230,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project II,L100001007860,utility-scale solar,operating,1.8
+G100001009231,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXIII,L100001007861,utility-scale solar,operating,5.5
+G100001009232,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project VIII,L100001007862,utility-scale solar,operating,1.8
+G100001009233,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project IX,L100001007863,utility-scale solar,operating,17.8
+G100001009234,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project X,L100001007864,utility-scale solar,operating,2.8
+G100001009235,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project III,L100001007865,utility-scale solar,operating,4.3
+G100001009236,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXIV,L100001007866,utility-scale solar,operating,4.3
+G100001009238,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXVI,L100001007868,utility-scale solar,operating,4.9
+G100001009239,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXVII,L100001007869,utility-scale solar,operating,3.1
+G100001009240,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project IV,L100001007870,utility-scale solar,operating,3.1
+G100001009241,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project IV,L100001007871,utility-scale solar,operating,5.4
+G100001009242,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project X,L100001007872,utility-scale solar,operating,2.5
+G100001009243,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project II,L100001007873,utility-scale solar,operating,5.4
+G100001009244,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project I,L100001007874,utility-scale solar,operating,1.8
+G100001009245,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project VII,L100001007875,utility-scale solar,operating,3.4
+G100001009246,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project III,L100001007876,utility-scale solar,operating,4.1
+G100001009247,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project VIII,L100001007877,utility-scale solar,operating,6.3
+G100001009249,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project II,L100001007879,utility-scale solar,operating,4
+G100001009250,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovarský Kraj solar project I,L100001007880,utility-scale solar,operating,3.2
+G100001009251,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project IX,L100001007881,utility-scale solar,operating,3
+G100001009252,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project X,L100001007882,utility-scale solar,operating,2.6
+G100001009253,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project V,L100001007883,utility-scale solar,operating,4.8
+G100001009254,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXIX,L100001007884,utility-scale solar,operating,10
+G100001009255,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XI,L100001007885,utility-scale solar,operating,1.5
+G100001009257,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project V,L100001007887,utility-scale solar,operating,3.9
+G100001009258,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project I,L100001007888,utility-scale solar,operating,2.2
+G100001009259,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXI,L100001007889,utility-scale solar,operating,3.5
+G100001009260,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXII,L100001007890,utility-scale solar,operating,4.8
+G100001009261,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XI,L100001007891,utility-scale solar,operating,3.5
+G100001009262,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XII,L100001007892,utility-scale solar,operating,5.6
+G100001009263,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project III,L100001007893,utility-scale solar,operating,4.2
+G100001009264,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project I,L100001007894,utility-scale solar,operating,2.3
+G100001009265,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project V,L100001007895,utility-scale solar,operating,6.3
+G100001009266,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project VI,L100001007896,utility-scale solar,operating,3.6
+G100001009267,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project III,L100001007897,utility-scale solar,operating,2.7
+G100001009268,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXIII,L100001007898,utility-scale solar,operating,7.3
+G100001009269,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XII,L100001007899,utility-scale solar,operating,3
+G100001009270,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Královéhradecký Kraj solar project,L100001007900,utility-scale solar,operating,3.7
+G100001009271,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XIII,L100001007901,utility-scale solar,operating,3.5
+G100001009272,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXIV,L100001007902,utility-scale solar,operating,4
+G100001009273,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXV,L100001007903,utility-scale solar,operating,3.7
+G100001009274,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project V,L100001007904,utility-scale solar,operating,3.2
+G100001009275,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project IV,L100001007905,utility-scale solar,operating,2.3
+G100001009276,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XIV,L100001007906,utility-scale solar,operating,4.6
+G100001009277,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXVI,L100001007907,utility-scale solar,operating,3.9
+G100001009278,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project VII,L100001007908,utility-scale solar,operating,2.3
+G100001009279,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXVII,L100001007909,utility-scale solar,operating,3.7
+G100001009280,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project VI,L100001007910,utility-scale solar,operating,7.3
+G100001009281,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XI,L100001007911,utility-scale solar,operating,1.7
+G100001009282,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project VIII,L100001007912,utility-scale solar,operating,6.1
+G100001009283,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project V,L100001007913,utility-scale solar,operating,8.3
+G100001009284,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project VI,L100001007914,utility-scale solar,operating,2.4
+G100001009285,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXVIII,L100001007915,utility-scale solar,operating,3.9
+G100001009286,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project VII,L100001007916,utility-scale solar,operating,6.7
+G100001009287,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XIII,L100001007917,utility-scale solar,operating,1.6
+G100001009288,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XV,L100001007918,utility-scale solar,operating,3.2
+G100001009289,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-10,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XIV,L100001007919,utility-scale solar,operating,6.7
+G100001009290,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project II,L100001007920,utility-scale solar,operating,3.8
+G100001009291,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XXXIX,L100001007921,utility-scale solar,operating,3.6
+G100001009292,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project IV,L100001007922,utility-scale solar,operating,6.5
+G100001009293,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project VII,L100001007923,utility-scale solar,operating,1.7
+G100001009294,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project VI,L100001007924,utility-scale solar,operating,3.8
+G100001009295,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XL,L100001007925,utility-scale solar,operating,8.2
+G100001009296,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLI,L100001007926,utility-scale solar,operating,6.9
+G100001009297,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project VIII,L100001007927,utility-scale solar,operating,4.2
+G100001009298,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLII,L100001007928,utility-scale solar,operating,2.8
+G100001009299,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project VI,L100001007929,utility-scale solar,operating,3.2
+G100001009300,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XV,L100001007930,utility-scale solar,operating,2.5
+G100001009303,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project IX,L100001007933,utility-scale solar,operating,4.6
+G100001009304,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLIV,L100001007934,utility-scale solar,operating,3
+G100001009305,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLV,L100001007935,utility-scale solar,operating,2.7
+G100001009306,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project VII,L100001007936,utility-scale solar,operating,3.5
+G100001009307,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XVI,L100001007937,utility-scale solar,operating,1.9
+G100001009308,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XII,L100001007938,utility-scale solar,operating,4.2
+G100001009309,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XVII,L100001007939,utility-scale solar,operating,3.6
+G100001009310,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLVI,L100001007940,utility-scale solar,operating,6
+G100001009311,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XVI,L100001007941,utility-scale solar,operating,2.5
+G100001009312,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLVII,L100001007942,utility-scale solar,operating,6
+G100001009313,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project VIII,L100001007943,utility-scale solar,operating,4.1
+G100001009314,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project IX,L100001007944,utility-scale solar,operating,3.1
+G100001009315,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XVIII,L100001007945,utility-scale solar,operating,15.2
+G100001009316,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XIII,L100001007946,utility-scale solar,operating,4.7
+G100001009317,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project IX,L100001007947,utility-scale solar,operating,5.8
+G100001009318,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project X,L100001007948,utility-scale solar,operating,2
+G100001009319,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XVII,L100001007949,utility-scale solar,operating,2.6
+G100001009321,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XIX,L100001007951,utility-scale solar,operating,2.1
+G100001009322,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XVIII,L100001007952,utility-scale solar,operating,3.3
+G100001009323,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project VII,L100001007953,utility-scale solar,operating,6.4
+G100001009324,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XI,L100001007954,utility-scale solar,operating,5.6
+G100001009325,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XX,L100001007955,utility-scale solar,operating,5.3
+G100001009326,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project IX,L100001007956,utility-scale solar,operating,5.9
+G100001009328,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XIX,L100001007958,utility-scale solar,operating,2.4
+G100001009329,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLVIII,L100001007959,utility-scale solar,operating,3.6
+G100001009330,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XIV,L100001007960,utility-scale solar,operating,2.9
+G100001009331,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXII,L100001007961,utility-scale solar,operating,5
+G100001009332,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project II,L100001007962,utility-scale solar,operating,3.6
+G100001009333,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXIII,L100001007963,utility-scale solar,operating,2
+G100001009334,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XX,L100001007964,utility-scale solar,operating,5.6
+G100001009335,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project V,L100001007965,utility-scale solar,operating,3.3
+G100001009336,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project X,L100001007966,utility-scale solar,operating,3.8
+G100001009337,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XV,L100001007967,utility-scale solar,operating,1.6
+G100001009338,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XLIX,L100001007968,utility-scale solar,operating,3
+G100001009339,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project L,L100001007969,utility-scale solar,operating,1.4
+G100001009340,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LI,L100001007970,utility-scale solar,operating,6.7
+G100001009341,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXIV,L100001007971,utility-scale solar,operating,2.3
+G100001009342,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LII,L100001007972,utility-scale solar,operating,3.1
+G100001009343,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project X,L100001007973,utility-scale solar,operating,1.8
+G100001009344,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project VIII,L100001007974,utility-scale solar,operating,6.1
+G100001009345,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LIII,L100001007975,utility-scale solar,operating,3.9
+G100001009346,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LIV,L100001007976,utility-scale solar,operating,4.3
+G100001009347,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project III,L100001007977,utility-scale solar,operating,6.9
+G100001009348,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project IV,L100001007978,utility-scale solar,operating,3.1
+G100001009349,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXI,L100001007979,utility-scale solar,operating,2.9
+G100001009350,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project III,L100001007980,utility-scale solar,operating,1.9
+G100001009351,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project IX,L100001007981,utility-scale solar,operating,2.9
+G100001009352,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project IV,L100001007982,utility-scale solar,operating,6.3
+G100001009353,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LV,L100001007983,utility-scale solar,operating,1.8
+G100001009354,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXII,L100001007984,utility-scale solar,operating,1.7
+G100001009355,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXIII,L100001007985,utility-scale solar,operating,2.5
+G100001009356,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXIV,L100001007986,utility-scale solar,operating,4.4
+G100001009357,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project IV,L100001007987,utility-scale solar,operating,3.5
+G100001009358,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project X,L100001007988,utility-scale solar,operating,1.9
+G100001009359,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LVI,L100001007989,utility-scale solar,operating,5.5
+G100001009360,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XVI,L100001007990,utility-scale solar,operating,3.1
+G100001009361,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LVII,L100001007991,utility-scale solar,operating,2.3
+G100001009362,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXV,L100001007992,utility-scale solar,operating,1.6
+G100001009363,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project V,L100001007993,utility-scale solar,operating,1.7
+G100001009364,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project VI,L100001007994,utility-scale solar,operating,5
+G100001009365,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project V,L100001007995,utility-scale solar,operating,4.8
+G100001009367,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LVIII,L100001007997,utility-scale solar,operating,3.1
+G100001009368,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project XI,L100001007998,utility-scale solar,operating,4.3
+G100001009369,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LIX,L100001007999,utility-scale solar,operating,7.5
+G100001009370,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LX,L100001008000,utility-scale solar,operating,4
+G100001009371,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXI,L100001008001,utility-scale solar,operating,8.3
+G100001009373,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XI,L100001008003,utility-scale solar,operating,12.2
+G100001009374,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXV,L100001008004,utility-scale solar,operating,2.9
+G100001009375,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXII,L100001008005,utility-scale solar,operating,4.8
+G100001009376,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XVII,L100001008006,utility-scale solar,operating,3.8
+G100001009377,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXVI,L100001008007,utility-scale solar,operating,4
+G100001009378,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XII,L100001008008,utility-scale solar,operating,6.5
+G100001009379,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXVII,L100001008009,utility-scale solar,operating,5.9
+G100001009380,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XII,L100001008010,utility-scale solar,operating,3.7
+G100001009381,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXIII,L100001008011,utility-scale solar,operating,4.5
+G100001009382,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXIV,L100001008012,utility-scale solar,operating,2.3
+G100001009383,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XVIII,L100001008013,utility-scale solar,operating,2.1
+G100001009384,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXVI,L100001008014,utility-scale solar,operating,2.9
+G100001009385,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project VI,L100001008015,utility-scale solar,operating,6.4
+G100001009386,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XIII,L100001008016,utility-scale solar,operating,3.6
+G100001009387,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XIX,L100001008017,utility-scale solar,operating,4.6
+G100001009388,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXV,L100001008018,utility-scale solar,operating,3.8
+G100001009390,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XIII,L100001008020,utility-scale solar,operating,2.3
+G100001009391,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project VII,L100001008021,utility-scale solar,operating,4.8
+G100001009392,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XX,L100001008022,utility-scale solar,operating,3.3
+G100001009393,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XIV,L100001008023,utility-scale solar,operating,1.6
+G100001009394,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXVII,L100001008024,utility-scale solar,operating,3.8
+G100001009396,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXVIII,L100001008026,utility-scale solar,operating,3
+G100001009397,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXVI,L100001008027,utility-scale solar,operating,2.6
+G100001009398,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXVIII,L100001008028,utility-scale solar,operating,2.5
+G100001009399,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XIV,L100001008029,utility-scale solar,operating,3.6
+G100001009400,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXIX,L100001008030,utility-scale solar,operating,2.2
+G100001009401,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Svatobořice-Mistřín Jihomoravský Kraj solar project,L100001008031,utility-scale solar,operating,5.4
+G100001009402,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XV,L100001008032,utility-scale solar,operating,2.2
+G100001009403,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XV,L100001008033,utility-scale solar,operating,5.7
+G100001009404,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project XII,L100001008034,utility-scale solar,operating,2.3
+G100001009405,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXX,L100001008035,utility-scale solar,operating,4.2
+G100001009406,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXVII,L100001008036,utility-scale solar,operating,5.2
+G100001009407,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXVIII,L100001008037,utility-scale solar,operating,8.3
+G100001009408,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXIX,L100001008038,utility-scale solar,operating,1.9
+G100001009409,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project VIII,L100001008039,utility-scale solar,operating,2.3
+G100001009410,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project VI,L100001008040,utility-scale solar,operating,2.3
+G100001009411,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXX,L100001008041,utility-scale solar,operating,5.8
+G100001009412,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project XIII,L100001008042,utility-scale solar,operating,3.8
+G100001009413,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXI,L100001008043,utility-scale solar,operating,4.7
+G100001009414,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXI,L100001008044,utility-scale solar,operating,2.9
+G100001009415,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXII,L100001008045,utility-scale solar,operating,2
+G100001009416,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XVI,L100001008046,utility-scale solar,operating,3.2
+G100001009417,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXI,L100001008047,utility-scale solar,operating,3.8
+G100001009418,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXIX,L100001008048,utility-scale solar,operating,6
+G100001009419,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project VII,L100001008049,utility-scale solar,operating,5.5
+G100001009420,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XVI,L100001008050,utility-scale solar,operating,3.8
+G100001009421,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XI,L100001008051,utility-scale solar,operating,5
+G100001009422,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project IX,L100001008052,utility-scale solar,operating,3.1
+G100001009423,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXX,L100001008053,utility-scale solar,operating,8.9
+G100001009424,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XVII,L100001008054,utility-scale solar,operating,1.8
+G100001009425,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project XI,L100001008055,utility-scale solar,operating,2.3
+G100001009426,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project XIV,L100001008056,utility-scale solar,operating,4.2
+G100001009427,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXI,L100001008057,utility-scale solar,operating,2.1
+G100001009428,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XVII,L100001008058,utility-scale solar,operating,2.4
+G100001009429,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXIII,L100001008059,utility-scale solar,operating,15.7
+G100001009431,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project X,L100001008061,utility-scale solar,operating,1.5
+G100001009432,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XVIII,L100001008062,utility-scale solar,operating,3.4
+G100001009433,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project VIII,L100001008063,utility-scale solar,operating,3.1
+G100001009434,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project VII,L100001008064,utility-scale solar,operating,2.6
+G100001009435,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXII,L100001008065,utility-scale solar,operating,3.5
+G100001009436,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXIV,L100001008066,utility-scale solar,operating,2
+G100001009437,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXV,L100001008067,utility-scale solar,operating,2.3
+G100001009438,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXVI,L100001008068,utility-scale solar,operating,1.9
+G100001009439,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXII,L100001008069,utility-scale solar,operating,2.8
+G100001009440,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XIX,L100001008070,utility-scale solar,operating,6.6
+G100001009441,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XX,L100001008071,utility-scale solar,operating,5.5
+G100001009442,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXIII,L100001008072,utility-scale solar,operating,3.2
+G100001009443,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XVIII,L100001008073,utility-scale solar,operating,6.2
+G100001009444,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXVII,L100001008074,utility-scale solar,operating,3.3
+G100001009445,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXIII,L100001008075,utility-scale solar,operating,3.4
+G100001009446,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXVIII,L100001008076,utility-scale solar,operating,2.3
+G100001009447,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXIV,L100001008077,utility-scale solar,operating,2.6
+G100001009448,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXIII,L100001008078,utility-scale solar,operating,2.8
+G100001009449,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXV,L100001008079,utility-scale solar,operating,4.4
+G100001009450,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXIV,L100001008080,utility-scale solar,operating,5.7
+G100001009451,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXV,L100001008081,utility-scale solar,operating,1.3
+G100001009452,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XXXIX,L100001008082,utility-scale solar,operating,3.3
+G100001009453,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXIV,L100001008083,utility-scale solar,operating,6.4
+G100001009454,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXV,L100001008084,utility-scale solar,operating,2.1
+G100001009455,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XIX,L100001008085,utility-scale solar,operating,3.9
+G100001009456,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XL,L100001008086,utility-scale solar,operating,1.7
+G100001009457,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXVI,L100001008087,utility-scale solar,operating,3.3
+G100001009458,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XII,L100001008088,utility-scale solar,operating,7.7
+G100001009460,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XX,L100001008090,utility-scale solar,operating,2.8
+G100001009461,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXVI,L100001008091,utility-scale solar,operating,3
+G100001009462,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project XIII,L100001008092,utility-scale solar,operating,11.1
+G100001009463,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXI,L100001008093,utility-scale solar,operating,2.6
+G100001009464,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXVI,L100001008094,utility-scale solar,operating,4.4
+G100001009465,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLI,L100001008095,utility-scale solar,operating,3.1
+G100001009466,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXVII,L100001008096,utility-scale solar,operating,1.5
+G100001009467,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXII,L100001008097,utility-scale solar,operating,2.5
+G100001009468,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLII,L100001008098,utility-scale solar,operating,2.4
+G100001009469,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXIII,L100001008099,utility-scale solar,operating,3.4
+G100001009470,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXVII,L100001008100,utility-scale solar,operating,3.7
+G100001009471,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXIV,L100001008101,utility-scale solar,operating,3.8
+G100001009472,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXI,L100001008102,utility-scale solar,operating,8
+G100001009473,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XIII,L100001008103,utility-scale solar,operating,3
+G100001009474,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLIII,L100001008104,utility-scale solar,operating,4.2
+G100001009475,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXII,L100001008105,utility-scale solar,operating,1.2
+G100001009476,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXIII,L100001008106,utility-scale solar,operating,2.1
+G100001009477,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Pilsen Plzeňský Kraj solar project,L100001008107,utility-scale solar,operating,4.8
+G100001009478,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXV,L100001008108,utility-scale solar,operating,3.1
+G100001009479,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XIV,L100001008109,utility-scale solar,operating,8.8
+G100001009480,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XV,L100001008110,utility-scale solar,operating,1.7
+G100001009481,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXVI,L100001008111,utility-scale solar,operating,2.8
+G100001009482,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXVII,L100001008112,utility-scale solar,operating,1.3
+G100001009483,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXVIII,L100001008113,utility-scale solar,operating,1.3
+G100001009484,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXVII,L100001008114,utility-scale solar,operating,4.4
+G100001009485,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXVIII,L100001008115,utility-scale solar,operating,4.5
+G100001009486,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXVIII,L100001008116,utility-scale solar,operating,4.9
+G100001009487,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project VIII,L100001008117,utility-scale solar,operating,4.2
+G100001009488,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XVI,L100001008118,utility-scale solar,operating,5
+G100001009489,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXIV,L100001008119,utility-scale solar,operating,2
+G100001009490,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project IX,L100001008120,utility-scale solar,operating,2.2
+G100001009491,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XXXIX,L100001008121,utility-scale solar,operating,3.2
+G100001009492,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project VIII,L100001008122,utility-scale solar,operating,2.8
+G100001009494,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXIX,L100001008124,utility-scale solar,operating,1.8
+G100001009495,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXIX,L100001008125,utility-scale solar,operating,8.9
+G100001009496,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLIV,L100001008126,utility-scale solar,operating,1.9
+G100001009497,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XVII,L100001008127,utility-scale solar,operating,2.9
+G100001009498,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXV,L100001008128,utility-scale solar,operating,8
+G100001009499,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project IX,L100001008129,utility-scale solar,operating,4.3
+G100001009500,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubický Kraj solar project XIV,L100001008130,utility-scale solar,operating,2.4
+G100001009501,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXVI,L100001008131,utility-scale solar,operating,2.5
+G100001009502,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project IX,L100001008132,utility-scale solar,operating,2.2
+G100001009503,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project X,L100001008133,utility-scale solar,operating,3.7
+G100001009504,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXX,L100001008134,utility-scale solar,operating,6.5
+G100001009505,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXXI,L100001008135,utility-scale solar,operating,2.2
+G100001009506,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXXII,L100001008136,utility-scale solar,operating,2.1
+G100001009507,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXVII,L100001008137,utility-scale solar,operating,5.5
+G100001009510,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLV,L100001008140,utility-scale solar,operating,3.5
+G100001009511,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XIX,L100001008141,utility-scale solar,operating,2.8
+G100001009512,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project X,L100001008142,utility-scale solar,operating,1.7
+G100001009513,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXXIII,L100001008143,utility-scale solar,operating,5
+G100001009514,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project XI,L100001008144,utility-scale solar,operating,5.4
+G100001009515,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLVI,L100001008145,utility-scale solar,operating,3.8
+G100001009516,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXIX,L100001008146,utility-scale solar,operating,1.8
+G100001009517,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravskoslezský Kraj solar project XI,L100001008147,utility-scale solar,operating,4.5
+G100001009519,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXXI,L100001008149,utility-scale solar,operating,18.4
+G100001009520,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXX,L100001008150,utility-scale solar,operating,7.8
+G100001009521,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXXV,L100001008151,utility-scale solar,operating,4.4
+G100001009522,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovarský Kraj solar project II,L100001008152,utility-scale solar,operating,2.8
+G100001009523,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XX,L100001008153,utility-scale solar,operating,5.7
+G100001009524,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXXI,L100001008154,utility-scale solar,operating,16.8
+G100001009525,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXXII,L100001008155,utility-scale solar,operating,8.1
+G100001009526,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Jihočeský Kraj solar project XV,L100001008156,utility-scale solar,operating,4.6
+G100001009527,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project X,L100001008157,utility-scale solar,operating,4.3
+G100001009528,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXXIII,L100001008158,utility-scale solar,operating,3.8
+G100001009529,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLVII,L100001008159,utility-scale solar,operating,4.2
+G100001009531,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXXII,L100001008161,utility-scale solar,operating,3.8
+G100001009532,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project XI,L100001008162,utility-scale solar,operating,5.7
+G100001009533,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XLVIII,L100001008163,utility-scale solar,operating,4.6
+G100001009534,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXVIII,L100001008164,utility-scale solar,operating,1.6
+G100001009535,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Kraj Vysočina solar project XII,L100001008165,utility-scale solar,operating,2.6
+G100001009536,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXXVII,L100001008166,utility-scale solar,operating,4.8
+G100001009537,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XL,L100001008167,utility-scale solar,operating,4.9
+G100001009538,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXXIII,L100001008168,utility-scale solar,operating,6.5
+G100001009539,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlínský Kraj solar project XXI,L100001008169,utility-scale solar,operating,6.1
+G100001009540,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXXVIII,L100001008170,utility-scale solar,operating,2.3
+G100001009542,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project XII,L100001008172,utility-scale solar,operating,5.6
+G100001009543,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project LXXXIX,L100001008173,utility-scale solar,operating,5.5
+G100001009544,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Jihomoravský Kraj solar project XC,L100001008174,utility-scale solar,operating,5.7
+G100001009545,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project XIII,L100001008175,utility-scale solar,operating,2.2
+G100001009548,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXXIV,L100001008178,utility-scale solar,operating,6.4
+G100001009549,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovarský Kraj solar project III,L100001008179,utility-scale solar,operating,2.3
+G100001009550,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeňský Kraj solar project XXXV,L100001008180,utility-scale solar,operating,3.6
+G100001009552,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústecký Kraj solar project XXXVI,L100001008182,utility-scale solar,operating,3.7
+G100001009553,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberecký Kraj solar project XI,L100001008183,utility-scale solar,operating,2.6
+G100001009555,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Královéhradecký Kraj solar project XIV,L100001008185,utility-scale solar,operating,1.9
+G100001059105,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project I,L100001051311,utility-scale solar,operating,1.4
+G100001059106,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project I,L100001051312,utility-scale solar,operating,3.5
+G100001059107,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project I,L100001051313,utility-scale solar,operating,2.1
+G100001059109,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project L,L100001051315,utility-scale solar,operating,1
+G100001059110,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project I,L100001051316,utility-scale solar,operating,2.1
+G100001059111,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Liberec Region solar project,L100001051317,utility-scale solar,operating,1.6
+G100001059113,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project I,L100001051319,utility-scale solar,operating,2.5
+G100001059114,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project I,L100001051320,utility-scale solar,operating,1.7
+G100001059116,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project II,L100001051322,utility-scale solar,operating,1.3
+G100001059118,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project III,L100001051324,utility-scale solar,operating,2.2
+G100001059119,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovy Vary Region solar project I,L100001051325,utility-scale solar,operating,5
+G100001059120,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project IV,L100001051326,utility-scale solar,operating,4.6
+G100001059121,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project II,L100001051327,utility-scale solar,operating,1
+G100001059122,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project V,L100001051328,utility-scale solar,operating,1.5
+G100001059123,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LIII,L100001051329,utility-scale solar,operating,1.5
+G100001059124,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXIX,L100001051330,utility-scale solar,operating,1.7
+G100001059125,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project II,L100001051331,utility-scale solar,operating,3
+G100001059126,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project II,L100001051332,utility-scale solar,operating,1.4
+G100001059127,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project III,L100001051333,utility-scale solar,operating,1
+G100001059129,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LIV,L100001051335,utility-scale solar,operating,2.7
+G100001059130,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LV,L100001051336,utility-scale solar,operating,1.7
+G100001059131,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project IV,L100001051337,utility-scale solar,operating,1.3
+G100001059132,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project II,L100001051338,utility-scale solar,operating,5.8
+G100001059133,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LVI,L100001051339,utility-scale solar,operating,1.5
+G100001059134,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project I,L100001051340,utility-scale solar,operating,2.9
+G100001059135,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXX,L100001051341,utility-scale solar,operating,3.3
+G100001059136,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project II,L100001051342,utility-scale solar,operating,3.3
+G100001059137,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project V,L100001051343,utility-scale solar,operating,1.2
+G100001059138,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project III,L100001051344,utility-scale solar,operating,1.7
+G100001059139,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project VI,L100001051345,utility-scale solar,operating,3.4
+G100001059140,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project III,L100001051346,utility-scale solar,operating,1.2
+G100001059141,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project IV,L100001051347,utility-scale solar,operating,1.1
+G100001059142,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project VII,L100001051348,utility-scale solar,operating,1.9
+G100001059143,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Zlín Region solar project I,L100001051349,utility-scale solar,operating,1
+G100001059145,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project VII,L100001051351,utility-scale solar,operating,1.9
+G100001059146,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project III,L100001051352,utility-scale solar,operating,1.8
+G100001059147,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project VIII,L100001051353,utility-scale solar,operating,1.6
+G100001059148,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project IX,L100001051354,utility-scale solar,operating,1.6
+G100001059149,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LVII,L100001051355,utility-scale solar,operating,1.1
+G100001059150,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,South Bohemian Region solar project I,L100001051356,utility-scale solar,operating,5.7
+G100001059151,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LVIII,L100001051357,utility-scale solar,operating,1.3
+G100001059152,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project II,L100001051358,utility-scale solar,operating,1.7
+G100001059153,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LIX,L100001051359,utility-scale solar,operating,1.1
+G100001059154,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project VIII,L100001051360,utility-scale solar,operating,1.5
+G100001059155,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project IX,L100001051361,utility-scale solar,operating,1.3
+G100001059156,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project X,L100001051362,utility-scale solar,operating,1.4
+G100001059157,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project II,L100001051363,utility-scale solar,operating,4.7
+G100001059158,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project IV,L100001051364,utility-scale solar,operating,1.8
+G100001059159,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLI,L100001051365,utility-scale solar,operating,1.1
+G100001059160,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project III,L100001051366,utility-scale solar,operating,2.4
+G100001059161,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project X,L100001051367,utility-scale solar,operating,1.6
+G100001059162,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XI,L100001051368,utility-scale solar,operating,3.9
+G100001059163,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XII,L100001051369,utility-scale solar,operating,4.1
+G100001059164,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Ústí Nad Labem Region solar project,L100001051370,utility-scale solar,operating,2.6
+G100001059165,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XI,L100001051371,utility-scale solar,operating,2.7
+G100001059166,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project II,L100001051372,utility-scale solar,operating,1.2
+G100001059167,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLII,L100001051373,utility-scale solar,operating,1.7
+G100001059168,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XIII,L100001051374,utility-scale solar,operating,3.9
+G100001059169,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LX,L100001051375,utility-scale solar,operating,1.9
+G100001059170,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project IV,L100001051376,utility-scale solar,operating,7.7
+G100001059171,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XIV,L100001051377,utility-scale solar,operating,2.3
+G100001059172,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project IV,L100001051378,utility-scale solar,operating,1.7
+G100001059173,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXI,L100001051379,utility-scale solar,operating,1.1
+G100001059174,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XV,L100001051380,utility-scale solar,operating,2.1
+G100001059175,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project III,L100001051381,utility-scale solar,operating,1.1
+G100001059176,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLIII,L100001051382,utility-scale solar,operating,2.4
+G100001059177,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project V,L100001051383,utility-scale solar,operating,1.4
+G100001059178,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLIV,L100001051384,utility-scale solar,operating,11.6
+G100001059179,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLV,L100001051385,utility-scale solar,operating,1.1
+G100001059180,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLVI,L100001051386,utility-scale solar,operating,5.4
+G100001059181,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLVII,L100001051387,utility-scale solar,operating,1.2
+G100001059182,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXI,L100001051388,utility-scale solar,operating,1.4
+G100001059183,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project V,L100001051389,utility-scale solar,operating,1.3
+G100001059184,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLVIII,L100001051390,utility-scale solar,operating,6.5
+G100001059185,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XVI,L100001051391,utility-scale solar,operating,3.2
+G100001059186,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XII,L100001051392,utility-scale solar,operating,1.1
+G100001059187,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XIII,L100001051393,utility-scale solar,operating,1.8
+G100001059188,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project IV,L100001051394,utility-scale solar,operating,1.3
+G100001059189,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XIV,L100001051395,utility-scale solar,operating,1.3
+G100001059190,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project V,L100001051396,utility-scale solar,operating,3.1
+G100001059191,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XVII,L100001051397,utility-scale solar,operating,1.1
+G100001059193,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,South Bohemian Region solar project II,L100001051399,utility-scale solar,operating,1.7
+G100001059194,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XVIII,L100001051400,utility-scale solar,operating,1.7
+G100001059195,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XV,L100001051401,utility-scale solar,operating,1.1
+G100001059196,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXII,L100001051402,utility-scale solar,operating,4.7
+G100001059197,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XIX,L100001051403,utility-scale solar,operating,2.1
+G100001059198,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project III,L100001051404,utility-scale solar,operating,4.6
+G100001059199,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXII,L100001051405,utility-scale solar,operating,1.7
+G100001059200,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project III,L100001051406,utility-scale solar,operating,2.3
+G100001059201,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project VII,L100001051407,utility-scale solar,operating,2.4
+G100001059206,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project VII,L100001051412,utility-scale solar,operating,1
+G100001059207,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project XLIX,L100001051413,utility-scale solar,operating,6.3
+G100001059208,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXIII,L100001051414,utility-scale solar,operating,1.3
+G100001059209,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project V,L100001051415,utility-scale solar,operating,1.3
+G100001059210,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project VI,L100001051416,utility-scale solar,operating,1.5
+G100001059211,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project L,L100001051417,utility-scale solar,operating,3.4
+G100001059212,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XVII,L100001051418,utility-scale solar,operating,2.9
+G100001059213,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project V,L100001051419,utility-scale solar,operating,1
+G100001059214,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project VI,L100001051420,utility-scale solar,operating,1.7
+G100001059215,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project VIII,L100001051421,utility-scale solar,operating,1.8
+G100001059216,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project VI,L100001051422,utility-scale solar,operating,1.1
+G100001059217,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXIV,L100001051423,utility-scale solar,operating,2.5
+G100001059218,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXV,L100001051424,utility-scale solar,operating,3.3
+G100001059219,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,South Bohemian Region solar project III,L100001051425,utility-scale solar,operating,1
+G100001059220,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXIII,L100001051426,utility-scale solar,operating,2.2
+G100001059221,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XVIII,L100001051427,utility-scale solar,operating,1.1
+G100001059222,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXIV,L100001051428,utility-scale solar,operating,2.4
+G100001059223,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXI,L100001051429,utility-scale solar,operating,2.4
+G100001059224,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Olomouc Region solar project,L100001051430,utility-scale solar,operating,1.7
+G100001059225,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,South Bohemian Region solar project IV,L100001051431,utility-scale solar,operating,2.1
+G100001059226,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Brno South Moravian Region solar project,L100001051432,utility-scale solar,operating,6
+G100001059227,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXV,L100001051433,utility-scale solar,operating,1.6
+G100001059228,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project VII,L100001051434,utility-scale solar,operating,3
+G100001059229,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project VIII,L100001051435,utility-scale solar,operating,1.1
+G100001059230,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LI,L100001051436,utility-scale solar,operating,2.4
+G100001059231,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project IV,L100001051437,utility-scale solar,operating,1.6
+G100001059233,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXVI,L100001051439,utility-scale solar,operating,1.7
+G100001059234,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project V,L100001051440,utility-scale solar,operating,1.9
+G100001059235,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project VII,L100001051441,utility-scale solar,operating,2.5
+G100001059236,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXVI,L100001051442,utility-scale solar,operating,1.8
+G100001059239,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXIII,L100001051445,utility-scale solar,operating,1.6
+G100001059240,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project VIII,L100001051446,utility-scale solar,operating,3.1
+G100001059241,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Pilsen Plzeň Region solar project,L100001051447,utility-scale solar,operating,1.1
+G100001059243,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project VII,L100001051449,utility-scale solar,operating,1.5
+G100001059244,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXVIII,L100001051450,utility-scale solar,operating,1.1
+G100001059245,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project X,L100001051451,utility-scale solar,operating,4.9
+G100001059246,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project VIII,L100001051452,utility-scale solar,operating,2.3
+G100001059247,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-10,,point,,,,false,abf-boundaries-v0.2.0,Capital City Of Prague solar project I,L100001051453,utility-scale solar,operating,4.7
+G100001059249,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXX,L100001051455,utility-scale solar,operating,1.5
+G100001059250,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project IX,L100001051456,utility-scale solar,operating,1.2
+G100001059251,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Pardubice Region solar project,L100001051457,utility-scale solar,operating,10.8
+G100001059252,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXI,L100001051458,utility-scale solar,operating,2.9
+G100001059253,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project VII,L100001051459,utility-scale solar,operating,2.9
+G100001059254,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXIV,L100001051460,utility-scale solar,operating,4.5
+G100001059255,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XI,L100001051461,utility-scale solar,operating,1.9
+G100001059256,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LII,L100001051462,utility-scale solar,operating,3.3
+G100001059257,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project IX,L100001051463,utility-scale solar,operating,1.4
+G100001059258,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project IX,L100001051464,utility-scale solar,operating,2.4
+G100001059259,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XIX,L100001051465,utility-scale solar,operating,3.6
+G100001059260,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXV,L100001051466,utility-scale solar,operating,1.3
+G100001059261,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXII,L100001051467,utility-scale solar,operating,1.8
+G100001059262,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXIII,L100001051468,utility-scale solar,operating,1.4
+G100001059263,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project X,L100001051469,utility-scale solar,operating,1.5
+G100001059264,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project VIII,L100001051470,utility-scale solar,operating,2.5
+G100001059265,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovy Vary Region solar project II,L100001051471,utility-scale solar,operating,2.1
+G100001059266,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XX,L100001051472,utility-scale solar,operating,1.3
+G100001059267,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project X,L100001051473,utility-scale solar,operating,1.4
+G100001059268,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project IX,L100001051474,utility-scale solar,operating,1.7
+G100001059269,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project X,L100001051475,utility-scale solar,operating,1.4
+G100001059270,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXVI,L100001051476,utility-scale solar,operating,1.8
+G100001059271,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXIV,L100001051477,utility-scale solar,operating,1.2
+G100001059272,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXI,L100001051478,utility-scale solar,operating,4.5
+G100001059273,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Zlín Region solar project II,L100001051479,utility-scale solar,operating,1.5
+G100001059275,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXII,L100001051481,utility-scale solar,operating,2.5
+G100001059276,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LIII,L100001051482,utility-scale solar,operating,1.8
+G100001059277,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXIII,L100001051483,utility-scale solar,operating,1
+G100001059278,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXVII,L100001051484,utility-scale solar,operating,1
+G100001059279,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XI,L100001051485,utility-scale solar,operating,1.2
+G100001059280,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LIV,L100001051486,utility-scale solar,operating,1
+G100001059281,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project V,L100001051487,utility-scale solar,operating,4.2
+G100001059282,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XII,L100001051488,utility-scale solar,operating,2.3
+G100001059283,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XI,L100001051489,utility-scale solar,operating,3
+G100001059284,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project X,L100001051490,utility-scale solar,operating,1.2
+G100001059285,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXIV,L100001051491,utility-scale solar,operating,1.8
+G100001059286,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXV,L100001051492,utility-scale solar,operating,8.9
+G100001059287,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XIII,L100001051493,utility-scale solar,operating,1.8
+G100001059289,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XIII,L100001051495,utility-scale solar,operating,1.9
+G100001059290,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXVI,L100001051496,utility-scale solar,operating,1.7
+G100001059291,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XI,L100001051497,utility-scale solar,operating,1.4
+G100001059292,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXVIII,L100001051498,utility-scale solar,operating,1.5
+G100001059293,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XIV,L100001051499,utility-scale solar,operating,3
+G100001059294,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXIX,L100001051500,utility-scale solar,operating,1.9
+G100001059295,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovy Vary Region solar project III,L100001051501,utility-scale solar,operating,1.6
+G100001059296,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXX,L100001051502,utility-scale solar,operating,3.1
+G100001059297,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXV,L100001051503,utility-scale solar,operating,5.9
+G100001059298,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXI,L100001051504,utility-scale solar,operating,1.5
+G100001059300,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXIII,L100001051506,utility-scale solar,operating,1.2
+G100001059301,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovy Vary Region solar project IV,L100001051507,utility-scale solar,operating,1.2
+G100001059302,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXIV,L100001051508,utility-scale solar,operating,2.5
+G100001059303,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXV,L100001051509,utility-scale solar,operating,6.4
+G100001059304,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LV,L100001051510,utility-scale solar,operating,1.9
+G100001059305,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project VI,L100001051511,utility-scale solar,operating,1
+G100001059306,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project XI,L100001051512,utility-scale solar,operating,5.3
+G100001059307,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XII,L100001051513,utility-scale solar,operating,1.7
+G100001059308,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project VII,L100001051514,utility-scale solar,operating,1.2
+G100001059309,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXVI,L100001051515,utility-scale solar,operating,1
+G100001059310,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project VIII,L100001051516,utility-scale solar,operating,1.3
+G100001059311,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXVII,L100001051517,utility-scale solar,operating,1
+G100001059312,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXVI,L100001051518,utility-scale solar,operating,1
+G100001059313,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXVII,L100001051519,utility-scale solar,operating,3.5
+G100001059315,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LVI,L100001051521,utility-scale solar,operating,1.2
+G100001059316,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXVII,L100001051522,utility-scale solar,operating,3
+G100001059317,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXVII,L100001051523,utility-scale solar,operating,2.4
+G100001059318,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXVIII,L100001051524,utility-scale solar,operating,1.5
+G100001059319,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XVI,L100001051525,utility-scale solar,operating,4.2
+G100001059320,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project XII,L100001051526,utility-scale solar,operating,1.4
+G100001059321,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XIII,L100001051527,utility-scale solar,operating,2.7
+G100001059322,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XIII,L100001051528,utility-scale solar,operating,3.2
+G100001059323,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LVII,L100001051529,utility-scale solar,operating,1.3
+G100001059324,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XIV,L100001051530,utility-scale solar,operating,1.5
+G100001059325,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LVIII,L100001051531,utility-scale solar,operating,1.4
+G100001059326,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXVIII,L100001051532,utility-scale solar,operating,1.1
+G100001059327,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXVIII,L100001051533,utility-scale solar,operating,1.4
+G100001059328,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXIX,L100001051534,utility-scale solar,operating,1.1
+G100001059329,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XIV,L100001051535,utility-scale solar,operating,4.6
+G100001059330,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Hradec Králové Region solar project,L100001051536,utility-scale solar,operating,1
+G100001059331,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXIX,L100001051537,utility-scale solar,operating,2.9
+G100001059332,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XV,L100001051538,utility-scale solar,operating,1.2
+G100001059333,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XVII,L100001051539,utility-scale solar,operating,1.7
+G100001059334,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LIX,L100001051540,utility-scale solar,operating,1.3
+G100001059335,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Ostrava Moravian-Silesian Region solar project,L100001051541,utility-scale solar,operating,1.1
+G100001059336,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XVI,L100001051542,utility-scale solar,operating,3.2
+G100001059337,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,South Bohemian Region solar project V,L100001051543,utility-scale solar,operating,2.3
+G100001059338,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project IX,L100001051544,utility-scale solar,operating,6.3
+G100001059339,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXX,L100001051545,utility-scale solar,operating,1.7
+G100001059340,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project XIII,L100001051546,utility-scale solar,operating,1.6
+G100001059341,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXX,L100001051547,utility-scale solar,operating,1.9
+G100001059342,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovy Vary Region solar project V,L100001051548,utility-scale solar,operating,1.1
+G100001059343,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XXXIX,L100001051549,utility-scale solar,operating,2.1
+G100001059344,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project XIV,L100001051550,utility-scale solar,operating,1.3
+G100001059345,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XV,L100001051551,utility-scale solar,operating,1.1
+G100001059346,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hřibiny-Ledská Hradec Králové Region solar project,L100001051552,utility-scale solar,operating,1.3
+G100001059347,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXI,L100001051553,utility-scale solar,operating,1.5
+G100001059348,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project XV,L100001051554,utility-scale solar,operating,2.9
+G100001059349,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LX,L100001051555,utility-scale solar,operating,2.7
+G100001059350,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XVII,L100001051556,utility-scale solar,operating,2.2
+G100001059351,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project X,L100001051557,utility-scale solar,operating,1.9
+G100001059352,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXI,L100001051558,utility-scale solar,operating,2.2
+G100001059353,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXVIII,L100001051559,utility-scale solar,operating,1.4
+G100001059354,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project XVI,L100001051560,utility-scale solar,operating,4.4
+G100001059355,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XVIII,L100001051561,utility-scale solar,operating,1.6
+G100001059356,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XIV,L100001051562,utility-scale solar,operating,1.2
+G100001059357,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XIX,L100001051563,utility-scale solar,operating,1.8
+G100001059358,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XXXIX,L100001051564,utility-scale solar,operating,4.9
+G100001059359,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXI,L100001051565,utility-scale solar,operating,1.3
+G100001059360,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XVIII,L100001051566,utility-scale solar,operating,2.2
+G100001059361,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXII,L100001051567,utility-scale solar,operating,1.6
+G100001059362,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-41,,point,,,,false,abf-boundaries-v0.2.0,Karlovy Vary Region solar project VI,L100001051568,utility-scale solar,operating,2.4
+G100001059363,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XL,L100001051569,utility-scale solar,operating,1.6
+G100001059364,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XVI,L100001051570,utility-scale solar,operating,2.8
+G100001059365,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXIII,L100001051571,utility-scale solar,operating,1.6
+G100001059366,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXIV,L100001051572,utility-scale solar,operating,1.3
+G100001059367,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXII,L100001051573,utility-scale solar,operating,1.2
+G100001059368,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XVII,L100001051574,utility-scale solar,operating,1.7
+G100001059369,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XV,L100001051575,utility-scale solar,operating,1.1
+G100001059370,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XVIII,L100001051576,utility-scale solar,operating,2.6
+G100001059371,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XX,L100001051577,utility-scale solar,operating,1.8
+G100001059372,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXIII,L100001051578,utility-scale solar,operating,1.2
+G100001059373,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XIX,L100001051579,utility-scale solar,operating,1.1
+G100001059375,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XLI,L100001051581,utility-scale solar,operating,2.1
+G100001059376,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XLII,L100001051582,utility-scale solar,operating,9.4
+G100001059377,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project VIII,L100001051583,utility-scale solar,operating,1.6
+G100001059378,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XLIII,L100001051584,utility-scale solar,operating,1.4
+G100001059379,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXII,L100001051585,utility-scale solar,operating,1.8
+G100001059380,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXIV,L100001051586,utility-scale solar,operating,2.8
+G100001059381,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XIX,L100001051587,utility-scale solar,operating,1.2
+G100001059382,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXV,L100001051588,utility-scale solar,operating,2.4
+G100001059383,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXIII,L100001051589,utility-scale solar,operating,1
+G100001059384,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXIV,L100001051590,utility-scale solar,operating,1.1
+G100001059385,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXV,L100001051591,utility-scale solar,operating,2.2
+G100001059386,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXV,L100001051592,utility-scale solar,operating,1.8
+G100001059387,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XX,L100001051593,utility-scale solar,operating,2.5
+G100001059389,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXVI,L100001051595,utility-scale solar,operating,2.2
+G100001059390,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XLV,L100001051596,utility-scale solar,operating,2.9
+G100001059392,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XXI,L100001051598,utility-scale solar,operating,3
+G100001059393,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXVII,L100001051599,utility-scale solar,operating,1.2
+G100001059394,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-53,,point,,,,false,abf-boundaries-v0.2.0,Pardubice Region solar project XVII,L100001051600,utility-scale solar,operating,4.3
+G100001059395,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXVI,L100001051601,utility-scale solar,operating,1.4
+G100001059396,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XXII,L100001051602,utility-scale solar,operating,5.7
+G100001059397,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XXIII,L100001051603,utility-scale solar,operating,1.5
+G100001059398,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XVI,L100001051604,utility-scale solar,operating,5.8
+G100001059399,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-72,,point,,,,false,abf-boundaries-v0.2.0,Zlín Region solar project XXIV,L100001051605,utility-scale solar,operating,1.7
+G100001059400,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXVI,L100001051606,utility-scale solar,operating,3.9
+G100001059401,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XX,L100001051607,utility-scale solar,operating,3.5
+G100001059402,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XXI,L100001051608,utility-scale solar,operating,1.6
+G100001059403,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XLI,L100001051609,utility-scale solar,operating,1.5
+G100001059404,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XLVII,L100001051610,utility-scale solar,operating,1.5
+G100001059405,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project XI,L100001051611,utility-scale solar,operating,2.9
+G100001059406,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-51,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project IX,L100001051612,utility-scale solar,operating,1
+G100001059408,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XXI,L100001051614,utility-scale solar,operating,2.4
+G100001059409,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XVII,L100001051615,utility-scale solar,operating,2
+G100001059410,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project XLIX,L100001051616,utility-scale solar,operating,1.2
+G100001059411,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-10,,point,,,,false,abf-boundaries-v0.2.0,Capital City Of Prague solar project II,L100001051617,utility-scale solar,operating,1.1
+G100001059412,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXVII,L100001051618,utility-scale solar,operating,3.7
+G100001059413,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-80,,point,,,,false,abf-boundaries-v0.2.0,Moravian-Silesian Region solar project XII,L100001051619,utility-scale solar,operating,1.1
+G100001059414,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XLII,L100001051620,utility-scale solar,operating,6.8
+G100001059415,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-71,,point,,,,false,abf-boundaries-v0.2.0,Olomouc Region solar project XLIII,L100001051621,utility-scale solar,operating,1
+G100001059416,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project L,L100001051622,utility-scale solar,operating,1.3
+G100001059417,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXVIII,L100001051623,utility-scale solar,operating,1.5
+G100001059418,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,South Bohemian Region solar project VI,L100001051624,utility-scale solar,operating,2.3
+G100001059419,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project LI,L100001051625,utility-scale solar,operating,3.8
+G100001059420,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project LII,L100001051626,utility-scale solar,operating,1.8
+G100001059421,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXVII,L100001051627,utility-scale solar,operating,2.7
+G100001059422,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XVIII,L100001051628,utility-scale solar,operating,2.2
+G100001059423,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,Southwest solar project LXVIII,L100001051629,utility-scale solar,operating,2.9
+G100001059425,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XXII,L100001051631,utility-scale solar,operating,1.3
+G100001059426,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project LXXXIX,L100001051632,utility-scale solar,operating,1.1
+G100001059427,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-32,,point,,,,false,abf-boundaries-v0.2.0,Plzeň Region solar project XXXVIII,L100001051633,utility-scale solar,operating,11.3
+G100001059429,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-42,,point,,,,false,abf-boundaries-v0.2.0,Ústí Nad Labem Region solar project XXIII,L100001051635,utility-scale solar,operating,1.1
+G100001059430,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XXII,L100001051636,utility-scale solar,operating,1.3
+G100001059431,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-31,,point,,,,false,abf-boundaries-v0.2.0,České Budějovice solar project,L100001051637,utility-scale solar,operating,1.1
+G100001059432,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-20,,point,,,,false,abf-boundaries-v0.2.0,Central Bohemia solar project XCI,L100001051638,utility-scale solar,operating,1.5
+G100001059433,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-52,,point,,,,false,abf-boundaries-v0.2.0,Hradec Králové Region solar project XIX,L100001051639,utility-scale solar,operating,2.2
+G100001059435,energy_plants_gem_tzsam_units,CZE,point,,CZE-1-63,,point,,,,false,abf-boundaries-v0.2.0,Vysočina Region solar project XXIII,L100001051641,utility-scale solar,operating,1.9
+G100001060121,energy_plants_gem_tzsam_units,CZE,point,SVK,CZE-1-64,,point,,,,false,abf-boundaries-v0.2.0,South Moravian Region solar project,L100001052327,utility-scale solar,operating,6.1

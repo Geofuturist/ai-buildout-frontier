@@ -1,0 +1,150 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000105481,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaloleni Cement Plant,L100000102995,coal,cancelled,66
+G100000106138,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lamu Power Project,L100000102996,coal,cancelled,350
+G100000106139,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lamu Power Project,L100000102996,coal,cancelled,350
+G100000106140,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lamu Power Project,L100000102996,coal,cancelled,350
+G100000108061,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pokot power station,L100000102997,coal,shelved,64
+G100000110621,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Vipingo power station,L100000102998,coal,cancelled,300
+G100000110622,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Vipingo power station,L100000102998,coal,cancelled,300
+G100000113794,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kitui power station,L100000104368,coal,cancelled,960
+G100000200007,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,1.3
+G100000200021,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dandora Waste-to-Energy power station,L100000200019,bioenergy,operating,45
+G100000407108,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Dongo Kundu power station,L100000406764,oil/gas,shelved,700
+G100000411364,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Thika Power Plant,L100000408157,oil/gas,operating,87
+G100000411365,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rabai power station,L100000408158,oil/gas,operating,85
+G100000411366,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Muhoroni power station,L100000408159,oil/gas,operating,60
+G100000411367,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kipevu III power station,L100000408160,oil/gas,operating,116.9
+G100000411368,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kipevu II Tsavo power station,L100000408161,oil/gas,retired,74.9
+G100000411369,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kipevu I power station,L100000408162,oil/gas,retired,74
+G100000411370,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Iberafrica power station,L100000408163,oil/gas,operating,53
+G100000411371,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Athi Triumph power station,L100000408155,oil/gas,operating,83.2
+G100000411372,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Athi River power station,L100000408156,oil/gas,operating,80
+G100000501009,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tana River nuclear power plant,L100000500368,nuclear,pre_construction,1000
+G100000602360,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Gitaru hydroelectric plant,L100000602331,hydropower,operating,225
+G100000602362,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamburu hydroelectric plant,L100000602333,hydropower,operating,94
+G100000602363,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiambere hydroelectric plant,L100000602334,hydropower,operating,168
+G100000602365,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Turkwel hydroelectric plant,L100000602336,hydropower,operating,103
+G100000604426,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,High Grand Falls hydroelectric plant,L100000602332,hydropower,pre_construction,1000
+G100000604586,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Magwagwa hydroelectric plant,L100000604271,hydropower,announced,120
+G100000604683,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Oldorko hydroelectric plant,L100000602335,hydropower,cancelled,90
+G100000700004,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Akiira One geothermal power plant,L100000700002,geothermal,pre_construction,70
+G100000700005,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Akiira One geothermal power plant,L100000700002,geothermal,pre_construction,70
+G100000700016,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Silali geothermal power plant,L100000700009,geothermal,pre_construction,100
+G100000700172,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Menengai 1 geothermal power plant,L100000700103,geothermal,operating,35
+G100000700173,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Menengai 1 geothermal power plant,L100000700103,geothermal,construction,35
+G100000700174,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Menengai 1 geothermal power plant,L100000700103,geothermal,operating,35
+G100000700175,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Menengai 2 geothermal power plant,L100000700104,geothermal,pre_construction,60
+G100000700176,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Menengai 3 geothermal power plant,L100000700105,geothermal,announced,300
+G100000700210,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,operating,70
+G100000700211,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,operating,70
+G100000700212,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,operating,83
+G100000700213,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 2 geothermal power plant,L100000700131,geothermal,operating,35
+G100000700214,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 2 geothermal power plant,L100000700131,geothermal,operating,35
+G100000700215,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 2 geothermal power plant,L100000700131,geothermal,operating,35
+G100000700216,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 3 geothermal power plant,L100000700132,geothermal,operating,59
+G100000700217,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 3 geothermal power plant,L100000700132,geothermal,operating,36
+G100000700218,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 4 geothermal power plant,L100000700133,geothermal,operating,70
+G100000700219,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 4 geothermal power plant,L100000700133,geothermal,operating,70
+G100000700220,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 5 geothermal power plant,L100000700134,geothermal,operating,82
+G100000700221,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 5 geothermal power plant,L100000700134,geothermal,operating,82
+G100000700222,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Olkaria 6 geothermal power plant,L100000700135,geothermal,pre_construction,140
+G100000700223,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Olkaria 6 geothermal power plant,L100000700135,geothermal,shelved,420
+G100000700266,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sosian Highland geothermal power plant,L100000700161,geothermal,pre_construction,50
+G100000700273,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Suswa geothermal power plant,L100000700167,geothermal,pre_construction,50
+G100000700274,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Suswa geothermal power plant,L100000700167,geothermal,pre_construction,100
+G100000700275,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Suswa geothermal power plant,L100000700167,geothermal,pre_construction,100
+G100000700381,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,retired,15
+G100000700382,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,retired,15
+G100000700383,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,retired,15
+G100000700384,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,construction,21
+G100000700385,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,construction,21
+G100000700386,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 1 geothermal power plant,L100000700130,geothermal,construction,21
+G100000700387,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 3 geothermal power plant,L100000700132,geothermal,operating,26
+G100000700388,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Olkaria 3 geothermal power plant,L100000700132,geothermal,operating,26
+G100000700389,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Olkaria 7 geothermal power plant,L100000700218,geothermal,pre_construction,80
+G100000800098,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cedata solar farm,L100000800076,utility-scale solar,operating,40
+G100000800155,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Garissa solar farm,L100000800119,utility-scale solar,operating,54
+G100000800179,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Isiolo solar farm,L100000800140,utility-scale solar,cancelled,40
+G100000800207,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kesses 2 solar farm,L100000800165,utility-scale solar,announced,55
+G100000800208,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kesses solar farm,L100000800166,utility-scale solar,operating,40
+G100000800217,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kisumu solar farm,L100000800173,utility-scale solar,construction,40
+G100000800218,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kitui solar farm,L100000800174,utility-scale solar,cancelled,40
+G100000800234,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamu Kensen solar farm,L100000800189,utility-scale solar,shelved,40
+G100000800249,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Malindi solar farm,L100000800204,utility-scale solar,operating,40
+G100000800269,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mwale Mtc solar farm,L100000800223,utility-scale solar,operating,11
+G100000800305,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Nyeri solar farm,L100000800253,utility-scale solar,cancelled,40
+G100000800322,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Radiant solar farm,L100000800270,utility-scale solar,operating,40
+G100000800326,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Rumuruti solar farm,L100000800274,utility-scale solar,announced,40
+G100000800343,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Seven Forks solar farm,L100000800290,utility-scale solar,pre_construction,42.5
+G100000800350,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Siaya County solar farm,L100000800296,utility-scale solar,shelved,40
+G100000800422,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Voltalia Kopere solar farm,L100000800346,utility-scale solar,shelved,40
+G100000814143,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mwale Mtc solar farm,L100000800223,utility-scale solar,cancelled,19
+G100000831178,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kabariange solar farm,L100000827649,utility-scale solar,operating,32
+G100000900041,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngong wind farm,L100000900033,wind,operating,14
+G100000900042,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lake Turkana wind farm,L100000900034,wind,operating,50
+G100000900043,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lake Turkana wind farm,L100000900034,wind,operating,260
+G100000900089,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Lambe Valley wind farm,L100000900069,wind,cancelled,100
+G100000900090,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Meru (Bluesea Energy) wind farm,L100000900070,wind,cancelled,400
+G100000900091,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kipeto wind farm,L100000900071,wind,operating,100
+G100000900093,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chania Green Wind Project,L100000900073,wind,operating,50
+G100000900097,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Bahari wind farm,L100000900077,wind,shelved,50
+G100000900098,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Bahari wind farm,L100000900077,wind,shelved,40
+G100000900107,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Esidai wind farm,L100000900084,wind,pre_construction,50
+G100000900108,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Bubisa wind farm,L100000900085,wind,shelved,300
+G100000900117,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kajiado wind farm,L100000900092,wind,operating,100
+G100000900118,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Meru (Kengen) wind farm,L100000900093,wind,cancelled,300
+G100000900119,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Meru (Kengen) wind farm,L100000900093,wind,cancelled,100
+G100000900125,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kinangop Wind Park,L100000900096,wind,cancelled,61
+G100000900127,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Meru (Isiolo) wind farm,L100000900098,wind,pre_construction,80
+G100000900129,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilifi wind farm,L100000900100,wind,operating,36
+G100000900172,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Malindi Offshore wind farm,L100000900132,wind,cancelled,50
+G100000900182,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Limuru wind farm,L100000900141,wind,pre_construction,50
+G100000900183,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ol-Ndanyat wind farm,L100000900142,wind,announced,30
+G100000900184,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Prunus wind farm,L100000900143,wind,announced,50
+G100000920655,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngong wind farm,L100000900033,wind,operating,11.5
+G100000920656,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngong wind farm,L100000900033,wind,operating,11
+G100000927406,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Devki Samburu wind farm,L100000921996,wind,announced,60
+G100001005188,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Suswa geothermal power plant,L100000700167,geothermal,announced,50
+G100001005204,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Longonot geothermal power plant,L100001004450,geothermal,pre_construction,35
+G100001005320,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,EcoCloud-G42 Mega Data Center geothermal power plant,L100001004453,geothermal,pre_construction,100
+G100001017765,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tana River nuclear power plant,L100000500368,nuclear,pre_construction,1000
+G100001018728,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,HDF Green Hydrogen Solar PV Project,L100001016792,utility-scale solar,announced,176
+G100001020556,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamburu Dam floating solar farm,L100001018414,utility-scale solar,announced,40
+G100001020565,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Marsabit (KenGen) wind farm,L100001018423,wind,announced,300
+G100001020566,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Marsabit (Sosian) wind farm,L100001018425,wind,pre_construction,50
+G100001020572,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Marsabit 1GW (KenGen) wind farm,L100001018431,wind,announced,1000
+G100001020573,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,National Cement Company (Kenya) wind farm,L100001018433,wind,pre_construction,60
+G100001020787,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,West Kenya Sugar Factory power station,L100001018585,bioenergy,cancelled,40
+G100001027320,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Kindaruma hydroelectric plant,L100001023115,hydropower,operating,72
+G100001027321,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sondu Miriu hydroelectric plant,L100001023116,hydropower,operating,60
+G100001030409,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Arror Multipurpose Dam hydroelectric plant,L100001025639,hydropower,pre_construction,60
+G100001030410,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Karura hydroelectric plant,L100001025640,hydropower,pre_construction,90
+G100001031146,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Wellhead geothermal power plant,L100001025960,geothermal,pre_construction,67
+G100001048463,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Paka geothermal power plant,L100001043004,geothermal,pre_construction,100
+G100001048464,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Korosi geothermal power plant,L100001043005,geothermal,pre_construction,100
+G100001048465,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Longonot geothermal power plant,L100001004450,geothermal,pre_construction,105
+G100001048468,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,BVC geothermal power plant,L100001043006,geothermal,pre_construction,70
+G100001048469,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,BVC geothermal power plant,L100001043006,geothermal,announced,70
+G100001048479,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Eburru geothermal power plant,L100001043008,geothermal,operating,2.5
+G100001053824,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,1.3
+G100001053825,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,1.3
+G100001053826,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,1.8
+G100001053827,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,2.5
+G100001053829,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,7
+G100001053830,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,2.5
+G100001053831,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumias Sugar Company power station,L100000200007,bioenergy,operating,34
+G100001053832,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kakamega power station,L100001047329,bioenergy,construction,10
+G100001053833,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Homa Bay power station,L100001047330,bioenergy,announced,35
+G100001055122,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tana River nuclear power plant,L100000500368,nuclear,pre_construction,1000
+G100001055123,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tana River nuclear power plant,L100000500368,nuclear,pre_construction,1000
+G100001055124,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Siaya nuclear power plant,L100001048131,nuclear,announced,1000
+G100001062650,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Masinga hydroelectric plant,L100001054758,hydropower,operating,40
+G100001071268,energy_plants_gem_units,KEN,point,TZA,,,,,,,true,abf-boundaries-v0.2.0,Natron geothermal power plant,L100001062103,geothermal,announced,60
+G100001073718,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Isinya solar farm,L100001064094,utility-scale solar,announced,40
+G100001073721,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Makueni solar farm,L100001064096,utility-scale solar,announced,40
+G100001073732,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mombasa Cement solar farm,L100001064107,utility-scale solar,operating,10
+G100001073734,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaptagat solar farm,L100001064110,utility-scale solar,announced,195
+G100001073931,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaishan Olkaria geothermal power plant,L100001064270,geothermal,construction,165
+G100001074310,energy_plants_gem_units,KEN,point,,,,,,,,false,abf-boundaries-v0.2.0,Eburru geothermal power plant,L100001043008,geothermal,pre_construction,25
+G100001090881,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Co-operative University of Kenya solar farm,L100001080901,utility-scale solar,announced,40
+G100001092942,energy_plants_gem_units,KEN,point,,,,,,,,true,abf-boundaries-v0.2.0,Munyu hydroelectric plant,L100001082560,hydropower,pre_construction,40

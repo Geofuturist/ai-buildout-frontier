@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413506,energy_plants_gem_units,SYC,point,,,,,,,,false,abf-boundaries-v0.2.0,Baie Sainte Anne Praslin power station,L100000409066,oil/gas,operating,12
+G100000413507,energy_plants_gem_units,SYC,point,,,,,,,,true,abf-boundaries-v0.2.0,Victoria B (New Port) power station,L100000409067,oil/gas,operating,23
+G100000413508,energy_plants_gem_units,SYC,point,,,,,,,,false,abf-boundaries-v0.2.0,Victoria C (Roche Caiman) power station,L100000409068,oil/gas,announced,16
+G100000413509,energy_plants_gem_units,SYC,point,,,,,,,,false,abf-boundaries-v0.2.0,Victoria C (Roche Caiman) power station,L100000409068,oil/gas,operating,58
+G100001021859,energy_plants_gem_units,SYC,point,,,,,,,,true,abf-boundaries-v0.2.0,Mahé Floating solar farm,L100001019359,utility-scale solar,construction,5.8
+G100001021860,energy_plants_gem_units,SYC,field,,,,,,,,true,abf-boundaries-v0.2.0,Desroches Island solar farm,L100001019360,utility-scale solar,operating,2.5
+G100001021861,energy_plants_gem_units,SYC,point,,,,,,,,true,abf-boundaries-v0.2.0,Port Victoria (Seychelles) wind farm,L100001019363,wind,operating,6

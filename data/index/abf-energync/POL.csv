@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001007665,energy_plants_gem_tzsam_units,POL,point,,POL-1-04,,point,,,,false,abf-boundaries-v0.2.0,Naklo solar project,L100001006516,utility-scale solar,operating,12.2
+G100001009541,energy_plants_gem_tzsam_units,POL,point,,POL-1-02,,point,,,,false,abf-boundaries-v0.2.0,Zgorzelec County solar project,L100001008171,utility-scale solar,operating,17.7
+G100001059434,energy_plants_gem_tzsam_units,POL,point,CZE,POL-1-02,,point,,,,false,abf-boundaries-v0.2.0,Liberec Region solar project X,L100001051640,utility-scale solar,operating,1.1

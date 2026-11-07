@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023562,energy_plants_gem_units,FSM,point,,FSM-1-TRK,,point,,,,true,abf-boundaries-v0.2.0,Weno solar farm,L100001020657,utility-scale solar,pre_construction,1.1
+G100001023563,energy_plants_gem_units,FSM,point,,FSM-1-KSA,,point,,,,true,abf-boundaries-v0.2.0,Kosrae solar farm,L100001020658,utility-scale solar,pre_construction,1.6
+G100001023565,energy_plants_gem_units,FSM,point,,FSM-1-PNI,,point,,,,true,abf-boundaries-v0.2.0,Pohnpei solar farm,L100001020661,utility-scale solar,operating,2.3
+G100001071571,energy_plants_gem_units,FSM,point,,FSM-1-PNI,,point,,,,false,abf-boundaries-v0.2.0,Pohnpei solar project,L100001062315,utility-scale solar,operating,2

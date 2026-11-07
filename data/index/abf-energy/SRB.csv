@@ -1,0 +1,167 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000102322,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Despotovac power station,L100000103405,coal,cancelled,320
+G100000105817,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kolubara B power station,L100000103407,coal,cancelled,350
+G100000105818,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kolubara B power station,L100000103407,coal,cancelled,375
+G100000105819,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kolubara A power station,L100000103402,coal,operating,32
+G100000105820,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kolubara A power station,L100000103402,coal,operating,32
+G100000105821,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kolubara A power station,L100000103402,coal,operating,65
+G100000105822,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kolubara A power station,L100000103402,coal,mothballed,32
+G100000105823,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kolubara A power station,L100000103402,coal,operating,110
+G100000105886,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kostolac power station,L100000103404,coal,operating,350
+G100000105887,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kostolac power station,L100000103404,coal,operating,100
+G100000105888,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kostolac power station,L100000103404,coal,operating,210
+G100000105889,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kostolac power station,L100000103404,coal,operating,350
+G100000105890,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kostolac power station,L100000103404,coal,operating,350
+G100000105913,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kovin power station,L100000103408,coal,cancelled,350
+G100000105914,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kovin power station,L100000103408,coal,cancelled,350
+G100000107012,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Morava power station,L100000103406,coal,operating,120
+G100000107436,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,cancelled,375
+G100000107437,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,cancelled,375
+G100000107438,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,210
+G100000107439,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,210
+G100000107440,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,329
+G100000107441,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,329
+G100000107442,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,340
+G100000107443,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,348
+G100000107444,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,650
+G100000107445,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Nikola Tesla power station,L100000103403,coal,operating,650
+G100000109625,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Štavalj Power Station,L100000103409,coal,cancelled,300
+G100000200353,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Vinca Waste-to-Energy power station,L100000200317,bioenergy,operating,30
+G100000406991,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Loznica CHP power station,L100000406722,oil/gas,cancelled,120
+G100000406992,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Loznica CHP power station,L100000406722,oil/gas,cancelled,120
+G100000406993,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kragujevac power station,L100000406723,oil/gas,cancelled,300
+G100000406994,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Zrenjanin power station,L100000406724,oil/gas,operating,120
+G100000406995,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Novi Sad power station,L100000406721,oil/gas,cancelled,250
+G100000406996,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Novi Sad power station,L100000406721,oil/gas,operating,120
+G100000406997,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Novi Sad power station,L100000406721,oil/gas,operating,165
+G100000406998,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Pančevo power station,L100000406720,oil/gas,operating,189
+G100000410597,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Morava power station,L100000103406,oil/gas,cancelled,120
+G100000603335,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Bistrica Eps hydroelectric plant,L100000603300,hydropower,operating,102
+G100000603336,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bistrica Pumped Storage hydroelectric plant,L100000603301,hydropower,pre_construction,630
+G100000603337,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Pirot hydroelectric plant,L100000603302,hydropower,operating,80
+G100000604111,energy_plants_gem_units,SRB,point,BIH,,,,,,,false,abf-boundaries-v0.2.0,Tegare hydroelectric plant,L100000604072,hydropower,cancelled,122
+G100000604137,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Djerdap III hydroelectric plant,L100000604098,hydropower,pre_construction,2400
+G100000604138,energy_plants_gem_units,SRB,point,ROU,,,,,,,false,abf-boundaries-v0.2.0,Iron Gate I hydroelectric plant,L100000604099,hydropower,operating,2306
+G100000604139,energy_plants_gem_units,SRB,point,ROU,,,,,,,false,abf-boundaries-v0.2.0,Iron Gate II hydroelectric plant,L100000604100,hydropower,operating,591
+G100000604141,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Bajina Bašta hydroelectric plant,L100000604102,hydropower,operating,420
+G100000604142,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Bajina Bašta Pumped Storage hydroelectric plant,L100000604103,hydropower,operating,614
+G100000807107,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kima solar farm,L100000806183,utility-scale solar,pre_construction,50
+G100000807108,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Solarina solar farm,L100000806184,utility-scale solar,pre_construction,50
+G100000807109,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Solarina solar farm,L100000806184,utility-scale solar,pre_construction,50
+G100000807110,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Solarina solar farm,L100000806184,utility-scale solar,pre_construction,50
+G100000807177,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Srednje Kostolačko Ostrvo solar farm,L100000806242,utility-scale solar,announced,97
+G100000807280,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kula solar farm,L100000806342,utility-scale solar,announced,660
+G100000807740,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Onegiga solar farm,L100000806762,utility-scale solar,cancelled,1000
+G100000807944,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Zabalj solar farm,L100000806924,utility-scale solar,shelved,80
+G100000827383,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Bikovo solar farm,L100000824277,utility-scale solar,shelved,62.5
+G100000827384,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Equinox Power solar farm,L100000824278,utility-scale solar,announced,80
+G100000827385,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kikinda Sajan solar farm,L100000824279,utility-scale solar,pre_construction,55
+G100000827386,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kolubara A solar farm,L100000824280,utility-scale solar,shelved,71
+G100000827387,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Lederata Energy solar farm,L100000824281,utility-scale solar,shelved,50
+G100000827388,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Morava solar farm,L100000824282,utility-scale solar,announced,45
+G100000827389,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Nocaj solar farm,L100000824283,utility-scale solar,pre_construction,90
+G100000827390,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Nocaj solar farm,L100000824283,utility-scale solar,pre_construction,90
+G100000827391,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Sombor solar farm,L100000824284,utility-scale solar,shelved,100
+G100000914471,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Belo Blato wind farm,L100000911488,wind,operating,20
+G100000914518,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Dolovo (Loger) wind farm,L100000911530,wind,cancelled,20
+G100000914662,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Pancevo - Elicio wind farm,L100000911657,wind,cancelled,20
+G100000915522,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Indjija wind farm,L100000912414,wind,cancelled,24
+G100000916028,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Vrska Cuka 2A wind farm,L100000912855,wind,cancelled,26
+G100000916505,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Gradiste wind farm,L100000913264,wind,cancelled,30
+G100000917269,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Malo Crnice wind farm,L100000913911,wind,cancelled,36
+G100000917422,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bela Crkva wind farm,L100000914045,wind,cancelled,38
+G100000917691,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Vetropark Pricon 1 wind farm,L100000914273,wind,cancelled,40
+G100000917754,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Alibunar wind farm,L100000914324,wind,operating,42
+G100000918147,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Basaid (IEL) wind farm,L100000914664,wind,cancelled,48
+G100000918195,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosava wind farm,L100000914704,wind,pre_construction,68
+G100000918432,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Cestobrodica wind farm,L100000914888,wind,cancelled,50
+G100000918450,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Crni Vrh wind farm,L100000914902,wind,pre_construction,150
+G100000918921,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Negotin wind farm,L100000915291,wind,cancelled,60
+G100000918932,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Susara wind farm,L100000915302,wind,cancelled,60
+G100000918937,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Vrska Cuka wind farm,L100000915307,wind,cancelled,60
+G100000919001,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kostolac wind farm,L100000915357,wind,construction,66
+G100000919052,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosava wind farm,L100000914704,wind,operating,69
+G100000919197,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bela Anta wind farm,L100000915527,wind,shelved,80
+G100000919201,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Dolovo (Loger) wind farm,L100000911530,wind,cancelled,80
+G100000919258,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Basaid (Akuo Energy & IEL) wind farm,L100000915574,wind,shelved,85
+G100000919386,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Boljevac wind farm,L100000915683,wind,cancelled,100
+G100000919432,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Plandiste 1 wind farm,L100000915723,wind,pre_construction,102
+G100000919433,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Verdenik wind farm,L100000915724,wind,cancelled,102
+G100000919436,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Krivača wind farm,L100000915726,wind,operating,105.6
+G100000919447,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kovacica wind farm,L100000915665,wind,operating,105
+G100000919519,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bela Anta wind farm,L100000915527,wind,shelved,120
+G100000919593,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banat wind farm,L100000915852,wind,pre_construction,140
+G100000919617,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bela Crkva wind farm,L100000914045,wind,cancelled,150
+G100000919660,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Cibuk wind farm,L100000915911,wind,operating,158
+G100000919721,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banat wind farm,L100000915852,wind,pre_construction,93
+G100000919723,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bavanistansko Polje wind farm,L100000915965,wind,cancelled,188
+G100000919742,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Gazprom wind farm,L100000915983,wind,shelved,200
+G100000919783,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Cestobrodica wind farm,L100000914888,wind,cancelled,236
+G100000919839,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Belo Blato wind farm,L100000911488,wind,cancelled,280
+G100000919920,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Dolovo (Wind Alliance Group) wind farm,L100000916135,wind,cancelled,350
+G100000920051,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Maestrale Ring wind farm,L100000916246,wind,shelved,600
+G100000925513,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Alibunar A&B wind farm,L100000920706,wind,pre_construction,168
+G100000925514,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banat wind farm,L100000915852,wind,pre_construction,93
+G100000925515,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Dunav wind farm,L100000920707,wind,cancelled,10
+G100000925516,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Dunav wind farm,L100000920707,wind,cancelled,10
+G100000925517,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Gornjak wind farm,L100000920708,wind,pre_construction,150
+G100000925518,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Grot and Oblik wind farm,L100000920709,wind,pre_construction,60
+G100000925520,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kula wind farm,L100000920711,wind,operating,10
+G100000925521,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kula wind farm,L100000920711,wind,pre_construction,10
+G100000925522,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kula wind farm,L100000920711,wind,pre_construction,10
+G100000925523,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kula wind farm,L100000920711,wind,pre_construction,10
+G100000925524,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Lederata Energy wind farm,L100000920712,wind,announced,100
+G100000925526,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Ram wind farm,L100000920714,wind,pre_construction,10
+G100000925527,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Torak wind farm,L100000920715,wind,shelved,300
+G100000925528,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Vetrogon wind farm,L100000920716,wind,pre_construction,432
+G100000925529,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Vetrozelena wind farm,L100000920717,wind,pre_construction,291
+G100001004284,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Kladovo solar farm,L100001003743,utility-scale solar,pre_construction,333
+G100001004285,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Pirot solar farm,L100001003744,utility-scale solar,announced,50
+G100001004286,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Prokuplje solar farm,L100001003745,utility-scale solar,announced,40
+G100001004287,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Profine Energy solar farm,L100001003746,utility-scale solar,announced,100
+G100001004288,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bor solar farm,L100001003747,utility-scale solar,announced,500
+G100001004289,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,RP Global solar farm,L100001003748,utility-scale solar,announced,100
+G100001004303,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Čoka solar farm,L100001003752,utility-scale solar,announced,90
+G100001004316,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bor wind farm,L100001003762,wind,announced,1500
+G100001004318,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Samos wind farm,L100001003764,wind,announced,420
+G100001004319,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Samos wind farm,L100001003764,wind,announced,468
+G100001004329,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Elicio Wind 01 wind farm,L100001003769,wind,announced,50
+G100001004330,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Nadel 1 wind farm,L100001003774,wind,announced,10
+G100001004332,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banat wind farm,L100000915852,wind,announced,118.5
+G100001004333,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Banat wind farm,L100000915852,wind,announced,118.5
+G100001004356,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Pupin wind farm,L100001003796,wind,operating,94.5
+G100001004383,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Cibuk wind farm,L100000915911,wind,pre_construction,155
+G100001004401,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Stiško Polje wind farm,L100001003832,wind,announced,500
+G100001004402,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Stiško Polje wind farm,L100001003832,wind,announced,500
+G100001004403,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Klenovnik solar farm,L100001003833,utility-scale solar,shelved,250
+G100001004404,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bradarac wind farm,L100001003834,wind,announced,225
+G100001004405,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Mozgovo wind farm,L100001003835,wind,pre_construction,150
+G100001004406,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Jasikovo wind farm,L100001003836,wind,pre_construction,70
+G100001023806,energy_plants_gem_units,SRB,point,BIH,,,,,,,true,abf-boundaries-v0.2.0,Kozluk hydroelectric plant,L100001020839,hydropower,shelved,67
+G100001030650,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Nis power plant,L100001025765,oil/gas,announced,500
+G100001030679,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Potpeć hydroelectric plant,L100001025787,hydropower,operating,51
+G100001030684,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Novi Sad 2 power station,L100001025790,oil/gas,announced,350
+G100001050396,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Bački Gračac solar farm,L100001044859,utility-scale solar,announced,66
+G100001050397,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Jasenica solar farm,L100001044860,utility-scale solar,announced,70
+G100001050398,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Togočevce solar farm,L100001044861,utility-scale solar,announced,66
+G100001050399,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Srpska Kuća solar farm,L100001044862,utility-scale solar,announced,35.1
+G100001050400,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Jablanica solar farm,L100001044863,utility-scale solar,announced,303
+G100001050401,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Sikole solar farm,L100001044864,utility-scale solar,announced,461
+G100001050402,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ada solar farm,L100001044865,utility-scale solar,operating,13
+G100001050403,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Ada solar farm,L100001044865,utility-scale solar,operating,14
+G100001050422,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Juhor wind farm,L100001044885,wind,announced,144
+G100001050423,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Vranje wind farm,L100001044886,wind,pre_construction,171
+G100001050424,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Veliko Gradište solar farm,L100001044887,utility-scale solar,announced,71.5
+G100001050425,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Veliko Gradište solar farm,L100001044887,utility-scale solar,announced,55
+G100001050426,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Sremska Mitrovica solar farm,L100001044888,utility-scale solar,pre_construction,180
+G100001050427,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Vida solar farm,L100001044889,utility-scale solar,announced,150
+G100001052270,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Boljevac Pellets power station,L100001046287,bioenergy,operating,2.4
+G100001052272,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Kruševac power station,L100001046288,bioenergy,operating,4.8
+G100001057586,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Snaga Istoka wind farm,L100001049933,wind,pre_construction,300
+G100001057602,energy_plants_gem_units,SRB,point,,,,,,,,true,abf-boundaries-v0.2.0,Erdevik solar farm,L100001049944,utility-scale solar,pre_construction,110
+G100001092201,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Uvac hydroelectric plant,L100001081887,hydropower,operating,36
+G100001092203,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Vlasina hydroelectric plant,L100001081888,hydropower,operating,51
+G100001092204,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Vlasina hydroelectric plant,L100001081888,hydropower,operating,24
+G100001092205,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Vlasina hydroelectric plant,L100001081888,hydropower,operating,29
+G100001092206,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Vlasina hydroelectric plant,L100001081888,hydropower,operating,25
+G100001092207,energy_plants_gem_units,SRB,point,,,,,,,,false,abf-boundaries-v0.2.0,Lisina hydroelectric plant,L100001081889,hydropower,operating,29

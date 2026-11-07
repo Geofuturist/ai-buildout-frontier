@@ -1,0 +1,260 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000201709,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kinleith power station,L100000201418,bioenergy,operating,39
+G100000407341,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato power station,L100000406864,oil/gas,shelved,60
+G100000407342,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato power station,L100000406864,oil/gas,shelved,60
+G100000407343,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato power station,L100000406864,oil/gas,shelved,60
+G100000407344,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato power station,L100000406864,oil/gas,shelved,60
+G100000407345,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato power station,L100000406864,oil/gas,shelved,60
+G100000407346,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato power station,L100000406864,oil/gas,shelved,60
+G100000407347,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,McKee power station,L100000406865,oil/gas,operating,50
+G100000407348,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,McKee power station,L100000406865,oil/gas,operating,50
+G100000407349,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Stratford power station,L100000406866,oil/gas,operating,105
+G100000407350,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Stratford power station,L100000406866,oil/gas,operating,105
+G100000407351,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Stratford power station,L100000406866,oil/gas,retired,377
+G100000407364,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Junction Road power station,L100000406870,oil/gas,operating,50
+G100000407365,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Junction Road power station,L100000406870,oil/gas,operating,50
+G100000407366,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Whareroa power station,L100000406871,oil/gas,operating,70
+G100000407367,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntly power station,L100000103096,oil/gas,operating,51
+G100000407368,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntly power station,L100000103096,coal,operating,250
+G100000410345,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntly power station,L100000103096,oil/gas,operating,403
+G100000410346,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntly power station,L100000103096,coal,operating,250
+G100000411125,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Glenbrook power station,L100000407928,oil/gas,operating,112
+G100000411331,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whirinaki power station,L100000408142,oil/gas,operating,25.8
+G100000411332,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whirinaki power station,L100000408142,oil/gas,operating,25.8
+G100000411333,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whirinaki power station,L100000408142,oil/gas,operating,25.8
+G100000411334,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whirinaki power station,L100000408142,oil/gas,operating,25.8
+G100000411335,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whirinaki power station,L100000408142,oil/gas,operating,25.8
+G100000411348,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whirinaki power station,L100000408142,oil/gas,operating,25.8
+G100000413470,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kapuni power station,L100000408951,oil/gas,operating,25.3
+G100000413471,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rapa power station,L100000408952,oil/gas,retired,44
+G100000602849,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Arapuni hydroelectric plant,L100000602817,hydropower,operating,164
+G100000602850,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aratiatia hydroelectric plant,L100000602818,hydropower,operating,78
+G100000602851,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Aviemore hydroelectric plant,L100000602819,hydropower,operating,220
+G100000602852,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Benmore hydroelectric plant,L100000602820,hydropower,operating,540
+G100000602853,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clyde hydroelectric plant,L100000602821,hydropower,operating,432
+G100000602854,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Karāpiro hydroelectric plant,L100000602822,hydropower,operating,96
+G100000602855,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Manapouri hydroelectric plant,L100000602823,hydropower,operating,800
+G100000602856,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maraetai I hydroelectric plant,L100000602824,hydropower,operating,176
+G100000602857,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maraetai II hydroelectric plant,L100000602825,hydropower,operating,176
+G100000602858,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ohakuri hydroelectric plant,L100000602826,hydropower,operating,106
+G100000602859,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ohau A hydroelectric plant,L100000602827,hydropower,operating,264
+G100000602860,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ohau B hydroelectric plant,L100000602828,hydropower,operating,212
+G100000602861,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ohau C hydroelectric plant,L100000602829,hydropower,operating,212
+G100000602862,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rangipo hydroelectric plant,L100000602830,hydropower,operating,120
+G100000602863,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Roxburgh hydroelectric plant,L100000602831,hydropower,operating,320
+G100000602864,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tekapo B hydroelectric plant,L100000602832,hydropower,operating,160
+G100000602865,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tokaanu hydroelectric plant,L100000602833,hydropower,operating,240
+G100000602866,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waitaki hydroelectric plant,L100000602834,hydropower,operating,105
+G100000602867,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Whakamaru hydroelectric plant,L100000602835,hydropower,operating,127
+G100000604538,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lake Onslow Pumped Hydro hydroelectric plant,L100000604263,hydropower,cancelled,1000
+G100000604605,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Matahina hydroelectric plant,L100000604280,hydropower,operating,80
+G100000700128,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kawerau geothermal power plant,L100000700077,geothermal,operating,100
+G100000700183,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mōkai geothermal power plant,L100000700109,geothermal,operating,55
+G100000700201,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nga Awa Purua geothermal power plant,L100000700121,geothermal,operating,140
+G100000700202,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngatamariki geothermal power plant,L100000700122,geothermal,operating,20.5
+G100000700203,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngāwhā geothermal power station,L100000700123,geothermal,operating,32
+G100000700209,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ohaaki geothermal power plant,L100000700129,geothermal,operating,104
+G100000700234,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Poihipi Road geothermal power station,L100000700141,geothermal,operating,50
+G100000700246,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rotokawa I geothermal power plant,L100000700150,geothermal,operating,34
+G100000700279,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tauhara geothermal power plant,L100000700170,geothermal,operating,174
+G100000700280,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Mihi geothermal power plant,L100000700171,geothermal,operating,83
+G100000700281,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Mihi geothermal power plant,L100000700171,geothermal,operating,83
+G100000700289,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tikitere geothermal power plant,L100000700177,geothermal,cancelled,45
+G100000700314,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wairakei geothermal power plant,L100000700189,geothermal,operating,30
+G100000700315,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wairakei geothermal power plant,L100000700189,geothermal,operating,30
+G100000700316,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wairakei geothermal power plant,L100000700189,geothermal,operating,30
+G100000700317,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wairakei geothermal power plant,L100000700189,geothermal,cancelled,40
+G100000806425,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato solar farm,L100000805583,utility-scale solar,announced,100
+G100000806433,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tauhei solar farm,L100000805591,utility-scale solar,construction,202
+G100000806434,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Helensville solar farm,L100000805592,utility-scale solar,shelved,50
+G100000806443,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waiterimu solar farm,L100000805600,utility-scale solar,pre_construction,140
+G100000806454,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dargaville solar farm,L100000805609,utility-scale solar,pre_construction,69
+G100000806455,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Edgecumbe (Lodestone Energy) solar farm,L100000805610,utility-scale solar,operating,35
+G100000806456,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaitaia solar farm,L100000805611,utility-scale solar,operating,39
+G100000806457,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Herenga o Te Rā solar farm,L100000805612,utility-scale solar,operating,42
+G100000806458,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pāmu Rā ki Whitianga solar farm,L100000805613,utility-scale solar,operating,33
+G100000806463,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ruakaka solar farm,L100000805618,utility-scale solar,pre_construction,130
+G100000806478,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maranga Ra solar farm,L100000805632,utility-scale solar,shelved,26
+G100000806495,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kōwhai solar farm,L100000805649,utility-scale solar,construction,170
+G100000811513,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bunnythorpe solar farm,L100000809168,utility-scale solar,pre_construction,26
+G100000811514,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Clandeboye solar farm,L100000809169,utility-scale solar,pre_construction,27.2
+G100000811515,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Gift Farm solar farm,L100000809170,utility-scale solar,pre_construction,62
+G100000811516,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Lauriston solar farm,L100000809171,utility-scale solar,operating,63
+G100000811517,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Maungturoto solar farm,L100000809172,utility-scale solar,pre_construction,20
+G100000811518,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rāhui solar farm,L100000809173,utility-scale solar,pre_construction,200
+G100000811519,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rāhui solar farm,L100000809173,utility-scale solar,pre_construction,200
+G100000831002,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Albury solar farm,L100000827499,utility-scale solar,announced,20
+G100000831003,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Argyle solar farm,L100000827500,utility-scale solar,pre_construction,28
+G100000831004,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Auckland solar farm,L100000827501,utility-scale solar,shelved,100
+G100000831005,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wairarapa solar farm,L100000827502,utility-scale solar,announced,100
+G100000831006,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hawkes Bay Airport solar farm,L100000827503,utility-scale solar,announced,24
+G100000831007,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Leeston solar farm,L100000827504,utility-scale solar,pre_construction,67
+G100000831008,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Leeston solar farm,L100000827504,utility-scale solar,shelved,54
+G100000831009,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Leeston solar farm,L100000827504,utility-scale solar,shelved,54
+G100000831010,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Marton (Energy Farms) solar farm,L100000827505,utility-scale solar,shelved,84
+G100000831011,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Marton (Harmony Energy) solar farm,L100000827506,utility-scale solar,pre_construction,65
+G100000831012,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Masterton solar farm,L100000827507,utility-scale solar,pre_construction,133
+G100000831013,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naseby solar farm,L100000827508,utility-scale solar,pre_construction,25
+G100000831014,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Naseby solar farm,L100000827508,utility-scale solar,pre_construction,25
+G100000831015,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ongaonga solar farm,L100000827509,utility-scale solar,announced,100
+G100000831016,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Opunake solar farm,L100000827510,utility-scale solar,pre_construction,94
+G100000831018,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rangiriri solar farm,L100000827512,utility-scale solar,pre_construction,130
+G100000831019,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Skinner Road solar farm,L100000827513,utility-scale solar,announced,32
+G100000831020,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Taranaki solar farm,L100000827514,utility-scale solar,pre_construction,80
+G100000831021,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Thames solar farm,L100000827515,utility-scale solar,shelved,120
+G100000831022,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Three Streams solar farm,L100000827516,utility-scale solar,pre_construction,32
+G100000831023,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bridge Street solar farm,L100000827517,utility-scale solar,announced,55
+G100000831024,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Twin Rivers solar farm,L100000827518,utility-scale solar,operating,24
+G100000831025,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waerenga solar farm,L100000827519,utility-scale solar,pre_construction,180
+G100000831026,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wellsford solar farm,L100000827520,utility-scale solar,pre_construction,76
+G100000831027,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Whakatāne solar farm,L100000827521,utility-scale solar,pre_construction,127
+G100000908208,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waitahora wind farm,L100000906012,wind,cancelled,177
+G100000908217,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mokairau wind farm,L100000906021,wind,cancelled,12
+G100000908248,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Awhitu wind farm,L100000906047,wind,announced,15
+G100000908249,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Castle Hill wind farm,L100000906048,wind,pre_construction,300
+G100000908283,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mt. Cass wind farm,L100000906079,wind,pre_construction,93
+G100000908285,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Central Wind wind farm,L100000906081,wind,cancelled,130
+G100000908286,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Harapaki wind farm,L100000906082,wind,operating,176
+G100000908287,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hurunui wind farm,L100000906083,wind,cancelled,70
+G100000908288,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mill Creek wind farm,L100000906084,wind,operating,60
+G100000908289,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Āpiti wind farm,L100000906085,wind,operating,91
+G100000908290,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Uku wind farm,L100000906086,wind,operating,64
+G100000908292,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,West Wind wind farm,L100000906088,wind,operating,143
+G100000908293,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mount Munro wind farm,L100000906089,wind,pre_construction,90
+G100000908294,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Project Hayes wind farm,L100000906090,wind,cancelled,634
+G100000908295,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Rototuna wind farm,L100000906091,wind,cancelled,500
+G100000908300,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Turitea wind farm,L100000906095,wind,operating,119
+G100000908301,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Turitea wind farm,L100000906095,wind,operating,103
+G100000908302,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Puketoi wind farm,L100000906096,wind,pre_construction,310
+G100000908335,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hauāuru Mā Raki wind farm,L100000906121,wind,cancelled,540
+G100000908336,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Taharoa wind farm,L100000906122,wind,cancelled,54
+G100000908337,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rere Hau wind farm,L100000906123,wind,operating,14
+G100000908338,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rere Hau wind farm,L100000906123,wind,operating,16
+G100000908339,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rere Hau wind farm,L100000906123,wind,operating,16
+G100000908409,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahinerangi wind farm,L100000906177,wind,operating,36
+G100000908410,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mahinerangi wind farm,L100000906177,wind,announced,160
+G100000908413,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waipipi wind farm,L100000906180,wind,operating,133
+G100000908415,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaiwaikawe wind farm,L100000906182,wind,construction,75
+G100000908416,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tararua wind farm,L100000906183,wind,operating,32
+G100000908417,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tararua wind farm,L100000906183,wind,operating,36
+G100000908418,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tararua wind farm,L100000906183,wind,operating,93
+G100000908431,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Taumatatotara wind farm,L100000906194,wind,pre_construction,48
+G100000908432,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kaimai wind farm,L100000906195,wind,pre_construction,100
+G100000908450,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Long Gully wind farm,L100000906213,wind,cancelled,12
+G100000921455,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Taranaki Bight (Taranaki Offshore Partners) offshore wind farm,L100000917295,wind,announced,1000
+G100000921456,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Taranaki Bight (Taranaki Offshore Partners) offshore wind farm,L100000917295,wind,announced,1000
+G100000921457,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rere Hau wind farm,L100000906123,wind,pre_construction,46
+G100000927870,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaiwera Downs wind farm,L100000906181,wind,operating,43
+G100000927871,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaiwera Downs wind farm,L100000906181,wind,construction,155
+G100000927872,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Southland wind farm,L100000922334,wind,pre_construction,300
+G100000927873,energy_plants_gem_units,NZL,field,,,,,,,,true,abf-boundaries-v0.2.0,Waikato (BlueFloat) offshore wind farm,L100000922335,wind,cancelled,810
+G100000927874,energy_plants_gem_units,NZL,field,,,,,,,,true,abf-boundaries-v0.2.0,Waikato (BlueFloat) offshore wind farm,L100000922335,wind,cancelled,1125
+G100000927875,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waiuku wind farm,L100000922336,wind,shelved,80
+G100001005321,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngatamariki geothermal power plant,L100000700122,geothermal,operating,20.5
+G100001005322,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngatamariki geothermal power plant,L100000700122,geothermal,operating,20.5
+G100001005323,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngatamariki geothermal power plant,L100000700122,geothermal,operating,20.5
+G100001005324,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngatamariki geothermal power plant,L100000700122,geothermal,operating,46
+G100001005325,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Taheke geothermal power plant,L100001004538,geothermal,pre_construction,35
+G100001005326,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Ahi O Maui geothermal power plant,L100001004539,geothermal,operating,26
+G100001005327,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,TOPP1 geothermal power plant,L100001004540,geothermal,operating,24
+G100001005328,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,TOPP2 geothermal power plant,L100001004541,geothermal,construction,49
+G100001018070,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Rere Hau wind farm,L100000906123,wind,pre_construction,45
+G100001018077,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,White Hill (New Zealand) wind farm,L100001016335,wind,operating,58
+G100001018078,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kapuni wind farm,L100001016336,wind,pre_construction,24
+G100001018079,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Huriwaka wind farm,L100001016337,wind,announced,250
+G100001018080,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kupe wind farm,L100001016338,wind,announced,216
+G100001018081,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Marlborough wind farm,L100001016339,wind,announced,100
+G100001018082,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Jericho wind farm (New Zealand),L100001016340,wind,pre_construction,35
+G100001018083,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Pahīatua wind farm,L100001016341,wind,pre_construction,40
+G100001018084,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Glen Massey wind farm,L100001016342,wind,announced,150
+G100001018085,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hapuakohe wind farm,L100001016343,wind,announced,230
+G100001018086,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaihiku wind farm,L100001016344,wind,announced,300
+G100001018087,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ototoka wind farm,L100001016345,wind,announced,150
+G100001018372,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntly power station,L100000103096,coal,operating,250
+G100001018604,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Huntly power station,L100000103096,coal,retired,250
+G100001020474,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kea Biomass power station,L100001018369,bioenergy,shelved,30
+G100001023302,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pukenui solar farm,L100001020443,utility-scale solar,operating,20.8
+G100001023338,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Haldon Station solar farm,L100001020467,utility-scale solar,pre_construction,220
+G100001023339,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Dunsandel solar farm,L100001020468,utility-scale solar,pre_construction,37
+G100001023340,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mount Somers solar farm,L100001020469,utility-scale solar,pre_construction,37
+G100001023341,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kairanga solar farm,L100001020470,utility-scale solar,announced,27
+G100001023353,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Maniototo Plain solar farm,L100001020478,utility-scale solar,shelved,300
+G100001023368,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Manawatu (Genesis Energy) solar farm,L100001020489,utility-scale solar,announced,200
+G100001023369,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hawke's Bay (Genesis Energy) solar farm,L100001020490,utility-scale solar,announced,100
+G100001023370,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Argyle solar farm,L100000827500,utility-scale solar,announced,37
+G100001023378,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Glorit solar farm,L100001020496,utility-scale solar,pre_construction,160
+G100001023379,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Buckleys Road solar farm,L100001020497,utility-scale solar,announced,65
+G100001023380,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Greytown (FNSF) solar farm,L100001020498,utility-scale solar,announced,175
+G100001023381,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Ohau A solar farm,L100001020499,utility-scale solar,announced,278
+G100001023382,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,The Point solar farm,L100001020500,utility-scale solar,announced,420
+G100001023383,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Canterbury solar farm,L100001020502,utility-scale solar,announced,135
+G100001023385,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Tasman solar farm,L100001020503,utility-scale solar,announced,106
+G100001023386,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waiotahe (FNSF) solar farm,L100001020504,utility-scale solar,pre_construction,55
+G100001023387,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waitara solar farm,L100001020505,utility-scale solar,announced,68
+G100001023388,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Marton (FNSF) solar farm,L100001020506,utility-scale solar,pre_construction,42
+G100001023389,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Edgecumbe (FNSF) solar farm,L100001020507,utility-scale solar,announced,38
+G100001023390,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Foxton (FNSF) solar farm,L100001020508,utility-scale solar,pre_construction,42
+G100001027343,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Atiamuri hydroelectric plant,L100001023138,hydropower,operating,74
+G100001027344,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tuai hydroelectric plant,L100001023139,hydropower,operating,60
+G100001027345,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waipapa hydroelectric plant,L100001023140,hydropower,operating,54
+G100001030451,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Te Mihi 2 geothermal power plant,L100001025661,geothermal,construction,101
+G100001030946,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Huka geothermal power plant,L100001025879,geothermal,operating,51
+G100001030947,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Huka geothermal power plant,L100001025879,geothermal,operating,28
+G100001030948,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngāwhā geothermal power station,L100000700123,geothermal,pre_construction,32
+G100001030949,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngāwhā geothermal power station,L100000700123,geothermal,operating,10
+G100001030950,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Ngāwhā geothermal power station,L100000700123,geothermal,operating,15
+G100001031157,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Waipori IIA hydroelectric plant,L100001025971,hydropower,operating,58
+G100001031284,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Geothermal Developments Limited geothermal power plant,L100001026047,geothermal,operating,9
+G100001048512,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kawerau 1 Binary geothermal power plant,L100001043029,geothermal,operating,2.4
+G100001048513,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kawerau 1 Binary geothermal power plant,L100001043029,geothermal,operating,3.5
+G100001048515,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kawerau 1 Binary geothermal power plant,L100001043029,geothermal,operating,8.3
+G100001048516,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mōkai geothermal power plant,L100000700109,geothermal,operating,39
+G100001048517,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mōkai geothermal power plant,L100000700109,geothermal,operating,17
+G100001048518,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Wairakei Binary geothermal power plant,L100001043033,geothermal,operating,15
+G100001048519,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wairakei geothermal power plant,L100000700189,geothermal,operating,98
+G100001048520,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Wairakei geothermal power plant,L100000700189,geothermal,operating,3.5
+G100001051068,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Stratford solar farm,L100001045366,utility-scale solar,announced,170
+G100001051072,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Foxton (SolarGen) solar farm,L100001045370,utility-scale solar,announced,180
+G100001051077,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Annie's Way solar farm,L100001045376,utility-scale solar,pre_construction,75
+G100001051087,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Balmoral Station solar farm,L100001045387,utility-scale solar,pre_construction,88
+G100001051088,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Black Point (New Zealand) solar farm,L100001045388,utility-scale solar,pre_construction,182
+G100001051089,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Rotokawa solar farm,L100001045389,utility-scale solar,pre_construction,105
+G100001051090,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Huirangi solar farm,L100001045390,utility-scale solar,pre_construction,100
+G100001051091,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hinuera solar farm,L100001045391,utility-scale solar,pre_construction,110
+G100001051095,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Swannanoa solar farm,L100001045395,utility-scale solar,announced,200
+G100001051096,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Norwood solar farm,L100001045396,utility-scale solar,announced,100
+G100001051097,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Somerton solar farm,L100001045397,utility-scale solar,announced,30
+G100001051100,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Taranaki offshore wind farm,L100001045400,wind,cancelled,900
+G100001051101,energy_plants_gem_units,NZL,field,,,,,,,,true,abf-boundaries-v0.2.0,South Taranaki Bight (Oceanex) offshore wind farm,L100001045401,wind,announced,1000
+G100001051102,energy_plants_gem_units,NZL,field,,,,,,,,true,abf-boundaries-v0.2.0,South Taranaki Bight (Energy Quarry Zealandia) offshore wind farm,L100001045402,wind,announced,1000
+G100001051109,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Taranaki Bight (Parkwind) offshore wind farm,L100001045407,wind,announced,1000
+G100001051112,energy_plants_gem_units,NZL,field,,,,,,,,true,abf-boundaries-v0.2.0,Taranaki Bight offshore wind farm,L100001045409,wind,announced,1000
+G100001051113,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikato (Oceanex) offshore wind farm,L100001045410,wind,announced,1000
+G100001051114,energy_plants_gem_units,NZL,field,,,,,,,,true,abf-boundaries-v0.2.0,Waikato (Taranaki Offshore Wind Partners) offshore wind farm,L100001045411,wind,announced,1000
+G100001051115,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,South Wellington offshore wind farm,L100001045412,wind,announced,1000
+G100001051116,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kurow wind farm,L100001045413,wind,announced,130
+G100001051117,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tararua wind farm,L100000906183,wind,pre_construction,60
+G100001051118,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Mamaku wind farm,L100001045414,wind,announced,168
+G100001051119,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waikokowai wind farm,L100001045415,wind,pre_construction,180
+G100001051120,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waitōtara wind farm,L100001045416,wind,announced,350
+G100001051122,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Awarua wind farm,L100001045418,wind,announced,42
+G100001051123,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hokonui wind farm,L100001045419,wind,announced,350
+G100001051124,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Motorimu wind farm,L100001045420,wind,announced,110
+G100001054345,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Te Puna Mauri ō Omaru solar farm,L100001047699,utility-scale solar,operating,16.7
+G100001054439,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Greenmount power station,L100001047740,bioenergy,operating,10
+G100001054451,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pan Pac power station,L100001047746,bioenergy,operating,14
+G100001054594,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Clydevale power plant,L100001047846,bioenergy,operating,15.5
+G100001054760,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Red Stag Timber power station,L100001047939,bioenergy,operating,10
+G100001054761,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kate Valley power station,L100001047940,bioenergy,operating,11.5
+G100001054762,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Redvale power station,L100001047941,bioenergy,operating,9
+G100001055297,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Kairoi solar farm,L100001048207,utility-scale solar,pre_construction,110
+G100001055298,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Waiinu solar farm,L100001048208,utility-scale solar,announced,100
+G100001055299,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Wairarapa wind farm,L100001048209,wind,announced,90
+G100001062666,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Cobb hydroelectric plant,L100001054774,hydropower,operating,32
+G100001062667,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Coleridge hydroelectric plant,L100001054775,hydropower,operating,39
+G100001062668,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Pātea hydroelectric plant,L100001054776,hydropower,operating,32
+G100001062669,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Piripaua hydroelectric plant,L100001054777,hydropower,operating,42
+G100001063859,energy_plants_gem_units,NZL,point,,,,,,,,true,abf-boundaries-v0.2.0,Te Mihi 3 geothermal power plant,L100001055911,geothermal,announced,101
+G100001070396,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Tekapo A hydroelectric plant,L100001061447,hydropower,operating,30
+G100001073398,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Mangahao hydroelectric plant,L100001063843,hydropower,operating,40
+G100001073399,energy_plants_gem_units,NZL,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaitawa hydroelectric plant,L100001063845,hydropower,operating,36

@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000809445,energy_plants_gem_tzsam_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,El Espinal solar farm,L100000807751,utility-scale solar,operating,9
+G100000809456,energy_plants_gem_tzsam_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Jagüito solar farm,L100000807758,utility-scale solar,operating,15.9
+G100000809488,energy_plants_gem_tzsam_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Paris solar farm (Panama),L100000807784,utility-scale solar,operating,13.5
+G100000809513,energy_plants_gem_tzsam_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Santiago solar farm,L100000807801,utility-scale solar,operating,5.1
+G100000838192,energy_plants_gem_tzsam_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,La Cotaba solar project,L100000832607,utility-scale solar,operating,13.3

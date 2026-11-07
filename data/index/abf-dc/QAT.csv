@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-06cfc59887be,dc_atlas_points,QAT,field,,,,,,,,,abf-boundaries-v0.2.0,Syntys QDC1,Operating / Construction,colocation,lt10,
+ATL-416b2eb9ac38,dc_atlas_points,QAT,field,,,,,,,,,abf-boundaries-v0.2.0,Syntys QDC5,Operating / Construction,colocation,lt10,
+ATL-5fcf4e217aa0,dc_atlas_points,QAT,field,,,,,,,,,abf-boundaries-v0.2.0,MEEZA M-Vault 2,Operating / Construction,enterprise_it,lt10,
+ATL-87ae9e2ad152,dc_atlas_points,QAT,field,,,,,,,,true,abf-boundaries-v0.2.0,MEEZA M-Vault 1,Operating / Construction,enterprise_it,lt10,
+ATL-c27b8e0b64ee,dc_atlas_points,QAT,field,,,,,,,,true,abf-boundaries-v0.2.0,Syntys QDC4 Mukaynis,Operating / Construction,colocation,,

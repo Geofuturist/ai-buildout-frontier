@@ -1,0 +1,9 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413530,energy_plants_gem_units,CAF,point,,,,,,,,true,abf-boundaries-v0.2.0,Bangui Thermal power station,L100000409054,oil/gas,operating,50
+G100000600544,energy_plants_gem_units,CAF,point,,,,,,,,true,abf-boundaries-v0.2.0,Dimoli hydroelectric plant,L100000600543,hydropower,pre_construction,180
+G100000800128,energy_plants_gem_units,CAF,point,,,,,,,,false,abf-boundaries-v0.2.0,Enerca Danzi solar farm,L100000800102,utility-scale solar,operating,25
+G100000831138,energy_plants_gem_units,CAF,point,,,,,,,,false,abf-boundaries-v0.2.0,Enerca Danzi solar farm,L100000800102,utility-scale solar,announced,15
+G100000831139,energy_plants_gem_units,CAF,point,,,,,,,,true,abf-boundaries-v0.2.0,Sakaï  (Bimbo town) Solar Power Plant,L100000827616,utility-scale solar,operating,15
+G100001074282,energy_plants_gem_units,CAF,point,,,,,,,,true,abf-boundaries-v0.2.0,Sakaï (GSU) solar project,L100001064529,utility-scale solar,construction,50
+G100001090127,energy_plants_gem_units,CAF,point,,,,,,,,true,abf-boundaries-v0.2.0,Palambo hydroelectric plant,L100001080260,hydropower,pre_construction,30
+G100001090857,energy_plants_gem_units,CAF,point,,,,,,,,true,abf-boundaries-v0.2.0,Mbaiki solar farm,L100001080884,utility-scale solar,operating,8

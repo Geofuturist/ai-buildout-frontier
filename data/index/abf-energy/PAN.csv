@@ -1,0 +1,205 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101632,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cobre Panamá power station,L100000103157,coal,operating,153
+G100000101633,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cobre Panamá power station,L100000103157,coal,operating,153
+G100000114111,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bahía las Minas power station,L100000104549,coal,retired,40
+G100000114112,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bahía las Minas power station,L100000104549,coal,retired,40
+G100000114113,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bahía las Minas power station,L100000104549,coal,retired,40
+G100000406669,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,AES Colón power station,L100000406598,oil/gas,operating,381
+G100000406931,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Gatún power station,L100000406670,oil/gas,operating,670
+G100000406932,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Gas to Power Panama (GTPP) power station,L100000406671,oil/gas,shelved,140
+G100000410195,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cobre Panamá power station,L100000103157,oil/gas,announced,153
+G100000411982,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Termocolón power station,L100000408599,oil/gas,operating,150
+G100000411983,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pan Am power station,L100000408600,oil/gas,operating,146.7
+G100000501233,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,MH-1A nuclear power plant,L100000500431,nuclear,retired,10
+G100000603101,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bayano hydroelectric plant,L100000603067,hydropower,operating,260
+G100000603103,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Changuinola 1 hydroelectric plant,L100000603069,hydropower,operating,221
+G100000603104,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Estí hydroelectric plant,L100000603070,hydropower,operating,120
+G100000603105,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Fortuna hydroelectric plant,L100000603071,hydropower,operating,300
+G100000808084,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Penonome PV Solar Plant,L100000807015,utility-scale solar,operating,120
+G100000808411,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Esperanza solar farm (Panama),L100000807175,utility-scale solar,operating,26
+G100000808412,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Madre Vieja PV Solar Plant,L100000807176,utility-scale solar,operating,31
+G100000809414,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Agua Fría solar farm,L100000807726,utility-scale solar,announced,10
+G100000809415,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Agua Viva solar farm,L100000807727,utility-scale solar,announced,10
+G100000809416,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Alanje solar farm,L100000807728,utility-scale solar,announced,10
+G100000809417,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Alanje solar farm,L100000807728,utility-scale solar,announced,10
+G100000809418,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Alanje solar farm,L100000807728,utility-scale solar,announced,10
+G100000809419,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Alma Mater solar farm,L100000807729,utility-scale solar,operating,40
+G100000809420,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Anton solar farm,L100000807730,utility-scale solar,announced,10
+G100000809421,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Anton solar farm,L100000807730,utility-scale solar,announced,8
+G100000809422,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Baco solar farm,L100000807731,utility-scale solar,operating,25.9
+G100000809423,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Bajo Frío solar farm,L100000807732,utility-scale solar,operating,5
+G100000809424,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Bugaba solar farm,L100000807733,utility-scale solar,operating,2.6
+G100000809425,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Caldera solar farm,L100000807734,utility-scale solar,operating,5.4
+G100000809426,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Camarones solar farm,L100000807735,utility-scale solar,shelved,100
+G100000809427,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Caoba (Panama) solar farm,L100000807736,utility-scale solar,operating,10
+G100000809428,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Capira solar farm,L100000807737,utility-scale solar,operating,9.9
+G100000809429,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cedro solar farm,L100000807738,utility-scale solar,operating,10
+G100000809430,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Cerro Viejo solar farm,L100000807739,utility-scale solar,announced,20.1
+G100000809431,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chame solar farm,L100000807740,utility-scale solar,operating,20
+G100000809432,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chiriquí solar farm,L100000807741,utility-scale solar,operating,9
+G100000809433,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chumical solar farm,L100000807742,utility-scale solar,shelved,19.8
+G100000809434,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Chupampa solar farm,L100000807743,utility-scale solar,announced,9.9
+G100000809435,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Coclé solar farm,L100000807744,utility-scale solar,operating,8.5
+G100000809436,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Corotú solar farm,L100000807745,utility-scale solar,announced,10
+G100000809437,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Daconan solar farm,L100000807746,utility-scale solar,operating,5.6
+G100000809438,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Divisa solar farm,L100000807747,utility-scale solar,operating,10
+G100000809439,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Don Félix solar farm,L100000807748,utility-scale solar,operating,10
+G100000809440,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecosolar solar farm,L100000807749,utility-scale solar,operating,10
+G100000809441,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecosolar solar farm,L100000807749,utility-scale solar,operating,10
+G100000809442,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecosolar solar farm,L100000807749,utility-scale solar,construction,10
+G100000809443,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecosolar solar farm,L100000807749,utility-scale solar,construction,10
+G100000809444,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,El Coco solar farm,L100000807750,utility-scale solar,announced,10
+G100000809446,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Estí solar farm,L100000807752,utility-scale solar,announced,9.9
+G100000809447,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Estí solar farm,L100000807752,utility-scale solar,announced,6.6
+G100000809448,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Estrella solar farm,L100000807753,utility-scale solar,operating,8
+G100000809449,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Farallón solar farm,L100000807754,utility-scale solar,operating,9
+G100000809450,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Helios Apolo solar farm,L100000807755,utility-scale solar,announced,60
+G100000809451,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hidropiedra solar farm,L100000807756,utility-scale solar,announced,20
+G100000809452,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ikako solar farm,L100000807757,utility-scale solar,operating,10.2
+G100000809453,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ikako solar farm,L100000807757,utility-scale solar,operating,10.2
+G100000809454,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ikako solar farm,L100000807757,utility-scale solar,operating,10.2
+G100000809455,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Ikako solar farm,L100000807757,utility-scale solar,operating,10.2
+G100000809457,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Albina solar farm,L100000807759,utility-scale solar,announced,10
+G100000809458,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Cantera solar farm,L100000807760,utility-scale solar,announced,5
+G100000809459,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Hueca solar farm,L100000807761,utility-scale solar,construction,70
+G100000809460,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Inmaculada solar farm,L100000807762,utility-scale solar,shelved,5
+G100000809461,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Mata solar farm (Panama),L100000807763,utility-scale solar,operating,2
+G100000809462,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Mata solar farm (Panama),L100000807763,utility-scale solar,operating,3
+G100000809463,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Mata solar farm (Panama),L100000807763,utility-scale solar,operating,5
+G100000809464,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Mesa solar farm,L100000807764,utility-scale solar,announced,10
+G100000809465,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Torre solar farm,L100000807765,utility-scale solar,announced,5
+G100000809466,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Union solar farm (Panama),L100000807766,utility-scale solar,announced,90
+G100000809467,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Victoria solar farm (Panama),L100000807767,utility-scale solar,pre_construction,10
+G100000809468,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Villa solar farm,L100000807768,utility-scale solar,operating,12
+G100000809469,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Lajas solar farm (Panama),L100000807769,utility-scale solar,announced,30
+G100000809470,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Las Lomas solar farm (Panama),L100000807770,utility-scale solar,construction,105
+G100000809471,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Llano Sánchez solar farm,L100000807771,utility-scale solar,construction,10
+G100000809472,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Ángeles solar farm,L100000807772,utility-scale solar,operating,9.5
+G100000809473,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Santos solar farm (Panama),L100000807773,utility-scale solar,operating,7.6
+G100000809474,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Santos solar farm (Panama),L100000807773,utility-scale solar,announced,10
+G100000809475,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Los Santos solar farm (Panama),L100000807773,utility-scale solar,announced,10
+G100000809476,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Macanosolar PV solar farm,L100000807774,utility-scale solar,operating,2
+G100000809477,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Macanosolar PV solar farm,L100000807774,utility-scale solar,operating,2.8
+G100000809478,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayorca solar farm,L100000807775,utility-scale solar,operating,10
+G100000809479,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mega solar farm (Panama),L100000807776,utility-scale solar,announced,10
+G100000809480,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Mendoza solar farm,L100000807777,utility-scale solar,operating,3
+G100000809481,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Mendre solar farm,L100000807778,utility-scale solar,operating,5.5
+G100000809482,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Milton solar farm,L100000807779,utility-scale solar,operating,10
+G100000809483,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Oro solar farm,L100000807780,utility-scale solar,operating,9.9
+G100000809484,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pacora (Solpac Investment) solar farm,L100000807781,utility-scale solar,operating,3
+G100000809485,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Panamá Cotoba solar farm,L100000807782,utility-scale solar,announced,250
+G100000809486,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Panasolar solar farm,L100000807783,utility-scale solar,operating,5
+G100000809487,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Panasolar solar farm,L100000807783,utility-scale solar,construction,5
+G100000809489,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pedasí solar farm,L100000807785,utility-scale solar,announced,10
+G100000809490,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Penonome PV Solar Plant,L100000807015,utility-scale solar,announced,146
+G100000809491,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pesé solar farm,L100000807786,utility-scale solar,operating,10
+G100000809492,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pocrí solar farm,L100000807787,utility-scale solar,operating,16
+G100000809493,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Prudencia Hydro-Solar Plant,L100000807788,utility-scale solar,operating,10.5
+G100000809494,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Prudencia Hydro-Solar Plant,L100000807788,utility-scale solar,announced,3.5
+G100000809495,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Real solar farm,L100000807789,utility-scale solar,shelved,20
+G100000809496,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Río de Jesús solar farm,L100000807790,utility-scale solar,operating,12.5
+G100000809497,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Río Parita solar farm,L100000807791,utility-scale solar,announced,10
+G100000809498,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Rodeo solar farm,L100000807792,utility-scale solar,operating,9.9
+G100000809499,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,RPM Caizán solar farm,L100000807793,utility-scale solar,announced,10
+G100000809500,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,RPM Caizán solar farm,L100000807793,utility-scale solar,announced,10
+G100000809501,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,RPM Caizán solar farm,L100000807793,utility-scale solar,announced,10
+G100000809502,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,RPM Caizán solar farm,L100000807793,utility-scale solar,announced,10
+G100000809503,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Salamanca solar farm,L100000807794,utility-scale solar,construction,7.7
+G100000809504,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,San Bartolo (Ecoener) solar farm,L100000807795,utility-scale solar,announced,10
+G100000809505,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,San Bartolo solar farm (Panama),L100000807796,utility-scale solar,pre_construction,9.9
+G100000809506,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,San Bartolo solar farm (Panama),L100000807796,utility-scale solar,pre_construction,9.9
+G100000809507,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,San Bartolo solar farm (Panama),L100000807796,utility-scale solar,pre_construction,10
+G100000809508,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,San Bartolo solar farm (Panama),L100000807796,utility-scale solar,pre_construction,10
+G100000809509,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,San Carlos solar farm,L100000807797,utility-scale solar,pre_construction,10
+G100000809510,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,San Juan (Ecoener) solar farm,L100000807798,utility-scale solar,operating,5
+G100000809511,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Cruz solar farm,L100000807799,utility-scale solar,announced,200
+G100000809512,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Santiago (Ecoener) solar farm,L100000807800,utility-scale solar,announced,10
+G100000809514,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sarigua solar farm,L100000807802,utility-scale solar,operating,2.4
+G100000809515,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Sol de David solar farm,L100000807803,utility-scale solar,operating,10
+G100000809517,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,SolarPro solar farm,L100000807805,utility-scale solar,operating,12
+G100000809518,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Soná solar farm,L100000807806,utility-scale solar,announced,10
+G100000809519,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,UP solar farm,L100000807807,utility-scale solar,operating,8.6
+G100000809520,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,UP solar farm,L100000807807,utility-scale solar,operating,8.6
+G100000809521,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,UP solar farm,L100000807807,utility-scale solar,operating,8.6
+G100000809522,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,UP solar farm,L100000807807,utility-scale solar,operating,8.6
+G100000809523,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Vista Alegre solar farm (Panama),L100000807808,utility-scale solar,operating,10
+G100000838180,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Almacenadora solar farm,L100000832603,utility-scale solar,announced,8
+G100000838181,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Aloha solar farm,L100000832604,utility-scale solar,announced,5
+G100000838182,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Campo Solar Santiago solar farm,L100000832605,utility-scale solar,operating,10
+G100000838183,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Campo Solar Santiago solar farm,L100000832605,utility-scale solar,operating,10
+G100000838184,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Campo Solar Santiago solar farm,L100000832605,utility-scale solar,operating,10
+G100000838185,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Campo Solar Santiago solar farm,L100000832605,utility-scale solar,operating,10
+G100000838186,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Campo Solar Santiago solar farm,L100000832605,utility-scale solar,operating,10
+G100000838187,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Campo Solar Santiago solar farm,L100000832605,utility-scale solar,operating,10
+G100000838188,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Campo Solar Santiago solar farm,L100000832605,utility-scale solar,operating,10
+G100000838189,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Daconan solar farm,L100000807746,utility-scale solar,operating,2.4
+G100000838190,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecosolar solar farm,L100000807749,utility-scale solar,construction,10
+G100000838191,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Farallón 2 solar farm,L100000832606,utility-scale solar,construction,5.2
+G100000838193,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Esperanza solar farm,L100000832608,utility-scale solar,operating,19.9
+G100000838194,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Parita Sun Park solar farm,L100000832609,utility-scale solar,announced,4.2
+G100000838195,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pedregalito solar farm,L100000832610,utility-scale solar,operating,9.9
+G100000838196,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Clara solar farm (Panama),L100000832611,utility-scale solar,announced,7
+G100000838198,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sunrise Maspv 2 solar farm,L100000832613,utility-scale solar,operating,3.3
+G100000906166,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Penonomé wind farm,L100000904977,wind,operating,55
+G100000906960,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Patrona wind farm,L100000905274,wind,cancelled,80
+G100000906994,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Antón wind farm,L100000905283,wind,pre_construction,105
+G100000906995,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Toabré wind farm,L100000905284,wind,operating,66
+G100000906996,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Toabré wind farm,L100000905284,wind,construction,22
+G100000906997,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Toabré wind farm,L100000905284,wind,construction,22
+G100000907054,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Cocle wind farm,L100000905324,wind,cancelled,190
+G100000907056,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Escudero wind farm,L100000905326,wind,cancelled,116
+G100000907057,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Viento Sur wind farm,L100000905327,wind,cancelled,150
+G100000907175,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Cruz wind farm (Panama),L100000905369,wind,announced,68.4
+G100000907177,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Penonomé wind farm,L100000904977,wind,operating,102.5
+G100000907178,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Penonomé wind farm,L100000904977,wind,operating,18
+G100000907179,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Penonomé wind farm,L100000904977,wind,operating,32.5
+G100000907180,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Penonomé wind farm,L100000904977,wind,operating,62.5
+G100000907186,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tramontana wind farm (Panama),L100000905376,wind,announced,160
+G100000907443,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Hornitos wind farm,L100000905469,wind,cancelled,50
+G100000907504,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,La Colorada wind farm,L100000905498,wind,announced,140
+G100000920616,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Azuero wind farm,L100000916592,wind,cancelled,180
+G100000920617,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Penonomé wind farm,L100000904977,wind,pre_construction,51.8
+G100000920618,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Penonomé wind farm,L100000904977,wind,pre_construction,17.3
+G100001000240,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Cativá power station,L100000408932,oil/gas,operating,87
+G100001022337,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Pacora (Desarrollo Y Energia Renovable) solar farm,L100001019717,utility-scale solar,announced,44
+G100001022338,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Santa Fe solar farm (Panama),L100001019718,utility-scale solar,announced,20
+G100001022339,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Veranera solar farm,L100001019719,utility-scale solar,announced,20
+G100001022340,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Charco Azul solar farm,L100001019720,utility-scale solar,announced,50
+G100001022341,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Flamboyan solar farm,L100001019721,utility-scale solar,announced,20
+G100001022342,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sparkle solar farm,L100001019722,utility-scale solar,announced,100
+G100001022343,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Río Hato solar farm,L100001019723,utility-scale solar,announced,100
+G100001027392,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,La Estrella hydroelectric plant,L100001023187,hydropower,operating,47
+G100001027393,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Los Valles hydroelectric plant,L100001023188,hydropower,operating,55
+G100001031174,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bajo de Mina hydroelectric plant,L100001025985,hydropower,operating,57
+G100001031175,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,El Alto hydroelectric plant,L100001025986,hydropower,operating,72
+G100001031176,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Monte Lirio hydroelectric plant,L100001025987,hydropower,operating,52
+G100001031178,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Burica hydroelectric plant,L100001025988,hydropower,construction,63
+G100001031179,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bajo Frío hydroelectric plant,L100001025989,hydropower,operating,62
+G100001031180,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Baitún hydroelectric plant,L100001025990,hydropower,operating,88
+G100001031181,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Prudencia hydroelectric plant,L100001025991,hydropower,operating,59
+G100001048213,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Calesa solar park,L100001042872,utility-scale solar,operating,3.8
+G100001051533,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Sajalices solar farm,L100001045732,utility-scale solar,announced,530
+G100001052813,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,SolarPro solar farm,L100000807805,utility-scale solar,operating,12
+G100001057620,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Tanara solar farm,L100001049959,utility-scale solar,pre_construction,128.7
+G100001057673,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Heliogeo solar farm,L100001050009,utility-scale solar,pre_construction,10
+G100001057674,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Heliogeo solar farm,L100001050009,utility-scale solar,pre_construction,10
+G100001057675,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Heliogeo solar farm,L100001050009,utility-scale solar,pre_construction,10
+G100001057676,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Heliogeo solar farm,L100001050009,utility-scale solar,pre_construction,10
+G100001057678,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Heliogeo solar farm,L100001050009,utility-scale solar,pre_construction,10
+G100001057679,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Heliogeo solar farm,L100001050009,utility-scale solar,pre_construction,10
+G100001057683,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dasa Solar solar farm,L100001050014,utility-scale solar,pre_construction,10
+G100001057684,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Dasa Solar solar farm,L100001050014,utility-scale solar,pre_construction,10
+G100001057691,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Solar City solar farm,L100001050018,utility-scale solar,pre_construction,10
+G100001057693,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Solar City solar farm,L100001050018,utility-scale solar,pre_construction,10
+G100001057694,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Solar City solar farm,L100001050018,utility-scale solar,pre_construction,10
+G100001057699,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Guiasolar solar farm,L100001050026,utility-scale solar,pre_construction,100
+G100001062702,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Madden hydroelectric plant,L100001054810,hydropower,operating,36
+G100001071624,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pando hydroelectric plant,L100001062364,hydropower,operating,33
+G100001071625,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Lorena hydroelectric plant,L100001062366,hydropower,operating,35
+G100001071628,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Bonyic hydroelectric plant,L100001062368,hydropower,operating,32
+G100001071718,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Tabasará II hydroelectric plant,L100001062447,hydropower,shelved,36
+G100001071725,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Lalin II hydroelectric plant,L100001062452,hydropower,shelved,39
+G100001072883,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Brillo solar project,L100001063427,utility-scale solar,announced,9.9
+G100001072884,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Generadora solar project,L100001063428,utility-scale solar,announced,5.4
+G100001072885,energy_plants_gem_units,PAN,point,,,,,,,,true,abf-boundaries-v0.2.0,Farrallon solar project,L100001063429,utility-scale solar,announced,5.2
+G100001094956,energy_plants_gem_units,PAN,point,,,,,,,,false,abf-boundaries-v0.2.0,Pacora power station,L100001083780,oil/gas,operating,55.2

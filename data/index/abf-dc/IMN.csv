@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-058f24c09e9d,dc_atlas_points,IMN,field,,,,,,,,true,abf-boundaries-v0.2.0,Domicilium Isle of Man Datacentre,Operating / Construction,colocation,lt10,
+ATL-369c4ef03a9a,dc_atlas_points,IMN,field,,,,,,,,true,abf-boundaries-v0.2.0,Netcetera Ballasalla,Operating / Construction,colocation,10_99,
+ATL-5f29915bc327-1,dc_atlas_points,IMN,field,,,,,,,,,abf-boundaries-v0.2.0,Manx Telecom Isle of Man,Operating / Construction,colocation,lt10,
+ATL-5f29915bc327-2,dc_atlas_points,IMN,field,,,,,,,,,abf-boundaries-v0.2.0,Manx Telecom Isle of Man,Operating / Construction,colocation,lt10,

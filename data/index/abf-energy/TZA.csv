@@ -1,0 +1,112 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101986,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dar es Salaam power station,L100000103568,coal,cancelled,400
+G100000105787,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiwira Mine-2 power station,L100000103562,coal,pre_construction,50
+G100000105788,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiwira Mine-2 power station,L100000103562,coal,pre_construction,50
+G100000105789,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiwira Mine-2 power station,L100000103562,coal,pre_construction,50
+G100000105790,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiwira Mine-2 power station,L100000103562,coal,pre_construction,50
+G100000106104,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rukwa Coal to Power Project,L100000104376,coal,shelved,120
+G100000106765,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mbeya Power Project,L100000104375,coal,cancelled,300
+G100000106769,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mchuchuma power station,L100000103561,coal,pre_construction,150
+G100000106770,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mchuchuma power station,L100000103561,coal,pre_construction,150
+G100000106771,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mchuchuma power station,L100000103561,coal,pre_construction,150
+G100000106772,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mchuchuma power station,L100000103561,coal,pre_construction,150
+G100000107067,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mtwara Cement power station,L100000103565,coal,cancelled,75
+G100000107409,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ngaka power station,L100000103566,coal,cancelled,135
+G100000112783,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ngaka power station,L100000103566,coal,cancelled,135
+G100000113122,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Magamba power station,L100000103567,coal,cancelled,200
+G100000113123,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Maturi power station,L100000103563,coal,cancelled,200
+G100000200023,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mufindi Paper Mills power station,L100000200021,bioenergy,cancelled,36
+G100000407275,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kinyerezi II power station,L100000406824,oil/gas,operating,240
+G100000407276,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinyerezi III power station,L100000406825,oil/gas,shelved,300
+G100000407277,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinyerezi III power station,L100000406825,oil/gas,shelved,300
+G100000407278,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinyerezi IV power station,L100000406826,oil/gas,cancelled,330
+G100000407280,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mtwara power station,L100000406828,oil/gas,announced,300
+G100000407283,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Somanga power station,L100000406830,oil/gas,cancelled,250
+G100000407284,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zinga power station,L100000406831,oil/gas,cancelled,200
+G100000410037,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kilwa power station,L100000407679,oil/gas,cancelled,318
+G100000413547,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Astra Energy Tanzania power station,L100000409041,oil/gas,announced,350
+G100000413548,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Songas Ubungo power station,L100000409042,oil/gas,operating,33
+G100000413549,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Songas Ubungo power station,L100000409042,oil/gas,operating,33
+G100000413550,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Songas Ubungo power station,L100000409042,oil/gas,operating,33
+G100000413551,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Songas Ubungo power station,L100000409042,oil/gas,operating,36
+G100000413552,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Songas Ubungo power station,L100000409042,oil/gas,operating,36
+G100000413553,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Songas Ubungo power station,L100000409042,oil/gas,operating,36
+G100000413917,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tegeta power station,L100000409169,oil/gas,operating,45
+G100000413918,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tegeta (Diesel) power station,L100000409170,oil/gas,operating,100
+G100000413919,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kinyerezi I power station,L100000409157,oil/gas,operating,38
+G100000413920,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kinyerezi I power station,L100000409157,oil/gas,operating,38
+G100000413921,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kinyerezi I power station,L100000409157,oil/gas,operating,38
+G100000413922,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kinyerezi I power station,L100000409157,oil/gas,operating,38
+G100000413923,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dodoma power station,L100000409158,oil/gas,operating,55
+G100000413924,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Arusha power station,L100000409159,oil/gas,operating,50
+G100000603595,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Julius Nyerere hydroelectric plant,L100000603560,hydropower,operating,2115
+G100000603596,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kidatu hydroelectric plant,L100000603561,hydropower,operating,200
+G100000603597,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kihansi hydroelectric plant,L100000603562,hydropower,operating,180
+G100000603599,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mtera hydroelectric plant,L100000603564,hydropower,operating,80
+G100000603600,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ruhudji hydroelectric plant,L100000603565,hydropower,pre_construction,358
+G100000603601,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rumakali hydroelectric plant,L100000603566,hydropower,pre_construction,222
+G100000604140,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rusumo hydroelectric plant,L100000604101,hydropower,operating,80
+G100000604483,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kakono hydroelectric plant,L100000604253,hydropower,construction,88
+G100000604514,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kikonge hydroelectric plant,L100000603563,hydropower,announced,300
+G100000604637,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mpanga hydroelectric plant,L100000604291,hydropower,cancelled,160
+G100000604825,energy_plants_gem_units,TZA,point,MWI,,,,,,,false,abf-boundaries-v0.2.0,Songwe hydroelectric plant,L100000604093,hydropower,pre_construction,180
+G100000700429,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ngozi geothermal power plant,L100000700240,geothermal,construction,30
+G100000700430,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ngozi geothermal power plant,L100000700240,geothermal,announced,40
+G100000800215,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kishapu solar farm,L100000800172,utility-scale solar,operating,50
+G100000800216,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kishapu solar farm,L100000800172,utility-scale solar,operating,100
+G100000800348,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Shinyanga (PowerChina) solar farm,L100000800294,utility-scale solar,construction,50
+G100000900078,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Vr Holding Tanzania wind farm,L100000900059,wind,cancelled,50
+G100000900155,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Makambako (Norsk Vind As) wind farm,L100000900117,wind,shelved,100
+G100000900175,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Singida (Wind East Africa) wind farm,L100000900135,wind,shelved,100
+G100000900176,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Miombo Hewani wind farm,L100000900136,wind,pre_construction,100
+G100000900177,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Miombo Hewani wind farm,L100000900136,wind,pre_construction,200
+G100000900204,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Njombe 1 wind farm,L100000900156,wind,announced,100
+G100000900205,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Njombe 2 wind farm,L100000900157,wind,announced,200
+G100000900206,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Singida 2 wind farm,L100000900158,wind,announced,100
+G100000900207,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Singida 3 wind farm,L100000900159,wind,announced,200
+G100001020961,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mbeya Power Project,L100000104375,bioenergy,shelved,150
+G100001020962,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mbeya Power Project,L100000104375,bioenergy,shelved,150
+G100001021434,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tanzania solar farm,L100001019043,utility-scale solar,announced,600
+G100001021442,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Singida solar farm,L100001019048,utility-scale solar,announced,58.5
+G100001021443,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Singida solar farm,L100001019048,utility-scale solar,announced,58.5
+G100001021444,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Singida solar farm,L100001019048,utility-scale solar,announced,58.5
+G100001021445,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Singida solar farm,L100001019048,utility-scale solar,announced,58.5
+G100001021451,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dodoma solar farm,L100001019053,utility-scale solar,announced,128
+G100001021452,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dodoma solar farm,L100001019053,utility-scale solar,announced,128
+G100001021454,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Morogoro solar farm,L100001019054,utility-scale solar,announced,175
+G100001021455,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Morogoro solar farm,L100001019054,utility-scale solar,announced,175
+G100001021456,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Morogoro solar farm,L100001019054,utility-scale solar,announced,175
+G100001021458,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Iringa solar farm,L100001019056,utility-scale solar,announced,95
+G100001021459,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Iringa solar farm,L100001019056,utility-scale solar,announced,95
+G100001021460,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Arusha wind farm,L100001019057,wind,announced,50
+G100001021461,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Arusha wind farm,L100001019057,wind,announced,50
+G100001021463,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dodoma wind farm,L100001019059,wind,announced,50
+G100001021464,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Dodoma wind farm,L100001019059,wind,announced,50
+G100001021465,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Iringa wind farm,L100001019060,wind,announced,40
+G100001021466,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Iringa wind farm,L100001019060,wind,announced,40
+G100001021467,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Iringa wind farm,L100001019060,wind,announced,40
+G100001021468,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar solar farm,L100001019061,utility-scale solar,pre_construction,30
+G100001021469,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar solar farm,L100001019061,utility-scale solar,announced,150
+G100001021470,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar Clean and Renewable Energy Park Project solar farm,L100001019062,utility-scale solar,pre_construction,50
+G100001021476,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar (Aseel Oilfield Services) wind farm,L100001019068,wind,pre_construction,120
+G100001021477,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar (Pougex Energy Proprietary) wind farm,L100001019069,wind,announced,50
+G100001021478,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar (Pougex Energy Proprietary) wind farm,L100001019069,wind,announced,250
+G100001021479,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar (Pougex Energy Proprietary) wind farm,L100001019069,wind,announced,100
+G100001021480,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar (Pougex Energy Proprietary) wind farm,L100001019069,wind,announced,50
+G100001022291,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiwira Mine-2 power station,L100000103562,coal,announced,400
+G100001027488,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pangani Falls hydroelectric plant,L100001023283,hydropower,operating,68
+G100001031016,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Malagarasi hydroelectric plant,L100001025906,hydropower,pre_construction,49
+G100001051177,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar (Aseel Oilfield Services) wind farm,L100001019068,wind,announced,80
+G100001052275,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,TPC Sugar power station,L100001046290,bioenergy,operating,17.5
+G100001052278,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Zanzibar Waste to Energy power station,L100001046293,bioenergy,announced,21
+G100001052279,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sao Hill power station,L100001046294,bioenergy,operating,6
+G100001052280,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kibena power station,L100001046295,bioenergy,operating,3
+G100001052281,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kagera Mill power station,L100001046296,bioenergy,operating,4
+G100001052282,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mafia power station,L100001046297,bioenergy,operating,2.5
+G100001052284,energy_plants_gem_units,TZA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mtibwa Sugar power station,L100001046299,bioenergy,operating,13
+G100001071252,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kiejo-Mbaka geothermal power plant,L100001062097,geothermal,announced,60
+G100001071253,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Songwe geothermal power plant,L100001062099,geothermal,announced,38
+G100001071263,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Luhoi geothermal power plant,L100001062101,geothermal,announced,5
+G100001073366,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Upepo Energy Center wind farm,L100001063819,wind,pre_construction,200
+G100001091005,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Zanzibar (AG Energies) solar farm,L100001080973,utility-scale solar,announced,20
+G100001093316,energy_plants_gem_units,TZA,point,,,,,,,,true,abf-boundaries-v0.2.0,Raddy Energy power station,L100001082809,oil/gas,announced,177

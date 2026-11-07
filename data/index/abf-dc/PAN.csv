@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-17fe780d5196,dc_atlas_points,PAN,field,,,,,,,,true,abf-boundaries-v0.2.0,Cirion Technologies PAN1 Panama City,Operating / Construction,telecom,lt10,
+ATL-432faf65f334,dc_atlas_points,PAN,field,,,,,,,,,abf-boundaries-v0.2.0,KIO Panama,Operating / Construction,colocation,lt10,
+ATL-485fa777d4ac,dc_atlas_points,PAN,field,,,,,,,,,abf-boundaries-v0.2.0,Navegalo Panama,Operating / Construction,colocation,lt10,
+ATL-c1a791e30674,dc_atlas_points,PAN,field,,,,,,,,,abf-boundaries-v0.2.0,Cable & Wireless Panamá IDC Balboa,Operating / Construction,telecom,lt10,

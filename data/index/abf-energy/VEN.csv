@@ -1,0 +1,106 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101179,energy_plants_gem_units,VEN,point,,VEN-1-J,,point,,,,true,abf-boundaries-v0.2.0,Campo Junín power station,L100000104296,coal,cancelled,900
+G100000101681,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,true,abf-boundaries-v0.2.0,Complejo José Antonio power station,L100000104294,coal,cancelled,300
+G100000107854,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,true,abf-boundaries-v0.2.0,Paso Diablo power station,L100000104298,coal,cancelled,1000
+G100000108507,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,true,abf-boundaries-v0.2.0,Refinación Paraguaná RA power station,L100000104295,coal,cancelled,300
+G100000108816,energy_plants_gem_units,VEN,point,,VEN-1-L,,point,,,,true,abf-boundaries-v0.2.0,Santo Domingo Cadafe power station,L100000104297,coal,cancelled,300
+G100000406555,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Termozulia power station,L100000406644,oil/gas,mothballed,470
+G100000406556,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Termozulia power station,L100000406644,oil/gas,mothballed,470
+G100000406557,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Termocarabobo II power station,L100000406642,oil/gas,mothballed,180
+G100000406558,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Termocarabobo II power station,L100000406642,oil/gas,mothballed,180
+G100000406559,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Termocarabobo II power station,L100000406642,oil/gas,mothballed,180
+G100000406560,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Termocarabobo II power station,L100000406642,oil/gas,mothballed,180
+G100000406561,energy_plants_gem_units,VEN,point,,VEN-1-E,,point,,,,false,abf-boundaries-v0.2.0,Termobarrancas II power station,L100000406643,oil/gas,mothballed,170
+G100000406562,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,San Timoteo power station,L100000406641,oil/gas,cancelled,100
+G100000406563,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,San Timoteo power station,L100000406641,oil/gas,mothballed,100
+G100000406564,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,true,abf-boundaries-v0.2.0,San Diego de Cabrutica power station,L100000406640,oil/gas,mothballed,150
+G100000406565,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,true,abf-boundaries-v0.2.0,San Diego de Cabrutica power station,L100000406640,oil/gas,mothballed,150
+G100000406566,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Ramón Laguna power station,L100000406639,oil/gas,mothballed,160
+G100000406567,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Ramón Laguna power station,L100000406639,oil/gas,mothballed,160
+G100000406568,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Ramón Laguna power station,L100000406639,oil/gas,mothballed,160
+G100000406569,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Ramón Laguna power station,L100000406639,oil/gas,mothballed,90
+G100000406570,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Ramón Laguna power station,L100000406639,oil/gas,mothballed,90
+G100000406571,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Planta Centro power station,L100000406638,oil/gas,mothballed,600
+G100000406572,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Planta Centro power station,L100000406638,oil/gas,mothballed,400
+G100000406573,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Planta Centro power station,L100000406638,oil/gas,mothballed,400
+G100000406574,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Planta Centro power station,L100000406638,oil/gas,mothballed,400
+G100000406575,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Planta Centro power station,L100000406638,oil/gas,mothballed,400
+G100000406576,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Planta Centro power station,L100000406638,oil/gas,mothballed,400
+G100000406577,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Pedro Camejo power station,L100000406637,oil/gas,operating,150
+G100000406578,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,Pedro Camejo power station,L100000406637,oil/gas,mothballed,150
+G100000406579,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Raisa power station,L100000406636,oil/gas,mothballed,85
+G100000406580,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Raisa power station,L100000406636,oil/gas,operating,85
+G100000406581,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Raisa power station,L100000406636,oil/gas,mothballed,60
+G100000406582,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Raisa power station,L100000406636,oil/gas,mothballed,60
+G100000406583,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Raisa power station,L100000406636,oil/gas,mothballed,60
+G100000406584,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Raisa power station,L100000406636,oil/gas,mothballed,50
+G100000406585,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,La Raisa power station,L100000406636,oil/gas,operating,50
+G100000406586,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,La Cabrera power station,L100000406635,oil/gas,mothballed,160
+G100000406587,energy_plants_gem_units,VEN,point,,VEN-1-G,,point,,,,false,abf-boundaries-v0.2.0,La Cabrera power station,L100000406635,oil/gas,mothballed,160
+G100000406589,energy_plants_gem_units,VEN,point,,VEN-1-R,,point,,,,false,abf-boundaries-v0.2.0,Juan Manuel Valdez power station,L100000406634,oil/gas,cancelled,175
+G100000406590,energy_plants_gem_units,VEN,point,,VEN-1-R,,point,,,,false,abf-boundaries-v0.2.0,Juan Manuel Valdez power station,L100000406634,oil/gas,cancelled,175
+G100000406591,energy_plants_gem_units,VEN,point,,VEN-1-R,,point,,,,false,abf-boundaries-v0.2.0,Juan Manuel Valdez power station,L100000406634,oil/gas,mothballed,175
+G100000406592,energy_plants_gem_units,VEN,point,,VEN-1-R,,point,,,,false,abf-boundaries-v0.2.0,Juan Manuel Valdez power station,L100000406634,oil/gas,operating,175
+G100000406593,energy_plants_gem_units,VEN,point,,VEN-1-O,,point,,,,false,abf-boundaries-v0.2.0,Juan Bautista Arismendi power station,L100000406633,oil/gas,mothballed,85
+G100000406594,energy_plants_gem_units,VEN,point,,VEN-1-O,,point,,,,false,abf-boundaries-v0.2.0,Juan Bautista Arismendi power station,L100000406633,oil/gas,operating,85
+G100000406595,energy_plants_gem_units,VEN,point,,VEN-1-X,,point,,,,false,abf-boundaries-v0.2.0,Josefa Joaquina Sánchez Bastidas power station,L100000406632,oil/gas,mothballed,460
+G100000406596,energy_plants_gem_units,VEN,point,,VEN-1-X,,point,,,,false,abf-boundaries-v0.2.0,Josefa Joaquina Sánchez Bastidas power station,L100000406632,oil/gas,mothballed,460
+G100000406597,energy_plants_gem_units,VEN,point,,VEN-1-X,,point,,,,false,abf-boundaries-v0.2.0,Josefa Joaquina Sánchez Bastidas power station,L100000406632,oil/gas,mothballed,460
+G100000406598,energy_plants_gem_units,VEN,point,,VEN-1-X,,point,,,,false,abf-boundaries-v0.2.0,Josefa Joaquina Sánchez Bastidas power station,L100000406632,oil/gas,mothballed,68
+G100000406599,energy_plants_gem_units,VEN,point,,VEN-1-X,,point,,,,false,abf-boundaries-v0.2.0,Josefa Joaquina Sánchez Bastidas power station,L100000406632,oil/gas,operating,68
+G100000406600,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Josefa Camejo power station,L100000406631,oil/gas,mothballed,160
+G100000406601,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Josefa Camejo power station,L100000406631,oil/gas,mothballed,160
+G100000406602,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Josefa Camejo power station,L100000406631,oil/gas,operating,160
+G100000406603,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Guanta power station,L100000406630,oil/gas,mothballed,70
+G100000406605,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Genevapca power station,L100000406628,oil/gas,mothballed,105
+G100000406606,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Genevapca power station,L100000406628,oil/gas,mothballed,105
+G100000406607,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Genevapca power station,L100000406628,oil/gas,mothballed,105
+G100000406608,energy_plants_gem_units,VEN,point,,VEN-1-J,,point,,,,false,abf-boundaries-v0.2.0,Ezequiel Zamora power station,L100000406629,oil/gas,mothballed,180
+G100000406609,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,India Urquia power station,L100000406627,oil/gas,mothballed,350
+G100000406610,energy_plants_gem_units,VEN,point,,VEN-1-M,,point,,,,false,abf-boundaries-v0.2.0,India Urquia power station,L100000406627,oil/gas,operating,540
+G100000406611,energy_plants_gem_units,VEN,point,,VEN-1-X,,point,,,,false,abf-boundaries-v0.2.0,Barcazas Josefa Rufina y Margarita power station,L100000406625,oil/gas,mothballed,170
+G100000406612,energy_plants_gem_units,VEN,point,,VEN-1-X,,point,,,,false,abf-boundaries-v0.2.0,Barcazas Josefa Rufina y Margarita power station,L100000406625,oil/gas,operating,170
+G100000406613,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,true,abf-boundaries-v0.2.0,Antonio Nicolás Briceño power station,L100000406626,oil/gas,mothballed,90
+G100000406614,energy_plants_gem_units,VEN,point,,VEN-1-R,,point,,,,false,abf-boundaries-v0.2.0,Antonio José de Sucre power station,L100000406624,oil/gas,mothballed,170
+G100000406615,energy_plants_gem_units,VEN,point,,VEN-1-R,,point,,,,false,abf-boundaries-v0.2.0,Antonio José de Sucre power station,L100000406624,oil/gas,operating,170
+G100000406616,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Alfredo Salazar power station,L100000406623,oil/gas,mothballed,70
+G100000406617,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Alfredo Salazar power station,L100000406623,oil/gas,operating,70
+G100000406618,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Alfredo Salazar power station,L100000406623,oil/gas,mothballed,90
+G100000406619,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Alberto Lovera power station,L100000406621,oil/gas,mothballed,150
+G100000406620,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Alberto Lovera power station,L100000406621,oil/gas,mothballed,150
+G100000406925,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Termozulia power station,L100000406644,oil/gas,operating,140
+G100000406926,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,Termozulia power station,L100000406644,oil/gas,mothballed,300
+G100000406937,energy_plants_gem_units,VEN,point,,VEN-1-A,,point,,,,false,abf-boundaries-v0.2.0,José María España power station,L100000406685,oil/gas,mothballed,100
+G100000406938,energy_plants_gem_units,VEN,point,,VEN-1-A,,point,,,,false,abf-boundaries-v0.2.0,José María España power station,L100000406685,oil/gas,mothballed,100
+G100000406939,energy_plants_gem_units,VEN,point,,VEN-1-A,,point,,,,false,abf-boundaries-v0.2.0,José María España power station,L100000406685,oil/gas,mothballed,100
+G100000406940,energy_plants_gem_units,VEN,point,,VEN-1-A,,point,,,,false,abf-boundaries-v0.2.0,José María España power station,L100000406685,oil/gas,mothballed,100
+G100000406941,energy_plants_gem_units,VEN,point,,VEN-1-A,,point,,,,false,abf-boundaries-v0.2.0,José María España power station,L100000406685,oil/gas,mothballed,100
+G100000411962,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,true,abf-boundaries-v0.2.0,Sidor power station,L100000408590,oil/gas,mothballed,85
+G100000411963,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,true,abf-boundaries-v0.2.0,Sidor power station,L100000408590,oil/gas,operating,50
+G100000411964,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,true,abf-boundaries-v0.2.0,Sidor power station,L100000408590,oil/gas,mothballed,50
+G100000411965,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Guanta power station,L100000406630,oil/gas,mothballed,70
+G100000411966,energy_plants_gem_units,VEN,point,,VEN-1-L,,point,,,,false,abf-boundaries-v0.2.0,Don Luis Zambrano power plant,L100000408591,oil/gas,mothballed,470
+G100000411967,energy_plants_gem_units,VEN,point,,VEN-1-E,,point,,,,false,abf-boundaries-v0.2.0,Batalla de Santa Inés power station,L100000408592,oil/gas,operating,99.6
+G100000411968,energy_plants_gem_units,VEN,point,,VEN-1-E,,point,,,,false,abf-boundaries-v0.2.0,Barinas I substation power station,L100000408593,oil/gas,mothballed,50
+G100000411969,energy_plants_gem_units,VEN,point,,VEN-1-E,,point,,,,false,abf-boundaries-v0.2.0,Barinas I substation power station,L100000408593,oil/gas,mothballed,50
+G100000411970,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Alfredo Salazar power station,L100000406623,oil/gas,mothballed,50
+G100000411971,energy_plants_gem_units,VEN,point,,VEN-1-B,,point,,,,false,abf-boundaries-v0.2.0,Alfredo Salazar power station,L100000406623,oil/gas,mothballed,50
+G100000604021,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,false,abf-boundaries-v0.2.0,Caruachi hydroelectric plant,L100000603982,hydropower,operating,2160
+G100000604023,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,false,abf-boundaries-v0.2.0,Guri hydroelectric plant,L100000603984,hydropower,operating,10200
+G100000604024,energy_plants_gem_units,VEN,point,,VEN-1-E,,point,,,,false,abf-boundaries-v0.2.0,José Antonio Páez hydroelectric plant,L100000603985,hydropower,operating,240
+G100000604025,energy_plants_gem_units,VEN,point,,VEN-1-P,,point,,,,false,abf-boundaries-v0.2.0,Juan Antonio Rodríguez Domínguez hydroelectric plant,L100000603986,hydropower,operating,80
+G100000604028,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,false,abf-boundaries-v0.2.0,Macagua 1 hydroelectric plant,L100000603989,hydropower,operating,480
+G100000604029,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,false,abf-boundaries-v0.2.0,Macagua 2 hydroelectric plant,L100000603990,hydropower,operating,2850
+G100000604373,energy_plants_gem_units,VEN,point,,VEN-1-L,,point,,,,false,abf-boundaries-v0.2.0,Fabricio Ojeda hydroelectric plant,L100000603983,hydropower,mothballed,450
+G100000604529,energy_plants_gem_units,VEN,point,,VEN-1-S,,point,,,,true,abf-boundaries-v0.2.0,La Colorada hydroelectric plant,L100000603987,hydropower,mothballed,460
+G100000604552,energy_plants_gem_units,VEN,point,,VEN-1-S,,point,,,,false,abf-boundaries-v0.2.0,Leonardo Ruiz Pineda hydroelectric plant,L100000603988,hydropower,mothballed,300
+G100000604602,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,false,abf-boundaries-v0.2.0,Manuel Piar hydroelectric plant,L100000603991,hydropower,shelved,2160
+G100000604866,energy_plants_gem_units,VEN,point,,VEN-1-F,,point,,,,true,abf-boundaries-v0.2.0,Tayucay hydroelectric plant,L100000603992,hydropower,cancelled,2600
+G100000810302,energy_plants_gem_units,VEN,point,COL,VEN-1-C,,point,,,,true,abf-boundaries-v0.2.0,Llanos Norte - Sierracol solar farm,L100000808165,utility-scale solar,shelved,40
+G100000906752,energy_plants_gem_units,VEN,point,COL,VEN-1-V,,point,,,,true,abf-boundaries-v0.2.0,Windpeshi wind farm,L100000905189,wind,cancelled,200
+G100000907342,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,La Guajira wind farm,L100000905443,wind,mothballed,25.2
+G100000907343,energy_plants_gem_units,VEN,point,,VEN-1-V,,point,,,,false,abf-boundaries-v0.2.0,La Guajira wind farm,L100000905443,wind,cancelled,50.4
+G100000907344,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Paraguaná wind farm,L100000905444,wind,mothballed,62.4
+G100001023652,energy_plants_gem_units,VEN,point,,VEN-1-I,,point,,,,false,abf-boundaries-v0.2.0,Paraguaná wind farm,L100000905444,wind,cancelled,29
+G100001090656,energy_plants_gem_units,VEN,point,,VEN-1-L,,point,,,,true,abf-boundaries-v0.2.0,Don Luis Zambrano solar farm,L100001080725,utility-scale solar,announced,52.8
+G100001090659,energy_plants_gem_units,VEN,point,,VEN-1-L,,point,,,,true,abf-boundaries-v0.2.0,El Vigía solar farm,L100001080727,utility-scale solar,construction,52.8

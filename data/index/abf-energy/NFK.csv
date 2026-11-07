@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023599,energy_plants_gem_units,NFK,point,,,,,,,,true,abf-boundaries-v0.2.0,Headstone wind farm,L100001020688,wind,operating,1.2
+G100001023600,energy_plants_gem_units,NFK,point,,,,,,,,true,abf-boundaries-v0.2.0,Steeles Point wind farm,L100001020689,wind,operating,1.2

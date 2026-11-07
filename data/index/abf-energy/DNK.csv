@@ -1,0 +1,418 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100139,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Amager power station,L100000101814,coal,retired,70
+G100000100140,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Amager power station,L100000101814,coal,retired,91
+G100000100141,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Amager power station,L100000101814,coal,retired,263
+G100000100379,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Asnaes power station,L100000101818,coal,retired,147
+G100000100380,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Asnaes power station,L100000101818,coal,retired,270
+G100000100381,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Asnaes power station,L100000101818,coal,retired,640
+G100000100405,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Avedore power station,L100000101815,coal,retired,263
+G100000102679,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Esbjerg power station,L100000101820,coal,retired,407
+G100000102873,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Fyns power station,L100000101821,coal,retired,235
+G100000102874,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Fyns power station,L100000101821,coal,retired,362
+G100000107495,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nordjylland power station,L100000101817,coal,retired,305
+G100000107496,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nordjylland power station,L100000101817,coal,operating,411
+G100000107695,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Ostkraft power station,L100000101822,coal,retired,108
+G100000109630,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Stigsnaes power station,L100000101819,coal,retired,143
+G100000109631,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Stigsnaes power station,L100000101819,coal,retired,266
+G100000109638,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Studstrup power station,L100000101816,coal,retired,380
+G100000109639,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Studstrup power station,L100000101816,coal,retired,380
+G100000114609,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Asnaes power station,L100000101818,coal,retired,262
+G100000200229,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Herning power station,L100000200203,bioenergy,operating,80
+G100000200242,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Amager Bakke power station,L100000200213,bioenergy,operating,63
+G100000200243,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Amager power station,L100000101814,bioenergy,operating,150
+G100000200294,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Lisbjerg power station,L100000200261,bioenergy,operating,37
+G100000201360,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Asnaes power station,L100000101818,bioenergy,operating,30
+G100000201362,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Avedore power station,L100000101815,bioenergy,operating,585
+G100000201363,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Fyns power station,L100000101821,bioenergy,operating,35
+G100000201364,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Randers power station,L100000201147,coal,retired,52
+G100000201365,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Skaerbaek power station,L100000201148,bioenergy,operating,95
+G100000202504,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Amager power station,L100000101814,bioenergy,operating,68
+G100000202505,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Avedore power station,L100000101815,bioenergy,operating,250
+G100000202506,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Randers power station,L100000201147,bioenergy,operating,52
+G100000202507,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Studstrup power station,L100000101816,bioenergy,operating,362
+G100000400067,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,DTU Cogeneration power station,L100000400067,oil/gas,operating,38
+G100000400068,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Esbjerg Reserve power station,L100000400068,oil/gas,operating,25
+G100000400069,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Grenaa Reserve power station,L100000400069,oil/gas,operating,25
+G100000400070,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,H.C. Ørsted power station,L100000400070,oil/gas,operating,21
+G100000400071,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Hillerød power station,L100000400071,oil/gas,retired,75
+G100000400072,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Hjørring Cogeneration power station,L100000400072,oil/gas,operating,59
+G100000400073,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Silkeborgvaerket power station,L100000400073,oil/gas,operating,108.2
+G100000400074,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Viborg power station,L100000400074,oil/gas,operating,55
+G100000409393,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Sønderborg Kraftvarmeværk CHP power station,L100000407356,oil/gas,operating,52
+G100000410477,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Horsens power station,L100000407844,oil/gas,operating,34
+G100000410478,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Akzo Mariager power station,L100000407843,oil/gas,operating,25
+G100000410795,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,H.C. Ørsted Works power station,L100000408017,oil/gas,operating,273
+G100000806587,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Guldborg solar farm,L100000805723,utility-scale solar,operating,34
+G100000806588,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Arla solar farm,L100000805724,utility-scale solar,shelved,62
+G100000806589,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Arla solar farm,L100000805724,utility-scale solar,shelved,62
+G100000806590,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Arla solar farm,L100000805724,utility-scale solar,shelved,62
+G100000806591,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Arla solar farm,L100000805724,utility-scale solar,shelved,62
+G100000806592,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Rejstrup solar farm,L100000805725,utility-scale solar,operating,28
+G100000806593,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Slagelse solar farm,L100000805726,utility-scale solar,operating,26
+G100000806594,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Vollerup solar farm,L100000805727,utility-scale solar,operating,25
+G100000806595,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Naestved solar farm,L100000805728,utility-scale solar,operating,51
+G100000806596,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Nees solar farm,L100000805729,utility-scale solar,operating,45
+G100000806597,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Heartland solar farm,L100000805730,utility-scale solar,operating,207
+G100000806673,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Vandel solar farm,L100000805798,utility-scale solar,operating,75
+G100000806702,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Svinningegarden solar farm,L100000805824,utility-scale solar,operating,34
+G100000806703,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Rødby Fjord solar farm,L100000805825,utility-scale solar,operating,71
+G100000806704,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Aalbaek solar farm,L100000805826,utility-scale solar,operating,22
+G100000806705,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Viborg solar farm,L100000805827,utility-scale solar,operating,50
+G100000806725,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Brønderslev solar farm,L100000805846,utility-scale solar,pre_construction,140
+G100000806853,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lerchenborg solar farm,L100000805952,utility-scale solar,operating,61
+G100000807271,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Harre solar farm,L100000806334,utility-scale solar,operating,44
+G100000818828,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Barmosen solar farm,L100000815919,utility-scale solar,operating,137
+G100000818829,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Bregentved solar farm,L100000815920,utility-scale solar,pre_construction,112
+G100000818830,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Aalborg solar farm,L100000815921,utility-scale solar,pre_construction,280
+G100000818831,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Greenlab Skive solar farm,L100000815922,utility-scale solar,operating,26
+G100000818832,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Holmen solar farm,L100000815923,utility-scale solar,operating,21
+G100000818833,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Holmen solar farm,L100000815923,utility-scale solar,operating,51
+G100000818834,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Kassø solar farm,L100000815924,utility-scale solar,operating,252
+G100000818837,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Ramme solar farm,L100000815927,utility-scale solar,operating,48
+G100000818839,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Tryggevælde solar farm,L100000815929,utility-scale solar,operating,55
+G100000818840,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Vandel solar farm,L100000805798,utility-scale solar,operating,37.5
+G100000818841,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Vandel solar farm,L100000805798,utility-scale solar,operating,162
+G100000818842,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Vildbjerg solar farm,L100000815930,utility-scale solar,operating,66.7
+G100000822839,energy_plants_gem_units,DNK,point,DEU,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,PV24048 solar farm,L100000819836,utility-scale solar,operating,2
+G100000910532,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Gårestrup wind farm,L100000907860,wind,operating,10
+G100000910625,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Krusbjerg wind farm,L100000907949,wind,operating,10
+G100000910740,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nejst wind farm,L100000908053,wind,operating,10
+G100000910760,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Odense Ny Havneterminal wind farm,L100000908072,wind,operating,10
+G100000910770,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Osterild Testing Center wind farm,L100000908082,wind,operating,10
+G100000910878,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Southeast Nees wind farm,L100000908187,wind,operating,10
+G100000910886,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Store Røttinge wind farm,L100000908195,wind,operating,10
+G100000911047,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Tagmark wind farm,L100000908350,wind,retired,10
+G100000911055,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Avedøre Offshore wind farm,L100000908358,wind,operating,11
+G100000911109,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Bøvling wind farm,L100000908409,wind,operating,11
+G100000911111,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Brorstrup wind farm,L100000908411,wind,operating,11
+G100000911136,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Hanstholm Havn wind farm,L100000908436,wind,operating,11
+G100000911156,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Kyttrup wind farm,L100000908456,wind,operating,11
+G100000911184,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Møgelvang wind farm,L100000908483,wind,operating,11
+G100000911195,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Øslev wind farm,L100000908494,wind,operating,11
+G100000911203,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Quistrup wind farm,L100000908502,wind,operating,11
+G100000911212,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Ryå-Vest wind farm,L100000908511,wind,operating,11
+G100000911217,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Saltø wind farm,L100000908516,wind,operating,11
+G100000911225,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Skodsebølle wind farm,L100000908523,wind,operating,11
+G100000911229,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Southeast Nees wind farm,L100000908187,wind,operating,11
+G100000911236,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Thorsminde wind farm,L100000908532,wind,operating,11
+G100000911247,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Venner wind farm,L100000908542,wind,operating,11
+G100000911418,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Aalestrup wind farm,L100000908705,wind,operating,12
+G100000911419,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Abildå wind farm,L100000908706,wind,operating,12
+G100000911425,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Ålborg wind farm,L100000908712,wind,operating,12
+G100000911426,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Allestrupgård wind farm,L100000908713,wind,operating,12
+G100000911449,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ausumgaard wind farm,L100000908731,wind,operating,12
+G100000911497,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Bølå wind farm,L100000908776,wind,operating,12
+G100000911509,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Brande wind farm,L100000908788,wind,operating,10
+G100000911632,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Gettrup wind farm,L100000908905,wind,operating,12
+G100000911634,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Gilbjergvej wind farm,L100000908907,wind,operating,12
+G100000911685,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Højstrup wind farm,L100000908956,wind,operating,12
+G100000911735,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Krogstrup wind farm,L100000909005,wind,operating,12
+G100000911790,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Lindum wind farm,L100000909058,wind,operating,12
+G100000911856,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nejst wind farm,L100000908053,wind,operating,12
+G100000911890,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Ovnbøl wind farm,L100000909151,wind,operating,12
+G100000912068,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Videbæk Mose wind farm,L100000909323,wind,operating,12
+G100000912296,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Gedmose wind farm,L100000909538,wind,operating,13
+G100000912422,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Tvis wind farm,L100000909650,wind,operating,13
+G100000912579,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Åsted wind farm,L100000909794,wind,operating,14
+G100000912604,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Blæsbjerg wind farm,L100000909818,wind,operating,14
+G100000912698,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ilshøj wind farm,L100000909903,wind,operating,14
+G100000912770,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Osterild Testing Center wind farm,L100000908082,wind,operating,14
+G100000912846,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Svoldrup Kær (Wind 1) wind farm,L100000910032,wind,operating,14
+G100000912986,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Bajlum wind farm,L100000910159,wind,operating,15
+G100000913005,energy_plants_gem_units,DNK,point,DEU,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Brebek wind farm,L100000910177,wind,operating,15
+G100000913040,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Døstrup wind farm,L100000910210,wind,operating,15
+G100000913091,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Hejring Laug wind farm,L100000910254,wind,operating,15
+G100000913204,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Rens Hedegård Plantage wind farm,L100000910357,wind,operating,15
+G100000913264,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Thyholm wind farm,L100000910411,wind,operating,15
+G100000913265,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Tjørneby wind farm,L100000910412,wind,operating,15
+G100000913278,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Vester Barde wind farm,L100000910419,wind,operating,15
+G100000913281,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Vognkær wind farm,L100000910422,wind,operating,15
+G100000913282,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Vognkær wind farm,L100000910422,wind,operating,15
+G100000913359,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Bølå wind farm,L100000908776,wind,operating,16
+G100000913387,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Døstrup Vest wind farm,L100000910521,wind,operating,16
+G100000913435,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Kikkenborg wind farm,L100000910563,wind,operating,16
+G100000913462,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Lyngdrup wind farm,L100000910587,wind,operating,16
+G100000913463,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Måde Esbjerg wind farm,L100000910588,wind,operating,16
+G100000913464,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Måde Esbjerg wind farm,L100000910588,wind,operating,16
+G100000913564,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Vedersø wind farm,L100000910674,wind,operating,16
+G100000913735,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Hirtshals Havn wind farm,L100000910833,wind,operating,17
+G100000913737,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Høgsted wind farm,L100000910834,wind,operating,17
+G100000913740,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Hollandsbjerg wind farm,L100000910837,wind,operating,17
+G100000913774,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nørrekær Enge wind farm,L100000910864,wind,retired,17
+G100000913795,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Rønland Offshore wind farm,L100000910883,wind,operating,17
+G100000913810,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Skovengen wind farm,L100000910897,wind,operating,17
+G100000913817,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Turebylille wind farm,L100000910903,wind,operating,17
+G100000914004,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Grønkær wind farm,L100000911068,wind,operating,18
+G100000914025,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Holmen wind farm,L100000911086,wind,operating,18
+G100000914055,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Kragerup Estate wind farm,L100000911113,wind,operating,18
+G100000914079,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lerchenborg Estate wind farm,L100000911136,wind,operating,18
+G100000914155,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Pulsen wind farm,L100000911204,wind,operating,18
+G100000914198,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Sønder Herreds wind farm,L100000911238,wind,operating,18
+G100000914207,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Stakroge wind farm,L100000911247,wind,operating,18
+G100000914221,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Troldhede wind farm,L100000911260,wind,operating,18
+G100000914224,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Urup Hede wind farm,L100000911263,wind,operating,18
+G100000914325,energy_plants_gem_units,DNK,point,DEU,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Bb wind farm,L100000911357,wind,operating,19
+G100000914335,energy_plants_gem_units,DNK,point,DEU,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Ellhöft-Westre wind farm,L100000911366,wind,operating,19
+G100000914375,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Tjæreborg Enge wind farm,L100000911400,wind,operating,19
+G100000914656,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Østrup wind farm,L100000911652,wind,operating,20
+G100000914742,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Volder Mark wind farm,L100000911727,wind,operating,20
+G100000914847,energy_plants_gem_units,DNK,point,DEU,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Brebek wind farm,L100000910177,wind,operating,21
+G100000914906,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Klim Fjordeholme wind farm,L100000911875,wind,retired,21
+G100000914912,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Korsnakke wind farm,L100000911881,wind,operating,21
+G100000914947,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Nøjsomheds Odde wind farm,L100000911909,wind,retired,21
+G100000914977,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Samsø Offshore wind farm,L100000911934,wind,operating,21
+G100000914988,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Sprogo Offshore wind farm,L100000911944,wind,operating,21
+G100000915007,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Vindtved wind farm,L100000911963,wind,operating,21
+G100000915100,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Egebjerg wind farm,L100000912045,wind,operating,22
+G100000915109,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Gammel Vrå Enge wind farm,L100000912052,wind,operating,22
+G100000915120,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Handest Hede wind farm,L100000912061,wind,operating,22
+G100000915124,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Hejmdal wind farm,L100000912065,wind,operating,22
+G100000915128,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Holmen wind farm,L100000911086,wind,operating,22
+G100000915304,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Hagesholm wind farm,L100000912220,wind,operating,23
+G100000915346,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Overgaard wind farm,L100000912258,wind,operating,23
+G100000915441,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Bindesbøl wind farm,L100000912342,wind,operating,24
+G100000915624,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Rejsby Hede wind farm,L100000912506,wind,operating,24
+G100000915763,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Kappel (Aquila Capital) wind farm,L100000912631,wind,operating,25
+G100000915776,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Lønborg Hede wind farm,L100000912642,wind,operating,25
+G100000915813,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,St. Soels wind farm,L100000912675,wind,operating,25
+G100000916010,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Syltholm wind farm,L100000912841,wind,retired,26
+G100000916015,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Tjæreborg Enge wind farm,L100000911400,wind,operating,16.8
+G100000916097,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Lyngdrup wind farm,L100000910587,wind,operating,27
+G100000916261,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Nissum Bredning Offshore wind farm,L100000913053,wind,operating,28
+G100000916264,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nørre Økse Sø wind farm,L100000913055,wind,operating,28
+G100000916373,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Rødbyhavn wind farm,L100000913147,wind,operating,29
+G100000916379,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Tagmark wind farm,L100000908350,wind,operating,29
+G100000916593,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nørrekær Enge wind farm,L100000910864,wind,operating,30
+G100000916831,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Nøjsomheds Odde wind farm,L100000911909,wind,operating,32
+G100000916846,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Svindbæk wind farm,L100000913548,wind,operating,32
+G100000917038,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Lem Kær wind farm,L100000913707,wind,operating,34
+G100000917183,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Ulvemose And Bækhede Plantage wind farm,L100000913831,wind,operating,35
+G100000917278,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Overgaard wind farm,L100000912258,wind,operating,36
+G100000917279,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Overgaard wind farm,L100000912258,wind,operating,36
+G100000917280,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Overgaard wind farm,L100000912258,wind,shelved,36
+G100000917297,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Rodby Fjord wind farm,L100000913933,wind,operating,36
+G100000917314,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Tim wind farm,L100000913948,wind,operating,36
+G100000917473,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Overgaard wind farm,L100000912258,wind,retired,38
+G100000917488,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Veddum wind farm,L100000914102,wind,operating,38
+G100000917641,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Middelgrunden Offshore wind farm,L100000914231,wind,operating,40
+G100000917690,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Vemb wind farm,L100000914272,wind,operating,40
+G100000918081,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Hogager wind farm,L100000914606,wind,operating,46
+G100000918087,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Lønborg Hede wind farm,L100000912642,wind,operating,46
+G100000918860,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Overgaard wind farm,L100000912258,wind,operating,58
+G100000919074,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Klim Fjordeholme wind farm,L100000911875,wind,operating,70
+G100000919098,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Frederikshavn Offshore wind farm,L100000915442,wind,operating,10.6
+G100000919108,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Nørhede-Hjortmose (AURA Energi) wind farm,L100000915450,wind,operating,72
+G100000919109,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nørre Økse Sø wind farm,L100000913055,wind,shelved,72
+G100000919142,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Thorup-Sletten wind farm,L100000915483,wind,operating,74
+G100000919531,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Mejflak Offshore wind farm,L100000915798,wind,cancelled,120
+G100000919570,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Nørrekær Enge wind farm,L100000910864,wind,shelved,130
+G100000919635,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Omø Stålgrunde Offshore wind farm,L100000915891,wind,cancelled,150
+G100000919665,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Horns Rev Offshore wind farm,L100000915916,wind,operating,160
+G100000919666,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Lillebælt Syd Offshore wind farm,L100000915917,wind,pre_construction,160
+G100000919667,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Nordre Flint Offshore wind farm,L100000915918,wind,shelved,160
+G100000919686,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Rødsand wind farm,L100000915936,wind,operating,166
+G100000919694,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Vesterhav Offshore wind farm,L100000915943,wind,operating,170
+G100000919715,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Vesterhav Offshore wind farm,L100000915943,wind,operating,180
+G100000919758,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Rødsand wind farm,L100000915936,wind,operating,207
+G100000919760,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Horns Rev Offshore wind farm,L100000915916,wind,operating,209
+G100000919794,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Jammerland Offshore wind farm,L100000916027,wind,pre_construction,240
+G100000919805,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Aflandshage Offshore wind farm,L100000916037,wind,shelved,286
+G100000919953,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Anholt wind farm,L100000916163,wind,operating,400
+G100000919975,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Horns Rev Offshore wind farm,L100000915916,wind,operating,407
+G100000920046,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Kriegers Flak Offshore wind farm,L100000916243,wind,operating,605
+G100000920066,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Treå Møllebugt Offshore wind farm,L100000916260,wind,cancelled,720
+G100000920098,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Thor Offshore wind farm,L100000916286,wind,pre_construction,1000
+G100000920109,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Hesselø offshore wind farm,L100000916296,wind,announced,800
+G100000923853,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Bøchers Banke Floating Offshore wind farm,L100000919357,wind,cancelled,1102.5
+G100000923854,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Bornholm Basin Øst wind farm,L100000919358,wind,cancelled,1500
+G100000923855,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Bornholm Bassin Syd wind farm,L100000919359,wind,cancelled,1500
+G100000923857,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Femern Bugt Offshore wind farm,L100000919361,wind,cancelled,300
+G100000923858,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Freya Offshore wind farm,L100000919362,wind,cancelled,1500
+G100000923859,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Gilleleje Offshore wind farm,L100000919363,wind,shelved,210
+G100000923860,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Gjerrild Bugt Offshore wind farm,L100000919364,wind,shelved,400
+G100000923861,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,GreenLab Skive wind farm,L100000919365,wind,pre_construction,50
+G100000923862,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Grenå Offshore wind farm,L100000919366,wind,cancelled,315
+G100000923863,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Guldborgsund Offshore wind farm,L100000919367,wind,cancelled,500
+G100000923864,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Hanstholm Syd Offshore wind farm,L100000919368,wind,shelved,500
+G100000923865,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Hillerslev wind farm,L100000919369,wind,operating,28.8
+G100000923866,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Hirtshals Havn Offshore wind farm,L100000919370,wind,cancelled,350
+G100000923867,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Hjelm Hede wind farm,L100000919371,wind,pre_construction,80
+G100000923868,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Jyske Banke Nord wind farm,L100000919372,wind,cancelled,1040
+G100000923869,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,KadetBanke Offshore wind farm,L100000919373,wind,cancelled,500
+G100000923870,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Kattegat 2 Offshore wind farm,L100000919374,wind,pre_construction,2500
+G100000923871,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Kriegers Flak 2 offshore wind farm,L100000919375,wind,cancelled,3450
+G100000923872,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Klintebjerg Offshore wind farm,L100000919376,wind,cancelled,585
+G100000923873,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Læsø Offshore wind farm,L100000919377,wind,shelved,540
+G100000923874,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Lolland Offshore wind farm,L100000919378,wind,shelved,253
+G100000923875,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Lolland Syd Offshore wind farm,L100000919379,wind,cancelled,260
+G100000923876,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Lysegrund Offshore wind farm,L100000919380,wind,cancelled,550
+G100000923877,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Norddjurs Offshore wind farm,L100000919381,wind,shelved,650
+G100000923878,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Nordsøen 1 Offshore wind farm,L100000919382,wind,cancelled,1000
+G100000923879,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Odin Offshore wind farm,L100000919383,wind,cancelled,2250
+G100000923880,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Omø Syd Offshore wind farm,L100000919384,wind,cancelled,320
+G100000923881,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Paludan Flak offshore wind farm,L100000919385,wind,cancelled,280
+G100000923882,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Rømø Offshore wind farm,L100000919386,wind,shelved,500
+G100000923884,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Sønderbjerg Floating Offshore wind farm,L100000919388,wind,shelved,285
+G100000923885,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Stevns Nord Offshore wind farm,L100000919389,wind,cancelled,350
+G100000923886,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Stokkebro Offshore wind farm,L100000919390,wind,shelved,210
+G100000923887,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Thybo 1 Offshore wind farm,L100000919391,wind,pre_construction,4000
+G100000923888,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Thybo 2 Offshore wind farm,L100000919392,wind,pre_construction,1760
+G100000923889,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Udbyneder wind farm,L100000919393,wind,operating,39.6
+G100000923890,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Udbyneder wind farm,L100000919393,wind,operating,11.5
+G100000923891,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Vikinge Banke offshore wind farm,L100000919394,wind,cancelled,1140
+G100000923892,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Vigsø Bay Offshore wind farm,L100000919395,wind,cancelled,450
+G100001000179,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Kyndby power station,L100001000070,oil/gas,operating,63
+G100001000180,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Kyndby power station,L100001000070,oil/gas,operating,63
+G100001000181,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Kyndby power station,L100001000070,oil/gas,mothballed,260
+G100001000182,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Kyndby power station,L100001000070,oil/gas,mothballed,260
+G100001000448,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Jylland solar farm,L100001000235,utility-scale solar,pre_construction,114
+G100001000475,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Nørhede-Hjortmose (Encavis) solar farm,L100001000259,utility-scale solar,pre_construction,132
+G100001000476,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Nees Hede hybrid solar wind project solar farm,L100001000260,utility-scale solar,pre_construction,140
+G100001000736,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Fjerritslev solar farm,L100001000476,utility-scale solar,operating,29
+G100001000737,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Urup solar farm,L100001000477,utility-scale solar,operating,60
+G100001000742,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Hofor solar farm,L100001000478,utility-scale solar,cancelled,180
+G100001000757,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Agersted solar farm,L100001000485,utility-scale solar,operating,26
+G100001000764,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Naessundvej solar farm,L100001000488,utility-scale solar,operating,30
+G100001000766,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Jylland solar farm,L100001000235,utility-scale solar,pre_construction,296
+G100001006110,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Bornholm Energy Island wind farm,L100001005176,wind,pre_construction,1500
+G100001006129,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,FloatLab Floating wind farm,L100001005190,wind,announced,20
+G100001006214,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Nees Hede Hybrid Solar Wind Project wind farm,L100001005213,wind,pre_construction,70
+G100001006218,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,VindØ Energy Island Offshore wind farm,L100001005236,wind,pre_construction,3000
+G100001006222,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,VindØ Energy Island Offshore wind farm,L100001005236,wind,pre_construction,7000
+G100001006290,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Bornholm offshore wind farm,L100001005284,wind,cancelled,100
+G100001006291,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Femern offshore wind farm,L100001005285,wind,shelved,400
+G100001006292,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Guldborgsund Syd Offshore wind farm,L100001005286,wind,shelved,500
+G100001006293,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,true,abf-boundaries-v0.2.0,Hirtshals Havn Syd Offshore wind farm,L100001005287,wind,shelved,500
+G100001006311,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Osterild Testing Center wind farm,L100000908082,wind,operating,15
+G100001006313,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Osterild Testing Center wind farm,L100000908082,wind,operating,14
+G100001008082,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Aarhus solar project I,L100001006933,utility-scale solar,operating,1
+G100001008083,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ringkøbing-Skjern solar project I,L100001006934,utility-scale solar,operating,9
+G100001008084,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Vordingborg solar project,L100001006935,utility-scale solar,operating,1
+G100001008085,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Aabenraa solar project I,L100001006936,utility-scale solar,operating,14
+G100001008086,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Nordfyns solar project,L100001006937,utility-scale solar,operating,3
+G100001008087,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Bornholm solar project I,L100001006938,utility-scale solar,operating,7
+G100001008088,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Ballerup solar project,L100001006939,utility-scale solar,operating,2
+G100001008089,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Norddjurs solar project,L100001006940,utility-scale solar,operating,5
+G100001008090,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Odense solar project I,L100001006941,utility-scale solar,operating,1
+G100001008091,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Aarhus solar project II,L100001006942,utility-scale solar,operating,2
+G100001008092,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Randers solar project,L100001006943,utility-scale solar,operating,18
+G100001008093,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Kolding solar project I,L100001006944,utility-scale solar,operating,14
+G100001008094,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Viborg solar project I,L100001006945,utility-scale solar,operating,2
+G100001008095,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Guldborgsund solar project I,L100001006946,utility-scale solar,operating,3
+G100001008096,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Odense solar project II,L100001006947,utility-scale solar,operating,1
+G100001008097,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Silkeborg solar project,L100001006948,utility-scale solar,operating,12
+G100001008098,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Faxe solar project I,L100001006949,utility-scale solar,operating,10
+G100001008099,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Herning solar project I,L100001006950,utility-scale solar,operating,14
+G100001008100,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Svendborg solar project I,L100001006951,utility-scale solar,operating,7
+G100001008101,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Odense solar project III,L100001006952,utility-scale solar,operating,4
+G100001008102,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ikast-Brande solar project I,L100001006953,utility-scale solar,operating,2
+G100001008103,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ikast-Brande solar project II,L100001006954,utility-scale solar,operating,2
+G100001008104,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Holbæk solar project,L100001006955,utility-scale solar,operating,7
+G100001008105,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ringkøbing-Skjern solar project II,L100001006956,utility-scale solar,operating,4
+G100001008106,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ringkøbing-Skjern solar project III,L100001006957,utility-scale solar,operating,15
+G100001008107,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Assens solar project I,L100001006958,utility-scale solar,operating,1
+G100001008108,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Sønderborg solar project I,L100001006959,utility-scale solar,operating,2
+G100001008109,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Læsø solar project,L100001006960,utility-scale solar,operating,7
+G100001008110,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Sønderborg solar project II,L100001006961,utility-scale solar,operating,2
+G100001008111,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Hvidovre solar project,L100001006962,utility-scale solar,operating,2
+G100001008112,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Lemvig solar project I,L100001006963,utility-scale solar,operating,14
+G100001008113,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Lemvig solar project II,L100001006964,utility-scale solar,operating,2
+G100001008114,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Herning solar project II,L100001006965,utility-scale solar,operating,17
+G100001008115,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Herning solar project III,L100001006966,utility-scale solar,operating,2
+G100001008116,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Aabenraa solar project II,L100001006967,utility-scale solar,operating,2
+G100001008117,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Tårnby solar project,L100001006968,utility-scale solar,operating,2
+G100001008118,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lolland solar project I,L100001006969,utility-scale solar,operating,5
+G100001008119,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lolland solar project II,L100001006970,utility-scale solar,operating,7
+G100001008120,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lolland solar project III,L100001006971,utility-scale solar,operating,3
+G100001008121,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Bornholm solar project II,L100001006972,utility-scale solar,operating,7
+G100001008122,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Hjørring solar project,L100001006973,utility-scale solar,operating,5
+G100001008123,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Horsens solar project,L100001006974,utility-scale solar,operating,3
+G100001008124,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lolland solar project IV,L100001006975,utility-scale solar,operating,1
+G100001008125,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lolland solar project V,L100001006976,utility-scale solar,operating,5
+G100001008126,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ringkøbing-Skjern solar project V,L100001006977,utility-scale solar,operating,1
+G100001008127,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Svendborg solar project II,L100001006978,utility-scale solar,operating,2
+G100001008128,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Mariagerfjord solar project,L100001006979,utility-scale solar,operating,15
+G100001008129,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Kolding solar project II,L100001006980,utility-scale solar,operating,1
+G100001008130,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Assens solar project II,L100001006981,utility-scale solar,operating,4
+G100001008131,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Varde solar project,L100001006982,utility-scale solar,operating,1
+G100001008132,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Guldborgsund solar project III,L100001006983,utility-scale solar,operating,2
+G100001008133,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Middelfart solar project,L100001006984,utility-scale solar,operating,16
+G100001008134,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Vejle solar project,L100001006985,utility-scale solar,operating,1
+G100001008135,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Ishøj solar project,L100001006986,utility-scale solar,operating,1
+G100001008136,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Herning solar project IV,L100001006987,utility-scale solar,operating,19
+G100001008137,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Faxe solar project II,L100001006988,utility-scale solar,operating,5
+G100001008138,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Aabenraa solar project III,L100001006989,utility-scale solar,operating,19
+G100001008140,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Aalborg CSP-Brønderslev CSP with ORC project solar project,L100001006991,utility-scale solar,operating,5.5
+G100001018032,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Fyns power station,L100000101821,oil/gas,operating,362
+G100001018033,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Fyns power station,L100000101821,bioenergy,operating,24
+G100001018792,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Ostkraft power station,L100000101822,bioenergy,operating,37
+G100001030699,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,H.C. Ørsted power station,L100000400070,oil/gas,retired,44
+G100001050071,energy_plants_gem_units,DNK,point,DEU,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,GreEn Solar I solar project,L100001044554,utility-scale solar,operating,5
+G100001052474,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Lidsø solar farm,L100001046439,utility-scale solar,operating,215
+G100001052576,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Fraugde solar farm,L100001046524,utility-scale solar,operating,85
+G100001052577,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Højby solar farm,L100001046525,utility-scale solar,operating,32
+G100001052578,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Aarhus solar farm,L100001046526,utility-scale solar,announced,135
+G100001052579,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Stovstrup solar farm,L100001046527,utility-scale solar,cancelled,500
+G100001052580,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Hemmet-Sønder Vium solar farm,L100001046528,utility-scale solar,cancelled,500
+G100001052581,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Vennervej solar farm,L100001046529,utility-scale solar,cancelled,500
+G100001052583,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,true,abf-boundaries-v0.2.0,Holsted solar farm,L100001046531,utility-scale solar,operating,175
+G100001052584,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Øster Starup solar farm,L100001046532,utility-scale solar,pre_construction,28.8
+G100001052585,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Hejring solar farm,L100001046533,utility-scale solar,announced,235.8
+G100001052586,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,St. Soels solar farm,L100001046534,utility-scale solar,operating,19
+G100001052587,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Marsvinslund solar farm,L100001046535,utility-scale solar,pre_construction,6.6
+G100001052588,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Karup solar farm,L100001046536,utility-scale solar,pre_construction,75
+G100001052589,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Elkær solar farm,L100001046537,utility-scale solar,announced,30
+G100001052647,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Ulkær Mose wind farm,L100001046565,wind,pre_construction,49.5
+G100001052704,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,true,abf-boundaries-v0.2.0,Bornholm Energy Island wind farm,L100001005176,wind,pre_construction,1500
+G100001052705,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Aalborg wind farm,L100001046599,wind,pre_construction,85.5
+G100001052706,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Tolstrup wind farm,L100001046600,wind,shelved,12.6
+G100001052707,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Kratlund wind farm,L100001046601,wind,announced,42
+G100001052708,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Elkær wind farm,L100001046602,wind,announced,16.5
+G100001052709,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Marsvinslund wind farm,L100001046603,wind,pre_construction,10.8
+G100001052710,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Øster Starup wind farm,L100001046604,wind,pre_construction,22.5
+G100001052711,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Bolle Enge wind farm,L100001046605,wind,announced,67.5
+G100001053317,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Maabjerg power station,L100001046983,bioenergy,operating,27
+G100001053327,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Vestforbrænding power station,L100001046989,bioenergy,operating,17
+G100001053328,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Vestforbrænding power station,L100001046989,bioenergy,operating,22
+G100001072536,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,North Sea Mid wind farm,L100001063153,wind,announced,1000
+G100001072538,energy_plants_gem_units,DNK,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,North Sea South wind farm,L100001063154,wind,announced,1000
+G100001072591,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Hejring wind farm,L100001063198,wind,announced,115.2
+G100001072610,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Nørhede-Hjortmose (GreenGo Energy) solar farm,L100001063216,utility-scale solar,cancelled,500
+G100001072611,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Nørhede-Hjortmose (GreenGo Energy) wind farm,L100001063218,wind,announced,200
+G100001072615,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,true,abf-boundaries-v0.2.0,Høegholm solar farm,L100001063222,utility-scale solar,pre_construction,97.4
+G100001072616,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,true,abf-boundaries-v0.2.0,Gl. Vraa solar farm,L100001063223,utility-scale solar,announced,500
+G100001072617,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Svoldrup Kær solar farm,L100001063224,utility-scale solar,pre_construction,50
+G100001072618,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Svoldrup Kær (Wind Estate) wind farm,L100001063225,wind,pre_construction,43
+G100001072721,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ingerslev Å solar farm,L100001063308,utility-scale solar,operating,65
+G100001072762,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Kassø solar farm,L100000815924,utility-scale solar,operating,52
+G100001083325,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Tønder solar project,L100001073539,utility-scale solar,operating,2.4
+G100001083326,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Silkeborg solar project II,L100001073540,utility-scale solar,operating,6.7
+G100001083327,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ikast-Brande solar project III,L100001073541,utility-scale solar,operating,1.1
+G100001083328,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Rebild solar project,L100001073542,utility-scale solar,operating,1.1
+G100001083329,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Herning solar project V,L100001073543,utility-scale solar,operating,1.8
+G100001083330,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Aarhus solar project III,L100001073544,utility-scale solar,operating,1.2
+G100001083331,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Syddjurs solar project,L100001073545,utility-scale solar,operating,12.5
+G100001083332,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Kolding solar project III,L100001073546,utility-scale solar,operating,1.9
+G100001083333,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Varde solar project I,L100001073547,utility-scale solar,operating,1
+G100001083334,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Ringkøbing-Skjern solar project VI,L100001073548,utility-scale solar,operating,15
+G100001083335,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Billund solar project,L100001073549,utility-scale solar,operating,4
+G100001083336,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Aabenraa solar project IV,L100001073550,utility-scale solar,operating,1.8
+G100001083337,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Tårnby solar project I,L100001073551,utility-scale solar,operating,4.1
+G100001083338,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Sorø solar project,L100001073552,utility-scale solar,operating,1.6
+G100001083339,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Frederikssund solar project,L100001073553,utility-scale solar,operating,7.2
+G100001083341,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Region Zealand solar project I,L100001073555,utility-scale solar,operating,1.7
+G100001083342,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Region Of Southern Denmark solar project I,L100001073556,utility-scale solar,operating,1
+G100001083345,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,Aalborg solar project I,L100001073559,utility-scale solar,operating,1
+G100001083348,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Region Of Southern Denmark solar project II,L100001073562,utility-scale solar,operating,1
+G100001083352,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,North Denmark Region solar project II,L100001073566,utility-scale solar,operating,1
+G100001083384,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Capital Region Of Denmark solar project V,L100001073598,utility-scale solar,operating,2.1
+G100001083398,energy_plants_gem_units,DNK,point,,DNK-1-85,,point,,,,false,abf-boundaries-v0.2.0,Region Zealand solar project IX,L100001073612,utility-scale solar,operating,1.1
+G100001083401,energy_plants_gem_units,DNK,point,,DNK-1-84,,point,,,,false,abf-boundaries-v0.2.0,Capital Region Of Denmark solar project VII,L100001073615,utility-scale solar,operating,1.4
+G100001083411,energy_plants_gem_units,DNK,point,,DNK-1-82,,point,,,,false,abf-boundaries-v0.2.0,Horsens solar project II,L100001073625,utility-scale solar,operating,3.5
+G100001083417,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Denmark solar project XVIII,L100001073631,utility-scale solar,operating,1.4
+G100001083436,energy_plants_gem_units,DNK,point,,DNK-1-81,,point,,,,false,abf-boundaries-v0.2.0,North Denmark Region solar project XX,L100001073650,utility-scale solar,operating,2
+G100001083440,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Region Of Southern Denmark solar project X,L100001073654,utility-scale solar,operating,1.7
+G100001083453,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Denmark solar project XXII,L100001073667,utility-scale solar,operating,1
+G100001083454,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Denmark solar project XXIII,L100001073668,utility-scale solar,operating,2.1
+G100001083456,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Region Of Southern Denmark solar project XII,L100001073670,utility-scale solar,operating,2.2
+G100001091023,energy_plants_gem_units,DNK,point,,DNK-1-83,,point,,,,false,abf-boundaries-v0.2.0,Glejbjerg solar farm,L100001080984,utility-scale solar,operating,148.2

@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-21418a9d1a2d,dc_atlas_points,EGY,field,,EGY-1-GZ,,point,,,,true,abf-boundaries-v0.2.0,Telecom Egypt Abou Rawash Data Center (CAI1),Operating / Construction,telecom,,
+ATL-8e4ab5a2b61b,dc_atlas_points,EGY,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Africa Data Centres Egypt,Planned,colocation,100_999,
+ATL-8fc846f1bfb5,dc_atlas_points,EGY,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Intro Technology Kemet Campus,Operating / Construction,developer_investor,10_99,
+ATL-9b8a6d6323db,dc_atlas_points,EGY,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Vodafone–Cassava Egypt Sovereign AI Data Center,Planned,telecom,,
+ATL-a477f24fb956,dc_atlas_points,EGY,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Intro Technology Kemet Campus,Planned,developer_investor,10_99,
+ATL-bc70be414983,dc_atlas_points,EGY,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Telecom Egypt Al Qahirah,Operating / Construction,telecom,lt10,
+ATL-f9e99a7386b5,dc_atlas_points,EGY,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Khazna Al Qahirah,Operating / Construction,colocation,10_99,

@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413991,energy_plants_gem_units,GNQ,point,,,,,,,,false,abf-boundaries-v0.2.0,Malabo Turbogas power plant,L100000409138,oil/gas,operating,154
+G100000413992,energy_plants_gem_units,GNQ,point,,,,,,,,true,abf-boundaries-v0.2.0,Equatorial Guinea power station,L100000409139,oil/gas,operating,40
+G100000413993,energy_plants_gem_units,GNQ,point,,,,,,,,true,abf-boundaries-v0.2.0,Bata power station,L100000409140,oil/gas,operating,24
+G100000601587,energy_plants_gem_units,GNQ,point,,,,,,,,false,abf-boundaries-v0.2.0,Djibloho hydroelectric plant,L100000601569,hydropower,operating,120
+G100000601588,energy_plants_gem_units,GNQ,point,,,,,,,,true,abf-boundaries-v0.2.0,Sendje hydroelectric plant,L100000601570,hydropower,construction,200
+G100001074366,energy_plants_gem_units,GNQ,point,,,,,,,,true,abf-boundaries-v0.2.0,Annobón solar farm,L100001064606,utility-scale solar,operating,5

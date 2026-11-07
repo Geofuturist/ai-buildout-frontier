@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-09eb847385ba,dc_atlas_points,OMN,field,,,,,,,,,abf-boundaries-v0.2.0,Nova Complex OMN01,Planned,developer_investor,100_999,
+ATL-16c2e61c5b89,dc_atlas_points,OMN,field,,,,,,,,,abf-boundaries-v0.2.0,Syntys Al Batnah North,Operating / Construction,colocation,10_99,
+ATL-1ff077131f8f,dc_atlas_points,OMN,field,,,,,,,,,abf-boundaries-v0.2.0,Phoenix Dhofar,Operating / Construction,other,100_999,
+ATL-6b6b1cada1e2,dc_atlas_points,OMN,field,,,,,,,,true,abf-boundaries-v0.2.0,Syntys Muscat,Operating / Construction,colocation,lt10,
+ATL-aa8e68e32720,dc_atlas_points,OMN,field,,,,,,,,,abf-boundaries-v0.2.0,Syntys Al Batnah North,Operating / Construction,colocation,lt10,
+ATL-bb5fa6f9d047,dc_atlas_points,OMN,field,,,,,,,,,abf-boundaries-v0.2.0,Equinix SN1,Operating / Construction,colocation,lt10,
+ATL-bd700e36fe95,dc_atlas_points,OMN,field,,,,,,,,true,abf-boundaries-v0.2.0,Equinix MC1 Muscat,Operating / Construction,colocation,lt10,

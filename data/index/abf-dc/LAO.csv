@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-7254274fb2b2,dc_atlas_points,LAO,field,,,,,,,,,abf-boundaries-v0.2.0,Lao National Data Centre,Planned,other,,
+ATL-7c7c116fc876,dc_atlas_points,LAO,field,,,,,,,,true,abf-boundaries-v0.2.0,LaoDC Vientiane Data Center,Operating / Construction,colocation,,
+ATL-8a3401d3ecfb,dc_atlas_points,LAO,field,,,,,,,,,abf-boundaries-v0.2.0,LEED Datacenter,Operating / Construction,cloud,lt10,
+ATL-8f5b37df472e,dc_atlas_points,LAO,field,,,,,,,,true,abf-boundaries-v0.2.0,Lao Telecom Saylom Data Center,Operating / Construction,telecom,,

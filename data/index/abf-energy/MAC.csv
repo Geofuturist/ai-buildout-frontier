@@ -1,0 +1,11 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200801,energy_plants_gem_units,MAC,point,,,,,,,,false,abf-boundaries-v0.2.0,Macau power station,L100000200705,bioenergy,operating,30
+G100000407311,energy_plants_gem_units,MAC,point,,,,,,,,false,abf-boundaries-v0.2.0,Coloane B power station,L100000406848,oil/gas,announced,450
+G100000407312,energy_plants_gem_units,MAC,point,,,,,,,,false,abf-boundaries-v0.2.0,Coloane B power station,L100000406848,oil/gas,operating,136
+G100000412635,energy_plants_gem_units,MAC,point,,,,,,,,false,abf-boundaries-v0.2.0,Coloane A power station,L100000408741,oil/gas,operating,271.2
+G100000904234,energy_plants_gem_units,MAC,point,CHN,,,,,,,true,abf-boundaries-v0.2.0,Yunnan Fumin Baihuashan wind farm,L100000903450,wind,operating,48
+G100000904239,energy_plants_gem_units,MAC,point,CHN,,,,,,,true,abf-boundaries-v0.2.0,Yunnan Xundian Dezhulong wind farm,L100000903454,wind,operating,48
+G100000904240,energy_plants_gem_units,MAC,point,CHN,,,,,,,true,abf-boundaries-v0.2.0,Yunnan Xundian Dezhulong wind farm,L100000903454,wind,operating,48
+G100000904241,energy_plants_gem_units,MAC,point,CHN,,,,,,,true,abf-boundaries-v0.2.0,Yunnan Xundian Lianhe wind farm,L100000903455,wind,operating,50
+G100000904242,energy_plants_gem_units,MAC,point,CHN,,,,,,,true,abf-boundaries-v0.2.0,Yunnan Xundian Lianhe wind farm,L100000903455,wind,operating,50
+G100001021324,energy_plants_gem_units,MAC,point,,,,,,,,false,abf-boundaries-v0.2.0,Macau power station,L100000200705,bioenergy,operating,28.7

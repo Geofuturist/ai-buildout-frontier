@@ -1,0 +1,36 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000201691,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Bamako Waste to Energy power station,L100000201405,bioenergy,shelved,40
+G100000409398,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kalabancoro power station,L100000407357,oil/gas,shelved,65
+G100000413538,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirakoro power station,L100000409046,oil/gas,operating,100
+G100000413539,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Kayes power station,L100000409047,oil/gas,operating,90
+G100000413954,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Fekola Mine power station,L100000409172,oil/gas,operating,64
+G100000602492,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Gouina hydroelectric plant,L100000602461,hydropower,operating,140
+G100000602493,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Manantali hydroelectric plant,L100000602462,hydropower,operating,200
+G100000800017,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Akuo Kita solar farm,L100000800016,utility-scale solar,operating,50
+G100000800023,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Amea Kati solar farm,L100000800021,utility-scale solar,pre_construction,50
+G100000800114,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Diéma solar farm,L100000800091,utility-scale solar,cancelled,100
+G100000800141,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Fekola Gold Mine solar farm,L100000800107,utility-scale solar,operating,30
+G100000800337,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Segou solar farm,L100000800285,utility-scale solar,pre_construction,33
+G100000800355,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Sikasso solar farm,L100000800301,utility-scale solar,cancelled,30
+G100000800356,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Sikasso solar farm,L100000800301,utility-scale solar,cancelled,20
+G100000800385,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Syama Hybrid solar farm,L100000800315,utility-scale solar,shelved,20
+G100000800407,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Touna solar farm,L100000800335,utility-scale solar,announced,93
+G100000814151,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Fana solar farm,L100000811616,utility-scale solar,announced,50
+G100000814152,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Loulo-Gounkoto complex solar farm,L100000811617,utility-scale solar,operating,20
+G100000814153,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Loulo-Gounkoto complex solar farm,L100000811617,utility-scale solar,operating,40
+G100000814156,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,NTPC solar farm,L100000811618,utility-scale solar,cancelled,500
+G100000831190,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kourouba Solar Park,L100000827658,utility-scale solar,announced,33
+G100000831191,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Orange Kati solar farm,L100000827659,utility-scale solar,shelved,25
+G100000920660,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kayes Botéguékourou wind farm,L100000916622,wind,pre_construction,151.2
+G100001020246,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Amea Kati solar farm,L100000800021,utility-scale solar,announced,50
+G100001020271,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Sanankoroba 200MW solar farm,L100001018204,utility-scale solar,construction,200
+G100001020273,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Sanankoroba 140MW solar farm,L100001018205,utility-scale solar,announced,140
+G100001020274,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Bougouni solar park,L100001018206,utility-scale solar,announced,100
+G100001020276,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Safo solar power plant,L100001018207,utility-scale solar,construction,100
+G100001023870,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Kéniéba solar project,L100001020901,utility-scale solar,operating,1.1
+G100001027326,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Felou hydroelectric plant,L100001023121,hydropower,operating,62
+G100001051883,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Selingue hydroelectric plant,L100001046012,hydropower,operating,48
+G100001073885,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Sadiola Mine solar farm,L100001064231,utility-scale solar,announced,35
+G100001073887,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Sadiola Mine solar farm,L100001064231,utility-scale solar,announced,25
+G100001073890,energy_plants_gem_units,MLI,point,,,,,,,,false,abf-boundaries-v0.2.0,Fekola Gold Mine solar farm,L100000800107,utility-scale solar,operating,22
+G100001074395,energy_plants_gem_units,MLI,point,,,,,,,,true,abf-boundaries-v0.2.0,Kenié hydroelectric plant,L100001064633,hydropower,pre_construction,42

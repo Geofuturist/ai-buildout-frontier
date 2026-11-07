@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001010435,energy_plants_gem_tzsam_units,MLT,point,,MLT-1-33,,point,,,,false,abf-boundaries-v0.2.0,Southern Region solar project,L100001009065,utility-scale solar,operating,5.1
+G100001060572,energy_plants_gem_tzsam_units,MLT,point,,MLT-1-38,,point,,,,false,abf-boundaries-v0.2.0,Northern Region solar project I,L100001052778,utility-scale solar,operating,1.4
+G100001060573,energy_plants_gem_tzsam_units,MLT,point,,MLT-1-51,,point,,,,false,abf-boundaries-v0.2.0,Northern Region solar project II,L100001052779,utility-scale solar,operating,4.9
+G100001060574,energy_plants_gem_tzsam_units,MLT,point,,MLT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Southern Region solar project I,L100001052780,utility-scale solar,operating,2.1
+G100001060575,energy_plants_gem_tzsam_units,MLT,point,,MLT-1-46,,point,,,,false,abf-boundaries-v0.2.0,Northern Region solar project III,L100001052781,utility-scale solar,operating,4.1

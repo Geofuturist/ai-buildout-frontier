@@ -1,0 +1,63 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100744,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Terragen power station,L100000103025,coal,operating,35
+G100000100745,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Terragen power station,L100000103025,coal,operating,35
+G100000101845,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint-Aubin power station,L100000103026,coal,operating,35
+G100000108855,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Savannah power station,L100000103027,coal,operating,45
+G100000108856,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Savannah power station,L100000103027,coal,operating,45
+G100000111945,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Pointe Aux Caves power station,L100000103028,coal,cancelled,55
+G100000111946,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Pointe Aux Caves power station,L100000103028,coal,cancelled,55
+G100000413929,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Louis (Mauritius) power station,L100000409155,oil/gas,operating,14
+G100000413930,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Louis (Mauritius) power station,L100000409155,oil/gas,operating,14
+G100000413931,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Louis (Mauritius) power station,L100000409155,oil/gas,operating,14
+G100000413932,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Louis (Mauritius) power station,L100000409155,oil/gas,operating,17
+G100000413933,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Louis (Mauritius) power station,L100000409155,oil/gas,operating,17
+G100000413934,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Louis (Mauritius) power station,L100000409155,oil/gas,operating,17
+G100000413935,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Saint Louis (Mauritius) power station,L100000409155,oil/gas,operating,17
+G100000413936,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Nicolay power station,L100000409156,oil/gas,operating,30
+G100000413937,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Nicolay power station,L100000409156,oil/gas,operating,34
+G100000413938,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Nicolay power station,L100000409156,oil/gas,operating,23
+G100000413939,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Nicolay power station,L100000409156,oil/gas,operating,22
+G100000413940,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius FSRU power plant,L100000409171,oil/gas,shelved,100
+G100000413941,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,10
+G100000413942,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,10
+G100000413943,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,10
+G100000413944,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,10
+G100000413945,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,15
+G100000413946,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,10
+G100000413947,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,10
+G100000413948,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort Victoria power station,L100000409153,oil/gas,operating,15
+G100000413949,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort George power station,L100000409154,oil/gas,operating,39
+G100000413950,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort George power station,L100000409154,oil/gas,operating,30
+G100000413951,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort George power station,L100000409154,oil/gas,operating,30
+G100000413952,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort George power station,L100000409154,oil/gas,operating,24
+G100000413953,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Fort George power station,L100000409154,oil/gas,operating,24
+G100000814158,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius solar farm,L100000811620,utility-scale solar,shelved,100
+G100000814159,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius solar farm,L100000811620,utility-scale solar,shelved,40
+G100000831202,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Airports of Mauritius solar farm,L100000827663,utility-scale solar,shelved,14
+G100000831203,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Aresenal solar farm,L100000827664,utility-scale solar,operating,13.9
+G100000831205,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Bambous solar farm,L100000827666,utility-scale solar,operating,15
+G100000831206,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Helios Beau Champ solar farm,L100000827667,utility-scale solar,operating,10
+G100000831208,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,La Valette solar farm,L100000827669,utility-scale solar,operating,10
+G100000831209,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius (AfDB) solar farm,L100000827670,utility-scale solar,announced,25
+G100000831210,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius (AfDB) solar farm,L100000827670,utility-scale solar,announced,25
+G100000831211,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius (AfDB) solar farm,L100000827670,utility-scale solar,announced,25
+G100000831212,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius (AfDB) solar farm,L100000827670,utility-scale solar,announced,25
+G100000831213,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius (TCIL) solar farm,L100000827671,utility-scale solar,announced,25
+G100000831214,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Petite-Retraite solar farm,L100000827672,utility-scale solar,announced,10
+G100000831216,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Queen Victoria & Anahita solar farm,L100000827674,utility-scale solar,operating,25.3
+G100000831217,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Solitude solar farm,L100000827675,utility-scale solar,operating,16
+G100000900084,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Plaine Des Roches wind farm,L100000900064,wind,operating,9.4
+G100000900085,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Britannia Omnicane wind farm,L100000900065,wind,shelved,22
+G100000900164,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Plaine Sophie wind farm,L100000900126,wind,operating,30
+G100001021193,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius (CEB 15mw) solar farm,L100001018881,utility-scale solar,announced,15
+G100001021195,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamarind Falls floating solar farm,L100001018883,utility-scale solar,announced,30
+G100001021200,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Plaines des Roches solar farm,L100001018887,utility-scale solar,operating,10
+G100001021226,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Mauritius Offshore wind farm,L100001018902,wind,announced,100
+G100001052246,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Medine Mill power station,L100001046270,bioenergy,operating,13
+G100001052247,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Mare Chicose power station,L100001046271,bioenergy,operating,3.3
+G100001052249,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,FUEL Sugar power station,L100001046273,bioenergy,operating,41
+G100001062654,energy_plants_gem_units,MUS,point,,,,,,,,false,abf-boundaries-v0.2.0,Champagne hydroelectric plant,L100001054762,hydropower,operating,30
+G100001074145,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Stor'Sun solar farm,L100001064434,utility-scale solar,pre_construction,15
+G100001074146,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Stor'Sun solar farm,L100001064434,utility-scale solar,pre_construction,15
+G100001074147,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Stor'Sun solar farm,L100001064434,utility-scale solar,pre_construction,15
+G100001074148,energy_plants_gem_units,MUS,point,,,,,,,,true,abf-boundaries-v0.2.0,Stor'Sun solar farm,L100001064434,utility-scale solar,pre_construction,15

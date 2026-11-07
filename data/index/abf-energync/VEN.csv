@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001074925,energy_plants_gem_tzsam_units,VEN,point,,VEN-1-E,,point,,,,false,abf-boundaries-v0.2.0,Municipio Andrés Eloy Blanco solar project,L100001065139,utility-scale solar,operating,1.1
+G100001074926,energy_plants_gem_tzsam_units,VEN,point,,VEN-1-J,,point,,,,false,abf-boundaries-v0.2.0,Municipio Infante solar project,L100001065140,utility-scale solar,operating,1.9
+G100001074927,energy_plants_gem_tzsam_units,VEN,point,,VEN-1-P,,point,,,,false,abf-boundaries-v0.2.0,Acarigua Municipio Páez solar project,L100001065141,utility-scale solar,operating,10.9

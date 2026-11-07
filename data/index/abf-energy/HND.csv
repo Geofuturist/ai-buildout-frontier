@@ -1,0 +1,78 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000113950,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Bijao Power Station,L100000104534,coal,retired,35
+G100000113951,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Bijao Power Station,L100000104534,coal,retired,35
+G100000113952,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Bijao Power Station,L100000104534,oil/gas,operating,35
+G100000200216,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,HGPC power station,L100000200191,bioenergy,operating,43
+G100000406930,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,true,abf-boundaries-v0.2.0,Puerto Cortés power station,L100000406669,oil/gas,cancelled,350
+G100000412012,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Planta Pavana III power station,L100000408650,oil/gas,operating,267.2
+G100000412013,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Planta Pavana II power station,L100000408651,oil/gas,operating,82.4
+G100000412014,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,ELCOSA power station,L100000408652,oil/gas,operating,80
+G100000412016,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,ENERSA power station,L100000408653,oil/gas,operating,249.2
+G100000412017,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,EMCE Choloma power station,L100000408654,oil/gas,operating,50
+G100000413135,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,PECSA power station,L100000408913,oil/gas,operating,54
+G100000413136,energy_plants_gem_units,HND,point,,HND-1-AT,,point,,,,false,abf-boundaries-v0.2.0,Laeisz La Ensenada power station,L100000408914,oil/gas,operating,87
+G100000601806,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,El Tornillo hydroelectric plant,L100000601787,hydropower,construction,200
+G100000601807,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Francisco Morazan hydroelectric plant,L100000601788,hydropower,operating,300
+G100000601809,energy_plants_gem_units,HND,point,,HND-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Los Llanitos hydroelectric plant,L100000601790,hydropower,pre_construction,80
+G100000601812,energy_plants_gem_units,HND,point,,HND-1-OL,,point,,,,false,abf-boundaries-v0.2.0,Patuca 3 hydroelectric plant,L100000601793,hydropower,operating,104
+G100000601813,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Río Lindo hydroelectric plant,L100000601794,hydropower,operating,109
+G100000604465,energy_plants_gem_units,HND,point,,HND-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Jicatuyo hydroelectric plant,L100000601789,hydropower,pre_construction,210
+G100000604715,energy_plants_gem_units,HND,point,,HND-1-OL,,point,,,,true,abf-boundaries-v0.2.0,Patuca 2A hydroelectric plant,L100000601792,hydropower,pre_construction,150
+G100000604716,energy_plants_gem_units,HND,point,,HND-1-OL,,point,,,,true,abf-boundaries-v0.2.0,Patuca 2B hydroelectric plant,L100000604315,hydropower,pre_construction,270
+G100000700233,energy_plants_gem_units,HND,point,,HND-1-CP,,point,,,,false,abf-boundaries-v0.2.0,Platanares geothermal power plant,L100000700140,geothermal,operating,35
+G100000809403,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Energías Solares solar farm,L100000807715,utility-scale solar,shelved,6.7
+G100000809404,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Foto Sol solar farm,L100000807716,utility-scale solar,shelved,5
+G100000809405,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Fray Lázaro solar farm,L100000807717,utility-scale solar,operating,5
+G100000809406,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Generaciones Energéticas solar farm,L100000807718,utility-scale solar,shelved,12
+G100000809407,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,La Manzanilla solar farm,L100000807719,utility-scale solar,shelved,15
+G100000809408,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Las Lajas solar farm (Honduras),L100000807720,utility-scale solar,operating,10
+G100000838040,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Marcovia A solar project,L100000832478,utility-scale solar,operating,10
+G100000838041,energy_plants_gem_units,HND,point,,HND-1-CM,,point,,,,false,abf-boundaries-v0.2.0,Palmerola Airport solar farm,L100000832479,utility-scale solar,operating,2
+G100000838042,energy_plants_gem_units,HND,point,,HND-1-OL,,point,,,,true,abf-boundaries-v0.2.0,Terrero Blanco 2.5 solar farm,L100000832480,utility-scale solar,shelved,2.5
+G100000838043,energy_plants_gem_units,HND,point,,HND-1-OL,,point,,,,true,abf-boundaries-v0.2.0,Terrero Blanco 47 solar farm,L100000832481,utility-scale solar,announced,47
+G100000906085,energy_plants_gem_units,HND,point,,HND-1-FM,,point,,,,false,abf-boundaries-v0.2.0,Los Tablones wind farm,L100000904953,wind,shelved,40
+G100000907216,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Sayab wind farm,L100000905401,wind,cancelled,100
+G100000907495,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Chinchayote wind farm,L100000905490,wind,operating,46
+G100000907496,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,San Marcos (Terra Energía) wind farm,L100000905491,wind,operating,50
+G100000907497,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,San Marcos (Terra Energía) wind farm,L100000905491,wind,operating,13
+G100000907674,energy_plants_gem_units,HND,point,,HND-1-FM,,point,,,,false,abf-boundaries-v0.2.0,Cerro De Hula wind farm,L100000905586,wind,operating,102
+G100000907675,energy_plants_gem_units,HND,point,,HND-1-FM,,point,,,,false,abf-boundaries-v0.2.0,Cerro De Hula wind farm,L100000905586,wind,operating,24
+G100000907676,energy_plants_gem_units,HND,point,,HND-1-LE,,point,,,,false,abf-boundaries-v0.2.0,Cololaca wind farm,L100000905587,wind,cancelled,112
+G100000927208,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,San Marcos (Total Eren) wind farm,L100000921901,wind,pre_construction,118
+G100001020371,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Cahsa Biomass power station,L100001018288,bioenergy,operating,30
+G100001020376,energy_plants_gem_units,HND,point,,HND-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Chumbagua Biomass power station,L100001018291,bioenergy,operating,20
+G100001020600,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,true,abf-boundaries-v0.2.0,Puente Alto Energy power station,L100001018455,coal,cancelled,100
+G100001021054,energy_plants_gem_units,HND,point,,HND-1-VA,,point,,,,true,abf-boundaries-v0.2.0,Agua Fría Solar Power Plant,L100001018784,utility-scale solar,operating,60
+G100001021103,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Aura Solar Project,L100001018822,utility-scale solar,operating,61
+G100001021105,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Choluteca Solar Plant,L100001018825,utility-scale solar,operating,23.3
+G100001021107,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Choluteca Solar Plant,L100001018825,utility-scale solar,operating,35
+G100001021137,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Del Sur solar farm,L100001018829,utility-scale solar,operating,25
+G100001021138,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,El Pacifico Solar Plant,L100001018845,utility-scale solar,operating,20
+G100001021139,energy_plants_gem_units,HND,point,,HND-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Los Pollitos solar farm,L100001018846,utility-scale solar,operating,20
+G100001021140,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Los Prados Solar Project,L100001018847,utility-scale solar,operating,35
+G100001021141,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Marcovia Solar Plant,L100001018848,utility-scale solar,operating,42.5
+G100001021142,energy_plants_gem_units,HND,point,,HND-1-VA,,point,,,,false,abf-boundaries-v0.2.0,Nacaome Photovoltaic Solar Power Plant,L100001018849,utility-scale solar,operating,70
+G100001021143,energy_plants_gem_units,HND,point,,HND-1-VA,,point,,,,false,abf-boundaries-v0.2.0,Nacaome Photovoltaic Solar Power Plant,L100001018849,utility-scale solar,operating,70
+G100001021145,energy_plants_gem_units,HND,point,,HND-1-VA,,point,,,,false,abf-boundaries-v0.2.0,Pacific Solar Energy PV Plant,L100001018850,utility-scale solar,operating,25
+G100001021146,energy_plants_gem_units,HND,point,,HND-1-VA,,point,,,,false,abf-boundaries-v0.2.0,Pacific Solar Energy PV Plant,L100001018850,utility-scale solar,operating,25
+G100001021147,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Pavana Solar Park,L100001018851,utility-scale solar,operating,24
+G100001021148,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Sureña solar farm,L100001018852,utility-scale solar,cancelled,50
+G100001023620,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Choloma (Celsia) solar farm,L100001020705,utility-scale solar,operating,1.1
+G100001023631,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Choloma (DanaSun Energy) solar farm,L100001020710,utility-scale solar,announced,100
+G100001027949,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Brassavola power station,L100001023515,oil/gas,operating,180
+G100001030655,energy_plants_gem_units,HND,point,,HND-1-YO,,point,,,,false,abf-boundaries-v0.2.0,Arenal hydroelectric plant,L100001025770,hydropower,operating,61
+G100001051690,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Choloma (DanaSun Energy) solar farm,L100001020710,utility-scale solar,announced,200
+G100001052892,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,true,abf-boundaries-v0.2.0,Villanueva power station,L100001046704,oil/gas,operating,50
+G100001052898,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,true,abf-boundaries-v0.2.0,Villanueva power station,L100001046704,oil/gas,operating,40
+G100001053246,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,La Grecia power station,L100001046922,bioenergy,operating,25.5
+G100001053250,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Merendon power station,L100001046926,bioenergy,operating,18.6
+G100001053251,energy_plants_gem_units,HND,point,,HND-1-YO,,point,,,,false,abf-boundaries-v0.2.0,El Balsamo power station,L100001046928,bioenergy,operating,14
+G100001053252,energy_plants_gem_units,HND,point,,HND-1-FM,,point,,,,false,abf-boundaries-v0.2.0,Tres Valles Sugar power station,L100001046929,bioenergy,operating,17.8
+G100001053259,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,true,abf-boundaries-v0.2.0,Celsur power station,L100001046936,bioenergy,operating,44
+G100001053260,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Caracol Knits power station,L100001046937,bioenergy,operating,18
+G100001054404,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Bijao Power Station,L100000104534,oil/gas,operating,35
+G100001054405,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Bijao Power Station,L100000104534,oil/gas,operating,35
+G100001062615,energy_plants_gem_units,HND,point,,HND-1-CH,,point,,,,false,abf-boundaries-v0.2.0,Nacaome hydroelectric plant,L100001054723,hydropower,operating,30
+G100001071849,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,La Vegona hydroelectric plant,L100001062563,hydropower,operating,39
+G100001090361,energy_plants_gem_units,HND,point,,HND-1-OL,,point,,,,false,abf-boundaries-v0.2.0,Patuca solar farm,L100001080447,utility-scale solar,operating,50
+G100001090809,energy_plants_gem_units,HND,point,,HND-1-CR,,point,,,,false,abf-boundaries-v0.2.0,Brassavola power station,L100001023515,oil/gas,construction,70

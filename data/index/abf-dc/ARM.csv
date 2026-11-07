@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-114eb58d0a78,dc_atlas_points,ARM,field,,ARM-1-KT,,field,,,,,abf-boundaries-v0.2.0,Ovio Kotayk,Operating / Construction,colocation,lt10,
+ATL-40f1de85482f,dc_atlas_points,ARM,field,,ARM-1-ER,,field,,,,true,abf-boundaries-v0.2.0,Firebird AI Yerevan Campus,Operating / Construction,ai_compute,10_99,
+ATL-a427d1c80652,dc_atlas_points,ARM,field,,ARM-1-AG,,field,,,,,abf-boundaries-v0.2.0,Vsdata Aragatsotn,Operating / Construction,colocation,lt10,
+ATL-c7f28b4beade,dc_atlas_points,ARM,field,,ARM-1-KT,,field,,,,true,abf-boundaries-v0.2.0,Ovio Աբովյան,Operating / Construction,colocation,lt10,
+ATL-c8c560e4ebb6,dc_atlas_points,ARM,field,,ARM-1-ER,,field,,,,true,abf-boundaries-v0.2.0,REG.AM Yerevan,Operating / Construction,colocation,lt10,
+ATL-ef77df6164af,dc_atlas_points,ARM,field,,ARM-1-ER,,field,,,,true,abf-boundaries-v0.2.0,Firebird AI Yerevan Campus,Planned,ai_compute,10_99,

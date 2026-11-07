@@ -1,0 +1,12 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000834599,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-063,,point,,,,false,abf-boundaries-v0.2.0,Sumber Soum solar project,L100000830732,utility-scale solar,operating,17.3
+G100001028710,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar solar project I,L100001024029,utility-scale solar,operating,18
+G100001028711,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-037,,point,,,,false,abf-boundaries-v0.2.0,Darkhan-Uul solar project,L100001024030,utility-scale solar,operating,18
+G100001028712,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-065,,point,,,,false,abf-boundaries-v0.2.0,Altai solar project,L100001024031,utility-scale solar,operating,1.8
+G100001028713,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar solar project II,L100001024032,utility-scale solar,operating,1.6
+G100001074967,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-059,,point,,,,false,abf-boundaries-v0.2.0,Bayanjargalan solar project,L100001065181,utility-scale solar,operating,15.9
+G100001074968,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-043,,point,,,,false,abf-boundaries-v0.2.0,Buyant solar project,L100001065182,utility-scale solar,operating,6.1
+G100001074969,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-057,,point,,,,false,abf-boundaries-v0.2.0,Aldarkhaan solar project,L100001065183,utility-scale solar,operating,5
+G100001074970,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-065,,point,,,,false,abf-boundaries-v0.2.0,Taishir solar project,L100001065184,utility-scale solar,operating,14.4
+G100001074971,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-041,,point,,,,false,abf-boundaries-v0.2.0,Murun solar project,L100001065185,utility-scale solar,operating,19.1
+G100001074972,energy_plants_gem_tzsam_units,MNG,point,,MNG-1-063,,point,,,,false,abf-boundaries-v0.2.0,Zamiin Uud solar project,L100001065186,utility-scale solar,operating,16.6

@@ -1,0 +1,674 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000103596,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Hanasaari power station,L100000101845,coal,retired,114
+G100000103597,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Hanasaari power station,L100000101845,coal,retired,114
+G100000103740,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Heinola Plant power station,L100000101839,coal,operating,39.2
+G100000104858,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Inkoo power station,L100000101844,coal,retired,250
+G100000104859,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Inkoo power station,L100000101844,coal,retired,250
+G100000104860,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Inkoo power station,L100000101844,coal,retired,250
+G100000104861,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Inkoo power station,L100000101844,coal,retired,250
+G100000105974,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kristiina power station,L100000101837,coal,retired,242
+G100000106066,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Kymijarvi power station,L100000101840,coal,retired,138
+G100000106317,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Linnankatu power station,L100000101850,coal,retired,35
+G100000106635,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Mänttä power station,L100000101851,coal,retired,65
+G100000106706,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Martinlaakso power station,L100000101846,coal,retired,80
+G100000106877,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Meri-Pori power station,L100000101841,coal,operating,614
+G100000107133,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mussalo power station,L100000101834,coal,retired,80
+G100000107154,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Naantali CHP power station,L100000101849,coal,cancelled,145
+G100000107155,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Naantali CHP power station,L100000101849,coal,retired,116
+G100000107156,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Naantali CHP power station,L100000101849,coal,retired,125
+G100000107157,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Naantali CHP power station,L100000101849,coal,retired,125
+G100000108748,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Salmisaari power station,L100000101847,coal,retired,177
+G100000109722,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Suomenoja power station,L100000101848,coal,retired,90
+G100000109723,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Suomenoja power station,L100000101848,coal,retired,80
+G100000109811,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Tahkoluoto power station,L100000101842,coal,retired,225
+G100000110566,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Vaskiluoto power station,L100000101838,bioenergy,operating,140
+G100000110674,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vuosaari power station,L100000101852,coal,cancelled,240
+G100000113454,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Rauma power station,L100000101835,coal,retired,78
+G100000200235,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Äänekoski Bioproduct Mill power station,L100000200209,bioenergy,operating,260
+G100000200289,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kemi Bioproduct Mill power station,L100000200256,bioenergy,operating,270
+G100000200290,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kemi Pulp Mill power station,L100000200257,bioenergy,retired,83
+G100000200350,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Vantaa Waste-to-Energy power station,L100000200314,bioenergy,operating,84.5
+G100000201369,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Jämsänkosk Mill power station,L100000201151,bioenergy,operating,43
+G100000201370,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Joensuu power station,L100000201152,bioenergy,operating,47
+G100000201371,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Joutseno Pulp power station,L100000201153,bioenergy,operating,85
+G100000201373,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kymi Mill power station,L100000201155,bioenergy,operating,87
+G100000201374,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Kymijarvi power station,L100000101840,bioenergy,operating,50
+G100000201375,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Kymijarvi power station,L100000101840,bioenergy,operating,45
+G100000201376,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Laanila power station,L100000201157,bioenergy,operating,62
+G100000201377,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Kaukas power station,L100000201158,bioenergy,operating,67
+G100000201378,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Metsä Rauma power station,L100000201159,bioenergy,operating,75
+G100000201379,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Naantali CHP power station,L100000101849,bioenergy,operating,130
+G100000201380,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Oulu Mill power station,L100000201161,bioenergy,operating,105
+G100000201381,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Alholmens Kraft power station,L100000201162,bioenergy,operating,25
+G100000201382,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Porin Prosessivoiman power station,L100000201163,bioenergy,operating,65
+G100000201383,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Pursiala power station,L100000201164,bioenergy,operating,21
+G100000201384,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Rauma power station,L100000101835,bioenergy,operating,76
+G100000201385,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Uimaharju Enocell power station,L100000201166,bioenergy,operating,107
+G100000201386,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Varkaus power station,L100000201167,bioenergy,operating,47
+G100000201387,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Pietarsaari power station,L100000201168,bioenergy,operating,95
+G100000400076,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hämeenlinna power station,L100000400076,bioenergy,operating,65
+G100000400077,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Hinkismäki power station,L100000400077,oil/gas,operating,45
+G100000400078,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Kirkniemi Mill power station,L100000400078,bioenergy,operating,128
+G100000400079,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lielahti power station,L100000400079,oil/gas,operating,147
+G100000400080,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Naistenlahti power station,L100000400080,oil/gas,mothballed,129
+G100000400081,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Nokia kombi power station,L100000400081,oil/gas,operating,72
+G100000400082,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Porvoo Refinery power station,L100000400082,oil/gas,operating,48
+G100000400083,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Porvoo Refinery power station,L100000400082,oil/gas,operating,31
+G100000400084,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Suomenoja power station,L100000101848,oil/gas,operating,234
+G100000400085,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Suomenoja power station,L100000101848,oil/gas,operating,45
+G100000400086,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vuosaari power station,L100000101852,oil/gas,operating,163
+G100000400087,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vuosaari power station,L100000101852,oil/gas,operating,485
+G100000406317,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kotkamills power station,L100000406393,bioenergy,operating,70
+G100000410451,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Porvoo power station,L100000407828,oil/gas,operating,80
+G100000410452,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Mertaniemi power station,L100000407829,oil/gas,operating,102
+G100000410453,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Kymijarvi power station,L100000101840,bioenergy,operating,76
+G100000410454,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kotkan Hovinsaari power station,L100000407830,bioenergy,operating,46
+G100000410456,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,true,abf-boundaries-v0.2.0,Anjalankoski Mill power station,L100000407832,bioenergy,operating,161
+G100000410790,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Tervasaari power station,L100000408019,bioenergy,operating,25
+G100000410791,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Porvoo Refinery power station,L100000400082,oil/gas,cancelled,30
+G100000410792,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Naistenlahti power station,L100000400080,oil/gas,retired,60
+G100000500006,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Olkiluoto nuclear power plant,L100000500004,nuclear,operating,1720
+G100000500355,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Olkiluoto nuclear power plant,L100000500004,nuclear,operating,920
+G100000500356,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Olkiluoto nuclear power plant,L100000500004,nuclear,operating,920
+G100000500448,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Loviisa nuclear power plant,L100000500194,nuclear,operating,531
+G100000500449,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Loviisa nuclear power plant,L100000500194,nuclear,operating,531
+G100000501173,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Hanhikivi nuclear power plant,L100000500412,nuclear,cancelled,1170
+G100000501174,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Loviisa nuclear power plant,L100000500194,nuclear,cancelled,1800
+G100000501175,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Olkiluoto nuclear power plant,L100000500004,nuclear,cancelled,1830
+G100000601625,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Imatra hydroelectric plant,L100000601606,hydropower,operating,192
+G100000601626,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Isohaara hydroelectric plant,L100000601607,hydropower,operating,128
+G100000601627,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Nuojua hydroelectric plant,L100000601608,hydropower,operating,81
+G100000601628,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Ossauskoski hydroelectric plant,L100000601609,hydropower,operating,124
+G100000601629,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pamilo hydroelectric plant,L100000601610,hydropower,operating,94
+G100000601630,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Petäjäskoski hydroelectric plant,L100000601611,hydropower,operating,182
+G100000601631,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Pirttikoski hydroelectric plant,L100000601612,hydropower,operating,152
+G100000601632,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pyhajoski hydroelectric plant,L100000601613,hydropower,operating,149
+G100000601633,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pyhäsalmi Mine hydroelectric plant,L100000601614,hydropower,pre_construction,75
+G100000601634,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Seitakorva hydroelectric plant,L100000601615,hydropower,operating,144
+G100000601635,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Taivalkoski hydroelectric plant,L100000601616,hydropower,operating,134
+G100000601636,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Valajaskosken hydroelectric plant,L100000601617,hydropower,operating,101
+G100000601637,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Vanttauskoski hydroelectric plant,L100000601618,hydropower,operating,95
+G100000807129,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Palloneva solar farm,L100000806198,utility-scale solar,pre_construction,500
+G100000807263,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Lapua solar farm,L100000806326,utility-scale solar,construction,100
+G100000818843,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Möksy ja Louhukangas solar farm,L100000815931,utility-scale solar,pre_construction,150
+G100000818844,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Kalanni solar farm,L100000815932,utility-scale solar,pre_construction,206
+G100000818845,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Utajärvi solar farm,L100000815933,utility-scale solar,pre_construction,60
+G100000910660,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Leppävirta wind farm,L100000907982,wind,operating,10
+G100000910764,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Olhava wind farm,L100000908076,wind,operating,10
+G100000910767,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Onkalo wind farm,L100000908079,wind,operating,10
+G100000911799,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Loukkusaari wind farm,L100000909066,wind,announced,12
+G100000911926,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Pöylä wind farm,L100000909186,wind,shelved,12
+G100000912019,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Summa wind farm (Finland),L100000909275,wind,operating,12
+G100000912050,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Tyrinselkä wind farm,L100000909306,wind,operating,12
+G100000912203,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Poikel wind farm,L100000909451,wind,pre_construction,70
+G100000912234,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Suodenniemi (Eurowind) wind farm,L100000909479,wind,operating,13
+G100000912257,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Ampiala Penkkisuo wind farm,L100000909501,wind,announced,50
+G100000912371,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Pihlajavesi Ahvenneva wind farm,L100000909602,wind,shelved,13
+G100000912375,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pyhänkoski wind farm,L100000909605,wind,operating,13
+G100000912404,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Sikamäki wind farm,L100000909632,wind,cancelled,13
+G100000912803,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Ristiveto wind farm,L100000909995,wind,operating,14
+G100000912888,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Ykspihlaja wind farm,L100000910071,wind,operating,14
+G100000913208,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Ristiharjunkalliot wind farm,L100000910360,wind,cancelled,15
+G100000913217,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Salo Märynummi wind farm,L100000910368,wind,operating,15
+G100000913256,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Svalskulla wind farm,L100000910403,wind,operating,15
+G100000913525,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Ajos Retrofit wind farm,L100000910640,wind,operating,10
+G100000913743,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Ketunmaankangas wind farm,L100000910840,wind,pre_construction,17
+G100000913780,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Olhava Nyby wind farm,L100000910870,wind,operating,17
+G100000913791,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Puuska wind farm,L100000910879,wind,operating,17
+G100000913811,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Suodenniemi (PT-Wind) wind farm,L100000910898,wind,cancelled,17
+G100000913820,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Uttermossa wind farm,L100000910906,wind,pre_construction,30
+G100000913842,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Tyrinselkä wind farm,L100000909306,wind,operating,17
+G100000914027,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Honkamäen wind farm,L100000911088,wind,cancelled,18
+G100000914071,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Latamäki wind farm,L100000911128,wind,operating,18
+G100000914194,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Simo Leipiö wind farm,L100000911234,wind,operating,18
+G100000914363,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Tahkoluoto Offshore wind farm,L100000911391,wind,operating,42
+G100000914387,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Hirvineva wind farm,L100000911412,wind,operating,19
+G100000914575,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kalajoki wind farm,L100000911581,wind,operating,20
+G100000914598,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kytölä wind farm,L100000911601,wind,operating,20
+G100000914643,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Mustaisneva wind farm,L100000911641,wind,operating,20
+G100000914661,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Palmanharju wind farm,L100000911656,wind,operating,15
+G100000914669,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,true,abf-boundaries-v0.2.0,Perheniemi wind farm,L100000911661,wind,pre_construction,20
+G100000914733,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Tuppuraneva wind farm,L100000911719,wind,construction,13
+G100000914897,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Jouttikallio wind farm,L100000911867,wind,operating,21
+G100000914909,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kopsa wind farm,L100000911878,wind,operating,21
+G100000914941,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Muukko wind farm,L100000911905,wind,operating,21
+G100000915005,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Viinamäki wind farm,L100000911961,wind,operating,21
+G100000915033,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Paltusmäki wind farm,L100000911985,wind,operating,22
+G100000915134,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Kirkkokallio wind farm,L100000912072,wind,operating,22
+G100000915210,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Vartinoja wind farm,L100000912138,wind,operating,22
+G100000915303,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Haapajärvi wind farm,L100000912219,wind,operating,23
+G100000915341,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Myllykangas wind farm,L100000912254,wind,operating,23
+G100000915352,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Ribäcken wind farm,L100000912264,wind,operating,23
+G100000915361,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Saukkovaara wind farm,L100000912270,wind,operating,23
+G100000915528,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Kantti Karvia wind farm,L100000912420,wind,operating,24
+G100000915533,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Kivivaara-Peuravaara (Taaleri) wind farm,L100000912425,wind,operating,24
+G100000915536,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,true,abf-boundaries-v0.2.0,Korpivaara wind farm,L100000912428,wind,pre_construction,40
+G100000915542,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kuolavaara-Keulakkopää wind farm,L100000912433,wind,operating,24
+G100000915570,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Maaselänkangas wind farm,L100000912460,wind,operating,41.3
+G100000915600,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Olhava wind farm,L100000908076,wind,operating,24
+G100000915672,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Vuohtomäki wind farm,L100000912546,wind,pre_construction,24
+G100000915761,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Jäkäläkangas wind farm,L100000912629,wind,operating,30
+G100000915817,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Takanebacken wind farm,L100000912679,wind,operating,28.5
+G100000915861,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Voimamylly wind farm,L100000912716,wind,operating,25.8
+G100000915948,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Jäneskeidas wind farm,L100000912790,wind,operating,26
+G100000915971,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Mustalamminmäki wind farm,L100000912809,wind,operating,29.5
+G100000915987,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pyhajoki wind farm,L100000912822,wind,operating,26
+G100000916085,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Joukhaisselkä-Tuore Kulvakkoselkä wind farm,L100000912905,wind,operating,27
+G100000916087,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Kankaanpää Kooninkallio wind farm,L100000912906,wind,operating,27
+G100000916089,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Kemi wind farm,L100000912908,wind,retired,27
+G100000916090,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kuolavaara-Keulakkopää wind farm,L100000912433,wind,operating,27
+G100000916109,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Perho wind farm,L100000912922,wind,operating,27
+G100000916114,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Ratiperä wind farm,L100000912926,wind,operating,27
+G100000916131,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Verhonkulma wind farm,L100000912943,wind,operating,27
+G100000916283,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Suolineva wind farm,L100000913072,wind,pre_construction,28
+G100000916301,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Haapalamminkangas wind farm,L100000913086,wind,operating,28
+G100000916371,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Puuska wind farm,L100000910879,wind,operating,29
+G100000916388,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Jakoistenkallio wind farm,L100000913159,wind,operating,29
+G100000916397,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Pihtipudas wind farm,L100000913168,wind,operating,29
+G100000916437,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Konttisuo wind farm,L100000913205,wind,operating,30
+G100000916439,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Alavieska wind farm,L100000913207,wind,operating,30
+G100000916518,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Illevaara wind farm,L100000913275,wind,operating,30
+G100000916520,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Isokangas wind farm,L100000908973,wind,operating,29.5
+G100000916530,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Kivivaara-Peuravaara (Metsähallitus) wind farm,L100000913285,wind,cancelled,30
+G100000916534,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Kopsa wind farm,L100000911878,wind,pre_construction,37.2
+G100000916535,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Korvenneva wind farm,L100000913289,wind,pre_construction,60
+G100000916565,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Löytöneva wind farm,L100000913315,wind,pre_construction,45
+G100000916588,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Näsenkartano wind farm,L100000913332,wind,pre_construction,30
+G100000916589,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Naulakangas wind farm,L100000913333,wind,pre_construction,42
+G100000916601,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pajukoski wind farm,L100000913342,wind,operating,30
+G100000916622,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Salo-Ylikoski wind farm,L100000913361,wind,pre_construction,40
+G100000916664,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vanhakylä wind farm,L100000913400,wind,cancelled,30
+G100000916665,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Varevaara wind farm,L100000913401,wind,operating,30
+G100000916679,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kröpuln wind farm,L100000913413,wind,operating,30
+G100000916680,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Långmossan wind farm,L100000913414,wind,operating,30
+G100000916681,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Ponsivuori wind farm,L100000913415,wind,operating,30
+G100000916682,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Storbacken wind farm,L100000913416,wind,operating,30
+G100000916719,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Myllykangas wind farm,L100000912254,wind,operating,31
+G100000916773,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Björkliden wind farm,L100000913488,wind,operating,40.4
+G100000916805,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,true,abf-boundaries-v0.2.0,Kiimassuo wind farm,L100000913515,wind,cancelled,32
+G100000916837,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Portti wind farm,L100000913541,wind,pre_construction,45
+G100000916895,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Ajos Retrofit wind farm,L100000910640,wind,operating,33
+G100000916925,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kopsa wind farm,L100000911878,wind,operating,33
+G100000916996,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Saunamaa wind farm,L100000913671,wind,operating,34
+G100000917112,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Annankangas wind farm,L100000913771,wind,operating,35
+G100000917179,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Torvenkylä wind farm,L100000913827,wind,operating,35
+G100000917243,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Hevosselkä wind farm,L100000913887,wind,pre_construction,42
+G100000917248,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Jokela wind farm,L100000913892,wind,operating,36
+G100000917252,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Kitkiäisvaara wind farm,L100000913896,wind,operating,36
+G100000917411,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Suolakangas wind farm,L100000914036,wind,operating,38
+G100000917444,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Halmekangas wind farm,L100000914065,wind,operating,38
+G100000917502,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Soidinmäki wind farm,L100000914115,wind,operating,38
+G100000917627,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Juurakko wind farm,L100000914218,wind,operating,40
+G100000917679,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Taraskallio wind farm,L100000914263,wind,announced,32.5
+G100000917793,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Keso wind farm,L100000914355,wind,operating,42
+G100000917809,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Mastbacka wind farm,L100000914371,wind,pre_construction,42
+G100000917889,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Polusjärvi wind farm,L100000914435,wind,operating,43
+G100000917899,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Karstula Korkeakangas wind farm,L100000914445,wind,operating,43
+G100000917900,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kokkoneva (Aneo) wind farm,L100000914446,wind,operating,43
+G100000917940,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Puutikankangas wind farm,L100000914482,wind,operating,44
+G100000917942,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Rustari wind farm,L100000914483,wind,operating,44
+G100000917990,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Hallakangas wind farm,L100000914527,wind,operating,45
+G100000917992,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,true,abf-boundaries-v0.2.0,Isosuo-Arkkuinsuo wind farm,L100000914529,wind,shelved,45
+G100000917998,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Kukonaho wind farm,L100000914534,wind,pre_construction,36
+G100000918011,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Liimattala wind farm,L100000914546,wind,cancelled,45
+G100000918013,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Lumivaara wind farm,L100000914548,wind,operating,45
+G100000918014,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Vasama wind farm,L100000914549,wind,pre_construction,112
+G100000918030,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Raippaluoto wind farm,L100000914562,wind,cancelled,45
+G100000918041,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Sidlandet wind farm,L100000914569,wind,cancelled,45
+G100000918042,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Simo Leipiö wind farm,L100000911234,wind,operating,45
+G100000918046,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Söderskogen wind farm,L100000914573,wind,pre_construction,45
+G100000918051,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Tetom wind farm,L100000914578,wind,cancelled,45
+G100000918062,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Hautakangas wind farm,L100000914588,wind,operating,46
+G100000918190,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kaukanen wind farm,L100000914699,wind,operating,45
+G100000918229,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Raahe Sarvankangas wind farm,L100000914734,wind,operating,48
+G100000918232,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Rasakangas wind farm,L100000914737,wind,operating,48
+G100000918584,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Peittoonkorpi wind farm,L100000915018,wind,operating,50
+G100000918603,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Rankin wind farm,L100000915036,wind,cancelled,50
+G100000918682,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Lakiakangas wind farm,L100000915091,wind,operating,50
+G100000918747,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Torkkola wind farm,L100000915144,wind,operating,53
+G100000918786,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Piiparinmäki wind farm,L100000915178,wind,operating,55
+G100000918805,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Yhteisenkangas wind farm,L100000915195,wind,cancelled,55
+G100000918822,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Ilmajoki Santavuori wind farm,L100000915206,wind,operating,56
+G100000918915,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kuuronkallio wind farm,L100000915285,wind,operating,58.8
+G100000918958,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Ahlaisten Lammi wind farm,L100000915321,wind,pre_construction,63
+G100000918974,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Palokangas wind farm,L100000915335,wind,operating,70.8
+G100000918993,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Västervik wind farm,L100000915349,wind,operating,55.8
+G100000919010,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Suomussalmi wind farm,L100000915365,wind,operating,66
+G100000919040,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Mastokangas wind farm,L100000915393,wind,operating,68
+G100000919076,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Läntinen wind farm,L100000915422,wind,operating,80
+G100000919099,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Hangaskurunkangas wind farm,L100000915443,wind,pre_construction,72
+G100000919119,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Tolpanvaara wind farm,L100000915460,wind,operating,76.5
+G100000919120,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Urakkaneva wind farm,L100000915461,wind,pre_construction,60
+G100000919129,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Mustilankangas wind farm,L100000915470,wind,operating,73
+G100000919131,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Tohkoja wind farm,L100000915472,wind,operating,73
+G100000919140,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Sandbacka wind farm,L100000915481,wind,operating,92.4
+G100000919152,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Länsi wind farm,L100000915492,wind,pre_construction,150
+G100000919203,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Kattiharju wind farm,L100000915532,wind,pre_construction,100
+G100000919211,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Röyttä Kiiri wind farm,L100000915538,wind,pre_construction,160
+G100000919222,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Hedet wind farm,L100000915546,wind,operating,81
+G100000919233,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Merkkikallio (Renewable Power Capital) wind farm,L100000915553,wind,operating,82.5
+G100000919240,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Alajoki-Peuralinna wind farm,L100000915558,wind,operating,84
+G100000919271,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Lakiakangas wind farm,L100000915091,wind,operating,86
+G100000919285,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Puskakorpi wind farm,L100000915596,wind,operating,88
+G100000919312,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Moikipää wind farm,L100000915618,wind,shelved,90
+G100000919314,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Murtomäki wind farm,L100000915620,wind,operating,90
+G100000919316,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pajuperänkangas wind farm,L100000915621,wind,operating,90
+G100000919318,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Rajavuori wind farm,L100000915623,wind,construction,90
+G100000919325,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kalax wind farm,L100000915629,wind,operating,90
+G100000919327,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Oltava wind farm,L100000915631,wind,operating,91
+G100000919366,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Reväsvaara wind farm,L100000915667,wind,pre_construction,84
+G100000919369,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Nuolivaara wind farm,L100000915669,wind,operating,97
+G100000919397,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Iso Saapasneva wind farm,L100000915692,wind,pre_construction,56
+G100000919404,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Mikonkeidas wind farm,L100000915698,wind,construction,106
+G100000919407,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Norrskogen wind farm,L100000915701,wind,operating,102
+G100000919424,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Välikangas wind farm,L100000915716,wind,operating,101
+G100000919431,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Palovaara wind farm,L100000915722,wind,pre_construction,110
+G100000919507,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Metsäla Kristiinankaupunki wind farm,L100000915780,wind,operating,117
+G100000919512,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Paskoonharju wind farm,L100000915784,wind,operating,118
+G100000919526,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Karhunrahka wind farm,L100000915793,wind,cancelled,120
+G100000919527,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,true,abf-boundaries-v0.2.0,Kolsa-Juvansuo wind farm,L100000915794,wind,pre_construction,110
+G100000919529,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Korsnäsin wind farm,L100000915796,wind,cancelled,800
+G100000919534,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Pajukoski II wind farm,L100000915801,wind,pre_construction,112.5
+G100000919547,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Toholampi-Lestijärvi wind farm,L100000915814,wind,pre_construction,392
+G100000919554,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Isoneva wind farm,L100000915819,wind,operating,126
+G100000919555,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Juthskogen wind farm,L100000915820,wind,pre_construction,100
+G100000919559,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Murtotuuli wind farm,L100000915824,wind,operating,126
+G100000919575,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Niinimäki wind farm,L100000915839,wind,operating,145.2
+G100000919578,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Metsälamminkangas wind farm,L100000915842,wind,operating,132
+G100000919630,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Karahka wind farm,L100000915886,wind,operating,147.5
+G100000919632,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Matkussaari wind farm,L100000915888,wind,operating,148.5
+G100000919637,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pahkakoski wind farm,L100000915893,wind,operating,186
+G100000919643,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Simo Leipiö wind farm,L100000911234,wind,operating,151
+G100000919645,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Korpi-Matti wind farm,L100000915898,wind,pre_construction,154
+G100000919659,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Piiparinmäki wind farm,L100000915178,wind,operating,157
+G100000919672,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Louhukangas wind farm,L100000915923,wind,operating,142.6
+G100000919674,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Tikkala-Seipimäki wind farm,L100000915925,wind,pre_construction,200
+G100000919684,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Kalistanneva (Helen) wind farm,L100000915934,wind,operating,165
+G100000919692,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Oosinselkä wind farm,L100000915941,wind,operating,93
+G100000919724,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Karhunnevankangas wind farm,L100000915966,wind,operating,188
+G100000919725,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Pahkavaara wind farm,L100000915967,wind,pre_construction,210
+G100000919727,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lappfjärd wind farm,L100000915969,wind,operating,142
+G100000919767,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Möksy wind farm,L100000916004,wind,operating,78
+G100000919828,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Björkbacken wind farm,L100000916055,wind,pre_construction,146
+G100000919857,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Kimpilamminkangas wind farm,L100000916080,wind,pre_construction,120
+G100000919871,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Lestijärvi wind farm,L100000916094,wind,construction,455
+G100000919897,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Piipsanneva wind farm,L100000916117,wind,pre_construction,312
+G100000919912,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Turkkiselkä wind farm,L100000916129,wind,pre_construction,225
+G100000919924,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Ollinkorpi wind farm,L100000916137,wind,pre_construction,75
+G100000919932,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Nuunajärvi wind farm,L100000916145,wind,pre_construction,300
+G100000919940,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kristinestad Norr wind farm,L100000916152,wind,operating,129.2
+G100000919958,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Karhakkamaa wind farm,L100000916168,wind,pre_construction,480
+G100000919959,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kokkoneva (Hyötytuuli) wind farm,L100000916169,wind,pre_construction,205
+G100000919968,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Ulkonahkiainen wind farm,L100000916177,wind,cancelled,400
+G100000919972,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Mutkalampi wind farm,L100000916180,wind,operating,378
+G100000919981,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Maanahkiainen wind farm,L100000916187,wind,pre_construction,500
+G100000919983,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Närpiö Bredåsen wind farm,L100000916189,wind,pre_construction,300
+G100000919995,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Inkoo-Raaseporin wind farm,L100000916198,wind,cancelled,330
+G100000919997,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Siipyy wind farm,L100000916200,wind,cancelled,480
+G100000919998,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Suurhiekan wind farm,L100000916201,wind,cancelled,480
+G100000920002,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Halsua wind farm,L100000916204,wind,pre_construction,290
+G100000920019,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Purmo wind farm,L100000916220,wind,pre_construction,280
+G100000920020,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Rajamäenkylä wind farm,L100000916221,wind,pre_construction,430
+G100000920045,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Vuorijärvien wind farm,L100000916242,wind,pre_construction,280
+G100000920056,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Yli-Olhavan wind farm,L100000916250,wind,pre_construction,400
+G100000920148,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Korsnäs Offshore wind farm,L100000916330,wind,pre_construction,2000
+G100000923901,energy_plants_gem_units,FIN,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Halla wind farm,L100000919401,wind,announced,2100
+G100000923902,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Hankilannevan wind farm,L100000919402,wind,operating,44.8
+G100000923903,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Harjanneva wind farm,L100000919403,wind,pre_construction,75
+G100000923904,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Hietavaara wind farm,L100000919404,wind,pre_construction,180
+G100000923905,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Hukanpalo wind farm,L100000919405,wind,pre_construction,160
+G100000923906,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Hummastinvaara wind farm,L100000919406,wind,announced,52.5
+G100000923907,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Humppila-Urjalan wind farm,L100000919407,wind,operating,25.8
+G100000923908,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Isokeidas wind farm,L100000919408,wind,operating,31
+G100000923910,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Isovuori wind farm,L100000919410,wind,pre_construction,58.5
+G100000923911,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,true,abf-boundaries-v0.2.0,Julkuvaara wind farm,L100000919411,wind,shelved,20
+G100000923912,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Junnunmäki wind farm,L100000919412,wind,pre_construction,285
+G100000923914,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Kettu wind farm,L100000919414,wind,pre_construction,36
+G100000923915,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Kettukangas wind farm,L100000919415,wind,pre_construction,172.5
+G100000923916,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kettukangas-Hanhikangas wind farm,L100000919416,wind,pre_construction,560
+G100000923918,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kirvesvuori wind farm,L100000919418,wind,pre_construction,140
+G100000923919,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Kivine wind farm,L100000919419,wind,pre_construction,252
+G100000923921,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Koiramäki wind farm,L100000919421,wind,operating,29.5
+G100000923922,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Kolmihaara wind farm,L100000919422,wind,pre_construction,420
+G100000923923,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Korkeamaa wind farm,L100000919423,wind,pre_construction,122
+G100000923924,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Korpilevonmäki wind farm,L100000919424,wind,operating,38.4
+G100000923925,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Kotaselkä wind farm,L100000919425,wind,pre_construction,135
+G100000923926,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kuljunniemi wind farm,L100000919426,wind,operating,11.5
+G100000923927,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Kultakalliot wind farm,L100000919427,wind,pre_construction,60
+G100000923928,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Kurvilanmäki wind farm,L100000919428,wind,pre_construction,184
+G100000923929,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Kylkivaaran wind farm,L100000919429,wind,shelved,210
+G100000923931,energy_plants_gem_units,FIN,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Laine wind farm,L100000919431,wind,pre_construction,1950
+G100000923932,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Lauluräme wind farm,L100000919432,wind,pre_construction,77
+G100000923933,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Lumivaara 2 wind farm,L100000919433,wind,operating,56
+G100000923934,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,true,abf-boundaries-v0.2.0,Lylyharju wind farm,L100000919434,wind,pre_construction,105
+G100000923935,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Mäkikankaan wind farm,L100000919435,wind,operating,33
+G100000923936,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Martimo wind farm,L100000919436,wind,pre_construction,730
+G100000923937,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Mörknässkogen wind farm,L100000919437,wind,operating,30
+G100000923938,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Muntterinkangas wind farm,L100000919438,wind,pre_construction,150
+G100000923940,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Napalankalliot-Hietaharjunkangas wind farm,L100000919440,wind,pre_construction,87
+G100000923941,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Ooperi wind farm,L100000919441,wind,pre_construction,157.5
+G100000923942,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Palloneva wind farm,L100000919442,wind,pre_construction,130
+G100000923943,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Palopättäränmäki wind farm,L100000919443,wind,pre_construction,105
+G100000923944,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Parhalahden wind farm,L100000919444,wind,operating,56
+G100000923945,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Pesola wind farm,L100000919445,wind,pre_construction,45.5
+G100000923946,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Pihtineva wind farm,L100000919446,wind,pre_construction,600
+G100000923947,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Pontema Länsi wind farm,L100000919447,wind,pre_construction,230
+G100000923950,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Pyöriänneva wind farm,L100000919450,wind,pre_construction,175
+G100000923951,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Pyynevankanka wind farm,L100000919451,wind,pre_construction,60
+G100000923952,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Rahkola-Hautakangas wind farm,L100000919452,wind,pre_construction,200
+G100000923953,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Reposaari wind farm,L100000919453,wind,operating,7
+G100000923956,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Santakanka wind farm,L100000919456,wind,pre_construction,70
+G100000923958,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Siliäkangas wind farm,L100000919458,wind,pre_construction,52.5
+G100000923959,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Storbötet wind farm,L100000919459,wind,operating,105.4
+G100000923961,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Takiankangas And Hukkalansalo wind farm,L100000919460,wind,pre_construction,210
+G100000923962,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,true,abf-boundaries-v0.2.0,Tevaniemi wind farm,L100000919461,wind,pre_construction,72
+G100000923963,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Tornikangas wind farm,L100000919462,wind,pre_construction,352
+G100000923964,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Tuohimaa-Riutanmaa wind farm,L100000919463,wind,pre_construction,560
+G100000923965,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Tuohiräme wind farm,L100000919464,wind,pre_construction,132.5
+G100000923966,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Tuomiperä wind farm,L100000919465,wind,pre_construction,45
+G100000923967,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Navakka offshore wind farm,L100000919466,wind,pre_construction,1500
+G100000923968,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,true,abf-boundaries-v0.2.0,Tuuramäki wind farm,L100000919467,wind,pre_construction,120
+G100000923969,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Tyrsky offshore wind farm,L100000919468,wind,pre_construction,1400
+G100000923970,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Ukonkangas wind farm,L100000919469,wind,pre_construction,350
+G100000923972,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,true,abf-boundaries-v0.2.0,Vermassalo wind farm,L100000919471,wind,pre_construction,200
+G100000923974,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Wellamo Offshore wind farm,L100000919473,wind,pre_construction,2000
+G100001000132,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Forssa power station,L100001000053,oil/gas,operating,160
+G100001000133,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Forssa power station,L100001000053,oil/gas,operating,160
+G100001000134,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Huutokoski power station,L100001000054,oil/gas,operating,30
+G100001000135,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Huutokoski power station,L100001000054,oil/gas,operating,30
+G100001000136,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Huutokoski power station,L100001000054,oil/gas,operating,30
+G100001000137,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Huutokoski power station,L100001000054,oil/gas,operating,30
+G100001000138,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Huutokoski power station,L100001000054,oil/gas,operating,30
+G100001000139,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Huutokoski power station,L100001000054,oil/gas,operating,30
+G100001000140,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kristiina Reserve power station,L100001000055,oil/gas,operating,30
+G100001000141,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kristiina Reserve power station,L100001000055,oil/gas,operating,30
+G100001000142,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Naantali Reserve power station,L100001000056,oil/gas,operating,20
+G100001000143,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Naantali Reserve power station,L100001000056,oil/gas,operating,20
+G100001000144,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Olkiluoto Reserve power station,L100001000057,oil/gas,operating,50
+G100001000145,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Olkiluoto Reserve power station,L100001000057,oil/gas,operating,50
+G100001000146,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Tahkoluoto power station,L100000101842,oil/gas,operating,26
+G100001000147,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Tahkoluoto power station,L100000101842,oil/gas,operating,26
+G100001000148,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Tolkkinen power station,L100001000059,oil/gas,operating,20
+G100001000149,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Tolkkinen power station,L100001000059,oil/gas,operating,20
+G100001000150,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vanaja power station,L100001000060,oil/gas,operating,50
+G100001000151,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Kellosaari power station,L100001000061,oil/gas,operating,60
+G100001000152,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Kellosaari power station,L100001000061,oil/gas,operating,60
+G100001000153,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Raahen Voima power station,L100001000062,oil/gas,operating,125
+G100001000154,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Vaskiluotos power station,L100001000064,oil/gas,operating,162
+G100001000362,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,true,abf-boundaries-v0.2.0,Savitaipale solar farm,L100001000156,utility-scale solar,pre_construction,65
+G100001000363,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Riihiviita solar farm,L100001000157,utility-scale solar,pre_construction,42
+G100001000364,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Tervakoski solar farm,L100001000160,utility-scale solar,pre_construction,78
+G100001000365,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Viluksela solar farm,L100001000161,utility-scale solar,pre_construction,45
+G100001000366,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Hatti solar farm,L100001000162,utility-scale solar,pre_construction,53.1
+G100001000367,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Verhonkulma solar farm,L100001000163,utility-scale solar,pre_construction,45
+G100001000368,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Uusiniitty solar farm,L100001000164,utility-scale solar,pre_construction,43
+G100001000369,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,true,abf-boundaries-v0.2.0,Takamaa solar farm,L100001000165,utility-scale solar,pre_construction,110
+G100001000370,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,true,abf-boundaries-v0.2.0,Kuusela solar farm,L100001000166,utility-scale solar,announced,45
+G100001000371,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,true,abf-boundaries-v0.2.0,Karisuo solar farm,L100001000167,utility-scale solar,announced,50
+G100001000374,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,true,abf-boundaries-v0.2.0,Huutokoski solar farm,L100001000170,utility-scale solar,pre_construction,55
+G100001000375,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Haverinsuo solar farm,L100001000171,utility-scale solar,pre_construction,78
+G100001000376,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Murtolampi solar farm,L100001000172,utility-scale solar,pre_construction,43.7
+G100001000377,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Loimaa Haara solar farm,L100001000173,utility-scale solar,pre_construction,74
+G100001000378,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hyrsynkulma solar farm,L100001000174,utility-scale solar,pre_construction,90
+G100001000379,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Pöytäsaarensuo solar farm,L100001000176,utility-scale solar,pre_construction,74
+G100001000380,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Luodesuo solar farm,L100001000177,utility-scale solar,pre_construction,55
+G100001000381,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Viitaselänsuo solar farm,L100001000178,utility-scale solar,pre_construction,30
+G100001000382,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,true,abf-boundaries-v0.2.0,Lehmiaronsuo solar farm,L100001000179,utility-scale solar,pre_construction,45
+G100001000383,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Vuotsinsuo solar farm,L100001000180,utility-scale solar,pre_construction,160
+G100001000384,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hikiä solar farm,L100001000181,utility-scale solar,pre_construction,69.6
+G100001000390,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Eurajoki solar farm,L100001000186,utility-scale solar,pre_construction,100
+G100001000391,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Huittinen solar farm,L100001000187,utility-scale solar,pre_construction,475
+G100001000392,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Aurinkonevat solar farm,L100001000188,utility-scale solar,pre_construction,500
+G100001000393,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Keinusuo solar farm,L100001000189,utility-scale solar,pre_construction,60
+G100001000411,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Kantinkulma solar farm,L100001000202,utility-scale solar,pre_construction,40
+G100001000412,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,true,abf-boundaries-v0.2.0,Palmusmäki solar farm,L100001000203,utility-scale solar,pre_construction,130
+G100001000413,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Pohjasuo solar farm,L100001000204,utility-scale solar,pre_construction,80
+G100001000414,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Virolahti solar farm,L100001000205,utility-scale solar,pre_construction,80
+G100001000418,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Puutionsaari solar farm,L100001000207,utility-scale solar,pre_construction,100
+G100001000423,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Lakari solar farm,L100001000210,utility-scale solar,operating,32
+G100001000427,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,true,abf-boundaries-v0.2.0,Lappeenranta solar farm,L100001000214,utility-scale solar,pre_construction,600
+G100001000428,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,true,abf-boundaries-v0.2.0,Imatra solar farm,L100001000215,utility-scale solar,pre_construction,25
+G100001000431,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,true,abf-boundaries-v0.2.0,Tervajoensuo solar farm,L100001000218,utility-scale solar,construction,130
+G100001000433,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,true,abf-boundaries-v0.2.0,Rautjärvi solar farm,L100001000220,utility-scale solar,pre_construction,60
+G100001000434,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Simo solar farm,L100001000221,utility-scale solar,operating,70
+G100001000435,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Kristiinankaupunki solar farm,L100001000222,utility-scale solar,pre_construction,100
+G100001000437,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Lålby solar farm,L100001000223,utility-scale solar,pre_construction,60
+G100001000438,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Koppö Energy Cluster solar farm,L100001000225,utility-scale solar,pre_construction,100
+G100001000440,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Mittava Luola-aava solar farm,L100001000226,utility-scale solar,pre_construction,120
+G100001000450,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Perniö solar farm,L100001000237,utility-scale solar,pre_construction,30
+G100001000451,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Lappi solar farm,L100001000238,utility-scale solar,pre_construction,89
+G100001000452,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Ulvila solar farm,L100001000239,utility-scale solar,pre_construction,250
+G100001000453,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Aurinkovainio solar farm,L100001000240,utility-scale solar,pre_construction,60
+G100001000454,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Påvalsby solar farm,L100001000241,utility-scale solar,pre_construction,100
+G100001000456,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Viuhonmäki Savonlinna solar farm,L100001000243,utility-scale solar,pre_construction,57
+G100001000457,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lakkiniemi Sastamala solar farm,L100001000244,utility-scale solar,pre_construction,48
+G100001000458,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Könkkölä Jämsä solar farm,L100001000245,utility-scale solar,pre_construction,40
+G100001000459,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Valkiasuo Parikkala solar farm,L100001000246,utility-scale solar,pre_construction,41
+G100001000461,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Mänskänmäki Kokemäki solar farm,L100001000247,utility-scale solar,pre_construction,50
+G100001000465,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Hitura solar farm,L100001000249,utility-scale solar,pre_construction,63.5
+G100001000466,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Utajärvi solar farm,L100000815933,utility-scale solar,construction,103.2
+G100001000467,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Utajärvi solar farm,L100000815933,utility-scale solar,pre_construction,100
+G100001000469,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Torvmossen solar farm,L100001000252,utility-scale solar,pre_construction,35
+G100001000470,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Isoneva solar farm,L100001000253,utility-scale solar,pre_construction,71.9
+G100001000487,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Kurkisuo solar farm,L100001000271,utility-scale solar,announced,60
+G100001000488,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,true,abf-boundaries-v0.2.0,Mekrijärvensuo solar farm,L100001000274,utility-scale solar,announced,140
+G100001000491,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Pihlassuo solar farm,L100001000277,utility-scale solar,pre_construction,80
+G100001000492,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Lamminneva solar farm,L100001000278,utility-scale solar,pre_construction,60
+G100001000493,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Tornio solar farm,L100001000279,utility-scale solar,pre_construction,80
+G100001000494,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Hausjärvi solar farm,L100001000280,utility-scale solar,shelved,20
+G100001000495,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Tuusula solar farm,L100001000281,utility-scale solar,pre_construction,30
+G100001000496,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Riihimäki solar farm,L100001000283,utility-scale solar,pre_construction,90
+G100001000556,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Hankeransuo solar farm,L100001000336,utility-scale solar,pre_construction,50
+G100001000560,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Harjupää solar farm,L100001000339,utility-scale solar,pre_construction,430
+G100001000565,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Honkisaarenneva solar farm,L100001000344,utility-scale solar,construction,36
+G100001000566,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,true,abf-boundaries-v0.2.0,Iitti solar farm,L100001000346,utility-scale solar,pre_construction,60
+G100001000567,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kaijansuo solar farm,L100001000347,utility-scale solar,pre_construction,178
+G100001000568,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kairineva solar farm,L100001000348,utility-scale solar,pre_construction,200
+G100001000569,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kauniskanka solar farm,L100001000349,utility-scale solar,pre_construction,296
+G100001000570,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Kaskisuo solar farm,L100001000350,utility-scale solar,pre_construction,80
+G100001000571,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Konnunsuo solar farm,L100001000351,utility-scale solar,pre_construction,250
+G100001000573,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Kultiojärvi solar farm,L100001000352,utility-scale solar,pre_construction,81
+G100001000574,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Kynkäänsuo solar farm,L100001000353,utility-scale solar,pre_construction,82
+G100001000575,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Kyyrönsuo solar farm,L100001000354,utility-scale solar,pre_construction,166
+G100001000576,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Lassinniitty solar farm,L100001000355,utility-scale solar,pre_construction,100
+G100001000577,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Lepästensuo solar farm,L100001000356,utility-scale solar,pre_construction,100
+G100001000578,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,true,abf-boundaries-v0.2.0,Makarahuhdansuo solar farm,L100001000357,utility-scale solar,pre_construction,46
+G100001000579,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Mustaisneva solar farm,L100001000358,utility-scale solar,announced,600
+G100001000580,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Mäntyluoto solar farm,L100001000359,utility-scale solar,announced,20
+G100001000581,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,true,abf-boundaries-v0.2.0,Niinikko solar farm,L100001000360,utility-scale solar,pre_construction,60
+G100001000582,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Pakaa solar farm,L100001000361,utility-scale solar,pre_construction,100
+G100001000583,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,true,abf-boundaries-v0.2.0,Luumäki solar farm,L100001000362,utility-scale solar,pre_construction,42
+G100001000584,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Palloneva Kauhajoki solar farm,L100001000363,utility-scale solar,pre_construction,115
+G100001000585,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Rannankylä solar farm,L100001000364,utility-scale solar,announced,80
+G100001000586,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,true,abf-boundaries-v0.2.0,Ropolansuo solar farm,L100001000365,utility-scale solar,shelved,20
+G100001000587,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Röjsjö-Brännankärret solar farm,L100001000366,utility-scale solar,announced,120
+G100001000588,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Särkijärvi solar farm,L100001000367,utility-scale solar,pre_construction,60
+G100001000599,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Kajasuo solar farm,L100001000375,utility-scale solar,announced,40
+G100001000600,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Hanko solar farm,L100001000376,utility-scale solar,pre_construction,35
+G100001000602,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Santakanka solar farm,L100001000378,utility-scale solar,pre_construction,300
+G100001000605,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Säärensuo solar farm,L100001000380,utility-scale solar,pre_construction,60
+G100001000606,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Kankaanpää solar farm,L100001000381,utility-scale solar,shelved,30
+G100001000607,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Tuppura solar farm,L100001000382,utility-scale solar,announced,50
+G100001000608,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,true,abf-boundaries-v0.2.0,Turku Rusko solar farm,L100001000383,utility-scale solar,shelved,75
+G100001000609,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Vehkaneva solar farm,L100001000384,utility-scale solar,pre_construction,200
+G100001000610,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Sun 5 Oy solar farm,L100001000385,utility-scale solar,pre_construction,500
+G100001000611,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Sun 6 Oy solar farm,L100001000387,utility-scale solar,pre_construction,60
+G100001000646,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Riutunkari wind farm,L100001000405,wind,operating,12.6
+G100001000647,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Pjelax wind farm,L100001000406,wind,operating,251.6
+G100001000648,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Västervik wind farm,L100000915349,wind,pre_construction,135
+G100001000666,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Lålax wind farm,L100001000421,wind,construction,25
+G100001000667,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Isokankaan wind farm,L100001000424,wind,pre_construction,24.5
+G100001000675,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Miilukangas wind farm,L100001000431,wind,pre_construction,60
+G100001000678,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Norrskär wind farm,L100001000434,wind,cancelled,1800
+G100001000679,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Vornankorpi wind farm,L100001000436,wind,pre_construction,97.5
+G100001000701,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Otsavuoren wind farm,L100001000451,wind,shelved,33
+G100001000707,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Mutkalampi wind farm,L100000916180,wind,operating,25.8
+G100001000708,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lappfjärd wind farm,L100000915969,wind,operating,50
+G100001000713,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Puutionsaari wind farm,L100001000458,wind,pre_construction,300
+G100001000714,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Joutensuo wind farm,L100001000459,wind,pre_construction,320
+G100001000715,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,true,abf-boundaries-v0.2.0,Harmajapää wind farm,L100001000461,wind,pre_construction,320
+G100001000718,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Leuvanneva wind farm,L100001000463,wind,pre_construction,305
+G100001000719,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Outojänkä wind farm,L100001000464,wind,announced,228
+G100001000725,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Hirvasjärvi wind farm,L100001000470,wind,announced,270
+G100001000726,energy_plants_gem_units,FIN,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Pooki Offshore wind farm,L100001000471,wind,announced,2000
+G100001000731,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Siikajoki wind farm,L100000919457,wind,operating,217.6
+G100001000732,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Siikajoki wind farm,L100000919457,wind,operating,25.6
+G100001000821,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Tahkoluoto Offshore wind farm,L100000911391,wind,pre_construction,30
+G100001000822,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Tahkoluoto Offshore wind farm,L100000911391,wind,pre_construction,700
+G100001000860,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Nikkarinkaarto wind farm,L100001000556,wind,operating,35
+G100001000905,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Honkamäki-Viidankangas wind farm,L100001000594,wind,pre_construction,232
+G100001027230,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Harjavalta hydroelectric plant,L100001023025,hydropower,operating,72
+G100001027231,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Kolsi hydroelectric plant,L100001023026,hydropower,operating,45
+G100001027232,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Melo hydroelectric plant,L100001023027,hydropower,operating,70
+G100001027233,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Raasakka hydroelectric plant,L100001023028,hydropower,operating,60
+G100001027234,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Tainionkoski hydroelectric plant,L100001023029,hydropower,operating,62
+G100001027235,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Utanen hydroelectric plant,L100001023030,hydropower,operating,58
+G100001050649,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Haapasuon solar farm,L100001045053,utility-scale solar,pre_construction,36
+G100001050650,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Karsikko solar farm,L100001045054,utility-scale solar,pre_construction,53
+G100001050651,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Klouvinkankaan solar farm,L100001045055,utility-scale solar,pre_construction,38
+G100001050652,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,true,abf-boundaries-v0.2.0,Koppelosuon solar farm,L100001045056,utility-scale solar,pre_construction,115
+G100001050653,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,true,abf-boundaries-v0.2.0,Linnunsuon solar farm,L100001045057,utility-scale solar,pre_construction,110
+G100001050654,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Huttusenlehto solar farm,L100001045058,utility-scale solar,announced,180
+G100001050655,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Kalliosuo solar farm,L100001045059,utility-scale solar,announced,60
+G100001050656,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Pyykkialho solar farm,L100001045060,utility-scale solar,pre_construction,64
+G100001050657,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Salokunta solar farm,L100001045061,utility-scale solar,announced,45
+G100001050680,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Aurinkokettu solar farm,L100001045080,utility-scale solar,pre_construction,197
+G100001050681,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Joutensuo solar farm,L100001045081,utility-scale solar,pre_construction,60
+G100001050683,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Leuvanneva solar farm,L100001045083,utility-scale solar,pre_construction,300
+G100001050684,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,true,abf-boundaries-v0.2.0,Linnankoski solar farm,L100001045084,utility-scale solar,pre_construction,25
+G100001050685,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Malmgård Sjundeå solar farm,L100001045085,utility-scale solar,announced,60
+G100001050686,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Nurmesneva solar farm,L100001045086,utility-scale solar,pre_construction,200
+G100001050687,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,true,abf-boundaries-v0.2.0,Pirtti-Moskuva solar farm,L100001045087,utility-scale solar,pre_construction,144
+G100001050688,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,true,abf-boundaries-v0.2.0,Tervasneva solar farm,L100001045088,utility-scale solar,pre_construction,50
+G100001050689,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Ronkankangas solar farm,L100001045089,utility-scale solar,announced,40
+G100001050690,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Santinkulma solar farm,L100001045090,utility-scale solar,announced,60
+G100001050691,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Saunojanrahka solar farm,L100001045091,utility-scale solar,pre_construction,70
+G100001050692,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Suurikangas solar farm,L100001045092,utility-scale solar,pre_construction,100
+G100001050693,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Suursuo solar farm,L100001045093,utility-scale solar,pre_construction,60
+G100001050694,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Tarvasjoki solar farm,L100001045094,utility-scale solar,announced,60
+G100001050695,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Teerisuo solar farm,L100001045095,utility-scale solar,announced,30
+G100001050696,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Toristojanneva solar farm,L100001045096,utility-scale solar,pre_construction,192
+G100001050697,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Törsbäle solar farm,L100001045097,utility-scale solar,pre_construction,43
+G100001050698,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Vuokon solar farm,L100001045098,utility-scale solar,pre_construction,50
+G100001050699,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Ypinneva solar farm,L100001045099,utility-scale solar,pre_construction,87.4
+G100001050720,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Maaselkä wind farm,L100001045117,wind,announced,50
+G100001050752,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Iso-Petäjämäki wind farm,L100001045147,wind,pre_construction,100
+G100001050753,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Itämäki wind farm,L100001045148,wind,pre_construction,150
+G100001050754,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Takakangas-Pihlajaharju wind farm,L100001045149,wind,pre_construction,96
+G100001050755,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Pirttikylä wind farm,L100001045150,wind,pre_construction,120
+G100001052088,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jylhämä hydroelectric plant,L100001046166,hydropower,operating,55
+G100001052089,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pälli hydroelectric plant,L100001046167,hydropower,operating,51
+G100001052778,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Veitsiluoto Mill power station,L100001046632,bioenergy,mothballed,25
+G100001052786,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Kaukan Voima power station,L100001046634,bioenergy,operating,119
+G100001052787,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kuusankoski power station,L100001046635,bioenergy,operating,76
+G100001052789,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Seinäjoki power station,L100001046637,bioenergy,operating,120
+G100001052790,energy_plants_gem_units,FIN,point,,FIN-1-02,,point,,,,false,abf-boundaries-v0.2.0,Imatran Kaukopää power station,L100001046638,bioenergy,operating,134
+G100001052793,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Järvenpää power station,L100001046641,bioenergy,operating,23.8
+G100001052794,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Haapaniemen power station,L100001046642,bioenergy,operating,118
+G100001052799,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Martinlaakso power station,L100000101846,bioenergy,operating,35
+G100001052830,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Äänekoski power station,L100001046672,bioenergy,operating,35
+G100001052841,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Laanila Ecopower power station,L100001046681,bioenergy,operating,10
+G100001052847,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Keljonlahti power station,L100001046686,bioenergy,operating,190
+G100001052848,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Rauhalahti power station,L100001046687,bioenergy,operating,87
+G100001052850,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kokkola power station,L100001046688,bioenergy,operating,25
+G100001052857,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,false,abf-boundaries-v0.2.0,Alholmens Kraft power station,L100000201162,bioenergy,operating,240
+G100001052862,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Suosiola power station,L100001046694,bioenergy,operating,30
+G100001052876,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Pursiala power station,L100000201164,bioenergy,operating,25
+G100001052877,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Naistenlahti power station,L100000400080,bioenergy,operating,60
+G100001062573,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Aittokoski hydroelectric plant,L100001054681,hydropower,operating,45
+G100001062574,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Haapakoski hydroelectric plant,L100001054682,hydropower,operating,33
+G100001062575,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Kaltimo hydroelectric plant,L100001054683,hydropower,operating,32
+G100001062576,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kierikki hydroelectric plant,L100001054684,hydropower,operating,38
+G100001062577,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kuusankoski hydroelectric plant,L100001054685,hydropower,operating,37
+G100001062578,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Maalismaa hydroelectric plant,L100001054686,hydropower,operating,39
+G100001062579,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mankala hydroelectric plant,L100001054687,hydropower,operating,30
+G100001062580,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Merikoski hydroelectric plant,L100001054688,hydropower,operating,40
+G100001062581,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pahkakoski hydroelectric plant,L100001054689,hydropower,operating,42
+G100001062582,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Porttipahta hydroelectric plant,L100001054690,hydropower,operating,41
+G100001062583,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Seitenoikea hydroelectric plant,L100001054691,hydropower,operating,39
+G100001062584,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Voikkaa hydroelectric plant,L100001054692,hydropower,operating,33
+G100001074176,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Lakkikeidas solar farm,L100001064447,utility-scale solar,pre_construction,170
+G100001074183,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Leivinneva solar farm,L100001064451,utility-scale solar,pre_construction,150
+G100001074184,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Tompselin Keminmaa solar farm,L100001064452,utility-scale solar,pre_construction,85
+G100001074187,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Pitkäkangas solar farm,L100001064455,utility-scale solar,pre_construction,50
+G100001074188,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Kortes-Salvianneva solar farm,L100001064456,utility-scale solar,pre_construction,70
+G100001074396,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Haarajoenneva solar farm,L100001064634,utility-scale solar,pre_construction,55
+G100001074397,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Nivala solar farm,L100001064635,utility-scale solar,pre_construction,70
+G100001074398,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Piippola solar farm,L100001064636,utility-scale solar,announced,60
+G100001074400,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Kaikonsuo solar farm,L100001064638,utility-scale solar,announced,84
+G100001074401,energy_plants_gem_units,FIN,point,,FIN-1-15,,point,,,,false,abf-boundaries-v0.2.0,Luostanlinna solar farm,L100001064639,utility-scale solar,pre_construction,59
+G100001074403,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,false,abf-boundaries-v0.2.0,Rankinkulma solar farm,L100001064640,utility-scale solar,announced,72
+G100001089913,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Nokian Renkaat solar project,L100001080084,utility-scale solar,operating,1.1
+G100001089914,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Seepsula 1solar project,L100001080085,utility-scale solar,operating,1.2
+G100001089915,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Tokmanni Moreeni solar project,L100001080086,utility-scale solar,operating,1.3
+G100001089916,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Tokmanni logistiikkakeskus solar project,L100001080087,utility-scale solar,operating,1.3
+G100001089917,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Nurmijärvi solar project,L100001080088,utility-scale solar,announced,1.5
+G100001089918,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Flakanasa Solpark 2 solar project,L100001080089,utility-scale solar,operating,1.6
+G100001089919,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Lindö Gård Tenhola solar project,L100001080090,utility-scale solar,announced,2
+G100001089920,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,LEMENE PV02 solar project,L100001080091,utility-scale solar,operating,2
+G100001089921,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,true,abf-boundaries-v0.2.0,LEMENE PV01 solar project,L100001080092,utility-scale solar,announced,2
+G100001089922,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,ISKU Lahti solar project,L100001080093,utility-scale solar,operating,2
+G100001089923,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Seepsula 2 solar project,L100001080094,utility-scale solar,operating,2
+G100001089924,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Järvelä solar project,L100001080095,utility-scale solar,operating,2
+G100001089925,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Backfalls Solpark solar project,L100001080096,utility-scale solar,announced,2
+G100001089926,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Lillback Solpark solar project,L100001080097,utility-scale solar,announced,2
+G100001089927,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Seppälän Aurinkopuisto solar project,L100001080098,utility-scale solar,announced,2
+G100001089928,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Kaitsol Solpark solar project,L100001080099,utility-scale solar,announced,2
+G100001089929,energy_plants_gem_units,FIN,point,,FIN-1-12,,point,,,,true,abf-boundaries-v0.2.0,Pensala Solpark solar project,L100001080100,utility-scale solar,announced,2
+G100001089930,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,false,abf-boundaries-v0.2.0,Nuupas solar project,L100001080101,utility-scale solar,pre_construction,2
+G100001089931,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Paltamon kunta solar project,L100001080102,utility-scale solar,announced,2
+G100001089932,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,true,abf-boundaries-v0.2.0,Peltolanperän Aurinkopuisto solar project,L100001080103,utility-scale solar,announced,2
+G100001089933,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Boliden Harjavalta solar project,L100001080104,utility-scale solar,operating,3
+G100001089934,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Artukainen (Bayerin tehdas) solar project,L100001080105,utility-scale solar,construction,3.3
+G100001089935,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,"Atrian Aurinko, laajennus, Nurmo solar project",L100001080106,utility-scale solar,operating,4
+G100001089936,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,SunSulkava solar project,L100001080107,utility-scale solar,operating,4
+G100001089937,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kannuksen Hietakangas solar project I,L100001080108,utility-scale solar,operating,4
+G100001089938,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Soljuva solar project,L100001080109,utility-scale solar,operating,4
+G100001089939,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Hirvensalmi solar project,L100001080110,utility-scale solar,operating,4
+G100001089940,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kannuksen Hietakangas solar project II,L100001080111,utility-scale solar,operating,4
+G100001089941,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Rantasalmi solar project,L100001080112,utility-scale solar,announced,4
+G100001089942,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Ketunperä solar project,L100001080113,utility-scale solar,announced,4
+G100001089943,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Vihreäsaari Vaihe2 solar project,L100001080114,utility-scale solar,operating,4.4
+G100001089944,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Paarmala solar project,L100001080115,utility-scale solar,construction,4.4
+G100001089945,energy_plants_gem_units,FIN,point,,FIN-1-13,,point,,,,false,abf-boundaries-v0.2.0,Liimaniemen sähköliittymä solar project,L100001080116,utility-scale solar,construction,4.6
+G100001089946,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Liesoja solar project,L100001080117,utility-scale solar,construction,4.6
+G100001089947,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Vihreäsaari Vaihe1 solar project,L100001080118,utility-scale solar,operating,4.9
+G100001089948,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,"Atrian Aurinko, Nurmes solar project",L100001080119,utility-scale solar,announced,5
+G100001089949,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Atrian Aurinko solar project,L100001080120,utility-scale solar,operating,5
+G100001089950,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Joroisten lentokenttä solar project,L100001080121,utility-scale solar,operating,5
+G100001089951,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Pälkänevedentie solar project,L100001080122,utility-scale solar,operating,5
+G100001089952,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ingermaninkylä solar project,L100001080123,utility-scale solar,pre_construction,5
+G100001089953,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Strömsby solar project,L100001080124,utility-scale solar,announced,5
+G100001089954,energy_plants_gem_units,FIN,point,,FIN-1-16,,point,,,,false,abf-boundaries-v0.2.0,Laviaissuo solar project,L100001080125,utility-scale solar,pre_construction,5.5
+G100001089955,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Kuortti solar project,L100001080126,utility-scale solar,announced,6
+G100001089956,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,true,abf-boundaries-v0.2.0,Vihko solar project,L100001080127,utility-scale solar,announced,6
+G100001089957,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,true,abf-boundaries-v0.2.0,Kirkniemi solar project,L100001080128,utility-scale solar,operating,6.8
+G100001089958,energy_plants_gem_units,FIN,point,,FIN-1-19,,point,,,,false,abf-boundaries-v0.2.0,Loimaa solar project,L100001080129,utility-scale solar,announced,8
+G100001089959,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Kopsa II solar project,L100001080130,utility-scale solar,announced,8
+G100001089960,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Ruotsinoja solar project,L100001080131,utility-scale solar,operating,8.8
+G100001089961,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Vimpari solar project,L100001080132,utility-scale solar,construction,8.8
+G100001089962,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Lännentie solar project,L100001080133,utility-scale solar,announced,8.8
+G100001089963,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Pori solar project,L100001080134,utility-scale solar,pre_construction,8.8
+G100001089964,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ohrasuo solar project,L100001080135,utility-scale solar,pre_construction,9
+G100001089965,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Niittyneva solar project,L100001080136,utility-scale solar,pre_construction,9
+G100001089966,energy_plants_gem_units,FIN,point,,FIN-1-11,,point,,,,false,abf-boundaries-v0.2.0,Urjala solar project,L100001080137,utility-scale solar,pre_construction,9.2
+G100001089967,energy_plants_gem_units,FIN,point,,FIN-1-05,,point,,,,false,abf-boundaries-v0.2.0,Puolanka solar project,L100001080138,utility-scale solar,pre_construction,9.2
+G100001089968,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Juurakko solar project,L100001080139,utility-scale solar,operating,10
+G100001089969,energy_plants_gem_units,FIN,point,,FIN-1-04,,point,,,,true,abf-boundaries-v0.2.0,Vikom Solpark Navio solar project,L100001080140,utility-scale solar,announced,10
+G100001089970,energy_plants_gem_units,FIN,point,,FIN-1-03,,point,,,,false,abf-boundaries-v0.2.0,Roves solar project,L100001080141,utility-scale solar,pre_construction,10
+G100001089971,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Pori Peittoo Kiertotalouspuisto solar project,L100001080142,utility-scale solar,pre_construction,10
+G100001089972,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Sun Riste Oy solar project,L100001080143,utility-scale solar,announced,10
+G100001089973,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Sun Telja Oy solar project,L100001080144,utility-scale solar,announced,10
+G100001089974,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Callio solar project I,L100001080145,utility-scale solar,operating,13
+G100001089975,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Callio solar project II,L100001080146,utility-scale solar,operating,13
+G100001089976,energy_plants_gem_units,FIN,point,,FIN-1-10,,point,,,,true,abf-boundaries-v0.2.0,Alakorkalo solar project,L100001080147,utility-scale solar,announced,13
+G100001089977,energy_plants_gem_units,FIN,point,,FIN-1-08,,point,,,,false,abf-boundaries-v0.2.0,Lievestuore solar project,L100001080148,utility-scale solar,announced,17
+G100001089978,energy_plants_gem_units,FIN,point,,FIN-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kiukuranevan Aurinkopuisto solar project,L100001080149,utility-scale solar,announced,17
+G100001089979,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Loukkaanaro solar project,L100001080150,utility-scale solar,construction,17.6
+G100001090023,energy_plants_gem_units,FIN,point,,FIN-1-09,,point,,,,false,abf-boundaries-v0.2.0,Lakiasuo Kouvola solar farm,L100001080176,utility-scale solar,pre_construction,80
+G100001090031,energy_plants_gem_units,FIN,point,,FIN-1-06,,point,,,,true,abf-boundaries-v0.2.0,Ypäjä Humppila solar farm,L100001080184,utility-scale solar,pre_construction,80
+G100001090075,energy_plants_gem_units,FIN,point,,FIN-1-14,,point,,,,false,abf-boundaries-v0.2.0,Montta hydroelectric plant,L100001080225,hydropower,operating,47
+G100001090697,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Aino solar farm,L100001080766,utility-scale solar,pre_construction,90
+G100001090705,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,false,abf-boundaries-v0.2.0,Marjatta solar farm,L100001080772,utility-scale solar,pre_construction,90
+G100001090706,energy_plants_gem_units,FIN,point,,FIN-1-17,,point,,,,true,abf-boundaries-v0.2.0,Sampo solar farm,L100001080773,utility-scale solar,pre_construction,95
+G100001093305,energy_plants_gem_units,FIN,point,,FIN-1-18,,point,,,,false,abf-boundaries-v0.2.0,Porvoo Refinery power station,L100000400082,oil/gas,operating,121

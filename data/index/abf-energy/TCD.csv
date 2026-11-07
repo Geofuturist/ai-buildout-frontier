@@ -1,0 +1,26 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413525,energy_plants_gem_units,TCD,point,,,,,,,,false,abf-boundaries-v0.2.0,Farcha power station,L100000409051,oil/gas,announced,90
+G100000413526,energy_plants_gem_units,TCD,point,,,,,,,,false,abf-boundaries-v0.2.0,Farcha power station,L100000409051,oil/gas,operating,60
+G100000413527,energy_plants_gem_units,TCD,point,,,,,,,,false,abf-boundaries-v0.2.0,Farcha power station,L100000409051,oil/gas,operating,7
+G100000413529,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,N'Djamena power station,L100000409053,oil/gas,operating,22
+G100000800018,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Alcaal Gassi solar farm,L100000800017,utility-scale solar,shelved,200
+G100000800020,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Almaden solar farm,L100000800019,utility-scale solar,cancelled,200
+G100000800024,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,N'Djamena (AMEA) solar farm,L100000800022,utility-scale solar,cancelled,60
+G100000800025,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,N'Djamena (AMEA) solar farm,L100000800022,utility-scale solar,cancelled,60
+G100000800115,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Djermaya solar farm,L100000800092,utility-scale solar,shelved,36
+G100000800116,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Djermaya solar farm,L100000800092,utility-scale solar,shelved,24
+G100000800151,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaoui solar farm,L100000800116,utility-scale solar,cancelled,50
+G100000800152,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Gaoui solar farm,L100000800116,utility-scale solar,cancelled,50
+G100000800331,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Sarh solar farm,L100000800279,utility-scale solar,cancelled,30
+G100000800383,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Starsol solar farm,L100000800313,utility-scale solar,cancelled,32
+G100000814081,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Centrale Solaire de Komé solar farm,L100000811573,utility-scale solar,announced,300
+G100000814082,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Centrales d’Energie Renouvelable de N’Djamena solar farm,L100000811574,utility-scale solar,shelved,100
+G100000831140,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,N'Djamena (Qair) solar farm,L100000827617,utility-scale solar,construction,15
+G100000831141,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,N'Djamena (Qair) solar farm,L100000827617,utility-scale solar,construction,15
+G100000920636,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Centrales d’Energie Renouvelable de N’Djamena wind farm,L100000916608,wind,shelved,100
+G100001020806,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Klessoum solar farm,L100001018602,utility-scale solar,operating,35
+G100001020815,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,N'Djamena Airport solar farm,L100001018607,utility-scale solar,construction,30
+G100001020818,energy_plants_gem_units,TCD,point,,,,,,,,false,abf-boundaries-v0.2.0,Gassi (RESPITE) solar farm,L100001018612,utility-scale solar,announced,30
+G100001020822,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Desert to Power (Chad) solar farms,L100001018603,utility-scale solar,cancelled,28
+G100001073940,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,Noor Chad solar farm,L100001064276,utility-scale solar,operating,50
+G100001073943,energy_plants_gem_units,TCD,point,,,,,,,,true,abf-boundaries-v0.2.0,N’Djamena (Axian) solar farm,L100001064278,utility-scale solar,announced,100

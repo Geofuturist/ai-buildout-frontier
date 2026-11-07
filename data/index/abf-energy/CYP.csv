@@ -1,0 +1,44 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000406310,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasilikos power station,L100000406388,oil/gas,construction,160
+G100000406313,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Mari power station,L100000406389,oil/gas,construction,260
+G100000818825,energy_plants_gem_units,CYP,point,,,,,,,,true,abf-boundaries-v0.2.0,CY CSPe Helios solar farm,L100000815916,utility-scale solar,cancelled,50
+G100000818826,energy_plants_gem_units,CYP,point,,,,,,,,true,abf-boundaries-v0.2.0,CY EOS Green Energy solar farm,L100000815917,utility-scale solar,cancelled,50
+G100000833196,energy_plants_gem_units,CYP,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamila solar project,L100000829406,utility-scale solar,operating,11
+G100000833197,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Nicosia solar farm,L100000829407,utility-scale solar,pre_construction,72
+G100000910832,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Sanida Kelaki wind farm,L100000908142,wind,cancelled,10
+G100000911052,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Aeolian-Dynamics Wind Park,L100000908355,wind,operating,11
+G100000911066,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosi wind farm,L100000908369,wind,operating,11
+G100000913633,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Kellia wind farm,L100000910740,wind,construction,16
+G100000914450,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Agia Anna wind farm,L100000911470,wind,operating,20
+G100000914794,energy_plants_gem_units,CYP,point,,,,,,,,true,abf-boundaries-v0.2.0,Kivisili wind farm,L100000911772,wind,cancelled,21
+G100000916744,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Alexigros wind farm,L100000913463,wind,operating,32
+G100000917795,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Klavdia wind farm,L100000914357,wind,cancelled,42
+G100000918715,energy_plants_gem_units,CYP,point,,,,,,,,true,abf-boundaries-v0.2.0,Agios Theodoros wind farm,L100000915116,wind,cancelled,51
+G100000919231,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Orites wind farm,L100000915551,wind,operating,82
+G100001000163,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Kalecik power station,L100001000066,oil/gas,operating,35
+G100001000164,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Kalecik power station,L100001000066,oil/gas,operating,78
+G100001000165,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Moni power station,L100001000067,oil/gas,operating,37.5
+G100001000166,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Moni power station,L100001000067,oil/gas,operating,37.5
+G100001000167,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Moni power station,L100001000067,oil/gas,operating,37.5
+G100001000168,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Moni power station,L100001000067,oil/gas,operating,37.5
+G100001000169,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Teknecik power station,L100001000068,oil/gas,operating,60
+G100001000170,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Teknecik power station,L100001000068,oil/gas,operating,60
+G100001000171,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Teknecik power station,L100001000068,oil/gas,operating,140
+G100001000172,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasilikos power station,L100000406388,oil/gas,operating,130
+G100001000173,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasilikos power station,L100000406388,oil/gas,operating,130
+G100001000174,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasilikos power station,L100000406388,oil/gas,operating,130
+G100001000175,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasilikos power station,L100000406388,oil/gas,operating,38
+G100001000176,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasilikos power station,L100000406388,oil/gas,operating,220
+G100001000177,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasilikos power station,L100000406388,oil/gas,operating,220
+G100001000509,energy_plants_gem_units,CYP,point,,,,,,,,true,abf-boundaries-v0.2.0,Paramount Energy power plant,L100001000296,oil/gas,pre_construction,105
+G100001029877,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Politiko solar project,L100001025196,utility-scale solar,operating,1
+G100001029878,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Cyprus solar project V,L100001025197,utility-scale solar,operating,1.3
+G100001029882,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Alaminos solar project III,L100001025201,utility-scale solar,operating,2.1
+G100001029884,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Dali South Nicosia - Dali Municipality solar project II,L100001025203,utility-scale solar,operating,1
+G100001029896,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Cyprus solar project XII,L100001025215,utility-scale solar,operating,1.6
+G100001029907,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Cyprus solar project XVII,L100001025226,utility-scale solar,operating,1.1
+G100001029922,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Cyprus solar project XXIII,L100001025241,utility-scale solar,operating,1.2
+G100001029928,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Margi solar project I,L100001025247,utility-scale solar,operating,1.2
+G100001029931,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Margi solar project III,L100001025250,utility-scale solar,operating,1.6
+G100001029944,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Cyprus solar project XXXII,L100001025263,utility-scale solar,operating,2.7
+G100001055248,energy_plants_gem_units,CYP,point,,,,,,,,false,abf-boundaries-v0.2.0,Vasa solar farm,L100001048187,utility-scale solar,pre_construction,100

@@ -1,0 +1,91 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000201407,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vilniaus Kogeneracinė power station,L100000201184,bioenergy,operating,80
+G100000400484,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Lietuvos power station,L100000400484,oil/gas,operating,300
+G100000400485,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Lietuvos power station,L100000400484,oil/gas,operating,300
+G100000400486,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Lietuvos power station,L100000400484,oil/gas,operating,445
+G100000400487,energy_plants_gem_units,LTU,point,,LTU-1-PN,,point,,,,false,abf-boundaries-v0.2.0,Panevėžys power station,L100000400487,oil/gas,operating,35
+G100000410136,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vilnius Third cogeneration power station,L100000407712,oil/gas,retired,180
+G100000410137,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vilnius Third cogeneration power station,L100000407712,oil/gas,retired,180
+G100000410138,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Kaunus power station,L100000407713,oil/gas,mothballed,110
+G100000410474,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Jonavos Achema power station,L100000407842,oil/gas,operating,47
+G100000410475,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Jonavos Achema power station,L100000407842,oil/gas,operating,21
+G100000410476,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Kaunus power station,L100000407713,oil/gas,shelved,150
+G100000500001,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Ignalina nuclear power plant,L100000500001,nuclear,retired,1300
+G100000500002,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Ignalina nuclear power plant,L100000500001,nuclear,retired,1300
+G100000501221,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Visaginas nuclear power plant,L100000500427,nuclear,cancelled,1350
+G100000501222,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,false,abf-boundaries-v0.2.0,Visaginas nuclear power plant,L100000500427,nuclear,cancelled,1350
+G100000602451,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Kaunas Algirdas Brazauskas hydroelectric plant,L100000602421,hydropower,operating,101
+G100000602452,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Kruonis hydroelectric plant,L100000602422,hydropower,operating,900
+G100000602453,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Kruonis hydroelectric plant,L100000602422,hydropower,pre_construction,110
+G100000830151,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Ignalina II solar farm,L100000826756,utility-scale solar,pre_construction,375
+G100000830152,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,true,abf-boundaries-v0.2.0,Jonava solar farm,L100000826757,utility-scale solar,pre_construction,252
+G100000830153,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,true,abf-boundaries-v0.2.0,Kretinga solar farm,L100000826758,utility-scale solar,shelved,79
+G100000830154,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Tauragė solar farm,L100000826759,utility-scale solar,operating,22
+G100000910619,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Tauragė wind farm,L100000907943,wind,operating,10
+G100000911835,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Mockiai wind farm,L100000909101,wind,operating,12
+G100000912558,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Šilalė wind farm,L100000909775,wind,operating,14
+G100000912844,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Sudenai wind farm,L100000910030,wind,operating,14
+G100000912966,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Tauragė wind farm,L100000907943,wind,operating,15
+G100000913353,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,true,abf-boundaries-v0.2.0,Laukžemė wind farm,L100000910490,wind,operating,16
+G100000914592,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Kreivenai wind farm,L100000911597,wind,operating,20
+G100000915031,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Didšiliai wind farm,L100000911984,wind,operating,21
+G100000915525,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Jurbarkas (Ignitis) wind farm,L100000912417,wind,operating,24
+G100000916669,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Vydmantai wind farm,L100000913404,wind,operating,30
+G100000917011,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Benaiciai-1 wind farm,L100000913683,wind,operating,34
+G100000917139,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,true,abf-boundaries-v0.2.0,Lebertai wind farm,L100000913795,wind,cancelled,35
+G100000917556,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Ciuteliai wind farm,L100000914159,wind,operating,39
+G100000917993,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,false,abf-boundaries-v0.2.0,Kabaldiku wind farm,L100000914530,wind,operating,45
+G100000918343,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,true,abf-boundaries-v0.2.0,Anykščiai wind farm,L100000914821,wind,operating,50
+G100000918910,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Šilute wind farm,L100000915280,wind,operating,60
+G100000918967,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,true,abf-boundaries-v0.2.0,Mazeikiai wind farm,L100000915328,wind,operating,63
+G100000918986,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,true,abf-boundaries-v0.2.0,Jokubavas wind farm,L100000915344,wind,cancelled,65
+G100000919042,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,true,abf-boundaries-v0.2.0,Telšiai (Encavis) wind farm,L100000915395,wind,operating,69
+G100000919135,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Pagegiai 13 wind farm,L100000915476,wind,operating,74
+G100000919136,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Strepeikiu wind farm,L100000915477,wind,operating,50
+G100000920058,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,true,abf-boundaries-v0.2.0,Baltic Sea wind farm,L100000916252,wind,pre_construction,700
+G100000925126,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,false,abf-boundaries-v0.2.0,Akmene wind farm,L100000920462,wind,operating,75
+G100000925127,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,true,abf-boundaries-v0.2.0,Jonava wind farm,L100000920463,wind,operating,70
+G100000925128,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Kelme (Enefit Green) wind farm,L100000920464,wind,construction,80
+G100000925129,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Kelme (Enefit Green) wind farm,L100000920464,wind,construction,87
+G100000925130,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Kelme (Enefit Green) wind farm,L100000920464,wind,pre_construction,150
+G100000925131,energy_plants_gem_units,LTU,point,,LTU-1-PN,,point,,,,true,abf-boundaries-v0.2.0,Nord wind farm,L100000920465,wind,pre_construction,200
+G100000925132,energy_plants_gem_units,LTU,point,,LTU-1-MR,,point,,,,true,abf-boundaries-v0.2.0,Otada wind farm,L100000920466,wind,construction,18
+G100000925133,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,true,abf-boundaries-v0.2.0,Plunge wind farm,L100000920467,wind,pre_construction,218
+G100000925134,energy_plants_gem_units,LTU,point,,LTU-1-PN,,point,,,,true,abf-boundaries-v0.2.0,Rokiškis wind farm,L100000920468,wind,operating,66
+G100000925135,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Šilalė wind farm,L100000909775,wind,operating,43
+G100000925136,energy_plants_gem_units,LTU,point,,LTU-1-MR,,point,,,,true,abf-boundaries-v0.2.0,Žvirgždaičiai wind farm,L100000920469,wind,shelved,33
+G100001004417,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Jurbarkas (Green Genius) wind farm,L100001003843,wind,operating,63
+G100001004418,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Jurbarkas (Green Genius) wind farm,L100001003843,wind,operating,17
+G100001004420,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Kelme (Ignitis) wind farm,L100001003845,wind,operating,114
+G100001004421,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Kelme (Ignitis) wind farm,L100001003845,wind,operating,200
+G100001004436,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,true,abf-boundaries-v0.2.0,Pagėgiai wind farm,L100001003855,wind,pre_construction,264
+G100001004437,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Šeduva solar farm,L100001003856,utility-scale solar,announced,78
+G100001004438,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Anykščiai solar farm,L100001003857,utility-scale solar,operating,65
+G100001004439,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Moletai solar farm,L100001003858,utility-scale solar,operating,100
+G100001052956,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,true,abf-boundaries-v0.2.0,Švenčionys solar farm,L100001046754,utility-scale solar,operating,80
+G100001053025,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,true,abf-boundaries-v0.2.0,Baltic Sea wind farm,L100000916252,wind,announced,700
+G100001053085,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,false,abf-boundaries-v0.2.0,Akmene wind farm,L100000920462,wind,announced,99
+G100001053086,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,true,abf-boundaries-v0.2.0,Telšiai (Encavis) wind farm,L100000915395,wind,announced,124
+G100001053087,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,true,abf-boundaries-v0.2.0,Vandziogalos vejas wind farm,L100001046825,wind,pre_construction,42
+G100001053374,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vilniaus Kogeneracinė power station,L100000201184,bioenergy,operating,20
+G100001053376,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Kaunas cogeneration power station,L100001047025,bioenergy,operating,24
+G100001053380,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Klaipėda power station,L100001047029,bioenergy,operating,20
+G100001060377,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Pajūrio Seniūnija solar project,L100001052583,utility-scale solar,operating,1.7
+G100001060379,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Babtų Seniūnija solar project I,L100001052585,utility-scale solar,operating,5
+G100001060381,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,false,abf-boundaries-v0.2.0,Mažeikių Apylinkės Seniūnija solar project II,L100001052587,utility-scale solar,operating,1
+G100001060387,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,false,abf-boundaries-v0.2.0,Sedos Seniūnija solar project,L100001052593,utility-scale solar,operating,1.4
+G100001060397,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Dovilų Seniūnija solar project I,L100001052603,utility-scale solar,operating,1.8
+G100001060410,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Mažonų Seniūnija solar project I,L100001052616,utility-scale solar,operating,1.4
+G100001060418,energy_plants_gem_units,LTU,point,,LTU-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Mažonų Seniūnija solar project II,L100001052624,utility-scale solar,operating,1.1
+G100001060429,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Vievio Seniūnija solar project I,L100001052635,utility-scale solar,operating,1.4
+G100001060440,energy_plants_gem_units,LTU,point,,LTU-1-KL,,point,,,,false,abf-boundaries-v0.2.0,Dovilų Seniūnija solar project II,L100001052646,utility-scale solar,operating,4.1
+G100001060466,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,false,abf-boundaries-v0.2.0,Žiežmarių Apylinkės Seniūnija solar project III,L100001052672,utility-scale solar,operating,2.9
+G100001073072,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Izabelinė solar farm,L100001063576,utility-scale solar,announced,91
+G100001073074,energy_plants_gem_units,LTU,point,,LTU-1-VL,,point,,,,true,abf-boundaries-v0.2.0,Lieponys solar farm,L100001063579,utility-scale solar,announced,91
+G100001073081,energy_plants_gem_units,LTU,point,,LTU-1-SA,,point,,,,false,abf-boundaries-v0.2.0,Ramonaičiai solar farm,L100001063586,utility-scale solar,operating,52
+G100001073085,energy_plants_gem_units,LTU,point,,LTU-1-PN,,point,,,,true,abf-boundaries-v0.2.0,Nord Wind Park solar farm,L100001063587,utility-scale solar,announced,50
+G100001073086,energy_plants_gem_units,LTU,point,,LTU-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Anykščiai solar farm,L100001003857,utility-scale solar,announced,78.5
+G100001073088,energy_plants_gem_units,LTU,point,,LTU-1-KU,,point,,,,true,abf-boundaries-v0.2.0,Kaišiadorys solar farm,L100001063589,utility-scale solar,announced,55
+G100001073156,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,true,abf-boundaries-v0.2.0,Telšiai (Latvenergo) wind farm,L100001063647,wind,announced,124
+G100001073157,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,true,abf-boundaries-v0.2.0,Telšiai (European Energy) wind farm,L100001063649,wind,announced,60
+G100001073159,energy_plants_gem_units,LTU,point,,LTU-1-TE,,point,,,,true,abf-boundaries-v0.2.0,Telšiai (European Energy) wind farm,L100001063649,wind,announced,60

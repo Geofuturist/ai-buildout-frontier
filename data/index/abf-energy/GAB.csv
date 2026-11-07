@@ -1,0 +1,22 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413981,energy_plants_gem_units,GAB,point,,GAB-1-8,,point,,,,true,abf-boundaries-v0.2.0,Port Gentil power plant,L100000409141,oil/gas,operating,105
+G100000413982,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,true,abf-boundaries-v0.2.0,Orinko power plant,L100000409142,oil/gas,construction,125
+G100000413983,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,true,abf-boundaries-v0.2.0,Owendo Gas-to-Power power plant,L100000409143,oil/gas,operating,151
+G100000413984,energy_plants_gem_units,GAB,point,,GAB-1-5,,point,,,,true,abf-boundaries-v0.2.0,Mayumba power plant,L100000409144,oil/gas,operating,21
+G100000413985,energy_plants_gem_units,GAB,point,,GAB-1-8,,point,,,,true,abf-boundaries-v0.2.0,Cap Lopez power plant,L100000409145,oil/gas,operating,120
+G100000413986,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,false,abf-boundaries-v0.2.0,Alenakiri power plant,L100000409146,oil/gas,operating,120
+G100000601712,energy_plants_gem_units,GAB,point,,GAB-1-6,,point,,,,true,abf-boundaries-v0.2.0,Booué hydroelectric plant,L100000601693,hydropower,pre_construction,411
+G100000601713,energy_plants_gem_units,GAB,point,,GAB-1-2,,point,,,,false,abf-boundaries-v0.2.0,Grand Poubara hydroelectric plant,L100000601694,hydropower,operating,160
+G100000601715,energy_plants_gem_units,GAB,point,,GAB-1-6,,point,,,,true,abf-boundaries-v0.2.0,Tséngue-Leledi hydroelectric plant,L100000601696,hydropower,pre_construction,300
+G100000604445,energy_plants_gem_units,GAB,point,,GAB-1-4,,point,,,,false,abf-boundaries-v0.2.0,Impératrice Eugénie hydroelectric plant,L100000601695,hydropower,shelved,84
+G100000604666,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ngoulmendjim hydroelectric plant,L100000604294,hydropower,pre_construction,82
+G100000800031,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,true,abf-boundaries-v0.2.0,Ayémé Plaine solar farm,L100000800028,utility-scale solar,operating,11
+G100000800032,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,true,abf-boundaries-v0.2.0,Ayémé Plaine solar farm,L100000800028,utility-scale solar,pre_construction,19
+G100000800144,energy_plants_gem_units,GAB,point,,GAB-1-2,,point,,,,true,abf-boundaries-v0.2.0,Franceville solar farm,L100000800110,utility-scale solar,shelved,150
+G100000800237,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,true,abf-boundaries-v0.2.0,Libreville solar farm,L100000800192,utility-scale solar,pre_construction,50
+G100000800311,energy_plants_gem_units,GAB,point,,GAB-1-9,,point,,,,true,abf-boundaries-v0.2.0,Oyem solar farm,L100000800259,utility-scale solar,shelved,50
+G100000814119,energy_plants_gem_units,GAB,point,,GAB-1-4,,point,,,,true,abf-boundaries-v0.2.0,Mouila solar farm,L100000811605,utility-scale solar,shelved,20
+G100001027255,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,false,abf-boundaries-v0.2.0,Kinguele hydroelectric plant,L100001023050,hydropower,operating,58
+G100001027256,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,false,abf-boundaries-v0.2.0,Tchimbele hydroelectric plant,L100001023051,hydropower,operating,68
+G100001030430,energy_plants_gem_units,GAB,point,,GAB-1-1,,point,,,,true,abf-boundaries-v0.2.0,Kinguélé Aval hydroelectric plant,L100001025645,hydropower,construction,35
+G100001092215,energy_plants_gem_units,GAB,point,,GAB-1-2,,point,,,,true,abf-boundaries-v0.2.0,Petit Poubara hydroelectric plant,L100001081897,hydropower,operating,38

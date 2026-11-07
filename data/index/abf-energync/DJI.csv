@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001074565,energy_plants_gem_tzsam_units,DJI,point,,DJI-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Tadjoura solar project,L100001064779,utility-scale solar,operating,1.9
+G100001074566,energy_plants_gem_tzsam_units,DJI,point,,DJI-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Djibouti solar project I,L100001064780,utility-scale solar,operating,1
+G100001074567,energy_plants_gem_tzsam_units,DJI,point,,DJI-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Djibouti solar project II,L100001064781,utility-scale solar,operating,2.2

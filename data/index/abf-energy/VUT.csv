@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023596,energy_plants_gem_units,VUT,point,,VUT-1-SEE,,point,,,,false,abf-boundaries-v0.2.0,Efate wind farm,L100001020686,wind,operating,3.4
+G100001023597,energy_plants_gem_units,VUT,point,,VUT-1-SEE,,point,,,,false,abf-boundaries-v0.2.0,Efate (UNELCO) solar farm,L100001020687,utility-scale solar,operating,1.1
+G100001023598,energy_plants_gem_units,VUT,point,,VUT-1-SEE,,point,,,,false,abf-boundaries-v0.2.0,Efate (UNELCO) solar farm,L100001020687,utility-scale solar,announced,3

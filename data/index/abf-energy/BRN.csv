@@ -1,0 +1,12 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000114115,energy_plants_gem_units,BRN,point,,BRN-1-BM,,point,,,,false,abf-boundaries-v0.2.0,Pulau Muara Besar power station,L100000104551,coal,operating,55
+G100000114116,energy_plants_gem_units,BRN,point,,BRN-1-BM,,point,,,,false,abf-boundaries-v0.2.0,Pulau Muara Besar power station,L100000104551,coal,operating,55
+G100000114117,energy_plants_gem_units,BRN,point,,BRN-1-BM,,point,,,,false,abf-boundaries-v0.2.0,Pulau Muara Besar power station,L100000104551,coal,operating,55
+G100000114118,energy_plants_gem_units,BRN,point,,BRN-1-BM,,point,,,,false,abf-boundaries-v0.2.0,Pulau Muara Besar power station,L100000104551,coal,operating,55
+G100000404556,energy_plants_gem_units,BRN,point,,BRN-1-BM,,point,,,,false,abf-boundaries-v0.2.0,Berakas power station,L100000405261,oil/gas,operating,102
+G100000404557,energy_plants_gem_units,BRN,point,,BRN-1-TU,,point,,,,false,abf-boundaries-v0.2.0,Bukit Panggal power station,L100000405262,oil/gas,operating,110
+G100000408595,energy_plants_gem_units,BRN,point,,BRN-1-TU,,point,,,,false,abf-boundaries-v0.2.0,Bukit Panggal power station,L100000405262,oil/gas,announced,500
+G100000833188,energy_plants_gem_units,BRN,point,,BRN-1-BM,,point,,,,true,abf-boundaries-v0.2.0,Brunei PV solar farm,L100000829399,utility-scale solar,construction,30
+G100001028902,energy_plants_gem_units,BRN,point,,BRN-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Brunei solar project II,L100001024221,utility-scale solar,operating,1.6
+G100001095198,energy_plants_gem_units,BRN,point,,BRN-1-BE,,point,,,,false,abf-boundaries-v0.2.0,Lumut Cogen power station,L100001083914,oil/gas,operating,246
+G100001095202,energy_plants_gem_units,BRN,point,,BRN-1-BM,,point,,,,false,abf-boundaries-v0.2.0,Gadong 2 Power Plant,L100001083917,oil/gas,operating,128

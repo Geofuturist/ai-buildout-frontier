@@ -1,0 +1,20 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000411541,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Laayoune Diesel power plant,L100000408222,oil/gas,operating,72
+G100000800143,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Foum El Oued Solar,L100000800109,utility-scale solar,cancelled,500
+G100000800295,energy_plants_gem_units,ESH,point,,,,,,,,false,abf-boundaries-v0.2.0,Noor Boujdour I solar farm,L100000800245,utility-scale solar,operating,20
+G100000800334,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Sebkha Tah solar farm,L100000800282,utility-scale solar,cancelled,500
+G100000814251,energy_plants_gem_units,ESH,point,,,,,,,,false,abf-boundaries-v0.2.0,Noor Boujdour II solar farm,L100000811689,utility-scale solar,announced,350
+G100000831312,energy_plants_gem_units,ESH,point,,,,,,,,false,abf-boundaries-v0.2.0,Noor Laayoune solar farm,L100000827761,utility-scale solar,operating,85
+G100000900050,energy_plants_gem_units,ESH,point,,,,,,,,false,abf-boundaries-v0.2.0,Aftissat wind farm,L100000900041,wind,operating,200
+G100000900052,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Dakhla wind farm,L100000900043,wind,operating,60
+G100000900088,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Am Wind Park Project,L100000900068,wind,shelved,100
+G100000900094,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Biranzarane wind farm,L100000900074,wind,construction,360
+G100000900104,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Boujdour wind farm,L100000900082,wind,operating,300
+G100000900111,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Am Wind Park Project,L100000900068,wind,shelved,800
+G100000900132,energy_plants_gem_units,ESH,point,,,,,,,,false,abf-boundaries-v0.2.0,Foum El Oued wind farm,L100000900102,wind,operating,51
+G100000900134,energy_plants_gem_units,ESH,point,,,,,,,,false,abf-boundaries-v0.2.0,Aftissat wind farm,L100000900041,wind,operating,202
+G100000900171,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Ghrad Jrad wind farm,L100000900131,wind,construction,80
+G100000900209,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Tiskrad wind farm,L100000900161,wind,shelved,100
+G100001018739,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,White Dunes wind farm,L100001016803,wind,pre_construction,10000
+G100001018740,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,White Dunes solar farm,L100001016804,utility-scale solar,announced,7000
+G100001073050,energy_plants_gem_units,ESH,point,,,,,,,,true,abf-boundaries-v0.2.0,Laayoune wind farm,L100001063546,wind,pre_construction,100
