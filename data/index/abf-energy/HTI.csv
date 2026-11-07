@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000808545,energy_plants_gem_units,HTI,point,,HTI-1-ND,,point,,,,true,abf-boundaries-v0.2.0,Cap-Haïtien solar farm,L100000807239,utility-scale solar,cancelled,20
+G100000808546,energy_plants_gem_units,HTI,point,,HTI-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Gonaïves solar farm,L100000807240,utility-scale solar,cancelled,20
+G100000808547,energy_plants_gem_units,HTI,point,,HTI-1-OU,,point,,,,true,abf-boundaries-v0.2.0,Port-Au-Prince solar farm,L100000807241,utility-scale solar,cancelled,50
+G100000809400,energy_plants_gem_units,HTI,point,,HTI-1-NE,,point,,,,false,abf-boundaries-v0.2.0,Caracol Industrial Park solar farm,L100000807712,utility-scale solar,construction,8
+G100000838039,energy_plants_gem_units,HTI,point,,HTI-1-NE,,point,,,,false,abf-boundaries-v0.2.0,Caracol Industrial Park solar farm,L100000807712,utility-scale solar,construction,4
+G100001031097,energy_plants_gem_units,HTI,point,,HTI-1-CE,,point,,,,false,abf-boundaries-v0.2.0,Peligre hydroelectric plant,L100001025936,hydropower,mothballed,54
+G100001071876,energy_plants_gem_units,HTI,point,,HTI-1-CE,,point,,,,true,abf-boundaries-v0.2.0,Artibonite-4C hydroelectric plant,L100001062583,hydropower,announced,32

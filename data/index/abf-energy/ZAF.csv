@@ -1,0 +1,555 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100348,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Arnot power station,L100000103438,coal,operating,370
+G100000100349,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Arnot power station,L100000103438,coal,operating,390
+G100000100350,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Arnot power station,L100000103438,coal,operating,396
+G100000100351,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Arnot power station,L100000103438,coal,operating,396
+G100000100352,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Arnot power station,L100000103438,coal,operating,400
+G100000100353,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Arnot power station,L100000103438,coal,operating,400
+G100000100982,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Boikarabelo power station (Resgen),L100000103430,coal,cancelled,600
+G100000100983,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Boikarabelo power station (CESC),L100000103424,coal,cancelled,660
+G100000100984,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Boikarabelo power station (CESC),L100000103424,coal,cancelled,660
+G100000101168,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101169,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101170,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101171,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101172,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101173,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101174,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101175,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Camden power station,L100000103439,coal,operating,200
+G100000101627,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Coal-3 power station,L100000103454,coal,cancelled,1500
+G100000101659,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Colenso power station,L100000103427,coal,cancelled,350
+G100000101660,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Colenso power station,L100000103427,coal,cancelled,350
+G100000101661,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Colenso power station,L100000103427,coal,cancelled,350
+G100000102524,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Duvha power station,L100000103440,coal,operating,600
+G100000102525,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Duvha power station,L100000103440,coal,operating,600
+G100000102526,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Duvha power station,L100000103440,coal,mothballed,600
+G100000102527,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Duvha power station,L100000103440,coal,operating,600
+G100000102528,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Duvha power station,L100000103440,coal,operating,600
+G100000102529,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Duvha power station,L100000103440,coal,operating,600
+G100000103136,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Grootvlei power station,L100000103441,coal,operating,200
+G100000103137,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Grootvlei power station,L100000103441,coal,operating,200
+G100000103138,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Grootvlei power station,L100000103441,coal,operating,200
+G100000103139,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Grootvlei power station,L100000103441,coal,mothballed,200
+G100000103140,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Grootvlei power station,L100000103441,coal,mothballed,190
+G100000103141,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Grootvlei power station,L100000103441,coal,mothballed,200
+G100000103806,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,mothballed,200
+G100000103807,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,operating,200
+G100000103808,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,operating,200
+G100000103809,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,mothballed,200
+G100000103810,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,operating,200
+G100000103811,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,operating,200
+G100000103812,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,operating,200
+G100000103813,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,operating,200
+G100000103814,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,mothballed,200
+G100000103815,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Hendrina power station,L100000103442,coal,mothballed,200
+G100000105640,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,retired,30
+G100000105641,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,retired,30
+G100000105642,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,retired,30
+G100000105643,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,retired,30
+G100000105644,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,retired,30
+G100000105645,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,retired,30
+G100000105646,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,operating,60
+G100000105647,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,operating,60
+G100000105648,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,operating,60
+G100000105649,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,operating,60
+G100000105650,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,operating,60
+G100000105651,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,operating,60
+G100000105652,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,coal,operating,60
+G100000105663,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kendal power station,L100000103443,coal,operating,686
+G100000105664,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kendal power station,L100000103443,coal,operating,686
+G100000105665,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kendal power station,L100000103443,coal,operating,686
+G100000105666,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kendal power station,L100000103443,coal,operating,686
+G100000105667,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kendal power station,L100000103443,coal,operating,686
+G100000105668,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kendal power station,L100000103443,coal,operating,686
+G100000105705,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Khanyisa power station,L100000103444,coal,cancelled,150
+G100000105706,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Khanyisa power station,L100000103444,coal,cancelled,150
+G100000105707,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Khanyisa power station,L100000103444,coal,cancelled,150
+G100000105708,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Khanyisa power station,L100000103444,coal,cancelled,150
+G100000105770,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,KiPower power station,L100000103445,coal,cancelled,150
+G100000105771,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,KiPower power station,L100000103445,coal,cancelled,150
+G100000105772,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,KiPower power station,L100000103445,coal,cancelled,150
+G100000105773,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,KiPower power station,L100000103445,coal,cancelled,150
+G100000105828,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,100
+G100000105829,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,100
+G100000105830,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,100
+G100000105831,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,100
+G100000105832,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,100
+G100000105833,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,125
+G100000105834,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,125
+G100000105835,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,125
+G100000105836,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati power station,L100000103446,coal,retired,125
+G100000105964,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kriel power station,L100000103447,coal,operating,500
+G100000105965,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kriel power station,L100000103447,coal,operating,500
+G100000105966,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kriel power station,L100000103447,coal,operating,500
+G100000105967,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kriel power station,L100000103447,coal,operating,500
+G100000105968,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kriel power station,L100000103447,coal,operating,500
+G100000105969,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kriel power station,L100000103447,coal,operating,500
+G100000106039,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kusile power station,L100000103448,coal,operating,800
+G100000106040,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kusile power station,L100000103448,coal,operating,800
+G100000106041,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kusile power station,L100000103448,coal,operating,800
+G100000106042,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kusile power station,L100000103448,coal,operating,800
+G100000106043,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kusile power station,L100000103448,coal,operating,800
+G100000106044,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Kusile power station,L100000103448,coal,operating,800
+G100000106240,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Lethabo power station,L100000103423,coal,operating,618
+G100000106241,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Lethabo power station,L100000103423,coal,operating,618
+G100000106242,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Lethabo power station,L100000103423,coal,operating,618
+G100000106243,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Lethabo power station,L100000103423,coal,operating,618
+G100000106244,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Lethabo power station,L100000103423,coal,operating,618
+G100000106245,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Lethabo power station,L100000103423,coal,operating,618
+G100000106600,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Majuba power station,L100000103449,coal,operating,665
+G100000106601,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Majuba power station,L100000103449,coal,operating,665
+G100000106602,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Majuba power station,L100000103449,coal,operating,665
+G100000106603,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Majuba power station,L100000103449,coal,operating,716
+G100000106604,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Majuba power station,L100000103449,coal,operating,716
+G100000106605,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Majuba power station,L100000103449,coal,operating,716
+G100000106720,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Matimba power station,L100000103431,coal,operating,665
+G100000106721,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Matimba power station,L100000103431,coal,operating,665
+G100000106722,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Matimba power station,L100000103431,coal,operating,665
+G100000106723,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Matimba power station,L100000103431,coal,operating,665
+G100000106724,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Matimba power station,L100000103431,coal,operating,665
+G100000106725,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Matimba power station,L100000103431,coal,operating,665
+G100000106726,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Matla power station,L100000103450,coal,operating,600
+G100000106727,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Matla power station,L100000103450,coal,operating,600
+G100000106728,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Matla power station,L100000103450,coal,operating,600
+G100000106729,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Matla power station,L100000103450,coal,operating,600
+G100000106730,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Matla power station,L100000103450,coal,operating,600
+G100000106731,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Matla power station,L100000103450,coal,operating,600
+G100000106780,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Medupi power station,L100000103432,coal,operating,794.8
+G100000106781,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Medupi power station,L100000103432,coal,operating,794.8
+G100000106782,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Medupi power station,L100000103432,coal,operating,794.8
+G100000106783,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Medupi power station,L100000103432,coal,operating,794.8
+G100000106784,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Medupi power station,L100000103432,coal,operating,794.8
+G100000106785,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Medupi power station,L100000103432,coal,operating,794.8
+G100000106786,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Medupi West power station,L100000103433,coal,cancelled,800
+G100000106787,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Medupi West power station,L100000103433,coal,cancelled,800
+G100000106788,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Medupi West power station,L100000103433,coal,cancelled,800
+G100000106789,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Medupi West power station,L100000103433,coal,cancelled,800
+G100000106790,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Medupi West power station,L100000103433,coal,cancelled,800
+G100000106791,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Medupi West power station,L100000103433,coal,cancelled,800
+G100000107211,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Namane power station,L100000103434,coal,cancelled,660
+G100000108568,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Richards Bay Mill power station,L100000103428,coal,operating,38
+G100000108569,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Richards Bay Mill power station,L100000103428,coal,operating,34.3
+G100000108570,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Richards Bay Umbani power station,L100000103429,coal,cancelled,270
+G100000108622,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Rooiwal power station,L100000103426,coal,mothballed,60
+G100000108623,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Rooiwal power station,L100000103426,coal,mothballed,60
+G100000108624,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Rooiwal power station,L100000103426,coal,mothballed,60
+G100000108625,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Rooiwal power station,L100000103426,coal,mothballed,60
+G100000108626,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Rooiwal power station,L100000103426,coal,mothballed,60
+G100000109340,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Sibanye Gold power station,L100000103455,coal,cancelled,200
+G100000109545,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Unnamed South Africa coal projects,L100000103456,coal,cancelled,1500
+G100000110039,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Thabametsi power station,L100000103435,coal,cancelled,315
+G100000110040,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Thabametsi power station,L100000103435,coal,cancelled,315
+G100000110307,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Transalloy power station,L100000103451,coal,pre_construction,135
+G100000110396,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Tutuka power station,L100000103452,coal,operating,609
+G100000110397,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Tutuka power station,L100000103452,coal,operating,609
+G100000110398,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Tutuka power station,L100000103452,coal,operating,609
+G100000110399,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Tutuka power station,L100000103452,coal,operating,609
+G100000110400,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Tutuka power station,L100000103452,coal,operating,609
+G100000110401,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Tutuka power station,L100000103452,coal,operating,609
+G100000110462,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Umbani power station,L100000103453,coal,cancelled,600
+G100000110568,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Vedanta power station,L100000103436,coal,cancelled,300
+G100000110569,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Vedanta power station,L100000103436,coal,cancelled,300
+G100000110745,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Waterberg Coal power station,L100000103437,coal,cancelled,600
+G100000111949,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Elitheni power station,L100000103422,coal,cancelled,75
+G100000111950,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Elitheni power station,L100000103422,coal,cancelled,75
+G100000111951,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Elitheni power station,L100000103422,coal,cancelled,75
+G100000111952,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Elitheni power station,L100000103422,coal,cancelled,75
+G100000113799,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Pretoria West power station,L100000104372,coal,mothballed,30
+G100000113800,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Pretoria West power station,L100000104372,coal,mothballed,30
+G100000113801,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Pretoria West power station,L100000104372,coal,mothballed,30
+G100000113802,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Pretoria West power station,L100000104372,coal,mothballed,30
+G100000113803,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Pretoria West power station,L100000104372,coal,mothballed,30
+G100000113804,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Pretoria West power station,L100000104372,coal,mothballed,30
+G100000113981,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Musina-Makhado power station,L100000104479,coal,pre_construction,1320
+G100000115768,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Musina-Makhado power station,L100000104479,coal,shelved,1980
+G100000407259,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Coega power station,L100000406818,oil/gas,pre_construction,1000
+G100000407260,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Coega power station,L100000406818,oil/gas,pre_construction,1000
+G100000407261,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Coega power station,L100000406818,oil/gas,pre_construction,1000
+G100000407262,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Kelvin power station,L100000103425,oil/gas,pre_construction,600
+G100000407264,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Richards Bay (Mhlathuze Energy) power station,L100000406819,oil/gas,shelved,3300
+G100000407268,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Secunda power station,L100000406820,oil/gas,operating,280
+G100000408556,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,149.2
+G100000408557,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Gourikwa power station,L100000407108,oil/gas,operating,148
+G100000408558,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Dedisa power station,L100000407109,oil/gas,operating,335
+G100000408559,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Avon power station,L100000407110,oil/gas,operating,167.5
+G100000408560,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Karpowership Saldanha power station,L100000407111,oil/gas,shelved,320
+G100000408561,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Karpowership Richards Bay power station,L100000407112,oil/gas,shelved,450
+G100000408562,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Karpowership Coega power station,L100000407113,oil/gas,shelved,450
+G100000408563,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Nseleni Independent Floating power station,L100000407114,oil/gas,shelved,700
+G100000408564,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Nseleni Independent Floating power station,L100000407114,oil/gas,shelved,700
+G100000408565,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Nseleni Independent Floating power station,L100000407114,oil/gas,shelved,700
+G100000408566,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Nseleni Independent Floating power station,L100000407114,oil/gas,shelved,700
+G100000408567,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Phinda power plant,L100000407115,oil/gas,pre_construction,450
+G100000409408,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Richards Bay (Eskom) power station,L100000407360,oil/gas,pre_construction,3000
+G100000410486,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Richards Bay Gas to Power Plant 2,L100000407850,oil/gas,shelved,400
+G100000410487,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Phakwe Richards Bay Power Plant,L100000407851,oil/gas,pre_construction,2000
+G100000410884,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Gourikwa power station,L100000407108,oil/gas,operating,148
+G100000410885,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Gourikwa power station,L100000407108,oil/gas,operating,148
+G100000410886,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Gourikwa power station,L100000407108,oil/gas,operating,148
+G100000410887,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Gourikwa power station,L100000407108,oil/gas,operating,148
+G100000411349,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Port Rex power station,L100000408172,oil/gas,operating,57
+G100000411350,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Port Rex power station,L100000408172,oil/gas,operating,57
+G100000411351,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Port Rex power station,L100000408172,oil/gas,operating,57
+G100000411352,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Acacia power station,L100000408170,oil/gas,operating,57
+G100000411353,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Acacia power station,L100000408170,oil/gas,operating,57
+G100000411354,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Acacia power station,L100000408170,oil/gas,operating,57
+G100000413925,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,148.3
+G100000414351,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,148.3
+G100000414352,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,148.3
+G100000414353,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,148.3
+G100000414354,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,148.3
+G100000414355,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,149.2
+G100000414356,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,149.2
+G100000414357,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Ankerlig power station,L100000407107,oil/gas,operating,149.2
+G100000414449,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Avon power station,L100000407110,oil/gas,operating,167.5
+G100000414450,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Avon power station,L100000407110,oil/gas,operating,167.5
+G100000414451,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Avon power station,L100000407110,oil/gas,operating,167.5
+G100000500317,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Koeberg nuclear power plant,L100000500139,nuclear,operating,970
+G100000500318,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Koeberg nuclear power plant,L100000500139,nuclear,operating,970
+G100000501272,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Duynefontein nuclear power plant,L100000500439,nuclear,cancelled,1650
+G100000501273,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Duynefontein nuclear power plant,L100000500439,nuclear,cancelled,1650
+G100000603350,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Drakensberg hydroelectric plant,L100000603315,hydropower,operating,1000
+G100000603351,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Gariep hydroelectric plant,L100000603316,hydropower,operating,360
+G100000603352,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Ingula hydroelectric plant,L100000603317,hydropower,operating,1332
+G100000603353,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Palmiet hydroelectric plant,L100000603318,hydropower,operating,400
+G100000603354,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Steenbras hydroelectric plant,L100000603319,hydropower,operating,160
+G100000603356,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Vanderkloof hydroelectric plant,L100000603321,hydropower,operating,240
+G100000604895,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Tubatse hydroelectric plant,L100000603320,hydropower,pre_construction,1500
+G100000800007,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Adams Aurora solar farm,L100000800007,utility-scale solar,operating,75
+G100000800009,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Aggeneys solar farm,L100000800009,utility-scale solar,operating,46
+G100000800080,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Bokamoso Solar Field,L100000800062,utility-scale solar,operating,68
+G100000800082,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Bokpoort Concentrated Solar Project,L100000800064,utility-scale solar,operating,50
+G100000800086,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Boshof Solar Power Plant,L100000800068,utility-scale solar,operating,66
+G100000800109,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,De Aar - Project 1 (Solar Capital) solar farm,L100000800086,utility-scale solar,operating,85
+G100000800110,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,De Aar (Globeleq) solar farm,L100000800087,utility-scale solar,operating,45.6
+G100000800111,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,De Aar 3 - Project 2 (Solar Capital) solar farm,L100000800088,utility-scale solar,operating,90
+G100000800113,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,De Wildt Solar Park,L100000800090,utility-scale solar,operating,50
+G100000800119,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Dreunberg solar farm,L100000800095,utility-scale solar,operating,75
+G100000800120,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Droogfontein solar farm,L100000800096,utility-scale solar,operating,50
+G100000800121,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Droogfontein solar farm,L100000800096,utility-scale solar,operating,86
+G100000800161,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Greefspan solar farm,L100000800125,utility-scale solar,operating,55
+G100000800170,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Harmony Free State Solar Plant,L100000800132,utility-scale solar,operating,137
+G100000800172,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Herbert solar farm,L100000800134,utility-scale solar,operating,20
+G100000800175,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Ilanga 1 Solar Thermal Power Plant,L100000800137,utility-scale solar,operating,100
+G100000800181,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Jasper Solar Power Plant,L100000800142,utility-scale solar,operating,96
+G100000800194,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Kalkbult solar farm,L100000800155,utility-scale solar,operating,75
+G100000800198,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Karoo solar farm,L100000800158,utility-scale solar,operating,73.8
+G100000800200,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Kathu CSP Solar Park,L100000800160,utility-scale solar,operating,100
+G100000800202,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,KaXu Solar One Thermosolar Plant,L100000800162,utility-scale solar,operating,100
+G100000800204,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Kenhardt solar farm,L100000800164,utility-scale solar,operating,180
+G100000800205,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Kenhardt solar farm,L100000800164,utility-scale solar,operating,180
+G100000800206,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Kenhardt solar farm,L100000800164,utility-scale solar,operating,180
+G100000800211,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Khi Solar One Thermosolar Plant,L100000800169,utility-scale solar,operating,50
+G100000800219,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Klipkraal Upington solar farm,L100000800175,utility-scale solar,cancelled,1000
+G100000800226,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Konkoonsies solar farm,L100000800181,utility-scale solar,operating,86
+G100000800235,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Lesedi solar farm,L100000800190,utility-scale solar,operating,75
+G100000800236,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Letsatsi Solar Plant,L100000800191,utility-scale solar,operating,75
+G100000800240,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Linde solar farm,L100000800195,utility-scale solar,operating,40
+G100000800242,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Loeriesfonstein - Project 3 solar farm,L100000800197,utility-scale solar,operating,86
+G100000800265,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Mulilo Prieska solar farm,L100000800219,utility-scale solar,operating,86
+G100000800266,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Mulilo Prieska 20MW solar farm,L100000800220,utility-scale solar,operating,20
+G100000800267,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Mulilo Sonnedix Prieska solar farm,L100000800221,utility-scale solar,operating,86
+G100000800313,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Paleisheuwel Solar Power Plant,L100000800261,utility-scale solar,operating,83
+G100000800318,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Pulida Solar Park,L100000800266,utility-scale solar,operating,83
+G100000800324,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,REDSTONE CSP solar plant,L100000800272,utility-scale solar,operating,100
+G100000800325,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Reisa solar farm,L100000800273,utility-scale solar,operating,75
+G100000800357,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Sishen Solar Plant,L100000800302,utility-scale solar,operating,94
+G100000800380,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,South Deep Mine solar farm,L100000800310,utility-scale solar,operating,50
+G100000800382,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Soutpan solar farm,L100000800312,utility-scale solar,operating,31
+G100000800401,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Tom Burke Solar Park,L100000800330,utility-scale solar,operating,66
+G100000800408,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Touwsrivier Cpv Solar Project,L100000800336,utility-scale solar,operating,44
+G100000800418,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Upington solar farm,L100000800344,utility-scale solar,operating,86
+G100000800419,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Upington solar farm,L100000800344,utility-scale solar,operating,86
+G100000800420,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Upington solar farm,L100000800344,utility-scale solar,operating,86
+G100000800424,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Waterloo solar farm (South Africa),L100000800348,utility-scale solar,operating,86
+G100000800428,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Witkop Solar Park,L100000800352,utility-scale solar,operating,30
+G100000800429,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Xina Solar One Thermosolar Plant,L100000800353,utility-scale solar,operating,100
+G100000800434,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Zeerust Solar Field,L100000800358,utility-scale solar,operating,75
+G100000814196,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,ACWA Power Project DAO solar farm,L100000811644,utility-scale solar,pre_construction,150
+G100000814197,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Braklaagte Solar Facility,L100000811645,utility-scale solar,cancelled,100
+G100000814198,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Coega Green Ammonia Plant solar farm,L100000811646,utility-scale solar,pre_construction,1350
+G100000814199,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,De Aar (SolarAfrica) solar farm,L100000811647,utility-scale solar,construction,87
+G100000814200,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Du Plessis Dam PV solar farm,L100000811648,utility-scale solar,construction,75
+G100000814201,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Graspan Solar PV Project,L100000811649,utility-scale solar,operating,75
+G100000814202,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Grootfontein PV solar farm,L100000811650,utility-scale solar,operating,75
+G100000814205,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Grootspruit Solar PV Project,L100000811651,utility-scale solar,operating,75
+G100000814206,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Harmony Free State Solar Plant,L100000800132,utility-scale solar,operating,30
+G100000814207,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Kentani Solar Facility,L100000811652,utility-scale solar,cancelled,100
+G100000814208,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Klipfontein Solar Facility,L100000811653,utility-scale solar,cancelled,75
+G100000814209,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Klipfontein Solar Facility,L100000811653,utility-scale solar,cancelled,75
+G100000814210,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Leliehoek Solar Facility,L100000811654,utility-scale solar,cancelled,100
+G100000814211,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Lephalale Solar Project,L100000811655,utility-scale solar,construction,70
+G100000814212,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Magnora solar farm,L100000811656,utility-scale solar,pre_construction,260
+G100000814213,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Mogalakwena Mine solar farm,L100000811657,utility-scale solar,pre_construction,100
+G100000814214,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Mulilo Total Hydra solar farm,L100000811658,utility-scale solar,construction,216
+G100000814215,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Nieuwehoop Solar PV Facility,L100000811659,utility-scale solar,construction,103
+G100000814216,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Oya Energy Hybrid Facility solar farm,L100000811660,utility-scale solar,pre_construction,155
+G100000814217,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Paardevlei solar farm,L100000811661,utility-scale solar,pre_construction,60
+G100000814218,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Pilanesberg Platinum Mine solar farm,L100000811662,utility-scale solar,announced,35
+G100000814219,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Royal Bafokeng Platinum solar farm,L100000811663,utility-scale solar,pre_construction,98
+G100000814220,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Rustenburg Platinum Mine solar farm,L100000811664,utility-scale solar,construction,80
+G100000814221,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Rustenburg Platinum Mine solar farm,L100000811664,utility-scale solar,construction,65
+G100000814222,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Rustenburg Platinum Mine solar farm,L100000811664,utility-scale solar,construction,30
+G100000814223,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Sannaspos Solar PV Project,L100000811665,utility-scale solar,shelved,75
+G100000814224,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Sedibelo Platinum Mines Hybrid solar farm,L100000811666,utility-scale solar,announced,20
+G100000814225,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Merak 2 solar plant,L100000811667,utility-scale solar,operating,130
+G100000814226,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Merak 3 solar plant,L100000811668,utility-scale solar,operating,136
+G100000814227,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Sonoblomo Solar Facility,L100000811669,utility-scale solar,cancelled,75
+G100000814228,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Soventix PV Project solar farm,L100000811670,utility-scale solar,pre_construction,300
+G100000814229,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Soventix Saldanha solar farm,L100000811671,utility-scale solar,pre_construction,100
+G100000814230,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Tharisa PGM Mine solar farm,L100000811672,utility-scale solar,construction,40
+G100000814231,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Umoyilanga Energy Project solar farm,L100000811673,utility-scale solar,pre_construction,138
+G100000814232,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Veld PV solar farm,L100000811674,utility-scale solar,shelved,75
+G100000814233,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Veld PV solar farm,L100000811674,utility-scale solar,shelved,75
+G100000831273,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Adams ZA solar project,L100000827725,utility-scale solar,operating,10
+G100000831274,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Alldays solar farm,L100000827726,utility-scale solar,pre_construction,75
+G100000831275,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Alldays solar farm,L100000827726,utility-scale solar,pre_construction,20
+G100000831276,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Aries ZA solar project,L100000827727,utility-scale solar,operating,9.6
+G100000831277,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Aurora-Rietvlei Solar Power,L100000827728,utility-scale solar,operating,8.9
+G100000831278,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Bolobedu solar farm,L100000827729,utility-scale solar,construction,148
+G100000831280,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,De Beers Venetia Mine solar farm,L100000827731,utility-scale solar,announced,60
+G100000831281,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Doornhoek solar farm,L100000827732,utility-scale solar,construction,120
+G100000831282,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Elikhulu solar project,L100000827733,utility-scale solar,operating,9.9
+G100000831283,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Greefspan solar project,L100000827734,utility-scale solar,operating,11
+G100000831284,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Harmony Free State Solar Plant,L100000800132,utility-scale solar,pre_construction,56
+G100000831285,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Konkoonsies Solar Energy Facility,L100000827735,utility-scale solar,operating,9.6
+G100000831286,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Mpumalanga solar farm,L100000827736,utility-scale solar,pre_construction,1000
+G100000831287,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Northam Eland Mine solar farm,L100000827737,utility-scale solar,pre_construction,20
+G100000831288,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Northam Zondereinde Mine solar farm,L100000827738,utility-scale solar,construction,80
+G100000831289,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,RustMo1 solar farm,L100000827739,utility-scale solar,operating,6.9
+G100000831290,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Sasolburg solar project,L100000827740,utility-scale solar,operating,10
+G100000831291,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Slimsun Swartland Solar Park,L100000827741,utility-scale solar,operating,5
+G100000831293,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Upington UTN solar project,L100000827743,utility-scale solar,operating,4
+G100000831294,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Vredendal Solar Park,L100000827744,utility-scale solar,operating,8.8
+G100000900001,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Gouda wind farm,L100000900001,wind,operating,138
+G100000900002,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Cookhouse wind farm,L100000900002,wind,operating,139
+G100000900004,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Saldanha Steel Mill Wind Project,L100000900004,wind,shelved,15
+G100000900005,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,West Coast 1 wind farm,L100000900005,wind,operating,94
+G100000900007,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Dassieklip wind farm,L100000900007,wind,operating,27
+G100000900008,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Longyuan Mulilo De Aar Maanhaarberg wind farm,L100000900008,wind,operating,96
+G100000900009,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Longyuan Mulilo De Aar Maanhaarberg wind farm,L100000900008,wind,operating,139
+G100000900013,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Grassridge wind farm,L100000900011,wind,operating,62
+G100000900014,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Chaba wind farm,L100000900012,wind,operating,22
+G100000900015,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Waainek wind farm,L100000900013,wind,operating,25
+G100000900016,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Nobelsfontaine wind farm,L100000900014,wind,operating,74
+G100000900017,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Copperton wind farm,L100000900015,wind,operating,102
+G100000900020,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Garob wind farm,L100000900018,wind,operating,145
+G100000900021,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Oyster Bay wind farm,L100000900019,wind,operating,148
+G100000900022,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Nxuba wind farm,L100000900020,wind,operating,139
+G100000900023,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Nojoli wind farm,L100000900021,wind,operating,88
+G100000900024,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Soetwater wind farm,L100000900022,wind,operating,139
+G100000900026,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Gibson Bay wind farm,L100000900024,wind,operating,111
+G100000900027,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Karusa wind farm,L100000900025,wind,operating,140
+G100000900029,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Sere wind farm,L100000900027,wind,operating,100
+G100000900039,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Jeffrey's Bay wind farm,L100000900031,wind,operating,138
+G100000900040,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Golden Valley (South Africa) wind farm,L100000900032,wind,operating,120
+G100000900045,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Perdekraal East wind farm,L100000900036,wind,operating,110
+G100000900046,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Kangnas wind farm,L100000900037,wind,operating,140
+G100000900047,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Khobab wind farm,L100000900038,wind,operating,140
+G100000900048,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Loeriesfontein wind farm,L100000900039,wind,operating,140
+G100000900049,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Noupoort wind farm,L100000900040,wind,operating,80
+G100000900060,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Dorper wind farm,L100000900046,wind,operating,100
+G100000900063,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Kouga wind farm,L100000900048,wind,operating,80
+G100000900065,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Roggeveld wind farm,L100000900049,wind,operating,147
+G100000900066,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Van Stadens wind farm,L100000900050,wind,operating,27
+G100000900077,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Tsitsikamma Community wind farm,L100000900058,wind,operating,95
+G100000900092,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Amakhala Emoyeni wind farm,L100000900072,wind,operating,134
+G100000900116,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Inyanda-Roodeplaat wind farm,L100000900091,wind,shelved,187
+G100000900156,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Prieska Zinc-Copper wind farm,L100000900118,wind,shelved,18
+G100000900173,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Boulders wind farm,L100000900133,wind,shelved,140
+G100000900210,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Excelsior wind farm,L100000900162,wind,operating,32
+G100000900211,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Wesley-Ciskei wind farm,L100000900163,wind,operating,34
+G100000920667,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Bayview wind farm,L100000916628,wind,pre_construction,140
+G100000920668,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Beaufort West wind farm,L100000916629,wind,pre_construction,140
+G100000920669,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Brandvalley wind farm,L100000916630,wind,operating,144
+G100000920670,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Coleskop wind farm,L100000916631,wind,construction,140
+G100000920671,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Dwarsrug wind farm,L100000916632,wind,pre_construction,124
+G100000920672,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Ishwati Emoyeni wind farm,L100000916633,wind,shelved,140
+G100000920673,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Metrowind Van Stadens wind farm,L100000916634,wind,operating,27
+G100000920674,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Mpumalanga wind farm,L100000916635,wind,announced,155
+G100000920675,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Msenge Emoyeni wind farm,L100000916636,wind,operating,69
+G100000920676,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Oya Energy Hybrid Facility wind farm,L100000916637,wind,construction,82.5
+G100000920677,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Phezukomoya wind farm,L100000916638,wind,construction,140
+G100000920678,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Rietkloof wind farm,L100000916639,wind,operating,144
+G100000920679,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Rietrug wind farm,L100000916640,wind,pre_construction,140
+G100000920680,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,San Kraal wind farm,L100000916641,wind,operating,140
+G100000920681,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Sedibelo Platinum Mines Hybrid wind farm,L100000916642,wind,announced,20
+G100000920682,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,South Deep Mine wind farm,L100000916643,wind,announced,40
+G100000920683,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Sutherland wind farm,L100000916644,wind,construction,140
+G100000920684,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Trakas wind farm,L100000916645,wind,pre_construction,140
+G100000920685,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Umoya Energy wind farm,L100000916646,wind,operating,67
+G100000920686,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Umoyilanga Energy Project wind farm,L100000916647,wind,construction,77
+G100000920687,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Waaihoek wind farm,L100000916648,wind,construction,140
+G100000920688,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Wolf wind farm,L100000916649,wind,construction,84
+G100000927424,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Castle wind farm,L100000922010,wind,operating,89
+G100000927425,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Komati wind farm,L100000922011,wind,shelved,70
+G100000927426,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Loeriesfontein wind farm,L100000900039,wind,operating,138
+G100000927427,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Mpumalanga Coal Mine wind farm,L100000922012,wind,construction,155
+G100000927428,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Northern Cape wind farm,L100000922013,wind,construction,140
+G100001000572,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Lephalale Coal and Power Project,L100001000345,coal,shelved,600
+G100001018735,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Prieska Power Reserve wind farm,L100001016798,wind,pre_construction,130
+G100001018736,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Prieska Power Reserve solar farm,L100001016799,utility-scale solar,announced,180
+G100001018737,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Humansdorp e-methanol solar farm,L100001016801,utility-scale solar,announced,150
+G100001018738,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Humansdorp e-methanol wind farm,L100001016802,wind,announced,150
+G100001020681,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Virginia Solar Park,L100001018511,utility-scale solar,construction,275
+G100001020758,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Free State Province Solar PV Plant,L100001018558,utility-scale solar,operating,97.5
+G100001020855,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Witberg wind energy project,L100001018642,wind,pre_construction,108
+G100001021042,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Grootfontein PV solar farm,L100000811650,utility-scale solar,operating,75
+G100001021043,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,Grootfontein PV solar farm,L100000811650,utility-scale solar,operating,75
+G100001022129,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,SunCentral solar farm,L100001019558,utility-scale solar,construction,342
+G100001022131,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Khauta Solar PV Facility,L100001019560,utility-scale solar,pre_construction,165
+G100001022132,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Khauta Solar PV Facility,L100001019560,utility-scale solar,construction,110
+G100001022133,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Khauta Solar PV Facility,L100001019560,utility-scale solar,pre_construction,80
+G100001022134,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Khauta Solar PV Facility,L100001019560,utility-scale solar,pre_construction,50
+G100001022143,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Merafong solar farm,L100001019567,utility-scale solar,pre_construction,133
+G100001022144,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Merafong solar farm,L100001019567,utility-scale solar,pre_construction,133
+G100001022145,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Merafong solar farm,L100001019567,utility-scale solar,pre_construction,133
+G100001022146,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Merafong solar farm,L100001019567,utility-scale solar,pre_construction,133
+G100001022147,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Merafong solar farm,L100001019567,utility-scale solar,pre_construction,133
+G100001022148,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Merafong solar farm,L100001019567,utility-scale solar,pre_construction,133
+G100001022151,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Mooi Plaats solar farm,L100001019568,utility-scale solar,pre_construction,238
+G100001022159,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Lethabo Power Plant solar farm,L100001019575,utility-scale solar,pre_construction,75
+G100001023935,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,City Of Ekurhuleni Metropolitan Municipality solar project I,L100001020966,utility-scale solar,operating,1
+G100001023939,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,City Of Cape Town solar project I,L100001020970,utility-scale solar,operating,1
+G100001023943,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Ephraim Mogale Local Municipality Sekhukhune District Municipality solar project I,L100001020974,utility-scale solar,operating,1
+G100001023945,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Krugersdorp West Rand District Municipality solar project,L100001020976,utility-scale solar,operating,1.6
+G100001023950,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Thembelihle Local Municipality Pixley Ka Seme District Municipality solar project I,L100001020981,utility-scale solar,operating,2.7
+G100001023957,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,false,abf-boundaries-v0.2.0,George solar project III,L100001020988,utility-scale solar,operating,1.1
+G100001023958,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Thembelihle Local Municipality Pixley Ka Seme District Municipality solar project II,L100001020989,utility-scale solar,operating,2.8
+G100001023963,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Capricorn District Municipality solar project I,L100001020994,utility-scale solar,operating,1.1
+G100001023968,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Gqeberha Nelson Mandela Bay Metropolitan Municipality solar project III,L100001020999,utility-scale solar,operating,1.3
+G100001023980,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Greater Tubatse Local Municipality Sekhukhune District Municipality solar project I,L100001021011,utility-scale solar,operating,12.6
+G100001024003,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,City Of Ekurhuleni Metropolitan Municipality solar project IX,L100001021034,utility-scale solar,operating,2.1
+G100001024015,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Mulilo Renewable Energy Solar PV Prieska,L100001021046,utility-scale solar,operating,19.1
+G100001028016,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Springbok solar farm (South Africa),L100001023530,utility-scale solar,operating,150
+G100001030331,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,false,abf-boundaries-v0.2.0,Collywobbles hydroelectric plant,L100001025612,hydropower,operating,42
+G100001030400,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Teraco solar farm,L100001025636,utility-scale solar,construction,120
+G100001052943,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Sedibelo Platinum Mines Hybrid solar farm,L100000811666,utility-scale solar,announced,35
+G100001053620,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Mkuze power station,L100001047179,bioenergy,cancelled,16.5
+G100001053622,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,ENERGY Joburg Electircity Project power station,L100001047182,bioenergy,operating,19
+G100001053627,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Ngodwana Energy power station,L100001047183,bioenergy,operating,25
+G100001053631,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Amatikulu power station,L100001047187,bioenergy,operating,4
+G100001053633,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Amatikulu power station,L100001047187,bioenergy,operating,4
+G100001053634,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Amatikulu power station,L100001047187,bioenergy,operating,4
+G100001053635,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Felixton power station,L100001047188,bioenergy,operating,31.5
+G100001053638,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Sappi Ngodwana Steam Cogen power station,L100001047190,bioenergy,operating,117
+G100001053649,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Darnall power station,L100001047202,bioenergy,operating,6.5
+G100001053650,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Darnall power station,L100001047202,bioenergy,operating,6.5
+G100001053653,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Gledhow Cogeneration power station,L100001047203,bioenergy,operating,5
+G100001053659,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Gledhow Cogeneration power station,L100001047203,bioenergy,operating,2.8
+G100001053660,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Gledhow Cogeneration power station,L100001047203,bioenergy,operating,6.5
+G100001053696,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati (biomass) power station,L100001047238,bioenergy,operating,10
+G100001053697,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati (biomass) power station,L100001047238,bioenergy,operating,10
+G100001053698,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Malelane power station,L100001047239,bioenergy,operating,12
+G100001053700,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Malelane power station,L100001047239,bioenergy,operating,8
+G100001053701,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Malelane power station,L100001047239,bioenergy,operating,6.4
+G100001053703,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Malelane power station,L100001047239,bioenergy,operating,8
+G100001053706,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Noodsberg power station,L100001047242,bioenergy,operating,8
+G100001053707,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Noodsberg power station,L100001047242,bioenergy,operating,5.5
+G100001053708,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Noodsberg power station,L100001047242,bioenergy,operating,5.5
+G100001053717,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Maidstone power station,L100001047250,bioenergy,operating,2
+G100001053718,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Maidstone power station,L100001047250,bioenergy,operating,3
+G100001053719,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Maidstone power station,L100001047250,bioenergy,operating,3
+G100001053720,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Maidstone power station,L100001047250,bioenergy,operating,6
+G100001053721,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Maidstone power station,L100001047250,bioenergy,operating,7.2
+G100001053724,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Sappi Saiccor power station,L100001047251,bioenergy,announced,45
+G100001053725,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Sezela power station,L100001047252,bioenergy,operating,8
+G100001053726,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Sezela power station,L100001047252,bioenergy,operating,5
+G100001053727,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,false,abf-boundaries-v0.2.0,Sezela power station,L100001047252,bioenergy,operating,6
+G100001053728,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Umfolozi power station,L100001047253,bioenergy,operating,10
+G100001053729,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Umfolozi power station,L100001047253,bioenergy,operating,6
+G100001053761,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Harding power station,L100001047280,bioenergy,shelved,25
+G100001054940,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Khanyazwe Flexpower power station,L100001048032,oil/gas,pre_construction,1000
+G100001057542,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Onderstepoort solar farm,L100001049894,utility-scale solar,pre_construction,220
+G100001057546,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Red Sands BESS solar farm,L100001049898,utility-scale solar,pre_construction,177.5
+G100001057548,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Mogobe BESS solar farm,L100001049900,utility-scale solar,pre_construction,120
+G100001057549,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,false,abf-boundaries-v0.2.0,Oasis Aggeneis solar farm,L100001049901,utility-scale solar,pre_construction,86.9
+G100001057551,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Oasis Mookodi solar farm,L100001049903,utility-scale solar,pre_construction,86.9
+G100001057553,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Antlia Energy solar farm,L100001049906,utility-scale solar,pre_construction,200
+G100001057556,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Free State (JUWI) solar farm,L100001049908,utility-scale solar,construction,120
+G100001057558,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Paarde Valley PV solar farm,L100001049910,utility-scale solar,construction,120
+G100001057559,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Sonvanger PV solar farm,L100001049911,utility-scale solar,construction,100
+G100001057576,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Bela Bela solar farm,L100001049925,utility-scale solar,pre_construction,91.2
+G100001057578,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Nkwe Solar Cluster solar farm,L100001049927,utility-scale solar,pre_construction,300
+G100001057579,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Nkwe Solar Cluster solar farm,L100001049927,utility-scale solar,pre_construction,180
+G100001057582,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,ABO Kwartel SEF solar farm,L100001049930,utility-scale solar,pre_construction,270
+G100001057583,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Belle Solar Cluster solar farm,L100001049931,utility-scale solar,pre_construction,100
+G100001057584,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Belle Solar Cluster solar farm,L100001049931,utility-scale solar,pre_construction,200
+G100001057585,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Mopane solar farm,L100001049932,utility-scale solar,announced,100
+G100001057587,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Amersfoort solar farm,L100001049934,utility-scale solar,pre_construction,60
+G100001057588,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Blesbok solar farm,L100001049936,utility-scale solar,pre_construction,100
+G100001057590,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,true,abf-boundaries-v0.2.0,Mooiland solar farm,L100001049937,utility-scale solar,announced,120
+G100001057592,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Molemo solar farm,L100001049939,utility-scale solar,announced,70
+G100001057593,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,ABO Ndau 3 solar farm,L100001049940,utility-scale solar,announced,120
+G100001057594,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Mohau solar farm,L100001049941,utility-scale solar,pre_construction,371.6
+G100001057595,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Mohau solar farm,L100001049941,utility-scale solar,pre_construction,371.6
+G100001057596,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Mohau solar farm,L100001049941,utility-scale solar,pre_construction,371.6
+G100001057597,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Mohau solar farm,L100001049941,utility-scale solar,pre_construction,371.6
+G100001057598,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Mohau solar farm,L100001049941,utility-scale solar,pre_construction,371.6
+G100001057599,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Mohau solar farm,L100001049941,utility-scale solar,pre_construction,371.6
+G100001057600,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Soyuz 7 solar farm,L100001049942,utility-scale solar,announced,250
+G100001057601,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Pumba solar farm,L100001049943,utility-scale solar,pre_construction,250
+G100001057603,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Broadlands solar farm,L100001049945,utility-scale solar,announced,240
+G100001057604,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Broadlands solar farm,L100001049945,utility-scale solar,announced,240
+G100001057605,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Ngiri solar farm,L100001049946,utility-scale solar,pre_construction,150
+G100001057606,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Keimoes North solar farm,L100001049947,utility-scale solar,announced,1200
+G100001057608,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Guarri solar farm,L100001049949,utility-scale solar,pre_construction,80
+G100001057609,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Keimoes South solar farm,L100001049950,utility-scale solar,announced,850
+G100001057610,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Remark solar farm,L100001049951,utility-scale solar,pre_construction,150
+G100001057612,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Grootvallei solar farm,L100001049952,utility-scale solar,announced,220
+G100001057613,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Klippoort solar farm,L100001049954,utility-scale solar,announced,220
+G100001057614,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Letsa Solar Cluster solar farm,L100001049955,utility-scale solar,pre_construction,300
+G100001057615,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Letsa Solar Cluster solar farm,L100001049955,utility-scale solar,pre_construction,240
+G100001057616,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Letsa Solar Cluster solar farm,L100001049955,utility-scale solar,pre_construction,240
+G100001057635,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Boitumelo solar farm,L100001049975,utility-scale solar,announced,150
+G100001057636,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Good Hope solar farm,L100001049976,utility-scale solar,announced,240
+G100001057637,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Ngonyama solar farm,L100001049977,utility-scale solar,pre_construction,140
+G100001057641,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Kutlwano solar farm,L100001049980,utility-scale solar,announced,150
+G100001057643,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Dwaalboom 3 solar farm,L100001049983,utility-scale solar,pre_construction,180
+G100001057658,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Florida (South Africa) solar farm,L100001049996,utility-scale solar,announced,200
+G100001057659,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Kroonstad PV Cluster solar farm,L100001049997,utility-scale solar,announced,240
+G100001057660,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Kroonstad PV Cluster solar farm,L100001049997,utility-scale solar,announced,240
+G100001057661,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Kroonstad PV Cluster solar farm,L100001049997,utility-scale solar,announced,260
+G100001057677,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Ilikwa solar farm,L100001050010,utility-scale solar,announced,50
+G100001057680,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,false,abf-boundaries-v0.2.0,Komati solar farm,L100001050012,utility-scale solar,announced,72
+G100001057681,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Leeudoringstad solar farm,L100001050013,utility-scale solar,construction,48
+G100001057682,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Leeudoringstad solar farm,L100001050013,utility-scale solar,announced,192
+G100001057685,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Mercury 2 solar farm,L100001050015,utility-scale solar,announced,240
+G100001057686,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Corona solar farm,L100001050016,utility-scale solar,pre_construction,240
+G100001057688,energy_plants_gem_units,ZAF,point,,ZAF-1-MP,,point,,,,true,abf-boundaries-v0.2.0,Highveld solar farm,L100001050019,utility-scale solar,announced,240
+G100001057689,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,true,abf-boundaries-v0.2.0,Copper solar farm,L100001050020,utility-scale solar,announced,240
+G100001057690,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Middlepunt solar farm,L100001050021,utility-scale solar,announced,240
+G100001057692,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Onderstepoort solar farm,L100001049894,utility-scale solar,announced,190
+G100001057695,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,MBP solar farm,L100001050022,utility-scale solar,announced,75
+G100001057696,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Sere solar farm,L100001050023,utility-scale solar,pre_construction,19.5
+G100001057697,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,true,abf-boundaries-v0.2.0,Lethabo solar farm,L100001050024,utility-scale solar,pre_construction,75
+G100001057698,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,Naledi Ya YDE solar farm,L100001050025,utility-scale solar,pre_construction,24.5
+G100001057725,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Nyakallo solar farm,L100001050050,utility-scale solar,announced,315
+G100001057726,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Ukuqala solar farm,L100001050051,utility-scale solar,announced,75
+G100001057729,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,AMEA Power solar farm,L100001050054,utility-scale solar,pre_construction,85
+G100001057743,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,true,abf-boundaries-v0.2.0,North West (OptiPower) solar farm,L100001050070,utility-scale solar,announced,100
+G100001057744,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Winterton (Photon) CSP solar farm,L100001050071,utility-scale solar,pre_construction,250
+G100001057746,energy_plants_gem_units,ZAF,point,,ZAF-1-FS,,point,,,,false,abf-boundaries-v0.2.0,Virginia Solar Park,L100001018511,utility-scale solar,pre_construction,210
+G100001064348,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,JER Green Hydrogen Solar PV Project (South Africa),L100001056325,utility-scale solar,announced,12000
+G100001072024,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Karreebosch wind farm,L100001062691,wind,pre_construction,140
+G100001072131,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Khangela Emoyeni wind farm,L100001062792,wind,pre_construction,144
+G100001072132,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Umsinde Emoyeni wind farm,L100001062794,wind,pre_construction,140
+G100001072135,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Korosun 2 cluster wind farm,L100001062797,wind,pre_construction,147.5
+G100001072136,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Korosun 2 cluster wind farm,L100001062797,wind,pre_construction,147.5
+G100001072137,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Overberg wind farm,L100001062798,wind,construction,230
+G100001072138,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Overberg wind farm,L100001062798,wind,construction,150
+G100001072140,energy_plants_gem_units,ZAF,point,,ZAF-1-NC,,point,,,,true,abf-boundaries-v0.2.0,Springbok wind farm,L100001062800,wind,announced,55
+G100001072446,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Impofu wind farm,L100001063081,wind,construction,110
+G100001072447,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Impofu wind farm,L100001063081,wind,construction,110
+G100001072448,energy_plants_gem_units,ZAF,point,,ZAF-1-EC,,point,,,,true,abf-boundaries-v0.2.0,Impofu wind farm,L100001063081,wind,construction,110
+G100001072449,energy_plants_gem_units,ZAF,point,,ZAF-1-KZN,,point,,,,true,abf-boundaries-v0.2.0,Gagasi offshore wind farm,L100001063082,wind,announced,810
+G100001072450,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Carissa wind farm,L100001063083,wind,pre_construction,1000
+G100001072520,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Nuweveld wind farm,L100001063139,wind,pre_construction,240
+G100001072521,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Nuweveld wind farm,L100001063139,wind,pre_construction,240
+G100001072522,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Nuweveld wind farm,L100001063139,wind,pre_construction,240
+G100001074678,energy_plants_gem_units,ZAF,point,,ZAF-1-NW,,point,,,,false,abf-boundaries-v0.2.0,Rustenburg Bojanala Platinum District Municipality solar project I,L100001064892,utility-scale solar,operating,1.1
+G100001074744,energy_plants_gem_units,ZAF,point,,ZAF-1-LP,,point,,,,false,abf-boundaries-v0.2.0,Greater Letaba Local Municipality Mopani District Municipality solar project,L100001064958,utility-scale solar,operating,1.4
+G100001074757,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,Johannesburg City Of Johannesburg Metropolitan Municipality solar project,L100001064971,utility-scale solar,operating,6.5
+G100001074768,energy_plants_gem_units,ZAF,point,,ZAF-1-GP,,point,,,,false,abf-boundaries-v0.2.0,City Of Johannesburg Metropolitan Municipality solar project VII,L100001064982,utility-scale solar,operating,1.1
+G100001091034,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Zen wind farm,L100001080990,wind,construction,100
+G100001091035,energy_plants_gem_units,ZAF,point,,ZAF-1-WC,,point,,,,true,abf-boundaries-v0.2.0,Bergriver wind farm,L100001080991,wind,construction,94

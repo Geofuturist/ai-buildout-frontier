@@ -1,0 +1,13 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000831142,energy_plants_gem_units,COM,point,,COM-1-A,,point,,,,true,abf-boundaries-v0.2.0,Union of Comoros solar farm,L100000827618,utility-scale solar,shelved,2.5
+G100000831143,energy_plants_gem_units,COM,point,,COM-1-A,,point,,,,true,abf-boundaries-v0.2.0,Union of Comoros solar farm,L100000827618,utility-scale solar,shelved,2
+G100000831144,energy_plants_gem_units,COM,point,,COM-1-G,,point,,,,true,abf-boundaries-v0.2.0,Union of Comoros solar farm,L100000827618,utility-scale solar,shelved,2.8
+G100000831145,energy_plants_gem_units,COM,point,,COM-1-G,,point,,,,true,abf-boundaries-v0.2.0,Union of Comoros solar farm,L100000827618,utility-scale solar,shelved,2.8
+G100001071166,energy_plants_gem_units,COM,point,,COM-1-G,,point,,,,true,abf-boundaries-v0.2.0,Karthala geothermal power plant,L100001062045,geothermal,announced,15
+G100001074354,energy_plants_gem_units,COM,point,,COM-1-G,,point,,,,true,abf-boundaries-v0.2.0,Moroni (ADFD) solar farm,L100001064596,utility-scale solar,operating,6.3
+G100001074358,energy_plants_gem_units,COM,point,,COM-1-G,,point,,,,true,abf-boundaries-v0.2.0,Moroni solar farm,L100001064597,utility-scale solar,operating,5
+G100001074359,energy_plants_gem_units,COM,point,,COM-1-G,,point,,,,true,abf-boundaries-v0.2.0,Mitsamiouli solar farm,L100001064598,utility-scale solar,operating,4
+G100001074362,energy_plants_gem_units,COM,point,,COM-1-A,,point,,,,true,abf-boundaries-v0.2.0,Domoni solar farm,L100001064600,utility-scale solar,operating,2.5
+G100001074363,energy_plants_gem_units,COM,point,,COM-1-G,,point,,,,true,abf-boundaries-v0.2.0,Iconi solar farm,L100001064602,utility-scale solar,operating,2
+G100001074364,energy_plants_gem_units,COM,point,,COM-1-M,,point,,,,true,abf-boundaries-v0.2.0,Fomboni solar farm,L100001064604,utility-scale solar,operating,1.5
+G100001074365,energy_plants_gem_units,COM,point,,COM-1-A,,point,,,,true,abf-boundaries-v0.2.0,Sima solar farm,L100001064605,utility-scale solar,operating,1

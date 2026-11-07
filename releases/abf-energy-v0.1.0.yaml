@@ -1,0 +1,23 @@
+# Release of the dataset abf-energy, version 0.1.0 (SPEC_GEM_plants_v0_1_0 r7 section 3): a new Zenodo record.
+# Two layers: units (files only) and locations (the map layer). Reserve the DOI, then, before the final build:
+#   python scripts\publish\set_release_doi.py releases\abf-energy-v0.1.0.yaml 10.5281/zenodo.<number> 2026-MM-DD
+dataset: abf-energy
+version: 0.1.0
+tag: abf-energy-v0.1.0
+doi: 10.5281/zenodo.23943099
+published_at: "2026-11-06"
+built_at: "2026-11-01T12:00:00Z"
+boundary_release: abf-boundaries-v0.2.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\energy_plants_gem_units.yaml'
+  - 'layers\energy_plants_gem_locations.yaml'
+# SPEC_GEM r6 Q6: only meta.json and the manifest go to git; the CSV files are on R2 and in Zenodo (the data step keeps them in data\gem\).
+git_copy: {csv: false, extra_files: false}
+# Quoted phrases of the texts against the About sheet of the GEM file (RES_texts_GEM section 10 item 1): a stop in final.
+phrase_check:
+  kind: gem
+  xlsx: 'D:\GISData\Energy\GEM\Global Integrated Power September 2026 V2.xlsx'
+  layers: 'layers'

@@ -1,0 +1,779 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000107913,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pego power station,L100000103283,coal,retired,341
+G100000107914,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pego power station,L100000103283,coal,retired,341
+G100000109409,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Sines power station,L100000103282,coal,retired,324
+G100000109410,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Sines power station,L100000103282,coal,retired,324
+G100000109411,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Sines power station,L100000103282,coal,retired,324
+G100000109412,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Sines power station,L100000103282,coal,retired,324
+G100000114668,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Tapada do Outeiro power station,L100000400593,coal,retired,50
+G100000200257,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Celbi power station,L100000200227,bioenergy,operating,71
+G100000200349,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Valorsul Waste-to-Energy power station,L100000200313,bioenergy,operating,50
+G100000201424,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Figueira da Foz Industrial Complex power station,L100000400586,bioenergy,operating,71
+G100000201425,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Mondego power station,L100000201201,bioenergy,operating,35
+G100000400584,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Elecgas Pego power station,L100000400584,oil/gas,operating,418
+G100000400585,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Elecgas Pego power station,L100000400584,oil/gas,operating,418
+G100000400586,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Figueira da Foz Industrial Complex power station,L100000400586,oil/gas,operating,67
+G100000400587,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Lares power station,L100000400587,oil/gas,operating,413
+G100000400588,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Lares power station,L100000400587,oil/gas,operating,413
+G100000400589,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Ribatejo power station,L100000400589,oil/gas,operating,392
+G100000400590,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Ribatejo power station,L100000400589,oil/gas,operating,392
+G100000400591,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Ribatejo power station,L100000400589,oil/gas,operating,392
+G100000400592,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Sines Polimeros power station,L100000400592,oil/gas,operating,43
+G100000400593,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Tapada do Outeiro power station,L100000400593,oil/gas,operating,330
+G100000400594,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Tapada do Outeiro power station,L100000400593,oil/gas,operating,330
+G100000400595,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Tapada do Outeiro power station,L100000400593,oil/gas,operating,330
+G100000410463,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Viana Mill power station,L100000407834,oil/gas,operating,31
+G100000410464,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Viana Mill power station,L100000407834,oil/gas,operating,40
+G100000410465,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Setubal Mill power station,L100000407835,oil/gas,operating,80
+G100000410466,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Matosinhos Refinery power station,L100000407836,oil/gas,retired,82
+G100000410467,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Carrico Refinery power station,L100000407837,oil/gas,operating,32
+G100000410468,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Indorama Sines power station,L100000407838,oil/gas,operating,41
+G100000410470,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Fisigen power station,L100000407840,oil/gas,operating,24
+G100000603220,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Aguieira hydroelectric plant,L100000603185,hydropower,operating,336
+G100000603221,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Alqueva I hydroelectric plant,L100000603186,hydropower,operating,259
+G100000603222,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Alqueva II hydroelectric plant,L100000603187,hydropower,operating,256
+G100000603224,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Tâmega hydroelectric plant,L100000603189,hydropower,operating,160
+G100000603225,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Baixo Sabor Montante hydroelectric plant,L100000603190,hydropower,operating,153
+G100000603226,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Belver hydroelectric plant,L100000603191,hydropower,operating,81
+G100000603229,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Cabril hydroelectric plant,L100000603194,hydropower,operating,108
+G100000603230,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Carrapatelo hydroelectric plant,L100000603195,hydropower,operating,201
+G100000603231,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Castelo De Bode hydroelectric plant,L100000603196,hydropower,operating,159
+G100000603232,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Crestuma-Lever hydroelectric plant,L100000603197,hydropower,operating,117
+G100000603234,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Foz Tua hydroelectric plant,L100000603199,hydropower,operating,268
+G100000603235,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Fratel hydroelectric plant,L100000603200,hydropower,operating,132
+G100000603236,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Gouvães hydroelectric plant,L100000603201,hydropower,operating,880
+G100000603239,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Pocinho hydroelectric plant,L100000603204,hydropower,operating,186
+G100000603240,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Régua hydroelectric plant,L100000603205,hydropower,operating,180
+G100000603241,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Salamonde II hydroelectric plant,L100000603206,hydropower,operating,220
+G100000603242,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Torrão hydroelectric plant,L100000603207,hydropower,operating,140
+G100000603243,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Valeira hydroelectric plant,L100000603208,hydropower,operating,240
+G100000603244,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Venda Nova hydroelectric plant,L100000603209,hydropower,operating,90
+G100000603245,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Venda Nova II hydroelectric plant,L100000603210,hydropower,operating,191
+G100000603246,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Venda Nova III hydroelectric plant,L100000603211,hydropower,operating,780
+G100000603247,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Vila Nova Paradela II hydroelectric plant,L100000603212,hydropower,cancelled,318
+G100000603248,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Vilarinho Das Furnas hydroelectric plant,L100000603213,hydropower,operating,125
+G100000604331,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Daivões hydroelectric plant,L100000603198,hydropower,operating,118
+G100000700423,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Pico Vermelho geothermal power plant,L100000700236,geothermal,operating,10
+G100000700424,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Pico Vermelho geothermal power plant,L100000700236,geothermal,pre_construction,12
+G100000700558,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Ribeira Grande geothermal power plant,L100000700296,geothermal,operating,5
+G100000700559,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Ribeira Grande geothermal power plant,L100000700296,geothermal,operating,9
+G100000806559,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Amareleja Solar Park,L100000805703,utility-scale solar,operating,46
+G100000806632,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Salvaterra De Magos (Exus) solar farm,L100000805763,utility-scale solar,cancelled,24
+G100000806930,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Poceirao Solar Plant,L100000806019,utility-scale solar,pre_construction,49.4
+G100000806931,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Quinta Da Sexia solar farm,L100000806020,utility-scale solar,pre_construction,34
+G100000806932,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Sabugueiro solar farm,L100000806021,utility-scale solar,shelved,49
+G100000806940,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Moura (WinNRG) solar farm,L100000806029,utility-scale solar,operating,49
+G100000806942,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Lagos Solar,L100000806031,utility-scale solar,operating,49
+G100000807157,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Betty solar farm,L100000806226,utility-scale solar,operating,23
+G100000807158,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Mogadouro Solar,L100000806227,utility-scale solar,operating,49
+G100000807159,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Ribatejo Solar,L100000806228,utility-scale solar,shelved,142
+G100000807212,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Divor solar farm,L100000806277,utility-scale solar,pre_construction,260
+G100000807298,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Albercas solar farm,L100000806359,utility-scale solar,operating,28
+G100000807299,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,true,abf-boundaries-v0.2.0,Sao Marcos solar farm,L100000806360,utility-scale solar,operating,49
+G100000807300,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Viçoso solar farm,L100000806361,utility-scale solar,operating,48
+G100000807369,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Ferreira Do Alentejo solar farm,L100000806421,utility-scale solar,operating,12.7
+G100000807370,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Hanwha Ourique solar farm,L100000806422,utility-scale solar,cancelled,99
+G100000807371,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Hanwha Ourique solar farm,L100000806422,utility-scale solar,cancelled,109
+G100000807415,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Vale De Moura solar farm,L100000806464,utility-scale solar,operating,29
+G100000807680,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,true,abf-boundaries-v0.2.0,Portalegre solar farm,L100000806704,utility-scale solar,shelved,20
+G100000807712,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Salvaterra De Magos (Rosseti) solar farm,L100000806734,utility-scale solar,operating,30
+G100000807760,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Cotovio solar farm,L100000806782,utility-scale solar,operating,49
+G100000807793,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Mendo Marco solar farm,L100000806798,utility-scale solar,operating,24
+G100000807934,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Riccardo Totta Solar Plant,L100000806914,utility-scale solar,operating,219
+G100000827148,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Acaíl solar farm,L100000824077,utility-scale solar,pre_construction,28.3
+G100000827149,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,true,abf-boundaries-v0.2.0,Adomingueiros solar farm,L100000824078,utility-scale solar,shelved,42
+G100000827150,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Albispark solar farm,L100000824079,utility-scale solar,operating,30.1
+G100000827151,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Albugada solar farm,L100000824080,utility-scale solar,shelved,5
+G100000827152,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Alcaide solar farm,L100000824081,utility-scale solar,shelved,21
+G100000827153,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Alcanhões solar farm,L100000824082,utility-scale solar,operating,23
+G100000827155,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Alcochete solar farm,L100000824084,utility-scale solar,operating,32.9
+G100000827156,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Alcochete solar farm,L100000824084,utility-scale solar,operating,12.7
+G100000827157,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Aldeia da Serra solar farm,L100000824085,utility-scale solar,shelved,9
+G100000827161,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Alqueva Dam Floating solar farm,L100000824088,utility-scale solar,operating,5
+G100000827162,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Alqueva Dam Floating solar farm,L100000824088,utility-scale solar,pre_construction,52
+G100000827163,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto do Rabagao Floating solar farm,L100000824089,utility-scale solar,announced,42
+G100000827164,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Alvalade solar farm,L100000824090,utility-scale solar,shelved,49
+G100000827165,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Amieira solar farm,L100000824091,utility-scale solar,shelved,49.4
+G100000827166,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Andrinos solar farm,L100000824092,utility-scale solar,shelved,5
+G100000827167,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Avanca solar farm,L100000824093,utility-scale solar,shelved,5
+G100000827168,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Avanca solar farm,L100000824093,utility-scale solar,shelved,5
+G100000827169,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Avanca solar farm,L100000824093,utility-scale solar,shelved,4.4
+G100000827171,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Aveiro (Nomad Electric) solar farm,L100000824095,utility-scale solar,pre_construction,6.6
+G100000827172,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Azambuja solar farm,L100000824096,utility-scale solar,operating,6
+G100000827173,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Barcos solar farm,L100000824097,utility-scale solar,construction,48
+G100000827174,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Barrocal solar farm,L100000824098,utility-scale solar,shelved,21
+G100000827175,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Barros solar farm,L100000824099,utility-scale solar,operating,6.6
+G100000827176,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Beja solar farm,L100000824100,utility-scale solar,shelved,19
+G100000827177,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Benfica 3 solar farm,L100000824101,utility-scale solar,operating,19
+G100000827178,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Betty solar farm,L100000806226,utility-scale solar,pre_construction,4.5
+G100000827179,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Biscaia solar farm,L100000824102,utility-scale solar,shelved,56.6
+G100000827180,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Boa Vista solar farm,L100000824103,utility-scale solar,shelved,10
+G100000827181,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Boidobra solar farm,L100000824104,utility-scale solar,construction,43
+G100000827182,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Bom Sucesso solar farm,L100000824105,utility-scale solar,shelved,5
+G100000827183,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Borreiro solar farm,L100000824106,utility-scale solar,shelved,48.9
+G100000827184,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Bustelo solar farm,L100000824107,utility-scale solar,operating,23.8
+G100000827185,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Cabeço Santo solar farm,L100000824108,utility-scale solar,shelved,37.6
+G100000827186,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Vermelho solar farm,L100000824109,utility-scale solar,operating,82
+G100000827187,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Cabril Floating solar farm,L100000824110,utility-scale solar,pre_construction,48
+G100000827188,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Cadaval solar farm,L100000824111,utility-scale solar,operating,2
+G100000827189,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Calhandriz solar farm,L100000824112,utility-scale solar,operating,10
+G100000827190,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Carregado solar farm,L100000824113,utility-scale solar,construction,64
+G100000827193,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Casais da Marmeleira solar farm,L100000824115,utility-scale solar,operating,12.1
+G100000827194,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Casal da Cortiça solar farm,L100000824116,utility-scale solar,operating,27
+G100000827195,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Casal de Valeira solar farm,L100000824117,utility-scale solar,pre_construction,187.5
+G100000827196,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Castanheiros solar farm,L100000824118,utility-scale solar,shelved,5
+G100000827197,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,true,abf-boundaries-v0.2.0,Castelo Branco (Nomad Electric) solar farm,L100000824119,utility-scale solar,shelved,11.6
+G100000827198,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Castelo de Bode Dam solar farm,L100000824120,utility-scale solar,shelved,50
+G100000827199,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Cerca solar farm,L100000824121,utility-scale solar,operating,202
+G100000827200,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Cercal solar farm,L100000824122,utility-scale solar,shelved,48.9
+G100000827201,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Chaminé solar farm,L100000824123,utility-scale solar,shelved,20
+G100000827202,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Choca solar farm,L100000824124,utility-scale solar,shelved,5
+G100000827203,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Coimbra (Nomad Electric) solar farm,L100000824125,utility-scale solar,shelved,11.6
+G100000827204,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Conde solar farm,L100000824126,utility-scale solar,operating,14
+G100000827206,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Cruz do Campo (Power e Sol) solar farm,L100000824128,utility-scale solar,shelved,12
+G100000827209,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Douro (Sonnedix) solar farm,L100000824131,utility-scale solar,operating,150
+G100000827210,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Ermidas do Sado solar farm,L100000824132,utility-scale solar,operating,5
+G100000827211,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Esgueira solar farm,L100000824133,utility-scale solar,shelved,5
+G100000827212,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Espinheiro solar farm,L100000824134,utility-scale solar,shelved,16.5
+G100000827213,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Esteveira solar farm,L100000824135,utility-scale solar,operating,24
+G100000827214,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,true,abf-boundaries-v0.2.0,Estoi solar farm,L100000824136,utility-scale solar,cancelled,83
+G100000827215,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Evora (Nomad Electric) solar farm,L100000824137,utility-scale solar,shelved,11.6
+G100000827216,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Évora 2 solar farm,L100000824138,utility-scale solar,operating,1.2
+G100000827217,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Eresolar solar farm,L100000824139,utility-scale solar,operating,5
+G100000827218,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Feira solar farm,L100000824140,utility-scale solar,shelved,20
+G100000827219,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Fernando Pessoa solar farm,L100000824141,utility-scale solar,pre_construction,1140
+G100000827220,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Figueira de Cavaleiros solar farm,L100000824142,utility-scale solar,shelved,8
+G100000827221,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Fonte Figueira solar farm,L100000824143,utility-scale solar,operating,7.2
+G100000827222,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Fonte Oleiro solar farm,L100000824144,utility-scale solar,shelved,22.5
+G100000827223,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,true,abf-boundaries-v0.2.0,Foral solar farm,L100000824145,utility-scale solar,construction,43
+G100000827224,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Forcada solar farm,L100000824146,utility-scale solar,shelved,4.4
+G100000827225,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Foros do Arncirinho solar farm,L100000824147,utility-scale solar,shelved,48.9
+G100000827226,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Foros do Vale Coelho solar farm,L100000824148,utility-scale solar,shelved,28
+G100000827227,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Frasa Coimbra Ver solar farm,L100000824149,utility-scale solar,shelved,3
+G100000827228,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Freixial solar farm,L100000824150,utility-scale solar,operating,15
+G100000827229,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Fundão solar farm,L100000824151,utility-scale solar,operating,126
+G100000827235,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Gemunde solar farm,L100000824153,utility-scale solar,operating,48.9
+G100000827236,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Gloría solar farm,L100000824154,utility-scale solar,operating,24
+G100000827237,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Hercules solar farm (Portugal),L100000824155,utility-scale solar,operating,10.8
+G100000827238,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Herdade Canhoes solar farm,L100000824156,utility-scale solar,operating,13.7
+G100000827239,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Herdade da Serra solar farm,L100000824157,utility-scale solar,operating,46
+G100000827240,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Horta das Figueiras solar farm,L100000824158,utility-scale solar,operating,25
+G100000827241,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Infantado solar farm,L100000824159,utility-scale solar,operating,14.3
+G100000827242,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Insua solar farm,L100000824160,utility-scale solar,operating,48.5
+G100000827243,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Laranjeiras solar farm,L100000824161,utility-scale solar,shelved,9
+G100000827244,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Larinho solar farm,L100000824162,utility-scale solar,operating,10.9
+G100000827245,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Leiria (Nomad Electric) solar farm,L100000824163,utility-scale solar,shelved,11.6
+G100000827246,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Lordelo solar farm,L100000824164,utility-scale solar,operating,14.7
+G100000827247,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Lousada solar farm,L100000824165,utility-scale solar,pre_construction,36.9
+G100000827248,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,30
+G100000827249,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,19.4
+G100000827250,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,11.6
+G100000827251,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,9.5
+G100000827252,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,8
+G100000827253,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,6
+G100000827254,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,6
+G100000827255,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,shelved,5
+G100000827256,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,true,abf-boundaries-v0.2.0,Mafra solar farm,L100000824167,utility-scale solar,shelved,4
+G100000827257,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Malhada Velha solar farm,L100000824168,utility-scale solar,operating,5
+G100000827258,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,true,abf-boundaries-v0.2.0,Marco de Canaveses solar farm,L100000824169,utility-scale solar,shelved,19.4
+G100000827259,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mina de Orgueirel Hybrid solar farm,L100000824170,utility-scale solar,operating,9.2
+G100000827261,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,true,abf-boundaries-v0.2.0,Mogadouro Solar,L100000806227,utility-scale solar,shelved,28
+G100000827262,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Monte de Agosto solar farm,L100000824172,utility-scale solar,operating,12
+G100000827264,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Monte Falcato (Solaria) solar farm,L100000824174,utility-scale solar,operating,14.1
+G100000827265,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Montechoro solar farm,L100000824175,utility-scale solar,operating,11.6
+G100000827266,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Montechoro solar farm,L100000824175,utility-scale solar,operating,25
+G100000827269,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Montemor solar farm,L100000824177,utility-scale solar,shelved,9
+G100000827271,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Morgavel solar farm,L100000824179,utility-scale solar,operating,46
+G100000827273,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Moura Amareleja solar farm,L100000824181,utility-scale solar,operating,14
+G100000827274,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Muge solar farm,L100000824182,utility-scale solar,shelved,2.9
+G100000827275,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,true,abf-boundaries-v0.2.0,Nave solar farm,L100000824183,utility-scale solar,shelved,42
+G100000827276,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Nisa solar farm,L100000824184,utility-scale solar,operating,15
+G100000827277,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Nisa solar farm,L100000824184,utility-scale solar,operating,15
+G100000827278,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Nisa solar farm,L100000824184,utility-scale solar,operating,20
+G100000827279,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Odemira solar farm,L100000824185,utility-scale solar,shelved,5.8
+G100000827280,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Ortigosa solar farm,L100000824186,utility-scale solar,shelved,4.9
+G100000827281,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Ortigosa solar farm,L100000824186,utility-scale solar,shelved,4.9
+G100000827282,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Ourique solar farm,L100000824187,utility-scale solar,operating,62
+G100000827283,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Ovar solar farm,L100000824188,utility-scale solar,shelved,5
+G100000827284,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Ovar solar farm,L100000824188,utility-scale solar,shelved,5
+G100000827285,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Ovar solar farm,L100000824188,utility-scale solar,shelved,5
+G100000827286,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Paderne solar farm,L100000824189,utility-scale solar,operating,17.4
+G100000827287,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Palmela solar farm,L100000824190,utility-scale solar,operating,40
+G100000827288,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,true,abf-boundaries-v0.2.0,Paredes solar farm,L100000824191,utility-scale solar,shelved,28.3
+G100000827289,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Pataias solar farm,L100000824192,utility-scale solar,shelved,3
+G100000827290,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,true,abf-boundaries-v0.2.0,Pedras do Mocho solar farm,L100000824193,utility-scale solar,operating,2.7
+G100000827291,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Pego Hybrid solar farm,L100000824194,utility-scale solar,pre_construction,365
+G100000827294,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pessegueiro (Pinhal Novo) solar farm,L100000824197,utility-scale solar,operating,63.5
+G100000827295,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,true,abf-boundaries-v0.2.0,Pisco Hybrid solar farm,L100000824198,utility-scale solar,shelved,35
+G100000827296,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Poceirao Solar Plant,L100000806019,utility-scale solar,pre_construction,19.5
+G100000827297,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Pombal solar farm,L100000824199,utility-scale solar,operating,23
+G100000827299,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Quinta da Cruz solar farm,L100000824201,utility-scale solar,operating,17.4
+G100000827300,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Quinta Da Sexia solar farm,L100000806020,utility-scale solar,shelved,8.1
+G100000827302,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Quinta do Banco solar farm,L100000824203,utility-scale solar,shelved,45
+G100000827303,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Quinta do Vale solar farm,L100000824204,utility-scale solar,pre_construction,3.8
+G100000827304,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Quinta dos Ciganos solar farm,L100000824205,utility-scale solar,shelved,5
+G100000827305,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Rio Maior solar farm,L100000824206,utility-scale solar,operating,204
+G100000827306,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Rio Seco solar farm,L100000824207,utility-scale solar,shelved,23
+G100000827308,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Rolinas solar farm,L100000824209,utility-scale solar,shelved,2
+G100000827309,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Condeixa solar farm,L100000824210,utility-scale solar,operating,2.4
+G100000827310,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Sadino solar farm,L100000824211,utility-scale solar,pre_construction,22
+G100000827311,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Sado (Brisa) solar farm,L100000824212,utility-scale solar,operating,12.5
+G100000827313,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Santa Bárbara de Nexe solar farm,L100000824214,utility-scale solar,construction,13
+G100000827314,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Santas solar farm,L100000824215,utility-scale solar,operating,180
+G100000827315,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Santa Vitória 2 solar farm,L100000824216,utility-scale solar,shelved,30
+G100000827316,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Santarém (Nomad Electric) solar farm,L100000824217,utility-scale solar,shelved,11.6
+G100000827317,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Santo Onofre solar farm,L100000824218,utility-scale solar,shelved,5
+G100000827318,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Santo Varão 2 solar farm,L100000824219,utility-scale solar,operating,5.4
+G100000827319,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Santo Varão 1 solar farm,L100000824220,utility-scale solar,operating,2
+G100000827320,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,São Bento do Cortico solar farm,L100000824221,utility-scale solar,shelved,39
+G100000827321,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,São Jorge solar farm,L100000824222,utility-scale solar,shelved,5
+G100000827322,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,São Jorge solar farm,L100000824222,utility-scale solar,shelved,5
+G100000827324,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,São Teotónio solar farm,L100000824224,utility-scale solar,operating,6.8
+G100000827325,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Selmes solar farm,L100000824225,utility-scale solar,shelved,3
+G100000827326,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,true,abf-boundaries-v0.2.0,Senhora Póvoa solar farm,L100000824226,utility-scale solar,shelved,42
+G100000827327,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Serra d'el Rei Hybrid solar farm,L100000824227,utility-scale solar,pre_construction,17.9
+G100000827328,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Serra do Anel solar farm,L100000824228,utility-scale solar,shelved,18.7
+G100000827329,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,true,abf-boundaries-v0.2.0,Sousel solar farm,L100000824229,utility-scale solar,pre_construction,36
+G100000827330,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Tábua solar farm,L100000824230,utility-scale solar,operating,48
+G100000827333,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Tendeiros solar farm,L100000824233,utility-scale solar,operating,24
+G100000827334,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Terena solar farm,L100000824234,utility-scale solar,operating,8.4
+G100000827335,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Torre Bela solar farm,L100000824235,utility-scale solar,operating,68
+G100000827336,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Triana (Eurowind) solar farm,L100000824236,utility-scale solar,operating,22
+G100000827338,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Trindade solar farm (Portugal),L100000824238,utility-scale solar,shelved,13
+G100000827339,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Turquel solar farm,L100000824239,utility-scale solar,shelved,27.6
+G100000827341,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Vale da Missa solar farm,L100000824241,utility-scale solar,shelved,10.3
+G100000827342,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,true,abf-boundaries-v0.2.0,Vale das Éguas solar farm,L100000824242,utility-scale solar,shelved,48.9
+G100000827343,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Vale Pequeno solar farm,L100000824243,utility-scale solar,pre_construction,187.5
+G100000827344,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Valpaços solar farm,L100000824244,utility-scale solar,operating,40
+G100000827345,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Vendas Novas solar farm,L100000824245,utility-scale solar,construction,9
+G100000827346,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,true,abf-boundaries-v0.2.0,Vialonga solar farm,L100000824246,utility-scale solar,shelved,36.2
+G100000827347,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Viana do Alentejo solar farm,L100000824247,utility-scale solar,shelved,21.5
+G100000827348,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,true,abf-boundaries-v0.2.0,Xadrez 3 solar farm,L100000824248,utility-scale solar,shelved,5
+G100000827349,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,true,abf-boundaries-v0.2.0,Xadrez Nogueira solar farm,L100000824249,utility-scale solar,shelved,1.6
+G100000910373,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,10
+G100000910374,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,10
+G100000910375,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Amaral wind farm,L100000907708,wind,operating,10
+G100000910401,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beira Interior wind farm,L100000907734,wind,operating,10
+G100000910414,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Bornes wind farm,L100000907746,wind,operating,10
+G100000910433,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Caldas wind farm,L100000907764,wind,operating,10
+G100000910437,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Candeeiros wind farm,L100000907768,wind,operating,10
+G100000910449,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Chão Falcão wind farm,L100000907779,wind,operating,10
+G100000910464,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Costa Vicentina wind farm,L100000907793,wind,operating,10
+G100000910503,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Espinhaço Do Cão wind farm,L100000907831,wind,operating,10
+G100000910518,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Fonte Da Mesa II wind farm,L100000907846,wind,operating,10
+G100000910538,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Gevancas II wind farm,L100000907865,wind,operating,10
+G100000910693,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Lousã 2 wind farm,L100000908008,wind,operating,10
+G100000910697,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Madrinha wind farm,L100000908012,wind,operating,10
+G100000910782,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pena Suar wind farm,L100000908094,wind,operating,10
+G100000910793,energy_plants_gem_units,PRT,point,,PRT-1-30,,point,,,,true,abf-boundaries-v0.2.0,Porto Santo floating offshore wind farm,L100000908105,wind,shelved,10
+G100000910834,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,São Paio wind farm,L100000908144,wind,operating,10
+G100000910835,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,São Pedro wind farm,L100000908145,wind,operating,10
+G100000910857,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Capucha wind farm,L100000908166,wind,operating,10
+G100000910859,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Serra De Todo O Mundo wind farm,L100000908168,wind,operating,10
+G100000910860,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Barroso wind farm,L100000908169,wind,operating,10
+G100000910891,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Terra Fria wind farm,L100000908200,wind,operating,10
+G100000910910,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,10
+G100000910911,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,10
+G100000910913,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vila Lobos wind farm,L100000908221,wind,retired,10
+G100000910914,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vila Lobos wind farm,L100000908221,wind,operating,10
+G100000910967,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Da Rainha wind farm,L100000908273,wind,operating,10
+G100000910968,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Cadafaz wind farm,L100000908274,wind,operating,10
+G100000910970,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Fonte Da Mesa wind farm,L100000908276,wind,operating,10
+G100000910976,energy_plants_gem_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Pedras wind farm,L100000908282,wind,operating,10
+G100000911025,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Lameira wind farm,L100000908329,wind,operating,10
+G100000911029,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Seixinhos wind farm,L100000908333,wind,operating,10
+G100000911048,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Vila Do Bispo wind farm,L100000908351,wind,operating,10
+G100000911054,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alvão wind farm,L100000908357,wind,operating,11
+G100000911286,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Arcela wind farm,L100000908581,wind,operating,12
+G100000911365,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,São Macario wind farm,L100000908653,wind,operating,12
+G100000911378,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Vale De Estrela wind farm,L100000908666,wind,operating,12
+G100000911386,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Alto wind farm,L100000908674,wind,operating,12
+G100000911430,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Do Marco wind farm,L100000908717,wind,operating,12
+G100000911431,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alvão wind farm,L100000908357,wind,operating,12
+G100000911526,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Carreço-Outeiro II wind farm,L100000908804,wind,operating,12
+G100000911610,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Fanhões wind farm,L100000908883,wind,operating,12
+G100000911762,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Lagoa Funda wind farm,L100000909031,wind,operating,12
+G100000911793,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Lomba De Seixa wind farm,L100000909061,wind,operating,12
+G100000911807,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Malhadizes wind farm,L100000909073,wind,operating,12
+G100000911819,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Marvila wind farm,L100000909085,wind,operating,12
+G100000911900,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,12
+G100000911998,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Senhora Da Vitória wind farm,L100000909254,wind,operating,12
+G100000912001,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Mú wind farm,L100000909257,wind,operating,12
+G100000912029,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Tendais wind farm,L100000909285,wind,operating,12
+G100000912065,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vergão wind farm,L100000909320,wind,operating,12
+G100000912153,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vale Grande wind farm,L100000909403,wind,operating,12
+G100000912233,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Salgueiros-Guilhado wind farm,L100000909478,wind,operating,13
+G100000912239,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Vila Franca De Xira wind farm,L100000909484,wind,operating,13
+G100000912321,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Freita II wind farm,L100000909563,wind,operating,18
+G100000912339,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Lomba De Seixa wind farm,L100000909061,wind,operating,13
+G100000912369,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Penedo Ruivo wind farm,L100000909600,wind,operating,13
+G100000912426,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vergão wind farm,L100000909320,wind,retired,13
+G100000912469,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Ortiga wind farm,L100000909690,wind,operating,13
+G100000912470,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Alagoa De Cima wind farm,L100000909691,wind,operating,14
+G100000912471,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Alto Do Talefe wind farm,L100000909692,wind,operating,14
+G100000912475,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Fonte Da Quelha wind farm,L100000909695,wind,operating,14
+G100000912564,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Vale De Estrela wind farm,L100000908666,wind,operating,14
+G100000912582,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Azinheira wind farm,L100000909797,wind,operating,14
+G100000912790,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,14
+G100000912800,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Ribabelide wind farm,L100000909992,wind,operating,14
+G100000912823,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Mú wind farm,L100000909257,wind,operating,14
+G100000912833,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Sobral wind farm,L100000910021,wind,operating,14
+G100000912850,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Teixeró wind farm,L100000910036,wind,operating,14
+G100000912962,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,15
+G100000912963,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,15
+G100000912969,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Amêndoa wind farm,L100000910144,wind,operating,15
+G100000913147,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Meroicinha wind farm,L100000910305,wind,operating,15
+G100000913350,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beiras wind farm,L100000910487,wind,retired,16
+G100000913364,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Bravo wind farm,L100000910499,wind,operating,16
+G100000913506,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Pisco wind farm,L100000910623,wind,operating,16
+G100000913542,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Barroso wind farm,L100000908169,wind,operating,16
+G100000913592,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Leomil wind farm,L100000910701,wind,operating,16
+G100000913601,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Serra De Alvoaça wind farm,L100000910710,wind,operating,16
+G100000913610,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Cabril wind farm,L100000910719,wind,operating,20.2
+G100000913901,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Folgorosa wind farm,L100000910980,wind,operating,18
+G100000913902,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,18
+G100000913903,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Alvaiázere wind farm,L100000910981,wind,operating,18
+G100000913911,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beiras wind farm,L100000910487,wind,operating,18
+G100000913926,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Bustelo wind farm,L100000911003,wind,operating,18
+G100000913934,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Catefica wind farm,L100000911010,wind,operating,18
+G100000914007,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Guerreiros wind farm,L100000911071,wind,operating,18
+G100000914093,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lourinhã wind farm,L100000911149,wind,operating,18
+G100000914094,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lourinhã wind farm,L100000911149,wind,operating,18
+G100000914188,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Barroso wind farm,L100000908169,wind,operating,18
+G100000914260,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Trandeiras wind farm,L100000911298,wind,operating,18
+G100000914269,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beiras wind farm,L100000910487,wind,operating,18
+G100000914280,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Freita I wind farm,L100000911314,wind,operating,18
+G100000914319,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,19
+G100000914448,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Açor wind farm,L100000911468,wind,operating,20
+G100000914468,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beira Interior wind farm,L100000907734,wind,operating,20
+G100000914469,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beira Interior wind farm,L100000907734,wind,operating,20
+G100000914470,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beiras wind farm,L100000910487,wind,retired,20
+G100000914515,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Degracias wind farm,L100000911527,wind,operating,20
+G100000914629,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Marvila wind farm,L100000909085,wind,operating,20
+G100000914640,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mosqueiros wind farm,L100000911638,wind,operating,20
+G100000914645,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Negrelo E Guilhado wind farm,L100000911643,wind,operating,20
+G100000914667,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,20
+G100000914668,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,20
+G100000914688,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,20
+G100000914703,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Cabreira wind farm,L100000911691,wind,operating,20
+G100000914704,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Serra De Alvoaça wind farm,L100000910710,wind,operating,20
+G100000914706,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Sicó wind farm,L100000911693,wind,operating,20
+G100000914780,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Maúnça wind farm,L100000911760,wind,operating,20
+G100000914784,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Carreço-Outeiro wind farm,L100000911764,wind,operating,21
+G100000914786,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Chão Falcão wind farm,L100000907779,wind,operating,21
+G100000914995,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Toutiço wind farm,L100000911951,wind,operating,21
+G100000915020,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Lomba Do Vale wind farm,L100000911974,wind,operating,21
+G100000915047,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Pinheiro wind farm,L100000911998,wind,operating,22
+G100000915060,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,São João wind farm,L100000912009,wind,operating,22
+G100000915061,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Serra D'El Rei wind farm,L100000912010,wind,operating,22
+G100000915067,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,22
+G100000915075,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Bairro wind farm,L100000912022,wind,operating,22
+G100000915211,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,22
+G100000915257,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Picos-Vale Do Chão wind farm,L100000912178,wind,operating,23
+G100000915273,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beiras wind farm,L100000910487,wind,operating,23
+G100000915359,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,São Macario wind farm,L100000908653,wind,operating,23
+G100000915446,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Bordeira wind farm,L100000912347,wind,operating,24
+G100000915472,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,true,abf-boundaries-v0.2.0,Douro Sul wind farm,L100000912372,wind,operating,24
+G100000915654,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Testos wind farm,L100000912531,wind,operating,24
+G100000915668,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vila Nova II wind farm,L100000912543,wind,operating,24
+G100000915851,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,25
+G100000915852,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,25
+G100000915864,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Windfloat Atlantic Offshore wind farm,L100000912719,wind,operating,25
+G100000915868,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Chão Falcão wind farm,L100000907779,wind,operating,25
+G100000915900,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,26
+G100000915949,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Joguinho wind farm,L100000912791,wind,operating,26
+G100000915983,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Pinhal Interior wind farm,L100000912819,wind,operating,26
+G100000915997,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Sardinha wind farm,L100000912829,wind,operating,26
+G100000916013,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Terras Altas De Fafe wind farm,L100000912844,wind,operating,26
+G100000916021,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Vale De Galegos wind farm,L100000912851,wind,retired,26
+G100000916022,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,26
+G100000916023,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,26
+G100000916025,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vila Nova wind farm,L100000912853,wind,operating,26
+G100000916183,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Leiranco wind farm,L100000912986,wind,operating,28
+G100000916190,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Vale De Galegos wind farm,L100000912851,wind,operating,28
+G100000916201,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beiras wind farm,L100000910487,wind,retired,28
+G100000916256,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Malhanito wind farm,L100000913048,wind,retired,28
+G100000916286,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Trancoso wind farm,L100000913074,wind,operating,28
+G100000916291,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,28
+G100000916310,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Guardão wind farm,L100000913095,wind,operating,29
+G100000916325,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vigia wind farm,L100000913109,wind,operating,29
+G100000916446,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,30
+G100000916462,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Da Rainha wind farm,L100000908273,wind,operating,30
+G100000916569,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Malhanito wind farm,L100000913048,wind,retired,30
+G100000916600,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Outeiro wind farm,L100000913341,wind,operating,30
+G100000916666,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,30
+G100000916765,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Do Monção wind farm,L100000913482,wind,operating,32
+G100000916839,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,32
+G100000916843,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Ralo wind farm,L100000913545,wind,operating,32
+G100000916852,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,32
+G100000916859,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beiras wind farm,L100000910487,wind,operating,32
+G100000916865,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Malhanito wind farm,L100000913048,wind,operating,32
+G100000916879,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Tocha wind farm,L100000913574,wind,operating,32
+G100000916901,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Candeeiros wind farm,L100000907768,wind,operating,33
+G100000916946,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Pampilhosa wind farm,L100000913627,wind,operating,33
+G100000917006,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,34
+G100000917035,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Lagoa De D João E Feirão wind farm,L100000913704,wind,operating,34
+G100000917054,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Pisco wind farm,L100000910623,wind,operating,34
+G100000917057,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Prados wind farm,L100000913725,wind,retired,34
+G100000917058,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,34
+G100000917082,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Chão Falcão wind farm,L100000907779,wind,operating,34
+G100000917089,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Malhanito wind farm,L100000913048,wind,operating,34
+G100000917098,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Vila Cova wind farm,L100000913760,wind,operating,34
+G100000917142,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Lousã wind farm,L100000913798,wind,operating,35
+G100000917190,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Alto Arganil wind farm,L100000913838,wind,operating,36
+G100000917195,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Arga wind farm,L100000913843,wind,operating,36
+G100000917311,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Terra Fria wind farm,L100000908200,wind,operating,36
+G100000917421,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,38
+G100000917468,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Mourisca wind farm,L100000914084,wind,operating,38
+G100000917471,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Nave wind farm,L100000914087,wind,operating,38
+G100000917504,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Douro Sul wind farm,L100000912372,wind,operating,39
+G100000917558,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Prados wind farm,L100000913725,wind,operating,39
+G100000917582,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,40
+G100000917602,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Centro - Candal/Coelheira wind farm,L100000914198,wind,operating,40
+G100000917748,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Coentral-Safra wind farm,L100000914319,wind,operating,42
+G100000917843,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Alvão wind farm,L100000914398,wind,operating,42
+G100000917906,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Baixo Alentejo-Mértola wind farm,L100000914452,wind,operating,44
+G100000917908,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Coutada wind farm,L100000914453,wind,retired,44
+G100000917909,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,44
+G100000918110,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Penacova wind farm,L100000914630,wind,operating,47
+G100000918152,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Calafate wind farm,L100000914668,wind,cancelled,48
+G100000918381,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,50
+G100000918393,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Barão De São João wind farm,L100000914857,wind,operating,50
+G100000918539,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Lousã 2 wind farm,L100000908008,wind,operating,50
+G100000918634,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Terra Fria wind farm,L100000908200,wind,operating,50
+G100000918686,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Coutada wind farm,L100000914453,wind,operating,51
+G100000918771,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Pinhal Interior wind farm,L100000912819,wind,operating,54
+G100000918830,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,56
+G100000918891,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Bornes wind farm,L100000907746,wind,operating,60
+G100000918975,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Pinhal Interior wind farm,L100000912819,wind,operating,64
+G100000919174,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Candeeiros wind farm,L100000907768,wind,operating,78
+G100000919183,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Pampilhosa wind farm,L100000913627,wind,operating,78
+G100000919186,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Terras Altas De Fafe wind farm,L100000912844,wind,operating,78
+G100000919224,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Toutiço wind farm,L100000911951,wind,operating,81
+G100000919275,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Douro Sul wind farm,L100000912372,wind,operating,86
+G100000919298,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Caramulo wind farm,L100000915606,wind,operating,90
+G100000919313,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,true,abf-boundaries-v0.2.0,Morgavel wind farm,L100000915619,wind,pre_construction,90
+G100000919338,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Sincelo wind farm,L100000915641,wind,operating,46
+G100000919384,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Coutada wind farm,L100000914453,wind,retired,100
+G100000919490,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Gardunha wind farm,L100000915767,wind,operating,114
+G100000919495,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Coutada wind farm,L100000914453,wind,operating,115
+G100000919551,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Windfloat Atlantic Offshore wind farm,L100000912719,wind,cancelled,125
+G100000919764,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,true,abf-boundaries-v0.2.0,Tâmega wind farm,L100000916002,wind,construction,150
+G100000919800,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,true,abf-boundaries-v0.2.0,Tâmega wind farm,L100000916002,wind,construction,150
+G100000925315,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Abogalheira wind farm,L100000920607,wind,operating,3.3
+G100000925316,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Achada wind farm,L100000920608,wind,operating,6.9
+G100000925317,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Açor wind farm,L100000911468,wind,operating,2
+G100000925318,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Açor wind farm,L100000911468,wind,operating,2
+G100000925319,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Almargem wind farm,L100000920609,wind,operating,6
+G100000925320,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Alrota wind farm,L100000920610,wind,operating,5
+G100000925321,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Coutada wind farm,L100000914453,wind,operating,21.6
+G100000925322,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Vaca wind farm,L100000920611,wind,operating,1.2
+G100000925323,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Alto Da Vaca wind farm,L100000920611,wind,operating,1.2
+G100000925324,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Do Côto wind farm,L100000920612,wind,operating,4.5
+G100000925325,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Do Marco wind farm,L100000908717,wind,operating,2.4
+G100000925326,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Do Seixal wind farm (Portugal),L100000920613,wind,operating,1.6
+G100000925327,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Alto Dos Forninhos wind farm,L100000920614,wind,operating,8.2
+G100000925328,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,1.5
+G100000925329,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,4
+G100000925330,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,2.4
+G100000925331,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,1.5
+G100000925332,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,6
+G100000925333,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,5.7
+G100000925334,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,4.5
+G100000925335,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,2
+G100000925336,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,3
+G100000925337,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Alto Douro wind farm,L100000907707,wind,operating,6.6
+G100000925338,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Alvaiázere wind farm,L100000910981,wind,operating,3.6
+G100000925339,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,6
+G100000925340,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,9.2
+G100000925341,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,4.7
+G100000925342,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,4.7
+G100000925343,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Arada-Montemuro wind farm,L100000912015,wind,operating,4.7
+G100000925344,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Archeira 2 wind farm,L100000920615,wind,operating,4
+G100000925345,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Arga wind farm,L100000913843,wind,operating,4.7
+G100000925346,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Arga wind farm,L100000913843,wind,operating,2.2
+G100000925347,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Arruda wind farm,L100000920616,wind,operating,6
+G100000925348,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Azinheira wind farm,L100000909797,wind,operating,2.8
+G100000925349,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Baião wind farm,L100000920617,wind,operating,6.3
+G100000925350,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Barão De São João wind farm,L100000914857,wind,operating,11
+G100000925351,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beira Interior wind farm,L100000907734,wind,operating,3
+G100000925352,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beira Interior wind farm,L100000907734,wind,operating,3
+G100000925353,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Beira Interior wind farm,L100000907734,wind,operating,1.5
+G100000925354,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Bigorne wind farm,L100000920618,wind,operating,7
+G100000925355,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Bolores wind farm,L100000920619,wind,operating,5.2
+G100000925356,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Borninhos wind farm,L100000920620,wind,operating,2
+G100000925357,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Botafogo Offshore Floating wind farm,L100000920621,wind,announced,990
+G100000925358,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Bulgueira wind farm,L100000920622,wind,operating,2.4
+G100000925359,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Da Rainha wind farm,L100000908273,wind,operating,4
+G100000925360,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Da Rainha wind farm,L100000908273,wind,operating,6
+G100000925361,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Da Rainha wind farm,L100000908273,wind,operating,6
+G100000925362,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Cabeço Da Rainha wind farm,L100000908273,wind,operating,4
+G100000925363,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Cabeço Gordo wind farm,L100000920623,wind,operating,6
+G100000925364,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Cabril wind farm,L100000910719,wind,operating,4
+G100000925365,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Cadafaz wind farm,L100000908274,wind,operating,2
+G100000925366,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Cadraço wind farm,L100000920624,wind,operating,1.2
+G100000925367,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Caramulo wind farm,L100000915606,wind,operating,19.2
+G100000925368,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Caramulo wind farm,L100000915606,wind,operating,4.8
+G100000925369,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Carreço-Outeiro II wind farm,L100000908804,wind,operating,1.8
+G100000925370,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Carreço-Outeiro wind farm,L100000911764,wind,shelved,3.6
+G100000925371,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Casais wind farm,L100000920625,wind,operating,2
+G100000925372,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Castanheira wind farm (Portugal),L100000920626,wind,operating,4
+G100000925373,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Cela wind farm,L100000920627,wind,operating,2
+G100000925374,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Centro - Candal/Coelheira wind farm,L100000914198,wind,shelved,8
+G100000925375,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Chã Do Guilhado wind farm,L100000920628,wind,operating,2
+G100000925376,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Chaminé wind farm,L100000920629,wind,operating,6.9
+G100000925377,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Chiqueiro wind farm,L100000920630,wind,operating,4
+G100000925378,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Cinfães wind farm,L100000920631,wind,operating,8
+G100000925379,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Coentral-Safra wind farm,L100000914319,wind,operating,8.4
+G100000925380,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Corte Dos Álamos wind farm,L100000920632,wind,operating,6
+G100000925381,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Diarão Da Rua wind farm,L100000920633,wind,operating,2.6
+G100000925382,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Douro Sul wind farm,L100000912372,wind,operating,31.5
+G100000925383,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Enerfer 1 wind farm,L100000920634,wind,operating,8
+G100000925384,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Espiga wind farm,L100000920635,wind,operating,6
+G100000925385,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Fanhões wind farm,L100000908883,wind,operating,6
+G100000925386,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Felgar wind farm,L100000920636,wind,operating,8
+G100000925387,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Fonte Da Mesa II wind farm,L100000907846,wind,shelved,1.8
+G100000925388,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Fonte Da Mesa wind farm,L100000908276,wind,operating,2
+G100000925389,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Gardunha wind farm,L100000915767,wind,operating,21
+G100000925390,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Gevancas II wind farm,L100000907865,wind,operating,1.5
+G100000925391,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Guarda wind farm,L100000920637,wind,operating,8
+G100000925392,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Guerreiros wind farm,L100000911071,wind,operating,3.8
+G100000925393,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Igreja Nova wind farm,L100000920638,wind,operating,3.3
+G100000925394,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Igreja Nova wind farm,L100000920638,wind,operating,3.9
+G100000925395,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Lagoa De D João E Feirão wind farm,L100000913704,wind,operating,5.5
+G100000925396,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Lomba Do Vale wind farm,L100000911974,wind,operating,4.2
+G100000925397,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lourinhã wind farm,L100000911149,wind,operating,2.7
+G100000925398,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Lourinhã wind farm,L100000911149,wind,operating,2.7
+G100000925399,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Mafômedes wind farm,L100000920639,wind,operating,4.2
+G100000925400,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Mahladas Góis wind farm,L100000920640,wind,operating,9.9
+G100000925402,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Maravilha 1 wind farm,L100000920642,wind,operating,6
+G100000925403,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Maravilha 2 wind farm,L100000920643,wind,operating,4
+G100000925404,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Meadas wind farm,L100000920644,wind,operating,9
+G100000925405,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Meroicinha wind farm,L100000910305,wind,operating,9
+G100000925406,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Milagres wind farm (Portugal),L100000920645,wind,operating,6
+G100000925407,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,true,abf-boundaries-v0.2.0,Mirandela wind farm,L100000920646,wind,shelved,25
+G100000925408,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Moinho De Manique wind farm,L100000920647,wind,operating,2.6
+G100000925409,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Moinho Dos Chãos wind farm,L100000920648,wind,operating,1.8
+G100000925410,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Moinho Velho wind farm,L100000920649,wind,operating,1.8
+G100000925411,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Montijo wind farm,L100000920650,wind,operating,2
+G100000925412,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mosqueiros wind farm,L100000911638,wind,operating,8
+G100000925413,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mosqueiros wind farm,L100000911638,wind,operating,4.6
+G100000925414,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mosteiro wind farm,L100000920651,wind,operating,9.1
+G100000925415,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Mosteiro wind farm,L100000920651,wind,operating,1.8
+G100000925416,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Mougeiras wind farm,L100000920652,wind,operating,8
+G100000925417,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Mourisca wind farm,L100000914084,wind,operating,9
+G100000925418,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Nave wind farm,L100000914087,wind,operating,9
+G100000925419,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Negrelo E Guilhado wind farm,L100000911643,wind,operating,2
+G100000925420,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Nortada Offshore Floating wind farm,L100000920653,wind,pre_construction,2000
+G100000925421,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Padrela wind farm,L100000920654,wind,operating,7.5
+G100000925422,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Pampilhosa wind farm,L100000913627,wind,shelved,20.4
+G100000925423,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Passarinho wind farm,L100000920655,wind,operating,8
+G100000925424,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Passarinho wind farm,L100000920655,wind,operating,4
+G100000925425,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,true,abf-boundaries-v0.2.0,Pego Hybrid wind farm,L100000920656,wind,pre_construction,264
+G100000925426,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pena Suar wind farm,L100000908094,wind,operating,6
+G100000925427,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Pena Suar wind farm,L100000908094,wind,operating,2.1
+G100000925428,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Penamacor wind farm,L100000909161,wind,operating,8
+G100000925429,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Perdigão wind farm,L100000920657,wind,operating,2
+G100000925430,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Pico Alto wind farm,L100000920658,wind,operating,6
+G100000925431,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Picos Verdes wind farm,L100000920659,wind,operating,2.1
+G100000925432,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Picotinhos-Valérios wind farm,L100000920660,wind,operating,2
+G100000925434,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Pó wind farm,L100000920662,wind,operating,9.1
+G100000925435,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Portal Da Freita wind farm,L100000920663,wind,operating,1.1
+G100000925436,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Portela Do Pereiro wind farm,L100000920664,wind,operating,7.2
+G100000925437,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pracana wind farm,L100000920665,wind,operating,2
+G100000925438,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Praia Norte wind farm,L100000920666,wind,operating,2
+G100000925439,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Rabaçal wind farm,L100000920667,wind,operating,2
+G100000925440,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,5.1
+G100000925441,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,8
+G100000925442,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,4.2
+G100000925443,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,2
+G100000925444,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,5.1
+G100000925445,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,2
+G100000925446,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Raia wind farm,L100000909983,wind,operating,2.4
+G100000925447,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Raposeira wind farm,L100000920668,wind,operating,5.5
+G100000925448,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Riablades wind farm,L100000920669,wind,operating,3.7
+G100000925449,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Ribamar wind farm,L100000920670,wind,operating,6
+G100000925450,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Santa Helena wind farm,L100000920671,wind,operating,4
+G100000925451,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,São Cristóvão wind farm,L100000920672,wind,operating,2
+G100000925452,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,São Cristóvão wind farm,L100000920672,wind,operating,2
+G100000925453,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,São Mamede wind farm,L100000920673,wind,operating,6.9
+G100000925454,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,São Paio wind farm,L100000908144,wind,operating,2.2
+G100000925455,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,São Pedro wind farm,L100000908145,wind,operating,2
+G100000925456,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Senhora Do Castelo wind farm,L100000920674,wind,operating,1.2
+G100000925457,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Senhora Do Castelo wind farm,L100000920674,wind,operating,4
+G100000925458,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Senhora Do Socorro wind farm,L100000920675,wind,operating,6
+G100000925459,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Senhora Do Socorro wind farm,L100000920675,wind,operating,2
+G100000925460,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Seramena wind farm,L100000920676,wind,operating,2
+G100000925461,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Serra Alta wind farm,L100000920677,wind,operating,2
+G100000925462,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Serra D'El Rei wind farm,L100000912010,wind,operating,4
+G100000925463,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Amêndoa wind farm,L100000910144,wind,operating,4.5
+G100000925464,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Boa Viagem wind farm,L100000920678,wind,operating,6
+G100000925465,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Boneca - Torrão wind farm,L100000920679,wind,operating,2
+G100000925466,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Boneca 2 wind farm,L100000920680,wind,operating,8
+G100000925467,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Boneca Lage wind farm,L100000920681,wind,operating,4.2
+G100000925468,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Serra Da Capucha wind farm,L100000908166,wind,operating,2
+G100000925469,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Serra de Sicó wind farm,L100000920682,wind,shelved,4
+G100000925470,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Serra De Todo O Mundo wind farm,L100000908168,wind,operating,2
+G100000925471,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Barroso wind farm,L100000908169,wind,operating,2
+G100000925472,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Barroso wind farm,L100000908169,wind,operating,6
+G100000925473,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Leiranco wind farm,L100000912986,wind,operating,4.6
+G100000925474,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Mú wind farm,L100000909257,wind,operating,2.4
+G100000925475,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Mú wind farm,L100000909257,wind,operating,2
+G100000925476,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Serra Do Ralo wind farm,L100000913545,wind,operating,4
+G100000925477,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Sirigo wind farm,L100000920683,wind,operating,4
+G100000925478,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Sobrado wind farm,L100000920684,wind,operating,8
+G100000925479,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Terra Fria wind farm,L100000908200,wind,operating,8
+G100000925480,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Testos wind farm,L100000912531,wind,operating,4
+G100000925481,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Tocha wind farm,L100000913574,wind,operating,9
+G100000925482,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,true,abf-boundaries-v0.2.0,Caravela Offshore Floating wind farm,L100000920685,wind,pre_construction,600
+G100000925483,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,false,abf-boundaries-v0.2.0,Videira wind farm,L100000920686,wind,operating,6
+G100000925484,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vila Nova II wind farm,L100000912543,wind,operating,4.6
+G100000925485,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Vila Nova wind farm,L100000912853,wind,operating,4
+G100000925486,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Vilarchão wind farm,L100000920687,wind,operating,2
+G100000925487,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Viso wind farm,L100000920688,wind,operating,1.6
+G100001000183,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Terceira power station,L100001000071,oil/gas,operating,62
+G100001000184,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Caldeirão power station,L100001000072,oil/gas,operating,68
+G100001000185,energy_plants_gem_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Caniçal power station,L100001000073,oil/gas,operating,72
+G100001000186,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,true,abf-boundaries-v0.2.0,Sines Refinery power station,L100001000074,oil/gas,operating,91
+G100001000187,energy_plants_gem_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Vitória power station,L100001000075,oil/gas,operating,118
+G100001000188,energy_plants_gem_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Vitória power station,L100001000075,oil/gas,operating,54.5
+G100001003722,energy_plants_gem_units,PRT,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Creoula Offshore Floating wind farm,L100001003247,wind,pre_construction,1440
+G100001003769,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Sincelo wind farm,L100000915641,wind,operating,38
+G100001003821,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Terras Altas De Fafe wind farm,L100000912844,wind,operating,20
+G100001003823,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Pinhal Interior wind farm,L100000912819,wind,operating,12.6
+G100001003825,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,4.6
+G100001003827,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Toutiço wind farm,L100000911951,wind,operating,22
+G100001003828,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,true,abf-boundaries-v0.2.0,Gardunha II wind farm,L100001003339,wind,construction,25
+G100001003839,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Pereiro solar farm,L100001003350,utility-scale solar,operating,18.7
+G100001004241,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Alcochete (Voltalia) solar farm,L100001003721,utility-scale solar,operating,23.8
+G100001004242,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Antuzede solar farm,L100001003723,utility-scale solar,operating,9
+G100001004243,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Oliveira de Frades solar farm,L100001003724,utility-scale solar,operating,1.2
+G100001004244,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Pinhal Novo solar farm,L100001003725,utility-scale solar,operating,11.8
+G100001004245,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Vale Serrão solar farm,L100001003726,utility-scale solar,operating,2.4
+G100001004273,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Almodôvar solar farm,L100001003738,utility-scale solar,announced,120
+G100001004274,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Évora (APL Europe) solar farm,L100001003739,utility-scale solar,announced,480
+G100001004275,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Monte de Vez solar farm,L100001003740,utility-scale solar,operating,21
+G100001004276,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Soure solar farm,L100001003741,utility-scale solar,operating,23
+G100001010437,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Vale do Gaio solar project,L100001009067,utility-scale solar,operating,19
+G100001010444,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Torre de Coelheiros solar project,L100001009074,utility-scale solar,operating,5
+G100001010445,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Avalades solar project,L100001009075,utility-scale solar,operating,15.8
+G100001010449,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,MARL Energia solar project,L100001009079,utility-scale solar,operating,7
+G100001010452,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Cartaxo solar project,L100001009082,utility-scale solar,operating,9.7
+G100001010453,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Coruche 1 solar project,L100001009083,utility-scale solar,operating,7
+G100001010454,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Coruche 3 solar project,L100001009084,utility-scale solar,operating,9.6
+G100001010455,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Canha solar project,L100001009085,utility-scale solar,operating,6.7
+G100001010459,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Verdizela solar project,L100001009089,utility-scale solar,operating,8.8
+G100001027395,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Alto Rabagão hydroelectric plant,L100001023190,hydropower,operating,68
+G100001027396,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Caniçada hydroelectric plant,L100001023191,hydropower,operating,62
+G100001027397,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,false,abf-boundaries-v0.2.0,Paradela hydroelectric plant,L100001023192,hydropower,operating,54
+G100001027398,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Ribeiradio hydroelectric plant,L100001023193,hydropower,operating,74
+G100001027399,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,false,abf-boundaries-v0.2.0,Vilar-Tabuaço hydroelectric plant,L100001023194,hydropower,operating,58
+G100001052170,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,11.6
+G100001052171,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Ventominho wind farm,L100000908219,wind,operating,17.4
+G100001052172,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,GI wind farm,L100001046233,wind,operating,6.4
+G100001052173,energy_plants_gem_units,PRT,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Barlavento Offshore Floating wind farm,L100001046234,wind,pre_construction,600
+G100001052174,energy_plants_gem_units,PRT,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Âncora Offshore Floating wind farm,L100001046235,wind,pre_construction,765
+G100001052285,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Malhada Velha solar farm,L100000824168,utility-scale solar,operating,1
+G100001052286,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Malhada Velha solar farm,L100000824168,utility-scale solar,operating,9
+G100001052397,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,true,abf-boundaries-v0.2.0,Luis Vales solar farm,L100000824166,utility-scale solar,announced,7
+G100001052407,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,true,abf-boundaries-v0.2.0,Tamega solar farm,L100001046386,utility-scale solar,announced,219
+G100001052408,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,true,abf-boundaries-v0.2.0,Cibele solar farm,L100001046387,utility-scale solar,pre_construction,130
+G100001052409,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Margalha solar farm,L100001046388,utility-scale solar,construction,120
+G100001052410,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Sobreira de Baixo solar farm,L100001046389,utility-scale solar,pre_construction,242
+G100001052412,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,false,abf-boundaries-v0.2.0,Santas solar farm,L100000824215,utility-scale solar,announced,45
+G100001052413,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Escalabis solar farm,L100001046390,utility-scale solar,operating,210
+G100001052414,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,true,abf-boundaries-v0.2.0,Vila Nova de Famalicão solar farm,L100001046391,utility-scale solar,construction,49
+G100001052415,energy_plants_gem_units,PRT,point,,PRT-1-12,,point,,,,true,abf-boundaries-v0.2.0,Falagueira solar farm,L100001046392,utility-scale solar,shelved,100
+G100001052416,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Sertã solar farm,L100001046393,utility-scale solar,operating,4.8
+G100001052417,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,true,abf-boundaries-v0.2.0,Figueira da Foz solar farm,L100001046394,utility-scale solar,pre_construction,17
+G100001052419,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Almina solar farm,L100001046395,utility-scale solar,operating,24.4
+G100001053621,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Viana Mill power station,L100000407834,bioenergy,operating,25
+G100001053623,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Cacia Cogeneration power station,L100001047180,bioenergy,operating,28.3
+G100001053624,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Cacia Cogeneration power station,L100001047180,bioenergy,operating,6.8
+G100001053628,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Celtejo Cogeneration power station,L100001047184,bioenergy,operating,23.7
+G100001053629,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Setubal power station,L100001047186,bioenergy,operating,53.9
+G100001053644,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Figueira da Foz Industrial Complex power station,L100000400586,bioenergy,operating,24
+G100001053651,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Mondego power station,L100000201201,bioenergy,operating,40.9
+G100001053695,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Lipor II power station,L100001047237,bioenergy,operating,26.5
+G100001062155,energy_plants_gem_units,PRT,point,,PRT-1-04,,point,,,,false,abf-boundaries-v0.2.0,Feiticeiro hydroelectric plant,L100001054308,hydropower,operating,38
+G100001062704,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Bouçã hydroelectric plant,L100001054812,hydropower,operating,44
+G100001062705,energy_plants_gem_units,PRT,point,,PRT-1-09,,point,,,,false,abf-boundaries-v0.2.0,Caldeirão hydroelectric plant,L100001054813,hydropower,operating,40
+G100001062706,energy_plants_gem_units,PRT,point,,PRT-1-16,,point,,,,false,abf-boundaries-v0.2.0,Lindoso hydroelectric plant,L100001054814,hydropower,retired,44
+G100001062707,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Pracana hydroelectric plant,L100001054815,hydropower,operating,41
+G100001062708,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Salamonde hydroelectric plant,L100001054816,hydropower,operating,42
+G100001073853,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Ribeira Grande geothermal power plant,L100000700296,geothermal,announced,5
+G100001074371,energy_plants_gem_units,PRT,point,,PRT-1-18,,point,,,,true,abf-boundaries-v0.2.0,Paredes Velhas solar farm,L100001064610,utility-scale solar,pre_construction,67
+G100001074373,energy_plants_gem_units,PRT,point,,PRT-1-10,,point,,,,true,abf-boundaries-v0.2.0,Santa Susana solar farm,L100001064612,utility-scale solar,pre_construction,36.7
+G100001074374,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Graça do Divor solar farm,L100001064613,utility-scale solar,pre_construction,220.1
+G100001074399,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,true,abf-boundaries-v0.2.0,Terra Ruiva solar farm,L100001064614,utility-scale solar,pre_construction,49.9
+G100001074402,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,true,abf-boundaries-v0.2.0,Pinel Hybrid solar farm,L100001064637,utility-scale solar,pre_construction,310
+G100001074404,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,true,abf-boundaries-v0.2.0,Pinhal Interior II solar farm,L100001064641,utility-scale solar,pre_construction,98
+G100001074405,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,true,abf-boundaries-v0.2.0,Beira solar farm,L100001064642,utility-scale solar,pre_construction,269
+G100001074406,energy_plants_gem_units,PRT,point,,PRT-1-05,,point,,,,true,abf-boundaries-v0.2.0,Sophia solar farm,L100001064643,utility-scale solar,pre_construction,867
+G100001074407,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,true,abf-boundaries-v0.2.0,Sol de Évora solar farm,L100001064644,utility-scale solar,pre_construction,440.2
+G100001074408,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,true,abf-boundaries-v0.2.0,Minhéu 1 solar farm,L100001064645,utility-scale solar,pre_construction,30
+G100001074409,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,true,abf-boundaries-v0.2.0,Minhéu 2 solar farm,L100001064646,utility-scale solar,pre_construction,30
+G100001074410,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,true,abf-boundaries-v0.2.0,Alto das Aguçadeiras solar farm,L100001064647,utility-scale solar,pre_construction,30
+G100001083622,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Aljustrel solar project,L100001073836,utility-scale solar,operating,13.7
+G100001083623,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Garrido Antuzede solar project,L100001073837,utility-scale solar,operating,9
+G100001083624,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Garrido Pinhal Novo solar project,L100001073838,utility-scale solar,operating,9
+G100001083625,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Seixal 2 solar project,L100001073839,utility-scale solar,operating,8.8
+G100001083626,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Apra B solar project,L100001073840,utility-scale solar,operating,6.7
+G100001083627,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,IKEA Industry Portugal - Penamaior solar project,L100001073841,utility-scale solar,operating,5.8
+G100001083628,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,PV Concentração Malhada Velha 2 solar project,L100001073842,utility-scale solar,operating,5
+G100001083629,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Apra A solar project,L100001073843,utility-scale solar,operating,4.5
+G100001083630,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Salgueirinha solar project,L100001073844,utility-scale solar,operating,4
+G100001083631,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Monte das Flores solar project,L100001073845,utility-scale solar,operating,2.9
+G100001083632,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,"Navigator Figueira, S.A. solar project",L100001073846,utility-scale solar,operating,2.6
+G100001083633,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Estarreja solar project,L100001073847,utility-scale solar,operating,2.5
+G100001083634,energy_plants_gem_units,PRT,point,,PRT-1-03,,point,,,,false,abf-boundaries-v0.2.0,Riba d`Ave solar project,L100001073848,utility-scale solar,operating,2.4
+G100001083635,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Olva solar project,L100001073849,utility-scale solar,operating,2.4
+G100001083636,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Mexilhoeira Grande solar project,L100001073850,utility-scale solar,operating,2.4
+G100001083637,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Casal dos Cabeços solar project,L100001073851,utility-scale solar,operating,2.3
+G100001083638,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,About the Future solar project,L100001073852,utility-scale solar,operating,2.3
+G100001083639,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Interior Alentejano solar project,L100001073853,utility-scale solar,operating,2.2
+G100001083640,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Coruche 2 solar project,L100001073854,utility-scale solar,operating,2.2
+G100001083641,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,Marinha solar project,L100001073855,utility-scale solar,operating,2.2
+G100001083642,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Acil 1 solar project,L100001073856,utility-scale solar,operating,2.2
+G100001083643,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Acil 2 solar project,L100001073857,utility-scale solar,operating,2.2
+G100001083644,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Malhapão solar project,L100001073858,utility-scale solar,operating,2.2
+G100001083645,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Tejo Rei solar project,L100001073859,utility-scale solar,operating,2.2
+G100001083646,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Montemor-o-Novo solar project,L100001073860,utility-scale solar,operating,2.2
+G100001083647,energy_plants_gem_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Porto Santo solar project,L100001073861,utility-scale solar,operating,2
+G100001083648,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Coruche 1A solar project,L100001073862,utility-scale solar,operating,2
+G100001083649,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Coruche 1B solar project,L100001073863,utility-scale solar,operating,2
+G100001083650,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Coruche 1C solar project,L100001073864,utility-scale solar,operating,2
+G100001083651,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Fanhões solar project,L100001073865,utility-scale solar,operating,2
+G100001083652,energy_plants_gem_units,PRT,point,,PRT-1-06,,point,,,,false,abf-boundaries-v0.2.0,Santo Varão solar project,L100001073866,utility-scale solar,operating,2
+G100001083653,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Sacavém solar project,L100001073867,utility-scale solar,operating,2
+G100001083654,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Seixal 1 solar project,L100001073868,utility-scale solar,operating,2
+G100001083655,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Alfouvar solar project,L100001073869,utility-scale solar,operating,2
+G100001083656,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Flamenguinha solar project,L100001073870,utility-scale solar,operating,2
+G100001083657,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Galelas solar project,L100001073871,utility-scale solar,operating,2
+G100001083658,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Trajouce 1 solar project,L100001073872,utility-scale solar,operating,2
+G100001083659,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Trajouce 2 solar project,L100001073873,utility-scale solar,operating,2
+G100001083660,energy_plants_gem_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Paul solar project,L100001073874,utility-scale solar,operating,2
+G100001083661,energy_plants_gem_units,PRT,point,,PRT-1-11,,point,,,,false,abf-boundaries-v0.2.0,Inov Lx solar project,L100001073875,utility-scale solar,operating,2
+G100001083662,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,Inov OP solar project,L100001073876,utility-scale solar,operating,2
+G100001083663,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Cachopo solar project,L100001073877,utility-scale solar,operating,2
+G100001083664,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,"NAVIGATOR PULP Setúbal, S.A. solar project",L100001073878,utility-scale solar,operating,1.9
+G100001083665,energy_plants_gem_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Palmela solar project,L100001073879,utility-scale solar,operating,1.6
+G100001083666,energy_plants_gem_units,PRT,point,,PRT-1-14,,point,,,,false,abf-boundaries-v0.2.0,Aguarela do Mundo solar project,L100001073880,utility-scale solar,operating,1.5
+G100001083667,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Monte da Chaminé solar project,L100001073881,utility-scale solar,operating,1.4
+G100001083668,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Castanhos solar project,L100001073882,utility-scale solar,operating,1.3
+G100001083669,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Suncoutim solar project,L100001073883,utility-scale solar,operating,1.3
+G100001083670,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Alta Concentração de Évora solar project,L100001073884,utility-scale solar,operating,1.3
+G100001083671,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,IKEA Loja Matosinhos solar project,L100001073885,utility-scale solar,operating,1.2
+G100001083672,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Luz-On solar project,L100001073886,utility-scale solar,operating,1.2
+G100001083673,energy_plants_gem_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Quinta do Louseiro solar project,L100001073887,utility-scale solar,operating,1.1
+G100001083674,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Capwatt Martim Longo 1 solar project,L100001073888,utility-scale solar,operating,1.1
+G100001083675,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Capwatt Martim Longo 2 solar project,L100001073889,utility-scale solar,operating,1.1
+G100001083676,energy_plants_gem_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Almodôvar solar project,L100001073890,utility-scale solar,operating,1.1
+G100001083677,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Estoi 1 solar project,L100001073891,utility-scale solar,operating,1
+G100001083678,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Estoi 3 solar project,L100001073892,utility-scale solar,operating,1
+G100001083679,energy_plants_gem_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Estoi 2 solar project,L100001073893,utility-scale solar,operating,1
+G100001083680,energy_plants_gem_units,PRT,point,,PRT-1-20,,point,,,,false,abf-boundaries-v0.2.0,Projeto Graciosa (central fotovoltaica) solar project,L100001073894,utility-scale solar,operating,1
+G100001083681,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,UPAC Sicor solar project,L100001073895,utility-scale solar,operating,1
+G100001083682,energy_plants_gem_units,PRT,point,,PRT-1-13,,point,,,,false,abf-boundaries-v0.2.0,UPAC Brasmar solar project,L100001073896,utility-scale solar,operating,1
+G100001083683,energy_plants_gem_units,PRT,point,,PRT-1-01,,point,,,,false,abf-boundaries-v0.2.0,UPAC Sr.Bacalhau I solar project,L100001073897,utility-scale solar,operating,1
+G100001090117,energy_plants_gem_units,PRT,point,,PRT-1-17,,point,,,,true,abf-boundaries-v0.2.0,Minhéu hydroelectric plant,L100001080253,hydropower,pre_construction,1320

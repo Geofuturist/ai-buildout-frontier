@@ -34,8 +34,12 @@ export interface SetData {
 }
 
 const pretty = (v: string) => (v ? v.replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase()) : 'Not stated');
-/** label of a value from the texts (site.json), else the value made readable */
-const lab = (tx: Record<string, any>, v: string) => tx.value_labels?.[v] ?? pretty(v);
+/** label of a value of a field from the texts (site.json value_labels, by field: an empty value means different things in different fields); a field with an empty list is shown as the source gives it */
+const lab = (tx: Record<string, any>, field: string, v: string) => {
+  const m = tx.value_labels?.[field];
+  if (m && typeof m === 'object') return m[v] ?? (v === '' ? 'Not stated' : v);
+  return pretty(v);
+};
 
 /**
  * The records of the chosen unit, counted by the published territory index (SPEC_INDEX_territory r5 §8). Counts are made
@@ -51,8 +55,8 @@ export default function UnitIndex({ index, iso3, unit, countryName }: { index: I
     const col = levelColumn(unit.level);
     Promise.all(
       index.sets.map(async (s) => {
-        const text = s.meta.countries.includes(iso3) ? await loadGz(`${index.base}/${s.id}/${iso3}.csv.gz`) : null;
-        const otherText = await loadGz(`${index.base}/${s.id}/adm0_other.csv.gz`);
+        const text = s.meta.countries.includes(iso3) ? await loadGz(s.country_url.replace('{iso3}', iso3)) : null;
+        const otherText = await loadGz(s.adm0_other_url);
         const cut = (text && cutRows(text, col, (k) => k === unit.unit_id)) || { header: '', rows: [], eol: '\n' };
         const oc = otherText ? cutRows(otherText, 'record_id', () => true) : null;
         return {
@@ -146,7 +150,7 @@ function SummaryView({ s, tx }: { s: Summary; tx: Record<string, any> }) {
         <ul className="mt-1 space-y-0.5 text-xs text-ink2">
           {[...byFirst].map(([k, cells]) => (
             <li key={k}>
-              <span className="font-medium text-ink">{lab(tx, k)}</span>: {cells.map((x) => `${lab(tx, x.values[1] ?? '')} ${fmtInt(x.n)}${x.sum != null ? `, ${fmtMw(x.sum)}` : ''}`).join(' · ')}
+              <span className="font-medium text-ink">{lab(tx, s.joint!.fields[0], k)}</span>: {cells.map((x) => `${lab(tx, s.joint!.fields[1], x.values[1] ?? '')} ${fmtInt(x.n)}${x.sum != null ? `, ${fmtMw(x.sum)}` : ''}`).join(' · ')}
             </li>
           ))}
         </ul>
@@ -161,7 +165,7 @@ function SummaryView({ s, tx }: { s: Summary; tx: Record<string, any> }) {
       {s.total && <p className="text-ink2">{s.total.label}: <b className="text-ink">{fmtMw(s.total.value)}</b></p>}
       {s.hists.map((h) => (
         <p key={h.field} className="mt-1 text-xs text-ink2">
-          <span className="font-medium">{tx.field_labels?.[h.field] ?? h.field}:</span> {h.items.map((i) => `${lab(tx, i.value)} ${fmtInt(i.n)}`).join(' · ')}
+          <span className="font-medium">{tx.field_labels?.[h.field] ?? h.field}:</span> {h.items.map((i) => `${lab(tx, h.field, i.value)} ${fmtInt(i.n)}`).join(' · ')}
         </p>
       ))}
     </div>
@@ -177,8 +181,8 @@ function LayerNotes({ tx, rows, unit, country, hasAdm1, hasAdm2 }: { tx: Record<
   if (basis !== 'none') lines.push(fillTemplate(tx.card_basis, { basis: tx[`card_basis_${basis}`] }));
   if (approx > 0) lines.push(fillTemplate(tx.card_approximate, { n_approx: fmtInt(approx), n: fmtInt(rows.length) }));
   if (only > 0) lines.push(fillTemplate(tx.card_country_only, { n: fmtInt(only), country }));
-  if (unit.level === 0 && !hasAdm1) lines.push(fillTemplate(tx.card_level_missing, { country, level_word: 'regional' }));
-  if (unit.level === 1 && !hasAdm2) lines.push(fillTemplate(tx.card_level_missing, { country, level_word: 'second-level' }));
+  if (unit.level === 0 && !hasAdm1) lines.push(fillTemplate(tx.card_level_missing_adm1, { country }));
+  if (unit.level === 1 && !hasAdm2) lines.push(fillTemplate(tx.card_level_missing_adm2, { country }));
   return (
     <div className="mt-2 space-y-1 text-xs text-ink2">
       {lines.map((l) => <p key={l}>{l}</p>)}
@@ -198,11 +202,11 @@ function RecordList({ index, set, d, unit }: { index: IndexSource; set: IndexSou
   const titleOf = (r: Row) => c.title_fields.map((f) => r[f]).find(Boolean) ?? r.record_id;
   const detailOf = (r: Row) =>
     c.detail_fields
-      .map((f) => (r[f] ? (f.endsWith('_mw') ? fmtMw(Number(r[f])) : lab(tx, r[f])) : ''))
+      .map((f) => (r[f] ? (f.endsWith('_mw') ? fmtMw(Number(r[f])) : lab(tx, f, r[f])) : ''))
       .filter(Boolean)
       .join(' · ');
   const download = () => {
-    const cite = `Territory index ${set.id}, abf-index ${set.version}; unit ${unit.unit_id}; license ${set.license}`;
+    const cite = `Territory index ${set.id}, abf-index ${set.version}; unit ${unit.unit_id}; license ${set.license_name}`;
     const blob = new Blob([buildRowsCsv(d.cut, cite, [`${set.id}/abf-index ${set.version}`])], { type: 'text/csv' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);

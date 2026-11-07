@@ -1,0 +1,30 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000114963,energy_plants_gem_units,DJI,point,,DJI-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Djibouti power station,L100000104799,coal,cancelled,50
+G100000114964,energy_plants_gem_units,DJI,point,,DJI-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Djibouti power station,L100000104799,coal,cancelled,50
+G100000114965,energy_plants_gem_units,DJI,point,,DJI-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Djibouti power station,L100000104799,coal,cancelled,50
+G100000200020,energy_plants_gem_units,DJI,point,,DJI-1-AR,,point,,,,true,abf-boundaries-v0.2.0,CREC Renewable Energy Park power station,L100000200018,bioenergy,pre_construction,40
+G100000413523,energy_plants_gem_units,DJI,point,,DJI-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Boulaos power station,L100000409059,oil/gas,operating,108
+G100000413524,energy_plants_gem_units,DJI,point,,DJI-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Damerjog Power Generation Station,L100000409060,oil/gas,announced,50
+G100000800129,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Enesys Grand Bara solar farm,L100000800103,utility-scale solar,cancelled,50
+G100000800130,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Enesys Grand Bara solar farm,L100000800103,utility-scale solar,cancelled,50
+G100000800131,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Enesys Grand Bara solar farm,L100000800103,utility-scale solar,cancelled,50
+G100000800132,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Enesys Grand Bara solar farm,L100000800103,utility-scale solar,cancelled,50
+G100000800133,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Enesys Grand Bara solar farm,L100000800103,utility-scale solar,cancelled,50
+G100000800134,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Enesys Grand Bara solar farm,L100000800103,utility-scale solar,cancelled,50
+G100000800359,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Skypower solar farm,L100000800304,utility-scale solar,cancelled,50
+G100000800360,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Skypower solar farm,L100000800304,utility-scale solar,cancelled,50
+G100000800361,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Skypower solar farm,L100000800304,utility-scale solar,cancelled,50
+G100000800362,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Skypower solar farm,L100000800304,utility-scale solar,cancelled,50
+G100000814085,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Amea Power solar farm (Djibouti),L100000811577,utility-scale solar,pre_construction,30
+G100000831149,energy_plants_gem_units,DJI,point,,DJI-1-OB,,point,,,,true,abf-boundaries-v0.2.0,Djibouti Green Hydrogen hybrid solar farm,L100000827622,utility-scale solar,pre_construction,10000
+G100000900159,energy_plants_gem_units,DJI,point,,DJI-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Ghoubet wind farm,L100000900121,wind,operating,59
+G100001021295,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Enesys Grand Bara solar farm,L100000800103,utility-scale solar,announced,25
+G100001021298,energy_plants_gem_units,DJI,point,,DJI-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Ghoubet wind farm,L100000900121,wind,announced,45
+G100001071245,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Fialé Caldera geothermal power plant,L100001062092,geothermal,pre_construction,20
+G100001071246,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Fialé Caldera geothermal power plant,L100001062092,geothermal,announced,30
+G100001074040,energy_plants_gem_units,DJI,point,,DJI-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Djibouti Solar Park,L100001064358,utility-scale solar,operating,60
+G100001074041,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Lake Assal solar farm,L100001064359,utility-scale solar,operating,30
+G100001074043,energy_plants_gem_units,DJI,point,,DJI-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Gulf of Tadjoura solar farm,L100001064360,utility-scale solar,operating,25
+G100001074044,energy_plants_gem_units,DJI,point,,DJI-1-DI,,point,,,,true,abf-boundaries-v0.2.0,Dikhil solar farm,L100001064362,utility-scale solar,operating,20
+G100001074045,energy_plants_gem_units,DJI,point,,DJI-1-AS,,point,,,,true,abf-boundaries-v0.2.0,Ali Sabieh solar farm,L100001064363,utility-scale solar,operating,15
+G100001074046,energy_plants_gem_units,DJI,point,,DJI-1-OB,,point,,,,true,abf-boundaries-v0.2.0,Obock solar farm,L100001064364,utility-scale solar,operating,10

@@ -1,0 +1,80 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100921,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,retired,35
+G100000100922,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,86
+G100000100923,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,100
+G100000100924,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,150
+G100000100925,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,150
+G100000100926,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,retired,50
+G100000100927,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,retired,65
+G100000100928,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,35
+G100000100929,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,86
+G100000100930,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,60
+G100000100931,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,60
+G100000100932,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,coal,operating,86
+G100000105555,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kara-Keche power station,L100000103004,coal,pre_construction,300
+G100000602368,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Alabukin hydroelectric plant,L100000602339,hydropower,announced,600
+G100000602369,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Arpan-1 hydroelectric plant,L100000602340,hydropower,announced,136
+G100000602374,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kambarata-1 hydroelectric plant,L100000602345,hydropower,construction,1860
+G100000602376,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kambarata-2 hydroelectric plant,L100000602346,hydropower,operating,120
+G100000602377,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karabulun-1 hydroelectric plant,L100000602347,hydropower,announced,149
+G100000602378,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karabulun-2 hydroelectric plant,L100000602348,hydropower,announced,163
+G100000602379,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kokemeren-1 hydroelectric plant,L100000602349,hydropower,announced,360
+G100000602380,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kokemeren-2 hydroelectric plant,L100000602350,hydropower,announced,912
+G100000602381,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kurpsai hydroelectric plant,L100000602351,hydropower,operating,800
+G100000602383,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Makmal hydroelectric plant,L100000602353,hydropower,announced,112
+G100000602384,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Saz hydroelectric plant,L100000602354,hydropower,shelved,108
+G100000602385,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Shamaldy-Sai hydroelectric plant,L100000602355,hydropower,operating,240
+G100000602386,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Tash-Kumyr hydroelectric plant,L100000602356,hydropower,operating,450
+G100000602387,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Toguztorouz hydroelectric plant,L100000602357,hydropower,announced,248
+G100000602388,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Toktogul hydroelectric plant,L100000602358,hydropower,operating,1320
+G100000602389,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Uch-Kurgan hydroelectric plant,L100000602359,hydropower,operating,180
+G100000604202,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Akbulun hydroelectric plant,L100000602338,hydropower,pre_construction,87
+G100000604215,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Atbashin-2 hydroelectric plant,L100000602341,hydropower,pre_construction,135
+G100000604234,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Barkrau hydroelectric plant,L100000602342,hydropower,pre_construction,700
+G100000604363,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Dzhilanaryk-1 hydroelectric plant,L100000602343,hydropower,pre_construction,80
+G100000604364,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Dzhilanaryk-2 hydroelectric plant,L100000602344,hydropower,pre_construction,98
+G100000604493,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kambarata-2 hydroelectric plant,L100000602346,hydropower,pre_construction,240
+G100000604569,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Kyrgyzstan Lower Chatkal hydroelectric plant,L100000602352,hydropower,pre_construction,1100
+G100000604902,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Uchkun hydroelectric plant,L100000604376,hydropower,pre_construction,88
+G100000801442,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Panfilov solar farm,L100000801257,utility-scale solar,cancelled,30
+G100000810905,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Issyk-Kul solar farm,L100000808653,utility-scale solar,shelved,1000
+G100000810907,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Toru-Aigyr solar farm,L100000808655,utility-scale solar,pre_construction,100
+G100000834573,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kun Bulagi solar farm,L100000830708,utility-scale solar,pre_construction,50
+G100000834574,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyrgyzstan Pilot Project solar farm,L100000830709,utility-scale solar,announced,100
+G100000834575,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Toru-Aigyr solar farm,L100000808655,utility-scale solar,pre_construction,200
+G100000920801,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ecowind wind farm,L100000916747,wind,shelved,200
+G100001004201,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jalal-Abad power station,L100001003690,coal,shelved,660
+G100001005096,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek 2 power station,L100001004358,oil/gas,construction,271
+G100001005098,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Bishkekselmash power station,L100001004360,oil/gas,construction,100
+G100001006497,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kara-Keche power station,L100000103004,coal,announced,600
+G100001006642,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chaldovar power station,L100001005566,oil/gas,announced,500
+G100001017898,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,86
+G100001017899,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,100
+G100001017930,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,60
+G100001017996,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,86
+G100001017999,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,60
+G100001018019,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,86
+G100001018334,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyrgyzstan Pilot Project solar farm,L100000830709,utility-scale solar,announced,100
+G100001018336,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyrgyzstan Pilot Project solar farm,L100000830709,utility-scale solar,announced,150
+G100001018351,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Balykchy solar farm,L100001016504,utility-scale solar,pre_construction,400
+G100001018535,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Issyk-Kul wind farm,L100001016639,wind,pre_construction,100
+G100001018536,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Batken wind farm,L100001016640,wind,shelved,80
+G100001027636,energy_plants_gem_units,KGZ,point,TJK,,,,,,,true,abf-boundaries-v0.2.0,Sughd Region solar farm,L100001023428,utility-scale solar,announced,200
+G100001048112,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,150
+G100001048113,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bishkek power station,L100000103003,oil/gas,pre_construction,150
+G100001051705,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Naryn 1 hydroelectric plant,L100001045870,hydropower,pre_construction,48
+G100001051706,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Naryn 2 hydroelectric plant,L100001045871,hydropower,pre_construction,48
+G100001051707,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Naryn 3 hydroelectric plant,L100001045872,hydropower,pre_construction,55
+G100001051725,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Bala-Saruu hydroelectric plant,L100001045886,hydropower,operating,25
+G100001055131,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyrgyzstan nuclear power plant,L100001048133,nuclear,announced,55
+G100001055132,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyrgyzstan nuclear power plant,L100001048133,nuclear,announced,55
+G100001062651,energy_plants_gem_units,KGZ,point,,,,,,,,false,abf-boundaries-v0.2.0,At Bashy hydroelectric plant,L100001054759,hydropower,operating,44
+G100001070726,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyzylunkyur wind farm,L100001061688,wind,announced,100
+G100001070747,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kyzyl-Oruk solar farm,L100001061707,utility-scale solar,announced,1900
+G100001090696,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chandalash hydroelectric plant,L100001080764,hydropower,pre_construction,30
+G100001093889,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Bishkek WtE power station,L100001083188,bioenergy,operating,50
+G100001093892,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Osh WtE power station,L100001083191,bioenergy,construction,30
+G100001093965,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Unnamed Kyrgyz coal power stations,L100001083236,coal,announced,350
+G100001093966,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Unnamed Kyrgyz coal power stations,L100001083236,coal,announced,350
+G100001093967,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Unnamed Kyrgyz coal power stations,L100001083236,coal,announced,350
+G100001094314,energy_plants_gem_units,KGZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Kara-Keche power station,L100000103004,coal,pre_construction,300

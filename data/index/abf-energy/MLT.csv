@@ -1,0 +1,10 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000400488,energy_plants_gem_units,MLT,point,,MLT-1-28,,point,,,,false,abf-boundaries-v0.2.0,Delimara power station,L100000400488,oil/gas,operating,205
+G100000413088,energy_plants_gem_units,MLT,point,,MLT-1-28,,point,,,,false,abf-boundaries-v0.2.0,Delimara power station,L100000400488,oil/gas,operating,152.8
+G100000413089,energy_plants_gem_units,MLT,point,,MLT-1-28,,point,,,,false,abf-boundaries-v0.2.0,Delimara power station,L100000400488,oil/gas,operating,115
+G100000413090,energy_plants_gem_units,MLT,point,,MLT-1-28,,point,,,,false,abf-boundaries-v0.2.0,Delimara power station,L100000400488,oil/gas,operating,75
+G100000910987,energy_plants_gem_units,MLT,point,,MLT-1-46,,point,,,,true,abf-boundaries-v0.2.0,Wied Rini wind farm,L100000908292,wind,cancelled,10
+G100000919352,energy_plants_gem_units,MLT,point,,MLT-1-30,,point,,,,true,abf-boundaries-v0.2.0,Sikka I-Bajda wind farm,L100000915653,wind,cancelled,95
+G100000925138,energy_plants_gem_units,MLT,point,,MLT-1-38,,point,,,,true,abf-boundaries-v0.2.0,Hexicon Floating wind farm,L100000920471,wind,cancelled,54
+G100001057793,energy_plants_gem_units,MLT,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Malta Floating Offshore wind farm,L100001050106,wind,pre_construction,300
+G100001060576,energy_plants_gem_units,MLT,point,,MLT-1-05,,point,,,,false,abf-boundaries-v0.2.0,Southern Region solar project II,L100001052782,utility-scale solar,operating,1.1

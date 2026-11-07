@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001024018,energy_plants_gem_tzsam_units,TGO,point,,TGO-1-K,,point,,,,false,abf-boundaries-v0.2.0,Kara Kozah solar project,L100001021049,utility-scale solar,operating,2.9
+G100001074777,energy_plants_gem_tzsam_units,TGO,point,,TGO-1-M,,point,,,,false,abf-boundaries-v0.2.0,Maritime Region solar project,L100001064991,utility-scale solar,operating,8.1

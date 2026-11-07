@@ -1,0 +1,79 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000404602,energy_plants_gem_units,JOR,point,,JOR-1-KA,,point,,,,false,abf-boundaries-v0.2.0,Al Qatrana power plant,L100000405486,oil/gas,operating,373
+G100000404603,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Amman East power plant,L100000405487,oil/gas,operating,400
+G100000404606,energy_plants_gem_units,JOR,point,,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Aqaba power plant,L100000405488,oil/gas,operating,130
+G100000404607,energy_plants_gem_units,JOR,point,,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Aqaba power plant,L100000405488,oil/gas,operating,130
+G100000404608,energy_plants_gem_units,JOR,point,,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Aqaba power plant,L100000405488,oil/gas,operating,130
+G100000404609,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Rehab power plant,L100000405489,oil/gas,operating,300
+G100000404612,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Samra power plant,L100000405490,oil/gas,operating,300
+G100000404613,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Samra power plant,L100000405490,oil/gas,operating,300
+G100000404614,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Samra power plant,L100000405490,oil/gas,operating,429
+G100000404615,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Samra power plant,L100000405490,oil/gas,operating,212
+G100000404616,energy_plants_gem_units,JOR,point,,JOR-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Zarqa power plant,L100000405491,oil/gas,operating,485
+G100000411580,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,IPP4 Al-Manakher power plant,L100000408211,oil/gas,operating,240
+G100000411581,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,true,abf-boundaries-v0.2.0,IPP3 ICE power plant,L100000408212,oil/gas,operating,573.8
+G100000411582,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Attarat power plant,L100000408213,oil/gas,operating,235
+G100000411583,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Attarat power plant,L100000408213,oil/gas,operating,235
+G100000411584,energy_plants_gem_units,JOR,point,,JOR-1-KA,,point,,,,false,abf-boundaries-v0.2.0,Al Qatrana Cement power plant,L100000408210,oil/gas,operating,50
+G100000414418,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Risha Gas power plant,L100000409288,oil/gas,operating,30
+G100000414419,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Risha Gas power plant,L100000409288,oil/gas,operating,30
+G100000414420,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Rehab power plant,L100000405489,oil/gas,operating,30
+G100000414421,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Rehab power plant,L100000405489,oil/gas,operating,30
+G100000501218,energy_plants_gem_units,JOR,point,,JOR-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Qasr-Amra nuclear power plant,L100000500426,nuclear,cancelled,1060
+G100000501219,energy_plants_gem_units,JOR,point,,JOR-1-AZ,,point,,,,true,abf-boundaries-v0.2.0,Qasr-Amra nuclear power plant,L100000500426,nuclear,cancelled,1060
+G100000604204,energy_plants_gem_units,JOR,point,,JOR-1-MD,,point,,,,false,abf-boundaries-v0.2.0,Al-Mujib Dam Pumped Storage hydroelectric plant,L100000604158,hydropower,pre_construction,450
+G100000804607,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Empire Solar Power Station,L100000804035,utility-scale solar,operating,67
+G100000804608,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Al Badiya solar farm,L100000804036,utility-scale solar,operating,12
+G100000804609,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Al Badiya solar farm,L100000804036,utility-scale solar,operating,11
+G100000804618,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Alcazar Ma'An solar farm,L100000804045,utility-scale solar,operating,21
+G100000804619,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Al Safawi Arabia One Solar,L100000804046,utility-scale solar,operating,12
+G100000804620,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Al Husainiyah solar farm,L100000804047,utility-scale solar,operating,50
+G100000804623,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Baynouna Solar Plant,L100000804050,utility-scale solar,operating,200
+G100000804624,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mafraq Sunrise solar farm,L100000804051,utility-scale solar,operating,50
+G100000804625,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Risha Solar Plant,L100000804052,utility-scale solar,operating,50
+G100000804641,energy_plants_gem_units,JOR,point,,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Quweira Solar PV Plant,L100000804062,utility-scale solar,operating,103
+G100000804642,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Shams Ma'An solar farm,L100000804063,utility-scale solar,operating,53
+G100000804643,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Al Safawi Power Station solar farm,L100000804064,utility-scale solar,operating,67
+G100000804647,energy_plants_gem_units,JOR,point,,JOR-1-BA,,point,,,,false,abf-boundaries-v0.2.0,Univ Jordan Solar Rooftop PV,L100000804068,utility-scale solar,operating,16
+G100000804654,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Al Ward Al Joury solar farm,L100000804072,utility-scale solar,operating,12
+G100000804655,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Al Zahrat Al Salam solar farm,L100000804073,utility-scale solar,operating,12
+G100000804656,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Al Zanbaq solar farm,L100000804074,utility-scale solar,operating,11
+G100000804663,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Green Prosperity solar farm,L100000804081,utility-scale solar,shelved,600
+G100000804667,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Ma'An Falcon solar farm,L100000804085,utility-scale solar,operating,23
+G100000804668,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Am Solar Power Plant,L100000804086,utility-scale solar,operating,52
+G100000804684,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Glae Solar Power Plant,L100000804097,utility-scale solar,operating,10
+G100000804695,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Disi Water solar farm,L100000804103,utility-scale solar,operating,33
+G100000804711,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Mafraq 1 Power Station solar farm,L100000804119,utility-scale solar,operating,67
+G100000804714,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Jordan Solar One Plant,L100000804122,utility-scale solar,operating,24
+G100000804723,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Ejre Solar Plant,L100000804131,utility-scale solar,operating,20
+G100000804724,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Oryx solar farm,L100000804132,utility-scale solar,operating,10
+G100000804734,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Jordan Solar Two Plant,L100000804141,utility-scale solar,cancelled,50
+G100000834183,energy_plants_gem_units,JOR,point,ISR,JOR-1-AQ,,point,,,,true,abf-boundaries-v0.2.0,Eliphaz solar project,L100000830331,utility-scale solar,operating,7
+G100000834185,energy_plants_gem_units,JOR,point,ISR,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Grofit solar project,L100000830333,utility-scale solar,operating,6.4
+G100000834546,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Al Ward Al Kabir Solar PV Plant,L100000830688,utility-scale solar,operating,66
+G100000834547,energy_plants_gem_units,JOR,point,,JOR-1-AQ,,point,,,,true,abf-boundaries-v0.2.0,Aqaba Special Economic Zone solar farm,L100000830689,utility-scale solar,pre_construction,530
+G100000834553,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Orange Jordan Wheeling solar farm,L100000830695,utility-scale solar,operating,22
+G100000834554,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Orange Jordan Wheeling solar farm,L100000830695,utility-scale solar,operating,7.5
+G100000834555,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Orange Jordan Wheeling solar farm,L100000830695,utility-scale solar,operating,7
+G100000834557,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,South Amman solar farm,L100000830697,utility-scale solar,operating,46
+G100000908101,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Ma'An wind farm,L100000905922,wind,operating,66
+G100000908103,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Al-Rajef wind farm,L100000905924,wind,operating,86
+G100000908107,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Fujeij wind farm,L100000905928,wind,operating,89
+G100000908108,energy_plants_gem_units,JOR,point,,JOR-1-AT,,point,,,,false,abf-boundaries-v0.2.0,Daehan wind farm,L100000905929,wind,operating,52
+G100000908130,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Shobak wind farm,L100000905947,wind,operating,45
+G100000908131,energy_plants_gem_units,JOR,point,,JOR-1-AT,,point,,,,false,abf-boundaries-v0.2.0,Abour wind farm,L100000905948,wind,operating,52
+G100000908140,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Al-Kamshah wind farm,L100000905955,wind,cancelled,35
+G100000908141,energy_plants_gem_units,JOR,point,,JOR-1-AT,,point,,,,false,abf-boundaries-v0.2.0,Tafilah wind farm,L100000905956,wind,operating,117
+G100000908144,energy_plants_gem_units,JOR,point,,JOR-1-AT,,point,,,,false,abf-boundaries-v0.2.0,Tafilah Mass wind farm,L100000905959,wind,operating,100
+G100000921329,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,false,abf-boundaries-v0.2.0,Ma'An wind farm,L100000905922,wind,operating,14
+G100001020672,energy_plants_gem_units,JOR,point,ISR,JOR-1-AQ,,point,,,,false,abf-boundaries-v0.2.0,Negev desert solar farm,L100001018504,utility-scale solar,announced,80
+G100001021390,energy_plants_gem_units,JOR,point,,JOR-1-AQ,,point,,,,true,abf-boundaries-v0.2.0,Masdar-Jordan wind farm,L100001019018,wind,announced,1000
+G100001030087,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Muaqqar Sub-District solar project II,L100001025406,utility-scale solar,operating,1.1
+G100001030106,energy_plants_gem_units,JOR,point,,JOR-1-AZ,,point,,,,false,abf-boundaries-v0.2.0,Marka Sub-District solar project II,L100001025425,utility-scale solar,operating,2.4
+G100001030113,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,false,abf-boundaries-v0.2.0,Quaismeh Sub-District solar project II,L100001025432,utility-scale solar,operating,1.8
+G100001030386,energy_plants_gem_units,JOR,point,,JOR-1-AM,,point,,,,true,abf-boundaries-v0.2.0,NCI Power Plant,L100001025626,oil/gas,operating,10
+G100001052241,energy_plants_gem_units,JOR,point,,JOR-1-IR,,point,,,,true,abf-boundaries-v0.2.0,North Jordan power station,L100001046267,oil/gas,pre_construction,300
+G100001052242,energy_plants_gem_units,JOR,point,,JOR-1-IR,,point,,,,true,abf-boundaries-v0.2.0,North Jordan power station,L100001046267,oil/gas,pre_construction,300
+G100001055420,energy_plants_gem_units,JOR,point,,JOR-1-MA,,point,,,,false,abf-boundaries-v0.2.0,As-Samra Biogas power station,L100001048290,bioenergy,operating,13
+G100001090167,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,true,abf-boundaries-v0.2.0,IPP8 Combined Cycle Power Station,L100001080278,oil/gas,pre_construction,700
+G100001090816,energy_plants_gem_units,JOR,point,,JOR-1-MN,,point,,,,true,abf-boundaries-v0.2.0,Jordan 200 MW PV solar farm,L100001080858,utility-scale solar,announced,200

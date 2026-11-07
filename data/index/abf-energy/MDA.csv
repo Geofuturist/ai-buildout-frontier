@@ -1,0 +1,11 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407313,energy_plants_gem_units,MDA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chisinau Thermoelectric Source 1 power station,L100000406849,oil/gas,operating,80
+G100000407314,energy_plants_gem_units,MDA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chisinau Thermoelectric Source 1 power station,L100000406849,oil/gas,operating,80
+G100000407315,energy_plants_gem_units,MDA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chisinau Thermoelectric Source 1 power station,L100000406849,oil/gas,operating,98
+G100000807092,energy_plants_gem_units,MDA,point,UKR,,,,,,,false,abf-boundaries-v0.2.0,Bolgrad solar farm,L100000806170,utility-scale solar,operating,34
+G100000919712,energy_plants_gem_units,MDA,point,,,,,,,,true,abf-boundaries-v0.2.0,Southern Moldova wind farm,L100000915958,wind,cancelled,180
+G100000925139,energy_plants_gem_units,MDA,point,,,,,,,,true,abf-boundaries-v0.2.0,Summa wind farm (Moldova),L100000920472,wind,cancelled,75
+G100001027332,energy_plants_gem_units,MDA,point,,,,,,,,false,abf-boundaries-v0.2.0,Dubăsari hydroelectric plant,L100001023127,hydropower,operating,48
+G100001074172,energy_plants_gem_units,MDA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chisinau Thermoelectric Source 1 power station,L100000406849,oil/gas,announced,250
+G100001074173,energy_plants_gem_units,MDA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chisinau Thermoelectric Source 2 power station,L100001064444,oil/gas,pre_construction,27.5
+G100001074174,energy_plants_gem_units,MDA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chisinau Thermoelectric HOB West power station,L100001064445,oil/gas,announced,27.5

@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000915820,energy_plants_gem_units,FRO,point,,,,,,,,false,abf-boundaries-v0.2.0,Tórshavn wind farm,L100000912682,wind,operating,25
+G100000923899,energy_plants_gem_units,FRO,point,,,,,,,,false,abf-boundaries-v0.2.0,Húsahagi wind farm,L100000919399,wind,operating,12
+G100000923900,energy_plants_gem_units,FRO,point,,,,,,,,true,abf-boundaries-v0.2.0,Tórshavn Offshore wind farm,L100000919400,wind,shelved,120

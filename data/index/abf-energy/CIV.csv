@@ -1,0 +1,49 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000113379,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,San Pedro Port power station,L100000102865,coal,cancelled,350
+G100000113380,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,San Pedro Port power station,L100000102865,coal,cancelled,350
+G100000200019,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Divo power station,L100000200017,bioenergy,pre_construction,76
+G100000407067,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Atinkou power station,L100000406738,oil/gas,operating,390
+G100000407068,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Azito power plant,L100000406739,oil/gas,operating,253
+G100000407069,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Azito power plant,L100000406739,oil/gas,operating,460
+G100000407070,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Ciprel power station,L100000406740,oil/gas,operating,111
+G100000407071,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Ciprel power station,L100000406740,oil/gas,operating,255
+G100000407072,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Grand Bassam power station,L100000406741,oil/gas,cancelled,370
+G100000407073,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Songon power station,L100000406742,oil/gas,pre_construction,372
+G100000411374,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Agrekko Vridi power station,L100000408153,oil/gas,operating,100
+G100000411375,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Agrekko Vridi power station,L100000408153,oil/gas,operating,100
+G100000601468,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Buyo hydroelectric plant,L100000601450,hydropower,operating,165
+G100000601469,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Gribo-Popoli hydroelectric plant,L100000601451,hydropower,operating,112
+G100000601470,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Kossou hydroelectric plant,L100000601452,hydropower,operating,174
+G100000601471,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Louga 1 hydroelectric plant,L100000601453,hydropower,announced,126
+G100000601472,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Louga 2 hydroelectric plant,L100000601454,hydropower,announced,120
+G100000601473,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Soubre hydroelectric plant,L100000601455,hydropower,operating,275
+G100000601474,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Taabo hydroelectric plant,L100000601456,hydropower,operating,210
+G100000604269,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Boutoubre hydroelectric plant,L100000601449,hydropower,pre_construction,156
+G100000800087,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Boundiali solar farm,L100000800069,utility-scale solar,operating,38
+G100000800142,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Ferkéssédougou solar farm,L100000800108,utility-scale solar,construction,20
+G100000800227,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Nova Power solar farm,L100000800182,utility-scale solar,cancelled,25
+G100000800228,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Kossou Floating solar farm,L100000800183,utility-scale solar,pre_construction,20
+G100000800315,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Poro solar farm,L100000800263,utility-scale solar,cancelled,66
+G100000800404,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Touba-Laboa Scailing solar farm,L100000800333,utility-scale solar,pre_construction,30
+G100000800405,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Touba-Laboa Scailing solar farm,L100000800333,utility-scale solar,pre_construction,30
+G100000814083,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Odienne solar farm,L100000811575,utility-scale solar,announced,25
+G100000814084,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Sérébou solar farm,L100000811576,utility-scale solar,announced,25
+G100000831146,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Benguébougou solar farm,L100000827619,utility-scale solar,shelved,22.2
+G100000831147,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Bondoukou Solar PV Plant,L100000827620,utility-scale solar,construction,50
+G100000831148,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Masdar solar farm (Côte d'Ivoire),L100000827621,utility-scale solar,announced,70
+G100001020294,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Korhogo solar farm,L100001018218,utility-scale solar,pre_construction,116
+G100001020296,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,M'bengué solar farm,L100001018220,utility-scale solar,pre_construction,50
+G100001020299,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Katiola solar farm,L100001018221,utility-scale solar,pre_construction,50
+G100001020303,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Boundiali solar farm,L100000800069,utility-scale solar,announced,42
+G100001020304,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Tengréla solar farm,L100001018226,utility-scale solar,announced,50
+G100001020305,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Kong solar farm,L100001018227,utility-scale solar,construction,50
+G100001020306,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Soubré solar farm,L100001018228,utility-scale solar,announced,25
+G100001020307,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Mankono solar farm,L100001018230,utility-scale solar,announced,50
+G100001020309,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Sokhoro solar farm,L100001018231,utility-scale solar,construction,52
+G100001051266,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Ferké Solar solar farm,L100001045535,utility-scale solar,construction,52.4
+G100001053978,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Boundiali power station,L100001047431,bioenergy,announced,25
+G100001053979,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Biokala power station,L100001047432,bioenergy,operating,46
+G100001062567,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Ayame II hydroelectric plant,L100001054675,hydropower,operating,30
+G100001073661,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Dabakala solar farm,L100001064048,utility-scale solar,announced,100
+G100001073662,energy_plants_gem_units,CIV,point,,,,,,,,true,abf-boundaries-v0.2.0,Niakaramandougou solar farm,L100001064049,utility-scale solar,announced,100
+G100001090129,energy_plants_gem_units,CIV,point,,,,,,,,false,abf-boundaries-v0.2.0,Singrobo-Ahouaty hydroelectric plant,L100001080262,hydropower,construction,44

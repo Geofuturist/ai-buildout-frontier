@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023919,energy_plants_gem_tzsam_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Dakar Region solar project I,L100001020950,utility-scale solar,operating,2.1
+G100001023920,energy_plants_gem_tzsam_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Rufisque solar project,L100001020951,utility-scale solar,operating,9.2
+G100001023921,energy_plants_gem_tzsam_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Dakar Region solar project II,L100001020952,utility-scale solar,operating,7.8
+G100001023922,energy_plants_gem_tzsam_units,SEN,point,,SEN-1-SL,,point,,,,false,abf-boundaries-v0.2.0,Senegal solar project,L100001020953,utility-scale solar,operating,8.3
+G100001074654,energy_plants_gem_tzsam_units,SEN,point,,SEN-1-DK,,point,,,,false,abf-boundaries-v0.2.0,Dakar Region solar project,L100001064868,utility-scale solar,operating,1.5

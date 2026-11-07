@@ -1,0 +1,26 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000106717,energy_plants_gem_units,SWZ,point,,SWZ-1-HH,,point,,,,true,abf-boundaries-v0.2.0,Maswati power station,L100000103526,coal,cancelled,1000
+G100000109775,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,true,abf-boundaries-v0.2.0,Swazi Coal power station,L100000103527,coal,cancelled,200
+G100000109776,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,true,abf-boundaries-v0.2.0,Swazi Coal power station,L100000103527,coal,cancelled,200
+G100000109777,energy_plants_gem_units,SWZ,point,,SWZ-1-HH,,point,,,,true,abf-boundaries-v0.2.0,KEPCO Eswatini power station,L100000103525,coal,cancelled,200
+G100000113805,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,true,abf-boundaries-v0.2.0,Mpaka power station,L100000104374,coal,cancelled,250
+G100000113806,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,true,abf-boundaries-v0.2.0,Mpaka power station,L100000104374,coal,cancelled,250
+G100000114869,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,false,abf-boundaries-v0.2.0,Lubhuku power station,L100000104778,coal,pre_construction,100
+G100000114870,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,false,abf-boundaries-v0.2.0,Lubhuku power station,L100000104778,coal,pre_construction,100
+G100000114871,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,false,abf-boundaries-v0.2.0,Lubhuku power station,L100000104778,coal,pre_construction,100
+G100000200010,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,false,abf-boundaries-v0.2.0,Simunye Sugar Cogeneration power station,L100000200010,bioenergy,operating,30
+G100000200014,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,false,abf-boundaries-v0.2.0,Ubombo Sugar Mill power station,L100000200013,bioenergy,operating,40
+G100000200024,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Usutu power station,L100000200022,bioenergy,shelved,35
+G100000411373,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,true,abf-boundaries-v0.2.0,Edwaleni power station,L100000408154,oil/gas,shelved,250
+G100000604667,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Ngwempisi River hydroelectric plant,L100000601573,hydropower,pre_construction,120
+G100000800123,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,true,abf-boundaries-v0.2.0,Edwaleni solar farm,L100000800098,utility-scale solar,shelved,100
+G100001021655,energy_plants_gem_units,SWZ,point,,SWZ-1-HH,,point,,,,true,abf-boundaries-v0.2.0,Ngwenya (Africa Clean Energy Development) solar farm,L100001019198,utility-scale solar,pre_construction,20
+G100001021657,energy_plants_gem_units,SWZ,point,,SWZ-1-HH,,point,,,,true,abf-boundaries-v0.2.0,Ngwenya (Globeleq) solar farm,L100001019200,utility-scale solar,pre_construction,15
+G100001021659,energy_plants_gem_units,SWZ,point,,SWZ-1-HH,,point,,,,true,abf-boundaries-v0.2.0,Balekane solar farm,L100001019201,utility-scale solar,pre_construction,15
+G100001021660,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,true,abf-boundaries-v0.2.0,Eswatini solar farms,L100001019203,utility-scale solar,pre_construction,25
+G100001021662,energy_plants_gem_units,SWZ,point,,SWZ-1-SH,,point,,,,false,abf-boundaries-v0.2.0,Lavumisa solar farm,L100001019205,utility-scale solar,operating,10
+G100001053990,energy_plants_gem_units,SWZ,point,,SWZ-1-HH,,point,,,,true,abf-boundaries-v0.2.0,Eswatini power station,L100001047441,bioenergy,pre_construction,40
+G100001053991,energy_plants_gem_units,SWZ,point,,SWZ-1-LU,,point,,,,false,abf-boundaries-v0.2.0,Mhlume Sugar cogeneration power station,L100001047442,bioenergy,announced,18.5
+G100001053993,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,false,abf-boundaries-v0.2.0,Bhunya power plant,L100001047444,bioenergy,operating,25
+G100001071247,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,true,abf-boundaries-v0.2.0,Eswatini Electricity Company geothermal power plant,L100001062094,geothermal,announced,1
+G100001074368,energy_plants_gem_units,SWZ,point,,SWZ-1-MA,,point,,,,true,abf-boundaries-v0.2.0,Tsamela solar farm (Eswatini),L100001064607,utility-scale solar,pre_construction,20

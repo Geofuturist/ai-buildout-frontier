@@ -1,0 +1,12 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001010438,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Capwatt Ferreira solar project,L100001009068,utility-scale solar,operating,10
+G100001010439,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Messejana solar project,L100001009069,utility-scale solar,operating,15.5
+G100001010440,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-02,,point,,,,false,abf-boundaries-v0.2.0,Porteirinhos solar project,L100001009070,utility-scale solar,operating,6.2
+G100001010442,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Cabrela solar project,L100001009072,utility-scale solar,operating,13.2
+G100001010443,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-07,,point,,,,false,abf-boundaries-v0.2.0,Campo do Ameixial solar project,L100001009073,utility-scale solar,operating,5
+G100001010446,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Cativante solar project,L100001009076,utility-scale solar,operating,11.2
+G100001010448,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-08,,point,,,,false,abf-boundaries-v0.2.0,Ferreiras solar project,L100001009078,utility-scale solar,operating,6
+G100001010450,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Caniçal solar project,L100001009080,utility-scale solar,operating,6.6
+G100001010451,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-30,,point,,,,false,abf-boundaries-v0.2.0,Loiral solar project,L100001009081,utility-scale solar,operating,7.2
+G100001010456,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Canha/Alpenduradas solar farm,L100001009086,utility-scale solar,operating,12.3
+G100001010458,energy_plants_gem_tzsam_units,PRT,point,,PRT-1-15,,point,,,,false,abf-boundaries-v0.2.0,Vale Matancas solar project,L100001009088,utility-scale solar,operating,7.5

@@ -1,0 +1,83 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000105879,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Kosice power station,L100000103411,coal,retired,55
+G100000105880,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Kosice power station,L100000103411,coal,retired,66
+G100000106707,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Martinska power station,L100000103416,coal,retired,32
+G100000107531,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Novaky power station,L100000103415,coal,retired,110
+G100000107532,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Novaky power station,L100000103415,coal,retired,110
+G100000107533,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Novaky power station,L100000103415,coal,retired,110
+G100000107534,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Novaky power station,L100000103415,coal,retired,110
+G100000110309,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,true,abf-boundaries-v0.2.0,Trebisov power station,L100000103417,coal,cancelled,885
+G100000110415,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,U.S. Steel Kosice Works power station,L100000103412,coal,operating,208
+G100000110646,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Vojany I power station,L100000103410,coal,retired,110
+G100000110647,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Vojany I power station,L100000103410,coal,retired,110
+G100000110648,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Vojany I power station,L100000103410,coal,retired,110
+G100000110649,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Vojany I power station,L100000103410,coal,retired,110
+G100000110650,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Vojany I power station,L100000103410,coal,retired,110
+G100000110651,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Vojany I power station,L100000103410,coal,retired,110
+G100000112609,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Novaky power station,L100000103415,coal,retired,32
+G100000400630,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Levice power station,L100000400630,oil/gas,operating,80
+G100000400631,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Malženice power station,L100000400631,oil/gas,operating,436
+G100000400632,energy_plants_gem_units,SVK,point,,SVK-1-BC,,point,,,,true,abf-boundaries-v0.2.0,Panické Dravce power station,L100000400632,oil/gas,operating,49.9
+G100000410483,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Považská Bystrica power station,L100000407848,oil/gas,operating,64
+G100000411137,energy_plants_gem_units,SVK,point,,SVK-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Slovnaft Refinery power station,L100000408041,oil/gas,operating,60
+G100000411138,energy_plants_gem_units,SVK,point,,SVK-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Slovnaft Refinery power station,L100000408041,oil/gas,operating,25
+G100000411139,energy_plants_gem_units,SVK,point,,SVK-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Slovnaft Refinery power station,L100000408041,oil/gas,operating,25
+G100000411140,energy_plants_gem_units,SVK,point,,SVK-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Slovnaft Refinery power station,L100000408041,oil/gas,operating,24
+G100000411141,energy_plants_gem_units,SVK,point,,SVK-1-BL,,point,,,,false,abf-boundaries-v0.2.0,Slovnaft Refinery power station,L100000408041,oil/gas,operating,29
+G100000411142,energy_plants_gem_units,SVK,point,,SVK-1-BL,,point,,,,false,abf-boundaries-v0.2.0,PPC Bratislava power station,L100000400633,oil/gas,operating,218
+G100000500459,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Bohunice nuclear power plant,L100000500198,nuclear,operating,500
+G100000500460,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Bohunice nuclear power plant,L100000500198,nuclear,operating,500
+G100000500461,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Mochovce nuclear power plant,L100000500199,nuclear,operating,500
+G100000500462,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Mochovce nuclear power plant,L100000500199,nuclear,operating,500
+G100000500477,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Bohunice nuclear power plant,L100000500198,nuclear,retired,440
+G100000500478,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Bohunice nuclear power plant,L100000500198,nuclear,retired,440
+G100000500490,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Mochovce nuclear power plant,L100000500199,nuclear,operating,471
+G100000500491,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Mochovce nuclear power plant,L100000500199,nuclear,construction,471
+G100000501016,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Bohunice nuclear power plant,L100000500198,nuclear,retired,143
+G100000501269,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Bohunice nuclear power plant,L100000500198,nuclear,pre_construction,1200
+G100000603341,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Čierny Váh hydroelectric plant,L100000603306,hydropower,operating,734
+G100000603342,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Gabčíkovo hydroelectric plant,L100000603307,hydropower,operating,720
+G100000603344,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Liptovská Mara hydroelectric plant,L100000603309,hydropower,operating,198
+G100000603345,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Mikšová hydroelectric plant,L100000603310,hydropower,operating,94
+G100000604452,energy_plants_gem_units,SVK,point,,SVK-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Ipel hydroelectric plant,L100000603308,hydropower,cancelled,600
+G100000700427,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,true,abf-boundaries-v0.2.0,Presov geothermal power plant,L100000700238,geothermal,construction,6
+G100000700428,energy_plants_gem_units,SVK,point,,SVK-1-BC,,point,,,,true,abf-boundaries-v0.2.0,Ziar geothermal power plant,L100000700239,geothermal,pre_construction,6.5
+G100000807473,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Jaslovské Bohunice solar farm,L100000806514,utility-scale solar,operating,10
+G100000807795,energy_plants_gem_units,SVK,point,,SVK-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Ladovo solar farm,L100000806800,utility-scale solar,operating,25
+G100000914416,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,true,abf-boundaries-v0.2.0,Dobsina-Telgart wind farm,L100000911437,wind,cancelled,20
+G100000919438,energy_plants_gem_units,SVK,point,,SVK-1-BC,,point,,,,true,abf-boundaries-v0.2.0,ENEL wind farm (Slovakia),L100000915728,wind,cancelled,104
+G100000925530,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Dvorníky wind farm,L100000920718,wind,shelved,20
+G100000925531,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Holíč wind farm,L100000920719,wind,shelved,28
+G100000925532,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,true,abf-boundaries-v0.2.0,Nitra I wind farm,L100000920720,wind,pre_construction,12
+G100000925533,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,true,abf-boundaries-v0.2.0,Nitra II wind farm,L100000920721,wind,pre_construction,16
+G100000925534,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,true,abf-boundaries-v0.2.0,Poprad wind farm,L100000920722,wind,shelved,14
+G100000925535,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Senica wind farm,L100000920723,wind,shelved,16
+G100000925536,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Zlaté Moravce wind farm,L100000920724,wind,shelved,40
+G100001000361,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,true,abf-boundaries-v0.2.0,Drahovce wind farm,L100001000155,wind,announced,50
+G100001027413,energy_plants_gem_units,SVK,point,,SVK-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Kráľová hydroelectric plant,L100001023208,hydropower,operating,45
+G100001027414,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Nosice hydroelectric plant,L100001023209,hydropower,operating,68
+G100001027415,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,Považská Bystrica hydroelectric plant,L100001023210,hydropower,operating,55
+G100001027416,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Ružín hydroelectric plant,L100001023211,hydropower,operating,60
+G100001031043,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Martinska power station,L100000103416,oil/gas,operating,27.9
+G100001031044,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,Kosice power station,L100000103411,oil/gas,operating,37.2
+G100001052141,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Zilina hydroelectric plant,L100001046210,hydropower,operating,72
+G100001053139,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,true,abf-boundaries-v0.2.0,Tvrdošín wind farm,L100001046854,wind,announced,33
+G100001060086,energy_plants_gem_units,SVK,point,,SVK-1-BC,,point,,,,false,abf-boundaries-v0.2.0,District Of Rimavská Sobota solar project X,L100001052292,utility-scale solar,operating,2.3
+G100001060089,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,false,abf-boundaries-v0.2.0,District Of Stará Ľubovňa solar project I,L100001052295,utility-scale solar,operating,1.8
+G100001060091,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,District Of Trebišov solar project V,L100001052297,utility-scale solar,operating,1.7
+G100001060095,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,false,abf-boundaries-v0.2.0,District Of Humenné solar project I,L100001052301,utility-scale solar,operating,1.6
+G100001060096,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,false,abf-boundaries-v0.2.0,District Of Komárno solar project VIII,L100001052302,utility-scale solar,operating,3.1
+G100001060130,energy_plants_gem_units,SVK,point,,SVK-1-NI,,point,,,,false,abf-boundaries-v0.2.0,District Of Zlaté Moravce solar project II,L100001052336,utility-scale solar,operating,2.9
+G100001060134,energy_plants_gem_units,SVK,point,,SVK-1-BL,,point,,,,false,abf-boundaries-v0.2.0,District Of Senec solar project II,L100001052340,utility-scale solar,operating,4.3
+G100001060136,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,false,abf-boundaries-v0.2.0,District Of Stará Ľubovňa solar project II,L100001052342,utility-scale solar,operating,2.3
+G100001060152,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,false,abf-boundaries-v0.2.0,District Of Vranov Nad Topľou solar project,L100001052358,utility-scale solar,operating,2
+G100001060157,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,false,abf-boundaries-v0.2.0,District Of Sabinov solar project,L100001052363,utility-scale solar,operating,2
+G100001060178,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,District Of Dunajská Streda solar project XI,L100001052384,utility-scale solar,operating,1.5
+G100001060181,energy_plants_gem_units,SVK,point,,SVK-1-KI,,point,,,,false,abf-boundaries-v0.2.0,District Of Trebišov solar project IX,L100001052387,utility-scale solar,operating,1.9
+G100001060184,energy_plants_gem_units,SVK,point,,SVK-1-TC,,point,,,,false,abf-boundaries-v0.2.0,District Of Nové Mesto Nad Váhom solar project,L100001052390,utility-scale solar,operating,1.5
+G100001060190,energy_plants_gem_units,SVK,point,,SVK-1-PV,,point,,,,false,abf-boundaries-v0.2.0,District Of Prešov solar project VIII,L100001052396,utility-scale solar,operating,1.9
+G100001062718,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Hricov hydroelectric plant,L100001054826,hydropower,operating,32
+G100001062719,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Lipovec hydroelectric plant,L100001054827,hydropower,operating,38
+G100001062720,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Madunice hydroelectric plant,L100001054828,hydropower,operating,43
+G100001062721,energy_plants_gem_units,SVK,point,,SVK-1-ZI,,point,,,,false,abf-boundaries-v0.2.0,Sučany hydroelectric plant,L100001054829,hydropower,operating,38
+G100001090851,energy_plants_gem_units,SVK,point,,SVK-1-TA,,point,,,,false,abf-boundaries-v0.2.0,Jaslovské Bohunice solar farm,L100000806514,utility-scale solar,construction,10

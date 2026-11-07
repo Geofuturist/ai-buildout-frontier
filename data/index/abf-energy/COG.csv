@@ -1,0 +1,22 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407248,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,false,abf-boundaries-v0.2.0,Centrale Électrique du Congo (CEC) power station,L100000406811,oil/gas,operating,157
+G100000407249,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,false,abf-boundaries-v0.2.0,Centrale Électrique du Congo (CEC) power station,L100000406811,oil/gas,operating,157
+G100000407250,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,false,abf-boundaries-v0.2.0,Centrale Électrique du Congo (CEC) power station,L100000406811,oil/gas,operating,170
+G100000407251,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,false,abf-boundaries-v0.2.0,Centrale Électrique du Congo (CEC) power station,L100000406811,oil/gas,announced,516
+G100000407252,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,false,abf-boundaries-v0.2.0,Congo Natural Gas Combined Cycle power plant,L100000406812,oil/gas,shelved,50
+G100000407253,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,false,abf-boundaries-v0.2.0,Congo Natural Gas Combined Cycle power plant,L100000406812,oil/gas,operating,50
+G100000603249,energy_plants_gem_units,COG,point,,COG-1-14,,point,,,,false,abf-boundaries-v0.2.0,Imboulou hydroelectric plant,L100000603214,hydropower,operating,120
+G100000604522,energy_plants_gem_units,COG,point,,COG-1-12,,point,,,,false,abf-boundaries-v0.2.0,Kouembali hydroelectric plant,L100000603215,hydropower,cancelled,150
+G100000604636,energy_plants_gem_units,COG,point,,COG-1-9,,point,,,,true,abf-boundaries-v0.2.0,Mourala hydroelectric plant,L100000603216,hydropower,pre_construction,230
+G100000604680,energy_plants_gem_units,COG,point,,COG-1-9,,point,,,,true,abf-boundaries-v0.2.0,Nyanga hydroelectric plant,L100000604298,hydropower,pre_construction,101
+G100000604757,energy_plants_gem_units,COG,point,COD,COG-1-BZV,,point,,,,false,abf-boundaries-v0.2.0,Rapides De Kinsuka hydroelectric plant,L100000604080,hydropower,cancelled,900
+G100000604827,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,false,abf-boundaries-v0.2.0,Sounda Gorge hydroelectric plant,L100000603217,hydropower,cancelled,100
+G100000831255,energy_plants_gem_units,COG,point,,COG-1-8,,point,,,,true,abf-boundaries-v0.2.0,Ignié solar farm,L100000827709,utility-scale solar,construction,50
+G100000831256,energy_plants_gem_units,COG,point,,COG-1-8,,point,,,,true,abf-boundaries-v0.2.0,Imbimbi solar farm,L100000827710,utility-scale solar,cancelled,50
+G100000831257,energy_plants_gem_units,COG,point,,COG-1-8,,point,,,,true,abf-boundaries-v0.2.0,Maloukau Trade Industrial Estate solar farm,L100000827711,utility-scale solar,cancelled,50
+G100000831258,energy_plants_gem_units,COG,point,,COG-1-16,,point,,,,true,abf-boundaries-v0.2.0,Pointe Noire Industrial Estate solar farm,L100000827712,utility-scale solar,cancelled,50
+G100001021130,energy_plants_gem_units,COG,point,,COG-1-13,,point,,,,true,abf-boundaries-v0.2.0,Congo-Brazzaville solar farm,L100001018841,utility-scale solar,pre_construction,100
+G100001030433,energy_plants_gem_units,COG,point,,COG-1-11,,point,,,,false,abf-boundaries-v0.2.0,Moukoukoulou hydroelectric plant,L100001025648,hydropower,operating,74
+G100001030435,energy_plants_gem_units,COG,point,,COG-1-5,,point,,,,true,abf-boundaries-v0.2.0,Sounda hydroelectric plant,L100001025649,hydropower,shelved,600
+G100001054264,energy_plants_gem_units,COG,point,,COG-1-11,,point,,,,true,abf-boundaries-v0.2.0,N'kayi Mill power station,L100001047639,bioenergy,operating,6
+G100001054265,energy_plants_gem_units,COG,point,,COG-1-BZV,,point,,,,true,abf-boundaries-v0.2.0,Ignié SEZ power station,L100001047641,bioenergy,pre_construction,10

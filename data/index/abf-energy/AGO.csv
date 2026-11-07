@@ -1,0 +1,76 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000201683,energy_plants_gem_units,AGO,point,,AGO-1-MAL,,point,,,,false,abf-boundaries-v0.2.0,Biocom power station,L100000201400,bioenergy,operating,100
+G100000201684,energy_plants_gem_units,AGO,point,,AGO-1-LUA,,point,,,,true,abf-boundaries-v0.2.0,Luanda power station,L100000201401,bioenergy,cancelled,30
+G100000407057,energy_plants_gem_units,AGO,point,,AGO-1-LUA,,point,,,,false,abf-boundaries-v0.2.0,Cazenga power station,L100000406733,oil/gas,pre_construction,100
+G100000407058,energy_plants_gem_units,AGO,point,,AGO-1-CAB,,point,,,,false,abf-boundaries-v0.2.0,Fútila power station,L100000406734,oil/gas,pre_construction,100
+G100000407059,energy_plants_gem_units,AGO,point,,AGO-1-CAB,,point,,,,false,abf-boundaries-v0.2.0,Fútila power station,L100000406734,oil/gas,pre_construction,100
+G100000407060,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,true,abf-boundaries-v0.2.0,Lobito power station,L100000406735,oil/gas,pre_construction,375
+G100000407061,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,true,abf-boundaries-v0.2.0,Lobito power station,L100000406735,oil/gas,pre_construction,375
+G100000407062,energy_plants_gem_units,AGO,point,,AGO-1-ZAI,,point,,,,false,abf-boundaries-v0.2.0,Soyo power station,L100000406736,oil/gas,operating,360
+G100000407063,energy_plants_gem_units,AGO,point,,AGO-1-ZAI,,point,,,,false,abf-boundaries-v0.2.0,Soyo power station,L100000406736,oil/gas,operating,360
+G100000407064,energy_plants_gem_units,AGO,point,,AGO-1-ZAI,,point,,,,false,abf-boundaries-v0.2.0,Soyo power station,L100000406736,oil/gas,pre_construction,375
+G100000407065,energy_plants_gem_units,AGO,point,,AGO-1-ZAI,,point,,,,false,abf-boundaries-v0.2.0,Soyo power station,L100000406736,oil/gas,pre_construction,375
+G100000413531,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,false,abf-boundaries-v0.2.0,Central de Quileva power plant,L100000409055,oil/gas,operating,84
+G100000413546,energy_plants_gem_units,AGO,point,,AGO-1-LUA,,point,,,,false,abf-boundaries-v0.2.0,Central Caminho de Ferro de Luanda (CFL) power station,L100000409040,oil/gas,operating,125
+G100000600012,energy_plants_gem_units,AGO,point,,AGO-1-CUS,,point,,,,true,abf-boundaries-v0.2.0,Caculo Cabaça hydroelectric plant,L100000600012,hydropower,construction,2172
+G100000600013,energy_plants_gem_units,AGO,point,,AGO-1-BGO,,point,,,,false,abf-boundaries-v0.2.0,Cambambe I hydroelectric plant,L100000600013,hydropower,operating,180
+G100000600014,energy_plants_gem_units,AGO,point,,AGO-1-CNO,,point,,,,false,abf-boundaries-v0.2.0,Cambambe II hydroelectric plant,L100000600014,hydropower,operating,700
+G100000600015,energy_plants_gem_units,AGO,point,,AGO-1-MAL,,point,,,,false,abf-boundaries-v0.2.0,Capanda hydroelectric plant,L100000600015,hydropower,operating,520
+G100000600017,energy_plants_gem_units,AGO,point,,AGO-1-CUS,,point,,,,false,abf-boundaries-v0.2.0,Laúca hydroelectric plant,L100000600017,hydropower,operating,2070
+G100000604133,energy_plants_gem_units,AGO,point,NAM,AGO-1-CNN,,point,,,,false,abf-boundaries-v0.2.0,Ruacana hydroelectric plant,L100000604094,hydropower,operating,332
+G100000604456,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,true,abf-boundaries-v0.2.0,Jamba ia Mina hydroelectric plant,L100000600016,hydropower,announced,224
+G100000604457,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Jamba ia Oma hydroelectric plant,L100000604243,hydropower,announced,79
+G100000800073,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,true,abf-boundaries-v0.2.0,Benguela solar farm,L100000800055,utility-scale solar,operating,97
+G100000800075,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Biópio solar farm,L100000800057,utility-scale solar,operating,189
+G100000800244,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Lubango Solar,L100000800199,utility-scale solar,operating,35
+G100000800245,energy_plants_gem_units,AGO,point,,AGO-1-MOX,,point,,,,false,abf-boundaries-v0.2.0,Luena solar farm,L100000800200,utility-scale solar,operating,25.3
+G100000800321,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,true,abf-boundaries-v0.2.0,Quilemba solar farm,L100000800269,utility-scale solar,pre_construction,35
+G100000800332,energy_plants_gem_units,AGO,point,,AGO-1-LSU,,point,,,,false,abf-boundaries-v0.2.0,Saurimo Solar,L100000800280,utility-scale solar,operating,27
+G100000800375,energy_plants_gem_units,AGO,point,,AGO-1-NAM,,point,,,,false,abf-boundaries-v0.2.0,Solenova Namibe solar farm,L100000800307,utility-scale solar,operating,25
+G100000800376,energy_plants_gem_units,AGO,point,,AGO-1-NAM,,point,,,,false,abf-boundaries-v0.2.0,Solenova Namibe solar farm,L100000800307,utility-scale solar,construction,25
+G100000814049,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,false,abf-boundaries-v0.2.0,Baía Farta solar farm,L100000811547,utility-scale solar,operating,96
+G100000814050,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,true,abf-boundaries-v0.2.0,Bailundo Hybrid solar farm,L100000811548,utility-scale solar,operating,8
+G100000814051,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Belém do Dango solar farm,L100000811549,utility-scale solar,shelved,20
+G100000814052,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Benfica Huambo solar farm,L100000811550,utility-scale solar,shelved,4
+G100000814053,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Caála solar farm,L100000811551,utility-scale solar,shelved,5
+G100000814054,energy_plants_gem_units,AGO,point,,AGO-1-NAM,,point,,,,false,abf-boundaries-v0.2.0,Cambongue solar farm,L100000811552,utility-scale solar,pre_construction,10
+G100000814055,energy_plants_gem_units,AGO,point,,AGO-1-LSU,,point,,,,false,abf-boundaries-v0.2.0,Chicapa solar farm,L100000811553,utility-scale solar,shelved,4
+G100000814056,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Chipindo solar farm,L100000811554,utility-scale solar,shelved,6
+G100000814057,energy_plants_gem_units,AGO,point,,AGO-1-BIE,,point,,,,true,abf-boundaries-v0.2.0,Cuito solar farm,L100000811555,utility-scale solar,shelved,14.7
+G100000814058,energy_plants_gem_units,AGO,point,,AGO-1-LNO,,point,,,,false,abf-boundaries-v0.2.0,Dundo solar farm,L100000811556,utility-scale solar,shelved,7
+G100000814059,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,false,abf-boundaries-v0.2.0,Ganda solar farm,L100000811557,utility-scale solar,shelved,10
+G100000814060,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Gove solar farm,L100000811558,utility-scale solar,shelved,5
+G100000814062,energy_plants_gem_units,AGO,point,,AGO-1-NAM,,point,,,,false,abf-boundaries-v0.2.0,Lobito solar farm,L100000811560,utility-scale solar,shelved,10
+G100000814063,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Lubango Solar,L100000800199,utility-scale solar,pre_construction,45
+G100000814064,energy_plants_gem_units,AGO,point,,AGO-1-LNO,,point,,,,false,abf-boundaries-v0.2.0,Lucapa Hybrid solar farm,L100000811561,utility-scale solar,operating,7.2
+G100000814065,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Matala solar farm (Angola),L100000811562,utility-scale solar,shelved,10
+G100000814066,energy_plants_gem_units,AGO,point,,AGO-1-CCU,,point,,,,false,abf-boundaries-v0.2.0,Namacunde solar farm,L100000811563,utility-scale solar,shelved,10
+G100000814067,energy_plants_gem_units,AGO,point,,AGO-1-CNN,,point,,,,false,abf-boundaries-v0.2.0,Ondjva solar farm,L100000811564,utility-scale solar,shelved,2
+G100000814068,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,true,abf-boundaries-v0.2.0,Quilemba solar farm,L100000800269,utility-scale solar,announced,45
+G100000814069,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Quipungo solar farm,L100000811565,utility-scale solar,shelved,10
+G100000814070,energy_plants_gem_units,AGO,point,,AGO-1-CNN,,point,,,,false,abf-boundaries-v0.2.0,Tchamutete solar farm,L100000811566,utility-scale solar,shelved,10
+G100000831129,energy_plants_gem_units,AGO,point,,AGO-1-MAL,,point,,,,true,abf-boundaries-v0.2.0,EXIM solar farm (Angola),L100000827608,utility-scale solar,announced,250
+G100000831130,energy_plants_gem_units,AGO,point,,AGO-1-MAL,,point,,,,true,abf-boundaries-v0.2.0,EXIM solar farm (Angola),L100000827608,utility-scale solar,announced,250
+G100000900170,energy_plants_gem_units,AGO,point,,AGO-1-MAL,,point,,,,false,abf-boundaries-v0.2.0,Kiwaba Nzoji wind farm,L100000900130,wind,pre_construction,62
+G100000900179,energy_plants_gem_units,AGO,point,,AGO-1-CNO,,point,,,,true,abf-boundaries-v0.2.0,Cuanza Norte wind farm,L100000900138,wind,cancelled,40
+G100000900180,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,true,abf-boundaries-v0.2.0,Lubango wind farm,L100000900139,wind,announced,40
+G100000920621,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,false,abf-boundaries-v0.2.0,Benjamin wind farm,L100000916595,wind,announced,52
+G100000920622,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Cacula wind farm,L100000916596,wind,announced,88
+G100000920623,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Calenga wind farm,L100000916597,wind,shelved,84
+G100000920624,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Chibia wind farm,L100000916598,wind,announced,48
+G100000920625,energy_plants_gem_units,AGO,point,,AGO-1-CNO,,point,,,,false,abf-boundaries-v0.2.0,Gastão wind farm,L100000916599,wind,shelved,30
+G100000920626,energy_plants_gem_units,AGO,point,,AGO-1-MAL,,point,,,,false,abf-boundaries-v0.2.0,Kiwaba Nzoji wind farm,L100000900130,wind,pre_construction,42
+G100000920627,energy_plants_gem_units,AGO,point,,AGO-1-CUS,,point,,,,false,abf-boundaries-v0.2.0,Mussende wind farm,L100000916600,wind,pre_construction,36
+G100000920628,energy_plants_gem_units,AGO,point,,AGO-1-CUS,,point,,,,false,abf-boundaries-v0.2.0,Mussende wind farm,L100000916600,wind,pre_construction,44
+G100000920629,energy_plants_gem_units,AGO,point,,AGO-1-BIE,,point,,,,false,abf-boundaries-v0.2.0,Nharea wind farm,L100000916601,wind,pre_construction,36
+G100000920630,energy_plants_gem_units,AGO,point,,AGO-1-CNO,,point,,,,false,abf-boundaries-v0.2.0,Pambo de Sonhe wind farm,L100000916602,wind,pre_construction,50
+G100000920631,energy_plants_gem_units,AGO,point,,AGO-1-NAM,,point,,,,false,abf-boundaries-v0.2.0,Tundavala wind farm,L100000916603,wind,shelved,40
+G100001020731,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,true,abf-boundaries-v0.2.0,Quipungo (Masdar) solar farm,L100001018541,utility-scale solar,announced,150
+G100001020743,energy_plants_gem_units,AGO,point,,AGO-1-NAM,,point,,,,false,abf-boundaries-v0.2.0,Tombwa wind farm,L100000900081,wind,announced,20
+G100001020746,energy_plants_gem_units,AGO,point,,AGO-1-NAM,,point,,,,true,abf-boundaries-v0.2.0,Morro do Ouro wind farm,L100001018551,wind,operating,50
+G100001030660,energy_plants_gem_units,AGO,point,,AGO-1-HUA,,point,,,,false,abf-boundaries-v0.2.0,Gove Dam hydroelectric plant,L100001025775,hydropower,operating,60
+G100001030661,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,false,abf-boundaries-v0.2.0,Lomaúm hydroelectric plant,L100001025776,hydropower,operating,50
+G100001062422,energy_plants_gem_units,AGO,point,,AGO-1-HUI,,point,,,,false,abf-boundaries-v0.2.0,Matala hydroelectric plant,L100001054530,hydropower,operating,40
+G100001090838,energy_plants_gem_units,AGO,point,,AGO-1-MOX,,point,,,,false,abf-boundaries-v0.2.0,Cazombo solar farm,L100001080874,utility-scale solar,operating,25.4
+G100001092290,energy_plants_gem_units,AGO,point,,AGO-1-LNO,,point,,,,false,abf-boundaries-v0.2.0,Luachimo hydroelectric plant,L100001081963,hydropower,operating,34
+G100001093288,energy_plants_gem_units,AGO,point,,AGO-1-BGU,,point,,,,true,abf-boundaries-v0.2.0,Lobito Refinery power station,L100001082786,oil/gas,announced,148

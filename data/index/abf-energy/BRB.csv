@@ -1,0 +1,15 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000412232,energy_plants_gem_units,BRB,point,,BRB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Spring Garden power station,L100000408510,oil/gas,operating,60
+G100000808251,energy_plants_gem_units,BRB,point,,BRB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Waterford Plantation solar farm,L100000807103,utility-scale solar,pre_construction,10
+G100000809333,energy_plants_gem_units,BRB,point,,BRB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Renewstable Barbados solar farm,L100000807658,utility-scale solar,pre_construction,50
+G100000835594,energy_plants_gem_units,BRB,point,,BRB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Saint Lucy solar farm,L100000831626,utility-scale solar,operating,10
+G100000906208,energy_plants_gem_units,BRB,point,,BRB-1-09,,point,,,,true,abf-boundaries-v0.2.0,Lamberts Wind Farm Project,L100000905004,wind,construction,50
+G100001023638,energy_plants_gem_units,BRB,point,,BRB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Community Solar Gardens,L100001020717,utility-scale solar,pre_construction,60
+G100001023640,energy_plants_gem_units,BRB,point,,BRB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Saint Philip solar farm,L100001020718,utility-scale solar,announced,10
+G100001023641,energy_plants_gem_units,BRB,point,,BRB-1-05,,point,,,,false,abf-boundaries-v0.2.0,Ashford Plantation wind farm,L100001020719,wind,operating,1
+G100001033553,energy_plants_gem_units,BRB,point,,BRB-1-01,,point,,,,false,abf-boundaries-v0.2.0,Saint George solar project,L100001028282,utility-scale solar,operating,1
+G100001053125,energy_plants_gem_units,BRB,point,,BRB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Spring Garden power station,L100000408510,oil/gas,operating,50
+G100001053133,energy_plants_gem_units,BRB,point,,BRB-1-01,,point,,,,false,abf-boundaries-v0.2.0,Seawell power station,L100001046851,oil/gas,operating,13
+G100001053135,energy_plants_gem_units,BRB,point,,BRB-1-01,,point,,,,false,abf-boundaries-v0.2.0,Seawell power station,L100001046851,oil/gas,operating,20
+G100001053136,energy_plants_gem_units,BRB,point,,BRB-1-01,,point,,,,false,abf-boundaries-v0.2.0,Seawell power station,L100001046851,oil/gas,operating,20
+G100001053137,energy_plants_gem_units,BRB,point,,BRB-1-01,,point,,,,false,abf-boundaries-v0.2.0,Seawell power station,L100001046851,oil/gas,operating,20

@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-08cd6f19ffc7,dc_atlas_points,UZB,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Shanghai Linkwise Surkhandarya Data Center,Planned,colocation,100_999,
+ATL-4f92e2108d74,dc_atlas_points,UZB,field,,UZB-1-BU,,point,,,,true,abf-boundaries-v0.2.0,Shanghai LinkWise Bukhara Data Center,Planned,colocation,100_999,
+ATL-750dec764428,dc_atlas_points,UZB,field,,UZB-1-TK,,point,,,,true,abf-boundaries-v0.2.0,Datavolt Tashkent,Operating / Construction,colocation,10_99,
+ATL-ab04d3c64ce5,dc_atlas_points,UZB,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Datavolt Bukhoro,Planned,colocation,10_99,
+ATL-ea55ebad6f2d,dc_atlas_points,UZB,field,,UZB-1-TK,,point,,,,true,abf-boundaries-v0.2.0,Datavolt Tashkent,Planned,colocation,100_999,
+ATL-ee4730300a9f,dc_atlas_points,UZB,field,,,,,no_point,,,,abf-boundaries-v0.2.0,Uzatom Jizzakh,Planned,other,10_99,

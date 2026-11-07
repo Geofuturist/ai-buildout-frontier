@@ -1,0 +1,42 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200359,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Domestic Solid Waste Management Center power station,L100000200323,bioenergy,operating,50
+G100000404725,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Qatalum CCGT power station,L100000405531,oil/gas,operating,675
+G100000404726,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Qatalum CCGT power station,L100000405531,oil/gas,operating,675
+G100000404727,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,121.8
+G100000404728,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,121.8
+G100000404729,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,121.8
+G100000404730,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,121.8
+G100000404731,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,121.8
+G100000404732,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,125.5
+G100000404733,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,125.5
+G100000404734,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,125.5
+G100000404735,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,189
+G100000404736,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,189
+G100000404737,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Abu Fontas power plant,L100000405533,oil/gas,operating,189
+G100000404738,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Laffan A power plant,L100000405534,oil/gas,operating,756
+G100000404739,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Laffan B power plant,L100000405535,oil/gas,operating,1025
+G100000404740,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Laffan C power plant,L100000405536,oil/gas,operating,683
+G100000404741,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Laffan C power plant,L100000405536,oil/gas,operating,683
+G100000404742,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Laffan C power plant,L100000405536,oil/gas,operating,683
+G100000404743,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Laffan C power plant,L100000405536,oil/gas,operating,683
+G100000404744,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Mesaieed CCGT power station,L100000405529,oil/gas,operating,669
+G100000404745,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Mesaieed CCGT power station,L100000405529,oil/gas,operating,669
+G100000404746,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Mesaieed CCGT power station,L100000405529,oil/gas,operating,669
+G100000404747,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Qafco-V power plant,L100000405530,oil/gas,operating,200
+G100000404749,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Umm Al Houl power plant,L100000405538,oil/gas,operating,1260
+G100000404750,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Ras Abu Fontas (E) power plant,L100000405532,oil/gas,construction,836
+G100000410062,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Umm Al Houl power plant,L100000405538,oil/gas,operating,1260
+G100000411020,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Saliyah GT power plant,L100000408039,oil/gas,operating,67
+G100000411021,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Saliyah GT power plant,L100000408039,oil/gas,operating,67
+G100000411531,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Al Wajbha GT Power Plant Qatar,L100000408233,oil/gas,operating,301
+G100000804674,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Kahramaa Solar Facility,L100000804092,utility-scale solar,cancelled,15
+G100000804692,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Kharsaah Solar,L100000804101,utility-scale solar,operating,450
+G100000804693,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Kharsaah Solar,L100000804101,utility-scale solar,operating,350
+G100000811460,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Mesaieed Solar Plant,L100000809130,utility-scale solar,operating,417
+G100000811461,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Ras Laffan Solar Plant,L100000809131,utility-scale solar,operating,458
+G100001030164,energy_plants_gem_units,QAT,point,,,,,,,,false,abf-boundaries-v0.2.0,Umm Salal solar project,L100001025483,utility-scale solar,operating,2.1
+G100001046555,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Ras Abu Fontas Peak Generation power plant,L100001041261,oil/gas,construction,500
+G100001090817,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Dukhan solar farm,L100001080859,utility-scale solar,announced,1000
+G100001090818,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Dukhan solar farm,L100001080859,utility-scale solar,announced,1000
+G100001095053,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Ras Abu Fontas (E) power plant,L100000405532,oil/gas,construction,790
+G100001095055,energy_plants_gem_units,QAT,point,,,,,,,,true,abf-boundaries-v0.2.0,Ras Abu Fontas (E) power plant,L100000405532,oil/gas,construction,790

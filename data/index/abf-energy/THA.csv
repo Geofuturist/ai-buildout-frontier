@@ -1,0 +1,450 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100488,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bamnet Narong power station,L100000103573,coal,cancelled,56
+G100000100514,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bangkok HSFC Plant power station,L100000103571,coal,operating,36
+G100000103014,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gheco One power station,L100000103582,coal,operating,660
+G100000103058,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow Energy power complex,L100000103583,coal,operating,85
+G100000103992,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Hua Sai Coal Power Plant Project,L100000103577,coal,cancelled,800
+G100000105550,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kao Hin Son power station,L100000103572,coal,cancelled,150
+G100000105551,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kao Hin Son power station,L100000103572,coal,cancelled,150
+G100000105552,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kao Hin Son power station,L100000103572,coal,cancelled,150
+G100000105553,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kao Hin Son power station,L100000103572,coal,cancelled,150
+G100000105929,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Krabi coal power station,L100000105030,coal,cancelled,870
+G100000106547,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,operating,300
+G100000106548,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,operating,300
+G100000106549,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,operating,300
+G100000106550,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,operating,300
+G100000106551,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,retired,150
+G100000106552,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,retired,150
+G100000106553,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,retired,150
+G100000106554,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,retired,150
+G100000106555,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,operating,300
+G100000106556,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,operating,300
+G100000106557,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,operating,655
+G100000106558,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,cancelled,600
+G100000106655,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Map Ta Phut BLCP power station,L100000103584,coal,operating,717
+G100000106656,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Map Ta Phut BLCP power station,L100000103584,coal,operating,717
+G100000107748,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Panare power station,L100000103578,coal,cancelled,1000
+G100000110037,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Tum power station,L100000103579,coal,operating,164
+G100000110038,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Tum power station,L100000103579,coal,operating,164
+G100000110056,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thap Sakae power station,L100000103581,coal,cancelled,800
+G100000110057,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thap Sakae power station,L100000103581,coal,cancelled,800
+G100000110058,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thap Sakae power station,L100000103581,coal,cancelled,800
+G100000110059,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thap Sakae power station,L100000103581,coal,cancelled,800
+G100000110078,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thepha power station,L100000103586,coal,cancelled,1100
+G100000110079,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thepha power station,L100000103586,coal,cancelled,1100
+G100000110484,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Unnamed Thailand coal plants,L100000103587,coal,cancelled,2000
+G100000110714,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Sala Mill power station,L100000103574,coal,operating,34
+G100000112784,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,retired,75
+G100000112785,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,retired,75
+G100000112786,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mae Moh power station,L100000103576,coal,retired,75
+G100000113104,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,TPI Coal power station,L100000103585,coal,retired,150
+G100000114525,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,IRPC power station,L100000104674,coal,operating,307
+G100000115159,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,TPT Petrochemical power station,L100000104854,coal,operating,55
+G100000200053,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,TPI Power power station,L100000200050,bioenergy,operating,75
+G100000200082,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khon Kaen Sugar Power power station,L100000200078,bioenergy,operating,30
+G100000200083,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mitr Biopower Dan Chang power station,L100000200079,bioenergy,operating,41
+G100000200084,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mitr Biopower Dan Chang power station,L100000200079,bioenergy,operating,32
+G100000200085,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mitr Biopower Phu Luang power station,L100000200080,bioenergy,operating,41
+G100000200086,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mitr Kalasin power station,L100000200081,bioenergy,operating,68
+G100000200087,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mitr Biopower Chaiyaphum power station,L100000200082,bioenergy,operating,103
+G100000200822,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,National Power Plant 4 power station,L100000200722,bioenergy,operating,37
+G100000200823,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,National Power Plant 5 power station,L100000200723,bioenergy,operating,37
+G100000200824,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,National Power Plant 5A power station,L100000200724,bioenergy,operating,98
+G100000200825,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,National Power Plant 6 power station,L100000200725,bioenergy,operating,37
+G100000200826,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,National Power Plant 9 power station,L100000200726,bioenergy,operating,135
+G100000200827,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Panom Sarakham Mill power station,L100000200727,bioenergy,operating,47
+G100000200828,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,TPI Power power station,L100000200050,bioenergy,operating,75
+G100000401094,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chonburi Ng Project power station,L100000405372,oil/gas,operating,625
+G100000401095,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chonburi Ng Project power station,L100000405372,oil/gas,operating,625
+G100000401096,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chonburi Ng Project power station,L100000405372,oil/gas,operating,625
+G100000401097,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chonburi Ng Project power station,L100000405372,oil/gas,operating,625
+G100000401098,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rayong Gulf PD power station,L100000405416,oil/gas,operating,625
+G100000401099,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rayong Gulf PD power station,L100000405416,oil/gas,operating,625
+G100000401100,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rayong Gulf PD power station,L100000405416,oil/gas,operating,625
+G100000401101,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rayong Gulf PD power station,L100000405416,oil/gas,operating,625
+G100000401103,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf NPM power station,L100000405389,oil/gas,operating,135
+G100000401104,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf NRV power station,L100000405390,oil/gas,operating,128
+G100000401105,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf NRV power station,L100000405390,oil/gas,operating,128
+G100000401110,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nexif Rayong power station,L100000405407,oil/gas,operating,92
+G100000404400,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Chonburi) power station,L100000405357,oil/gas,operating,140
+G100000404401,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Chonburi) power station,L100000405357,oil/gas,operating,140
+G100000404402,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Chonburi) power station,L100000405357,oil/gas,operating,133
+G100000404403,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Chonburi) power station,L100000405357,oil/gas,operating,131
+G100000404404,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Chonburi) power station,L100000405357,oil/gas,operating,131
+G100000404405,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Rayong) power station,L100000405358,oil/gas,operating,123
+G100000404406,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Rayong) power station,L100000405358,oil/gas,operating,124
+G100000404407,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Rayong) power station,L100000405358,oil/gas,operating,133
+G100000404408,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Rayong) power station,L100000405358,oil/gas,operating,133
+G100000404409,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amata (Rayong) power station,L100000405358,oil/gas,operating,133
+G100000404410,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkadi Industrial Park power station,L100000405363,oil/gas,operating,115
+G100000404411,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangkadi Industrial Park power station,L100000405363,oil/gas,operating,115
+G100000404412,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Bo power station,L100000405361,oil/gas,operating,350
+G100000404413,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong power station,L100000405362,oil/gas,operating,576
+G100000404414,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong power station,L100000405362,oil/gas,operating,576
+G100000404415,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong power station,L100000405362,oil/gas,retired,314
+G100000404416,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong power station,L100000405362,oil/gas,retired,314
+G100000404417,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong power station,L100000405362,oil/gas,operating,710
+G100000404418,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chana power station,L100000405371,oil/gas,operating,710
+G100000404419,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chana power station,L100000405371,oil/gas,operating,766
+G100000404420,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Global Power Synergy Central Utility Plant 1,L100000405374,oil/gas,operating,226
+G100000404421,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Global Power Synergy Central Utility Plant 2,L100000405375,oil/gas,operating,113
+G100000404422,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,EGCO cogeneration (Rayong) power station,L100000405373,oil/gas,operating,117
+G100000404423,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow Energy Phase 5 power station,L100000405376,oil/gas,operating,328
+G100000404424,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow IPP power station,L100000405377,oil/gas,operating,357
+G100000404425,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow SPP 11 power station,L100000405379,oil/gas,operating,162
+G100000404426,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow SPP 11 power station,L100000405379,oil/gas,operating,110
+G100000404427,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaeng Khoi 2 power station,L100000405399,oil/gas,operating,734
+G100000404428,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaeng Khoi 2 power station,L100000405399,oil/gas,operating,734
+G100000404431,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khanom power station,L100000405400,oil/gas,operating,970
+G100000404432,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Klong Luang power station,L100000405401,oil/gas,operating,122
+G100000404433,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Banpong power station,L100000405366,oil/gas,operating,128
+G100000404434,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Samutprakarn power station,L100000405422,oil/gas,retired,220
+G100000404435,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Krabi power station,L100000103575,oil/gas,operating,315
+G100000404436,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Laem Chabang power station,L100000405402,oil/gas,operating,140
+G100000404437,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Laem Chabang power station,L100000405402,oil/gas,operating,56
+G100000404438,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hemaraj Industrial Estate power station,L100000405395,oil/gas,operating,130
+G100000404439,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Glow SPP 1 power station,L100000405378,oil/gas,operating,140
+G100000404440,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ratchaburi (B.Grimm) power station,L100000405411,oil/gas,operating,140
+G100000404441,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ratchaburi (B.Grimm) power station,L100000405411,oil/gas,operating,140
+G100000404442,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Burapa power station,L100000405368,oil/gas,pre_construction,540
+G100000404443,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phong power station,L100000405405,oil/gas,mothballed,355
+G100000404444,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phong power station,L100000405405,oil/gas,mothballed,355
+G100000404445,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khae power station,L100000405408,oil/gas,operating,113
+G100000404446,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Saeng power station,L100000405409,oil/gas,operating,800
+G100000404447,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Saeng power station,L100000405409,oil/gas,operating,800
+G100000404448,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,North Bangkok power station,L100000405410,oil/gas,mothballed,670
+G100000404449,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,North Bangkok power station,L100000405410,oil/gas,mothballed,828
+G100000404450,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi (RATCHGEN) power station,L100000405412,oil/gas,operating,725
+G100000404451,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi (RATCHGEN) power station,L100000405412,oil/gas,operating,725
+G100000404452,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi (RATCHGEN) power station,L100000405412,oil/gas,operating,725
+G100000404453,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi (RATCHGEN) power station,L100000405412,oil/gas,operating,735
+G100000404454,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi (RATCHGEN) power station,L100000405412,oil/gas,operating,735
+G100000404455,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi Power (RPCL) power station,L100000405413,oil/gas,operating,700
+G100000404456,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi Power (RPCL) power station,L100000405413,oil/gas,operating,700
+G100000404457,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bangpa-in power station,L100000405364,oil/gas,operating,117
+G100000404458,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bangpa-in power station,L100000405364,oil/gas,operating,117
+G100000404459,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,IRPC Industrial Zone Clean power station,L100000405397,oil/gas,operating,120
+G100000404460,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,IRPC Industrial Zone Clean power station,L100000405397,oil/gas,operating,120
+G100000404461,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nava Nakorn power station,L100000405406,oil/gas,operating,139
+G100000404462,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rojana power station,L100000405420,oil/gas,operating,275
+G100000404467,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Saha Patana power station,L100000405421,oil/gas,operating,202.7
+G100000404468,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,South Bangkok power station,L100000405424,oil/gas,retired,300
+G100000404469,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,South Bangkok power station,L100000405424,oil/gas,retired,562
+G100000404470,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,South Bangkok power station,L100000405424,oil/gas,mothballed,710
+G100000404471,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,South Bangkok power station,L100000405424,oil/gas,mothballed,1220
+G100000404472,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sriracha power station,L100000405427,oil/gas,operating,700
+G100000404473,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surat Thani power station,L100000405428,oil/gas,mothballed,122
+G100000404474,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surat Thani power station,L100000405428,oil/gas,mothballed,122
+G100000404475,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tri Energy power station,L100000405430,oil/gas,retired,720
+G100000404476,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hin Kong power plant,L100000407498,oil/gas,operating,700
+G100000404477,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hin Kong power plant,L100000407498,oil/gas,operating,700
+G100000404478,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ratchaburi World cogeneration power station,L100000405414,oil/gas,operating,234
+G100000404479,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Berkprai cogeneration power station,L100000405367,oil/gas,operating,99
+G100000404480,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Noi power station,L100000405432,oil/gas,retired,612
+G100000404481,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Noi power station,L100000405432,oil/gas,retired,612
+G100000404482,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Noi power station,L100000405432,oil/gas,retired,686
+G100000404483,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Noi power station,L100000405432,oil/gas,operating,750
+G100000404484,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangpoo cogeneration power station,L100000405365,oil/gas,operating,120
+G100000404485,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bangpoo cogeneration power station,L100000405365,oil/gas,operating,120
+G100000404486,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chachoengsao NNK cogeneration power station,L100000405369,oil/gas,operating,110
+G100000404487,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf BL power station,L100000405381,oil/gas,operating,127
+G100000404488,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf BP power station,L100000405382,oil/gas,operating,127
+G100000404489,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf NC power station,L100000405385,oil/gas,operating,126.5
+G100000404490,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf NLL power station,L100000405387,oil/gas,operating,123
+G100000404491,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf NLL power station,L100000405387,oil/gas,operating,127
+G100000404492,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf Tasit 1 & 2 power station,L100000405392,oil/gas,operating,138.3
+G100000404493,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf Tasit 1 & 2 power station,L100000405392,oil/gas,operating,138.3
+G100000404494,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf Tasit 3 & 4 power station,L100000405393,oil/gas,operating,130
+G100000404495,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf Tasit 3 & 4 power station,L100000405393,oil/gas,operating,130
+G100000404496,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf VTP power station,L100000405394,oil/gas,operating,137
+G100000404497,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf KP1 & 2 power station,L100000405384,oil/gas,operating,110
+G100000404498,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf KP1 & 2 power station,L100000405384,oil/gas,operating,110
+G100000404499,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf NK2 power station,L100000405386,oil/gas,operating,133
+G100000404500,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf TLC power station,L100000405391,oil/gas,operating,114
+G100000404501,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Gulf CRN power station,L100000405383,oil/gas,operating,125.9
+G100000404503,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lat Krabang power station,L100000405403,oil/gas,operating,120
+G100000404504,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Map Ta Phut BKK power station,L100000405404,oil/gas,operating,112
+G100000404505,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rayong Sipco power station,L100000405417,oil/gas,operating,160
+G100000404507,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,South Bangkok International Airport (SBIA) power station,L100000405423,oil/gas,operating,55
+G100000404508,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,U-Thai power station,L100000405431,oil/gas,operating,800
+G100000404509,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,U-Thai power station,L100000405431,oil/gas,operating,800
+G100000404510,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thai Oil Company Sriracha Refinery power station,L100000405429,oil/gas,operating,118
+G100000404511,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sriracha Thai Oil Company power station,L100000405426,oil/gas,operating,119.5
+G100000404512,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sriracha Thai Oil Company power station,L100000405426,oil/gas,operating,119.5
+G100000404513,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaiyo power station,L100000405370,oil/gas,operating,123
+G100000405840,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Banpong power station,L100000405366,oil/gas,operating,128
+G100000405963,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong power station,L100000405362,oil/gas,operating,704
+G100000405964,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Pakong power station,L100000405362,oil/gas,operating,704
+G100000405967,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phong power station,L100000405405,oil/gas,announced,650
+G100000405974,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,North Bangkok power station,L100000405410,oil/gas,mothballed,700
+G100000405975,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,North Bangkok power station,L100000405410,oil/gas,announced,700
+G100000405977,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,South Bangkok power station,L100000405424,oil/gas,announced,700
+G100000405978,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,South Bangkok power station,L100000405424,oil/gas,announced,700
+G100000405979,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,South Bangkok power station,L100000405424,oil/gas,announced,700
+G100000405985,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surat Thani power station,L100000405428,oil/gas,announced,700
+G100000405986,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surat Thani power station,L100000405428,oil/gas,announced,700
+G100000405987,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Noi power station,L100000405432,oil/gas,cancelled,1470
+G100000406244,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow IPP power station,L100000405377,oil/gas,operating,357
+G100000409726,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Songkhla Chana power station,L100000407521,oil/gas,cancelled,1700
+G100000409727,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Koh Khanun power station,L100000407520,oil/gas,operating,114
+G100000409728,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nava Nakorn power station,L100000405406,oil/gas,operating,60
+G100000410153,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow Energy power complex,L100000103583,coal,operating,222
+G100000410154,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow Energy power complex,L100000103583,coal,operating,222
+G100000410155,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow Energy Phase 2 Power Station,L100000407721,oil/gas,operating,281
+G100000410590,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Siam Pure Rice Combined Cycle power station,L100000407980,oil/gas,operating,120
+G100000410594,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Glow SPP 1 power station,L100000405378,oil/gas,operating,140
+G100000410614,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,U-Tapao Hybrid power station,L100000407870,oil/gas,construction,80
+G100000410615,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Glow Energy Phase 4 Power Plant,L100000407871,oil/gas,operating,77
+G100000603602,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bang Lang hydroelectric plant,L100000603567,hydropower,operating,84
+G100000603603,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bhumibol hydroelectric plant,L100000603568,hydropower,operating,779
+G100000603605,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lam Ta Khong hydroelectric plant,L100000603570,hydropower,operating,1000
+G100000603606,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Mun hydroelectric plant,L100000603571,hydropower,operating,136
+G100000603607,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rajjaprabha hydroelectric plant,L100000603572,hydropower,operating,240
+G100000603608,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirikit hydroelectric plant,L100000603573,hydropower,operating,500
+G100000603609,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Srinagarind hydroelectric plant,L100000603574,hydropower,operating,360
+G100000603610,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Vajiralongkorn hydroelectric plant,L100000603575,hydropower,operating,300
+G100000604312,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chulabhorn Pumped Storage hydroelectric plant,L100000603569,hydropower,pre_construction,800
+G100000604832,energy_plants_gem_units,THA,point,KHM,,,,,,,true,abf-boundaries-v0.2.0,Stung Num hydroelectric plant,L100000604075,hydropower,cancelled,102
+G100000604931,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Vajiralongkorn Pumped Storage hydroelectric plant,L100000604382,hydropower,announced,900
+G100000604991,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bhumibol hydroelectric plant,L100000603568,hydropower,operating,171
+G100000800921,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amphur Banglen solar farm,L100000800796,utility-scale solar,operating,60
+G100000800950,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sunny Bangchak solar farm,L100000800823,utility-scale solar,operating,34.5
+G100000800967,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bhumibol Dam solar farm,L100000800838,utility-scale solar,announced,158
+G100000801270,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lampang solar farm,L100000801104,utility-scale solar,operating,128
+G100000801290,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lopburi (EGCO) solar farm,L100000801118,utility-scale solar,operating,55
+G100000801362,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nakornsawan solar farm,L100000801182,utility-scale solar,operating,101
+G100000801454,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phitsanulok solar farm,L100000801268,utility-scale solar,operating,101
+G100000801501,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rojana solar farm,L100000801305,utility-scale solar,operating,24
+G100000801503,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,S2P Energy solar farm,L100000801307,utility-scale solar,operating,36
+G100000801504,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sa Kaeo solar farm,L100000801308,utility-scale solar,operating,16
+G100000801558,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sermsang solar farm,L100000801354,utility-scale solar,operating,52
+G100000801594,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirindhorn Reservoir solar farm,L100000801390,utility-scale solar,operating,45
+G100000801633,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Srinaga solar farm,L100000801421,utility-scale solar,cancelled,36
+G100000801733,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ubol Ratana Reservoir solar farm,L100000801512,utility-scale solar,operating,24
+G100000801741,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Vajiralongkorn Dam solar farm,L100000801520,utility-scale solar,announced,50
+G100000811065,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bang Lang dam solar farm,L100000808785,utility-scale solar,announced,78
+G100000811066,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bhumibol Dam solar farm,L100000800838,utility-scale solar,announced,300
+G100000811067,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bhumibol Dam solar farm,L100000800838,utility-scale solar,announced,320
+G100000811068,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chulabhorn Dam solar farm,L100000808786,utility-scale solar,announced,40
+G100000811069,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sirikit Dam floating solar farm,L100000808787,utility-scale solar,announced,325
+G100000811070,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sirikit Dam floating solar farm,L100000808787,utility-scale solar,pre_construction,175
+G100000811071,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Srinagarind Dam floating solar farm,L100000808788,utility-scale solar,announced,140
+G100000811072,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Srinagarind Dam floating solar farm,L100000808788,utility-scale solar,announced,280
+G100000811073,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Vajiralongkorn Dam solar farm,L100000801520,utility-scale solar,announced,250
+G100000834977,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ang Thong solar farm,L100000831073,utility-scale solar,operating,24
+G100000834981,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834982,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834983,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834984,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834985,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834986,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834987,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834988,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834989,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Tan solar farm,L100000831077,utility-scale solar,operating,2.5
+G100000834990,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Banchalak solar project,L100000831078,utility-scale solar,operating,6
+G100000834992,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Benchalak SPP3 solar project,L100000831080,utility-scale solar,operating,9.6
+G100000835004,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Donmong hybrid solar farm,L100000831092,utility-scale solar,operating,90
+G100000835006,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Han Sai B solar farm,L100000831094,utility-scale solar,operating,25
+G100000835007,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hansai solar farm,L100000831095,utility-scale solar,operating,36
+G100000835013,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kham Phran solar farm,L100000831101,utility-scale solar,operating,23
+G100000835017,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khao Yai solar farm,L100000831105,utility-scale solar,operating,50
+G100000835032,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kokpikong solar farm,L100000831120,utility-scale solar,operating,36
+G100000835045,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lopburi Absolute solar project,L100000831133,utility-scale solar,operating,8
+G100000835049,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Na Khaem solar farm,L100000831137,utility-scale solar,operating,25
+G100000835055,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nong Krathum 4 solar project,L100000831143,utility-scale solar,operating,8
+G100000835056,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nong Krathum 5 solar project,L100000831144,utility-scale solar,operating,8
+G100000835059,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,NPS Green Lake floating solar project,L100000831147,utility-scale solar,operating,30
+G100000835060,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,NPS Green Lake floating solar project,L100000831147,utility-scale solar,operating,30
+G100000835068,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rajjaprabha Dam solar farm,L100000831155,utility-scale solar,announced,140
+G100000835069,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rajjaprabha Dam solar farm,L100000831155,utility-scale solar,announced,100
+G100000835073,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sai Phet solar farm,L100000831159,utility-scale solar,operating,29
+G100000835078,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sai Yai Solarta,L100000831164,utility-scale solar,operating,9.7
+G100000835082,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sala Lamduan A solar farm,L100000831168,utility-scale solar,operating,45
+G100000835088,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Shera Rooftop solar project,L100000831174,utility-scale solar,operating,4
+G100000835092,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Srinagarind Dam floating solar farm,L100000808788,utility-scale solar,announced,364
+G100000835101,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thai CSP1 solar project,L100000831186,utility-scale solar,operating,5
+G100000835105,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wang Khon Khwang A solar farm,L100000831190,utility-scale solar,operating,30
+G100000900907,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Huay Bong wind farm,L100000900795,wind,operating,104
+G100000900926,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chaiyaphum (GLOW) wind farm,L100000900813,wind,cancelled,40
+G100000900927,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chaiyaphum (GLOW) wind farm,L100000900813,wind,cancelled,60
+G100000900972,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Huay Bong wind farm,L100000900795,wind,operating,104
+G100000900984,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lomligor wind farm,L100000900865,wind,operating,10
+G100000901030,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chaiyaphum (EGCO) wind farm,L100000900900,wind,operating,80
+G100000901031,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lam Takhong wind farm,L100000900901,wind,operating,24
+G100000901032,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Had Kanghan 1 wind farm,L100000900902,wind,operating,36
+G100000901033,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Had Kanghan 2 wind farm,L100000900903,wind,operating,45
+G100000901034,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Had Kanghan 3 wind farm,L100000900904,wind,operating,45
+G100000901035,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanuman 1 wind farm,L100000900905,wind,operating,45
+G100000901036,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanuman 10 wind farm,L100000900906,wind,operating,80
+G100000901037,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanuman 5 wind farm,L100000900907,wind,operating,48
+G100000901038,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanuman 9 wind farm,L100000900908,wind,operating,42
+G100000901039,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Jhimpir Power (Energy Absolute) wind farm,L100000900909,wind,operating,600
+G100000901046,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sarahnlom wind farm,L100000900914,wind,operating,36
+G100000901047,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sarahnlom wind farm,L100000900914,wind,operating,32
+G100000901048,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mittrahap wind farm,L100000900915,wind,operating,50
+G100000901049,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Wayu wind farm,L100000900916,wind,operating,50
+G100000901057,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pak Phanang wind farm,L100000900924,wind,operating,10
+G100000901103,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tha Phaya wind farm,L100000900961,wind,operating,20
+G100000901111,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Huasai wind farm,L100000900968,wind,cancelled,30
+G100000901119,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thep Sathit wind farm,L100000900974,wind,cancelled,90
+G100000901124,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Rom Klao wind farm,L100000900979,wind,operating,45
+G100000901125,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,NKS Wind Farms,L100000900980,wind,operating,90
+G100000901126,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,T1 Wind Farms,L100000900981,wind,operating,90
+G100000901127,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,T2 Wind Farms,L100000900982,wind,operating,90
+G100000901128,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,T3 Wind Farms,L100000900983,wind,operating,90
+G100000901129,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,T4 Wind Farms,L100000900984,wind,operating,90
+G100000901130,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,WTB Wind Farms,L100000900985,wind,operating,60
+G100000901192,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Khao Kor wind farm,L100000901029,wind,operating,60
+G100000927450,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Amnat Charoen I wind farm,L100000922025,wind,shelved,87
+G100000927451,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Amnat Charoen II wind farm,L100000922026,wind,shelved,87
+G100000927474,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bo Thong wind farm,L100000922040,wind,operating,16
+G100000927512,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chaiyaphum (Acciona) wind farm,L100000922065,wind,shelved,87
+G100000927736,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ubon Ratchatani I wind farm,L100000922241,wind,shelved,87
+G100000927737,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ubon Ratchatani II wind farm,L100000922242,wind,shelved,87
+G100001023726,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanuman 8 wind farm,L100001020778,wind,operating,45
+G100001023731,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sumitomo Rubber solar farm,L100001020783,utility-scale solar,shelved,22
+G100001023798,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Stella Power 1 solar farm,L100001020831,utility-scale solar,pre_construction,69
+G100001023799,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Stella Power 2 solar farm,L100001020832,utility-scale solar,pre_construction,59
+G100001023801,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Charoen Pokphand Group solar farm,L100001020834,utility-scale solar,operating,197
+G100001023808,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Suphan Buri (Blue Solar) solar farm,L100001020836,utility-scale solar,pre_construction,42
+G100001029097,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project LXXXIV,L100001024416,utility-scale solar,operating,1.4
+G100001029117,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CI,L100001024436,utility-scale solar,operating,6.3
+G100001029132,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXIII,L100001024451,utility-scale solar,operating,1.1
+G100001029141,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXII,L100001024460,utility-scale solar,operating,1.9
+G100001029153,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXII,L100001024472,utility-scale solar,operating,1.2
+G100001029158,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXXXVI,L100001024477,utility-scale solar,operating,3.7
+G100001029161,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Udon Thani solar project III,L100001024480,utility-scale solar,operating,2.8
+G100001029165,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXL,L100001024484,utility-scale solar,operating,1.3
+G100001029168,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLII,L100001024487,utility-scale solar,operating,1.8
+G100001029170,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLIV,L100001024489,utility-scale solar,operating,2.5
+G100001029171,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CXLV,L100001024490,utility-scale solar,operating,3.5
+G100001029181,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLII,L100001024500,utility-scale solar,operating,2.5
+G100001029189,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thailand solar project CLX,L100001024508,utility-scale solar,operating,1
+G100001030842,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Breeze and Shine solar farm,L100001025847,utility-scale solar,operating,176.7
+G100001030843,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sky Power solar farm,L100001025848,utility-scale solar,operating,63.4
+G100001051831,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kathoon Pumped Storage hydroelectric plant,L100001045971,hydropower,announced,780
+G100001053861,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Glow Energy Phase 2 Power Station,L100000407721,oil/gas,operating,70
+G100001054683,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TGE power station,L100001047879,bioenergy,operating,10
+G100001054684,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TPG power station,L100001047880,bioenergy,operating,10
+G100001054685,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TBP power station,L100001047881,bioenergy,operating,10
+G100001054686,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TES UBN power station,L100001047882,bioenergy,operating,10
+G100001054687,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TES TCN power station,L100001047883,bioenergy,operating,10
+G100001054696,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,304 Industrial Park power station,L100001047889,bioenergy,operating,398
+G100001054698,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chonburi power station,L100001047891,bioenergy,operating,10
+G100001054700,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Khonkaen power station,L100001047893,bioenergy,operating,10
+G100001054702,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Surin power station,L100001047894,bioenergy,operating,10
+G100001054708,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakhon Ratchasima power station,L100001047896,bioenergy,operating,10
+G100001054713,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Roi-et power station,L100001047898,bioenergy,operating,10
+G100001054716,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Amphan power station,L100001047900,bioenergy,operating,9.5
+G100001054717,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Komen power station,L100001047901,bioenergy,operating,10
+G100001054719,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Angvian power station,L100001047903,bioenergy,operating,30
+G100001054720,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Baan Rai power plant,L100001047906,bioenergy,operating,10
+G100001054722,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ban Bueng power station,L100001047908,bioenergy,operating,10
+G100001054725,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaset Thai power station,L100001047909,bioenergy,operating,52.5
+G100001054727,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,A.T. Biopower Rice Husk Power Project,L100001047911,bioenergy,operating,22
+G100001054736,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bo Ploy power station,L100001047917,bioenergy,operating,10
+G100001054737,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bua Sommai Roi Et power plant,L100001047918,bioenergy,operating,10
+G100001054739,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bua Sommai Suwannaphum power plant,L100001047920,bioenergy,operating,10
+G100001054740,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bua Sommai Udon Thani power plant,L100001047921,bioenergy,operating,10
+G100001054741,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mueang Udon Thani power station,L100001047922,bioenergy,mothballed,20
+G100001054742,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Buriram power plant,L100001047923,bioenergy,operating,10
+G100001054744,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chang Raek power station,L100001047925,bioenergy,operating,9.5
+G100001054747,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chok Chai power station,L100001047927,bioenergy,operating,10
+G100001054749,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chokchai Green Power Project,L100001047929,bioenergy,cancelled,36
+G100001054750,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Clover Power power station,L100001047930,bioenergy,operating,9.4
+G100001054751,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Eastern Sugar power plant,L100001047931,bioenergy,operating,22
+G100001054754,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,GRE Energy power station,L100001047933,bioenergy,operating,9.6
+G100001054755,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamalasai power station,L100001047934,bioenergy,operating,10
+G100001054756,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chana Songkhla power station,L100001047935,bioenergy,operating,25
+G100001054757,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampaengsaen East power station,L100001047936,bioenergy,operating,8
+G100001054758,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamphaengsaen West power station,L100001047937,bioenergy,operating,8
+G100001054759,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kamphaeng Phet power station,L100001047938,bioenergy,operating,10
+G100001054782,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Khonburi power station,L100001047948,bioenergy,operating,38
+G100001054820,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Korach Cogeneration power station,L100001047961,bioenergy,operating,65
+G100001054830,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,KPN Green Energy power station,L100001047966,bioenergy,operating,10
+G100001054831,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Taphan Hin power station,L100001047967,bioenergy,operating,26
+G100001054832,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Krung Thai power station,L100001047969,bioenergy,operating,13
+G100001054835,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kumphawapi power station,L100001047970,bioenergy,operating,20
+G100001054836,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mitr Phol (Amnat Charoen) power station,L100001047971,bioenergy,operating,42
+G100001054837,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mitr Kasetr power station,L100001047972,bioenergy,operating,20.5
+G100001054838,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mukdahan Saharuang power station,L100001047973,bioenergy,operating,12
+G100001054846,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mungcharoen (Mungcharoen Green Power) power station,L100001047978,bioenergy,operating,10
+G100001054847,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mungcharoen (Mungcharoen Biomass Co) power station,L100001047979,bioenergy,operating,17
+G100001054848,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakhon Pathom power station,L100001047980,bioenergy,operating,10
+G100001054856,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nam Phong (ACE) power station,L100001047985,bioenergy,operating,10
+G100001054857,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nong Khaem 1 power station,L100001047986,bioenergy,operating,10
+G100001054858,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nongkhaem II power station,L100001047987,bioenergy,operating,35
+G100001054860,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Onnut power station,L100001047988,bioenergy,operating,30
+G100001054861,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nonthaburi (Shanghai SUS) power station,L100001047990,bioenergy,construction,20
+G100001054862,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Pattani Green power station,L100001047991,bioenergy,operating,23
+G100001054866,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Phetchaburi Thasen power station,L100001047993,bioenergy,cancelled,8
+G100001054868,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Phon Thong power station,L100001047995,bioenergy,operating,10
+G100001054869,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Power Prospect power station,L100001047996,bioenergy,operating,10
+G100001054889,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Prachuap Sugar power station,L100001048007,bioenergy,operating,24
+G100001054917,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ream Udom power station,L100001048015,bioenergy,operating,24
+G100001054927,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Saha Lamphun power station,L100001048019,bioenergy,operating,10
+G100001054930,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Si Chiang Mai power plant,L100001048021,bioenergy,operating,10
+G100001054931,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chaing Mai (Tianying Inc) power station,L100001048024,bioenergy,construction,10
+G100001054934,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Siam Power power plant,L100001048026,bioenergy,operating,9.5
+G100001054937,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirindhorn power station,L100001048028,bioenergy,operating,10
+G100001054944,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Songkhla power station,L100001048035,bioenergy,operating,10
+G100001054952,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sricharoen power plant,L100001048038,bioenergy,operating,10
+G100001054954,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Srisangdaw power station,L100001048039,bioenergy,operating,10
+G100001054963,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sriwattana power station,L100001048048,bioenergy,operating,10
+G100001054969,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Advance Agro power station,L100001048054,bioenergy,operating,87
+G100001055034,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Supanburi 2 power station,L100001048087,bioenergy,operating,10
+G100001055037,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Surat Thani (Green Energy Co) power station,L100001048090,bioenergy,operating,10
+G100001055038,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ta Nee power station,L100001048091,bioenergy,operating,10
+G100001055041,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Pathio power station,L100001048094,bioenergy,cancelled,16
+G100001055046,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sawi power station,L100001048097,bioenergy,cancelled,16
+G100001055069,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Khlong Thom power station,L100001048110,bioenergy,shelved,30
+G100001055070,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Udon Thani (Thaico) power plant,L100001048111,bioenergy,shelved,20
+G100001055072,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Thoen power station,L100001048113,bioenergy,operating,10
+G100001055156,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,U-Thong power station,L100001048145,bioenergy,operating,26
+G100001055165,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Uni Power Tech power station,L100001048148,bioenergy,operating,10
+G100001055191,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,EGAT nuclear power plant,L100001048157,nuclear,announced,300
+G100001055192,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,EGAT nuclear power plant,L100001048157,nuclear,announced,300
+G100001055213,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Well Korat power station,L100001048163,bioenergy,operating,10
+G100001055214,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Yala power station,L100001048164,bioenergy,operating,23
+G100001055217,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thachang power station,L100001048167,bioenergy,operating,10
+G100001055228,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TES SKW power station,L100001048169,bioenergy,operating,7
+G100001055229,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TES RBR power station,L100001048170,bioenergy,operating,7
+G100001055230,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,TES CPN power station,L100001048171,bioenergy,operating,5
+G100001055231,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,National Power Plant 11 power station,L100001048173,bioenergy,operating,33
+G100001055232,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,National Power Plant 12 power station,L100001048174,bioenergy,pre_construction,115
+G100001055239,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thung Yai 2 power station,L100001048177,bioenergy,shelved,25
+G100001055240,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thai Permpoon power station,L100001048178,bioenergy,operating,22.5
+G100001055241,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thai Carbon Black power station,L100001048179,bioenergy,operating,19
+G100001055242,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rayong Sugar power station,L100001048180,bioenergy,operating,18
+G100001055243,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mueang Ranong power station,L100001048181,bioenergy,pre_construction,23
+G100001055244,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thai Rungroeng power station,L100001048182,bioenergy,operating,29.5
+G100001055245,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Isan Sugar power station,L100001048183,bioenergy,operating,18.5
+G100001055246,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Phu Khieo power station,L100001048184,bioenergy,operating,56.9
+G100001055247,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nong Ruea power station,L100001048186,bioenergy,pre_construction,97
+G100001055267,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,​​Ban Nong Plong power station,L100001048192,bioenergy,pre_construction,54
+G100001055268,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,IEC Sa Kaeo 1 power station,L100001048193,bioenergy,pre_construction,9.6
+G100001055480,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar Development solar farm,L100001048323,utility-scale solar,operating,142.2
+G100001062764,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tha Thung hydroelectric plant,L100001054872,hydropower,operating,36
+G100001070157,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sunny Bangchak solar farm,L100000800823,utility-scale solar,operating,9.4
+G100001070158,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sunny Bangchak solar farm,L100000800823,utility-scale solar,cancelled,25
+G100001072873,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mukdahan wind farm,L100001063422,wind,announced,90
+G100001072874,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chaiyaphum (Wayu Power) wind farm,L100001063423,wind,announced,78
+G100001072887,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Alpha One wind farm,L100001063424,wind,announced,48
+G100001072891,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Alpha Two wind farm,L100001063434,wind,announced,70
+G100001072925,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thung Fon solar farm,L100001063461,utility-scale solar,announced,31
+G100001072927,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kham Tak Kla solar farm,L100001063462,utility-scale solar,announced,38.8
+G100001072930,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Chom Phra solar farm,L100001063463,utility-scale solar,announced,63
+G100001072931,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Don Chedi solar farm,L100001063464,utility-scale solar,announced,24.2
+G100001072932,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sadao solar farm,L100001063465,utility-scale solar,announced,67.8
+G100001072933,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Thapapi solar farm,L100001063466,utility-scale solar,announced,70
+G100001072934,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Na Thawi solar farm,L100001063467,utility-scale solar,announced,46.6
+G100001072935,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Yaring solar farm,L100001063468,utility-scale solar,announced,60
+G100001072936,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Su-ngai Kolok solar farm,L100001063469,utility-scale solar,announced,46.6
+G100001072937,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kok Kian 1 solar farm,L100001063470,utility-scale solar,announced,41.6
+G100001072938,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kok Kian 1 solar farm,L100001063470,utility-scale solar,announced,77.6
+G100001073065,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Udon Thani STP solar farm,L100001063570,utility-scale solar,operating,77
+G100001073068,energy_plants_gem_units,THA,point,,,,,,,,true,abf-boundaries-v0.2.0,Udon Thani PRR solar farm,L100001063573,utility-scale solar,operating,72.5
+G100001090147,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Chulabhorn hydroelectric plant,L100001080267,hydropower,operating,40
+G100001090149,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kwai Noi Bumrung Dan hydroelectric plant,L100001080268,hydropower,operating,30
+G100001090151,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Sirindhorn hydroelectric plant,L100001080269,hydropower,operating,36
+G100001090152,energy_plants_gem_units,THA,point,,,,,,,,false,abf-boundaries-v0.2.0,Srinagarind hydroelectric plant,L100000603574,hydropower,operating,360

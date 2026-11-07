@@ -1,0 +1,895 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100354,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Aroskraft power station,L100000103530,coal,retired,75
+G100000100355,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Aroskraft power station,L100000103530,coal,retired,75
+G100000110565,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Värtaverket power station,L100000103529,coal,retired,141
+G100000200230,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Igelsta CHP power station,L100000200204,bioenergy,operating,85
+G100000200233,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Västhamnsverket power station,L100000200207,bioenergy,operating,70
+G100000200252,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Bomhus Energi power station,L100000200222,bioenergy,operating,90
+G100000200255,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,true,abf-boundaries-v0.2.0,Bristaverket power station,L100000200225,bioenergy,operating,46
+G100000200273,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,true,abf-boundaries-v0.2.0,Eskilstuna power station,L100000200241,bioenergy,operating,38
+G100000200278,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Hedenverket power station,L100000200246,bioenergy,operating,20
+G100000200280,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Högdalenverket power station,L100000200248,bioenergy,operating,44
+G100000200297,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Lövsta power station,L100000200264,bioenergy,shelved,620
+G100000200300,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Metsä Husum power station,L100000200267,bioenergy,operating,130
+G100000200301,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Moskogen Cogeneration power station,L100000200268,bioenergy,operating,31
+G100000200323,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Sävenäs Waste-to-Energy power station,L100000200288,bioenergy,operating,42
+G100000200327,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Skutskär Mill power station,L100000200292,bioenergy,operating,46
+G100000200332,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Sobacken Cogeneration power station,L100000200297,bioenergy,operating,45
+G100000200333,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Södra Cell Mönsterås Pulp Mill power station,L100000200298,bioenergy,operating,37
+G100000200334,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Södra Cell Mörrum Pulp Mill power station,L100000200299,bioenergy,operating,12.5
+G100000200345,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Torsvik power station,L100000200309,bioenergy,operating,35
+G100000200351,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Värö Pulp Mill power station,L100000200315,bioenergy,operating,63
+G100000201440,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Åbyverket power station,L100000201212,bioenergy,operating,100
+G100000201441,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Aroskraft power station,L100000103530,bioenergy,operating,51
+G100000201442,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Aroskraft power station,L100000103530,bioenergy,operating,55
+G100000201443,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Dåva power station,L100000201214,bioenergy,operating,35
+G100000201444,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Gruvons Bruk power station,L100000201215,bioenergy,operating,40
+G100000201445,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Händelö power station,L100000201216,bioenergy,operating,89
+G100000201446,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Händelö power station,L100000201216,bioenergy,operating,40
+G100000201448,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Hedensbyn power station,L100000201218,bioenergy,operating,36
+G100000201449,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Hörneborgsverket power station,L100000201219,bioenergy,operating,40
+G100000201450,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Idbäcksverket power station,L100000201220,bioenergy,operating,35
+G100000201451,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Iggesund Mill power station,L100000201221,bioenergy,operating,75
+G100000201452,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Karlsborg Mill power station,L100000201222,bioenergy,operating,52
+G100000201453,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,KV Linkoping power station,L100000201223,bioenergy,operating,29.3
+G100000201454,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Örtofta power station,L100000201224,bioenergy,operating,38
+G100000201455,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Örtofta power station,L100000201224,bioenergy,construction,45
+G100000201456,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Östersund power station,L100000201225,bioenergy,operating,40
+G100000201457,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Östersund power station,L100000201225,bioenergy,operating,75
+G100000201458,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Östrand Pulp Mill power station,L100000201226,bioenergy,operating,75
+G100000201459,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Sandviksverket power station,L100000201227,bioenergy,operating,30
+G100000201460,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Sandviksverket power station,L100000201227,bioenergy,operating,39
+G100000201461,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Skårblacka Bruk power station,L100000201228,bioenergy,operating,50
+G100000201462,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Skoghalls Mill power station,L100000201229,bioenergy,operating,58
+G100000201463,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Värtaverket power station,L100000103529,bioenergy,operating,226
+G100000201464,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Värtaverket power station,L100000103529,bioenergy,operating,130
+G100000202509,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Rya Göteborg power station,L100000400721,bioenergy,operating,39
+G100000400721,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Rya Göteborg power station,L100000400721,oil/gas,operating,250
+G100000410480,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,true,abf-boundaries-v0.2.0,Lulea power station,L100000407845,oil/gas,operating,100
+G100000411134,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Heleneholms power station,L100000408022,bioenergy,mothballed,130
+G100000500041,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Oskarshamn nuclear power plant,L100000500025,nuclear,operating,1450
+G100000500128,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Forsmark nuclear power plant,L100000500073,nuclear,operating,1208
+G100000500129,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Ringhals nuclear power plant,L100000500074,nuclear,operating,1171
+G100000500146,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Forsmark nuclear power plant,L100000500073,nuclear,operating,1160
+G100000500186,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Ringhals nuclear power plant,L100000500074,nuclear,operating,1117
+G100000500246,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Forsmark nuclear power plant,L100000500073,nuclear,operating,1078
+G100000500334,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Ringhals nuclear power plant,L100000500074,nuclear,retired,963
+G100000500353,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Ringhals nuclear power plant,L100000500074,nuclear,retired,910
+G100000500405,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Oskarshamn nuclear power plant,L100000500025,nuclear,retired,661
+G100000500406,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Barseback nuclear power plant,L100000500181,nuclear,retired,615
+G100000500407,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Barseback nuclear power plant,L100000500181,nuclear,retired,615
+G100000500472,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Oskarshamn nuclear power plant,L100000500025,nuclear,retired,492
+G100000500603,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Agesta nuclear power plant,L100000500255,nuclear,retired,12
+G100000603450,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Ajaure hydroelectric plant,L100000603415,hydropower,operating,80
+G100000603451,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Akkats hydroelectric plant,L100000603416,hydropower,operating,157
+G100000603452,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Älvkarleby hydroelectric plant,L100000603417,hydropower,operating,125
+G100000603453,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Bålforsen hydroelectric plant,L100000603418,hydropower,operating,88
+G100000603454,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Bastusel hydroelectric plant,L100000603419,hydropower,operating,100
+G100000603455,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Bergeforsen hydroelectric plant,L100000603420,hydropower,operating,174
+G100000603456,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Bjurfors Nedre hydroelectric plant,L100000603421,hydropower,operating,78
+G100000603457,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Boden hydroelectric plant,L100000603422,hydropower,operating,80
+G100000603458,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Forsmo hydroelectric plant,L100000603423,hydropower,operating,158
+G100000603459,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Gallejuar hydroelectric plant,L100000603424,hydropower,operating,220
+G100000603460,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Gammelänge hydroelectric plant,L100000603425,hydropower,operating,78
+G100000603461,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Grundfors hydroelectric plant,L100000603426,hydropower,operating,108
+G100000603462,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Hällby hydroelectric plant,L100000603427,hydropower,operating,84
+G100000603463,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Hammarforsen hydroelectric plant,L100000603428,hydropower,operating,80
+G100000603464,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Harrsele hydroelectric plant,L100000603429,hydropower,operating,223
+G100000603465,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Harsprånget hydroelectric plant,L100000603430,hydropower,operating,818
+G100000603466,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Hjälta hydroelectric plant,L100000603431,hydropower,operating,178
+G100000603467,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hojum hydroelectric plant,L100000603432,hydropower,operating,170
+G100000603468,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Höljes hydroelectric plant,L100000603433,hydropower,operating,128
+G100000603469,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Hölleforsen hydroelectric plant,L100000603434,hydropower,operating,151
+G100000603470,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Järkvissle hydroelectric plant,L100000603435,hydropower,operating,87
+G100000603471,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Järnvägsforsen hydroelectric plant,L100000603436,hydropower,operating,100
+G100000603472,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Järpströmmen hydroelectric plant,L100000603437,hydropower,operating,114
+G100000603473,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Kilforsen hydroelectric plant,L100000603438,hydropower,operating,296
+G100000603474,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Korsselbränna hydroelectric plant,L100000603439,hydropower,operating,130
+G100000603475,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Krångede hydroelectric plant,L100000603440,hydropower,operating,248
+G100000603476,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Krokströmmen hydroelectric plant,L100000603441,hydropower,operating,103
+G100000603477,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Kvistforsen hydroelectric plant,L100000603442,hydropower,operating,140
+G100000603478,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Långå hydroelectric plant,L100000603443,hydropower,operating,156
+G100000603479,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Långbjörn hydroelectric plant,L100000603444,hydropower,operating,98
+G100000603480,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Lasele hydroelectric plant,L100000603445,hydropower,operating,165
+G100000603481,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Laxede hydroelectric plant,L100000603446,hydropower,operating,207
+G100000603482,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Letsi hydroelectric plant,L100000603447,hydropower,operating,483
+G100000603483,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Ligga hydroelectric plant,L100000603448,hydropower,operating,342
+G100000603484,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Messaure hydroelectric plant,L100000603449,hydropower,operating,463
+G100000603485,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Midskog hydroelectric plant,L100000603450,hydropower,operating,143
+G100000603486,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Moforsen hydroelectric plant,L100000603451,hydropower,operating,140
+G100000603487,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Nämforsen hydroelectric plant,L100000603452,hydropower,operating,112
+G100000603488,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Olden hydroelectric plant,L100000603453,hydropower,operating,112
+G100000603489,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Olidan hydroelectric plant,L100000603454,hydropower,operating,103
+G100000603490,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Porjus hydroelectric plant,L100000603455,hydropower,operating,417
+G100000603491,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Porsi hydroelectric plant,L100000603456,hydropower,operating,282
+G100000603492,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Ramsele hydroelectric plant,L100000603457,hydropower,operating,157
+G100000603493,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Randi hydroelectric plant,L100000603458,hydropower,operating,85
+G100000603494,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Ritsem hydroelectric plant,L100000603459,hydropower,operating,304
+G100000603495,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Sällsjö hydroelectric plant,L100000603460,hydropower,operating,160
+G100000603496,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Seitevare hydroelectric plant,L100000603461,hydropower,operating,214
+G100000603497,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Stadsforsen hydroelectric plant,L100000603462,hydropower,operating,142
+G100000603498,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Stalon hydroelectric plant,L100000603463,hydropower,operating,130
+G100000603499,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Stensjöfallet hydroelectric plant,L100000603464,hydropower,operating,95
+G100000603500,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Storfinnforsen hydroelectric plant,L100000603465,hydropower,operating,112
+G100000603501,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Stornorrfors hydroelectric plant,L100000603466,hydropower,operating,599
+G100000603502,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Svarthålsforsen hydroelectric plant,L100000603467,hydropower,operating,80
+G100000603503,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Torpshammar hydroelectric plant,L100000603468,hydropower,operating,119
+G100000603504,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Trängslet hydroelectric plant,L100000603469,hydropower,operating,329
+G100000603505,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Tuggen hydroelectric plant,L100000603470,hydropower,operating,105
+G100000603506,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Umluspen hydroelectric plant,L100000603471,hydropower,operating,104
+G100000603507,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Vargfors hydroelectric plant,L100000603472,hydropower,operating,120
+G100000603508,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Vietas hydroelectric plant,L100000603473,hydropower,operating,325
+G100000604420,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Harsprånget hydroelectric plant,L100000603430,hydropower,pre_construction,110
+G100000604475,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Juktan Pumped Storage hydroelectric plant,L100000604250,hydropower,announced,315
+G100000604618,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Messaure hydroelectric plant,L100000603449,hydropower,announced,150
+G100000604738,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Porjus hydroelectric plant,L100000603455,hydropower,announced,80
+G100000807628,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,true,abf-boundaries-v0.2.0,Sandy Hill solar farm,L100000806657,utility-scale solar,shelved,43
+G100000807629,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,true,abf-boundaries-v0.2.0,Green Sea solar farm,L100000806658,utility-scale solar,cancelled,12
+G100000828248,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,true,abf-boundaries-v0.2.0,Älmhult solar farm,L100000824975,utility-scale solar,pre_construction,340
+G100000828249,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,true,abf-boundaries-v0.2.0,Fun Living solar farm,L100000824976,utility-scale solar,pre_construction,70
+G100000828250,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Gas Light solar farm,L100000824977,utility-scale solar,pre_construction,39.2
+G100000828251,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Hultsfred solar farm,L100000824978,utility-scale solar,operating,100
+G100000828252,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,true,abf-boundaries-v0.2.0,Kings Roar solar farm,L100000824979,utility-scale solar,operating,22
+G100000828253,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,true,abf-boundaries-v0.2.0,Maple Hill solar farm,L100000824980,utility-scale solar,pre_construction,92
+G100000828255,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,true,abf-boundaries-v0.2.0,Mr Hult solar farm,L100000824982,utility-scale solar,pre_construction,35
+G100000828256,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,true,abf-boundaries-v0.2.0,Lindesberg solar farm,L100000824983,utility-scale solar,construction,22
+G100000828257,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,true,abf-boundaries-v0.2.0,Östra Eneby solar farm,L100000824984,utility-scale solar,pre_construction,76
+G100000828258,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,true,abf-boundaries-v0.2.0,Plaza solar farm,L100000824985,utility-scale solar,shelved,39
+G100000828259,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,true,abf-boundaries-v0.2.0,Red Horizon solar farm,L100000824986,utility-scale solar,shelved,90
+G100000828260,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,true,abf-boundaries-v0.2.0,Spoon Bay solar farm,L100000824987,utility-scale solar,shelved,33
+G100000828261,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,true,abf-boundaries-v0.2.0,Svedberga solar farm,L100000824988,utility-scale solar,cancelled,128
+G100000828262,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,true,abf-boundaries-v0.2.0,Tierpark solar farm,L100000824989,utility-scale solar,pre_construction,47
+G100000828263,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,true,abf-boundaries-v0.2.0,Tönnersjö solar farm,L100000824990,utility-scale solar,pre_construction,450
+G100000828264,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,true,abf-boundaries-v0.2.0,Wing Fields solar farm,L100000824991,utility-scale solar,pre_construction,49.4
+G100000910496,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Egby wind farm,L100000907824,wind,operating,10
+G100000910512,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Fjelie-Laxmans Åkarp wind farm,L100000907840,wind,operating,10
+G100000910531,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Gärdslösa wind farm,L100000907859,wind,operating,10
+G100000910549,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Granberg wind farm,L100000907875,wind,operating,10
+G100000910558,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Gummaråsen wind farm,L100000907884,wind,operating,10
+G100000910559,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Håcksta wind farm,L100000907885,wind,operating,10
+G100000910570,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Hedbodberget wind farm,L100000907896,wind,operating,18
+G100000910587,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Hornberget wind farm,L100000907911,wind,operating,10
+G100000910588,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Hörnefors wind farm,L100000907912,wind,operating,10
+G100000910591,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Hudiksvall Rogsta wind farm,L100000907915,wind,cancelled,10
+G100000910604,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Källeberg wind farm,L100000907928,wind,operating,10
+G100000910616,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Klinte wind farm,L100000907940,wind,operating,10
+G100000910626,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Kulltorp wind farm,L100000907950,wind,operating,10
+G100000910661,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Lerkaka wind farm,L100000907983,wind,operating,10
+G100000910719,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Mittelstättan wind farm,L100000908032,wind,operating,10
+G100000910805,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Råbelöv wind farm,L100000908116,wind,operating,10
+G100000910838,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Saxberget wind farm,L100000908148,wind,operating,11
+G100000910866,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Skabersjö wind farm,L100000908175,wind,operating,10
+G100000910868,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Skarhults wind farm,L100000908177,wind,operating,10
+G100000910871,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Skutskär wind farm,L100000908180,wind,operating,10
+G100000910872,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Sotared wind farm,L100000908181,wind,operating,10
+G100000910873,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Sotenäs Offshore wind farm,L100000908182,wind,cancelled,10
+G100000910883,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Stentjärnåsen wind farm,L100000908192,wind,operating,10
+G100000910885,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Stora Istad wind farm,L100000908194,wind,operating,10
+G100000910889,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Tavelberget wind farm,L100000908198,wind,operating,10
+G100000910950,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,true,abf-boundaries-v0.2.0,Yttre Stengrund wind farm,L100000908257,wind,retired,10
+G100000911084,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Aapua wind farm,L100000908384,wind,operating,11
+G100000911091,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Åmliden wind farm,L100000908391,wind,operating,11
+G100000911092,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Anneberg wind farm,L100000908392,wind,operating,11
+G100000911107,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Blekhem wind farm,L100000908407,wind,operating,11
+G100000911143,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Högen wind farm,L100000908443,wind,operating,11
+G100000911196,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Össjö Skog wind farm,L100000908495,wind,operating,11
+G100000911206,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Råshön wind farm,L100000908505,wind,operating,11
+G100000911220,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Saxberget wind farm,L100000908148,wind,operating,11
+G100000911226,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Södra Kärra wind farm,L100000908524,wind,operating,11
+G100000911241,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Utgrunden wind farm,L100000908536,wind,retired,11
+G100000911567,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Digerberget wind farm,L100000908845,wind,operating,12
+G100000911631,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Gettnabo wind farm,L100000908904,wind,operating,12
+G100000911644,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Granberget wind farm,L100000908917,wind,operating,12
+G100000911672,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Hedbodberget wind farm,L100000907896,wind,operating,12
+G100000911693,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Hörnefors wind farm,L100000907912,wind,operating,12
+G100000911709,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Jung-Åsa wind farm,L100000908979,wind,operating,12
+G100000911744,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Kvilla wind farm,L100000909013,wind,operating,12
+G100000911800,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Lövstaviken wind farm,L100000909067,wind,operating,12
+G100000911881,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Ollebacken wind farm,L100000909143,wind,operating,12
+G100000911888,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Ovesholm wind farm,L100000909149,wind,cancelled,12
+G100000912024,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Tågeröd wind farm,L100000909280,wind,operating,12
+G100000912053,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Väby wind farm,L100000909309,wind,operating,12
+G100000912061,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Västra Derome wind farm,L100000909317,wind,operating,12
+G100000912255,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Alered wind farm,L100000909499,wind,operating,13
+G100000912263,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Bohult wind farm,L100000909507,wind,operating,13
+G100000912270,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Brunsmo wind farm,L100000909513,wind,operating,13
+G100000912313,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Hogtjarnsklack wind farm,L100000909555,wind,operating,13
+G100000912350,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Möckelsjöberget wind farm,L100000909584,wind,operating,13
+G100000912379,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Råmmarehemmet wind farm,L100000909609,wind,operating,13
+G100000912380,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Ramsnäs wind farm,L100000909610,wind,operating,5.4
+G100000912389,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Ryssbol wind farm,L100000909618,wind,operating,13
+G100000912407,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Slottsbol wind farm,L100000909635,wind,operating,13
+G100000912414,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Stor-Blåliden wind farm,L100000909642,wind,operating,13
+G100000912724,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Långåvålen wind farm,L100000909925,wind,operating,14
+G100000912742,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Målajord wind farm,L100000909942,wind,operating,14
+G100000912763,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Mungseröd-Gurseröd-Skaveröd wind farm,L100000909959,wind,cancelled,14
+G100000912838,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Stensåsa wind farm,L100000910026,wind,operating,14
+G100000912840,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Stor-Blåliden wind farm,L100000909642,wind,operating,14
+G100000912845,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Svarteborgs-Skogen wind farm,L100000910031,wind,operating,14
+G100000912857,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Tommared wind farm,L100000910043,wind,operating,14
+G100000912865,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Västraby wind farm,L100000910049,wind,operating,14
+G100000913004,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Brattön wind farm,L100000910176,wind,operating,15
+G100000913102,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hud wind farm,L100000910264,wind,operating,15
+G100000913196,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Portberget wind farm,L100000910351,wind,cancelled,15
+G100000913201,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Rammeldalsberget wind farm,L100000910355,wind,operating,15
+G100000913401,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Fredriksdal wind farm,L100000910534,wind,operating,24
+G100000913407,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Gärdshyttan wind farm,L100000910539,wind,operating,16
+G100000913414,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Gunnarby wind farm,L100000910545,wind,operating,16
+G100000913417,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Hakarp wind farm,L100000910548,wind,operating,16
+G100000913425,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Idhult wind farm,L100000910554,wind,operating,16
+G100000913482,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Mungseröd-Gurseröd-Skaveröd wind farm,L100000909959,wind,operating,16
+G100000913488,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Norra Hunna wind farm,L100000910607,wind,operating,16
+G100000913493,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Österhultsmåla wind farm,L100000910611,wind,operating,16
+G100000913494,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Östra Herrestad wind farm,L100000910612,wind,operating,16
+G100000913523,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Röbergsfjället wind farm,L100000910638,wind,operating,16
+G100000913526,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Säliträdberget wind farm,L100000910641,wind,operating,16
+G100000913550,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Stormon wind farm,L100000910660,wind,operating,16
+G100000913773,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Norra Länsmansberget wind farm,L100000910863,wind,operating,18.6
+G100000913781,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Ollebacken wind farm,L100000909143,wind,operating,17
+G100000914026,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Holmevattnet wind farm,L100000911087,wind,cancelled,18
+G100000914037,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Kåphult wind farm,L100000911097,wind,operating,18
+G100000914130,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Örken wind farm,L100000911181,wind,operating,18
+G100000914167,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Rosenskog wind farm,L100000911214,wind,operating,18
+G100000914195,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Skalleberg wind farm,L100000911235,wind,operating,4
+G100000914231,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Vettåsen-Finnberget wind farm,L100000911270,wind,operating,18
+G100000914589,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Knäred wind farm,L100000911594,wind,operating,20
+G100000914627,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Lursäng wind farm,L100000911627,wind,operating,20
+G100000914692,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Rödstahöjden wind farm,L100000911680,wind,operating,20
+G100000914718,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Stengårdsholma wind farm,L100000911704,wind,operating,20
+G100000914719,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Storliden wind farm,L100000911705,wind,operating,20
+G100000914725,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Svartvallsberget wind farm,L100000911711,wind,operating,20
+G100000914831,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,true,abf-boundaries-v0.2.0,Ängersjökölen wind farm,L100000911808,wind,cancelled,21
+G100000914846,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Brahehus wind farm,L100000911823,wind,operating,21
+G100000914881,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Glombo wind farm,L100000911854,wind,cancelled,21
+G100000914884,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Hån wind farm,L100000911857,wind,operating,21
+G100000914911,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Korpfjället wind farm,L100000911880,wind,operating,21
+G100000914969,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Rämsberget wind farm,L100000911929,wind,operating,21
+G100000915006,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Villköl wind farm,L100000911962,wind,operating,21
+G100000915154,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Mässingberget wind farm,L100000912091,wind,operating,22
+G100000915202,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Stigshöjden wind farm,L100000912130,wind,operating,22
+G100000915277,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Bösjövarden wind farm,L100000912195,wind,operating,23
+G100000915297,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Fallåsberget wind farm,L100000912213,wind,operating,23
+G100000915299,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Fröreda wind farm,L100000912215,wind,operating,23
+G100000915300,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Fröslida wind farm,L100000912216,wind,operating,23
+G100000915319,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Kyrkberget wind farm,L100000912233,wind,operating,23
+G100000915356,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Rögle wind farm,L100000912267,wind,operating,23
+G100000915367,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Slageryd wind farm,L100000912275,wind,operating,23
+G100000915378,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Töftedalsfjället wind farm,L100000912286,wind,operating,48.3
+G100000915442,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Boarp wind farm,L100000912343,wind,operating,26
+G100000915473,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Dragaliden wind farm,L100000912373,wind,operating,24
+G100000915526,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Kafjärden wind farm,L100000912418,wind,operating,32
+G100000915601,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Oxhult wind farm,L100000912485,wind,operating,24
+G100000915622,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Ränsliden wind farm,L100000912504,wind,operating,24
+G100000915637,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Saxberget wind farm,L100000908148,wind,operating,24
+G100000915762,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Jokkmokksliden wind farm,L100000912630,wind,operating,25
+G100000915772,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Laxåskogen wind farm,L100000912639,wind,operating,25
+G100000915785,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Milletorp wind farm,L100000912651,wind,operating,25
+G100000915819,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Tjärnäs wind farm,L100000912681,wind,operating,25
+G100000915824,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Uddared wind farm,L100000912686,wind,operating,25
+G100000915923,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Dållebo wind farm,L100000912770,wind,operating,18
+G100000915954,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Långmarken wind farm,L100000912794,wind,operating,26
+G100000916036,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Iglasjön wind farm,L100000912862,wind,operating,26
+G100000916052,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Årjäng NV wind farm,L100000912877,wind,operating,27
+G100000916122,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Stugyl wind farm,L100000912934,wind,operating,27
+G100000916198,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Askomebjär wind farm,L100000912998,wind,operating,28
+G100000916289,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Våsberget wind farm,L100000913077,wind,operating,28
+G100000916351,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Juktan wind farm,L100000913130,wind,operating,29
+G100000916506,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Grytsjön wind farm,L100000913265,wind,operating,30
+G100000916514,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Hornmyran wind farm,L100000913272,wind,shelved,30
+G100000916596,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Örbacken wind farm,L100000913338,wind,operating,30
+G100000916620,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Röjmyrberget wind farm,L100000913359,wind,pre_construction,30
+G100000916624,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Sandtjärnberget wind farm,L100000913363,wind,cancelled,30
+G100000916640,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Storrun wind farm,L100000913376,wind,operating,30
+G100000916655,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Uljabuoda wind farm,L100000913391,wind,operating,30
+G100000916663,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Vänern wind farm,L100000913399,wind,operating,30
+G100000916822,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Marhult wind farm,L100000913529,wind,operating,31
+G100000916918,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Horshaga wind farm,L100000913603,wind,operating,68
+G100000916937,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Maevaara wind farm,L100000913619,wind,operating,33
+G100000916944,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Orrberget wind farm,L100000913625,wind,operating,33
+G100000916955,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Skaveröd-Gurseröd wind farm,L100000913635,wind,operating,33
+G100000917007,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Årjäng NV wind farm,L100000912877,wind,operating,34
+G100000917120,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Bondön wind farm,L100000913779,wind,operating,35
+G100000917150,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Mombyåsen wind farm,L100000913805,wind,operating,35
+G100000917203,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Bliekevare wind farm,L100000913851,wind,operating,36
+G100000917245,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Hjuleberg wind farm,L100000913889,wind,operating,36
+G100000917277,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Näsudden Väst wind farm,L100000913919,wind,operating,36
+G100000917308,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Sötterfällan wind farm,L100000913943,wind,operating,36
+G100000917364,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Enviksberget wind farm,L100000913992,wind,operating,37
+G100000917366,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Grevekulla wind farm,L100000913994,wind,operating,37.2
+G100000917371,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Kingebol wind farm,L100000913997,wind,operating,37
+G100000917447,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Högabjär-Kärsas wind farm,L100000914068,wind,operating,38
+G100000917448,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Höge Väg wind farm,L100000914069,wind,operating,38
+G100000917527,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Krontorp wind farm,L100000914134,wind,operating,39
+G100000917546,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Riskebo wind farm,L100000914151,wind,operating,39
+G100000917552,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Vinliden wind farm,L100000914155,wind,cancelled,39
+G100000917584,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Årjäng SV wind farm,L100000914183,wind,operating,40
+G100000917624,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Gräsås wind farm,L100000914217,wind,pre_construction,40
+G100000917638,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Lervik wind farm,L100000914228,wind,operating,46
+G100000917689,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Velinga wind farm,L100000914271,wind,operating,67.2
+G100000917705,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Åmliden wind farm,L100000908391,wind,operating,41
+G100000917714,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Fryksdalshöjden wind farm,L100000914291,wind,operating,49.4
+G100000917765,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Brännliden wind farm,L100000914334,wind,operating,42
+G100000917779,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Fjällboheden wind farm,L100000914345,wind,operating,42
+G100000917879,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hornamossen wind farm,L100000914426,wind,operating,43
+G100000917948,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Tolvmanstegen wind farm,L100000914488,wind,operating,44
+G100000917954,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Ytterberg wind farm,L100000914494,wind,operating,44
+G100000917977,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Bröcklingsberget wind farm,L100000914515,wind,operating,45
+G100000918052,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Tjorn Offshore wind farm,L100000914579,wind,cancelled,45
+G100000918067,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Brotorp wind farm,L100000914592,wind,operating,46
+G100000918073,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Femstenaberg wind farm,L100000914598,wind,operating,46.2
+G100000918084,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Knöstad wind farm,L100000914607,wind,operating,46
+G100000918088,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Lyckås wind farm,L100000914610,wind,cancelled,46
+G100000918096,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Skåramåla wind farm,L100000914616,wind,operating,46
+G100000918115,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Åliden wind farm,L100000914635,wind,operating,47
+G100000918123,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Grimsås wind farm,L100000914642,wind,operating,47
+G100000918128,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Stöllsäterberget wind farm,L100000914646,wind,operating,47
+G100000918189,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Kårehamn wind farm,L100000914698,wind,operating,48
+G100000918191,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,true,abf-boundaries-v0.2.0,Klasarden Offshore wind farm,L100000914700,wind,cancelled,48
+G100000918203,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Ljungbyholm wind farm,L100000914712,wind,operating,48
+G100000918319,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Munkflohögen wind farm,L100000914806,wind,operating,49
+G100000918712,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Varsvik wind farm,L100000915113,wind,operating,51
+G100000918740,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Häjsberget Och Södra Länsmansberget wind farm,L100000915139,wind,operating,53
+G100000918746,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Sättravallen wind farm,L100000915143,wind,operating,53
+G100000918750,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Zinkgruvan wind farm,L100000915145,wind,operating,53
+G100000918767,energy_plants_gem_units,SWE,point,NOR,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Marker wind farm,L100000915162,wind,operating,54
+G100000918777,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Tandsjö wind farm,L100000915170,wind,pre_construction,84
+G100000918817,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,true,abf-boundaries-v0.2.0,Duvhällen wind farm,L100000915204,wind,pre_construction,56
+G100000918908,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Hultema wind farm,L100000915278,wind,operating,60
+G100000918930,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Stamåsen wind farm,L100000915300,wind,operating,60
+G100000918941,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Kronoberget wind farm,L100000915309,wind,operating,61
+G100000918943,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Gåxsjö-Raftsjöhöjden wind farm,L100000915311,wind,operating,61
+G100000918950,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Furuby wind farm,L100000915314,wind,operating,62
+G100000918960,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Blåsmark wind farm,L100000915323,wind,shelved,63
+G100000918985,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Högkölen wind farm,L100000915343,wind,operating,65
+G100000919018,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Grönhult wind farm,L100000915371,wind,operating,67
+G100000919037,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Nylandsbergen wind farm,L100000915390,wind,operating,68
+G100000919038,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Österåsen wind farm,L100000915391,wind,operating,68
+G100000919039,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Tomasliden wind farm,L100000915392,wind,construction,68
+G100000919057,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Trattberget-Skallberget wind farm,L100000915406,wind,operating,69
+G100000919081,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Riberget wind farm,L100000915427,wind,operating,70
+G100000919093,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Aldermyrberget wind farm,L100000915438,wind,operating,72
+G100000919104,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Maevaara wind farm,L100000913619,wind,operating,72
+G100000919132,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Tormoseröd wind farm,L100000915473,wind,operating,72.6
+G100000919138,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Brattmyrliden wind farm,L100000915479,wind,operating,74
+G100000919141,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Skallberget-Utterberget wind farm,L100000915482,wind,operating,74
+G100000919144,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Blaiken wind farm,L100000915485,wind,operating,75
+G100000919145,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Blaiken wind farm,L100000915485,wind,operating,75
+G100000919163,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Bruzaholm wind farm,L100000915500,wind,operating,138.6
+G100000919167,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Lyrestad wind farm,L100000915503,wind,operating,48.3
+G100000919171,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Solberg wind farm,L100000915505,wind,operating,76
+G100000919177,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,true,abf-boundaries-v0.2.0,Garpkölen wind farm,L100000915509,wind,cancelled,78
+G100000919182,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Mullbergs wind farm,L100000915514,wind,operating,78
+G100000919184,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Sjisjka wind farm,L100000915515,wind,operating,78
+G100000919189,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Fäbodliden wind farm,L100000915519,wind,operating,79
+G100000919190,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Jenåsen wind farm,L100000915520,wind,operating,79
+G100000919214,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Stor-Rotliden wind farm,L100000915541,wind,operating,80
+G100000919216,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Vargträsk wind farm,L100000915542,wind,pre_construction,80
+G100000919223,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Ölme wind farm,L100000915547,wind,pre_construction,40
+G100000919229,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Gubbaberget wind farm,L100000915550,wind,operating,82
+G100000919250,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Överturingen wind farm,L100000915567,wind,operating,84
+G100000919264,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Mörttjärnberget wind farm,L100000915579,wind,operating,85
+G100000919270,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Karskruv wind farm,L100000915584,wind,operating,86
+G100000919272,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Norra Vedbo wind farm,L100000915585,wind,operating,86
+G100000919273,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Rödene wind farm,L100000915586,wind,operating,86
+G100000919274,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Utgrunden wind farm,L100000908536,wind,cancelled,86
+G100000919280,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Salsjö wind farm,L100000915591,wind,operating,87
+G100000919293,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Blackfjället wind farm,L100000915602,wind,operating,90
+G100000919301,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Fasikan wind farm,L100000915609,wind,construction,90
+G100000919302,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Fjällberg wind farm,L100000915610,wind,pre_construction,100
+G100000919305,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Glötesvålen wind farm,L100000915613,wind,operating,90
+G100000919323,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Tribbhult wind farm,L100000915627,wind,cancelled,90
+G100000919328,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Bäckhammar wind farm,L100000915632,wind,operating,92
+G100000919332,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Gabrielsberget wind farm,L100000915636,wind,operating,92
+G100000919340,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Havsnäs wind farm,L100000915643,wind,operating,94
+G100000919349,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Lyngsåsa wind farm,L100000915650,wind,operating,95
+G100000919365,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Lemnhult wind farm,L100000915666,wind,operating,96
+G100000919374,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Blaiken wind farm,L100000915485,wind,operating,98
+G100000919385,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Bleka wind farm,L100000915682,wind,cancelled,100
+G100000919416,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Stenkalles Grund wind farm,L100000915709,wind,cancelled,100
+G100000919418,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Vaberget wind farm,L100000915711,wind,cancelled,100
+G100000919446,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Högaliden wind farm,L100000915734,wind,operating,105
+G100000919449,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Vaggeryd wind farm,L100000915736,wind,cancelled,105
+G100000919455,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Ögonfägnaden wind farm,L100000915740,wind,operating,106
+G100000919473,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Lillgrund wind farm,L100000915753,wind,operating,110
+G100000919485,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Målarberget wind farm,L100000915762,wind,operating,113
+G100000919497,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Björnetjärnsberget wind farm,L100000915772,wind,pre_construction,140
+G100000919501,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Svartnäs wind farm,L100000915775,wind,operating,115
+G100000919504,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Tönsen wind farm,L100000915778,wind,operating,116
+G100000919515,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Rambo wind farm,L100000915786,wind,cancelled,119
+G100000919545,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Sörby wind farm,L100000915812,wind,operating,122
+G100000919574,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Hocksjön wind farm,L100000915838,wind,operating,131
+G100000919600,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Blåbergsliden wind farm,L100000915859,wind,operating,143
+G100000919601,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Blisterliden wind farm,L100000915860,wind,operating,98
+G100000919607,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Sidensjö wind farm,L100000915864,wind,operating,144
+G100000919611,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Klevberget wind farm,L100000915868,wind,operating,146.4
+G100000919615,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Lehtirova wind farm,L100000915872,wind,operating,148
+G100000919640,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Överturingen wind farm,L100000915567,wind,operating,151
+G100000919647,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Sävar wind farm,L100000915900,wind,pre_construction,154
+G100000919648,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Åby-Alebo wind farm,L100000915901,wind,operating,155
+G100000919651,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Ranasjö wind farm,L100000915904,wind,operating,155
+G100000919675,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Kråktorpet wind farm,L100000915926,wind,operating,163
+G100000919677,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Blodrotberget wind farm,L100000915928,wind,operating,164
+G100000919688,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Nysäter wind farm,L100000915938,wind,operating,167
+G100000919691,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Hälsingeskogen wind farm,L100000915940,wind,cancelled,170
+G100000919706,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Källmyrberget wind farm,L100000915952,wind,pre_construction,132
+G100000919710,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Ripfjället wind farm,L100000915956,wind,pre_construction,180
+G100000919737,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Bodhogarna wind farm,L100000915978,wind,cancelled,200
+G100000919755,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Tvinnesheda-Badeboda wind farm,L100000915996,wind,operating,202
+G100000919765,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Jädraås wind farm,L100000916003,wind,operating,213
+G100000919786,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Skaftåsen wind farm,L100000916021,wind,operating,231
+G100000919802,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Bergvind Lingbo wind farm,L100000916034,wind,operating,265
+G100000919825,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Stormossen wind farm,L100000916053,wind,pre_construction,256
+G100000919830,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Stor-Skälsjön wind farm,L100000916057,wind,operating,260
+G100000919831,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Utposten wind farm,L100000916058,wind,cancelled,260
+G100000919846,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Åndberg wind farm,L100000916071,wind,operating,286
+G100000919849,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Åskälen wind farm,L100000916073,wind,operating,288
+G100000919850,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Björkhöjden wind farm,L100000916074,wind,operating,288
+G100000919870,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Kölvallen wind farm,L100000916093,wind,operating,96.6
+G100000919875,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Sjollen wind farm,L100000916098,wind,pre_construction,300
+G100000919878,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,true,abf-boundaries-v0.2.0,Taggen Offshore wind farm,L100000916101,wind,cancelled,300
+G100000919891,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Nysäter wind farm,L100000915938,wind,operating,328.5
+G100000919907,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Råliden wind farm,L100000916125,wind,pre_construction,324
+G100000919915,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Röknölen wind farm,L100000916131,wind,cancelled,342
+G100000919928,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Blakliden Fäbodberget wind farm,L100000916141,wind,operating,353
+G100000919937,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Björnberget wind farm,L100000916150,wind,operating,372
+G100000919949,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Arkona wind farm,L100000916160,wind,shelved,1400
+G100000919961,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,true,abf-boundaries-v0.2.0,Oskarshamn wind farm,L100000916171,wind,cancelled,400
+G100000919980,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Storgrundet wind farm,L100000916186,wind,pre_construction,420
+G100000920021,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Sydkustens Vind wind farm,L100000916222,wind,shelved,500
+G100000920023,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Utposten wind farm,L100000916058,wind,pre_construction,500
+G100000920043,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Gretas Klackar Offshore wind farm,L100000916240,wind,cancelled,600
+G100000920052,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Kriegers Flak wind farm,L100000916247,wind,pre_construction,640
+G100000920053,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Markbygden wind farm,L100000916248,wind,operating,650
+G100000920088,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Stora Middelgrund wind farm,L100000916277,wind,cancelled,864
+G100000920118,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Västvind wind farm,L100000916304,wind,pre_construction,1000
+G100000920126,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Poseidon Offshore wind farm,L100000916311,wind,pre_construction,1400
+G100000920139,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Kattegat Syd wind farm,L100000916321,wind,pre_construction,1200
+G100000920154,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Vidar wind farm,L100000916334,wind,pre_construction,2000
+G100000920159,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Finngrunden wind farm,L100000916339,wind,cancelled,1500
+G100000920160,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Gotland Offshore wind farm,L100000916340,wind,shelved,1500
+G100000920162,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Skåne Sea wind farm,L100000916342,wind,cancelled,1500
+G100000920164,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Södra Victoria wind farm,L100000916344,wind,cancelled,2000
+G100000920165,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Galene Offshore wind farm,L100000916345,wind,pre_construction,400
+G100000920167,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Gretas Klackar Offshore wind farm,L100000916240,wind,pre_construction,1800
+G100000920172,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Triton wind farm,L100000916350,wind,cancelled,1400
+G100000920174,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Dyning wind farm,L100000916352,wind,cancelled,2500
+G100000920176,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Kultje wind farm,L100000916354,wind,shelved,2150
+G100000920178,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Mareld wind farm,L100000916356,wind,pre_construction,2500
+G100000920182,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Fyrskeppet wind farm,L100000916359,wind,pre_construction,2800
+G100000920183,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Baltic Offshore Beta wind farm,L100000916360,wind,cancelled,2460
+G100000920184,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Eystrasalt wind farm,L100000916361,wind,pre_construction,3600
+G100000920185,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Baltic Offshore North Delta wind farm,L100000916362,wind,cancelled,2100
+G100000920186,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Aurora wind farm (Sweden),L100000916363,wind,shelved,5500
+G100000925622,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,true,abf-boundaries-v0.2.0,Baltic Central Offshore wind farm,L100000920799,wind,shelved,4000
+G100000925623,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Baltic Offshore Alpha wind farm,L100000920800,wind,pre_construction,1900
+G100000925624,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Baltic Offshore Epsilon wind farm,L100000920801,wind,pre_construction,2740
+G100000925625,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Fageråsen wind farm,L100000920802,wind,pre_construction,171
+G100000925626,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Gävle Öst offshore wind farm,L100000920803,wind,pre_construction,5500
+G100000925627,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,true,abf-boundaries-v0.2.0,Gävle Väst offshore wind farm,L100000920804,wind,announced,4000
+G100000925628,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Hallbrån wind farm,L100000920805,wind,cancelled,40
+G100000925629,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Lyckås (Kraftö AB) wind farm,L100000920806,wind,operating,39
+G100000925630,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Heimdall Offshore wind farm,L100000920807,wind,shelved,2400
+G100000925631,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Herkules Floating Offshore wind farm,L100000920808,wind,pre_construction,2750
+G100000925632,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,true,abf-boundaries-v0.2.0,Kattegat (Ørsted) Offshore wind farm,L100000920809,wind,announced,1500
+G100000925633,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Knäsjöberget wind farm,L100000920810,wind,operating,98
+G100000925634,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Larkeskogen wind farm,L100000920811,wind,cancelled,18
+G100000925635,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Lundby Trädet wind farm,L100000920812,wind,operating,11
+G100000925636,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Lyrestad wind farm,L100000915503,wind,operating,27.6
+G100000925637,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Markbygden wind farm,L100000916248,wind,operating,134
+G100000925638,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Markbygden wind farm,L100000916248,wind,operating,101
+G100000925639,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Markbygden wind farm,L100000916248,wind,operating,85
+G100000925640,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Markbygden wind farm,L100000916248,wind,operating,253
+G100000925641,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Markbygden wind farm,L100000916248,wind,construction,825
+G100000925642,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Markbygden wind farm,L100000916248,wind,operating,780
+G100000925643,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Munkhyttan wind farm,L100000920813,wind,construction,18.6
+G100000925644,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,true,abf-boundaries-v0.2.0,Munkhyttan wind farm,L100000920813,wind,announced,18
+G100000925645,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,true,abf-boundaries-v0.2.0,Neptuni Offshore wind farm,L100000920814,wind,shelved,1600
+G100000925646,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Neptunus Offshore wind farm,L100000920815,wind,cancelled,3100
+G100000925647,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Polargrund Offshore wind farm,L100000920816,wind,pre_construction,3000
+G100000925648,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,false,abf-boundaries-v0.2.0,Skidbladner Floating Offshore wind farm,L100000920817,wind,cancelled,2000
+G100000925649,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Sörlidberget wind farm,L100000920818,wind,operating,140
+G100000925650,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Storbrännkullen wind farm,L100000920819,wind,operating,57
+G100000925651,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Storhöjden wind farm,L100000920820,wind,operating,154
+G100000925652,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,true,abf-boundaries-v0.2.0,Storlandet wind farm,L100000920821,wind,pre_construction,2600
+G100000925653,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Vitberget wind farm,L100000920822,wind,operating,105
+G100000925654,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Vitberget wind farm,L100000920822,wind,operating,21
+G100000925655,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Vitberget wind farm,L100000920822,wind,operating,36
+G100001000107,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Aroskraft power station,L100000103530,oil/gas,operating,250
+G100001000108,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Gärstad power station,L100001000042,bioenergy,operating,50
+G100001000109,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Göteborg power station,L100001000043,oil/gas,operating,36
+G100001000110,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Halmstad power station,L100001000044,oil/gas,mothballed,78
+G100001000111,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Halmstad power station,L100001000044,oil/gas,operating,200
+G100001000112,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Hässelby power station,L100001000045,bioenergy,operating,25
+G100001000113,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Karlshamn power station,L100001000046,oil/gas,operating,42
+G100001000114,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Karlshamn power station,L100001000046,oil/gas,operating,334
+G100001000115,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Karlshamn power station,L100001000046,oil/gas,operating,328
+G100001000116,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Kimstad power station,L100001000047,oil/gas,operating,67
+G100001000117,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Kimstad power station,L100001000047,oil/gas,operating,67
+G100001000118,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Lahall power station,L100001000048,oil/gas,operating,60
+G100001000119,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Lahall power station,L100001000048,oil/gas,operating,60
+G100001000120,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Lahall power station,L100001000048,oil/gas,operating,60
+G100001000121,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Lahall power station,L100001000048,oil/gas,operating,60
+G100001000122,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Öresundsverket power station,L100001000049,oil/gas,mothballed,449
+G100001000123,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Öresundsverket power station,L100001000049,oil/gas,operating,63
+G100001000124,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Öresundsverket power station,L100001000049,oil/gas,operating,63
+G100001000125,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Slite power station,L100001000050,oil/gas,operating,63
+G100001000126,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Slite power station,L100001000050,oil/gas,operating,63
+G100001000127,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Barsebäck power station,L100001000051,oil/gas,operating,40
+G100001000128,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Barsebäck power station,L100001000051,oil/gas,operating,40
+G100001000129,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Stallbacka power station,L100001000052,oil/gas,operating,67
+G100001000130,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Stallbacka power station,L100001000052,oil/gas,operating,67
+G100001000131,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Stallbacka power station,L100001000052,oil/gas,operating,67
+G100001000372,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,true,abf-boundaries-v0.2.0,Alvret solar farm,L100001000168,utility-scale solar,announced,90
+G100001000373,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,true,abf-boundaries-v0.2.0,Grums solar farm,L100001000169,utility-scale solar,pre_construction,260
+G100001000395,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,true,abf-boundaries-v0.2.0,Örebro solar farm,L100001000190,utility-scale solar,pre_construction,43
+G100001000396,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,true,abf-boundaries-v0.2.0,Gotland solar farm,L100001000192,utility-scale solar,pre_construction,40
+G100001000397,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,true,abf-boundaries-v0.2.0,Småland solar farm,L100001000193,utility-scale solar,pre_construction,49
+G100001000406,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,true,abf-boundaries-v0.2.0,Medinge solar farm,L100001000197,utility-scale solar,pre_construction,21
+G100001000425,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Hallstavik solar farm,L100001000212,utility-scale solar,operating,64
+G100001000449,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Myren solar farm,L100001000236,utility-scale solar,pre_construction,37
+G100001000531,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Prison Break solar farm,L100001000315,utility-scale solar,announced,37.5
+G100001000676,energy_plants_gem_units,SWE,point,FIN,SWE-1-AC,,point,,,,true,abf-boundaries-v0.2.0,Voima wind farm,L100001000433,wind,cancelled,1600
+G100001003689,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Ånglarna wind farm,L100001003220,wind,construction,115
+G100001003690,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Cirrus wind farm (Sweden),L100001003221,wind,cancelled,2000
+G100001003692,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Fegelstorp wind farm,L100001003222,wind,cancelled,15
+G100001003693,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Fjällmarkhöjden wind farm,L100001003223,wind,pre_construction,15
+G100001003694,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Fjällrämmen wind farm,L100001003224,wind,cancelled,78
+G100001003695,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Forsviden Norra wind farm,L100001003225,wind,cancelled,48
+G100001003884,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Frostnäs wind farm,L100001003391,wind,pre_construction,12.6
+G100001003886,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Fägremo wind farm,L100001003392,wind,cancelled,60
+G100001003887,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Fänneslunda Del 1 wind farm,L100001003394,wind,cancelled,120
+G100001003888,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Färingtofta wind farm,L100001003395,wind,shelved,56
+G100001003889,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Färingtofta I wind farm,L100001003396,wind,shelved,85
+G100001003890,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Gagnef Rosberget wind farm,L100001003398,wind,cancelled,18
+G100001003892,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Galberget wind farm,L100001003399,wind,cancelled,42
+G100001003893,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Galtryggen wind farm,L100001003400,wind,pre_construction,8
+G100001003894,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Galtåsen wind farm,L100001003402,wind,cancelled,18
+G100001003895,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Gastsjö wind farm,L100001003403,wind,cancelled,18
+G100001003896,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Gategårdens Vindpark wind farm,L100001003404,wind,cancelled,27
+G100001003897,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Granberget 2 wind farm,L100001003405,wind,operating,13.6
+G100001003898,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Granliden Vindkraftpark wind farm,L100001003406,wind,cancelled,33
+G100001003899,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Granåsen wind farm,L100001003407,wind,shelved,33
+G100001003900,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Grimmared wind farm,L100001003408,wind,cancelled,24
+G100001003901,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Grimsås Äspås wind farm,L100001003409,wind,cancelled,44
+G100001003902,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Gräfsnäs Vindpark I wind farm,L100001003410,wind,cancelled,21
+G100001003903,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Gräfsnäs Vindpark wind farm,L100001003411,wind,cancelled,15
+G100001003904,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Grävlingkullarna wind farm,L100001003412,wind,cancelled,99
+G100001003905,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,true,abf-boundaries-v0.2.0,Gråsjön wind farm,L100001003413,wind,cancelled,10
+G100001005099,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Grönhögen wind farm,L100001004359,wind,retired,11
+G100001005100,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Gröninge wind farm,L100001004361,wind,cancelled,128
+G100001005101,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Grönmyrberget wind farm,L100001004362,wind,cancelled,33
+G100001005102,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Gullered-Högshult wind farm,L100001004364,wind,cancelled,25
+G100001005105,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Gunnarsvattnets wind farm,L100001004365,wind,cancelled,28
+G100001005109,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Hallhult wind farm,L100001004366,wind,cancelled,27.5
+G100001005111,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Hallhult/Fredriksdal wind farm,L100001004368,wind,cancelled,12
+G100001005112,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Halmstadgården wind farm,L100001004369,wind,cancelled,10.7
+G100001005113,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Haneberg wind farm,L100001004370,wind,cancelled,24
+G100001005114,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,true,abf-boundaries-v0.2.0,Haradskölen wind farm,L100001004371,wind,cancelled,70
+G100001005115,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hasslösa wind farm,L100001004372,wind,cancelled,18
+G100001005118,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Hedningsmåla wind farm,L100001004375,wind,cancelled,12.5
+G100001005120,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Hedningsmåla II wind farm,L100001004376,wind,cancelled,12.5
+G100001005121,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Hindsen wind farm,L100001004377,wind,cancelled,36
+G100001005123,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hjo Fågelås wind farm,L100001004379,wind,cancelled,69
+G100001005125,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Hjularöd wind farm,L100001004381,wind,cancelled,17.5
+G100001005129,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Holmen wind farm (Sweden),L100001004384,wind,cancelled,24
+G100001005147,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Holms-Västbyn wind farm,L100001004402,wind,operating,11
+G100001005149,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Hyltan wind farm,L100001004403,wind,cancelled,18
+G100001005161,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Hylte wind farm,L100001004413,wind,cancelled,10
+G100001005200,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Hyltåkra Med Omnejd I Älmhult wind farm,L100001004415,wind,cancelled,34
+G100001005226,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Baltic offshore Delta South Floating wind farm,L100001004458,wind,cancelled,3200
+G100001005292,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Häljebyn wind farm,L100001004520,wind,cancelled,43.7
+G100001005294,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Häljelöt wind farm,L100001004521,wind,cancelled,21
+G100001005331,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Fäbodliden II wind farm,L100001004545,wind,operating,17.2
+G100001005334,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Älgkullen wind farm,L100001004547,wind,operating,93
+G100001005336,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Rosenholm wind farm,L100001004550,wind,operating,23
+G100001005337,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Almedal wind farm,L100001004551,wind,operating,56
+G100001005406,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hällunda-Timmele wind farm,L100001004607,wind,pre_construction,15.4
+G100001005407,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Isbillen-Kullmyran wind farm,L100001004608,wind,cancelled,12
+G100001005409,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Kymbo wind farm,L100001004609,wind,cancelled,21
+G100001005411,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Poseidon Offshore wind farm,L100000916311,wind,cancelled,700
+G100001005435,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,true,abf-boundaries-v0.2.0,Broboberget wind farm,L100001004633,wind,pre_construction,240
+G100001005436,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,true,abf-boundaries-v0.2.0,Lannaberget wind farm,L100001004634,wind,pre_construction,105
+G100001005437,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Bröcklingsberget wind farm,L100000914515,wind,operating,32.6
+G100001005438,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Bursjöliden wind farm,L100001004636,wind,pre_construction,65
+G100001005440,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Egby wind farm,L100000907824,wind,operating,10
+G100001005441,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Em wind farm,L100001004637,wind,operating,18.4
+G100001005443,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Fäbodberget wind farm,L100001004640,wind,operating,143
+G100001005452,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Lebo wind farm,L100001004648,wind,operating,33
+G100001005993,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,true,abf-boundaries-v0.2.0,Ljusvattnet wind farm,L100001005075,wind,cancelled,122.1
+G100001005995,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Mortorp wind farm,L100001005076,wind,operating,16
+G100001005996,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Näsby/Överberg wind farm,L100001005078,wind,operating,17.5
+G100001005997,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Näsudden wind farm,L100001005079,wind,operating,10.2
+G100001006001,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Raftsjöhöjden wind farm,L100001005083,wind,operating,23.5
+G100001006004,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Ryfors wind farm,L100001005086,wind,pre_construction,51
+G100001006005,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Sjömåla wind farm,L100001005087,wind,pre_construction,11.5
+G100001006007,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Skarhult wind farm,L100001005088,wind,operating,10.4
+G100001006008,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Skuruberget wind farm,L100001005089,wind,pre_construction,10
+G100001006009,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Storrisberget wind farm,L100001005090,wind,pre_construction,15
+G100001006019,energy_plants_gem_units,SWE,point,,SWE-1-I,,point,,,,false,abf-boundaries-v0.2.0,Storugns wind farm,L100001005100,wind,operating,13.2
+G100001006020,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Svanabyn wind farm,L100001005102,wind,pre_construction,39.6
+G100001006022,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Toxberget wind farm,L100001005103,wind,pre_construction,66
+G100001006023,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Kvällåliden wind farm,L100001005105,wind,cancelled,104.4
+G100001006025,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Noppikoski wind farm,L100001005106,wind,cancelled,456
+G100001006026,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,StorVrången wind farm,L100001005107,wind,pre_construction,69
+G100001006028,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Västerlisa wind farm,L100001005109,wind,operating,48
+G100001006038,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Ås wind farm,L100001005111,wind,operating,13.8
+G100001006040,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Björkvattnet wind farm,L100001005120,wind,operating,174.9
+G100001006041,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Bergaskogen wind farm,L100001005121,wind,pre_construction,18
+G100001006051,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Arendal/Risholmen wind farm,L100001005127,wind,retired,10
+G100001006052,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Erik Segersäll 1 Floating Offshore wind farm,L100001005128,wind,cancelled,2000
+G100001006053,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Erik Segersäll 1 Floating Offshore wind farm,L100001005128,wind,cancelled,2000
+G100001006054,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Erik Segersäll 1 Floating Offshore wind farm,L100001005128,wind,cancelled,2000
+G100001006057,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Olof Skötkonung Offshore wind farm,L100001005130,wind,pre_construction,1750
+G100001006060,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Galmsjömyran wind farm,L100001005133,wind,pre_construction,150
+G100001006062,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Lundåkra wind farm,L100001005135,wind,announced,21
+G100001006063,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Najaderna Offshore wind farm,L100001005136,wind,pre_construction,1700
+G100001006064,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Pleione Floating Offshore wind farm,L100001005137,wind,cancelled,2800
+G100001006065,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,true,abf-boundaries-v0.2.0,Aurum Offshore wind farm,L100001005138,wind,announced,2200
+G100001006066,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Baltic Edge Floating Offshore wind farm,L100001005140,wind,pre_construction,1000
+G100001006068,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,true,abf-boundaries-v0.2.0,Blekinge Offshore wind farm,L100001005141,wind,pre_construction,1000
+G100001006069,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,true,abf-boundaries-v0.2.0,Bores Krona offshore wind farm,L100001005142,wind,pre_construction,3100
+G100001006070,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Baltic Offshore Gamma wind farm,L100001005143,wind,announced,2000
+G100001006071,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Baltic Offshore Kappa wind farm,L100001005144,wind,announced,1240
+G100001006072,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Baltic Offshore Lambda wind farm,L100001005145,wind,announced,3440
+G100001006091,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Baltic Offshore Omega wind farm,L100001005159,wind,pre_construction,1400
+G100001006092,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Baltic Offshore Sigma wind farm,L100001005160,wind,pre_construction,3000
+G100001006093,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Falkenberg-Halmstad Offshore wind farm,L100001005161,wind,pre_construction,1210
+G100001006094,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Kapheira Offshore wind farm,L100001005162,wind,announced,2000
+G100001006095,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,true,abf-boundaries-v0.2.0,Långgrund I Offshore wind farm,L100001005163,wind,cancelled,2046
+G100001006096,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,true,abf-boundaries-v0.2.0,Långgrund II Offshore wind farm,L100001005164,wind,cancelled,2310
+G100001006097,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,true,abf-boundaries-v0.2.0,Nya Utgrunden Offshore wind farm,L100001005165,wind,pre_construction,340
+G100001006098,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Slite offshore wind farm,L100001005166,wind,pre_construction,600
+G100001006099,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Sundsvall Floating Offshore wind farm,L100001005167,wind,pre_construction,1200
+G100001006100,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sylen offshore wind farm,L100001005168,wind,pre_construction,8675
+G100001006101,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Öland-Hoburg Offshore wind farm,L100001005170,wind,pre_construction,600
+G100001006102,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Öland-Hoburg Offshore wind farm,L100001005170,wind,pre_construction,750
+G100001006103,energy_plants_gem_units,SWE,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Öland-Hoburg Offshore wind farm,L100001005170,wind,pre_construction,750
+G100001009082,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Oskarshamn power station,L100001007727,oil/gas,operating,43
+G100001009083,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Oskarshamn power station,L100001007727,oil/gas,operating,43
+G100001009084,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Forsmark power station,L100001007726,oil/gas,operating,43
+G100001009085,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Forsmark power station,L100001007726,oil/gas,operating,43
+G100001009097,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Rya Göteborg power station,L100000400721,bioenergy,cancelled,35
+G100001009098,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Aroskraft power station,L100000103530,bioenergy,operating,250
+G100001027453,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Bullerforsen hydroelectric plant,L100001023248,hydropower,operating,47
+G100001027454,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Dönje hydroelectric plant,L100001023249,hydropower,operating,72
+G100001027455,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Gardikfors hydroelectric plant,L100001023250,hydropower,operating,60
+G100001027456,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Gejman hydroelectric plant,L100001023251,hydropower,operating,66
+G100001027457,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Kymmens hydroelectric plant,L100001023252,hydropower,operating,55
+G100001027458,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Laforsen hydroelectric plant,L100001023253,hydropower,operating,57
+G100001027459,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Lilla Edet hydroelectric plant,L100001023254,hydropower,operating,36
+G100001027460,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Naverede hydroelectric plant,L100001023255,hydropower,operating,70
+G100001027461,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Pengfors hydroelectric plant,L100001023256,hydropower,operating,69
+G100001027462,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Rusfors hydroelectric plant,L100001023257,hydropower,operating,42
+G100001027463,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Selsfors hydroelectric plant,L100001023258,hydropower,operating,61
+G100001027464,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Skallböle hydroelectric plant,L100001023259,hydropower,operating,46
+G100001027465,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Stenkullafors hydroelectric plant,L100001023260,hydropower,operating,57
+G100001027466,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Stensele hydroelectric plant,L100001023261,hydropower,operating,54
+G100001027467,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Stugun hydroelectric plant,L100001023262,hydropower,operating,39
+G100001030371,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Untra hydroelectric plant,L100001025618,hydropower,operating,43
+G100001046511,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,true,abf-boundaries-v0.2.0,Lidköping Solar Park,L100001041231,utility-scale solar,operating,24
+G100001046514,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Studsvik Solar Park,L100001041233,utility-scale solar,operating,24
+G100001052070,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,true,abf-boundaries-v0.2.0,Blåsjöns hydroelectric plant,L100001046149,hydropower,operating,60
+G100001052071,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Degerforsen hydroelectric plant,L100001046150,hydropower,operating,78
+G100001052072,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Edensforsen hydroelectric plant,L100001046151,hydropower,operating,71
+G100001052073,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Edsele hydroelectric plant,L100001046153,hydropower,operating,60
+G100001052076,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Forsse hydroelectric plant,L100001046155,hydropower,operating,56
+G100001052077,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Gulsele hydroelectric plant,L100001046156,hydropower,operating,72
+G100001052078,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Hissmofors VI hydroelectric plant,L100001046157,hydropower,operating,60
+G100001052079,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Kattstrupeforsen hydroelectric plant,L100001046158,hydropower,operating,56
+G100001052080,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Kvarnsveden hydroelectric plant,L100001046159,hydropower,operating,30
+G100001052081,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Långhag hydroelectric plant,L100001046160,hydropower,operating,52
+G100001052084,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Linnvasselv hydroelectric plant,L100001046162,hydropower,operating,73
+G100001052085,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Ljunga hydroelectric plant,L100001046163,hydropower,operating,59
+G100001052086,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Rätan hydroelectric plant,L100001046164,hydropower,operating,60
+G100001052087,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Sollefteå hydroelectric plant,L100001046165,hydropower,operating,62
+G100001052092,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Norrange hydroelectric plant,L100001046170,hydropower,operating,50
+G100001052184,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Hässelby power station,L100001000045,bioenergy,operating,25
+G100001052185,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Hässelby power station,L100001000045,bioenergy,operating,25
+G100001052194,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Dåva power station,L100000201214,bioenergy,operating,35
+G100001052195,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Åbyverket power station,L100000201212,bioenergy,operating,70
+G100001052196,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,true,abf-boundaries-v0.2.0,Bristaverket power station,L100000200225,bioenergy,operating,20
+G100001052197,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Gruvons Bruk power station,L100000201215,bioenergy,operating,22
+G100001052214,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Hedenverket power station,L100000200246,bioenergy,operating,35
+G100001052215,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Högdalenverket power station,L100000200248,bioenergy,operating,27
+G100001052216,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Korstaverket power station,L100001046254,bioenergy,operating,56
+G100001052218,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Korstaverket power station,L100001046254,bioenergy,operating,21
+G100001052219,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Skoghalls Mill power station,L100000201229,bioenergy,operating,28
+G100001052225,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Södra Cell Mörrum Pulp Mill power station,L100000200299,bioenergy,operating,22.3
+G100001052226,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Södra Cell Mörrum Pulp Mill power station,L100000200299,bioenergy,operating,22.3
+G100001052227,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Torsvik power station,L100000200309,bioenergy,operating,14
+G100001052233,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Uppsala power station,L100001046263,bioenergy,operating,10
+G100001052234,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Uppsala power station,L100001046263,bioenergy,operating,120
+G100001052248,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Rya Borås power station,L100001046272,bioenergy,operating,20
+G100001052251,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Rya Borås power station,L100001046272,bioenergy,operating,17
+G100001052255,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Enkoping power station,L100001046277,bioenergy,operating,23
+G100001052263,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Vallvik power station,L100001046284,bioenergy,operating,30.8
+G100001052264,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Södra Cell Mönsterås Pulp Mill power station,L100000200298,bioenergy,operating,37
+G100001052265,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Södra Cell Mönsterås Pulp Mill power station,L100000200298,bioenergy,operating,37
+G100001052266,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Södra Cell Mönsterås Pulp Mill power station,L100000200298,bioenergy,operating,37
+G100001052267,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,KV Linkoping power station,L100000201223,bioenergy,operating,38
+G100001052268,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Gärstad power station,L100001000042,bioenergy,operating,19
+G100001052269,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Lejonpannan power station,L100001046286,bioenergy,operating,21.5
+G100001052271,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Värö Pulp Mill power station,L100000200315,bioenergy,operating,63
+G100001052273,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Sysav South Scania Waste power station,L100001046289,bioenergy,operating,20.8
+G100001052274,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Sysav South Scania Waste power station,L100001046289,bioenergy,operating,20.8
+G100001052276,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Johannes power station,L100001046291,bioenergy,operating,23.9
+G100001052277,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Jordbro power station,L100001046292,bioenergy,operating,20.3
+G100001052290,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Riskullaverket power station,L100001046300,bioenergy,operating,27.2
+G100001052291,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Elenora power station,L100001046301,bioenergy,operating,28
+G100001062739,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Alfta hydroelectric plant,L100001054847,hydropower,operating,32
+G100001062740,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Båtfors hydroelectric plant,L100001054848,hydropower,operating,49
+G100001062741,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Bjurfors Övre hydroelectric plant,L100001054849,hydropower,operating,42
+G100001062742,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Forshuvud hydroelectric plant,L100001054850,hydropower,operating,44
+G100001062743,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Karsefors hydroelectric plant,L100001054851,hydropower,operating,34
+G100001062745,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Lanforsen hydroelectric plant,L100001054853,hydropower,operating,44
+G100001062746,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Munkfors hydroelectric plant,L100001054854,hydropower,operating,33
+G100001062747,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Parteboda hydroelectric plant,L100001054855,hydropower,operating,35
+G100001062748,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Skedvi hydroelectric plant,L100001054856,hydropower,operating,38
+G100001062749,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Spjutmo hydroelectric plant,L100001054857,hydropower,operating,35
+G100001062750,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Sveg hydroelectric plant,L100001054858,hydropower,operating,36
+G100001062752,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Vargön hydroelectric plant,L100001054860,hydropower,operating,35
+G100001062753,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Vittjärv hydroelectric plant,L100001054861,hydropower,operating,33
+G100001064181,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Skåramåla PV solar farm,L100001056180,utility-scale solar,operating,39.3
+G100001083467,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Studsvik solpark solar project,L100001073681,utility-scale solar,operating,19.9
+G100001083468,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Hörby solar project,L100001073682,utility-scale solar,operating,18.1
+G100001083469,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Skurup Star solar project,L100001073683,utility-scale solar,operating,18
+G100001083470,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Solpark Lidköping solar project,L100001073684,utility-scale solar,operating,16
+G100001083471,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Henja solpark solar project,L100001073685,utility-scale solar,operating,15.4
+G100001083472,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Mörghult Solkraftverk solar project,L100001073686,utility-scale solar,operating,14.9
+G100001083473,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,DSV Landskrona solar project,L100001073687,utility-scale solar,operating,14
+G100001083474,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Sjöbo solpark solar project,L100001073688,utility-scale solar,operating,14
+G100001083475,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,HSB Södermanlands Solcellspark solar project,L100001073689,utility-scale solar,operating,12.5
+G100001083476,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Eken solcellspark solar project,L100001073690,utility-scale solar,operating,11.8
+G100001083477,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,SBB Solcellspark Hallstahammar solar project,L100001073691,utility-scale solar,operating,9.5
+G100001083478,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Ramsjöholm solpark solar project,L100001073692,utility-scale solar,operating,8
+G100001083479,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Åbro bryggeri solcellspark solar project,L100001073693,utility-scale solar,operating,7.5
+G100001083480,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Buna solcellspark solar project,L100001073694,utility-scale solar,operating,7.2
+G100001083481,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Björke solcellspark solar project,L100001073695,utility-scale solar,operating,7
+G100001083482,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Nättraby Nembus solpark solar project,L100001073696,utility-scale solar,operating,6.7
+G100001083483,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Chara solar project,L100001073697,utility-scale solar,operating,6.1
+G100001083484,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hova solcellspark solar project,L100001073698,utility-scale solar,operating,5.9
+G100001083485,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Solpark Skrivargården solar project,L100001073699,utility-scale solar,operating,5.7
+G100001083486,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Solinavium solar project,L100001073700,utility-scale solar,operating,5.5
+G100001083487,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Nya Solevi solar project,L100001073701,utility-scale solar,operating,5.5
+G100001083488,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Ekeby solar project,L100001073702,utility-scale solar,operating,5.5
+G100001083489,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Boda nät solar project,L100001073703,utility-scale solar,operating,5.1
+G100001083490,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Svea Utility Skakelbacken solar project,L100001073704,utility-scale solar,operating,5
+G100001083491,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Stora Sundby solcellspark solar project,L100001073705,utility-scale solar,operating,4.6
+G100001083492,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Mossbråsa solpark solar project,L100001073706,utility-scale solar,operating,4.6
+G100001083493,energy_plants_gem_units,SWE,point,,SWE-1-C,,point,,,,false,abf-boundaries-v0.2.0,Brödtorget solcellspark solar project,L100001073707,utility-scale solar,operating,4.3
+G100001083494,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Öringe Solpark solar project,L100001073708,utility-scale solar,operating,4.3
+G100001083495,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Borlänge Gagnbro solar project,L100001073709,utility-scale solar,operating,4.3
+G100001083496,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Hullevik solcellspark solar project,L100001073710,utility-scale solar,operating,4.3
+G100001083497,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Solparken Katrineholm solar project,L100001073711,utility-scale solar,operating,4
+G100001083498,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Spica solar project,L100001073712,utility-scale solar,operating,4
+G100001083499,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Lindberg solcellspark solar project,L100001073713,utility-scale solar,operating,4
+G100001083500,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,SRS Vaggeryd solar project,L100001073714,utility-scale solar,operating,4
+G100001083501,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Solpunkten i Kristianstad solar project,L100001073715,utility-scale solar,operating,4
+G100001083502,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Hisingen Logistikpark solar project,L100001073716,utility-scale solar,operating,3.7
+G100001083503,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Bälinge solcellsanläggning solar project,L100001073717,utility-scale solar,operating,3.6
+G100001083504,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,SRS Västerås solar project,L100001073718,utility-scale solar,operating,3.3
+G100001083505,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Solpark Skorteby solar project,L100001073719,utility-scale solar,operating,3.2
+G100001083506,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Solparken Östersund solar project,L100001073720,utility-scale solar,operating,3
+G100001083507,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Olofström solpark solar project,L100001073721,utility-scale solar,operating,3
+G100001083508,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Törneby solpark solar project,L100001073722,utility-scale solar,operating,3
+G100001083509,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Solsidan solar project,L100001073723,utility-scale solar,operating,2.7
+G100001083510,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Hultsfred solcellspark solar project,L100001073724,utility-scale solar,operating,2.5
+G100001083511,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Wrangelsro solpark solar project,L100001073725,utility-scale solar,operating,2.5
+G100001083512,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Forsby solpark solar project,L100001073726,utility-scale solar,operating,2.5
+G100001083513,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Karlskrona Solpark solar project,L100001073727,utility-scale solar,operating,2.4
+G100001083514,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Smedjebacken solar project,L100001073728,utility-scale solar,operating,2.4
+G100001083515,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Solcellspark Västergården solar project,L100001073729,utility-scale solar,operating,2.3
+G100001083516,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Hunnestad solcellspark solar project,L100001073730,utility-scale solar,operating,2.3
+G100001083517,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Solpark Råberga solar project,L100001073731,utility-scale solar,operating,1.9
+G100001083518,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Johansfors Solpark solar project,L100001073732,utility-scale solar,operating,1.8
+G100001083519,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Norrby Boda Solproduktion solar project,L100001073733,utility-scale solar,operating,1.8
+G100001083520,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Lintex AB Solcellsanläggning solar project,L100001073734,utility-scale solar,operating,1.7
+G100001083521,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Frillesås solcellspark solar project,L100001073735,utility-scale solar,operating,1.7
+G100001083522,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,NÄL Solceller solar project,L100001073736,utility-scale solar,operating,1.6
+G100001083523,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Marklunda solcellspark solar project,L100001073737,utility-scale solar,operating,1.5
+G100001083524,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Stavstorp solcellspark solar project,L100001073738,utility-scale solar,operating,1.5
+G100001083525,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Böda Sand Solpark solar project,L100001073739,utility-scale solar,operating,1.5
+G100001083526,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Solcellspark Lindan solar project,L100001073740,utility-scale solar,operating,1.5
+G100001083527,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Töreboda Kilen solar project,L100001073741,utility-scale solar,operating,1.5
+G100001083528,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,Kallinge solar project,L100001073742,utility-scale solar,operating,1.5
+G100001083529,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Solpark Ekalund solar project,L100001073743,utility-scale solar,operating,1.5
+G100001083530,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Södra Möinge Solpark solar project,L100001073744,utility-scale solar,operating,1.4
+G100001083531,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Susegården Solpark solar project,L100001073745,utility-scale solar,operating,1.4
+G100001083532,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Ljusbäck solcellspark solar project,L100001073746,utility-scale solar,operating,1.3
+G100001083533,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Stigamo Kingspan solar project,L100001073747,utility-scale solar,operating,1.3
+G100001083534,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Arctic Paper Grycksbo AB solar project,L100001073748,utility-scale solar,operating,1.3
+G100001083535,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Stora Källeråsen solcellsanläggning solar project,L100001073749,utility-scale solar,operating,1.3
+G100001083536,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Araskoga solpark solar project,L100001073750,utility-scale solar,operating,1.3
+G100001083537,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Murarlyckan 101 solar project,L100001073751,utility-scale solar,operating,1.3
+G100001083538,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Solängen solar project,L100001073752,utility-scale solar,operating,1.3
+G100001083539,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Bredstorp Solpark solar project,L100001073753,utility-scale solar,operating,1.2
+G100001083540,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Björkeröd solar project,L100001073754,utility-scale solar,operating,1.2
+G100001083541,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Lindbäcks Bygg Superfabriken solar project,L100001073755,utility-scale solar,operating,1.2
+G100001083542,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Solenergiparken Tågarpsdalen solar project,L100001073756,utility-scale solar,operating,1.2
+G100001083543,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Magnihill solar project,L100001073757,utility-scale solar,operating,1.1
+G100001083544,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Linköping Universitet solcellsanläggning solar project,L100001073758,utility-scale solar,operating,1.1
+G100001083545,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Gata solar project,L100001073759,utility-scale solar,operating,1.1
+G100001083546,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Claro Energy Solcellspark solar project,L100001073760,utility-scale solar,operating,1.1
+G100001083547,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Ringsås solcellspark solar project,L100001073761,utility-scale solar,operating,1.1
+G100001083548,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Solparken i Västerås solar project,L100001073762,utility-scale solar,operating,1
+G100001083549,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Krusmon solar project,L100001073763,utility-scale solar,operating,1
+G100001083550,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Björkvallen Solenergi solar project,L100001073764,utility-scale solar,operating,1
+G100001083551,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Solcellspark Carlfors Bruk solar project,L100001073765,utility-scale solar,operating,1
+G100001083552,energy_plants_gem_units,SWE,point,,SWE-1-K,,point,,,,false,abf-boundaries-v0.2.0,HOBY Sol nr 1 solar project,L100001073766,utility-scale solar,operating,1
+G100001083553,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Näckåns Solel solar project,L100001073767,utility-scale solar,operating,1
+G100001083554,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Fågelsångens solelpark solar project,L100001073768,utility-scale solar,operating,1
+G100001083555,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Norra Bårby solcellspark solar project,L100001073769,utility-scale solar,operating,1
+G100001083556,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Tjörn Solpark solar project,L100001073770,utility-scale solar,operating,1
+G100001083557,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Jägarstugan Solkraft inmatning solar project,L100001073771,utility-scale solar,operating,1
+G100001083558,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Eurosteel solar project,L100001073772,utility-scale solar,operating,1
+G100001083559,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Lilla Nyby Solcellspark solar project,L100001073773,utility-scale solar,operating,1
+G100001083560,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Megasol solar project,L100001073774,utility-scale solar,operating,1
+G100001084571,energy_plants_gem_units,SWE,point,NOR,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Magnor 1 solar project,L100001074785,utility-scale solar,pre_construction,15.4
+G100001090299,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,true,abf-boundaries-v0.2.0,Tussjöholm solar farm,L100001080397,utility-scale solar,pre_construction,200
+G100001090300,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Grönö solar farm,L100001080398,utility-scale solar,pre_construction,360
+G100001090302,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,true,abf-boundaries-v0.2.0,Edsele solar farm,L100001080399,utility-scale solar,pre_construction,90
+G100001090303,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,true,abf-boundaries-v0.2.0,Uppsalebo solar farm,L100001080400,utility-scale solar,pre_construction,290
+G100001090304,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,true,abf-boundaries-v0.2.0,Krutebo solar farm,L100001080401,utility-scale solar,announced,90
+G100001090307,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Horshult solar farm,L100001080403,utility-scale solar,pre_construction,45
+G100001090309,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,true,abf-boundaries-v0.2.0,Kättbo solar farm,L100001080406,utility-scale solar,announced,290
+G100001090320,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Ökna solar farm,L100001080411,utility-scale solar,pre_construction,709
+G100001090333,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,true,abf-boundaries-v0.2.0,Persköp solar farm,L100001080423,utility-scale solar,announced,91
+G100001090334,energy_plants_gem_units,SWE,point,,SWE-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Riddersholm solar farm,L100001080424,utility-scale solar,announced,200
+G100001090335,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Elisköp solar farm,L100001080425,utility-scale solar,pre_construction,90
+G100001090336,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Fröreda Hybrid solar farm,L100001080426,utility-scale solar,pre_construction,25
+G100001090337,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Säbyholm solar farm,L100001080427,utility-scale solar,pre_construction,51
+G100001090338,energy_plants_gem_units,SWE,point,,SWE-1-T,,point,,,,false,abf-boundaries-v0.2.0,Södra Valla solar farm,L100001080428,utility-scale solar,pre_construction,30
+G100001090339,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,true,abf-boundaries-v0.2.0,Torpa solar farm,L100001080429,utility-scale solar,announced,40
+G100001090340,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Haraldsmåla solar farm,L100001080430,utility-scale solar,pre_construction,65
+G100001090341,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Hässlåholms Gård solar farm,L100001080431,utility-scale solar,pre_construction,42
+G100001090342,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Brunskog-Stjärnarp solar farm,L100001080432,utility-scale solar,pre_construction,100
+G100001090344,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Fröllinge solar farm,L100001080433,utility-scale solar,announced,42
+G100001090345,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Kogshult solar farm,L100001080434,utility-scale solar,pre_construction,90
+G100001090346,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Korsberga solar farm,L100001080435,utility-scale solar,pre_construction,110
+G100001090347,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Skedala solar farm,L100001080436,utility-scale solar,pre_construction,28
+G100001090348,energy_plants_gem_units,SWE,point,,SWE-1-H,,point,,,,false,abf-boundaries-v0.2.0,Ängen solar farm,L100001080437,utility-scale solar,pre_construction,100
+G100001090349,energy_plants_gem_units,SWE,point,,SWE-1-D,,point,,,,false,abf-boundaries-v0.2.0,Åkers Styckebruk solar farm,L100001080438,utility-scale solar,announced,50
+G100001090351,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Kronovall solar farm,L100001080439,utility-scale solar,announced,80
+G100001090352,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Moholm solar farm,L100001080441,utility-scale solar,pre_construction,174
+G100001090353,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Näsbyholm solar farm,L100001080442,utility-scale solar,announced,40
+G100001090701,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Kvarnsveden hydroelectric plant,L100001046159,hydropower,operating,30
+G100001090707,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Avesta hydroelectric plant,L100001080774,hydropower,operating,25
+G100001090708,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Avesta hydroelectric plant,L100001080774,hydropower,operating,15
+G100001090709,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Sikfors hydroelectric plant,L100001080775,hydropower,operating,40
+G100001090710,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Sádva hydroelectric plant,L100001080776,hydropower,operating,31
+G100001090711,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Granboforsen hydroelectric plant,L100001080777,hydropower,operating,24
+G100001090712,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Junsterforsen hydroelectric plant,L100001080778,hydropower,operating,30
+G100001090714,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Långströmmen hydroelectric plant,L100001080779,hydropower,operating,55
+G100001090733,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Tåsan hydroelectric plant,L100001080795,hydropower,operating,40
+G100001090734,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Röjdåfors hydroelectric plant,L100001080796,hydropower,operating,32
+G100001090735,energy_plants_gem_units,SWE,point,,SWE-1-Z,,point,,,,false,abf-boundaries-v0.2.0,Mörsil hydroelectric plant,L100001080797,hydropower,operating,40
+G100001090741,energy_plants_gem_units,SWE,point,,SWE-1-W,,point,,,,false,abf-boundaries-v0.2.0,Mockfjärd hydroelectric plant,L100001080801,hydropower,operating,43
+G100001090742,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Ljusne Strömmar hydroelectric plant,L100001080802,hydropower,operating,36
+G100001090744,energy_plants_gem_units,SWE,point,,SWE-1-S,,point,,,,false,abf-boundaries-v0.2.0,Letten hydroelectric plant,L100001080803,hydropower,operating,36
+G100001090745,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,false,abf-boundaries-v0.2.0,Höljebro hydroelectric plant,L100001080804,hydropower,operating,38
+G100001090746,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Gullspång hydroelectric plant,L100001080806,hydropower,operating,40
+G100001090748,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Finnfors hydroelectric plant,L100001080807,hydropower,operating,54
+G100001090749,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Granfors hydroelectric plant,L100001080808,hydropower,operating,40
+G100001090750,energy_plants_gem_units,SWE,point,,SWE-1-AC,,point,,,,false,abf-boundaries-v0.2.0,Grytfors hydroelectric plant,L100001080809,hydropower,operating,31
+G100001090895,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Fröskog wind farm,L100001080912,wind,operating,37.2
+G100001090896,energy_plants_gem_units,SWE,point,,SWE-1-O,,point,,,,false,abf-boundaries-v0.2.0,Fågelås wind farm,L100001080913,wind,operating,44.8
+G100001091105,energy_plants_gem_units,SWE,point,,SWE-1-U,,point,,,,false,abf-boundaries-v0.2.0,Färnebo wind farm,L100001081037,wind,pre_construction,105
+G100001091106,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Gruppstation Skårebo wind farm,L100001081038,wind,pre_construction,54
+G100001091107,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Hömossen wind farm,L100001081039,wind,pre_construction,57.6
+G100001091108,energy_plants_gem_units,SWE,point,,SWE-1-G,,point,,,,false,abf-boundaries-v0.2.0,Slätthögs-Målen wind farm,L100001081040,wind,pre_construction,54
+G100001091109,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Spångberget wind farm,L100001081041,wind,pre_construction,390
+G100001091110,energy_plants_gem_units,SWE,point,,SWE-1-Y,,point,,,,false,abf-boundaries-v0.2.0,Stockåsbodarna wind farm,L100001081042,wind,pre_construction,114
+G100001091111,energy_plants_gem_units,SWE,point,,SWE-1-F,,point,,,,false,abf-boundaries-v0.2.0,Törestorp wind farm,L100001081043,wind,pre_construction,21.9
+G100001091112,energy_plants_gem_units,SWE,point,,SWE-1-BD,,point,,,,false,abf-boundaries-v0.2.0,Vindkraftsprojekt Vuono wind farm,L100001081044,wind,pre_construction,220
+G100001091113,energy_plants_gem_units,SWE,point,,SWE-1-E,,point,,,,false,abf-boundaries-v0.2.0,Hycklinge wind farm,L100001081045,wind,pre_construction,160.6
+G100001091114,energy_plants_gem_units,SWE,point,,SWE-1-M,,point,,,,false,abf-boundaries-v0.2.0,Laamossen wind farm,L100001081046,wind,pre_construction,57.6
+G100001091115,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,false,abf-boundaries-v0.2.0,Mogård wind farm,L100001081047,wind,pre_construction,32
+G100001094647,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Blykalla nuclear power plant,L100001083604,nuclear,announced,55
+G100001094648,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Blykalla nuclear power plant,L100001083604,nuclear,announced,55
+G100001094649,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Blykalla nuclear power plant,L100001083604,nuclear,announced,55
+G100001094650,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Blykalla nuclear power plant,L100001083604,nuclear,announced,55
+G100001094651,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Blykalla nuclear power plant,L100001083604,nuclear,announced,55
+G100001094652,energy_plants_gem_units,SWE,point,,SWE-1-X,,point,,,,true,abf-boundaries-v0.2.0,Blykalla nuclear power plant,L100001083604,nuclear,announced,55
+G100001094653,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,true,abf-boundaries-v0.2.0,Värö Peninsula nuclear power plant,L100001083605,nuclear,announced,470
+G100001094654,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,true,abf-boundaries-v0.2.0,Värö Peninsula nuclear power plant,L100001083605,nuclear,announced,470
+G100001094655,energy_plants_gem_units,SWE,point,,SWE-1-N,,point,,,,true,abf-boundaries-v0.2.0,Värö Peninsula nuclear power plant,L100001083605,nuclear,announced,470

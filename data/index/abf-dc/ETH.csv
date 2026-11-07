@@ -1,0 +1,11 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-38a77a81072b,dc_atlas_points,ETH,field,,,,,,,,,abf-boundaries-v0.2.0,Bit Mining Ethiopia Campus,Operating / Construction,other,10_99,
+ATL-8cae0db44cc9-1,dc_atlas_points,ETH,field,,,,,,,,true,abf-boundaries-v0.2.0,Safaricom Addis Ababa,Operating / Construction,telecom,lt10,
+ATL-8cae0db44cc9-2,dc_atlas_points,ETH,field,,,,,,,,true,abf-boundaries-v0.2.0,Safaricom Addis Ababa,Operating / Construction,telecom,lt10,
+ATL-8ef0c77e4b22,dc_atlas_points,ETH,field,,,,,,,,,abf-boundaries-v0.2.0,Bit Mining Ethiopia Campus,Planned,other,10_99,
+ATL-9a9bbdbcf964,dc_atlas_points,ETH,field,,,,,,,,,abf-boundaries-v0.2.0,Raxio Group ET1,Operating / Construction,colocation,lt10,
+ATL-c1c7f68dcb0a,dc_atlas_points,ETH,field,,,,,,,,,abf-boundaries-v0.2.0,Bitdeer Oromiya,Operating / Construction,ai_compute,10_99,
+ATL-cf5903c5e2df,dc_atlas_points,ETH,field,,,,,,,,true,abf-boundaries-v0.2.0,Bitcluster Addis Ababa,Operating / Construction,other,100_999,
+ATL-d527edcb5887,dc_atlas_points,ETH,field,,,,,,,,,abf-boundaries-v0.2.0,Wingu Africa Addis Campus,Operating / Construction,colocation,lt10,
+ATL-d6b6aad81643,dc_atlas_points,ETH,field,,,,,,,,,abf-boundaries-v0.2.0,Wingu Africa Addis Campus,Planned,colocation,,
+ATL-ec59d8bc4791,dc_atlas_points,ETH,field,,,,,,,,,abf-boundaries-v0.2.0,Phoenix Benshangul-Gumaz,Operating / Construction,other,100_999,

@@ -1,0 +1,47 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100584,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Bar power station,L100000103050,coal,cancelled,800
+G100000100760,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Berane power station,L100000103051,coal,cancelled,110
+G100000106642,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Maoce Power Station,L100000103052,coal,cancelled,500
+G100000108036,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Pljevlja power station,L100000103049,coal,operating,225
+G100000108037,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Pljevlja power station,L100000103049,coal,cancelled,254
+G100000410165,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Pljevlja gas power station,L100000407722,oil/gas,announced,200
+G100000410166,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Podgorica power station,L100000407723,oil/gas,announced,150
+G100000410167,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Bar gas power station,L100000407724,oil/gas,announced,440
+G100000600202,energy_plants_gem_units,MNE,point,BIH,,,,,,,false,abf-boundaries-v0.2.0,Trebinje I hydroelectric plant,L100000600202,hydropower,operating,100
+G100000602523,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Boka hydroelectric plant,L100000602492,hydropower,announced,250
+G100000602524,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Komarnica hydroelectric plant,L100000602493,hydropower,pre_construction,172
+G100000602526,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Mratinje hydroelectric plant,L100000602495,hydropower,operating,342
+G100000602527,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Perucica hydroelectric plant,L100000602496,hydropower,operating,307
+G100000604211,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Andrijevo hydroelectric plant,L100000602491,hydropower,shelved,127
+G100000604519,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Kostanica hydroelectric plant,L100000602494,hydropower,cancelled,552
+G100000604524,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Kruševo hydroelectric plant,L100000604259,hydropower,pre_construction,120
+G100000807288,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Briska Gora solar farm,L100000806350,utility-scale solar,shelved,50
+G100000807289,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Briska Gora solar farm,L100000806350,utility-scale solar,shelved,190
+G100000807722,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Velje solar farm,L100000806744,utility-scale solar,shelved,50
+G100000827095,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Slano Floating solar farm,L100000824029,utility-scale solar,announced,60
+G100000918090,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Možura wind farm,L100000914612,wind,operating,46
+G100000918794,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Gvozd wind farm,L100000915185,wind,construction,55
+G100000919064,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Brajići wind farm,L100000915413,wind,pre_construction,100
+G100000919101,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Krnovo wind farm,L100000915445,wind,operating,72
+G100001001270,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Bijela wind farm,L100001000908,wind,pre_construction,118
+G100001001312,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Montečevo solar farm,L100001000946,utility-scale solar,pre_construction,400
+G100001001314,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Prediš solar farm,L100001000947,utility-scale solar,pre_construction,215
+G100001001315,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Vraćenovići solar farm,L100001000948,utility-scale solar,pre_construction,87.5
+G100001001317,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Korita solar farm,L100001000950,utility-scale solar,pre_construction,240
+G100001001319,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Vuča solar farm,L100001000951,utility-scale solar,pre_construction,148
+G100001001348,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Nikšić solar farm,L100001000978,utility-scale solar,pre_construction,68
+G100001001350,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Velestovo solar farm,L100001000980,utility-scale solar,shelved,60
+G100001001351,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Cetinje solar farm,L100001000981,utility-scale solar,pre_construction,150
+G100001001384,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Željezara Nikšić solar farm,L100001001011,utility-scale solar,construction,9.2
+G100001001385,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Lastva-Ubli solar farm,L100001001012,utility-scale solar,announced,506
+G100001001393,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Dubrovsko solar farm,L100001001013,utility-scale solar,pre_construction,195
+G100001001394,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Rudine solar farm (Montenegro),L100001001014,utility-scale solar,pre_construction,186
+G100001001396,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Čevo solar farm,L100001001016,utility-scale solar,pre_construction,385
+G100001050679,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Kosanica solar farm,L100001045079,utility-scale solar,pre_construction,120
+G100001050714,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Željezara Nikšić solar farm,L100001001011,utility-scale solar,announced,37.8
+G100001050715,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Krupac solar farm,L100001045112,utility-scale solar,announced,47
+G100001057442,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Gvozd wind farm,L100000915185,wind,announced,21
+G100001057525,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Rudine (Qair) solar farm,L100001049878,utility-scale solar,pre_construction,50
+G100001057526,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,Rudnik Uglja solar farm,L100001049879,utility-scale solar,pre_construction,62.5
+G100001083562,energy_plants_gem_units,MNE,point,,,,,,,,false,abf-boundaries-v0.2.0,Podgorica Capital City solar project,L100001073776,utility-scale solar,operating,9
+G100001093374,energy_plants_gem_units,MNE,point,,,,,,,,true,abf-boundaries-v0.2.0,EPCG Bar power station,L100001082848,oil/gas,announced,50

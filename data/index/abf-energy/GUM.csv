@@ -1,0 +1,10 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407918,energy_plants_gem_units,GUM,point,,,,,,,,false,abf-boundaries-v0.2.0,Ukudu power station,L100000406935,oil/gas,operating,198
+G100000806295,energy_plants_gem_units,GUM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dandan solar farm,L100000805462,utility-scale solar,operating,37.2
+G100000806389,energy_plants_gem_units,GUM,point,,,,,,,,false,abf-boundaries-v0.2.0,Navy Base Guam solar farm,L100000805549,utility-scale solar,shelved,23
+G100000806390,energy_plants_gem_units,GUM,point,,,,,,,,false,abf-boundaries-v0.2.0,South Finegayan solar farm,L100000805550,utility-scale solar,shelved,18
+G100000806432,energy_plants_gem_units,GUM,point,,,,,,,,true,abf-boundaries-v0.2.0,Malojloj solar farm,L100000805590,utility-scale solar,pre_construction,60
+G100000806445,energy_plants_gem_units,GUM,point,,,,,,,,false,abf-boundaries-v0.2.0,Mangilao solar farm,L100000805602,utility-scale solar,operating,60
+G100000806544,energy_plants_gem_units,GUM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dandan solar farm,L100000805462,utility-scale solar,cancelled,40
+G100000908503,energy_plants_gem_units,GUM,point,,,,,,,,true,abf-boundaries-v0.2.0,Dandan wind farm,L100000906254,wind,cancelled,10
+G100001062047,energy_plants_gem_units,GUM,point,,,,,,,,true,abf-boundaries-v0.2.0,Yona solar farm,L100001054214,utility-scale solar,announced,132

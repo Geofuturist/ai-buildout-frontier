@@ -1,0 +1,116 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101486,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Chipepo power station,L100000104352,coal,cancelled,250
+G100000101487,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Chipepo power station,L100000104352,coal,cancelled,250
+G100000101488,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Chipepo power station,L100000104352,coal,cancelled,250
+G100000101489,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Chipepo power station,L100000104352,coal,cancelled,250
+G100000102629,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Emco Zambia power station,L100000104353,coal,cancelled,170
+G100000102630,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Emco Zambia power station,L100000104353,coal,cancelled,170
+G100000106530,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Maamba power station,L100000104354,coal,operating,150
+G100000106531,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Maamba power station,L100000104354,coal,operating,150
+G100000106532,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Maamba power station,L100000104354,coal,construction,150
+G100000106533,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Maamba power station,L100000104354,coal,construction,150
+G100000107339,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Ndola Cement Plant power station,L100000104351,coal,operating,30
+G100000113982,energy_plants_gem_units,ZMB,point,,ZMB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Chipata power station,L100000104480,coal,cancelled,300
+G100000114237,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Vedanta Zambia power station,L100000104592,coal,announced,150
+G100000200008,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Nakambala power station,L100000200008,bioenergy,operating,40
+G100000407287,energy_plants_gem_units,ZMB,point,,ZMB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Chinsali power station,L100000406833,oil/gas,cancelled,400
+G100000409409,energy_plants_gem_units,ZMB,point,,ZMB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Chinsali power station,L100000406833,oil/gas,cancelled,800
+G100000413542,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Ndola Energy (HFO) power station,L100000409050,oil/gas,operating,105
+G100000604089,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Itezhi Tezhi hydroelectric plant,L100000604050,hydropower,operating,120
+G100000604090,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kafue Gorge Lower hydroelectric plant,L100000604051,hydropower,operating,750
+G100000604091,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kafue Gorge Upper hydroelectric plant,L100000604052,hydropower,operating,990
+G100000604092,energy_plants_gem_units,ZMB,point,,ZMB-1-05,,point,,,,false,abf-boundaries-v0.2.0,Kundabwika hydroelectric plant,L100000604053,hydropower,pre_construction,151
+G100000604094,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,false,abf-boundaries-v0.2.0,Mulembo Lelya hydroelectric plant,L100000604055,hydropower,pre_construction,106
+G100000604096,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Victoria Falls hydroelectric plant,L100000604057,hydropower,operating,108
+G100000604149,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Kariba Dam hydroelectric plant,L100000604110,hydropower,operating,2130
+G100000604238,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Batoka Gorge hydroelectric plant,L100000604109,hydropower,pre_construction,2400
+G100000604639,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,false,abf-boundaries-v0.2.0,Muchinga hydroelectric plant,L100000604054,hydropower,cancelled,255
+G100000604661,energy_plants_gem_units,ZMB,point,,ZMB-1-03,,point,,,,false,abf-boundaries-v0.2.0,Ndevu Gorge hydroelectric plant,L100000604056,hydropower,cancelled,235
+G100000800034,energy_plants_gem_units,ZMB,point,,ZMB-1-09,,point,,,,false,abf-boundaries-v0.2.0,Bangweulu solar farm,L100000800030,utility-scale solar,operating,54
+G100000800094,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Bwana Mkubwa Tailings solar farm,L100000800072,utility-scale solar,cancelled,100
+G100000800103,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Chibombo solar farm,L100000800080,utility-scale solar,shelved,200
+G100000800106,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Chirundu solar farm,L100000800083,utility-scale solar,shelved,200
+G100000800260,energy_plants_gem_units,ZMB,point,ZWE,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Mhondoro-Ngezi solar farm,L100000800214,utility-scale solar,construction,35
+G100000800262,energy_plants_gem_units,ZMB,point,,ZMB-1-01,,point,,,,true,abf-boundaries-v0.2.0,Mongu solar farm,L100000800216,utility-scale solar,cancelled,50
+G100000800275,energy_plants_gem_units,ZMB,point,,ZMB-1-09,,point,,,,false,abf-boundaries-v0.2.0,Ngonye solar farm,L100000800229,utility-scale solar,operating,34
+G100000800339,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,false,abf-boundaries-v0.2.0,Serenje solar farm,L100000800287,utility-scale solar,operating,25
+G100000800340,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,false,abf-boundaries-v0.2.0,Serenje solar farm,L100000800287,utility-scale solar,construction,60
+G100000800341,energy_plants_gem_units,ZMB,point,,ZMB-1-01,,point,,,,true,abf-boundaries-v0.2.0,Sesheke solar farm,L100000800288,utility-scale solar,shelved,50
+G100000800344,energy_plants_gem_units,ZMB,point,,ZMB-1-01,,point,,,,true,abf-boundaries-v0.2.0,Shangombo solar farm,L100000800291,utility-scale solar,cancelled,35
+G100000800349,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Siavonga solar farm,L100000800295,utility-scale solar,construction,200
+G100000814252,energy_plants_gem_units,ZMB,point,,ZMB-1-06,,point,,,,true,abf-boundaries-v0.2.0,FQM Kansanshi and Sentinel mines solar farm,L100000811690,utility-scale solar,pre_construction,230
+G100000814253,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kalulushi Concentrating Solar Power Plant,L100000811691,utility-scale solar,pre_construction,50
+G100000831313,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Aurora SOLA solar farm,L100000827762,utility-scale solar,pre_construction,20
+G100000831314,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Aurora SOLA solar farm,L100000827762,utility-scale solar,pre_construction,20
+G100000831315,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Bulemu solar farm,L100000827763,utility-scale solar,cancelled,20
+G100000831316,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Bulemu solar farm,L100000827763,utility-scale solar,cancelled,20
+G100000831317,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Garneton solar farm,L100000827764,utility-scale solar,announced,20
+G100000831318,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Garneton solar farm,L100000827764,utility-scale solar,announced,20
+G100000831319,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Itimpi solar farm,L100000827765,utility-scale solar,operating,64
+G100000831320,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kalulushi Concentrating Solar Power Plant,L100000811691,utility-scale solar,pre_construction,150
+G100000831321,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Kalulushi Concentrating Solar Power Plant,L100000811691,utility-scale solar,pre_construction,200
+G100000831322,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Masdar Zesco solar farm,L100000827766,utility-scale solar,pre_construction,500
+G100000831323,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Masdar Zesco solar farm,L100000827766,utility-scale solar,pre_construction,1500
+G100000831324,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Riverside Solar PV Plant,L100000827767,utility-scale solar,operating,1
+G100000900080,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Pensulo wind farm,L100000900061,wind,shelved,130
+G100000900081,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Pensulo wind farm,L100000900061,wind,shelved,170
+G100000900109,energy_plants_gem_units,ZMB,point,,ZMB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Muchinga wind farm,L100000900086,wind,cancelled,100
+G100000900135,energy_plants_gem_units,ZMB,point,,ZMB-1-03,,point,,,,false,abf-boundaries-v0.2.0,Unika wind farm,L100000900103,wind,announced,200
+G100000920691,energy_plants_gem_units,ZMB,point,,ZMB-1-06,,point,,,,true,abf-boundaries-v0.2.0,FQM Kansanshi and Sentinel mines wind farm,L100000916652,wind,pre_construction,200
+G100000927439,energy_plants_gem_units,ZMB,point,,ZMB-1-03,,point,,,,false,abf-boundaries-v0.2.0,Unika wind farm,L100000900103,wind,announced,150
+G100000927440,energy_plants_gem_units,ZMB,point,,ZMB-1-03,,point,,,,false,abf-boundaries-v0.2.0,Unika wind farm,L100000900103,wind,announced,150
+G100001018846,energy_plants_gem_units,ZMB,point,,ZMB-1-09,,point,,,,true,abf-boundaries-v0.2.0,Kafue solar farm,L100001016875,utility-scale solar,construction,50
+G100001018847,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Siavonga (Hive) solar farm,L100001016877,utility-scale solar,announced,120
+G100001018848,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Chisamba solar farm,L100001016878,utility-scale solar,operating,100
+G100001020047,energy_plants_gem_units,ZMB,point,,ZMB-1-01,,point,,,,true,abf-boundaries-v0.2.0,Ilute solar farm,L100001018021,utility-scale solar,announced,25
+G100001020049,energy_plants_gem_units,ZMB,point,,ZMB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Chipili solar farm,L100001018024,utility-scale solar,announced,50
+G100001020055,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Choma solar farm,L100001018030,utility-scale solar,construction,60
+G100001020065,energy_plants_gem_units,ZMB,point,,ZMB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Mulonga Project solar farm,L100001018040,utility-scale solar,announced,200
+G100001020068,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Green Giant Zambia solar farm,L100001018043,utility-scale solar,announced,1000
+G100001020100,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,EAIF Zambia solar farm,L100001018071,utility-scale solar,announced,50
+G100001020101,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,EAIF Zambia solar farm,L100001018071,utility-scale solar,announced,100
+G100001020103,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Masaiti (UPEPO) wind farm,L100001018073,wind,announced,138
+G100001020105,energy_plants_gem_units,ZMB,point,,ZMB-1-10,,point,,,,true,abf-boundaries-v0.2.0,Chanka wind farm,L100001018074,wind,announced,150
+G100001020109,energy_plants_gem_units,ZMB,point,,ZMB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Wind Power Promotion (Zambia) wind farm,L100001018078,wind,announced,40
+G100001022730,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Mulungwa power station,L100001019993,coal,pre_construction,300
+G100001030379,energy_plants_gem_units,ZMB,point,,ZMB-1-05,,point,,,,true,abf-boundaries-v0.2.0,Lufubu hydroelectric plant,L100001025623,hydropower,pre_construction,326
+G100001030382,energy_plants_gem_units,ZMB,point,,ZMB-1-01,,point,,,,true,abf-boundaries-v0.2.0,Ngonye Falls hydroelectric plant,L100001025624,hydropower,pre_construction,180
+G100001030962,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Bweengwa geothermal power plant,L100001025885,geothermal,announced,3
+G100001030963,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Bweengwa geothermal power plant,L100001025885,geothermal,announced,8
+G100001030964,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Bweengwa geothermal power plant,L100001025885,geothermal,announced,12
+G100001050437,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Ever Great Energy Zambia power station,L100001044898,coal,construction,150
+G100001054046,energy_plants_gem_units,ZMB,point,,ZMB-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kafue power station,L100001047473,bioenergy,pre_construction,40
+G100001054052,energy_plants_gem_units,ZMB,point,,ZMB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Kawambwa power station,L100001047478,bioenergy,construction,20
+G100001054056,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Nampundwe power station,L100001047481,bioenergy,shelved,24
+G100001055643,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,false,abf-boundaries-v0.2.0,Riverside Solar PV Plant,L100000827767,utility-scale solar,operating,33
+G100001072680,energy_plants_gem_units,ZMB,point,,ZMB-1-03,,point,,,,true,abf-boundaries-v0.2.0,Chipata West solar farm,L100001063280,utility-scale solar,construction,100
+G100001072687,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Serenje solar farm,L100000800287,utility-scale solar,pre_construction,33
+G100001072689,energy_plants_gem_units,ZMB,point,,ZMB-1-04,,point,,,,true,abf-boundaries-v0.2.0,Mansa (Zambia) solar farm,L100001063283,utility-scale solar,announced,150
+G100001072693,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Mumbwa Mega solar farm,L100001063285,utility-scale solar,pre_construction,200
+G100001072696,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Kabwe solar farm,L100001063288,utility-scale solar,construction,100
+G100001072698,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Kanona solar farm,L100001063290,utility-scale solar,announced,100
+G100001072699,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Itezhi-Tezhi solar farm,L100001063291,utility-scale solar,announced,100
+G100001072701,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Muzuma solar farm,L100001063292,utility-scale solar,announced,75
+G100001072710,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Shibuyunji Project solar farm,L100001063299,utility-scale solar,announced,100
+G100001072711,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,true,abf-boundaries-v0.2.0,Shibuyunji Project solar farm,L100001063299,utility-scale solar,announced,900
+G100001073203,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Ever Great Energy Zambia power station,L100001044898,coal,construction,150
+G100001073204,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Ever Great Energy Zambia power station,L100001044898,coal,construction,150
+G100001073205,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Ever Great Energy Zambia power station,L100001044898,coal,construction,150
+G100001091014,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Northern Power IPP solar farm,L100001080977,utility-scale solar,announced,300
+G100001092125,energy_plants_gem_units,ZMB,point,,ZMB-1-06,,point,,,,true,abf-boundaries-v0.2.0,Kabompo Gorge hydroelectric plant,L100001081829,hydropower,announced,40
+G100001092126,energy_plants_gem_units,ZMB,point,,ZMB-1-02,,point,,,,false,abf-boundaries-v0.2.0,Mulungushi hydroelectric plant,L100001081830,hydropower,operating,30
+G100001092202,energy_plants_gem_units,ZMB,point,,ZMB-1-05,,point,,,,true,abf-boundaries-v0.2.0,Amsons-Exergy Zambia thermal power station,L100001081886,coal,announced,300
+G100001092211,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Ezra Energy thermal power station,L100001081891,coal,construction,200
+G100001092213,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kazungula thermal power station,L100001081896,coal,construction,67.5
+G100001092214,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kazungula thermal power station,L100001081896,coal,construction,67.5
+G100001093689,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Nakambala power station,L100000200008,bioenergy,pre_construction,13
+G100001093691,energy_plants_gem_units,ZMB,point,,ZMB-1-09,,point,,,,false,abf-boundaries-v0.2.0,Kafue Sugar Shibuyunji power station,L100001083035,bioenergy,announced,15
+G100001093964,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Zambia Development Agency hybrid power station,L100001083235,coal,announced,300
+G100001094153,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kazungula thermal power station,L100001081896,coal,announced,135
+G100001094168,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kanona Mukuni thermal power station,L100001083363,coal,announced,150
+G100001094170,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Kanona Mukuni thermal power station,L100001083363,coal,announced,150
+G100001094180,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Texxon Energy Sinazongwe power station,L100001083366,coal,announced,180
+G100001094181,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Mazabuka thermal power station,L100001083367,coal,construction,135
+G100001094847,energy_plants_gem_units,ZMB,point,,ZMB-1-08,,point,,,,true,abf-boundaries-v0.2.0,Vedanta Zambia power station,L100000104592,coal,announced,150
+G100001094848,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,false,abf-boundaries-v0.2.0,Ezra Energy thermal power station,L100001081891,coal,pre_construction,200
+G100001095581,energy_plants_gem_units,ZMB,point,,ZMB-1-07,,point,,,,true,abf-boundaries-v0.2.0,Mazabuka thermal power station,L100001083367,coal,pre_construction,135

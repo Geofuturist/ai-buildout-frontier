@@ -1,0 +1,47 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000601815,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Blanda hydroelectric plant,L100000601796,hydropower,operating,150
+G100000601816,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Búðarháls hydroelectric plant,L100000601797,hydropower,operating,95
+G100000601817,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Búrfell I hydroelectric plant,L100000601798,hydropower,operating,270
+G100000601818,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Búrfell II hydroelectric plant,L100000601799,hydropower,operating,100
+G100000601819,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Fljótsdals hydroelectric plant,L100000601800,hydropower,operating,690
+G100000601820,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hrauneyjafoss hydroelectric plant,L100000601801,hydropower,operating,210
+G100000601821,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hvammur hydroelectric plant,L100000601802,hydropower,construction,93
+G100000601822,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sigalda hydroelectric plant,L100000601803,hydropower,operating,150
+G100000601823,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Sultartangi hydroelectric plant,L100000601804,hydropower,operating,125
+G100000601824,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Vatnsfell hydroelectric plant,L100000601805,hydropower,operating,90
+G100000700019,energy_plants_gem_units,ISL,point,,,,,,,,true,abf-boundaries-v0.2.0,Bitra geothermal power plant,L100000700012,geothermal,cancelled,135
+G100000700020,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bjarnarflag geothermal power plant,L100000700013,geothermal,operating,5
+G100000700021,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Bjarnarflag geothermal power plant,L100000700013,geothermal,cancelled,45
+G100000700073,energy_plants_gem_units,ISL,point,,,,,,,,true,abf-boundaries-v0.2.0,Eldvörp geothermal power plant,L100000700048,geothermal,cancelled,50
+G100000700101,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hellisheiðarvirkjun geothermal power plant,L100000700065,geothermal,operating,45
+G100000700102,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hellisheiðarvirkjun geothermal power plant,L100000700065,geothermal,operating,45
+G100000700103,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hellisheiðarvirkjun geothermal power plant,L100000700065,geothermal,operating,45
+G100000700104,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hellisheiðarvirkjun geothermal power plant,L100000700065,geothermal,operating,45
+G100000700105,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hellisheiðarvirkjun geothermal power plant,L100000700065,geothermal,operating,45
+G100000700106,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hellisheiðarvirkjun geothermal power plant,L100000700065,geothermal,operating,45
+G100000700107,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Hellisheiðarvirkjun geothermal power plant,L100000700065,geothermal,operating,33
+G100000700110,energy_plants_gem_units,ISL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hverahlíð geothermal power plant,L100000700067,geothermal,cancelled,90
+G100000700134,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Krafla geothermal power plant,L100000700082,geothermal,operating,30
+G100000700135,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Krafla geothermal power plant,L100000700082,geothermal,operating,30
+G100000700196,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nesjavellir geothermal power station,L100000700119,geothermal,operating,30
+G100000700197,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nesjavellir geothermal power station,L100000700119,geothermal,operating,30
+G100000700198,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nesjavellir geothermal power station,L100000700119,geothermal,operating,30
+G100000700199,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Nesjavellir geothermal power station,L100000700119,geothermal,operating,30
+G100000700242,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Reykjanes geothermal power plant,L100000700148,geothermal,operating,50
+G100000700243,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Reykjanes geothermal power plant,L100000700148,geothermal,operating,50
+G100000700244,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Reykjanes geothermal power plant,L100000700148,geothermal,operating,30
+G100000700276,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Svartsengi geothermal power plant,L100000700168,geothermal,operating,30
+G100000700277,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Svartsengi geothermal power plant,L100000700168,geothermal,operating,30
+G100000700287,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Þeistareykir geothermal station,L100000700176,geothermal,operating,45
+G100000700288,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Þeistareykir geothermal station,L100000700176,geothermal,operating,45
+G100000700338,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Svartsengi geothermal power plant,L100000700168,geothermal,operating,55
+G100000700339,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Þeistareykir geothermal station,L100000700176,geothermal,construction,45
+G100001006396,energy_plants_gem_units,ISL,point,,,,,,,,true,abf-boundaries-v0.2.0,Garpsdalur wind farm,L100001005366,wind,pre_construction,88.2
+G100001006495,energy_plants_gem_units,ISL,point,,,,,,,,true,abf-boundaries-v0.2.0,Búrfellslundur wind farm,L100001005458,wind,pre_construction,120
+G100001027269,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Írafoss hydroelectric plant,L100001023064,hydropower,operating,48
+G100001030330,energy_plants_gem_units,ISL,point,,,,,,,,true,abf-boundaries-v0.2.0,Hvalá hydroelectric plant,L100001025611,hydropower,pre_construction,55
+G100001048275,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Svartsengi geothermal power plant,L100000700168,geothermal,operating,2
+G100001048276,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Svartsengi geothermal power plant,L100000700168,geothermal,operating,6
+G100001048277,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Svartsengi geothermal power plant,L100000700168,geothermal,operating,3.6
+G100001048278,energy_plants_gem_units,ISL,point,,,,,,,,false,abf-boundaries-v0.2.0,Svartsengi geothermal power plant,L100000700168,geothermal,operating,4.8
+G100001052472,energy_plants_gem_units,ISL,point,,,,,,,,true,abf-boundaries-v0.2.0,Fljótsdalshreppur wind farm,L100001046437,wind,announced,350

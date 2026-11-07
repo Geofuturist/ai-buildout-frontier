@@ -150,10 +150,9 @@
       "card_basis_field": "by the unit the record names",
       "card_basis_mixed": "by the unit the record names, or by point",
       "card_approximate": "{n_approx} of {n} points are approximate (a town or GEM's approximate location); some may belong to a neighboring unit.",
-      "card_country_only": "{n} records name no place below the country and are counted for {country} only.",
+      "card_country_only": "{n} records have no unit below the country and are counted for {country} only; the notes say why.",
       "card_other_country_here": "{n} records that the source lists under another country lie here.",
       "card_other_country_away": "{n} records listed under {country} lie in another country of the frame.",
-      "card_level_missing": "{country} has no {level_word} units in the boundary frame of this version.",
       "card_zero": {
         "dc_atlas_points": "No Atlas record names or lies in this unit. The Atlas may still miss data centers here.",
         "dc_epoch_points": "No Epoch AI site. Epoch AI lists only the largest AI data centers.",
@@ -165,7 +164,7 @@
         "connecticut": "Connecticut: the Atlas gives former counties",
         "no_county_field": "The record names no county",
         "no_state": "The record names no state",
-        "region_not_matched": "The region the record names is not a unit of the frame",
+        "region_not_matched": "The region the record gives is missing or not a unit of the frame, and there is no point",
         "no_unit_near": "The point is more than 22.2 km from every unit of its country",
         "no_point": "No point below the country",
         "point_in_other_country": "Listed by the source under another country",
@@ -188,35 +187,46 @@
       "loading": "Loading the records of this unit…",
       "failed": "Could not read the territory index.",
       "value_labels": {
-        "": "Not stated",
-        "lt10": "Under 10 MW",
-        "10_99": "10–99 MW",
-        "100_999": "100–999 MW",
-        "ge1000": "1,000 MW and more",
-        "operating": "Operating",
-        "announced": "Announced",
-        "pre_construction": "Pre-construction",
-        "construction": "Under construction",
-        "shelved": "Shelved",
-        "cancelled": "Cancelled",
-        "mothballed": "Mothballed",
-        "retired": "Retired",
-        "coal": "Coal",
-        "oil/gas": "Oil and gas",
-        "utility-scale solar": "Solar",
-        "wind": "Wind",
-        "hydropower": "Hydropower",
-        "nuclear": "Nuclear",
-        "bioenergy": "Bioenergy",
-        "geothermal": "Geothermal",
-        "ai_compute": "AI compute",
-        "developer_investor": "Developer or investor",
-        "enterprise_it": "Enterprise IT",
-        "colocation": "Colocation",
-        "cloud": "Cloud",
-        "telecom": "Telecom",
-        "other": "Other"
-      }
+        "status_raw": {},
+        "type_group": {
+          "colocation": "Colocation",
+          "telecom": "Telecom",
+          "developer_investor": "Developer or investor",
+          "cloud": "Cloud",
+          "enterprise_it": "Enterprise or IT services",
+          "ai_compute": "AI compute (Atlas type)",
+          "other": "Other or unknown"
+        },
+        "power_class": {
+          "lt10": "Small (below 10 MW)",
+          "10_99": "Large (10–99 MW)",
+          "100_999": "Hyperscale (100–999 MW)",
+          "ge1000": "Gigascale (above 999 MW)",
+          "": "Unknown"
+        },
+        "type": {
+          "coal": "Coal",
+          "oil/gas": "Oil and gas",
+          "utility-scale solar": "Utility-scale solar",
+          "wind": "Wind",
+          "hydropower": "Hydropower",
+          "nuclear": "Nuclear",
+          "bioenergy": "Bioenergy",
+          "geothermal": "Geothermal"
+        },
+        "status_group": {
+          "announced": "Announced",
+          "pre_construction": "Pre-construction",
+          "construction": "Under construction",
+          "operating": "Operating",
+          "shelved": "Shelved",
+          "cancelled": "Cancelled",
+          "mothballed": "Mothballed",
+          "retired": "Retired"
+        }
+      },
+      "card_level_missing_adm1": "{country} has no first-level units (such as states, provinces or regions) in the boundary frame of this version, so records are counted for the country only.",
+      "card_level_missing_adm2": "{country} has no second-level units (such as counties or departments) in the boundary frame of this version; this is the smallest unit in which records are counted."
     }
   }
 }

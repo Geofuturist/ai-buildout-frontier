@@ -1,0 +1,122 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100427,energy_plants_gem_units,MNG,point,,MNG-1-064,,point,,,,false,abf-boundaries-v0.2.0,Baganuur power station,L100000103042,coal,pre_construction,200
+G100000100428,energy_plants_gem_units,MNG,point,,MNG-1-064,,point,,,,false,abf-boundaries-v0.2.0,Baganuur power station,L100000103042,coal,pre_construction,200
+G100000101138,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,false,abf-boundaries-v0.2.0,Buuruljuut power station,L100000103034,coal,operating,150
+G100000101139,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,false,abf-boundaries-v0.2.0,Buuruljuut power station,L100000103034,coal,operating,150
+G100000101283,energy_plants_gem_units,MNG,point,,MNG-1-039,,point,,,,true,abf-boundaries-v0.2.0,Chandgana Coal Project,L100000103037,coal,cancelled,150
+G100000101284,energy_plants_gem_units,MNG,point,,MNG-1-039,,point,,,,true,abf-boundaries-v0.2.0,Chandgana Coal Project,L100000103037,coal,cancelled,150
+G100000101285,energy_plants_gem_units,MNG,point,,MNG-1-039,,point,,,,true,abf-boundaries-v0.2.0,Chandgana Coal Project,L100000103037,coal,cancelled,150
+G100000101286,energy_plants_gem_units,MNG,point,,MNG-1-039,,point,,,,true,abf-boundaries-v0.2.0,Chandgana Coal Project,L100000103037,coal,cancelled,150
+G100000101519,energy_plants_gem_units,MNG,point,,MNG-1-061,,point,,,,false,abf-boundaries-v0.2.0,Dornod power station,L100000103033,coal,operating,36
+G100000101520,energy_plants_gem_units,MNG,point,,MNG-1-061,,point,,,,false,abf-boundaries-v0.2.0,Dornod power station,L100000103033,coal,operating,50
+G100000102675,energy_plants_gem_units,MNG,point,,MNG-1-035,,point,,,,false,abf-boundaries-v0.2.0,Erdenet power station,L100000103040,coal,operating,35
+G100000102931,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,false,abf-boundaries-v0.2.0,Ganqimaodu Industrial Park power station,L100000100837,coal,cancelled,350
+G100000102932,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,false,abf-boundaries-v0.2.0,Ganqimaodu Industrial Park power station,L100000100837,coal,cancelled,350
+G100000107712,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Tavan Tolgoi power station (Rio Tinto),L100000103038,coal,pre_construction,150
+G100000107713,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Tavan Tolgoi power station (Rio Tinto),L100000103038,coal,pre_construction,150
+G100000107714,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Tavan Tolgoi power station (Rio Tinto),L100000103038,coal,pre_construction,150
+G100000109292,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Shivee Ovoo (Erdenes Mongol) power station,L100000103036,coal,cancelled,5280
+G100000109989,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Tavan Tolgoi power station (Marubeni),L100000103039,coal,cancelled,150
+G100000109990,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Tavan Tolgoi power station (Marubeni),L100000103039,coal,cancelled,150
+G100000109996,energy_plants_gem_units,MNG,point,,MNG-1-057,,point,,,,false,abf-boundaries-v0.2.0,Telmen Thermal Power Plant,L100000103047,coal,cancelled,50
+G100000109997,energy_plants_gem_units,MNG,point,,MNG-1-057,,point,,,,false,abf-boundaries-v0.2.0,Telmen Thermal Power Plant,L100000103047,coal,cancelled,50
+G100000110032,energy_plants_gem_units,MNG,point,,MNG-1-059,,point,,,,true,abf-boundaries-v0.2.0,Tevshiin Gobi power station,L100000103035,coal,cancelled,150
+G100000110033,energy_plants_gem_units,MNG,point,,MNG-1-059,,point,,,,true,abf-boundaries-v0.2.0,Tevshiin Gobi power station,L100000103035,coal,cancelled,150
+G100000110442,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-3 power station,L100000103043,coal,operating,50
+G100000110443,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,operating,173
+G100000110444,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,operating,111
+G100000110445,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,operating,110
+G100000110446,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,operating,110
+G100000110447,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,operating,80
+G100000110448,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,operating,80
+G100000110449,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,cancelled,210
+G100000110450,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,true,abf-boundaries-v0.2.0,Ulaanbaatar-5 power station,L100000103046,coal,cancelled,150
+G100000113091,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Tavan Tolgoi power station (Marubeni),L100000103039,coal,cancelled,150
+G100000113092,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Tavan Tolgoi power station (Marubeni),L100000103039,coal,cancelled,150
+G100000113093,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,true,abf-boundaries-v0.2.0,Ulaanbaatar-5 power station,L100000103046,coal,cancelled,150
+G100000113094,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,true,abf-boundaries-v0.2.0,Ulaanbaatar-5 power station,L100000103046,coal,cancelled,150
+G100000113471,energy_plants_gem_units,MNG,point,,MNG-1-037,,point,,,,false,abf-boundaries-v0.2.0,Darkhan power station,L100000103048,coal,operating,35
+G100000113966,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-3 power station,L100000103043,coal,cancelled,125
+G100000113967,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-4 power station,L100000103044,coal,operating,125
+G100000114160,energy_plants_gem_units,MNG,point,,MNG-1-059,,point,,,,true,abf-boundaries-v0.2.0,Tevshiin Gobi power station,L100000103035,coal,cancelled,150
+G100000114161,energy_plants_gem_units,MNG,point,,MNG-1-059,,point,,,,true,abf-boundaries-v0.2.0,Tevshiin Gobi power station,L100000103035,coal,cancelled,150
+G100000114162,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-3 power station,L100000103043,coal,cancelled,125
+G100000114524,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,false,abf-boundaries-v0.2.0,Tsaidamnuur power station,L100000104673,coal,cancelled,600
+G100000115184,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Shivee Ovoo (Erdenes Mongol) power station,L100000103036,coal,pre_construction,300
+G100000115304,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-3 power station,L100000103043,coal,announced,50
+G100000115760,energy_plants_gem_units,MNG,point,,MNG-1-049,,point,,,,false,abf-boundaries-v0.2.0,Sukhbaatar power station,L100000104984,coal,construction,35
+G100000602520,energy_plants_gem_units,MNG,point,,MNG-1-067,,point,,,,true,abf-boundaries-v0.2.0,Egiin Gol hydroelectric plant,L100000602489,hydropower,announced,315
+G100000602521,energy_plants_gem_units,MNG,point,,MNG-1-043,,point,,,,false,abf-boundaries-v0.2.0,Erdeneburen hydroelectric plant,L100000602490,hydropower,construction,90
+G100000604213,energy_plants_gem_units,MNG,point,,MNG-1-035,,point,,,,true,abf-boundaries-v0.2.0,Artset hydroelectric plant,L100000604161,hydropower,cancelled,118
+G100000604277,energy_plants_gem_units,MNG,point,,MNG-1-035,,point,,,,true,abf-boundaries-v0.2.0,Buring hydroelectric plant,L100000604186,hydropower,cancelled,161
+G100000604689,energy_plants_gem_units,MNG,point,,MNG-1-049,,point,,,,true,abf-boundaries-v0.2.0,Orkhon hydroelectric plant,L100000604302,hydropower,announced,100
+G100000604810,energy_plants_gem_units,MNG,point,,MNG-1-049,,point,,,,true,abf-boundaries-v0.2.0,Shuren Selenga hydroelectric plant,L100000604352,hydropower,cancelled,250
+G100000604903,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,true,abf-boundaries-v0.2.0,Ulaanbaatar Pumped Storage hydroelectric plant,L100000604377,hydropower,cancelled,100
+G100000800941,energy_plants_gem_units,MNG,point,,MNG-1-064,,point,,,,true,abf-boundaries-v0.2.0,Baganuur solar farm,L100000800815,utility-scale solar,cancelled,20
+G100000801063,energy_plants_gem_units,MNG,point,,MNG-1-037,,point,,,,true,abf-boundaries-v0.2.0,Darkhan solar farm,L100000800918,utility-scale solar,cancelled,20
+G100000801070,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,false,abf-boundaries-v0.2.0,Desert solar farm,L100000800923,utility-scale solar,operating,30
+G100000802563,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Akesu Keping SPIC solar farm,L100000802164,utility-scale solar,operating,20
+G100000802564,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Akesu Keping SPIC solar farm,L100000802164,utility-scale solar,operating,20
+G100000802597,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Bazhou Luntai CECEP Grid-Connected solar farm,L100000802190,utility-scale solar,operating,30
+G100000802746,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Horgos PLA Corps CECEP solar farm,L100000802290,utility-scale solar,operating,20
+G100000803084,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Balikun Santanghuxiang Shangfeng solar farm,L100000802614,utility-scale solar,operating,20
+G100000803525,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Tacheng Mohetai Guohua solar farm,L100000803036,utility-scale solar,operating,20
+G100000803529,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Beitun Haitianda solar farm,L100000803040,utility-scale solar,operating,20
+G100000803542,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Shanshan Anpeiqi solar farm,L100000803053,utility-scale solar,operating,20
+G100000803582,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Tumushuke Dongrun Huanneng solar farm,L100000803092,utility-scale solar,operating,20
+G100000803839,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Hami Jincheng solar farm,L100000803333,utility-scale solar,operating,20
+G100000803871,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Hami Yixin solar farm,L100000803365,utility-scale solar,operating,20
+G100000803881,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Hami Junxin solar farm,L100000803374,utility-scale solar,operating,30
+G100000810915,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Ilch solar farm,L100000808663,utility-scale solar,pre_construction,50
+G100000813862,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Hami (China Three Gorges) Integrated solar farm,L100000811378,utility-scale solar,operating,900
+G100000813864,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Hami (Qingdian) Integrated solar farm,L100000811379,utility-scale solar,pre_construction,400
+G100000813938,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Corps Shihezi (Jilin Power) Unsubsidized solar power plant,L100000811445,utility-scale solar,operating,600
+G100000813939,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Corps Shihezi (Jinko) Unsubsidized solar power plant,L100000811446,utility-scale solar,operating,100
+G100000813940,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Corps Shihezi 134th Regiment (Tianfu) solar farm,L100000811447,utility-scale solar,operating,400
+G100000813941,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Corps Shihezi 142nd Regiment (China Power Construction) solar farm,L100000811448,utility-scale solar,operating,300
+G100000830431,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Urad Middle Banner (Sany) Wind/Solar/Storage/Hydrogen/Ammonia complex,L100000827005,utility-scale solar,shelved,100
+G100000834598,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,true,abf-boundaries-v0.2.0,Khushig Khundii solar project,L100000830731,utility-scale solar,operating,15
+G100000900838,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,false,abf-boundaries-v0.2.0,Salkhit wind farm,L100000900732,wind,operating,50
+G100000901164,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,false,abf-boundaries-v0.2.0,Sainshand wind farm,L100000901009,wind,operating,55
+G100000901438,energy_plants_gem_units,MNG,point,,MNG-1-046,,point,,,,true,abf-boundaries-v0.2.0,Tsetsii wind farm,L100000901236,wind,operating,50
+G100000901540,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Choir wind farm,L100000901315,wind,pre_construction,50.4
+G100000901586,energy_plants_gem_units,MNG,point,,MNG-1-037,,point,,,,true,abf-boundaries-v0.2.0,Darkhan wind farm,L100000901352,wind,shelved,75
+G100000901587,energy_plants_gem_units,MNG,point,,MNG-1-059,,point,,,,true,abf-boundaries-v0.2.0,Mandalgovi wind farm,L100000901353,wind,shelved,75
+G100000904833,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Tiemenguan 36Th Regiment (State Power Investment Consortium) wind farm,L100000903891,wind,operating,200
+G100000920804,energy_plants_gem_units,MNG,point,,MNG-1-059,,point,,,,true,abf-boundaries-v0.2.0,Dundgovi wind farm,L100000916750,wind,shelved,300
+G100000922725,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Wulate Middle Banner (China Resources) wind farm,L100000918420,wind,operating,100
+G100000923754,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Urad Middle Banner (Guohua) Green Hydrogen wind farm,L100000919273,wind,construction,700
+G100000923757,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Wulatezhong Banner Guohe wind farm,L100000919276,wind,operating,100
+G100000927528,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Dalanjargalan wind farm,L100000922076,wind,shelved,100
+G100000927611,energy_plants_gem_units,MNG,point,,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Khanbogd wind farm,L100000922139,wind,shelved,102
+G100001004626,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Urad Middle Banner Ganqimaodu Port Green Energy Supply wind farm,L100001003982,wind,operating,500
+G100001004627,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Urad Middle Banner (Mengneng) wind farm with storage,L100001003983,wind,operating,400
+G100001022804,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-3 power station,L100000103043,coal,announced,125
+G100001022805,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-3 power station,L100000103043,coal,announced,125
+G100001022884,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,false,abf-boundaries-v0.2.0,Buuruljuut power station,L100000103034,coal,pre_construction,150
+G100001022885,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,false,abf-boundaries-v0.2.0,Buuruljuut power station,L100000103034,coal,pre_construction,150
+G100001027795,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Urad Middle Banner (Guohua) Green Hydrogen wind farm,L100000919273,wind,announced,2700
+G100001030439,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,true,abf-boundaries-v0.2.0,Bayan power station,L100001025653,coal,construction,330
+G100001030440,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,true,abf-boundaries-v0.2.0,Bayan power station,L100001025653,coal,pre_construction,330
+G100001050388,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-5 power station,L100000103046,coal,pre_construction,150
+G100001050428,energy_plants_gem_units,MNG,point,,MNG-1-047,,point,,,,true,abf-boundaries-v0.2.0,New Century City power station,L100001044891,coal,announced,250
+G100001050432,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Erdenes Bayanbogd power station,L100001044893,coal,pre_construction,300
+G100001052012,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Urad Middle Banner (Mengneng) wind farm with storage,L100001003983,wind,operating,700
+G100001052013,energy_plants_gem_units,MNG,point,CHN,MNG-1-053,,point,,,,true,abf-boundaries-v0.2.0,Inner Mongolia Urad Middle Banner (Mengneng) wind farm with storage,L100001003983,wind,operating,400
+G100001052611,energy_plants_gem_units,MNG,point,,MNG-1-051,,point,,,,true,abf-boundaries-v0.2.0,Baruun-Urt power station,L100001046544,coal,announced,35
+G100001052612,energy_plants_gem_units,MNG,point,,MNG-1-051,,point,,,,true,abf-boundaries-v0.2.0,Baruun-Urt power station,L100001046544,coal,announced,35
+G100001070419,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Mandakh power station,L100001061463,coal,pre_construction,50
+G100001073586,energy_plants_gem_units,MNG,point,,MNG-1-049,,point,,,,false,abf-boundaries-v0.2.0,Sukhbaatar power station,L100000104984,coal,construction,35
+G100001073587,energy_plants_gem_units,MNG,point,,MNG-1-049,,point,,,,false,abf-boundaries-v0.2.0,Sukhbaatar power station,L100000104984,coal,pre_construction,140
+G100001073716,energy_plants_gem_units,MNG,point,CHN,MNG-1-065,,point,,,,true,abf-boundaries-v0.2.0,Xinjiang Tumushuke Dongrun Huanneng solar farm,L100000803092,utility-scale solar,operating,20
+G100001073831,energy_plants_gem_units,MNG,point,,MNG-1-1,,point,,,,false,abf-boundaries-v0.2.0,Ulaanbaatar-5 power station,L100000103046,coal,pre_construction,150
+G100001090155,energy_plants_gem_units,MNG,point,,MNG-1-039,,point,,,,true,abf-boundaries-v0.2.0,Tsenkhermandal soum Pumped Storage hydroelectric plant,L100001080272,hydropower,announced,100
+G100001090787,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Dalanjargalan solar farm,L100001080833,utility-scale solar,construction,19.7
+G100001090789,energy_plants_gem_units,MNG,point,,MNG-1-043,,point,,,,true,abf-boundaries-v0.2.0,Myangad solar farm,L100001080834,utility-scale solar,announced,19.8
+G100001090790,energy_plants_gem_units,MNG,point,,MNG-1-065,,point,,,,false,abf-boundaries-v0.2.0,Serven solar farm,L100001080835,utility-scale solar,operating,10
+G100001090791,energy_plants_gem_units,MNG,point,,MNG-1-059,,point,,,,true,abf-boundaries-v0.2.0,Dundgovi province wind farm,L100001080836,wind,announced,2400
+G100001092240,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Shivee Govi power station,L100001081918,coal,announced,660
+G100001093958,energy_plants_gem_units,MNG,point,,MNG-1-055,,point,,,,true,abf-boundaries-v0.2.0,Bayanteeg power station,L100001083231,coal,pre_construction,50
+G100001093959,energy_plants_gem_units,MNG,point,,MNG-1-055,,point,,,,true,abf-boundaries-v0.2.0,Bayanteeg power station,L100001083231,coal,pre_construction,50
+G100001094315,energy_plants_gem_units,MNG,point,,MNG-1-063,,point,,,,true,abf-boundaries-v0.2.0,Mandakh power station,L100001061463,coal,pre_construction,50
+G100001094323,energy_plants_gem_units,MNG,point,,MNG-1-037,,point,,,,true,abf-boundaries-v0.2.0,Sharyn Gol thermal power station,L100001083430,coal,pre_construction,50

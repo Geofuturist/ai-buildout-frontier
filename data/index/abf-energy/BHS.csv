@@ -1,0 +1,9 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000406960,energy_plants_gem_units,BHS,point,,,,,,,,false,abf-boundaries-v0.2.0,Clifton Pier power station,L100000406689,oil/gas,operating,132.3
+G100000412233,energy_plants_gem_units,BHS,point,,,,,,,,false,abf-boundaries-v0.2.0,West Sunrise power station,L100000408511,oil/gas,operating,52
+G100000412234,energy_plants_gem_units,BHS,point,,,,,,,,false,abf-boundaries-v0.2.0,Clifton Pier power station,L100000406689,oil/gas,cancelled,102
+G100001028060,energy_plants_gem_units,BHS,point,,,,,,,,false,abf-boundaries-v0.2.0,Blue Hills power station,L100001023549,oil/gas,pre_construction,177
+G100001052979,energy_plants_gem_units,BHS,point,,,,,,,,true,abf-boundaries-v0.2.0,Clifton Pier power station,L100000406689,oil/gas,operating,62
+G100001071088,energy_plants_gem_units,BHS,point,,,,,,,,true,abf-boundaries-v0.2.0,Island Power Producers power station,L100001061972,oil/gas,pre_construction,70
+G100001090759,energy_plants_gem_units,BHS,point,,,,,,,,true,abf-boundaries-v0.2.0,Baillou Hill solar farm,L100001080818,utility-scale solar,construction,20
+G100001090760,energy_plants_gem_units,BHS,point,,,,,,,,true,abf-boundaries-v0.2.0,Coral Harbour solar farm,L100001080819,utility-scale solar,construction,20

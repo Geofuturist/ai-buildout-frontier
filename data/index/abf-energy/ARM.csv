@@ -1,0 +1,140 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407950,energy_plants_gem_units,ARM,point,,ARM-1-LO,,point,,,,false,abf-boundaries-v0.2.0,Vanadzor (Anaklia) power station,L100000406947,oil/gas,cancelled,270
+G100000407951,energy_plants_gem_units,ARM,point,,ARM-1-LO,,point,,,,false,abf-boundaries-v0.2.0,Vanadzor (Anaklia) power station,L100000406947,oil/gas,cancelled,270
+G100000407952,energy_plants_gem_units,ARM,point,,ARM-1-ER,,point,,,,false,abf-boundaries-v0.2.0,Yerevan 2 power station,L100000406948,oil/gas,operating,254
+G100000407953,energy_plants_gem_units,ARM,point,,ARM-1-ER,,point,,,,false,abf-boundaries-v0.2.0,Yerevan 1 power station,L100000406949,oil/gas,operating,242
+G100000407961,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,operating,431
+G100000407962,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,retired,210
+G100000407963,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,operating,200
+G100000407964,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,mothballed,200
+G100000407965,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,mothballed,200
+G100000407966,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,mothballed,100
+G100000407967,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,mothballed,100
+G100000407968,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,mothballed,50
+G100000407969,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan thermal power plant,L100000406951,oil/gas,mothballed,50
+G100000411961,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan power station,L100000408442,oil/gas,construction,50
+G100000413210,energy_plants_gem_units,ARM,point,,ARM-1-TV,,point,,,,false,abf-boundaries-v0.2.0,Noyemberyan power station,L100000408929,oil/gas,pre_construction,126
+G100000500481,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,false,abf-boundaries-v0.2.0,Armenian nuclear power plant,L100000500203,nuclear,retired,408
+G100000500482,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,false,abf-boundaries-v0.2.0,Armenian nuclear power plant,L100000500203,nuclear,operating,448
+G100000500714,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,false,abf-boundaries-v0.2.0,Armenian nuclear power plant,L100000500203,nuclear,announced,1200
+G100000600043,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Argel hydroelectric plant,L100000600043,hydropower,operating,224
+G100000600044,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Hrazdan hydroelectric plant,L100000600044,hydropower,operating,81
+G100000600046,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Qanaqer hydroelectric plant,L100000600046,hydropower,operating,102
+G100000600047,energy_plants_gem_units,ARM,point,,ARM-1-SU,,point,,,,false,abf-boundaries-v0.2.0,Shamb hydroelectric plant,L100000600047,hydropower,operating,171
+G100000600049,energy_plants_gem_units,ARM,point,,ARM-1-SU,,point,,,,false,abf-boundaries-v0.2.0,Spandaryan hydroelectric plant,L100000600049,hydropower,operating,76
+G100000604807,energy_plants_gem_units,ARM,point,,ARM-1-LO,,point,,,,true,abf-boundaries-v0.2.0,Shnogh hydroelectric plant,L100000600048,hydropower,pre_construction,76
+G100000804541,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Ayg-1 solar farm,L100000803975,utility-scale solar,announced,200
+G100000804573,energy_plants_gem_units,ARM,point,,ARM-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Masrik solar farm,L100000804004,utility-scale solar,construction,55
+G100000907730,energy_plants_gem_units,ARM,point,,ARM-1-LO,,point,,,,true,abf-boundaries-v0.2.0,Armenia Wind WTG wind farm,L100000905636,wind,cancelled,150
+G100000907731,energy_plants_gem_units,ARM,point,,ARM-1-LO,,point,,,,true,abf-boundaries-v0.2.0,Acciona wind farm,L100000905637,wind,cancelled,150
+G100000907768,energy_plants_gem_units,ARM,point,,ARM-1-SH,,point,,,,true,abf-boundaries-v0.2.0,Qaraqhach wind farm,L100000905660,wind,cancelled,20
+G100000907769,energy_plants_gem_units,ARM,point,,ARM-1-SH,,point,,,,true,abf-boundaries-v0.2.0,Qaraqhach wind farm,L100000905660,wind,cancelled,120
+G100000908089,energy_plants_gem_units,ARM,point,,ARM-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Zod wind farm,L100000905911,wind,cancelled,20
+G100000908091,energy_plants_gem_units,ARM,point,,ARM-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Semyonovka wind farm,L100000905913,wind,cancelled,34
+G100001051933,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,false,abf-boundaries-v0.2.0,Arzni hydroelectric plant,L100001046047,hydropower,operating,71
+G100001072949,energy_plants_gem_units,ARM,point,,ARM-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Sevan hydroelectric plant,L100001063481,hydropower,operating,34
+G100001072950,energy_plants_gem_units,ARM,point,,ARM-1-ER,,point,,,,true,abf-boundaries-v0.2.0,Yerevan 1 hydroelectric plant,L100001063482,hydropower,operating,44
+G100001078584,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Vayots Arev-1 solar project,L100001068798,utility-scale solar,operating,5
+G100001078585,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Ddmasar 1 solar project,L100001068799,utility-scale solar,operating,5
+G100001078586,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Partizak-1 solar project,L100001068800,utility-scale solar,operating,5
+G100001078587,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Guerrilla-2 solar project,L100001068801,utility-scale solar,operating,1.2
+G100001078588,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Solar Farm solar project,L100001068802,utility-scale solar,operating,5
+G100001078589,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,San Energy solar project,L100001068803,utility-scale solar,operating,3
+G100001078590,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Sharosolar solar project,L100001068804,utility-scale solar,operating,5
+G100001078591,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Heritage solar project,L100001068805,utility-scale solar,operating,5
+G100001078592,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Arpine-1 solar project,L100001068806,utility-scale solar,operating,1.3
+G100001078593,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Feature-4 solar project,L100001068807,utility-scale solar,operating,1.6
+G100001078594,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Solak-2 solar project,L100001068808,utility-scale solar,operating,1.5
+G100001078595,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Good Sun-2 solar project,L100001068809,utility-scale solar,operating,5
+G100001078596,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Good Sun solar project,L100001068810,utility-scale solar,operating,5
+G100001078597,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Good Sun-1 solar project,L100001068811,utility-scale solar,operating,5
+G100001078598,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Dizwood solar project,L100001068812,utility-scale solar,operating,5
+G100001078599,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Palace 1 solar project,L100001068813,utility-scale solar,operating,5
+G100001078600,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Sheram solar project,L100001068814,utility-scale solar,operating,4
+G100001078601,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,AS Energy solar project,L100001068815,utility-scale solar,operating,5
+G100001078602,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Great Masrik solar project,L100001068816,utility-scale solar,operating,3
+G100001078603,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Talin-2 solar project,L100001068817,utility-scale solar,operating,5
+G100001078604,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Sunny solar project,L100001068818,utility-scale solar,operating,5
+G100001078605,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Helios-1 solar project,L100001068819,utility-scale solar,operating,5
+G100001078606,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Sopot 1 solar project,L100001068820,utility-scale solar,operating,1.2
+G100001078607,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Prom Synthesis solar project,L100001068821,utility-scale solar,operating,5
+G100001078608,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Sharosolar 1 solar project,L100001068822,utility-scale solar,operating,4.8
+G100001078609,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Helios-2 solar project,L100001068823,utility-scale solar,operating,5
+G100001078610,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Helios-3 solar project,L100001068824,utility-scale solar,operating,5
+G100001078611,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Ventus-2 solar project,L100001068825,utility-scale solar,operating,5
+G100001078612,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Ventus-1 solar project,L100001068826,utility-scale solar,operating,5
+G100001078613,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Helios-4 solar project,L100001068827,utility-scale solar,operating,5
+G100001078614,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,5M solar project,L100001068828,utility-scale solar,operating,5
+G100001078615,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Energy SG solar project,L100001068829,utility-scale solar,operating,4.8
+G100001078616,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Enteria-Shorzha solar project,L100001068830,utility-scale solar,operating,2
+G100001078617,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Pool 1 solar project,L100001068831,utility-scale solar,operating,1
+G100001078618,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Vayots Dzor 1 solar project,L100001068832,utility-scale solar,operating,5
+G100001078619,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Sun-1 solar project,L100001068833,utility-scale solar,operating,5
+G100001078620,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Sun-2 solar project,L100001068834,utility-scale solar,operating,5
+G100001078621,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Jiemdi and Jiidi solar project,L100001068835,utility-scale solar,operating,5
+G100001078622,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,ET solar project,L100001068836,utility-scale solar,operating,5
+G100001078623,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,EDM solar project,L100001068837,utility-scale solar,operating,5
+G100001078624,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Palace 2 solar project,L100001068838,utility-scale solar,operating,3.2
+G100001078625,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,This way solar project,L100001068839,utility-scale solar,operating,5
+G100001078626,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Daughter solar project,L100001068840,utility-scale solar,operating,5
+G100001078627,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Arm solar project,L100001068841,utility-scale solar,operating,5
+G100001078628,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Vayots Dzor 2 solar project,L100001068842,utility-scale solar,operating,5
+G100001078629,energy_plants_gem_units,ARM,point,,ARM-1-SH,,point,,,,true,abf-boundaries-v0.2.0,Arpi solar project,L100001068843,utility-scale solar,operating,6.6
+G100001078630,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Azkar solar project,L100001068844,utility-scale solar,operating,5
+G100001078631,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Power 1 solar project,L100001068845,utility-scale solar,operating,12.6
+G100001078632,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Power 2 solar project,L100001068846,utility-scale solar,operating,4.8
+G100001078633,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Armavir 1 solar project,L100001068847,utility-scale solar,operating,6.6
+G100001078634,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Armavir 2 solar project,L100001068848,utility-scale solar,operating,6.6
+G100001078635,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,San 1 solar project,L100001068849,utility-scale solar,operating,6.6
+G100001078636,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Lernagog 1 solar project,L100001068850,utility-scale solar,operating,6.6
+G100001078637,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Lernagog 2 solar project,L100001068851,utility-scale solar,operating,6.6
+G100001078638,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,San 2 solar project,L100001068852,utility-scale solar,operating,6.6
+G100001078639,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Violet solar project,L100001068853,utility-scale solar,operating,5
+G100001078640,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Solarland solar project,L100001068854,utility-scale solar,operating,5
+G100001078641,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Palace 3 solar project,L100001068855,utility-scale solar,operating,5
+G100001078642,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Green Energy solar project,L100001068856,utility-scale solar,operating,1
+G100001078643,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Talin-1 solar project,L100001068857,utility-scale solar,operating,1
+G100001078644,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Wonderful Sun solar project,L100001068858,utility-scale solar,operating,1
+G100001078645,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Feature-1 solar project,L100001068859,utility-scale solar,operating,1
+G100001078646,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Feature-2 solar project,L100001068860,utility-scale solar,operating,1
+G100001078647,energy_plants_gem_units,ARM,point,,ARM-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Grand Solar 1 solar project,L100001068861,utility-scale solar,operating,1
+G100001078648,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Shorzha 1 solar project,L100001068862,utility-scale solar,operating,1
+G100001078649,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Arsan-1 solar project,L100001068863,utility-scale solar,operating,1
+G100001078650,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Arsan-2 solar project,L100001068864,utility-scale solar,operating,1
+G100001078651,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Arevadzor solar project,L100001068865,utility-scale solar,operating,1
+G100001078652,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Elite Solar 1 solar project,L100001068866,utility-scale solar,construction,5
+G100001078653,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Gagarin 1 solar project,L100001068867,utility-scale solar,construction,5
+G100001078654,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Palace 4 solar project,L100001068868,utility-scale solar,construction,4.9
+G100001078655,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Sanerji solar project,L100001068869,utility-scale solar,construction,4.9
+G100001078656,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Palace 5 solar project,L100001068870,utility-scale solar,construction,8.2
+G100001078657,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Spring 1 solar project,L100001068871,utility-scale solar,construction,5
+G100001078658,energy_plants_gem_units,ARM,point,,ARM-1-LO,,point,,,,true,abf-boundaries-v0.2.0,White Energy solar project,L100001068872,utility-scale solar,construction,4.9
+G100001078659,energy_plants_gem_units,ARM,point,,ARM-1-LO,,point,,,,true,abf-boundaries-v0.2.0,Perry solar project,L100001068873,utility-scale solar,construction,2
+G100001078660,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Zenith Solar solar project,L100001068874,utility-scale solar,construction,6
+G100001078661,energy_plants_gem_units,ARM,point,,ARM-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Slope-Energo solar project,L100001068875,utility-scale solar,construction,4.5
+G100001078662,energy_plants_gem_units,ARM,point,,ARM-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Large Energy solar project,L100001068876,utility-scale solar,construction,4.5
+G100001078663,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Maria solar project,L100001068877,utility-scale solar,construction,2.5
+G100001078664,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Lake Solar solar project,L100001068878,utility-scale solar,construction,3
+G100001078665,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Palace 6 solar project,L100001068879,utility-scale solar,construction,5.1
+G100001078666,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Artma solar project,L100001068880,utility-scale solar,construction,4
+G100001078667,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Palace 7 solar project,L100001068881,utility-scale solar,construction,5.1
+G100001078668,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Aske solar project,L100001068882,utility-scale solar,construction,15
+G100001078669,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Solar Energy Group solar project,L100001068883,utility-scale solar,construction,10.2
+G100001078670,energy_plants_gem_units,ARM,point,,ARM-1-VD,,point,,,,true,abf-boundaries-v0.2.0,Sun 2 solar project,L100001068884,utility-scale solar,construction,6
+G100001078671,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,San-1 solar project,L100001068885,utility-scale solar,construction,5
+G100001078672,energy_plants_gem_units,ARM,point,,ARM-1-ER,,point,,,,true,abf-boundaries-v0.2.0,Glasswork solar project,L100001068886,utility-scale solar,construction,1.1
+G100001078673,energy_plants_gem_units,ARM,point,,ARM-1-ER,,point,,,,true,abf-boundaries-v0.2.0,Ace Trade solar project,L100001068887,utility-scale solar,construction,1.1
+G100001078674,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Energy SGS solar project,L100001068888,utility-scale solar,construction,4
+G100001078675,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Navig Energy solar project,L100001068889,utility-scale solar,construction,5
+G100001078676,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Pi Solar solar project,L100001068890,utility-scale solar,construction,2
+G100001078677,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Solar Invest solar project,L100001068891,utility-scale solar,construction,13.2
+G100001078678,energy_plants_gem_units,ARM,point,,ARM-1-ER,,point,,,,true,abf-boundaries-v0.2.0,Daughter Marianna-3 solar project,L100001068892,utility-scale solar,construction,1.4
+G100001078679,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Unico solar project,L100001068893,utility-scale solar,construction,3
+G100001078680,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Bright Energy solar project,L100001068894,utility-scale solar,construction,6
+G100001078681,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Flex Energy solar project,L100001068895,utility-scale solar,construction,6
+G100001078682,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Sun Power solar project,L100001068896,utility-scale solar,construction,9.9
+G100001078683,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Jibreen solar project,L100001068897,utility-scale solar,construction,5
+G100001078684,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Power Energy solar project,L100001068898,utility-scale solar,construction,7.3
+G100001078685,energy_plants_gem_units,ARM,point,,ARM-1-AG,,point,,,,true,abf-boundaries-v0.2.0,Soleil solar project,L100001068899,utility-scale solar,construction,8
+G100001078686,energy_plants_gem_units,ARM,point,,ARM-1-AV,,point,,,,true,abf-boundaries-v0.2.0,Solar energy of Karakert solar project,L100001068900,utility-scale solar,construction,2.5
+G100001078687,energy_plants_gem_units,ARM,point,,ARM-1-KT,,point,,,,true,abf-boundaries-v0.2.0,Solar Star-1 solar project,L100001068901,utility-scale solar,construction,5

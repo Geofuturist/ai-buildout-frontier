@@ -1,0 +1,15 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000200363,energy_plants_gem_units,PSE,point,,,,,,,,true,abf-boundaries-v0.2.0,Zahrat Al Finjan Landfill Waste-to-Energy power station,L100000200327,bioenergy,cancelled,40
+G100000405151,energy_plants_gem_units,PSE,point,,,,,,,,true,abf-boundaries-v0.2.0,Jenin power plant,L100000405527,oil/gas,construction,250
+G100000405152,energy_plants_gem_units,PSE,point,,,,,,,,false,abf-boundaries-v0.2.0,Nusseirat power station,L100000405528,oil/gas,operating,140
+G100000411147,energy_plants_gem_units,PSE,point,,,,,,,,true,abf-boundaries-v0.2.0,Jenin power plant,L100000405527,oil/gas,construction,200
+G100000414363,energy_plants_gem_units,PSE,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Khalil power plant,L100000409294,oil/gas,pre_construction,90
+G100000414364,energy_plants_gem_units,PSE,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Khalil power plant,L100000409294,oil/gas,pre_construction,80
+G100000811458,energy_plants_gem_units,PSE,point,,,,,,,,true,abf-boundaries-v0.2.0,Noor Palestine School Solar Program,L100000809128,utility-scale solar,cancelled,35
+G100000811459,energy_plants_gem_units,PSE,point,,,,,,,,true,abf-boundaries-v0.2.0,Noor Palestine Solar Rooftops Program,L100000809129,utility-scale solar,cancelled,35
+G100001030108,energy_plants_gem_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project II,L100001025427,utility-scale solar,operating,3.9
+G100001030109,energy_plants_gem_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project III,L100001025428,utility-scale solar,operating,3.2
+G100001030110,energy_plants_gem_units,PSE,point,JOR,,,,,,,false,abf-boundaries-v0.2.0,Area C solar project IV,L100001025429,utility-scale solar,operating,4
+G100001055478,energy_plants_gem_units,PSE,point,,,,,,,,true,abf-boundaries-v0.2.0,Ma'ale Adumim Waste to Energy power station,L100001048320,bioenergy,cancelled,60
+G100001071017,energy_plants_gem_units,PSE,point,,,,,,,,true,abf-boundaries-v0.2.0,Central West Bank power station,L100001061914,oil/gas,announced,500
+G100001092049,energy_plants_gem_units,PSE,point,,,,,,,,false,abf-boundaries-v0.2.0,Noor Tubas solar farm,L100001081772,utility-scale solar,operating,24

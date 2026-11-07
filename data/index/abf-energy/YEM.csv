@@ -1,0 +1,71 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000405086,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Marib power station,L100000405600,oil/gas,operating,114
+G100000405087,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Marib power station,L100000405600,oil/gas,operating,114
+G100000405088,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Marib power station,L100000405600,oil/gas,operating,114
+G100000405089,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Marib power station,L100000405600,oil/gas,operating,126
+G100000405090,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Marib power station,L100000405600,oil/gas,cancelled,100
+G100000405091,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Marib power station,L100000405600,oil/gas,cancelled,100
+G100000405092,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Marib power station,L100000405600,oil/gas,cancelled,100
+G100000410063,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Aden power station,L100000407692,oil/gas,operating,132
+G100000410064,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Aden power station,L100000407692,oil/gas,operating,132
+G100000410554,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,UAE-Aden power station,L100000407859,oil/gas,cancelled,60
+G100000410555,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,UAE-Aden power station,L100000407859,oil/gas,cancelled,60
+G100000411088,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Wadi Hadramawt power station,L100000407861,oil/gas,shelved,150
+G100000411089,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Shabwa power station,L100000407860,oil/gas,construction,60
+G100000411090,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Aden power station,L100000407692,oil/gas,construction,236
+G100000411708,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 1 power station,L100000408269,oil/gas,operating,60
+G100000414358,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hezyaz power station,L100000409295,oil/gas,operating,30
+G100000414359,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Altaaqa Global temporary power station,L100000409290,oil/gas,operating,54
+G100000414360,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Mansoura power station,L100000409292,oil/gas,operating,74.9
+G100000414361,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Mansoura power station,L100000409292,oil/gas,operating,64
+G100000414362,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Harshiyat power station,L100000409296,oil/gas,operating,75
+G100000835553,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Aden solar farm,L100000831598,utility-scale solar,operating,120
+G100000908147,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Mokha wind farm,L100000905962,wind,cancelled,60
+G100000927480,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Broom wind farm,L100000922045,wind,cancelled,27
+G100000927740,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Usum Wadi Hadramout wind farm,L100000922245,wind,cancelled,50
+G100001021315,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Fulk Mukalla Yemen solar farm,L100001018971,utility-scale solar,cancelled,20
+G100001021317,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Kitbah solar farm,L100001018972,utility-scale solar,cancelled,20
+G100001021318,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Mocha solar farm,L100001018973,utility-scale solar,operating,20
+G100001021320,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Hussein solar power plant,L100001018975,utility-scale solar,operating,10
+G100001021321,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Hussein solar power plant,L100001018975,utility-scale solar,operating,10
+G100001021322,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Hussein solar power plant,L100001018975,utility-scale solar,operating,10
+G100001021323,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Hussein solar power plant,L100001018975,utility-scale solar,operating,10
+G100001051460,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Khokha solar farm,L100001045690,utility-scale solar,pre_construction,10
+G100001051472,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Shabwah solar farm,L100001045699,utility-scale solar,operating,53
+G100001051862,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,El Saktory power station Yemen,L100001045995,oil/gas,operating,40
+G100001051863,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Rayyan power station,L100001045996,oil/gas,operating,70
+G100001051864,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,AlJazeera Power station,L100001045997,oil/gas,operating,50
+G100001051870,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Qario Power station,L100001046001,oil/gas,operating,75
+G100001051872,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,PetroMasila power station,L100001046005,oil/gas,operating,25
+G100001051875,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,PetroMasila power station,L100001046005,oil/gas,operating,25
+G100001051876,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,PetroMasila power station,L100001046005,oil/gas,operating,25
+G100001051886,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 2 power station,L100001046014,oil/gas,operating,25
+G100001051889,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 2 power station,L100001046014,oil/gas,operating,25
+G100001051890,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 2 power station,L100001046014,oil/gas,operating,25
+G100001051891,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 2 power station,L100001046014,oil/gas,operating,25
+G100001051892,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 2 power station,L100001046014,oil/gas,operating,25
+G100001051893,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 2 power station,L100001046014,oil/gas,operating,25
+G100001051894,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al-Hiswa 2 power station,L100001046014,oil/gas,operating,60
+G100001051921,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Daewoo-Aden power station,L100001046039,oil/gas,shelved,450
+G100001051925,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Shahynaz power plant,L100001046043,oil/gas,operating,20
+G100001051928,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Shahynaz power plant,L100001046043,oil/gas,operating,20
+G100001051936,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al Mansoura- Al Saadi power station,L100001046049,oil/gas,operating,60
+G100001051938,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Bagrish power station,L100001046050,oil/gas,operating,40
+G100001051945,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Ahram power station,L100001046056,oil/gas,operating,40
+G100001051951,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hezyaz power station,L100000409295,oil/gas,operating,63
+G100001051955,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Hezyaz power station,L100000409295,oil/gas,operating,30
+G100001051961,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Ma'aber power station,L100001046065,oil/gas,cancelled,400
+G100001052061,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Dhahban power station,L100001046140,oil/gas,operating,96
+G100001052066,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Ras Kanatib power station,L100001046145,oil/gas,operating,150
+G100001070474,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,PetroMasila power station,L100001046005,oil/gas,operating,34
+G100001070493,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Alghurfa power station,L100001061525,oil/gas,pre_construction,50
+G100001070503,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Osifra power station,L100001061535,oil/gas,mothballed,70
+G100001090287,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Aden solar farm,L100000831598,utility-scale solar,construction,120
+G100001090290,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Hays solar farm,L100001080389,utility-scale solar,construction,10
+G100001090291,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al-Khawkhah solar farm,L100001080390,utility-scale solar,construction,10
+G100001090294,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Abyan solar farm,L100001080391,utility-scale solar,announced,10
+G100001090295,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al Mahrah solar farm,L100001080394,utility-scale solar,announced,10
+G100001090296,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Al Dhale’e solar farm,L100001080395,utility-scale solar,announced,5
+G100001093476,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Shail Hadhramaut power station,L100001082916,oil/gas,announced,100
+G100001093477,energy_plants_gem_units,YEM,point,,,,,,,,true,abf-boundaries-v0.2.0,Wadi Hadhramaut power station,L100001082917,oil/gas,announced,100
+G100001093484,energy_plants_gem_units,YEM,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Mukah power station,L100001082923,oil/gas,operating,160

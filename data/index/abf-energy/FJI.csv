@@ -1,0 +1,22 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413360,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,EFL National Control Centre power plant,L100000408984,oil/gas,operating,32
+G100000413361,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,EFL National Control Centre power plant,L100000408984,oil/gas,operating,10
+G100000413362,energy_plants_gem_units,FJI,point,,FJI-1-C,,point,,,,true,abf-boundaries-v0.2.0,Kinoya power plant,L100000408985,oil/gas,operating,30
+G100000413363,energy_plants_gem_units,FJI,point,,FJI-1-C,,point,,,,true,abf-boundaries-v0.2.0,Kinoya power plant,L100000408985,oil/gas,operating,20
+G100000413364,energy_plants_gem_units,FJI,point,,FJI-1-C,,point,,,,true,abf-boundaries-v0.2.0,Kinoya power plant,L100000408985,oil/gas,operating,36
+G100000601624,energy_plants_gem_units,FJI,point,,FJI-1-C,,point,,,,false,abf-boundaries-v0.2.0,Wailoa hydroelectric plant,L100000601605,hydropower,operating,80
+G100000908244,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Butoni wind farm,L100000906043,wind,operating,10
+G100001023504,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Nadi International Airport solar farm,L100001020609,utility-scale solar,pre_construction,3.5
+G100001023506,energy_plants_gem_units,FJI,point,,FJI-1-E,,point,,,,true,abf-boundaries-v0.2.0,Ovalau solar farm,L100001020611,utility-scale solar,pre_construction,4
+G100001023545,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,true,abf-boundaries-v0.2.0,Tavua solar farm,L100001020644,utility-scale solar,announced,9.5
+G100001023546,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,true,abf-boundaries-v0.2.0,Ba solar farm,L100001020645,utility-scale solar,announced,7.1
+G100001023547,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,true,abf-boundaries-v0.2.0,Qeleloa solar farm,L100001020646,utility-scale solar,announced,5.4
+G100001023548,energy_plants_gem_units,FJI,point,,FJI-1-N,,point,,,,true,abf-boundaries-v0.2.0,Vanua Levu solar farm,L100001020647,utility-scale solar,announced,10
+G100001052186,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Drasa Sawmill power station,L100001046242,bioenergy,operating,12.3
+G100001052187,energy_plants_gem_units,FJI,point,,FJI-1-N,,point,,,,false,abf-boundaries-v0.2.0,Labasa Mill power station,L100001046243,bioenergy,operating,10
+G100001052188,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Lautoka Mill power station,L100001046244,bioenergy,operating,5
+G100001052189,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Nabou power station,L100001046245,bioenergy,operating,12
+G100001052190,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Rarawai Mill power station,L100001046246,bioenergy,operating,5
+G100001052191,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Rarawai Mill power station,L100001046246,bioenergy,operating,4
+G100001053203,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,true,abf-boundaries-v0.2.0,Vakabuli solar project,L100001046891,utility-scale solar,announced,10
+G100001062572,energy_plants_gem_units,FJI,point,,FJI-1-W,,point,,,,false,abf-boundaries-v0.2.0,Nadarivatu hydroelectric plant,L100001054680,hydropower,operating,40

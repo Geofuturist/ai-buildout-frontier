@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-052c7c0d2bbb,dc_atlas_points,GTM,field,,GTM-1-01,,field,,,,,abf-boundaries-v0.2.0,Navegalo Guatemala,Operating / Construction,colocation,lt10,
+ATL-6f9309274315,dc_atlas_points,GTM,field,,GTM-1-01,,field,,,,true,abf-boundaries-v0.2.0,KIO GTM2 Campus,Operating / Construction,colocation,lt10,
+ATL-d48cf5fa0303,dc_atlas_points,GTM,field,,GTM-1-01,,field,,,,true,abf-boundaries-v0.2.0,Aurum Equity Partners Guatemala,Operating / Construction,developer_investor,10_99,
+ATL-f9cdeeb1867c,dc_atlas_points,GTM,field,,GTM-1-01,,field,,,,,abf-boundaries-v0.2.0,KIO GTM2 Campus,Planned,colocation,lt10,

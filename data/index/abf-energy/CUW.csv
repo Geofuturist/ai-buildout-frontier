@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000907685,energy_plants_gem_units,CUW,point,,,,,,,,true,abf-boundaries-v0.2.0,Playa Kanoa wind farm,L100000905596,wind,operating,15
+G100000907686,energy_plants_gem_units,CUW,point,,,,,,,,true,abf-boundaries-v0.2.0,Tera Kórá wind farm,L100000905597,wind,operating,15
+G100000907688,energy_plants_gem_units,CUW,point,,,,,,,,true,abf-boundaries-v0.2.0,Tera Kórá wind farm,L100000905597,wind,operating,17
+G100001018310,energy_plants_gem_units,CUW,point,,,,,,,,false,abf-boundaries-v0.2.0,NuKoraal Tabak wind farm,L100001016476,wind,operating,22.5

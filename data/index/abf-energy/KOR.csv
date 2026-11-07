@@ -1,0 +1,845 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100246,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Anin power station,L100000103457,coal,operating,1040
+G100000100247,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Anin power station,L100000103457,coal,operating,1040
+G100000101094,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bukpyung power station,L100000103458,coal,operating,595
+G100000101095,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bukpyung power station,L100000103458,coal,operating,595
+G100000101950,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Eco power station,L100000103479,coal,cancelled,580
+G100000101951,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Eco power station,L100000103479,coal,cancelled,580
+G100000101952,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101953,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,1020
+G100000101954,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101955,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101956,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101957,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101958,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101959,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101960,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,500
+G100000101961,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,coal,operating,1020
+G100000102413,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dongbu Hasla power station,L100000103459,coal,cancelled,1000
+G100000102414,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dongbu Hasla power station,L100000103459,coal,cancelled,1000
+G100000102425,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Donghae power station,L100000103460,coal,operating,200
+G100000102426,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Donghae power station,L100000103460,coal,operating,200
+G100000103106,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Goseong Green power station,L100000103484,coal,operating,1040
+G100000103107,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Goseong Green power station,L100000103484,coal,operating,1040
+G100000103231,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gumi CHP power station,L100000103468,coal,operating,97
+G100000103526,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103527,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103528,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103529,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103530,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103531,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103532,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103533,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,coal,operating,500
+G100000103929,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Honam power station,L100000103472,coal,retired,250
+G100000103930,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Honam power station,L100000103472,coal,retired,250
+G100000105915,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,KOWEPO Hadong power station,L100000103486,coal,cancelled,1000
+G100000105916,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,KOWEPO Hadong power station,L100000103486,coal,cancelled,1000
+G100000108110,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Samcheok Blue power station,L100000103461,coal,operating,1050
+G100000108111,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Samcheok Blue power station,L100000103461,coal,operating,1050
+G100000108696,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saemangeum CHP power station,L100000103473,coal,operating,152
+G100000108697,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saemangeum CHP power station,L100000103473,coal,operating,152
+G100000108756,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Anthracite power station,L100000103462,coal,cancelled,100
+G100000108757,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Samcheok Green power station,L100000103463,coal,operating,1022
+G100000108758,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Samcheok Green power station,L100000103463,coal,operating,1022
+G100000108759,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,coal,retired,560
+G100000108760,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,coal,retired,560
+G100000108761,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,coal,operating,560
+G100000108762,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,coal,operating,560
+G100000108763,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,coal,operating,500
+G100000108764,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,coal,operating,500
+G100000108900,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seagull power station,L100000103474,coal,operating,55
+G100000108901,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seagull power station,L100000103474,coal,operating,31
+G100000108902,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seagull power station,L100000103474,coal,retired,60
+G100000108903,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seagull power station,L100000103474,coal,operating,275
+G100000108918,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin Seocheon power station,L100000104888,coal,operating,1018
+G100000108919,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seocheon power station,L100000103481,coal,retired,200
+G100000108920,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seocheon power station,L100000103481,coal,retired,200
+G100000109268,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,retired,500
+G100000109269,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin Boryeong power station,L100000103482,coal,operating,1000
+G100000109270,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,retired,500
+G100000109271,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,operating,550
+G100000109272,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,operating,500
+G100000109273,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,operating,500
+G100000109274,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,operating,500
+G100000109275,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,operating,500
+G100000109276,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,coal,operating,500
+G100000109277,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin Boryeong power station,L100000103482,coal,operating,1000
+G100000109800,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,346
+G100000109801,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,retired,500
+G100000109802,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,1050
+G100000109803,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,500
+G100000109804,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,500
+G100000109805,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,500
+G100000109806,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,500
+G100000109807,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,500
+G100000109808,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,500
+G100000109809,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,500
+G100000109810,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,coal,operating,1050
+G100000110458,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan Hanju power station,L100000103490,coal,operating,40
+G100000111357,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,operating,800
+G100000111358,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,operating,800
+G100000111359,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,operating,870
+G100000111360,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,operating,870
+G100000111361,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,operating,870
+G100000111362,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,operating,870
+G100000111363,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,cancelled,870
+G100000111364,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,coal,cancelled,870
+G100000111365,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeosu Hanwha power station,L100000103475,coal,operating,125
+G100000111366,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeosu Hanwha power station,L100000103475,coal,operating,125
+G100000111367,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeosu power station,L100000103476,coal,operating,350
+G100000111368,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeosu power station,L100000103476,coal,operating,329
+G100000111437,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yongdong power station,L100000103464,coal,retired,125
+G100000111438,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yongdong power station,L100000103464,coal,retired,200
+G100000111445,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yosu Plant-1 power station,L100000103488,coal,operating,30
+G100000111446,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yosu Plant-1 power station,L100000103488,coal,operating,30
+G100000112334,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang power station,L100000103469,coal,cancelled,500
+G100000112335,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan Hanju power station,L100000103490,coal,operating,50
+G100000112336,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan Hanju power station,L100000103490,coal,operating,40
+G100000113086,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gunsan power station,L100000103471,coal,operating,123
+G100000113087,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gunsan power station,L100000103471,coal,operating,99
+G100000113088,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,KEPCO Gunsan power station,L100000104842,coal,retired,75
+G100000113837,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,GS Pocheon power station,L100000104377,coal,operating,170
+G100000113900,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gimcheon CHP power station,L100000104457,coal,operating,30
+G100000114163,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gimcheon CHP power station,L100000104457,coal,operating,30
+G100000114164,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Kumho Yeosu CHP power station,L100000104566,coal,operating,119
+G100000114165,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Kumho Yeosu CHP power station,L100000104566,coal,operating,145
+G100000200041,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Daesan power station,L100000200038,bioenergy,operating,110
+G100000200045,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Poseung power station,L100000200042,bioenergy,operating,43
+G100000200047,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seokmun power station,L100000200044,bioenergy,operating,39
+G100000200051,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sudokwon Landfill power station,L100000200048,bioenergy,operating,50
+G100000200811,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Bio power station,L100000200714,bioenergy,operating,105
+G100000200812,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Bio power station,L100000200714,bioenergy,operating,105
+G100000200813,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Donghae power station,L100000103460,bioenergy,operating,30
+G100000200814,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gwangyang Biomass power station,L100000200716,bioenergy,construction,110
+G100000200815,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gwangyang Biomass power station,L100000200716,bioenergy,construction,110
+G100000200816,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeonju Paper power station,L100000200717,bioenergy,operating,32
+G100000200818,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,SGC Green Power power station,L100000200719,bioenergy,operating,100
+G100000202490,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seagull power station,L100000103474,bioenergy,operating,60
+G100000202491,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yongdong power station,L100000103464,bioenergy,operating,175
+G100000202492,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yongdong power station,L100000103464,bioenergy,operating,200
+G100000401351,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Andong power station,L100000401350,oil/gas,operating,417
+G100000401352,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ansan power station,L100000401351,oil/gas,operating,834
+G100000401353,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bucheon power station,L100000401352,oil/gas,operating,450
+G100000401354,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bundang power station,L100000401353,oil/gas,operating,574
+G100000401355,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bundang power station,L100000401353,oil/gas,operating,348
+G100000401356,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Busan power station,L100000401355,oil/gas,operating,450
+G100000401357,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Busan power station,L100000401355,oil/gas,operating,450
+G100000401358,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Busan power station,L100000401355,oil/gas,operating,450
+G100000401359,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Busan power station,L100000401355,oil/gas,operating,450
+G100000401360,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Combined Cycle power station,L100000401359,oil/gas,operating,538
+G100000401361,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Combined Cycle power station,L100000401359,oil/gas,operating,550
+G100000401362,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Combined Cycle power station,L100000401359,oil/gas,operating,415
+G100000401363,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin Combined Cycle power station,L100000401359,oil/gas,operating,903
+G100000401364,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Eumseong power station,L100000401363,oil/gas,operating,561
+G100000401366,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dongducheon power station,L100000401365,oil/gas,operating,858
+G100000401367,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dongducheon power station,L100000401365,oil/gas,operating,858
+G100000401368,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gunsan CC power station,L100000401367,oil/gas,operating,718
+G100000401369,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangyang power station,L100000401368,oil/gas,operating,563
+G100000401370,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangyang power station,L100000401368,oil/gas,operating,563
+G100000401371,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,KOMIPO Incheon power station,L100000401370,oil/gas,operating,504
+G100000401372,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,KOMIPO Incheon power station,L100000401370,oil/gas,operating,509
+G100000401373,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,KOMIPO Incheon power station,L100000401370,oil/gas,operating,450
+G100000401374,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,POSCO Incheon power station,L100000401373,oil/gas,operating,450
+G100000401375,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,POSCO Incheon power station,L100000401373,oil/gas,operating,450
+G100000401376,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,POSCO Incheon power station,L100000401373,oil/gas,operating,626
+G100000401377,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,POSCO Incheon power station,L100000401373,oil/gas,operating,626
+G100000401378,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,POSCO Incheon power station,L100000401373,oil/gas,operating,420
+G100000401379,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,POSCO Incheon power station,L100000401373,oil/gas,operating,420
+G100000401380,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,POSCO Incheon power station,L100000401373,oil/gas,operating,420
+G100000401381,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Onsan Smelter power station,L100000401380,oil/gas,operating,270
+G100000401382,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Oseong power station,L100000401381,oil/gas,operating,833
+G100000401383,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Paju power station,L100000401382,oil/gas,operating,848
+G100000401384,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Paju power station,L100000401382,oil/gas,operating,848
+G100000401385,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pocheon power station,L100000401384,oil/gas,operating,780
+G100000401386,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pocheon power station,L100000401384,oil/gas,operating,780
+G100000401387,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,oil/gas,operating,450
+G100000401388,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,oil/gas,operating,450
+G100000401389,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,oil/gas,operating,450
+G100000401390,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pyeongtaek power station,L100000401389,oil/gas,operating,868
+G100000401391,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401392,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401393,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401394,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401395,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401396,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401397,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401398,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoincheon KOWEPO power station,L100000401390,oil/gas,operating,225
+G100000401399,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoul power station,L100000401398,oil/gas,operating,400
+G100000401400,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoul power station,L100000401398,oil/gas,operating,400
+G100000401401,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin Pyeongtaek power station,L100000408898,oil/gas,operating,950
+G100000401402,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan power station,L100000401401,oil/gas,operating,948
+G100000401403,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan power station,L100000401401,oil/gas,operating,300
+G100000401404,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan power station,L100000401401,oil/gas,operating,450
+G100000401405,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeoju Complex power station,L100000401404,oil/gas,operating,1000
+G100000401406,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongwol power station,L100000401405,oil/gas,operating,848
+G100000401407,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yulchon power station,L100000401406,oil/gas,operating,577
+G100000401408,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yulchon power station,L100000401406,oil/gas,operating,946
+G100000401409,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Daesan Complex power station,L100000401408,oil/gas,operating,465
+G100000401410,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shinincheon power station,L100000401409,oil/gas,operating,450
+G100000401411,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shinincheon power station,L100000401409,oil/gas,operating,450
+G100000401412,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shinincheon power station,L100000401409,oil/gas,operating,450
+G100000401413,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shinincheon power station,L100000401409,oil/gas,operating,450
+G100000401414,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongnam power station,L100000401413,oil/gas,operating,476
+G100000401415,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju thermal power station,L100000401414,oil/gas,operating,114
+G100000401416,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju thermal power station,L100000401414,oil/gas,operating,114
+G100000401417,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pocheon IPP power station,L100000401416,oil/gas,operating,900
+G100000406126,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Anyang CHP power station,L100000406309,oil/gas,operating,480
+G100000406127,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Anyang CHP power station,L100000406309,oil/gas,operating,480
+G100000406128,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boryeong power station,L100000103477,oil/gas,construction,500
+G100000406130,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Byeollae CHP power station,L100000406310,oil/gas,operating,115
+G100000406131,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Chuncheon CHP power station,L100000406311,oil/gas,operating,470
+G100000406132,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Daegu CHP power station,L100000406312,oil/gas,operating,415
+G100000406133,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dongtan CHP power station,L100000406313,oil/gas,operating,400
+G100000406134,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dongtan CHP power station,L100000406313,oil/gas,operating,400
+G100000406135,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gimpo CHP power station,L100000406314,oil/gas,operating,500
+G100000406136,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwanggyo CHP power station,L100000406315,oil/gas,operating,145
+G100000406137,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gwangyang steelworks power station,L100000406316,oil/gas,operating,284
+G100000406139,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,oil/gas,pre_construction,500
+G100000406140,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,oil/gas,pre_construction,500
+G100000406141,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,oil/gas,announced,500
+G100000406142,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,oil/gas,announced,500
+G100000406143,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hadong power station,L100000103485,oil/gas,announced,500
+G100000406144,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanam CHP power station,L100000406317,oil/gas,operating,399
+G100000406145,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hwasung power station,L100000406318,oil/gas,operating,512.3
+G100000406146,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilsan power station,L100000406319,oil/gas,operating,630
+G100000406147,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ilsan power station,L100000406319,oil/gas,operating,300
+G100000406148,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Naepo Green Energy power station,L100000406320,oil/gas,operating,500
+G100000406149,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Osan CHP power station,L100000406321,oil/gas,operating,474
+G100000406150,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Paju (KDHC) power station,L100000406322,oil/gas,operating,515
+G100000406151,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pangyo CHP power station,L100000406323,oil/gas,operating,145
+G100000406152,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang steel works power station,L100000406324,oil/gas,operating,145
+G100000406153,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pyeongtaek power station,L100000401389,oil/gas,operating,350
+G100000406154,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,oil/gas,construction,560
+G100000406155,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,oil/gas,construction,560
+G100000406156,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,oil/gas,announced,500
+G100000406157,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samchonpo power station,L100000103487,oil/gas,announced,500
+G100000406158,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sejong (KOMIPO) power station,L100000406325,oil/gas,operating,530
+G100000406159,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Shinsejong power station,L100000406326,oil/gas,operating,630
+G100000406160,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Songdo CHP power station,L100000406327,oil/gas,operating,207
+G100000406163,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,oil/gas,pre_construction,500
+G100000406164,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,oil/gas,announced,500
+G100000406165,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,oil/gas,announced,500
+G100000406166,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taean power station,L100000103483,oil/gas,announced,500
+G100000406167,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Tongyeong power station,L100000406328,oil/gas,operating,1000
+G100000406168,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Wirye CHP power station,L100000406329,oil/gas,operating,412
+G100000406169,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yangju CHP power station,L100000406330,oil/gas,operating,524
+G100000406170,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,oil/gas,announced,800
+G100000406171,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongheung power station,L100000103466,oil/gas,announced,800
+G100000406173,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Smart Energy Center (Cheongju) power station,L100000406332,oil/gas,operating,585
+G100000406174,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Ulsan GPS power station,L100000406333,oil/gas,operating,1122
+G100000406294,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Namjeju Power Complex,L100000406380,oil/gas,operating,150
+G100000410205,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan Hanju power station,L100000103490,oil/gas,operating,144
+G100000410206,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gumi Combined Cycle power plant,L100000407738,oil/gas,operating,501
+G100000410546,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bucheon power station,L100000401352,oil/gas,construction,498
+G100000410547,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bucheon power station,L100000401352,oil/gas,construction,498
+G100000410616,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hyundai Ulsan Factory power plant,L100000407872,oil/gas,cancelled,184
+G100000410617,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Asan Baebang power station,L100000407873,oil/gas,operating,114
+G100000410618,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Daesan Refinery power station,L100000407874,oil/gas,construction,277
+G100000410619,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samsong CHP power station,L100000407875,oil/gas,operating,99
+G100000412613,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ulsan power station,L100000401401,oil/gas,operating,300
+G100000412614,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Suwan CHP plant,L100000408497,oil/gas,operating,118
+G100000412615,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Smart Energy Center (Icheon) power station,L100000408496,oil/gas,operating,190
+G100000412616,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Smart Energy Center (Icheon) power station,L100000408496,oil/gas,operating,190
+G100000412617,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Smart Energy Center (Icheon) power station,L100000408496,oil/gas,operating,190
+G100000412618,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pyeongtaek power station,L100000401389,oil/gas,operating,350
+G100000412619,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pyeongtaek power station,L100000401389,oil/gas,operating,350
+G100000412620,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pyeongtaek power station,L100000401389,oil/gas,operating,350
+G100000412621,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang steel works power station,L100000406324,oil/gas,operating,145
+G100000412623,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Namjeju Power Complex,L100000406380,oil/gas,operating,146.2
+G100000412624,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju thermal power station,L100000401414,oil/gas,retired,40
+G100000412625,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju thermal power station,L100000401414,oil/gas,retired,40
+G100000412626,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Incheon Airport CHP power station,L100000408495,oil/gas,operating,127
+G100000412627,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hallim Complex power station,L100000408494,oil/gas,operating,105
+G100000412629,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Eumseong power station,L100000401363,oil/gas,construction,561
+G100000412630,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Daesan Complex power station,L100000401408,oil/gas,construction,512
+G100000412631,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongju CHP plant,L100000408493,oil/gas,shelved,103
+G100000412632,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongju CHP plant,L100000408493,oil/gas,construction,167
+G100000412633,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongju CHP plant,L100000408493,oil/gas,operating,58.3
+G100000412634,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Ansan Urban Development CHP power station,L100000408742,oil/gas,operating,62.6
+G100000414016,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hannan Daegu CHP power station,L100000409187,oil/gas,operating,270
+G100000414457,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pocheon IPP power station,L100000401416,oil/gas,operating,900
+G100000500019,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Hanul nuclear power plant,L100000500012,nuclear,operating,1455
+G100000500023,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Hanul nuclear power plant,L100000500012,nuclear,operating,1400
+G100000500249,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Kori nuclear power plant,L100000500118,nuclear,operating,1046
+G100000500250,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Kori nuclear power plant,L100000500118,nuclear,operating,1046
+G100000500260,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanbit nuclear power plant,L100000500124,nuclear,operating,1053
+G100000500261,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanul nuclear power plant,L100000500125,nuclear,operating,1052
+G100000500262,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanul nuclear power plant,L100000500125,nuclear,operating,1051
+G100000500263,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanbit nuclear power plant,L100000500124,nuclear,operating,1051
+G100000500264,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanul nuclear power plant,L100000500125,nuclear,operating,1049
+G100000500265,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Wolsong nuclear power plant,L100000500126,nuclear,operating,1048
+G100000500266,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanul nuclear power plant,L100000500125,nuclear,operating,1049
+G100000500267,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Wolsong nuclear power plant,L100000500126,nuclear,operating,1048
+G100000500268,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Kori nuclear power plant,L100000500010,nuclear,operating,1047
+G100000500269,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Kori nuclear power plant,L100000500010,nuclear,operating,1048
+G100000500270,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanbit nuclear power plant,L100000500124,nuclear,operating,1041
+G100000500271,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanbit nuclear power plant,L100000500124,nuclear,operating,1041
+G100000500275,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanbit nuclear power plant,L100000500124,nuclear,operating,1025
+G100000500276,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanbit nuclear power plant,L100000500124,nuclear,operating,1024
+G100000500315,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanul nuclear power plant,L100000500125,nuclear,operating,1014
+G100000500316,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hanul nuclear power plant,L100000500125,nuclear,operating,1011
+G100000500386,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Wolsong nuclear power plant,L100000500170,nuclear,retired,683
+G100000500387,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Wolsong nuclear power plant,L100000500170,nuclear,operating,624
+G100000500388,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Wolsong nuclear power plant,L100000500170,nuclear,operating,589
+G100000500389,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Wolsong nuclear power plant,L100000500170,nuclear,operating,599
+G100000500401,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Kori nuclear power plant,L100000500118,nuclear,operating,681
+G100000500422,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Kori nuclear power plant,L100000500118,nuclear,retired,607
+G100000500664,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Hanul nuclear power plant,L100000500012,nuclear,construction,1400
+G100000500665,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Hanul nuclear power plant,L100000500012,nuclear,construction,1400
+G100000501017,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saeul nuclear power plant,L100000500371,nuclear,operating,1488
+G100000501018,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saeul nuclear power plant,L100000500371,nuclear,operating,1491
+G100000501019,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saeul nuclear power plant,L100000500371,nuclear,construction,1400
+G100000501020,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saeul nuclear power plant,L100000500371,nuclear,construction,1400
+G100000501274,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Daejin nuclear power plant,L100000500440,nuclear,cancelled,1500
+G100000501275,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Daejin nuclear power plant,L100000500440,nuclear,cancelled,1500
+G100000501276,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Wolsong nuclear power plant,L100000500126,nuclear,cancelled,1350
+G100000501277,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Shin-Wolsong nuclear power plant,L100000500126,nuclear,cancelled,1350
+G100000501278,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongdeok nuclear power plant,L100000500441,nuclear,cancelled,1500
+G100000501279,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongdeok nuclear power plant,L100000500441,nuclear,cancelled,1500
+G100000603357,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Andong hydroelectric plant,L100000603322,hydropower,operating,90
+G100000603358,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongpyeong hydroelectric plant,L100000603323,hydropower,operating,400
+G100000603359,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongsong hydroelectric plant,L100000603324,hydropower,operating,600
+G100000603360,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Chungju hydroelectric plant,L100000603325,hydropower,operating,412
+G100000603361,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Daecheong hydroelectric plant,L100000603326,hydropower,operating,90
+G100000603363,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hapcheon hydroelectric plant,L100000603328,hydropower,operating,100
+G100000603364,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hwacheon hydroelectric plant,L100000603329,hydropower,operating,108
+G100000603365,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Muju hydroelectric plant,L100000603330,hydropower,operating,600
+G100000603366,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Paldang hydroelectric plant,L100000603331,hydropower,operating,120
+G100000603367,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Samnangjin hydroelectric plant,L100000603332,hydropower,operating,600
+G100000603368,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sancheong hydroelectric plant,L100000603333,hydropower,operating,700
+G100000603369,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Soyanggang hydroelectric plant,L100000603334,hydropower,operating,200
+G100000603370,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yangyang hydroelectric plant,L100000603335,hydropower,operating,1000
+G100000603371,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yecheon hydroelectric plant,L100000603336,hydropower,operating,800
+G100000604384,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangneung hydroelectric plant,L100000603327,hydropower,mothballed,82
+G100000604992,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongpyeong hydroelectric plant,L100000603323,hydropower,operating,140
+G100000800924,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Anjwa-Do solar farm,L100000800798,utility-scale solar,operating,96
+G100000800925,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Anjwa-Myeon solar farm,L100000800799,utility-scale solar,shelved,47
+G100000801058,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin solar farm,L100000800916,utility-scale solar,cancelled,80
+G100000801059,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin Yeomhae Farmland solar farm,L100000800917,utility-scale solar,pre_construction,50
+G100000801060,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin Yeomhae Farmland solar farm,L100000800917,utility-scale solar,cancelled,75
+G100000801061,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin Yeomhae Farmland solar farm,L100000800917,utility-scale solar,cancelled,75
+G100000801062,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin Yeomhae Farmland solar farm,L100000800917,utility-scale solar,cancelled,75
+G100000801080,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dong Yang solar farm,L100000800932,utility-scale solar,operating,24
+G100000801142,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hapch'On Reservoir solar farm,L100000800987,utility-scale solar,operating,41
+G100000801507,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saemangeum Floating solar farm,L100000801311,utility-scale solar,pre_construction,300
+G100000801508,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saemangeum Floating solar farm,L100000801311,utility-scale solar,announced,1800
+G100000801539,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Santeado solar farm,L100000801339,utility-scale solar,shelved,150
+G100000801554,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seokmun Lake Floating solar farm,L100000801350,utility-scale solar,construction,72
+G100000801555,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seosan (Hyundai) solar farm,L100000801351,utility-scale solar,operating,65
+G100000801556,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seosan (Pacifico Energy) solar farm,L100000801352,utility-scale solar,shelved,200
+G100000801592,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinui-Myeon solar farm,L100000801388,utility-scale solar,shelved,195
+G100000801786,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongam solar farm,L100000801551,utility-scale solar,operating,94
+G100000801787,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongwol solar farm,L100000801552,utility-scale solar,operating,39
+G100000801791,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Zara solar farm,L100000801556,utility-scale solar,operating,24
+G100000801792,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Zarado solar farm,L100000801557,utility-scale solar,operating,67
+G100000811012,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Anjwa Smart Farm & Solar City 2,L100000808737,utility-scale solar,operating,204
+G100000811013,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bigeum Residents' Solar Power Plant,L100000808738,utility-scale solar,operating,200
+G100000811014,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Dangjin 1 Ash Treatment Facility solar farm,L100000808739,utility-scale solar,operating,25
+G100000811015,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Bay Floating Solar Power Plant,L100000808740,utility-scale solar,shelved,43
+G100000811016,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Bay Floating Solar Power Plant,L100000808740,utility-scale solar,shelved,20
+G100000811017,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gonam solar farm,L100000808741,utility-scale solar,shelved,36
+G100000811018,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,GS Dangjin solar farm,L100000808742,utility-scale solar,construction,120
+G100000811019,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,GS Dangjin solar farm,L100000808742,utility-scale solar,construction,50
+G100000811020,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Haechang Bay Floating Solar Power Plant,L100000808743,utility-scale solar,operating,49
+G100000811021,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Haechang Bay Floating Solar Power Plant,L100000808743,utility-scale solar,operating,50
+G100000811022,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haenam solar farm,L100000808744,utility-scale solar,shelved,400
+G100000811023,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeungdo Light and Solar power project,L100000808745,utility-scale solar,construction,100
+G100000811024,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeungdo solar farm,L100000808746,utility-scale solar,construction,36
+G100000811025,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saemangeum Hope solar farm,L100000808747,utility-scale solar,operating,99
+G100000811026,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Saemangeum Sebit solar farm,L100000808748,utility-scale solar,operating,99
+G100000811027,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saemangeum Sunshine Sharing Project No.2 solar farm,L100000808749,utility-scale solar,shelved,57
+G100000811028,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Shinan Green Solar Complex 1 Power Plant,L100000808750,utility-scale solar,shelved,42
+G100000811029,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan (KEPCO) Solar Power Plant,L100000808751,utility-scale solar,shelved,200
+G100000811030,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan (KOEN) Solar Power Plant,L100000808752,utility-scale solar,operating,150
+G100000811031,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sumang Solar Power Plant,L100000808753,utility-scale solar,construction,100
+G100000811032,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Taean Anmyeon Clean Energy solar farm,L100000808754,utility-scale solar,operating,307
+G100000811033,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wando Gwansanpo Provincial solar farm,L100000808755,utility-scale solar,shelved,99
+G100000811034,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang solar farm,L100000808756,utility-scale solar,operating,100
+G100000834855,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bohae solar project,L100000830962,utility-scale solar,operating,5.1
+G100000834859,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Daechuck solar project,L100000830966,utility-scale solar,operating,7.5
+G100000834860,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Daeho Lake Floating solar farm,L100000830967,utility-scale solar,operating,98
+G100000834861,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gasiri solar farm,L100000830968,utility-scale solar,shelved,49
+G100000834867,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haenam solar project,L100000830974,utility-scale solar,operating,9.5
+G100000834868,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hongnong A solar project,L100000830975,utility-scale solar,operating,6.4
+G100000834869,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hwangsan B solar project,L100000830976,utility-scale solar,operating,8
+G100000834870,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hwangsan C solar project,L100000830977,utility-scale solar,operating,15.5
+G100000834871,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hwangsan F solar project,L100000830978,utility-scale solar,operating,7
+G100000834872,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Muan Sunlight Power solar farm,L100000830979,utility-scale solar,operating,20
+G100000834874,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saemangeum Onshore Area 2 solar farm,L100000830981,utility-scale solar,operating,99
+G100000834875,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seokmunho Floating solar farm,L100000830982,utility-scale solar,construction,20
+G100000834879,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Shinan Imja solar farm,L100000830986,utility-scale solar,operating,100
+G100000834880,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Shindasan Energy solar farm,L100000830987,utility-scale solar,pre_construction,90
+G100000834884,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Solaseado solar farm,L100000830991,utility-scale solar,operating,28
+G100000834885,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Solaseado solar farm,L100000830991,utility-scale solar,operating,25.4
+G100000834886,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Solaseado solar farm,L100000830991,utility-scale solar,operating,27
+G100000834887,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Songji A solar project,L100000830992,utility-scale solar,operating,10
+G100000834888,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Taean Hatdeolwon solar farm,L100000830993,utility-scale solar,pre_construction,60
+G100000834890,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wonho Lee Floating solar farm,L100000830995,utility-scale solar,construction,43
+G100000834892,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Green Solar Power Plant,L100000830997,utility-scale solar,pre_construction,90
+G100000834893,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang II solar project,L100000830998,utility-scale solar,operating,9
+G100000834894,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Young Ahm solar farm,L100000830999,utility-scale solar,shelved,200
+G100000900810,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongdeok wind farm,L100000900707,wind,operating,40
+G100000900813,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeong Yang (Macquarie Group) wind farm,L100000900710,wind,operating,62
+G100000900856,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Southwest Offshore wind farm,L100000900748,wind,operating,60
+G100000900858,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju Hanlim wind farm,L100000900750,wind,operating,100
+G100000900878,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gowon wind farm,L100000900767,wind,operating,18
+G100000900879,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taegisan wind farm,L100000900768,wind,operating,40
+G100000900933,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeong Yang (GS E&R) wind farm,L100000900819,wind,operating,59
+G100000900934,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeong Yang (GS E&R) wind farm,L100000900819,wind,operating,24
+G100000900935,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Samdal wind farm,L100000900820,wind,operating,33
+G100000900954,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangneung Deagi-Ri wind farm,L100000900838,wind,operating,26
+G100000900955,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Chankjuk wind farm,L100000900839,wind,operating,16
+G100000900956,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Muju wind farm,L100000900840,wind,cancelled,35
+G100000900970,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Handong Pyongdae Offshore wind farm,L100000900853,wind,pre_construction,105
+G100000900971,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeju Special Self-Governing Province Wind Power Project,L100000900854,wind,operating,15
+G100000900973,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Taean wind farm,L100000900855,wind,pre_construction,504
+G100000900975,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Anma-Do Offshore wind farm,L100000900857,wind,pre_construction,226
+G100000900976,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Anma-Do Offshore wind farm,L100000900857,wind,pre_construction,306
+G100000900977,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongheung wind farm,L100000900858,wind,operating,24
+G100000900978,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Cheongsong Myeongbong wind farm,L100000900859,wind,operating,42
+G100000900979,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Tamra Offshore wind farm,L100000900860,wind,operating,30
+G100000900980,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hangyeong wind farm,L100000900861,wind,operating,15
+G100000900981,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seongsan wind farm,L100000900862,wind,operating,12
+G100000900982,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taebaek wind farm,L100000900863,wind,operating,18
+G100000901017,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Aphae wind farm,L100000900890,wind,pre_construction,84
+G100000901018,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Aphae wind farm,L100000900890,wind,cancelled,20
+G100000901019,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dadaepo wind farm,L100000900891,wind,pre_construction,96
+G100000901022,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Incheon wind farm,L100000900894,wind,cancelled,600
+G100000901023,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Samsan wind farm,L100000900895,wind,pre_construction,320
+G100000901024,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Samsan wind farm,L100000900895,wind,shelved,328
+G100000901025,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Yeongwang Yawol wind farm,L100000900896,wind,pre_construction,104
+G100000901026,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongwang Yawol wind farm,L100000900896,wind,pre_construction,10
+G100000901028,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongnam wind farm,L100000900898,wind,operating,40
+G100000901040,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae 1 wind farm,L100000900910,wind,construction,200
+G100000901041,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samsu wind farm,L100000900911,wind,operating,21
+G100000901042,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae Gray Whale wind farm,L100000900912,wind,pre_construction,510
+G100000901043,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae Gray Whale wind farm,L100000900912,wind,pre_construction,495
+G100000901044,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae Gray Whale wind farm,L100000900912,wind,pre_construction,495
+G100000901045,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Cheongsapo wind farm,L100000900913,wind,pre_construction,40
+G100000901050,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gyeongbuk wind farm,L100000900917,wind,shelved,100
+G100000901053,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haenam Maewol Offshore wind farm,L100000900920,wind,pre_construction,96
+G100000901054,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yangyang Suri wind farm,L100000900921,wind,construction,94
+G100000901055,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan Wui wind farm,L100000900922,wind,pre_construction,390
+G100000901058,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pyeoson Offshore wind farm,L100000900925,wind,cancelled,135
+G100000901059,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Woljeong-Haengwon wind farm,L100000900926,wind,cancelled,125
+G100000901060,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gunsan wind farm,L100000900927,wind,shelved,1600
+G100000901061,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gunsan wind farm,L100000900927,wind,shelved,110
+G100000901062,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan Jeungdo wind farm,L100000900928,wind,cancelled,33
+G100000901063,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wando Kolon Global wind farm,L100000900929,wind,pre_construction,400
+G100000901064,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Danyang wind farm,L100000900930,wind,cancelled,20
+G100000901065,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan (KEPCO) wind farm,L100000900931,wind,pre_construction,408
+G100000901066,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Baeksu wind farm,L100000900932,wind,operating,40
+G100000901067,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gyeongju wind farm,L100000900933,wind,operating,17
+G100000901068,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gyeongju wind farm,L100000900933,wind,operating,21
+G100000901069,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Honam wind farm,L100000900934,wind,operating,20
+G100000901070,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeonggwang wind farm,L100000900935,wind,operating,80
+G100000901071,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Ulsan Port wind farm,L100000900936,wind,shelved,100
+G100000901072,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,East Coast Wind Belt Offshore wind farm,L100000900937,wind,cancelled,600
+G100000901073,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Go-Ri wind farm,L100000900938,wind,cancelled,300
+G100000901074,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeju Sangmyung Wind Power,L100000900939,wind,operating,21
+G100000901075,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Maebong Mountain wind farm,L100000900940,wind,cancelled,17
+G100000901076,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Boryeong wind farm,L100000900941,wind,pre_construction,1000
+G100000901077,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Mundo Offshore wind farm,L100000900942,wind,pre_construction,400
+G100000901078,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Mundo Offshore wind farm,L100000900942,wind,pre_construction,440
+G100000901079,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Southwest Offshore wind farm,L100000900748,wind,pre_construction,400
+G100000901080,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Southwest Offshore wind farm,L100000900748,wind,pre_construction,2000
+G100000901081,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,KRISO - Floating Wind And Wave Generator,L100000900943,wind,cancelled,12
+G100000901083,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gwinemi wind farm,L100000900945,wind,operating,20
+G100000901084,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeongam wind farm,L100000900946,wind,operating,32
+G100000901086,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pyeongchang wind farm,L100000900948,wind,operating,30
+G100000901087,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeju Daejong wind farm,L100000900949,wind,cancelled,104
+G100000901088,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hwasun wind farm,L100000900950,wind,operating,16
+G100000901089,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Uram Offshore wind farm,L100000900951,wind,shelved,360
+G100000901092,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Gyeongju Floating Offshore wind farm,L100000900954,wind,shelved,500
+G100000901093,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Gyeongju Floating Offshore wind farm,L100000900954,wind,shelved,500
+G100000901094,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae MOTIE wind farm,L100000900955,wind,cancelled,200
+G100000901095,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae MOTIE wind farm,L100000900955,wind,cancelled,500
+G100000901096,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae MOTIE wind farm,L100000900955,wind,cancelled,1000
+G100000901099,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wando Island wind farm,L100000900958,wind,shelved,150
+G100000901102,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gasiri wind farm,L100000900960,wind,operating,10
+G100000901104,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Eouido wind farm,L100000900962,wind,pre_construction,99
+G100000901106,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seamangeum Wind Farm Model Complex,L100000900964,wind,cancelled,40
+G100000901107,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae Twinwind wind farm,L100000900965,wind,cancelled,200
+G100000901108,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saemangeum 1 Gw wind farm,L100000900966,wind,shelved,600
+G100000901109,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saemangeum 1 Gw wind farm,L100000900966,wind,shelved,400
+G100000901113,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeonnam (SK E&C) wind farm,L100000900970,wind,operating,96
+G100000901114,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae White Heron wind farm,L100000900971,wind,pre_construction,495
+G100000901115,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae White Heron wind farm,L100000900971,wind,pre_construction,495
+G100000901116,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae White Heron wind farm,L100000900971,wind,pre_construction,510
+G100000901120,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Port Hamilton wind farm,L100000900975,wind,cancelled,420
+G100000901121,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Jindo wind farm,L100000900976,wind,shelved,420
+G100000901131,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,GwiDeok wind farm,L100000900986,wind,cancelled,100
+G100000901132,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae KF wind farm,L100000900987,wind,pre_construction,400
+G100000901133,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae KF wind farm,L100000900987,wind,pre_construction,400
+G100000901134,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Donghae KF wind farm,L100000900987,wind,pre_construction,450
+G100000901135,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Windway wind farm,L100000900988,wind,shelved,210
+G100000901185,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju Island wind farm,L100000901022,wind,operating,30
+G100000901186,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Uljin wind farm,L100000901023,wind,operating,54
+G100000901189,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gimnyeong wind farm,L100000901026,wind,operating,30
+G100000901209,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yukbaeksan wind farm,L100000901039,wind,pre_construction,33
+G100000901210,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongdeok wind farm,L100000900707,wind,announced,126
+G100000901211,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangwon wind farm,L100000901040,wind,operating,28
+G100000901212,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangwon wind farm,L100000901040,wind,operating,20
+G100000901213,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangwon wind farm,L100000901040,wind,operating,50
+G100000901218,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yaksoo wind farm,L100000901045,wind,operating,20
+G100000901219,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,YEP wind farm,L100000901046,wind,operating,76
+G100000901220,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jaeun Island wind farm,L100000901047,wind,operating,21
+G100000901221,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangwon (Vestas) wind farm,L100000901048,wind,operating,26
+G100000901276,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Incheon Ongjin Offshore wind farm,L100000901095,wind,pre_construction,256
+G100000901298,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeomsan Offshore wind farm,L100000901112,wind,shelved,38
+G100000901299,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeonbuk Gochang Offshore wind farm,L100000901113,wind,pre_construction,76
+G100000901482,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Shinan Eoul Offshore wind farm,L100000901271,wind,pre_construction,99
+G100000901484,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan Daegwang wind farm,L100000901273,wind,shelved,400
+G100000901695,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Cheinsaeoui Offshore wind farm,L100000901440,wind,shelved,99
+G100000920841,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Ansan Pungdo Offshore wind farm,L100000916781,wind,pre_construction,200
+G100000920842,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bamsilsan wind farm,L100000916782,wind,shelved,90
+G100000920843,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bobae Jindo Offshore wind farm,L100000916783,wind,pre_construction,690
+G100000920844,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Bonghwa Omisan wind farm,L100000916784,wind,construction,60.2
+G100000920845,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bonghwa wind farm,L100000916785,wind,pre_construction,45
+G100000920846,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Cheongsong Bunam wind farm,L100000916786,wind,pre_construction,42
+G100000920847,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Cheongsong Myeonbongsan Wind Power Plant,L100000916787,wind,construction,42
+G100000920848,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Chuncheon Noratjae wind farm,L100000916788,wind,pre_construction,40
+G100000920852,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,G8 offshore wind farm,L100000916792,wind,shelved,500
+G100000920853,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,G8 offshore wind farm,L100000916792,wind,shelved,500
+G100000920854,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,G8 offshore wind farm,L100000916792,wind,shelved,500
+G100000920855,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gampo Find Green wind farm,L100000916793,wind,pre_construction,50
+G100000920856,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangneung Anin wind farm,L100000916794,wind,shelved,40
+G100000920857,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangneung Sanseongwoori wind farm,L100000916795,wind,pre_construction,40
+G100000920858,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangneung (Dongkuk S&C) wind farm,L100000916796,wind,pre_construction,84
+G100000920859,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangwon Goseong wind farm,L100000916797,wind,pre_construction,333
+G100000920860,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Geoje wind farm,L100000916798,wind,pre_construction,40
+G100000920861,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Geomundo Offshore wind farm,L100000916799,wind,pre_construction,504
+G100000920862,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Geumseongsan wind power plant,L100000916800,wind,operating,52
+G100000920863,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gijang Offshore wind farm,L100000916801,wind,shelved,200
+G100000920864,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gogunsan wind farm,L100000916802,wind,pre_construction,90
+G100000920865,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Sisan Offshore wind farm,L100000916803,wind,pre_construction,352
+G100000920866,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung wind farm,L100000916804,wind,pre_construction,54
+G100000920867,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gokseong Cheonji Energy wind farm,L100000916805,wind,shelved,60
+G100000920868,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gokseong Green wind farm,L100000916806,wind,pre_construction,42
+G100000920869,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Goseong Hail wind farm,L100000916807,wind,shelved,33
+G100000920871,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gullupdo Offshore wind farm,L100000916809,wind,pre_construction,255
+G100000920872,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gunghang Offshore wind farm,L100000916810,wind,pre_construction,240
+G100000920873,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gunwi wind farm,L100000916811,wind,shelved,75
+G100000920875,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haegi Cheongsapo Offshore wind farm,L100000916813,wind,pre_construction,40
+G100000920876,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haenam Biryongsan wind farm,L100000916814,wind,pre_construction,32
+G100000920878,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haenam Naesari wind farm,L100000916816,wind,shelved,84
+G100000920879,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Haeuli Floating Offshore Wind Power,L100000916817,wind,pre_construction,495
+G100000920880,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Haeuli Floating Offshore Wind Power,L100000916817,wind,pre_construction,495
+G100000920881,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Haeuli Floating Offshore Wind Power,L100000916817,wind,pre_construction,510
+G100000920882,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hongcheon Wayari Onshore wind farm,L100000916818,wind,pre_construction,38
+G100000920883,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Incheon offshore wind farm,L100000916819,wind,pre_construction,800
+G100000920884,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jaeun Resident wind farm,L100000916820,wind,construction,29
+G100000920885,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeju Demo wind farm,L100000916821,wind,shelved,100
+G100000920886,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeju Eum Wind Power Generation Project,L100000916822,wind,operating,21
+G100000920887,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeogu wind farm,L100000916823,wind,pre_construction,36
+G100000920888,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeollanam-do Sinan Offshore wind farm,L100000916824,wind,pre_construction,300
+G100000920889,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeongseon Baekjeon 2 wind farm,L100000916825,wind,pre_construction,39
+G100000920890,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeongseon Baekjeon wind farm,L100000916826,wind,pre_construction,40
+G100000920891,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeongseon Beolmunjae wind farm,L100000916827,wind,pre_construction,40
+G100000920892,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeongseon Gasan wind farm,L100000916828,wind,construction,36
+G100000920893,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeonnam (SK E&C) wind farm,L100000900970,wind,pre_construction,399
+G100000920894,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeonnam (SK E&C) wind farm,L100000900970,wind,pre_construction,399
+G100000920895,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jindo Gasado Offshore wind farm,L100000916829,wind,shelved,296
+G100000920896,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jwasari Offshore wind farm,L100000916830,wind,construction,360
+G100000920897,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Maenggoldo Offshore wind farm,L100000916831,wind,pre_construction,300
+G100000920898,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Maenggoldo Offshore wind farm,L100000916831,wind,pre_construction,300
+G100000920899,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Maewolhae Offshore wind farm,L100000916832,wind,pre_construction,96
+G100000920901,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Munmubaram wind farm,L100000916834,wind,pre_construction,375
+G100000920905,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Naehyun wind farm,L100000916838,wind,pre_construction,71.4
+G100000920906,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Nambu wind farm,L100000916839,wind,pre_construction,85
+G100000920907,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Namhae Mangunsan wind farm,L100000916840,wind,pre_construction,36
+G100000920908,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongyang 2nd wind power generation,L100000916841,wind,operating,42
+G100000920910,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Okdong wind farm,L100000916843,wind,shelved,53
+G100000920911,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Ongjin offshore wind farm,L100000916844,wind,shelved,800
+G100000920912,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang Cheongheung wind power generation project,L100000916845,wind,pre_construction,70
+G100000920913,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang Homigot wind farm,L100000916846,wind,pre_construction,66
+G100000920914,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Punggok wind farm,L100000916847,wind,pre_construction,99
+G100000920915,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pyeongchang Bongpyeong wind farm,L100000916848,wind,shelved,87
+G100000920916,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pyeongchang Geomun wind farm,L100000916849,wind,shelved,40
+G100000920917,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pyeongchang Soksa wind farm,L100000916850,wind,pre_construction,40
+G100000920918,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saemangeum Offshore Wind Power Plant,L100000916851,wind,cancelled,99
+G100000920919,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Cheonbong wind farm,L100000916852,wind,pre_construction,139
+G100000920920,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Dogye wind farm,L100000916853,wind,pre_construction,50
+G100000920921,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Gawind wind farm,L100000916854,wind,shelved,50.4
+G100000920922,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Samcheok Naebongsan wind farm,L100000916855,wind,pre_construction,30.4
+G100000920923,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Nogok wind farm,L100000916856,wind,pre_construction,84
+G100000920924,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok wind farm,L100000916857,wind,pre_construction,201
+G100000920925,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sancheong Duncheolsan wind farm,L100000916858,wind,pre_construction,37
+G100000920926,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Sinan Offshore wind complex,L100000916859,wind,shelved,8200
+G100000920927,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinaneo offshore wind farm,L100000916860,wind,pre_construction,99
+G100000920928,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinanjangbyeongdo wind farm,L100000916861,wind,shelved,34
+G100000920929,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Southeast Coast Float Offshore wind farm,L100000916862,wind,pre_construction,136
+G100000920931,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Taebaek Geumdae Eco wind farm,L100000916864,wind,pre_construction,111
+G100000920932,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Taebaek Hanbaek wind farm,L100000916865,wind,pre_construction,40
+G100000920933,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Uiseong wind power generation project,L100000916866,wind,pre_construction,78
+G100000920935,energy_plants_gem_units,KOR,field,,,,,,,,false,abf-boundaries-v0.2.0,Firefly (Bandibuli) floating offshore wind farm,L100000916868,wind,pre_construction,750
+G100000920936,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Ulsan floating Offshore wind farm,L100000916869,wind,shelved,1500
+G100000920937,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Ulsan Offshore Floating wind farm,L100000916870,wind,pre_construction,375
+G100000920938,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Ulsan Offshore Floating wind farm,L100000916870,wind,pre_construction,750
+G100000920941,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wandogeumil Offshore wind farm,L100000916872,wind,pre_construction,200
+G100000920942,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wandogeumil Offshore wind farm,L100000916872,wind,pre_construction,400
+G100000920943,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yanggu Green wind farm,L100000916873,wind,pre_construction,40
+G100000920944,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yangyang Energy Plan wind farm,L100000916874,wind,shelved,60
+G100000920945,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongcheon wind farm,L100000916875,wind,pre_construction,37.2
+G100000920946,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdeok Dongdaesan wind farm,L100000916876,wind,pre_construction,27
+G100000920947,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdeok Ganggu wind farm,L100000916877,wind,shelved,45
+G100000920948,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdeok Namjeong wind farm,L100000916878,wind,pre_construction,56
+G100000920949,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdeok No. 1 wind farm,L100000916879,wind,construction,77
+G100000920950,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdeok No. 2 wind farm,L100000916880,wind,pre_construction,93.2
+G100000920951,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Chilsan Offshore wind farm,L100000916881,wind,pre_construction,160
+G100000920952,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Duwoori Offshore wind farm,L100000916882,wind,pre_construction,50
+G100000920953,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Nakwol offshore wind power generation project,L100000916883,wind,construction,365
+G100000920954,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Offshore floating wind farm,L100000916884,wind,shelved,1200
+G100000920955,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Yawol Offshore wind farm,L100000916885,wind,pre_construction,104
+G100000920956,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongil Wind Power Plant,L100000916886,wind,pre_construction,53
+G100000920957,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongwol Guryong wind farm,L100000916887,wind,pre_construction,60
+G100000920958,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongwol Samdongsan wind farm,L100000916888,wind,pre_construction,30.4
+G100000920959,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongwol wind farm,L100000916889,wind,construction,46
+G100000920962,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Geum Odo Offshore wind farm,L100000916892,wind,pre_construction,152
+G100000920963,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Gwangpyeong offshore wind power generation project,L100000916893,wind,pre_construction,809
+G100000920964,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Samsan Offshore wind farm,L100000916894,wind,pre_construction,216
+G100000920966,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yokjido (Gyeongnam Technopark) wind farm,L100000916896,wind,shelved,100
+G100000920967,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yongyumuuijawol Offshore wind farm,L100000916897,wind,pre_construction,320
+G100000927442,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Abalone offshore wind farm,L100000922018,wind,pre_construction,1500
+G100000927445,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Admiral Lee Offshore wind farm,L100000922021,wind,pre_construction,1500
+G100000927454,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Ariul offshore wind farm,L100000922028,wind,shelved,100
+G100000927477,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bonghwa Uguchi-ri wind farm,L100000922042,wind,pre_construction,40
+G100000927481,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Buan - GCR offshore wind farm,L100000922046,wind,announced,180
+G100000927515,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Chujin Offshore wind farm,L100000922068,wind,shelved,500
+G100000927516,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Chujin Offshore wind farm,L100000922068,wind,shelved,500
+G100000927517,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Chujin Offshore wind farm,L100000922068,wind,shelved,500
+G100000927519,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Chungju offshore wind farm,L100000922070,wind,shelved,1500
+G100000927542,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangwon Wind Power,L100000922085,wind,construction,90
+G100000927546,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gimcheon wind farm,L100000922089,wind,construction,26
+G100000927547,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,GCR offshore wind farm,L100000922090,wind,announced,700
+G100000927548,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gochang offshore wind farm,L100000922091,wind,shelved,220
+G100000927549,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gochang offshore wind farm,L100000922091,wind,shelved,300
+G100000927562,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haeje wind farm,L100000922102,wind,pre_construction,22
+G100000927565,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanbando offshore wind farm,L100000922105,wind,pre_construction,1125
+G100000927571,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hexicon Pohang offshore wind farm,L100000922109,wind,pre_construction,800
+G100000927577,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hongcheon Yuljeon wind farm,L100000922115,wind,pre_construction,68.2
+G100000927582,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hupung offshore wind project,L100000922119,wind,shelved,1500
+G100000927595,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Incheon Ocean Winds offshore wind farm,L100000922128,wind,shelved,1200
+G100000927598,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeongseon Sindong wind farm,L100000922131,wind,pre_construction,23
+G100000927599,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeongseonnamsa wind farm,L100000922132,wind,pre_construction,20
+G100000927630,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Mallison Wind wind farm,L100000922153,wind,shelved,84
+G100000927683,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang Bihak wind farm,L100000922194,wind,pre_construction,90
+G100000927690,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Rising Sun Floating wind farm,L100000922201,wind,shelved,1500
+G100000927696,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Cheolma wind farm,L100000922206,wind,pre_construction,72
+G100000927697,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Gapoong wind farm,L100000922207,wind,shelved,50
+G100000927698,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Geundeok wind farm,L100000922208,wind,pre_construction,40
+G100000927699,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Hanmaeum Onshore wind farm,L100000922209,wind,shelved,26.4
+G100000927700,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Maemakjae wind farm,L100000922210,wind,pre_construction,40
+G100000927701,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Pyeongsan wind farm,L100000922211,wind,pre_construction,20
+G100000927702,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Samcheok Sanyang wind farm,L100000922212,wind,pre_construction,40
+G100000927712,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan - UTOP offshore wind farm,L100000922221,wind,announced,400
+G100000927713,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan Imja offshore wind farm,L100000922222,wind,shelved,200
+G100000927716,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,South Yokjido offshore wind farm,L100000922225,wind,shelved,300
+G100000927720,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Taebaek Geumbong wind farm,L100000916863,wind,construction,37.4
+G100000927739,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Uljin Gilgok wind farm,L100000922244,wind,pre_construction,61
+G100000927748,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Wando Offshore wind farm,L100000922253,wind,shelved,1800
+G100000927750,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Western Wind Offshore wind farm,L100000922255,wind,shelved,1500
+G100000927754,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yangyang Wind Power Plant,L100000922259,wind,operating,46.2
+G100000927755,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdeok Mundeungsan Mountain wind farm,L100000922260,wind,pre_construction,45
+G100000927756,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdeok Yeonghae wind farm,L100000922261,wind,pre_construction,18
+G100000927757,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeonggwang Wind offshore wind farm,L100000922262,wind,operating,35
+G100000927758,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongwol Jeopsan wind farm,L100000922263,wind,pre_construction,36
+G100000927759,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Dado Offshore wind farm,L100000922264,wind,pre_construction,256
+G100000927760,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Dado Offshore wind farm,L100000922264,wind,pre_construction,376
+G100000927761,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Dado Offshore wind farm,L100000922264,wind,pre_construction,640
+G100000927762,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yokjido offshore wind farm,L100000922265,wind,shelved,300
+G100000927763,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yokjido offshore wind farm,L100000922265,wind,shelved,350
+G100001009091,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Andong power station,L100000401350,oil/gas,pre_construction,569
+G100001021838,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gunsan Biomass power station,L100001019341,bioenergy,cancelled,100
+G100001021839,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gunsan Biomass power station,L100001019341,bioenergy,cancelled,100
+G100001021897,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang Renewable Energy power station,L100001019388,bioenergy,shelved,110
+G100001021898,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seohae Cogenerator power station,L100001019389,bioenergy,operating,25
+G100001021899,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeongeup Biomass power station,L100001019390,bioenergy,shelved,22
+G100001021904,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,SUN&L power station,L100001019394,bioenergy,operating,7.9
+G100001021905,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,SUN&L power station,L100001019394,bioenergy,operating,8.2
+G100001021906,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hansol Homedeco Biomass power station,L100001019395,bioenergy,operating,4.1
+G100001021907,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hansol Homedeco Biomass power station,L100001019395,bioenergy,operating,4.1
+G100001021909,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,SG Energy power station,L100001019397,bioenergy,operating,9.8
+G100001021911,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Mhaman power station,L100001019399,bioenergy,operating,9.9
+G100001021919,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Aegon Energy power station,L100001019406,bioenergy,operating,8.1
+G100001021920,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,SeoDaegu Energy power station,L100001019407,bioenergy,operating,6.4
+G100001021921,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Enprotech power station,L100001019409,bioenergy,operating,5
+G100001021922,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Janggun Cogeneration power station,L100001019410,bioenergy,operating,5
+G100001021924,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Suntek Energy power station,L100001019411,bioenergy,operating,3
+G100001021926,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Daegu Woodchip Renewable Energy power station,L100001019412,bioenergy,operating,3
+G100001021927,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jeju Topyeong Biomass power station,L100001019413,bioenergy,operating,3
+G100001021929,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Daejae Energy power station,L100001019416,bioenergy,operating,1.4
+G100001021931,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dongu Energy power station,L100001019417,bioenergy,operating,1.1
+G100001021932,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Jangji Biomass power station,L100001019418,bioenergy,shelved,10
+G100001022917,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Mundo Offshore wind farm,L100001020135,wind,pre_construction,400
+G100001022918,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Mundo 2 Offshore wind farm,L100001020136,wind,pre_construction,440
+G100001022919,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Oebyeongdo Offshore wind farm,L100001020137,wind,pre_construction,517.1
+G100001022920,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goseong Ganseong wind farm,L100001020138,wind,pre_construction,21
+G100001022921,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Inje Myeongdangsan wind farm,L100001020139,wind,pre_construction,31.5
+G100001022922,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pohang Eco Land wind farm,L100001020140,wind,pre_construction,96.6
+G100001022923,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Donggang wind farm,L100001020141,wind,pre_construction,52
+G100001023024,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Donggwang offshore wind farm,L100001020236,wind,shelved,400
+G100001023027,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Yeompo offshore wind farm,L100001020238,wind,announced,96
+G100001023082,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Hamil Solar Power Plant,L100001020273,utility-scale solar,pre_construction,98
+G100001023084,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Green Tech City solar farm,L100001020275,utility-scale solar,pre_construction,33
+G100001023085,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Green Tech City solar farm,L100001020275,utility-scale solar,pre_construction,33
+G100001027417,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Chan Cheon hydroelectric plant,L100001023212,hydropower,operating,62
+G100001027418,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Imha hydroelectric plant,L100001023213,hydropower,operating,50
+G100001027419,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Uiam hydroelectric plant,L100001023214,hydropower,operating,48
+G100001027709,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,oil/gas,announced,500
+G100001027710,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,oil/gas,announced,500
+G100001027711,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,oil/gas,announced,500
+G100001027712,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,oil/gas,announced,500
+G100001027713,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,oil/gas,announced,500
+G100001027714,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dangjin power station,L100000103480,oil/gas,announced,500
+G100001027717,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gongju-si power station,L100001023440,oil/gas,construction,500
+G100001033920,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeongeup-Si solar project VII,L100001028649,utility-scale solar,operating,2.9
+G100001034087,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Haenam-Gun solar project XVIII,L100001028816,utility-scale solar,operating,1.4
+G100001034088,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hongcheon-Gun solar project III,L100001028817,utility-scale solar,operating,2.3
+G100001034113,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongju-Si solar project II,L100001028842,utility-scale solar,operating,3.1
+G100001034118,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeonju-Si solar project I,L100001028847,utility-scale solar,operating,4.2
+G100001034168,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeonggwang-Gun solar project V,L100001028897,utility-scale solar,operating,1.5
+G100001034242,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seoul solar project II,L100001028971,utility-scale solar,operating,1.8
+G100001034289,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Boseong-Gun solar project XIII,L100001029018,utility-scale solar,operating,1
+G100001034304,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongam-Gun solar project VI,L100001029033,utility-scale solar,operating,4.7
+G100001034321,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gochang-Gun solar project XVI,L100001029050,utility-scale solar,operating,1
+G100001034329,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gimje-Si solar project XXVII,L100001029058,utility-scale solar,operating,1.1
+G100001034345,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gimje-Si Wanju-Gun solar project IV,L100001029074,utility-scale solar,operating,1
+G100001034362,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeonggwang-Gun solar project X,L100001029091,utility-scale solar,operating,1.5
+G100001034448,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sangju-Si solar project XIX,L100001029177,utility-scale solar,operating,1.1
+G100001034591,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeongeup-Si solar project XXVIII,L100001029320,utility-scale solar,operating,2.5
+G100001034612,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project VIII,L100001029341,utility-scale solar,operating,1
+G100001034615,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Busan Gijang-Gun solar project,L100001029344,utility-scale solar,operating,1.1
+G100001034742,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Muan-Gun solar project VIII,L100001029471,utility-scale solar,operating,1
+G100001034748,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Wanju-Gun solar project IV,L100001029477,utility-scale solar,operating,2.8
+G100001034752,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Cheongju-Si solar project VI,L100001029481,utility-scale solar,operating,1
+G100001034781,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Buan-Gun solar project XV,L100001029510,utility-scale solar,operating,1.8
+G100001034787,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Imsil-Gun solar project XVI,L100001029516,utility-scale solar,operating,1.1
+G100001034790,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seogwipo-Si solar project XXV,L100001029519,utility-scale solar,operating,1.9
+G100001034844,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Namwon-Si solar project XXXII,L100001029573,utility-scale solar,operating,1.2
+G100001034892,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gochang-Gun solar project XXV,L100001029621,utility-scale solar,operating,1
+G100001034897,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sinan-Gun solar project XI,L100001029626,utility-scale solar,operating,1.4
+G100001034913,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongam-Gun solar project XXIII,L100001029642,utility-scale solar,operating,1.4
+G100001034916,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gyeongsan-Si solar project III,L100001029645,utility-scale solar,operating,1.1
+G100001034924,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gokseong-Gun solar project XI,L100001029653,utility-scale solar,operating,1.5
+G100001034936,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yanggu-Gun solar project XII,L100001029665,utility-scale solar,operating,1
+G100001034947,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeonggwang-Gun solar project XVII,L100001029676,utility-scale solar,operating,1.7
+G100001034962,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Haenam-Gun solar project LV,L100001029691,utility-scale solar,operating,1
+G100001034975,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seogwipo-Si solar project XXXIII,L100001029704,utility-scale solar,operating,1.4
+G100001034980,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project XIX,L100001029709,utility-scale solar,operating,1.1
+G100001034981,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project XX,L100001029710,utility-scale solar,operating,1.5
+G100001034988,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project XXIII,L100001029717,utility-scale solar,operating,1.8
+G100001034994,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project XXIX,L100001029723,utility-scale solar,operating,1.6
+G100001034997,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project XXXII,L100001029726,utility-scale solar,operating,1.9
+G100001035009,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seogwipo-Si solar project XLVII,L100001029738,utility-scale solar,operating,1.7
+G100001035015,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seogwipo-Si solar project LI,L100001029744,utility-scale solar,operating,1
+G100001035036,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project LI,L100001029765,utility-scale solar,operating,1
+G100001035053,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Haenam-Gun solar project LX,L100001029782,utility-scale solar,operating,1.9
+G100001035065,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Naju-Si solar project XXV,L100001029794,utility-scale solar,operating,1
+G100001035086,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gochang-Gun solar project XXVIII,L100001029815,utility-scale solar,operating,1.3
+G100001035090,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hampyeong-Gun solar project XII,L100001029819,utility-scale solar,operating,1.3
+G100001035094,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seogwipo-Si solar project LX,L100001029823,utility-scale solar,operating,1.2
+G100001035099,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Seogwipo-Si solar project LXV,L100001029828,utility-scale solar,operating,1.3
+G100001035126,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Buan-Gun solar project XVIII,L100001029855,utility-scale solar,operating,4.1
+G100001035144,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Iksan-Si solar project XXXIX,L100001029873,utility-scale solar,operating,1.5
+G100001035147,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangju solar project VI,L100001029876,utility-scale solar,operating,1.7
+G100001035149,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangju solar project VIII,L100001029878,utility-scale solar,operating,8.4
+G100001035151,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangju solar project X,L100001029880,utility-scale solar,operating,5.7
+G100001035154,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangju solar project XIII,L100001029883,utility-scale solar,operating,3.8
+G100001035155,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangju solar project XIV,L100001029884,utility-scale solar,operating,1.8
+G100001035158,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gwangju solar project XVI,L100001029887,utility-scale solar,operating,1.4
+G100001035169,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Chuncheon-Si solar project III,L100001029898,utility-scale solar,operating,1.4
+G100001054273,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Donghae power station,L100000103460,oil/gas,announced,200
+G100001054274,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Donghae power station,L100000103460,oil/gas,announced,200
+G100001054317,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hyundai Steel LNG power station,L100001047681,oil/gas,announced,499
+G100001054344,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeosu Green Energy power station,L100001047698,oil/gas,announced,495
+G100001054766,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju thermal power station,L100000401414,bioenergy,operating,75
+G100001054767,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju thermal power station,L100000401414,bioenergy,operating,75
+G100001054768,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Namjeju Power Complex,L100000406380,bioenergy,operating,100
+G100001054769,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Namjeju Power Complex,L100000406380,bioenergy,operating,100
+G100001054865,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,TW Biomass power station,L100001047992,bioenergy,construction,25
+G100001054888,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Nowon Cogen power station,L100001048006,bioenergy,operating,37
+G100001054894,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Mok-Dong Yangcheon power station,L100001048008,bioenergy,operating,22
+G100001054923,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Munmubaram wind farm,L100000916834,wind,pre_construction,375
+G100001054925,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangnam CHP power station,L100001048017,bioenergy,operating,40
+G100001055142,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Incheon offshore wind farm,L100000916819,wind,pre_construction,800
+G100001055157,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Munmubaram wind farm,L100000916834,wind,announced,375
+G100001055347,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan-gun wind project,L100001048240,wind,announced,420
+G100001055348,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan-gun wind project,L100001048240,wind,announced,990
+G100001055349,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Sinan-gun wind project,L100001048240,wind,announced,1800
+G100001055350,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hajang 5 wind farm,L100001048241,wind,construction,13.5
+G100001055352,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yokjido offshore wind farm,L100000922265,wind,announced,384
+G100001055353,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Imha Dam solar farm,L100001048243,utility-scale solar,operating,47
+G100001055393,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gangneung wind farm,L100001048265,wind,pre_construction,40
+G100001055419,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Saenaiho floating solar farm,L100001048289,utility-scale solar,announced,80
+G100001055422,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jindo-gun Sopo-ri solar farm,L100001048292,utility-scale solar,pre_construction,68
+G100001055423,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jindo-gun Sopo-ri solar farm,L100001048292,utility-scale solar,pre_construction,32
+G100001055427,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dongjin wind farm,L100001048295,wind,pre_construction,31
+G100001055428,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gyeongju Dasan wind farm,L100001048296,wind,pre_construction,21
+G100001055504,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Honam power station,L100000103472,oil/gas,announced,1000
+G100001055508,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yongin Semiconductor Cluster power station,L100001048350,oil/gas,pre_construction,1005
+G100001055534,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Seohae offshore wind farm,L100001048376,wind,announced,495
+G100001055539,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Neulsaem Ui offshore wind farm,L100001048381,wind,announced,510
+G100001055541,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanee Baram wind farm,L100001048383,wind,announced,2000
+G100001055596,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Hanbit offshore wind farm,L100001048423,wind,pre_construction,344
+G100001055598,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Gaki offshore wind farm,L100001048426,wind,pre_construction,400
+G100001055599,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Goheung Tanggeonyeo offshore wind farm,L100001048427,wind,pre_construction,160
+G100001055639,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Haesong offshore wind farm,L100001048460,wind,announced,504
+G100001055642,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Haesong offshore wind farm,L100001048460,wind,announced,504
+G100001055652,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Chilhae offshore wind farm,L100001048472,wind,announced,510
+G100001055653,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Yeonggwang Chilhae offshore wind farm,L100001048472,wind,announced,510
+G100001055656,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,Shinan Hugwang offshore wind farm,L100001048475,wind,construction,323
+G100001055663,energy_plants_gem_units,KOR,field,,,,,,,,true,abf-boundaries-v0.2.0,West Sea offshore wind farm,L100001048481,wind,announced,495
+G100001062722,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Chilbo hydroelectric plant,L100001054830,hydropower,operating,35
+G100001074988,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Iksan-Si solar project XLV,L100001065202,utility-scale solar,operating,2.4
+G100001074999,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yesan-Gun solar project VII,L100001065213,utility-scale solar,operating,1
+G100001075002,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jinan-Gun solar project XII,L100001065216,utility-scale solar,operating,2.3
+G100001075011,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Muan solar project I,L100001065225,utility-scale solar,operating,1.2
+G100001075023,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Miryang-Si solar project I,L100001065237,utility-scale solar,operating,1.6
+G100001075061,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pohang-Si solar project IX,L100001065275,utility-scale solar,operating,1.9
+G100001075079,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sangju-Si solar project XLI,L100001065293,utility-scale solar,operating,1.3
+G100001075146,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gochang-Gun solar project XLVII,L100001065360,utility-scale solar,operating,2
+G100001075182,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Goesan-Gun solar project XV,L100001065396,utility-scale solar,operating,2.6
+G100001075245,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Goheung-Gun solar project LXII,L100001065459,utility-scale solar,operating,2.3
+G100001075258,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Sangju-Si solar project XLIII,L100001065472,utility-scale solar,operating,2.3
+G100001075263,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Imsil-Gun solar project XXIX,L100001065477,utility-scale solar,operating,3.7
+G100001075339,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gongju-Si solar project XXI,L100001065553,utility-scale solar,operating,1.2
+G100001075412,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jangseong-Gun solar project XX,L100001065626,utility-scale solar,operating,1.2
+G100001075545,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Andong-Si solar project XXIV,L100001065759,utility-scale solar,operating,1.5
+G100001075592,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeonggwang solar project V,L100001065806,utility-scale solar,operating,1.4
+G100001075610,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Geochang-Gun solar project XXIV,L100001065824,utility-scale solar,operating,1
+G100001075652,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Hongseong-Gun solar project XXIII,L100001065866,utility-scale solar,operating,1.6
+G100001075681,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeoju-Si solar project XXV,L100001065895,utility-scale solar,operating,1.1
+G100001075723,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Naju-Si solar project LV,L100001065937,utility-scale solar,operating,2.5
+G100001075766,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeoju-Si solar project XXVI,L100001065980,utility-scale solar,operating,1.1
+G100001075769,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Namwon-Si solar project LXVI,L100001065983,utility-scale solar,operating,1.6
+G100001075810,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Suncheon-Si solar project XXXIV,L100001066024,utility-scale solar,operating,1.4
+G100001075906,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongam-Gun solar project LIII,L100001066120,utility-scale solar,operating,7.4
+G100001075963,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeongyang-Gun solar project XVIII,L100001066177,utility-scale solar,operating,1.4
+G100001076008,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gangneung-Si solar project XXI,L100001066222,utility-scale solar,operating,2.8
+G100001076037,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gimcheon-Si solar project XXXIV,L100001066251,utility-scale solar,operating,3.1
+G100001076039,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Yeosu-Si solar project X,L100001066253,utility-scale solar,operating,2.4
+G100001076085,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Namwon-Si solar project LXXII,L100001066299,utility-scale solar,operating,4.1
+G100001076092,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Pyeongtaek-Si solar project V,L100001066306,utility-scale solar,operating,1.4
+G100001076102,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeongeup-Si solar project LXX,L100001066316,utility-scale solar,operating,4.4
+G100001076120,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Goseong-Gun solar project XXXIX,L100001066334,utility-scale solar,operating,1.5
+G100001076128,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju solar project LXIII,L100001066342,utility-scale solar,operating,1.1
+G100001076132,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Buyeo-Gun solar project XXXVIII,L100001066346,utility-scale solar,operating,1.3
+G100001090652,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongdong Pumped Storage hydroelectric plant,L100001080722,hydropower,construction,500
+G100001090654,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Hongcheon Pumped Storage hydroelectric plant,L100001080723,hydropower,pre_construction,600
+G100001090655,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Pocheon Pumped Storage hydroelectric plant,L100001080724,hydropower,pre_construction,700
+G100001090679,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Yeongyang Pumped Storage hydroelectric plant,L100001080747,hydropower,announced,1000
+G100001090680,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Dumusan Pumped Storage hydroelectric plant,L100001080748,hydropower,announced,900
+G100001090681,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Odosan Pumped Storage hydroelectric plant,L100001080749,hydropower,announced,900
+G100001090683,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gurye Pumped Storage hydroelectric plant,L100001080752,hydropower,announced,500
+G100001090685,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Gokseong Pumped Storage hydroelectric plant,L100001080751,hydropower,announced,500
+G100001090686,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Bonghwa Pumped Storage hydroelectric plant,L100001080753,hydropower,announced,500
+G100001090687,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Geumsan Pumped Storage hydroelectric plant,L100001080754,hydropower,announced,500
+G100001090715,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gumi CHP power station,L100000103468,oil/gas,announced,90
+G100001092877,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Jeju thermal power station,L100000401414,oil/gas,announced,150
+G100001092878,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Korea East-West Power Jeju power station,L100001082520,oil/gas,announced,150
+G100001092879,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seonam District Energy Facility,L100001082521,oil/gas,pre_construction,285
+G100001093935,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gunsan power station,L100000103471,bioenergy,announced,99
+G100001093936,energy_plants_gem_units,KOR,point,,,,,,,,false,abf-boundaries-v0.2.0,Gunsan power station,L100000103471,bioenergy,announced,123
+G100001094359,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Haman combined cycle power plant,L100001083448,oil/gas,construction,500
+G100001094360,energy_plants_gem_units,KOR,point,,,,,,,,true,abf-boundaries-v0.2.0,Seoul Magok combined cycle power station,L100001083449,oil/gas,announced,285

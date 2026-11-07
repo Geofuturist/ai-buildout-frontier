@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001010433,energy_plants_gem_tzsam_units,NOR,point,,NOR-1-50,NOR-2-5001,point,,,,false,abf-boundaries-v0.2.0,Trondheim Trøndelag solar project,L100001009063,utility-scale solar,operating,1.6
+G100001083460,energy_plants_gem_tzsam_units,NOR,point,,NOR-1-32,NOR-2-3207,point,,,,false,abf-boundaries-v0.2.0,Akershus solar project I,L100001073674,utility-scale solar,operating,3.6
+G100001083461,energy_plants_gem_tzsam_units,NOR,point,,NOR-1-31,NOR-2-3114,point,,,,false,abf-boundaries-v0.2.0,Østfold solar project,L100001073675,utility-scale solar,operating,1.3
+G100001083462,energy_plants_gem_tzsam_units,NOR,point,,NOR-1-31,NOR-2-3107,point,,,,false,abf-boundaries-v0.2.0,Fredrikstad Østfold solar project,L100001073676,utility-scale solar,operating,1.2
+G100001083463,energy_plants_gem_tzsam_units,NOR,point,,NOR-1-46,NOR-2-4618,point,,,,false,abf-boundaries-v0.2.0,Vestland solar project,L100001073677,utility-scale solar,operating,1
+G100001083464,energy_plants_gem_tzsam_units,NOR,point,,NOR-1-32,NOR-2-3205,point,,,,false,abf-boundaries-v0.2.0,Akershus solar project II,L100001073678,utility-scale solar,operating,2.7
+G100001083466,energy_plants_gem_tzsam_units,NOR,point,,NOR-1-32,NOR-2-3207,point,,,,false,abf-boundaries-v0.2.0,Akershus solar project III,L100001073680,utility-scale solar,operating,1.4

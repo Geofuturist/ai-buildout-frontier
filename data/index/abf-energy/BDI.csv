@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413532,energy_plants_gem_units,BDI,point,,,,,,,,true,abf-boundaries-v0.2.0,Centrale Interpetrol power station,L100000409056,oil/gas,operating,30
+G100000831135,energy_plants_gem_units,BDI,point,,,,,,,,true,abf-boundaries-v0.2.0,Bubanza SB solar project,L100000827613,utility-scale solar,operating,8
+G100000831136,energy_plants_gem_units,BDI,point,,,,,,,,false,abf-boundaries-v0.2.0,Mubuga solar project,L100000827614,utility-scale solar,operating,6
+G100001021750,energy_plants_gem_units,BDI,point,,,,,,,,true,abf-boundaries-v0.2.0,Mubuga solar project,L100000827614,utility-scale solar,announced,7.5
+G100001052179,energy_plants_gem_units,BDI,point,,,,,,,,false,abf-boundaries-v0.2.0,SOSUMO Mill power station,L100001046239,bioenergy,operating,2
+G100001074495,energy_plants_gem_units,BDI,point,,,,,,,,false,abf-boundaries-v0.2.0,Jiji hydroelectric plant,L100001064713,hydropower,operating,35

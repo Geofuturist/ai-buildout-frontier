@@ -185,7 +185,7 @@ export interface LayerEntry {
 export interface DatasetInfo {
   dataset: string;
   /** 'boundaries' when the metadata of the dataset have kind = boundaries, otherwise 'layers' */
-  kind: 'boundaries' | 'layers';
+  kind: 'boundaries' | 'layers' | 'index';
   version: string;
   tag: string;
   doi: string | null;
@@ -210,11 +210,23 @@ export interface AttributionSource {
   layers: string[];
 }
 
-/** The territory index (abf-index) as the territory card reads it; null while the index is not in the pointer */
+/** one index of a manifest, as fetch-data reads it (scripts/web/index-manifest.mjs) */
+export interface IndexSourceEntry {
+  id: string;
+  index_id: string;
+  dataset: string;
+  version: string;
+  index_version: string | null;
+  license: { id: string | null; name: string | null; url: string | null; family: string | null } | null;
+  /** URL with {iso3} */
+  country_url: string;
+  adm0_other_url: string;
+  meta: import('./indexCard').IndexSetMeta;
+}
+
+/** The territory index as the territory card reads it: the indexes of the manifests (index_sources) and the card texts; null while the pointer has none */
 export interface IndexSource {
-  /** where the files lie: <base>/<set>/<ISO3>.csv.gz, <base>/<set>/adm0_other.csv.gz */
-  base: string;
-  sets: { id: string; version: string; license: string; meta: import('./indexCard').IndexSetMeta }[];
+  sets: (IndexSourceEntry & { license_name: string })[];
   card: {
     title: string;
     layer_titles: Record<string, string>;
@@ -249,6 +261,8 @@ export interface AbfData {
   /** logos of sources (content/site.json source_logos): source_id -> file in public/, alt, link */
   source_logos: Record<string, SourceLogo>;
   /** texts of the Status block of the legend (content/site.json status_styles): title, note, lines of a source (layer_ids, optional kind) */
+  /** territory indexes found in the manifests of the pointer (`indexes`); the card reads them (empty until an index is published) */
+  index_sources: IndexSourceEntry[];
   status_legend: { title: string; note: string; lines: { layers: string[]; kind?: string; text: string }[] };
   /** unit_type_en of boundary_registry.csv by country and level, e.g. { USA: { ADM1: 'state' } } */
   unit_words: Record<string, Record<string, string>>;

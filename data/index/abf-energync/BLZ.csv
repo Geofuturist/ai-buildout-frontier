@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001033558,energy_plants_gem_tzsam_units,BLZ,point,,BLZ-1-CY,,point,,,,false,abf-boundaries-v0.2.0,Cayo District solar project,L100001028287,utility-scale solar,operating,1.4
+G100001074786,energy_plants_gem_tzsam_units,BLZ,point,,BLZ-1-SC,,point,,,,false,abf-boundaries-v0.2.0,Stann Creek solar project I,L100001065000,utility-scale solar,operating,1.6
+G100001074787,energy_plants_gem_tzsam_units,BLZ,point,,BLZ-1-SC,,point,,,,false,abf-boundaries-v0.2.0,Stann Creek solar project II,L100001065001,utility-scale solar,operating,1.2

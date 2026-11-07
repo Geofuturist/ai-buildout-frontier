@@ -1,0 +1,34 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000104920,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Istok power station,L100000103001,coal,cancelled,330
+G100000105881,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo A power station,L100000102999,coal,operating,200
+G100000105882,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo A power station,L100000102999,coal,operating,200
+G100000105883,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo A power station,L100000102999,coal,operating,210
+G100000105884,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo B power station,L100000103000,coal,operating,340
+G100000105885,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo B power station,L100000103000,coal,operating,340
+G100000107376,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kosovo C power station,L100000103002,coal,cancelled,500
+G100000113867,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo A power station,L100000102999,coal,retired,65
+G100000113868,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kosovo A power station,L100000102999,coal,retired,125
+G100000604984,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Zhur hydroelectric plant,L100000602337,hydropower,cancelled,305
+G100000806552,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ps Kamenica-3 solar farm,L100000805697,utility-scale solar,cancelled,30
+G100000806772,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Gjakova solar farm,L100000805887,utility-scale solar,construction,150
+G100000827090,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Dukagjini solar farm,L100000824024,utility-scale solar,shelved,250
+G100000827091,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Jasenovik Hybrid solar farm,L100000824025,utility-scale solar,pre_construction,38
+G100000827093,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kosovo solar project,L100000824027,utility-scale solar,shelved,50
+G100000827094,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Solar4Kosovo solar farm,L100000824028,utility-scale solar,pre_construction,120
+G100000911112,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Budakova wind farm,L100000908412,wind,pre_construction,11
+G100000914585,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kitka wind farm,L100000911590,wind,pre_construction,20
+G100000916872,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Kitka wind farm,L100000911590,wind,operating,32
+G100000917087,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Koznica wind farm,L100000913750,wind,shelved,34
+G100000917101,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamenica wind farm,L100000913763,wind,shelved,35
+G100000917102,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Kamenica wind farm,L100000913763,wind,shelved,35
+G100000917121,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Budakova wind farm,L100000908412,wind,pre_construction,35
+G100000918059,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Zatrić wind farm,L100000914586,wind,pre_construction,45
+G100000918880,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Cicavica wind farm,L100000915254,wind,shelved,100
+G100000919434,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Bajgora wind farm,L100000915725,wind,operating,103
+G100000919754,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Shtime wind farm,L100000915995,wind,cancelled,201
+G100000925122,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Jasenovik Hybrid wind farm,L100000920458,wind,announced,132
+G100001001448,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Rahovec solar farm,L100001001061,utility-scale solar,pre_construction,100
+G100001031261,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Ferizaj power plant,L100001026036,oil/gas,announced,500
+G100001053401,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Zatrić wind farm,L100000914586,wind,pre_construction,35
+G100001053402,energy_plants_gem_units,XKX,point,,,,,,,,true,abf-boundaries-v0.2.0,Lindja solar farm,L100001047044,utility-scale solar,announced,105
+G100001090915,energy_plants_gem_units,XKX,point,,,,,,,,false,abf-boundaries-v0.2.0,Ujmani hydroelectric plant,L100001080929,hydropower,operating,35

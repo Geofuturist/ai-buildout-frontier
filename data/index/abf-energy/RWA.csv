@@ -1,0 +1,16 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000413510,energy_plants_gem_units,RWA,point,,RWA-1-04,,point,,,,false,abf-boundaries-v0.2.0,Kivuwatt power plant,L100000409070,oil/gas,announced,72
+G100000413511,energy_plants_gem_units,RWA,point,,RWA-1-04,,point,,,,false,abf-boundaries-v0.2.0,Kivuwatt power plant,L100000409070,oil/gas,operating,26.1
+G100000413512,energy_plants_gem_units,RWA,point,,RWA-1-01,,point,,,,false,abf-boundaries-v0.2.0,Jabana Thermal power plant,L100000409061,oil/gas,operating,21
+G100000413513,energy_plants_gem_units,RWA,point,,RWA-1-01,,point,,,,false,abf-boundaries-v0.2.0,Jabana Thermal power plant,L100000409061,oil/gas,operating,7.8
+G100000413514,energy_plants_gem_units,RWA,point,,RWA-1-04,,point,,,,true,abf-boundaries-v0.2.0,Lake Kivu power plant,L100000409062,oil/gas,operating,56
+G100000604121,energy_plants_gem_units,RWA,point,COD,RWA-1-04,,point,,,,true,abf-boundaries-v0.2.0,Ruzizi IV hydroelectric plant,L100000604082,hydropower,pre_construction,288
+G100001021828,energy_plants_gem_units,RWA,point,,RWA-1-02,,point,,,,false,abf-boundaries-v0.2.0,Nasho solar farm,L100001019333,utility-scale solar,operating,3.3
+G100001030336,energy_plants_gem_units,RWA,point,,RWA-1-05,,point,,,,true,abf-boundaries-v0.2.0,Nyabarongo II hydroelectric plant,L100001025615,hydropower,construction,44
+G100001062717,energy_plants_gem_units,RWA,point,,RWA-1-04,,point,,,,false,abf-boundaries-v0.2.0,Rusizi II hydroelectric plant,L100001054825,hydropower,operating,44
+G100001070501,energy_plants_gem_units,RWA,point,COD,RWA-1-04,,point,,,,true,abf-boundaries-v0.2.0,Symbion Lake Kivu power station,L100001061533,oil/gas,announced,140
+G100001089980,energy_plants_gem_units,RWA,point,,RWA-1-05,,point,,,,true,abf-boundaries-v0.2.0,Rwanda solar farm,L100001079821,utility-scale solar,announced,30
+G100001090665,energy_plants_gem_units,RWA,point,COD,RWA-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ruzizi I hydroelectric plant,L100001080734,hydropower,operating,30
+G100001090667,energy_plants_gem_units,RWA,point,COD,RWA-1-04,,point,,,,false,abf-boundaries-v0.2.0,Ruzizi II hydroelectric plant,L100001080736,hydropower,operating,36
+G100001090909,energy_plants_gem_units,RWA,point,,RWA-1-05,,point,,,,true,abf-boundaries-v0.2.0,Rwanda solar power project,L100001080922,utility-scale solar,announced,200
+G100001096820,energy_plants_gem_units,RWA,point,,RWA-1-03,,point,,,,true,abf-boundaries-v0.2.0,Kavuma WtE power station,L100001085188,bioenergy,pre_construction,15

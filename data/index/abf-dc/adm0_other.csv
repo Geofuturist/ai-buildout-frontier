@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-5dd4419f9e0a,dc_atlas_points,LUX,field,DEU,,,,point_in_other_country,DEU-1-RP,,true,abf-boundaries-v0.2.0,Deep Grevenmacher,Operating / Construction,colocation,lt10,
+ATL-9fd05884e9af,dc_atlas_points,GIB,field,ESP,,,,point_in_other_country,ESP-1-AN,,true,abf-boundaries-v0.2.0,Pelagos Gibraltar Data Centre,Planned,developer_investor,100_999,
+ATL-eae102e176a1,dc_atlas_points,NLD,field,DEU,NLD-1-LI,,point,point_in_other_country,DEU-1-NW,,true,abf-boundaries-v0.2.0,Dustin Data Centre Sittard,Operating / Construction,enterprise_it,lt10,
+ATL-f9b07f0e3bde,dc_atlas_points,FRA,field,DEU,FRA-1-44,FRA-2-67,field,point_in_other_country,DEU-1-RP,,true,abf-boundaries-v0.2.0,Contabo Hub Europe Lauterbourg,Operating / Construction,enterprise_it,lt10,

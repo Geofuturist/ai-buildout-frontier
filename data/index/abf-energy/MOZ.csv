@@ -1,0 +1,83 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100020,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,ACWA Moatize power station,L100000103058,coal,cancelled,270
+G100000100021,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,ACWA Moatize power station,L100000103058,coal,cancelled,300
+G100000100755,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Benga power station (ICVL),L100000103059,coal,cancelled,200
+G100000100756,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Benga power station (ICVL),L100000103059,coal,cancelled,1500
+G100000101150,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chitima power station,L100000103060,coal,shelved,300
+G100000107165,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Nacala power station,L100000103063,coal,cancelled,200
+G100000107335,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ncondezi power station,L100000103062,coal,cancelled,1500
+G100000107336,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ncondezi power station,L100000103062,coal,shelved,150
+G100000107337,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ncondezi power station,L100000103062,coal,shelved,150
+G100000113098,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jindal Tete power station,L100000103061,coal,shelved,75
+G100000113099,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Jindal Tete power station,L100000103061,coal,shelved,75
+G100000114205,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Benga power station (Kibo Energy),L100000104582,coal,shelved,150
+G100000114206,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Benga power station (Kibo Energy),L100000104582,coal,shelved,150
+G100000114961,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Tete power station,L100000104798,coal,cancelled,350
+G100000114962,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Tete power station,L100000104798,coal,cancelled,350
+G100000115077,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chitima power station,L100000103060,coal,shelved,300
+G100000407109,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Beluluane power station,L100000406765,oil/gas,pre_construction,2000
+G100000407110,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Maputo power station,L100000406766,oil/gas,operating,121
+G100000407111,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mozambique LNG power station,L100000406767,oil/gas,construction,54
+G100000407112,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mozambique LNG power station,L100000406767,oil/gas,construction,54
+G100000407113,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mozambique LNG power station,L100000406767,oil/gas,construction,54
+G100000407114,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mozambique LNG power station,L100000406767,oil/gas,construction,54
+G100000407115,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mozambique LNG power station,L100000406767,oil/gas,construction,54
+G100000407116,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mozambique LNG power station,L100000406767,oil/gas,construction,54
+G100000407117,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Palma Gas Thermal power plant,L100000406768,oil/gas,cancelled,75
+G100000407119,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Temane power station,L100000406770,oil/gas,construction,450
+G100000408643,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Karpowership (Mozambique) Mehmet Bey power station,L100000407152,oil/gas,operating,125
+G100000411361,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Nacala LNG power station,L100000408165,oil/gas,announced,200
+G100000411362,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Nacala LNG power station,L100000408165,oil/gas,construction,50
+G100000411363,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Gigawatt Park power station,L100000408164,oil/gas,operating,119.6
+G100000413927,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Ressano Garcia power plant,L100000409161,oil/gas,operating,175
+G100000413928,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Gigawatt Mozambique power station,L100000409162,oil/gas,operating,117
+G100000602539,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Cahora Bassa hydroelectric plant,L100000602508,hydropower,operating,2075
+G100000602541,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chemba I hydroelectric plant,L100000602510,hydropower,pre_construction,600
+G100000602542,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chemba II hydroelectric plant,L100000602511,hydropower,pre_construction,400
+G100000602544,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Mphanda Nkuwa hydroelectric plant,L100000602513,hydropower,pre_construction,1500
+G100000604266,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Boroma hydroelectric plant,L100000604183,hydropower,pre_construction,300
+G100000604282,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Cahora Bassa Norte hydroelectric plant,L100000602509,hydropower,cancelled,1245
+G100000604581,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Lupata hydroelectric plant,L100000604269,hydropower,pre_construction,600
+G100000604582,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Lurio hydroelectric plant,L100000602512,hydropower,pre_construction,120
+G100000800107,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Cuamba solar farm,L100000800084,utility-scale solar,operating,19
+G100000800117,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Dondo solar farm,L100000800093,utility-scale solar,pre_construction,40
+G100000800238,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Lichinga Gigawatt solar farm,L100000800193,utility-scale solar,pre_construction,50
+G100000800239,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Lichinga Moz solar farm,L100000800194,utility-scale solar,cancelled,100
+G100000800250,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mandimba Moz solar farm,L100000800205,utility-scale solar,cancelled,25
+G100000800251,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Manje solar farm,L100000800206,utility-scale solar,pre_construction,30
+G100000800253,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Marrupa Moz solar farm,L100000800208,utility-scale solar,cancelled,25
+G100000800258,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Metoro Substation solar farm,L100000800213,utility-scale solar,operating,41
+G100000800271,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Nacala solar farm,L100000800225,utility-scale solar,announced,100
+G100000800333,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Mocuba solar farm,L100000800281,utility-scale solar,operating,40
+G100000814168,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Balama Graphite Mine solar farm,L100000811627,utility-scale solar,operating,11.3
+G100000814169,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chicamba Floating Solar Array,L100000811628,utility-scale solar,announced,44
+G100000814170,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chimuara Solar Project,L100000811629,utility-scale solar,pre_construction,30
+G100000814171,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chimuara Solar Project,L100000811629,utility-scale solar,shelved,70
+G100000814172,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,EDM Mozambique Solar PV Park,L100000811630,utility-scale solar,shelved,12.5
+G100000814173,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,EDM Mozambique Solar PV Park,L100000811630,utility-scale solar,shelved,12.5
+G100000814174,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,EDM Mozambique Solar PV Park,L100000811630,utility-scale solar,shelved,12.5
+G100000814175,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,EDM Mozambique Solar PV Park,L100000811630,utility-scale solar,shelved,12.5
+G100000814176,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ncondezi solar farm,L100000811631,utility-scale solar,pre_construction,100
+G100000831231,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chimbunila solar farm,L100000827687,utility-scale solar,announced,30
+G100000831232,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mecufi Solar Park,L100000827688,utility-scale solar,pre_construction,26
+G100000831233,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Mecufi Solar Park,L100000827688,utility-scale solar,pre_construction,64
+G100000900100,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Namaacha wind farm,L100000900079,wind,construction,60
+G100000900101,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Namaacha wind farm,L100000900079,wind,construction,60
+G100000927418,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Calanga wind farm,L100000922006,wind,shelved,60
+G100000927419,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Inhambane wind farm,L100000922007,wind,pre_construction,30
+G100001018729,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,JER Green Hydrogen Solar PV Project  (Mozambique),L100001016793,utility-scale solar,announced,12000
+G100001020372,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Montepuez solar farm,L100001018287,utility-scale solar,announced,100
+G100001020374,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Angoche solar farm,L100001018290,utility-scale solar,announced,60
+G100001020378,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Matambo (Mozambique) Solar Energy Project,L100001018293,utility-scale solar,announced,125
+G100001020402,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Ncondezi solar farm,L100000811631,utility-scale solar,pre_construction,200
+G100001020458,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Lichinga PROLER solar farm,L100001018361,utility-scale solar,announced,30
+G100001020479,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Cahora Bassa solar farm,L100001018374,utility-scale solar,announced,400
+G100001020485,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Zitundo solar farm,L100001018378,utility-scale solar,announced,30
+G100001030442,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Chicamba hydroelectric plant,L100001025654,hydropower,operating,44
+G100001030443,energy_plants_gem_units,MOZ,point,,,,,,,,false,abf-boundaries-v0.2.0,Mavuzi hydroelectric plant,L100001025655,hydropower,operating,52
+G100001030461,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Pavua hydroelectric plant,L100001025668,hydropower,announced,160
+G100001057840,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Vulcan Moatize power station,L100001050145,coal,pre_construction,300
+G100001070502,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Temane Thermal power station,L100001061534,oil/gas,announced,75
+G100001073771,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,EleQtra solar farm,L100001064137,utility-scale solar,announced,14
+G100001073774,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Chibuto solar farm,L100001064140,utility-scale solar,announced,95
+G100001073776,energy_plants_gem_units,MOZ,point,,,,,,,,true,abf-boundaries-v0.2.0,Corumana solar farm,L100001064142,utility-scale solar,announced,60

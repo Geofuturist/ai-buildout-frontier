@@ -1,0 +1,72 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000110207,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,true,abf-boundaries-v0.2.0,Gardabani power station,L100000101871,coal,cancelled,300
+G100000408106,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Gardabani Combined Cycle power station,L100000406972,oil/gas,pre_construction,400
+G100000408107,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Gardabani Combined Cycle power station,L100000406972,oil/gas,operating,255
+G100000408108,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Gardabani Combined Cycle power station,L100000406972,oil/gas,operating,231.2
+G100000408109,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Airturbine power station,L100000406973,oil/gas,operating,55
+G100000408110,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Airturbine power station,L100000406973,oil/gas,operating,55
+G100000408111,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,mothballed,300
+G100000408112,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,operating,300
+G100000408113,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,mothballed,142
+G100000408114,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,mothballed,142
+G100000408115,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,mothballed,142
+G100000408116,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,mothballed,142
+G100000408117,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,operating,142
+G100000408118,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Tbilsresi power station,L100000406974,oil/gas,operating,130
+G100000410481,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Gardabani Combined Cycle power station,L100000406972,oil/gas,shelved,250
+G100000601717,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Dizi hydroelectric plant,L100000601698,hydropower,pre_construction,250
+G100000601718,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Dzevrula hydroelectric plant,L100000601699,hydropower,operating,80
+G100000601719,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Enguri hydroelectric plant,L100000601700,hydropower,operating,1300
+G100000601720,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Ieli hydroelectric plant,L100000601701,hydropower,announced,80
+G100000601721,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Khrami I hydroelectric plant,L100000601702,hydropower,operating,114
+G100000601722,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,false,abf-boundaries-v0.2.0,Khrami II hydroelectric plant,L100000601703,hydropower,operating,110
+G100000601723,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Khudoni hydroelectric plant,L100000601704,hydropower,construction,702
+G100000601724,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Kvanchiani hydroelectric plant,L100000601705,hydropower,announced,230
+G100000601725,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,false,abf-boundaries-v0.2.0,Lajanuri hydroelectric plant,L100000601706,hydropower,operating,112
+G100000601726,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,true,abf-boundaries-v0.2.0,Lentekhi hydroelectric plant,L100000601707,hydropower,cancelled,80
+G100000601729,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,true,abf-boundaries-v0.2.0,Oni 1 hydroelectric plant,L100000601710,hydropower,announced,122
+G100000601730,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,true,abf-boundaries-v0.2.0,Oni 2 hydroelectric plant,L100000601711,hydropower,announced,84
+G100000601731,energy_plants_gem_units,GEO,point,,GEO-1-SJ,,point,,,,false,abf-boundaries-v0.2.0,Paravani hydroelectric plant,L100000601712,hydropower,operating,85
+G100000601732,energy_plants_gem_units,GEO,point,,GEO-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Shuakhevi hydroelectric plant,L100000601713,hydropower,operating,179
+G100000601733,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,true,abf-boundaries-v0.2.0,Tsageri hydroelectric plant,L100000601714,hydropower,cancelled,151
+G100000601735,energy_plants_gem_units,GEO,point,,GEO-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Vardnili-1 hydroelectric plant,L100000601716,hydropower,operating,220
+G100000601736,energy_plants_gem_units,GEO,point,,GEO-1-MM,,point,,,,false,abf-boundaries-v0.2.0,Zhinvali hydroelectric plant,L100000601717,hydropower,operating,130
+G100000603690,energy_plants_gem_units,GEO,point,TUR,GEO-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Muratli Artvin hydroelectric plant,L100000603654,hydropower,operating,115
+G100000604572,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,true,abf-boundaries-v0.2.0,Lower Namakhvani hydroelectric plant,L100000601708,hydropower,cancelled,333
+G100000604663,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Nenskra hydroelectric plant,L100000601709,hydropower,pre_construction,280
+G100000604918,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,true,abf-boundaries-v0.2.0,Upper Namakhvani hydroelectric plant,L100000601715,hydropower,cancelled,100
+G100000804572,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,true,abf-boundaries-v0.2.0,Akhali Samgori solar farm,L100000804003,utility-scale solar,announced,96
+G100000907725,energy_plants_gem_units,GEO,point,,GEO-1-SK,,point,,,,false,abf-boundaries-v0.2.0,Kartli wind farm,L100000905631,wind,operating,20.7
+G100000907822,energy_plants_gem_units,GEO,point,,GEO-1-SK,,point,,,,true,abf-boundaries-v0.2.0,Nigoza wind farm,L100000905699,wind,pre_construction,50
+G100000907823,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,true,abf-boundaries-v0.2.0,Central Wind Energy Power Station,L100000905700,wind,cancelled,120
+G100000907834,energy_plants_gem_units,GEO,point,,GEO-1-SK,,point,,,,true,abf-boundaries-v0.2.0,Ruisi (Chero) wind farm,L100000905711,wind,cancelled,12.6
+G100000907835,energy_plants_gem_units,GEO,point,,GEO-1-SJ,,point,,,,true,abf-boundaries-v0.2.0,Paravani wind farm,L100000905712,wind,cancelled,30
+G100000907909,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,true,abf-boundaries-v0.2.0,Zestaponi Wind Power Station,L100000905773,wind,cancelled,50
+G100000927773,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Imereti wind farm,L100000922274,wind,cancelled,85
+G100000927774,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Imereti wind farm,L100000922274,wind,cancelled,15
+G100000927775,energy_plants_gem_units,GEO,point,,GEO-1-SK,,point,,,,false,abf-boundaries-v0.2.0,Kaspi wind farm,L100000922275,wind,shelved,54
+G100000927776,energy_plants_gem_units,GEO,point,,GEO-1-MM,,point,,,,false,abf-boundaries-v0.2.0,Tbilisi wind farm,L100000922276,wind,cancelled,54
+G100001018706,energy_plants_gem_units,GEO,point,,GEO-1-SK,,point,,,,true,abf-boundaries-v0.2.0,Ruisi (Peri) wind farm,L100001016774,wind,pre_construction,206
+G100001018707,energy_plants_gem_units,GEO,point,,GEO-1-SK,,point,,,,true,abf-boundaries-v0.2.0,Kareli wind farm,L100001016775,wind,announced,30
+G100001027257,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Gumati I hydroelectric plant,L100001023052,hydropower,operating,48
+G100001027258,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Rioni hydroelectric plant,L100001023053,hydropower,operating,54
+G100001050767,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,true,abf-boundaries-v0.2.0,Terjola wind farm,L100001045160,wind,announced,45
+G100001051730,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Vartsikhe I hydroelectric plant,L100001045887,hydropower,operating,46
+G100001051731,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Vartsikhe II hydroelectric plant,L100001045888,hydropower,operating,46
+G100001051732,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Vartsikhe III hydroelectric plant,L100001045889,hydropower,operating,46
+G100001051733,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,false,abf-boundaries-v0.2.0,Vartsikhe IV hydroelectric plant,L100001045890,hydropower,operating,46
+G100001051734,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,true,abf-boundaries-v0.2.0,Khobi 2 hydroelectric plant,L100001045892,hydropower,operating,46
+G100001051735,energy_plants_gem_units,GEO,point,,GEO-1-SJ,,point,,,,true,abf-boundaries-v0.2.0,Mtkvari hydroelectric plant,L100001045894,hydropower,construction,53
+G100001051736,energy_plants_gem_units,GEO,point,,GEO-1-AJ,,point,,,,true,abf-boundaries-v0.2.0,Khelvachauri hydroelectric plant,L100001045895,hydropower,operating,47
+G100001051737,energy_plants_gem_units,GEO,point,,GEO-1-AJ,,point,,,,false,abf-boundaries-v0.2.0,Kirnati hydroelectric plant,L100001045896,hydropower,operating,51
+G100001051738,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,true,abf-boundaries-v0.2.0,Khobi 1 hydroelectric plant,L100001045897,hydropower,pre_construction,46
+G100001062605,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,false,abf-boundaries-v0.2.0,Shaori hydroelectric plant,L100001054713,hydropower,operating,40
+G100001062606,energy_plants_gem_units,GEO,point,,GEO-1-MM,,point,,,,false,abf-boundaries-v0.2.0,Zahesi hydroelectric plant,L100001054714,hydropower,operating,37
+G100001073323,energy_plants_gem_units,GEO,point,,GEO-1-SZ,,point,,,,false,abf-boundaries-v0.2.0,Mestiachala II hydroelectric plant,L100001063785,hydropower,operating,30
+G100001073324,energy_plants_gem_units,GEO,point,,GEO-1-GU,,point,,,,true,abf-boundaries-v0.2.0,Bakhvi II hydroelectric plant,L100001063786,hydropower,construction,32
+G100001073325,energy_plants_gem_units,GEO,point,,GEO-1-RL,,point,,,,true,abf-boundaries-v0.2.0,Jonouli II hydroelectric plant,L100001063787,hydropower,pre_construction,32
+G100001073326,energy_plants_gem_units,GEO,point,,GEO-1-GU,,point,,,,true,abf-boundaries-v0.2.0,Zoti hydroelectric plant,L100001063788,hydropower,pre_construction,46
+G100001087421,energy_plants_gem_units,GEO,point,TUR,GEO-1-SJ,,point,,,,false,abf-boundaries-v0.2.0,Merekler Reg. ve Algolu Hybrid solar project,L100001077591,utility-scale solar,operating,1.7
+G100001090770,energy_plants_gem_units,GEO,point,,GEO-1-KK,,point,,,,true,abf-boundaries-v0.2.0,Marneuli solar farm,L100001080825,utility-scale solar,announced,73
+G100001090771,energy_plants_gem_units,GEO,point,,GEO-1-IM,,point,,,,true,abf-boundaries-v0.2.0,Imereti (Gogni) wind farm,L100001080827,wind,announced,224
+G100001090772,energy_plants_gem_units,GEO,point,,GEO-1-KA,,point,,,,true,abf-boundaries-v0.2.0,Zemo wind farm,L100001080828,wind,announced,18.8

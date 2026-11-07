@@ -1,0 +1,90 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000114308,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Yayu power station,L100000104610,coal,shelved,90
+G100000200003,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Omo Kuraz 2 Sugar Factory power station,L100000200003,bioenergy,operating,60
+G100000200004,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Omo Kuraz 3 Sugar Factory power station,L100000200004,bioenergy,operating,76
+G100000200005,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Finchaa Sugar Factory power station,L100000200005,bioenergy,operating,31
+G100000200009,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Omo Kuraz 1 Sugar Factory power station,L100000200009,bioenergy,mothballed,35
+G100000200011,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Tana Beles Sugar Factory power station,L100000200011,bioenergy,operating,45
+G100000200012,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Tendeho Sugar Factory power station,L100000200012,bioenergy,mothballed,60
+G100000200013,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Tendeho Sugar Factory power station,L100000200012,bioenergy,cancelled,80
+G100000200015,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Welkait Sugar Factory power station,L100000200014,bioenergy,cancelled,30
+G100000200016,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Welkait Sugar Factory power station,L100000200014,bioenergy,cancelled,30
+G100000200018,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Wonji Shoa Sugar Factory power station,L100000200016,bioenergy,operating,31
+G100000201687,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Welkait Sugar Factory power station,L100000200014,bioenergy,cancelled,30
+G100000201688,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Welkait Sugar Factory power station,L100000200014,bioenergy,cancelled,30
+G100000407076,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Mekelle Industrial Zone power station,L100000406744,oil/gas,cancelled,500
+G100000601592,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Aleltu East hydroelectric plant,L100000601574,hydropower,cancelled,186
+G100000601593,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Aleltu West hydroelectric plant,L100000601575,hydropower,cancelled,265
+G100000601596,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Beles hydroelectric plant,L100000601578,hydropower,operating,460
+G100000601602,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Fincha Amerti Neshe hydroelectric plant,L100000601584,hydropower,operating,97
+G100000601603,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Fincha hydroelectric plant,L100000601585,hydropower,operating,134
+G100000601604,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Geba 1 hydroelectric plant,L100000601586,hydropower,pre_construction,220
+G100000601605,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Geba 2 hydroelectric plant,L100000601587,hydropower,pre_construction,165
+G100000601606,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Genale Dawa III hydroelectric plant,L100000601588,hydropower,operating,254
+G100000601607,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Genale Dawa VI hydroelectric plant,L100000601589,hydropower,pre_construction,256
+G100000601610,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Gilgel Gibe I hydroelectric plant,L100000601592,hydropower,operating,184
+G100000601611,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Gilgel Gibe II hydroelectric plant,L100000601593,hydropower,operating,420
+G100000601612,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Gilgel Gibe III hydroelectric plant,L100000601594,hydropower,operating,1870
+G100000601613,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Gojeb hydroelectric plant,L100000601595,hydropower,cancelled,153
+G100000601615,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Grand Ethiopian Renaissance hydroelectric plant,L100000601596,hydropower,operating,5150
+G100000601617,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Karadobi hydroelectric plant,L100000601598,hydropower,pre_construction,1600
+G100000601618,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Koysha hydroelectric plant,L100000601599,hydropower,construction,2160
+G100000601619,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Melka Wakena hydroelectric plant,L100000601600,hydropower,operating,153
+G100000601621,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Tekeze I hydroelectric plant,L100000601602,hydropower,operating,300
+G100000601623,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Halelle Werabesa II hydroelectric plant,L100000601604,hydropower,pre_construction,326
+G100000604236,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Baro 1 hydroelectric plant,L100000601576,hydropower,cancelled,200
+G100000604237,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Baro 2 hydroelectric plant,L100000601577,hydropower,cancelled,500
+G100000604301,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Chemoga Yeda I hydroelectric plant,L100000601579,hydropower,pre_construction,162
+G100000604302,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Chemoga Yeda II hydroelectric plant,L100000601580,hydropower,pre_construction,118
+G100000604326,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Dabus I hydroelectric plant,L100000601581,hydropower,shelved,304
+G100000604327,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Dabus II hydroelectric plant,L100000601582,hydropower,shelved,494
+G100000604349,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Didessa hydroelectric plant,L100000601583,hydropower,pre_construction,301
+G100000604391,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Genale Dawa V hydroelectric plant,L100000604223,hydropower,pre_construction,100
+G100000604392,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Gengi hydroelectric plant,L100000601590,hydropower,cancelled,200
+G100000604395,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Gilgel Gibe V hydroelectric plant,L100000601591,hydropower,cancelled,660
+G100000604616,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Mendya hydroelectric plant,L100000601601,hydropower,cancelled,1700
+G100000604858,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Tams hydroelectric plant,L100000604368,hydropower,pre_construction,2000
+G100000604874,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Tekeze II hydroelectric plant,L100000601603,hydropower,cancelled,450
+G100000700008,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluto Langano geothermal power plant,L100000700004,geothermal,construction,35
+G100000700052,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Corbetti geothermal power plant,L100000700034,geothermal,pre_construction,50
+G100000700053,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Corbetti geothermal power plant,L100000700034,geothermal,pre_construction,100
+G100000700284,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Tendaho geothermal power plant,L100000700173,geothermal,pre_construction,180
+G100000700300,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Tulu Moye geothermal power plant,L100000700181,geothermal,cancelled,50
+G100000700301,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Tulu Moye geothermal power plant,L100000700181,geothermal,cancelled,100
+G100000800004,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,ACWA Dicheto solar farm,L100000800004,utility-scale solar,cancelled,125
+G100000800005,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,ACWA Gad solar farm,L100000800005,utility-scale solar,cancelled,125
+G100000800257,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Metehara solar farm,L100000800212,utility-scale solar,pre_construction,100
+G100000800398,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Tigray Effort solar farm,L100000800327,utility-scale solar,cancelled,500
+G100000814112,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Gad 2 solar farm,L100000811598,utility-scale solar,announced,125
+G100000814113,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Humera solar farm,L100000811599,utility-scale solar,shelved,100
+G100000814114,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Hurso solar farm,L100000811600,utility-scale solar,shelved,125
+G100000814115,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Mekele solar farm,L100000811601,utility-scale solar,shelved,100
+G100000814116,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Metema solar farm,L100000811602,utility-scale solar,shelved,125
+G100000814117,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Weranso solar farm,L100000811603,utility-scale solar,announced,150
+G100000814118,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Wolenchiti solar farm,L100000811604,utility-scale solar,cancelled,150
+G100000900030,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Adama wind farm,L100000900028,wind,operating,51
+G100000900031,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Adama wind farm,L100000900028,wind,operating,153
+G100000900032,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Aysha wind farm,L100000900029,wind,operating,120
+G100000900033,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Aysha wind farm,L100000900029,wind,operating,120
+G100000900034,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Aysha wind farm,L100000900029,wind,announced,152
+G100000900036,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashegoda wind farm,L100000900030,wind,operating,30
+G100000900037,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashegoda wind farm,L100000900030,wind,operating,45
+G100000900038,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Ashegoda wind farm,L100000900030,wind,operating,45
+G100000900068,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Assela wind farm,L100000900052,wind,operating,100
+G100000900105,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Debre Berhan wind farm,L100000900083,wind,cancelled,100
+G100000900106,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Debre Berhan wind farm,L100000900083,wind,cancelled,300
+G100000900181,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Mesebo-Harena wind farm,L100000900140,wind,cancelled,42
+G100000920648,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Adigala wind farm,L100000916615,wind,announced,150
+G100000920649,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Assela wind farm,L100000900052,wind,shelved,150
+G100000920650,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Deday wind farm,L100000916616,wind,announced,134
+G100000920651,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Dire Dawa wind farm,L100000916617,wind,shelved,150
+G100001005193,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluto Langano geothermal power plant,L100000700004,geothermal,construction,35
+G100001020986,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Ethiopia Roadmap (Masdar) solar farm,L100001018731,utility-scale solar,pre_construction,500
+G100001020987,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Ethiopia Roadmap (Masdar) solar farm,L100001018731,utility-scale solar,announced,1500
+G100001020989,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Aysha wind farm,L100000900029,wind,announced,300
+G100001027229,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Awash II hydroelectric plant,L100001023024,hydropower,operating,64
+G100001031109,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Tis Abay II hydroelectric plant,L100001025939,hydropower,operating,73
+G100001031117,energy_plants_gem_units,ETH,point,,,,,,,,true,abf-boundaries-v0.2.0,Halelle Werabesa I hydroelectric plant,L100001025946,hydropower,pre_construction,96
+G100001048258,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Aluto Langano geothermal power plant,L100000700004,geothermal,mothballed,7.3
+G100001052183,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Reppie Waste to Energy power station,L100001046241,bioenergy,operating,25
+G100001062571,energy_plants_gem_units,ETH,point,,,,,,,,false,abf-boundaries-v0.2.0,Koka hydroelectric plant,L100001054679,hydropower,operating,42

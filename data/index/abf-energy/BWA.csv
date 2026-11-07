@@ -1,0 +1,60 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101578,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,CIC Domestic power station,L100000100107,coal,cancelled,300
+G100000106539,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabesekwa Export Independent Power Plant,L100000100108,coal,shelved,150
+G100000106540,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabesekwa Export Independent Power Plant,L100000100108,coal,shelved,150
+G100000106541,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabesekwa Export Independent Power Plant,L100000100108,coal,shelved,150
+G100000106542,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mabesekwa Export Independent Power Plant,L100000100108,coal,shelved,150
+G100000106964,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,construction,175
+G100000106965,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,construction,175
+G100000106966,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,cancelled,300
+G100000106967,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,cancelled,300
+G100000106968,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,cancelled,800
+G100000106969,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,cancelled,800
+G100000106970,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,cancelled,800
+G100000106971,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula West power station,L100000100110,coal,shelved,600
+G100000106972,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamantswe power station,L100000100111,coal,cancelled,600
+G100000107021,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule A Power Station,L100000100113,coal,operating,33
+G100000107022,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule A Power Station,L100000100113,coal,operating,33
+G100000107023,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule A Power Station,L100000100113,coal,operating,33
+G100000107024,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule A Power Station,L100000100113,coal,operating,33
+G100000107025,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,operating,150
+G100000107026,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,operating,150
+G100000107027,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,operating,150
+G100000107028,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,operating,150
+G100000107029,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,cancelled,150
+G100000107030,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,cancelled,150
+G100000107031,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,cancelled,150
+G100000107032,energy_plants_gem_units,BWA,point,,,,,,,,false,abf-boundaries-v0.2.0,Morupule B power station,L100000100114,coal,cancelled,150
+G100000108904,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sechaba power station,L100000100115,coal,cancelled,150
+G100000108905,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sechaba power station,L100000100115,coal,cancelled,150
+G100000108937,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sese Integrated Power Project,L100000100116,coal,shelved,225
+G100000108938,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Sese Integrated Power Project,L100000100116,coal,shelved,225
+G100000111942,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mookane Domestic Power Project,L100000100112,coal,cancelled,150
+G100000111943,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mookane Domestic Power Project,L100000100112,coal,cancelled,150
+G100000114855,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Morupule IPP,L100000104773,coal,cancelled,150
+G100000114856,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Morupule IPP,L100000104773,coal,cancelled,150
+G100000114857,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Morupule IPP,L100000104773,coal,cancelled,150
+G100000114858,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Morupule IPP,L100000104773,coal,cancelled,150
+G100000411377,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Francistown APR power station,L100000408150,oil/gas,operating,70
+G100000800186,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Jwaneng solar farm,L100000800147,utility-scale solar,pre_construction,100
+G100000800338,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Selebi-Phikwe solar farm,L100000800286,utility-scale solar,announced,100
+G100000800393,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tati solar farm,L100000800323,utility-scale solar,pre_construction,50
+G100000800394,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tati solar farm,L100000800323,utility-scale solar,pre_construction,50
+G100000814071,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Botswana CSP I solar farm,L100000811567,utility-scale solar,announced,100
+G100000814072,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Botswana CSP I solar farm,L100000811567,utility-scale solar,announced,100
+G100000814073,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mega Solar Initiative solar farm (Botswana),L100000811568,utility-scale solar,pre_construction,250
+G100000814074,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mega Solar Initiative solar farm (Botswana),L100000811568,utility-scale solar,pre_construction,1125
+G100000814075,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mega Solar Initiative solar farm (Botswana),L100000811568,utility-scale solar,pre_construction,1125
+G100000814076,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tlou Lesedi solar farm,L100000811569,utility-scale solar,pre_construction,20
+G100001020575,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmadinare Solar Complex,L100001018434,utility-scale solar,operating,60
+G100001020576,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmadinare Solar Complex,L100001018434,utility-scale solar,operating,60
+G100001020578,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Leupane Energy Hub solar farm,L100001018437,utility-scale solar,pre_construction,250
+G100001020579,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Leupane Energy Hub solar farm,L100001018437,utility-scale solar,announced,250
+G100001020587,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Palapye (Solarcentury Africa) solar farm,L100001018443,utility-scale solar,pre_construction,100
+G100001020589,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kgalagadi wind farm,L100001018446,wind,announced,50
+G100001022881,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,construction,175
+G100001022882,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Mmamabula Energy Project,L100000100109,coal,construction,175
+G100001052552,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,New Morupule power station,L100001046505,coal,announced,615
+G100001071939,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Lotsane solar farm,L100001062634,utility-scale solar,pre_construction,100
+G100001071943,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Letlhakane wind farm,L100001062637,wind,pre_construction,100
+G100001071944,energy_plants_gem_units,BWA,point,,,,,,,,true,abf-boundaries-v0.2.0,Letlhakane solar farm,L100001062638,utility-scale solar,pre_construction,100

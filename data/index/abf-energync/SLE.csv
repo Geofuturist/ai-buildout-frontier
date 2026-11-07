@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000831270,energy_plants_gem_tzsam_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Newton SL solar project,L100000827723,utility-scale solar,operating,4.3
+G100001021328,energy_plants_gem_tzsam_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Planet Solar Energy Project solar farm,L100001018978,utility-scale solar,pre_construction,4.1
+G100001023923,energy_plants_gem_tzsam_units,SLE,point,,,,,,,,false,abf-boundaries-v0.2.0,Port Loko District solar project,L100001020954,utility-scale solar,operating,1.8

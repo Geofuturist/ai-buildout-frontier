@@ -1,0 +1,66 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000201703,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kakira Sugar power station,L100000201412,bioenergy,operating,30
+G100000413492,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Tororo power station,L100000409026,oil/gas,operating,89
+G100000413493,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Namanve Thermal power station,L100000409027,oil/gas,operating,50
+G100000413494,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mutundwe power station,L100000409028,oil/gas,operating,50
+G100000603711,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Bujagali hydroelectric plant,L100000603675,hydropower,operating,250
+G100000603712,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Isimba hydroelectric plant,L100000603676,hydropower,operating,183
+G100000603715,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiira hydroelectric plant,L100000603679,hydropower,operating,200
+G100000603716,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nalubaale hydroelectric plant,L100000603680,hydropower,operating,180
+G100000604216,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Ayago hydroelectric plant,L100000603674,hydropower,pre_construction,840
+G100000604501,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Karuma hydroelectric plant,L100000603677,hydropower,operating,600
+G100000604513,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kiba hydroelectric plant,L100000603678,hydropower,pre_construction,400
+G100000604688,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Oriang hydroelectric plant,L100000603681,hydropower,announced,392
+G100000700031,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Buranga geothermal power plant,L100000700021,geothermal,cancelled,100
+G100000700127,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Katwe geothermal power plant,L100000700076,geothermal,cancelled,200
+G100000800099,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ceec solar farm,L100000800077,utility-scale solar,cancelled,250
+G100000800100,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ceec solar farm,L100000800077,utility-scale solar,cancelled,250
+G100000800137,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ergon Solair solar farm,L100000800106,utility-scale solar,cancelled,125
+G100000800138,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ergon Solair solar farm,L100000800106,utility-scale solar,cancelled,125
+G100000800139,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ergon Solair solar farm,L100000800106,utility-scale solar,cancelled,125
+G100000800140,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ergon Solair solar farm,L100000800106,utility-scale solar,cancelled,125
+G100000800187,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kabulasoke solar farm,L100000800148,utility-scale solar,operating,24
+G100000800241,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lira solar farm,L100000800196,utility-scale solar,pre_construction,50
+G100000800279,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Nkonge solar farm,L100000800233,utility-scale solar,operating,23
+G100000814244,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Bukedea solar farm,L100000811682,utility-scale solar,announced,20
+G100000814245,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Iganga solar farm,L100000811683,utility-scale solar,announced,20
+G100000814246,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kapeeka solar farm,L100000811684,utility-scale solar,announced,20
+G100000814247,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kumi solar farm,L100000811685,utility-scale solar,announced,20
+G100000814248,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Namugoga Solar Power Station,L100000811686,utility-scale solar,announced,50
+G100000814249,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Paliisa solar farm,L100000811687,utility-scale solar,announced,20
+G100000814250,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tororo solar farm,L100000811688,utility-scale solar,announced,20
+G100000900086,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Karamoja wind farm,L100000900066,wind,announced,120
+G100000900087,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,West Nile wind farm,L100000900067,wind,announced,10
+G100000920689,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Rupa Wind Power Plant,L100000916650,wind,cancelled,20
+G100000920690,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Tororo wind farm,L100000916651,wind,cancelled,20
+G100001020127,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Ituka solar farm,L100001018087,utility-scale solar,construction,24
+G100001020128,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Uganda (AMEA) solar farm,L100001018088,utility-scale solar,announced,25
+G100001020129,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Uganda (Masdar) solar farm,L100001018089,utility-scale solar,announced,150
+G100001020130,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Lake Albert (Uganda) solar farm,L100001018090,utility-scale solar,announced,15
+G100001020134,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kween solar farm,L100001018094,utility-scale solar,announced,150
+G100001020984,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kampala Waste to Energy power station,L100001018730,bioenergy,pre_construction,40
+G100001030399,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Muzizi hydroelectric plant,L100001025635,hydropower,announced,48
+G100001052292,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lugazi Sugar power station,L100001046302,bioenergy,operating,9.5
+G100001052293,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Lugazi Sugar power station,L100001046302,bioenergy,operating,26
+G100001052294,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Kaliro Sugar power station,L100001046303,bioenergy,operating,12
+G100001052296,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Mayuge Sugar power station,L100001046304,bioenergy,operating,9.2
+G100001055193,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Buyende nuclear power plant,L100001048158,nuclear,announced,1000
+G100001055194,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Buyende nuclear power plant,L100001048158,nuclear,announced,1000
+G100001055195,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakasongola nuclear power plant,L100001048159,nuclear,announced,1200
+G100001055196,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakasongola nuclear power plant,L100001048159,nuclear,announced,1200
+G100001055197,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakasongola nuclear power plant,L100001048159,nuclear,announced,1200
+G100001055198,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakasongola nuclear power plant,L100001048159,nuclear,announced,1200
+G100001055199,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakasongola nuclear power plant,L100001048159,nuclear,announced,1200
+G100001055200,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Nakasongola nuclear power plant,L100001048159,nuclear,announced,1200
+G100001055201,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kiruhura nuclear power plant,L100001048160,nuclear,announced,1200
+G100001055202,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kiruhura nuclear power plant,L100001048160,nuclear,announced,1200
+G100001055203,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kiruhura nuclear power plant,L100001048160,nuclear,announced,1200
+G100001055204,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kiruhura nuclear power plant,L100001048160,nuclear,announced,1200
+G100001055205,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamwo nuclear power plant,L100001048161,nuclear,announced,1000
+G100001055206,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamwo nuclear power plant,L100001048161,nuclear,announced,1000
+G100001055207,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamwo nuclear power plant,L100001048161,nuclear,announced,1000
+G100001055208,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Lamwo nuclear power plant,L100001048161,nuclear,announced,1000
+G100001073379,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,Kapeeka (EA Astrovolt) solar farm,L100001063829,utility-scale solar,pre_construction,100
+G100001092208,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Achwa I hydroelectric plant,L100001081890,hydropower,operating,42
+G100001092210,energy_plants_gem_units,UGA,point,,,,,,,,false,abf-boundaries-v0.2.0,Achwa II hydroelectric plant,L100001081892,hydropower,operating,42
+G100001093688,energy_plants_gem_units,UGA,point,,,,,,,,true,abf-boundaries-v0.2.0,NLS Waste power station,L100001083034,bioenergy,pre_construction,35

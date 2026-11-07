@@ -188,5 +188,6 @@ export function countryOnly(rows: Row[], hasAdm1: boolean): number {
 
 export const fillTemplate = (t: string, v: Record<string, string | number>): string => t.replace(/\{(\w+)\}/g, (m, k) => (k in v ? String(v[k]) : m));
 
-export const fmtInt = (n: number): string => (n >= 10000 ? n.toLocaleString('en-US') : String(n));
+/** thousands with a comma from 1,000, as in every published text (RES_texts_INDEX r4 4) */
+export const fmtInt = (n: number): string => n.toLocaleString('en-US');
 export const fmtMw = (n: number): string => `${n.toLocaleString('en-US', { maximumFractionDigits: n < 100 ? 1 : 0 })} MW`;

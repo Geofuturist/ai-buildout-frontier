@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001022825,energy_plants_gem_tzsam_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Al Fashir solar project,L100001020052,utility-scale solar,operating,5.6
+G100001022826,energy_plants_gem_tzsam_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,El Daein solar project,L100001020053,utility-scale solar,operating,5.7
+G100001074546,energy_plants_gem_tzsam_units,SDN,point,,,,,,,,false,abf-boundaries-v0.2.0,Atbarah solar project,L100001064760,utility-scale solar,operating,1.2

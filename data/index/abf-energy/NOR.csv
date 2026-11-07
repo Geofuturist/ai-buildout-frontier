@@ -1,0 +1,646 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407317,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1547,point,,,,true,abf-boundaries-v0.2.0,Nyhamna Reserve power station,L100000406851,oil/gas,retired,60
+G100000407318,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1547,point,,,,true,abf-boundaries-v0.2.0,Nyhamna Reserve power station,L100000406851,oil/gas,retired,60
+G100000407319,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1547,point,,,,true,abf-boundaries-v0.2.0,Nyhamna Reserve power station,L100000406851,oil/gas,retired,60
+G100000407321,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4631,point,,,,false,abf-boundaries-v0.2.0,Mongstad power station,L100000406853,oil/gas,operating,294
+G100000410482,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,false,abf-boundaries-v0.2.0,Hammerfest Snohvit Terminal power station,L100000407847,oil/gas,operating,229
+G100000602916,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3451,point,,,,false,abf-boundaries-v0.2.0,Åbjøra hydroelectric plant,L100000602883,hydropower,operating,95
+G100000602917,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5601,point,,,,false,abf-boundaries-v0.2.0,Alta hydroelectric plant,L100000602884,hydropower,operating,150
+G100000602918,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4207,point,,,,false,abf-boundaries-v0.2.0,Åna-Sira hydroelectric plant,L100000602885,hydropower,operating,150
+G100000602919,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4640,point,,,,false,abf-boundaries-v0.2.0,Årøy hydroelectric plant,L100000602886,hydropower,operating,90
+G100000602920,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Åskåra 1 hydroelectric plant,L100000602887,hydropower,operating,85
+G100000602921,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1563,point,,,,false,abf-boundaries-v0.2.0,Aura hydroelectric plant,L100000602888,hydropower,operating,283
+G100000602922,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4641,point,,,,false,abf-boundaries-v0.2.0,Aurland 1 hydroelectric plant,L100000602889,hydropower,operating,840
+G100000602923,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4641,point,,,,false,abf-boundaries-v0.2.0,Aurland 2 hydroelectric plant,L100000602890,hydropower,operating,70
+G100000602924,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4641,point,,,,false,abf-boundaries-v0.2.0,Aurland 3 hydroelectric plant,L100000602891,hydropower,operating,290
+G100000602925,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3449,point,,,,false,abf-boundaries-v0.2.0,Bagn hydroelectric plant,L100000602892,hydropower,operating,75
+G100000602926,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4622,point,,,,false,abf-boundaries-v0.2.0,Bjølvo hydroelectric plant,L100000602893,hydropower,operating,103
+G100000602927,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4617,point,,,,false,abf-boundaries-v0.2.0,Blåfalli III hydroelectric plant,L100000602894,hydropower,operating,113
+G100000602928,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4617,point,,,,false,abf-boundaries-v0.2.0,Blåfalli Vik hydroelectric plant,L100000602895,hydropower,operating,240
+G100000602929,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3105,point,,,,false,abf-boundaries-v0.2.0,Borgund hydroelectric plant,L100000602896,hydropower,operating,212
+G100000602930,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5001,point,,,,false,abf-boundaries-v0.2.0,Bratsberg hydroelectric plant,L100000602897,hydropower,operating,132
+G100000602931,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5022,point,,,,false,abf-boundaries-v0.2.0,Brattset hydroelectric plant,L100000602898,hydropower,operating,80
+G100000602932,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4221,point,,,,false,abf-boundaries-v0.2.0,Brokke hydroelectric plant,L100000602899,hydropower,operating,379
+G100000602933,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4628,point,,,,false,abf-boundaries-v0.2.0,Dale II hydroelectric plant,L100000602900,hydropower,operating,150
+G100000602934,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1563,point,,,,false,abf-boundaries-v0.2.0,Driva hydroelectric plant,L100000602901,hydropower,operating,144
+G100000602935,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1108,point,,,,false,abf-boundaries-v0.2.0,Duge hydroelectric plant,L100000602902,hydropower,operating,200
+G100000602936,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4638,point,,,,false,abf-boundaries-v0.2.0,Eiriksdal hydroelectric plant,L100000602903,hydropower,operating,81
+G100000602937,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4621,point,,,,false,abf-boundaries-v0.2.0,Evanger hydroelectric plant,L100000602904,hydropower,operating,330
+G100000602938,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4032,point,,,,false,abf-boundaries-v0.2.0,Finndøla hydroelectric plant,L100000602905,hydropower,operating,108
+G100000602939,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1108,point,,,,false,abf-boundaries-v0.2.0,Flørli hydroelectric plant,L100000602906,hydropower,operating,80
+G100000602940,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4644,point,,,,false,abf-boundaries-v0.2.0,Fortun hydroelectric plant,L100000602907,hydropower,operating,270
+G100000602941,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3433,point,,,,false,abf-boundaries-v0.2.0,Framruste hydroelectric plant,L100000602908,hydropower,operating,75
+G100000602942,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5022,point,,,,false,abf-boundaries-v0.2.0,Grana hydroelectric plant,L100000602909,hydropower,operating,75
+G100000602943,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1539,point,,,,false,abf-boundaries-v0.2.0,Grytten hydroelectric plant,L100000602910,hydropower,operating,144
+G100000602944,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5540,point,,,,false,abf-boundaries-v0.2.0,Guoláš hydroelectric plant,L100000602911,hydropower,operating,82
+G100000602945,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3438,point,,,,false,abf-boundaries-v0.2.0,Harpefossen hydroelectric plant,L100000602912,hydropower,operating,108
+G100000602946,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3324,point,,,,false,abf-boundaries-v0.2.0,Hemsil II hydroelectric plant,L100000602913,hydropower,operating,110
+G100000602947,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3324,point,,,,false,abf-boundaries-v0.2.0,Hemsil III hydroelectric plant,L100000602914,hydropower,pre_construction,83
+G100000602948,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4024,point,,,,false,abf-boundaries-v0.2.0,Hjartdøla hydroelectric plant,L100000602915,hydropower,operating,120
+G100000602949,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3330,point,,,,false,abf-boundaries-v0.2.0,Hol 1 hydroelectric plant,L100000602916,hydropower,operating,230
+G100000602950,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4222,point,,,,false,abf-boundaries-v0.2.0,Holen I-II hydroelectric plant,L100000602917,hydropower,operating,200
+G100000602951,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4222,point,,,,false,abf-boundaries-v0.2.0,Holen III hydroelectric plant,L100000602918,hydropower,operating,150
+G100000602952,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4638,point,,,,false,abf-boundaries-v0.2.0,Høyanger K5A hydroelectric plant,L100000602919,hydropower,operating,93
+G100000602953,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3405,point,,,,false,abf-boundaries-v0.2.0,Hunderfossen hydroelectric plant,L100000602920,hydropower,operating,112
+G100000602954,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1134,point,,,,false,abf-boundaries-v0.2.0,Hylen hydroelectric plant,L100000602921,hydropower,operating,160
+G100000602955,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5520,point,,,,false,abf-boundaries-v0.2.0,Innset hydroelectric plant,L100000602922,hydropower,operating,91
+G100000602956,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4644,point,,,,false,abf-boundaries-v0.2.0,Jostedal hydroelectric plant,L100000602923,hydropower,operating,290
+G100000602957,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3316,point,,,,false,abf-boundaries-v0.2.0,Kaggefoss hydroelectric plant,L100000602924,hydropower,operating,88
+G100000602958,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4647,point,,,,false,abf-boundaries-v0.2.0,Kjøsnesfjorden hydroelectric plant,L100000602925,hydropower,operating,84
+G100000602959,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1845,point,,,,false,abf-boundaries-v0.2.0,Kobbelv hydroelectric plant,L100000602926,hydropower,operating,300
+G100000602960,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1811,point,,,,false,abf-boundaries-v0.2.0,Kolsvik hydroelectric plant,L100000602927,hydropower,operating,128
+G100000602961,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1134,point,,,,false,abf-boundaries-v0.2.0,Kvilldal hydroelectric plant,L100000602928,hydropower,operating,1240
+G100000602962,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4228,point,,,,false,abf-boundaries-v0.2.0,Kvinen hydroelectric plant,L100000602929,hydropower,operating,80
+G100000602963,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3118,point,,,,false,abf-boundaries-v0.2.0,Kykkelsrud-Fossumfoss hydroelectric plant,L100000602930,hydropower,operating,230
+G100000602964,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4619,point,,,,false,abf-boundaries-v0.2.0,Lang Sima hydroelectric plant,L100000602931,hydropower,operating,580
+G100000602965,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1833,point,,,,false,abf-boundaries-v0.2.0,Langvatn hydroelectric plant,L100000602932,hydropower,operating,90
+G100000602966,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4644,point,,,,false,abf-boundaries-v0.2.0,Leirdøla hydroelectric plant,L100000602933,hydropower,operating,115
+G100000602967,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1841,point,,,,false,abf-boundaries-v0.2.0,Lomi hydroelectric plant,L100000602934,hydropower,operating,120
+G100000602968,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1108,point,,,,false,abf-boundaries-v0.2.0,Lysebotn I hydroelectric plant,L100000602935,hydropower,operating,228
+G100000602969,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1108,point,,,,false,abf-boundaries-v0.2.0,Lysebotn II hydroelectric plant,L100000602936,hydropower,operating,370
+G100000602970,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4026,point,,,,false,abf-boundaries-v0.2.0,Mår hydroelectric plant,L100000602937,hydropower,operating,185
+G100000602971,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4634,point,,,,false,abf-boundaries-v0.2.0,Matre Haugsdal hydroelectric plant,L100000602938,hydropower,operating,180
+G100000602972,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4634,point,,,,false,abf-boundaries-v0.2.0,Matre hydroelectric plant,L100000602939,hydropower,operating,150
+G100000602973,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4617,point,,,,false,abf-boundaries-v0.2.0,Mauranger hydroelectric plant,L100000602940,hydropower,operating,256
+G100000602974,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5034,point,,,,false,abf-boundaries-v0.2.0,Meråker hydroelectric plant,L100000602941,hydropower,operating,87
+G100000602975,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4628,point,,,,false,abf-boundaries-v0.2.0,Myster hydroelectric plant,L100000602942,hydropower,operating,110
+G100000602976,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4643,point,,,,false,abf-boundaries-v0.2.0,Naddvik hydroelectric plant,L100000602943,hydropower,operating,112
+G100000602977,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5033,point,,,,false,abf-boundaries-v0.2.0,Nea hydroelectric plant,L100000602944,hydropower,operating,222
+G100000602978,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3435,point,,,,false,abf-boundaries-v0.2.0,Nedre Otta hydroelectric plant,L100000602945,hydropower,operating,86
+G100000602979,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1832,point,,,,false,abf-boundaries-v0.2.0,Nedre Røssåga hydroelectric plant,L100000602946,hydropower,operating,350
+G100000602980,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3436,point,,,,false,abf-boundaries-v0.2.0,Nedre Vinstra hydroelectric plant,L100000602947,hydropower,operating,344
+G100000602981,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3322,point,,,,false,abf-boundaries-v0.2.0,Nes hydroelectric plant,L100000602948,hydropower,operating,260
+G100000602982,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4026,point,,,,false,abf-boundaries-v0.2.0,New Vemork hydroelectric plant,L100000602949,hydropower,operating,204
+G100000602983,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3338,point,,,,false,abf-boundaries-v0.2.0,Nore 1 hydroelectric plant,L100000602950,hydropower,operating,206
+G100000602984,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4618,point,,,,false,abf-boundaries-v0.2.0,Oksla hydroelectric plant,L100000602951,hydropower,operating,220
+G100000602985,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3422,point,,,,false,abf-boundaries-v0.2.0,Osa hydroelectric plant,L100000602952,hydropower,operating,90
+G100000602986,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1832,point,,,,false,abf-boundaries-v0.2.0,Øvre Røssåga hydroelectric plant,L100000602953,hydropower,operating,159
+G100000602987,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3436,point,,,,false,abf-boundaries-v0.2.0,Øvre Vinstra hydroelectric plant,L100000602954,hydropower,operating,140
+G100000602988,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3433,point,,,,false,abf-boundaries-v0.2.0,Øyberget hydroelectric plant,L100000602955,hydropower,operating,104
+G100000602989,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1833,point,,,,false,abf-boundaries-v0.2.0,Rana hydroelectric plant,L100000602956,hydropower,operating,500
+G100000602990,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3228,point,,,,false,abf-boundaries-v0.2.0,Rånåsfoss 3 hydroelectric plant,L100000602957,hydropower,operating,81
+G100000602991,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4639,point,,,,false,abf-boundaries-v0.2.0,Refsdal hydroelectric plant,L100000602958,hydropower,operating,90
+G100000602992,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3424,point,,,,false,abf-boundaries-v0.2.0,Rendal 2 hydroelectric plant,L100000602959,hydropower,operating,114
+G100000602993,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3424,point,,,,false,abf-boundaries-v0.2.0,Rendalen 1 hydroelectric plant,L100000602960,hydropower,operating,92
+G100000602994,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4618,point,,,,false,abf-boundaries-v0.2.0,Røldal hydroelectric plant,L100000602961,hydropower,operating,160
+G100000602995,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3437,point,,,,false,abf-boundaries-v0.2.0,Rosten hydroelectric plant,L100000602962,hydropower,operating,80
+G100000602996,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4026,point,,,,false,abf-boundaries-v0.2.0,Såheim hydroelectric plant,L100000602963,hydropower,operating,187
+G100000602997,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3105,point,,,,false,abf-boundaries-v0.2.0,Sarp hydroelectric plant,L100000602964,hydropower,operating,80
+G100000602998,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1134,point,,,,false,abf-boundaries-v0.2.0,Saurdal hydroelectric plant,L100000602965,hydropower,operating,640
+G100000602999,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1845,point,,,,false,abf-boundaries-v0.2.0,Siso hydroelectric plant,L100000602966,hydropower,operating,180
+G100000603000,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4224,point,,,,false,abf-boundaries-v0.2.0,Skjerka hydroelectric plant,L100000602967,hydropower,operating,104
+G100000603001,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1806,point,,,,false,abf-boundaries-v0.2.0,Skjomen hydroelectric plant,L100000602968,hydropower,operating,300
+G100000603002,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3303,point,,,,false,abf-boundaries-v0.2.0,Skollenborg hydroelectric plant,L100000602969,hydropower,operating,97
+G100000603003,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3118,point,,,,false,abf-boundaries-v0.2.0,Solbergfoss 1 hydroelectric plant,L100000602970,hydropower,operating,111
+G100000603004,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3118,point,,,,false,abf-boundaries-v0.2.0,Solbergfoss 2 hydroelectric plant,L100000602971,hydropower,operating,100
+G100000603005,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4227,point,,,,false,abf-boundaries-v0.2.0,Solhom hydroelectric plant,L100000602972,hydropower,operating,200
+G100000603006,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4036,point,,,,false,abf-boundaries-v0.2.0,Songa hydroelectric plant,L100000602973,hydropower,operating,136
+G100000603007,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1135,point,,,,false,abf-boundaries-v0.2.0,Sønnå Hoy hydroelectric plant,L100000602974,hydropower,operating,212
+G100000603008,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4223,point,,,,false,abf-boundaries-v0.2.0,Steinsfoss hydroelectric plant,L100000602975,hydropower,operating,115
+G100000603009,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4629,point,,,,false,abf-boundaries-v0.2.0,Steinsland hydroelectric plant,L100000602976,hydropower,operating,170
+G100000603010,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5520,point,,,,false,abf-boundaries-v0.2.0,Straumsmo hydroelectric plant,L100000602977,hydropower,operating,130
+G100000603011,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1134,point,,,,false,abf-boundaries-v0.2.0,Suldal 1 hydroelectric plant,L100000602978,hydropower,operating,170
+G100000603012,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1134,point,,,,false,abf-boundaries-v0.2.0,Suldal 2 hydroelectric plant,L100000602979,hydropower,operating,150
+G100000603013,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4022,point,,,,false,abf-boundaries-v0.2.0,Sundsbarm hydroelectric plant,L100000602980,hydropower,operating,110
+G100000603014,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1838,point,,,,false,abf-boundaries-v0.2.0,Sundsfjord hydroelectric plant,L100000602981,hydropower,operating,102
+G100000603015,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1837,point,,,,false,abf-boundaries-v0.2.0,Svartisen hydroelectric plant,L100000602982,hydropower,operating,600
+G100000603017,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4005,point,,,,false,abf-boundaries-v0.2.0,Svelgfoss hydroelectric plant,L100000602984,hydropower,operating,92
+G100000603018,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4619,point,,,,false,abf-boundaries-v0.2.0,Sy Sima hydroelectric plant,L100000602985,hydropower,operating,720
+G100000603019,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1578,point,,,,false,abf-boundaries-v0.2.0,Tafjord 4 hydroelectric plant,L100000602986,hydropower,operating,113
+G100000603020,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1578,point,,,,false,abf-boundaries-v0.2.0,Tafjord 5 hydroelectric plant,L100000602987,hydropower,operating,83
+G100000603021,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1108,point,,,,false,abf-boundaries-v0.2.0,Tjodan hydroelectric plant,L100000602988,hydropower,operating,113
+G100000603022,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4228,point,,,,false,abf-boundaries-v0.2.0,Tjørhom hydroelectric plant,L100000602989,hydropower,operating,120
+G100000603023,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4034,point,,,,false,abf-boundaries-v0.2.0,Tokke hydroelectric plant,L100000602990,hydropower,operating,440
+G100000603024,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4228,point,,,,false,abf-boundaries-v0.2.0,Tonstad hydroelectric plant,L100000602991,hydropower,operating,960
+G100000603025,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3448,point,,,,false,abf-boundaries-v0.2.0,Torpa hydroelectric plant,L100000602992,hydropower,operating,164
+G100000603026,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1566,point,,,,false,abf-boundaries-v0.2.0,Trollheim hydroelectric plant,L100000602993,hydropower,operating,130
+G100000603027,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5044,point,,,,false,abf-boundaries-v0.2.0,Tunnsjødal hydroelectric plant,L100000602994,hydropower,operating,171
+G100000603028,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4643,point,,,,false,abf-boundaries-v0.2.0,Tyin hydroelectric plant,L100000602995,hydropower,operating,390
+G100000603029,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4618,point,,,,false,abf-boundaries-v0.2.0,Tysso 2 hydroelectric plant,L100000602996,hydropower,operating,220
+G100000603030,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3328,point,,,,false,abf-boundaries-v0.2.0,Usta hydroelectric plant,L100000602997,hydropower,operating,186
+G100000603031,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3338,point,,,,false,abf-boundaries-v0.2.0,Uvdal 1 hydroelectric plant,L100000602998,hydropower,operating,90
+G100000603032,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3116,point,,,,false,abf-boundaries-v0.2.0,Vamma hydroelectric plant,L100000602999,hydropower,operating,344
+G100000603033,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4036,point,,,,false,abf-boundaries-v0.2.0,Vinje hydroelectric plant,L100000603000,hydropower,operating,309
+G100000604607,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4617,point,,,,false,abf-boundaries-v0.2.0,Mauranger 2 hydroelectric plant,L100000604282,hydropower,pre_construction,630
+G100000910605,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1149,point,,,,true,abf-boundaries-v0.2.0,Karmoy Wind Turbine Demonstration Area,L100000907929,wind,operating,10
+G100000910628,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1144,point,,,,true,abf-boundaries-v0.2.0,Kvitsoy Wind Turbine Demonstration Area,L100000907952,wind,operating,10
+G100000910644,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,true,abf-boundaries-v0.2.0,Larvik wind farm,L100000907966,wind,cancelled,10
+G100000910700,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1144,point,,,,true,abf-boundaries-v0.2.0,Marine Energy Test Centre wind farm,L100000908015,wind,operating,10
+G100000910702,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1103,point,,,,true,abf-boundaries-v0.2.0,Marine Energy Test Centre wind farm,L100000908015,wind,operating,10
+G100000910705,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5544,point,,,,true,abf-boundaries-v0.2.0,Maurneset wind farm,L100000908018,wind,cancelled,10
+G100000910750,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1121,point,,,,true,abf-boundaries-v0.2.0,Njafjell wind farm,L100000908063,wind,cancelled,10
+G100000910812,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1103,point,,,,true,abf-boundaries-v0.2.0,Rennesoy Wind Turbine Demonstration Area,L100000908123,wind,operating,10
+G100000910870,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1122,point,,,,true,abf-boundaries-v0.2.0,Skurvenuten wind farm,L100000908179,wind,operating,10
+G100000910893,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4649,point,,,,true,abf-boundaries-v0.2.0,Test Area Stadt wind farm,L100000908202,wind,cancelled,10
+G100000910894,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1122,point,,,,true,abf-boundaries-v0.2.0,Tindafjellet wind farm,L100000908203,wind,operating,10
+G100000911788,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4216,point,,,,true,abf-boundaries-v0.2.0,Lillesand wind farm,L100000909056,wind,shelved,12.4
+G100000912058,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5057,point,,,,false,abf-boundaries-v0.2.0,Valsneset wind farm,L100000909314,wind,operating,12
+G100000912406,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5058,point,,,,false,abf-boundaries-v0.2.0,Skomakerfjellet wind farm,L100000909634,wind,operating,13
+G100000912635,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5616,point,,,,true,abf-boundaries-v0.2.0,Donnesfjord wind farm,L100000909846,wind,cancelled,14
+G100000912690,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1119,point,,,,false,abf-boundaries-v0.2.0,Hog Jaeren wind farm,L100000909896,wind,operating,14
+G100000912994,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1576,point,,,,true,abf-boundaries-v0.2.0,Bergefjellet wind farm,L100000910167,wind,cancelled,15
+G100000913072,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1146,point,,,,true,abf-boundaries-v0.2.0,Gismarvik wind farm,L100000910237,wind,operating,12.6
+G100000913142,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5501,point,,,,true,abf-boundaries-v0.2.0,Masvik wind farm,L100000910301,wind,cancelled,15
+G100000913248,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5616,point,,,,true,abf-boundaries-v0.2.0,Soroya wind farm,L100000910395,wind,cancelled,15
+G100000914290,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4602,point,,,,false,abf-boundaries-v0.2.0,Mehuken wind farm,L100000911324,wind,operating,18
+G100000914355,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1122,point,,,,true,abf-boundaries-v0.2.0,Nevlandsheia wind farm,L100000911384,wind,cancelled,19
+G100000914454,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1149,point,,,,true,abf-boundaries-v0.2.0,Arafjellet wind farm,L100000911474,wind,cancelled,20
+G100000914484,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1867,point,,,,true,abf-boundaries-v0.2.0,Bufjellet wind farm,L100000911499,wind,cancelled,20
+G100000914565,energy_plants_gem_units,NOR,field,,NOR-1-18,NOR-2-1804,point,,,,true,abf-boundaries-v0.2.0,Helligvaer wind farm,L100000911571,wind,cancelled,20
+G100000914953,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4649,point,,,,false,abf-boundaries-v0.2.0,Okla wind farm,L100000911915,wind,operating,21
+G100000915625,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1124,point,,,,true,abf-boundaries-v0.2.0,Risavika wind farm,L100000912507,wind,cancelled,24
+G100000915664,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4602,point,,,,true,abf-boundaries-v0.2.0,Vågsvåg wind farm,L100000912540,wind,cancelled,24
+G100000915794,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1806,point,,,,false,abf-boundaries-v0.2.0,Nygardsfjellet wind farm,L100000912659,wind,operating,25
+G100000915815,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1804,point,,,,true,abf-boundaries-v0.2.0,Straumoya wind farm,L100000912677,wind,cancelled,25
+G100000915816,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1101,point,,,,false,abf-boundaries-v0.2.0,Svaheia wind farm,L100000912678,wind,operating,25
+G100000916129,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1108,point,,,,true,abf-boundaries-v0.2.0,Vardafjellet wind farm,L100000912941,wind,operating,27
+G100000916460,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1160,point,,,,true,abf-boundaries-v0.2.0,Bukkanibba wind farm,L100000913225,wind,cancelled,30
+G100000916532,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4626,point,,,,true,abf-boundaries-v0.2.0,Kollsnes wind farm,L100000913287,wind,cancelled,30
+G100000916580,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1111,point,,,,true,abf-boundaries-v0.2.0,Moldalsknuten wind farm,L100000913327,wind,pre_construction,36
+G100000916638,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Stigafjellet wind farm,L100000913374,wind,operating,30
+G100000916928,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1836,point,,,,true,abf-boundaries-v0.2.0,Kvalhovudet wind farm,L100000913612,wind,cancelled,33
+G100000916935,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5630,point,,,,true,abf-boundaries-v0.2.0,Laukvikdalsfjellet wind farm,L100000913617,wind,cancelled,33
+G100000917027,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1580,point,,,,false,abf-boundaries-v0.2.0,Haram wind farm,L100000913697,wind,operating,34
+G100000917128,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5530,point,,,,true,abf-boundaries-v0.2.0,Flatneset wind farm,L100000913784,wind,cancelled,35
+G100000917307,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4207,point,,,,true,abf-boundaries-v0.2.0,Skorveheia wind farm,L100000913942,wind,cancelled,45
+G100000917317,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1151,point,,,,true,abf-boundaries-v0.2.0,Utsira wind farm,L100000913951,wind,cancelled,36
+G100000917445,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5618,point,,,,false,abf-boundaries-v0.2.0,Havøygavlen wind farm,L100000914066,wind,operating,38
+G100000917523,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,false,abf-boundaries-v0.2.0,Kjollefjord wind farm,L100000914130,wind,operating,39
+G100000917549,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Soltuva wind farm,L100000914153,wind,cancelled,39
+G100000917554,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5060,point,,,,false,abf-boundaries-v0.2.0,Ytre Vikna wind farm,L100000914157,wind,operating,39
+G100000917614,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5630,point,,,,true,abf-boundaries-v0.2.0,Eliastoppen wind farm,L100000914208,wind,cancelled,40
+G100000917626,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5618,point,,,,false,abf-boundaries-v0.2.0,Havøygavlen wind farm,L100000914066,wind,retired,40
+G100000917642,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4615,point,,,,false,abf-boundaries-v0.2.0,Midtfjellet wind farm,L100000914232,wind,operating,40
+G100000917652,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3454,point,,,,true,abf-boundaries-v0.2.0,Oye wind farm,L100000914240,wind,cancelled,40
+G100000917659,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4631,point,,,,true,abf-boundaries-v0.2.0,Radoy wind farm,L100000914246,wind,cancelled,40
+G100000917667,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4625,point,,,,true,abf-boundaries-v0.2.0,Selbjorn wind farm,L100000914252,wind,cancelled,40
+G100000917674,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1871,point,,,,true,abf-boundaries-v0.2.0,Skavdalsheia wind farm,L100000914258,wind,cancelled,40
+G100000917676,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1573,point,,,,false,abf-boundaries-v0.2.0,Smola wind farm,L100000914260,wind,operating,40
+G100000917677,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3424,point,,,,true,abf-boundaries-v0.2.0,Storfjellet wind farm,L100000914261,wind,cancelled,40
+G100000917678,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4612,point,,,,true,abf-boundaries-v0.2.0,Sveio wind farm,L100000914262,wind,cancelled,40
+G100000917718,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4602,point,,,,true,abf-boundaries-v0.2.0,Kyrkjestein wind farm,L100000914294,wind,cancelled,41
+G100000917774,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1146,point,,,,true,abf-boundaries-v0.2.0,Dalbygda wind farm,L100000914341,wind,cancelled,42
+G100000917976,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3416,point,,,,true,abf-boundaries-v0.2.0,Bjørkebråtaberget wind farm,L100000914514,wind,cancelled,45
+G100000918029,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5630,point,,,,false,abf-boundaries-v0.2.0,Raggovidda wind farm,L100000914561,wind,operating,45
+G100000918036,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4612,point,,,,true,abf-boundaries-v0.2.0,Ryvarden wind farm,L100000914565,wind,cancelled,45
+G100000918129,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1146,point,,,,false,abf-boundaries-v0.2.0,Tysvaer wind farm,L100000914647,wind,operating,47
+G100000918231,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5007,point,,,,true,abf-boundaries-v0.2.0,Rapheia wind farm,L100000914736,wind,cancelled,48
+G100000918249,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Vargheia wind farm,L100000914752,wind,cancelled,48
+G100000918379,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1870,point,,,,false,abf-boundaries-v0.2.0,Ånstadblåheia wind farm,L100000914845,wind,operating,50
+G100000918495,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4207,point,,,,true,abf-boundaries-v0.2.0,Haskogheia wind farm,L100000914943,wind,cancelled,50
+G100000918497,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,true,abf-boundaries-v0.2.0,Hennoy wind farm,L100000914945,wind,operating,50
+G100000918542,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5620,point,,,,true,abf-boundaries-v0.2.0,Mageroya wind farm,L100000914984,wind,cancelled,50
+G100000918579,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3414,point,,,,true,abf-boundaries-v0.2.0,Odal wind farm,L100000915014,wind,operating,50
+G100000918623,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4635,point,,,,true,abf-boundaries-v0.2.0,Setenesfjellet wind farm,L100000915051,wind,cancelled,50
+G100000918701,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4646,point,,,,false,abf-boundaries-v0.2.0,Lutelandet wind farm,L100000915103,wind,operating,51
+G100000918708,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1121,point,,,,true,abf-boundaries-v0.2.0,Sikvalandskula wind farm,L100000915110,wind,cancelled,51
+G100000918725,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5632,point,,,,false,abf-boundaries-v0.2.0,Hamnefjell wind farm,L100000915126,wind,operating,52
+G100000918729,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5630,point,,,,false,abf-boundaries-v0.2.0,Raggovidda wind farm,L100000914561,wind,operating,52
+G100000918745,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4615,point,,,,false,abf-boundaries-v0.2.0,Midtfjellet wind farm,L100000914232,wind,operating,53
+G100000918759,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5534,point,,,,false,abf-boundaries-v0.2.0,Fakken wind farm,L100000915154,wind,operating,54
+G100000918762,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5060,point,,,,false,abf-boundaries-v0.2.0,Hundhammerfjellet (NTE) wind farm,L100000915157,wind,retired,54
+G100000918776,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5007,point,,,,true,abf-boundaries-v0.2.0,Storsnoheia wind farm,L100000915169,wind,cancelled,54
+G100000918795,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5056,point,,,,false,abf-boundaries-v0.2.0,Hitra wind farm,L100000915186,wind,operating,55
+G100000918796,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5060,point,,,,false,abf-boundaries-v0.2.0,Hundhammerfjellet (Tronderenergi; Stw Munchen) wind farm,L100000915187,wind,operating,55
+G100000918802,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3436,point,,,,true,abf-boundaries-v0.2.0,Sillikampen wind farm,L100000915192,wind,cancelled,55
+G100000918803,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1576,point,,,,true,abf-boundaries-v0.2.0,Skardsoya wind farm,L100000915193,wind,cancelled,55
+G100000918824,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3419,point,,,,true,abf-boundaries-v0.2.0,Kjolberget wind farm,L100000915208,wind,operating,56
+G100000918835,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5007,point,,,,true,abf-boundaries-v0.2.0,Jektheia/Oyenskavlen wind farm,L100000915217,wind,cancelled,57
+G100000918837,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1824,point,,,,true,abf-boundaries-v0.2.0,Kovfjellet wind farm,L100000915219,wind,cancelled,57
+G100000918853,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5058,point,,,,false,abf-boundaries-v0.2.0,Bessakerfjellet wind farm,L100000915232,wind,operating,58
+G100000918858,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4615,point,,,,false,abf-boundaries-v0.2.0,Midtfjellet wind farm,L100000914232,wind,operating,58
+G100000918885,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5054,point,,,,true,abf-boundaries-v0.2.0,Benkheia wind farm,L100000915258,wind,cancelled,60
+G100000918888,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5605,point,,,,true,abf-boundaries-v0.2.0,Bjornevatn wind farm,L100000915261,wind,cancelled,60
+G100000918892,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5007,point,,,,true,abf-boundaries-v0.2.0,Breivikfjellet wind farm,L100000915264,wind,cancelled,60
+G100000918901,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1112,point,,,,true,abf-boundaries-v0.2.0,Dufjellet wind farm,L100000915272,wind,cancelled,60
+G100000918903,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Faurefjellet wind farm,L100000915274,wind,cancelled,60
+G100000918905,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5014,point,,,,false,abf-boundaries-v0.2.0,Froya wind farm,L100000915276,wind,operating,60
+G100000918906,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1865,point,,,,true,abf-boundaries-v0.2.0,Gimsoy wind farm,L100000915277,wind,cancelled,60
+G100000918907,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1119,point,,,,false,abf-boundaries-v0.2.0,Hog Jaeren wind farm,L100000909896,wind,operating,60
+G100000918911,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1149,point,,,,true,abf-boundaries-v0.2.0,Karmoy wind farm,L100000915281,wind,cancelled,60
+G100000918914,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5501,point,,,,true,abf-boundaries-v0.2.0,Kroken wind farm,L100000915284,wind,cancelled,60
+G100000918917,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5054,point,,,,true,abf-boundaries-v0.2.0,Markabygda wind farm,L100000915287,wind,cancelled,60
+G100000918959,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1119,point,,,,true,abf-boundaries-v0.2.0,Bjerkreim Gravdal wind farm,L100000915322,wind,operating,63
+G100000918983,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1579,point,,,,true,abf-boundaries-v0.2.0,Fraena wind farm,L100000915341,wind,cancelled,65
+G100000918988,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4613,point,,,,true,abf-boundaries-v0.2.0,Langevag wind farm,L100000915346,wind,cancelled,65
+G100000918991,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5607,point,,,,true,abf-boundaries-v0.2.0,Skallhalsen wind farm,L100000915347,wind,cancelled,65
+G100000919023,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1108,point,,,,true,abf-boundaries-v0.2.0,Sandnes wind farm,L100000915376,wind,cancelled,67
+G100000919051,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Kallursdalsbrottet wind farm,L100000915401,wind,cancelled,69
+G100000919063,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5049,point,,,,true,abf-boundaries-v0.2.0,Aunkrona wind farm,L100000915412,wind,cancelled,70
+G100000919068,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1576,point,,,,true,abf-boundaries-v0.2.0,Ertvagoya East wind farm,L100000915417,wind,cancelled,70
+G100000919069,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4646,point,,,,true,abf-boundaries-v0.2.0,Folkestad wind farm,L100000915418,wind,cancelled,70
+G100000919084,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4649,point,,,,true,abf-boundaries-v0.2.0,Stadlandet wind farm,L100000915429,wind,cancelled,70
+G100000919085,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1824,point,,,,true,abf-boundaries-v0.2.0,Stortuva wind farm,L100000915430,wind,cancelled,70
+G100000919089,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4206,point,,,,false,abf-boundaries-v0.2.0,Lista wind farm,L100000915434,wind,operating,71
+G100000919114,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5006,point,,,,true,abf-boundaries-v0.2.0,Steinheia wind farm,L100000915455,wind,cancelled,72
+G100000919149,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1514,point,,,,true,abf-boundaries-v0.2.0,Haugshornet wind farm,L100000915489,wind,cancelled,75
+G100000919157,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4635,point,,,,true,abf-boundaries-v0.2.0,Sandøy wind farm,L100000915496,wind,pre_construction,75
+G100000919162,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1119,point,,,,true,abf-boundaries-v0.2.0,Bjerkreim Skinansfjellet wind farm,L100000915499,wind,operating,76
+G100000919179,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Holmafjellet wind farm,L100000915511,wind,cancelled,78
+G100000919198,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4227,point,,,,false,abf-boundaries-v0.2.0,Buheii wind farm,L100000915528,wind,operating,79.8
+G100000919207,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4631,point,,,,true,abf-boundaries-v0.2.0,Mjos wind farm,L100000915535,wind,cancelled,80
+G100000919210,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5538,point,,,,true,abf-boundaries-v0.2.0,Rieppi wind farm,L100000915537,wind,cancelled,80
+G100000919212,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1806,point,,,,true,abf-boundaries-v0.2.0,Skogvatnet wind farm,L100000915539,wind,cancelled,80
+G100000919213,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1112,point,,,,true,abf-boundaries-v0.2.0,Stokkafjellet wind farm,L100000915540,wind,cancelled,80
+G100000919251,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5501,point,,,,true,abf-boundaries-v0.2.0,Raudfjell wind farm,L100000915568,wind,operating,84
+G100000919265,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4216,point,,,,true,abf-boundaries-v0.2.0,Oddeheia And Bjelkebert wind farm,L100000915580,wind,shelved,85
+G100000919269,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,true,abf-boundaries-v0.2.0,Bremangerlandet wind farm,L100000915583,wind,cancelled,86
+G100000919282,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Hywind Tampen Floating Offshore wind farm,L100000915593,wind,operating,88
+G100000919287,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,false,abf-boundaries-v0.2.0,Stokkfjellet wind farm,L100000915598,wind,operating,88
+G100000919294,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5605,point,,,,true,abf-boundaries-v0.2.0,Bugoynes wind farm,L100000915603,wind,cancelled,90
+G100000919303,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1111,point,,,,true,abf-boundaries-v0.2.0,Fruknuten wind farm,L100000915611,wind,cancelled,90
+G100000919304,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3401,point,,,,true,abf-boundaries-v0.2.0,Glamberget wind farm,L100000915612,wind,cancelled,90
+G100000919306,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5055,point,,,,true,abf-boundaries-v0.2.0,Heimsfjellet wind farm,L100000915614,wind,cancelled,90
+G100000919310,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4227,point,,,,true,abf-boundaries-v0.2.0,Kvinesheia wind farm,L100000915617,wind,cancelled,90
+G100000919320,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5055,point,,,,true,abf-boundaries-v0.2.0,Rognskog wind farm,L100000915625,wind,cancelled,90
+G100000919322,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Skakksia wind farm,L100000915626,wind,cancelled,90
+G100000919341,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5056,point,,,,false,abf-boundaries-v0.2.0,Hitra wind farm,L100000915186,wind,operating,94
+G100000919350,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Makaknuten wind farm,L100000915651,wind,operating,95
+G100000919383,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1875,point,,,,false,abf-boundaries-v0.2.0,Sorfjord wind farm,L100000915681,wind,operating,99
+G100000919391,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5626,point,,,,true,abf-boundaries-v0.2.0,Digermulen wind farm,L100000915687,wind,cancelled,100
+G100000919394,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5634,point,,,,true,abf-boundaries-v0.2.0,Domen wind farm,L100000915689,wind,cancelled,100
+G100000919400,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,true,abf-boundaries-v0.2.0,Laksefjorden wind farm,L100000915695,wind,cancelled,100
+G100000919409,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1875,point,,,,false,abf-boundaries-v0.2.0,Pohjoinen wind farm,L100000915703,wind,operating,99
+G100000919412,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4613,point,,,,true,abf-boundaries-v0.2.0,Rolfsnes wind farm,L100000915705,wind,cancelled,100
+G100000919415,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5006,point,,,,true,abf-boundaries-v0.2.0,Staurheia wind farm,L100000915708,wind,cancelled,100
+G100000919435,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5630,point,,,,false,abf-boundaries-v0.2.0,Raggovidda wind farm,L100000914561,wind,cancelled,103
+G100000919440,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3414,point,,,,true,abf-boundaries-v0.2.0,Odal wind farm,L100000915014,wind,operating,104
+G100000919442,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4635,point,,,,true,abf-boundaries-v0.2.0,Brosviksata wind farm,L100000915730,wind,cancelled,105
+G100000919448,energy_plants_gem_units,NOR,field,,NOR-1-15,NOR-2-1508,point,,,,true,abf-boundaries-v0.2.0,Steinshamn wind farm,L100000915735,wind,cancelled,105
+G100000919470,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Engvikfjellet wind farm,L100000915750,wind,cancelled,110
+G100000919471,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,true,abf-boundaries-v0.2.0,Hammerfest wind farm,L100000915751,wind,cancelled,110
+G100000919472,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3425,point,,,,true,abf-boundaries-v0.2.0,Kvitvola/Grahogda wind farm,L100000915752,wind,cancelled,110
+G100000919474,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5043,point,,,,true,abf-boundaries-v0.2.0,Nordre Grondalsfjellet wind farm,L100000915754,wind,cancelled,110
+G100000919475,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1573,point,,,,false,abf-boundaries-v0.2.0,Smola wind farm,L100000914260,wind,operating,110
+G100000919476,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4207,point,,,,true,abf-boundaries-v0.2.0,Stemmeheia wind farm,L100000915755,wind,cancelled,110
+G100000919482,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1101,point,,,,false,abf-boundaries-v0.2.0,Egersund wind farm,L100000915759,wind,operating,112
+G100000919483,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3421,point,,,,true,abf-boundaries-v0.2.0,Raskiftet wind farm,L100000915760,wind,operating,112
+G100000919484,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5058,point,,,,false,abf-boundaries-v0.2.0,Kvenndalsfjellet wind farm,L100000915761,wind,operating,113
+G100000919499,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5049,point,,,,true,abf-boundaries-v0.2.0,Innvordjfellet wind farm,L100000915774,wind,shelved,115
+G100000919518,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5632,point,,,,true,abf-boundaries-v0.2.0,Batsfjordfjellet wind farm,L100000915787,wind,cancelled,120
+G100000919520,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1119,point,,,,true,abf-boundaries-v0.2.0,Brusali-Karten wind farm,L100000915788,wind,cancelled,120
+G100000919522,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3105,point,,,,true,abf-boundaries-v0.2.0,Danserfjella wind farm,L100000915790,wind,cancelled,120
+G100000919523,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1160,point,,,,true,abf-boundaries-v0.2.0,Doldarheia wind farm,L100000915791,wind,cancelled,120
+G100000919525,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4220,point,,,,true,abf-boundaries-v0.2.0,Hovatn Aust wind farm,L100000915792,wind,cancelled,120
+G100000919532,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1101,point,,,,true,abf-boundaries-v0.2.0,Oksafjellet wind farm,L100000915799,wind,cancelled,120
+G100000919536,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4224,point,,,,true,abf-boundaries-v0.2.0,Skveneheii wind farm,L100000915803,wind,cancelled,120
+G100000919553,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5058,point,,,,false,abf-boundaries-v0.2.0,Harbaksfjellet wind farm,L100000915818,wind,operating,126
+G100000919563,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,true,abf-boundaries-v0.2.0,Kvalsund wind farm,L100000915828,wind,cancelled,128
+G100000919567,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4215,point,,,,true,abf-boundaries-v0.2.0,E-18 wind farm,L100000915832,wind,cancelled,130
+G100000919569,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3124,point,,,,true,abf-boundaries-v0.2.0,Kjolen wind farm,L100000915834,wind,cancelled,130
+G100000919571,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Remmafjellet wind farm,L100000915835,wind,cancelled,130
+G100000919573,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5049,point,,,,true,abf-boundaries-v0.2.0,Sormarkfjellet wind farm,L100000915837,wind,mothballed,130
+G100000919594,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5049,point,,,,true,abf-boundaries-v0.2.0,Beingardsheia And Mefossheia wind farm,L100000915853,wind,cancelled,140
+G100000919596,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3442,point,,,,true,abf-boundaries-v0.2.0,Skreifjella wind farm,L100000915855,wind,cancelled,140
+G100000919598,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4636,point,,,,true,abf-boundaries-v0.2.0,Ulvegreina wind farm,L100000915857,wind,cancelled,140
+G100000919613,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1836,point,,,,true,abf-boundaries-v0.2.0,Seiskallafjellet wind farm,L100000915870,wind,cancelled,147
+G100000919619,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5028,point,,,,true,abf-boundaries-v0.2.0,Brungfjellet wind farm,L100000915875,wind,cancelled,150
+G100000919624,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4635,point,,,,false,abf-boundaries-v0.2.0,Dalsbotnfjellet wind farm,L100000915880,wind,cancelled,150
+G100000919626,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Hestgrovheia/Landrosheia wind farm,L100000915882,wind,cancelled,150
+G100000919631,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5043,point,,,,true,abf-boundaries-v0.2.0,Mariafjellet wind farm,L100000915887,wind,cancelled,150
+G100000919633,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Moi-/Laksesvelafjellet wind farm,L100000915889,wind,cancelled,150
+G100000919650,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1119,point,,,,true,abf-boundaries-v0.2.0,Bjerkreim Eikeland-Steinsland wind farm,L100000915903,wind,operating,155
+G100000919661,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1871,point,,,,true,abf-boundaries-v0.2.0,Andmyran wind farm,L100000915912,wind,cancelled,160
+G100000919664,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1122,point,,,,true,abf-boundaries-v0.2.0,Gilja wind farm,L100000915915,wind,cancelled,160
+G100000919668,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5618,point,,,,true,abf-boundaries-v0.2.0,Snefjord wind farm,L100000915919,wind,cancelled,160
+G100000919669,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1111,point,,,,true,abf-boundaries-v0.2.0,Tellenes wind farm,L100000915920,wind,operating,168
+G100000919693,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5049,point,,,,true,abf-boundaries-v0.2.0,Rorvassheia wind farm,L100000915942,wind,cancelled,170
+G100000919704,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,true,abf-boundaries-v0.2.0,Falesrassa wind farm,L100000915950,wind,cancelled,180
+G100000919707,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5034,point,,,,true,abf-boundaries-v0.2.0,Kopperaa wind farm,L100000915953,wind,cancelled,180
+G100000919716,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,false,abf-boundaries-v0.2.0,Geitfjellet wind farm,L100000915961,wind,operating,181
+G100000919730,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Guleslettene wind farm,L100000915971,wind,operating,197
+G100000919731,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5501,point,,,,true,abf-boundaries-v0.2.0,Kvitfjell wind farm,L100000915972,wind,operating,197
+G100000919736,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5020,point,,,,true,abf-boundaries-v0.2.0,Blaheia wind farm,L100000915977,wind,cancelled,200
+G100000919738,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,true,abf-boundaries-v0.2.0,Borealis wind farm,L100000915979,wind,cancelled,200
+G100000919741,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Eggjafjellet/Asfjellet wind farm,L100000915982,wind,cancelled,200
+G100000919743,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4615,point,,,,true,abf-boundaries-v0.2.0,Gronafjellet wind farm,L100000915984,wind,cancelled,200
+G100000919744,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5044,point,,,,true,abf-boundaries-v0.2.0,Grondalsfjellet wind farm,L100000915985,wind,cancelled,200
+G100000919747,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Krokstadfjellet wind farm,L100000915988,wind,cancelled,200
+G100000919748,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5054,point,,,,true,abf-boundaries-v0.2.0,Leksvik wind farm,L100000915989,wind,cancelled,200
+G100000919749,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5006,point,,,,true,abf-boundaries-v0.2.0,Sandvassheia/Follaheia wind farm,L100000915990,wind,cancelled,200
+G100000919750,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1111,point,,,,true,abf-boundaries-v0.2.0,Siragrunnen wind farm,L100000915991,wind,cancelled,200
+G100000919759,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4228,point,,,,true,abf-boundaries-v0.2.0,Tonstad wind farm,L100000915998,wind,operating,208
+G100000919774,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1811,point,,,,true,abf-boundaries-v0.2.0,Kalvvatnan wind farm,L100000916010,wind,cancelled,225
+G100000919775,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1834,point,,,,true,abf-boundaries-v0.2.0,Sleneset wind farm,L100000916011,wind,cancelled,225
+G100000919787,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Ulvarudla wind farm,L100000916022,wind,cancelled,231
+G100000919807,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1865,point,,,,true,abf-boundaries-v0.2.0,Gimsoy (Offshore) wind farm,L100000916039,wind,cancelled,250
+G100000919808,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5006,point,,,,true,abf-boundaries-v0.2.0,Haugrossasen wind farm,L100000916040,wind,cancelled,250
+G100000919824,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5058,point,,,,false,abf-boundaries-v0.2.0,Roan wind farm,L100000916052,wind,operating,256
+G100000919835,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5006,point,,,,true,abf-boundaries-v0.2.0,Mefjellet/Trevassheia wind farm,L100000916061,wind,cancelled,273
+G100000919841,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5038,point,,,,true,abf-boundaries-v0.2.0,"Hyllfjellet, Sognavola, Maravola wind farm",L100000916066,wind,cancelled,281
+G100000919856,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5058,point,,,,false,abf-boundaries-v0.2.0,Storheia wind farm,L100000916079,wind,operating,288
+G100000919858,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Tannvikfjellet wind farm,L100000916081,wind,cancelled,290
+G100000919862,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4228,point,,,,true,abf-boundaries-v0.2.0,Bergeheia wind farm,L100000916085,wind,construction,300
+G100000919863,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4226,point,,,,true,abf-boundaries-v0.2.0,Blåberg wind farm,L100000916086,wind,cancelled,300
+G100000919868,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1547,point,,,,true,abf-boundaries-v0.2.0,Havsul wind farm,L100000916091,wind,cancelled,300
+G100000919874,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5054,point,,,,true,abf-boundaries-v0.2.0,Rissa wind farm,L100000916097,wind,cancelled,300
+G100000919877,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,true,abf-boundaries-v0.2.0,Svarthammaren wind farm,L100000916100,wind,shelved,200
+G100000919880,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1149,point,,,,true,abf-boundaries-v0.2.0,Utsira (Offshore) wind farm,L100000916103,wind,cancelled,300
+G100000919883,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5618,point,,,,true,abf-boundaries-v0.2.0,Vilgesrassa wind farm,L100000916106,wind,cancelled,300
+G100000919890,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1824,point,,,,true,abf-boundaries-v0.2.0,Mosjoen wind farm,L100000916112,wind,cancelled,305
+G100000919895,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1833,point,,,,true,abf-boundaries-v0.2.0,Sjonfjellet wind farm,L100000916115,wind,cancelled,310
+G100000919922,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1508,point,,,,true,abf-boundaries-v0.2.0,Havsul wind farm,L100000916091,wind,cancelled,350
+G100000919923,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1554,point,,,,true,abf-boundaries-v0.2.0,Havsul wind farm,L100000916091,wind,cancelled,350
+G100000919925,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5632,point,,,,true,abf-boundaries-v0.2.0,Seglkollfjellet wind farm,L100000916138,wind,cancelled,350
+G100000919939,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5007,point,,,,true,abf-boundaries-v0.2.0,Gronningfjella wind farm,L100000916151,wind,cancelled,378
+G100000919957,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4224,point,,,,true,abf-boundaries-v0.2.0,Honna wind farm,L100000916167,wind,pre_construction,400
+G100000919962,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1824,point,,,,false,abf-boundaries-v0.2.0,Oyfjellet wind farm,L100000916172,wind,operating,400
+G100000919967,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,true,abf-boundaries-v0.2.0,Skjnotingsberg wind farm,L100000916176,wind,cancelled,400
+G100000919994,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4638,point,,,,true,abf-boundaries-v0.2.0,Høyangerfjell wind farm,L100000916197,wind,cancelled,480
+G100000920016,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4220,point,,,,true,abf-boundaries-v0.2.0,Lauvdalsheia wind farm,L100000916218,wind,cancelled,500
+G100000920024,energy_plants_gem_units,NOR,field,,NOR-1-11,NOR-2-1151,point,,,,true,abf-boundaries-v0.2.0,Vestavind wind farm,L100000916224,wind,pre_construction,506
+G100000920041,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5058,point,,,,true,abf-boundaries-v0.2.0,Fosen (Offshore) wind farm,L100000916238,wind,cancelled,600
+G100000920070,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1865,point,,,,true,abf-boundaries-v0.2.0,Lofoten Havkraft wind farm,L100000916263,wind,cancelled,750
+G100000920071,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5626,point,,,,true,abf-boundaries-v0.2.0,Nordkyn wind farm,L100000916264,wind,cancelled,750
+G100000920075,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5534,point,,,,true,abf-boundaries-v0.2.0,Vannoya wind farm,L100000916266,wind,cancelled,775
+G100000920080,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,true,abf-boundaries-v0.2.0,Davvi wind farm,L100000916271,wind,shelved,800
+G100000920082,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1580,point,,,,true,abf-boundaries-v0.2.0,Havsul wind farm,L100000916091,wind,cancelled,800
+G100000920102,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Aegir (Oceanwind) wind farm,L100000916290,wind,cancelled,1000
+G100000920117,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sorlige Nordsjoen wind farm,L100000916303,wind,cancelled,1000
+G100000920123,energy_plants_gem_units,NOR,field,,NOR-1-46,NOR-2-4649,point,,,,true,abf-boundaries-v0.2.0,Stadvind (Offshore) wind farm,L100000916308,wind,cancelled,1080
+G100000920130,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Aegir (Fred Olsen) wind farm,L100000916315,wind,cancelled,1200
+G100000920137,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Idunn wind farm,L100000916319,wind,cancelled,1200
+G100000920140,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1547,point,,,,true,abf-boundaries-v0.2.0,Morevind wind farm,L100000916322,wind,cancelled,1200
+G100000920145,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sønnavind wind farm,L100000916327,wind,announced,506
+G100000920161,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4629,point,,,,true,abf-boundaries-v0.2.0,Hordavind wind farm,L100000916341,wind,operating,682
+G100000925272,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4638,point,,,,true,abf-boundaries-v0.2.0,Industrikraft Snøheia wind farm,L100000920566,wind,pre_construction,350
+G100000925273,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4205,point,,,,true,abf-boundaries-v0.2.0,Sørlige Nordsjø 2 wind farm,L100000920567,wind,pre_construction,1500
+G100000925274,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4205,point,,,,true,abf-boundaries-v0.2.0,Sørlige Nordsjø 2 wind farm,L100000920567,wind,pre_construction,1500
+G100000925275,energy_plants_gem_units,NOR,field,,NOR-1-46,NOR-2-4633,point,,,,true,abf-boundaries-v0.2.0,Trollvind Offshore wind farm,L100000920568,wind,shelved,1000
+G100000925276,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1124,point,,,,true,abf-boundaries-v0.2.0,Utsira Nord 1 wind farm,L100000920569,wind,announced,500
+G100000925277,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1124,point,,,,true,abf-boundaries-v0.2.0,Utsira Nord 2 wind farm,L100000920570,wind,announced,500
+G100000925278,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1124,point,,,,true,abf-boundaries-v0.2.0,Utsira Nord 3 wind farm,L100000920571,wind,announced,500
+G100001001604,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4219,point,,,,true,abf-boundaries-v0.2.0,Gautestad wind farm,L100001001202,wind,announced,85
+G100001001606,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,true,abf-boundaries-v0.2.0,GoliatVind Offshore wind farm,L100001001205,wind,pre_construction,75
+G100001008866,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Geisli Energy solar power project,L100001007656,utility-scale solar,announced,93.6
+G100001008867,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Geisli Energy solar power project,L100001007656,utility-scale solar,announced,93.6
+G100001008868,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Geisli Energy solar power project,L100001007656,utility-scale solar,announced,93.6
+G100001008869,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Geisli Energy solar power project,L100001007656,utility-scale solar,announced,93.6
+G100001008870,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Geisli Energy solar power project,L100001007656,utility-scale solar,announced,93.6
+G100001008871,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Geisli Energy solar power project,L100001007656,utility-scale solar,announced,93.6
+G100001008872,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,true,abf-boundaries-v0.2.0,Geisli Energy solar power project,L100001007656,utility-scale solar,announced,93.6
+G100001026970,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4643,point,,,,false,abf-boundaries-v0.2.0,Offerdal hydroelectric plant,L100001022791,hydropower,pre_construction,47
+G100001026972,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4640,point,,,,false,abf-boundaries-v0.2.0,Leikanger hydroelectric plant,L100001022792,hydropower,operating,77
+G100001026973,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5045,point,,,,false,abf-boundaries-v0.2.0,New Nedre Fiskumfoss hydroelectric plant,L100001022793,hydropower,operating,94
+G100001027348,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,false,abf-boundaries-v0.2.0,Adamselv hydroelectric plant,L100001023143,hydropower,operating,50
+G100001027349,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4205,point,,,,false,abf-boundaries-v0.2.0,Bjelland hydroelectric plant,L100001023144,hydropower,operating,55
+G100001027350,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5041,point,,,,false,abf-boundaries-v0.2.0,Bogna hydroelectric plant,L100001023145,hydropower,operating,57
+G100001027351,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3105,point,,,,false,abf-boundaries-v0.2.0,Borregaard hydroelectric plant,L100001023146,hydropower,operating,54
+G100001027352,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1841,point,,,,false,abf-boundaries-v0.2.0,Fagerli hydroelectric plant,L100001023147,hydropower,operating,48
+G100001027353,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4030,point,,,,false,abf-boundaries-v0.2.0,Fjone hydroelectric plant,L100001023148,hydropower,operating,50
+G100001027354,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5006,point,,,,false,abf-boundaries-v0.2.0,Follafoss hydroelectric plant,L100001023149,hydropower,operating,48
+G100001027355,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4026,point,,,,false,abf-boundaries-v0.2.0,Frøystul hydroelectric plant,L100001023150,hydropower,operating,50
+G100001027356,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4224,point,,,,false,abf-boundaries-v0.2.0,Håverstad hydroelectric plant,L100001023151,hydropower,operating,48
+G100001027357,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4220,point,,,,false,abf-boundaries-v0.2.0,Hekni hydroelectric plant,L100001023152,hydropower,operating,56
+G100001027358,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4644,point,,,,false,abf-boundaries-v0.2.0,Herva hydroelectric plant,L100001023153,hydropower,operating,33
+G100001027359,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4643,point,,,,false,abf-boundaries-v0.2.0,Holsbru hydroelectric plant,L100001023154,hydropower,operating,56
+G100001027360,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4220,point,,,,false,abf-boundaries-v0.2.0,Hovatn hydroelectric plant,L100001023155,hydropower,operating,45
+G100001027361,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4639,point,,,,false,abf-boundaries-v0.2.0,Hove hydroelectric plant,L100001023156,hydropower,operating,68
+G100001027362,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4218,point,,,,false,abf-boundaries-v0.2.0,Iveland 2 hydroelectric plant,L100001023157,hydropower,operating,44
+G100001027363,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4217,point,,,,false,abf-boundaries-v0.2.0,Jørundland hydroelectric plant,L100001023158,hydropower,operating,55
+G100001027364,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4036,point,,,,false,abf-boundaries-v0.2.0,Kjela hydroelectric plant,L100001023159,hydropower,operating,62
+G100001027365,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5546,point,,,,false,abf-boundaries-v0.2.0,Kvænangsbotn hydroelectric plant,L100001023160,hydropower,operating,55
+G100001027366,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1134,point,,,,false,abf-boundaries-v0.2.0,Kvanndal hydroelectric plant,L100001023161,hydropower,operating,40
+G100001027367,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4623,point,,,,false,abf-boundaries-v0.2.0,Kvittingen hydroelectric plant,L100001023162,hydropower,operating,48
+G100001027368,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1865,point,,,,false,abf-boundaries-v0.2.0,Leirfossene hydroelectric plant,L100001023163,hydropower,operating,45
+G100001027369,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4034,point,,,,false,abf-boundaries-v0.2.0,Lio hydroelectric plant,L100001023164,hydropower,operating,43
+G100001027370,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3452,point,,,,false,abf-boundaries-v0.2.0,Lomen hydroelectric plant,L100001023165,hydropower,operating,55
+G100001027371,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4640,point,,,,false,abf-boundaries-v0.2.0,Mel hydroelectric plant,L100001023166,hydropower,operating,52
+G100001027372,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5053,point,,,,false,abf-boundaries-v0.2.0,Mosvik hydroelectric plant,L100001023167,hydropower,operating,37
+G100001027373,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3336,point,,,,false,abf-boundaries-v0.2.0,Mykstufoss hydroelectric plant,L100001023168,hydropower,operating,48
+G100001027374,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5045,point,,,,false,abf-boundaries-v0.2.0,Nedrefiskumfoss hydroelectric plant,L100001023169,hydropower,retired,51
+G100001027375,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,false,abf-boundaries-v0.2.0,Nedrenea hydroelectric plant,L100001023170,hydropower,operating,67
+G100001027376,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4218,point,,,,false,abf-boundaries-v0.2.0,Nomeland hydroelectric plant,L100001023171,hydropower,operating,29
+G100001027377,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4618,point,,,,false,abf-boundaries-v0.2.0,Novle hydroelectric plant,L100001023172,hydropower,operating,40
+G100001027378,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4642,point,,,,false,abf-boundaries-v0.2.0,Øljusjøen hydroelectric plant,L100001023173,hydropower,operating,50
+G100001027379,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5006,point,,,,false,abf-boundaries-v0.2.0,Ormsetfoss hydroelectric plant,L100001023174,hydropower,operating,40
+G100001027380,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4228,point,,,,false,abf-boundaries-v0.2.0,Roskrepp hydroelectric plant,L100001023175,hydropower,operating,50
+G100001027381,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4202,point,,,,false,abf-boundaries-v0.2.0,Rygene hydroelectric plant,L100001023176,hydropower,operating,55
+G100001027382,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1833,point,,,,false,abf-boundaries-v0.2.0,Sjona hydroelectric plant,L100001023177,hydropower,operating,52
+G100001027383,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5605,point,,,,false,abf-boundaries-v0.2.0,Skogfoss hydroelectric plant,L100001023178,hydropower,operating,54
+G100001027384,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1135,point,,,,false,abf-boundaries-v0.2.0,Storlivatn hydroelectric plant,L100001023179,hydropower,operating,48
+G100001027385,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5059,point,,,,false,abf-boundaries-v0.2.0,Svorkmo hydroelectric plant,L100001023180,hydropower,operating,55
+G100001027386,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5034,point,,,,false,abf-boundaries-v0.2.0,Tevla hydroelectric plant,L100001023181,hydropower,operating,50
+G100001027387,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4005,point,,,,false,abf-boundaries-v0.2.0,Tinfos 1 hydroelectric plant,L100001023182,hydropower,operating,41
+G100001027388,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1577,point,,,,false,abf-boundaries-v0.2.0,Tussa hydroelectric plant,L100001023183,hydropower,operating,64
+G100001027389,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4634,point,,,,false,abf-boundaries-v0.2.0,Vemundsbotn hydroelectric plant,L100001023184,hydropower,operating,45
+G100001027390,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5033,point,,,,false,abf-boundaries-v0.2.0,Vessingfoss hydroelectric plant,L100001023185,hydropower,operating,40
+G100001027391,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3454,point,,,,false,abf-boundaries-v0.2.0,Ylja hydroelectric plant,L100001023186,hydropower,operating,66
+G100001027402,energy_plants_gem_units,NOR,point,RUS,NOR-1-56,NOR-2-5605,point,,,,false,abf-boundaries-v0.2.0,Borisoglebskaya hydroelectric plant,L100001023197,hydropower,operating,56
+G100001027405,energy_plants_gem_units,NOR,point,RUS,NOR-1-56,NOR-2-5605,point,,,,false,abf-boundaries-v0.2.0,Hevasaski hydroelectric plant,L100001023200,hydropower,operating,47
+G100001030329,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4644,point,,,,true,abf-boundaries-v0.2.0,Illvatn hydroelectric plant,L100001025610,hydropower,pre_construction,48
+G100001030651,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4611,point,,,,false,abf-boundaries-v0.2.0,Løkjelsvatn hydroelectric plant,L100001025766,hydropower,operating,60
+G100001052117,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4214,point,,,,false,abf-boundaries-v0.2.0,Bøylefoss hydroelectric plant,L100001046188,hydropower,operating,65
+G100001052118,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3316,point,,,,false,abf-boundaries-v0.2.0,Embretsfoss 4 hydroelectric plant,L100001046189,hydropower,operating,51
+G100001052119,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1824,point,,,,false,abf-boundaries-v0.2.0,Grytåga hydroelectric plant,L100001046190,hydropower,operating,62
+G100001052120,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3326,point,,,,false,abf-boundaries-v0.2.0,Hemsil I hydroelectric plant,L100001046191,hydropower,operating,70
+G100001052121,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3330,point,,,,false,abf-boundaries-v0.2.0,Hol III hydroelectric plant,L100001046192,hydropower,operating,60
+G100001052122,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3338,point,,,,false,abf-boundaries-v0.2.0,Nore 2 hydroelectric plant,L100001046193,hydropower,operating,57
+G100001052124,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4629,point,,,,false,abf-boundaries-v0.2.0,Nygard hydroelectric plant,L100001046194,hydropower,operating,56
+G100001052125,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4638,point,,,,false,abf-boundaries-v0.2.0,Østerbø hydroelectric plant,L100001046195,hydropower,operating,48
+G100001052127,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3428,point,,,,false,abf-boundaries-v0.2.0,Savalen hydroelectric plant,L100001046197,hydropower,operating,58
+G100001052129,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1806,point,,,,false,abf-boundaries-v0.2.0,Sildvik hydroelectric plant,L100001046199,hydropower,operating,65
+G100001052130,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1841,point,,,,false,abf-boundaries-v0.2.0,Sjønstå hydroelectric plant,L100001046200,hydropower,operating,66
+G100001052134,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1135,point,,,,false,abf-boundaries-v0.2.0,Sønnå L hydroelectric plant,L100001046203,hydropower,operating,63
+G100001052135,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1875,point,,,,false,abf-boundaries-v0.2.0,Sørfjord I hydroelectric plant,L100001046205,hydropower,operating,68
+G100001052136,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3426,point,,,,false,abf-boundaries-v0.2.0,Tolga hydroelectric plant,L100001046206,hydropower,operating,45
+G100001052629,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3122,point,,,,true,abf-boundaries-v0.2.0,Ørje solar farm,L100001046553,utility-scale solar,pre_construction,13.7
+G100001052630,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3423,point,,,,false,abf-boundaries-v0.2.0,Furuseth solar farm,L100001046554,utility-scale solar,operating,7
+G100001052642,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4032,point,,,,true,abf-boundaries-v0.2.0,Fyresdal solar farm,L100001046560,utility-scale solar,operating,14.8
+G100001052643,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3413,point,,,,true,abf-boundaries-v0.2.0,Nordvi solar farm,L100001046561,utility-scale solar,pre_construction,8.1
+G100001052644,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3310,point,,,,false,abf-boundaries-v0.2.0,Lamoen solar farm,L100001046562,utility-scale solar,pre_construction,28
+G100001052645,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3209,point,,,,false,abf-boundaries-v0.2.0,Gislevold solar farm,L100001046563,utility-scale solar,pre_construction,30
+G100001052646,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3418,point,,,,false,abf-boundaries-v0.2.0,Haugerberget solar farm,L100001046564,utility-scale solar,pre_construction,45
+G100001052712,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5056,point,,,,false,abf-boundaries-v0.2.0,Hitra wind farm,L100000915186,wind,pre_construction,85
+G100001052713,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1573,point,,,,false,abf-boundaries-v0.2.0,Smola wind farm,L100000914260,wind,announced,40
+G100001052714,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,false,abf-boundaries-v0.2.0,Kjollefjord wind farm,L100000914130,wind,pre_construction,170
+G100001052715,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Vestavind wind farm,L100000916224,wind,announced,506
+G100001052716,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Vestavind wind farm,L100000916224,wind,announced,506
+G100001052717,energy_plants_gem_units,NOR,field,,NOR-1-46,NOR-2-4602,point,,,,true,abf-boundaries-v0.2.0,Vestavind wind farm,L100000916224,wind,announced,506
+G100001052718,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Vestavind wind farm,L100000916224,wind,announced,506
+G100001052720,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nordvest Offshore wind farm,L100001046606,wind,announced,506
+G100001052721,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nordvest Offshore wind farm,L100001046606,wind,announced,506
+G100001052722,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nordvest Offshore wind farm,L100001046606,wind,announced,506
+G100001052725,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nordavind Offshore wind farm,L100001046607,wind,announced,506
+G100001052726,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Nordavind Offshore wind farm,L100001046607,wind,announced,506
+G100001052727,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sørvest Offshore wind farm,L100001046608,wind,announced,1496
+G100001052728,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sørvest Offshore wind farm,L100001046608,wind,announced,1496
+G100001052729,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sørvest Offshore wind farm,L100001046608,wind,announced,1496
+G100001052730,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sørvest Offshore wind farm,L100001046608,wind,announced,1496
+G100001052731,energy_plants_gem_units,NOR,field,,,,,no_unit_near,,,true,abf-boundaries-v0.2.0,Sørvest Offshore wind farm,L100001046608,wind,announced,1496
+G100001052733,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1114,point,,,,true,abf-boundaries-v0.2.0,Moifjellet wind farm,L100001046609,wind,announced,260
+G100001052734,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,false,abf-boundaries-v0.2.0,Oksefjorden wind farm,L100001046610,wind,announced,600
+G100001052735,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5630,point,,,,false,abf-boundaries-v0.2.0,Rubbedalshøgda wind farm,L100001046611,wind,announced,600
+G100001055183,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3101,point,,,,true,abf-boundaries-v0.2.0,Norsk Kjernekraft nuclear power plant,L100001048152,nuclear,announced,300
+G100001055184,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3101,point,,,,true,abf-boundaries-v0.2.0,Norsk Kjernekraft nuclear power plant,L100001048152,nuclear,announced,300
+G100001055185,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3101,point,,,,true,abf-boundaries-v0.2.0,Norsk Kjernekraft nuclear power plant,L100001048152,nuclear,announced,300
+G100001055186,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3101,point,,,,true,abf-boundaries-v0.2.0,Norsk Kjernekraft nuclear power plant,L100001048152,nuclear,announced,300
+G100001062672,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5045,point,,,,false,abf-boundaries-v0.2.0,Aunfoss hydroelectric plant,L100001054780,hydropower,operating,30
+G100001062673,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1806,point,,,,false,abf-boundaries-v0.2.0,Båtsvatn hydroelectric plant,L100001054781,hydropower,operating,30
+G100001062674,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3205,point,,,,false,abf-boundaries-v0.2.0,Bingsfoss hydroelectric plant,L100001054782,hydropower,operating,33
+G100001062675,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1841,point,,,,false,abf-boundaries-v0.2.0,Daja hydroelectric plant,L100001054783,hydropower,operating,31
+G100001062676,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1135,point,,,,false,abf-boundaries-v0.2.0,Dalvatn hydroelectric plant,L100001054784,hydropower,operating,37
+G100001062677,energy_plants_gem_units,NOR,point,,NOR-1-55,NOR-2-5524,point,,,,false,abf-boundaries-v0.2.0,Dividalen hydroelectric plant,L100001054785,hydropower,operating,30
+G100001062678,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4030,point,,,,false,abf-boundaries-v0.2.0,Dynjanfoss hydroelectric plant,L100001054786,hydropower,operating,39
+G100001062679,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4624,point,,,,false,abf-boundaries-v0.2.0,Eikelandsosen hydroelectric plant,L100001054787,hydropower,operating,35
+G100001062680,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3228,point,,,,false,abf-boundaries-v0.2.0,Funnefoss hydroelectric plant,L100001054788,hydropower,operating,44
+G100001062681,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1837,point,,,,false,abf-boundaries-v0.2.0,Glomfjord hydroelectric plant,L100001054789,hydropower,operating,32
+G100001062682,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4005,point,,,,false,abf-boundaries-v0.2.0,Grønvollfoss hydroelectric plant,L100001054790,hydropower,operating,40
+G100001062683,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4216,point,,,,false,abf-boundaries-v0.2.0,Hanefoss hydroelectric plant,L100001054791,hydropower,operating,22
+G100001062684,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4611,point,,,,false,abf-boundaries-v0.2.0,Hardeland hydroelectric plant,L100001054792,hydropower,operating,36
+G100001062685,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5032,point,,,,false,abf-boundaries-v0.2.0,Hegsetfoss hydroelectric plant,L100001054793,hydropower,operating,37
+G100001062686,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4629,point,,,,false,abf-boundaries-v0.2.0,Hellandsfoss hydroelectric plant,L100001054794,hydropower,operating,35
+G100001062687,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4621,point,,,,false,abf-boundaries-v0.2.0,Hodnaberg hydroelectric plant,L100001054795,hydropower,operating,43
+G100001062688,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3305,point,,,,false,abf-boundaries-v0.2.0,Hofsfoss hydroelectric plant,L100001054796,hydropower,operating,32
+G100001062689,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1130,point,,,,false,abf-boundaries-v0.2.0,Jøssang hydroelectric plant,L100001054797,hydropower,operating,38
+G100001062690,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4617,point,,,,false,abf-boundaries-v0.2.0,Jukla hydroelectric plant,L100001054798,hydropower,operating,44
+G100001062691,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4628,point,,,,false,abf-boundaries-v0.2.0,Kaldestad hydroelectric plant,L100001054799,hydropower,operating,24
+G100001062692,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1845,point,,,,false,abf-boundaries-v0.2.0,Lakshola hydroelectric plant,L100001054800,hydropower,operating,34
+G100001062693,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4205,point,,,,false,abf-boundaries-v0.2.0,Laudal hydroelectric plant,L100001054801,hydropower,operating,26
+G100001062694,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3405,point,,,,false,abf-boundaries-v0.2.0,Mesna hydroelectric plant,L100001054802,hydropower,operating,42
+G100001062695,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3316,point,,,,false,abf-boundaries-v0.2.0,Ramfoss hydroelectric plant,L100001054803,hydropower,operating,30
+G100001062696,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4642,point,,,,false,abf-boundaries-v0.2.0,Stuvane hydroelectric plant,L100001054804,hydropower,operating,42
+G100001062697,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5001,point,,,,false,abf-boundaries-v0.2.0,Svean hydroelectric plant,L100001054805,hydropower,operating,27
+G100001062698,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3427,point,,,,false,abf-boundaries-v0.2.0,Ulset hydroelectric plant,L100001054806,hydropower,operating,35
+G100001062699,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3330,point,,,,false,abf-boundaries-v0.2.0,Ustekveikja hydroelectric plant,L100001054807,hydropower,operating,37
+G100001062700,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4018,point,,,,false,abf-boundaries-v0.2.0,Vrangfoss hydroelectric plant,L100001054808,hydropower,operating,42
+G100001064396,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3116,point,,,,false,abf-boundaries-v0.2.0,Vamma hydroelectric plant,L100000602999,hydropower,pre_construction,22
+G100001064397,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5001,point,,,,false,abf-boundaries-v0.2.0,Svean hydroelectric plant,L100001054805,hydropower,pre_construction,36
+G100001064534,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1577,point,,,,false,abf-boundaries-v0.2.0,Åmela hydroelectric plant,L100001056477,hydropower,operating,34
+G100001064535,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Åskåra 2 hydroelectric plant,L100001056478,hydropower,operating,42
+G100001064536,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5028,point,,,,false,abf-boundaries-v0.2.0,Håen hydroelectric plant,L100001056479,hydropower,operating,30
+G100001064537,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3105,point,,,,false,abf-boundaries-v0.2.0,Hafslund hydroelectric plant,L100001056480,hydropower,operating,34
+G100001064538,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4618,point,,,,false,abf-boundaries-v0.2.0,Mågeli hydroelectric plant,L100001056481,hydropower,operating,30
+G100001064539,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4026,point,,,,false,abf-boundaries-v0.2.0,Mæl hydroelectric plant,L100001056482,hydropower,operating,38
+G100001064540,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3228,point,,,,false,abf-boundaries-v0.2.0,Rånåsfoss 2 hydroelectric plant,L100001056483,hydropower,operating,44
+G100001064541,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3433,point,,,,false,abf-boundaries-v0.2.0,Skjåk hydroelectric plant,L100001056484,hydropower,operating,32
+G100001064542,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5055,point,,,,false,abf-boundaries-v0.2.0,Søa hydroelectric plant,L100001056485,hydropower,operating,37
+G100001064543,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5028,point,,,,false,abf-boundaries-v0.2.0,Sokna hydroelectric plant,L100001056486,hydropower,operating,30
+G100001064544,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5042,point,,,,false,abf-boundaries-v0.2.0,Tunnsjø hydroelectric plant,L100001056487,hydropower,operating,30
+G100001064545,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5033,point,,,,false,abf-boundaries-v0.2.0,Tya hydroelectric plant,L100001056488,hydropower,operating,32
+G100001064546,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3228,point,,,,false,abf-boundaries-v0.2.0,Rånåsfoss 1 hydroelectric plant,L100001056489,hydropower,retired,54
+G100001064548,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4026,point,,,,false,abf-boundaries-v0.2.0,Moflåt hydroelectric plant,L100001056491,hydropower,operating,30
+G100001070132,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3419,point,,,,false,abf-boundaries-v0.2.0,Braskereidfoss hydroelectric plant,L100001061220,hydropower,operating,36
+G100001070277,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4218,point,,,,false,abf-boundaries-v0.2.0,Iveland 1 hydroelectric plant,L100001061351,hydropower,operating,43
+G100001070304,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Svelgen 3 hydroelectric plant,L100001061370,hydropower,operating,22
+G100001070305,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Svelgen 2 hydroelectric plant,L100001061369,hydropower,operating,29
+G100001070306,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Svelgen 4 hydroelectric plant,L100001061371,hydropower,operating,50
+G100001070309,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3448,point,,,,false,abf-boundaries-v0.2.0,Dokka hydroelectric plant,L100001061373,hydropower,operating,45
+G100001070310,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1563,point,,,,false,abf-boundaries-v0.2.0,Grøa hydroelectric plant,L100001061374,hydropower,operating,35
+G100001070311,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4623,point,,,,false,abf-boundaries-v0.2.0,Grønsdal hydroelectric plant,L100001061375,hydropower,operating,36
+G100001070315,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3401,point,,,,false,abf-boundaries-v0.2.0,Kongsvinger hydroelectric plant,L100001061380,hydropower,operating,43
+G100001070316,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1836,point,,,,false,abf-boundaries-v0.2.0,Smibelg hydroelectric plant,L100001061381,hydropower,operating,33
+G100001070347,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1578,point,,,,false,abf-boundaries-v0.2.0,Tafjord 3 hydroelectric plant,L100001061404,hydropower,operating,22
+G100001070348,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1578,point,,,,false,abf-boundaries-v0.2.0,Tafjord 1 hydroelectric plant,L100001061402,hydropower,operating,25
+G100001070349,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1578,point,,,,false,abf-boundaries-v0.2.0,Tafjord 2 hydroelectric plant,L100001061403,hydropower,operating,30
+G100001070351,energy_plants_gem_units,NOR,point,,NOR-1-18,NOR-2-1836,point,,,,false,abf-boundaries-v0.2.0,Storåvatn 2 hydroelectric plant,L100001061407,hydropower,operating,27
+G100001070352,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3338,point,,,,false,abf-boundaries-v0.2.0,Uvdal 2 hydroelectric plant,L100001061408,hydropower,operating,40
+G100001070353,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4641,point,,,,false,abf-boundaries-v0.2.0,Aurland 4 hydroelectric plant,L100001061409,hydropower,operating,38
+G100001070357,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4641,point,,,,false,abf-boundaries-v0.2.0,Aurland 2 hydroelectric plant,L100000602890,hydropower,operating,60
+G100001070358,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3303,point,,,,false,abf-boundaries-v0.2.0,Vittingfoss hydroelectric plant,L100001061411,hydropower,operating,34
+G100001070361,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3316,point,,,,false,abf-boundaries-v0.2.0,Gravfoss 2 hydroelectric plant,L100001061414,hydropower,operating,30
+G100001070379,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Øksenelvane hydroelectric plant,L100001061430,hydropower,operating,28
+G100001070380,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,true,abf-boundaries-v0.2.0,Nye Øksenelvane hydroelectric plant,L100001061431,hydropower,pre_construction,110
+G100001070381,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4617,point,,,,true,abf-boundaries-v0.2.0,Blåfalli Fjellhaugen hydroelectric plant,L100001061433,hydropower,pre_construction,185
+G100001070397,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5601,point,,,,false,abf-boundaries-v0.2.0,Alta hydroelectric plant,L100000602884,hydropower,pre_construction,30
+G100001070398,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3338,point,,,,true,abf-boundaries-v0.2.0,Nye Nore hydroelectric plant,L100001061448,hydropower,announced,500
+G100001070399,energy_plants_gem_units,NOR,point,,NOR-1-15,NOR-2-1563,point,,,,true,abf-boundaries-v0.2.0,Aura 2 hydroelectric plant,L100001061449,hydropower,pre_construction,810
+G100001072146,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4646,point,,,,false,abf-boundaries-v0.2.0,Lutelandet testanlegg wind farm,L100001062805,wind,pre_construction,10
+G100001072147,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1151,point,,,,false,abf-boundaries-v0.2.0,Utsira II wind farm,L100001062806,wind,pre_construction,15
+G100001072148,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5622,point,,,,false,abf-boundaries-v0.2.0,Skarvberget wind farm,L100001062807,wind,pre_construction,200
+G100001072149,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5626,point,,,,false,abf-boundaries-v0.2.0,Bjørnviktuva wind farm,L100001062808,wind,pre_construction,500
+G100001072150,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,false,abf-boundaries-v0.2.0,Nordre Sørøy wind farm,L100001062809,wind,pre_construction,200
+G100001072151,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5616,point,,,,false,abf-boundaries-v0.2.0,Dønnesfjord-NTE wind farm,L100001062810,wind,pre_construction,220
+G100001072152,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,false,abf-boundaries-v0.2.0,Nordre Seiland wind farm,L100001062811,wind,pre_construction,300
+G100001072153,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5601,point,,,,false,abf-boundaries-v0.2.0,Stjernøya wind farm,L100001062812,wind,pre_construction,1000
+G100001072154,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5603,point,,,,false,abf-boundaries-v0.2.0,Kokelv wind farm,L100001062813,wind,pre_construction,200
+G100001072155,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5620,point,,,,false,abf-boundaries-v0.2.0,Reinelva wind farm,L100001062814,wind,pre_construction,200
+G100001072156,energy_plants_gem_units,NOR,point,,NOR-1-50,NOR-2-5060,point,,,,false,abf-boundaries-v0.2.0,Ytre Vikna 2.0 wind farm,L100001062815,wind,pre_construction,150
+G100001072157,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4612,point,,,,false,abf-boundaries-v0.2.0,Nesse wind farm,L100001062816,wind,pre_construction,10
+G100001072158,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5632,point,,,,false,abf-boundaries-v0.2.0,Hamnefjell 3 wind farm,L100001062817,wind,pre_construction,101
+G100001072159,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5624,point,,,,false,abf-boundaries-v0.2.0,Svartnakken wind farm,L100001062818,wind,pre_construction,640
+G100001072160,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3124,point,,,,false,abf-boundaries-v0.2.0,Aremark sør wind farm,L100001062819,wind,pre_construction,250
+G100001072161,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1121,point,,,,false,abf-boundaries-v0.2.0,Mellomstrand wind farm,L100001062820,wind,pre_construction,30
+G100001072163,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4202,point,,,,false,abf-boundaries-v0.2.0,Omre wind farm,L100001062821,wind,pre_construction,60
+G100001072165,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4648,point,,,,false,abf-boundaries-v0.2.0,Myklebust- og Ramsskredfjellet wind farm,L100001062822,wind,pre_construction,260
+G100001072166,energy_plants_gem_units,NOR,point,,NOR-1-56,NOR-2-5626,point,,,,false,abf-boundaries-v0.2.0,Sandfjellet wind farm,L100001062823,wind,pre_construction,750
+G100001072428,energy_plants_gem_units,NOR,field,,NOR-1-46,NOR-2-4633,point,,,,true,abf-boundaries-v0.2.0,Øygarden wind farm,L100001063063,wind,pre_construction,40
+G100001083465,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3905,point,,,,false,abf-boundaries-v0.2.0,Vestfold solar project,L100001073679,utility-scale solar,operating,1.2
+G100001084550,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4215,point,,,,false,abf-boundaries-v0.2.0,Glamsland solar project,L100001074764,utility-scale solar,pre_construction,8
+G100001084551,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3416,point,,,,false,abf-boundaries-v0.2.0,Magnormoen solar project,L100001074765,utility-scale solar,pre_construction,5.6
+G100001084552,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4216,point,,,,false,abf-boundaries-v0.2.0,Birkeland solar project,L100001074766,utility-scale solar,pre_construction,10
+G100001084553,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Brandsrud solar project,L100001074767,utility-scale solar,pre_construction,10
+G100001084554,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4206,point,,,,false,abf-boundaries-v0.2.0,Farsund Lufthavn solar project,L100001074768,utility-scale solar,pre_construction,7.5
+G100001084555,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3407,point,,,,false,abf-boundaries-v0.2.0,Seval skog solar farm,L100001074769,utility-scale solar,pre_construction,30
+G100001084556,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3416,point,,,,false,abf-boundaries-v0.2.0,Magnor 3 solar project,L100001074770,utility-scale solar,pre_construction,13.8
+G100001084557,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3420,point,,,,false,abf-boundaries-v0.2.0,Løvbergsmoen solar project,L100001074771,utility-scale solar,pre_construction,15
+G100001084558,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4003,point,,,,false,abf-boundaries-v0.2.0,Fossum solar project,L100001074772,utility-scale solar,pre_construction,7.5
+G100001084559,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3438,point,,,,false,abf-boundaries-v0.2.0,Kile solar project,L100001074773,utility-scale solar,pre_construction,6.3
+G100001084560,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4217,point,,,,false,abf-boundaries-v0.2.0,Simonstad solar farm,L100001074774,utility-scale solar,pre_construction,40
+G100001084561,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3905,point,,,,false,abf-boundaries-v0.2.0,Sem solar farm,L100001074775,utility-scale solar,pre_construction,59
+G100001084562,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3407,point,,,,false,abf-boundaries-v0.2.0,Mæhlum solar farm,L100001074776,utility-scale solar,pre_construction,20
+G100001084563,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3442,point,,,,false,abf-boundaries-v0.2.0,Store Nøkleberg solar farm,L100001074777,utility-scale solar,pre_construction,26
+G100001084564,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3105,point,,,,false,abf-boundaries-v0.2.0,Buer solar farm,L100001074778,utility-scale solar,pre_construction,1.1
+G100001084565,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3447,point,,,,false,abf-boundaries-v0.2.0,Øystadmarka solar farm,L100001074779,utility-scale solar,pre_construction,200
+G100001084566,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Dolven solar farm,L100001074780,utility-scale solar,pre_construction,21
+G100001084567,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3417,point,,,,false,abf-boundaries-v0.2.0,Domma solar farm,L100001074781,utility-scale solar,pre_construction,264.6
+G100001084568,energy_plants_gem_units,NOR,point,,NOR-1-46,NOR-2-4612,point,,,,false,abf-boundaries-v0.2.0,Nesse solar project,L100001074782,utility-scale solar,pre_construction,10
+G100001084569,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3120,point,,,,false,abf-boundaries-v0.2.0,Fjeld solar farm,L100001074783,utility-scale solar,pre_construction,56
+G100001084570,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3428,point,,,,false,abf-boundaries-v0.2.0,Måna solar farm,L100001074784,utility-scale solar,pre_construction,26
+G100001084572,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3203,point,,,,false,abf-boundaries-v0.2.0,Oredalen solar farm,L100001074786,utility-scale solar,pre_construction,26
+G100001084573,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3405,point,,,,false,abf-boundaries-v0.2.0,Roverud solar project,L100001074787,utility-scale solar,pre_construction,7.3
+G100001084574,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Skjervenmoene solar project,L100001074788,utility-scale solar,pre_construction,18.4
+G100001084575,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Nordre Gjerpeland solar project,L100001074789,utility-scale solar,pre_construction,10.5
+G100001084576,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4205,point,,,,false,abf-boundaries-v0.2.0,Revehei solar project,L100001074790,utility-scale solar,pre_construction,1.6
+G100001084577,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Hanevold solar project,L100001074791,utility-scale solar,pre_construction,4
+G100001084578,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Engene solar farm,L100001074792,utility-scale solar,pre_construction,97
+G100001084579,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1160,point,,,,false,abf-boundaries-v0.2.0,HIM solar project,L100001074793,utility-scale solar,pre_construction,2.6
+G100001084580,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4024,point,,,,false,abf-boundaries-v0.2.0,Ålamoen solar farm,L100001074794,utility-scale solar,pre_construction,86
+G100001084581,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3411,point,,,,false,abf-boundaries-v0.2.0,Bolstadmarka agrivoltaiske solar farm,L100001074795,utility-scale solar,pre_construction,81
+G100001084582,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3411,point,,,,false,abf-boundaries-v0.2.0,Tranmyra agrivoltaiske solar farm,L100001074796,utility-scale solar,pre_construction,97
+G100001084583,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3101,point,,,,false,abf-boundaries-v0.2.0,Demmeåsen solar farm,L100001074797,utility-scale solar,pre_construction,166
+G100001084584,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3120,point,,,,false,abf-boundaries-v0.2.0,Hensåsen solar farm,L100001074798,utility-scale solar,pre_construction,187
+G100001084585,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3105,point,,,,false,abf-boundaries-v0.2.0,Wold solar farm,L100001074799,utility-scale solar,pre_construction,23.9
+G100001084586,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3101,point,,,,false,abf-boundaries-v0.2.0,Isebakke solar farm,L100001074800,utility-scale solar,pre_construction,27.5
+G100001084587,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4018,point,,,,false,abf-boundaries-v0.2.0,Holla Solar solar farm,L100001074801,utility-scale solar,pre_construction,24
+G100001084588,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3120,point,,,,false,abf-boundaries-v0.2.0,Slettefjellet solar farm,L100001074802,utility-scale solar,pre_construction,101
+G100001084589,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3416,point,,,,false,abf-boundaries-v0.2.0,Grasmo solar project,L100001074803,utility-scale solar,pre_construction,5
+G100001084590,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Håkestad solar project,L100001074804,utility-scale solar,pre_construction,4.4
+G100001084591,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Rødbøl solar project,L100001074805,utility-scale solar,pre_construction,9.7
+G100001084592,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4030,point,,,,false,abf-boundaries-v0.2.0,Berlifoss solar farm,L100001074806,utility-scale solar,pre_construction,101
+G100001084593,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4030,point,,,,false,abf-boundaries-v0.2.0,Gaukås solar farm,L100001074807,utility-scale solar,pre_construction,48
+G100001084594,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3417,point,,,,false,abf-boundaries-v0.2.0,Nesskogen solar farm,L100001074808,utility-scale solar,pre_construction,52.8
+G100001084595,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4030,point,,,,false,abf-boundaries-v0.2.0,Borstad solar farm,L100001074809,utility-scale solar,pre_construction,68.5
+G100001084596,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3316,point,,,,false,abf-boundaries-v0.2.0,Gunnhus solar project,L100001074810,utility-scale solar,pre_construction,8.5
+G100001084597,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4020,point,,,,false,abf-boundaries-v0.2.0,Galteryggen solar project,L100001074811,utility-scale solar,pre_construction,15.4
+G100001084598,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3415,point,,,,false,abf-boundaries-v0.2.0,Galterud solar project,L100001074812,utility-scale solar,pre_construction,11
+G100001084599,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3403,point,,,,false,abf-boundaries-v0.2.0,Vang solar farm,L100001074813,utility-scale solar,pre_construction,120
+G100001084600,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3107,point,,,,false,abf-boundaries-v0.2.0,Forsetlundgropa solar project,L100001074814,utility-scale solar,pre_construction,3
+G100001084601,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3314,point,,,,false,abf-boundaries-v0.2.0,Bollerudmoen solar farm,L100001074815,utility-scale solar,pre_construction,32.9
+G100001084602,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3420,point,,,,false,abf-boundaries-v0.2.0,Bronkemoen solar project,L100001074816,utility-scale solar,pre_construction,10
+G100001084603,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3443,point,,,,false,abf-boundaries-v0.2.0,Holte solar farm,L100001074817,utility-scale solar,pre_construction,40
+G100001084604,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3420,point,,,,false,abf-boundaries-v0.2.0,Løvbergsmoen sør solar project,L100001074818,utility-scale solar,pre_construction,17.2
+G100001084605,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3422,point,,,,false,abf-boundaries-v0.2.0,Hovdmoen solar solar farm,L100001074819,utility-scale solar,pre_construction,44
+G100001084606,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Brunlanes solar project,L100001074820,utility-scale solar,pre_construction,13.7
+G100001084607,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Lofstad solar farm,L100001074821,utility-scale solar,pre_construction,20.8
+G100001084608,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3424,point,,,,false,abf-boundaries-v0.2.0,Kværnesmoa solar farm,L100001074822,utility-scale solar,pre_construction,126
+G100001084609,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3423,point,,,,false,abf-boundaries-v0.2.0,Koppang solar farm,L100001074823,utility-scale solar,pre_construction,40
+G100001084610,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3415,point,,,,false,abf-boundaries-v0.2.0,Glomsås solar farm,L100001074824,utility-scale solar,pre_construction,51
+G100001084611,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Gåserød solar project,L100001074825,utility-scale solar,pre_construction,10
+G100001084612,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3414,point,,,,false,abf-boundaries-v0.2.0,Sand solar farm,L100001074826,utility-scale solar,pre_construction,40
+G100001084613,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3120,point,,,,false,abf-boundaries-v0.2.0,Bjørke solar farm,L100001074827,utility-scale solar,pre_construction,56
+G100001084614,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3907,point,,,,false,abf-boundaries-v0.2.0,Rød solar project,L100001074828,utility-scale solar,pre_construction,12
+G100001084615,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Brunla solar farm,L100001074829,utility-scale solar,pre_construction,20.3
+G100001084616,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3909,point,,,,false,abf-boundaries-v0.2.0,Snippen solar project,L100001074830,utility-scale solar,pre_construction,15.1
+G100001084617,energy_plants_gem_units,NOR,point,,NOR-1-32,NOR-2-3205,point,,,,false,abf-boundaries-v0.2.0,Søndre Asak solar project,L100001074831,utility-scale solar,pre_construction,11
+G100001084618,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3422,point,,,,false,abf-boundaries-v0.2.0,Grønnvoll solar solar farm,L100001074832,utility-scale solar,pre_construction,70
+G100001084619,energy_plants_gem_units,NOR,point,,NOR-1-34,NOR-2-3420,point,,,,false,abf-boundaries-v0.2.0,Blanktjennsmoen Solar solar farm,L100001074833,utility-scale solar,pre_construction,31
+G100001084620,energy_plants_gem_units,NOR,point,,NOR-1-39,NOR-2-3903,point,,,,false,abf-boundaries-v0.2.0,Hof solar farm,L100001074834,utility-scale solar,pre_construction,42
+G100001084621,energy_plants_gem_units,NOR,point,,NOR-1-33,NOR-2-3316,point,,,,false,abf-boundaries-v0.2.0,Vikersund solar project,L100001074835,utility-scale solar,pre_construction,2.2
+G100001084622,energy_plants_gem_units,NOR,point,,NOR-1-31,NOR-2-3101,point,,,,false,abf-boundaries-v0.2.0,Bjørnstad solar project,L100001074836,utility-scale solar,pre_construction,11
+G100001084623,energy_plants_gem_units,NOR,point,,NOR-1-40,NOR-2-4003,point,,,,false,abf-boundaries-v0.2.0,Solum solar project,L100001074837,utility-scale solar,pre_construction,13
+G100001084624,energy_plants_gem_units,NOR,point,,NOR-1-42,NOR-2-4202,point,,,,false,abf-boundaries-v0.2.0,Fevik solar project,L100001074838,utility-scale solar,pre_construction,5
+G100001094678,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1101,point,,,,true,abf-boundaries-v0.2.0,Dalane nuclear power plant,L100001083613,nuclear,announced,300
+G100001094679,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1101,point,,,,true,abf-boundaries-v0.2.0,Dalane nuclear power plant,L100001083613,nuclear,announced,300
+G100001094680,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1101,point,,,,true,abf-boundaries-v0.2.0,Dalane nuclear power plant,L100001083613,nuclear,announced,300
+G100001094681,energy_plants_gem_units,NOR,point,,NOR-1-11,NOR-2-1101,point,,,,true,abf-boundaries-v0.2.0,Dalane nuclear power plant,L100001083613,nuclear,announced,300

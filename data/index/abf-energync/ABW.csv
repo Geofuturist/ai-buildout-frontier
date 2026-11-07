@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001033547,energy_plants_gem_tzsam_units,ABW,point,,,,,,,,false,abf-boundaries-v0.2.0,Aruba solar project I,L100001028276,utility-scale solar,operating,5.7
+G100001033548,energy_plants_gem_tzsam_units,ABW,point,,,,,,,,false,abf-boundaries-v0.2.0,Aruba solar project II,L100001028277,utility-scale solar,operating,3.1

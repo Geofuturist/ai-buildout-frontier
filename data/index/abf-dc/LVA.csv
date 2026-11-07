@@ -1,0 +1,11 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-39903b9508d6-1,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Tet Riga,Operating / Construction,telecom,lt10,
+ATL-39903b9508d6-2,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Tet Riga,Operating / Construction,telecom,lt10,
+ATL-39903b9508d6-3,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Tet Riga,Operating / Construction,telecom,lt10,
+ATL-4d04a8fb2a40,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Tet Riga Campus,Operating / Construction,telecom,lt10,
+ATL-61490e717991,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Lvrtc Latvijas Valsts Radio Un Televazijas Centrs Ventspils,Operating / Construction,telecom,lt10,
+ATL-7b94faad13f8,dc_atlas_points,LVA,field,,,,,,,,,abf-boundaries-v0.2.0,Delska North Campus,Operating / Construction,colocation,10_99,
+ATL-a948e0d26212,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Lvrtc Latvijas Valsts Radio Un Televazijas Centrs Valmiera,Operating / Construction,telecom,lt10,
+ATL-b7dda41ab82e,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Tet Salaspils Campus,Planned,telecom,,
+ATL-d1ad9664d07b,dc_atlas_points,LVA,field,,,,,,,,true,abf-boundaries-v0.2.0,Tet Salaspils Campus,Operating / Construction,telecom,lt10,
+ATL-fc42b3f9cfa2,dc_atlas_points,LVA,field,,,,,,,,,abf-boundaries-v0.2.0,Delska DC3,Operating / Construction,colocation,lt10,

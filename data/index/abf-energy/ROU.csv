@@ -1,0 +1,384 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000100302,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad power station,L100000103284,coal,retired,50
+G100000100304,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad power station,L100000103284,coal,retired,50
+G100000100418,energy_plants_gem_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Bacau CHP power station,L100000103285,coal,retired,60
+G100000101039,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Braila power station,L100000103287,coal,cancelled,800
+G100000101042,energy_plants_gem_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brasov power station,L100000103288,coal,retired,65
+G100000101043,energy_plants_gem_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Brasov power station,L100000103288,coal,retired,65
+G100000101080,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,true,abf-boundaries-v0.2.0,Bucharest North East power station,L100000103305,coal,cancelled,400
+G100000101820,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Craiova II power station,L100000103290,coal,cancelled,150
+G100000101821,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Craiova II power station,L100000103290,coal,operating,150
+G100000101822,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Craiova II power station,L100000103290,coal,operating,150
+G100000102386,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Doicesti power station,L100000103289,coal,cancelled,500
+G100000102387,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Doicesti power station,L100000103289,coal,retired,200
+G100000102388,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Doicesti power station,L100000103289,coal,retired,200
+G100000102389,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,false,abf-boundaries-v0.2.0,Doicesti power station,L100000103289,coal,cancelled,500
+G100000102903,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,true,abf-boundaries-v0.2.0,Galati Power Station,L100000103292,coal,cancelled,800
+G100000103037,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu power station,L100000103293,coal,retired,50
+G100000103038,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu power station,L100000103293,coal,retired,50
+G100000103039,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Giurgiu power station,L100000103293,coal,retired,50
+G100000103108,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora power station,L100000103304,coal,retired,50
+G100000103109,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora power station,L100000103304,coal,retired,50
+G100000104810,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iasi-2 power station,L100000103299,coal,retired,60
+G100000104811,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iasi-2 power station,L100000103299,coal,retired,50
+G100000104909,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Isalnita power station,L100000103291,coal,mothballed,315
+G100000104910,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Isalnita power station,L100000103291,coal,retired,315
+G100000104911,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Isalnita power station,L100000103291,coal,cancelled,500
+G100000106938,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Mintia-Deva power station,L100000103297,coal,retired,210
+G100000106939,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Mintia-Deva power station,L100000103297,coal,retired,210
+G100000106940,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Mintia-Deva power station,L100000103297,coal,retired,235
+G100000106941,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Mintia-Deva power station,L100000103297,coal,retired,210
+G100000106942,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Mintia-Deva power station,L100000103297,coal,retired,210
+G100000106943,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Mintia-Deva power station,L100000103297,coal,retired,210
+G100000107655,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Oradea power station,L100000103286,coal,retired,50
+G100000107656,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Oradea power station,L100000103286,coal,retired,50
+G100000107846,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Paroseni power station,L100000103298,coal,operating,150
+G100000107847,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Paroseni power station,L100000103298,coal,cancelled,200
+G100000108612,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,coal,cancelled,725
+G100000108613,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,coal,retired,60
+G100000108614,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,coal,retired,60
+G100000108615,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,coal,retired,60
+G100000108616,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,coal,retired,60
+G100000108645,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Rovinari power station,L100000103294,coal,retired,330
+G100000108646,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Rovinari power station,L100000103294,coal,operating,330
+G100000108647,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Rovinari power station,L100000103294,coal,operating,330
+G100000108648,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Rovinari power station,L100000103294,coal,operating,330
+G100000108649,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Rovinari power station,L100000103294,coal,cancelled,600
+G100000109477,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,true,abf-boundaries-v0.2.0,Slatina power station,L100000103302,coal,cancelled,50
+G100000109478,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,true,abf-boundaries-v0.2.0,Slatina power station,L100000103302,coal,cancelled,50
+G100000109648,energy_plants_gem_units,ROU,point,,ROU-1-SV,,point,,,,false,abf-boundaries-v0.2.0,Suceava power station,L100000103303,coal,retired,50
+G100000109649,energy_plants_gem_units,ROU,point,,ROU-1-SV,,point,,,,false,abf-boundaries-v0.2.0,Suceava power station,L100000103303,coal,retired,50
+G100000109974,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,true,abf-boundaries-v0.2.0,Târgu Jiu Thermal Plant,L100000103295,coal,cancelled,50
+G100000109975,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,true,abf-boundaries-v0.2.0,Târgu Jiu Thermal Plant,L100000103295,coal,cancelled,50
+G100000110362,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,cancelled,330
+G100000110363,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,retired,330
+G100000110364,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,retired,330
+G100000110365,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,retired,330
+G100000110366,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,operating,330
+G100000110367,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,operating,330
+G100000110368,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,retired,330
+G100000110369,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,coal,retired,330
+G100000112603,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,coal,retired,50
+G100000112604,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,coal,retired,50
+G100000113461,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora power station,L100000103304,coal,operating,50
+G100000113462,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora power station,L100000103304,coal,operating,50
+G100000201426,energy_plants_gem_units,ROU,point,,ROU-1-SV,,point,,,,false,abf-boundaries-v0.2.0,Bioenergy Sucavea power station,L100000201202,bioenergy,operating,30
+G100000400596,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Brazi power station,L100000400596,oil/gas,operating,105
+G100000400597,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Brazi power station,L100000400596,oil/gas,operating,105
+G100000400598,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Brazi power station,L100000400596,oil/gas,operating,26
+G100000400599,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Grozavesti power station,L100000400599,oil/gas,operating,50
+G100000400600,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Grozavesti power station,L100000400599,oil/gas,operating,50
+G100000400601,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Progresu power station,L100000400601,oil/gas,operating,55
+G100000400602,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Progresu power station,L100000400601,oil/gas,operating,55
+G100000400605,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Progresu power station,L100000400601,oil/gas,pre_construction,74.2
+G100000400606,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,mothballed,50
+G100000400607,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,mothballed,50
+G100000400608,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,operating,100
+G100000400609,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,operating,100
+G100000400610,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,mothballed,125
+G100000400611,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,mothballed,125
+G100000400612,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Vest power station,L100000400612,oil/gas,operating,125
+G100000400613,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Vest power station,L100000400612,oil/gas,operating,125
+G100000400614,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Vest power station,L100000400612,oil/gas,operating,186.3
+G100000400615,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Galati power station,L100000400615,oil/gas,operating,105
+G100000400616,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Galati power station,L100000400615,oil/gas,operating,105
+G100000400618,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora power station,L100000103304,oil/gas,operating,50
+G100000400619,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora power station,L100000103304,oil/gas,operating,50
+G100000400620,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iasi-1 power station,L100000400620,oil/gas,operating,25
+G100000400622,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Iernut power station,L100000400622,oil/gas,retired,100
+G100000400623,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Iernut power station,L100000400622,oil/gas,mothballed,100
+G100000400624,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Iernut power station,L100000400622,oil/gas,operating,200
+G100000400625,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Iernut power station,L100000400622,oil/gas,retired,200
+G100000400626,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Iernut power station,L100000400622,oil/gas,construction,430
+G100000400628,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Oradea power station,L100000103286,oil/gas,operating,45.5
+G100000400629,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Petrom Brazi power station,L100000400629,oil/gas,operating,860
+G100000401073,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Mintia-Deva power station,L100000103297,oil/gas,construction,1750
+G100000406337,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Turceni power station,L100000103296,oil/gas,pre_construction,475
+G100000406338,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Isalnita power station,L100000103291,oil/gas,pre_construction,425
+G100000406339,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Craiova II power station,L100000103290,oil/gas,cancelled,295
+G100000406340,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Isalnita power station,L100000103291,oil/gas,pre_construction,425
+G100000406341,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Romag Termo power station,L100000103301,oil/gas,cancelled,150
+G100000406342,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Grozavesti power station,L100000400599,oil/gas,cancelled,50
+G100000406343,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Grozavesti power station,L100000400599,oil/gas,cancelled,50
+G100000406344,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,cancelled,200
+G100000406377,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Hefaistos power station,L100000406416,oil/gas,announced,500
+G100000410134,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Iernut power station,L100000400622,oil/gas,retired,100
+G100000410135,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Iernut power station,L100000400622,oil/gas,retired,100
+G100000410364,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Petromidia Refinery power station,L100000407792,oil/gas,operating,40
+G100000410365,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Petromidia Refinery power station,L100000407792,oil/gas,operating,40
+G100000410366,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Galati power station,L100000400615,oil/gas,operating,105
+G100000410367,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Galati power station,L100000400615,oil/gas,operating,60
+G100000410368,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Ciech Soda power station,L100000407793,oil/gas,cancelled,230
+G100000410369,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Chimcomplex power station,L100000407794,oil/gas,pre_construction,108
+G100000410370,energy_plants_gem_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Borzesti power station,L100000407795,oil/gas,cancelled,189
+G100000410371,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Titan power station,L100000407796,oil/gas,construction,50
+G100000412767,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Ploesti power station,L100000408891,oil/gas,operating,61
+G100000412768,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Petrom Brazi power station,L100000400629,oil/gas,operating,60
+G100000412769,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Palas power station,L100000408760,oil/gas,construction,53
+G100000412770,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Palas power station,L100000408760,oil/gas,operating,50
+G100000412771,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Palas power station,L100000408760,oil/gas,operating,50
+G100000412773,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,false,abf-boundaries-v0.2.0,Iasi-1 power station,L100000400620,oil/gas,mothballed,25
+G100000412774,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Brazi power station,L100000400596,oil/gas,operating,50
+G100000412775,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Braila power station,L100000103287,oil/gas,mothballed,330
+G100000412776,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Braila power station,L100000103287,oil/gas,mothballed,210
+G100000412777,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Braila power station,L100000103287,oil/gas,mothballed,210
+G100000412778,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Braila power station,L100000103287,oil/gas,mothballed,210
+G100000500375,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Cernavodă nuclear power plant,L100000500162,nuclear,operating,706
+G100000500377,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Cernavodă nuclear power plant,L100000500162,nuclear,operating,705
+G100000500674,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Cernavodă nuclear power plant,L100000500162,nuclear,pre_construction,720
+G100000500675,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Cernavodă nuclear power plant,L100000500162,nuclear,pre_construction,720
+G100000500871,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Doicești nuclear power plant,L100000500333,nuclear,pre_construction,77
+G100000500872,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Doicești nuclear power plant,L100000500333,nuclear,pre_construction,77
+G100000500873,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Doicești nuclear power plant,L100000500333,nuclear,pre_construction,77
+G100000500874,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Doicești nuclear power plant,L100000500333,nuclear,pre_construction,77
+G100000500875,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Doicești nuclear power plant,L100000500333,nuclear,pre_construction,77
+G100000500876,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Doicești nuclear power plant,L100000500333,nuclear,pre_construction,77
+G100000501250,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Cernavodă nuclear power plant,L100000500162,nuclear,cancelled,706
+G100000603253,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Bradisor hydroelectric plant,L100000603218,hydropower,operating,100
+G100000603254,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Gilceag hydroelectric plant,L100000603219,hydropower,operating,149
+G100000603255,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Lotru hydroelectric plant,L100000603220,hydropower,operating,509
+G100000603256,energy_plants_gem_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Mariselu hydroelectric plant,L100000603221,hydropower,operating,215
+G100000603257,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Raul Mare hydroelectric plant,L100000603222,hydropower,operating,210
+G100000603258,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Remeți hydroelectric plant,L100000603223,hydropower,operating,100
+G100000603259,energy_plants_gem_units,ROU,point,,ROU-1-CS,,point,,,,false,abf-boundaries-v0.2.0,Ruieni hydroelectric plant,L100000603224,hydropower,operating,138
+G100000603260,energy_plants_gem_units,ROU,point,,ROU-1-NT,,point,,,,false,abf-boundaries-v0.2.0,Stejaru hydroelectric plant,L100000603225,hydropower,operating,151
+G100000603261,energy_plants_gem_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Susag hydroelectric plant,L100000603226,hydropower,operating,149
+G100000603262,energy_plants_gem_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Tarnita-Lapustesti hydroelectric plant,L100000603227,hydropower,pre_construction,1000
+G100000603263,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Tismana hydroelectric plant,L100000603228,hydropower,operating,105
+G100000603264,energy_plants_gem_units,ROU,point,,ROU-1-AG,,point,,,,false,abf-boundaries-v0.2.0,Vidraru hydroelectric plant,L100000603229,hydropower,operating,219
+G100000604815,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Silistra - Călărași hydroelectric plant,L100000604353,hydropower,shelved,530
+G100000806611,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Rovinari solar farm,L100000805743,utility-scale solar,pre_construction,66
+G100000806612,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Tismana solar farm,L100000805744,utility-scale solar,construction,128
+G100000806613,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Turceni solar farm,L100000805745,utility-scale solar,pre_construction,112
+G100000806622,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Ratesti solar farm,L100000805754,utility-scale solar,operating,153
+G100000806724,energy_plants_gem_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Ucea De Sus solar farm,L100000805845,utility-scale solar,operating,55
+G100000806736,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Halanga solar farm,L100000805854,utility-scale solar,shelved,50
+G100000807044,energy_plants_gem_units,ROU,point,,ROU-1-SM,,point,,,,false,abf-boundaries-v0.2.0,Livada solar farm,L100000806123,utility-scale solar,operating,56
+G100000807102,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Giurgiu (Core Value Capital) solar farm,L100000806178,utility-scale solar,operating,50
+G100000807166,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Teiuș (EGC) solar farm,L100000806234,utility-scale solar,cancelled,45
+G100000807214,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Călugareni solar farm,L100000806279,utility-scale solar,operating,63
+G100000807215,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Moșteni solar farm,L100000806280,utility-scale solar,shelved,26
+G100000807400,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Braila solar farm,L100000806449,utility-scale solar,shelved,45
+G100000807554,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Slobozia solar farm,L100000806587,utility-scale solar,operating,38
+G100000807555,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Izvoarele solar farm,L100000806588,utility-scale solar,operating,43
+G100000807582,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Uzunu solar farm,L100000806613,utility-scale solar,operating,46
+G100000807625,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Rovinari Est solar farm,L100000806654,utility-scale solar,construction,110
+G100000807707,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,true,abf-boundaries-v0.2.0,Sărmășag solar farm,L100000806729,utility-scale solar,operating,51.4
+G100000807731,energy_plants_gem_units,ROU,point,,ROU-1-TM,,point,,,,true,abf-boundaries-v0.2.0,Iaz solar farm,L100000806753,utility-scale solar,operating,48
+G100000807744,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Giurgiu (Simtel) solar farm,L100000806766,utility-scale solar,construction,40
+G100000807947,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,false,abf-boundaries-v0.2.0,Miercurea Sibiului solar farm,L100000806927,utility-scale solar,operating,23
+G100000807976,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,true,abf-boundaries-v0.2.0,Brasov Solar Park,L100000806952,utility-scale solar,cancelled,45
+G100000827350,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Dama solar farm,L100000824250,utility-scale solar,pre_construction,1044
+G100000827351,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,true,abf-boundaries-v0.2.0,Bobicesti solar farm,L100000824251,utility-scale solar,construction,21.3
+G100000827352,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Bucsani-Ogrezeni solar farm,L100000824252,utility-scale solar,shelved,134
+G100000827353,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Cef Coroana Soarelui solar farm,L100000824253,utility-scale solar,cancelled,48
+G100000827354,energy_plants_gem_units,ROU,point,,ROU-1-BV,,point,,,,true,abf-boundaries-v0.2.0,Fagaras solar farm,L100000824254,utility-scale solar,pre_construction,300
+G100000827355,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Grăniceri-Pilu solar farm,L100000824255,utility-scale solar,shelved,700
+G100000827356,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Horia solar farm,L100000824256,utility-scale solar,operating,40
+G100000827357,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Iancu Jianu solar farm,L100000824257,utility-scale solar,construction,58
+G100000827358,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Iepurești solar farm,L100000824258,utility-scale solar,pre_construction,169
+G100000827359,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Melinesti-Goesti solar farm,L100000824259,utility-scale solar,construction,32
+G100000827360,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,true,abf-boundaries-v0.2.0,MET Bucharest solar farm,L100000824260,utility-scale solar,pre_construction,52
+G100000827361,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Mihailesti solar farm,L100000824261,utility-scale solar,pre_construction,87.5
+G100000827362,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,true,abf-boundaries-v0.2.0,Oradea solar farm,L100000824262,utility-scale solar,construction,87
+G100000827363,energy_plants_gem_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Parau solar farm,L100000824263,utility-scale solar,operating,92
+G100000827364,energy_plants_gem_units,ROU,point,,ROU-1-SM,,point,,,,true,abf-boundaries-v0.2.0,Satu Mare solar farm,L100000824264,utility-scale solar,operating,70
+G100000827365,energy_plants_gem_units,ROU,point,,ROU-1-SM,,point,,,,true,abf-boundaries-v0.2.0,Satu Mare solar farm,L100000824264,utility-scale solar,operating,27
+G100000827366,energy_plants_gem_units,ROU,point,,ROU-1-SM,,point,,,,true,abf-boundaries-v0.2.0,Satu Mare solar farm,L100000824264,utility-scale solar,pre_construction,62.5
+G100000827367,energy_plants_gem_units,ROU,point,,ROU-1-TR,,point,,,,true,abf-boundaries-v0.2.0,Scurtu Mare solar farm,L100000824265,utility-scale solar,operating,55
+G100000827368,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Slobozia II solar farm,L100000824266,utility-scale solar,pre_construction,73
+G100000910441,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Casimcea wind farm,L100000907772,wind,operating,10
+G100000910442,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Casimcea wind farm,L100000907772,wind,operating,10
+G100000910445,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Cee Nicolae Balcescu wind farm,L100000907775,wind,operating,10
+G100000910472,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,true,abf-boundaries-v0.2.0,Cudalbi wind farm,L100000907801,wind,operating,10
+G100000910551,energy_plants_gem_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Grebanu wind farm,L100000907877,wind,operating,10
+G100000910594,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,true,abf-boundaries-v0.2.0,Insuratei wind farm,L100000907918,wind,operating,10
+G100000910717,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Mireasa wind farm,L100000908030,wind,operating,10
+G100000910896,energy_plants_gem_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Topliceni wind farm,L100000908205,wind,operating,10
+G100000911314,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,true,abf-boundaries-v0.2.0,Curcubata wind farm,L100000908608,wind,operating,12
+G100000912492,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,true,abf-boundaries-v0.2.0,Nalbant wind farm,L100000909711,wind,operating,14
+G100000912542,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Mihai Viteazu wind farm,L100000909760,wind,operating,14
+G100000913685,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Baia Holrom wind farm,L100000910789,wind,operating,17
+G100000913861,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Cerna wind farm,L100000910944,wind,operating,18
+G100000914000,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Gradina wind farm (Romania),L100000911065,wind,cancelled,18
+G100000915673,energy_plants_gem_units,ROU,point,,ROU-1-VS,,point,,,,false,abf-boundaries-v0.2.0,Vutcani wind farm,L100000912547,wind,operating,24
+G100000915812,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Silistea wind farm,L100000912674,wind,operating,25
+G100000915889,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,true,abf-boundaries-v0.2.0,Margineni wind farm,L100000912742,wind,cancelled,26
+G100000915920,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Cobadin wind farm,L100000912767,wind,operating,26
+G100000916074,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Gebelesis Enel wind farm,L100000912898,wind,operating,27
+G100000916124,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Targusor wind farm,L100000912936,wind,retired,27
+G100000916126,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Topolog wind farm,L100000912938,wind,operating,27
+G100000916147,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Sacele wind farm,L100000912957,wind,operating,27
+G100000916148,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Sacele wind farm,L100000912957,wind,operating,27
+G100000916149,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Sacele wind farm,L100000912957,wind,operating,27
+G100000916150,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Sacele wind farm,L100000912957,wind,operating,27
+G100000916151,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Sacele wind farm,L100000912957,wind,operating,27
+G100000916152,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Sacele wind farm,L100000912957,wind,operating,27
+G100000916192,energy_plants_gem_units,ROU,point,,ROU-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Albesti wind farm,L100000912993,wind,operating,28
+G100000916745,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,true,abf-boundaries-v0.2.0,Babadag wind farm,L100000913464,wind,operating,32
+G100000916792,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Eolica Kogalniceanu wind farm,L100000913504,wind,cancelled,32
+G100000916952,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Sarichioi wind farm,L100000913632,wind,operating,33
+G100000916970,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Alpha Wind Nord wind farm,L100000913649,wind,operating,33
+G100000916979,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Babadag wind farm,L100000913464,wind,operating,34
+G100000917039,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Liteni-Dolhasca wind farm,L100000913708,wind,cancelled,34
+G100000917066,energy_plants_gem_units,ROU,point,,ROU-1-TR,,point,,,,true,abf-boundaries-v0.2.0,Stejaru wind farm,L100000913730,wind,operating,34
+G100000917107,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,true,abf-boundaries-v0.2.0,Agighiohl Valea Nucarilor wind farm,L100000913766,wind,operating,35
+G100000917116,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Baia Blue Planet wind farm,L100000913775,wind,cancelled,35
+G100000917151,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Monsson Orsova wind farm,L100000913806,wind,operating,35
+G100000917604,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Crucea I wind farm,L100000914200,wind,cancelled,40
+G100000917918,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Gradina wind farm (Romania),L100000911065,wind,cancelled,44
+G100000917985,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Dorobantu wind farm,L100000914523,wind,operating,45
+G100000918055,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Tulcea Concorde wind farm,L100000914582,wind,cancelled,45
+G100000918177,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Gemenele wind farm,L100000914688,wind,operating,48
+G100000918260,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Alpha Wind Nord wind farm,L100000913649,wind,operating,48
+G100000918267,energy_plants_gem_units,ROU,point,,ROU-1-CS,,point,,,,true,abf-boundaries-v0.2.0,Moldova Noua wind farm,L100000914766,wind,operating,48
+G100000918391,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Baleni wind farm,L100000914855,wind,operating,50
+G100000918560,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Mireasa wind farm,L100000908030,wind,operating,50
+G100000918586,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Pestera Sorgenia wind farm,L100000915020,wind,operating,50
+G100000918851,energy_plants_gem_units,ROU,point,,ROU-1-TM,,point,,,,true,abf-boundaries-v0.2.0,Alerion Jimbolia wind farm,L100000915230,wind,cancelled,58
+G100000918879,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Targusor-Zephir wind farm,L100000915253,wind,operating,59
+G100000918902,energy_plants_gem_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Facaeni wind farm,L100000915273,wind,operating,60
+G100000918972,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Piatra wind farms,L100000915333,wind,operating,64
+G100000918981,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,true,abf-boundaries-v0.2.0,Auseu-Borod wind farm,L100000915339,wind,operating,65
+G100000919043,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Cernavoda-Pestera wind farm,L100000915396,wind,operating,69
+G100000919044,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Cernavoda-Pestera wind farm,L100000915396,wind,operating,69
+G100000919058,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Ventus Nord-2 wind farm,L100000915407,wind,operating,69
+G100000919067,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Corugea wind farm,L100000915416,wind,operating,70
+G100000919070,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,true,abf-boundaries-v0.2.0,Gebelesis Erg wind farm,L100000915419,wind,operating,70
+G100000919082,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Salbatica wind farm,L100000915428,wind,operating,70
+G100000919083,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Salbatica wind farm,L100000915428,wind,operating,70
+G100000919086,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Valea Nucarilor wind farm,L100000915431,wind,operating,70
+G100000919095,energy_plants_gem_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Facaeni wind farm,L100000915273,wind,operating,72
+G100000919139,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Istria wind farm,L100000915480,wind,operating,74
+G100000919199,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Chirnogeni wind farm,L100000915529,wind,operating,80
+G100000919206,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Mihai Viteazu wind farm,L100000909760,wind,operating,80
+G100000919256,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,false,abf-boundaries-v0.2.0,Topolog-Dorobanţu wind farm,L100000915572,wind,operating,84
+G100000919257,energy_plants_gem_units,ROU,point,,ROU-1-TM,,point,,,,true,abf-boundaries-v0.2.0,Windkraft Sfanta Elena wind farm,L100000915573,wind,operating,84
+G100000919261,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Fântânele wind farm,L100000915576,wind,operating,85
+G100000919317,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Pestera wind farm,L100000915622,wind,operating,90
+G100000919330,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Falciu wind farm,L100000915634,wind,operating,92
+G100000919388,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Casimcea Verbund wind farm,L100000915685,wind,operating,100
+G100000919389,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Casimcea Verbund wind farm,L100000915685,wind,operating,100
+G100000919453,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Falciu wind farm,L100000915634,wind,operating,106
+G100000919460,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Crucea North wind farm,L100000915745,wind,operating,108
+G100000919463,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Cogealac wind farm,L100000915746,wind,operating,108
+G100000919516,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Targusor-Zephir wind farm,L100000915253,wind,operating,120
+G100000919546,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Pantelimon wind farm,L100000915813,wind,operating,123
+G100000919562,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Beidaud wind farm,L100000915827,wind,operating,128
+G100000919634,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,true,abf-boundaries-v0.2.0,Monsson Serbotesti wind farm,L100000915890,wind,operating,150
+G100000919745,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Husi wind farm,L100000915986,wind,cancelled,200
+G100000919766,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Iberdrola Cogealac wind farm,L100000915746,wind,operating,214
+G100000919777,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,true,abf-boundaries-v0.2.0,Cwp Independenta I Wind Farm wind farm,L100000916013,wind,operating,226
+G100000919778,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Dobrega EDP wind farm,L100000916014,wind,cancelled,226
+G100000919820,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Fântânele – Cogealac wind farm,L100000916048,wind,operating,252
+G100000919832,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,false,abf-boundaries-v0.2.0,Fântânele wind farm,L100000915576,wind,operating,262
+G100000919861,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Banca wind farm,L100000916084,wind,operating,300
+G100000919999,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Adamdel wind farm,L100000916202,wind,operating,484
+G100000925488,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Adamclisi wind farm,L100000920689,wind,pre_construction,300
+G100000925489,energy_plants_gem_units,ROU,point,,ROU-1-BZ,,point,,,,true,abf-boundaries-v0.2.0,Axpo wind farm,L100000920690,wind,shelved,125
+G100000925490,energy_plants_gem_units,ROU,point,,ROU-1-CL,,point,,,,true,abf-boundaries-v0.2.0,Axpo wind farm,L100000920690,wind,shelved,125
+G100000925491,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,true,abf-boundaries-v0.2.0,Băneasa wind farm,L100000920691,wind,shelved,25
+G100000925492,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Black Sea Offshore wind farm,L100000920692,wind,shelved,500
+G100000925493,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Black Sea Offshore wind farm,L100000920692,wind,shelved,1400
+G100000925494,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Crucea Est wind farm,L100000920693,wind,pre_construction,132
+G100000925495,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Deleni wind farm,L100000920694,wind,pre_construction,300
+G100000925496,energy_plants_gem_units,ROU,point,,ROU-1-IL,,point,,,,true,abf-boundaries-v0.2.0,Facaeni II wind farm,L100000920695,wind,shelved,226
+G100000925497,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,true,abf-boundaries-v0.2.0,Hoopeks Galati wind farm,L100000920696,wind,pre_construction,629
+G100000925498,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Independenta wind farm,L100000920697,wind,pre_construction,112
+G100000925499,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Mereni wind farm,L100000920698,wind,pre_construction,54
+G100000925500,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Pecineaga wind farm,L100000920699,wind,operating,48
+G100000925501,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Pestera wind farm,L100000915622,wind,pre_construction,400
+G100000925502,energy_plants_gem_units,ROU,point,,ROU-1-IS,,point,,,,true,abf-boundaries-v0.2.0,Ruginoasa wind farm,L100000920700,wind,operating,60
+G100000925503,energy_plants_gem_units,ROU,point,,ROU-1-CS,,point,,,,true,abf-boundaries-v0.2.0,Sfânta Elena wind farm,L100000920701,wind,shelved,142
+G100000925504,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,true,abf-boundaries-v0.2.0,VIFOR wind farm,L100000920702,wind,construction,192
+G100001000662,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,true,abf-boundaries-v0.2.0,Ariceștii Rahtivani solar farm,L100001000418,utility-scale solar,construction,37
+G100001000670,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Dâmbovița solar farm,L100001000427,utility-scale solar,pre_construction,247
+G100001000672,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Nădab solar farm,L100001000428,utility-scale solar,pre_construction,287.5
+G100001000673,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Nădab solar farm,L100001000428,utility-scale solar,pre_construction,287.5
+G100001000682,energy_plants_gem_units,ROU,point,,ROU-1-TL,,point,,,,true,abf-boundaries-v0.2.0,Nalbant wind farm,L100000909711,wind,pre_construction,14
+G100001000727,energy_plants_gem_units,ROU,point,,ROU-1-SB,,point,,,,true,abf-boundaries-v0.2.0,Rovinari solar farm,L100000805743,utility-scale solar,pre_construction,83
+G100001000738,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Tismana solar farm,L100000805744,utility-scale solar,construction,132
+G100001000756,energy_plants_gem_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Teiuș solar farm,L100001000484,utility-scale solar,operating,60
+G100001007668,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,false,abf-boundaries-v0.2.0,Bucşani solar project,L100001006519,utility-scale solar,operating,18.5
+G100001007670,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Sebis solar project,L100001006521,utility-scale solar,operating,15
+G100001007682,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Podari solar project,L100001006533,utility-scale solar,operating,10
+G100001007688,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,false,abf-boundaries-v0.2.0,Târgu Cărbuneşti solar project,L100001006539,utility-scale solar,operating,20
+G100001007694,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Berceni II solar project,L100001006545,utility-scale solar,operating,9
+G100001020354,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad power station,L100000103284,oil/gas,mothballed,21
+G100001020483,energy_plants_gem_units,ROU,point,,ROU-1-IF,,point,,,,false,abf-boundaries-v0.2.0,Bucharest-Sud power station,L100000400606,oil/gas,pre_construction,275
+G100001020484,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest Grozavesti power station,L100000400599,oil/gas,pre_construction,34
+G100001023797,energy_plants_gem_units,ROU,point,,ROU-1-BZ,,point,,,,true,abf-boundaries-v0.2.0,Nehoiașu II hydroelectric plant,L100001020830,hydropower,pre_construction,55
+G100001027895,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Oradea power station,L100000103286,oil/gas,construction,30
+G100001031025,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,ClusterPower Craiova power station,L100001025908,oil/gas,operating,200
+G100001046540,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora power station,L100000103304,oil/gas,construction,145
+G100001052102,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Drăgănești hydroelectric plant,L100001046177,hydropower,operating,57
+G100001052103,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Drăgăşani hydroelectric plant,L100001046180,hydropower,operating,45
+G100001052105,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Govora hydroelectric plant,L100001046181,hydropower,operating,46
+G100001052106,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Râureni hydroelectric plant,L100001046182,hydropower,operating,48
+G100001052107,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Strejeşti hydroelectric plant,L100001046183,hydropower,operating,50
+G100001052108,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Frunzaru hydroelectric plant,L100001046184,hydropower,operating,57
+G100001052109,energy_plants_gem_units,ROU,point,,ROU-1-MH,,point,,,,false,abf-boundaries-v0.2.0,Gogosu hydroelectric plant,L100001046185,hydropower,operating,54
+G100001052126,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Ipotesti hydroelectric plant,L100001046196,hydropower,operating,57
+G100001052128,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Izbiceni hydroelectric plant,L100001046198,hydropower,operating,54
+G100001052131,energy_plants_gem_units,ROU,point,,ROU-1-GJ,,point,,,,true,abf-boundaries-v0.2.0,Motru hydroelectric plant,L100001046201,hydropower,operating,50
+G100001052132,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,true,abf-boundaries-v0.2.0,Munteni 1 hydroelectric plant,L100001046202,hydropower,operating,50
+G100001052133,energy_plants_gem_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Racaciuni hydroelectric plant,L100001046204,hydropower,operating,45
+G100001052138,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Rusanesti hydroelectric plant,L100001046208,hydropower,operating,53
+G100001052140,energy_plants_gem_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Tarnita hydroelectric plant,L100001046209,hydropower,operating,45
+G100001054032,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,true,abf-boundaries-v0.2.0,VIFOR wind farm,L100000920702,wind,construction,269
+G100001054138,energy_plants_gem_units,ROU,point,,ROU-1-SV,,point,,,,true,abf-boundaries-v0.2.0,Siret wind farm,L100001047548,wind,announced,528
+G100001054139,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,true,abf-boundaries-v0.2.0,Urleasca wind farm,L100001047549,wind,pre_construction,102
+G100001054140,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,true,abf-boundaries-v0.2.0,Green Breeze wind farm,L100001047550,wind,construction,99.2
+G100001054141,energy_plants_gem_units,ROU,point,,ROU-1-VS,,point,,,,true,abf-boundaries-v0.2.0,Deleni (PPC) wind farm,L100001047551,wind,construction,140
+G100001054155,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Ghimpați solar farm,L100001047565,utility-scale solar,construction,146
+G100001054156,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Văcărești solar farm,L100001047566,utility-scale solar,operating,126
+G100001054157,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Dolj solar farm,L100001047567,utility-scale solar,pre_construction,60
+G100001054158,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Glodeni solar farm,L100001047568,utility-scale solar,operating,53
+G100001054159,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Glodeni solar farm,L100001047568,utility-scale solar,operating,60
+G100001054160,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Niculești solar farm,L100001047569,utility-scale solar,pre_construction,214
+G100001054161,energy_plants_gem_units,ROU,point,,ROU-1-SJ,,point,,,,true,abf-boundaries-v0.2.0,Șimleu Silvaniei solar farm,L100001047570,utility-scale solar,pre_construction,101
+G100001054162,energy_plants_gem_units,ROU,point,,ROU-1-TR,,point,,,,true,abf-boundaries-v0.2.0,Theia solar farm,L100001047571,utility-scale solar,announced,710
+G100001054242,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,true,abf-boundaries-v0.2.0,Brăila Floating solar farm,L100001047620,utility-scale solar,announced,50
+G100001054243,energy_plants_gem_units,ROU,point,,ROU-1-TR,,point,,,,true,abf-boundaries-v0.2.0,Teleorman solar farm,L100001047621,utility-scale solar,announced,258
+G100001054245,energy_plants_gem_units,ROU,point,,ROU-1-BV,,point,,,,false,abf-boundaries-v0.2.0,Parau solar farm,L100000824263,utility-scale solar,pre_construction,310
+G100001054246,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Robăneștii-Pielești solar farm,L100001047623,utility-scale solar,announced,30
+G100001054247,energy_plants_gem_units,ROU,point,,ROU-1-CT,,point,,,,true,abf-boundaries-v0.2.0,Poarta Albă solar farm,L100001047624,utility-scale solar,pre_construction,44.5
+G100001054249,energy_plants_gem_units,ROU,point,,ROU-1-HR,,point,,,,true,abf-boundaries-v0.2.0,Cefa-Mădăraș solar farm,L100001047626,utility-scale solar,announced,77.6
+G100001054254,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Corbii Mari solar farm,L100001047631,utility-scale solar,construction,265
+G100001057175,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,true,abf-boundaries-v0.2.0,Chișineu-Criș solar farm,L100001049555,utility-scale solar,operating,54
+G100001057176,energy_plants_gem_units,ROU,point,,ROU-1-SM,,point,,,,true,abf-boundaries-v0.2.0,Lazuri solar farm,L100001049556,utility-scale solar,construction,55
+G100001057177,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Vișina solar farm,L100001049557,utility-scale solar,pre_construction,220
+G100001057178,energy_plants_gem_units,ROU,point,,ROU-1-DB,,point,,,,true,abf-boundaries-v0.2.0,Răscăeți solar farm,L100001049558,utility-scale solar,construction,80
+G100001057179,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Bolintin-Deal solar farm,L100001049559,utility-scale solar,pre_construction,40
+G100001057180,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Joiţa solar farm,L100001049560,utility-scale solar,announced,80
+G100001057181,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Ulmi solar farm,L100001049561,utility-scale solar,announced,60
+G100001057182,energy_plants_gem_units,ROU,point,,ROU-1-GR,,point,,,,true,abf-boundaries-v0.2.0,Bolintin-Vale solar farm,L100001049562,utility-scale solar,announced,50
+G100001057362,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,true,abf-boundaries-v0.2.0,Robăneștii-Pielești solar farm,L100001047623,utility-scale solar,announced,30
+G100001059882,energy_plants_gem_units,ROU,point,,ROU-1-DJ,,point,,,,false,abf-boundaries-v0.2.0,Calafat Dolj solar project I,L100001052088,utility-scale solar,operating,13.8
+G100001059920,energy_plants_gem_units,ROU,point,,ROU-1-GL,,point,,,,false,abf-boundaries-v0.2.0,Galați solar project,L100001052126,utility-scale solar,operating,1
+G100001059921,energy_plants_gem_units,ROU,point,,ROU-1-B,,point,,,,false,abf-boundaries-v0.2.0,Bucharest solar project I,L100001052127,utility-scale solar,operating,1
+G100001059937,energy_plants_gem_units,ROU,point,,ROU-1-IL,,point,,,,false,abf-boundaries-v0.2.0,Ialomița solar project I,L100001052143,utility-scale solar,operating,1.2
+G100001060035,energy_plants_gem_units,ROU,point,,ROU-1-BH,,point,,,,false,abf-boundaries-v0.2.0,Bihor solar project XX,L100001052241,utility-scale solar,operating,1.4
+G100001060061,energy_plants_gem_units,ROU,point,,ROU-1-PH,,point,,,,false,abf-boundaries-v0.2.0,Prahova solar project XX,L100001052267,utility-scale solar,operating,1.8
+G100001073478,energy_plants_gem_units,ROU,point,,ROU-1-MS,,point,,,,false,abf-boundaries-v0.2.0,Răstolița hydroelectric plant,L100001063902,hydropower,mothballed,35
+G100001073559,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,CET Arad hydrocarbons power station,L100001063963,oil/gas,construction,30
+G100001073580,energy_plants_gem_units,ROU,point,,ROU-1-AR,,point,,,,false,abf-boundaries-v0.2.0,Arad power station,L100000103284,oil/gas,shelved,15.3
+G100001073620,energy_plants_gem_units,ROU,point,,ROU-1-CJ,,point,,,,false,abf-boundaries-v0.2.0,Câmpia Turzii power station,L100001064018,oil/gas,construction,160
+G100001073731,energy_plants_gem_units,ROU,point,,ROU-1-BR,,point,,,,true,abf-boundaries-v0.2.0,Premier Energy Braila power station,L100001064105,oil/gas,announced,20
+G100001074275,energy_plants_gem_units,ROU,point,,ROU-1-VN,,point,,,,false,abf-boundaries-v0.2.0,Călimăneşti hydroelectric plant,L100001064524,hydropower,operating,40
+G100001074309,energy_plants_gem_units,ROU,point,,ROU-1-BT,,point,,,,false,abf-boundaries-v0.2.0,Stânca Costeşti hydroelectric plant,L100001064550,hydropower,operating,32
+G100001074355,energy_plants_gem_units,ROU,point,,ROU-1-OT,,point,,,,false,abf-boundaries-v0.2.0,Arcești hydroelectric plant,L100001064554,hydropower,operating,38
+G100001074360,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Băbeni hydroelectric plant,L100001064599,hydropower,operating,37
+G100001074367,energy_plants_gem_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Berești hydroelectric plant,L100001064603,hydropower,operating,44
+G100001074369,energy_plants_gem_units,ROU,point,,ROU-1-BC,,point,,,,false,abf-boundaries-v0.2.0,Bacău hydroelectric plant,L100001064608,hydropower,operating,30
+G100001074372,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Călimănești Olt hydroelectric plant,L100001064611,hydropower,operating,40
+G100001074422,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Cornetu hydroelectric plant,L100001064654,hydropower,operating,31
+G100001074423,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Dăești hydroelectric plant,L100001064655,hydropower,operating,38
+G100001074424,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Ionești hydroelectric plant,L100001064656,hydropower,operating,38
+G100001074428,energy_plants_gem_units,ROU,point,,ROU-1-VL,,point,,,,false,abf-boundaries-v0.2.0,Zavideni hydroelectric plant,L100001064660,hydropower,operating,38
+G100001074432,energy_plants_gem_units,ROU,point,,ROU-1-VN,,point,,,,false,abf-boundaries-v0.2.0,Movileni hydroelectric plant,L100001064664,hydropower,operating,34
+G100001074444,energy_plants_gem_units,ROU,point,,ROU-1-BZ,,point,,,,false,abf-boundaries-v0.2.0,Nehoiașu I hydroelectric plant,L100001064673,hydropower,operating,42
+G100001074445,energy_plants_gem_units,ROU,point,,ROU-1-CS,,point,,,,false,abf-boundaries-v0.2.0,Râul Alb hydroelectric plant,L100001064674,hydropower,operating,41
+G100001074446,energy_plants_gem_units,ROU,point,,ROU-1-AB,,point,,,,false,abf-boundaries-v0.2.0,Săsciori hydroelectric plant,L100001064675,hydropower,operating,42
+G100001074455,energy_plants_gem_units,ROU,point,,ROU-1-HD,,point,,,,false,abf-boundaries-v0.2.0,Toteşti hydroelectric plant,L100001064683,hydropower,operating,32
+G100001074469,energy_plants_gem_units,ROU,point,,ROU-1-NT,,point,,,,false,abf-boundaries-v0.2.0,Vaduri hydroelectric plant,L100001064696,hydropower,operating,44

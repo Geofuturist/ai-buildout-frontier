@@ -1,0 +1,6 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-2351e6e1fb0f,dc_atlas_points,BRN,field,,BRN-1-TU,,point,,,,true,abf-boundaries-v0.2.0,UNN Telisai Data Centre,Operating / Construction,telecom,,
+ATL-a7a9efe051f9,dc_atlas_points,BRN,field,,,,,no_point,,,,abf-boundaries-v0.2.0,UNN AI-Capable Data Centre,Planned,telecom,,
+ATL-c68371682869,dc_atlas_points,BRN,field,,,,,no_point,,,,abf-boundaries-v0.2.0,UNN Tungku Data Centre Campus,Operating / Construction,telecom,,
+ATL-f06503b7153d,dc_atlas_points,BRN,field,,,,,no_point,,,,abf-boundaries-v0.2.0,UNN Sumbiling Telhouse Data Centre,Operating / Construction,telecom,,
+ATL-f4cadb194c48,dc_atlas_points,BRN,field,,BRN-1-BM,,point,,,,true,abf-boundaries-v0.2.0,EGNC Data Centre,Operating / Construction,other,,

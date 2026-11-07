@@ -1,0 +1,65 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000101268,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,San José power station,L100000102009,coal,operating,139
+G100000104857,energy_plants_gem_units,GTM,point,,GTM-1-10,,point,,,,false,abf-boundaries-v0.2.0,Palo Gordo power station,L100000102016,bioenergy,operating,46
+G100000104950,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jaguar Energy power station,L100000102010,oil/gas,operating,150
+G100000104951,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jaguar Energy power station,L100000102010,oil/gas,operating,150
+G100000106186,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Las Palmas power station,L100000102011,coal,retired,83
+G100000106560,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Magdalena Sugar Mill power station,L100000102012,bioenergy,operating,62
+G100000106561,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Magdalena Sugar Mill power station,L100000102012,bioenergy,operating,62
+G100000108203,energy_plants_gem_units,GTM,point,,GTM-1-18,,point,,,,true,abf-boundaries-v0.2.0,Puerto Barrios Iberdrola power station,L100000102014,coal,cancelled,300
+G100000112958,energy_plants_gem_units,GTM,point,,GTM-1-11,,point,,,,false,abf-boundaries-v0.2.0,San Isidro power station,L100000102015,bioenergy,operating,62
+G100000112959,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Santa Ana power station,L100000102013,bioenergy,operating,64
+G100000114951,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Pantaleón power station,L100000104789,bioenergy,operating,61
+G100000114952,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,true,abf-boundaries-v0.2.0,Santa Lucía power station,L100000104790,bioenergy,operating,45
+G100000114953,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Trinidad power station,L100000104791,bioenergy,operating,46
+G100000114954,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Trinidad power station,L100000104791,bioenergy,operating,46
+G100000115632,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Ingenio La Unión power station,L100000104951,bioenergy,operating,85
+G100000115633,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Madre Tierra power station,L100000104952,bioenergy,operating,37
+G100000115634,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Santa Ana power station,L100000102013,bioenergy,operating,40
+G100000201556,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Magdalena Sugar Mill power station,L100000102012,bioenergy,operating,72
+G100000201557,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Magdalena Sugar Mill power station,L100000102012,bioenergy,operating,45
+G100000201560,energy_plants_gem_units,GTM,point,,GTM-1-10,,point,,,,false,abf-boundaries-v0.2.0,Palo Gordo power station,L100000102016,bioenergy,mothballed,31
+G100000201562,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Pantaleón power station,L100000104789,bioenergy,operating,60
+G100000412018,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,true,abf-boundaries-v0.2.0,Stewart & Stevenson power station,L100000408655,oil/gas,mothballed,51
+G100000412019,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Puerto Quetzal Power (PQP) power station,L100000408656,oil/gas,operating,59
+G100000412020,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Las Palmas power station,L100000102011,oil/gas,operating,67
+G100000412021,energy_plants_gem_units,GTM,point,,GTM-1-01,,point,,,,true,abf-boundaries-v0.2.0,Generadora del Este power station,L100000408657,oil/gas,operating,70
+G100000412022,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Arizona power station,L100000408658,oil/gas,operating,160
+G100000601788,energy_plants_gem_units,GTM,point,,GTM-1-01,,point,,,,false,abf-boundaries-v0.2.0,Aguacapa hydroelectric plant,L100000601769,hydropower,operating,80
+G100000601790,energy_plants_gem_units,GTM,point,,GTM-1-14,,point,,,,false,abf-boundaries-v0.2.0,Palo Viejo hydroelectric plant,L100000601771,hydropower,operating,87
+G100000601791,energy_plants_gem_units,GTM,point,,GTM-1-16,,point,,,,false,abf-boundaries-v0.2.0,Pueblo Viejo hydroelectric plant,L100000601772,hydropower,operating,300
+G100000601792,energy_plants_gem_units,GTM,point,,GTM-1-16,,point,,,,false,abf-boundaries-v0.2.0,Renace 2 Phase 1 hydroelectric plant,L100000601773,hydropower,operating,117
+G100000601794,energy_plants_gem_units,GTM,point,,GTM-1-14,,point,,,,false,abf-boundaries-v0.2.0,Xacbal hydroelectric plant,L100000601775,hydropower,operating,97
+G100000604313,energy_plants_gem_units,GTM,point,,GTM-1-16,,point,,,,true,abf-boundaries-v0.2.0,Chulac hydroelectric plant,L100000601770,hydropower,cancelled,340
+G100000604793,energy_plants_gem_units,GTM,point,,GTM-1-04,,point,,,,true,abf-boundaries-v0.2.0,Serchil hydroelectric plant,L100000601774,hydropower,cancelled,135
+G100000604953,energy_plants_gem_units,GTM,point,,GTM-1-16,,point,,,,true,abf-boundaries-v0.2.0,Xalalá hydroelectric plant,L100000601776,hydropower,cancelled,181
+G100000808459,energy_plants_gem_units,GTM,point,,GTM-1-06,,point,,,,false,abf-boundaries-v0.2.0,Horus Energy PV Solar Plant,L100000807197,utility-scale solar,operating,58
+G100000808460,energy_plants_gem_units,GTM,point,,GTM-1-06,,point,,,,false,abf-boundaries-v0.2.0,Horus Energy PV Solar Plant,L100000807197,utility-scale solar,operating,35
+G100000809393,energy_plants_gem_units,GTM,point,,GTM-1-22,,point,,,,false,abf-boundaries-v0.2.0,Buena Vista solar farm,L100000807705,utility-scale solar,operating,1.5
+G100000809394,energy_plants_gem_units,GTM,point,,GTM-1-06,,point,,,,true,abf-boundaries-v0.2.0,El Jobo solar farm,L100000807706,utility-scale solar,operating,1
+G100000809395,energy_plants_gem_units,GTM,point,,GTM-1-06,,point,,,,false,abf-boundaries-v0.2.0,La Avellana solar farm,L100000807707,utility-scale solar,operating,1
+G100000809396,energy_plants_gem_units,GTM,point,,GTM-1-22,,point,,,,true,abf-boundaries-v0.2.0,Pedro de Alvarado solar farm,L100000807708,utility-scale solar,operating,1.5
+G100000809398,energy_plants_gem_units,GTM,point,,GTM-1-06,,point,,,,true,abf-boundaries-v0.2.0,Taxisco solar farm,L100000807710,utility-scale solar,operating,1.5
+G100000838035,energy_plants_gem_units,GTM,point,,GTM-1-19,,point,,,,true,abf-boundaries-v0.2.0,Green Solar Project solar farm,L100000832474,utility-scale solar,operating,13.5
+G100000838036,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,true,abf-boundaries-v0.2.0,San Patricio solar farm,L100000832475,utility-scale solar,operating,65
+G100000906350,energy_plants_gem_units,GTM,point,,GTM-1-01,,point,,,,false,abf-boundaries-v0.2.0,San Antonio wind farm,L100000905067,wind,operating,53
+G100000907205,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Viento Blanco wind farm,L100000905390,wind,operating,23
+G100000907494,energy_plants_gem_units,GTM,point,,GTM-1-22,,point,,,,false,abf-boundaries-v0.2.0,Las Cumbres De Agua Blanca wind farm,L100000905489,wind,operating,30
+G100000907673,energy_plants_gem_units,GTM,point,,GTM-1-22,,point,,,,true,abf-boundaries-v0.2.0,Comapa Wind Project,L100000905585,wind,construction,65
+G100001023659,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,true,abf-boundaries-v0.2.0,Yolanda solar farm,L100001020729,utility-scale solar,operating,73.7
+G100001023660,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,true,abf-boundaries-v0.2.0,El Carrizo solar farm,L100001020731,utility-scale solar,operating,74.7
+G100001023662,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,true,abf-boundaries-v0.2.0,Cox Energy solar farm,L100001020732,utility-scale solar,pre_construction,38.4
+G100001027265,energy_plants_gem_units,GTM,point,,GTM-1-10,,point,,,,false,abf-boundaries-v0.2.0,El Canada hydroelectric plant,L100001023060,hydropower,operating,48
+G100001027266,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Jurun Marinala hydroelectric plant,L100001023061,hydropower,operating,60
+G100001027267,energy_plants_gem_units,GTM,point,,GTM-1-16,,point,,,,false,abf-boundaries-v0.2.0,Renace hydroelectric plant,L100001023062,hydropower,operating,68
+G100001048271,energy_plants_gem_units,GTM,point,,GTM-1-09,,point,,,,false,abf-boundaries-v0.2.0,Zunil geothermal power plant,L100001042913,geothermal,operating,24
+G100001048272,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Ortitlan geothermal power plant,L100001042918,geothermal,operating,22
+G100001053243,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Concepción power station,L100001046919,bioenergy,operating,27.5
+G100001053244,energy_plants_gem_units,GTM,point,,GTM-1-10,,point,,,,false,abf-boundaries-v0.2.0,Tulula Mill power station,L100001046920,bioenergy,operating,27.5
+G100001062614,energy_plants_gem_units,GTM,point,,GTM-1-01,,point,,,,false,abf-boundaries-v0.2.0,Las Vacas hydroelectric plant,L100001054722,hydropower,operating,39
+G100001071897,energy_plants_gem_units,GTM,point,,GTM-1-16,,point,,,,false,abf-boundaries-v0.2.0,Oxec-II hydroelectric plant,L100001062600,hydropower,operating,56
+G100001071898,energy_plants_gem_units,GTM,point,,GTM-1-19,,point,,,,true,abf-boundaries-v0.2.0,Río Hondo-II hydroelectric plant,L100001062601,hydropower,shelved,32
+G100001090324,energy_plants_gem_units,GTM,point,,GTM-1-22,,point,,,,false,abf-boundaries-v0.2.0,Santo Tomás solar farm,L100001080413,utility-scale solar,construction,100.1
+G100001090325,energy_plants_gem_units,GTM,point,,GTM-1-05,,point,,,,true,abf-boundaries-v0.2.0,Tierra del Sol solar farm,L100001080418,utility-scale solar,pre_construction,75
+G100001090326,energy_plants_gem_units,GTM,point,,GTM-1-22,,point,,,,true,abf-boundaries-v0.2.0,Solarium solar farm,L100001080421,utility-scale solar,construction,40
+G100001090343,energy_plants_gem_units,GTM,point,,GTM-1-22,,point,,,,true,abf-boundaries-v0.2.0,Solarium solar farm,L100001080421,utility-scale solar,construction,26

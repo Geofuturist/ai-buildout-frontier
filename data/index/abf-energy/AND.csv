@@ -1,0 +1,3 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001030328,energy_plants_gem_units,AND,point,,AND-1-08,,point,,,,false,abf-boundaries-v0.2.0,Les Escaldes hydroelectric plant,L100001025609,hydropower,operating,45
+G100001055410,energy_plants_gem_units,AND,point,,AND-1-08,,point,,,,false,abf-boundaries-v0.2.0,Andorra Waste to Energy power station,L100001048281,bioenergy,operating,18

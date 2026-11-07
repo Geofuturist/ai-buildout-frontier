@@ -1,0 +1,4 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001018280,energy_plants_gem_units,BLZ,point,,BLZ-1-SC,,point,,,,true,abf-boundaries-v0.2.0,Belize 60 MW solar farm,L100001016455,utility-scale solar,announced,60
+G100001052180,energy_plants_gem_units,BLZ,point,,BLZ-1-OW,,point,,,,false,abf-boundaries-v0.2.0,Belcogen power station,L100001046240,bioenergy,operating,15
+G100001052181,energy_plants_gem_units,BLZ,point,,BLZ-1-OW,,point,,,,false,abf-boundaries-v0.2.0,Belcogen power station,L100001046240,bioenergy,operating,12.5

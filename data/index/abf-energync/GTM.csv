@@ -1,0 +1,9 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000809397,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-19,,point,,,,false,abf-boundaries-v0.2.0,SIBO solar farm,L100000807709,utility-scale solar,operating,10
+G100001033592,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-19,,point,,,,false,abf-boundaries-v0.2.0,Río Hondo solar project I,L100001028321,utility-scale solar,operating,1.4
+G100001033593,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-22,,point,,,,false,abf-boundaries-v0.2.0,Municipio De Jutiapa solar project,L100001028322,utility-scale solar,operating,2.3
+G100001033595,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-01,,point,,,,false,abf-boundaries-v0.2.0,Guatemala Department solar project,L100001028324,utility-scale solar,operating,3.6
+G100001033596,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-22,,point,,,,false,abf-boundaries-v0.2.0,Comapa solar project,L100001028325,utility-scale solar,operating,2.5
+G100001033597,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-05,,point,,,,false,abf-boundaries-v0.2.0,Masagua solar project,L100001028326,utility-scale solar,operating,9
+G100001033598,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-19,,point,,,,false,abf-boundaries-v0.2.0,Río Hondo solar project II,L100001028327,utility-scale solar,operating,4.5
+G100001033599,energy_plants_gem_tzsam_units,GTM,point,,GTM-1-22,,point,,,,false,abf-boundaries-v0.2.0,Asunción Mita solar project,L100001028328,utility-scale solar,operating,4.1

@@ -1,0 +1,46 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000106456,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Luena Katanga power station,L100000101813,coal,shelved,500
+G100000201685,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Makelele Biogas power station,L100000201402,bioenergy,pre_construction,60
+G100000407074,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinkasi power station,L100000406743,oil/gas,shelved,100
+G100000407075,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinkasi power station,L100000406743,oil/gas,announced,100
+G100000601494,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Busanga hydroelectric plant,L100000601476,hydropower,operating,240
+G100000601495,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Inga I hydroelectric plant,L100000601477,hydropower,operating,351
+G100000601496,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Inga II hydroelectric plant,L100000601478,hydropower,operating,1424
+G100000601499,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mwadingusha hydroelectric plant,L100000601481,hydropower,operating,78
+G100000601500,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,N'Seke hydroelectric plant,L100000601482,hydropower,operating,260
+G100000601501,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,N'Zilo 1 hydroelectric plant,L100000601483,hydropower,operating,108
+G100000601502,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,N'Zilo 2 hydroelectric plant,L100000601484,hydropower,pre_construction,200
+G100000601503,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Sombwe hydroelectric plant,L100000601485,hydropower,construction,150
+G100000601504,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Zongo I hydroelectric plant,L100000601486,hydropower,operating,75
+G100000601505,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Zongo II hydroelectric plant,L100000601487,hydropower,operating,150
+G100000604120,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Ruzizi III hydroelectric plant,L100000604081,hydropower,pre_construction,206
+G100000604122,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mambilima I hydroelectric plant,L100000604083,hydropower,pre_construction,126
+G100000604123,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mambilima II hydroelectric plant,L100000604084,hydropower,pre_construction,202
+G100000604449,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Inga III hydroelectric plant,L100000601479,hydropower,pre_construction,4800
+G100000604578,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Lufira River hydroelectric plant,L100000601480,hydropower,cancelled,150
+G100000604641,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mumbotuta CX hydroelectric plant,L100000604085,hydropower,pre_construction,300
+G100000800213,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinshasa Solar City solar farm,L100000800171,utility-scale solar,cancelled,300
+G100000800214,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinshasa Solar City solar farm,L100000800171,utility-scale solar,cancelled,300
+G100000800221,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kolwezi (EAP) solar farm,L100000800177,utility-scale solar,pre_construction,133
+G100000800416,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Tshopo solar farm,L100000800342,utility-scale solar,shelved,40
+G100000814086,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Amea Power solar farm (DR Congo),L100000811578,utility-scale solar,pre_construction,100
+G100000814087,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Likasi solar farm,L100000811579,utility-scale solar,announced,133
+G100000831150,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Hanergy solar farm,L100000827623,utility-scale solar,cancelled,400
+G100000831151,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kinshasa Solar City solar farm,L100000800171,utility-scale solar,cancelled,400
+G100001021090,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Fungurume solar farm,L100001018811,utility-scale solar,construction,48
+G100001021096,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kolwezi (SNEL) solar farm,L100001018815,utility-scale solar,shelved,100
+G100001021097,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kolwezi (SNEL) solar farm,L100001018815,utility-scale solar,shelved,100
+G100001021101,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kolwezi (IFC) solar farm,L100001018819,utility-scale solar,shelved,100
+G100001021110,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,DR Congo (SkyPower) solar project,L100001018828,utility-scale solar,announced,200
+G100001021111,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,DR Congo (SkyPower) solar project,L100001018828,utility-scale solar,announced,800
+G100001021119,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Nuru solar farm,L100001018835,utility-scale solar,announced,5
+G100001021120,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Nuru solar farm,L100001018835,utility-scale solar,announced,5
+G100001021121,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Nuru solar farm,L100001018835,utility-scale solar,announced,5
+G100001021122,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Kibali Gold Mine solar farm,L100001018836,utility-scale solar,operating,16
+G100001027226,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Katende hydroelectric plant,L100001023021,hydropower,operating,64
+G100001062570,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Koni hydroelectric plant,L100001054678,hydropower,operating,42
+G100001074069,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,CrossBoundary Energy solar farm,L100001064386,utility-scale solar,announced,233
+G100001074072,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Fipango solar farm,L100001064387,utility-scale solar,construction,200
+G100001074073,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Fipango solar farm,L100001064387,utility-scale solar,announced,300
+G100001074075,energy_plants_gem_units,COD,point,,,,,,,,true,abf-boundaries-v0.2.0,Ignié (DR Congo) solar farm,L100001064388,utility-scale solar,announced,65
+G100001090662,energy_plants_gem_units,COD,point,,,,,,,,false,abf-boundaries-v0.2.0,Mpiana-Mwanga hydroelectric plant,L100001080730,hydropower,operating,40

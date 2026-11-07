@@ -1,0 +1,8 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,name,status_raw,type_group,power_class,power_mw
+ATL-061501e72fa3,dc_atlas_points,CRI,field,,CRI-1-A,,field,,,,true,abf-boundaries-v0.2.0,IFX Networks Alajuela Campus,Planned,telecom,lt10,
+ATL-441f282412b1,dc_atlas_points,CRI,field,,CRI-1-SJ,,field,,,,true,abf-boundaries-v0.2.0,IFX Networks San José,Operating / Construction,telecom,lt10,
+ATL-515b7ccfae3c,dc_atlas_points,CRI,field,,CRI-1-H,,field,,,,true,abf-boundaries-v0.2.0,Banco Nacional de Costa Rica CFBNCR Data Center,Operating / Construction,enterprise_it,lt10,
+ATL-c168e7b14b49,dc_atlas_points,CRI,field,,CRI-1-SJ,,field,,,,true,abf-boundaries-v0.2.0,Navegalo San José Campus,Operating / Construction,colocation,lt10,
+ATL-c3282410840b,dc_atlas_points,CRI,field,,CRI-1-C,,field,,,,true,abf-boundaries-v0.2.0,ICE Kosmös Hub Guatuso Data Center,Operating / Construction,telecom,,
+ATL-d4a8a8e4d296,dc_atlas_points,CRI,field,,CRI-1-SJ,,field,,,,true,abf-boundaries-v0.2.0,Navegalo San José Campus,Planned,colocation,10_99,
+ATL-e82070dff5d7,dc_atlas_points,CRI,field,,CRI-1-A,,field,,,,true,abf-boundaries-v0.2.0,IFX Networks Alajuela Campus,Operating / Construction,telecom,lt10,

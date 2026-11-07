@@ -15,6 +15,7 @@
 //   ABF_DATA_LOCAL     folder that mirrors the bucket layout (manifest/..., abf-layers/...) - development only
 //   NEXT_PUBLIC_SITE_URL  used for the {domain} placeholder
 
+import { isIndexManifest, readIndexes } from './index-manifest.mjs';
 import { createHash } from 'node:crypto';
 import zlib from 'node:zlib';
 import fs from 'node:fs';
@@ -106,6 +107,7 @@ async function main() {
   for (const n of dsNames) if (!/^abf-[a-z0-9]+$/.test(n)) fail(`${pointerPath}: unexpected dataset name "${n}"`);
 
   const datasets = {};
+  const indexSets = [];
   const layers = [];
   const metas = {};
 
@@ -116,7 +118,10 @@ async function main() {
     if (man.schema_version !== 'abf-manifest-1.0') fail(`${ptr.manifest}: unexpected schema_version`);
     if (man.dataset !== dsName) fail(`${ptr.manifest}: dataset is ${man.dataset}, expected ${dsName}`);
     if (man.version !== ptr.version) fail(`${ptr.manifest}: version ${man.version} differs from pointer ${ptr.version}`);
-    if (!man.base_path || !Array.isArray(man.layers) || man.layers.length === 0) fail(`${ptr.manifest}: base_path or layers missing`);
+    // A dataset of kind "index" has no layers (SPEC_INDEX_territory r6 7); every other dataset needs at least one
+    if (!man.base_path || !Array.isArray(man.layers) || (man.layers.length === 0 && !isIndexManifest(man))) fail(`${ptr.manifest}: base_path or layers missing`);
+    if (isIndexManifest(man) && man.layers.length > 0) fail(`${ptr.manifest}: a dataset of kind index must not list layers`);
+    if (isIndexManifest(man) && !man.indexes) fail(`${ptr.manifest}: a dataset of kind index has no indexes`);
     if (man.doi == null) strict(`${dsName} ${man.version}: DOI is null`);
     else if (!DOI_RE.test(man.doi)) fail(`${dsName}: DOI "${man.doi}" does not look like 10.5281/zenodo.N`);
 
@@ -131,6 +136,9 @@ async function main() {
       extra_files: (man.extra_files || []).map((f) => withUrl(man.base_path, f)),
       source_archives: (man.source_archives || []).map((f) => withUrl(man.base_path, f)),
     };
+
+    for (const ix of await readIndexes(man, dsName, { getJson, sha256, strict, fail, fileUrl })) indexSets.push(ix);
+    datasets[dsName].has_indexes = !!man.indexes;
 
     const metaCache = new Map();
     for (const l of man.layers) {
@@ -187,6 +195,7 @@ async function main() {
         },
       });
     }
+    if (isIndexManifest(man)) { datasets[dsName].kind = 'index'; continue; }
     // A dataset is "boundaries" when its metadata say kind = boundaries (never by name)
     const kinds = new Set([...metaCache.values()].map((m) => m.kind));
     if (kinds.size !== 1) fail(`${dsName}: mixes metadata kinds (${[...kinds].join(', ')})`);
@@ -310,32 +319,15 @@ async function main() {
     for (const [f, map] of Object.entries(styles.fields || {})) for (const [v, k] of Object.entries(map)) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.fields.${f}.${v}: "${k}" is not a kind (${KINDS.join(', ')})`);
     for (const [f, k] of styles.counts || []) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.counts.${f}: "${k}" is not a kind`);
   }
-  // Territory index (abf-index): the card is hidden while it is not available. PREVIEW ONLY for now: files in
-  // public/index-preview/<set>/ (meta.json, <ISO3>.csv.gz, adm0_other.csv.gz) made by scripts/web/make-index-preview.py.
-  // The release of the index in the pointer replaces this (the manifest shape is for CODE-PUB2 / ARCH7 to settle).
+  // Territory index (SPEC_INDEX_territory r10 7): the indexes found in the manifests of the pointer, with the texts of the
+  // card (content/site.json index_card). While the pointer has no index, the card block is not shown.
   let indexSource = null;
-  const prevDir = path.join(ROOT, 'public', 'index-preview');
-  if (fs.existsSync(prevDir) && site.index_card) {
-    const sets = [];
-    for (const id of fs.readdirSync(prevDir).sort()) {
-      const mp = path.join(prevDir, id, 'meta.json');
-      if (!fs.existsSync(mp)) continue;
-      const m = JSON.parse(fs.readFileSync(mp, 'utf8'));
-      sets.push({
-        id: m.set,
-        version: m.index_version,
-        license: m.set.endsWith('nc') ? 'CC BY-NC 4.0' : 'CC BY 4.0',
-        meta: {
-          aggregations: m.aggregations,
-          levels_by_country: m.levels_by_country,
-          layers: m.layers,
-          countries: Object.keys(m.files).sort(),
-          index_version: m.index_version,
-        },
-      });
-    }
+  if (indexSets.length && site.index_card) {
     const c = site.index_card;
-    if (sets.length) indexSource = { base: '/index-preview', sets, card: { title: c.title, layer_titles: c.layer_titles, title_fields: c.title_fields, detail_fields: c.detail_fields, list_max: c.list_max, texts: c.texts } };
+    indexSource = {
+      sets: indexSets.map((x) => ({ ...x, license_name: (x.license && x.license.name) || '' })),
+      card: { title: c.title, layer_titles: c.layer_titles, title_fields: c.title_fields, detail_fields: c.detail_fields, list_max: c.list_max, texts: c.texts },
+    };
   }
 
   // Texts of the Status block of the legend (status_styles.title, note, lines; RES_texts_site_legend)
@@ -571,6 +563,7 @@ async function main() {
     source_logos: sourceLogos,
     status_legend: statusLegend,
     index: indexSource,
+    index_sources: indexSets,
     unit_words: unitWords,
     countries,
     attribution: groups,

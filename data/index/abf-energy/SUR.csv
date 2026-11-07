@@ -1,0 +1,13 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000411976,energy_plants_gem_units,SUR,point,,SUR-1-PM,,point,,,,false,abf-boundaries-v0.2.0,DPP2 Bemland power station,L100000408596,oil/gas,operating,42
+G100000411977,energy_plants_gem_units,SUR,point,,SUR-1-PM,,point,,,,false,abf-boundaries-v0.2.0,DPP2 Bemland power station,L100000408596,oil/gas,operating,21
+G100000411978,energy_plants_gem_units,SUR,point,,SUR-1-PM,,point,,,,false,abf-boundaries-v0.2.0,DPP2 Bemland power station,L100000408596,oil/gas,operating,63
+G100000603447,energy_plants_gem_units,SUR,point,,SUR-1-BR,,point,,,,false,abf-boundaries-v0.2.0,Brokopondo hydroelectric plant,L100000603412,hydropower,operating,180
+G100000604477,energy_plants_gem_units,SUR,point,,SUR-1-SI,,point,,,,true,abf-boundaries-v0.2.0,Kabelebo 1 hydroelectric plant,L100000603413,hydropower,cancelled,500
+G100000604478,energy_plants_gem_units,SUR,point,,SUR-1-SI,,point,,,,true,abf-boundaries-v0.2.0,Kabelebo 2 hydroelectric plant,L100000603414,hydropower,cancelled,300
+G100000810485,energy_plants_gem_units,SUR,point,,SUR-1-NI,,point,,,,false,abf-boundaries-v0.2.0,Nickerie solar farm,L100000808312,utility-scale solar,operating,2.3
+G100001018309,energy_plants_gem_units,SUR,point,,SUR-1-SI,,point,,,,true,abf-boundaries-v0.2.0,Staatsolie solar farm,L100001016475,utility-scale solar,announced,45
+G100001028079,energy_plants_gem_units,SUR,point,,SUR-1-WA,,point,,,,false,abf-boundaries-v0.2.0,Tout Lui Faut power station,L100001023559,oil/gas,operating,28
+G100001028080,energy_plants_gem_units,SUR,point,,SUR-1-WA,,point,,,,false,abf-boundaries-v0.2.0,Tout Lui Faut power station,L100001023559,oil/gas,operating,34
+G100001028081,energy_plants_gem_units,SUR,point,,SUR-1-WA,,point,,,,false,abf-boundaries-v0.2.0,Tout Lui Faut power station,L100001023559,oil/gas,operating,34
+G100001090761,energy_plants_gem_units,SUR,point,,SUR-1-SA,,point,,,,true,abf-boundaries-v0.2.0,Sarah Maria solar farm,L100001080820,utility-scale solar,announced,30

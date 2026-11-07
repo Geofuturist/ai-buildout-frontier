@@ -1,0 +1,7 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000412230,energy_plants_gem_units,BMU,point,,,,,,,,false,abf-boundaries-v0.2.0,North power station,L100000408508,oil/gas,operating,56
+G100000412231,energy_plants_gem_units,BMU,point,,,,,,,,true,abf-boundaries-v0.2.0,East power station,L100000408509,oil/gas,operating,58
+G100000926825,energy_plants_gem_units,BMU,point,,,,,,,,true,abf-boundaries-v0.2.0,Bermuda Offshore Wind Project,L100000916593,wind,pre_construction,60
+G100001023813,energy_plants_gem_units,BMU,point,,,,,,,,false,abf-boundaries-v0.2.0,Airport Finger solar farm,L100001020844,utility-scale solar,operating,6
+G100001054506,energy_plants_gem_units,BMU,point,,,,,,,,true,abf-boundaries-v0.2.0,Bermuda Offshore Wind Project,L100000916593,wind,announced,60
+G100001062172,energy_plants_gem_units,BMU,point,,,,,,,,false,abf-boundaries-v0.2.0,Bermuda Floating PV solar project,L100001054320,utility-scale solar,announced,10

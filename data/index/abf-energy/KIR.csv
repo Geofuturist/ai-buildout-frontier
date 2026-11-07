@@ -1,0 +1,5 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100001023555,energy_plants_gem_units,KIR,point,,,,,,,,false,abf-boundaries-v0.2.0,South Tarawa solar farm,L100001020652,utility-scale solar,construction,7.5
+G100001023556,energy_plants_gem_units,KIR,point,,,,,,,,false,abf-boundaries-v0.2.0,South Tarawa solar farm,L100001020652,utility-scale solar,announced,4
+G100001023557,energy_plants_gem_units,KIR,point,,,,,,,,false,abf-boundaries-v0.2.0,South Tarawa solar farm,L100001020652,utility-scale solar,announced,5
+G100001062338,energy_plants_gem_units,KIR,point,,,,,,,,false,abf-boundaries-v0.2.0,South Tarawa Water and Sanitation Project-funded solar farm,L100001054461,utility-scale solar,operating,2.5

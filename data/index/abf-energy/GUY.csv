@@ -1,0 +1,21 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000407369,energy_plants_gem_units,GUY,point,,GUY-1-ES,,point,,,,true,abf-boundaries-v0.2.0,Wales power station,L100000406872,oil/gas,construction,150
+G100000810461,energy_plants_gem_units,GUY,point,,GUY-1-UD,,point,,,,true,abf-boundaries-v0.2.0,Berbice solar farm,L100000808290,utility-scale solar,pre_construction,10
+G100000810462,energy_plants_gem_units,GUY,point,,GUY-1-ES,,point,,,,true,abf-boundaries-v0.2.0,Essequibo solar farm,L100000808291,utility-scale solar,construction,8
+G100000810463,energy_plants_gem_units,GUY,point,,GUY-1-UD,,point,,,,true,abf-boundaries-v0.2.0,Linden solar farm,L100000808292,utility-scale solar,pre_construction,15
+G100000838037,energy_plants_gem_units,GUY,point,,GUY-1-CU,,point,,,,true,abf-boundaries-v0.2.0,Bartica solar farm,L100000832476,utility-scale solar,operating,1.5
+G100000838038,energy_plants_gem_units,GUY,point,,GUY-1-UT,,point,,,,true,abf-boundaries-v0.2.0,Lethem solar farm,L100000832477,utility-scale solar,operating,1
+G100000927206,energy_plants_gem_units,GUY,point,,GUY-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Hope wind farm,L100000905330,wind,pre_construction,25.2
+G100000927207,energy_plants_gem_units,GUY,point,,GUY-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Hope wind farm,L100000905330,wind,shelved,25
+G100001023125,energy_plants_gem_units,GUY,point,,GUY-1-DE,,point,,,,false,abf-boundaries-v0.2.0,Cheddi Jagan Airport solar farm,L100001020314,utility-scale solar,announced,3
+G100001023710,energy_plants_gem_units,GUY,point,,GUY-1-DE,,point,,,,true,abf-boundaries-v0.2.0,Hope solar farm,L100001020766,utility-scale solar,shelved,20
+G100001023712,energy_plants_gem_units,GUY,point,,GUY-1-CU,,point,,,,true,abf-boundaries-v0.2.0,Mazaruni Prison solar farm,L100001020767,utility-scale solar,pre_construction,1.2
+G100001028062,energy_plants_gem_units,GUY,point,,GUY-1-ES,,point,,,,true,abf-boundaries-v0.2.0,Wales power station,L100000406872,oil/gas,pre_construction,300
+G100001028063,energy_plants_gem_units,GUY,point,,GUY-1-ES,,point,,,,true,abf-boundaries-v0.2.0,Wales power station,L100000406872,oil/gas,construction,150
+G100001051672,energy_plants_gem_units,GUY,point,,GUY-1-PT,,point,,,,false,abf-boundaries-v0.2.0,Amaila Falls hydroelectric plant,L100001045843,hydropower,pre_construction,165
+G100001052192,energy_plants_gem_units,GUY,point,SUR,GUY-1-EB,,point,,,,false,abf-boundaries-v0.2.0,Skeldon power station,L100001046247,bioenergy,operating,15
+G100001052193,energy_plants_gem_units,GUY,point,SUR,GUY-1-EB,,point,,,,false,abf-boundaries-v0.2.0,Skeldon power station,L100001046247,bioenergy,operating,15
+G100001053174,energy_plants_gem_units,GUY,point,,GUY-1-ES,,point,,,,true,abf-boundaries-v0.2.0,Powership Ela Sultan (Guyana) power station,L100001046875,oil/gas,operating,72
+G100001062213,energy_plants_gem_units,GUY,point,,GUY-1-EB,,point,,,,true,abf-boundaries-v0.2.0,Hampshire solar farm,L100001054352,utility-scale solar,operating,3
+G100001071987,energy_plants_gem_units,GUY,point,,GUY-1-CU,,point,,,,false,abf-boundaries-v0.2.0,Aurora gold mine solar farm,L100001062655,utility-scale solar,announced,16
+G100001094917,energy_plants_gem_units,GUY,point,,GUY-1-EB,,point,,,,true,abf-boundaries-v0.2.0,Berbice power station,L100001083750,oil/gas,announced,300

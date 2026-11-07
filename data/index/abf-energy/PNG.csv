@@ -1,0 +1,45 @@
+record_id,layer_id,adm0,adm0_basis,adm0_other,adm1,adm2,unit_basis,unit_note,adm1_point,adm2_point,approximate,boundary_release,plant_name,location_id,type,status_group,capacity_mw
+G100000113916,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Lae power station,L100000104464,coal,cancelled,52
+G100000200454,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Markham Valley Biomass power station,L100000200409,bioenergy,cancelled,18
+G100000413372,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Munum power plant,L100000408988,oil/gas,operating,30
+G100000413373,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Port Moresby power station,L100000408989,oil/gas,operating,58.8
+G100000413378,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Dirio Hides power station,L100000408990,oil/gas,pre_construction,66
+G100000413381,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Moitaka power station,L100000408976,oil/gas,operating,15
+G100000413383,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Moitaka power station,L100000408976,oil/gas,operating,41
+G100000413384,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Dirio power station,L100000408977,oil/gas,operating,15
+G100000413385,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Dirio power station,L100000408977,oil/gas,operating,15
+G100000413386,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Dirio power station,L100000408977,oil/gas,operating,15
+G100000414431,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Kiunga),L100000409308,oil/gas,pre_construction,24
+G100000414432,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Wewak),L100000409302,oil/gas,pre_construction,24
+G100000414433,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Rabaul),L100000409303,oil/gas,pre_construction,24
+G100000414434,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Mandang),L100000409305,oil/gas,pre_construction,24
+G100000414435,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Alotau),L100000409300,oil/gas,pre_construction,24
+G100000414436,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Kimbe),L100000409309,oil/gas,pre_construction,24
+G100000414437,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Buka Town),L100000409312,oil/gas,pre_construction,24
+G100000414438,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Manus Island),L100000409304,oil/gas,pre_construction,24
+G100000414439,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Lihir),L100000409306,oil/gas,pre_construction,24
+G100000414440,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Kikori),L100000409310,oil/gas,pre_construction,24
+G100000414441,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Lae),L100000409307,oil/gas,pre_construction,24
+G100000414442,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,PAWA PNG power plant (Daru),L100000409311,oil/gas,pre_construction,24
+G100000603106,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Frieda River hydroelectric plant,L100000603072,hydropower,pre_construction,600
+G100000603108,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Naoro Brown hydroelectric plant,L100000603074,hydropower,cancelled,80
+G100000603109,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ramu 1 hydroelectric plant,L100000603075,hydropower,operating,77
+G100000603110,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ramu 2 hydroelectric plant,L100000603076,hydropower,pre_construction,180
+G100000604497,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Karimui hydroelectric plant,L100000603073,hydropower,cancelled,1800
+G100000604631,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Mongi hydroelectric plant,L100000604288,hydropower,pre_construction,78
+G100000700142,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Lihir Island geothermal power plant,L100000700087,geothermal,operating,30
+G100000700143,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Lihir Island geothermal power plant,L100000700087,geothermal,cancelled,20
+G100001020449,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Markham Valley Biomass power station,L100000200409,bioenergy,cancelled,18
+G100001023573,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Markham Valley solar farm,L100001020667,utility-scale solar,pre_construction,11
+G100001023574,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Kerema solar farm,L100001020669,utility-scale solar,announced,1.5
+G100001023576,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Manus solar farm,L100001020670,utility-scale solar,announced,1.5
+G100001023579,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Alotau solar farm,L100001020671,utility-scale solar,announced,1.5
+G100001023580,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Saussia solar farm,L100001020672,utility-scale solar,announced,10
+G100001023581,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Daru solar farm,L100001020673,utility-scale solar,operating,1
+G100001023582,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Wairiki solar farm,L100001020674,utility-scale solar,announced,5
+G100001023583,energy_plants_gem_units,PNG,point,,,,,,,,true,abf-boundaries-v0.2.0,Kavieng solar farm,L100001020675,utility-scale solar,announced,1.5
+G100001027394,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Ok Menga hydroelectric plant,L100001023189,hydropower,operating,57
+G100001030275,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Edevu hydroelectric plant,L100001025582,hydropower,operating,54
+G100001052259,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Kumbango Palm Oil power station,L100001046280,bioenergy,operating,1.8
+G100001052260,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Mosa Palm Oil power station,L100001046282,bioenergy,operating,2.7
+G100001072640,energy_plants_gem_units,PNG,point,,,,,,,,false,abf-boundaries-v0.2.0,Rouna 2 hydroelectric plant,L100001063242,hydropower,operating,36
