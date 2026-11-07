@@ -138,7 +138,7 @@ export default function TerritoryPanel(p: Props) {
               </div>
             )}
 
-            {indicator && unit && (
+            {indicator && unit && !coveredByIndex(data, indicator) && (
               <div className="mt-3 border-t border-line pt-3">
                 <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
                 {valueLayer ? (
@@ -153,7 +153,7 @@ export default function TerritoryPanel(p: Props) {
             {unit && data.index && <UnitIndex index={data.index} iso3={p.countryIso} unit={unit} countryName={p.countryName} />}
 
             {/* Files of the country itself; files of the whole world are on the world card */}
-            {unit && p.hiddenIndicators.map((h) => {
+            {unit && p.hiddenIndicators.filter((h) => !coveredByIndex(data, h)).map((h) => {
               const l = h.levels.find((x) => x.level === unit.level)?.layer;
               return l ? (
                 <div key={h.key} className="mt-3 border-t border-line pt-3">
@@ -182,6 +182,20 @@ export default function TerritoryPanel(p: Props) {
     </aside>
     </>
   );
+}
+
+/**
+ * The records of a layer that the territory index counts (content/site.json index_card.replaces) are shown once, from the
+ * index: an older value block of the same records is left out of the card (its files stay on /data and in the downloads).
+ */
+function coveredByIndex(data: MapData, ind: Indicator): boolean {
+  const ix = data.index;
+  if (!ix || !ix.card.replaces) return false;
+  const covered = new Set<string>();
+  for (const [indexLayer, olds] of Object.entries(ix.card.replaces)) {
+    if (ix.sets.some((s) => indexLayer in s.meta.layers)) for (const o of olds) covered.add(o);
+  }
+  return ind.levels.length > 0 && ind.levels.every((l) => covered.has(l.layer.layer_id));
 }
 
 /**

@@ -99,30 +99,42 @@ export function SetBlock({ index, set, d, iso3, unit, countryName }: { index: In
 
   return (
     <>
-      {lids.map((lid) => {
-        const rows = d.rows.filter((r) => r.layer_id === lid);
-        const mine = summaries.filter((s) => s.layer_id === lid);
-        return (
-          <section key={lid} className="mt-3">
-            <h3 className="text-sm font-semibold text-ink">{c.layer_titles[lid] ?? lid}</h3>
-            {rows.length === 0 ? (
-              <p className="mt-1 text-ink2">{tx.card_zero?.[lid] ?? ''}</p>
-            ) : (
-              <>
-                {mine.map((s) => <SummaryView key={s.key} s={s} tx={tx} />)}
-                <LayerNotes tx={tx} rows={rows} unit={unit} country={countryName} hasAdm1={levels?.adm1 ?? false} hasAdm2={levels?.adm2 ?? false} />
-              </>
-            )}
-          </section>
-        );
-      })}
+      <div className="mt-2 space-y-1.5">
+        {lids.map((lid) => {
+          const rows = d.rows.filter((r) => r.layer_id === lid);
+          const mine = summaries.filter((x) => x.layer_id === lid);
+          const color = c.layer_colors?.[lid] ?? '#4b5563';
+          const cut = { ...d.cut, rows: d.cut.rows.filter((_, i) => d.rows[i]?.layer_id === lid) };
+          return (
+            <details key={lid} className="group overflow-hidden rounded-md border border-line">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-3 py-2 text-white [&::-webkit-details-marker]:hidden" style={{ backgroundColor: color, opacity: rows.length === 0 ? 0.75 : 1 }}>
+                <span className="text-[13px] font-semibold leading-snug">{c.layer_titles[lid] ?? lid}</span>
+                <span className="flex items-center gap-1.5 text-[13px] font-semibold tabular-nums">
+                  {fmtInt(rows.length)}
+                  <span aria-hidden className="text-xs transition-transform group-open:rotate-90">›</span>
+                </span>
+              </summary>
+              <div className="px-3 pb-3 pt-1">
+                {rows.length === 0 ? (
+                  <p className="mt-1 text-ink2">{tx.card_zero?.[lid] ?? ''}</p>
+                ) : (
+                  <>
+                    {mine.map((x) => <SummaryView key={x.key} s={x} tx={tx} />)}
+                    <LayerNotes tx={tx} rows={rows} unit={unit} country={countryName} hasAdm1={levels?.adm1 ?? false} hasAdm2={levels?.adm2 ?? false} />
+                    <RecordList index={index} set={set} rows={rows} cut={cut} lid={lid} unit={unit} />
+                  </>
+                )}
+              </div>
+            </details>
+          );
+        })}
+      </div>
       {(cross.here > 0 || cross.away > 0) && (
         <div className="mt-2 space-y-1 text-xs text-ink2">
-          {cross.here > 0 && <p>{fillTemplate(tx.card_other_country_here, { n: cross.here })}</p>}
-          {cross.away > 0 && <p>{fillTemplate(tx.card_other_country_away, { n: cross.away, country: countryName })}</p>}
+          {cross.here > 0 && <p>{fillTemplate(tx.card_other_country_here, { n: fmtInt(cross.here) })}</p>}
+          {cross.away > 0 && <p>{fillTemplate(tx.card_other_country_away, { n: fmtInt(cross.away), country: countryName })}</p>}
         </div>
       )}
-      {d.rows.length > 0 && <RecordList index={index} set={set} d={d} unit={unit} />}
       <p className="mt-2 text-xs text-muted">{fillTemplate(tx.totals_note, { index_file: `${set.id}/${iso3}.csv.gz`, version: `abf-index ${set.version}` })}</p>
     </>
   );
@@ -195,10 +207,10 @@ function LayerNotes({ tx, rows, unit, country, hasAdm1, hasAdm2 }: { tx: Record<
   );
 }
 
-function RecordList({ index, set, d, unit }: { index: IndexSource; set: IndexSource['sets'][number]; d: SetData; unit: UnitRef }) {
+function RecordList({ index, set, rows, cut, lid, unit }: { index: IndexSource; set: IndexSource['sets'][number]; rows: Row[]; cut: SetData['cut']; lid: string; unit: UnitRef }) {
   const c = index.card;
   const tx = c.texts;
-  const shown = d.rows.slice(0, c.list_max);
+  const shown = rows.slice(0, c.list_max);
   const titleOf = (r: Row) => c.title_fields.map((f) => r[f]).find(Boolean) ?? r.record_id;
   const detailOf = (r: Row) =>
     c.detail_fields
@@ -206,17 +218,21 @@ function RecordList({ index, set, d, unit }: { index: IndexSource; set: IndexSou
       .filter(Boolean)
       .join(' · ');
   const download = () => {
-    const cite = `Territory index ${set.id}, abf-index ${set.version}; unit ${unit.unit_id}; license ${set.license_name}`;
-    const blob = new Blob([buildRowsCsv(d.cut, cite, [`${set.id}/abf-index ${set.version}`])], { type: 'text/csv' });
+    const cite = `Territory index ${set.id}, abf-index ${set.version}; layer ${lid}; unit ${unit.unit_id}; license ${set.license_name}`;
+    const blob = new Blob([buildRowsCsv(cut, cite, [`${set.id}/abf-index ${set.version}`])], { type: 'text/csv' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `${set.id}-index-${unit.unit_id}.csv`;
+    a.download = `${lid}-index-${unit.unit_id}.csv`;
     a.click();
     URL.revokeObjectURL(a.href);
   };
   return (
+    <>
+    <button type="button" className="mt-3 rounded-md border border-line px-3 py-1 text-xs text-accent hover:bg-[#eef6f5]" onClick={download}>
+      {tx.download}
+    </button>
     <details className="mt-3">
-      <summary className="cursor-pointer text-accent">{tx.list_title} ({fmtInt(d.rows.length)})</summary>
+      <summary className="cursor-pointer text-accent">{tx.list_title} ({fmtInt(rows.length)})</summary>
       <ul className="mt-1 max-h-60 space-y-1 overflow-y-auto text-xs">
         {shown.map((r) => (
           <li key={r.record_id}>
@@ -224,10 +240,8 @@ function RecordList({ index, set, d, unit }: { index: IndexSource; set: IndexSou
           </li>
         ))}
       </ul>
-      {d.rows.length > shown.length && <p className="mt-1 text-xs text-muted">First {shown.length} of {fmtInt(d.rows.length)}. All rows are in the download.</p>}
-      <button type="button" className="mt-2 rounded-md border border-line px-3 py-1 text-xs text-accent hover:bg-[#eef6f5]" onClick={download}>
-        {tx.download}
-      </button>
+      {rows.length > shown.length && <p className="mt-1 text-xs text-muted">First {shown.length} of {fmtInt(rows.length)}. All rows are in the download.</p>}
     </details>
+    </>
   );
 }

@@ -131,6 +131,18 @@
       "energy_plants_gem_units": "Power plants (GEM)",
       "energy_plants_gem_tzsam_units": "Solar plants (GEM / TransitionZero)"
     },
+    "layer_colors": {
+      "dc_atlas_points": "#9c2f7f",
+      "dc_epoch_points": "#5d3a8c",
+      "energy_plants_gem_units": "#7a4a21",
+      "energy_plants_gem_tzsam_units": "#6b5a00"
+    },
+    "replaces": {
+      "dc_atlas_points": [
+        "dc_atlas_count_adm0",
+        "dc_atlas_count_usa_adm2"
+      ]
+    },
     "title_fields": [
       "name",
       "plant_name"

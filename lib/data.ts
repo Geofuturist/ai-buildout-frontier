@@ -233,6 +233,10 @@ export interface IndexSource {
     title_fields: string[];
     detail_fields: string[];
     list_max: number;
+    /** colour of the plate of a layer of the index (layer_id -> #rrggbb) */
+    layer_colors?: Record<string, string>;
+    /** layers of the index that already give the card's records: the older value blocks of these layers are not shown (index layer_id -> layer_ids) */
+    replaces?: Record<string, string[]>;
     texts: Record<string, any>;
   };
 }

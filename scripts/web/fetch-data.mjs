@@ -326,7 +326,7 @@ async function main() {
     const c = site.index_card;
     indexSource = {
       sets: indexSets.map((x) => ({ ...x, license_name: (x.license && x.license.name) || '' })),
-      card: { title: c.title, layer_titles: c.layer_titles, title_fields: c.title_fields, detail_fields: c.detail_fields, list_max: c.list_max, texts: c.texts },
+      card: { title: c.title, layer_titles: c.layer_titles, title_fields: c.title_fields, detail_fields: c.detail_fields, list_max: c.list_max, layer_colors: c.layer_colors || {}, replaces: c.replaces || {}, texts: c.texts },
     };
   }
 
