@@ -15,6 +15,7 @@
 //   ABF_DATA_LOCAL     folder that mirrors the bucket layout (manifest/..., abf-layers/...) - development only
 //   NEXT_PUBLIC_SITE_URL  used for the {domain} placeholder
 
+import { isIndexManifest, readIndexes } from './index-manifest.mjs';
 import { createHash } from 'node:crypto';
 import zlib from 'node:zlib';
 import fs from 'node:fs';
@@ -106,6 +107,7 @@ async function main() {
   for (const n of dsNames) if (!/^abf-[a-z0-9]+$/.test(n)) fail(`${pointerPath}: unexpected dataset name "${n}"`);
 
   const datasets = {};
+  const indexSets = [];
   const layers = [];
   const metas = {};
 
@@ -116,7 +118,10 @@ async function main() {
     if (man.schema_version !== 'abf-manifest-1.0') fail(`${ptr.manifest}: unexpected schema_version`);
     if (man.dataset !== dsName) fail(`${ptr.manifest}: dataset is ${man.dataset}, expected ${dsName}`);
     if (man.version !== ptr.version) fail(`${ptr.manifest}: version ${man.version} differs from pointer ${ptr.version}`);
-    if (!man.base_path || !Array.isArray(man.layers) || man.layers.length === 0) fail(`${ptr.manifest}: base_path or layers missing`);
+    // A dataset of kind "index" has no layers (SPEC_INDEX_territory r6 7); every other dataset needs at least one
+    if (!man.base_path || !Array.isArray(man.layers) || (man.layers.length === 0 && !isIndexManifest(man))) fail(`${ptr.manifest}: base_path or layers missing`);
+    if (isIndexManifest(man) && man.layers.length > 0) fail(`${ptr.manifest}: a dataset of kind index must not list layers`);
+    if (isIndexManifest(man) && !man.indexes) fail(`${ptr.manifest}: a dataset of kind index has no indexes`);
     if (man.doi == null) strict(`${dsName} ${man.version}: DOI is null`);
     else if (!DOI_RE.test(man.doi)) fail(`${dsName}: DOI "${man.doi}" does not look like 10.5281/zenodo.N`);
 
@@ -131,6 +136,9 @@ async function main() {
       extra_files: (man.extra_files || []).map((f) => withUrl(man.base_path, f)),
       source_archives: (man.source_archives || []).map((f) => withUrl(man.base_path, f)),
     };
+
+    for (const ix of await readIndexes(man, dsName, { getJson, sha256, strict, fail, fileUrl })) indexSets.push(ix);
+    datasets[dsName].has_indexes = !!man.indexes;
 
     const metaCache = new Map();
     for (const l of man.layers) {
@@ -187,6 +195,7 @@ async function main() {
         },
       });
     }
+    if (isIndexManifest(man)) { datasets[dsName].kind = 'index'; continue; }
     // A dataset is "boundaries" when its metadata say kind = boundaries (never by name)
     const kinds = new Set([...metaCache.values()].map((m) => m.kind));
     if (kinds.size !== 1) fail(`${dsName}: mixes metadata kinds (${[...kinds].join(', ')})`);
@@ -542,6 +551,7 @@ async function main() {
     fan_max: fanMax,
     source_logos: sourceLogos,
     status_legend: statusLegend,
+    index_sources: indexSets,
     unit_words: unitWords,
     countries,
     attribution: groups,
