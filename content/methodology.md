@@ -46,17 +46,22 @@ re-checked by an independent AI agent. In the world data-center layers, places a
 
 ## United States · abf-layers
 
-| Layer | Source | Value per county | Data through | License |
+| Layer | Source | Value per state and county | Data through | License |
 |---|---|---|---|---|
 | Generation | Form EIA-860, U.S. Energy Information Administration | net summer capacity of operating generators, MW; number of generators; number of plants | {current_through:energy_generation_eia860_adm2} | U.S. Government work |
 | Demand | OEDI submission 8562, National Laboratory of the Rockies | highest hourly electricity demand in the year, MW (modeled) | {current_through:energy_demand_nrel8562_adm2} | CC BY 4.0 |
 | Transmission lines | HIFLD national transmission-line file, archived copy | km of line inside the county by voltage class; highest voltage present. The line segments are a separate layer | {current_through:energy_transmission_hifld_adm2} | Public domain (publisher statement in HIFLD metadata; produced by ORNL for DOE) |
 | Interconnection queue | Queued Up, Lawrence Berkeley National Laboratory and GridTracker | MW and number of active requests to connect to the grid | {current_through:energy_queue_lbnl_adm2} | CC BY 4.0 |
 
-Every county layer lists all 3,144 counties and county-equivalents of the United States. Values
-cover 3,109 of them: the 48 contiguous states and the District of Columbia. Alaska and Hawaii are
-listed but marked not covered, because they need their own map projection. In the queue layer the
-nine Connecticut planning regions are not covered either (see below).
+Every county layer lists all 3,144 counties and county-equivalents of the United States, and every state layer lists
+the 50 states and the District of Columbia. Values cover the 48 contiguous states and the District of Columbia:
+3,109 counties and 49 states. Alaska and Hawaii are listed but marked not covered, because they need their own map
+projection. In the county queue layer the nine Connecticut planning regions are not covered either (see below).
+
+A state value is computed from the records that name the state, not by adding up its counties. So a state can differ
+from the sum of its counties: an offshore plant belongs to a state but to no county, and a record can name one state
+while its coordinates or county code lie in another. The file state_reconciliation.csv, published with the layers,
+explains every such difference.
 
 ### Generation · EIA-860 · county
 
@@ -77,6 +82,16 @@ nine Connecticut planning regions are not covered either (see below).
   not reported to it. Generators that entered service after
   {current_through:energy_generation_eia860_adm2} are not in this edition.
 
+### Generation · EIA-860 · state
+
+- **What is counted.** The same operating generators as in the county layer, summed by the state named in each
+  generator's record. Coordinates are not used.
+- **Why a state can differ from its counties.** The three offshore wind plants (171.3 MW) are in their states but in
+  no county. And 22 plants (5,272.8 MW) are recorded in one state while their coordinates fall in a county of
+  another. For example, John Day, The Dalles and McNary are recorded in Oregon but placed in Washington counties, and
+  Hoover Dam (AZ) is recorded in Arizona and placed in a Nevada county. We keep the state of the record and do not
+  judge which field is right.
+
 ### Demand · NREL OEDI 8562 · county
 
 - **Edition.** OEDI submission 8562, {edition:energy_demand_nrel8562_adm2} · data through
@@ -95,6 +110,14 @@ nine Connecticut planning regions are not covered either (see below).
 - **Attribution.** Kodi Obika, Wesley Cole and Marie Rivers, National Laboratory of the Rockies
   (NLR), DOI 10.25984/3366592. The laboratory was called the National Renewable Energy Laboratory
   (NREL) until December 2025; the layer keeps the name NREL, under which the dataset was announced.
+
+### Demand · NREL OEDI 8562 · state
+
+- **What the value is.** The highest hourly demand of the state in 2023. We add up the hourly profiles of the state's
+  counties for each of the 8,760 hours and take the highest total. Adding up the county peaks would overstate it,
+  because counties peak at different hours: over the 49 states the sum of county peaks is 1.5% higher.
+- **Why the state level fits this dataset.** The dataset starts from utility sales totaled by state and spreads them
+  over counties by population. The state value does not depend on that split as much as a county value does.
 
 ### Transmission lines · HIFLD · county
 
@@ -146,6 +169,15 @@ nine Connecticut planning regions are not covered either (see below).
   this release, because no segment in the file is marked as direct current.
 - Edition, license and provenance are the same as for the county layer above.
 
+### Transmission lines · HIFLD · state
+
+- **What the values are.** The same measures as for counties, for the whole state: kilometers inside the state by
+  voltage class, their total, the highest voltage, and the share without a recorded voltage.
+- **How.** We add up the lengths inside the state's counties before rounding and round once, so a state can differ
+  from the sum of its rounded counties by a few kilometers. Lines over water beyond the Census coastline are in no
+  county and so in no state.
+- Edition, license and provenance are the same as for the county layer.
+
 ### Interconnection queue · LBNL Queued Up · county
 
 - **Edition.** {edition:energy_queue_lbnl_adm2} data file · data through
@@ -167,6 +199,15 @@ nine Connecticut planning regions are not covered either (see below).
 - **Attribution.** “Lawrence Berkeley National Laboratory and GridTracker”, as the license asks.
   This is the jointly released data file under CC BY 4.0. It is not the GridTracker website, whose
   terms do not allow reuse.
+
+### Interconnection queue · LBNL Queued Up · state
+
+- **What is counted.** The same active requests as in the county layer, summed by the state named in each request.
+- **What the state level adds.** Connecticut, which the county layer cannot cover, and 35 requests that give a state
+  but no county code. Five requests name one state and carry the county code of another; each counts in the state it
+  names and in the county of its code.
+- **What is left out.** Requests with a capacity of zero or less, and 53 requests with no state or the code MX. The
+  layer's known gaps list each group with its count and megawatts.
 
 ## France · abf-fra
 
