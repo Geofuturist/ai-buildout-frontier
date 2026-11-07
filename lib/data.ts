@@ -224,7 +224,28 @@ export interface IndexSourceEntry {
   meta: import('./indexCard').IndexSetMeta;
 }
 
+/** The territory index as the territory card reads it: the indexes of the manifests (index_sources) and the card texts; null while the pointer has none */
+export interface IndexSource {
+  sets: (IndexSourceEntry & { license_name: string })[];
+  card: {
+    title: string;
+    /** the plate that folds the data of the country itself (national layers), and its colour */
+    national_title?: string;
+    national_color?: string;
+    layer_titles: Record<string, string>;
+    title_fields: string[];
+    detail_fields: string[];
+    list_max: number;
+    /** colour of the plate of a layer of the index (layer_id -> #rrggbb) */
+    layer_colors?: Record<string, string>;
+    /** layers of the index that already give the card's records: the older value blocks of these layers are not shown (index layer_id -> layer_ids) */
+    replaces?: Record<string, string[]>;
+    texts: Record<string, any>;
+  };
+}
+
 export interface AbfData {
+  index: IndexSource | null;
   generated_at: string;
   channel: 'final' | 'dev';
   base_url: string;

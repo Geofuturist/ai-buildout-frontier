@@ -13,7 +13,7 @@
     "dc_atlas_count_adm0",
     "dc_atlas_count_usa_adm2"
   ],
-  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. world_zoom: below this zoom a click on the globe chooses the whole world. hidden_layers: layer_ids kept off the map from here, a temporary stand-in for display.map = false in the meta (the layer stays in the files, on /data and in the card values). fan_max: a place with more records than this opens as a list only, with no fan. default_view.country: an ISO3 code to open on a country, null for the world. type_colors: colour of a class by its value (for layers that colour by type, such as the power plants); a class not listed takes the palette by its place. point_shapes: shape of the point icons by the domain of the layer. status_styles: how a status field (or the count columns of a place) becomes a kind of icon: fill = works, pale = built but not working, hatch = under construction, outline = announced, q = shelved, x = cancelled; labels are working texts until [RES] gives the legend texts. status_styles.title/note/lines: legend texts of the Status block (RES, RES_texts_site_legend); a line is shown while one of its layers is on (and, if it has a kind, that kind is in use). Keys are layer_ids.",
+  "_note": "level_zoom: zoom at which a click starts to choose ADM1 and ADM2 units. The build never lets a value go below the minzoom of the boundary tiles of that level (ADM1 2, ADM2 4 at the time of writing): it prints a warning and raises it. world_zoom: below this zoom a click on the globe chooses the whole world. hidden_layers: layer_ids kept off the map from here, a temporary stand-in for display.map = false in the meta (the layer stays in the files, on /data and in the card values). fan_max: a place with more records than this opens as a list only, with no fan. default_view.country: an ISO3 code to open on a country, null for the world. type_colors: colour of a class by its value (for layers that colour by type, such as the power plants); a class not listed takes the palette by its place. point_shapes: shape of the point icons by the domain of the layer. status_styles: how a status field (or the count columns of a place) becomes a kind of icon: fill = works, pale = built but not working, hatch = under construction, outline = announced, q = shelved, x = cancelled; labels are working texts until [RES] gives the legend texts. status_styles.title/note/lines: legend texts of the Status block (RES, RES_texts_site_legend); a line is shown while one of its layers is on (and, if it has a kind, that kind is in use). Keys are layer_ids. index_card: texts of the territory card (RES_texts_INDEX r2 §3-4); layer_titles, title_fields, detail_fields are keys of the index fields.",
   "type_colors": {
     "utility-scale solar": "#F2C500",
     "wind": "#2E9E44",
@@ -121,6 +121,126 @@
       "file": "transitionzero.svg",
       "alt": "TransitionZero",
       "href": "https://www.transitionzero.org/"
+    }
+  },
+  "index_card": {
+    "title": "Independent data",
+    "national_title": "National data",
+    "national_color": "#0f6e6e",
+    "layer_titles": {
+      "dc_atlas_points": "Atlas of Data Center Politics",
+      "dc_epoch_points": "Epoch AI",
+      "energy_plants_gem_units": "Power plants (GEM)",
+      "energy_plants_gem_tzsam_units": "Solar plants (GEM / TransitionZero)"
+    },
+    "layer_colors": {
+      "dc_atlas_points": "#9c2f7f",
+      "dc_epoch_points": "#5d3a8c",
+      "energy_plants_gem_units": "#7a4a21",
+      "energy_plants_gem_tzsam_units": "#6b5a00"
+    },
+    "replaces": {
+      "dc_atlas_points": [
+        "dc_atlas_count_adm0",
+        "dc_atlas_count_usa_adm2"
+      ]
+    },
+    "title_fields": [
+      "name",
+      "plant_name"
+    ],
+    "detail_fields": [
+      "type_group",
+      "type",
+      "status_raw",
+      "status_group",
+      "capacity_mw",
+      "power_mw"
+    ],
+    "list_max": 50,
+    "texts": {
+      "card_basis": "Assigned {basis}",
+      "card_basis_point": "by point",
+      "card_basis_field": "by the unit the record names",
+      "card_basis_mixed": "by the unit the record names, or by point",
+      "card_approximate": "{n_approx} of {n} points are approximate (a town or GEM's approximate location); some may belong to a neighboring unit.",
+      "card_country_only": "{n} records have no unit below the country and are counted for {country} only; the notes say why.",
+      "card_other_country_here": "{n} records that the source lists under another country lie here.",
+      "card_other_country_away": "{n} records listed under {country} lie in another country of the frame.",
+      "card_zero": {
+        "dc_atlas_points": "No Atlas record names or lies in this unit. The Atlas may still miss data centers here.",
+        "dc_epoch_points": "No Epoch AI site. Epoch AI lists only the largest AI data centers.",
+        "energy_plants_gem_units": "No GEM plant above GEM's thresholds.",
+        "energy_plants_gem_tzsam_units": "No GEM plant above GEM's thresholds."
+      },
+      "card_unit_note": {
+        "ambiguous_name": "The county the record names shares its name with an independent city",
+        "connecticut": "Connecticut: the Atlas gives former counties",
+        "no_county_field": "The record names no county",
+        "no_state": "The record names no state",
+        "region_not_matched": "The region the record gives is missing or not a unit of the frame, and there is no point",
+        "no_unit_near": "The point is more than 22.2 km from every unit of its country",
+        "no_point": "No point below the country",
+        "point_in_other_country": "Listed by the source under another country",
+        "region_only": "The record names a region, not a department"
+      },
+      "aggregations_labels": {
+        "atlas": "Atlas records",
+        "epoch": "Epoch AI sites",
+        "blocks": "GEM generating units, and capacity, by type and status",
+        "stations": "GEM plants with at least one unit here (not additive across units)"
+      },
+      "field_labels": {
+        "status_raw": "By status",
+        "type_group": "By operator type",
+        "power_class": "By size class (classes are not added up as MW)"
+      },
+      "totals_note": "Counted by the website from {index_file} ({version}). Only records of one layer are added, and GEM capacity only within one type and one status.",
+      "list_title": "Records",
+      "download": "Download these rows (CSV)",
+      "loading": "Loading the records of this unit…",
+      "failed": "Could not read the territory index.",
+      "value_labels": {
+        "status_raw": {},
+        "type_group": {
+          "colocation": "Colocation",
+          "telecom": "Telecom",
+          "developer_investor": "Developer or investor",
+          "cloud": "Cloud",
+          "enterprise_it": "Enterprise or IT services",
+          "ai_compute": "AI compute (Atlas type)",
+          "other": "Other or unknown"
+        },
+        "power_class": {
+          "lt10": "Small (below 10 MW)",
+          "10_99": "Large (10–99 MW)",
+          "100_999": "Hyperscale (100–999 MW)",
+          "ge1000": "Gigascale (above 999 MW)",
+          "": "Unknown"
+        },
+        "type": {
+          "coal": "Coal",
+          "oil/gas": "Oil and gas",
+          "utility-scale solar": "Utility-scale solar",
+          "wind": "Wind",
+          "hydropower": "Hydropower",
+          "nuclear": "Nuclear",
+          "bioenergy": "Bioenergy",
+          "geothermal": "Geothermal"
+        },
+        "status_group": {
+          "announced": "Announced",
+          "pre_construction": "Pre-construction",
+          "construction": "Under construction",
+          "operating": "Operating",
+          "shelved": "Shelved",
+          "cancelled": "Cancelled",
+          "mothballed": "Mothballed",
+          "retired": "Retired"
+        }
+      },
+      "card_level_missing_adm1": "{country} has no first-level units (such as states, provinces or regions) in the boundary frame of this version, so records are counted for the country only.",
+      "card_level_missing_adm2": "{country} has no second-level units (such as counties or departments) in the boundary frame of this version; this is the smallest unit in which records are counted."
     }
   }
 }

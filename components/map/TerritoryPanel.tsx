@@ -15,6 +15,7 @@ import type { PanelRow } from '@/lib/panel';
 import LayersPanel from './LayersPanel';
 import TerritoryDownloads, { InsideButton } from './TerritoryDownloads';
 import UnitValues from './UnitValues';
+import UnitIndex from './UnitIndex';
 import type { MapData, UnitRef } from './types';
 
 interface Props {
@@ -86,6 +87,8 @@ export default function TerritoryPanel(p: Props) {
   // World view: no panel, the start globe marks the countries with data
   if (!p.countryIso) return null;
 
+  // Is there anything of the country itself to show in this unit (a value block, or a file of a hidden indicator)
+  const hasNational = !!unit && ((!!indicator && !coveredByIndex(data, indicator)) || p.hiddenIndicators.some((h) => !coveredByIndex(data, h) && h.levels.some((x) => x.level === unit.level)));
   return (
     <>
     {folded && !p.hidden && (
@@ -130,36 +133,47 @@ export default function TerritoryPanel(p: Props) {
 
             {!model && !indicator && p.countryRows.length === 0 && p.hiddenIndicators.length === 0 && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
 
-            {p.countryRows.length > 0 && (
+            {!data.index && p.countryRows.length > 0 && (
               <div className="mt-3 border-t border-line pt-3">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
                 <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onColors={p.onColors} onPoints={p.onPoints} onInfo={p.onInfo} legendOf={p.legendOf} openAll />
               </div>
             )}
 
-            {indicator && unit && (
-              <div className="mt-3 border-t border-line pt-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
-                {valueLayer ? (
-                  <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
-                ) : (
-                  <NoLevel data={data} indicator={indicator} unit={unit} territory={p.territory} iso3={p.countryIso} />
+            {data.index && (p.countryRows.length > 0 || (unit && hasNational)) && (
+              <NationalData data={data}>
+                {p.countryRows.length > 0 && (
+                      <div className="mt-3 pt-1">
+                        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
+                        <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onColors={p.onColors} onPoints={p.onPoints} onInfo={p.onInfo} legendOf={p.legendOf} openAll />
+                      </div>
+                    )}
+                {unit && indicator && !coveredByIndex(data, indicator) && (
+                  <div className="mt-3 border-t border-line pt-3">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
+                    {valueLayer ? (
+                      <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
+                    ) : (
+                      <NoLevel data={data} indicator={indicator} unit={unit} territory={p.territory} iso3={p.countryIso} />
+                    )}
+                    {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
+                  </div>
                 )}
-                {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
-              </div>
+                {/* Files of the country itself; files of the whole world are on the world card */}
+                {unit && p.hiddenIndicators.filter((h) => !coveredByIndex(data, h)).map((h) => {
+                  const l = h.levels.find((x) => x.level === unit.level)?.layer;
+                  return l ? (
+                    <div key={h.key} className="mt-3 border-t border-line pt-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted">{h.title}</p>
+                      <UnitValues layer={l} meta={data.metas[l.meta_id]} unitId={unit.unit_id} />
+                      <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[l.meta_id])}</p>
+                    </div>
+                  ) : null;
+                })}
+              </NationalData>
             )}
 
-            {/* Files of the country itself; files of the whole world are on the world card */}
-            {unit && p.hiddenIndicators.map((h) => {
-              const l = h.levels.find((x) => x.level === unit.level)?.layer;
-              return l ? (
-                <div key={h.key} className="mt-3 border-t border-line pt-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-muted">{h.title}</p>
-                  <UnitValues layer={l} meta={data.metas[l.meta_id]} unitId={unit.unit_id} />
-                  <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[l.meta_id])}</p>
-                </div>
-              ) : null;
-            })}
+            {unit && data.index && <UnitIndex index={data.index} iso3={p.countryIso} unit={unit} countryName={p.countryName} />}
 
             {unit && (model || ownIndicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={ownIndicator} unit={unit} territory={p.territory} />}
 
@@ -179,6 +193,38 @@ export default function TerritoryPanel(p: Props) {
     </aside>
     </>
   );
+}
+
+/**
+ * The data of the country itself (national layers) are folded into one colored plate when the territory index is on the
+ * card, as the plates of the independent data are; without the index the blocks stay as they were.
+ */
+function NationalData({ data, children }: { data: MapData; children: ReactNode }) {
+  const card = data.index?.card;
+  if (!card) return <>{children}</>;
+  return (
+    <details className="group mt-3 overflow-hidden rounded-md border border-line">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-3 py-2 text-white [&::-webkit-details-marker]:hidden" style={{ backgroundColor: card.national_color ?? '#0f6e6e' }}>
+        <span className="text-[13px] font-semibold leading-snug">{card.national_title ?? 'National data'}</span>
+        <span aria-hidden className="text-xs transition-transform group-open:rotate-90">›</span>
+      </summary>
+      <div className="px-3 pb-3">{children}</div>
+    </details>
+  );
+}
+
+/**
+ * The records of a layer that the territory index counts (content/site.json index_card.replaces) are shown once, from the
+ * index: an older value block of the same records is left out of the card (its files stay on /data and in the downloads).
+ */
+function coveredByIndex(data: MapData, ind: Indicator): boolean {
+  const ix = data.index;
+  if (!ix || !ix.card.replaces) return false;
+  const covered = new Set<string>();
+  for (const [indexLayer, olds] of Object.entries(ix.card.replaces)) {
+    if (ix.sets.some((s) => indexLayer in s.meta.layers)) for (const o of olds) covered.add(o);
+  }
+  return ind.levels.length > 0 && ind.levels.every((l) => covered.has(l.layer.layer_id));
 }
 
 /**

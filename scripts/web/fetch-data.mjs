@@ -319,6 +319,17 @@ async function main() {
     for (const [f, map] of Object.entries(styles.fields || {})) for (const [v, k] of Object.entries(map)) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.fields.${f}.${v}: "${k}" is not a kind (${KINDS.join(', ')})`);
     for (const [f, k] of styles.counts || []) if (!KINDS.includes(k)) strict(`content/site.json: status_styles.counts.${f}: "${k}" is not a kind`);
   }
+  // Territory index (SPEC_INDEX_territory r10 7): the indexes found in the manifests of the pointer, with the texts of the
+  // card (content/site.json index_card). While the pointer has no index, the card block is not shown.
+  let indexSource = null;
+  if (indexSets.length && site.index_card) {
+    const c = site.index_card;
+    indexSource = {
+      sets: indexSets.map((x) => ({ ...x, license_name: (x.license && x.license.name) || '' })),
+      card: { title: c.title, national_title: c.national_title || 'National data', national_color: c.national_color || '#0f6e6e', layer_titles: c.layer_titles, title_fields: c.title_fields, detail_fields: c.detail_fields, list_max: c.list_max, layer_colors: c.layer_colors || {}, replaces: c.replaces || {}, texts: c.texts },
+    };
+  }
+
   // Texts of the Status block of the legend (status_styles.title, note, lines; RES_texts_site_legend)
   const statusLegend = { title: 'Status', note: '', lines: [] };
   if (styles) {
@@ -380,6 +391,9 @@ async function main() {
     const c = (Array.isArray(m.coverage.iso3) ? m.coverage.iso3[0] : m.coverage.iso3) || (m.coverage.frame && m.coverage.frame.iso3);
     if (c) countryCodes.add(c);
   }
+  // Names of units for the card of every country that has records in a territory index (SPEC_INDEX r6 8): the codes of
+  // countries with an index file are added, so a country without a layer of areas has place names in the card too.
+  for (const ix of indexSets) for (const c of ix.meta.countries) countryCodes.add(c);
   const territory = { units: {} };
   if (unitsText) {
     const LEVEL = { ADM0: 0, ADM1: 1, ADM2: 2 };
@@ -551,6 +565,7 @@ async function main() {
     fan_max: fanMax,
     source_logos: sourceLogos,
     status_legend: statusLegend,
+    index: indexSource,
     index_sources: indexSets,
     unit_words: unitWords,
     countries,
