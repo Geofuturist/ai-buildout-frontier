@@ -87,6 +87,8 @@ export default function TerritoryPanel(p: Props) {
   // World view: no panel, the start globe marks the countries with data
   if (!p.countryIso) return null;
 
+  // Is there anything of the country itself to show in this unit (a value block, or a file of a hidden indicator)
+  const hasNational = !!unit && ((!!indicator && !coveredByIndex(data, indicator)) || p.hiddenIndicators.some((h) => !coveredByIndex(data, h) && h.levels.some((x) => x.level === unit.level)));
   return (
     <>
     {folded && !p.hidden && (
@@ -138,31 +140,34 @@ export default function TerritoryPanel(p: Props) {
               </div>
             )}
 
-            {indicator && unit && !coveredByIndex(data, indicator) && (
-              <div className="mt-3 border-t border-line pt-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
-                {valueLayer ? (
-                  <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
-                ) : (
-                  <NoLevel data={data} indicator={indicator} unit={unit} territory={p.territory} iso3={p.countryIso} />
+            {unit && hasNational && (
+              <NationalData data={data}>
+                {indicator && unit && !coveredByIndex(data, indicator) && (
+                  <div className="mt-3 border-t border-line pt-3">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
+                    {valueLayer ? (
+                      <UnitValues layer={valueLayer} meta={data.metas[valueLayer.meta_id]} unitId={unit.unit_id} />
+                    ) : (
+                      <NoLevel data={data} indicator={indicator} unit={unit} territory={p.territory} iso3={p.countryIso} />
+                    )}
+                    {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
+                  </div>
                 )}
-                {valueLayer && <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[valueLayer.meta_id])}</p>}
-              </div>
+                {/* Files of the country itself; files of the whole world are on the world card */}
+                {unit && p.hiddenIndicators.filter((h) => !coveredByIndex(data, h)).map((h) => {
+                  const l = h.levels.find((x) => x.level === unit.level)?.layer;
+                  return l ? (
+                    <div key={h.key} className="mt-3 border-t border-line pt-3">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted">{h.title}</p>
+                      <UnitValues layer={l} meta={data.metas[l.meta_id]} unitId={unit.unit_id} />
+                      <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[l.meta_id])}</p>
+                    </div>
+                  ) : null;
+                })}
+              </NationalData>
             )}
 
             {unit && data.index && <UnitIndex index={data.index} iso3={p.countryIso} unit={unit} countryName={p.countryName} />}
-
-            {/* Files of the country itself; files of the whole world are on the world card */}
-            {unit && p.hiddenIndicators.filter((h) => !coveredByIndex(data, h)).map((h) => {
-              const l = h.levels.find((x) => x.level === unit.level)?.layer;
-              return l ? (
-                <div key={h.key} className="mt-3 border-t border-line pt-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-muted">{h.title}</p>
-                  <UnitValues layer={l} meta={data.metas[l.meta_id]} unitId={unit.unit_id} />
-                  <p className="mt-2 text-xs text-ink2">{checkedByLine(data.metas[l.meta_id])}</p>
-                </div>
-              ) : null;
-            })}
 
             {unit && (model || ownIndicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={ownIndicator} unit={unit} territory={p.territory} />}
 
@@ -181,6 +186,24 @@ export default function TerritoryPanel(p: Props) {
       </div>
     </aside>
     </>
+  );
+}
+
+/**
+ * The data of the country itself (national layers) are folded into one colored plate when the territory index is on the
+ * card, as the plates of the independent data are; without the index the blocks stay as they were.
+ */
+function NationalData({ data, children }: { data: MapData; children: ReactNode }) {
+  const card = data.index?.card;
+  if (!card) return <>{children}</>;
+  return (
+    <details className="group mt-3 overflow-hidden rounded-md border border-line">
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 px-3 py-2 text-white [&::-webkit-details-marker]:hidden" style={{ backgroundColor: card.national_color ?? '#0f6e6e' }}>
+        <span className="text-[13px] font-semibold leading-snug">{card.national_title ?? 'National data'}</span>
+        <span aria-hidden className="text-xs transition-transform group-open:rotate-90">›</span>
+      </summary>
+      <div className="px-3 pb-3">{children}</div>
+    </details>
   );
 }
 

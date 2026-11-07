@@ -229,6 +229,9 @@ export interface IndexSource {
   sets: (IndexSourceEntry & { license_name: string })[];
   card: {
     title: string;
+    /** the plate that folds the data of the country itself (national layers), and its colour */
+    national_title?: string;
+    national_color?: string;
     layer_titles: Record<string, string>;
     title_fields: string[];
     detail_fields: string[];

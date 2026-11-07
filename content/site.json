@@ -124,7 +124,9 @@
     }
   },
   "index_card": {
-    "title": "Records in this unit",
+    "title": "Independent data",
+    "national_title": "National data",
+    "national_color": "#0f6e6e",
     "layer_titles": {
       "dc_atlas_points": "Atlas of Data Center Politics",
       "dc_epoch_points": "Epoch AI",
