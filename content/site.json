@@ -163,10 +163,15 @@
       "card_basis_point": "by point",
       "card_basis_field": "by the unit the record names",
       "card_basis_mixed": "by the unit the record names, or by point",
-      "card_approximate": "{n_approx} of {n} points are approximate (a town or GEM's approximate location); some may belong to a neighboring unit.",
-      "card_country_only": "{n} records have no unit below the country and are counted for {country} only; the notes say why.",
-      "card_other_country_here": "{n} records that the source lists under another country lie here.",
-      "card_other_country_away": "{n} records listed under {country} lie in another country of the frame.",
+      "card_approximate": {
+        "dc_atlas_points": "Placed at a town point, not at the site: {n_approx} of {n}. Such a record may belong to a neighboring unit.",
+        "dc_epoch_points": "Placed at a town point, not at the site: {n_approx} of {n}. Such a record may belong to a neighboring unit.",
+        "energy_plants_gem_units": "Placed at GEM's approximate location: {n_approx} of {n}. Such a record may belong to a neighboring unit.",
+        "energy_plants_gem_tzsam_units": "Placed at GEM's approximate location: {n_approx} of {n}. Such a record may belong to a neighboring unit."
+      },
+      "card_country_only": "Counted for {country} only, with no unit below the country: {n}. The notes below say why.",
+      "card_other_country_here": "Listed by the source under another country, but lying here: {n}.",
+      "card_other_country_away": "Listed under {country}, but lying in another country of the frame: {n}.",
       "card_zero": {
         "dc_atlas_points": "No Atlas record names or lies in this unit. The Atlas may still miss data centers here.",
         "dc_epoch_points": "No Epoch AI site. Epoch AI lists only the largest AI data centers.",
@@ -180,7 +185,7 @@
         "no_state": "The record names no state",
         "region_not_matched": "The region the record gives is missing or not a unit of the frame, and there is no point",
         "no_unit_near": "The point is more than 22.2 km from every unit of its country",
-        "no_point": "No point below the country",
+        "no_point": "No point to place the record by",
         "point_in_other_country": "Listed by the source under another country",
         "region_only": "The record names a region, not a department"
       },
