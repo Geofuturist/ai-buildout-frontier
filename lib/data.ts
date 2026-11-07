@@ -217,7 +217,7 @@ export interface IndexSourceEntry {
   dataset: string;
   version: string;
   index_version: string | null;
-  license: string | null;
+  license: { id: string | null; name: string | null; url: string | null; family: string | null } | null;
   /** URL with {iso3} */
   country_url: string;
   adm0_other_url: string;

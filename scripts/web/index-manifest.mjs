@@ -1,6 +1,7 @@
 // Territory index in the manifests (SPEC_INDEX_territory r6 7): a manifest may carry `indexes`, one entry per index
-// (index_id, of_dataset, of_version, layer_ids, meta{path,bytes,sha256}, country_files{path_pattern,count,listing},
-// adm0_other, summary, archive). A dataset with kind "index" has no layers. Nothing here knows a dataset or country name.
+// (index_id, set, of_dataset, of_version, layer_ids, meta / adm0_other / summary / archive / country_files.listing as
+// {path, bytes, sha256}, country_files{path_pattern, count, listing}); `license` of the manifest is {id, name, url, family}
+// (SPEC r9; a plain string is still read). A dataset with kind "index" has no layers. Nothing here knows a dataset or country name.
 // Pure: the caller hands in the readers, so the checks can be tested without a network.
 
 /** true for a manifest that is allowed to have an empty list of layers */
@@ -16,10 +17,12 @@ export async function readIndexes(man, dsName, { getJson, sha256, strict, fail, 
   if (!Array.isArray(man.indexes)) { fail(`${dsName}: indexes must be a list`); return out; }
   for (const ix of man.indexes) {
     const id = ix && ix.index_id;
-    if (!id || !ix.meta || !ix.meta.path || !ix.meta.sha256 || !ix.country_files || !ix.country_files.path_pattern || !ix.adm0_other) {
-      fail(`${dsName}: an entry of indexes lacks index_id, meta, country_files.path_pattern or adm0_other`);
+    const isFile = (f) => f && typeof f.path === 'string' && f.path && typeof f.sha256 === 'string';
+    if (!id || !isFile(ix.meta) || !ix.country_files || typeof ix.country_files.path_pattern !== 'string' || !isFile(ix.adm0_other)) {
+      fail(`${dsName}: an entry of indexes lacks index_id, meta {path, sha256}, country_files.path_pattern or adm0_other {path, sha256}`);
       continue;
     }
+    if (!/\.csv\.gz$/.test(ix.adm0_other.path)) fail(`${dsName}: ${id}: adm0_other must be a .csv.gz file (${ix.adm0_other.path})`);
     if (!/\{iso3\}/.test(ix.country_files.path_pattern)) fail(`${dsName}: ${id}: path_pattern has no {iso3}`);
     const { json: meta, bytes } = await getJson(man.base_path + ix.meta.path);
     const got = sha256(bytes);
@@ -28,10 +31,11 @@ export async function readIndexes(man, dsName, { getJson, sha256, strict, fail, 
     if (!meta.aggregations || !meta.layers || !meta.levels_by_country || !meta.files) fail(`${dsName}: ${id}: meta lacks aggregations, layers, levels_by_country or files`);
     const countries = Object.keys(meta.files).sort();
     if (ix.country_files.count != null && ix.country_files.count !== countries.length) strict(`${dsName}: ${id}: country_files.count ${ix.country_files.count} differs from meta (${countries.length})`);
-    const license = man.license ?? meta.license ?? null;
-    if (!license) strict(`${dsName}: ${id}: no license for the index (manifest or meta)`);
+    const lic = man.license ?? meta.license ?? null;
+    const license = lic && typeof lic === 'object' ? { id: lic.id ?? null, name: lic.name ?? lic.id ?? null, url: lic.url ?? null, family: lic.family ?? null } : lic ? { id: String(lic), name: String(lic), url: null, family: null } : null;
+    if (!license || !license.name) strict(`${dsName}: ${id}: no license for the index (manifest or meta)`);
     out.push({
-      id: meta.set ?? ix.of_dataset ?? id,
+      id: ix.set ?? meta.set ?? ix.of_dataset ?? id,
       index_id: id,
       dataset: dsName,
       version: man.version,
