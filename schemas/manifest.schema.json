@@ -343,6 +343,7 @@
         "of_version",
         "layer_ids",
         "meta",
+        "build_meta",
         "country_files",
         "adm0_other",
         "summary",
@@ -404,6 +405,16 @@
         },
         "archive": {
           "$ref": "#/$defs/fileref"
+        },
+        "build_meta": {
+          "$ref": "#/$defs/fileref"
+        },
+        "rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/fileref"
+          }
         }
       }
     }

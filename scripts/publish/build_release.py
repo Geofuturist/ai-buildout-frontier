@@ -510,7 +510,7 @@ def run(args: argparse.Namespace) -> int:
         raise GateError("G3b", f"the dc layers of the release have different display.size_breaks: {breaks}")
     if rel.get("cross_checks"):
         run_cross_checks(rel["cross_checks"], out, boundaries, report)
-    index_entries = index_build.build_indexes(rel, out, report)
+    index_entries = index_build.build_indexes(rel, out, report, doi, built_at, published_at)
     if index_entries:
         plan_extra += [{"path": e["listing_file"], "description": f"List of the country files of {e['index_id']} with their SHA-256 and row counts"}
                        for e in index_entries]

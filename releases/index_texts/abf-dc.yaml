@@ -1,0 +1,56 @@
+# Index of abf-dc 0.2.0: Atlas and Epoch AI records (RES_texts_INDEX_v0_1_0 r4 section 2.3).
+title: "Territory index · Data centers (abf-dc 0.2.0) · records"
+description: >-
+  Where each record of dc_atlas_points (9,865) and dc_epoch_points (94) lies in abf-boundaries v0.2.0. Atlas records
+  are assigned by what they name, as the Atlas counts in abf-dc are: the country they name; in the United States, the
+  county they name (3,914 records) or, failing that, the state they name; in 34 other countries, where the Atlas region
+  field names the frame's first-level units, the region they name. Elsewhere, and for all Epoch AI sites, the unit is
+  the one in which the town point lies. In those 34 countries a record whose region matches no unit of the frame is
+  assigned by its point, if it has one. Records without a point are assigned to their country only, unless they name
+  a county or region that the rules accept. Each row has one basis: a record assigned by the region it names gets no
+  second-level unit from its point.
+known_gaps:
+  - >-
+    A point marks a town, not a site. Near a boundary a town point can lie in a neighboring unit: in the United States
+    the point lies in another county than the record names for 160 of 2,331 records, which is why Atlas records there
+    are assigned by the county they name.
+  - >-
+    3,778 Atlas records and 23 Epoch AI sites have no point. The named county or region gives a unit to the U.S. records
+    and to 1,124 records in the 34 countries of atlas_adm1_countries.csv; the others are assigned to their country only.
+  - >-
+    In the 34 countries, 22 Atlas records leave the region field empty or give a region that matches no unit of the
+    frame by exact name, mostly other spellings, such as Distrito Federal, Pulau Pinang or Päijät-Häme. The 9 with a
+    point are assigned by their point; the 13 without one are counted for their country only (region_not_matched).
+  - >-
+    In France the Atlas region field mostly names departments, the frame's second-level units. 15 records name the
+    region Provence-Alpes-Côte d’Azur instead; they are counted in the region and get no department (region_only).
+  - >-
+    In Spain and Italy the Atlas region field names provinces, which are not units of the frame. In Norway it often
+    gives names that do not match the frame: counties merged in recent reforms, such as Hordaland, and Norwegian names
+    where the frame gives bilingual ones, such as Nordland. Atlas records there are assigned by their point. Spelling
+    variants (Hessen for Hesse, Genève for Geneva) are not matched in this version, so countries where they are common,
+    such as Germany, Denmark, the Netherlands and Switzerland, are also assigned by point.
+  - >-
+    4 Atlas records name one country and lie in another on the generalized 1:10 million outlines (Gibraltar, Sittard,
+    Grevenmacher, Lauterbourg). They are assigned to the country they name and listed for the country where their point
+    lies (adm1_point).
+  - "ADM1 exists in this frame for 108 countries and ADM2 for the United States, France and Norway."
+verification:
+  method: >-
+    Built by script from the published files of abf-dc 0.2.0 and abf-boundaries v0.2.0, with the U.S. county of each
+    Atlas record taken from county_records.csv of abf-dc 0.2.0. The build stops if a record is missing or appears in two
+    country files, if a U.S. Atlas record gets another county than county_records.csv gives, or if an input differs
+    from the published file. Points are assigned with the calculation geometry of the United States (Census Bureau
+    1:500,000) and Norway (Kartverket) and with the display geometry of the frame elsewhere. A second run gives
+    byte-identical files.
+# Columns of the index that the layer meta.json files do not describe (the project's own grouping of the Atlas operator type).
+# Wording from RES_texts_INDEX r4 section 4.1, which describes the groups.
+fields:
+  type_group: >-
+    Group of the Atlas operator type: colocation, telecom, developer_investor, cloud, enterprise_it (Managed IT,
+    Enterprise and Fintech), ai_compute (the operator type AI Compute as the Atlas gives it, not the purpose of the
+    site) or other (including Unknown).
+# Columns copied word for word from the published meta.json of the layer (G14 if a field is missing there).
+copied_fields:
+  dc_atlas_points: [name, status_raw, power_class]
+  dc_epoch_points: [name, power_mw]

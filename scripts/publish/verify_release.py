@@ -40,7 +40,8 @@ def _session():  # noqa: ANN202
 def files_of(manifest: dict[str, Any], listings: dict[str, list[dict[str, Any]]] | None = None) -> dict[str, dict[str, Any]]:
     out: dict[str, dict[str, Any]] = {}
     for ix in manifest.get("indexes", []):
-        for ref in (ix["meta"], ix["adm0_other"], ix["summary"], ix["archive"], ix["country_files"]["listing"]):
+        for ref in (ix["meta"], ix["build_meta"], ix["adm0_other"], ix["summary"], ix["archive"], ix["country_files"]["listing"],
+                    *ix.get("rules", [])):
             out[ref["path"]] = ref
         for f in (listings or {}).get(ix["index_id"], []):
             out[f["path"]] = {"path": f["path"], "bytes": f["bytes"], "sha256": f["sha256"]}

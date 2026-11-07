@@ -101,11 +101,13 @@ def compose_manifest(plan: dict[str, Any], work: Path) -> dict[str, Any]:
             "index_id": ix["index_id"], "set": ix["set"], "of_dataset": ix["of_dataset"], "of_version": ix["of_version"],
             "layer_ids": ix["layer_ids"],
             "meta": file_ref(work / ix["meta"], ix["meta"]),
+            "build_meta": file_ref(work / ix["build_meta"], ix["build_meta"]),
             "country_files": {"path_pattern": ix["country_files"]["path_pattern"], "count": ix["country_files"]["count"],
                               "listing": file_ref(work / ix["country_files"]["listing"], ix["country_files"]["listing"])},
             "adm0_other": file_ref(work / ix["adm0_other"], ix["adm0_other"]),
             "summary": file_ref(work / ix["summary"], ix["summary"]),
             "archive": file_ref(work / ix["archive"], ix["archive"]),
+            **({"rules": [file_ref(work / r, r) for r in ix["rules"]]} if ix.get("rules") else {}),
         } for ix in plan["indexes"]]
     return manifest
 
@@ -173,7 +175,8 @@ def manifest_files(manifest: dict[str, Any], work: Path | None = None) -> dict[s
     for ref in manifest["source_archives"]:
         add(ref)
     for ix in manifest.get("indexes", []):
-        for ref in (ix["meta"], ix["adm0_other"], ix["summary"], ix["archive"], ix["country_files"]["listing"]):
+        for ref in (ix["meta"], ix["build_meta"], ix["adm0_other"], ix["summary"], ix["archive"], ix["country_files"]["listing"],
+                    *ix.get("rules", [])):
             add(ref)
     if work is not None:
         for ref in index_country_refs(manifest, work):
@@ -273,7 +276,8 @@ def run(args: argparse.Namespace) -> int:
                 raise GateError("stage", f"file of the plan is missing in staging: {name}")
 
     for lp in plan.get("indexes", []):
-        for name in (lp["meta"], lp["adm0_other"], lp["summary"], lp["archive"], lp["country_files"]["listing"]):
+        for name in (lp["meta"], lp["build_meta"], lp["adm0_other"], lp["summary"], lp["archive"], lp["country_files"]["listing"],
+                     *lp.get("rules", [])):
             if not (work / name).exists():
                 raise GateError("stage", f"file of the plan is missing in staging: {name}")
 

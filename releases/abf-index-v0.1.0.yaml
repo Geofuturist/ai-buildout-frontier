@@ -5,7 +5,7 @@
 dataset: abf-index
 version: 0.1.0
 tag: abf-index-v0.1.0
-doi: null
+doi: 10.5281/zenodo.24030844
 published_at: "2026-11-07"
 built_at: "2026-11-06T12:00:00Z"
 boundary_release: abf-boundaries-v0.2.0
@@ -16,7 +16,37 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   family: attribution
 indexes_dir: 'C:\Users\PGS\Documents\AI\index_work\data\index'
+# Texts of the dataset (RES_texts_INDEX_v0_1_0 r4 section 1); they go into the public meta.json of each index set (release.* keys).
+release_texts:
+  description: >-
+    Where the records of the project's world point layers lie in its boundary frame. One row for each record of three
+    layers: the data-center records of the Atlas of Data Center Politics (9,865) and the AI data-center sites of Epoch
+    AI (94), both from abf-dc 0.2.0, and the power generating units of Global Energy Monitor (164,672) from abf-energy
+    0.1.0. Each row gives the country, first-level unit and second-level unit of the record in abf-boundaries v0.2.0,
+    the basis of the assignment and the few fields of the record that the project website needs to list and count
+    records. The index is the project's assignment of source records to its frame, not data of the sources. The records
+    and their DOIs do not change; when the frame gains new levels or countries, only the index is rebuilt. The GEM units
+    sourced from TransitionZero's Solar Asset Mapper are indexed separately, in abf-energync 0.1.1, under CC BY-NC 4.0.
+  attribution_text: >-
+    Built by AI Buildout Frontier from abf-dc 0.2.0 and abf-energy 0.1.0 on the frame abf-boundaries v0.2.0. Sources of
+    the records: Atlas of Data Center Politics (Infrastructure Lab, National University of Singapore; CC BY 4.0); Epoch
+    AI, AI data centers (CC BY 4.0); Global Energy Monitor, Global Integrated Power Tracker, September 2026 release
+    (CC BY 4.0). Their attributions are given in full in the sources of the meta.json files of the indexes.
+# For every index: texts (merged in order), layer_metas (published meta.json of the indexed layers: sources and copied fields),
+# rules (tables of the build that the index rests on; they go to R2 and into the archive).
 indexes:
-  - {set: abf-dc, of_dataset: abf-dc, of_version: "0.2.0"}
-  - {set: abf-energy, of_dataset: abf-energy, of_version: "0.1.0"}
+  - set: abf-dc
+    of_dataset: abf-dc
+    of_version: "0.2.0"
+    texts: ['releases\index_texts\common.yaml', 'releases\index_texts\abf-dc.yaml']
+    layer_metas:
+      dc_atlas_points: 'data\abf-dc\v0.2.0\dc_atlas_points.meta.json'
+      dc_epoch_points: 'data\abf-dc\v0.2.0\dc_epoch_points.meta.json'
+    rules: ['rules/atlas_adm1_countries.csv']
+  - set: abf-energy
+    of_dataset: abf-energy
+    of_version: "0.1.0"
+    texts: ['releases\index_texts\common.yaml', 'releases\index_texts\abf-energy.yaml']
+    layer_metas:
+      energy_plants_gem_units: 'data\abf-energy\v0.1.0\energy_plants_gem_units.meta.json'
 layers: []

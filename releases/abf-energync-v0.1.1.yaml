@@ -5,7 +5,7 @@
 dataset: abf-energync
 version: 0.1.1
 tag: abf-energync-v0.1.1
-doi: null
+doi: 10.5281/zenodo.24030943
 published_at: "2026-11-07"
 built_at: "2026-11-01T12:00:00Z"
 boundary_release: abf-boundaries-v0.2.0
@@ -34,5 +34,15 @@ license:
   url: https://creativecommons.org/licenses/by-nc/4.0/
   family: non_commercial
 indexes_dir: 'C:\Users\PGS\Documents\AI\index_work\data\index'
+release_texts:
+  version_note: >-
+    0.1.1 adds the territory index of the 18,732 units: the country, first-level unit and second-level unit of each in
+    abf-boundaries v0.2.0, by the rule of abf-index 0.1.0. The units, the plants and their files are the same as in
+    0.1.0.
 indexes:
-  - {set: abf-energync, of_dataset: abf-energync, of_version: "0.1.0"}
+  - set: abf-energync
+    of_dataset: abf-energync
+    of_version: "0.1.0"
+    texts: ['releases\index_texts\common.yaml', 'releases\index_texts\abf-energync.yaml']
+    layer_metas:
+      energy_plants_gem_tzsam_units: 'data\abf-energync\v0.1.0\energy_plants_gem_tzsam_units.meta.json'

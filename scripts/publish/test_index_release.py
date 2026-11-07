@@ -33,6 +33,17 @@ import verify_release as VR  # noqa: E402
 from common import GateError, content_headers, load_yaml  # noqa: E402
 
 BND = "abf-boundaries-v0.2.0"
+ROOT = HERE.parent.parent
+COMMON_COLS = ["record_id", "layer_id", "adm0", "adm0_basis", "adm0_other", "adm1", "adm2", "unit_basis", "unit_note", "adm1_point",
+               "adm2_point", "approximate", "boundary_release"]
+SETS = {
+    "abf-dc": {"cols": COMMON_COLS + ["name", "status_raw", "type_group", "power_class", "power_mw"],
+               "layers": {"dc_atlas_points": 3, "dc_epoch_points": 2}},
+    "abf-energy": {"cols": COMMON_COLS + ["plant_name", "location_id", "type", "status_group", "capacity_mw"],
+                   "layers": {"energy_plants_gem_units": 5}},
+}
+UNIT_NOTES = ["ambiguous_name", "connecticut", "no_county_field", "no_point", "no_state", "no_unit_near", "point_in_other_country",
+              "region_not_matched", "region_only"]
 
 
 def sha(b: bytes) -> str:
@@ -44,8 +55,9 @@ def make_set(root: Path, s: str, hashes: dict[str, str]) -> None:
     d.mkdir(parents=True)
     files = {}
     zip_members = {}
+    cols = SETS[s]["cols"]
     for iso, n in (("ABW", 2), ("FRA", 3)):
-        csv = ("unit_id,count\n" + "".join(f"{iso}{i},{i}\n" for i in range(n))).encode()
+        csv = (",".join(cols) + "\n" + "".join(",".join([f"{iso}{i}"] + ["x"] * (len(cols) - 1)) + "\n" for i in range(n))).encode()
         gz = gzip.compress(csv, mtime=0)
         (d / f"{iso}.csv").write_bytes(csv)
         (d / f"{iso}.csv.gz").write_bytes(gz)
@@ -56,8 +68,9 @@ def make_set(root: Path, s: str, hashes: dict[str, str]) -> None:
     (d / "adm0_other.csv").write_bytes(other)
     (d / "adm0_other.csv.gz").write_bytes(gzip.compress(other, mtime=0))
     (d / "summary.csv").write_bytes(b"iso3,rows\nABW,2\nFRA,3\n")
-    meta = {"schema_version": "abf-index-meta-1.0", "set": s, "boundary_release": BND, "files": files, "records": 5,
-            "layers": {"layer_a": 3, "layer_b": 2}}
+    meta = {"schema_version": "abf-index-meta-1.0", "set": s, "dataset": "abf-index", "boundary_release": BND, "files": files, "records": 5,
+            "layers": SETS[s]["layers"], "unit_note_values": UNIT_NOTES,
+            "aggregations": {"x": {"count": "records"}}}
     (d / "meta.json").write_text(json.dumps(meta), encoding="utf-8")
     with zipfile.ZipFile(d / f"index_{s}.zip", "w", zipfile.ZIP_STORED) as z:
         for k, v in zip_members.items():
@@ -76,8 +89,12 @@ class IndexRelease(unittest.TestCase):
         self.hashes: dict[str, str] = {}
         for s in ("abf-dc", "abf-energy"):
             make_set(self.src, s, self.hashes)
-        (self.src / "build_hashes.json").write_text(json.dumps({"files": self.hashes, "inputs": {}}), encoding="utf-8")
-        rel = load_yaml(HERE.parent.parent / "releases" / "abf-index-v0.1.0.yaml")
+        (self.src / "rules").mkdir()
+        rules = (ROOT / "data" / "index" / "rules" / "atlas_adm1_countries.csv").read_bytes()
+        (self.src / "rules" / "atlas_adm1_countries.csv").write_bytes(rules)
+        self.inputs = {"atlas_adm1_countries.csv": {"bytes": len(rules), "sha256": sha(rules), "sha256_lf": sha(rules.replace(b"\r\n", b"\n"))}}
+        (self.src / "build_hashes.json").write_text(json.dumps({"files": self.hashes, "inputs": self.inputs}), encoding="utf-8")
+        rel = load_yaml(ROOT / "releases" / "abf-index-v0.1.0.yaml")
         rel["indexes_dir"] = str(self.src)
         self.rel = rel
 
@@ -112,10 +129,91 @@ class IndexRelease(unittest.TestCase):
         self.assertEqual(set(VR.files_of(manifest, listings)), set(files))
         git = FR.files_for_git(manifest, plan)
         self.assertEqual(sorted(git), ["index/abf-dc/meta.json", "index/abf-energy/meta.json", "manifest.json"])
+        self.assertIn("index/abf-dc/build_meta.json", files)
+        self.assertIn("index/abf-dc/rules/atlas_adm1_countries.csv", files)
+        self.assertNotIn("index/abf-energy/rules/atlas_adm1_countries.csv", files)
+        self.assertEqual(manifest["indexes"][0]["rules"][0]["path"], "index/abf-dc/rules/atlas_adm1_countries.csv")
+        self.assertNotIn("rules", manifest["indexes"][1])
         # zenodo list: archives, not the country files
         z = (out / "zenodo_files.txt").read_text(encoding="utf-8")
         self.assertIn("index/abf-dc/index_abf-dc.zip", z)
         self.assertNotIn("ABW.csv.gz", z)
+
+    def test_public_meta_and_archive(self) -> None:
+        out = self.run_release(self.rel)
+        for s in ("abf-dc", "abf-energy"):
+            build = json.loads((out / "index" / s / "build_meta.json").read_text(encoding="utf-8"))
+            pub = json.loads((out / "index" / s / "meta.json").read_text(encoding="utf-8"))
+            self.assertEqual((out / "index" / s / "build_meta.json").read_bytes(), (self.src / s / "meta.json").read_bytes())
+            for k, v in build.items():                       # the technical keys word for word
+                self.assertEqual(pub[k], v, k)
+            for k in ("title", "description", "known_gaps", "verification", "sources", "fields", "null_meaning", "unit_note_descriptions",
+                      "license", "release", "aggregations_labels", "totals_note", "dataset_description", "attribution_text"):
+                self.assertIn(k, pub, k)
+            self.assertEqual([f["name"] for f in pub["fields"]], SETS[s]["cols"])
+            self.assertEqual(pub["release"]["doi"], None)
+            self.assertEqual(pub["license"]["family"], "attribution")
+            self.assertNotIn("inputs", pub["sources"][0])
+            self.assertEqual(set(pub["unit_note_descriptions"]), set(UNIT_NOTES))
+        dc = json.loads((out / "index/abf-dc/meta.json").read_text(encoding="utf-8"))
+        self.assertEqual([x["source_id"] for x in dc["sources"]][:1], ["atlas_of_data_center_politics"])
+        self.assertEqual(len({x["source_id"] for x in dc["sources"]}), len(dc["sources"]))
+        name = next(f for f in dc["fields"] if f["name"] == "name")
+        self.assertEqual(name["copied_from"], ["dc_atlas_points", "dc_epoch_points"])
+        # archive: deterministic, public meta.json inside, rules only in abf-dc
+        zp = out / "index/abf-dc/index_abf-dc.zip"
+        with zipfile.ZipFile(zp) as z:
+            names = z.namelist()
+            self.assertEqual(names, sorted(names))
+            self.assertIn("rules/atlas_adm1_countries.csv", names)
+            self.assertEqual(z.read("meta.json"), (out / "index/abf-dc/meta.json").read_bytes())
+            self.assertNotIn("build_meta.json", names)
+            self.assertTrue(all(i.date_time == (1980, 1, 1, 0, 0, 0) and i.compress_type == zipfile.ZIP_STORED for i in z.infolist()))
+        with zipfile.ZipFile(out / "index/abf-energy/index_abf-energy.zip") as z:
+            self.assertFalse(any(n.startswith("rules/") for n in z.namelist()))
+        first = {p.relative_to(out).as_posix(): sha(p.read_bytes()) for p in out.rglob("*") if p.is_file() and p.suffix in (".zip", ".json")
+                 and p.name != "build_log.json"}
+        shutil.rmtree(self.tmp / "out")
+        out2 = self.run_release(self.rel)
+        second = {p.relative_to(out2).as_posix(): sha(p.read_bytes()) for p in out2.rglob("*") if p.is_file() and p.suffix in (".zip", ".json")
+                  and p.name != "build_log.json"}
+        self.assertEqual(first, second)
+        # final: the DOI is in the public meta
+        shutil.rmtree(self.tmp / "out")
+        rel = copy.deepcopy(self.rel)
+        rel["doi"] = "10.5281/zenodo.24030844"
+        out3 = self.run_release(rel, "final")
+        self.assertEqual(json.loads((out3 / "index/abf-dc/meta.json").read_text(encoding="utf-8"))["release"]["doi"], "10.5281/zenodo.24030844")
+
+    def test_text_gates(self) -> None:
+        def broken(mutate) -> None:
+            shutil.rmtree(self.tmp / "out", ignore_errors=True)
+            rel = copy.deepcopy(self.rel)
+            mutate(rel)
+            with self.assertRaises(GateError):
+                self.run_release(rel)
+
+        broken(lambda r: r["indexes"][0].pop("texts"))
+        broken(lambda r: r["indexes"][0].pop("layer_metas"))
+        broken(lambda r: r["indexes"][1].update(layer_metas={"energy_plants_gem_units": r["indexes"][1]["layer_metas"]["energy_plants_gem_units"],
+                                                             "dc_epoch_points": r["indexes"][0]["layer_metas"]["dc_epoch_points"]}))
+        broken(lambda r: r["indexes"][0].update(rules=["rules/missing.csv"]))
+        # a column of the CSV without a text
+        shutil.rmtree(self.tmp / "out", ignore_errors=True)
+        rel = copy.deepcopy(self.rel)
+        tp = self.tmp / "abf-dc-texts.yaml"
+        d = load_yaml(ROOT / "releases" / "index_texts" / "abf-dc.yaml")
+        d["copied_fields"]["dc_atlas_points"].remove("status_raw")
+        tp.write_text(yaml.safe_dump(d, allow_unicode=True), encoding="utf-8")
+        rel["indexes"][0]["texts"] = [rel["indexes"][0]["texts"][0], str(tp)]
+        with self.assertRaises(GateError):
+            self.run_release(rel)
+
+    def test_rules_file_changed_is_a_stop(self) -> None:
+        p = self.src / "rules" / "atlas_adm1_countries.csv"
+        p.write_bytes(p.read_bytes() + b"X,1\n")
+        with self.assertRaises(GateError):
+            self.run_release(self.rel)
 
     def test_manifest_schema_rules(self) -> None:
         out = self.run_release(self.rel)
@@ -158,7 +256,7 @@ class IndexRelease(unittest.TestCase):
         data = p.read_bytes() + b"ABW9,9\n"
         p.write_bytes(data)
         self.hashes["abf-energy/ABW.csv"] = sha(data)
-        (self.src / "build_hashes.json").write_text(json.dumps({"files": self.hashes, "inputs": {}}), encoding="utf-8")
+        (self.src / "build_hashes.json").write_text(json.dumps({"files": self.hashes, "inputs": self.inputs}), encoding="utf-8")
         with self.assertRaises(GateError):
             self.run_release(self.rel)
 
@@ -172,16 +270,17 @@ class IndexRelease(unittest.TestCase):
         self.assertEqual(content_headers("index/abf-dc/index_abf-dc.zip")["Content-Type"], "application/zip")
 
     def test_yamls_of_the_release(self) -> None:
-        root = HERE.parent.parent / "releases"
+        root = ROOT / "releases"
         a = load_yaml(root / "abf-index-v0.1.0.yaml")
         self.assertEqual((a["kind"], a["layers"], a["license"]["family"]), ("index", [], "attribution"))
         self.assertEqual([i["set"] for i in a["indexes"]], ["abf-dc", "abf-energy"])
         b = load_yaml(root / "abf-energync-v0.1.1.yaml")
         self.assertEqual(b["license"]["family"], "non_commercial")
         self.assertEqual(b["indexes"][0]["set"], "abf-energync")
+        self.assertIn("version_note", b["release_texts"])
         self.assertEqual(b["identity"]["layers"], ["energy_plants_gem_tzsam_units", "energy_plants_gem_tzsam_locations"])
         self.assertEqual(b["layers"], load_yaml(root / "abf-energync-v0.1.0.yaml")["layers"])
-        self.assertIsNone(b["doi"])
+        self.assertTrue(b["doi"] is None or b["doi"].startswith("10.5281/zenodo."))   # null until the DOI is reserved
 
 
 if __name__ == "__main__":
