@@ -152,7 +152,15 @@ export function basisOf(rows: Row[], level: number): Basis {
   return 'none';
 }
 
-export const approximateCount = (rows: Row[]): number => rows.filter((r) => r.approximate === 'true').length;
+/**
+ * Records placed by their point at this level (adm0_basis for a country, unit_basis below it) and, of them, the ones whose
+ * point is approximate. Only these can lie in a neighboring unit; a record placed by the unit it names is not counted.
+ */
+export function approximateCount(rows: Row[], level: number): { n: number; nApprox: number } {
+  const col = level <= 0 ? 'adm0_basis' : 'unit_basis';
+  const byPoint = rows.filter((r) => r[col] === 'point');
+  return { n: byPoint.length, nApprox: byPoint.filter((r) => r.approximate === 'true').length };
+}
 
 /** rows with a unit_note, counted by note: why the record has no unit at the first level that the country has */
 export function noteCounts(rows: Row[]): { note: string; n: number }[] {

@@ -120,7 +120,7 @@ export function SetBlock({ index, set, d, iso3, unit, countryName }: { index: In
                 ) : (
                   <>
                     {mine.map((x) => <SummaryView key={x.key} s={x} tx={tx} />)}
-                    <LayerNotes tx={tx} rows={rows} unit={unit} country={countryName} hasAdm1={levels?.adm1 ?? false} hasAdm2={levels?.adm2 ?? false} />
+                    <LayerNotes tx={tx} lid={lid} rows={rows} unit={unit} country={countryName} hasAdm1={levels?.adm1 ?? false} hasAdm2={levels?.adm2 ?? false} />
                     <RecordList index={index} set={set} rows={rows} cut={cut} lid={lid} unit={unit} />
                   </>
                 )}
@@ -184,14 +184,14 @@ function SummaryView({ s, tx }: { s: Summary; tx: Record<string, any> }) {
   );
 }
 
-function LayerNotes({ tx, rows, unit, country, hasAdm1, hasAdm2 }: { tx: Record<string, any>; rows: Row[]; unit: UnitRef; country: string; hasAdm1: boolean; hasAdm2: boolean }) {
+function LayerNotes({ tx, lid, rows, unit, country, hasAdm1, hasAdm2 }: { tx: Record<string, any>; lid: string; rows: Row[]; unit: UnitRef; country: string; hasAdm1: boolean; hasAdm2: boolean }) {
   const basis = basisOf(rows, unit.level);
-  const approx = approximateCount(rows);
+  const approx = approximateCount(rows, unit.level);
   const notes = noteCounts(rows);
   const only = unit.level === 0 ? countryOnly(rows, hasAdm1) : 0;
   const lines: string[] = [];
   if (basis !== 'none') lines.push(fillTemplate(tx.card_basis, { basis: tx[`card_basis_${basis}`] }));
-  if (approx > 0) lines.push(fillTemplate(tx.card_approximate, { n_approx: fmtInt(approx), n: fmtInt(rows.length) }));
+  if (approx.nApprox > 0 && tx.card_approximate?.[lid]) lines.push(fillTemplate(tx.card_approximate[lid], { n_approx: fmtInt(approx.nApprox), n: fmtInt(approx.n) }));
   if (only > 0) lines.push(fillTemplate(tx.card_country_only, { n: fmtInt(only), country }));
   if (unit.level === 0 && !hasAdm1) lines.push(fillTemplate(tx.card_level_missing_adm1, { country }));
   if (unit.level === 1 && !hasAdm2) lines.push(fillTemplate(tx.card_level_missing_adm2, { country }));
