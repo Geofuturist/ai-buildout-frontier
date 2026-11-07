@@ -133,16 +133,22 @@ export default function TerritoryPanel(p: Props) {
 
             {!model && !indicator && p.countryRows.length === 0 && p.hiddenIndicators.length === 0 && <p className="mt-3 text-ink2">No layers for this country yet.</p>}
 
-            {p.countryRows.length > 0 && (
+            {!data.index && p.countryRows.length > 0 && (
               <div className="mt-3 border-t border-line pt-3">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
                 <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onColors={p.onColors} onPoints={p.onPoints} onInfo={p.onInfo} legendOf={p.legendOf} openAll />
               </div>
             )}
 
-            {unit && hasNational && (
+            {data.index && (p.countryRows.length > 0 || (unit && hasNational)) && (
               <NationalData data={data}>
-                {indicator && unit && !coveredByIndex(data, indicator) && (
+                {p.countryRows.length > 0 && (
+                      <div className="mt-3 pt-1">
+                        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Layers of {p.countryName}</p>
+                        <LayersPanel rows={p.countryRows} activeFill={indicator?.key ?? null} overlays={p.overlays} failed={p.failed} onColors={p.onColors} onPoints={p.onPoints} onInfo={p.onInfo} legendOf={p.legendOf} openAll />
+                      </div>
+                    )}
+                {unit && indicator && !coveredByIndex(data, indicator) && (
                   <div className="mt-3 border-t border-line pt-3">
                     <p className="text-xs font-semibold uppercase tracking-wide text-muted">{indicator.title}</p>
                     {valueLayer ? (
