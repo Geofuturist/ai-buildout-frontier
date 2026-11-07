@@ -391,6 +391,9 @@ async function main() {
     const c = (Array.isArray(m.coverage.iso3) ? m.coverage.iso3[0] : m.coverage.iso3) || (m.coverage.frame && m.coverage.frame.iso3);
     if (c) countryCodes.add(c);
   }
+  // Names of units for the card of every country that has records in a territory index (SPEC_INDEX r6 8): the codes of
+  // countries with an index file are added, so a country without a layer of areas has place names in the card too.
+  for (const ix of indexSets) for (const c of ix.meta.countries) countryCodes.add(c);
   const territory = { units: {} };
   if (unitsText) {
     const LEVEL = { ADM0: 0, ADM1: 1, ADM2: 2 };
