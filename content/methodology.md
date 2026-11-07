@@ -1,7 +1,7 @@
 # Methodology
 
 **Datasets:** abf-layers, United States, version {version_layers} (DOI: {DOI_layers}) ·
-abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France, version {version:abf-fra} (DOI: {DOI:abf-fra}) · abf-dc, data centers of the world, version {version:abf-dc} (DOI: {DOI:abf-dc}) · abf-energy, power plants of the world, version {version:abf-energy} (DOI: {DOI:abf-energy}) · abf-energync, solar plants of the world (non-commercial), version {version:abf-energync} (DOI: {DOI:abf-energync}). Each dataset has its own DOI and is cited on its own.
+abf-boundaries, version {version_boundaries} (DOI: {DOI_boundaries}) · abf-fra, France, version {version:abf-fra} (DOI: {DOI:abf-fra}) · abf-dc, data centers of the world, version {version:abf-dc} (DOI: {DOI:abf-dc}) · abf-energy, power plants of the world, version {version:abf-energy} (DOI: {DOI:abf-energy}) · abf-energync, solar plants of the world (non-commercial), version {version:abf-energync} (DOI: {DOI:abf-energync}) · abf-index, territory index of the world point layers, version {version:abf-index} (DOI: {DOI:abf-index}). Each dataset has its own DOI and is cited on its own.
 
 ## What this site is
 
