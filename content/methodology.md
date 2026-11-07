@@ -490,6 +490,48 @@ The TransitionZero units, built into rows by the same rule as “Power plants”
 
 The 18,732 units behind “Solar plants”, one row per GEM unit or phase with GEM's fields unchanged, under CC BY-NC 4.0. Published as files; not drawn on the map.
 
+## Territory index
+
+When you select a country, a region or a county, the territory card lists and counts the records of our world point
+layers that lie there. It reads a published index rather than working out positions on the screen. The index gives
+each record its country, first-level unit and second-level unit in our boundary frame, with the basis of each
+assignment. It is our assignment of source records to the frame, not data of the sources: when the frame gains
+levels or countries, we rebuild the index, and the source layers and their DOIs stay as they are.
+
+**Two bases.** Where a source names a unit and we publish a rule for it, the record goes to the unit it names: Atlas
+records go to the country they name, in the United States to the county they name, and in 34 other countries, where
+the Atlas region field names the frame's first-level units, to the region they name. Otherwise a record goes to the
+unit in which its point lies, among the units of its country, or the nearest such unit within 22.2 km (12 nautical
+miles); that includes the few records in those countries whose region we cannot match. Each record has one basis
+and one chain of units: its region always lies in its country, and a record placed by the region it names is not
+given a smaller unit from its point. The card says which basis each layer uses.
+
+**What the card adds up.** The card counts records and adds GEM capacity only within one layer, one type and one
+status, as the index declares. It does not add layers to each other: Atlas and Epoch AI stay apart, and so do the GEM
+plants and the TransitionZero solar records, which are under a non-commercial license. A plant with units in two
+units of the frame is counted in both, so plant counts do not add up across units.
+
+**What to keep in mind.** Most points are not sites. Atlas and Epoch AI points mark towns, and GEM gives about half
+of its locations as approximate; such a point can fall in a unit next to the one where the facility is. Records
+without a point are counted only for their country, unless they name a county or region we accept. Where the source
+names one country and the point lies in another, the card of each country says so. A zero means that the layer has no
+record here, within its own coverage and thresholds; it is not proof that there is nothing.
+
+### Territory index · Data centers (abf-dc 0.2.0) · records
+
+The Atlas of Data Center Politics records and Epoch AI sites of abf-dc 0.2.0. Atlas records are assigned by what they
+name, as the Atlas counts in abf-dc are; Epoch AI sites by their town point.
+
+### Territory index · Power plants (abf-energy 0.1.0) · generating units
+
+The GEM generating units of abf-energy 0.1.0, assigned by their point. Units rather than plant rows are indexed, so
+counts and capacity add up within a type and a status.
+
+### Territory index · Solar plants (abf-energync 0.1.1) · generating units
+
+The GEM units sourced from TransitionZero's Solar Asset Mapper, indexed by the same rule and published in
+abf-energync 0.1.1 under CC BY-NC 4.0.
+
 ## Administrative boundaries · ADM0, ADM1, ADM2
 
 - **One frame for the whole world.** Natural Earth at 1:10 million, version 5.1.2. Where borders are
