@@ -98,14 +98,31 @@ const MapCanvas = forwardRef<MapHandle, Props>(function MapCanvas({ data, active
       const map = mapRef.current?.getMap();
       if (!map || !sl) return false;
       const feats = map.querySourceFeatures('boundaries', { sourceLayer: sl, filter: ['==', ['get', 'unit_id'], unitId] });
-      let b: number[] | null = null;
+      const pts: [number, number][] = [];
       const walk = (c: unknown) => {
-        if (Array.isArray(c) && typeof c[0] === 'number') {
-          const [x, y] = c as number[];
-          b = b ? [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)] : [x, y, x, y];
-        } else if (Array.isArray(c)) c.forEach(walk);
+        if (Array.isArray(c) && typeof c[0] === 'number') pts.push([(c as number[])[0], (c as number[])[1]]);
+        else if (Array.isArray(c)) c.forEach(walk);
       };
       for (const f of feats) walk((f.geometry as { coordinates?: unknown }).coordinates);
+      if (pts.length === 0) return false;
+      // A unit with parts on both sides of the 180th meridian (e.g. islands beyond it) would be fitted as if it spanned the
+      // whole world. The side with fewer vertices is moved by 360 degrees so the box is the real one (MapLibre accepts
+      // longitudes beyond 180 in both directions).
+      let lo = Infinity;
+      let hi = -Infinity;
+      let east = 0;
+      for (const [px] of pts) {
+        lo = Math.min(lo, px);
+        hi = Math.max(hi, px);
+        if (px > 0) east++;
+      }
+      const wrap = hi - lo > 180;
+      const moveEast = wrap && east < pts.length - east;
+      let b: number[] | null = null;
+      for (const [px, y] of pts) {
+        const x = wrap ? (moveEast ? (px > 0 ? px - 360 : px) : px < 0 ? px + 360 : px) : px;
+        b = b ? [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)] : [x, y, x, y];
+      }
       if (!b) return false;
       const bb = b as number[];
       mapRef.current?.fitBounds([[bb[0], bb[1]], [bb[2], bb[3]]], { padding: 40, duration: 1200 });
