@@ -34,6 +34,7 @@ import check_layers_phrases
 import index_build
 import layer_build
 import rollup_check
+import superset_check
 from common import (
     DOI_REGEX,
     SCHEMA_DIR,
@@ -164,6 +165,8 @@ def run_cross_checks(checks: list[dict[str, Any]], out: Path, boundaries: Bounda
         key; see check_counts_by_key.
     kind rollup_sums (abf-layers 0.2.0): state layers against the county layers and the reference file
         state_reconciliation.csv; see rollup_check.py.
+    kind rows_superset (abf-layers 0.3.0): a layer has all the rows of the earlier release unchanged plus counted new
+        rows; see superset_check.py.
     """
     for chk in checks:
         kind = chk["kind"]
@@ -199,6 +202,8 @@ def run_cross_checks(checks: list[dict[str, Any]], out: Path, boundaries: Bounda
             check_counts_by_key(chk, out, report)
         elif kind == "rollup_sums":
             rollup_check.check_rollup_sums(chk, out, report)
+        elif kind == "rows_superset":
+            superset_check.check_rows_superset(chk, out, report)
         else:
             raise GateError("G2", f"unknown cross_check kind {kind!r}")
 
@@ -326,7 +331,7 @@ def run_identity(spec: dict[str, Any], out: Path, report: Report) -> None:
     yaml: identity: {manifest, layers: [layer_id], old_release_dir}.
     """
     manifest = read_json(resolve_path(spec["manifest"]))
-    wanted = list(spec["layers"])
+    wanted = list(spec.get("layers") or [])
     by_id = {lay["layer_id"]: lay for lay in manifest["layers"]}
     absent = [w for w in wanted if w not in by_id]
     if absent:
@@ -373,7 +378,7 @@ def run_identity(spec: dict[str, Any], out: Path, report: Report) -> None:
         if sha256_file(need(rec)) != rec["sha256"]:
             raise GateError("G9", f"identity: {rec['path']} differs from {manifest['tag']} (SHA-256)")
         same.append(rec["path"])
-    lines = [f"- layers kept from {manifest['tag']}: {', '.join(wanted)}",
+    lines = [f"- layers kept from {manifest['tag']}: {', '.join(wanted) if wanted else 'none (only the source archives are checked)'}",
              f"- the same SHA-256: {len(same)} files"] + [f"  - {n}" for n in same]
     if by_values:
         lines.append(f"- other bytes, equal values and geometry: {len(by_values)} files")

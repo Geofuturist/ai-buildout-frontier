@@ -3,12 +3,19 @@ r"""Check that the values of the layers kept from an earlier release did not cha
 Run command (from the repository root, Windows):
     python scripts\publish\compare_release_values.py "D:\GISData\release\abf-fra-v0.1.0" "D:\GISData\release\abf-fra-v0.2.0"
     python scripts\publish\compare_release_values.py "D:\GISData\release\abf-layers-v0.1.0" "D:\GISData\release\abf-layers-v0.2.0" --allow-added-columns coverage_note
+    python scripts\publish\compare_release_values.py "D:\GISData\release\abf-layers-v0.2.0" "D:\GISData\release\abf-layers-v0.3.0" --allow-changed-states 02,15 --allow-added-rows energy_transmission_lines_hifld
 
 For every layer that is in both folders it compares
   - the CSV file: same columns in the same order, same rows, every value equal as written (text comparison); with
     --allow-added-columns the new file may have the listed extra columns (empty for covered units, given for not_covered);
   - the GeoParquet file: the same geometry of every row;
   - the layer meta file: the list of text paths that differ (listed for review, not a stop).
+Two options for abf-layers 0.3.0 (Alaska and Hawaii become covered where the source covers them):
+  --allow-changed-states 02,15   the rows of these states (unit_id USA-1-02, USA-2-02001 and so on) may differ in any column
+                                 (coverage, values, coverage_note); every other row must be equal as written; the geometry of
+                                 every row must be equal;
+  --allow-added-rows L1,L2       the new file of these layers may have rows that the old file does not have; every row of the
+                                 old file must be in the new file with equal values and geometry (superset_check.compare_subset).
 The result is written as a section "Comparison with <old release>" into release_report.md of the NEW folder
 (an earlier section of the same name is replaced). Exit code 1 if any value or geometry differs.
 """
@@ -22,6 +29,9 @@ from typing import Any
 
 import geopandas as gpd
 import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import superset_check  # noqa: E402
 
 KEY_CANDIDATES = ("unit_id", "record_id")
 
@@ -39,9 +49,12 @@ def flatten(obj: Any, path: str = "") -> dict[str, Any]:
     return out
 
 
-def compare_csv(old: Path, new: Path, allow_added: tuple[str, ...] = ()) -> list[str]:
+def compare_csv(old: Path, new: Path, allow_added: tuple[str, ...] = (), changed_prefixes: tuple[str, ...] = (),
+                subset: bool = False) -> list[str]:
     """Text comparison of two CSV files. `allow_added`: columns that the new file may have in addition (abf-layers 0.2.0:
-    coverage_note). The columns of the old file must stay in the same order with equal values; an added column must be
+    coverage_note). `changed_prefixes`: rows whose key starts with one of them are left out of the comparison on both sides
+    (abf-layers 0.3.0: the states 02 and 15). `subset`: the new file may have more rows than the old one.
+    The columns of the old file must stay in the same order with equal values; an added column must be
     empty in every covered row and given in every not_covered row."""
     a = pd.read_csv(old, dtype=str, keep_default_na=False, encoding="utf-8-sig")
     b = pd.read_csv(new, dtype=str, keep_default_na=False, encoding="utf-8-sig")
@@ -65,7 +78,13 @@ def compare_csv(old: Path, new: Path, allow_added: tuple[str, ...] = ()) -> list
         return ["no key column (unit_id or record_id)"]
     a = a.set_index(key).sort_index()
     b = b.set_index(key).sort_index()
+    if changed_prefixes:
+        a = a[~a.index.str.startswith(changed_prefixes)]
+        b = b[~b.index.str.startswith(changed_prefixes)]
     only_a, only_b = sorted(set(a.index) - set(b.index)), sorted(set(b.index) - set(a.index))
+    if subset:
+        only_b = []
+        b = b.loc[b.index.intersection(a.index)]
     if only_a:
         problems.append(f"{len(only_a)} rows only in the old release: {only_a[:5]}")
     if only_b:
@@ -87,7 +106,10 @@ def compare_csv(old: Path, new: Path, allow_added: tuple[str, ...] = ()) -> list
     return problems
 
 
-def compare_geometry(old: Path, new: Path) -> list[str]:
+def compare_geometry(old: Path, new: Path, subset: bool = False) -> list[str]:
+    if subset:
+        key = next((k for k in KEY_CANDIDATES if k in gpd.read_parquet(old).columns), None)
+        return superset_check.compare_subset(old, new, key)[0] if key else ["no key column for geometry comparison"]
     a, b = gpd.read_parquet(old), gpd.read_parquet(new)
     key = next((k for k in KEY_CANDIDATES if k in a.columns), None)
     if key is None or key not in b.columns:
@@ -115,6 +137,23 @@ def main(argv: list[str]) -> int:
         i = argv.index("--allow-added-columns")
         allow_added = tuple(c for c in argv[i + 1].split(",") if c) if i + 1 < len(argv) else ()
         argv = argv[:i] + argv[i + 2:]
+    changed_prefixes: tuple[str, ...] = ()
+    if "--allow-changed-states" in argv:
+        i = argv.index("--allow-changed-states")
+        states = tuple(s for s in argv[i + 1].split(",") if s) if i + 1 < len(argv) else ()
+        changed_prefixes = tuple(f"USA-{lvl}-{s}" for s in states for lvl in (1, 2))
+        argv = argv[:i] + argv[i + 2:]
+        if not states:
+            print(__doc__)
+            return 2
+    added_rows: tuple[str, ...] = ()
+    if "--allow-added-rows" in argv:
+        i = argv.index("--allow-added-rows")
+        added_rows = tuple(s for s in argv[i + 1].split(",") if s) if i + 1 < len(argv) else ()
+        argv = argv[:i] + argv[i + 2:]
+        if not added_rows:
+            print(__doc__)
+            return 2
     if len(argv) != 3 or (allow_added == () and "--allow-added-columns" in sys.argv):
         print(__doc__)
         return 2
@@ -133,8 +172,8 @@ def main(argv: list[str]) -> int:
     failed = False
     for lid in ids:
         res = {
-            "csv": compare_csv(old_dir / f"{lid}.csv", new_dir / f"{lid}.csv", allow_added),
-            "geometry": compare_geometry(old_dir / f"{lid}.parquet", new_dir / f"{lid}.parquet"),
+            "csv": compare_csv(old_dir / f"{lid}.csv", new_dir / f"{lid}.csv", allow_added, changed_prefixes, lid in added_rows),
+            "geometry": compare_geometry(old_dir / f"{lid}.parquet", new_dir / f"{lid}.parquet", lid in added_rows),
         }
         bad = any(res.values())
         failed |= bad

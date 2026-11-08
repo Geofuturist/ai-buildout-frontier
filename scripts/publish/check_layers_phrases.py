@@ -1,15 +1,20 @@
-r"""Check the phrases of the abf-layers 0.2.0 texts against the pages saved by hand (RES_texts_USA_states_v0_2_0.md r1, section 9).
+r"""Check the phrases of the abf-layers texts against the pages saved by hand (RES_texts_USA_states_v0_2_0.md r1, section 9;
+abf-layers 0.3.0: RES_texts_USA_AKHI_v0_3_0.md r1, section 9 item 1).
 
 Two statements of the texts rest on pages the cloud machine cannot open:
   - OEDI submission 8562 (demand): "sales ... totaled to the state level" and "allocated to counties by each county's
     share of state population". The text that depends on them: "The state is therefore closer than the county ..." in
     known_gaps of energy_demand_nrel8562_adm1.
   - EIA-860 page: the threshold "1 megawatt or greater" (known_gaps of both EIA layers) and the release date.
+  - (0.3.0) the Queued Up 2026 report, a PDF saved by hand: "No data collected for Hawaii or Alaska". The text that depends
+    on it: "the Queued Up report states that no data was collected for them" in known_gaps of both queue layers. The PDF is
+    read with pypdf (python -m pip install pypdf) or pdfminer.six; without either, the check reports a problem.
 V saves the pages in the browser (Save as, "Webpage, HTML only" or "Complete") and the release yaml names the files:
 
     phrase_check:
       kind: layers
-      pages: {oedi_8562: 'D:\GISData\...\oedi_8562.html', eia860: 'D:\GISData\...\eia860.html'}
+      pages: {oedi_8562: 'D:\GISData\...\oedi_8562.html', eia860: 'D:\GISData\...\eia860.html',
+              queued_up: 'D:\GISData\...\queued_up_2026.pdf'}
 
 A phrase that is not found is a stop in final, a warning in dev; then the text that depends on it is removed from the
 yaml (RES section 9). The check also proves that the dependent text is in the yamls, so that text and check cannot drift
@@ -41,6 +46,8 @@ PHRASES: list[tuple[str, str, str, str | None, bool]] = [
      "The state is therefore closer than the county", True),
     ("eia_threshold", "eia860", "1 megawatt or greater", "combined nameplate capacity of 1 MW or more", True),
     ("eia_release_date", "eia860", "September 10, 2026", None, False),
+    ("queued_up_ak_hi", "queued_up", "No data collected for Hawaii or Alaska",
+     "the Queued Up report states that no data was collected for them", True),
 ]
 
 
@@ -55,7 +62,23 @@ def yaml_text(layers_dir: Path) -> tuple[str, list[str]]:
     return norm(" ".join(parts)), missing
 
 
+def pdf_text(path: Path) -> str:
+    """Text of a PDF with pypdf, or pdfminer.six when pypdf is not installed. RuntimeError when neither is."""
+    try:
+        from pypdf import PdfReader
+        return " ".join((pg.extract_text() or "") for pg in PdfReader(str(path)).pages)
+    except ImportError:
+        pass
+    try:
+        from pdfminer.high_level import extract_text
+        return extract_text(str(path))
+    except ImportError:
+        raise RuntimeError("to read a PDF install pypdf: python -m pip install pypdf") from None
+
+
 def read_page(path: Path) -> str:
+    if path.suffix.lower() == ".pdf":
+        return pdf_text(path)
     raw = path.read_bytes()
     return page_text(raw) if path.suffix.lower() in (".html", ".htm", ".mhtml") else raw.decode("utf-8", errors="replace")
 
@@ -76,7 +99,12 @@ def run_check(pages: dict[str, Path], layers_dir: Path) -> tuple[list[str], list
             lines.append(f"NO PAGE  {key}: {page_key}")
             continue
         if page_key not in texts:
-            texts[page_key] = norm(read_page(Path(path)))
+            try:
+                texts[page_key] = norm(read_page(Path(path)))
+            except RuntimeError as exc:
+                problems.append(f"page {page_key} cannot be read: {exc}")
+                lines.append(f"NO TEXT  {key}: {page_key}")
+                continue
         text, needle = texts[page_key], norm(phrase)
         hit = needle in text
         if not hit and blocks:
@@ -98,8 +126,8 @@ def run_check(pages: dict[str, Path], layers_dir: Path) -> tuple[list[str], list
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Check the phrases of the abf-layers 0.2.0 texts against the saved pages.")
-    ap.add_argument("--page", action="append", default=[], help="key=file, keys: oedi_8562, eia860 (repeat)")
+    ap = argparse.ArgumentParser(description="Check the phrases of the abf-layers texts against the saved pages.")
+    ap.add_argument("--page", action="append", default=[], help="key=file, keys: oedi_8562, eia860, queued_up (repeat)")
     ap.add_argument("--layers", type=Path, default=Path("layers"))
     ap.add_argument("--report", type=Path, default=Path("layers_phrases.txt"))
     a = ap.parse_args()

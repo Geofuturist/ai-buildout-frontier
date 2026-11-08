@@ -7,13 +7,13 @@ level: ADM2
 frame:
   iso3: USA
   level: ADM2
-  outside_note: "Not processed: this release covers only the contiguous United States and the District of Columbia."
+  outside_note: "Not covered: the source collects no interconnection queue data for Alaska or Hawaii."
 input:
   # Built by [CODE-PILOT] on 2026-10-09 from lbnl_ix_queue_data_file_thru2025.xlsx (file with _r2; the
   # file without _r2 is an intermediate one and must not be used).
-  table: 'data\conus\layer_queue_lbnl_20261009_r2.csv'
+  table: 'data\conus\layer_queue_lbnl_20261108.csv'
   key: fips
-  legacy_meta: 'data\conus\layer_queue_lbnl_20261009_r2_meta.json'
+  legacy_meta: 'data\conus\layer_queue_lbnl_20261108_meta.json'
   coverage_column: coverage_status        # per-row coverage given by the table (Connecticut = not_covered)
   coverage_note_column: coverage_note
   coverage_note_text: "Not covered: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions. The seven active Connecticut requests are counted in the Connecticut state value."   # RES_texts_USA_states r1 section 1; published as coverage_note of the nine Connecticut units
@@ -21,15 +21,15 @@ description: >-
   Capacity of the active interconnection requests in the Queued Up data file (2026 edition), summed
   by county, with the number of those requests. These are generation and storage projects asking
   to connect to the grid, not electricity users. A county with no active request in the file has
-  the value 0. Alaska and Hawaii, and the nine Connecticut planning regions, are not covered and
-  have empty values.
+  the value 0. Alaska and Hawaii, for which the source collects no data, and the nine Connecticut planning regions are not
+  covered and have empty values.
 fields:
   - name: queue_mw_active
     type: number
     unit: MW
     nullable: true
     null_meaning:
-      not_covered: "The unit is outside the contiguous United States and the District of Columbia and was not processed, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions."
+      not_covered: "The county is in Alaska or Hawaii, for which the source collects no queue data, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions."
       covered: null
     description: "Capacity of the active interconnection requests located in the county. 0 means there is no active project in the queue file for this county."
     fill_na_covered: 0
@@ -38,7 +38,7 @@ fields:
     type: integer
     nullable: true
     null_meaning:
-      not_covered: "The unit is outside the contiguous United States and the District of Columbia and was not processed, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions."
+      not_covered: "The county is in Alaska or Hawaii, for which the source collects no queue data, or it is one of the nine Connecticut planning regions: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions."
       covered: null
     description: "Number of active interconnection requests in the county. 0 means none are in the queue file."
     fill_na_covered: 0
@@ -94,7 +94,7 @@ freshness: {source_cadence: annual, next_check: "2027-06-30"}
 coverage:
   geography: "Contiguous United States and the District of Columbia"
   known_gaps:
-    - "Alaska and Hawaii are not covered."
+    - "Alaska and Hawaii are not covered: the Queued Up report states that no data was collected for them."
     - "The nine Connecticut planning regions (09110-09190) are not covered: the source codes Connecticut projects by the pre-2022 counties, which do not map onto the 2022 planning regions. Seven active Connecticut requests (678.2 MW) are not in the layer."
     - "Eleven active requests with capacity of zero or less (-193.5 MW in total) are excluded. Ten of them lie in the contiguous United States: MISO L002, L003, L004, L006, L008, L009 and ERCOT 18INR0064, 19INR0120, 20INR0019, 24INR0372. The reason for the negative values is not checked against the source codebook."
     - "35 active requests in states of the contiguous United States have no county code (11,280.7 MW) and are not in the county values."
@@ -136,6 +136,7 @@ checks:
       - {name: "contiguous US state, no county code", empty_code: true}
       - {name: "Connecticut, pre-2022 county codes", states: [CT]}
 display:
+  home_bbox: [-124.7631, 24.5213, -66.9499, 49.3844]   # contiguous states and DC; the true bbox of the layer includes the Aleutian Islands (SPEC_USA_AKHI r2 4a item 5)
   geometry_type: polygon
   value_field: queue_mw_active
   unit: MW

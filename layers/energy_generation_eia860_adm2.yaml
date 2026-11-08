@@ -9,34 +9,27 @@ level: ADM2
 frame:
   iso3: USA
   level: ADM2
-  outside_note: "Not processed: this release covers only the contiguous United States and the District of Columbia."
 input:
   # Built by [CODE-PILOT] on 2026-10-09 (EIA-860 2025 final).
-  table: 'data\conus\layer_generation_eia860_20261009.csv'
+  table: 'data\conus\layer_generation_eia860_20261108.csv'
   key: fips
   rename: {net_summer_gen_mw: net_summer_capacity_mw}   # capacity, not generation (P1)
-  legacy_meta: 'data\conus\layer_generation_eia860_20261009_meta.json'
+  legacy_meta: 'data\conus\layer_generation_eia860_20261108_meta.json'
 description: >-
   Net summer capacity of the operating generators listed in Form EIA-860, summed by county, with
   the number of those generators and of their plants. A county where EIA-860 lists no operating
-  generator has the value 0. Alaska and Hawaii are not processed and have empty values.
+  generator has the value 0.
 fields:
   - name: net_summer_capacity_mw
     type: number
     unit: MW
-    nullable: true
-    null_meaning:
-      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
-      covered: null
+    nullable: false
     description: "Sum of the net summer capacity of the operating generators (status OP) located in the county. 0 means EIA-860 lists no operating generator in this county."
     fill_na_covered: 0
     min: 0
   - name: n_op_generators
     type: integer
-    nullable: true
-    null_meaning:
-      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
-      covered: null
+    nullable: false
     description: >-
       Number of operating generators (status OP) in the county. 0 means none are listed. A generator
       without an ID in the source is not counted (see known gaps).
@@ -44,10 +37,7 @@ fields:
     min: 0
   - name: n_op_plants
     type: integer
-    nullable: true
-    null_meaning:
-      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
-      covered: null
+    nullable: false
     description: "Number of plants with at least one operating generator in the county. 0 means none are listed."
     fill_na_covered: 0
     min: 0
@@ -98,9 +88,8 @@ sources:
     publication_mode: open_licence
 freshness: {source_cadence: annual, next_check: "2027-06-30"}
 coverage:
-  geography: "Contiguous United States and the District of Columbia"
+  geography: "United States: the 50 states and the District of Columbia"
   known_gaps:
-    - "Alaska and Hawaii are not covered."
     - "Generators that entered service after the end of the edition year are not included."
     - "Three offshore wind plants (171.3 MW in total) are not assigned to any county, so they are not in the county values."
     - >-
@@ -110,7 +99,10 @@ coverage:
       One operating generator has no generator ID in the source (Cranberry Point Energy Storage,
       plant 62844, Massachusetts, 150 MW). Its capacity is in the county value, but it is not
       counted in n_op_generators.
-    - "69 operating generators in the 49 covered units have no numeric summer capacity in the source and add nothing to net_summer_capacity_mw."
+    - "69 operating generators have no numeric summer capacity in the source and add nothing to net_summer_capacity_mw."
+    - >-
+      For the Alaska plants Chevak and Hooper Bay, EIA's county field names Bethel, while their coordinates fall in
+      Kusilvak Census Area. The layer places plants by their coordinates; we did not check which is right.
 verification:
   levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
   method: >-
@@ -128,11 +120,12 @@ checks:
     state_column: State
     mw_column: Summer Capacity (MW)
     layer_column: net_summer_capacity_mw
-    states: &conus_states [AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, ID, IL, IN, IA, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY]
+    states: &conus_states [AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, MA, MD, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, NY, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VA, VT, WA, WI, WV, WY]   # all 50 states and DC since 0.3.0 (the anchor name is kept)
     # Three offshore stations lie outside every county (reported by [CODE-PILOT] 09.10).
     exceptions:
       - {name: "offshore: Block Island Wind Farm, South Fork Wind, CVOW Pilot", mw: 171.3}
 display:
+  home_bbox: [-124.7631, 24.5213, -66.9499, 49.3844]   # contiguous states and DC; the true bbox of the layer includes the Aleutian Islands (SPEC_USA_AKHI r2 4a item 5)
   geometry_type: polygon
   value_field: net_summer_capacity_mw
   unit: MW

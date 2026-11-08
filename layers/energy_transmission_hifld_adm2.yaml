@@ -7,33 +7,28 @@ level: ADM2
 frame:
   iso3: USA
   level: ADM2
-  outside_note: "Not processed: this release covers only the contiguous United States and the District of Columbia."
 input:
-  table: 'data\conus\layer_transmission_lines_hifld_20260913.csv'
+  table: 'data\conus\layer_transmission_lines_hifld_20261108.csv'
   key: fips
-  legacy_meta: 'data\conus\layer_transmission_lines_hifld_meta.json'
+  legacy_meta: 'data\conus\layer_transmission_lines_hifld_20261108_meta.json'
   derive:
     - {op: sum, name: km_total, columns: [km_ge765, km_v500, km_v345, km_v230, km_v138, km_v115, km_v69, km_lt69_unknown]}
 description: >-
   Kilometers of transmission line inside each county by voltage class, their sum, the highest
   voltage present, and whether the county has any line. Lengths are measured inside the county; a
-  line that crosses a boundary is counted only for the part inside. Alaska and Hawaii are not
-  covered and have empty values.
+  line that crosses a boundary is counted only for the part inside.
 fields:
   - name: max_voltage_kv
     type: number
     unit: kV
     nullable: true
     null_meaning:
-      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
+      not_covered: "Not applicable: every unit of this layer is covered by the source."
       covered: "The county has no line, or none of its lines has a recorded voltage."
     description: "Highest voltage among the lines inside the county that have a recorded voltage."
   - name: has_any_line
     type: boolean
-    nullable: true
-    null_meaning:
-      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
-      covered: null
+    nullable: false
     description: >-
       True if at least one line of the source file touches the county. It can be true while km_total
       is 0, when the length inside the county is below the rounding of the kilometer columns.
@@ -42,24 +37,21 @@ fields:
     unit: share
     nullable: true
     null_meaning:
-      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
+      not_covered: "Not applicable: every unit of this layer is covered by the source."
       covered: "The county has no line length inside it, so the share is undefined."
     description: "Share of the line length inside the county that has no recorded voltage, from 0 to 1."
-  - {name: km_ge765, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 735 kV and above, rounded to whole kilometers. 0 means no such line."}
-  - {name: km_v500, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 500 kV, rounded to whole kilometers. 0 means no such line."}
-  - {name: km_v345, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 345 kV, rounded to whole kilometers. 0 means no such line."}
-  - {name: km_v230, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 230 kV, rounded to whole kilometers. 0 means no such line."}
-  - {name: km_v138, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 138 kV, rounded to whole kilometers. 0 means no such line."}
-  - {name: km_v115, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 115 kV, rounded to whole kilometers. 0 means no such line."}
-  - {name: km_v69, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county, class 69 kV, rounded to whole kilometers. 0 means no such line."}
-  - {name: km_lt69_unknown, type: integer, unit: km, nullable: true, null_meaning: {not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed.", covered: null}, description: "Line length inside the county with a class below 69 kV or without a recorded voltage, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_ge765, type: integer, unit: km, nullable: false, description: "Line length inside the county, class 735 kV and above, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v500, type: integer, unit: km, nullable: false, description: "Line length inside the county, class 500 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v345, type: integer, unit: km, nullable: false, description: "Line length inside the county, class 345 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v230, type: integer, unit: km, nullable: false, description: "Line length inside the county, class 230 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v138, type: integer, unit: km, nullable: false, description: "Line length inside the county, class 138 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v115, type: integer, unit: km, nullable: false, description: "Line length inside the county, class 115 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_v69, type: integer, unit: km, nullable: false, description: "Line length inside the county, class 69 kV, rounded to whole kilometers. 0 means no such line."}
+  - {name: km_lt69_unknown, type: integer, unit: km, nullable: false, description: "Line length inside the county with a class below 69 kV or without a recorded voltage, rounded to whole kilometers. 0 means no such line."}
   - name: km_total
     type: integer
     unit: km
-    nullable: true
-    null_meaning:
-      not_covered: "The county is in Alaska or Hawaii, which this release does not cover; it was not processed."
-      covered: null
+    nullable: false
     description: "Sum of the published km columns (km_ge765 to km_lt69_unknown). The columns are whole kilometers, so km_total is exactly their sum and differs from the true line length by at most 4 km."
 sources:
   - source_id: hifld_transmission_lines
@@ -120,9 +112,8 @@ source_archive:
   description: "Archive of the HIFLD national transmission-line file used for the layers, published unchanged so that the processing can be checked."
 freshness: {source_cadence: discontinued, next_check: null}
 coverage:
-  geography: "Contiguous United States and the District of Columbia"
+  geography: "United States: the 50 states and the District of Columbia"
   known_gaps:
-    - "Alaska and Hawaii are not covered."
     - >-
       HIFLD Open, the public portal that distributed this file, was discontinued by the U.S.
       Department of Homeland Security on 26 August 2025; the announcement gave no reason. The layer
@@ -130,10 +121,18 @@ coverage:
       September 2024). Other public archives of the file exist, for example DataLumos (DOI
       10.3886/E240591V1); which archive our copy came from was not recorded, and it has not been
       matched to them record by record.
-    - "Twelve county-equivalents have no line inside them."
+    - >-
+      29 county-equivalents have no line inside them: 12 in the contiguous United States, 16 of the 30 in Alaska and
+      Kalawao County, Hawaii.
     - >-
       Hamilton County, Iowa (19079) and Clare County, Michigan (26035) have a line inside them
       shorter than 0.5 km, so km_total is 0 while has_any_line is true.
+    - >-
+      Lengths in Alaska and Hawaii are measured in the same projection as in the contiguous states (EPSG:5070), which
+      overstates them by about 0.5% in Alaska and 0.1% in Hawaii.
+    - >-
+      In Hawaii 30.3% of the line length has no recorded voltage (frac_km_unknown_voltage 0.303); the highest voltage
+      there, 138 kV, is taken only from the lines that have one.
     - "The layer does not show how much power can flow into a county."
 verification:
   levels: {source_as_is: 1.0, script_rules: 0.0, human: 0.0}
@@ -145,6 +144,7 @@ verification:
 checks:
   km_total_matches_has_any_line: true
 display:
+  home_bbox: [-124.7631, 24.5213, -66.9499, 49.3844]   # contiguous states and DC; the true bbox of the layer includes the Aleutian Islands (SPEC_USA_AKHI r2 4a item 5)
   geometry_type: polygon
   value_field: km_total
   unit: km

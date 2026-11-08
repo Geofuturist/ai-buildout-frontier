@@ -1,0 +1,69 @@
+# Release of the layers dataset, version 0.3.0 (SPEC_USA_AKHI_v0_3_0 r3): the same nine layers as 0.2.0; Alaska and Hawaii become
+# covered where the source covers them (generation EIA-860, transmission lines HIFLD: all 51 states and 3,144 counties; the segment
+# layer gets 349 lines of the two states). Demand (NREL) and the queue (LBNL) stay not_covered for Alaska and Hawaii, with the reason
+# of the source in coverage_note. A new version of the Zenodo record abf-layers (DOI of 0.2.0: 10.5281/zenodo.24050580 stays as published).
+# Values of the 49 states and 3,109 counties of the contiguous United States do not change (compare_release_values.py with
+# --allow-changed-states 02,15 --allow-added-rows energy_transmission_lines_hifld proves it against abf-layers-v0.2.0; the segment
+# layer is also proved at build by the cross-check rows_superset). Texts: claude/RES_texts_USA_AKHI_v0_3_0.md r1.
+# After V reserves the DOI ("New version" of the record abf-layers) and before the final build:
+#   python scripts\publish\set_release_doi.py releases\abf-layers-v0.3.0.yaml 10.5281/zenodo.<number> 2026-MM-DD
+dataset: abf-layers
+version: 0.3.0
+tag: abf-layers-v0.3.0
+doi: null
+published_at: null
+built_at: null
+boundary_release: abf-boundaries-v0.2.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.2.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\energy_generation_eia860_adm2.yaml'
+  - 'layers\energy_demand_nrel8562_adm2.yaml'
+  - 'layers\energy_transmission_hifld_adm2.yaml'
+  - 'layers\energy_transmission_lines_hifld.yaml'
+  - 'layers\energy_queue_lbnl_adm2.yaml'
+  - 'layers\energy_generation_eia860_adm1.yaml'
+  - 'layers\energy_demand_nrel8562_adm1.yaml'
+  - 'layers\energy_transmission_hifld_adm1.yaml'
+  - 'layers\energy_queue_lbnl_adm1.yaml'
+# The segment layer is no longer the same file as in 0.2.0 (349 lines added), so identity checks only the source archive: the HIFLD
+# zip must be byte-identical to the one of the manifest of 0.1.0 (G9). The segments themselves: cross-check rows_superset below.
+identity:
+  manifest: 'data\abf-layers\v0.1.0\manifest.json'
+  layers: []
+# The statements that rest on pages the cloud machine cannot open (RES_texts_USA_states section 9; 0.3.0: RES_texts_USA_AKHI section 9 item 1).
+# V saves the pages by hand; all three files are in the folder of the pages saved for 0.2.0 (the PDF of the Queued Up 2026 report was added there).
+phrase_check:
+  kind: layers
+  pages:
+    oedi_8562: 'D:\GISData\release\abf-layers-v0.2.0-pages\oedi_8562.html'
+    eia860: 'D:\GISData\release\abf-layers-v0.2.0-pages\eia860.html'
+    queued_up: 'D:\GISData\release\abf-layers-v0.2.0-pages\queued_up_2026_edition.pdf'
+# State layers against the county layers and the reference file (SPEC section 3 item 5; rollup_check.py).
+cross_checks:
+  - kind: rollup_sums
+    file: state_reconciliation.csv
+    pairs:
+      - state_layer: energy_generation_eia860_adm1
+        county_layer: energy_generation_eia860_adm2
+        fields: [net_summer_capacity_mw, n_op_generators, n_op_plants]
+      - state_layer: energy_queue_lbnl_adm1
+        county_layer: energy_queue_lbnl_adm2
+        fields: [queue_mw_active, n_active_projects]
+      - state_layer: energy_demand_nrel8562_adm1
+        county_layer: energy_demand_nrel8562_adm2
+        fields: [peak_demand_mw]
+        peak_fields: [peak_demand_mw]
+      - state_layer: energy_transmission_hifld_adm1
+        county_layer: energy_transmission_hifld_adm2
+        fields: [km_ge765, km_v500, km_v345, km_v230, km_v138, km_v115, km_v69, km_lt69_unknown, km_total]
+        max_fields: [max_voltage_kv]
+        any_fields: [has_any_line]
+  # The segment layer: every segment of 0.2.0 is in this release with equal values and geometry; 349 are new (165 in Alaska, 184 in Hawaii).
+  - kind: rows_superset
+    layer: energy_transmission_lines_hifld
+    key: record_id
+    old_release_dir: 'D:\GISData\release\abf-layers-v0.2.0'
+    expected_old: 93880
+    expected_added: 349

@@ -14,46 +14,34 @@ frame:
   - name
   - coverage_status
   - coverage_note
-  outside_note: 'Not processed: this release covers only the contiguous United States and the District of Columbia.'
 input:
-  table: data\conus\layer_generation_eia860_adm1_20261107.csv
+  table: data\conus\layer_generation_eia860_adm1_20261108.csv
   key: unit_id
-  legacy_meta: data\conus\layer_generation_eia860_adm1_meta.json
+  legacy_meta: data\conus\layer_generation_eia860_adm1_20261108_meta.json
   coverage_column: coverage_status
   coverage_note_column: coverage_note
-  coverage_note_text: 'Not processed: this release covers only the contiguous United States and the District of Columbia.'
 description: Net summer capacity of the operating generators listed in Form EIA-860, summed by state, with the number of
   those generators and of their plants. A generator counts in the state named in its record, not where the coordinates of
   its plant fall, so a state value can differ from the sum of its counties; state_reconciliation.csv lists every difference.
-  Alaska and Hawaii are not processed and have empty values.
 fields:
 - name: net_summer_capacity_mw
   type: number
   unit: MW
-  nullable: true
-  null_meaning:
-    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
-    covered: null
+  nullable: false
   description: Sum of the net summer capacity of the operating generators (status OP) whose record names the state. 0 means
     EIA-860 lists no operating generator in this state.
   fill_na_covered: 0
   min: 0
 - name: n_op_generators
   type: integer
-  nullable: true
-  null_meaning:
-    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
-    covered: null
+  nullable: false
   description: Number of operating generators (status OP) whose record names the state. 0 means none are listed. A generator
     without an ID in the source is not counted (see known gaps).
   fill_na_covered: 0
   min: 0
 - name: n_op_plants
   type: integer
-  nullable: true
-  null_meaning:
-    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
-    covered: null
+  nullable: false
   description: Number of plants with at least one operating generator whose record names the state. 0 means none are listed.
   fill_na_covered: 0
   min: 0
@@ -111,9 +99,8 @@ freshness:
   source_cadence: annual
   next_check: '2027-06-30'
 coverage:
-  geography: Contiguous United States and the District of Columbia
+  geography: "United States: the 50 states and the District of Columbia"
   known_gaps:
-  - Alaska and Hawaii are not covered.
   - Generators that entered service after the end of the edition year are not included.
   - A generator counts in the state named in its record, while the county layer places it by the coordinates of its plant.
     For 22 plants (107 generators, 5,272.8 MW) the two disagree, so the state values of both states involved differ from
@@ -127,7 +114,7 @@ coverage:
     at data centers and other buildings are generally not reported to it.
   - One operating generator has no generator ID in the source (Cranberry Point Energy Storage, plant 62844, Massachusetts,
     150 MW). Its capacity is in the Massachusetts value, but it is not counted in n_op_generators.
-  - 69 operating generators in the 49 covered units have no numeric summer capacity in the source and add nothing to net_summer_capacity_mw.
+  - 69 operating generators have no numeric summer capacity in the source and add nothing to net_summer_capacity_mw.
 verification:
   levels:
     source_as_is: 1.0
@@ -150,6 +137,7 @@ checks:
     mw_column: Summer Capacity (MW)
     layer_column: net_summer_capacity_mw
     states:
+    - AK
     - AL
     - AR
     - AZ
@@ -160,6 +148,7 @@ checks:
     - DE
     - FL
     - GA
+    - HI
     - ID
     - IL
     - IN
@@ -201,6 +190,7 @@ checks:
     - WY
     exceptions: []
 display:
+  home_bbox: [-124.7631, 24.5213, -66.9499, 49.3844]   # contiguous states and DC; the true bbox of the layer includes the Aleutian Islands (SPEC_USA_AKHI r2 4a item 5)
   geometry_type: polygon
   value_field: net_summer_capacity_mw
   unit: MW
@@ -227,9 +217,9 @@ citation:
   text: Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}
   record_pattern: Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}
 extra_files:
-- path: data\conus\state_reconciliation_20261107.csv
+- path: data\conus\state_reconciliation_20261108.csv
   publish_as: state_reconciliation.csv
-  description: 'Why a state value differs from the sum of its counties. One row per layer, state and summed field (735 rows):
+  description: 'Why a state value differs from the sum of its counties. One row per layer, state and summed field (759 rows):
     the state value, the sum of the published county values, the difference, and the records behind it by category — offshore
     plants without a county; plants or requests whose record names this state but whose coordinates or county code lie in
     another state, and the reverse; Connecticut requests; requests without a county code — and the residual, which is 0
