@@ -30,8 +30,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import boundaries_build
 import check_dc_phrases
 import check_gem_phrases
+import check_layers_phrases
 import index_build
 import layer_build
+import rollup_check
 from common import (
     DOI_REGEX,
     SCHEMA_DIR,
@@ -160,6 +162,8 @@ def run_cross_checks(checks: list[dict[str, Any]], out: Path, boundaries: Bounda
         (an empty value matches empty cells).
     kind counts_by_key (abf-dc 0.2.0): every row of the count layer equals the records of the point layer that carry its
         key; see check_counts_by_key.
+    kind rollup_sums (abf-layers 0.2.0): state layers against the county layers and the reference file
+        state_reconciliation.csv; see rollup_check.py.
     """
     for chk in checks:
         kind = chk["kind"]
@@ -193,6 +197,8 @@ def run_cross_checks(checks: list[dict[str, Any]], out: Path, boundaries: Bounda
             report.note(f"cross-check: {len(chk['columns'])} count columns of {chk['count_layer']} equal the records of {chk['point_layer']} for every country")
         elif kind == "counts_by_key":
             check_counts_by_key(chk, out, report)
+        elif kind == "rollup_sums":
+            rollup_check.check_rollup_sums(chk, out, report)
         else:
             raise GateError("G2", f"unknown cross_check kind {kind!r}")
 
@@ -391,6 +397,16 @@ def run_phrase_check(cfg: dict[str, Any], channel: str, report: Report) -> None:
         report.section("Phrases of the GEM texts against the GEM workbook", [f"- {l}" for l in lines if not l.startswith("         ")])
         if not_found or problems:
             msg = f"phrase check (RES_texts_GEM section 10): missing {not_found}; problems {problems}"
+            if channel == "final":
+                raise GateError("G13", msg)
+            report.warn(msg + " (a warning in dev, a stop in final)")
+        return
+    if cfg.get("kind") == "layers":   # abf-layers: OEDI 8562 and EIA-860 pages saved by hand (check_layers_phrases.py)
+        pages_map = {k: resolve_path(v) for k, v in (cfg.get("pages") or {}).items()}
+        lines, not_found, problems = check_layers_phrases.run_check(pages_map, resolve_path(cfg.get("layers", "layers")))
+        report.section("Phrases of the abf-layers texts against the saved pages", [f"- {l}" for l in lines if not l.startswith("         ")])
+        if not_found or problems:
+            msg = f"phrase check (RES_texts_USA_states section 9): missing {not_found}; problems {problems}"
             if channel == "final":
                 raise GateError("G13", msg)
             report.warn(msg + " (a warning in dev, a stop in final)")

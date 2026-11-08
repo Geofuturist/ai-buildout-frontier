@@ -1,0 +1,227 @@
+# Layer config: interconnection queue, LBNL Queued Up 2026 edition, state level. Texts: RES_texts_USA_states_v0_2_0.md r1 section 3.
+# Totals: after the two categories below the source must equal the layer (the Connecticut and no-county-code requests are inside the states).
+layer_id: energy_queue_lbnl_adm1
+title: Interconnection queue · LBNL Queued Up · state
+title_ru: Очередь на подключение · LBNL Queued Up · штаты
+domain: energy
+level: ADM1
+frame:
+  iso3: USA
+  level: ADM1
+  code_regex: \d{2}
+  service_fields:
+  - unit_id
+  - name
+  - coverage_status
+  - coverage_note
+  outside_note: 'Not processed: this release covers only the contiguous United States and the District of Columbia.'
+input:
+  table: data\conus\layer_queue_lbnl_adm1_20261107.csv
+  key: unit_id
+  legacy_meta: data\conus\layer_queue_lbnl_adm1_meta.json
+  coverage_column: coverage_status
+  coverage_note_column: coverage_note
+  coverage_note_text: 'Not processed: this release covers only the contiguous United States and the District of Columbia.'
+description: Capacity of the active interconnection requests in the Queued Up data file (2026 edition), summed by the state
+  named in each request, with the number of those requests. These are generation and storage projects asking to connect
+  to the grid, not electricity users. A state with no active request in the file has the value 0. Unlike the county layer,
+  Connecticut is covered, and requests without a county code are counted. Alaska and Hawaii are not covered and have empty
+  values.
+fields:
+- name: queue_mw_active
+  type: number
+  unit: MW
+  nullable: true
+  null_meaning:
+    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
+    covered: null
+  description: Sum of the capacity of the active requests whose state field names the state; for each request, the largest
+    of its capacity values (mw1 to mw3). 0 means the file has no active request in this state.
+  fill_na_covered: 0
+  min: 0
+- name: n_active_projects
+  type: integer
+  nullable: true
+  null_meaning:
+    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
+    covered: null
+  description: Number of active requests whose state field names the state. 0 means none.
+  fill_na_covered: 0
+  min: 0
+sources:
+- source_id: lbnl_queued_up
+  role: primary
+  publisher: Lawrence Berkeley National Laboratory and GridTracker
+  product: 'Queued Up: 2026 Edition, interconnection queue data file (data through end of 2025)'
+  url: https://emp.lbl.gov/queues
+  edition: Queued Up 2026
+  retrieved_at: '2026-10-07'
+  current_through: '2025-12-31'
+  input_refs:
+  - table
+  license:
+    id: CC-BY-4.0
+    name: Creative Commons Attribution 4.0 International
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: 'Interconnection queue: Lawrence Berkeley National Laboratory and GridTracker, Queued Up 2026 Edition,
+      CC BY 4.0.'
+  rights_basis:
+    type: license
+    text: The Queued Up page states that the data file is licensed CC BY 4.0 and may be used, shared or adapted as long
+      as it is attributed to Lawrence Berkeley National Laboratory and GridTracker.
+    checked_at: '2026-10-11'
+    checked_by: script:license_phrases.py
+    evidence_url: https://emp.lbl.gov/queues
+  publication_mode: open_licence
+- source_id: census_cb_2023_states
+  role: geometry
+  publisher: U.S. Census Bureau
+  product: Cartographic boundary file cb_2023_us_state_500k
+  url: https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_state_500k.zip
+  edition: '2023'
+  retrieved_at: '2026-09-28'
+  current_through: '2023-12-31'
+  input_refs:
+  - geometry_calc
+  - geometry_display
+  license:
+    id: LicenseRef-us-gov-work
+    name: U.S. Government work
+    url: https://www.usa.gov/government-works
+    family: public_domain
+    attribution_text: 'State boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000).'
+  rights_basis:
+    type: statute
+    text: Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status
+      rests on the statute.
+    checked_at: '2026-09-20'
+    checked_by: agent:RES
+    evidence_url: https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
+  publication_mode: open_licence
+freshness:
+  source_cadence: annual
+  next_check: '2027-06-30'
+coverage:
+  geography: Contiguous United States and the District of Columbia
+  known_gaps:
+  - Alaska and Hawaii are not covered.
+  - The state values include 35 active requests that have a state but no county code (11,280.7 MW) and the seven active
+    Connecticut requests (678.2 MW). The county layer has neither, so a state value can exceed the sum of its counties.
+  - 'Five requests name one state and carry the county code of another: Q362 (North Carolina; county code in Arizona, 275.0
+    MW), BHBE G20 (South Dakota; Nebraska, 250.0 MW), 956747 (South Carolina; North Carolina, 455.0 MW), J3785 (Michigan;
+    Wisconsin, 200.0 MW) and GEN-2020-065 (New Mexico; Texas, 1,003.0 MW). Each counts in the state of its state field and
+    in the county of its code. We did not check which is right.'
+  - '53 active requests (8,813.0 MW) are not in the layer: 49 give no state and 4 give the code MX.'
+  - Eleven active requests with capacity of zero or less (-193.5 MW in total) are excluded, as in the county layer. The
+    reason for the negative values is not checked against the source codebook.
+  - When a request has more than one capacity value in the file (columns mw1 to mw3), the largest is used, not the sum.
+  - The queue changes continuously; the file is a snapshot of requests as reported by grid operators and utilities.
+verification:
+  levels:
+    source_as_is: 1.0
+    script_rules: 0.0
+    human: 0.0
+  method: 'Active requests are summed by script by the state named in each request; for each request the largest of its
+    capacity values is taken. The same run recomputed the county layer and matched the published county values of version
+    0.1.0 in every county. All 8,513 active requests of the source file fall into disjoint categories: 8,449 in the layer,
+    53 outside it, 11 with capacity of zero or less. Every difference between a state and the sum of its counties is explained
+    in state_reconciliation.csv, with no residual. No value was re-checked by a person or by an agent. The automated checks
+    listed below were run on every build.'
+  sample_share: {}
+checks:
+  totals_vs_source:
+    source_file: D:\GISData\Energy\USA\lbnl_ix_queue_data_file_thru2025.xlsx
+    sheet: 03. Complete Queue Data
+    header_row: 1
+    status_column: q_status
+    status_value: active
+    state_column: state
+    mw_column:
+    - mw_1
+    - mw_2
+    - mw_3
+    mw_mode: max
+    exclude_nonpositive: true
+    layer_column: queue_mw_active
+    states:
+    - AL
+    - AR
+    - AZ
+    - CA
+    - CO
+    - CT
+    - DC
+    - DE
+    - FL
+    - GA
+    - ID
+    - IL
+    - IN
+    - IA
+    - KS
+    - KY
+    - LA
+    - MA
+    - MD
+    - ME
+    - MI
+    - MN
+    - MO
+    - MS
+    - MT
+    - NC
+    - ND
+    - NE
+    - NH
+    - NJ
+    - NM
+    - NV
+    - NY
+    - OH
+    - OK
+    - OR
+    - PA
+    - RI
+    - SC
+    - SD
+    - TN
+    - TX
+    - UT
+    - VA
+    - VT
+    - WA
+    - WI
+    - WV
+    - WY
+    count_column: n_active_projects
+    derived_exceptions:
+    - name: capacity zero or less
+      nonpositive: true
+    - name: state outside the contiguous US or not given
+      outside_states: true
+display:
+  geometry_type: polygon
+  value_field: queue_mw_active
+  unit: MW
+  breaks:
+  - 10000
+  - 15000
+  - 25000
+  - 40000
+  zero_class: true
+  legend_title: Active queue capacity, MW
+  series: Interconnection queue · LBNL Queued Up
+  tile_fields:
+  - unit_id
+  - name
+  - coverage_status
+  - coverage_note
+  - queue_mw_active
+  - n_active_projects
+tiles:
+  minzoom: 0
+  maxzoom: 10
+citation:
+  text: Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}
+  record_pattern: Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}

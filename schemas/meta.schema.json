@@ -770,6 +770,11 @@
         "legend_title": {
           "type": "string"
         },
+        "series": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Name of the series (family) of layers this layer belongs to: the layer title without its last fragment, e.g. \"Generation \u00b7 EIA-860\". Layers of one series at different levels (county, state) are shown as one row of the layer family."
+        },
         "size_field": {
           "type": "string"
         },

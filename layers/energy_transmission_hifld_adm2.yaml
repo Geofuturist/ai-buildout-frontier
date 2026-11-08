@@ -4,7 +4,10 @@ title: "Transmission lines · HIFLD · county"
 title_ru: "ЛЭП · HIFLD · округа"
 domain: energy
 level: ADM2
-frame: {iso3: USA, level: ADM2}
+frame:
+  iso3: USA
+  level: ADM2
+  outside_note: "Not processed: this release covers only the contiguous United States and the District of Columbia."
 input:
   table: 'data\conus\layer_transmission_lines_hifld_20260913.csv'
   key: fips
@@ -146,6 +149,7 @@ display:
   value_field: km_total
   unit: km
   breaks: [100, 200, 300, 400]
+  series: "Transmission lines · HIFLD"
   zero_class: true
   legend_title: "Transmission line length in the county, km"
   tile_fields: [unit_id, name, coverage_status, has_any_line, max_voltage_kv, km_total]

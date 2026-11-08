@@ -734,6 +734,10 @@ def build_adm_layer(cfg: dict[str, Any], ctx: BuildContext) -> LayerOutput:
             row_notes.update({r["unit_id"]: " ".join(str(r[note_col]).split()) for _, r in df.iterrows()
                               if r[cov_col] == "covered" and pd.notna(r[note_col]) and str(r[note_col]).strip()})
         declared_nc = set(nc_rows["unit_id"])
+        note_text = cfg["input"].get("coverage_note_text")
+        if note_text:
+            # text of [RES] for every unit the table marks not_covered (abf-layers 0.2.0): replaces the notes of the table
+            row_notes = {uid: " ".join(str(note_text).split()) for uid in declared_nc}
         report.section("Units marked not_covered by the input table", [
             f"- {layer_id}: {len(nc_rows)} units: {sorted(declared_nc)[:12]}"] + [f"  - note: {n}" for n in notes])
         df = df[df[cov_col] == "covered"].copy()
@@ -1169,7 +1173,8 @@ def run_totals_vs_source(layer_id, tvs, df, table, checks, report) -> None:  # n
     src_total = float(src["_mw"].sum())
     listed = tvs.get("exceptions") or []
     residual = src_total - layer_sum
-    exceptions = round(sum(float(e["mw"]) for e in listed), 6) if listed else None
+    # `exceptions: []` in the yaml is a statement: no exception (state layers of EIA-860, offshore plants are inside the states)
+    exceptions = round(sum(float(e["mw"]) for e in listed), 6) if (listed or tvs.get("exceptions") is not None) else None
     report.section("totals_vs_source", [
         f"- {layer_id}: source total {src_total:.3f} MW ({len(src)} rows), layer total {layer_sum:.3f} MW, "
         f"difference {residual:.3f} MW, recorded exceptions {exceptions}"
@@ -1182,6 +1187,11 @@ def run_totals_vs_source(layer_id, tvs, df, table, checks, report) -> None:  # n
     if abs(residual - float(exceptions)) > tol:
         raise GateError("G4", f"{layer_id}: totals_vs_source: difference {residual:.3f} MW, "
                               f"recorded exceptions {exceptions} MW, tolerance {tol} MW{diag}")
+    if not listed:
+        checks.append({"id": "totals_vs_source", "description":
+                       f"The {tvs['status_value']} capacity total of the source workbook for the listed states "
+                       f"was recomputed ({src_total:.1f} MW) and equals the layer total ({layer_sum:.1f} MW) with no exceptions."})
+        return
     checks.append({"id": "totals_vs_source", "description":
                    f"The {tvs['status_value']} capacity total of the source workbook for the listed states "
                    f"was recomputed ({src_total:.1f} MW) and equals the layer total ({layer_sum:.1f} MW) plus "

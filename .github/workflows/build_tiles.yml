@@ -59,6 +59,11 @@ jobs:
       - name: Install Python packages
         run: python -m pip install boto3 jsonschema pyyaml
 
+      - name: Check the branch (before any upload)
+        run: |
+          python scripts/publish/check_branch.py \
+            --dataset "${{ inputs.dataset }}" --version "${{ inputs.version }}" --channel "${{ inputs.channel }}"
+
       - name: Cache Tippecanoe
         id: tpc-cache
         uses: actions/cache@v4

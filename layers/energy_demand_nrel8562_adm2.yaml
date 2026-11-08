@@ -4,7 +4,10 @@ title: "Demand · NREL OEDI 8562 · county"
 title_ru: "Спрос · NREL OEDI 8562 · округа"
 domain: energy
 level: ADM2
-frame: {iso3: USA, level: ADM2}
+frame:
+  iso3: USA
+  level: ADM2
+  outside_note: "Not processed: this release covers only the contiguous United States and the District of Columbia, and so does the source."
 input:
   table: 'data\conus\layer_demand_nrel8562_20260912.csv'
   key: fips
@@ -97,6 +100,7 @@ display:
   value_field: peak_demand_mw
   unit: MW
   breaks: [25, 50, 100, 250]
+  series: "Demand · NREL OEDI 8562"
   zero_class: false
   legend_title: "Peak hourly demand, 2023, MW"
   tile_fields: [unit_id, name, coverage_status, peak_demand_mw]

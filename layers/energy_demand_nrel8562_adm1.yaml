@@ -1,0 +1,141 @@
+# Layer config: peak demand, NREL OEDI 8562, state level. Texts: RES_texts_USA_states_v0_2_0.md r1 section 4.
+# The second sentence of the second known gap rests on the OEDI page: check_layers_phrases.py (RES section 9 item 1).
+layer_id: energy_demand_nrel8562_adm1
+title: Demand · NREL OEDI 8562 · state
+title_ru: Спрос · NREL OEDI 8562 · штаты
+domain: energy
+level: ADM1
+frame:
+  iso3: USA
+  level: ADM1
+  code_regex: \d{2}
+  service_fields:
+  - unit_id
+  - name
+  - coverage_status
+  - coverage_note
+  outside_note: 'Not processed: this release covers only the contiguous United States and the District of Columbia, and
+    so does the source.'
+input:
+  table: data\conus\layer_demand_nrel8562_adm1_20261107.csv
+  key: unit_id
+  legacy_meta: data\conus\layer_demand_nrel8562_adm1_meta.json
+  coverage_column: coverage_status
+  coverage_note_column: coverage_note
+  coverage_note_text: 'Not processed: this release covers only the contiguous United States and the District of Columbia,
+    and so does the source.'
+description: Highest hourly electricity demand of each state in 2023, in MW, from the modeled county demand profiles of
+  OEDI submission 8562 (National Laboratory of the Rockies, formerly NREL). The profiles of the state's counties are added
+  up hour by hour, and the highest of the 8,760 hourly totals is taken. This is not the sum of the county peaks, because
+  counties reach their peaks at different hours. Alaska and Hawaii are not covered and have empty values.
+fields:
+- name: peak_demand_mw
+  type: number
+  unit: MW
+  nullable: true
+  null_meaning:
+    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
+    covered: null
+  description: 'Highest hourly demand of the state in 2023: the maximum over the year of the hourly sum of its counties''
+    profiles. The profiles are modeled, not metered.'
+  min: 0
+sources:
+- source_id: nrel_oedi_8562
+  role: primary
+  publisher: National Laboratory of the Rockies (NLR)
+  product: 'OEDI submission 8562: Hourly Electricity Demand Profiles for Each County in the Contiguous United States (Obika,
+    Cole, Rivers), DOI 10.25984/3366592'
+  url: https://data.openei.org/submissions/8562
+  edition: submitted 2025-11-05, page last updated 2026-06-02; year 2023 of the 2016–2023 series
+  retrieved_at: '2026-06-29'
+  current_through: '2023-12-31'
+  input_refs:
+  - table
+  license:
+    id: CC-BY-4.0
+    name: Creative Commons Attribution 4.0 International
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: 'Demand: Kodi Obika, Wesley Cole and Marie Rivers, Hourly Electricity Demand Profiles for Each County
+      in the Contiguous United States, National Laboratory of the Rockies (NLR), OEDI submission 8562, DOI 10.25984/3366592,
+      CC BY 4.0.'
+  rights_basis:
+    type: license
+    text: The dataset’s page on OEDI links its License entry to Creative Commons Attribution 4.0 (creativecommons.org/licenses/by/4.0/),
+      and the site states that content is available under Creative Commons Attribution 4.0 unless otherwise noted.
+    checked_at: '2026-10-11'
+    checked_by: script:license_phrases.py
+    evidence_url: https://data.openei.org/submissions/8562
+  publication_mode: open_licence
+- source_id: census_cb_2023_states
+  role: geometry
+  publisher: U.S. Census Bureau
+  product: Cartographic boundary file cb_2023_us_state_500k
+  url: https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_state_500k.zip
+  edition: '2023'
+  retrieved_at: '2026-09-28'
+  current_through: '2023-12-31'
+  input_refs:
+  - geometry_calc
+  - geometry_display
+  license:
+    id: LicenseRef-us-gov-work
+    name: U.S. Government work
+    url: https://www.usa.gov/government-works
+    family: public_domain
+    attribution_text: 'State boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000).'
+  rights_basis:
+    type: statute
+    text: Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status
+      rests on the statute.
+    checked_at: '2026-09-20'
+    checked_by: agent:RES
+    evidence_url: https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
+  publication_mode: open_licence
+freshness:
+  source_cadence: static
+  next_check: null
+coverage:
+  geography: Contiguous United States and the District of Columbia
+  known_gaps:
+  - Alaska and Hawaii are not covered.
+  - 'County demand is modeled, not metered: in this dataset, retail sales reported by utilities are totaled by state and
+    allocated to counties by each county''s share of the state population. The state is therefore closer than the county
+    to the level at which the source starts.'
+  - The 49 state peaks add up to 810,503.2 MW, less than the 822,740.1 MW of the county peaks. For each state the peak is
+    between 94.4% (California) and 100% of the sum of its county peaks.
+  - The hour of each state's peak is not a field of the layer; state_reconciliation.csv gives it in UTC.
+verification:
+  levels:
+    source_as_is: 1.0
+    script_rules: 0.0
+    human: 0.0
+  method: The hourly profiles of each state's counties are added up by script and the yearly maximum is taken. The same
+    run recomputed the county peaks and matched the published values of version 0.1.0 in every county. For every state the
+    build checked that its peak is not below its largest county peak and not above the sum of its county peaks. No value
+    was re-checked by a person or by an agent. The automated checks listed below were run on every build.
+  sample_share: {}
+display:
+  geometry_type: polygon
+  value_field: peak_demand_mw
+  unit: MW
+  breaks:
+  - 5000
+  - 10000
+  - 16000
+  - 23000
+  zero_class: false
+  legend_title: Peak hourly demand, 2023, MW
+  series: Demand · NREL OEDI 8562
+  tile_fields:
+  - unit_id
+  - name
+  - coverage_status
+  - coverage_note
+  - peak_demand_mw
+tiles:
+  minzoom: 0
+  maxzoom: 10
+citation:
+  text: Ilin, V. ({year}). AI Buildout Frontier · {title} (version {version}) [Data set]. Zenodo. {doi_url}
+  record_pattern: Ilin, V. AI Buildout Frontier, layer {layer_id}, unit {record_key}, version {version}. {doi_url}

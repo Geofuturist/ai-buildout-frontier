@@ -1,0 +1,159 @@
+{
+  "source": "Berkeley Lab (LBNL) 'Queued Up' - interconnection queue database",
+  "source_url": "https://emp.lbl.gov/queues",
+  "vintage": "Queued Up 2026 edition (data through 2025-12-31)",
+  "license": "CC BY 4.0 (confirmed for the Queued Up 2026 edition)",
+  "coverage": "48 states + DC (the 49 units); Alaska and Hawaii not_covered",
+  "edition": "Queued Up 2026",
+  "current_through": "2025-12-31",
+  "rule": "q_status == 'active'; capacity = max(mw1, mw2, mw3); capacity <= 0 left out; state = field 'state' (only the 49 codes count)",
+  "county_rule_keys_restored_from_legacy_meta": [
+    "--crosswalk",
+    "--ct-not-covered",
+    "--drop-nonpositive"
+  ],
+  "code_crosswalk": {
+    "file": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\boundaries\\code_crosswalk_exact.csv",
+    "applied": [
+      {
+        "old_fips": "46113",
+        "new_fips": "46102",
+        "records": 1,
+        "mw": 110.0
+      },
+      {
+        "old_fips": "51515",
+        "new_fips": "51019",
+        "records": 0,
+        "mw": 0.0
+      }
+    ]
+  },
+  "n_units_covered": 49,
+  "n_units_not_covered": 2,
+  "excluded_nonpositive": [
+    {
+      "q_id": "L002",
+      "region": "MISO",
+      "state": "MN",
+      "county_fips": "27139",
+      "mw": -28.0
+    },
+    {
+      "q_id": "L003",
+      "region": "MISO",
+      "state": "MI",
+      "county_fips": "26091",
+      "mw": -10.0
+    },
+    {
+      "q_id": "L004",
+      "region": "MISO",
+      "state": "OH",
+      "county_fips": "39171",
+      "mw": -22.0
+    },
+    {
+      "q_id": "L006",
+      "region": "MISO",
+      "state": "MI",
+      "county_fips": "26137",
+      "mw": -5.0
+    },
+    {
+      "q_id": "L008",
+      "region": "MISO",
+      "state": "OH",
+      "county_fips": "39041",
+      "mw": -4.0
+    },
+    {
+      "q_id": "L009",
+      "region": "MISO",
+      "state": "MN",
+      "county_fips": "27063",
+      "mw": -11.0
+    },
+    {
+      "q_id": "L010",
+      "region": "MISO",
+      "state": "MI",
+      "county_fips": null,
+      "mw": -8.0
+    },
+    {
+      "q_id": "18INR0064",
+      "region": "ERCOT",
+      "state": "TX",
+      "county_fips": "48133",
+      "mw": -7.2
+    },
+    {
+      "q_id": "19INR0120",
+      "region": "ERCOT",
+      "state": "TX",
+      "county_fips": "48371",
+      "mw": -18.0
+    },
+    {
+      "q_id": "20INR0019",
+      "region": "ERCOT",
+      "state": "TX",
+      "county_fips": "48503",
+      "mw": -27.0
+    },
+    {
+      "q_id": "24INR0372",
+      "region": "ERCOT",
+      "state": "TX",
+      "county_fips": "48453",
+      "mw": -53.3
+    }
+  ],
+  "known_gaps": "53 active records have no state or a state outside the 49 units (8813.0 MW) and are not in the layer. 11 records with capacity <= 0 are left out (-193.5 MW). The state values include 35 projects without a county code (11280.7 MW) and 7 Connecticut projects (678.2 MW); county values have neither. 5 records carry a county code of another state than their 'state' field: they count in the state of the field and in the county of the code. Factual draft; wording by [RES]7.",
+  "inputs": {
+    "lbnl_queue_xlsx": {
+      "path": "D:\\GISData\\Energy\\USA\\lbnl_ix_queue_data_file_thru2025.xlsx",
+      "size": 15571236,
+      "sha256": "794582d3281c6a305e9615fcfec3fae9dc85be2165216d33760b677e976a08b6"
+    },
+    "code_crosswalk_exact_csv": {
+      "path": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\boundaries\\code_crosswalk_exact.csv",
+      "size": 415,
+      "sha256": "acab7e8f87d1f55052fad8dcbf3ca24dd143e223c8892ab8b271d6f7e333a8e9"
+    },
+    "county_shp.shp": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+      "size": 16728876,
+      "sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+    },
+    "county_shp.dbf": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.dbf",
+      "size": 1181193,
+      "sha256": "c4871e89eee267954eb2ca1c6950377b6106d5baba2811adf7bcd542ac0f3c37"
+    },
+    "county_shp.shx": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shx",
+      "size": 25980,
+      "sha256": "b2d883586af561832873abf9054eb64a5fc6b979ee389aa82356ea25a837e070"
+    },
+    "county_shp.prj": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.prj",
+      "size": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    }
+  },
+  "boundary_file": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+  "identity_with_release_0_1_0": {
+    "status": "OK",
+    "n_counties_compared": 3109,
+    "columns": [
+      "n_active_projects",
+      "queue_mw_active"
+    ],
+    "release_file_dir": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\abf-layers\\v0.1.0"
+  },
+  "snapshot_date": "20261107",
+  "output_file": "layer_queue_lbnl_adm1_20261107.csv",
+  "output_sha256": "c1d4fb6284f3d5d5e42bf7ceaf82df954c22e84f07458547808521b33e7b38f9"
+}
