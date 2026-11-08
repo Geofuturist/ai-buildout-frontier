@@ -1,0 +1,31 @@
+{
+  "source": "EIA Form 860, Schedule 3 (Generator, Operable/OP) + Schedule 2 (Plant)",
+  "source_url": "https://www.eia.gov/electricity/data/eia860/",
+  "vintage": "data year 2025, final release 2026-09-10",
+  "license": "US government work — public domain (17 U.S.C. § 105)",
+  "coverage": "50 states + DC (the 51 units)",
+  "n_units_covered": 25656,
+  "n_units_no_data": 3,
+  "known_gaps": "3 генераторов с валидными координатами не резолвятся ни в один округ CONUS даже с запасом 1000м (настоящий офшор — Block Island Wind Farm, South Fork Wind, Coastal Virginia Offshore Wind; расстояние до берега 5-43 км) — исключены из агрегации. Статусы OA/OS (временно не в работе) и SB (standby) исключены сознательно — слой отражает текущую действующую генерацию, не номинальную мощность парка. Point-in-polygon использует запас 1000м для точек у самой границы округа (обрезка береговой линии в cb-границах 500k, международная речная граница) — откалибровано эмпирически на реальном разрыве между береговыми случаями (6-718м) и офшором (4865-42758м).",
+  "boundary_source": "Census cartographic boundary cb_2023_us_county_500k (1:500,000). Выбран вместо 5m (слишком генерализован для точной геометрии) и вместо полного TIGER/Line (юридические границы уходят в воду, напр. Chesapeake Bay — реинтродуцировало бы offshore-объекты, которых M2a сознательно избегал).",
+  "snapshot_date": "20261108",
+  "edition": "2025 final",
+  "current_through": "2025-12-31",
+  "input": "D:\\GISData\\Energy\\USA\\eia8602025",
+  "boundary_file": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+  "boundary_file_sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb",
+  "states_mode": "all",
+  "rebuilt_for": "abf-layers 0.3.0 (SPEC_USA_AKHI_v0_3_0 r2); county rule unchanged, see build_adm1_generation_eia860.py",
+  "identity_with_release_0_1_0": {
+    "status": "OK",
+    "n_counties_compared": 3109,
+    "columns": [
+      "n_op_generators",
+      "n_op_plants",
+      "net_summer_capacity_mw"
+    ],
+    "release_file_dir": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\abf-layers\\v0.1.0"
+  },
+  "output_file": "layer_generation_eia860_20261108.csv",
+  "output_sha256": "4ef29c79733be844ffdfcc05b2b0a0537761ae60e4e30c25c0b09f387391f60b"
+}

@@ -1,0 +1,72 @@
+{
+  "source": "EIA Form 860, Schedule 3 (Generator, Operable/OP) + Schedule 2 (Plant)",
+  "source_url": "https://www.eia.gov/electricity/data/eia860/",
+  "vintage": "data year 2025, final release 2026-09-10",
+  "license": "US government work, public domain (17 U.S.C. 105)",
+  "coverage": "50 states + DC (the 51 units)",
+  "edition": "2025 final",
+  "current_through": "2025-12-31",
+  "rule": "state = field 'State' of each Operable row with Status == 'OP'; net_summer_capacity_mw = sum of Summer Capacity (MW); n_op_generators counts rows with a Generator ID; n_op_plants counts distinct Plant Code",
+  "states_mode": "all",
+  "n_units_covered": 51,
+  "n_units_not_covered": 0,
+  "known_gaps": "Offshore stations are inside their states but in no county: 3 stations, 171.3 MW. 1 generator row(s) without a Generator ID are not counted in n_op_generators (as in the county layer). 69 OP rows in the 51 units have no numeric Summer Capacity and add nothing to the sum. Alaska and Hawaii: every generator point lies inside a county of its own state; the county name in the source can differ from the county of the boundary file (Alaska boroughs and census areas were reorganised), the county is taken by the coordinate. Factual draft; wording by [RES]7.",
+  "inputs": {
+    "eia860_plant_xlsx": {
+      "path": "D:\\GISData\\Energy\\USA\\eia8602025\\2___Plant_Y2025.xlsx",
+      "size": 4629134,
+      "sha256": "3c338f5e9d2647bb487dee8b3f4ed5c3fdd3e82db3b1bc5fdf206cee5470e059"
+    },
+    "eia860_generator_xlsx": {
+      "path": "D:\\GISData\\Energy\\USA\\eia8602025\\3_1_Generator_Y2025.xlsx",
+      "size": 11223392,
+      "sha256": "931e1ed0be2c6706794c196f158f779b5c8a32d08c61d748a823dfc25a3201a8"
+    },
+    "county_shp.shp": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+      "size": 16728876,
+      "sha256": "b1e70f56324d8f6fdc2a3d6c8c114bb5424bae7a86e029a647ccbdddf581ecdb"
+    },
+    "county_shp.dbf": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.dbf",
+      "size": 1181193,
+      "sha256": "c4871e89eee267954eb2ca1c6950377b6106d5baba2811adf7bcd542ac0f3c37"
+    },
+    "county_shp.shx": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shx",
+      "size": 25980,
+      "sha256": "b2d883586af561832873abf9054eb64a5fc6b979ee389aa82356ea25a837e070"
+    },
+    "county_shp.prj": {
+      "path": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.prj",
+      "size": 165,
+      "sha256": "0b9041e921d9ebb43247d314608fe9e38a0b008ee793067fc1806199ea1fb9dd"
+    }
+  },
+  "boundary_file": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+  "identity_with_release_0_1_0": {
+    "status": "OK",
+    "n_counties_compared": 3109,
+    "columns": [
+      "n_op_generators",
+      "n_op_plants",
+      "net_summer_capacity_mw"
+    ],
+    "release_file_dir": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\abf-layers\\v0.1.0"
+  },
+  "identity_state_with_0_2_0": {
+    "status": "OK",
+    "file": "layer_generation_eia860_adm1_20261107.csv",
+    "n_states_compared": 49,
+    "columns": [
+      "coverage_status",
+      "coverage_note",
+      "net_summer_capacity_mw",
+      "n_op_generators",
+      "n_op_plants"
+    ]
+  },
+  "snapshot_date": "20261108",
+  "output_file": "layer_generation_eia860_adm1_20261108.csv",
+  "output_sha256": "33083daa43c9383cbf2b26fd2b7f1b194dcdb022a67a20e38d54ce87f5878d67"
+}

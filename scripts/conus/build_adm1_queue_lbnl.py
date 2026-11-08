@@ -1,15 +1,24 @@
 r"""
 build_adm1_queue_lbnl.py
 ========================
-SPEC_USA_states_v0_2_0 r5, section 2.3: interconnection queue by state (LBNL Queued Up 2026).
+SPEC_USA_states_v0_2_0 r5, section 2.3 (0.2.0) and SPEC_USA_AKHI_v0_3_0 r2 (0.3.0): interconnection
+queue by state (LBNL Queued Up 2026).
+
+The source does not cover Alaska and Hawaii (pre-flight 08.11.2026: no record with state AK/HI and no
+county code 02xxx/15xxx in any status), so they stay not_covered with empty values, never 0 (P2). The
+--states switch is accepted for uniformity with the other builders and does not change the result;
+instead the run STOPS if the file contains a record of either state (the premise would be false).
 
 State = field 'state' of the record (only the 49 codes count). The county layer is recomputed
 with the rule of build_layer_queue_lbnl.py run with  --crosswalk --ct-not-covered
 --drop-nonpositive  (the keys are restored from legacy_meta, SPEC r5 2.7) and compared with the
-CSV of release 0.1.0. Any difference stops the build.
+CSV of release 0.1.0. Any difference stops the build. The 49 state rows are also compared with the 0.2.0 build.
 
 Run (from the repository root, cmd):
-    python scripts\conus\build_adm1_queue_lbnl.py --snapshot-date 20261101
+    python scripts\conus\build_adm1_queue_lbnl.py --snapshot-date 20261109
+
+Writes to data\conus\: layer_queue_lbnl_adm1_<date>.csv + _meta.json, layer_queue_lbnl_<date>.csv + _meta.json
+(county table of the release, legacy format), adm1_part_* / adm1_recon_part_*.
 """
 
 from __future__ import annotations
@@ -25,6 +34,10 @@ LAYER = "queue_lbnl"
 LAYER_ID = "energy_queue_lbnl_adm1"
 DEFAULT_XLSX = r"D:\GISData\Energy\USA\lbnl_ix_queue_data_file_thru2025.xlsx"
 SHEET = "03. Complete Queue Data"
+LEGACY_META = "layer_queue_lbnl_20261009_r2_meta.json"
+LEGACY_TABLE = "layer_queue_lbnl_20261009_r2.csv"
+CT_NULL_MEANING = ("The source codes Connecticut projects by pre-2022 counties, "
+                   "which do not map onto the 2022 planning regions")  # COPY OF build_layer_queue_lbnl.py
 
 EXPECTED = {"active": 8513, "state_n": 8449, "state_mw": 1740502.1, "no_county_n": 35, "no_county_mw": 11280.7,
             "ct_n": 7, "ct_mw": 678.2, "outside_n": 53, "outside_mw": 8813.0, "nonpos_n": 11, "nonpos_mw": -193.5,
@@ -113,8 +126,9 @@ def main() -> None:
     ap.add_argument("--input-file", default=DEFAULT_XLSX)
     ap.add_argument("--crosswalk", default=str(C.REPO / "boundaries" / "code_crosswalk_exact.csv"))
     args = ap.parse_args()
-    snap = args.snapshot_date
+    snap, scope = args.snapshot_date, C.make_scope(args.states)
     xlsx, crosswalk = Path(args.input_file), Path(args.crosswalk)
+    log.info("--states %s accepted; the source covers only the contiguous states, the result is the same", scope.mode)
 
     input_paths = {"lbnl_queue_xlsx": xlsx, "code_crosswalk_exact_csv": crosswalk,
                    **C.shp_files(C.BOUNDARY_SHP, "county_shp")}
@@ -122,6 +136,16 @@ def main() -> None:
 
     log.info("Reading LBNL Queued Up (about 10 s)...")
     df = pd.read_excel(xlsx, sheet_name=SHEET, header=1)
+    # ---- coverage premise (SPEC_USA_AKHI 1): no record of Alaska or Hawaii in any status ----------
+    state_col = df["state"].map(lambda v: v.strip() if isinstance(v, str) else None)
+    code_col = df["fips_codes" if "fips_codes" in df.columns else "fips_code"].map(
+        lambda v: str(int(v)).zfill(5) if pd.notna(v) and str(v).strip().upper() != "NA" else "")
+    n_akhi_state = int(state_col.isin(C.AKHI_USPS).sum())
+    n_akhi_code = int(code_col.str[:2].isin(C.AKHI_FIPS).sum())
+    if n_akhi_state or n_akhi_code:
+        raise SystemExit(f"STOP: the file has records of Alaska/Hawaii (state field {n_akhi_state}, county code "
+                         f"{n_akhi_code}); the pre-flight found none. The coverage rule is a decision for [ARCH7].")
+    log.info("Alaska/Hawaii records in all %d rows: 0 (state field), 0 (county code)", len(df))
     # ---- COPY OF build_layer_queue_lbnl.py (county rule, keys --crosswalk --ct-not-covered
     #      --drop-nonpositive) -----------------------------------------------------------------
     renames = {"fips_code": "fips_codes", "mw_1": "mw1", "mw_2": "mw2", "mw_3": "mw3"}
@@ -156,6 +180,7 @@ def main() -> None:
     rec["queue_mw_active"] = rec["queue_mw_active"].where(~ctm)
     rec["n_active_projects"] = rec["n_active_projects"].astype("Int64").where(~ctm)
     rec["coverage_status"] = ctm.map({True: "not_covered", False: "covered"})
+    rec["coverage_note"] = ctm.map({True: CT_NULL_MEANING, False: ""})
     # ---- end of COPY ---------------------------------------------------------------------------
     rec = rec.set_index("fips")
 
@@ -169,10 +194,12 @@ def main() -> None:
     sr = cl[cl["cls"] == "state_rule"]
     gg = sr.groupby("state_fips")
     st = pd.DataFrame({"queue_mw_active": gg["poi_mw"].sum(), "n_active_projects": gg.size()})
-    covered = C.state_units().query("covered")["state_fips"]
+    covered = C.state_units().query("covered")["state_fips"]  # 49: the source does not cover Alaska and Hawaii
     st = st.reindex(covered).fillna(0)
     st["queue_mw_active"] = st["queue_mw_active"].round(6)
     out = C.build_state_frame(st, ["queue_mw_active", "n_active_projects"], int_cols=["n_active_projects"])
+    identity_state = C.compare_state_prev(LAYER, snap, out, args.prev_date,
+                                          exact_cols=["n_active_projects"], float_cols=["queue_mw_active"])
 
     # internal consistency: my classification must give exactly the county sums of the copied rule
     internal = cl[cl["in_layer"]].groupby("county_state")["poi_mw"].sum()
@@ -203,6 +230,8 @@ def main() -> None:
 
     cross_ids = {str(x) for x in cross["q_id"]}
     checks = [
+        check("records with state AK or HI (all statuses)", 0, n_akhi_state),
+        check("records with a county code 02xxx or 15xxx (all statuses)", 0, n_akhi_code),
         check("units: covered / not_covered", "49 / 2", f"{int(out.coverage_status.eq('covered').sum())} / "
               f"{int(out.coverage_status.eq('not_covered').sum())}"),
         check("active records", EXPECTED["active"], int(len(cl))),
@@ -226,7 +255,8 @@ def main() -> None:
         check("max |residual| of state_reconciliation", 0, max_resid, tol=1e-6),
     ]
     report = {
-        "layer": LAYER, "layer_id": LAYER_ID, "snapshot_date": snap, "identity": identity, "checks": checks,
+        "layer": LAYER, "layer_id": LAYER_ID, "snapshot_date": snap, "states": scope.mode, "identity": identity,
+        "identity_state_prev": identity_state, "checks": checks,
         "numbers": {
             "county_sum_mw_recomputed": round(float(rec["queue_mw_active"].sum()), 3),
             "excluded_nonpositive_in_counties": int(bad.sum()),
@@ -269,10 +299,28 @@ def main() -> None:
         "inputs": inputs, "boundary_file": str(C.BOUNDARY_SHP),
         "identity_with_release_0_1_0": identity,
     }
+    meta["alaska_hawaii"] = ("not_covered: the source has no record of either state (0 records with state AK/HI, "
+                             "0 county codes 02xxx/15xxx, all statuses); empty values, not zero")
     csv_path = C.write_layer_csv(LAYER, out, meta, snap)
+
+    tbl = counties[["fips", "NAME", "NAMELSAD"]].merge(
+        rec.reset_index()[["fips", "queue_mw_active", "n_active_projects", "coverage_status", "coverage_note"]],
+        on="fips", how="left")
+    county_meta = C.read_legacy_meta(LEGACY_META)
+    county_meta.update({
+        "states_mode": scope.mode,
+        "rebuilt_for": "abf-layers 0.3.0 (SPEC_USA_AKHI_v0_3_0 r2); county rule unchanged; Alaska and Hawaii "
+                       "counties are not in this table: the source does not cover them (not_covered by the frame)",
+        "boundary_file": str(C.BOUNDARY_SHP), "boundary_file_sha256": inputs["county_shp.shp"]["sha256"],
+        "input": str(xlsx), "identity_with_release_0_1_0": identity,
+    })
+    county_csv = C.write_county_table("queue_lbnl", tbl, county_meta, snap)
+    report["county_table"] = {"file": county_csv.name, "rows": int(len(tbl)),
+                              "text_vs_legacy": C.compare_text_to_legacy(county_csv, C.OUTPUT_DIR / LEGACY_TABLE)}
     C.assert_inputs_unchanged(inputs, input_paths)
     C.write_part(LAYER, snap, report, recon)
-    log.info("DONE. %s", csv_path)
+    log.info("DONE. %s ; %s", csv_path, county_csv)
+    C.stop_if_failed(checks, LAYER)
 
 
 if __name__ == "__main__":

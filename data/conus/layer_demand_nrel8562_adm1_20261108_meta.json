@@ -1,0 +1,31 @@
+{
+  "source": "NREL/NLR OEDI submission 8562 - Hourly Electricity Demand Profiles for US Counties",
+  "source_url": "https://data.openei.org/submissions/8562",
+  "vintage": "hourly data 2016-2023, year 2023 taken",
+  "license": "see the OEDI submission 8562 page (open access, no registration)",
+  "coverage": "48 states + DC (the 49 units); Alaska and Hawaii are absent from the source",
+  "rule": "state peak = maximum over the 8,760 hours of the sum of the profiles of the state's covered counties; not the sum of county peaks. Hours are UTC.",
+  "n_units_covered": 49,
+  "n_units_not_covered": 2,
+  "known_gaps": "The sum of the 49 state peaks (810,503.2 MW) is smaller than the sum of county peaks (822,740.1 MW) because counties peak in different hours. 0 columns of the file are not in the layer. Factual draft; wording by [RES]7.",
+  "inputs": {
+    "nrel_oedi8562_h5": {
+      "path": "D:\\GISData\\Energy\\USA\\historic_load_hourly_2016_2023_county.h5",
+      "size": 1744827268,
+      "sha256": "565b6182432c60c6e6fa9f68b1db5f490cec3fe2f11e41fad41d47d3c301e403"
+    }
+  },
+  "boundary_file": "D:\\GISData\\AI\\Administrative units\\USA\\cb_2023_us_county_500k\\cb_2023_us_county_500k.shp",
+  "identity_with_release_0_1_0": {
+    "status": "OK",
+    "n_counties_compared": 3109,
+    "columns": [
+      "peak_demand_mw"
+    ],
+    "release_file_dir": "C:\\Users\\PGS\\Documents\\AI\\AI Buildup Frontier project\\data\\abf-layers\\v0.1.0"
+  },
+  "alaska_hawaii": "not_covered: the source has no profile column of any Alaska or Hawaii county; empty values, not zero",
+  "snapshot_date": "20261108",
+  "output_file": "layer_demand_nrel8562_adm1_20261108.csv",
+  "output_sha256": "9d3ebc8fa051087ea6b24b952d830f6f1966c57eab4fd74707aa6d2a5971292a"
+}
