@@ -1,0 +1,247 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_queue_lbnl_adm1",
+  "title": "Interconnection queue · LBNL Queued Up · state",
+  "title_ru": "Очередь на подключение · LBNL Queued Up · штаты",
+  "domain": "energy",
+  "level": "ADM1",
+  "description": "Capacity of the active interconnection requests in the Queued Up data file (2026 edition), summed by the state named in each request, with the number of those requests. These are generation and storage projects asking to connect to the grid, not electricity users. A state with no active request in the file has the value 0. Unlike the county layer, Connecticut is covered, and requests without a county code are counted. Alaska and Hawaii are not covered, because the source collects no data for them, and have empty values.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name as published in the boundaries release."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "coverage_note",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+      "null_meaning": {
+        "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+        "covered": "The unit is covered, so there is no reason to give."
+      }
+    },
+    {
+      "name": "queue_mw_active",
+      "type": "number",
+      "unit": "MW",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The state is Alaska or Hawaii, for which the source collects no queue data.",
+        "covered": null
+      },
+      "description": "Sum of the capacity of the active requests whose state field names the state; for each request, the largest of its capacity values (mw1 to mw3). 0 means the file has no active request in this state."
+    },
+    {
+      "name": "n_active_projects",
+      "type": "integer",
+      "nullable": true,
+      "null_meaning": {
+        "not_covered": "The state is Alaska or Hawaii, for which the source collects no queue data.",
+        "covered": null
+      },
+      "description": "Number of active requests whose state field names the state. 0 means none."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "lbnl_queued_up",
+      "role": "primary",
+      "publisher": "Lawrence Berkeley National Laboratory and GridTracker",
+      "product": "Queued Up: 2026 Edition, interconnection queue data file (data through end of 2025)",
+      "url": "https://emp.lbl.gov/queues",
+      "edition": "Queued Up 2026",
+      "retrieved_at": "2026-10-07",
+      "current_through": "2025-12-31",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Interconnection queue: Lawrence Berkeley National Laboratory and GridTracker, Queued Up 2026 Edition, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "text": "The Queued Up page states that the data file is licensed CC BY 4.0 and may be used, shared or adapted as long as it is attributed to Lawrence Berkeley National Laboratory and GridTracker.",
+        "checked_at": "2026-10-11",
+        "checked_by": "script:license_phrases.py",
+        "evidence_url": "https://emp.lbl.gov/queues"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "layer_queue_lbnl_adm1_20261108.csv",
+          "bytes": 1684,
+          "sha256": "c1d4fb6284f3d5d5e42bf7ceaf82df954c22e84f07458547808521b33e7b38f9"
+        }
+      ]
+    },
+    {
+      "source_id": "census_cb_2023_states",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "Cartographic boundary file cb_2023_us_state_500k",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_state_500k.zip",
+      "edition": "2023",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2023-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "State boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "USA_adm1_cb2023_500k.parquet",
+          "bytes": 4456286,
+          "sha256": "32f3de84a0140ac0ddc2d6a59e9da7944cd735781752622066bd26c7270d8cb9"
+        },
+        {
+          "file": "adm1.parquet",
+          "bytes": 17924058,
+          "sha256": "f7a8dbdb347f4855fbd132bb3004efa3c9630cdb4d8cc7d3db87629e1687bc2f"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution",
+    "attribution_text": "Interconnection queue: Lawrence Berkeley National Laboratory and GridTracker, Queued Up 2026 Edition, CC BY 4.0. State boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+  },
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "freshness": {
+    "source_current_through": "2025-12-31",
+    "source_cadence": "annual",
+    "built_at": "2026-11-09T08:25:19Z",
+    "next_check": "2027-06-30"
+  },
+  "coverage": {
+    "geography": "Contiguous United States and the District of Columbia",
+    "iso3": [
+      "USA"
+    ],
+    "frame": {
+      "iso3": "USA",
+      "level": "ADM1"
+    },
+    "n_units_frame": 51,
+    "n_units_covered": 49,
+    "n_records": 51,
+    "known_gaps": [
+      "Alaska and Hawaii are not covered: the Queued Up report states that no data was collected for them.",
+      "The state values include 35 active requests that have a state but no county code (11,280.7 MW) and the seven active Connecticut requests (678.2 MW). The county layer has neither, so a state value can exceed the sum of its counties.",
+      "Five requests name one state and carry the county code of another: Q362 (North Carolina; county code in Arizona, 275.0 MW), BHBE G20 (South Dakota; Nebraska, 250.0 MW), 956747 (South Carolina; North Carolina, 455.0 MW), J3785 (Michigan; Wisconsin, 200.0 MW) and GEN-2020-065 (New Mexico; Texas, 1,003.0 MW). Each counts in the state of its state field and in the county of its code. We did not check which is right.",
+      "53 active requests (8,813.0 MW) are not in the layer: 49 give no state and 4 give the code MX.",
+      "Eleven active requests with capacity of zero or less (-193.5 MW in total) are excluded, as in the county layer. The reason for the negative values is not checked against the source codebook.",
+      "When a request has more than one capacity value in the file (columns mw1 to mw3), the largest is used, not the sum.",
+      "The queue changes continuously; the file is a snapshot of requests as reported by grid operators and utilities."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-layers",
+    "version": "0.3.0",
+    "tag": "abf-layers-v0.3.0",
+    "doi": "10.5281/zenodo.24076794",
+    "published_at": "2026-11-09"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Active requests are summed by script by the state named in each request; for each request the largest of its capacity values is taken. The same run recomputed the county layer and matched the published county values of version 0.1.0 in every county. All 8,513 active requests of the source file fall into disjoint categories: 8,449 in the layer, 53 outside it, 11 with capacity of zero or less. Every difference between a state and the sum of its counties is explained in state_reconciliation.csv, with no residual. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 51 USA ADM1 units of the boundaries release; 49 are covered and 2 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "totals_vs_source",
+        "description": "All 8,513 active requests of the source workbook were split into disjoint categories and recomputed: 8449 requests (1740502.1 MW) equal the layer; excluded: capacity zero or less 11 requests (-193.5 MW); state outside the contiguous US or not given 53 requests (8813.0 MW)."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Interconnection queue · LBNL Queued Up · state (version 0.3.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24076794",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_queue_lbnl_adm1, unit {record_key}, version 0.3.0. https://doi.org/10.5281/zenodo.24076794"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "queue_mw_active",
+    "unit": "MW",
+    "breaks": [
+      10000,
+      15000,
+      25000,
+      40000
+    ],
+    "zero_class": true,
+    "legend_title": "Active queue capacity, MW",
+    "series": "Interconnection queue · LBNL Queued Up",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "coverage_note",
+      "queue_mw_active",
+      "n_active_projects"
+    ],
+    "home_bbox": [
+      -124.7631,
+      24.5213,
+      -66.9499,
+      49.3844
+    ]
+  }
+}
