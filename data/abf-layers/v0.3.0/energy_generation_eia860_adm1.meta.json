@@ -1,0 +1,251 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_generation_eia860_adm1",
+  "title": "Generation · EIA-860 · state",
+  "title_ru": "Генерация · EIA-860 · штаты",
+  "domain": "energy",
+  "level": "ADM1",
+  "description": "Net summer capacity of the operating generators listed in Form EIA-860, summed by state, with the number of those generators and of their plants. A generator counts in the state named in its record, not where the coordinates of its plant fall, so a state value can differ from the sum of its counties; state_reconciliation.csv lists every difference.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name as published in the boundaries release."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "coverage_note",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+      "null_meaning": {
+        "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+        "covered": "The unit is covered, so there is no reason to give."
+      }
+    },
+    {
+      "name": "net_summer_capacity_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Sum of the net summer capacity of the operating generators (status OP) whose record names the state. 0 means EIA-860 lists no operating generator in this state."
+    },
+    {
+      "name": "n_op_generators",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of operating generators (status OP) whose record names the state. 0 means none are listed. A generator without an ID in the source is not counted (see known gaps)."
+    },
+    {
+      "name": "n_op_plants",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of plants with at least one operating generator whose record names the state. 0 means none are listed."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "eia860",
+      "role": "primary",
+      "publisher": "U.S. Energy Information Administration",
+      "product": "Form EIA-860, annual electric generator data (Schedule 3 generators, Schedule 2 plants)",
+      "url": "https://www.eia.gov/electricity/data/eia860/",
+      "edition": "2025 final",
+      "retrieved_at": "2026-10-06",
+      "current_through": "2025-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "Source: U.S. Energy Information Administration, Form EIA-860."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105); the EIA copyright and reuse page allows reuse with citation of the source.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.eia.gov/about/copyrights_reuse.php"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "layer_generation_eia860_adm1_20261108.csv",
+          "bytes": 1882,
+          "sha256": "33083daa43c9383cbf2b26fd2b7f1b194dcdb022a67a20e38d54ce87f5878d67"
+        }
+      ]
+    },
+    {
+      "source_id": "census_cb_2023_states",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "Cartographic boundary file cb_2023_us_state_500k",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_state_500k.zip",
+      "edition": "2023",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2023-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "State boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "USA_adm1_cb2023_500k.parquet",
+          "bytes": 4456286,
+          "sha256": "32f3de84a0140ac0ddc2d6a59e9da7944cd735781752622066bd26c7270d8cb9"
+        },
+        {
+          "file": "adm1.parquet",
+          "bytes": 17924058,
+          "sha256": "f7a8dbdb347f4855fbd132bb3004efa3c9630cdb4d8cc7d3db87629e1687bc2f"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "LicenseRef-us-gov-work",
+    "name": "U.S. Government work",
+    "url": "https://www.usa.gov/government-works",
+    "family": "public_domain",
+    "attribution_text": "Source: U.S. Energy Information Administration, Form EIA-860. State boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+  },
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "freshness": {
+    "source_current_through": "2025-12-31",
+    "source_cadence": "annual",
+    "built_at": "2026-11-09T08:25:19Z",
+    "next_check": "2027-06-30"
+  },
+  "coverage": {
+    "geography": "United States: the 50 states and the District of Columbia",
+    "iso3": [
+      "USA"
+    ],
+    "frame": {
+      "iso3": "USA",
+      "level": "ADM1"
+    },
+    "n_units_frame": 51,
+    "n_units_covered": 51,
+    "n_records": 51,
+    "known_gaps": [
+      "Generators that entered service after the end of the edition year are not included.",
+      "A generator counts in the state named in its record, while the county layer places it by the coordinates of its plant. For 22 plants (107 generators, 5,272.8 MW) the two disagree, so the state values of both states involved differ from the sums of their counties. The largest are John Day, The Dalles and McNary, recorded in Oregon with coordinates in Washington counties; Hoover Dam (AZ), recorded in Arizona with coordinates in a Nevada county; and Keokuk, recorded in Iowa with coordinates in an Illinois county. We did not check which of the two is right for any of them. state_reconciliation.csv lists all 22.",
+      "Three offshore wind plants (171.3 MW: Block Island Wind Farm, South Fork Wind and the Coastal Virginia Offshore Wind pilot) are in the values of Rhode Island, New York and Virginia, but in no county value.",
+      "Form EIA-860 covers power plants with a combined nameplate capacity of 1 MW or more. Emergency and standby generators at data centers and other buildings are generally not reported to it.",
+      "One operating generator has no generator ID in the source (Cranberry Point Energy Storage, plant 62844, Massachusetts, 150 MW). Its capacity is in the Massachusetts value, but it is not counted in n_op_generators.",
+      "69 operating generators have no numeric summer capacity in the source and add nothing to net_summer_capacity_mw."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-layers",
+    "version": "0.3.0",
+    "tag": "abf-layers-v0.3.0",
+    "doi": "10.5281/zenodo.24076794",
+    "published_at": "2026-11-09"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Values are computed by script from the source tables: operating generators are summed by the state named in their record. The same run recomputed the county layer from the same files and matched the published county values of version 0.1.0 in every county. Every difference between a state and the sum of its counties is explained in state_reconciliation.csv by a listed category, with no residual. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 51 USA ADM1 units of the boundaries release; 51 are covered and 0 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "totals_vs_source",
+        "description": "The OP capacity total of the source workbook for the listed states was recomputed (1260035.3 MW) and equals the layer total (1260035.3 MW) with no exceptions."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Generation · EIA-860 · state (version 0.3.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24076794",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_generation_eia860_adm1, unit {record_key}, version 0.3.0. https://doi.org/10.5281/zenodo.24076794"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "net_summer_capacity_mw",
+    "unit": "MW",
+    "breaks": [
+      10000,
+      15000,
+      20000,
+      30000
+    ],
+    "zero_class": false,
+    "legend_title": "Net summer capacity, MW",
+    "series": "Generation · EIA-860",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "coverage_note",
+      "net_summer_capacity_mw",
+      "n_op_generators",
+      "n_op_plants"
+    ],
+    "home_bbox": [
+      -124.7631,
+      24.5213,
+      -66.9499,
+      49.3844
+    ]
+  },
+  "extra_files": [
+    {
+      "file": "state_reconciliation.csv",
+      "description": "Why a state value differs from the sum of its counties. One row per layer, state and summed field (759 rows): the state value, the sum of the published county values, the difference, and the records behind it by category — offshore plants without a county; plants or requests whose record names this state but whose coordinates or county code lie in another state, and the reverse; Connecticut requests; requests without a county code — and the residual, which is 0 (for transmission lines, within the rounding tolerance). For demand, where a state peak is not a sum, the row gives the peak hour in UTC, the largest county peak and the ratio of the state peak to the sum of the county peaks. The column detail names the plants and requests."
+    }
+  ]
+}

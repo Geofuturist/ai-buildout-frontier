@@ -1,0 +1,256 @@
+{
+  "schema_version": "abf-meta-1.0",
+  "kind": "layer",
+  "layer_id": "energy_generation_eia860_adm2",
+  "title": "Generation · EIA-860 · county",
+  "title_ru": "Генерация · EIA-860 · округа",
+  "domain": "energy",
+  "level": "ADM2",
+  "description": "Net summer capacity of the operating generators listed in Form EIA-860, summed by county, with the number of those generators and of their plants. A county where EIA-860 lists no operating generator has the value 0.",
+  "fields": [
+    {
+      "name": "unit_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit code of the boundaries release: ISO3-level-national code, e.g. USA-2-51059."
+    },
+    {
+      "name": "fips",
+      "type": "string",
+      "nullable": false,
+      "description": "County FIPS code, 5 digits, kept as a string (leading zeros matter)."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "nullable": false,
+      "description": "Unit name as published in the boundaries release."
+    },
+    {
+      "name": "coverage_status",
+      "type": "string",
+      "nullable": false,
+      "description": "covered: the unit is inside the area the source was processed for; not_covered: outside it, all values are empty (not zero)."
+    },
+    {
+      "name": "coverage_note",
+      "type": "string",
+      "nullable": true,
+      "description": "Reason why the unit is not_covered, in English; empty for covered units.",
+      "null_meaning": {
+        "not_covered": "Not applicable: every not_covered unit has a reason in this field.",
+        "covered": "The unit is covered, so there is no reason to give."
+      }
+    },
+    {
+      "name": "net_summer_capacity_mw",
+      "type": "number",
+      "unit": "MW",
+      "nullable": false,
+      "description": "Sum of the net summer capacity of the operating generators (status OP) located in the county. 0 means EIA-860 lists no operating generator in this county."
+    },
+    {
+      "name": "n_op_generators",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of operating generators (status OP) in the county. 0 means none are listed. A generator without an ID in the source is not counted (see known gaps)."
+    },
+    {
+      "name": "n_op_plants",
+      "type": "integer",
+      "nullable": false,
+      "description": "Number of plants with at least one operating generator in the county. 0 means none are listed."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "eia860",
+      "role": "primary",
+      "publisher": "U.S. Energy Information Administration",
+      "product": "Form EIA-860, annual electric generator data (Schedule 3 generators, Schedule 2 plants)",
+      "url": "https://www.eia.gov/electricity/data/eia860/",
+      "edition": "2025 final",
+      "retrieved_at": "2026-10-06",
+      "current_through": "2025-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "Source: U.S. Energy Information Administration, Form EIA-860."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105); the EIA copyright and reuse page allows reuse with citation of the source.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.eia.gov/about/copyrights_reuse.php"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "layer_generation_eia860_20261108.csv",
+          "bytes": 126529,
+          "sha256": "4ef29c79733be844ffdfcc05b2b0a0537761ae60e4e30c25c0b09f387391f60b"
+        },
+        {
+          "file": "3_1_Generator_Y2025.xlsx",
+          "bytes": 11223392,
+          "sha256": "931e1ed0be2c6706794c196f158f779b5c8a32d08c61d748a823dfc25a3201a8"
+        }
+      ]
+    },
+    {
+      "source_id": "census_cb_2023",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "Cartographic boundary file cb_2023_us_county_500k",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2023/shp/cb_2023_us_county_500k.zip",
+      "edition": "2023",
+      "retrieved_at": "2026-09-28",
+      "current_through": "2023-12-31",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.usa.gov/government-works",
+        "family": "public_domain",
+        "attribution_text": "County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The Census file page does not state a license, so the status rests on the statute.",
+        "checked_at": "2026-09-20",
+        "checked_by": "agent:RES",
+        "evidence_url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+      },
+      "publication_mode": "open_licence",
+      "inputs": [
+        {
+          "file": "USA_adm2_cb2023_500k.parquet",
+          "bytes": 16297158,
+          "sha256": "5d3348143dff30dc9df52f18cff2754c2d63ab67de5766414850062bf85cdb19"
+        },
+        {
+          "file": "adm2.parquet",
+          "bytes": 32160231,
+          "sha256": "632093409e2c6bfc6ac2f1cb6029d80508078f3b5b86e0a28cb9358d5b201fa5"
+        }
+      ]
+    }
+  ],
+  "license": {
+    "id": "LicenseRef-us-gov-work",
+    "name": "U.S. Government work",
+    "url": "https://www.usa.gov/government-works",
+    "family": "public_domain",
+    "attribution_text": "Source: U.S. Energy Information Administration, Form EIA-860. County boundaries: U.S. Census Bureau, cartographic boundary file 2023 (1:500,000)."
+  },
+  "boundary_release": "abf-boundaries-v0.2.0",
+  "freshness": {
+    "source_current_through": "2025-12-31",
+    "source_cadence": "annual",
+    "built_at": "2026-11-09T08:25:19Z",
+    "next_check": "2027-06-30"
+  },
+  "coverage": {
+    "geography": "United States: the 50 states and the District of Columbia",
+    "iso3": [
+      "USA"
+    ],
+    "frame": {
+      "iso3": "USA",
+      "level": "ADM2"
+    },
+    "n_units_frame": 3144,
+    "n_units_covered": 3144,
+    "n_records": 3144,
+    "known_gaps": [
+      "Generators that entered service after the end of the edition year are not included.",
+      "Three offshore wind plants (171.3 MW in total) are not assigned to any county, so they are not in the county values.",
+      "Form EIA-860 covers power plants with a combined nameplate capacity of 1 MW or more. Emergency and standby generators at data centers and other buildings are generally not reported to it.",
+      "One operating generator has no generator ID in the source (Cranberry Point Energy Storage, plant 62844, Massachusetts, 150 MW). Its capacity is in the county value, but it is not counted in n_op_generators.",
+      "69 operating generators have no numeric summer capacity in the source and add nothing to net_summer_capacity_mw.",
+      "For the Alaska plants Chevak and Hooper Bay, EIA's county field names Bethel, while their coordinates fall in Kusilvak Census Area. The layer places plants by their coordinates; we did not check which is right."
+    ]
+  },
+  "download_formats": [
+    "parquet",
+    "geojson.gz",
+    "csv"
+  ],
+  "release": {
+    "dataset": "abf-layers",
+    "version": "0.3.0",
+    "tag": "abf-layers-v0.3.0",
+    "doi": "10.5281/zenodo.24076794",
+    "published_at": "2026-11-09"
+  },
+  "verification": {
+    "levels": {
+      "source_as_is": 1.0,
+      "script_rules": 0.0,
+      "human": 0.0
+    },
+    "method": "Values are computed by script from the source tables: operating generators are located by the coordinates of their plants and summed by county. No value was re-checked by a person or by an agent. The automated checks listed below were run on every build.",
+    "sample_share": {},
+    "automated_checks": [
+      {
+        "id": "input_sha256",
+        "description": "SHA-256 of every input file was computed at the start and again at the end of the build; they match."
+      },
+      {
+        "id": "frame_complete",
+        "description": "The file has exactly one row for each of the 3,144 USA ADM2 units of the boundaries release; 3,144 are covered and 0 are not_covered with empty values."
+      },
+      {
+        "id": "unit_id_in_boundaries",
+        "description": "Every unit_id of the layer exists in the boundaries release and no unit_id is repeated."
+      },
+      {
+        "id": "schema_fields",
+        "description": "Columns of the CSV, GeoParquet and GeoJSON files equal fields[] in composition and order."
+      },
+      {
+        "id": "sum_matches_build",
+        "description": "The sum of every numeric column read back from the published CSV equals the sum in the input table."
+      },
+      {
+        "id": "totals_vs_source",
+        "description": "The OP capacity total of the source workbook for the listed states was recomputed (1260035.3 MW) and equals the layer total (1259864.0 MW) plus the recorded exceptions (171.3 MW: offshore: Block Island Wind Farm, South Fork Wind, CVOW Pilot 171.3)."
+      }
+    ]
+  },
+  "citation": {
+    "text": "Ilin, V. (2026). AI Buildout Frontier · Generation · EIA-860 · county (version 0.3.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24076794",
+    "record_pattern": "Ilin, V. AI Buildout Frontier, layer energy_generation_eia860_adm2, unit {record_key}, version 0.3.0. https://doi.org/10.5281/zenodo.24076794"
+  },
+  "display": {
+    "geometry_type": "polygon",
+    "value_field": "net_summer_capacity_mw",
+    "unit": "MW",
+    "breaks": [
+      20,
+      100,
+      300,
+      900
+    ],
+    "series": "Generation · EIA-860",
+    "zero_class": true,
+    "legend_title": "Net summer capacity, MW",
+    "tile_fields": [
+      "unit_id",
+      "name",
+      "coverage_status",
+      "coverage_note",
+      "net_summer_capacity_mw",
+      "n_op_generators",
+      "n_op_plants"
+    ],
+    "home_bbox": [
+      -124.7631,
+      24.5213,
+      -66.9499,
+      49.3844
+    ]
+  }
+}

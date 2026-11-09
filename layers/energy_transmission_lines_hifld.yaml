@@ -5,14 +5,14 @@ title_ru: "ЛЭП · HIFLD · сегменты"
 domain: energy
 level: line
 input:
-  table: 'data\conus\layer_transmission_lines_hifld_segments_20260913.geojson'
+  table: 'data\conus\layer_transmission_lines_hifld_segments_20261108.geojson'
   rename: {ID: record_id, STATUS: status, OWNER: owner}
   legacy_meta: 'data\conus\layer_transmission_lines_hifld_meta.json'
 ref_field: record_id          # the HIFLD ID is the reference of every record (G10)
 description: >-
-  Segments of the HIFLD national transmission-line file inside the contiguous United States, with
-  the recorded voltage, voltage class, owner and status of each segment, and a voltage band shared
-  by all transmission layers of the project. Alaska and Hawaii are not covered.
+  Segments of the HIFLD national transmission-line file in the United States (the 50 states and the District of
+  Columbia), with the recorded voltage, voltage class, owner and status of each segment, and a voltage band shared
+  by all transmission layers of the project.
 fields:
   - {name: record_id, type: string, nullable: false, description: "ID of the segment in the HIFLD file, kept as a string. It is the reference of the record to the source."}
   - {name: owner, type: string, nullable: false, description: "Owner of the line as recorded in the HIFLD file."}
@@ -65,10 +65,9 @@ source_archive:
   description: "Archive of the HIFLD national transmission-line file used for the layers, published unchanged so that the processing can be checked."
 freshness: {source_cadence: discontinued, next_check: null}
 coverage:
-  geography: "Contiguous United States and the District of Columbia"
+  geography: "United States: the 50 states and the District of Columbia"
   iso3: [USA]
   known_gaps:
-    - "Alaska and Hawaii are not covered."
     - >-
       HIFLD Open, the public portal that distributed this file, was discontinued by the U.S.
       Department of Homeland Security on 26 August 2025; the announcement gave no reason. The layer
@@ -86,6 +85,7 @@ verification:
     an agent. The automated checks listed below were run on every build.
   sample_share: {}
 display:
+  home_bbox: [-124.7631, 24.5213, -66.9499, 49.3844]   # contiguous states and DC; the true bbox of the layer includes the Aleutian Islands (SPEC_USA_AKHI r2 4a item 5)
   geometry_type: line
   value_field: voltage_band
   tile_fields: [record_id, voltage_kv, voltage_class, owner, status, voltage_band]

@@ -1,0 +1,760 @@
+layer_id,unit_id,field,unit,state_value,county_sum,difference,offshore_no_county_n,offshore_no_county_value,no_valid_coordinates_n,no_valid_coordinates_value,state_field_county_elsewhere_n,state_field_county_elsewhere_value,county_here_state_field_elsewhere_n,county_here_state_field_elsewhere_value,connecticut_n,connecticut_value,no_county_code_n,no_county_code_value,county_code_not_in_layer_n,county_code_not_in_layer_value,residual,rounding_tolerance_km,within_tolerance,state_unrounded_km,nrel_peak_hour_utc,nrel_max_county_peak_mw,nrel_ratio_state_to_sum,nrel_n_county_columns,detail
+energy_generation_eia860_adm1,USA-1-01,net_summer_capacity_mw,MW,31033.5,30994.9,38.6,0.0,0.0,0.0,0.0,6.0,38.6,0.0,0.0,,,,,,,-0.0,,,,,,,,"state_field_county_elsewhere: Goat Rock (6 gen, 38.6 MW)"
+energy_generation_eia860_adm1,USA-1-02,net_summer_capacity_mw,MW,2220.47,2220.47,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-04,net_summer_capacity_mw,MW,36796.5,35756.8,1039.7,0.0,0.0,0.0,0.0,10.0,1039.7,0.0,0.0,,,,,,,-0.0,,,,,,,,"state_field_county_elsewhere: Hoover Dam (AZ) (10 gen, 1039.7 MW)"
+energy_generation_eia860_adm1,USA-1-05,net_summer_capacity_mw,MW,16292.26,16292.26,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-06,net_summer_capacity_mw,MW,100194.61,100194.61,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-08,net_summer_capacity_mw,MW,20736.81,20736.81,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-09,net_summer_capacity_mw,MW,9315.68,9315.68,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-10,net_summer_capacity_mw,MW,2749.3,2749.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-11,net_summer_capacity_mw,MW,67.25,67.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-12,net_summer_capacity_mw,MW,73208.93,73208.93,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-13,net_summer_capacity_mw,MW,39427.2,39437.3,-10.1,0.0,0.0,0.0,0.0,3.0,28.5,6.0,38.6,,,,,,,-0.0,,,,,,,,"state_field_county_elsewhere: Yonah (3 gen, 28.5 MW) | county_here_state_field_elsewhere: Goat Rock (6 gen, 38.6 MW)"
+energy_generation_eia860_adm1,USA-1-15,net_summer_capacity_mw,MW,3435.42,3435.42,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-16,net_summer_capacity_mw,MW,6065.98,6065.98,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-17,net_summer_capacity_mw,MW,47598.82,47748.82,-150.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,150.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Keokuk (15 gen, 150.0 MW)"
+energy_generation_eia860_adm1,USA-1-18,net_summer_capacity_mw,MW,30764.82,30867.72,-102.9,0.0,0.0,0.0,0.0,0.0,0.0,4.0,102.9,,,,,,,-0.0,,,,,,,,"county_here_state_field_elsewhere: Cannelton Hydroelectric Plant (3 gen, 87.9 MW); Electric City Solar (1 gen, 15.0 MW)"
+energy_generation_eia860_adm1,USA-1-19,net_summer_capacity_mw,MW,23320.13,23170.13,150.0,0.0,0.0,0.0,0.0,15.0,150.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Keokuk (15 gen, 150.0 MW)"
+energy_generation_eia860_adm1,USA-1-20,net_summer_capacity_mw,MW,19834.1,19834.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-21,net_summer_capacity_mw,MW,18690.5,18676.8,13.7,0.0,0.0,0.0,0.0,3.0,87.9,5.0,74.2,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Cannelton Hydroelectric Plant (3 gen, 87.9 MW) | county_here_state_field_elsewhere: Walter C Beckjord (2 gen, 4.0 MW); Greenup Hydro (3 gen, 70.2 MW)"
+energy_generation_eia860_adm1,USA-1-22,net_summer_capacity_mw,MW,24714.0,24714.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-23,net_summer_capacity_mw,MW,5825.82,5824.62,1.2,0.0,0.0,0.0,0.0,3.0,1.2,0.0,0.0,,,,,,,-0.0,,,,,,,,"state_field_county_elsewhere: Salmon Falls (3 gen, 1.2 MW)"
+energy_generation_eia860_adm1,USA-1-24,net_summer_capacity_mw,MW,12154.2,12155.2,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,1.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Dam No. 5 Hydro Station (2 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-25,net_summer_capacity_mw,MW,11599.25,11599.25,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-26,net_summer_capacity_mw,MW,31752.3,31738.3,14.0,0.0,0.0,0.0,0.0,1.0,15.0,2.0,1.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Electric City Solar (1 gen, 15.0 MW) | county_here_state_field_elsewhere: Saxon Falls (2 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-27,net_summer_capacity_mw,MW,18166.17,18165.17,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,-0.0,,,,,,,,"state_field_county_elsewhere: Huneke I CSG (1 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-28,net_summer_capacity_mw,MW,16280.0,16280.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-29,net_summer_capacity_mw,MW,21189.93,21189.93,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-30,net_summer_capacity_mw,MW,7110.4,7110.4,-0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,-0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-31,net_summer_capacity_mw,MW,11420.22,11420.22,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-32,net_summer_capacity_mw,MW,17114.73,18154.43,-1039.7,0.0,0.0,0.0,0.0,0.0,0.0,10.0,1039.7,,,,,,,-0.0,,,,,,,,"county_here_state_field_elsewhere: Hoover Dam (AZ) (10 gen, 1039.7 MW)"
+energy_generation_eia860_adm1,USA-1-33,net_summer_capacity_mw,MW,3995.4,4092.9,-97.5,0.0,0.0,0.0,0.0,0.0,0.0,13.0,97.5,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Wilder (3 gen, 39.0 MW); Bellows Falls (3 gen, 47.1 MW); Mcindoes (4 gen, 10.2 MW); Salmon Falls (3 gen, 1.2 MW)"
+energy_generation_eia860_adm1,USA-1-34,net_summer_capacity_mw,MW,16325.05,16325.05,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-35,net_summer_capacity_mw,MW,13094.4,13094.4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-36,net_summer_capacity_mw,MW,40340.46,40210.46,130.0,1.0,130.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: South Fork Wind (1 gen, 130.0 MW)"
+energy_generation_eia860_adm1,USA-1-37,net_summer_capacity_mw,MW,35753.15,35835.55,-82.4,0.0,0.0,0.0,0.0,0.0,0.0,2.0,82.4,,,,,,,-0.0,,,,,,,,"county_here_state_field_elsewhere: Apalachia (2 gen, 82.4 MW)"
+energy_generation_eia860_adm1,USA-1-38,net_summer_capacity_mw,MW,10358.1,10358.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-39,net_summer_capacity_mw,MW,31560.49,31486.29,74.2,0.0,0.0,0.0,0.0,5.0,74.2,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Walter C Beckjord (2 gen, 4.0 MW); Greenup Hydro (3 gen, 70.2 MW)"
+energy_generation_eia860_adm1,USA-1-40,net_summer_capacity_mw,MW,33355.72,33355.72,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-41,net_summer_capacity_mw,MW,16570.16,12966.16,3604.0,0.0,0.0,0.0,0.0,40.0,3604.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: John Day (11 gen, 1417.0 MW); McNary (12 gen, 850.5 MW); The Dalles (15 gen, 1208.7 MW); Dalles Dam North Fishway Project (1 gen, 5.0 MW); FPL Energy Vansycle LLC (OR) (1 gen, 122.8 MW)"
+energy_generation_eia860_adm1,USA-1-42,net_summer_capacity_mw,MW,47801.12,47749.12,52.0,0.0,0.0,0.0,0.0,4.0,52.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Lake Lynn Hydro Station (4 gen, 52.0 MW)"
+energy_generation_eia860_adm1,USA-1-44,net_summer_capacity_mw,MW,2410.7,2381.4,29.3,1.0,29.3,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,-0.0,,,,,,,,"offshore_no_county: Block Island Wind Farm (1 gen, 29.3 MW)"
+energy_generation_eia860_adm1,USA-1-45,net_summer_capacity_mw,MW,25029.91,25058.41,-28.5,0.0,0.0,0.0,0.0,0.0,0.0,3.0,28.5,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Yonah (3 gen, 28.5 MW)"
+energy_generation_eia860_adm1,USA-1-46,net_summer_capacity_mw,MW,7162.1,7162.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-47,net_summer_capacity_mw,MW,20730.78,20648.38,82.4,0.0,0.0,0.0,0.0,2.0,82.4,0.0,0.0,,,,,,,-0.0,,,,,,,,"state_field_county_elsewhere: Apalachia (2 gen, 82.4 MW)"
+energy_generation_eia860_adm1,USA-1-48,net_summer_capacity_mw,MW,182054.7,182054.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-49,net_summer_capacity_mw,MW,10404.09,10404.09,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-50,net_summer_capacity_mw,MW,852.8,756.5,96.3,0.0,0.0,0.0,0.0,10.0,96.3,0.0,0.0,,,,,,,-0.0,,,,,,,,"state_field_county_elsewhere: Wilder (3 gen, 39.0 MW); Bellows Falls (3 gen, 47.1 MW); Mcindoes (4 gen, 10.2 MW)"
+energy_generation_eia860_adm1,USA-1-51,net_summer_capacity_mw,MW,29151.68,29139.68,12.0,1.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: Coastal Virginia Offshore Wind (CVOW) Pi (1 gen, 12.0 MW)"
+energy_generation_eia860_adm1,USA-1-53,net_summer_capacity_mw,MW,28971.25,32575.25,-3604.0,0.0,0.0,0.0,0.0,0.0,0.0,40.0,3604.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: John Day (11 gen, 1417.0 MW); McNary (12 gen, 850.5 MW); The Dalles (15 gen, 1208.7 MW); Dalles Dam North Fishway Project (1 gen, 5.0 MW); FPL Energy Vansycle LLC (OR) (1 gen, 122.8 MW)"
+energy_generation_eia860_adm1,USA-1-54,net_summer_capacity_mw,MW,15255.6,15306.6,-51.0,0.0,0.0,0.0,0.0,2.0,1.0,4.0,52.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Dam No. 5 Hydro Station (2 gen, 1.0 MW) | county_here_state_field_elsewhere: Lake Lynn Hydro Station (4 gen, 52.0 MW)"
+energy_generation_eia860_adm1,USA-1-55,net_summer_capacity_mw,MW,17971.74,17971.74,0.0,0.0,0.0,0.0,0.0,2.0,1.0,1.0,1.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Saxon Falls (2 gen, 1.0 MW) | county_here_state_field_elsewhere: Huneke I CSG (1 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-56,net_summer_capacity_mw,MW,11806.6,11806.6,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-01,n_op_generators,count,271.0,265.0,6.0,0.0,0.0,0.0,0.0,6.0,6.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Goat Rock (6 gen, 38.6 MW)"
+energy_generation_eia860_adm1,USA-1-02,n_op_generators,count,486.0,486.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-04,n_op_generators,count,413.0,403.0,10.0,0.0,0.0,0.0,0.0,10.0,10.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Hoover Dam (AZ) (10 gen, 1039.7 MW)"
+energy_generation_eia860_adm1,USA-1-05,n_op_generators,count,203.0,203.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-06,n_op_generators,count,2902.0,2902.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-08,n_op_generators,count,476.0,476.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-09,n_op_generators,count,298.0,298.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-10,n_op_generators,count,69.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-11,n_op_generators,count,25.0,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-12,n_op_generators,count,696.0,696.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-13,n_op_generators,count,497.0,500.0,-3.0,0.0,0.0,0.0,0.0,3.0,3.0,6.0,6.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Yonah (3 gen, 28.5 MW) | county_here_state_field_elsewhere: Goat Rock (6 gen, 38.6 MW)"
+energy_generation_eia860_adm1,USA-1-15,n_op_generators,count,212.0,212.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-16,n_op_generators,count,252.0,252.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-17,n_op_generators,count,911.0,926.0,-15.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0,15.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Keokuk (15 gen, 150.0 MW)"
+energy_generation_eia860_adm1,USA-1-18,n_op_generators,count,410.0,414.0,-4.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,4.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Cannelton Hydroelectric Plant (3 gen, 87.9 MW); Electric City Solar (1 gen, 15.0 MW)"
+energy_generation_eia860_adm1,USA-1-19,n_op_generators,count,536.0,521.0,15.0,0.0,0.0,0.0,0.0,15.0,15.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Keokuk (15 gen, 150.0 MW)"
+energy_generation_eia860_adm1,USA-1-20,n_op_generators,count,457.0,457.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-21,n_op_generators,count,171.0,173.0,-2.0,0.0,0.0,0.0,0.0,3.0,3.0,5.0,5.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Cannelton Hydroelectric Plant (3 gen, 87.9 MW) | county_here_state_field_elsewhere: Walter C Beckjord (2 gen, 4.0 MW); Greenup Hydro (3 gen, 70.2 MW)"
+energy_generation_eia860_adm1,USA-1-22,n_op_generators,count,220.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-23,n_op_generators,count,449.0,446.0,3.0,0.0,0.0,0.0,0.0,3.0,3.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Salmon Falls (3 gen, 1.2 MW)"
+energy_generation_eia860_adm1,USA-1-24,n_op_generators,count,339.0,341.0,-2.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,2.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Dam No. 5 Hydro Station (2 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-25,n_op_generators,count,966.0,966.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-26,n_op_generators,count,730.0,731.0,-1.0,0.0,0.0,0.0,0.0,1.0,1.0,2.0,2.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Electric City Solar (1 gen, 15.0 MW) | county_here_state_field_elsewhere: Saxon Falls (2 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-27,n_op_generators,count,1246.0,1245.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Huneke I CSG (1 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-28,n_op_generators,count,147.0,147.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-29,n_op_generators,count,322.0,322.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-30,n_op_generators,count,162.0,162.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-31,n_op_generators,count,291.0,291.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-32,n_op_generators,count,297.0,307.0,-10.0,0.0,0.0,0.0,0.0,0.0,0.0,10.0,10.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Hoover Dam (AZ) (10 gen, 1039.7 MW)"
+energy_generation_eia860_adm1,USA-1-33,n_op_generators,count,129.0,142.0,-13.0,0.0,0.0,0.0,0.0,0.0,0.0,13.0,13.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Wilder (3 gen, 39.0 MW); Bellows Falls (3 gen, 47.1 MW); Mcindoes (4 gen, 10.2 MW); Salmon Falls (3 gen, 1.2 MW)"
+energy_generation_eia860_adm1,USA-1-34,n_op_generators,count,588.0,588.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-35,n_op_generators,count,219.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-36,n_op_generators,count,1653.0,1652.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: South Fork Wind (1 gen, 130.0 MW)"
+energy_generation_eia860_adm1,USA-1-37,n_op_generators,count,1166.0,1168.0,-2.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,2.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Apalachia (2 gen, 82.4 MW)"
+energy_generation_eia860_adm1,USA-1-38,n_op_generators,count,98.0,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-39,n_op_generators,count,452.0,447.0,5.0,0.0,0.0,0.0,0.0,5.0,5.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Walter C Beckjord (2 gen, 4.0 MW); Greenup Hydro (3 gen, 70.2 MW)"
+energy_generation_eia860_adm1,USA-1-40,n_op_generators,count,300.0,300.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-41,n_op_generators,count,449.0,409.0,40.0,0.0,0.0,0.0,0.0,40.0,40.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: John Day (11 gen, 1417.0 MW); McNary (12 gen, 850.5 MW); The Dalles (15 gen, 1208.7 MW); Dalles Dam North Fishway Project (1 gen, 5.0 MW); FPL Energy Vansycle LLC (OR) (1 gen, 122.8 MW)"
+energy_generation_eia860_adm1,USA-1-42,n_op_generators,count,604.0,600.0,4.0,0.0,0.0,0.0,0.0,4.0,4.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Lake Lynn Hydro Station (4 gen, 52.0 MW)"
+energy_generation_eia860_adm1,USA-1-44,n_op_generators,count,153.0,152.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: Block Island Wind Farm (1 gen, 29.3 MW)"
+energy_generation_eia860_adm1,USA-1-45,n_op_generators,count,375.0,378.0,-3.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,3.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Yonah (3 gen, 28.5 MW)"
+energy_generation_eia860_adm1,USA-1-46,n_op_generators,count,92.0,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-47,n_op_generators,count,279.0,277.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Apalachia (2 gen, 82.4 MW)"
+energy_generation_eia860_adm1,USA-1-48,n_op_generators,count,2321.0,2321.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-49,n_op_generators,count,220.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-50,n_op_generators,count,207.0,197.0,10.0,0.0,0.0,0.0,0.0,10.0,10.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Wilder (3 gen, 39.0 MW); Bellows Falls (3 gen, 47.1 MW); Mcindoes (4 gen, 10.2 MW)"
+energy_generation_eia860_adm1,USA-1-51,n_op_generators,count,712.0,711.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: Coastal Virginia Offshore Wind (CVOW) Pi (1 gen, 12.0 MW)"
+energy_generation_eia860_adm1,USA-1-53,n_op_generators,count,377.0,417.0,-40.0,0.0,0.0,0.0,0.0,0.0,0.0,40.0,40.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: John Day (11 gen, 1417.0 MW); McNary (12 gen, 850.5 MW); The Dalles (15 gen, 1208.7 MW); Dalles Dam North Fishway Project (1 gen, 5.0 MW); FPL Energy Vansycle LLC (OR) (1 gen, 122.8 MW)"
+energy_generation_eia860_adm1,USA-1-54,n_op_generators,count,91.0,93.0,-2.0,0.0,0.0,0.0,0.0,2.0,2.0,4.0,4.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Dam No. 5 Hydro Station (2 gen, 1.0 MW) | county_here_state_field_elsewhere: Lake Lynn Hydro Station (4 gen, 52.0 MW)"
+energy_generation_eia860_adm1,USA-1-55,n_op_generators,count,597.0,596.0,1.0,0.0,0.0,0.0,0.0,2.0,2.0,1.0,1.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Saxon Falls (2 gen, 1.0 MW) | county_here_state_field_elsewhere: Huneke I CSG (1 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-56,n_op_generators,count,122.0,122.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-01,n_op_plants,count,77.0,76.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Goat Rock (6 gen, 38.6 MW)"
+energy_generation_eia860_adm1,USA-1-02,n_op_plants,count,141.0,141.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-04,n_op_plants,count,185.0,184.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Hoover Dam (AZ) (10 gen, 1039.7 MW)"
+energy_generation_eia860_adm1,USA-1-05,n_op_plants,count,116.0,116.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-06,n_op_plants,count,1790.0,1790.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-08,n_op_plants,count,317.0,317.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-09,n_op_plants,count,178.0,178.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-10,n_op_plants,count,35.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-11,n_op_plants,count,21.0,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-12,n_op_plants,count,326.0,326.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-13,n_op_plants,count,247.0,247.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Yonah (3 gen, 28.5 MW) | county_here_state_field_elsewhere: Goat Rock (6 gen, 38.6 MW)"
+energy_generation_eia860_adm1,USA-1-15,n_op_plants,count,73.0,73.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-16,n_op_plants,count,149.0,149.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-17,n_op_plants,count,579.0,580.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Keokuk (15 gen, 150.0 MW)"
+energy_generation_eia860_adm1,USA-1-18,n_op_plants,count,216.0,218.0,-2.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,2.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Cannelton Hydroelectric Plant (3 gen, 87.9 MW); Electric City Solar (1 gen, 15.0 MW)"
+energy_generation_eia860_adm1,USA-1-19,n_op_plants,count,265.0,264.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Keokuk (15 gen, 150.0 MW)"
+energy_generation_eia860_adm1,USA-1-20,n_op_plants,count,180.0,180.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-21,n_op_plants,count,61.0,62.0,-1.0,0.0,0.0,0.0,0.0,1.0,1.0,2.0,2.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Cannelton Hydroelectric Plant (3 gen, 87.9 MW) | county_here_state_field_elsewhere: Walter C Beckjord (2 gen, 4.0 MW); Greenup Hydro (3 gen, 70.2 MW)"
+energy_generation_eia860_adm1,USA-1-22,n_op_plants,count,91.0,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-23,n_op_plants,count,270.0,269.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Salmon Falls (3 gen, 1.2 MW)"
+energy_generation_eia860_adm1,USA-1-24,n_op_plants,count,232.0,233.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Dam No. 5 Hydro Station (2 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-25,n_op_plants,count,679.0,679.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-26,n_op_plants,count,269.0,269.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Electric City Solar (1 gen, 15.0 MW) | county_here_state_field_elsewhere: Saxon Falls (2 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-27,n_op_plants,count,782.0,781.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Huneke I CSG (1 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-28,n_op_plants,count,61.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-29,n_op_plants,count,122.0,122.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-30,n_op_plants,count,72.0,72.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-31,n_op_plants,count,134.0,134.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-32,n_op_plants,count,115.0,116.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Hoover Dam (AZ) (10 gen, 1039.7 MW)"
+energy_generation_eia860_adm1,USA-1-33,n_op_plants,count,59.0,63.0,-4.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,4.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Wilder (3 gen, 39.0 MW); Bellows Falls (3 gen, 47.1 MW); Mcindoes (4 gen, 10.2 MW); Salmon Falls (3 gen, 1.2 MW)"
+energy_generation_eia860_adm1,USA-1-34,n_op_plants,count,411.0,411.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-35,n_op_plants,count,158.0,158.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-36,n_op_plants,count,1081.0,1080.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: South Fork Wind (1 gen, 130.0 MW)"
+energy_generation_eia860_adm1,USA-1-37,n_op_plants,count,914.0,915.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Apalachia (2 gen, 82.4 MW)"
+energy_generation_eia860_adm1,USA-1-38,n_op_plants,count,56.0,56.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-39,n_op_plants,count,200.0,198.0,2.0,0.0,0.0,0.0,0.0,2.0,2.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Walter C Beckjord (2 gen, 4.0 MW); Greenup Hydro (3 gen, 70.2 MW)"
+energy_generation_eia860_adm1,USA-1-40,n_op_plants,count,139.0,139.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-41,n_op_plants,count,290.0,285.0,5.0,0.0,0.0,0.0,0.0,5.0,5.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: John Day (11 gen, 1417.0 MW); McNary (12 gen, 850.5 MW); The Dalles (15 gen, 1208.7 MW); Dalles Dam North Fishway Project (1 gen, 5.0 MW); FPL Energy Vansycle LLC (OR) (1 gen, 122.8 MW)"
+energy_generation_eia860_adm1,USA-1-42,n_op_plants,count,262.0,261.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Lake Lynn Hydro Station (4 gen, 52.0 MW)"
+energy_generation_eia860_adm1,USA-1-44,n_op_plants,count,111.0,110.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: Block Island Wind Farm (1 gen, 29.3 MW)"
+energy_generation_eia860_adm1,USA-1-45,n_op_plants,count,210.0,211.0,-1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: Yonah (3 gen, 28.5 MW)"
+energy_generation_eia860_adm1,USA-1-46,n_op_plants,count,48.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-47,n_op_plants,count,98.0,97.0,1.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Apalachia (2 gen, 82.4 MW)"
+energy_generation_eia860_adm1,USA-1-48,n_op_plants,count,1003.0,1003.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-49,n_op_plants,count,123.0,123.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_generation_eia860_adm1,USA-1-50,n_op_plants,count,117.0,114.0,3.0,0.0,0.0,0.0,0.0,3.0,3.0,0.0,0.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Wilder (3 gen, 39.0 MW); Bellows Falls (3 gen, 47.1 MW); Mcindoes (4 gen, 10.2 MW)"
+energy_generation_eia860_adm1,USA-1-51,n_op_plants,count,243.0,242.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,"offshore_no_county: Coastal Virginia Offshore Wind (CVOW) Pi (1 gen, 12.0 MW)"
+energy_generation_eia860_adm1,USA-1-53,n_op_plants,count,127.0,132.0,-5.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,5.0,,,,,,,0.0,,,,,,,,"county_here_state_field_elsewhere: John Day (11 gen, 1417.0 MW); McNary (12 gen, 850.5 MW); The Dalles (15 gen, 1208.7 MW); Dalles Dam North Fishway Project (1 gen, 5.0 MW); FPL Energy Vansycle LLC (OR) (1 gen, 122.8 MW)"
+energy_generation_eia860_adm1,USA-1-54,n_op_plants,count,41.0,41.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Dam No. 5 Hydro Station (2 gen, 1.0 MW) | county_here_state_field_elsewhere: Lake Lynn Hydro Station (4 gen, 52.0 MW)"
+energy_generation_eia860_adm1,USA-1-55,n_op_plants,count,265.0,265.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,,,,,,,0.0,,,,,,,,"state_field_county_elsewhere: Saxon Falls (2 gen, 1.0 MW) | county_here_state_field_elsewhere: Huneke I CSG (1 gen, 1.0 MW)"
+energy_generation_eia860_adm1,USA-1-56,n_op_plants,count,68.0,68.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-01,queue_mw_active,MW,8500.7,8500.7,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-04,queue_mw_active,MW,90639.2525,90914.2525,-275.0,,,,,0.0,0.0,1.0,275.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: Q362 (NC, county code 04021, 275.0 MW)"
+energy_queue_lbnl_adm1,USA-1-05,queue_mw_active,MW,35422.52,35422.52,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-06,queue_mw_active,MW,132374.006177,132374.006177,-0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-08,queue_mw_active,MW,38241.31,38241.31,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-09,queue_mw_active,MW,678.207012,0.0,678.207012,,,,,0.0,0.0,0.0,0.0,7.0,678.207012,0.0,0.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-10,queue_mw_active,MW,505.0,505.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-11,queue_mw_active,MW,0.0,0.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-12,queue_mw_active,MW,23030.009,22892.009,138.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,2.0,138.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-13,queue_mw_active,MW,38251.63,38251.63,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-16,queue_mw_active,MW,12139.405,12139.405,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-17,queue_mw_active,MW,74081.325,73706.325,375.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,2.0,375.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-18,queue_mw_active,MW,58129.74,57063.99,1065.75,,,,,0.0,0.0,0.0,0.0,0.0,0.0,4.0,1065.75,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-19,queue_mw_active,MW,23937.09,23937.09,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-20,queue_mw_active,MW,32371.64,32371.64,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-21,queue_mw_active,MW,20578.62,17108.62,3470.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,13.0,3470.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-22,queue_mw_active,MW,37594.82,37594.82,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-23,queue_mw_active,MW,1029.912991,1029.912991,-0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-24,queue_mw_active,MW,5573.727,5572.737,0.99,,,,,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.99,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-25,queue_mw_active,MW,11209.264975,5886.264975,5323.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,7.0,5323.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-26,queue_mw_active,MW,58488.53,58288.53,200.0,,,,,1.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: J3785 (MI, county code 55059, 200.0 MW)"
+energy_queue_lbnl_adm1,USA-1-27,queue_mw_active,MW,28460.81,28460.81,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-28,queue_mw_active,MW,16124.06,16124.06,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-29,queue_mw_active,MW,29652.96,29652.96,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-30,queue_mw_active,MW,11284.38,11284.38,-0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-31,queue_mw_active,MW,15543.5,15793.5,-250.0,,,,,0.0,0.0,1.0,250.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: BHBE G20 (SD, county code 31045, 250.0 MW)"
+energy_queue_lbnl_adm1,USA-1-32,queue_mw_active,MW,46823.7721,46823.7721,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-33,queue_mw_active,MW,124.99,124.99,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-34,queue_mw_active,MW,14543.993,14542.493,1.5,,,,,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.5,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-35,queue_mw_active,MW,27058.644,26055.644,1003.0,,,,,1.0,1003.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: GEN-2020-065 (NM, county code 48165, 1003.0 MW)"
+energy_queue_lbnl_adm1,USA-1-36,queue_mw_active,MW,25712.6,25712.6,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-37,queue_mw_active,MW,20721.899,20901.899,-180.0,,,,,1.0,275.0,1.0,455.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: Q362 (NC, county code 04021, 275.0 MW) | county_here_state_field_elsewhere: 956747 (SC, county code 37159, 455.0 MW)"
+energy_queue_lbnl_adm1,USA-1-38,queue_mw_active,MW,14499.97,14499.97,-0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-39,queue_mw_active,MW,18376.547,18376.547,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-40,queue_mw_active,MW,52451.532,52451.532,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-41,queue_mw_active,MW,78433.16,78433.16,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-42,queue_mw_active,MW,11386.6204,11386.6204,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-44,queue_mw_active,MW,982.204002,278.204002,704.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,1.0,704.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-45,queue_mw_active,MW,19838.47,19383.47,455.0,,,,,1.0,455.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: 956747 (SC, county code 37159, 455.0 MW)"
+energy_queue_lbnl_adm1,USA-1-46,queue_mw_active,MW,9628.36,9378.36,250.0,,,,,1.0,250.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: BHBE G20 (SD, county code 31045, 250.0 MW)"
+energy_queue_lbnl_adm1,USA-1-47,queue_mw_active,MW,13801.6,13801.6,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-48,queue_mw_active,MW,437216.783,438192.783,-976.0,,,,,0.0,0.0,1.0,1003.0,0.0,0.0,1.0,27.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: GEN-2020-065 (NM, county code 48165, 1003.0 MW)"
+energy_queue_lbnl_adm1,USA-1-49,queue_mw_active,MW,27808.35,27808.35,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-50,queue_mw_active,MW,128.599998,128.599998,-0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-51,queue_mw_active,MW,28813.927,28813.927,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-53,queue_mw_active,MW,40216.489,40216.489,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-54,queue_mw_active,MW,5360.59,5185.09,175.5,,,,,0.0,0.0,0.0,0.0,0.0,0.0,3.0,175.5,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-55,queue_mw_active,MW,26555.32,26755.32,-200.0,,,,,0.0,0.0,1.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: J3785 (MI, county code 55059, 200.0 MW)"
+energy_queue_lbnl_adm1,USA-1-56,queue_mw_active,MW,16175.3,16175.3,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-01,n_active_projects,count,48.0,48.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-04,n_active_projects,count,273.0,274.0,-1.0,,,,,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: Q362 (NC, county code 04021, 275.0 MW)"
+energy_queue_lbnl_adm1,USA-1-05,n_active_projects,count,157.0,157.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-06,n_active_projects,count,460.0,460.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-08,n_active_projects,count,187.0,187.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-09,n_active_projects,count,7.0,0.0,7.0,,,,,0.0,0.0,0.0,0.0,7.0,7.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-10,n_active_projects,count,8.0,8.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-11,n_active_projects,count,0.0,0.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-12,n_active_projects,count,232.0,230.0,2.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,2.0,2.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-13,n_active_projects,count,168.0,168.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-16,n_active_projects,count,64.0,64.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-17,n_active_projects,count,418.0,416.0,2.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,2.0,2.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-18,n_active_projects,count,289.0,285.0,4.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,4.0,4.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-19,n_active_projects,count,123.0,123.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-20,n_active_projects,count,138.0,138.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-21,n_active_projects,count,126.0,113.0,13.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,13.0,13.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-22,n_active_projects,count,140.0,140.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-23,n_active_projects,count,16.0,16.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-24,n_active_projects,count,49.0,48.0,1.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-25,n_active_projects,count,35.0,28.0,7.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,7.0,7.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-26,n_active_projects,count,301.0,300.0,1.0,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: J3785 (MI, county code 55059, 200.0 MW)"
+energy_queue_lbnl_adm1,USA-1-27,n_active_projects,count,153.0,153.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-28,n_active_projects,count,88.0,88.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-29,n_active_projects,count,124.0,124.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-30,n_active_projects,count,45.0,45.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-31,n_active_projects,count,79.0,80.0,-1.0,,,,,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: BHBE G20 (SD, county code 31045, 250.0 MW)"
+energy_queue_lbnl_adm1,USA-1-32,n_active_projects,count,173.0,173.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-33,n_active_projects,count,3.0,3.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-34,n_active_projects,count,66.0,65.0,1.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-35,n_active_projects,count,144.0,143.0,1.0,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: GEN-2020-065 (NM, county code 48165, 1003.0 MW)"
+energy_queue_lbnl_adm1,USA-1-36,n_active_projects,count,187.0,187.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-37,n_active_projects,count,179.0,179.0,0.0,,,,,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: Q362 (NC, county code 04021, 275.0 MW) | county_here_state_field_elsewhere: 956747 (SC, county code 37159, 455.0 MW)"
+energy_queue_lbnl_adm1,USA-1-38,n_active_projects,count,63.0,63.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-39,n_active_projects,count,163.0,163.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-40,n_active_projects,count,239.0,239.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-41,n_active_projects,count,280.0,280.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-42,n_active_projects,count,200.0,200.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-44,n_active_projects,count,3.0,2.0,1.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-45,n_active_projects,count,194.0,193.0,1.0,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: 956747 (SC, county code 37159, 455.0 MW)"
+energy_queue_lbnl_adm1,USA-1-46,n_active_projects,count,48.0,47.0,1.0,,,,,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"state_field_county_elsewhere: BHBE G20 (SD, county code 31045, 250.0 MW)"
+energy_queue_lbnl_adm1,USA-1-47,n_active_projects,count,53.0,53.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-48,n_active_projects,count,1900.0,1900.0,0.0,,,,,0.0,0.0,1.0,1.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: GEN-2020-065 (NM, county code 48165, 1003.0 MW)"
+energy_queue_lbnl_adm1,USA-1-49,n_active_projects,count,141.0,141.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-50,n_active_projects,count,5.0,5.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-51,n_active_projects,count,271.0,271.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-53,n_active_projects,count,182.0,182.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-54,n_active_projects,count,37.0,34.0,3.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,3.0,3.0,0.0,0.0,0.0,,,,,,,,
+energy_queue_lbnl_adm1,USA-1-55,n_active_projects,count,117.0,118.0,-1.0,,,,,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,"county_here_state_field_elsewhere: J3785 (MI, county code 55059, 200.0 MW)"
+energy_queue_lbnl_adm1,USA-1-56,n_active_projects,count,73.0,73.0,0.0,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,,
+energy_demand_nrel8562_adm1,USA-1-01,peak_demand_mw,MW,18003.447766,18009.297688,-5.849922,,,,,,,,,,,,,,,,,,,2023-08-25 21:00 UTC,2188.95885,0.999675,67.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-04,peak_demand_mw,MW,21135.699598,21250.764158,-115.06456,,,,,,,,,,,,,,,,,,,2023-07-26 23:00 UTC,13173.258789,0.994585,15.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-05,peak_demand_mw,MW,10074.548463,10229.435683,-154.887221,,,,,,,,,,,,,,,,,,,2023-08-23 22:00 UTC,1243.596341,0.984859,75.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-06,peak_demand_mw,MW,54687.10368,57906.953548,-3219.849868,,,,,,,,,,,,,,,,,,,2023-08-16 23:00 UTC,15385.24951,0.944396,58.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-08,peak_demand_mw,MW,11113.768732,11186.682803,-72.914071,,,,,,,,,,,,,,,,,,,2023-08-21 23:00 UTC,1474.079011,0.993482,64.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-09,peak_demand_mw,MW,6509.966906,6509.966906,0.0,,,,,,,,,,,,,,,,,,,2023-09-07 20:00 UTC,1782.182524,1.0,9.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-10,peak_demand_mw,MW,2686.226615,2688.258457,-2.031842,,,,,,,,,,,,,,,,,,,2023-07-28 22:00 UTC,1567.83472,0.999244,3.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-11,peak_demand_mw,MW,2223.374467,2223.374467,0.0,,,,,,,,,,,,,,,,,,,2023-07-28 21:00 UTC,2223.374467,1.0,1.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-12,peak_demand_mw,MW,53038.171887,53728.295995,-690.124108,,,,,,,,,,,,,,,,,,,2023-08-09 20:00 UTC,5951.109855,0.987155,67.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-13,peak_demand_mw,MW,29297.367617,29314.899922,-17.532305,,,,,,,,,,,,,,,,,,,2023-08-25 21:00 UTC,2768.473401,0.999402,159.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-16,peak_demand_mw,MW,5079.585334,5266.405181,-186.819847,,,,,,,,,,,,,,,,,,,2023-07-21 00:00 UTC,1479.027218,0.964526,44.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-17,peak_demand_mw,MW,31872.316533,31905.136401,-32.819868,,,,,,,,,,,,,,,,,,,2023-08-24 22:00 UTC,13263.426277,0.998971,102.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-18,peak_demand_mw,MW,19467.132902,19538.68067,-71.547768,,,,,,,,,,,,,,,,,,,2023-08-24 22:00 UTC,2625.099367,0.996338,92.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-19,peak_demand_mw,MW,10823.999574,10857.030136,-33.030562,,,,,,,,,,,,,,,,,,,2023-08-23 22:00 UTC,1702.669549,0.996958,99.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-20,peak_demand_mw,MW,9129.21981,9163.940094,-34.720284,,,,,,,,,,,,,,,,,,,2023-08-21 22:00 UTC,2008.128684,0.996211,105.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-21,peak_demand_mw,MW,14035.427095,14195.18639,-159.759295,,,,,,,,,,,,,,,,,,,2023-08-25 20:00 UTC,2485.057975,0.988746,120.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-22,peak_demand_mw,MW,22101.791646,22118.601481,-16.809835,,,,,,,,,,,,,,,,,,,2023-08-23 22:00 UTC,2448.011444,0.99924,64.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-23,peak_demand_mw,MW,2241.784919,2250.399353,-8.614434,,,,,,,,,,,,,,,,,,,2023-02-04 23:00 UTC,448.885676,0.996172,16.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-24,peak_demand_mw,MW,12434.872283,12466.890114,-32.01783,,,,,,,,,,,,,,,,,,,2023-07-28 21:00 UTC,2096.669073,0.997432,24.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-25,peak_demand_mw,MW,12206.300517,12222.572631,-16.272114,,,,,,,,,,,,,,,,,,,2023-09-07 19:00 UTC,2837.551843,0.998669,14.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-26,peak_demand_mw,MW,19112.441398,19124.380549,-11.939151,,,,,,,,,,,,,,,,,,,2023-09-05 21:00 UTC,3303.77408,0.999376,83.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-27,peak_demand_mw,MW,12144.417532,12171.670687,-27.253155,,,,,,,,,,,,,,,,,,,2023-08-23 00:00 UTC,2630.334821,0.997761,87.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-28,peak_demand_mw,MW,9847.918457,9892.347278,-44.428821,,,,,,,,,,,,,,,,,,,2023-08-23 22:00 UTC,690.843799,0.995509,82.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-29,peak_demand_mw,MW,16134.535713,16277.272457,-142.736743,,,,,,,,,,,,,,,,,,,2023-08-24 22:00 UTC,2463.570699,0.991231,115.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-30,peak_demand_mw,MW,2563.275214,2676.59891,-113.323696,,,,,,,,,,,,,,,,,,,2023-02-23 16:00 UTC,476.20757,0.957661,56.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-31,peak_demand_mw,MW,7381.741915,7445.765023,-64.023107,,,,,,,,,,,,,,,,,,,2023-08-21 22:00 UTC,2201.432815,0.991401,93.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-32,peak_demand_mw,MW,8851.551507,8889.745481,-38.193974,,,,,,,,,,,,,,,,,,,2023-07-21 00:00 UTC,6569.891327,0.995704,17.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-33,peak_demand_mw,MW,2244.123537,2259.882379,-15.758841,,,,,,,,,,,,,,,,,,,2023-09-07 20:00 UTC,658.393637,0.993027,10.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-34,peak_demand_mw,MW,18117.305179,18293.083282,-175.778103,,,,,,,,,,,,,,,,,,,2023-09-07 20:00 UTC,1810.081433,0.990391,21.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-35,peak_demand_mw,MW,5661.244017,5744.821179,-83.577162,,,,,,,,,,,,,,,,,,,2023-07-18 22:00 UTC,1792.72766,0.985452,33.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-36,peak_demand_mw,MW,30573.135275,31328.877505,-755.74223,,,,,,,,,,,,,,,,,,,2023-09-06 21:00 UTC,4030.087945,0.975877,62.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-37,peak_demand_mw,MW,27129.728747,27502.758981,-373.030234,,,,,,,,,,,,,,,,,,,2023-07-27 21:00 UTC,2963.295957,0.986437,100.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-38,peak_demand_mw,MW,4364.554869,4379.340528,-14.785659,,,,,,,,,,,,,,,,,,,2023-09-04 23:00 UTC,1082.88761,0.996624,53.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-39,peak_demand_mw,MW,26730.972202,27125.356761,-394.384558,,,,,,,,,,,,,,,,,,,2023-09-05 21:00 UTC,2854.150908,0.985461,88.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-40,peak_demand_mw,MW,14403.238118,14429.02738,-25.789263,,,,,,,,,,,,,,,,,,,2023-08-21 22:00 UTC,2887.340987,0.998213,77.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-41,peak_demand_mw,MW,10662.774156,11029.918839,-367.144683,,,,,,,,,,,,,,,,,,,2023-08-17 01:00 UTC,2023.828771,0.966714,36.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-42,peak_demand_mw,MW,27811.802401,28193.274621,-381.47222,,,,,,,,,,,,,,,,,,,2023-09-06 21:00 UTC,3683.693878,0.986469,67.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-44,peak_demand_mw,MW,1911.725668,1914.09877,-2.373102,,,,,,,,,,,,,,,,,,,2023-07-28 19:00 UTC,1141.126097,0.99876,5.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-45,peak_demand_mw,MW,16687.842579,16750.612218,-62.769639,,,,,,,,,,,,,,,,,,,2023-08-14 20:00 UTC,1705.595454,0.996253,46.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-46,peak_demand_mw,MW,1954.040329,2008.990593,-54.950263,,,,,,,,,,,,,,,,,,,2023-01-31 15:00 UTC,443.404032,0.972648,66.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-47,peak_demand_mw,MW,20338.759168,20352.069564,-13.310397,,,,,,,,,,,,,,,,,,,2023-08-25 22:00 UTC,2552.456986,0.999346,95.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-48,peak_demand_mw,MW,106960.324154,110240.699781,-3280.375627,,,,,,,,,,,,,,,,,,,2023-08-10 22:00 UTC,17775.734013,0.970244,254.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-49,peak_demand_mw,MW,6198.164489,6222.896957,-24.732468,,,,,,,,,,,,,,,,,,,2023-07-17 22:00 UTC,2174.995638,0.996026,29.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-50,peak_demand_mw,MW,1029.327504,1045.685607,-16.358104,,,,,,,,,,,,,,,,,,,2023-02-23 17:00 UTC,263.499586,0.984357,14.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-51,peak_demand_mw,MW,24911.394024,25386.884378,-475.490354,,,,,,,,,,,,,,,,,,,2023-07-28 21:00 UTC,3306.498014,0.98127,133.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-53,peak_demand_mw,MW,16837.238143,16902.633583,-65.39544,,,,,,,,,,,,,,,,,,,2023-01-30 17:00 UTC,4898.125338,0.996131,39.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-54,peak_demand_mw,MW,5713.780672,5774.688491,-60.907819,,,,,,,,,,,,,,,,,,,2023-09-05 21:00 UTC,547.167536,0.989453,55.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-55,peak_demand_mw,MW,13077.319882,13266.263726,-188.943844,,,,,,,,,,,,,,,,,,,2023-09-05 21:00 UTC,2064.285117,0.985758,72.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_demand_nrel8562_adm1,USA-1-56,peak_demand_mw,MW,2986.465437,3077.646235,-91.180798,,,,,,,,,,,,,,,,,,,2023-07-25 23:00 UTC,490.048875,0.970373,23.0,state value = peak of the hourly sum of its counties; county_sum = sum of county peaks
+energy_transmission_hifld_adm1,USA-1-01,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,15.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,7.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,37.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_ge765,km,476.0,476.0,0.0,,,,,,,,,,,,,,,0.0,29.0,True,475.652748,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,32.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,4.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,79.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,22.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_ge765,km,145.0,145.0,0.0,,,,,,,,,,,,,,,0.0,51.0,True,144.569074,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_ge765,km,984.0,982.0,2.0,,,,,,,,,,,,,,,2.0,46.0,True,983.655485,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,49.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,52.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_ge765,km,414.0,416.0,-2.0,,,,,,,,,,,,,,,-2.0,60.0,True,414.367602,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,32.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,8.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,12.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_ge765,km,25.0,25.0,0.0,,,,,,,,,,,,,,,0.0,41.5,True,25.339947,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,43.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,41.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,57.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,28.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,46.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_ge765,km,463.0,463.0,0.0,,,,,,,,,,,,,,,0.0,8.5,True,463.142212,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,5.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,10.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,16.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_ge765,km,251.0,251.0,0.0,,,,,,,,,,,,,,,0.0,31.0,True,251.202059,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,50.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,26.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_ge765,km,819.0,819.0,0.0,,,,,,,,,,,,,,,0.0,44.0,True,818.827254,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,38.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_ge765,km,427.0,427.0,0.0,,,,,,,,,,,,,,,0.0,18.0,True,426.879525,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,23.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,47.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,127.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,14.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_ge765,km,560.0,560.0,0.0,,,,,,,,,,,,,,,0.0,66.5,True,560.361675,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,19.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_ge765,km,625.0,626.0,-1.0,,,,,,,,,,,,,,,-1.0,27.5,True,624.716644,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,36.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_ge765,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,11.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_v500,km,1471.0,1470.0,1.0,,,,,,,,,,,,,,,1.0,33.5,True,1470.852997,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,15.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_v500,km,4218.0,4220.0,-2.0,,,,,,,,,,,,,,,-2.0,7.5,True,4218.336877,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_v500,km,1529.0,1525.0,4.0,,,,,,,,,,,,,,,4.0,37.5,True,1528.977108,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_v500,km,7605.0,7605.0,0.0,,,,,,,,,,,,,,,0.0,29.0,True,7605.318776,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,32.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,4.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_v500,km,21.0,21.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,21.357508,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_v500,km,2169.0,2168.0,1.0,,,,,,,,,,,,,,,1.0,33.5,True,2169.168876,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_v500,km,2761.0,2760.0,1.0,,,,,,,,,,,,,,,1.0,79.5,True,2760.692111,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_v500,km,568.0,567.0,1.0,,,,,,,,,,,,,,,1.0,22.0,True,568.178154,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,51.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,46.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,49.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,52.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_v500,km,248.0,248.0,0.0,,,,,,,,,,,,,,,0.0,60.0,True,247.722666,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_v500,km,1100.0,1098.0,2.0,,,,,,,,,,,,,,,2.0,32.0,True,1100.044694,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,8.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_v500,km,708.0,710.0,-2.0,,,,,,,,,,,,,,,-2.0,12.0,True,708.206138,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,41.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_v500,km,552.0,552.0,0.0,,,,,,,,,,,,,,,0.0,43.5,True,551.978893,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_v500,km,1101.0,1101.0,0.0,,,,,,,,,,,,,,,0.0,41.0,True,1100.84866,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_v500,km,74.0,74.0,0.0,,,,,,,,,,,,,,,0.0,57.5,True,74.313256,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_v500,km,1713.0,1714.0,-1.0,,,,,,,,,,,,,,,-1.0,28.0,True,1712.965381,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,46.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_v500,km,1573.0,1572.0,1.0,,,,,,,,,,,,,,,1.0,8.5,True,1572.886484,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,5.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_v500,km,673.0,673.0,0.0,,,,,,,,,,,,,,,0.0,10.5,True,672.973406,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_v500,km,55.0,55.0,0.0,,,,,,,,,,,,,,,0.0,16.5,True,54.598111,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_v500,km,29.0,28.0,1.0,,,,,,,,,,,,,,,1.0,31.0,True,29.064919,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_v500,km,1026.0,1023.0,3.0,,,,,,,,,,,,,,,3.0,50.0,True,1025.598565,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,26.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,44.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,38.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_v500,km,3688.0,3688.0,0.0,,,,,,,,,,,,,,,0.0,18.0,True,3688.403315,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_v500,km,2236.0,2235.0,1.0,,,,,,,,,,,,,,,1.0,33.5,True,2235.931324,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_v500,km,405.0,405.0,0.0,,,,,,,,,,,,,,,0.0,23.0,True,404.71577,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_v500,km,2676.0,2676.0,0.0,,,,,,,,,,,,,,,0.0,47.5,True,2675.888049,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_v500,km,270.0,271.0,-1.0,,,,,,,,,,,,,,,-1.0,127.0,True,270.450851,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_v500,km,743.0,743.0,0.0,,,,,,,,,,,,,,,0.0,14.5,True,743.183796,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_v500,km,2189.0,2187.0,2.0,,,,,,,,,,,,,,,2.0,66.5,True,2189.301353,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_v500,km,3735.0,3735.0,0.0,,,,,,,,,,,,,,,0.0,19.5,True,3734.949852,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_v500,km,888.0,888.0,0.0,,,,,,,,,,,,,,,0.0,27.5,True,888.160086,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,36.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_v500,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,11.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,15.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_v345,km,2871.0,2873.0,-2.0,,,,,,,,,,,,,,,-2.0,7.5,True,2871.343422,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_v345,km,194.0,194.0,0.0,,,,,,,,,,,,,,,0.0,37.5,True,193.744833,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_v345,km,222.0,222.0,0.0,,,,,,,,,,,,,,,0.0,29.0,True,222.19617,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_v345,km,2030.0,2032.0,-2.0,,,,,,,,,,,,,,,-2.0,32.0,True,2030.238087,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_v345,km,695.0,694.0,1.0,,,,,,,,,,,,,,,1.0,4.5,True,695.252076,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,79.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_v345,km,1392.0,1392.0,0.0,,,,,,,,,,,,,,,0.0,22.0,True,1392.011766,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_v345,km,6653.0,6651.0,2.0,,,,,,,,,,,,,,,2.0,51.0,True,6653.00499,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_v345,km,5733.0,5729.0,4.0,,,,,,,,,,,,,,,4.0,46.0,True,5733.172039,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_v345,km,2530.0,2527.0,3.0,,,,,,,,,,,,,,,3.0,49.5,True,2529.699832,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_v345,km,3972.0,3965.0,7.0,,,,,,,,,,,,,,,7.0,52.5,True,3971.549048,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_v345,km,1823.0,1823.0,0.0,,,,,,,,,,,,,,,0.0,60.0,True,1822.858378,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_v345,km,196.0,196.0,0.0,,,,,,,,,,,,,,,0.0,32.0,True,196.422597,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_v345,km,1072.0,1073.0,-1.0,,,,,,,,,,,,,,,-1.0,8.0,True,1072.131914,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,12.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_v345,km,1296.0,1297.0,-1.0,,,,,,,,,,,,,,,-1.0,7.0,True,1295.923553,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_v345,km,5706.0,5706.0,0.0,,,,,,,,,,,,,,,0.0,41.5,True,5705.837968,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_v345,km,2826.0,2828.0,-2.0,,,,,,,,,,,,,,,-2.0,43.5,True,2826.425318,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,41.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_v345,km,3098.0,3099.0,-1.0,,,,,,,,,,,,,,,-1.0,57.5,True,3098.476629,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,28.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_v345,km,2967.0,2967.0,0.0,,,,,,,,,,,,,,,0.0,46.5,True,2966.776579,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_v345,km,1369.0,1368.0,1.0,,,,,,,,,,,,,,,1.0,8.5,True,1369.472266,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_v345,km,631.0,632.0,-1.0,,,,,,,,,,,,,,,-1.0,5.0,True,631.32853,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_v345,km,75.0,75.0,0.0,,,,,,,,,,,,,,,0.0,10.5,True,75.391733,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_v345,km,4314.0,4311.0,3.0,,,,,,,,,,,,,,,3.0,16.5,True,4313.585436,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_v345,km,3920.0,3917.0,3.0,,,,,,,,,,,,,,,3.0,31.0,True,3919.560516,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,50.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_v345,km,2650.0,2650.0,0.0,,,,,,,,,,,,,,,0.0,26.5,True,2649.64241,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_v345,km,6324.0,6325.0,-1.0,,,,,,,,,,,,,,,-1.0,44.0,True,6324.063724,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_v345,km,5128.0,5127.0,1.0,,,,,,,,,,,,,,,1.0,38.5,True,5128.061995,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_v345,km,3.0,2.0,1.0,,,,,,,,,,,,,,,1.0,18.0,True,3.074401,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_v345,km,1098.0,1097.0,1.0,,,,,,,,,,,,,,,1.0,33.5,True,1098.064271,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_v345,km,135.0,134.0,1.0,,,,,,,,,,,,,,,1.0,2.5,True,134.577394,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,23.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_v345,km,1493.0,1493.0,0.0,,,,,,,,,,,,,,,0.0,33.0,True,1492.615468,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_v345,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,47.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_v345,km,24261.0,24262.0,-1.0,,,,,,,,,,,,,,,-1.0,127.0,True,24260.674176,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_v345,km,3308.0,3308.0,0.0,,,,,,,,,,,,,,,0.0,14.5,True,3308.314622,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_v345,km,356.0,356.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,356.376274,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_v345,km,114.0,115.0,-1.0,,,,,,,,,,,,,,,-1.0,66.5,True,113.993882,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_v345,km,918.0,918.0,0.0,,,,,,,,,,,,,,,0.0,19.5,True,918.072504,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_v345,km,566.0,566.0,0.0,,,,,,,,,,,,,,,0.0,27.5,True,566.365431,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_v345,km,2729.0,2729.0,0.0,,,,,,,,,,,,,,,0.0,36.0,True,2729.33,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_v345,km,1123.0,1124.0,-1.0,,,,,,,,,,,,,,,-1.0,11.5,True,1123.325731,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_v230,km,3864.0,3868.0,-4.0,,,,,,,,,,,,,,,-4.0,33.5,True,3864.398579,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_v230,km,255.0,255.0,0.0,,,,,,,,,,,,,,,0.0,15.0,True,254.879753,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_v230,km,4341.0,4341.0,0.0,,,,,,,,,,,,,,,0.0,7.5,True,4340.708829,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_v230,km,448.0,448.0,0.0,,,,,,,,,,,,,,,0.0,37.5,True,448.15947,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_v230,km,18281.0,18279.0,2.0,,,,,,,,,,,,,,,2.0,29.0,True,18280.60784,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_v230,km,6493.0,6496.0,-3.0,,,,,,,,,,,,,,,-3.0,32.0,True,6492.77205,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,4.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_v230,km,544.0,544.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,543.779024,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_v230,km,21.0,21.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,21.410027,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_v230,km,10667.0,10669.0,-2.0,,,,,,,,,,,,,,,-2.0,33.5,True,10666.742266,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_v230,km,7473.0,7475.0,-2.0,,,,,,,,,,,,,,,-2.0,79.5,True,7472.662037,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_v230,km,3626.0,3628.0,-2.0,,,,,,,,,,,,,,,-2.0,22.0,True,3625.983769,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_v230,km,224.0,225.0,-1.0,,,,,,,,,,,,,,,-1.0,51.0,True,224.412446,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_v230,km,1280.0,1282.0,-2.0,,,,,,,,,,,,,,,-2.0,46.0,True,1279.781524,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_v230,km,200.0,199.0,1.0,,,,,,,,,,,,,,,1.0,49.5,True,199.879094,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_v230,km,1199.0,1198.0,1.0,,,,,,,,,,,,,,,1.0,52.5,True,1198.791742,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,60.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_v230,km,3353.0,3352.0,1.0,,,,,,,,,,,,,,,1.0,32.0,True,3352.870165,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,8.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_v230,km,2437.0,2437.0,0.0,,,,,,,,,,,,,,,0.0,12.0,True,2436.722887,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_v230,km,251.0,251.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,251.181099,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_v230,km,107.0,107.0,0.0,,,,,,,,,,,,,,,0.0,41.5,True,107.085236,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_v230,km,3127.0,3127.0,0.0,,,,,,,,,,,,,,,0.0,43.5,True,3127.236192,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_v230,km,2186.0,2187.0,-1.0,,,,,,,,,,,,,,,-1.0,41.0,True,2185.737454,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,57.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_v230,km,4475.0,4476.0,-1.0,,,,,,,,,,,,,,,-1.0,28.0,True,4474.913419,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_v230,km,1543.0,1540.0,3.0,,,,,,,,,,,,,,,3.0,46.5,True,1542.800901,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_v230,km,2789.0,2789.0,0.0,,,,,,,,,,,,,,,0.0,8.5,True,2788.804234,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_v230,km,459.0,458.0,1.0,,,,,,,,,,,,,,,1.0,5.0,True,459.318044,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_v230,km,2629.0,2629.0,0.0,,,,,,,,,,,,,,,0.0,10.5,True,2629.083826,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_v230,km,1230.0,1230.0,0.0,,,,,,,,,,,,,,,0.0,16.5,True,1229.593785,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_v230,km,1785.0,1785.0,0.0,,,,,,,,,,,,,,,0.0,31.0,True,1785.452414,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_v230,km,8440.0,8444.0,-4.0,,,,,,,,,,,,,,,-4.0,50.0,True,8440.064776,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_v230,km,4598.0,4598.0,0.0,,,,,,,,,,,,,,,0.0,26.5,True,4598.021883,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,44.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_v230,km,124.0,124.0,0.0,,,,,,,,,,,,,,,0.0,38.5,True,124.098275,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_v230,km,4765.0,4764.0,1.0,,,,,,,,,,,,,,,1.0,18.0,True,4765.017665,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_v230,km,4583.0,4585.0,-2.0,,,,,,,,,,,,,,,-2.0,33.5,True,4582.941365,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_v230,km,6498.0,6498.0,0.0,,,,,,,,,,,,,,,0.0,23.0,True,6497.809835,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_v230,km,3508.0,3509.0,-1.0,,,,,,,,,,,,,,,-1.0,33.0,True,3508.414351,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_v230,km,150.0,151.0,-1.0,,,,,,,,,,,,,,,-1.0,47.5,True,149.738962,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_v230,km,2851.0,2851.0,0.0,,,,,,,,,,,,,,,0.0,127.0,True,2851.303657,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_v230,km,1615.0,1616.0,-1.0,,,,,,,,,,,,,,,-1.0,14.5,True,1614.597182,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_v230,km,91.0,90.0,1.0,,,,,,,,,,,,,,,1.0,7.0,True,90.669843,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_v230,km,3853.0,3852.0,1.0,,,,,,,,,,,,,,,1.0,66.5,True,3852.566733,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_v230,km,7912.0,7913.0,-1.0,,,,,,,,,,,,,,,-1.0,19.5,True,7912.096375,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_v230,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,27.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_v230,km,152.0,153.0,-1.0,,,,,,,,,,,,,,,-1.0,36.0,True,151.983904,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_v230,km,5841.0,5839.0,2.0,,,,,,,,,,,,,,,2.0,11.5,True,5840.947391,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_v138,km,3529.0,3530.0,-1.0,,,,,,,,,,,,,,,-1.0,33.5,True,3529.251981,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_v138,km,1158.0,1157.0,1.0,,,,,,,,,,,,,,,1.0,15.0,True,1158.205489,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_v138,km,1189.0,1189.0,0.0,,,,,,,,,,,,,,,0.0,7.5,True,1188.560889,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_v138,km,4819.0,4821.0,-2.0,,,,,,,,,,,,,,,-2.0,37.5,True,4819.232972,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_v138,km,3228.0,3228.0,0.0,,,,,,,,,,,,,,,0.0,29.0,True,3228.197858,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_v138,km,1058.0,1059.0,-1.0,,,,,,,,,,,,,,,-1.0,32.0,True,1058.320895,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,4.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_v138,km,534.0,534.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,534.18199,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_v138,km,42.0,42.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,41.668694,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_v138,km,3160.0,3158.0,2.0,,,,,,,,,,,,,,,2.0,33.5,True,3159.918535,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_v138,km,306.0,305.0,1.0,,,,,,,,,,,,,,,1.0,79.5,True,305.793209,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_v138,km,319.0,319.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,319.137657,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_v138,km,3431.0,3432.0,-1.0,,,,,,,,,,,,,,,-1.0,22.0,True,3430.920717,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_v138,km,11121.0,11121.0,0.0,,,,,,,,,,,,,,,0.0,51.0,True,11121.47035,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_v138,km,8492.0,8495.0,-3.0,,,,,,,,,,,,,,,-3.0,46.0,True,8491.94925,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_v138,km,5682.0,5683.0,-1.0,,,,,,,,,,,,,,,-1.0,49.5,True,5682.432415,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_v138,km,2498.0,2498.0,0.0,,,,,,,,,,,,,,,0.0,52.5,True,2497.713804,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_v138,km,7989.0,7994.0,-5.0,,,,,,,,,,,,,,,-5.0,60.0,True,7989.455058,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_v138,km,2459.0,2458.0,1.0,,,,,,,,,,,,,,,1.0,32.0,True,2458.866049,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,8.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_v138,km,809.0,809.0,0.0,,,,,,,,,,,,,,,0.0,12.0,True,808.778425,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_v138,km,8473.0,8477.0,-4.0,,,,,,,,,,,,,,,-4.0,41.5,True,8473.127083,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_v138,km,1478.0,1479.0,-1.0,,,,,,,,,,,,,,,-1.0,43.5,True,1478.23822,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_v138,km,3677.0,3677.0,0.0,,,,,,,,,,,,,,,0.0,41.0,True,3677.232329,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_v138,km,11265.0,11264.0,1.0,,,,,,,,,,,,,,,1.0,57.5,True,11264.513996,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_v138,km,308.0,309.0,-1.0,,,,,,,,,,,,,,,-1.0,28.0,True,307.929846,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_v138,km,696.0,696.0,0.0,,,,,,,,,,,,,,,0.0,46.5,True,695.724519,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_v138,km,897.0,896.0,1.0,,,,,,,,,,,,,,,1.0,8.5,True,897.079788,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,5.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_v138,km,432.0,430.0,2.0,,,,,,,,,,,,,,,2.0,10.5,True,431.804663,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_v138,km,33.0,33.0,0.0,,,,,,,,,,,,,,,0.0,16.5,True,33.042554,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_v138,km,507.0,506.0,1.0,,,,,,,,,,,,,,,1.0,31.0,True,506.588296,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_v138,km,763.0,762.0,1.0,,,,,,,,,,,,,,,1.0,50.0,True,763.208206,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,26.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_v138,km,12745.0,12744.0,1.0,,,,,,,,,,,,,,,1.0,44.0,True,12744.817665,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_v138,km,13077.0,13077.0,0.0,,,,,,,,,,,,,,,0.0,38.5,True,13076.886593,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_v138,km,396.0,395.0,1.0,,,,,,,,,,,,,,,1.0,18.0,True,395.978469,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_v138,km,3882.0,3882.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,3881.577247,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,23.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_v138,km,91.0,91.0,0.0,,,,,,,,,,,,,,,0.0,33.0,True,91.293166,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_v138,km,13091.0,13091.0,0.0,,,,,,,,,,,,,,,0.0,47.5,True,13090.789378,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_v138,km,39587.0,39581.0,6.0,,,,,,,,,,,,,,,6.0,127.0,True,39587.457881,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_v138,km,3665.0,3664.0,1.0,,,,,,,,,,,,,,,1.0,14.5,True,3664.837969,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_v138,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_v138,km,3518.0,3519.0,-1.0,,,,,,,,,,,,,,,-1.0,66.5,True,3517.682157,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_v138,km,621.0,621.0,0.0,,,,,,,,,,,,,,,0.0,19.5,True,620.743018,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_v138,km,5453.0,5452.0,1.0,,,,,,,,,,,,,,,1.0,27.5,True,5453.306029,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_v138,km,6472.0,6473.0,-1.0,,,,,,,,,,,,,,,-1.0,36.0,True,6472.486983,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_v138,km,420.0,420.0,0.0,,,,,,,,,,,,,,,0.0,11.5,True,419.564315,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_v115,km,9524.0,9522.0,2.0,,,,,,,,,,,,,,,2.0,33.5,True,9523.660086,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_v115,km,1189.0,1190.0,-1.0,,,,,,,,,,,,,,,-1.0,15.0,True,1189.213501,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_v115,km,1676.0,1677.0,-1.0,,,,,,,,,,,,,,,-1.0,7.5,True,1675.956113,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_v115,km,3667.0,3669.0,-2.0,,,,,,,,,,,,,,,-2.0,37.5,True,3667.146755,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_v115,km,12315.0,12313.0,2.0,,,,,,,,,,,,,,,2.0,29.0,True,12314.914879,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_v115,km,8814.0,8812.0,2.0,,,,,,,,,,,,,,,2.0,32.0,True,8814.430476,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_v115,km,2196.0,2197.0,-1.0,,,,,,,,,,,,,,,-1.0,4.5,True,2196.247271,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_v115,km,39.0,39.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,39.204121,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_v115,km,5788.0,5788.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,5788.280996,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_v115,km,11714.0,11720.0,-6.0,,,,,,,,,,,,,,,-6.0,79.5,True,11714.143652,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_v115,km,2006.0,2006.0,0.0,,,,,,,,,,,,,,,0.0,22.0,True,2005.885825,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,51.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,46.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_v115,km,428.0,430.0,-2.0,,,,,,,,,,,,,,,-2.0,49.5,True,428.425627,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_v115,km,5852.0,5851.0,1.0,,,,,,,,,,,,,,,1.0,52.5,True,5851.606819,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,60.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_v115,km,2243.0,2242.0,1.0,,,,,,,,,,,,,,,1.0,32.0,True,2242.839033,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_v115,km,2452.0,2453.0,-1.0,,,,,,,,,,,,,,,-1.0,8.0,True,2452.059079,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_v115,km,1120.0,1119.0,1.0,,,,,,,,,,,,,,,1.0,12.0,True,1119.685672,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_v115,km,3375.0,3376.0,-1.0,,,,,,,,,,,,,,,-1.0,7.0,True,3375.457439,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_v115,km,2577.0,2579.0,-2.0,,,,,,,,,,,,,,,-2.0,41.5,True,2577.477732,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_v115,km,6359.0,6360.0,-1.0,,,,,,,,,,,,,,,-1.0,43.5,True,6359.241223,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_v115,km,5101.0,5100.0,1.0,,,,,,,,,,,,,,,1.0,41.0,True,5100.962048,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,57.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_v115,km,5103.0,5106.0,-3.0,,,,,,,,,,,,,,,-3.0,28.0,True,5103.228896,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_v115,km,6050.0,6049.0,1.0,,,,,,,,,,,,,,,1.0,46.5,True,6050.136781,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_v115,km,2464.0,2466.0,-2.0,,,,,,,,,,,,,,,-2.0,8.5,True,2464.114385,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_v115,km,1420.0,1420.0,0.0,,,,,,,,,,,,,,,0.0,5.0,True,1420.391072,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_v115,km,85.0,85.0,0.0,,,,,,,,,,,,,,,0.0,10.5,True,85.294949,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_v115,km,5807.0,5808.0,-1.0,,,,,,,,,,,,,,,-1.0,16.5,True,5807.462904,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_v115,km,10762.0,10760.0,2.0,,,,,,,,,,,,,,,2.0,31.0,True,10762.145391,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_v115,km,3815.0,3814.0,1.0,,,,,,,,,,,,,,,1.0,50.0,True,3814.507245,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_v115,km,5984.0,5983.0,1.0,,,,,,,,,,,,,,,1.0,26.5,True,5983.834687,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,44.0,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_v115,km,340.0,340.0,0.0,,,,,,,,,,,,,,,0.0,38.5,True,339.798695,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_v115,km,8295.0,8297.0,-2.0,,,,,,,,,,,,,,,-2.0,18.0,True,8295.073009,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_v115,km,2732.0,2734.0,-2.0,,,,,,,,,,,,,,,-2.0,33.5,True,2732.388998,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_v115,km,451.0,451.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,450.658972,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_v115,km,6788.0,6788.0,0.0,,,,,,,,,,,,,,,0.0,23.0,True,6788.224266,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_v115,km,4117.0,4116.0,1.0,,,,,,,,,,,,,,,1.0,33.0,True,4117.436147,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_v115,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,47.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_v115,km,4169.0,4172.0,-3.0,,,,,,,,,,,,,,,-3.0,127.0,True,4169.250773,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_v115,km,2328.0,2329.0,-1.0,,,,,,,,,,,,,,,-1.0,14.5,True,2327.567751,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_v115,km,806.0,804.0,2.0,,,,,,,,,,,,,,,2.0,7.0,True,805.726917,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_v115,km,3226.0,3227.0,-1.0,,,,,,,,,,,,,,,-1.0,66.5,True,3225.513865,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_v115,km,10216.0,10216.0,0.0,,,,,,,,,,,,,,,0.0,19.5,True,10215.678907,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_v115,km,9.0,9.0,0.0,,,,,,,,,,,,,,,0.0,27.5,True,9.131216,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_v115,km,1656.0,1656.0,0.0,,,,,,,,,,,,,,,0.0,36.0,True,1656.462612,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_v115,km,2638.0,2636.0,2.0,,,,,,,,,,,,,,,2.0,11.5,True,2638.01703,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_v69,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_v69,km,32.0,32.0,0.0,,,,,,,,,,,,,,,0.0,15.0,True,32.049666,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_v69,km,3236.0,3235.0,1.0,,,,,,,,,,,,,,,1.0,7.5,True,3235.884494,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_v69,km,2535.0,2533.0,2.0,,,,,,,,,,,,,,,2.0,37.5,True,2534.729958,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_v69,km,4621.0,4620.0,1.0,,,,,,,,,,,,,,,1.0,29.0,True,4620.641973,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_v69,km,2765.0,2765.0,0.0,,,,,,,,,,,,,,,0.0,32.0,True,2765.480526,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_v69,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,4.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_v69,km,266.0,266.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,266.442296,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_v69,km,23.0,23.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,23.18222,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_v69,km,4571.0,4571.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,4570.849916,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_v69,km,205.0,205.0,0.0,,,,,,,,,,,,,,,0.0,79.5,True,204.991758,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_v69,km,552.0,551.0,1.0,,,,,,,,,,,,,,,1.0,2.5,True,551.869895,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_v69,km,2751.0,2751.0,0.0,,,,,,,,,,,,,,,0.0,22.0,True,2750.855855,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_v69,km,5464.0,5460.0,4.0,,,,,,,,,,,,,,,4.0,51.0,True,5463.766964,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_v69,km,5645.0,5645.0,0.0,,,,,,,,,,,,,,,0.0,46.0,True,5644.996204,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_v69,km,5897.0,5897.0,0.0,,,,,,,,,,,,,,,0.0,49.5,True,5896.883907,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_v69,km,2760.0,2758.0,2.0,,,,,,,,,,,,,,,2.0,52.5,True,2759.987132,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_v69,km,10102.0,10098.0,4.0,,,,,,,,,,,,,,,4.0,60.0,True,10102.075494,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_v69,km,1622.0,1620.0,2.0,,,,,,,,,,,,,,,2.0,32.0,True,1621.705336,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_v69,km,517.0,517.0,0.0,,,,,,,,,,,,,,,0.0,8.0,True,517.218602,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_v69,km,1241.0,1242.0,-1.0,,,,,,,,,,,,,,,-1.0,12.0,True,1240.976374,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_v69,km,579.0,579.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,578.645407,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_v69,km,3221.0,3221.0,0.0,,,,,,,,,,,,,,,0.0,41.5,True,3220.792075,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_v69,km,9584.0,9583.0,1.0,,,,,,,,,,,,,,,1.0,43.5,True,9583.850381,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_v69,km,1361.0,1360.0,1.0,,,,,,,,,,,,,,,1.0,41.0,True,1360.697257,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_v69,km,7462.0,7459.0,3.0,,,,,,,,,,,,,,,3.0,57.5,True,7462.235536,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_v69,km,9418.0,9421.0,-3.0,,,,,,,,,,,,,,,-3.0,28.0,True,9418.494475,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_v69,km,4635.0,4633.0,2.0,,,,,,,,,,,,,,,2.0,46.5,True,4634.721067,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_v69,km,221.0,221.0,0.0,,,,,,,,,,,,,,,0.0,8.5,True,220.732493,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_v69,km,31.0,31.0,0.0,,,,,,,,,,,,,,,0.0,5.0,True,30.594436,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_v69,km,232.0,232.0,0.0,,,,,,,,,,,,,,,0.0,10.5,True,232.411006,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_v69,km,2806.0,2806.0,0.0,,,,,,,,,,,,,,,0.0,16.5,True,2806.401856,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_v69,km,1182.0,1180.0,2.0,,,,,,,,,,,,,,,2.0,31.0,True,1181.926744,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_v69,km,6268.0,6271.0,-3.0,,,,,,,,,,,,,,,-3.0,50.0,True,6267.70568,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_v69,km,2899.0,2903.0,-4.0,,,,,,,,,,,,,,,-4.0,26.5,True,2899.365526,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_v69,km,2994.0,2995.0,-1.0,,,,,,,,,,,,,,,-1.0,44.0,True,2994.466133,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_v69,km,7537.0,7540.0,-3.0,,,,,,,,,,,,,,,-3.0,38.5,True,7537.425922,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_v69,km,2263.0,2263.0,0.0,,,,,,,,,,,,,,,0.0,18.0,True,2263.223305,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_v69,km,3285.0,3284.0,1.0,,,,,,,,,,,,,,,1.0,33.5,True,3285.187874,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_v69,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_v69,km,6428.0,6429.0,-1.0,,,,,,,,,,,,,,,-1.0,23.0,True,6428.237969,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_v69,km,5058.0,5060.0,-2.0,,,,,,,,,,,,,,,-2.0,33.0,True,5058.199042,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_v69,km,2767.0,2767.0,0.0,,,,,,,,,,,,,,,0.0,47.5,True,2766.883939,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_v69,km,20174.0,20176.0,-2.0,,,,,,,,,,,,,,,-2.0,127.0,True,20173.78404,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_v69,km,3120.0,3119.0,1.0,,,,,,,,,,,,,,,1.0,14.5,True,3119.778622,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_v69,km,99.0,99.0,0.0,,,,,,,,,,,,,,,0.0,7.0,True,99.109972,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_v69,km,740.0,739.0,1.0,,,,,,,,,,,,,,,1.0,66.5,True,739.649173,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_v69,km,2149.0,2150.0,-1.0,,,,,,,,,,,,,,,-1.0,19.5,True,2149.459901,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_v69,km,522.0,523.0,-1.0,,,,,,,,,,,,,,,-1.0,27.5,True,521.572101,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_v69,km,8257.0,8255.0,2.0,,,,,,,,,,,,,,,2.0,36.0,True,8256.826642,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_v69,km,3044.0,3047.0,-3.0,,,,,,,,,,,,,,,-3.0,11.5,True,3044.182573,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_lt69_unknown,km,4672.0,4670.0,2.0,,,,,,,,,,,,,,,2.0,33.5,True,4671.90289,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_lt69_unknown,km,178.0,178.0,0.0,,,,,,,,,,,,,,,0.0,15.0,True,177.920117,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_lt69_unknown,km,2149.0,2148.0,1.0,,,,,,,,,,,,,,,1.0,7.5,True,2149.07936,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_lt69_unknown,km,1012.0,1015.0,-3.0,,,,,,,,,,,,,,,-3.0,37.5,True,1012.089244,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_lt69_unknown,km,15656.0,15656.0,0.0,,,,,,,,,,,,,,,0.0,29.0,True,15655.641174,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_lt69_unknown,km,697.0,699.0,-2.0,,,,,,,,,,,,,,,-2.0,32.0,True,696.674652,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_lt69_unknown,km,56.0,57.0,-1.0,,,,,,,,,,,,,,,-1.0,4.5,True,55.757882,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_lt69_unknown,km,124.0,124.0,0.0,,,,,,,,,,,,,,,0.0,1.5,True,123.89771,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_lt69_unknown,km,0.0,0.0,0.0,,,,,,,,,,,,,,,0.0,0.5,True,0.0,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_lt69_unknown,km,3275.0,3276.0,-1.0,,,,,,,,,,,,,,,-1.0,33.5,True,3275.256652,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_lt69_unknown,km,4087.0,4088.0,-1.0,,,,,,,,,,,,,,,-1.0,79.5,True,4086.997807,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_lt69_unknown,km,379.0,379.0,0.0,,,,,,,,,,,,,,,0.0,2.5,True,378.835145,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_lt69_unknown,km,793.0,794.0,-1.0,,,,,,,,,,,,,,,-1.0,22.0,True,792.545877,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_lt69_unknown,km,1897.0,1894.0,3.0,,,,,,,,,,,,,,,3.0,51.0,True,1896.90656,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_lt69_unknown,km,1812.0,1811.0,1.0,,,,,,,,,,,,,,,1.0,46.0,True,1812.164075,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_lt69_unknown,km,806.0,806.0,0.0,,,,,,,,,,,,,,,0.0,49.5,True,806.406246,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_lt69_unknown,km,2160.0,2159.0,1.0,,,,,,,,,,,,,,,1.0,52.5,True,2159.691574,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_lt69_unknown,km,1077.0,1074.0,3.0,,,,,,,,,,,,,,,3.0,60.0,True,1077.166783,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_lt69_unknown,km,3682.0,3680.0,2.0,,,,,,,,,,,,,,,2.0,32.0,True,3681.648818,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_lt69_unknown,km,824.0,824.0,0.0,,,,,,,,,,,,,,,0.0,8.0,True,823.59449,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_lt69_unknown,km,334.0,332.0,2.0,,,,,,,,,,,,,,,2.0,12.0,True,333.748787,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_lt69_unknown,km,328.0,327.0,1.0,,,,,,,,,,,,,,,1.0,7.0,True,327.921989,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_lt69_unknown,km,2622.0,2623.0,-1.0,,,,,,,,,,,,,,,-1.0,41.5,True,2621.814416,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_lt69_unknown,km,2864.0,2861.0,3.0,,,,,,,,,,,,,,,3.0,43.5,True,2864.381212,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_lt69_unknown,km,1901.0,1903.0,-2.0,,,,,,,,,,,,,,,-2.0,41.0,True,1901.164623,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_lt69_unknown,km,1712.0,1708.0,4.0,,,,,,,,,,,,,,,4.0,57.5,True,1711.797037,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_lt69_unknown,km,463.0,465.0,-2.0,,,,,,,,,,,,,,,-2.0,28.0,True,463.173698,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_lt69_unknown,km,1792.0,1793.0,-1.0,,,,,,,,,,,,,,,-1.0,46.5,True,1792.011678,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_lt69_unknown,km,794.0,794.0,0.0,,,,,,,,,,,,,,,0.0,8.5,True,793.670638,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_lt69_unknown,km,176.0,176.0,0.0,,,,,,,,,,,,,,,0.0,5.0,True,176.118481,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_lt69_unknown,km,949.0,949.0,0.0,,,,,,,,,,,,,,,0.0,10.5,True,948.577178,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_lt69_unknown,km,290.0,289.0,1.0,,,,,,,,,,,,,,,1.0,16.5,True,289.586711,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_lt69_unknown,km,4816.0,4822.0,-6.0,,,,,,,,,,,,,,,-6.0,31.0,True,4816.48433,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_lt69_unknown,km,6262.0,6262.0,0.0,,,,,,,,,,,,,,,0.0,50.0,True,6262.16211,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_lt69_unknown,km,6382.0,6379.0,3.0,,,,,,,,,,,,,,,3.0,26.5,True,6381.8486,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_lt69_unknown,km,4001.0,3995.0,6.0,,,,,,,,,,,,,,,6.0,44.0,True,4000.60048,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_lt69_unknown,km,1152.0,1151.0,1.0,,,,,,,,,,,,,,,1.0,38.5,True,1152.148035,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_lt69_unknown,km,324.0,326.0,-2.0,,,,,,,,,,,,,,,-2.0,18.0,True,324.035012,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_lt69_unknown,km,2468.0,2468.0,0.0,,,,,,,,,,,,,,,0.0,33.5,True,2467.63242,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_lt69_unknown,km,121.0,123.0,-2.0,,,,,,,,,,,,,,,-2.0,2.5,True,121.47272,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_lt69_unknown,km,2868.0,2868.0,0.0,,,,,,,,,,,,,,,0.0,23.0,True,2868.057694,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_lt69_unknown,km,3414.0,3411.0,3.0,,,,,,,,,,,,,,,3.0,33.0,True,3414.490468,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_lt69_unknown,km,2806.0,2807.0,-1.0,,,,,,,,,,,,,,,-1.0,47.5,True,2805.7409,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_lt69_unknown,km,1963.0,1955.0,8.0,,,,,,,,,,,,,,,8.0,127.0,True,1962.895454,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_lt69_unknown,km,725.0,726.0,-1.0,,,,,,,,,,,,,,,-1.0,14.5,True,724.599791,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_lt69_unknown,km,1377.0,1376.0,1.0,,,,,,,,,,,,,,,1.0,7.0,True,1376.606542,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_lt69_unknown,km,2517.0,2511.0,6.0,,,,,,,,,,,,,,,6.0,66.5,True,2517.115883,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_lt69_unknown,km,366.0,364.0,2.0,,,,,,,,,,,,,,,2.0,19.5,True,366.176847,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_lt69_unknown,km,1583.0,1581.0,2.0,,,,,,,,,,,,,,,2.0,27.5,True,1582.989631,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_lt69_unknown,km,1325.0,1324.0,1.0,,,,,,,,,,,,,,,1.0,36.0,True,1325.406853,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_lt69_unknown,km,1133.0,1132.0,1.0,,,,,,,,,,,,,,,1.0,11.5,True,1132.869504,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-01,km_total,km,23060.0,23060.0,0.0,,,,,,,,,,,,,,,0.0,268.0,True,23060.066532,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-02,km_total,km,2812.0,2812.0,0.0,,,,,,,,,,,,,,,0.0,120.0,True,2812.268527,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-04,km_total,km,19680.0,19683.0,-3.0,,,,,,,,,,,,,,,-3.0,60.0,True,19679.869984,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-05,km_total,km,14204.0,14205.0,-1.0,,,,,,,,,,,,,,,-1.0,300.0,True,14204.08034,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-06,km_total,km,62404.0,62399.0,5.0,,,,,,,,,,,,,,,5.0,232.0,True,62403.171417,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-08,km_total,km,21857.0,21863.0,-6.0,,,,,,,,,,,,,,,-6.0,256.0,True,21857.916685,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-09,km_total,km,2947.0,2948.0,-1.0,,,,,,,,,,,,,,,-1.0,36.0,True,2947.257228,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-10,km_total,km,1489.0,1489.0,0.0,,,,,,,,,,,,,,,0.0,12.0,True,1489.658527,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-11,km_total,km,125.0,125.0,0.0,,,,,,,,,,,,,,,0.0,4.0,True,125.465061,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-12,km_total,km,29630.0,29630.0,0.0,,,,,,,,,,,,,,,0.0,268.0,True,29630.21724,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-13,km_total,km,26546.0,26553.0,-7.0,,,,,,,,,,,,,,,-7.0,636.0,True,26545.280573,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-15,km_total,km,1250.0,1249.0,1.0,,,,,,,,,,,,,,,1.0,20.0,True,1249.842697,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-16,km_total,km,14567.0,14570.0,-3.0,,,,,,,,,,,,,,,-3.0,176.0,True,14566.381963,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-17,km_total,km,25504.0,25496.0,8.0,,,,,,,,,,,,,,,8.0,408.0,True,25504.130384,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-18,km_total,km,23946.0,23944.0,2.0,,,,,,,,,,,,,,,2.0,368.0,True,23945.718577,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-19,km_total,km,15543.0,15542.0,1.0,,,,,,,,,,,,,,,1.0,396.0,True,15543.727121,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-20,km_total,km,18441.0,18429.0,12.0,,,,,,,,,,,,,,,12.0,420.0,True,18439.340117,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-21,km_total,km,21653.0,21653.0,0.0,,,,,,,,,,,,,,,0.0,480.0,True,21653.645981,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-22,km_total,km,14655.0,14646.0,9.0,,,,,,,,,,,,,,,9.0,256.0,True,14654.396692,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-23,km_total,km,4865.0,4867.0,-2.0,,,,,,,,,,,,,,,-2.0,64.0,True,4865.004084,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-24,km_total,km,6649.0,6649.0,0.0,,,,,,,,,,,,,,,0.0,96.0,True,6648.118283,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-25,km_total,km,5829.0,5830.0,-1.0,,,,,,,,,,,,,,,-1.0,56.0,True,5829.129487,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-26,km_total,km,22731.0,22738.0,-7.0,,,,,,,,,,,,,,,-7.0,332.0,True,22731.474457,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-27,km_total,km,26790.0,26790.0,0.0,,,,,,,,,,,,,,,0.0,348.0,True,26791.35144,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-28,km_total,km,15327.0,15328.0,-1.0,,,,,,,,,,,,,,,-1.0,328.0,True,15326.642371,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-29,km_total,km,23611.0,23604.0,7.0,,,,,,,,,,,,,,,7.0,460.0,True,23611.336454,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-30,km_total,km,21480.0,21491.0,-11.0,,,,,,,,,,,,,,,-11.0,224.0,True,21480.705715,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-31,km_total,km,17683.0,17678.0,5.0,,,,,,,,,,,,,,,5.0,372.0,True,17682.171526,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-32,km_total,km,10570.0,10569.0,1.0,,,,,,,,,,,,,,,1.0,68.0,True,10569.9025,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-33,km_total,km,2717.0,2717.0,0.0,,,,,,,,,,,,,,,0.0,40.0,True,2717.750563,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-34,km_total,km,5075.0,5073.0,2.0,,,,,,,,,,,,,,,2.0,84.0,True,5075.536761,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-35,km_total,km,14535.0,14532.0,3.0,,,,,,,,,,,,,,,3.0,132.0,True,14534.271357,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-36,km_total,km,23252.0,23249.0,3.0,,,,,,,,,,,,,,,3.0,248.0,True,23252.424669,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-37,km_total,km,26574.0,26576.0,-2.0,,,,,,,,,,,,,,,-2.0,400.0,True,26573.246582,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-38,km_total,km,22513.0,22513.0,0.0,,,,,,,,,,,,,,,0.0,212.0,True,22512.713106,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-39,km_total,km,26883.0,26878.0,5.0,,,,,,,,,,,,,,,5.0,352.0,True,26882.775256,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-40,km_total,km,27358.0,27359.0,-1.0,,,,,,,,,,,,,,,-1.0,308.0,True,27358.419515,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-41,km_total,km,20161.0,20162.0,-1.0,,,,,,,,,,,,,,,-1.0,144.0,True,20161.684702,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-42,km_total,km,20284.0,20285.0,-1.0,,,,,,,,,,,,,,,-1.0,268.0,True,20283.723499,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-44,km_total,km,707.0,708.0,-1.0,,,,,,,,,,,,,,,-1.0,20.0,True,706.709086,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-45,km_total,km,22987.0,22988.0,-1.0,,,,,,,,,,,,,,,-1.0,184.0,True,22987.045534,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-46,km_total,km,17681.0,17680.0,1.0,,,,,,,,,,,,,,,1.0,264.0,True,17682.448641,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-47,km_total,km,21490.0,21492.0,-2.0,,,,,,,,,,,,,,,-2.0,380.0,True,21489.041229,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-48,km_total,km,93275.0,93268.0,7.0,,,,,,,,,,,,,,,7.0,1016.0,True,93275.816831,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-49,km_total,km,15504.0,15505.0,-1.0,,,,,,,,,,,,,,,-1.0,116.0,True,15502.879733,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-50,km_total,km,2729.0,2725.0,4.0,,,,,,,,,,,,,,,4.0,56.0,True,2728.489548,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-51,km_total,km,16717.0,16710.0,7.0,,,,,,,,,,,,,,,7.0,532.0,True,16716.18472,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-53,km_total,km,25917.0,25917.0,0.0,,,,,,,,,,,,,,,0.0,156.0,True,25917.177403,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-54,km_total,km,9646.0,9645.0,1.0,,,,,,,,,,,,,,,1.0,220.0,True,9646.241138,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-55,km_total,km,20591.0,20590.0,1.0,,,,,,,,,,,,,,,1.0,288.0,True,20592.496994,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only
+energy_transmission_hifld_adm1,USA-1-56,km_total,km,14199.0,14198.0,1.0,,,,,,,,,,,,,,,1.0,92.0,True,14198.906545,,,,,difference = state (rounded once) minus sum of rounded county km: rounding only

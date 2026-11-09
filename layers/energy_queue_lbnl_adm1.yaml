@@ -14,26 +14,26 @@ frame:
   - name
   - coverage_status
   - coverage_note
-  outside_note: 'Not processed: this release covers only the contiguous United States and the District of Columbia.'
+  outside_note: 'Not covered: the source collects no interconnection queue data for Alaska or Hawaii.'
 input:
-  table: data\conus\layer_queue_lbnl_adm1_20261107.csv
+  table: data\conus\layer_queue_lbnl_adm1_20261108.csv
   key: unit_id
-  legacy_meta: data\conus\layer_queue_lbnl_adm1_meta.json
+  legacy_meta: data\conus\layer_queue_lbnl_adm1_20261108_meta.json
   coverage_column: coverage_status
   coverage_note_column: coverage_note
-  coverage_note_text: 'Not processed: this release covers only the contiguous United States and the District of Columbia.'
+  coverage_note_text: 'Not covered: the source collects no interconnection queue data for Alaska or Hawaii.'
 description: Capacity of the active interconnection requests in the Queued Up data file (2026 edition), summed by the state
   named in each request, with the number of those requests. These are generation and storage projects asking to connect
   to the grid, not electricity users. A state with no active request in the file has the value 0. Unlike the county layer,
-  Connecticut is covered, and requests without a county code are counted. Alaska and Hawaii are not covered and have empty
-  values.
+  Connecticut is covered, and requests without a county code are counted. Alaska and Hawaii are not covered, because the
+  source collects no data for them, and have empty values.
 fields:
 - name: queue_mw_active
   type: number
   unit: MW
   nullable: true
   null_meaning:
-    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
+    not_covered: The state is Alaska or Hawaii, for which the source collects no queue data.
     covered: null
   description: Sum of the capacity of the active requests whose state field names the state; for each request, the largest
     of its capacity values (mw1 to mw3). 0 means the file has no active request in this state.
@@ -43,7 +43,7 @@ fields:
   type: integer
   nullable: true
   null_meaning:
-    not_covered: The state is Alaska or Hawaii, which this release does not cover; it was not processed.
+    not_covered: The state is Alaska or Hawaii, for which the source collects no queue data.
     covered: null
   description: Number of active requests whose state field names the state. 0 means none.
   fill_na_covered: 0
@@ -105,7 +105,7 @@ freshness:
 coverage:
   geography: Contiguous United States and the District of Columbia
   known_gaps:
-  - Alaska and Hawaii are not covered.
+  - "Alaska and Hawaii are not covered: the Queued Up report states that no data was collected for them."
   - The state values include 35 active requests that have a state but no county code (11,280.7 MW) and the seven active
     Connecticut requests (678.2 MW). The county layer has neither, so a state value can exceed the sum of its counties.
   - 'Five requests name one state and carry the county code of another: Q362 (North Carolina; county code in Arizona, 275.0
@@ -201,6 +201,7 @@ checks:
     - name: state outside the contiguous US or not given
       outside_states: true
 display:
+  home_bbox: [-124.7631, 24.5213, -66.9499, 49.3844]   # contiguous states and DC; the true bbox of the layer includes the Aleutian Islands (SPEC_USA_AKHI r2 4a item 5)
   geometry_type: polygon
   value_field: queue_mw_active
   unit: MW
