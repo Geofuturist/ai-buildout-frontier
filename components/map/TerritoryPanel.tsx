@@ -89,6 +89,24 @@ export default function TerritoryPanel(p: Props) {
 
   // Is there anything of the country itself to show in this unit (a value block, or a file of a hidden indicator)
   const hasNational = !!unit && ((!!indicator && !coveredByIndex(data, indicator)) || p.hiddenIndicators.some((h) => !coveredByIndex(data, h) && h.levels.some((x) => x.level === unit.level)));
+  const inPlate = !!data.index && (p.countryRows.length > 0 || (!!unit && hasNational));
+  // Download, citation and the link to all files sit with the displayed element: inside the national plate when it is shown
+  const downloads = (
+    <>
+      {unit && (model || ownIndicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={ownIndicator} unit={unit} territory={p.territory} />}
+
+      {citeLayer && citeMeta && unit && (
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          <CopyButton
+            text={valueLayer && unit.level > 0 ? recordCitation(citeMeta, unit.unit_id) : citeMeta.citation.text}
+            label={valueLayer && unit.level > 0 ? 'Cite this record' : 'Cite this layer'}
+          />
+          {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
+        </div>
+      )}
+      {citeLayer && <p className="mt-3 text-sm"><Link href="/data/">All files</Link></p>}
+    </>
+  );
   return (
     <>
     {folded && !p.hidden && (
@@ -170,23 +188,13 @@ export default function TerritoryPanel(p: Props) {
                     </div>
                   ) : null;
                 })}
+                {downloads}
               </NationalData>
             )}
 
             {unit && data.index && <UnitIndex index={data.index} iso3={p.countryIso} unit={unit} countryName={p.countryName} />}
 
-            {unit && (model || ownIndicator) && <TerritoryDownloads data={data} model={model} iso3={p.countryIso} indicator={ownIndicator} unit={unit} territory={p.territory} />}
-
-            {citeLayer && citeMeta && unit && (
-              <div className="mt-3 flex flex-wrap items-center gap-3">
-                <CopyButton
-                  text={valueLayer && unit.level > 0 ? recordCitation(citeMeta, unit.unit_id) : citeMeta.citation.text}
-                  label={valueLayer && unit.level > 0 ? 'Cite this record' : 'Cite this layer'}
-                />
-                {anchor && <Link href={`/methodology/#${anchor}`}>Methodology →</Link>}
-              </div>
-            )}
-            {citeLayer && <p className="mt-3 text-sm"><Link href="/data/">All files</Link></p>}
+            {!inPlate && downloads}
           </>
         )}
       </div>
