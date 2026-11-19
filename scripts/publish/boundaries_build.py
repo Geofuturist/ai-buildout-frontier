@@ -57,6 +57,13 @@ REFERENCE_DESCRIPTIONS = {
     "validation_report": "Validation report of the boundaries build.",
     "unit_hashes": "Hash of the geometry of every unit.",
     "license_unicode": "Unicode License v3 notice for the CLDR data used: codes and English names of first-level units.",
+    # version 0.3.0 (RES_texts_BND_v0_3_0 section 5; ARCH7 19 November: overlap_whitelist and the JSON diagnostic are published)
+    "national_adm1_units": ("One row for each first-level unit from a national source in version 0.3.0: the code and name in the "
+                            "source, the ISO 3166-2 code, the published name and how it was chosen."),
+    "national_adm1_report": "Build report of the first-level units from national sources in version 0.3.0.",
+    "overlap_whitelist": "Overlaps between units of the frame that are accepted as they are, each with its reason.",
+    "diag_outside_adm0": ("Parts of national first-level units that lie outside the country outline of the frame, "
+                          "with their areas in km2."),
 }
 
 
@@ -546,7 +553,7 @@ def _boundaries_sources(cfg: dict[str, Any], ctx: BuildContext) -> list[dict[str
             product = str(item.get("product", ""))
             if item.get("publisher") == src["publisher"] and any(m in product for m in match):
                 # the schema forbids a path in `file`: for "Unicode CLDR release-48-2: common/subdivisions/en.xml" keep the file name
-                name = re.split(r"[\\/]", product.split(": ")[-1])[-1] if "CLDR" in product else product
+                name = re.split(r"[\\/]", product.split(": ")[-1])[-1] if "CLDR" in product else re.sub(r"\s*[\\/]\s*", "-", product)
                 inputs.append({"file": name, "bytes": None, "sha256": item["sha256"]})
         if not inputs:
             raise GateError("G6", f"{src['source_id']}: no upstream record with a SHA-256 in the boundaries meta.json")

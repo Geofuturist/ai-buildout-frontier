@@ -3,24 +3,23 @@ layer_id: abf_boundaries
 title: "Administrative boundaries · ADM0, ADM1, ADM2"
 title_ru: "Административные границы · ADM0, ADM1, ADM2"
 description: >-
-  Administrative units of the world: countries (ADM0) everywhere, first-level units (ADM1) for 108
+  Administrative units of the world: countries (ADM0) everywhere, first-level units (ADM1) for 123
   countries and second-level units (ADM2) for the United States, France and Norway, in the countries
   whose entry in the boundary registry has been verified. Every unit has a code unit_id: ISO3 for
-  countries, ISO3-level-national code below them (for example USA-2-51059 or POL-1-24). Units carry
-  the geometry used on the map; for the United States and Norway, the national geometry used for
-  calculations is published in separate analysis files. Boundaries follow the U.S. government's
-  point of view, with one rule-based exception, and do not express a position of the project. The
-  exception: where sources show that another recognized state controls whole units of the frame and
-  has made them part of its own administrative division, the frame shows the state in control. In
-  this release this applies to Crimea and Sevastopol, shown under Russia. The contested_areas layer
-  lists areas of disputed control: the state in control, the state that claims the area, the date
-  from which control is counted, and the sources for both. Areas that the U.S. point of view assigns
-  to no country are a separate layer. Changes from 0.1.0: ADM1 added for 104 countries (1,578 units)
-  by the top level of ISO 3166-2 in Unicode CLDR release-48-2, with documented corrections; Adjara
-  added to the ADM0 unit of Georgia (GEO), which Natural Earth 1:10m v5.1.2 (U.S. point of view)
-  left uncovered; Crimea and Sevastopol shown under Russia instead of Ukraine, by the rule above;
-  six French region and department names aligned with the official geographic code of INSEE (COG);
-  new layer contested_areas.
+  countries, ISO3-level-national code below them (for example USA-2-51059, POL-1-24 or PHL-1-18).
+  Units carry the geometry used on the map; for the United States, Norway and the 15 countries with
+  national first-level boundaries, the national geometry used for calculations is published in
+  separate analysis files. Boundaries follow the U.S. government's point of view, with one
+  rule-based exception, and do not express a position of the project. The exception: where sources
+  show that another recognized state controls whole units of the frame and has made them part of its
+  own administrative division, the frame shows the state in control. In this release this applies to
+  Crimea and Sevastopol, shown under Russia. The contested_areas layer lists areas of disputed
+  control: the state in control, the state that claims the area, the date from which control is
+  counted, and the sources for both. Areas that the U.S. point of view assigns to no country are a
+  separate layer. Changes from 0.2.0: first-level units from national sources for 15 countries (425
+  units): Colombia, Estonia, Hong Kong, Indonesia, Ireland, Latvia, Luxembourg, Mexico, New Zealand,
+  Peru, the Philippines, South Korea, Taiwan, Thailand and Vietnam; Svalbard added to the analysis
+  file of Norway; all units of version 0.2.0 unchanged.
 license: {id: CC-BY-4.0, name: Creative Commons Attribution 4.0 International, url: "https://creativecommons.org/licenses/by/4.0/", family: attribution, attribution_text: ""}
 published_columns:
   adm0: [unit_id, iso3, level, parent_id, name, unit_type_local, unit_type_en, method, source, source_vintage, license, boundary_vintage, src_ref, adm0_status, ne_type]
@@ -33,9 +32,9 @@ fields:
   - {name: iso3, type: string, nullable: false, description: "ISO 3166-1 alpha-3 code of the country."}
   - {name: level, type: string, nullable: false, description: "Administrative level of the unit: ADM0 (country), ADM1 or ADM2."}
   - {name: parent_id, type: string, nullable: true, null_meaning: "The unit is a country and has no parent.", description: "unit_id of the unit one level up."}
-  - {name: name, type: string, nullable: false, description: "Name of the unit: for first-level units added in version 0.2.0, the English name of the code in Unicode CLDR where CLDR has one, otherwise the name in Natural Earth; in France, the name in the official geographic code of INSEE; elsewhere, as given by the source. For a contested area, its English name."}
-  - {name: unit_type_local, type: string, nullable: true, null_meaning: "No type is given: the source gives none, or the types of this country are not filled in this release.", description: "Type of the unit in the national language. For the United States, France, the United Kingdom and Norway, the type of the unit itself, for example county or commune. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."}
-  - {name: unit_type_en, type: string, nullable: true, null_meaning: "No type is given: the source gives none, or the types of this country are not filled in this release.", description: "Type of the unit in English. For the United States, France, the United Kingdom and Norway, the type of the unit itself. For first-level units added in version 0.2.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."}
+  - {name: name, type: string, nullable: false, description: "Name of the unit. For first-level units added in versions 0.2.0 and 0.3.0, the English name of the code in Unicode CLDR where CLDR has one and it is not outdated or truncated; otherwise the name given by the national source. The choice for each unit of version 0.3.0, with the reason for every departure from CLDR, is in national_adm1_units_v030.csv. In France, the name in the official geographic code of INSEE; elsewhere, as given by the source. For a contested area, its English name."}
+  - {name: unit_type_local, type: string, nullable: true, null_meaning: "No type is given: the source gives none, or the types of this country are not filled in this release.", description: "Type of the unit in the national language. For the United States, France, the United Kingdom and Norway, the type of the unit itself, for example county or commune. For first-level units added in versions 0.2.0 and 0.3.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."}
+  - {name: unit_type_en, type: string, nullable: true, null_meaning: "No type is given: the source gives none, or the types of this country are not filled in this release.", description: "Type of the unit in English. For the United States, France, the United Kingdom and Norway, the type of the unit itself. For first-level units added in versions 0.2.0 and 0.3.0, the types of first-level units in the country, from the boundary registry: one value if the country has one type, otherwise all types separated by \"/\"; \"|\" separates alternative names of one type."}
   - {name: method, type: string, nullable: true, null_meaning: "Not applicable to the unit.", description: "How the unit was made: taken as it is from the source, dissolved from smaller units, or conformed to a national list."}
   - {name: source, type: string, nullable: false, description: "Publisher or product the unit comes from."}
   - {name: source_vintage, type: string, nullable: true, null_meaning: "The source gives no edition.", description: "Edition or date of the source."}
@@ -71,7 +70,7 @@ sources:
       name: Public domain (Natural Earth terms of use)
       url: "https://www.naturalearthdata.com/about/terms-of-use/"
       family: public_domain
-      attribution_text: "Country boundaries, the departments of France and first-level units outside the United States and Norway: Natural Earth."
+      attribution_text: "Country boundaries, the departments of France and first-level units of the countries without a national source: Natural Earth."
     rights_basis:
       type: publisher_statement
       text: "The Natural Earth terms of use state that all versions of Natural Earth are in the public domain."
@@ -145,9 +144,339 @@ sources:
       checked_by: "script:06_licences.py"
       evidence_url: "https://github.com/unicode-org/cldr/blob/release-48-2/LICENSE"
     publication_mode: open_licence
+  - source_id: col_dane_mgn
+    role: geometry
+    publisher: "Departamento Administrativo Nacional de Estadística (DANE)"
+    product: "Marco Geoestadístico Nacional (MGN) 2018, departamentos"
+    url: "https://geoportal.dane.gov.co/"
+    edition: "2018"
+    retrieved_at: "2026-11-10"
+    current_through: null
+    bnd_match: ["Geoestad"]
+    license:
+      id: LicenseRef-DANE-terms
+      name: "Terms of use of DANE"
+      url: "https://geoportal.dane.gov.co/"
+      family: attribution
+      attribution_text: "Fuente: Departamento Administrativo Nacional de Estadística: www.dane.gov.co"
+    rights_basis:
+      type: license
+      text: "The terms of use of DANE authorize use, transformation and analysis of its data, provided the source is cited as above. DANE may change its terms without notice; the terms in force on 2026-11-15 apply to this release."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://geoportal.dane.gov.co/"
+    publication_mode: open_licence
+  - source_id: est_maaamet_counties
+    role: geometry
+    publisher: "Maa- ja Ruumiamet"
+    product: "Haldus- ja asustusjaotus: maakonnad"
+    url: "https://geoportaal.maaamet.ee/"
+    edition: "2026-11-04"
+    retrieved_at: "2026-11-09"
+    current_through: null
+    bnd_match: ["maakonnad"]
+    license:
+      id: LicenseRef-Maaamet-open-data
+      name: "Open data terms of Maa- ja Ruumiamet"
+      url: "https://geoportaal.maaamet.ee/"
+      family: attribution
+      attribution_text: "Maa- ja Ruumiamet (Estonian Land and Spatial Development Board), counties; data as of 2026-11-04"
+    rights_basis:
+      type: publisher_statement
+      text: "The open data terms of Maa- ja Ruumiamet allow free use and require the source and the date of the data to be named."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://geoportaal.maaamet.ee/"
+    publication_mode: open_licence
+  - source_id: hkg_had_districts
+    role: geometry
+    publisher: "Home Affairs Department (HAD)"
+    product: "Administrative boundaries of Hong Kong: 18 districts"
+    url: "https://www.had.gov.hk/psi/hong-kong-administrative-boundaries/hksar_18_district_boundary.gml"
+    edition: "2026-11-15"
+    retrieved_at: "2026-11-15"
+    current_through: null
+    bnd_match: ["Hong Kong"]
+    license:
+      id: LicenseRef-DATA-GOV-HK-terms
+      name: "Terms and Conditions of DATA.GOV.HK"
+      url: "https://data.gov.hk/en/terms-and-conditions"
+      family: attribution
+      attribution_text: "Home Affairs Department, Government of the Hong Kong Special Administrative Region; data from DATA.GOV.HK"
+    rights_basis:
+      type: license
+      text: "Used under the Terms and Conditions of DATA.GOV.HK, which allow distribution for commercial and non-commercial purposes; users of the data agree to indemnify the Government of the Hong Kong SAR against claims arising from their use, reproduction or distribution of the data."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://www.had.gov.hk/psi/hong-kong-administrative-boundaries/hksar_18_district_boundary.gml"
+    publication_mode: open_licence
+  - source_id: idn_big_provinces
+    role: geometry
+    publisher: "Badan Informasi Geospasial (BIG)"
+    product: "Batas wilayah administrasi, layer BATAS_WILAYAH (kabupaten/kota), dissolved by province"
+    url: "https://geoservices.big.go.id/rbi/rest/services/BATASWILAYAH/BATAS_WILAYAH/MapServer/12"
+    edition: "2024-09-05"
+    retrieved_at: "2026-11-15"
+    current_through: null
+    bnd_match: ["BATAS_WILAYAH"]
+    license:
+      id: LicenseRef-no-license-statute
+      name: "No license stated by the publisher; Indonesian Law No. 28 of 2014, Article 43(b)"
+      url: "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+      family: attribution
+      attribution_text: "Badan Informasi Geospasial (BIG), regency and city boundaries at 1:50,000 (2024), merged into provinces by the project"
+    rights_basis:
+      type: statute
+      text: "BIG publishes these boundaries without license terms. We found no statement reserving rights in the saved ISO 19115-3 metadata of three BIG boundary layers (the item page of the layer could not be read, and the map service did not return its description). The units are included on the basis of Indonesia's Law No. 28 of 2014 on Copyright, Article 43(b), under which publication, distribution, communication and copying of anything made by or on behalf of the government is not an infringement unless declared protected. Under Article 35(2) of the same law, commercial use of works made in government service may entitle their creator to royalties; commercial reusers should check Indonesian law. Coordinates are rounded to four decimal places, following BIG Regulation No. 1 of 2026."
+      checked_at: "2026-11-17"
+      checked_by: "agent:RES7"
+      evidence_url: "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+    publication_mode: open_licence
+  - source_id: irl_tailte_counties
+    role: geometry
+    publisher: "Tailte Éireann"
+    product: "Counties - National Statutory Boundaries - Ungeneralised - 2024"
+    url: "https://data-osi.opendata.arcgis.com/"
+    edition: "2024"
+    retrieved_at: "2026-11-15"
+    current_through: null
+    bnd_match: ["National Statutory Boundaries"]
+    license:
+      id: CC-BY-4.0
+      name: "Creative Commons Attribution 4.0 International"
+      url: "https://creativecommons.org/licenses/by/4.0/"
+      family: attribution
+      attribution_text: "Tailte Éireann, Counties – National Statutory Boundaries – Ungeneralised 2024"
+    rights_basis:
+      type: license
+      text: "The dataset page of Tailte Éireann on its open data portal states CC BY 4.0."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://data-osi.opendata.arcgis.com/"
+    publication_mode: open_licence
+  - source_id: kor_sgis_sido
+    role: geometry
+    publisher: "Statistics Korea (SGIS, now the National Data Agency)"
+    product: "SGIS administrative boundaries 2025 Q2 (sido)"
+    url: "https://www.data.go.kr/data/15129688/fileData.do"
+    edition: "2025-06-30"
+    retrieved_at: "2026-11-10"
+    current_through: null
+    bnd_match: ["SGIS administrative boundaries"]
+    license:
+      id: LicenseRef-data-go-kr-no-restriction
+      name: "Public Data Portal (data.go.kr): no restriction on the scope of use"
+      url: "https://www.data.go.kr/data/15129688/fileData.do"
+      family: attribution
+      attribution_text: "Statistics Korea, SGIS administrative boundaries, 2nd quarter of 2025"
+    rights_basis:
+      type: publisher_statement
+      text: "The data.go.kr record of the dataset states no restriction on the scope of use; no license is named."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://www.data.go.kr/data/15129688/fileData.do"
+    publication_mode: open_licence
+  - source_id: lva_vzd_address_register
+    role: geometry
+    publisher: "Valsts zemes dienests (VZD)"
+    product: "Valsts adrešu reģistra atvērtie dati (Novadi, Pilsētas)"
+    url: "https://data.gov.lv/"
+    edition: "2026-10-07"
+    retrieved_at: "2026-11-15"
+    current_through: null
+    bnd_match: ["Valsts adrešu reģistra"]
+    license:
+      id: CC-BY-4.0
+      name: "Creative Commons Attribution 4.0 International"
+      url: "https://creativecommons.org/licenses/by/4.0/"
+      family: attribution
+      attribution_text: "Valsts zemes dienests (State Land Service of Latvia), State Address Register open data"
+    rights_basis:
+      type: license
+      text: "The dataset page on the open data portal of Latvia states CC BY 4.0."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://data.gov.lv/"
+    publication_mode: open_licence
+  - source_id: lux_act_cantons
+    role: geometry
+    publisher: "Administration du cadastre et de la topographie (ACT)"
+    product: "Limites administratives du Grand-Duché de Luxembourg (cantons)"
+    url: "https://data.public.lu/"
+    edition: "2026-10-05"
+    retrieved_at: "2026-11-09"
+    current_through: null
+    bnd_match: ["Limites administratives"]
+    license:
+      id: CC0-1.0
+      name: "Creative Commons CC0 1.0 Universal"
+      url: "https://creativecommons.org/publicdomain/zero/1.0/"
+      family: public_domain
+      attribution_text: "Administration du cadastre et de la topographie (Luxembourg), cantons"
+    rights_basis:
+      type: license
+      text: "The dataset page on data.public.lu states CC0 1.0."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://data.public.lu/"
+    publication_mode: open_licence
+  - source_id: mex_inegi_via_hdx
+    role: geometry
+    publisher: "Instituto Nacional de Estadística y Geografía (INEGI)"
+    product: "Marco Geoestadístico (via OCHA, HDX COD-AB: mex_admin1)"
+    url: "https://data.humdata.org/dataset/cod-ab-mex"
+    edition: "2021-06-18"
+    retrieved_at: "2026-11-11"
+    current_through: null
+    bnd_match: ["mex_admin1"]
+    license:
+      id: CC-BY-3.0-IGO
+      name: "Creative Commons Attribution 3.0 IGO"
+      url: "https://creativecommons.org/licenses/by/3.0/igo/"
+      family: attribution
+      attribution_text: "via OCHA (HDX, COD-AB); source: INEGI"
+    rights_basis:
+      type: license
+      text: "OCHA's copy of the national boundaries on the Humanitarian Data Exchange, licensed CC BY 3.0 IGO; the copy has not been compared with the national publisher's file."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://data.humdata.org/dataset/cod-ab-mex"
+    publication_mode: open_licence
+  - source_id: nzl_statsnz_2025
+    role: geometry
+    publisher: "Stats NZ"
+    product: "Regional Council 2025 (clipped); Territorial Authority 2025 (clipped)"
+    url: "https://datafinder.stats.govt.nz/"
+    edition: "2025"
+    retrieved_at: "2026-11-15"
+    current_through: null
+    bnd_match: ["Regional Council 2025", "Territorial Authority 2025"]
+    license:
+      id: CC-BY-4.0
+      name: "Creative Commons Attribution 4.0 International"
+      url: "https://creativecommons.org/licenses/by/4.0/"
+      family: attribution
+      attribution_text: "Stats NZ – Tatauranga Aotearoa, Regional Council 2025 and Territorial Authority 2025 (clipped)"
+    rights_basis:
+      type: license
+      text: "The dataset pages of Stats NZ on Stats NZ Datafinder state CC BY 4.0."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://datafinder.stats.govt.nz/"
+    publication_mode: open_licence
+  - source_id: per_ign_departments
+    role: geometry
+    publisher: "Instituto Geográfico Nacional (IGN)"
+    product: "Límites departamentales"
+    url: "https://datosabiertos.gob.pe/"
+    edition: "2026-11-09"
+    retrieved_at: "2026-11-09"
+    current_through: null
+    bnd_match: ["departamentales"]
+    license:
+      id: ODC-By-1.0
+      name: "Open Data Commons Attribution License v1.0"
+      url: "https://opendatacommons.org/licenses/by/1-0/"
+      family: attribution
+      attribution_text: "Instituto Geográfico Nacional (Peru), Límites Departamentales, via datosabiertos.gob.pe"
+    rights_basis:
+      type: license
+      text: "The dataset page on the open data portal of Peru states ODC-By 1.0."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://datosabiertos.gob.pe/"
+    publication_mode: open_licence
+  - source_id: phl_psa_via_hdx
+    role: geometry
+    publisher: "Philippine Statistics Authority (PSA) / NAMRIA"
+    product: "Philippine Standard Geographic Code, regions (via OCHA, HDX COD-AB: phl_admin2, provinces dissolved by region)"
+    url: "https://data.humdata.org/dataset/cod-ab-phl"
+    edition: "2025-02-13"
+    retrieved_at: "2026-11-11"
+    current_through: null
+    bnd_match: ["phl_admin2"]
+    license:
+      id: CC-BY-3.0-IGO
+      name: "Creative Commons Attribution 3.0 IGO"
+      url: "https://creativecommons.org/licenses/by/3.0/igo/"
+      family: attribution
+      attribution_text: "via OCHA (HDX, COD-AB), provinces; source: PSA, NAMRIA; regions assembled by the project under Republic Act No. 12000 and Executive Order No. 91"
+    rights_basis:
+      type: license
+      text: "OCHA's copy of the national boundaries on the Humanitarian Data Exchange, licensed CC BY 3.0 IGO; the copy has not been compared with the national publisher's file."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://data.humdata.org/dataset/cod-ab-phl"
+    publication_mode: open_licence
+  - source_id: twn_nlsc_counties
+    role: geometry
+    publisher: "Ministry of the Interior Land Surveying and Mapping Center (內政部國土測繪中心)"
+    product: "Village boundaries (村里界圖), dissolved by county"
+    url: "https://whgis-nlsc.moi.gov.tw/Opendata/Files.aspx"
+    edition: "2026-08-17"
+    retrieved_at: "2026-11-15"
+    current_through: null
+    bnd_match: ["Village boundaries"]
+    license:
+      id: LicenseRef-OGDL-Taiwan-1.0
+      name: "Open Government Data License, version 1.0 (Taiwan)"
+      url: "http://data.gov.tw/license"
+      family: attribution
+      attribution_text: "Ministry of the Interior Land Surveying and Mapping Center 2026 Village boundaries (TWD97 longitude and latitude), version 1150817. The Open Data is made available to the public under the Open Government Data License, User can make use of it when complying to the condition and obligation of its terms. Open Government Data License: http://data.gov.tw/license"
+    rights_basis:
+      type: license
+      text: "The Open Government Data License 1.0 grants use under its terms; Article 3(2) requires the attribution in the form of the annex of the license, which is used as the attribution text."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "http://data.gov.tw/license"
+    publication_mode: open_licence
+  - source_id: tha_dopa_via_hdx
+    role: geometry
+    publisher: "Royal Thai Survey Department / Department of Provincial Administration (DOPA)"
+    product: "Subnational administrative boundaries (via OCHA, HDX COD-AB: tha_admin1)"
+    url: "https://data.humdata.org/dataset/cod-ab-tha"
+    edition: "2022-01-22"
+    retrieved_at: "2026-11-11"
+    current_through: null
+    bnd_match: ["tha_admin1"]
+    license:
+      id: CC-BY-3.0-IGO
+      name: "Creative Commons Attribution 3.0 IGO"
+      url: "https://creativecommons.org/licenses/by/3.0/igo/"
+      family: attribution
+      attribution_text: "via OCHA (HDX, COD-AB); source: Royal Thai Survey Department"
+    rights_basis:
+      type: license
+      text: "OCHA's copy of the national boundaries on the Humanitarian Data Exchange, licensed CC BY 3.0 IGO; the copy has not been compared with the national publisher's file."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://data.humdata.org/dataset/cod-ab-tha"
+    publication_mode: open_licence
+  - source_id: vnm_gso_via_hdx
+    role: geometry
+    publisher: "General Statistics Office of Viet Nam (GSO)"
+    product: "Subnational administrative boundaries, 34 units (via OCHA, HDX COD-AB: vnm_admin1)"
+    url: "https://data.humdata.org/dataset/cod-ab-vnm"
+    edition: "2025-09-25"
+    retrieved_at: "2026-11-10"
+    current_through: null
+    bnd_match: ["vnm_admin1"]
+    license:
+      id: CC-BY-3.0-IGO
+      name: "Creative Commons Attribution 3.0 IGO"
+      url: "https://creativecommons.org/licenses/by/3.0/igo/"
+      family: attribution
+      attribution_text: "via OCHA (HDX, COD-AB); source: General Statistics Office of Viet Nam"
+    rights_basis:
+      type: license
+      text: "OCHA's copy of the national boundaries on the Humanitarian Data Exchange, licensed CC BY 3.0 IGO; the copy has not been compared with the national publisher's file."
+      checked_at: "2026-11-15"
+      checked_by: "agent:RES7"
+      evidence_url: "https://data.humdata.org/dataset/cod-ab-vnm"
+    publication_mode: open_licence
 freshness: {source_cadence: irregular, next_check: "2027-03-31"}
 coverage:
-  geography: "World (ADM0); ADM1 for 108 countries and ADM2 for the United States, France and Norway, the countries with a verified entry in the boundary registry"
+  geography: "World (ADM0); ADM1 for 123 countries and ADM2 for the United States, France and Norway, the countries with a verified entry in the boundary registry"
   known_gaps:
     - >-
       Ten areas, about 487 km² together, belong to a country but to none of its first-level units,
@@ -163,21 +492,25 @@ coverage:
       Natural Earth are drawn differently; one is the Paracel Islands (5 km²). They are listed in
       validation_report.json.
     - >-
-      ADM1 follows the top level of ISO 3166-2 as recorded in Unicode CLDR release-48-2; reforms
-      after that release may not be reflected.
+      For the 104 countries added in version 0.2.0, ADM1 follows the top level of ISO 3166-2 as
+      recorded in Unicode CLDR release-48-2; reforms after that release may not be reflected.
+      Algeria (69 wilayas, Law No. 26-06 of 2026), Burkina Faso (17 regions, decided by the Council
+      of Ministers on July 2, 2025), Mali (19 regions and the District of Bamako, Law No. 2023-006)
+      and Burundi (5 provinces, Organic Law No. 1/05 of March 16, 2023) have reorganized their first
+      level; no open boundaries of the new division were found, so these countries have ADM0 only.
     - >-
-      First-level units are cut to the outline of their country. Where Natural Earth draws a
-      first-level unit beyond that outline, the part outside is left out; the largest is 2,268 km²
-      of Ladakh (IND-1-LA) inside the outline of China in the U.S. point of view. All such losses
-      are listed in validation_report.json.
+      First-level units built from Natural Earth are cut to the outline of their country. Where
+      Natural Earth draws a first-level unit beyond that outline, the part outside is left out; the
+      largest is 2,268 km² of Ladakh (IND-1-LA) inside the outline of China in the U.S. point of
+      view. All such losses are listed in validation_report.json.
     - >-
-      ADM1 units exist only for countries whose registry entry has been verified (108 in this
-      release); ADM2 units exist for the United States, France and Norway. The other 134 countries
+      ADM1 units exist only for countries whose registry entry has been verified (123 in this
+      release); ADM2 units exist for the United States, France and Norway. The other 119 countries
       and territories have ADM0 only.
     - >-
-      First-level units outside the United States and Norway, and the departments of France, are
-      built from Natural Earth 1:10m units. They are generalized and are not the official national
-      boundaries.
+      First-level units outside the United States, Norway and the 15 countries added in version
+      0.3.0, and the departments of France, are built from Natural Earth 1:10m units. They are
+      generalized and are not the official national boundaries.
     - >-
       Disputed and unassigned areas are not part of any country.
     - >-
@@ -196,11 +529,64 @@ coverage:
       OKATO classifier, not ISO 3166-2 codes: ISO 3166-2 lists these units under Ukraine (UA-43,
       UA-40).
     - >-
-      For first-level units added in version 0.2.0, unit_type_local and unit_type_en give the types
-      of first-level units in the country, not the type of each unit. In 29 countries with more than
-      one type, such as states and a federal district, all types are listed, separated by "/". In 21
-      countries the types are not filled in this release. The type of each unit is planned for a
-      later version.
+      For first-level units added in versions 0.2.0 and 0.3.0, unit_type_local and unit_type_en give
+      the types of first-level units in the country, not the type of each unit. In 32 countries with
+      more than one type, such as municipalities and state cities, all types are listed, separated
+      by "/". In 21 countries the types are not filled in this release. The type of each unit is
+      planned for a later version.
+    - >-
+      First-level units from national sources keep the national coastline. Where it lies outside the
+      country outline of the frame, the parts outside, mostly coastal waters, lagoons and small
+      islands that Natural Earth does not draw, are not cut: from about 70 km² in Latvia to about
+      32,300 km² in Indonesia, at most 3.4% of a country's area (South Korea). In Hong Kong, whose
+      districts include sea areas, the map shows the districts cut to the coastline of the frame
+      (1,036 km² of 2,755 km²); the analysis file keeps the official districts.
+    - >-
+      National files include islands that other states also claim or control. Each file is shown as
+      published; the project takes no position on sovereignty. Khanh Hoa (VNM-1-56) includes the
+      Spratly Islands (Truong Sa) and Da Nang (VNM-1-48) the Paracel Islands (Hoang Sa), as drawn in
+      the Vietnamese file: about 3,367 km² and 715 km² of these units, mostly sea and reefs, lie
+      outside the Vietnam outline of this frame. Mimaropa (PHL-1-17) includes the Kalayaan Island
+      Group in the Spratly Islands; about 166 km² of it lies outside the Philippines outline.
+      Kaohsiung (TWN-1-64000) includes Taiping (Itu Aba) Island. Around Taiping and Thitu (Pag-asa)
+      islands, Khanh Hoa overlaps Kaohsiung by about 0.44 km² and Mimaropa by about 0.40 km². Yilan
+      (TWN-1-10002) includes the Diaoyutai Islands, about 5.6 km², which the frame shows as part of
+      Japan (the Senkaku Islands, administered by Japan); the People's Republic of China also claims
+      them. North Gyeongsang (KOR-1-37) includes Dokdo, about 0.16 km² outside any country in this
+      frame; Japan also claims the islets as Takeshima.
+    - >-
+      Indonesia: province boundaries come from BIG's map service, which generalized each regency and
+      city (kabupaten/kota) separately. Overlaps between provinces were removed; narrow gaps along
+      internal borders remain, each smaller than 1 km². Together with lakes cut out in the source
+      file, gaps inside Indonesia total about 3.90 km² in 3,124 pieces. A point in such a gap falls
+      in no province. Along the borders with Malaysia and Timor-Leste, Indonesian provinces overlap
+      neighboring units by up to about 0.9 km² per pair, about 2.2 km² in total. A cleaner geometry
+      is planned for the next version.
+    - >-
+      Indonesia: coordinates are rounded to four decimal places (about 11 m), following BIG
+      Regulation No. 1 of 2026 on sharing geospatial data abroad. BIG notes that boundaries with
+      indicative status are not a legal reference.
+    - >-
+      Peru: the Instituto Geográfico Nacional publishes the departmental boundaries as reference
+      boundaries ("límites referenciales").
+    - >-
+      Mexico, the Philippines, Thailand and Vietnam come from OCHA's copies of national boundaries
+      on the Humanitarian Data Exchange, not from the national publishers; we could not compare the
+      copies with the national files. Their dates are those of the HDX datasets, not of the national
+      sources: Mexico 2021-06-18, Thailand 2022-01-22, the Philippines 2025-02-13, Vietnam
+      2025-09-25. The regions of the Philippines are assembled from OCHA's provinces under current
+      law (see the methodology).
+    - >-
+      New Zealand: small islands that belong to no regional council, apart from the Chatham Islands
+      Territory, are not part of any first-level unit.
+    - >-
+      South Korea: Jeonnam-Gwangju Integrated Special City (KOR-1-X2436), created on July 1, 2026,
+      has no ISO 3166-2 code yet; its English name is the project's translation. Its boundary is the
+      union of the former South Jeolla Province and Gwangju Metropolitan City in the 2025 file of
+      Statistics Korea.
+    - >-
+      Dates of the national files: where the source gives no edition date, the date is the day the
+      file was retrieved (Peru 2026-11-09, Hong Kong 2026-11-15).
 verification:
   levels: {source_as_is: 0.0, script_rules: 1.0, human: 0.0}
   method: >-
@@ -210,8 +596,11 @@ verification:
     by script, and a random sample of countries, together with every country whose units were
     merged, matched by name or left with parts outside any unit, was checked against official
     national lists by an independent AI agent. The verification sample covers countries whose
-    official lists could be retrieved. The validation report of the build is published next to the
-    units.
+    official lists could be retrieved. For the 15 countries added in version 0.3.0, a script found
+    the license statement on the publisher's saved page, recorded the SHA-256 of each file, and
+    compared the number of units with an official list or legal act; units assembled under a law
+    were checked with control points. Every build compares all units with the previous version by
+    hash. The validation report of the build is published next to the units.
   sample_share: {}   # the build adds sample_share and levels.agent_sample from the registry
 display:
   geometry_type: polygon

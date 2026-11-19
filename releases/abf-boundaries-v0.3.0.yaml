@@ -1,0 +1,102 @@
+# Release of the boundaries dataset, version 0.3.0: the finished output of CODE-BND, copied under the names of SPEC section 4.2.
+# Before the final build V sets `doi` (the DOI reserved as a "New version" of the abf-boundaries record) and `published_at`:
+#   python scripts\publish\set_release_doi.py releases\abf-boundaries-v0.3.0.yaml 10.5281/zenodo.NNNNNNN 2026-MM-DD
+dataset: abf-boundaries
+version: 0.3.0
+tag: abf-boundaries-v0.3.0
+doi: null
+published_at: null
+built_at: null
+boundary_release: null
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.3.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\abf_boundaries.yaml'
+# Mapping: file of the CODE-BND output (without extension) -> name in the release.
+file_map:
+  display/adm0: adm0
+  display/adm1: adm1
+  display/adm2: adm2
+  display/adm0_disputed_unassigned: disputed_unassigned
+  display/contested_areas: contested_areas
+  analysis/USA_adm1_cb2023_500k: analysis_usa_adm1
+  analysis/USA_adm2_cb2023_500k: analysis_usa_adm2
+  analysis/NOR_adm1_inndelingsbase_20260101: analysis_nor_adm1
+  analysis/NOR_adm2_inndelingsbase_20260101: analysis_nor_adm2
+  analysis/COL_adm1_dane_mgn2018_2018: analysis_col_adm1
+  analysis/EST_adm1_maaamet_maakond_20261104: analysis_est_adm1
+  analysis/HKG_adm1_had_districts_20261115: analysis_hkg_adm1
+  analysis/IDN_adm1_big_provinsi_20240905: analysis_idn_adm1
+  analysis/IRL_adm1_tailte_counties_2024_2024: analysis_irl_adm1
+  analysis/KOR_adm1_sgis_sido_2025q2_20250630: analysis_kor_adm1
+  analysis/LUX_adm1_limadmin_20261005: analysis_lux_adm1
+  analysis/LVA_adm1_vzd_aw_20261007: analysis_lva_adm1
+  analysis/MEX_adm1_inegi_via_hdx_20210618: analysis_mex_adm1
+  analysis/NZL_adm1_statsnz_2025_2025: analysis_nzl_adm1
+  analysis/PER_adm1_ign_departamentos_20261109: analysis_per_adm1
+  analysis/PHL_adm1_psa_via_hdx_admin2_20250213: analysis_phl_adm1
+  analysis/THA_adm1_dopa_via_hdx_20220122: analysis_tha_adm1
+  analysis/TWN_adm1_nlsc_village_dissolved_20260817: analysis_twn_adm1
+  analysis/VNM_adm1_gso_via_hdx_20250925: analysis_vnm_adm1
+# The build stops if the counts of the files differ (SPEC_BND section 6 item 1).
+expected_counts: {adm0: 242, adm1: 2092, adm2: 3602}
+# Shares of verification, computed from the registry of the release (SPEC_BND section 3 item 3c).
+# Countries counted: verified ADM1 countries outside exclude_iso3: the countries of 0.1.0 (USA, FRA, GBR, NOR) and the 15
+# countries of 0.3.0, which were each checked against an official list or law, not sampled (ARCH7, 19 November, D1).
+# Expected: 104 countries, 27 with a verdict, 431 units: the sample of 0.2.0, unchanged. A difference is a warning in dev
+# and a stop in final.
+verification_from_registry:
+  exclude_iso3: [USA, FRA, GBR, NOR, COL, EST, HKG, IDN, IRL, LVA, LUX, MEX, NZL, PER, PHL, KOR, TWN, THA, VNM]
+  expected_countries: 104
+  expected_verdicts: {confirmed: 22, disputed: 3, refer_arch: 2}
+  expected_units: 431
+# The numbers of known_gaps item 11 (types of first-level units): counted from the registry, a stop in final if they differ.
+# Counted for the 119 countries outside USA, FRA, GBR and NOR (the 15 national countries included): "/" = a list of types.
+registry_unit_types:
+  exclude_iso3: [USA, FRA, GBR, NOR]
+  multi_type: 32
+  empty: 21
+# Rows of the registry that were in version 0.2.0 stay identical to it: reference = the registry published with v0.2.0
+# (data\abf-boundaries\v0.2.0\boundary_registry.csv). The 15 new rows are new, no row is changed on purpose.
+registry_frozen_rows:
+  reference: 'releases\reference\boundary_registry_abf-boundaries-v0.2.0.csv'
+  changed_rows: []
+# The CODE-BND layer contested_areas has six columns; the other five (frame_unit_ids, sources, check) come from
+# contested_areas.csv by area_id (the site card needs the source links, SPEC_WEB section 11). To publish six columns only,
+# remove this line and the five names from published_columns.contested_areas.
+contested_areas_columns_from_reference: true
+# Reference files: the first nine and overlap_whitelist live in the repository, the next five in the CODE-BND output
+# (with the SHA-256 of the handoff v3 and its addendum of 19 November: the build stops if a file changed),
+# the last one is the CLDR notice found by its SHA-256 among the downloaded CLDR files.
+reference_files:
+  registry: 'boundaries\boundary_registry.csv'
+  adm0_overrides: 'boundaries\adm0_overrides.csv'
+  adm0_patches: 'boundaries\adm0_patches.csv'
+  name_overrides: 'boundaries\name_overrides.csv'
+  contested_areas: 'boundaries\contested_areas.csv'
+  adm1_plan: 'boundaries\adm1_plan.csv'
+  adm1_leftovers: 'boundaries\adm1_leftovers.csv'
+  code_overrides: 'boundaries\code_overrides.csv'
+  holes_whitelist: 'boundaries\holes_whitelist.geojson'
+  overlap_whitelist: 'boundaries\overlap_whitelist.csv'
+  validation_report:
+    path: 'D:\GISData\Boundaries\out\abf-boundaries-v0.3.0\validation_report.json'
+    sha256: 565015e7d1dc56ff5f7a50557f809c786b882d39d69af60dc4723a81514d722b
+  unit_hashes:
+    path: 'D:\GISData\Boundaries\out\abf-boundaries-v0.3.0\unit_hashes.csv'
+    sha256: b07b483bc4800c3dfe505fdc367794191ec1d89b20894ba23e5b8d38d6670ef8
+  national_adm1_units:
+    path: 'D:\GISData\Boundaries\out\abf-boundaries-v0.3.0\national_adm1_units_v030.csv'
+    sha256: a2a5729e011b872a29ddccd47e0d8df876b6982d69748140a3323f185d2dd824
+  national_adm1_report:
+    path: 'D:\GISData\Boundaries\out\abf-boundaries-v0.3.0\national_adm1_report_v030.json'
+    sha256: ee9a8485823a7a4816bb4c11cad9c1ed8ac527a744bb7037206b87618fad2e72
+  diag_outside_adm0:
+    path: 'D:\GISData\Boundaries\out\abf-boundaries-v0.3.0\diag_outside_adm0_v030.json'
+    sha256: c7c0eb1a6bd4a60772d79ec607a75cdf9aca64d544e935750de91104d74d2d44
+  license_unicode:
+    find: 'D:\GISData\Boundaries\sources'
+    name: '*LICENSE*'
+    sha256: b49d0e9f8ead51ca8b7df6fec89cc3ae6809198b4b9d43c74216da0118f23f5b
+    publish_as: LICENSE_Unicode-3.0.txt

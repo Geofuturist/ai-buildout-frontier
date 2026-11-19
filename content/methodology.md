@@ -603,6 +603,21 @@ abf-energync 0.1.1 under CC BY-NC 4.0.
   | United Kingdom | 4 countries | — | Natural Earth, merged |
   | Norway | 15 counties and Svalbard | 357 municipalities | Kartverket, CC BY 4.0, reference date 1 January 2026 |
   | 104 more countries | 1,578 units: the top level of ISO 3166-2 | — | Natural Earth, as is or merged; codes and names from Unicode CLDR |
+  | Colombia | 33: 32 departments and the Capital District of Bogotá | — | DANE, Marco Geoestadístico Nacional |
+  | Estonia | 15 counties | — | Maa- ja Ruumiamet |
+  | Hong Kong | 18 districts | — | Home Affairs Department, via DATA.GOV.HK |
+  | Indonesia | 38 provinces | — | Badan Informasi Geospasial, regencies and cities merged into provinces |
+  | Ireland | 26 counties | — | Tailte Éireann, CC BY 4.0 |
+  | Latvia | 42: 35 municipalities and 7 state cities | — | State Land Service, CC BY 4.0 |
+  | Luxembourg | 12 cantons | — | Administration du cadastre et de la topographie, CC0 |
+  | Mexico | 32: 31 states and Mexico City | — | INEGI, via OCHA (HDX), CC BY 3.0 IGO |
+  | New Zealand | 17: 16 regions and the Chatham Islands Territory | — | Stats NZ, CC BY 4.0 |
+  | Peru | 25: 24 departments and Callao | — | Instituto Geográfico Nacional, ODC-By |
+  | Philippines | 18 regions | — | provinces via OCHA (HDX), CC BY 3.0 IGO, grouped by law |
+  | South Korea | 16 provinces and metropolitan cities | — | Statistics Korea (SGIS) |
+  | Taiwan | 22: 6 special municipalities, 13 counties, 3 cities | — | Ministry of the Interior (NLSC), villages merged, OGDL 1.0 |
+  | Thailand | 77: 76 provinces and Bangkok | — | via OCHA (HDX), CC BY 3.0 IGO |
+  | Vietnam | 34 provinces and cities | — | via OCHA (HDX), CC BY 3.0 IGO |
 
 - **The first level of the 104 countries** is the top level of ISO 3166-2, the international
   standard for subdivision codes, as recorded in Unicode CLDR release-48-2. Natural Earth units are
@@ -621,17 +636,42 @@ abf-energync 0.1.1 under CC BY-NC 4.0.
   retrieved. Each country's entry in the boundary registry
   (https://github.com/Geofuturist/ai-buildout-frontier/blob/main/boundaries/boundary_registry.csv)
   records its method, its expected number of units and what it was checked against.
-- **What may be out of date.** ADM1 follows the top level of ISO 3166-2 as recorded in Unicode CLDR
-  release-48-2; reforms after that release may not be reflected. The other 134 countries and
-  territories show national borders only, until we check their subdivisions against an official
-  list. Burkina Faso and Vietnam are among them: both reorganized their first level in 2025, and the
-  reference does not reflect it. An outdated division on a site about checkable data would be worse
-  than none.
-- **Fitting national data to the frame.** National boundaries of the United States and Norway are
-  fitted to the frame along land borders with neighbors only. The coastline stays national.
+- **National first levels for 15 countries.** Where Natural Earth and CLDR do not match the official
+  list, or a reform is not reflected, the first level comes from a national source with an open
+  license: the publisher's own file where it could be downloaded, otherwise OCHA's copy on the
+  Humanitarian Data Exchange that names the national source. Each country passed four gates before
+  its units were published: a license statement found by script on the publisher's page, the file
+  with its SHA-256, the number of units equal to an official list or legal act, and unambiguous
+  codes.
+- **Units defined by law.** Where a law has changed the first level and no file shows it yet, the
+  project assembles the new unit from whole units of the source, along their own boundaries, and
+  records the law. South Korea: Jeonnam-Gwangju Integrated Special City, created on July 1, 2026 by
+  Act No. 21446, is the union of the former South Jeolla Province and Gwangju Metropolitan City. The
+  Philippines: the Negros Island Region is Negros Occidental with Bacolod City, Negros Oriental and
+  Siquijor (Republic Act No. 12000, Sec. 3); Sulu is assigned to Zamboanga Peninsula under Executive
+  Order No. 91 of July 30, 2025.
+- **Indonesia.** The provinces are merged from BIG's regencies and cities. The map service of the
+  source generalized each regency separately, so neighbors did not share one line; overlaps between
+  provinces were removed, and narrow gaps remain, listed in the known limitations. Coordinates are
+  rounded to four decimal places, following BIG's regulation on sharing geospatial data abroad.
+- **Coastlines.** National first levels keep their own coastline, even where it lies outside the
+  country outline of the frame; nothing is cut at sea, except in Hong Kong, whose districts include
+  sea areas and are shown cut to the coastline of the frame. Islands that other states also claim
+  are shown as each national file draws them; the project takes no position on sovereignty.
+- **What may be out of date.** For the 104 countries added in version 0.2.0, ADM1 follows the top
+  level of ISO 3166-2 as recorded in Unicode CLDR release-48-2; reforms after that release may not
+  be reflected. National first levels are as of the dates of their files. Algeria, Burkina Faso,
+  Mali and Burundi reorganized their first level, and no open boundaries of the new division were
+  found: they show national borders only, like the other 115 countries and territories without a
+  checked first level. An outdated division on a site about checkable data would be worse than none.
+- **Fitting national data to the frame.** National boundaries are fitted to the frame along land
+  borders with neighbors only, within about 11 km of the border. The coastline stays national.
 - **Two geometries.** Calculations use the official boundaries at full resolution: for the United
-  States, the Census 1:500,000 files. The map shows a simplified version. Both carry the same unit
-  codes, so what you see is what we counted on. The subdivisions of all other countries come from
+  States, the Census 1:500,000 files; for Norway and the 15 countries with national first levels,
+  the national files, published as analysis files. The map shows a version simplified with a
+  tolerance of 0.0005 degrees, about 50 m; no unit changes its area by more than 2%. Indonesia is
+  not simplified further: the source is already generalized. Both geometries carry the same unit
+  codes, so what you see is what we counted on. The subdivisions of the other countries come from
   Natural Earth and are generalized: they are not the official national boundaries.
 - **Cut to the country.** First-level units are cut to the outline of their country. Where Natural
   Earth draws a unit beyond that outline, the part outside is left out and listed in the validation
@@ -643,14 +683,27 @@ abf-energync 0.1.1 under CC BY-NC 4.0.
   `POL-1-24` is Silesia. France keeps its INSEE codes (`FRA-1-84`). Crimea and Sevastopol, shown
   under Russia, carry codes of Russia's OKATO classifier (`RUS-1-35`, `RUS-1-67`), because ISO
   3166-2 lists them under Ukraine.
+  For the 15 countries with national first levels, the national code is the code of the source
+  (`PHL-1-18` is the Negros Island Region, `TWN-1-64000` is Kaohsiung), or the ISO 3166-2 code for
+  Luxembourg and Ireland. A unit assembled by the project carries a code made of the source codes it
+  joins: `KOR-1-X2436`.
 - **Checks run at every build.** No overlaps between units. No gaps except a reviewed list of seas,
   disputed areas and slivers. No land outside every country: the country layer is compared with the
   land of the Natural Earth admin-1 file, and an uncovered area of 100 km² or more stops the build.
   We added this check after version 0.1.0 left Adjara, part of Georgia, outside every country;
   version 0.2.0 corrects it. Every unit inside its parent. Unit counts as expected. Subdivisions
-  are published only for countries whose entry in the boundary registry has been verified. The build was reproduced on a second machine.
-- **License.** CC BY 4.0 for the boundary set. Each unit carries its own source and license. Codes
-  and English names of the first level come from Unicode CLDR (© Unicode, Inc., Unicode License v3).
+  are published only for countries whose entry in the boundary registry has been verified.
+  Between national first levels and their neighbors, overlaps above 0.05 km² stop the build; for
+  Indonesia, whose coordinates are rounded, the limit is 1 km² per pair and 5 km² for the country.
+  Two overlaps between islands claimed by more than one state are listed with the reason and
+  allowed. All units of the previous version are compared with it by hash.
+- **License.** CC BY 4.0 for the boundary set. Each unit carries its own source and license: Natural
+  Earth (public domain), the U.S. Census Bureau (public domain), Kartverket, Stats NZ, Tailte
+  Éireann and the State Land Service of Latvia (CC BY 4.0), Luxembourg (CC0), Peru (ODC-By), Taiwan
+  (Open Government Data License 1.0), OCHA's copies (CC BY 3.0 IGO), and the terms of DANE,
+  DATA.GOV.HK and data.go.kr; the boundaries of Indonesia are published by BIG without license terms
+  and are included on the basis of Indonesian copyright law. Codes and English names of the first
+  level come from Unicode CLDR (© Unicode, Inc., Unicode License v3).
 
 ## Counties, county-equivalents and cities
 
@@ -754,10 +807,12 @@ publication checks them by checksum. Corrections come as a new version.
   could not identify are missed, and the points are at commune precision.
 - **World data centers** are placed at towns, not at sites; 22.3% of Atlas records have no place below the country, and a town taken from the record name is the same town as the address gives in about 87% of tested cases. The county counts follow the county each Atlas record names; 124 U.S. records name none we can identify, and 17 units are shown as not covered.
 - **World power plants:** GEM's thresholds leave out small plants; GEM's trackers have different dates; about half of the plant points in abf-energy are approximate, and the map does not set them apart; solar capacities mix AC and DC values; data-center flags are GEM's and unchecked; U.S. figures are not reconciled with EIA-860.
-- **Boundaries** outside the United States and Norway are generalized at 1:10 million. First levels
-  of 104 countries follow CLDR release-48-2 and may miss later reforms; 134 countries and
-  territories have national borders only. Crimea and Sevastopol are shown under Russia, the state in
-  control, by a stated rule; Ukraine's claim is in the layer contested_areas.
+- **Boundaries** outside the United States, Norway and 15 countries with national sources are
+  generalized at 1:10 million; first levels of 104 countries follow CLDR release-48-2, which may
+  miss later reforms. 119 countries and territories have national borders only. National files keep
+  their own coastlines and the islands they claim. In Indonesia, narrow gaps remain between
+  provinces. Crimea and Sevastopol are shown under Russia, the state in control, by a stated rule;
+  Ukraine's claim is in the layer contested_areas.
 
 ## What we do not publish
 
