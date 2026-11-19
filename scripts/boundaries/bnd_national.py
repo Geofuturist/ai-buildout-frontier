@@ -516,7 +516,7 @@ def resolve_names(iso3: str, units: gpd.GeoDataFrame, rows: pd.DataFrame, names_
             uid = f"{iso3}-1-{code}"
         flag = ""
         if r is not None and "project translation" in str(r.note).lower():
-            how += "; project translation (перевод проекта)"
+            how += "; project translation"
         if iso and src_name and norm_name(src_name) and norm_name(name) and not _names_related(src_name, name):
             flag = "names share no word: check the code -> ISO mapping"
         out_id.append(uid)
