@@ -31,6 +31,13 @@ Writes, under --out-dir (SPEC S6):
     display/contested_areas.parquet + .geojson.gz (v0.2.0, SPEC S2.6; empty layer allowed)
     meta.json, build_log.json, sources_manifest.json (copied from --sources-dir), unit_hashes.csv
 
+v0.3.0 (SPEC_BND_boundaries_v0_3_0.md r4 S4): ADM1 of 15 more countries from national sources through ONE adapter
+(bnd_national.py, table boundaries/national_sources_v030.csv, names boundaries/adm1_names_v030.csv); input files are read
+from --input-root (<ISO3> folders); Svalbard (NOR-1-21) is also added to the Norway analysis file. Extra outputs:
+    analysis/<ISO3>_adm1_<source>_<date>.parquet for each national country
+    national_adm1_units_v030.csv (every unit: code, source name, ISO 3166-2, name, how the name was chosen, review flag)
+    national_adm1_report_v030.json (per country: parts, SHA-256 of the input files, conform numbers)
+
 Then run validate_boundaries.py (see boundaries/README.md).
 """
 from __future__ import annotations
@@ -50,6 +57,7 @@ import shapely
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bnd_common as c  # noqa: E402
+import bnd_national as bn  # noqa: E402
 import bnd_plan as bp  # noqa: E402
 
 T0 = time.time()
@@ -403,7 +411,8 @@ def build_norway(
     }, crs=c.CRS_WGS84)
     analysis_adm1 = gpd.GeoDataFrame({
         "unit_id": "NOR-1-" + fylke["fylkesnummer"], "iso3": "NOR", "level": "ADM1",
-        "parent_id": "NOR", "geometry": fylke.geometry,
+        "parent_id": "NOR", "source": "Kartverket, Administrative enheter fylker (Inndelingsbase)",
+        "geometry": fylke.geometry,
     }, crs=c.CRS_WGS84)
 
     nor_poly = adm0.loc[adm0["unit_id"] == "NOR", "geometry"].iloc[0]
@@ -416,6 +425,11 @@ def build_norway(
     if len(svalbard) != 1:
         raise c.BuildError(f"Expected exactly 1 NE ADM1 row named 'Svalbard', found {len(svalbard)}.")
     svalbard_geom = c.clean(svalbard.geometry.iloc[0])
+    # v0.3.0 (SPEC r4 S3b p.13): Svalbard is the 16th row of the analysis file, from NE as it is; the file name is unchanged
+    analysis_adm1 = gpd.GeoDataFrame(pd.concat([analysis_adm1, gpd.GeoDataFrame({
+        "unit_id": ["NOR-1-21"], "iso3": "NOR", "level": "ADM1", "parent_id": "NOR",
+        "source": f"Natural Earth {c.NE_VERSION} (ne_10m_admin_1_states_provinces, as it is)",
+        "geometry": [svalbard_geom]}, crs=c.CRS_WGS84)], ignore_index=True), crs=c.CRS_WGS84)
 
     # --- display geometry: conform to Sweden/Finland/Russia, then clip to NE Norway
     # polygon (amendment 1/1a -- Inndelingsbase has no coastline of its own) ---
@@ -553,10 +567,26 @@ def main() -> int:
     ap.add_argument("--sources-dir", required=True, type=Path)
     ap.add_argument("--out-dir", required=True, type=Path)
     ap.add_argument("--pov", default="usa")
-    ap.add_argument("--release", default="abf-boundaries-v0.2.0", help="release name written to meta.json")
+    ap.add_argument("--release", default="abf-boundaries-v0.3.0", help="release name written to meta.json")
+    ap.add_argument("--input-root", default=Path(r"D:\GISData\AI\Administrative units"), type=Path,
+                     help="v0.3.0: folder with one sub-folder per national source country (<ISO3 lower case>), SPEC r4 S3v p.4")
+    ap.add_argument("--exclude-countries", nargs="*", default=[],
+                     help="v0.3.0: ISO3 of rows of national_sources_v030.csv left out of this build (a country that did not pass "
+                          "its gates moves to the next version; the registry row must be removed or its expected_units fixed too)")
+    ap.add_argument("--only-countries", nargs="*", default=[],
+                     help="v0.3.0: build national ADM1 of these ISO3 only (all other rows of national_sources_v030.csv are left out, as by --exclude-countries)")
+    ap.add_argument("--cache-dir", default=None, type=Path,
+                     help="v0.3.0: folder for the checkpoint of the long IDN step (cleaning + simplification); reused only if input and parameters are identical")
     ap.add_argument("--boundaries-dir", default=Path("boundaries"), type=Path,
                      help="repo-relative dir with boundary_registry.csv / adm0_overrides.csv (default: boundaries, run from repo root)")
     args = ap.parse_args()
+    import faulthandler
+    import os
+    # The timed stack dump is OFF by default: twice (PHL 17.11, IDN 17.11) the process vanished in the middle of such a dump, without any
+    # error message (the dump reads the frames of the main thread without holding the GIL). ABF_STACK_DUMP=1 switches it on again.
+    faulthandler.enable()  # a real crash (access violation) now prints its own message
+    if os.environ.get("ABF_STACK_DUMP") == "1":
+        faulthandler.dump_traceback_later(300, repeat=True)
 
     out_dir: Path = args.out_dir
     (out_dir / "display").mkdir(parents=True, exist_ok=True)
@@ -627,6 +657,45 @@ def main() -> int:
             raise c.BuildError(f"P8: >= {bp.NESTED_STOP_COUNT} nested units in a country: {nested['over_limit']}. Stop and ask.")
         logger.add(step="plan_clip_losses", losses=plan_losses)
 
+    # v0.3.0 S4 -- ADM1 from national sources through the one adapter (bnd_national.py)
+    nat_adm1, nat_analysis, nat_report, nat_sources, nat_review, nat_extras = None, {}, {}, [], [], {}
+    nat_table_path = args.boundaries_dir / "national_sources_v030.csv"
+    if nat_table_path.exists():
+        nat_table = bn.load_table(nat_table_path)
+        own = {"FRA", "GBR", "USA", "NOR"} | (set(plan["iso3"]) if plan_adm1 is not None else set())
+        clash = sorted(set(nat_table["iso3"]) & own)
+        if clash:
+            raise c.BuildError(f"national_sources_v030.csv has rows for countries that already have ADM1: {clash}. Stop.")
+        excluded = [x.upper() for x in (args.exclude_countries or [])]
+        if args.only_countries:
+            keep = {x.upper() for x in args.only_countries}
+            excluded = sorted(set(excluded) | (set(nat_table["iso3"]) - keep))
+        only = [i for i in nat_table["iso3"].drop_duplicates().tolist() if i not in excluded]
+        if excluded:
+            log(f"national ADM1: countries left out of this build by --exclude-countries: {excluded}")
+        # published ADM1 of v0.2.0 built above (ARCH7 D2: subtracted from the national countries along their land borders)
+        pub_parts = [x for x in (fra_adm1, gbr_adm1, usa_adm1, nor_adm1, plan_adm1) if x is not None and len(x)]
+        pub_adm1 = gpd.GeoDataFrame(pd.concat(pub_parts, ignore_index=True), crs=c.CRS_WGS84)
+        nat_adm1, nat_analysis, nat_report, nat_sources, nat_review, nat_extras = bn.build_national_adm1(
+            args.input_root, nat_table_path, args.boundaries_dir / "adm1_names_v030.csv", adm0, lakes_union,
+            src["manifest"], registry, logger, log=log, only=only, published_adm1=pub_adm1, cache_dir=args.cache_dir)
+        exp_nat = bn.expected_per_country(nat_table)
+        cnt = nat_adm1.groupby("iso3").size()
+        bad = {k: (int(cnt.get(k, 0)), exp_nat[k]) for k in only if int(cnt.get(k, 0)) != exp_nat[k]}
+        if registry is not None:
+            reg1 = registry[registry["level"] == "ADM1"].set_index("iso3")["expected_units"].astype(int)
+            miss = [k for k in only if k not in reg1.index]
+            bad.update({k: (int(cnt.get(k, 0)), int(reg1[k])) for k in only if k in reg1.index and int(cnt.get(k, 0)) != int(reg1[k])})
+            if miss:
+                raise c.BuildError(f"national ADM1: no ADM1 row in boundary_registry.csv for {miss}. Stop.")
+        if bad:
+            raise c.BuildError(f"national ADM1: built vs expected (G3 / registry) differ (built, expected): {bad}. Stop.")
+        nested_n = bp.check_nested(bp.find_nested_units(nat_adm1))
+        logger.add(step="national_p8_nested_units", **{k: v for k, v in nested_n.items() if k != "passed"})
+        log(f"national ADM1: {len(nat_adm1)} units in {nat_adm1['iso3'].nunique()} countries; P8 nested units per country {nested_n['per_country']}")
+        if not nested_n["passed"]:
+            raise c.BuildError(f"P8: >= {bp.NESTED_STOP_COUNT} nested units in a country: {nested_n['over_limit']}. Stop and ask.")
+
     # apply registry "verified" -> published, where a registry is available
     def apply_published(gdf: gpd.GeoDataFrame, iso3: str, level: str) -> gpd.GeoDataFrame:
         if registry is None:
@@ -645,7 +714,8 @@ def main() -> int:
     nor_adm1 = apply_published(nor_adm1, "NOR", "ADM1")
     nor_adm2 = apply_published(nor_adm2, "NOR", "ADM2")
 
-    adm1_parts = [fra_adm1, gbr_adm1, usa_adm1, nor_adm1] + ([plan_adm1] if plan_adm1 is not None else [])
+    adm1_parts = ([fra_adm1, gbr_adm1, usa_adm1, nor_adm1] + ([plan_adm1] if plan_adm1 is not None else [])
+                  + ([nat_adm1] if nat_adm1 is not None else []))
     display_adm1 = pd.concat(adm1_parts, ignore_index=True)
     display_adm1 = gpd.GeoDataFrame(display_adm1, crs=c.CRS_WGS84)
     display_adm2 = pd.concat([fra_adm2, usa_adm2, nor_adm2], ignore_index=True)
@@ -700,6 +770,14 @@ def main() -> int:
     c.write_parquet(nor_analysis_adm1, out_dir / "analysis" / "NOR_adm1_inndelingsbase_20260101.parquet")
     c.write_parquet(nor_analysis_adm2, out_dir / "analysis" / "NOR_adm2_inndelingsbase_20260101.parquet")
     log("analysis/USA_*, NOR_* written")
+    for iso3, (a_gdf, a_name) in nat_analysis.items():
+        c.write_parquet(a_gdf, out_dir / "analysis" / a_name)
+    if nat_analysis:
+        log(f"analysis/ national ADM1: {len(nat_analysis)} file(s) written")
+        pd.DataFrame(nat_review).sort_values("unit_id").to_csv(out_dir / "national_adm1_units_v030.csv", index=False, encoding="utf-8")
+        (out_dir / "national_adm1_report_v030.json").write_text(json.dumps(
+            {"countries": nat_report, "sources": nat_sources, "extras": nat_extras,
+             "analysis_files": {k: v[1] for k, v in nat_analysis.items()}}, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
 
     # --- unit_hashes.csv (reproducibility check, SPEC S8) ---
     write_unit_hashes([adm0, display_adm1, display_adm2], out_dir / "unit_hashes.csv")
@@ -718,7 +796,50 @@ def main() -> int:
         "ADM2": {"total": len(display_adm2), "USA": len(usa_adm2), "FRA": len(fra_adm2), "NOR": len(nor_adm2)},
         "contested_areas": len(contested),
     }
+    if nat_adm1 is not None:
+        unit_counts["ADM1"]["national_countries"] = int(nat_adm1["iso3"].nunique())
+        unit_counts["ADM1"]["national_units"] = len(nat_adm1)
     meta = build_meta(args.release, args.pov, src["manifest"], unit_counts, out_dir)
+    if nat_adm1 is not None:
+        meta["sources"].extend(nat_sources)
+        meta["boundary_source"] = ("Natural Earth 1:10m framework, conformed to national sources for USA, Norway and "
+                                   f"{nat_adm1['iso3'].nunique()} more countries (v0.3.0)")
+        meta["national_adm1"] = {k: {"units": v["n_units"], "coord_decimals": v.get("coord_decimals"),
+                                     "vintage_is_retrieval_date": any(p.get("vintage_is_retrieval_date") for p in v["parts"]),
+                                     "coverage_cleaning": ({kk: vv for kk, vv in v["coverage_cleaning"].items() if kk != "units_changed"}
+                                                           if v.get("coverage_cleaning") else None),
+                                     "simplification": v.get("simplification"),
+                                     "max_area_change_pct_official_to_display": max(abs(u["change_official_to_display_pct"] or 0) for u in v["units"]),
+                                     "published_adm1_neighbours_subtracted": v.get("neighbour_mask_adm1_countries")}
+                                 for k, v in nat_report.items()}
+        meta["national_adm1_method"] = {
+            "display_order": ["clean the coverage (overlaps, slivers < %s deg between two units; always for IDN, otherwise where the coverage "
+                              "is not valid)" % bn.GAP_WIDTH_DEG,
+                              "coverage simplification, shared edges identical, tolerance %s deg (~55 m), before conforming" % bn.SIMPLIFY_TOL_DEG,
+                              "conform: ADM0 AND the published ADM1 (v0.2.0) of the neighbours removed, land gaps in a %s deg corridor "
+                              "handed to the unit with the longest common boundary" % bn.CORRIDOR_DEG,
+                              "rounding of the whole coverage (IDN: 4 decimals, topology kept)"],
+            "simplification": {"method": "shapely.coverage_simplify (GEOS coverage simplifier)", "tolerance_deg": bn.SIMPLIFY_TOL_DEG,
+                               "stop_if_unit_loses_more_than": bn.SIMPLIFY_LOSS_STOP, "applied_to": "display/ only; analysis/ keeps the official detail",
+                               "not_applied_to": "the 5 511 units of v0.2.0"},
+            "idn_cause_of_slivers": "server-side generalisation (maxAllowableOffset) simplifies each district separately; cleaned after dissolve",
+            "coastline": "official national coastline in all countries except HKG (display clipped to the frame coastline, ~1 036 km2 of ~1 110 km2 land)",
+            "tolerances_km2": {"overlap_default": c.OVERLAP_TOL_KM2, "national_conform_residual": c.CONFORM_RESIDUAL_TOL_KM2,
+                               "idn_pair_with_neighbour": bn.IDN_NEIGHBOUR_PAIR_TOL_KM2, "idn_country_residual": bn.IDN_COUNTRY_RESIDUAL_TOL_KM2},
+            "unit_id_basis": "<ISO3>-1-<national code of the issuer>; LUX and IRL: ISO 3166-2 suffix (the codes of the source are internal "
+                             "numbers); NZL Chatham Islands Territory: code 067 of the Territorial Authority layer; KOR merged unit: project "
+                             "code X2436 (SGIS 24 Gwangju + 36 Jeonnam)",
+            "iso_and_names_rule": "where CLDR 48.2 has a valid code of the unit: ISO 3166-2 code and the English CLDR name; otherwise the "
+                                  "name of the source (VNM, HKG, PHL Negros Island Region, KOR merged unit); deviations from the CLDR name "
+                                  "are listed in national_adm1_units_v030.csv (column how)",
+        }
+        if "KOR" in nat_report and nat_report["KOR"].get("merge_creation_date"):
+            meta["national_adm1_method"]["kor_merged_unit_creation_date"] = nat_report["KOR"]["merge_creation_date"]
+        if nat_extras.get("idn_rights_search"):
+            rs = nat_extras["idn_rights_search"]
+            meta["national_adm1_method"]["idn_rights_search"] = {k: rs[k] for k in ("line", "found", "n_hits", "words", "json_credit_fields", "complete", "empty_pages", "missing_kinds")}
+    meta["analysis_notes"] = {"NOR_adm1_inndelingsbase_20260101.parquet":
+                              f"16 rows: 15 Kartverket counties + NOR-1-21 Svalbard from Natural Earth {c.NE_VERSION} as it is"}
     (out_dir / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     log("meta.json written")
 
@@ -733,6 +854,9 @@ def main() -> int:
     print(f"ADM2: {len(display_adm2)} (USA {len(usa_adm2)}, FRA {len(fra_adm2)}, NOR {len(nor_adm2)})")
     print(f"ADM1 countries: {display_adm1['iso3'].nunique()}; plan units: {len(plan_adm1) if plan_adm1 is not None else 0}; "
           f"contested_areas: {len(contested)}; name overrides: {len(names_applied)}")
+    if nat_adm1 is not None:
+        print(f"national ADM1 (v0.3.0): {len(nat_adm1)} units in {nat_adm1['iso3'].nunique()} countries: "
+              f"{ {k: v['n_units'] for k, v in nat_report.items()} }")
     print(f"USA gap report: {usa_gap}")
     print(f"USA ADM1 vs Census cross-check: {usa_cross}")
     print(f"Norway gap report: {nor_gap}")
