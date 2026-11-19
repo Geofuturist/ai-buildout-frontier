@@ -19,6 +19,16 @@ Run (from repo root, after build_boundaries.py):
     # after V has reviewed boundaries/holes_whitelist.geojson and it is committed:
     python scripts\\boundaries\\validate_boundaries.py --out-dir "D:\\GISData\\Boundaries\\out\\abf-boundaries-v0.2.0" --sources-dir "D:\\GISData\\Boundaries\\sources" --prev-hashes "D:\\GISData\\Boundaries\\out\\abf-boundaries-v0.1.0\\unit_hashes.csv"
 
+v0.3.0 additions (SPEC_BND_boundaries_v0_3_0.md r4 S4):
+  check 3  also for every national ADM1 country of boundaries/national_sources_v030.csv present in the output: encroachment on the
+           neighbours and land gap along the land border (corridor), tolerance 0.05 km2 per country (rounded countries: see below)
+  check 9  with --prev-release v0.2.0: all units of v0.2.0 identical (geometry and attributes), new rows = exactly the national ADM1 units
+  check 13 national ADM1 (count = G3 = registry, ids, parent, validity, analysis files, coordinate decimals of rounded countries
+           (IDN: 4), ISO 3166-2 / CLDR names, SHA-256 of the input files in meta.json, Svalbard in the Norway analysis file)
+  Countries with coord_decimals (IDN) are rounded after conforming, so slivers of about the grid size appear along their land
+  borders with unrounded neighbours; --rounded-pair-tol-km2 / --rounded-country-tol-km2 set the tolerance for them (default: the
+  strict 0.05 km2 -- relaxing it is a decision of [ARCH7], see CODE_BND_to_ARCH7_v030.md).
+
 Writes validation_report.json and validation_report.md into --out-dir.
 Exit code 1 if any of checks 1-5 or 7-12 fails; check 6 is report-only and never fails the run.
 
@@ -42,10 +52,10 @@ from pathlib import Path
 import geopandas as gpd
 import pandas as pd
 import shapely
-from shapely.ops import unary_union
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bnd_common as c  # noqa: E402
+import bnd_national as bn  # noqa: E402
 import bnd_plan as bp  # noqa: E402
 
 
@@ -140,29 +150,68 @@ def find_adm0_holes(adm0: gpd.GeoDataFrame) -> list[dict]:
 # Check 1 -- overlaps
 # --------------------------------------------------------------------------
 
-def check_overlaps(adm0, adm1, adm2, registry=None) -> dict:
-    """Check 1. All pairs > OVERLAP_TOL_KM2 (0.01) are listed in the report. A pair fails the check unless it is a
-    pair of units from DIFFERENT countries where at least one country is national_conformed (USA, NOR): for those
-    the tolerance is CONFORM_RESIDUAL_TOL_KM2 (0.05) -- ARCH6 decision 17.10.2026 (SPEC v0.2.0 r3). Inside a
-    country and between NE-based countries the tolerance stays 0.01."""
+def load_overlap_whitelist(path: Path) -> list[dict]:
+    """boundaries/overlap_whitelist.csv (ARCH7 D3): unit_a, unit_b, area_km2, place, reason -- pairs of units whose national files
+    claim the same water or islands (Itu Aba, Thitu...). A pair is skipped by check 1 while its overlap stays within the listed area."""
+    if path is None or not Path(path).exists():
+        return []
+    df = pd.read_csv(path, dtype=str, keep_default_na=False, encoding="utf-8")
+    need = ["unit_a", "unit_b", "area_km2", "place", "reason"]
+    miss = [k for k in need if k not in df.columns]
+    if miss:
+        raise c.BuildError(f"{path}: columns missing: {miss}")
+    return [dict(unit_a=r.unit_a.strip(), unit_b=r.unit_b.strip(), area_km2=float(r.area_km2), place=r.place, reason=r.reason)
+            for r in df.itertuples() if r.unit_a.strip()]
+
+
+def check_overlaps(adm0, adm1, adm2, registry=None, rounded=frozenset(), rounded_pair_tol: float = bn.IDN_NEIGHBOUR_PAIR_TOL_KM2,
+                   rounded_neighbours=None, whitelist=None) -> dict:
+    """Check 1. All pairs > OVERLAP_TOL_KM2 (0.01) are listed in the report. A pair fails the check unless
+      * it is a pair of units from DIFFERENT countries where at least one country is national_conformed (USA, NOR, v0.3.0 countries):
+        tolerance CONFORM_RESIDUAL_TOL_KM2 (0.05) -- ARCH6 decision 17.10.2026; or
+      * (ARCH7 D1) it is a pair of a rounded country (IDN) with one of its neighbours (MYS, PNG, TLS): tolerance `rounded_pair_tol`
+        (1.0): the neighbours are published at full precision, IDN with 4 decimals; or
+      * (ARCH7 D3) it is listed in boundaries/overlap_whitelist.csv and its overlap does not exceed the listed area (x1.5 + 0.05 km2: the display is simplified): both
+        national files claim the same sea or islands, the claims are shown as they are.
+    Inside a country (IDN-IDN too) and between NE-based countries the tolerance stays 0.01."""
     nc = set()
     if registry is not None:
         nc = set(registry.loc[registry["method"] == "national_conformed", "iso3"])
+    rounded_neighbours = rounded_neighbours or {}
+    wl = {frozenset((w["unit_a"], w["unit_b"])): w for w in (whitelist or [])}
+    wl_used = set()
     result = {}
     for name, gdf in [("ADM0", adm0), ("ADM1", adm1), ("ADM2", adm2)]:
         iso = dict(zip(gdf["unit_id"], gdf["iso3"]))
         overlaps = c.pairwise_overlaps(gdf, tol_km2=c.OVERLAP_TOL_KM2)
-        failing, relaxed = [], []
+        failing, relaxed, relaxed_idn, whitelisted = [], [], [], []
         for o in overlaps:
             ia, ib = iso[o["unit_a"]], iso[o["unit_b"]]
+            key = frozenset((o["unit_a"], o["unit_b"]))
+            w = wl.get(key)
+            if w is not None and o["overlap_km2"] <= w["area_km2"] * 1.5 + 0.05:
+                wl_used.add(key)
+                whitelisted.append(dict(o, place=w["place"], reason=w["reason"], listed_km2=w["area_km2"]))
+                continue
+            idn_pair = ia != ib and ((ia in rounded and ib in rounded_neighbours.get(ia, ())) or (ib in rounded and ia in rounded_neighbours.get(ib, ())))
+            if idn_pair and o["overlap_km2"] <= rounded_pair_tol:
+                relaxed_idn.append(o)
+                continue
             ok = (ia != ib) and (ia in nc or ib in nc) and o["overlap_km2"] <= c.CONFORM_RESIDUAL_TOL_KM2
             (relaxed if ok else failing).append(o)
         result[name] = {"n_pairs_above_0_01": len(overlaps), "n_failing": len(failing),
-                        "n_accepted_relaxed_tol_0_05": len(relaxed),
-                        "failing": failing[:50], "accepted_relaxed": relaxed[:50]}
+                        "n_accepted_relaxed_tol_0_05": len(relaxed), "n_accepted_rounded_country_with_neighbour": len(relaxed_idn),
+                        "n_whitelisted_claims": len(whitelisted),
+                        "failing": failing[:50], "accepted_relaxed": relaxed[:50], "accepted_rounded_with_neighbour": relaxed_idn[:50],
+                        "whitelisted_claims": whitelisted[:50]}
+    stale = [dict(unit_a=w["unit_a"], unit_b=w["unit_b"], place=w["place"]) for k, w in wl.items() if k not in wl_used]
     passed = all(v["n_failing"] == 0 for v in result.values())
     return {"passed": passed, "tolerances_km2": {"default": c.OVERLAP_TOL_KM2,
-            "different_countries_one_national_conformed": c.CONFORM_RESIDUAL_TOL_KM2}, "detail": result}
+            "different_countries_one_national_conformed": c.CONFORM_RESIDUAL_TOL_KM2,
+            "rounded_country_pair_with_neighbour": rounded_pair_tol if rounded else None, "rounded_countries": sorted(rounded),
+            "rounded_country_neighbours": {k: sorted(v) for k, v in rounded_neighbours.items()}},
+            "whitelist_entries": len(wl), "whitelist_not_matched_in_this_build": stale,
+            "detail": result}
 
 
 # --------------------------------------------------------------------------
@@ -181,7 +230,6 @@ def check_holes(adm0: gpd.GeoDataFrame, whitelist_path: Path) -> dict:
         g = h["geometry"]
         best = None
         for _, wrow in wl.iterrows():
-            inter = shapely.intersection(g, wrow.geometry)
             sd_area = c.area_km2(shapely.symmetric_difference(g, wrow.geometry))
             if sd_area <= c.HOLE_WHITELIST_TOL_KM2:
                 best = wrow
@@ -212,6 +260,29 @@ def check_conform_residual(adm0: gpd.GeoDataFrame, adm2: gpd.GeoDataFrame, lakes
     passed = encroach <= c.CONFORM_RESIDUAL_TOL_KM2 and land_km2 <= c.CONFORM_RESIDUAL_TOL_KM2
     return {"passed": passed, "encroachment_km2": round(encroach, 4), "land_gap_km2": round(land_km2, 4),
             "tolerance_km2": c.CONFORM_RESIDUAL_TOL_KM2, "n_land_fragments": len(land)}
+
+
+def check_national_conform(adm0, adm1, lakes_union, table: pd.DataFrame, rounded_country_tol: float, log=print) -> dict:
+    """v0.3.0 check 3 for the national ADM1 countries: encroachment on the neighbours (their ADM0 AND their ADM1 of v0.2.0, ARCH7 D2)
+    and land gap in the border corridor, re-measured from the output (bn.measure_residuals). Rounded countries (IDN): ARCH7 D1,
+    tolerance `rounded_country_tol` (5.0)."""
+    out, present = {}, set(adm1["iso3"])
+    adm0_geom = dict(zip(adm0["unit_id"], adm0.geometry))
+    published = adm1[~adm1["iso3"].isin(set(table["iso3"]))]
+    for iso3, rows in table.groupby("iso3", sort=False):
+        if iso3 not in present:
+            continue
+        units = adm1[adm1["iso3"] == iso3]
+        nb = [x for x in rows["neighbors"].iloc[0].split(";") if x]
+        nb_adm0, mask = bn.neighbour_masks(adm0_geom, published, nb, adm0_geom[iso3])
+        log(f"  national check 3: {iso3} ...")
+        res = bn.measure_residuals(units.geometry.values, adm0_geom[iso3], nb_adm0 if nb else None, lakes_union, mask=mask if nb else None)
+        rounded = bool(rows["coord_decimals"].iloc[0])
+        tol = rounded_country_tol if rounded else c.CONFORM_RESIDUAL_TOL_KM2
+        res.update(tolerance_km2=tol, rounded_country=rounded, published_adm1_of_neighbours=sorted(set(published["iso3"]) & set(nb)),
+                   passed=res["encroachment_km2"] <= tol and res["land_gap_km2"] <= tol)
+        out[iso3] = res
+    return {"passed": all(v["passed"] for v in out.values()), "countries": out}
 
 
 # --------------------------------------------------------------------------
@@ -401,6 +472,181 @@ def check_contested(out_dir: Path, boundaries_dir: Path, adm0, adm1) -> dict:
             "note": "empty layer is allowed (no rows in contested_areas.csv)" if n_csv == 0 else ""}
 
 
+def check_reconciliation_v030(prev_hashes: Path, out_dir: Path) -> dict:
+    """SPEC r4 S4: unit_hashes.csv against v0.2.0. Every unit of v0.2.0 is identical (geometry and attributes); the new rows are
+    exactly the ADM1 units of the national countries built (national_adm1_units_v030.csv)."""
+    prev = pd.read_csv(prev_hashes, dtype=str).set_index("unit_id")
+    new = pd.read_csv(out_dir / "unit_hashes.csv", dtype=str).set_index("unit_id")
+    nat = pd.read_csv(out_dir / "national_adm1_units_v030.csv", dtype=str, keep_default_na=False) \
+        if (out_dir / "national_adm1_units_v030.csv").exists() else pd.DataFrame({"unit_id": []})
+    missing = sorted(set(prev.index) - set(new.index))
+    added = set(new.index) - set(prev.index)
+    common = prev.index.intersection(new.index)
+    geom_changed = sorted(u for u in common if prev.at[u, "geom_sha256_16"] != new.at[u, "geom_sha256_16"])
+    attr_changed = sorted(u for u in common if prev.at[u, "attr_sha256_16"] != new.at[u, "attr_sha256_16"])
+    problems = []
+    if missing:
+        problems.append(f"{len(missing)} unit_id of v0.2.0 are missing: {missing[:10]}")
+    if geom_changed:
+        problems.append(f"geometry changed for {len(geom_changed)} unit(s) of v0.2.0: {geom_changed[:20]}")
+    if attr_changed:
+        problems.append(f"attributes changed for {len(attr_changed)} unit(s) of v0.2.0: {attr_changed[:20]}")
+    expect = set(nat["unit_id"])
+    if added != expect:
+        problems.append(f"added unit_id differ from the national ADM1 units: {len(added ^ expect)} differences "
+                        f"(only added: {sorted(added - expect)[:10]}, only expected: {sorted(expect - added)[:10]})")
+    return dict(passed=not problems, problems=problems, n_prev=len(prev), n_new=len(new), n_missing=len(missing),
+                n_added=len(added), n_expected_added=len(expect), n_geom_changed=len(geom_changed), n_attr_changed=len(attr_changed))
+
+
+def check_national_adm1(out_dir: Path, boundaries_dir: Path, adm0, adm1, registry, manifest: dict) -> dict:
+    """v0.3.0 check 13: the national ADM1 countries (boundaries/national_sources_v030.csv)."""
+    import re as _re
+    tpath = boundaries_dir / "national_sources_v030.csv"
+    if not tpath.exists():
+        return {"passed": True, "skipped": True, "note": "no national_sources_v030.csv"}
+    table = bn.load_table(tpath)
+    problems, rows = [], {}
+    present = [i for i in table["iso3"].drop_duplicates() if i in set(adm1["iso3"])]
+    left_out = [i for i in table["iso3"].drop_duplicates() if i not in present]
+    rep_path = out_dir / "national_adm1_report_v030.json"
+    units_path = out_dir / "national_adm1_units_v030.csv"
+    if not rep_path.exists() or not units_path.exists():
+        return {"passed": False, "problems": ["national_adm1_report_v030.json / national_adm1_units_v030.csv are missing"]}
+    rep = json.loads(rep_path.read_text(encoding="utf-8"))
+    review = pd.read_csv(units_path, dtype=str, keep_default_na=False)
+    meta = json.loads((out_dir / "meta.json").read_text(encoding="utf-8"))
+    meta_sha = {s.get("sha256") for s in meta.get("sources", [])}
+    cldr = None
+    try:
+        cldr = bn.Cldr(manifest)
+    except c.BuildError as e:
+        problems.append(f"CLDR files: {e}")
+    exp_all = bn.expected_per_country(table)
+    reg1 = registry[registry["level"] == "ADM1"].set_index("iso3") if registry is not None else None
+    adm0_ids = set(adm0["unit_id"])
+    for iso3 in present:
+        g = adm1[adm1["iso3"] == iso3]
+        trows = table[table["iso3"] == iso3]
+        r = {"n": len(g), "expected": exp_all[iso3]}
+        if len(g) != exp_all[iso3]:
+            problems.append(f"{iso3}: {len(g)} units, G3 says {exp_all[iso3]}")
+        if g["unit_id"].duplicated().any():
+            problems.append(f"{iso3}: duplicate unit_id")
+        if not (g["parent_id"] == iso3).all() or iso3 not in adm0_ids:
+            problems.append(f"{iso3}: parent_id is not the ADM0 unit")
+        if (g["method"] != "national_conformed").any():
+            problems.append(f"{iso3}: method is not national_conformed")
+        for col in ("source", "source_vintage", "license", "boundary_vintage", "src_ref", "unit_type_local", "unit_type_en", "name"):
+            if (g[col].astype(str).str.strip() == "").any():
+                problems.append(f"{iso3}: empty {col} in {int((g[col].astype(str).str.strip() == '').sum())} unit(s)")
+        bad_geom = [u for u, x in zip(g["unit_id"], g.geometry) if x is None or x.is_empty or not x.is_valid]
+        if bad_geom:
+            problems.append(f"{iso3}: empty or invalid display geometry: {bad_geom[:10]}")
+        if reg1 is not None:
+            if iso3 not in reg1.index:
+                problems.append(f"{iso3}: no ADM1 row in boundary_registry.csv")
+            else:
+                if str(reg1.loc[iso3, "verified"]).lower() != "true" or not g["published"].all():
+                    problems.append(f"{iso3}: registry verified / published flag is not true")
+        # analysis file
+        aname = rep.get("analysis_files", {}).get(iso3)
+        decimals = int(trows["coord_decimals"].iloc[0]) if trows["coord_decimals"].iloc[0] else None
+        if not aname or not (out_dir / "analysis" / aname).exists():
+            problems.append(f"{iso3}: analysis file is missing ({aname})")
+        else:
+            a = gpd.read_parquet(out_dir / "analysis" / aname)
+            if set(a["unit_id"]) != set(g["unit_id"]) or len(a) != len(g):
+                problems.append(f"{iso3}: analysis file units differ from display ADM1")
+            if decimals:
+                da = max(bn.max_decimals(x) for x in a.geometry.values)
+                dd = max(bn.max_decimals(x) for x in g.geometry.values)
+                r["max_decimals_analysis"], r["max_decimals_display"] = da, dd
+                if da > decimals or dd > decimals:
+                    problems.append(f"{iso3}: coordinates have more than {decimals} decimals (analysis {da}, display {dd})")
+        # input files recorded
+        srcs = [s for s in rep.get("sources", []) if s.get("iso3") == iso3]
+        if len(srcs) != len(trows) or any(not _re.fullmatch(r"[0-9a-f]{64}", str(s.get("sha256", ""))) or s["sha256"] not in meta_sha for s in srcs):
+            problems.append(f"{iso3}: SHA-256 of the input file(s) is not recorded in meta.json sources")
+        # names / ISO codes
+        rv = review[review["unit_id"].isin(g["unit_id"])]
+        if len(rv) != len(g):
+            problems.append(f"{iso3}: national_adm1_units_v030.csv has {len(rv)} rows, ADM1 has {len(g)}")
+        name_of = dict(zip(g["unit_id"], g["name"]))
+        flagged = []
+        for x in rv.itertuples():
+            if name_of.get(x.unit_id) != x.name:
+                problems.append(f"{x.unit_id}: name in ADM1 {name_of.get(x.unit_id)!r} differs from the review table {x.name!r}")
+            if x.iso_3166_2 and cldr is not None:
+                cc = x.iso_3166_2[:2]
+                code = bn.to_cldr(x.iso_3166_2)
+                if code not in cldr.reach(cc):
+                    problems.append(f"{x.unit_id}: {x.iso_3166_2} is not in the CLDR tree under {cc}")
+                en = cldr.en_name(code)
+                if en and x.name != en and "name from the table" not in x.how:
+                    problems.append(f"{x.unit_id}: name {x.name!r} differs from CLDR {en!r}")
+            if x.flag or "name from the table" in x.how or "no CLDR name" in x.how:
+                flagged.append(dict(unit_id=x.unit_id, name=x.name, iso=x.iso_3166_2, how=x.how, flag=x.flag))
+        r["flagged_for_RES"] = flagged
+        # ARCH7 r5: display simplification (D5), KOR code (item 1), IDN rights search (item 11)
+        crep = rep.get("countries", {}).get(iso3, {})
+        ss = crep.get("simplification")
+        if not ss:
+            problems.append(f"{iso3}: no simplification record in national_adm1_report_v030.json")
+        else:
+            worst = max((abs(u["change_pct"]) for u in crep.get("units", [])), default=0.0)
+            r["simplification"] = dict(ss, worst_unit_change_pct=worst)
+            r["clean_mode"] = crep.get("clean_mode")
+            r["simplify"] = crep.get("simplify")
+            for key in ("inner_gaps", "overlaps_after_rounding"):
+                if crep.get(key):
+                    r[key] = crep[key]
+            if ss.get("skipped"):
+                # table flag simplify=no (ARCH7 18.11): nothing to check here; the overlap checks 1 and 3 are the gates
+                pass
+            elif worst > 100 * bn.SIMPLIFY_LOSS_STOP:
+                problems.append(f"{iso3}: a unit lost {worst} % of its area in the simplification (stop at {100 * bn.SIMPLIFY_LOSS_STOP} %)")
+            if ss.get("skipped"):
+                pass
+            elif not ss.get("coverage_valid_after"):
+                if ss.get("invalid_edges_km", 1e9) > bn.COVERAGE_INVALID_EDGE_TOL_KM:
+                    problems.append(f"{iso3}: the coverage is not valid after the simplification "
+                                    f"(edges not matching a neighbour: {ss.get('invalid_edges_km')} km in {ss.get('units_with_invalid_edges')} unit(s))")
+                else:
+                    r["coverage_note"] = (f"coverage not strictly valid after the simplification: {ss.get('invalid_edges_km')} km of edges "
+                                          f"not matching a neighbour in {ss.get('units_with_invalid_edges')} unit(s) (below {bn.COVERAGE_INVALID_EDGE_TOL_KM} km; no overlap check fails)")
+            if not ss.get("skipped") and abs(ss.get("tolerance_deg", 0) - bn.SIMPLIFY_TOL_DEG) > 1e-12:
+                problems.append(f"{iso3}: simplification tolerance {ss.get('tolerance_deg')} differs from {bn.SIMPLIFY_TOL_DEG}")
+        r["lost_parts_total"] = sum(u["lost_parts"] for u in crep.get("units", []))
+        if iso3 == "KOR":
+            ids_k = set(g["unit_id"])
+            if "KOR-1-X2436" not in ids_k or "KOR-1-X2936" in ids_k:
+                problems.append("KOR: the merged unit must be KOR-1-X2436 (SGIS 24 + 36), not X2936")
+            r["merge_creation_date"] = crep.get("merge_creation_date", {}).get("date")
+        if iso3 == "IDN":
+            rs = rep.get("extras", {}).get("idn_rights_search")
+            if not rs:
+                problems.append("IDN: no rights search record (ARCH7 r5 item 11)")
+            elif rs.get("found"):
+                problems.append(f"IDN: the rights search found {rs.get('n_hits')} hit(s): IDN must not be released")
+            elif not rs.get("complete"):
+                problems.append("IDN: the rights search is incomplete (layer JSON / rendered BIG item page missing or empty): "
+                                f"missing {rs.get('missing_kinds')}, empty pages {rs.get('empty_pages')} -- 'no reservation found' cannot be claimed")
+            r["rights_search"] = rs.get("line") if rs else None
+        rows[iso3] = r
+    # Svalbard in the Norway analysis file
+    nor = out_dir / "analysis" / "NOR_adm1_inndelingsbase_20260101.parquet"
+    if nor.exists():
+        a = gpd.read_parquet(nor)
+        if len(a) != 16 or "NOR-1-21" not in set(a["unit_id"]):
+            problems.append(f"NOR analysis file: {len(a)} rows / NOR-1-21 present = {'NOR-1-21' in set(a['unit_id'])}, expected 16 rows with NOR-1-21")
+    else:
+        problems.append("NOR analysis file is missing")
+    total = int(sum(r["n"] for r in rows.values()))
+    return {"passed": not problems, "problems": problems, "n_countries": len(present), "n_units": total,
+            "expected_sum_of_present": int(sum(exp_all[i] for i in present)), "left_out": left_out, "countries": rows}
+
+
 # SPEC_BND r6 S6 p.2 and p.11: points that must lie in the named ADM0 unit (and only there)
 ACCEPTANCE_POINTS = [
     ("Adjara (41.64 N, 41.64 E)", 41.64, 41.64, "GEO"),
@@ -507,6 +753,20 @@ def main() -> int:
                           "(report-only) reads ne_10m_admin_2_counties from here.")
     ap.add_argument("--prev-hashes", type=Path, default=None,
                      help="unit_hashes.csv of the previous release (v0.1.0) for the S2.5 reconciliation (check 9)")
+    ap.add_argument("--prev-release", choices=["v0.1.0", "v0.2.0"], default="v0.1.0",
+                     help="which release --prev-hashes belongs to. v0.2.0 (for the 0.3.0 build): all old units identical, new rows = the "
+                          "national ADM1 units. Default v0.1.0 = the check of v0.2.0.")
+    ap.add_argument("--rounded-pair-tol-km2", type=float, default=bn.IDN_NEIGHBOUR_PAIR_TOL_KM2,
+                     help="check 1: tolerance per pair of a rounded country (coord_decimals, IDN) with one of its neighbours (MYS, PNG, TLS). "
+                          "Default 1.0 (ARCH7 D1, 16.11): the neighbours are published at full precision, IDN with 4 decimals.")
+    ap.add_argument("--rounded-country-tol-km2", type=float, default=bn.IDN_COUNTRY_RESIDUAL_TOL_KM2,
+                     help="check 3: tolerance per rounded country for encroachment and land gap. Default 5.0 (ARCH7 D1, 16.11).")
+    ap.add_argument("--exclude-countries", nargs="*", default=[],
+                    help="ISO3 of national ADM1 countries left out of the build (same as build_boundaries.py --exclude-countries): "
+                         "their ADM1 rows are not expected from boundary_registry.csv in checks 5 and 13")
+    ap.add_argument("--overlap-whitelist", type=Path, default=None,
+                     help="boundaries/overlap_whitelist.csv (ARCH7 D3): pairs of units whose national files claim the same sea or islands "
+                          "(default: <boundaries-dir>/overlap_whitelist.csv)")
     ap.add_argument("--write-disputed-layer", action="store_true",
                      help="write display/adm0_disputed_unassigned.* from the COMMITTED boundaries/holes_whitelist.geojson "
                           "(no recomputation, holes_whitelist.geojson is not touched). Check 2 below confirms that the "
@@ -531,6 +791,11 @@ def main() -> int:
 
     registry_path = args.boundaries_dir / "boundary_registry.csv"
     registry = c.read_registry(registry_path) if registry_path.exists() else None
+    excluded = [x.upper() for x in (args.exclude_countries or [])]
+    if registry is not None and excluded:
+        # a country left out of the build: its ADM1 row is not expected (ADM0 stays)
+        registry = registry[~((registry["level"] == "ADM1") & registry["iso3"].isin(excluded))].reset_index(drop=True)
+        log(f"countries left out of the build (--exclude-countries): {excluded}; their ADM1 registry rows are not expected")
 
     meta_path = out_dir / "meta.json"
     pov = json.loads(meta_path.read_text(encoding="utf-8"))["adm0_pov"] if meta_path.exists() else "usa"
@@ -544,7 +809,17 @@ def main() -> int:
         write_disputed_layer(gpd.read_file(wl_path), out_dir, pov)
 
     log("check 1: overlaps...")
-    r1 = check_overlaps(adm0, adm1, adm2, registry)
+    nat_table = bn.load_table(args.boundaries_dir / "national_sources_v030.csv") if (args.boundaries_dir / "national_sources_v030.csv").exists() else None
+    rounded = set()
+    if nat_table is not None:
+        rounded = {i for i, g_ in nat_table.groupby("iso3") if g_["coord_decimals"].iloc[0] and i in set(adm1["iso3"])}
+    rounded_nb = {i: {x for x in g_["neighbors"].iloc[0].split(";") if x} for i, g_ in nat_table.groupby("iso3") if i in rounded} \
+        if nat_table is not None else {}
+    wl_path = args.overlap_whitelist or (args.boundaries_dir / "overlap_whitelist.csv")
+    whitelist = load_overlap_whitelist(wl_path)
+    log(f"  overlap whitelist {wl_path}: {len(whitelist)} pair(s)")
+    r1 = check_overlaps(adm0, adm1, adm2, registry, rounded=rounded, rounded_pair_tol=args.rounded_pair_tol_km2,
+                        rounded_neighbours=rounded_nb, whitelist=whitelist)
     log(f"  passed={r1['passed']}")
 
     log("check 2: ADM0 holes vs whitelist...")
@@ -554,7 +829,11 @@ def main() -> int:
     log("check 3: USA/Norway conforming residuals (re-measured from output)...")
     r3_usa = check_conform_residual(adm0, adm2, lakes_union, "USA", c.USA_NEIGHBOUR_ISO3)
     r3_nor = check_conform_residual(adm0, adm2, lakes_union, "NOR", c.NOR_NEIGHBOUR_ISO3)
-    r3 = {"passed": r3_usa["passed"] and r3_nor["passed"], "USA": r3_usa, "NOR": r3_nor}
+    r3_nat = check_national_conform(adm0, adm1, lakes_union, nat_table, args.rounded_country_tol_km2, log=log) if nat_table is not None \
+        else {"passed": True, "countries": {}}
+    r3 = {"passed": r3_usa["passed"] and r3_nor["passed"] and r3_nat["passed"], "USA": r3_usa, "NOR": r3_nor, "national": r3_nat}
+    for k, v in r3_nat["countries"].items():
+        log(f"  national {k}: encroach={v['encroachment_km2']}km2 land gap={v['land_gap_km2']}km2 (tol {v['tolerance_km2']}) passed={v['passed']}")
     log(f"  passed={r3['passed']} (USA encroach={r3_usa['encroachment_km2']}km2 land={r3_usa['land_gap_km2']}km2; "
         f"NOR encroach={r3_nor['encroachment_km2']}km2 land={r3_nor['land_gap_km2']}km2)")
 
@@ -582,7 +861,11 @@ def main() -> int:
     log(f"  passed={r8['passed']} max per country={r8['max_per_country']} {r8['per_country']}")
 
     log("check 9: reconciliation with the previous release...")
-    r9 = check_reconciliation(args.prev_hashes, out_dir, args.boundaries_dir)
+    if args.prev_release == "v0.2.0":
+        r9 = check_reconciliation_v030(Path(args.prev_hashes), out_dir) if args.prev_hashes and Path(args.prev_hashes).exists() \
+            else {"passed": False, "problems": ["--prev-release v0.2.0 needs --prev-hashes (unit_hashes.csv of v0.2.0)"]}
+    else:
+        r9 = check_reconciliation(args.prev_hashes, out_dir, args.boundaries_dir)
     log(f"  passed={r9['passed']}" + (f" -- {r9['problems']}" if r9.get("problems") else "")
         + (" (skipped)" if r9.get("skipped") else ""))
 
@@ -602,6 +885,10 @@ def main() -> int:
         + "".join(f"\n    {t['from_iso3']}->{t['iso3']} {t['source_key']}: moved {t.get('moved_km2')} km2, pair sum diff {t.get('pair_sum_diff_km2')} km2, ADM1 {t['adm1_units']}"
                   for t in r12["transfers"])
         + "".join(f"\n    point {p['point']}: ADM0 {p['adm0']}" for p in r12["acceptance_points"]))
+
+    log("check 13: national ADM1 (v0.3.0)...")
+    r13 = check_national_adm1(out_dir, args.boundaries_dir, adm0, adm1, registry, manifest)
+    log(f"  passed={r13['passed']} countries={r13.get('n_countries')} units={r13.get('n_units')}" + (f" -- {r13['problems'][:10]}" if r13.get("problems") else ""))
 
     clip_losses = []
     bl_path = out_dir / "build_log.json"
@@ -627,10 +914,11 @@ def main() -> int:
         "check_10_contested_areas": r10,
         "check_11_cldr_codes_and_names": r11,
         "check_12_adm0_transfers": r12,
+        "check_13_national_adm1": r13,
         "plan_adm1_clip_losses": clip_losses,
     }
     overall_passed = all([r1["passed"], r2["passed"], r3["passed"], r4["passed"], r5["passed"],
-                           r7["passed"], r8["passed"], r9["passed"], r10["passed"], r11["passed"], r12["passed"]])
+                           r7["passed"], r8["passed"], r9["passed"], r10["passed"], r11["passed"], r12["passed"], r13["passed"]])
     report["overall_passed"] = overall_passed
 
     (out_dir / "validation_report.json").write_text(
@@ -653,6 +941,7 @@ def main() -> int:
           f"| 11. CLDR codes and names | {r11['passed']} (exceptions: {', '.join(e['unit_id'] for e in r11['exceptions']) or 'none'}; "
           f"national codes: {', '.join(e['unit_id'] for e in r11.get('national_code_units', [])) or 'none'}) |",
           f"| 12. ADM0 transfers and acceptance points | {r12['passed']} ({len(r12['transfers'])} transfers) |",
+          f"| 13. national ADM1 (v0.3.0) | {r13['passed']} ({r13.get('n_countries', 0)} countries, {r13.get('n_units', 0)} units) |",
           ""]
     (out_dir / "validation_report.md").write_text("\n".join(md), encoding="utf-8")
 
