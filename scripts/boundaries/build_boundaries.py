@@ -553,7 +553,7 @@ def build_meta(
         "sources": sources,
         "unit_counts": unit_counts,
         "boundary_source": "Natural Earth 1:10m framework, conformed to national sources for USA and Norway",
-        "disclaimer": "границы не выражают позицию проекта",
+        "disclaimer": "Boundaries do not express a position of the project on disputed territories.",
         "license": "CC BY 4.0",
     }
 
