@@ -1,0 +1,11 @@
+iso3,adm1_code,name,ne_code,area_km2,share_of_country,country_area_km2,status,lat,lon,note
+ARE,ARE-344,Neutral Zone,AE-X01~,13.27,0.00019,71119.5,p7b,24.9264,56.2916,
+ARE,ARE-347,Neutral Zone,AE-X02~,124.21,0.00175,71119.5,p7b,24.8175,56.0383,
+AUS,AUS-1932,Jervis Bay Territory,AU-X02~,75.98,1e-05,7691285.6,p7b,-35.1567,150.7007,
+AUS,IOA-1928,Cocos (Keeling) Islands,-99-X15~,13.21,0.0,7691285.6,p7b,-12.1778,96.9163,
+AUS,AUS+00?,Macquarie Island,AU-X03~,119.1,2e-05,7691285.6,p7b,-54.6126,158.8954,Macquarie Island: part of ADM0 without ADM1 here; belongs to AUS-1-TAS only per the Tasmanian state document
+AUS,CSI+00?,Coral Sea Islands,-99-X03~,0.85,0.0,7691285.6,p7b,-16.1355,150.0037,
+AUS,IOA-2652,Christmas Island,-99-X14~,98.72,1e-05,7691285.6,p7b,-10.4925,105.6625,
+AUS,ATC+00?,Ashmore and Cartier Islands,AU-X04~,2.7,0.0,7691285.6,p7b,-12.4326,123.5864,
+RUS,RUS+99?,,RU-X01~,37.87,0.0,16953134.1,p7b,68.7923,67.2841,"small island inside ADM0 RUS, touches only Yamal-Nenets, not disputed (identification: pass4/rus_x01_identification.md); no name"
+VEN,VEN+99?,,VE-X01~,0.6,0.0,912684.0,p7b,15.6987,-63.6382,
