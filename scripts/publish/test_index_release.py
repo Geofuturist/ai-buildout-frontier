@@ -283,5 +283,47 @@ class IndexRelease(unittest.TestCase):
         self.assertTrue(b["doi"] is None or b["doi"].startswith("10.5281/zenodo."))   # null until the DOI is reserved
 
 
+    def test_frame_source_replaces_the_frame_of_the_layers(self) -> None:
+        layer = {"sources": [{"source_id": "atlas", "inputs": [1]},
+                             {"source_id": "abf_boundaries_v0_2_0", "role": "geometry", "inputs": [2]}]}
+        frame = {"source_id": "abf_boundaries_v0_3_0", "role": "reference"}
+        got = IB.copy_sources({"l": layer}, ["l"], frame)
+        self.assertEqual([x["source_id"] for x in got], ["atlas", "abf_boundaries_v0_3_0"])
+        self.assertTrue(all("inputs" not in x for x in got))
+        self.assertEqual([x["source_id"] for x in IB.copy_sources({"l": layer}, ["l"])], ["atlas", "abf_boundaries_v0_2_0"])
+        with self.assertRaises(GateError):
+            IB.copy_sources({"l": layer}, ["l"], {"source_id": "atlas"})
+        with self.assertRaises(GateError):
+            IB.copy_sources({"l": layer}, ["l"], {**frame, "inputs": []})
+
+    def test_yamls_of_release_0_2_0(self) -> None:
+        root = ROOT / "releases"
+        a = load_yaml(root / "abf-index-v0.2.0.yaml")
+        b = load_yaml(root / "abf-energync-v0.1.2.yaml")
+        for r in (a, b):
+            self.assertEqual(r["boundary_release"], "abf-boundaries-v0.3.0")
+            self.assertEqual(r["frame_source"]["source_id"], "abf_boundaries_v0_3_0")
+            self.assertEqual(r["frame_source"]["role"], "reference")
+            self.assertIn("v0.3.0", r["frame_source"]["product"])
+            self.assertIn("version_note", r["release_texts"])
+            self.assertTrue(r["doi"] is None or r["doi"].startswith("10.5281/zenodo."))
+            self.assertTrue((r["doi"] is None) == (r["published_at"] is None))
+            self.assertIn("index_v020_work", r["indexes_dir"])
+        self.assertEqual((a["version"], a["tag"], a["kind"], a["layers"]), ("0.2.0", "abf-index-v0.2.0", "index", []))
+        self.assertEqual([(i["set"], i["of_version"]) for i in a["indexes"]], [("abf-dc", "0.2.0"), ("abf-energy", "0.1.0")])
+        self.assertEqual(a["indexes"][0]["rules"], ["rules/atlas_adm1_countries.csv", "rules/atlas_adm1_aliases.csv"])
+        self.assertNotIn("rules", a["indexes"][1])
+        self.assertEqual((b["version"], b["tag"]), ("0.1.2", "abf-energync-v0.1.2"))
+        self.assertEqual(b["indexes"][0]["of_version"], "0.1.0")
+        self.assertEqual(b["boundaries"]["dir"], "D:\\GISData\\Boundaries\\out\\abf-boundaries-v0.3.0")
+        self.assertEqual(b["identity"], load_yaml(root / "abf-energync-v0.1.1.yaml")["identity"])
+        self.assertEqual(b["layers"], load_yaml(root / "abf-energync-v0.1.1.yaml")["layers"])
+        self.assertEqual(b["license"]["family"], "non_commercial")
+        for n in ("common", "abf-dc", "abf-energy", "abf-energync"):
+            text = (root / "index_texts" / f"{n}.yaml").read_text(encoding="utf-8")
+            self.assertNotIn("abf-boundaries v0.2.0", text, n)
+            self.assertNotRegex(text, r"\{n_", n)           # no unfilled number; {index_file} and {version} of totals_note are the website's
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,75 @@
+# Release of the dataset abf-energync, version 0.1.2: a NEW VERSION of the Zenodo record of 0.1.1 (the concept DOI stays, the version DOI is new).
+# The layers are those of 0.1.0 (identity below) plus the territory index index_abf-energync rebuilt on abf-boundaries v0.3.0 (SPEC_INDEX_territory_v0_2), CC BY-NC.
+# Two layers: units (files only) and locations (the map layer). Reserve the DOI, then, before the final build:
+#   python scripts\publish\set_release_doi.py releases\abf-energync-v0.1.2.yaml 10.5281/zenodo.<number> 2026-MM-DD
+dataset: abf-energync
+version: 0.1.2
+tag: abf-energync-v0.1.2
+doi: null
+published_at: null
+built_at: "2026-11-21T12:00:00Z"
+boundary_release: abf-boundaries-v0.3.0
+boundaries:
+  dir: 'D:\GISData\Boundaries\out\abf-boundaries-v0.3.0'
+  registry: 'boundaries\boundary_registry.csv'
+layers:
+  - 'layers\energy_plants_gem_tzsam_units.yaml'
+  - 'layers\energy_plants_gem_tzsam_locations.yaml'
+# SPEC_GEM r6 Q6: only meta.json and the manifest go to git; the CSV files are on R2 and in Zenodo (the data step keeps them in data\gem\).
+git_copy: {csv: false, extra_files: false}
+# Quoted phrases of the texts against the About sheet of the GEM file (RES_texts_GEM section 10 item 1): a stop in final.
+phrase_check:
+  kind: gem
+  xlsx: 'D:\GISData\Energy\GEM\Global Integrated Power September 2026 V2.xlsx'
+  layers: 'layers'
+# The layers of 0.1.2 are the files of 0.1.0: CSV byte-identical, GeoParquet and GeoJSON.gz by SHA-256 or by values. A difference is a stop (G9).
+identity:
+  manifest: 'data\abf-energync\v0.1.0\manifest.json'
+  layers: [energy_plants_gem_tzsam_units, energy_plants_gem_tzsam_locations]
+  old_release_dir: 'D:\GISData\release\abf-energync-v0.1.0'
+# Territory index of this dataset: files made by the data step of CODE-GEM (scripts/index/build_index.py).
+license:
+  id: CC-BY-NC-4.0
+  name: Creative Commons Attribution-NonCommercial 4.0 International
+  url: https://creativecommons.org/licenses/by-nc/4.0/
+  family: non_commercial
+indexes_dir: 'C:\Users\PGS\Documents\AI\index_v020_work\data\index'
+release_texts:
+  version_note: >-
+    0.1.2 rebuilds the territory index of the 18,732 units on abf-boundaries v0.3.0, by the rule of abf-index 0.2.0.
+    The units, the plants and their files are the same as in 0.1.0.
+# The boundary frame the index is made on (SPEC_INDEX_territory_v0_2 section 1; RES_texts_INDEX_v0_2_0 section 1: a source with the role reference).
+# index_build.py puts it into sources[] of the public meta.json in place of the abf_boundaries_v0_2_0 entries that the layers carry.
+frame_source:
+  source_id: abf_boundaries_v0_3_0
+  role: reference
+  publisher: AI Buildout Frontier
+  product: abf-boundaries v0.3.0
+  url: https://doi.org/10.5281/zenodo.24403851
+  edition: v0.3.0
+  current_through: null
+  retrieved_at: "2026-11-20"
+  publication_mode: open_licence
+  license:
+    id: CC-BY-4.0
+    name: Creative Commons Attribution 4.0 International
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: >-
+      AI Buildout Frontier, abf-boundaries v0.3.0, DOI 10.5281/zenodo.24403851, CC BY 4.0. The attributions of the sources of
+      its units are given in full in its meta.json.
+  rights_basis:
+    type: license
+    checked_by: agent:CODE-PUB2
+    checked_at: "2026-11-21"
+    evidence_url: https://doi.org/10.5281/zenodo.24403851
+    text: >-
+      abf-boundaries v0.3.0 is published by this project under CC BY 4.0 (Zenodo record 10.5281/zenodo.24403851); the sources
+      of its outlines are listed in its own meta.json.
+indexes:
+  - set: abf-energync
+    of_dataset: abf-energync
+    of_version: "0.1.0"
+    texts: ['releases\index_texts\common.yaml', 'releases\index_texts\abf-energync.yaml']
+    layer_metas:
+      energy_plants_gem_tzsam_units: 'data\abf-energync\v0.1.0\energy_plants_gem_tzsam_units.meta.json'

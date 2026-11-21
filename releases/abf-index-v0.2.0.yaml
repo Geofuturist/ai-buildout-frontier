@@ -1,0 +1,87 @@
+# Release of the dataset abf-index, version 0.2.0 (SPEC_INDEX_territory_v0_2 section 4): a NEW VERSION of the Zenodo record of 0.1.0
+# (the concept DOI stays, the version DOI is new). Kind index, no layers. The territory index of abf-dc 0.2.0 and abf-energy 0.1.0,
+# rebuilt on abf-boundaries v0.3.0 (CC BY 4.0); the index of abf-energync (CC BY-NC) is in abf-energync 0.1.2.
+# Reserve the DOI (a "New version" of 10.5281/zenodo.24030844), then, before the final build:
+#   python scripts\publish\set_release_doi.py releases\abf-index-v0.2.0.yaml 10.5281/zenodo.<number> 2026-MM-DD
+dataset: abf-index
+version: 0.2.0
+tag: abf-index-v0.2.0
+doi: null
+published_at: null
+built_at: "2026-11-21T12:00:00Z"
+boundary_release: abf-boundaries-v0.3.0
+kind: index
+license:
+  id: CC-BY-4.0
+  name: Creative Commons Attribution 4.0 International
+  url: https://creativecommons.org/licenses/by/4.0/
+  family: attribution
+indexes_dir: 'C:\Users\PGS\Documents\AI\index_v020_work\data\index'
+# Texts of the dataset (RES_texts_INDEX_v0_2_0 r1 section 1); they go into the public meta.json of each index set (release.* keys).
+release_texts:
+  description: >-
+    Where the records of the project's world point layers lie in its boundary frame. One row for each record of three
+    layers: the data-center records of the Atlas of Data Center Politics (9,865) and the AI data-center sites of Epoch
+    AI (94), both from abf-dc 0.2.0, and the power generating units of Global Energy Monitor (164,672) from abf-energy
+    0.1.0. Each row gives the country, first-level unit and second-level unit of the record in abf-boundaries v0.3.0,
+    the basis of the assignment and the few fields of the record that the project website needs to list and count
+    records. The index is the project's assignment of source records to its frame, not data of the sources. The records
+    and their DOIs do not change; when the frame gains new levels or countries, only the index is rebuilt. The GEM units
+    sourced from TransitionZero's Solar Asset Mapper are indexed separately, in abf-energync 0.1.2, under CC BY-NC 4.0.
+  attribution_text: >-
+    Built by AI Buildout Frontier from abf-dc 0.2.0 and abf-energy 0.1.0 on the frame abf-boundaries v0.3.0. Sources of
+    the records: Atlas of Data Center Politics (Infrastructure Lab, National University of Singapore; CC BY 4.0); Epoch
+    AI, AI data centers (CC BY 4.0); Global Energy Monitor, Global Integrated Power Tracker, September 2026 release
+    (CC BY 4.0). Their attributions are given in full in the meta.json files of abf-dc and abf-energy.
+  version_note: >-
+    0.2.0 rebuilds the index on abf-boundaries v0.3.0, which adds first-level units from national sources for 15
+    countries. Records in those countries now get a first-level unit; Atlas records in 14 of them are assigned by the
+    region they name. The table of other names of units (atlas_adm1_aliases.csv) is new. The source records are the same
+    as in 0.1.0, and outside the 15 countries every row is unchanged except boundary_release and 19 Atlas records that the
+    table now matches.
+# The boundary frame the index is made on (SPEC_INDEX_territory_v0_2 section 1; RES_texts_INDEX_v0_2_0 section 1: a source with the role reference).
+# index_build.py puts it into sources[] of the public meta.json in place of the abf_boundaries_v0_2_0 entries that the layers carry.
+frame_source:
+  source_id: abf_boundaries_v0_3_0
+  role: reference
+  publisher: AI Buildout Frontier
+  product: abf-boundaries v0.3.0
+  url: https://doi.org/10.5281/zenodo.24403851
+  edition: v0.3.0
+  current_through: null
+  retrieved_at: "2026-11-20"
+  publication_mode: open_licence
+  license:
+    id: CC-BY-4.0
+    name: Creative Commons Attribution 4.0 International
+    url: https://creativecommons.org/licenses/by/4.0/
+    family: attribution
+    attribution_text: >-
+      AI Buildout Frontier, abf-boundaries v0.3.0, DOI 10.5281/zenodo.24403851, CC BY 4.0. The attributions of the sources of
+      its units are given in full in its meta.json.
+  rights_basis:
+    type: license
+    checked_by: agent:CODE-PUB2
+    checked_at: "2026-11-21"
+    evidence_url: https://doi.org/10.5281/zenodo.24403851
+    text: >-
+      abf-boundaries v0.3.0 is published by this project under CC BY 4.0 (Zenodo record 10.5281/zenodo.24403851); the sources
+      of its outlines are listed in its own meta.json.
+# For every index: texts (merged in order), layer_metas (published meta.json of the indexed layers: sources and copied fields),
+# rules (tables of the build that the index rests on; they go to R2 and into the archive).
+indexes:
+  - set: abf-dc
+    of_dataset: abf-dc
+    of_version: "0.2.0"
+    texts: ['releases\index_texts\common.yaml', 'releases\index_texts\abf-dc.yaml']
+    layer_metas:
+      dc_atlas_points: 'data\abf-dc\v0.2.0\dc_atlas_points.meta.json'
+      dc_epoch_points: 'data\abf-dc\v0.2.0\dc_epoch_points.meta.json'
+    rules: ['rules/atlas_adm1_countries.csv', 'rules/atlas_adm1_aliases.csv']
+  - set: abf-energy
+    of_dataset: abf-energy
+    of_version: "0.1.0"
+    texts: ['releases\index_texts\common.yaml', 'releases\index_texts\abf-energy.yaml']
+    layer_metas:
+      energy_plants_gem_units: 'data\abf-energy\v0.1.0\energy_plants_gem_units.meta.json'
+layers: []

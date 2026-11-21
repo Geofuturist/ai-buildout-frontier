@@ -73,14 +73,26 @@ def load_texts(item: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
-def copy_sources(layer_metas: dict[str, dict[str, Any]], layer_ids: list[str]) -> list[dict[str, Any]]:
+def copy_sources(layer_metas: dict[str, dict[str, Any]], layer_ids: list[str],
+                 frame_source: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     """sources[] of the index: the sources of the indexed layers (published meta.json), first occurrence of a source_id wins.
-    The key `inputs` (hashes of the build files of the layer) is not copied: it describes the build of the layer, not the index."""
+    The key `inputs` (hashes of the build files of the layer) is not copied: it describes the build of the layer, not the index.
+    frame_source (key `frame_source` of the release yaml, 0.2.0): the boundary frame the index is made on. The layers were built on
+    an earlier frame and name it among their sources (abf_boundaries_v0_2_0); the index describes its own frame, so those entries
+    are replaced by this one (appended last)."""
     seen: dict[str, dict[str, Any]] = {}
     for lid in layer_ids:
         for src in layer_metas[lid]["sources"]:
+            if frame_source and src["source_id"].startswith("abf_boundaries_"):
+                continue
             if src["source_id"] not in seen:
                 seen[src["source_id"]] = {k: v for k, v in src.items() if k != "inputs"}
+    if frame_source:
+        if "inputs" in frame_source:
+            raise GateError("G14", "frame_source of the release yaml must not have inputs (the index does not copy build inputs)")
+        if frame_source.get("source_id") in seen:
+            raise GateError("G14", f"frame_source {frame_source.get('source_id')} is also a source of the layers")
+        seen[frame_source["source_id"]] = dict(frame_source)
     return list(seen.values())
 
 
@@ -147,7 +159,7 @@ def compose_meta(item: dict[str, Any], build_meta: dict[str, Any], header: list[
     meta["release"] = {"dataset": rel["dataset"], "version": str(rel["version"]), "tag": rel["tag"], "doi": doi,
                        "published_at": published_at, "built_at": built_at}
     meta["license"] = rel["license"]
-    meta["sources"] = copy_sources(layer_metas, sorted(build_meta["layers"]))
+    meta["sources"] = copy_sources(layer_metas, sorted(build_meta["layers"]), rel.get("frame_source"))
     meta["fields"] = compose_fields(texts, layer_metas, header, s)
     meta["null_meaning"] = {k: str(v).strip() for k, v in texts["null_meaning"].items()}
     meta["unit_note_descriptions"] = {k: str(v).strip() for k, v in texts["unit_note_descriptions"].items()}

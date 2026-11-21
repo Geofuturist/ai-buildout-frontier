@@ -45,19 +45,22 @@ def main(argv: list[str]) -> int:
         return 2
     total = 0
     for folder in argv[1:]:
-        for f in sorted(Path(folder).glob("*.meta.json")):
+        root = Path(folder)
+        # the meta.json of a release of layers/boundaries, and the public meta.json of every territory index (index/<set>/meta.json)
+        for f in sorted(root.glob("*.meta.json")) + sorted(root.glob("index/*/meta.json")):
+            name = f.relative_to(root).as_posix()
             meta = json.loads(f.read_text(encoding="utf-8"))
             for path, text in walk(meta):
                 flat = " ".join(text.split())
                 cleaned = ALLOWED.sub("", flat)
                 for label, rx, use_cleaned in CHECKS:
                     if rx.search(cleaned if use_cleaned else flat):
-                        print(f"FOUND {label}: {f.name} {path}: ...{flat[:120]}...")
+                        print(f"FOUND {label}: {name} {path}: ...{flat[:120]}...")
                         total += 1
-                if "citation" not in path and not path.endswith(("display.unit_card_line", "display.list_title", "display.popup_title")) and not POPUP_TEXT.search(path) and PLACEHOLDER.search(flat):  # {n}: filled in by the site (abf-dc)
-                    print(f"FOUND placeholder: {f.name} {path}: ...{flat[:120]}...")
+                if "citation" not in path and path != "totals_note" and not path.endswith(("display.unit_card_line", "display.list_title", "display.popup_title")) and not POPUP_TEXT.search(path) and PLACEHOLDER.search(flat):  # {n}: filled in by the site (abf-dc); totals_note of an index: {index_file}, {version} are the site's
+                    print(f"FOUND placeholder: {name} {path}: ...{flat[:120]}...")
                     total += 1
-            print(f"checked {f.name}")
+            print(f"checked {name}")
     print(f"\nProblems found: {total}")
     return 1 if total else 0
 
