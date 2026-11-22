@@ -1,0 +1,134 @@
+{
+  "schema_version": "abf-manifest-1.0",
+  "dataset": "abf-index",
+  "version": "0.2.0",
+  "tag": "abf-index-v0.2.0",
+  "doi": "10.5281/zenodo.24437451",
+  "published_at": "2026-11-22",
+  "boundary_release": "abf-boundaries-v0.3.0",
+  "base_path": "abf-index/v0.2.0/",
+  "layers": [],
+  "extra_files": [
+    {
+      "path": "index/abf-dc/listing.json",
+      "bytes": 35865,
+      "sha256": "a20963c2d92edadf5550c487eae92c6a2f8fdf4c3f476cc4ffebf720ce0d3e83",
+      "description": "List of the country files of index_abf-dc with their SHA-256 and row counts"
+    },
+    {
+      "path": "index/abf-energy/listing.json",
+      "bytes": 63093,
+      "sha256": "2fed52350f53ae7548c4577e5fdefdde3282e32f92a6e88d03ce5ade36c64324",
+      "description": "List of the country files of index_abf-energy with their SHA-256 and row counts"
+    }
+  ],
+  "source_archives": [],
+  "kind": "index",
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution"
+  },
+  "indexes": [
+    {
+      "index_id": "index_abf-dc",
+      "set": "abf-dc",
+      "of_dataset": "abf-dc",
+      "of_version": "0.2.0",
+      "layer_ids": [
+        "dc_atlas_points",
+        "dc_epoch_points"
+      ],
+      "meta": {
+        "path": "index/abf-dc/meta.json",
+        "bytes": 62259,
+        "sha256": "39cf29c02c4b75aa9f255c4fd01625adaa00786063f8be96bcfe2874118e3cc5"
+      },
+      "build_meta": {
+        "path": "index/abf-dc/build_meta.json",
+        "bytes": 36515,
+        "sha256": "287ced649ea0b435e009b01e012782ca40d3b7b28b58cabcf87e3fc8bf7f0270"
+      },
+      "country_files": {
+        "path_pattern": "index/abf-dc/{iso3}.csv.gz",
+        "count": 126,
+        "listing": {
+          "path": "index/abf-dc/listing.json",
+          "bytes": 35865,
+          "sha256": "a20963c2d92edadf5550c487eae92c6a2f8fdf4c3f476cc4ffebf720ce0d3e83"
+        }
+      },
+      "adm0_other": {
+        "path": "index/abf-dc/adm0_other.csv.gz",
+        "bytes": 447,
+        "sha256": "7b74937f509dea76ccad61d1849af5ae2df48b3a4291dc17ed3cf71e141084b0"
+      },
+      "summary": {
+        "path": "index/abf-dc/summary.csv",
+        "bytes": 4382,
+        "sha256": "9833797d8983b4460a5bb89f9baee6b4bef0127b27b9a8561221b4b5b12e4746"
+      },
+      "archive": {
+        "path": "index/abf-dc/index_abf-dc.zip",
+        "bytes": 372146,
+        "sha256": "331fa0d662c674e0fefa95286f3698ac0c2f26e2c3313782079b3eb201bd30c0"
+      },
+      "rules": [
+        {
+          "path": "index/abf-dc/rules/atlas_adm1_countries.csv",
+          "bytes": 7749,
+          "sha256": "a4c3d8aeccc50dfda94c8b730044ed88a6bf041dfb7b18fdd5312ba4294b36ea"
+        },
+        {
+          "path": "index/abf-dc/rules/atlas_adm1_aliases.csv",
+          "bytes": 6285,
+          "sha256": "e03b72e53d35feb05bb5794103de5856d06407f3a1f57145182727a27693c79a"
+        }
+      ]
+    },
+    {
+      "index_id": "index_abf-energy",
+      "set": "abf-energy",
+      "of_dataset": "abf-energy",
+      "of_version": "0.1.0",
+      "layer_ids": [
+        "energy_plants_gem_units"
+      ],
+      "meta": {
+        "path": "index/abf-energy/meta.json",
+        "bytes": 71114,
+        "sha256": "842e83e2e4cfcca87d5e5c62165fae2318dc0836ce6092f2186ce8b0833bfb26"
+      },
+      "build_meta": {
+        "path": "index/abf-energy/build_meta.json",
+        "bytes": 50781,
+        "sha256": "eec879c764d74d42b23ba5dfc93b192a71ad72166b68b74be81ebe1847e2cddc"
+      },
+      "country_files": {
+        "path_pattern": "index/abf-energy/{iso3}.csv.gz",
+        "count": 218,
+        "listing": {
+          "path": "index/abf-energy/listing.json",
+          "bytes": 63093,
+          "sha256": "2fed52350f53ae7548c4577e5fdefdde3282e32f92a6e88d03ce5ade36c64324"
+        }
+      },
+      "adm0_other": {
+        "path": "index/abf-energy/adm0_other.csv.gz",
+        "bytes": 7435,
+        "sha256": "592f2528542ab2ed602bead41877ba6a26bd852854a152fdb9de7d5917cd615a"
+      },
+      "summary": {
+        "path": "index/abf-energy/summary.csv",
+        "bytes": 8581,
+        "sha256": "17951fc7709e07ab80444613d65a688abf49718a2aeb8312df9fd0561a7cde38"
+      },
+      "archive": {
+        "path": "index/abf-energy/index_abf-energy.zip",
+        "bytes": 2754426,
+        "sha256": "9b15029f2c5b2bf0a02076b99ca85a836339745ea4e5f8dbee79f555cf7aa62d"
+      }
+    }
+  ]
+}

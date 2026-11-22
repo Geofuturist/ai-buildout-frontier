@@ -1,0 +1,2088 @@
+{
+  "title": "Territory index · Data centers (abf-dc 0.2.0) · records",
+  "description": "Where each record of dc_atlas_points (9,865) and dc_epoch_points (94) lies in abf-boundaries v0.3.0. Atlas records are assigned by what they name, as the Atlas counts in abf-dc are: the country they name; in the United States, the county they name (3,914 records) or, failing that, the state they name; in 48 other countries, where the Atlas region field names the frame's first-level units, the region they name, or another name of it listed in atlas_adm1_aliases.csv: a spelling, a former name, a former unit merged into it, or a city, province or area that lies wholly in it. Elsewhere, and for all Epoch AI sites, the unit is the one in which the town point lies. In those 48 countries a record whose region matches no unit of the frame is assigned by its point, if it has one. Records without a point are assigned to their country only, unless they name a county or region that the rules accept. Each row has one basis: a record assigned by the region it names gets no second-level unit from its point.",
+  "dataset_description": "Where the records of the project's world point layers lie in its boundary frame. One row for each record of three layers: the data-center records of the Atlas of Data Center Politics (9,865) and the AI data-center sites of Epoch AI (94), both from abf-dc 0.2.0, and the power generating units of Global Energy Monitor (164,672) from abf-energy 0.1.0. Each row gives the country, first-level unit and second-level unit of the record in abf-boundaries v0.3.0, the basis of the assignment and the few fields of the record that the project website needs to list and count records. The index is the project's assignment of source records to its frame, not data of the sources. The records and their DOIs do not change; when the frame gains new levels or countries, only the index is rebuilt. The GEM units sourced from TransitionZero's Solar Asset Mapper are indexed separately, in abf-energync 0.1.2, under CC BY-NC 4.0.",
+  "attribution_text": "Built by AI Buildout Frontier from abf-dc 0.2.0 and abf-energy 0.1.0 on the frame abf-boundaries v0.3.0. Sources of the records: Atlas of Data Center Politics (Infrastructure Lab, National University of Singapore; CC BY 4.0); Epoch AI, AI data centers (CC BY 4.0); Global Energy Monitor, Global Integrated Power Tracker, September 2026 release (CC BY 4.0). Their attributions are given in full in the meta.json files of abf-dc and abf-energy.",
+  "version_note": "0.2.0 rebuilds the index on abf-boundaries v0.3.0, which adds first-level units from national sources for 15 countries. Records in those countries now get a first-level unit; Atlas records in 14 of them are assigned by the region they name. The table of other names of units (atlas_adm1_aliases.csv) is new. The source records are the same as in 0.1.0, and outside the 15 countries every row is unchanged except boundary_release and 19 Atlas records that the table now matches.",
+  "release": {
+    "dataset": "abf-index",
+    "version": "0.2.0",
+    "tag": "abf-index-v0.2.0",
+    "doi": "10.5281/zenodo.24437451",
+    "published_at": "2026-11-22",
+    "built_at": "2026-11-21T12:00:00Z"
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "family": "attribution"
+  },
+  "sources": [
+    {
+      "source_id": "atlas_of_data_center_politics",
+      "role": "primary",
+      "publisher": "Infrastructure Lab, National University of Singapore",
+      "product": "Atlas of Data Center Politics, national tables of data centers",
+      "url": "https://www.atlasofdatacenterpolitics.com/",
+      "edition": "Version 0.1.0; Atlas data updated 2026-10-08; copies of 2026-10-14 to 2026-10-18",
+      "current_through": "2026-10-08",
+      "retrieved_at": "2026-10-14/2026-10-18",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Data centers: Kollar, Justin. Atlas of Data Center Politics. Version 0.1.0. Infrastructure Lab, National University of Singapore, 2026. https://www.atlasofdatacenterpolitics.com/. Licensed under CC BY 4.0. Adapted by AI Buildout Frontier: records copied from the national tables of the Atlas (data updated 8 October 2026, copied 14–18 October 2026), placed at towns or U.S. counties from their addresses and names, and counted by country, by place and by U.S. county. These figures are not the Atlas as published."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:licence_extract.py",
+        "checked_at": "2026-10-14",
+        "evidence_url": "https://www.atlasofdatacenterpolitics.com/LICENSE-DATA",
+        "text": "The data license of the Atlas (https://www.atlasofdatacenterpolitics.com/LICENSE-DATA) states: \"The Atlas datasets are licensed under the Creative Commons Attribution 4.0 International Licence (CC BY 4.0).\" It asks for attribution in substantially the form above, for the version used, and for a statement where the data are adapted or filtered. Its request about automated access is stated there not to be a condition of the license; the records were copied by hand with the site's Copy as: Table function."
+      }
+    },
+    {
+      "source_id": "geonames",
+      "role": "geometry",
+      "publisher": "GeoNames",
+      "product": "cities500 and admin1CodesASCII",
+      "url": "https://www.geonames.org/export/",
+      "edition": "files of 2026-10-16",
+      "current_through": "2026-10-16",
+      "retrieved_at": "2026-10-16",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "Town points: GeoNames (https://www.geonames.org/), cities500 and admin1CodesASCII, files of 16 October 2026, CC BY 4.0."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:pf_run.py",
+        "checked_at": "2026-10-22",
+        "evidence_url": "https://www.geonames.org/export/",
+        "text": "The readme of the GeoNames download files states: \"This work is licensed under a Creative Commons Attribution 4.0 License\"."
+      }
+    },
+    {
+      "source_id": "census_gazetteer_places_2023",
+      "role": "geometry",
+      "publisher": "U.S. Census Bureau",
+      "product": "2023 Gazetteer Files, Places",
+      "url": "https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html",
+      "edition": "2023",
+      "current_through": null,
+      "retrieved_at": "2026-10-22",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "LicenseRef-us-gov-work",
+        "name": "U.S. Government work",
+        "url": "https://www.law.cornell.edu/uscode/text/17/105",
+        "family": "public_domain",
+        "attribution_text": "U.S. place points: U.S. Census Bureau, 2023 Gazetteer Files, Places."
+      },
+      "rights_basis": {
+        "type": "statute",
+        "checked_by": "agent:RES",
+        "checked_at": "2026-10-23",
+        "evidence_url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_place_national.zip",
+        "text": "Work of the U.S. federal government (17 U.S.C. §105). The download does not state a license, so the status rests on the statute."
+      }
+    },
+    {
+      "source_id": "epoch_ai_data_centers",
+      "role": "primary",
+      "publisher": "Epoch AI",
+      "product": "AI data centers, file data_centers.csv",
+      "url": "https://epoch.ai/data/ai-data-centers",
+      "edition": "file updated 2026-10-12, retrieved 2026-10-14",
+      "current_through": "2026-10-12",
+      "retrieved_at": "2026-10-14",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "AI data centers: Epoch AI, 'AI data centers'. Published online at epoch.ai. Retrieved from 'https://epoch.ai/data/ai-data-centers' [online resource]. Accessed 14 Oct 2026. File updated 12 Oct 2026, CC BY 4.0. Selected columns; places assigned by AI Buildout Frontier."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "script:licence_extract.py",
+        "checked_at": "2026-10-14",
+        "evidence_url": "https://epoch.ai/data/data-centers",
+        "text": "The Epoch AI data page states: \"Epoch AI's data is free to use, distribute, and reproduce provided the source and authors are credited under the Creative Commons Attribution license\", with a link to CC BY 4.0; the README of the downloaded archive says the same."
+      }
+    },
+    {
+      "source_id": "abf_boundaries_v0_3_0",
+      "role": "reference",
+      "publisher": "AI Buildout Frontier",
+      "product": "abf-boundaries v0.3.0",
+      "url": "https://doi.org/10.5281/zenodo.24403851",
+      "edition": "v0.3.0",
+      "current_through": null,
+      "retrieved_at": "2026-11-20",
+      "publication_mode": "open_licence",
+      "license": {
+        "id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "family": "attribution",
+        "attribution_text": "AI Buildout Frontier, abf-boundaries v0.3.0, DOI 10.5281/zenodo.24403851, CC BY 4.0. The attributions of the sources of its units are given in full in its meta.json."
+      },
+      "rights_basis": {
+        "type": "license",
+        "checked_by": "agent:CODE-PUB2",
+        "checked_at": "2026-11-21",
+        "evidence_url": "https://doi.org/10.5281/zenodo.24403851",
+        "text": "abf-boundaries v0.3.0 is published by this project under CC BY 4.0 (Zenodo record 10.5281/zenodo.24403851); the sources of its outlines are listed in its own meta.json."
+      }
+    }
+  ],
+  "fields": [
+    {
+      "name": "record_id",
+      "description": "Key of the record in its layer."
+    },
+    {
+      "name": "layer_id",
+      "description": "Layer of the record: dc_atlas_points, dc_epoch_points, energy_plants_gem_units or energy_plants_gem_tzsam_units."
+    },
+    {
+      "name": "adm0",
+      "description": "Country of the record in the frame (unit_id of ADM0)."
+    },
+    {
+      "name": "adm0_basis",
+      "description": "How the country was assigned: field (the country the record names) or point (the country of the frame in which the point lies)."
+    },
+    {
+      "name": "adm0_other",
+      "description": "The other country, where the country the record names and the country of its point differ. Such rows are also listed in adm0_other.csv."
+    },
+    {
+      "name": "adm1",
+      "description": "First-level unit of the record in the frame (unit_id), inside adm0."
+    },
+    {
+      "name": "adm2",
+      "description": "Second-level unit of the record in the frame (unit_id), inside adm1."
+    },
+    {
+      "name": "unit_basis",
+      "description": "How adm1 and adm2 were assigned: field (the unit the record names, directly or by another name listed in atlas_adm1_aliases.csv) or point (the unit of the frame in which the point lies, among the units of adm0, or the nearest such unit within 22.2 km)."
+    },
+    {
+      "name": "unit_note",
+      "description": "Why the first level that the country has in the frame is empty for this record (see null_meaning)."
+    },
+    {
+      "name": "adm1_point",
+      "description": "For a record assigned to adm0 by the country it names whose point lies inside another country: the first-level unit of that other country in which the point lies."
+    },
+    {
+      "name": "adm2_point",
+      "description": "As adm1_point, at the second level."
+    },
+    {
+      "name": "approximate",
+      "description": "true where the point is not a site: the town point of an Atlas or Epoch AI record, or a GEM unit whose location GEM gives as approximate."
+    },
+    {
+      "name": "boundary_release",
+      "description": "Version of the boundary frame used: abf-boundaries v0.3.0."
+    },
+    {
+      "name": "name",
+      "description": "dc_atlas_points: Name of the record as given by the Atlas. dc_epoch_points: Name of the site as given by Epoch AI.",
+      "copied_from": [
+        "dc_atlas_points",
+        "dc_epoch_points"
+      ]
+    },
+    {
+      "name": "status_raw",
+      "description": "Status as given by the Atlas: Operating / Construction, Planned or Retired. Operating / Construction covers both operating sites and sites under construction.",
+      "copied_from": [
+        "dc_atlas_points"
+      ]
+    },
+    {
+      "name": "type_group",
+      "description": "Group of the Atlas operator type (operator_type), by operator_type_groups.csv of abf-dc 0.2.0: colocation; telecom; developer_investor (Developer, Asset Manager, Private Equity, Lender, Construction); cloud; enterprise_it (Managed IT, Enterprise, Fintech); ai_compute (the operator type AI Compute as the Atlas gives it, not the purpose of the site); other (Crypto, Energy, Public, Education, Government, Utility, Regulator, Unknown)."
+    },
+    {
+      "name": "power_class",
+      "description": "Size class as given by the Atlas: lt10 (Small, below 10 MW), 10_99 (Large, 10–99 MW), 100_999 (Hyperscale, 100–999 MW), ge1000 (Gigascale, above 999 MW). The Atlas does not state whether the class refers to IT power or to the power of the whole facility.",
+      "copied_from": [
+        "dc_atlas_points"
+      ]
+    },
+    {
+      "name": "power_mw",
+      "description": "Current IT power of the site in MW as given by Epoch AI: the power available to GPU servers, network and storage, without cooling and other facility overhead, as of the file date. 0 is a value: Epoch AI counts no IT power in operation at the site yet.",
+      "copied_from": [
+        "dc_epoch_points"
+      ]
+    }
+  ],
+  "null_meaning": {
+    "adm0_other": "The country the record names and the country of its point are the same, or the record has no point.",
+    "adm1": "The record has no first-level unit: the country has no first-level units in this frame (unit_note is empty), or the reason is given in unit_note.",
+    "adm2": "The record has no second-level unit: the country has no second-level units in this frame (only the United States, France and Norway have them in v0.3.0), or the reason is given in unit_note.",
+    "unit_basis": "No unit below the country was assigned.",
+    "unit_note": "Nothing is missing, or the level does not exist for the country in this frame.",
+    "adm1_point": "The point lies in the country assigned as adm0, or the record has no point.",
+    "adm2_point": "As adm1_point.",
+    "approximate": "The record has no point.",
+    "status_raw": "Empty for Epoch AI sites: this is an Atlas field.",
+    "type_group": "Empty for Epoch AI sites: this is an Atlas field.",
+    "power_class": "For an Atlas record, the Atlas gives the size class Unknown (power_status = not_found). Empty for all Epoch AI sites: this is an Atlas field.",
+    "power_mw": "Empty for Atlas records: this is an Epoch AI field. 0 is a value: Epoch AI counts no IT power in operation yet."
+  },
+  "unit_note_descriptions": {
+    "ambiguous_name": "The record names a U.S. county that shares its name with an independent city of the same state, without saying which; it is counted in its state only.",
+    "connecticut": "A Connecticut record: the Atlas gives the state's former counties, and the frame has the planning regions that replaced them; it is counted in the state only.",
+    "no_county_field": "The record names no U.S. county; it is counted in its state only.",
+    "no_state": "The record names no U.S. state; it is counted in the country only.",
+    "region_not_matched": "The record gives no region, or one that matches no unit of the frame by exact name or through atlas_adm1_aliases.csv, and has no point to assign it by.",
+    "no_unit_near": "The point lies more than 22.2 km from every unit of its country.",
+    "no_point": "The record has no point below the country.",
+    "point_in_other_country": "The source lists the record under one country, and its point lies inside another; see adm1_point and adm2_point.",
+    "region_only": "The record names a first-level unit (a French region), and each row has one basis, so no second-level unit is taken from its point."
+  },
+  "known_gaps": [
+    "A point marks a town, not a site. Near a boundary a town point can lie in a neighboring unit: in the United States the point lies in another county than the record names for 160 of 2,331 records, which is why Atlas records there are assigned by the county they name.",
+    "3,778 Atlas records and 23 Epoch AI sites have no point. The named county or region gives a unit to the U.S. records and to 1,462 records in the 48 countries of atlas_adm1_countries.csv; the others are assigned to their country only.",
+    "In the 48 countries, 16 Atlas records leave the region field empty or give a region that matches no unit of the frame, by exact name or through atlas_adm1_aliases.csv. The 8 with a point are assigned by their point; the 8 without one are counted for their country only (region_not_matched): 7 in the Philippines and 1 in China.",
+    "In the Philippines the Atlas region field names cities and provinces rather than regions. The 35 records that name a city or province lying wholly in one region are assigned to that region; this share, 35 of 48, is below the 95% match the project otherwise requires for using the region field of a country, and the Philippines are included by a decision of the project.",
+    "In France the Atlas region field mostly names departments, the frame's second-level units. 15 records name the region Provence-Alpes-Côte d’Azur instead; they are counted in the region and get no department (region_only).",
+    "In Spain and Italy the Atlas region field names provinces, which are not units of the frame. In Norway it often gives names that do not match the frame: counties merged in recent reforms, such as Hordaland, and Norwegian names where the frame gives bilingual ones, such as Nordland. Atlas records there are assigned by their point. In Taiwan the region field and the points disagree for a share of records too large for the rule, so Taiwan is also assigned by point, and its 12 records without a point are counted for the country only. Countries where other spellings are common, such as Germany, Denmark, the Netherlands and Switzerland, are not yet in atlas_adm1_aliases.csv and are assigned by point.",
+    "4 Atlas records name one country and lie in another on the generalized 1:10 million outlines (Gibraltar, Sittard, Grevenmacher, Lauterbourg). They are assigned to the country they name and listed for the country where their point lies (adm1_point).",
+    "ADM1 exists in this frame for 123 countries and ADM2 for the United States, France and Norway."
+  ],
+  "verification": {
+    "method": "Built by script from the published files of abf-dc 0.2.0 and abf-boundaries v0.3.0, with the U.S. county of each Atlas record taken from county_records.csv of abf-dc 0.2.0. The build stops if a record is missing or appears in two country files, if a U.S. Atlas record gets another county than county_records.csv gives, if an input differs from the published file, or if any row outside the 15 countries with new first-level units differs from version 0.1 for any reason other than the frame version and the alias table. Each row of atlas_adm1_aliases.csv was checked against the points of its records before the build: a row is used only if no point of its records lies in another unit, with one exception decided by the project (Jakarta Raya, 22 of 23 points in Jakarta). Points are assigned with the calculation geometry of the United States (Census Bureau 1:500,000), Norway (Kartverket, with Svalbard from Natural Earth) and the 15 countries with national first levels (their national files), and with the display geometry of the frame elsewhere. A second run gives byte-identical files."
+  },
+  "aggregations_labels": {
+    "atlas_records": "Atlas records",
+    "atlas_by_status": "Atlas records by status",
+    "atlas_by_type_group": "Atlas records by operator type",
+    "atlas_by_power_class": "Atlas records by size class (classes are not added up as MW)",
+    "epoch_sites": "Epoch AI sites",
+    "epoch_power": "Sum of Epoch AI site IT power, MW (Epoch AI's estimates)",
+    "gem_units": "GEM generating units, by type and status",
+    "gem_capacity": "GEM capacity, MW, by type and status",
+    "gem_plants": "GEM plants with at least one unit here (not additive across units)"
+  },
+  "totals_note": "Counted by the website from {index_file} ({version}). Only records of one layer are added, and GEM capacity only within one type and one status.",
+  "aggregations": {
+    "atlas": {
+      "by": [
+        "status_raw",
+        "type_group",
+        "power_class"
+      ],
+      "count": "records",
+      "layer_id": "dc_atlas_points",
+      "note": "Atlas has no MW; counts only."
+    },
+    "epoch": {
+      "count": "sites",
+      "layer_id": "dc_epoch_points",
+      "sum": {
+        "field": "power_mw",
+        "label": "sum of Epoch site IT power",
+        "only": "dc_epoch_points"
+      }
+    }
+  },
+  "atlas_regions_by_field_countries": [
+    "AGO",
+    "ARM",
+    "AUS",
+    "BOL",
+    "BRA",
+    "CAN",
+    "CHN",
+    "CMR",
+    "COL",
+    "CRI",
+    "DJI",
+    "EST",
+    "FIN",
+    "FRA",
+    "GBR",
+    "GEO",
+    "GTM",
+    "HKG",
+    "HND",
+    "IDN",
+    "IND",
+    "IRL",
+    "JPN",
+    "KOR",
+    "KWT",
+    "LUX",
+    "LVA",
+    "MEX",
+    "MNG",
+    "MYS",
+    "NGA",
+    "NZL",
+    "PER",
+    "PHL",
+    "PRY",
+    "ROU",
+    "SGP",
+    "SLV",
+    "SUR",
+    "SWE",
+    "TGO",
+    "THA",
+    "TTO",
+    "TUR",
+    "URY",
+    "VNM",
+    "ZAF",
+    "ZWE"
+  ],
+  "atlas_spelling_rows": 59,
+  "boundary_geometry": {
+    "adm1": {
+      "COL": "analysis_col_adm1.parquet",
+      "EST": "analysis_est_adm1.parquet",
+      "HKG": "analysis_hkg_adm1.parquet",
+      "IDN": "analysis_idn_adm1.parquet",
+      "IRL": "analysis_irl_adm1.parquet",
+      "KOR": "analysis_kor_adm1.parquet",
+      "LUX": "analysis_lux_adm1.parquet",
+      "LVA": "analysis_lva_adm1.parquet",
+      "MEX": "analysis_mex_adm1.parquet",
+      "NOR": "analysis_nor_adm1.parquet",
+      "NZL": "analysis_nzl_adm1.parquet",
+      "PER": "analysis_per_adm1.parquet",
+      "PHL": "analysis_phl_adm1.parquet",
+      "THA": "analysis_tha_adm1.parquet",
+      "TWN": "analysis_twn_adm1.parquet",
+      "USA": "analysis_usa_adm1.parquet",
+      "VNM": "analysis_vnm_adm1.parquet",
+      "default": "adm1.parquet"
+    },
+    "adm2": {
+      "NOR": "analysis_nor_adm2.parquet",
+      "USA": "analysis_usa_adm2.parquet",
+      "default": "adm2.parquet"
+    }
+  },
+  "boundary_release": "abf-boundaries-v0.3.0",
+  "dataset": "abf-index",
+  "files": {
+    "AGO": {
+      "csv_bytes": 487,
+      "csv_gz_bytes": 280,
+      "rows": 2,
+      "sha256": "fdfd07b6c670e3d9caf94bfd82c329ee6ebfec2e44c8c9b72ddd70fdddeaa7a2"
+    },
+    "ARE": {
+      "csv_bytes": 3918,
+      "csv_gz_bytes": 916,
+      "rows": 25,
+      "sha256": "d712a32e242bb42ad67be12162422fef3934b70fc088c4dfa18ec8031995c383"
+    },
+    "ARG": {
+      "csv_bytes": 5500,
+      "csv_gz_bytes": 1303,
+      "rows": 34,
+      "sha256": "e37a3c2c94242c8fa45b26a8fc57fd3171c37a51a39c80412a7e568619df1295"
+    },
+    "ARM": {
+      "csv_bytes": 1064,
+      "csv_gz_bytes": 412,
+      "rows": 6,
+      "sha256": "c8e03cea3f94a1f976174bda5a4f8449b84500bb90b5faa0a6bd3997373c8343"
+    },
+    "AUS": {
+      "csv_bytes": 43256,
+      "csv_gz_bytes": 6618,
+      "rows": 282,
+      "sha256": "c2574a9b497bc63d61a998eb67e62f8b7c96f22b059549effced9af9fb47b429"
+    },
+    "AUT": {
+      "csv_bytes": 4192,
+      "csv_gz_bytes": 1001,
+      "rows": 27,
+      "sha256": "6ddc8ae8c76a06c70a75ccb2f0d14d94a4340c441bab35e75c32578b4de39611"
+    },
+    "AZE": {
+      "csv_bytes": 337,
+      "csv_gz_bytes": 250,
+      "rows": 1,
+      "sha256": "f458934e614a12afd0f7102f05f6814e8cc40faeabf80785316fa782cb7605d9"
+    },
+    "BEL": {
+      "csv_bytes": 6131,
+      "csv_gz_bytes": 1152,
+      "rows": 39,
+      "sha256": "04b3d109ced0784242bbff934a1cc03b393c835f623edc97b855cd1b9a65356f"
+    },
+    "BGD": {
+      "csv_bytes": 950,
+      "csv_gz_bytes": 413,
+      "rows": 5,
+      "sha256": "2db961fac1039f4229e2ce9fd581050382e229818ed449ec3e32e9d7f2aaf43e"
+    },
+    "BGR": {
+      "csv_bytes": 3871,
+      "csv_gz_bytes": 777,
+      "rows": 24,
+      "sha256": "30f955f968ea57eb566188a2b7607b8f5af672bee4f87bc242777e8d2df6953b"
+    },
+    "BHR": {
+      "csv_bytes": 607,
+      "csv_gz_bytes": 309,
+      "rows": 3,
+      "sha256": "388cdd6d4c3aff5cc06a45e5f80f184afbd9031faa3ea398f55e71f113aa056c"
+    },
+    "BLR": {
+      "csv_bytes": 1115,
+      "csv_gz_bytes": 421,
+      "rows": 6,
+      "sha256": "a95e02a7472c3d77f848d15156995517ae1780077110648cf5f5d6137d85e04c"
+    },
+    "BOL": {
+      "csv_bytes": 321,
+      "csv_gz_bytes": 238,
+      "rows": 1,
+      "sha256": "a0c922f26589bb722452fe0555a6117a755f8974a449c770579ce9bf89b53229"
+    },
+    "BRA": {
+      "csv_bytes": 19096,
+      "csv_gz_bytes": 3074,
+      "rows": 128,
+      "sha256": "d79154058ee2bacc485354c961f689b598a33cbc3b42eeee738d05f10cfc110e"
+    },
+    "BRN": {
+      "csv_bytes": 888,
+      "csv_gz_bytes": 367,
+      "rows": 5,
+      "sha256": "36771138364385f8d19ba8fea4b419e6b48177e1178ed7c91c28a2e1f9553bdd"
+    },
+    "BTN": {
+      "csv_bytes": 603,
+      "csv_gz_bytes": 284,
+      "rows": 3,
+      "sha256": "38327cf418b45322ca8487a00b0064dffb06107a4a5ca5f1d8f5ec6747a0722c"
+    },
+    "CAN": {
+      "csv_bytes": 42962,
+      "csv_gz_bytes": 6361,
+      "rows": 283,
+      "sha256": "51b8e8d88a405cdfa101e3360fd4ac8925a3ca7681959de6d381c80f4e4968fe"
+    },
+    "CHE": {
+      "csv_bytes": 7140,
+      "csv_gz_bytes": 1410,
+      "rows": 46,
+      "sha256": "d191e6d2235afa6af580da652177aa60a09cd5eab8fded8b9b555d69d9ffa835"
+    },
+    "CHL": {
+      "csv_bytes": 6961,
+      "csv_gz_bytes": 1233,
+      "rows": 44,
+      "sha256": "a88ea97ffe2d9b964a040e8625395cc22d1896519df64a86ac12099a4ffd50bc"
+    },
+    "CHN": {
+      "csv_bytes": 131433,
+      "csv_gz_bytes": 19610,
+      "rows": 774,
+      "sha256": "8b5726353e72bc4db43a58f2ac064f8d021d9a66abf86251a7d7c77795141bbc"
+    },
+    "CIV": {
+      "csv_bytes": 582,
+      "csv_gz_bytes": 294,
+      "rows": 3,
+      "sha256": "38678ce8f6ae485efa71d5944cb11fbcd6cae020276d1dd601c8789a52264347"
+    },
+    "CMR": {
+      "csv_bytes": 327,
+      "csv_gz_bytes": 236,
+      "rows": 1,
+      "sha256": "a1ad90116c6db51445167e3d53668a7a9be8fe9068538b9663d2087949eb2683"
+    },
+    "COD": {
+      "csv_bytes": 466,
+      "csv_gz_bytes": 261,
+      "rows": 2,
+      "sha256": "1773adbb58e8db8b5af3e314e4bf30355a077b116d29db6ff8ca1ea723c5166e"
+    },
+    "COL": {
+      "csv_bytes": 5368,
+      "csv_gz_bytes": 1177,
+      "rows": 34,
+      "sha256": "9ae5e65c5b2204b6b2741a1349618d9b2c8e3e7c0d90674bc690709d5cc33f66"
+    },
+    "CPV": {
+      "csv_bytes": 322,
+      "csv_gz_bytes": 238,
+      "rows": 1,
+      "sha256": "25b480536e1d7302a46c523f8bf63497c13a52f48fd69167c5f057a0608ac2c8"
+    },
+    "CRI": {
+      "csv_bytes": 1267,
+      "csv_gz_bytes": 461,
+      "rows": 7,
+      "sha256": "2843ceb02b52ef315268a75eabd7a67d16f1d1e4d9c6c0c3b37df2dfa8cb048f"
+    },
+    "CUW": {
+      "csv_bytes": 616,
+      "csv_gz_bytes": 307,
+      "rows": 3,
+      "sha256": "ae829d71c532761af07de54dee9b46f5ff9b476929753cc1de9ce1755219188d"
+    },
+    "CYP": {
+      "csv_bytes": 434,
+      "csv_gz_bytes": 263,
+      "rows": 2,
+      "sha256": "5bb82dd74d87256b567182dff804e81c6f7a53a636b283fb2b8d834f67bf1119"
+    },
+    "CZE": {
+      "csv_bytes": 6011,
+      "csv_gz_bytes": 1181,
+      "rows": 39,
+      "sha256": "a46a832e8eebeb753017649ffc28d8d6b8b304fbf5ba9b1b82b18d0ae2137d1e"
+    },
+    "DEU": {
+      "csv_bytes": 49709,
+      "csv_gz_bytes": 8221,
+      "rows": 328,
+      "sha256": "0be1586fcf2e2e8cd091dcdcf7aa32fc4912a5530401c82b11d18bda7db49101"
+    },
+    "DJI": {
+      "csv_bytes": 649,
+      "csv_gz_bytes": 305,
+      "rows": 3,
+      "sha256": "795e1e486d56582a667b817512027a44ec4466957346510131e6ec8e625cac0e"
+    },
+    "DNK": {
+      "csv_bytes": 8582,
+      "csv_gz_bytes": 1673,
+      "rows": 56,
+      "sha256": "6e21a1f5445dc83e84d840807fda57acbb5affc4c0cb4275485dc5b9bc287e16"
+    },
+    "ECU": {
+      "csv_bytes": 1440,
+      "csv_gz_bytes": 475,
+      "rows": 8,
+      "sha256": "4f6eb671117f2837733c5f44f33d1dcaffe808e4c060b270d8d440b4e957b155"
+    },
+    "EGY": {
+      "csv_bytes": 1224,
+      "csv_gz_bytes": 483,
+      "rows": 7,
+      "sha256": "c516c5f016596220bd8a0a22d64b74d05af792bbbae858a49b6b7641520482e1"
+    },
+    "ESP": {
+      "csv_bytes": 27297,
+      "csv_gz_bytes": 4587,
+      "rows": 182,
+      "sha256": "8d77dacc7260fedaa2d957541bf85127d1b789d9d5b57d2886bc9d3dbfe34042"
+    },
+    "EST": {
+      "csv_bytes": 643,
+      "csv_gz_bytes": 335,
+      "rows": 3,
+      "sha256": "945fc4de69297bfd63f594128526471fc855f4542df3a9adca6ce35a8070ffff"
+    },
+    "ETH": {
+      "csv_bytes": 1517,
+      "csv_gz_bytes": 479,
+      "rows": 10,
+      "sha256": "8790721a99f774c94bf70772e4ca12298c5f531230bb3bc0b7cabfd3a76c1cc8"
+    },
+    "FIN": {
+      "csv_bytes": 16066,
+      "csv_gz_bytes": 2920,
+      "rows": 107,
+      "sha256": "ded1fa946d952d1f3647b5fe73c90f6b2ea8f004872f282e51ee9427ae7047fa"
+    },
+    "FRA": {
+      "csv_bytes": 47248,
+      "csv_gz_bytes": 7752,
+      "rows": 285,
+      "sha256": "683c84299f5851b54c27f14ccf4ed1b0fdf225b286bfb5ca6203439d2eec94a4"
+    },
+    "FRO": {
+      "csv_bytes": 333,
+      "csv_gz_bytes": 248,
+      "rows": 1,
+      "sha256": "acaea975067d758bb1bbe00028b68fca48f2a96d6857057be747f3f06abb0872"
+    },
+    "GBR": {
+      "csv_bytes": 72002,
+      "csv_gz_bytes": 11177,
+      "rows": 468,
+      "sha256": "b1cd38c3ec2fec40e2525e766c7f65ebba4bad87c0ccbdf6756213c4e9e461da"
+    },
+    "GEO": {
+      "csv_bytes": 495,
+      "csv_gz_bytes": 300,
+      "rows": 2,
+      "sha256": "bc574c88d55b8e02a093f6baa9d684ce1cab6389bac2944adb61b8f8c22b0209"
+    },
+    "GHA": {
+      "csv_bytes": 1174,
+      "csv_gz_bytes": 405,
+      "rows": 7,
+      "sha256": "5bc11b19abd333388536a9b57547dca01e70ec4c512a600e1562db9f24c6e655"
+    },
+    "GIB": {
+      "csv_bytes": 352,
+      "csv_gz_bytes": 258,
+      "rows": 1,
+      "sha256": "539146ecb663c580d24430e56260a6cbef568ce389db44c6e9606280cae49f50"
+    },
+    "GRC": {
+      "csv_bytes": 3404,
+      "csv_gz_bytes": 830,
+      "rows": 22,
+      "sha256": "7646ee71d0ad93aaf57ced35cb35254eae237a6fd6aabeab4a252ff64c19e886"
+    },
+    "GRL": {
+      "csv_bytes": 482,
+      "csv_gz_bytes": 310,
+      "rows": 2,
+      "sha256": "cb2ca7e274a9ecf83ab7ccedc6c665dc690115f2bacab7f11a60b4c679a17bbc"
+    },
+    "GTM": {
+      "csv_bytes": 771,
+      "csv_gz_bytes": 343,
+      "rows": 4,
+      "sha256": "03ce6d7ce65413fbfc07386c3f095e3e05065771e45f5aea6b48c28a1ff32d0e"
+    },
+    "GUM": {
+      "csv_bytes": 1158,
+      "csv_gz_bytes": 446,
+      "rows": 7,
+      "sha256": "5b907f54e4a32b1cf41f1e5ec6e9611273faf759529f8a3f9d95bf1b532f37a5"
+    },
+    "HKG": {
+      "csv_bytes": 10493,
+      "csv_gz_bytes": 1991,
+      "rows": 67,
+      "sha256": "846fb2b7a2666afe5005c0941eaf2f3c4e3c1ada9a603469c8132c70616e85dc"
+    },
+    "HND": {
+      "csv_bytes": 480,
+      "csv_gz_bytes": 292,
+      "rows": 2,
+      "sha256": "804a3786895195567f42fc745b1fb7df4f5b4cb882c786f0183bcad88d2af282"
+    },
+    "HRV": {
+      "csv_bytes": 2972,
+      "csv_gz_bytes": 724,
+      "rows": 20,
+      "sha256": "878cd6eb2538b48824c1f2177abadf7fee677129d57678ca76474be53c75de47"
+    },
+    "HUN": {
+      "csv_bytes": 2504,
+      "csv_gz_bytes": 653,
+      "rows": 16,
+      "sha256": "99146120f613aa45c5f69857421e10db58ed93a2950a2b7c25ca90c7114d9507"
+    },
+    "IDN": {
+      "csv_bytes": 22722,
+      "csv_gz_bytes": 3375,
+      "rows": 148,
+      "sha256": "f9540a721f2bdb8734012ae0e3c383834166ff8c9f0a77fcc9549e4eccec71e9"
+    },
+    "IMN": {
+      "csv_bytes": 754,
+      "csv_gz_bytes": 314,
+      "rows": 4,
+      "sha256": "22429357cfb07f34e171444f93c2fcfeab9213dce81b709be49d1e3278b6bed9"
+    },
+    "IND": {
+      "csv_bytes": 44493,
+      "csv_gz_bytes": 6295,
+      "rows": 286,
+      "sha256": "b4ef5d02563fd185bc55b60dceb28551df495d00c785ac00ed38b44857b2e1b4"
+    },
+    "IRL": {
+      "csv_bytes": 9834,
+      "csv_gz_bytes": 1952,
+      "rows": 63,
+      "sha256": "9ddc0b3276d62dca82edee5a39fbad68c13c87dd0590bc559d6f1b17cefa37f7"
+    },
+    "IRN": {
+      "csv_bytes": 330,
+      "csv_gz_bytes": 241,
+      "rows": 1,
+      "sha256": "1334607ce8729f44f0e05f8d99d73a93ffc025a3b1343d253aa2a4316db0b8c9"
+    },
+    "ISL": {
+      "csv_bytes": 1916,
+      "csv_gz_bytes": 577,
+      "rows": 13,
+      "sha256": "232dad99e1f3f3ee9be879d4c6fe9701eb7812f4566762e1ff67e48dccbf8307"
+    },
+    "ISR": {
+      "csv_bytes": 3074,
+      "csv_gz_bytes": 735,
+      "rows": 20,
+      "sha256": "e1a95b5f28420880919377900a6a2de4900014e439982c7091b1f0b2c27ffc83"
+    },
+    "ITA": {
+      "csv_bytes": 14299,
+      "csv_gz_bytes": 2581,
+      "rows": 98,
+      "sha256": "3625ed11a0b8a7b2224de28beed1c2272dcd205daa65eb3c0b3102c50e7db9a3"
+    },
+    "JPN": {
+      "csv_bytes": 29271,
+      "csv_gz_bytes": 4348,
+      "rows": 193,
+      "sha256": "dbff8431cdc262344d4bba6bac1b09a3466a25e4a3b8895e4ed37b6493660f0c"
+    },
+    "KAZ": {
+      "csv_bytes": 1156,
+      "csv_gz_bytes": 426,
+      "rows": 7,
+      "sha256": "59cd105bdd6d5a3e730fed6c899fd9bbeb81d613535808aa863b0928fa8070b0"
+    },
+    "KEN": {
+      "csv_bytes": 2091,
+      "csv_gz_bytes": 557,
+      "rows": 14,
+      "sha256": "359025a32e41c3c7e3b628fff482d8e088139d5fd015fab740310259056580d8"
+    },
+    "KHM": {
+      "csv_bytes": 2211,
+      "csv_gz_bytes": 625,
+      "rows": 14,
+      "sha256": "1787989d35b187414d3425e796e1ca93b3eab41bd03aa089bd1e6cd6d1dbd741"
+    },
+    "KOR": {
+      "csv_bytes": 26521,
+      "csv_gz_bytes": 4510,
+      "rows": 171,
+      "sha256": "e2838d065faa23d15554530b44a217752ce1265cb95995f1fe49b6c2be02cca5"
+    },
+    "KWT": {
+      "csv_bytes": 486,
+      "csv_gz_bytes": 289,
+      "rows": 2,
+      "sha256": "9050dbb6899be32d05b5d370f78a3963e08136843119b2263c6c7b38ea3925dd"
+    },
+    "LAO": {
+      "csv_bytes": 702,
+      "csv_gz_bytes": 329,
+      "rows": 4,
+      "sha256": "b546676da333a4fb6b2e3c5f470093ded1d71caafd4a08ed56952490d58a2bf6"
+    },
+    "LKA": {
+      "csv_bytes": 494,
+      "csv_gz_bytes": 308,
+      "rows": 2,
+      "sha256": "6c074884fa7996cc191353afc4a8b73ef9b2d0b87e1a7920969e06382f9d6b21"
+    },
+    "LTU": {
+      "csv_bytes": 739,
+      "csv_gz_bytes": 317,
+      "rows": 4,
+      "sha256": "01bc954adb8de12a51e5466e9557539efbcfe6410a17ba7e96f5c41cd9dd0fa7"
+    },
+    "LUX": {
+      "csv_bytes": 2858,
+      "csv_gz_bytes": 736,
+      "rows": 17,
+      "sha256": "483de33af4a40c4c1ccf414a74b46904af8ac5361904cc2cf796a9cea1e53963"
+    },
+    "LVA": {
+      "csv_bytes": 1755,
+      "csv_gz_bytes": 457,
+      "rows": 10,
+      "sha256": "5eb9ebf6d28cb29d6f31c483c8ed072138741b7b665b804cfe627730ab09e5f6"
+    },
+    "MAR": {
+      "csv_bytes": 1494,
+      "csv_gz_bytes": 490,
+      "rows": 10,
+      "sha256": "a8de32ee714f3bc02114e2948a89cc22e7882c14524804efe7a86b97e4ee4b39"
+    },
+    "MCO": {
+      "csv_bytes": 316,
+      "csv_gz_bytes": 229,
+      "rows": 1,
+      "sha256": "fc986c75f58de7d66fc3bfdde8d0d3ea7fde06a88b07e222b60a123ef4f75c95"
+    },
+    "MDA": {
+      "csv_bytes": 478,
+      "csv_gz_bytes": 279,
+      "rows": 2,
+      "sha256": "74c5c69d155bb9172cc1321484acaf42681aed0331a06eaeb8ce68618df2aade"
+    },
+    "MDV": {
+      "csv_bytes": 314,
+      "csv_gz_bytes": 230,
+      "rows": 1,
+      "sha256": "b4a19691c7d58c442c95d2d36b5cf25187b545cefe319705c3c6288549bb0790"
+    },
+    "MEX": {
+      "csv_bytes": 7618,
+      "csv_gz_bytes": 1356,
+      "rows": 51,
+      "sha256": "a28f444e284d47f2df89d0b9d790885742ad36e1c0dbb8ba0c555fa9b8d5e5aa"
+    },
+    "MMR": {
+      "csv_bytes": 1037,
+      "csv_gz_bytes": 374,
+      "rows": 6,
+      "sha256": "007971e8f55ab9a2dad41480ba11dec0ed1689586ded1ba50de6ceb626611754"
+    },
+    "MNG": {
+      "csv_bytes": 624,
+      "csv_gz_bytes": 297,
+      "rows": 3,
+      "sha256": "22e2761a62accf93fcb7b244eb2dd08425da79bd299aa22fbd5edaae3590c222"
+    },
+    "MNP": {
+      "csv_bytes": 470,
+      "csv_gz_bytes": 283,
+      "rows": 2,
+      "sha256": "fcf231d403b6591035ada39c45a485820845ae6d778cdf3db07ef2bf7380b0ee"
+    },
+    "MOZ": {
+      "csv_bytes": 449,
+      "csv_gz_bytes": 266,
+      "rows": 2,
+      "sha256": "b51b896634db6d780c6d6cbc941a5fb61e5539269d9c108c9f74c041fe1d4c90"
+    },
+    "MUS": {
+      "csv_bytes": 318,
+      "csv_gz_bytes": 233,
+      "rows": 1,
+      "sha256": "dddafcf606e07babcc6b91cfb808ffa7f9a8ed4a9021438c7b70eac00150cc75"
+    },
+    "MYS": {
+      "csv_bytes": 24459,
+      "csv_gz_bytes": 4104,
+      "rows": 158,
+      "sha256": "a7fe33a3c90f84e598fb0a040ed1aaa36bf00423d4f09c28d3e3acab54e18fbf"
+    },
+    "NGA": {
+      "csv_bytes": 2730,
+      "csv_gz_bytes": 669,
+      "rows": 17,
+      "sha256": "fed74f6081b01232d42463bcb6b058bf2ea088d639167d3b02f4234493ca0deb"
+    },
+    "NLD": {
+      "csv_bytes": 25924,
+      "csv_gz_bytes": 3965,
+      "rows": 171,
+      "sha256": "06481fafaa45af981fb38ab2c6ee1a66e5608b274004990e33619c5df0016f4f"
+    },
+    "NOR": {
+      "csv_bytes": 15223,
+      "csv_gz_bytes": 2660,
+      "rows": 101,
+      "sha256": "483e445cb39d0f9dba4381960109763a4d7a124792f86a129c21bbd95f55960e"
+    },
+    "NZL": {
+      "csv_bytes": 5508,
+      "csv_gz_bytes": 1229,
+      "rows": 34,
+      "sha256": "85bb231beea6db1c80f73012876d62f718ef48235022c939408d5e5b1b78f29c"
+    },
+    "OMN": {
+      "csv_bytes": 1107,
+      "csv_gz_bytes": 401,
+      "rows": 7,
+      "sha256": "ba776b1974334922ac6c4a010cc6afaa0b2602069eac13e9d8a74eae4fb4336f"
+    },
+    "PAK": {
+      "csv_bytes": 1921,
+      "csv_gz_bytes": 582,
+      "rows": 12,
+      "sha256": "f3cf5989cea99ca4122ed8448770d1184bd42b6f49dbe90913c41634b8a96b0a"
+    },
+    "PAN": {
+      "csv_bytes": 734,
+      "csv_gz_bytes": 341,
+      "rows": 4,
+      "sha256": "ced82afdd38cb25a8262c6ecf8cf8573ddfab11c986c110ac3c41c28cb8c42bf"
+    },
+    "PER": {
+      "csv_bytes": 2429,
+      "csv_gz_bytes": 594,
+      "rows": 15,
+      "sha256": "98f461a29fb88704c2b4476b51403b5464a668d524a416b229ad97c5fb8ed522"
+    },
+    "PHL": {
+      "csv_bytes": 7466,
+      "csv_gz_bytes": 1417,
+      "rows": 48,
+      "sha256": "35cdb3fcaed90cc186fd972c3b31e599fd6148bf91cbd161467b8a1b1e9ab823"
+    },
+    "PNG": {
+      "csv_bytes": 326,
+      "csv_gz_bytes": 242,
+      "rows": 1,
+      "sha256": "f82eccb51aa6828254a0606fc47f48b0e922bc1f849490db50080160a486e792"
+    },
+    "POL": {
+      "csv_bytes": 10021,
+      "csv_gz_bytes": 1804,
+      "rows": 66,
+      "sha256": "8dc05cb95df03769875f3ce06114df4c2b600a5f858ff79deed597586b970a96"
+    },
+    "PRI": {
+      "csv_bytes": 454,
+      "csv_gz_bytes": 284,
+      "rows": 2,
+      "sha256": "03e7ab68d35da9f4abf72946850ccc9f297576afaf29d9b027302d10ef15da05"
+    },
+    "PRT": {
+      "csv_bytes": 4367,
+      "csv_gz_bytes": 1069,
+      "rows": 28,
+      "sha256": "43e79f4707be2c05e82ee654da96d1876b50481832bf80e8f04498f0053d815c"
+    },
+    "PRY": {
+      "csv_bytes": 971,
+      "csv_gz_bytes": 391,
+      "rows": 5,
+      "sha256": "0c740da5689460b4dc48ef2abcbcc567a8cb4f63e1df244e18cf5c3389ca6519"
+    },
+    "PYF": {
+      "csv_bytes": 457,
+      "csv_gz_bytes": 260,
+      "rows": 2,
+      "sha256": "cef8414dfda6c188bcd73ff80c3455c44af616b31fe706c29ab389656965fa51"
+    },
+    "QAT": {
+      "csv_bytes": 838,
+      "csv_gz_bytes": 331,
+      "rows": 5,
+      "sha256": "4e3f92b1fda12e156e221197ed5e7319a61cbd8fbbd5aa48e111453d98f1608c"
+    },
+    "ROU": {
+      "csv_bytes": 2604,
+      "csv_gz_bytes": 663,
+      "rows": 16,
+      "sha256": "3f66460d84c53bff68e7fd733294d6c943aee6b599155ffbde55b487d2076c34"
+    },
+    "RUS": {
+      "csv_bytes": 8676,
+      "csv_gz_bytes": 1735,
+      "rows": 55,
+      "sha256": "039fc09ab5333fdf7a717189b3906f8423fb7d1a07a60fc590e0190fb5fdf80d"
+    },
+    "RWA": {
+      "csv_bytes": 487,
+      "csv_gz_bytes": 273,
+      "rows": 2,
+      "sha256": "6e08a7df066e46432fac4357bc5b8f48783ae0e41707f1c944a35fb573999a44"
+    },
+    "SAU": {
+      "csv_bytes": 7235,
+      "csv_gz_bytes": 1358,
+      "rows": 45,
+      "sha256": "5482639ade84456a477584fafd3dafbcd24d2f5b6bf576fcd09095a90db6a9d6"
+    },
+    "SGP": {
+      "csv_bytes": 10793,
+      "csv_gz_bytes": 1907,
+      "rows": 69,
+      "sha256": "b6bb6638228c0692b2bfad21f0f064cbf6360a0a1160eff89af78afbf39537c4"
+    },
+    "SLV": {
+      "csv_bytes": 480,
+      "csv_gz_bytes": 289,
+      "rows": 2,
+      "sha256": "382a21a30e19e23aebf4c775d2003cab39ca771ed3c2efe3d5f001e39de5c40c"
+    },
+    "SOM": {
+      "csv_bytes": 309,
+      "csv_gz_bytes": 228,
+      "rows": 1,
+      "sha256": "f5cd424befbe280b8366a5e557558e851b47b6f7867dcbe7d30b30768c0c629d"
+    },
+    "SRB": {
+      "csv_bytes": 2268,
+      "csv_gz_bytes": 611,
+      "rows": 15,
+      "sha256": "841556fcb7ad7f762d111d664295863a1dcc1063d393ad6b579e14f4aebbd6a0"
+    },
+    "SUR": {
+      "csv_bytes": 476,
+      "csv_gz_bytes": 269,
+      "rows": 2,
+      "sha256": "862bfecabfc29acb1727afdce8f13598b9ecc09c4315c1277f827a5dd9f13fbe"
+    },
+    "SVK": {
+      "csv_bytes": 2313,
+      "csv_gz_bytes": 626,
+      "rows": 14,
+      "sha256": "9b02124af7e29c6232e8889a8781bb20f58c151d999ec5df74ed25274d5404ce"
+    },
+    "SVN": {
+      "csv_bytes": 825,
+      "csv_gz_bytes": 332,
+      "rows": 4,
+      "sha256": "e38b38ed6dc65f7e870d460fa868d89677bdc87e1eb55ac9887bb28dae84bdbd"
+    },
+    "SWE": {
+      "csv_bytes": 12186,
+      "csv_gz_bytes": 2165,
+      "rows": 81,
+      "sha256": "ca83087c369a803c0f4c34ec90a39efc8cb9f9a80f3c560f7df882edc22713b9"
+    },
+    "SYC": {
+      "csv_bytes": 333,
+      "csv_gz_bytes": 252,
+      "rows": 1,
+      "sha256": "e80d706813822e2f33eccaa69f813205383bd7b9d5d08028facaaadfeca80d04"
+    },
+    "TGO": {
+      "csv_bytes": 326,
+      "csv_gz_bytes": 243,
+      "rows": 1,
+      "sha256": "d4c3cf08dd42868959c126da895b2f381058839f5abe1cc6b92d0f666847cd06"
+    },
+    "THA": {
+      "csv_bytes": 13904,
+      "csv_gz_bytes": 2603,
+      "rows": 89,
+      "sha256": "fd2d01c10ad4da6ff5a18662f873701824a2a8ae26200f4c73da9c4429e96f11"
+    },
+    "TJK": {
+      "csv_bytes": 580,
+      "csv_gz_bytes": 294,
+      "rows": 3,
+      "sha256": "957f3c3e6e4f4cbeac69291c3c9f69b6eaaf3049a641a767956de2bdb18167a8"
+    },
+    "TTO": {
+      "csv_bytes": 324,
+      "csv_gz_bytes": 237,
+      "rows": 1,
+      "sha256": "27ab3f25cccb4e15f404b4d5036bf19fddd1fb1d3a65213dc1dddb0bdc2a4d5c"
+    },
+    "TUR": {
+      "csv_bytes": 4402,
+      "csv_gz_bytes": 944,
+      "rows": 28,
+      "sha256": "a59bc4732f1f69c18c80c8e0d8a5d5f36c35414da51a47544cb54d7c65924ed4"
+    },
+    "TWN": {
+      "csv_bytes": 3200,
+      "csv_gz_bytes": 836,
+      "rows": 20,
+      "sha256": "291f26a127eeda4595c3ff5005283a4e8c92446290db534ec2b79e5a3c92b70b"
+    },
+    "TZA": {
+      "csv_bytes": 467,
+      "csv_gz_bytes": 264,
+      "rows": 2,
+      "sha256": "6d2e84c9ca0fc528c59f8daa90da01f61ae0844dda09194fca28b90c7835f07a"
+    },
+    "UGA": {
+      "csv_bytes": 310,
+      "csv_gz_bytes": 226,
+      "rows": 1,
+      "sha256": "e1a397acb7a18ecbfcc32e006bc48078059ffb555dc125cc8ddbbcd23dca487a"
+    },
+    "URY": {
+      "csv_bytes": 580,
+      "csv_gz_bytes": 309,
+      "rows": 3,
+      "sha256": "5a25e000dfa6bab5c3835590973eba7cbfb9a594df77ea1da02f7d8f12a42042"
+    },
+    "USA": {
+      "csv_bytes": 661670,
+      "csv_gz_bytes": 107985,
+      "rows": 4115,
+      "sha256": "3b2b3faf11c81518cdb7aa86d3c867a6629494d86c48f2bb8be507b5bd1d5d99"
+    },
+    "UZB": {
+      "csv_bytes": 1012,
+      "csv_gz_bytes": 403,
+      "rows": 6,
+      "sha256": "1f5de74b00a034f19689856fdcad68b59003302e5ebfe57d4756a57fefbb8c1f"
+    },
+    "VEN": {
+      "csv_bytes": 1524,
+      "csv_gz_bytes": 443,
+      "rows": 9,
+      "sha256": "939c6b402ddd57a9b82ec0bc822d1f51512e754e4e9ef87ca190bc5e3e373b3f"
+    },
+    "VNM": {
+      "csv_bytes": 10431,
+      "csv_gz_bytes": 1887,
+      "rows": 67,
+      "sha256": "82171598b8f512e433d84d2602d673136f161299359f1e4815221c1fed889138"
+    },
+    "ZAF": {
+      "csv_bytes": 6672,
+      "csv_gz_bytes": 1306,
+      "rows": 42,
+      "sha256": "18ff0ebe431f07a98af8fbb6f81e263450f205e4c122d0f14ec3556a387f8e9d"
+    },
+    "ZWE": {
+      "csv_bytes": 331,
+      "csv_gz_bytes": 242,
+      "rows": 1,
+      "sha256": "3f5f6b9d68bd7e6380873a0175bfd00726fee9c3d9774f0d7bfa400595bf060a"
+    }
+  },
+  "frame_files_sha256": {
+    "adm1.parquet": "f5f82db05f4e45e37fb049ac58905c9ae8dc8794543fef8b202e866fa562ac35",
+    "adm2.parquet": "d7313373bdebb5265dde70c4ea17b14f484b7deb8b2b306d98c6098f6693cf52",
+    "analysis_col_adm1.parquet": "c78dce38e0870a9924ca25709449aff178376a22ab33c958f776a9861957f557",
+    "analysis_est_adm1.parquet": "29cdcc0e5be951140a13a034bb4f6761d764f7bb528dab0e1a6d8ccc6d78cff0",
+    "analysis_hkg_adm1.parquet": "d8902762a211f2ad9d3d0009a39a23f098101f510011e0a4a07754c93ef4248a",
+    "analysis_idn_adm1.parquet": "1b0b603d4eb490d015ff6f3195544b223b7ce968d3d784e8367687ed8ec85744",
+    "analysis_irl_adm1.parquet": "e4ba62b87b3ef01e18874415088310055c4ed78b6dd627f45313d153731ccbca",
+    "analysis_kor_adm1.parquet": "d3fd363cbfdfb43ac0755794cb689dc08770aaf9a0ee84b4a4126cabc9a0961d",
+    "analysis_lux_adm1.parquet": "ae7df68abb8729c46d516026e6d68eb848b468ece70e91324d2891aad572b72e",
+    "analysis_lva_adm1.parquet": "a56cc8ae079fa06d8b295ffba8d7f3bc4d0e9546ae5f53dd60d1d3346bcf066f",
+    "analysis_mex_adm1.parquet": "d5784a4e133ab67582e42e6f248a0c84b29eee48182251b9bc4ded6fa097563f",
+    "analysis_nor_adm1.parquet": "b2745a056a12ab75c4f03f66b3bdf3738d9b88569fe4900dbc9ebe656638f1c9",
+    "analysis_nor_adm2.parquet": "f37386250af4e6a0282c2beb465743d768b95afa7dfa6128b960d7266bdaf88b",
+    "analysis_nzl_adm1.parquet": "e240ce8b4608dff00c98f3b257261655f9424e7955cf6bf5d3a6ef140c6fbd1b",
+    "analysis_per_adm1.parquet": "644ac285e2e4bc5e08d6cdbe2a58845fea95a1013e9bb1dd5052ab57999435a5",
+    "analysis_phl_adm1.parquet": "b8f6c8c9a0a15281239e9d55de4f913028b2f11f164577ee1c5e65973f5af636",
+    "analysis_tha_adm1.parquet": "6a6e163b3d77fe3f07c92f3c9c48ebf7cc64bb5df21c34a133600bf4c84d17f6",
+    "analysis_twn_adm1.parquet": "10f578b30a774908ebb93e30f16fbbf5d652f7925ce92c4d8762bb34b60212ba",
+    "analysis_usa_adm1.parquet": "b21843119c619a1980f0b1cf8f53ec6f726cc4f706c7d00bfc0a538ea05861b5",
+    "analysis_usa_adm2.parquet": "aaeb8e02070fa62ba8a946de98173e19108ab6b0200dad496f019c8604d2dac8",
+    "analysis_vnm_adm1.parquet": "f6985b4ffb6254ac47784b579a2eb9eef98fbe42f83d2300e175e53c0a2755a3",
+    "units.csv": "17629e7a7d2e627a58eb36cc845e4edf9f10101c33ed918b30802cbb74724bb9"
+  },
+  "index_version": "0.2.0",
+  "inputs_sha256_lf": {
+    "abf-boundaries manifest.json": "396f84bca93852d015d2e8b68886185dfcf4b38ec25146a4603490682e54300e",
+    "abf-dc manifest.json": "da579f885f5c9e7c6d7c58961ab2ecc9db63ab4462257ce6a18162f61b4505f7",
+    "atlas_adm1_aliases.csv": "e03b72e53d35feb05bb5794103de5856d06407f3a1f57145182727a27693c79a",
+    "atlas_adm1_countries.csv": "bad38ac6bf64793957f570825f41a228b5d8242c6526fdeb77faba7aa69f2a50",
+    "county_records.csv": "369186738ffb6c5bba755c8759c394bc733820bbaefdc38db239f860b8dd93d5",
+    "dc_atlas_points.csv": "b4d4aabdbed7d76cc13081bcabe1db6426fe9af57b2781bc3e5f40c93bed1df5",
+    "dc_epoch_points.csv": "bd3d0745c80f38441d9603c4cc38c2640625a84295df4cfc25743669607a6749",
+    "energy_plants_gem_tzsam_units.csv": "5c38f22585b0b1d2630bd0fcaeb5654cb45c309d016c2992da9c25ab41982c40",
+    "energy_plants_gem_units.csv": "b57f0d363456ce8ffdfe01e84df456a8051d6a3e834a0048e29994a1d9df13f9",
+    "gem build_hashes.json": "3bcbad0243ba515d81e8c0309dc22d4b2032fd25dd91db45d0cff7c3986d55eb",
+    "operator_type_groups.csv": "b56080b1a351643c24166abb49603434d0f699f0072f48df1d8851b8343065ad",
+    "units.csv": "17629e7a7d2e627a58eb36cc845e4edf9f10101c33ed918b30802cbb74724bb9"
+  },
+  "layers": {
+    "dc_atlas_points": 9865,
+    "dc_epoch_points": 94
+  },
+  "levels_by_country": {
+    "ABW": {
+      "adm1": false,
+      "adm2": false
+    },
+    "AFG": {
+      "adm1": false,
+      "adm2": false
+    },
+    "AGO": {
+      "adm1": true,
+      "adm2": false
+    },
+    "AIA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ALA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ALB": {
+      "adm1": true,
+      "adm2": false
+    },
+    "AND": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ARE": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ARG": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ARM": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ASM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ATG": {
+      "adm1": true,
+      "adm2": false
+    },
+    "AUS": {
+      "adm1": true,
+      "adm2": false
+    },
+    "AUT": {
+      "adm1": true,
+      "adm2": false
+    },
+    "AZE": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BDI": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BEL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BEN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BFA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BGD": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BGR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BHR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BHS": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BIH": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BLR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BLZ": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BMU": {
+      "adm1": false,
+      "adm2": false
+    },
+    "BOL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BRA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BRB": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BRN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BTN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "BWA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CAF": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CAN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "CHE": {
+      "adm1": true,
+      "adm2": false
+    },
+    "CHL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "CHN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "CIV": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CMR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "COD": {
+      "adm1": false,
+      "adm2": false
+    },
+    "COG": {
+      "adm1": true,
+      "adm2": false
+    },
+    "COK": {
+      "adm1": false,
+      "adm2": false
+    },
+    "COL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "COM": {
+      "adm1": true,
+      "adm2": false
+    },
+    "CPV": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CRI": {
+      "adm1": true,
+      "adm2": false
+    },
+    "CUB": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CUW": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CYM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CYP": {
+      "adm1": false,
+      "adm2": false
+    },
+    "CZE": {
+      "adm1": true,
+      "adm2": false
+    },
+    "DEU": {
+      "adm1": true,
+      "adm2": false
+    },
+    "DJI": {
+      "adm1": true,
+      "adm2": false
+    },
+    "DMA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "DNK": {
+      "adm1": true,
+      "adm2": false
+    },
+    "DOM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "DZA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ECU": {
+      "adm1": true,
+      "adm2": false
+    },
+    "EGY": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ERI": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ESH": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ESP": {
+      "adm1": true,
+      "adm2": false
+    },
+    "EST": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ETH": {
+      "adm1": false,
+      "adm2": false
+    },
+    "FIN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "FJI": {
+      "adm1": true,
+      "adm2": false
+    },
+    "FRA": {
+      "adm1": true,
+      "adm2": true
+    },
+    "FRO": {
+      "adm1": false,
+      "adm2": false
+    },
+    "FSM": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GAB": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GBR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GEO": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GGY": {
+      "adm1": false,
+      "adm2": false
+    },
+    "GHA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "GIB": {
+      "adm1": false,
+      "adm2": false
+    },
+    "GIN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GMB": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GNB": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GNQ": {
+      "adm1": false,
+      "adm2": false
+    },
+    "GRC": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GRD": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GRL": {
+      "adm1": false,
+      "adm2": false
+    },
+    "GTM": {
+      "adm1": true,
+      "adm2": false
+    },
+    "GUM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "GUY": {
+      "adm1": true,
+      "adm2": false
+    },
+    "HKG": {
+      "adm1": true,
+      "adm2": false
+    },
+    "HND": {
+      "adm1": true,
+      "adm2": false
+    },
+    "HRV": {
+      "adm1": false,
+      "adm2": false
+    },
+    "HTI": {
+      "adm1": true,
+      "adm2": false
+    },
+    "HUN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "IDN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "IMN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "IND": {
+      "adm1": true,
+      "adm2": false
+    },
+    "IOT": {
+      "adm1": false,
+      "adm2": false
+    },
+    "IRL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "IRN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "IRQ": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ISL": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ISR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ITA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "JAM": {
+      "adm1": true,
+      "adm2": false
+    },
+    "JEY": {
+      "adm1": false,
+      "adm2": false
+    },
+    "JOR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "JPN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "KAZ": {
+      "adm1": false,
+      "adm2": false
+    },
+    "KEN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "KGZ": {
+      "adm1": false,
+      "adm2": false
+    },
+    "KHM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "KIR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "KNA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "KOR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "KWT": {
+      "adm1": true,
+      "adm2": false
+    },
+    "LAO": {
+      "adm1": false,
+      "adm2": false
+    },
+    "LBN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "LBR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "LBY": {
+      "adm1": false,
+      "adm2": false
+    },
+    "LCA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "LKA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "LSO": {
+      "adm1": true,
+      "adm2": false
+    },
+    "LTU": {
+      "adm1": true,
+      "adm2": false
+    },
+    "LUX": {
+      "adm1": true,
+      "adm2": false
+    },
+    "LVA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "MAC": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MAR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MCO": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MDA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MDG": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MDV": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MEX": {
+      "adm1": true,
+      "adm2": false
+    },
+    "MHL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "MKD": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MLI": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MLT": {
+      "adm1": true,
+      "adm2": false
+    },
+    "MMR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MNE": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MNG": {
+      "adm1": true,
+      "adm2": false
+    },
+    "MNP": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MOZ": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MRT": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MSR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MUS": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MWI": {
+      "adm1": false,
+      "adm2": false
+    },
+    "MYS": {
+      "adm1": true,
+      "adm2": false
+    },
+    "NAM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "NCL": {
+      "adm1": false,
+      "adm2": false
+    },
+    "NER": {
+      "adm1": true,
+      "adm2": false
+    },
+    "NFK": {
+      "adm1": false,
+      "adm2": false
+    },
+    "NGA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "NIC": {
+      "adm1": true,
+      "adm2": false
+    },
+    "NLD": {
+      "adm1": true,
+      "adm2": false
+    },
+    "NOR": {
+      "adm1": true,
+      "adm2": true
+    },
+    "NPL": {
+      "adm1": false,
+      "adm2": false
+    },
+    "NRU": {
+      "adm1": true,
+      "adm2": false
+    },
+    "NZL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "OMN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "PAK": {
+      "adm1": false,
+      "adm2": false
+    },
+    "PAN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "PER": {
+      "adm1": true,
+      "adm2": false
+    },
+    "PHL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "PLW": {
+      "adm1": true,
+      "adm2": false
+    },
+    "PNG": {
+      "adm1": false,
+      "adm2": false
+    },
+    "POL": {
+      "adm1": true,
+      "adm2": false
+    },
+    "PRI": {
+      "adm1": false,
+      "adm2": false
+    },
+    "PRK": {
+      "adm1": false,
+      "adm2": false
+    },
+    "PRT": {
+      "adm1": true,
+      "adm2": false
+    },
+    "PRY": {
+      "adm1": true,
+      "adm2": false
+    },
+    "PSE": {
+      "adm1": false,
+      "adm2": false
+    },
+    "PYF": {
+      "adm1": false,
+      "adm2": false
+    },
+    "QAT": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ROU": {
+      "adm1": true,
+      "adm2": false
+    },
+    "RUS": {
+      "adm1": true,
+      "adm2": false
+    },
+    "RWA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SAU": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SDN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SEN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SGP": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SHN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SLB": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SLE": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SLV": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SOM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SPM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SRB": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SSD": {
+      "adm1": true,
+      "adm2": false
+    },
+    "STP": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SUR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SVK": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SVN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SWE": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SWZ": {
+      "adm1": true,
+      "adm2": false
+    },
+    "SYC": {
+      "adm1": false,
+      "adm2": false
+    },
+    "SYR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "TCD": {
+      "adm1": false,
+      "adm2": false
+    },
+    "TGO": {
+      "adm1": true,
+      "adm2": false
+    },
+    "THA": {
+      "adm1": true,
+      "adm2": false
+    },
+    "TJK": {
+      "adm1": false,
+      "adm2": false
+    },
+    "TKM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "TLS": {
+      "adm1": true,
+      "adm2": false
+    },
+    "TON": {
+      "adm1": true,
+      "adm2": false
+    },
+    "TTO": {
+      "adm1": true,
+      "adm2": false
+    },
+    "TUN": {
+      "adm1": false,
+      "adm2": false
+    },
+    "TUR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "TWN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "TZA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "UGA": {
+      "adm1": false,
+      "adm2": false
+    },
+    "UKR": {
+      "adm1": true,
+      "adm2": false
+    },
+    "URY": {
+      "adm1": true,
+      "adm2": false
+    },
+    "USA": {
+      "adm1": true,
+      "adm2": true
+    },
+    "UZB": {
+      "adm1": true,
+      "adm2": false
+    },
+    "VCT": {
+      "adm1": true,
+      "adm2": false
+    },
+    "VEN": {
+      "adm1": true,
+      "adm2": false
+    },
+    "VIR": {
+      "adm1": false,
+      "adm2": false
+    },
+    "VNM": {
+      "adm1": true,
+      "adm2": false
+    },
+    "VUT": {
+      "adm1": true,
+      "adm2": false
+    },
+    "WSM": {
+      "adm1": true,
+      "adm2": false
+    },
+    "XKX": {
+      "adm1": false,
+      "adm2": false
+    },
+    "YEM": {
+      "adm1": false,
+      "adm2": false
+    },
+    "ZAF": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ZMB": {
+      "adm1": true,
+      "adm2": false
+    },
+    "ZWE": {
+      "adm1": true,
+      "adm2": false
+    }
+  },
+  "near_rule_m": 22200.0,
+  "records": 9959,
+  "schema_version": "abf-index-meta-1.0",
+  "set": "abf-dc",
+  "unit_note_values": [
+    "ambiguous_name",
+    "connecticut",
+    "no_county_field",
+    "no_point",
+    "no_state",
+    "no_unit_near",
+    "point_in_other_country",
+    "region_not_matched",
+    "region_only"
+  ]
+}
