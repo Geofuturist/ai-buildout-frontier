@@ -4,6 +4,7 @@ import SiteFooter from '@/components/SiteFooter';
 import DataBrowser from '@/components/DataBrowser';
 import { buildCards } from '@/lib/dataCards';
 import { getData } from '@/lib/data';
+import { doiUrl } from '@/lib/format';
 
 export const metadata: Metadata = {
   title: 'Data',
@@ -11,7 +12,10 @@ export const metadata: Metadata = {
 };
 
 export default function DataPage() {
-  const cards = buildCards(getData());
+  const data = getData();
+  const cards = buildCards(data);
+  // Datasets of the territory index have no layer cards; their DOI is shown here
+  const indexSets = Object.values(data.datasets).filter((d) => d.kind === 'index');
   return (
     <>
       <SiteHeader />
@@ -23,6 +27,18 @@ export default function DataPage() {
             Map tiles are for display only; use GeoParquet, GeoJSON or CSV for analysis. Read codes as text (for example <code>unit_id</code>) or leading zeros disappear.
           </p>
         </div>
+        {indexSets.length > 0 && (
+          <div className="prose-abf mb-6">
+            <h2>Territory index</h2>
+            <ul>
+              {indexSets.map((d) => (
+                <li key={d.dataset}>
+                  {d.dataset} v{d.version} · {doiUrl(d.doi) ? <a href={doiUrl(d.doi)!}>{d.doi}</a> : 'DOI not assigned'}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <DataBrowser cards={cards} />
       </main>
       <SiteFooter />
