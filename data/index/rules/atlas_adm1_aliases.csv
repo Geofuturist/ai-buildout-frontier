@@ -1,0 +1,60 @@
+iso3,adm1_raw,unit_id,reason,decided_by
+BRA,Distrito Federal,BRA-1-DF,spelling: Portuguese name of the Federal District,human:V
+EST,Harju,EST-1-0037,spelling: short form of Harjumaa,human:V
+FIN,Finland Proper,FIN-1-19,spelling: other English name of Varsinais-Suomi (Southwest Finland),human:V
+FIN,Päijät-Häme,FIN-1-16,spelling: Finnish name of Päijänne Tavastia,human:V
+FRA,Haute-Rhin,FRA-2-68,spelling: misspelling of Haut-Rhin,human:V
+HKG,Central and Western,HKG-1-A,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Eastern,HKG-1-C,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Islands,HKG-1-T,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Kowloon City,HKG-1-G,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Kwai Tsing,HKG-1-S,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Kwun Tong,HKG-1-J,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,North,HKG-1-N,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Sai Kung,HKG-1-Q,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Sha Tin,HKG-1-R,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Southern,HKG-1-D,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Tai Po,HKG-1-P,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Tsuen Wan,HKG-1-K,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Wan Chai,HKG-1-B,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+HKG,Wong Tai Sin,HKG-1-H,spelling: district name without the word District,generated: HKG district-name rule; reviewed: agent:RES7
+IDN,Jakarta Raya,IDN-1-31,spelling: short form of Daerah Khusus Ibukota Jakarta Raya (DKI Jakarta),human:V
+IDN,Jawa Barat,IDN-1-32,spelling: Indonesian name of West Java,human:V
+IDN,Jawa Tengah,IDN-1-33,spelling: Indonesian name of Central Java,human:V
+IDN,Jawa Timur,IDN-1-35,spelling: Indonesian name of East Java,human:V
+IDN,Kalimantan Barat,IDN-1-61,spelling: Indonesian name of the province (name in the BIG file),generated: IDN source_name rule; reviewed: agent:RES7
+IDN,Kalimantan Selatan,IDN-1-63,spelling: Indonesian name of the province (name in the BIG file),generated: IDN source_name rule; reviewed: agent:RES7
+IDN,Kalimantan Timur,IDN-1-64,spelling: Indonesian name of East Kalimantan,human:V
+IDN,Kepulauan Riau,IDN-1-21,"spelling: Indonesian name of Riau Islands (not Riau, IDN-1-14)",human:V
+IDN,Sulawesi Selatan,IDN-1-73,spelling: Indonesian name of the province (name in the BIG file),generated: IDN source_name rule; reviewed: agent:RES7
+IDN,Sulawesi Utara,IDN-1-71,spelling: Indonesian name of the province (name in the BIG file),generated: IDN source_name rule; reviewed: agent:RES7
+IDN,Sumatera Selatan,IDN-1-16,spelling: Indonesian name of the province (name in the BIG file),generated: IDN source_name rule; reviewed: agent:RES7
+IDN,Sumatera Utara,IDN-1-12,spelling: Indonesian name of the province (name in the BIG file),generated: IDN source_name rule; reviewed: agent:RES7
+IRL,Fingal,IRL-1-D,within: a local authority area wholly inside County Dublin,human:V
+IRL,Laoighis,IRL-1-LS,spelling: older spelling of Laois,human:V
+IRL,South Dublin,IRL-1-D,within: a local authority area wholly inside County Dublin,human:V
+JPN,Miyagi Prefecture,JPN-1-04,spelling: name with the word Prefecture,human:V
+KOR,Gwangju,KOR-1-X2436,"merged: Gwangju Metropolitan City is wholly part of Jeonnam-Gwangju Integrated Special City under Act No. 21446, Art. 7 [apply only if points confirm: Gyeonggi also has a city named Gwangju]",human:V
+KOR,South Jeolla,KOR-1-X2436,"merged: South Jeolla Province is wholly part of Jeonnam-Gwangju Integrated Special City under Act No. 21446, Art. 7",human:V
+MEX,Distrito Federal,MEX-1-09,former name: name of Mexico City before 2016,human:V
+MEX,México,MEX-1-15,spelling: official name of the State of Mexico (INEGI),generated: MEX state-name rule; reviewed: agent:RES7
+MYS,Melaka,MYS-1-04,spelling: Malay name of Malacca,human:V
+MYS,Pulau Pinang,MYS-1-07,spelling: Malay name of Penang,human:V
+NGA,Ogun State,NGA-1-OG,spelling: name with the word State,human:V
+PER,Lima Province,PER-1-15,"within: the province of Lima (Metropolitan Lima) lies wholly in the department of Lima, which this unit covers",human:V
+PHL,Angeles,PHL-1-03,"within: Angeles City, in Pampanga, Central Luzon (Region III)",human:V
+PHL,Batangas,PHL-1-04,within: a province of Calabarzon (Region IV-A),human:V
+PHL,Caloocan,PHL-1-13,within: a city of Metro Manila (National Capital Region),human:V
+PHL,Camarines Norte,PHL-1-05,within: a province of Bicol (Region V),human:V
+PHL,Laguna,PHL-1-04,within: a province of Calabarzon (Region IV-A),human:V
+PHL,Makati,PHL-1-13,within: a city of Metro Manila (National Capital Region),human:V
+PHL,Mandaue,PHL-1-07,"within: Mandaue City, in Cebu, Central Visayas (Region VII)",human:V
+PHL,Manila,PHL-1-13,within: a city of Metro Manila (National Capital Region),human:V
+PHL,Pampanga,PHL-1-03,within: a province of Central Luzon (Region III),human:V
+PHL,Paranaque,PHL-1-13,within: a city of Metro Manila (National Capital Region),human:V
+PHL,Pasig,PHL-1-13,within: a city of Metro Manila (National Capital Region),human:V
+PHL,Quezon City,PHL-1-13,within: a city of Metro Manila (National Capital Region),human:V
+THA,Bangkok Metropolis,THA-1-10,spelling: official English name of Bangkok,human:V
+VNM,Bình Dương,VNM-1-79,"merged: Binh Duong province is wholly part of Ho Chi Minh City under Resolution No. 202/2025/QH15, Art. 1(16) [not code-checked]",human:V
+VNM,Ha Noi,VNM-1-01,spelling: Vietnamese form of Hanoi,human:V
+VNM,Đà Nẵng,VNM-1-48,spelling: Vietnamese spelling of Da Nang,human:V

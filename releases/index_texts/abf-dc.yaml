@@ -1,14 +1,15 @@
-# Index of abf-dc 0.2.0: Atlas and Epoch AI records (RES_texts_INDEX_v0_1_0 r4 section 2.3).
+# Index of abf-dc 0.2.0: Atlas and Epoch AI records (RES_texts_INDEX_v0_2_0 r1 sections 2 and 3).
 title: "Territory index · Data centers (abf-dc 0.2.0) · records"
 description: >-
-  Where each record of dc_atlas_points (9,865) and dc_epoch_points (94) lies in abf-boundaries v0.2.0. Atlas records
+  Where each record of dc_atlas_points (9,865) and dc_epoch_points (94) lies in abf-boundaries v0.3.0. Atlas records
   are assigned by what they name, as the Atlas counts in abf-dc are: the country they name; in the United States, the
-  county they name (3,914 records) or, failing that, the state they name; in 34 other countries, where the Atlas region
-  field names the frame's first-level units, the region they name. Elsewhere, and for all Epoch AI sites, the unit is
-  the one in which the town point lies. In those 34 countries a record whose region matches no unit of the frame is
-  assigned by its point, if it has one. Records without a point are assigned to their country only, unless they name
-  a county or region that the rules accept. Each row has one basis: a record assigned by the region it names gets no
-  second-level unit from its point.
+  county they name (3,914 records) or, failing that, the state they name; in 48 other countries, where the Atlas region
+  field names the frame's first-level units, the region they name, or another name of it listed in
+  atlas_adm1_aliases.csv: a spelling, a former name, a former unit merged into it, or a city, province or area that
+  lies wholly in it. Elsewhere, and for all Epoch AI sites, the unit is the one in which the town point lies. In those
+  48 countries a record whose region matches no unit of the frame is assigned by its point, if it has one. Records
+  without a point are assigned to their country only, unless they name a county or region that the rules accept. Each
+  row has one basis: a record assigned by the region it names gets no second-level unit from its point.
 known_gaps:
   - >-
     A point marks a town, not a site. Near a boundary a town point can lie in a neighboring unit: in the United States
@@ -16,40 +17,59 @@ known_gaps:
     are assigned by the county they name.
   - >-
     3,778 Atlas records and 23 Epoch AI sites have no point. The named county or region gives a unit to the U.S. records
-    and to 1,124 records in the 34 countries of atlas_adm1_countries.csv; the others are assigned to their country only.
+    and to 1,462 records in the 48 countries of atlas_adm1_countries.csv; the others are assigned to their country only.
   - >-
-    In the 34 countries, 22 Atlas records leave the region field empty or give a region that matches no unit of the
-    frame by exact name, mostly other spellings, such as Distrito Federal, Pulau Pinang or Päijät-Häme. The 9 with a
-    point are assigned by their point; the 13 without one are counted for their country only (region_not_matched).
+    In the 48 countries, 16 Atlas records leave the region field empty or give a region that matches no unit of the
+    frame, by exact name or through atlas_adm1_aliases.csv. The 8 with a point are assigned by their point; the
+    8 without one are counted for their country only (region_not_matched): 7 in the Philippines and 1 in China.
+  - >-
+    In the Philippines the Atlas region field names cities and provinces rather than regions. The 35 records that name
+    a city or province lying wholly in one region are assigned to that region; this share, 35 of 48, is below the 95%
+    match the project otherwise requires for using the region field of a country, and the Philippines are included by
+    a decision of the project.
   - >-
     In France the Atlas region field mostly names departments, the frame's second-level units. 15 records name the
     region Provence-Alpes-Côte d’Azur instead; they are counted in the region and get no department (region_only).
   - >-
     In Spain and Italy the Atlas region field names provinces, which are not units of the frame. In Norway it often
     gives names that do not match the frame: counties merged in recent reforms, such as Hordaland, and Norwegian names
-    where the frame gives bilingual ones, such as Nordland. Atlas records there are assigned by their point. Spelling
-    variants (Hessen for Hesse, Genève for Geneva) are not matched in this version, so countries where they are common,
-    such as Germany, Denmark, the Netherlands and Switzerland, are also assigned by point.
+    where the frame gives bilingual ones, such as Nordland. Atlas records there are assigned by their point. In Taiwan
+    the region field and the points disagree for a share of records too large for the rule, so Taiwan is also assigned
+    by point, and its 12 records without a point are counted for the country only. Countries where other spellings are
+    common, such as Germany, Denmark, the Netherlands and Switzerland, are not yet in atlas_adm1_aliases.csv and are
+    assigned by point.
   - >-
     4 Atlas records name one country and lie in another on the generalized 1:10 million outlines (Gibraltar, Sittard,
     Grevenmacher, Lauterbourg). They are assigned to the country they name and listed for the country where their point
     lies (adm1_point).
-  - "ADM1 exists in this frame for 108 countries and ADM2 for the United States, France and Norway."
+  - "ADM1 exists in this frame for 123 countries and ADM2 for the United States, France and Norway."
 verification:
   method: >-
-    Built by script from the published files of abf-dc 0.2.0 and abf-boundaries v0.2.0, with the U.S. county of each
+    Built by script from the published files of abf-dc 0.2.0 and abf-boundaries v0.3.0, with the U.S. county of each
     Atlas record taken from county_records.csv of abf-dc 0.2.0. The build stops if a record is missing or appears in two
-    country files, if a U.S. Atlas record gets another county than county_records.csv gives, or if an input differs
-    from the published file. Points are assigned with the calculation geometry of the United States (Census Bureau
-    1:500,000) and Norway (Kartverket) and with the display geometry of the frame elsewhere. A second run gives
-    byte-identical files.
+    country files, if a U.S. Atlas record gets another county than county_records.csv gives, if an input differs from
+    the published file, or if any row outside the 15 countries with new first-level units differs from version 0.1 for
+    any reason other than the frame version and the alias table. Each row of atlas_adm1_aliases.csv was checked against
+    the points of its records before the build: a row is used only if no point of its records lies in another unit,
+    with one exception decided by the project (Jakarta Raya, 22 of 23 points in Jakarta). Points are assigned with the
+    calculation geometry of the United States (Census Bureau 1:500,000), Norway (Kartverket, with Svalbard from Natural
+    Earth) and the 15 countries with national first levels (their national files), and with the display geometry of
+    the frame elsewhere. A second run gives byte-identical files.
 # Columns of the index that the layer meta.json files do not describe (the project's own grouping of the Atlas operator type).
-# Wording from RES_texts_INDEX r4 section 4.1, which describes the groups.
 fields:
   type_group: >-
-    Group of the Atlas operator type: colocation, telecom, developer_investor, cloud, enterprise_it (Managed IT,
-    Enterprise and Fintech), ai_compute (the operator type AI Compute as the Atlas gives it, not the purpose of the
-    site) or other (including Unknown).
+    Group of the Atlas operator type (operator_type), by operator_type_groups.csv of abf-dc 0.2.0: colocation;
+    telecom; developer_investor (Developer, Asset Manager, Private Equity, Lender, Construction); cloud; enterprise_it
+    (Managed IT, Enterprise, Fintech); ai_compute (the operator type AI Compute as the Atlas gives it, not the purpose
+    of the site); other (Crypto, Energy, Public, Education, Government, Utility, Regulator, Unknown).
+# What an empty value means in the copied columns (RES_texts_INDEX_v0_2_0 r1 section 2).
+null_meaning:
+  status_raw: "Empty for Epoch AI sites: this is an Atlas field."
+  type_group: "Empty for Epoch AI sites: this is an Atlas field."
+  power_class: >-
+    For an Atlas record, the Atlas gives the size class Unknown (power_status = not_found). Empty for all Epoch AI
+    sites: this is an Atlas field.
+  power_mw: "Empty for Atlas records: this is an Epoch AI field. 0 is a value: Epoch AI counts no IT power in operation yet."
 # Columns copied word for word from the published meta.json of the layer (G14 if a field is missing there).
 copied_fields:
   dc_atlas_points: [name, status_raw, power_class]

@@ -1,5 +1,5 @@
-r"""abf-index 0.1.0: build the index that links every record of the world point layers to units ADM0-ADM2 of abf-boundaries v0.2.0
-(SPEC_INDEX_territory_v0_1 r5).
+r"""abf-index 0.2.0: build the index that links every record of the world point layers to units ADM0-ADM2 of abf-boundaries v0.3.0
+(SPEC_INDEX_territory_v0_1 r11 + SPEC_INDEX_territory_v0_2 r3).
 
 Indexed: Atlas (dc_atlas_points) and Epoch (dc_epoch_points) of abf-dc 0.2.0 -> set abf-dc; GEM units -> set abf-energy;
 GEM units with TransitionZero ids -> set abf-energync (CC BY-NC, kept apart, P3).
@@ -8,9 +8,10 @@ Inputs (read only)
     data\abf-dc\v0.2.0\dc_atlas_points.csv, dc_epoch_points.csv, manifest.json     (repository)
     <release>\county_records.csv, operator_type_groups.csv                          (D:\GISData\release\abf-dc-v0.2.0)
     data\gem\energy_plants_gem_units.csv, energy_plants_gem_tzsam_units.csv, build_hashes.json
-    data\abf-boundaries\v0.2.0\units.csv                                            (repository)
-    <frame>\display\adm1.parquet, adm2.parquet and <frame>\analysis\*.parquet       (D:\GISData\Boundaries\out\abf-boundaries-v0.2.0)
-    data\index\rules\atlas_adm1_countries.csv                                       (optional: Atlas regions by the field outside the USA)
+    <frame>\units.csv, manifest.json, adm1.parquet, adm2.parquet, analysis_<iso>_adm<n>.parquet   (the published release D:\GISData\release\abf-boundaries-v0.3.0)
+    data\index\rules\atlas_adm1_countries.csv                                       (Atlas regions by the field outside the USA)
+    data\index\rules\atlas_adm1_aliases.csv                                         (spellings of Atlas regions, checked against the points)
+    <prev-index>\<set>\<ISO3>.csv and build_hashes.json                              (index 0.1.x, for the regression check)
 Outputs (data\index\)
     <set>\<ISO3>.csv, <ISO3>.csv.gz, adm0_other.csv(.gz), summary.csv, meta.json, and index_<set>.zip (deterministic, for Zenodo)
     build_report.md, build_hashes.json
@@ -47,15 +48,21 @@ from shapely.ops import nearest_points
 
 warnings.filterwarnings("ignore")
 GEOD = Geod(ellps="WGS84")
-INDEX_VERSION = "0.1.0"
-BOUNDARY_RELEASE = "abf-boundaries-v0.2.0"
+INDEX_VERSION = "0.2.0"
+BOUNDARY_RELEASE = "abf-boundaries-v0.3.0"
+OLD_BOUNDARY_RELEASE = "abf-boundaries-v0.2.0"
 NEAR_M = 22200.0                     # SPEC 2 item 2: 12 nautical miles
 EXPECTED = {"dc_atlas_points": 9865, "dc_epoch_points": 94, "energy_plants_gem_units": 164672, "energy_plants_gem_tzsam_units": 18732}
 EXPECTED_US_MATCHED = 3914
 EXPECTED_US_ATLAS = 4038
 SOFT = {"adm1_point rows": 4, "adm0_other abf-dc": 4, "adm0_other abf-energy": 291, "adm0_other abf-energync": 102}
-ANALYSIS = {1: {"USA": "USA_adm1_cb2023_500k.parquet", "NOR": "NOR_adm1_inndelingsbase_20260101.parquet"},
-            2: {"USA": "USA_adm2_cb2023_500k.parquet", "NOR": "NOR_adm2_inndelingsbase_20260101.parquet"}}
+NEW15 = ["COL", "EST", "HKG", "IDN", "IRL", "KOR", "LUX", "LVA", "MEX", "NZL", "PER", "PHL", "THA", "TWN", "VNM"]
+EXPECTED_ANALYSIS = {1: sorted(NEW15 + ["USA", "NOR"]), 2: ["NOR", "USA"]}      # computed files of the release
+EXPECTED_UNITS = {"ADM0": 242, "ADM1": 2092, "ADM2": 3602}
+EXPECTED_TABLE_COUNTRIES = 48          # 34 of index 0.1 + COL EST HKG IDN IRL KOR LUX LVA MEX NZL PER PHL THA VNM (ARCH7 21.11)
+EXPECTED_ALIAS_ROWS = 59
+EXPECTED_ALIAS_CHANGED_OLD = 19        # records of the countries outside the 15 that the spelling table changes (BRA, FIN, FRA, JPN, MYS, NGA)
+CMP_COLS = ["adm0", "adm0_basis", "adm0_other", "adm1", "adm2", "unit_basis", "unit_note", "adm1_point", "adm2_point"]
 NOTES = {"", "ambiguous_name", "connecticut", "no_county_field", "no_state", "region_not_matched", "region_only", "no_unit_near", "no_point", "point_in_other_country"}
 COMMON = ["record_id", "layer_id", "adm0", "adm0_basis", "adm0_other", "adm1", "adm2", "unit_basis", "unit_note", "adm1_point", "adm2_point",
           "approximate", "boundary_release"]
@@ -63,7 +70,8 @@ SETFIELDS = {"abf-dc": ["name", "status_raw", "type_group", "power_class", "powe
              "abf-energy": ["plant_name", "location_id", "type", "status_group", "capacity_mw"],
              "abf-energync": ["plant_name", "location_id", "type", "status_group", "capacity_mw"]}
 SETS = ["abf-dc", "abf-energy", "abf-energync"]
-DEFAULT_FRAME = r"D:\GISData\Boundaries\out\abf-boundaries-v0.2.0"
+DEFAULT_FRAME = r"D:\GISData\release\abf-boundaries-v0.3.0"
+DEFAULT_PREV = r"C:\Users\PGS\Documents\AI\index_work\data\index"
 DEFAULT_RELEASE = r"D:\GISData\release\abf-dc-v0.2.0"
 
 
@@ -125,6 +133,26 @@ def walk_shas(o, acc: set) -> set:
     return acc
 
 
+def manifest_entries(m) -> dict[str, str]:
+    """path -> sha256 of every file a release manifest lists (the layout of the manifest is not assumed)."""
+    res: dict[str, str] = {}
+
+    def rec(o):
+        if isinstance(o, dict):
+            p = o.get("path") or o.get("file") or o.get("name")
+            if isinstance(p, str) and isinstance(o.get("sha256"), str):
+                res[p.replace("\\", "/")] = o["sha256"]
+            for k, v in o.items():
+                if isinstance(v, dict) and isinstance(v.get("sha256"), str) and not any(x in v for x in ("path", "file", "name")):
+                    res[str(k).replace("\\", "/")] = v["sha256"]
+                rec(v)
+        elif isinstance(o, list):
+            for v in o:
+                rec(v)
+    rec(m)
+    return res
+
+
 # ------------------------------------------------------------------------------------------------ geometry
 def read_geo(p: Path) -> gpd.GeoDataFrame:
     g = gpd.read_parquet(p)
@@ -138,9 +166,10 @@ def read_geo(p: Path) -> gpd.GeoDataFrame:
 
 
 class Frame:
-    """Units of the frame per country and level. Geometry: computed (analysis) where the frame has it, else display."""
+    """Units of the frame per country and level. Geometry: computed (analysis) where the release has it, else display.
+    Layout of the published release: adm1.parquet, adm2.parquet, analysis_<iso>_adm<n>.parquet in one folder."""
 
-    def __init__(self, units: pd.DataFrame, froot: Path):
+    def __init__(self, units: pd.DataFrame, froot: Path, strict: bool = True):
         self.units = units
         self.iso = dict(zip(units["unit_id"], units["iso3"]))
         self.parent = dict(zip(units["unit_id"], units["parent_id"]))
@@ -149,28 +178,34 @@ class Frame:
         self.adm0 = set(units.loc[units["level"] == "ADM0", "unit_id"])
         self.has = {1: set(units.loc[units["level"] == "ADM1", "iso3"]), 2: set(units.loc[units["level"] == "ADM2", "iso3"])}
         self.geometry_note: dict[int, dict[str, str]] = {1: {}, 2: {}}
+        self.analysis_files: dict[int, dict[str, Path]] = {1: {}, 2: {}}
+        self.display_files: dict[int, Path] = {}
         self.polys: dict[int, dict[str, gpd.GeoDataFrame]] = {1: {}, 2: {}}
         self.polys_display: dict[int, dict[str, gpd.GeoDataFrame]] = {1: {}, 2: {}}
+        for f in sorted(froot.glob("analysis_*_adm*.parquet")):
+            m = re.match(r"^analysis_([a-z]{3})_adm([12])\.parquet$", f.name)
+            if m:
+                self.analysis_files[int(m.group(2))][m.group(1).upper()] = f
         for lev in (1, 2):
-            disp = read_geo(froot / "display" / f"adm{lev}.parquet")
+            got = sorted(self.analysis_files[lev])
+            if strict and got != EXPECTED_ANALYSIS[lev]:
+                raise Stop(f"analysis files ADM{lev} of the frame: {got}; expected {EXPECTED_ANALYSIS[lev]}")
+            self.display_files[lev] = froot / f"adm{lev}.parquet"
+            disp = read_geo(self.display_files[lev])
             want = set(units.loc[units["level"] == f"ADM{lev}", "unit_id"])
             if set(disp["unit_id"]) != want:
-                raise Stop(f"display/adm{lev}.parquet: unit_id set differs from units.csv ({len(set(disp['unit_id']) ^ want)} units)")
+                raise Stop(f"adm{lev}.parquet: unit_id set differs from units.csv ({len(set(disp['unit_id']) ^ want)} units)")
             use = disp
-            for c, fn in ANALYSIS[lev].items():
-                p = froot / "analysis" / fn
+            for c, p in sorted(self.analysis_files[lev].items()):
                 ids = set(units.loc[(units["level"] == f"ADM{lev}") & (units["iso3"] == c), "unit_id"])
-                if p.is_file():
-                    a = read_geo(p)
-                    extra = set(a["unit_id"]) - ids
-                    if extra:
-                        raise Stop(f"analysis/{fn}: {len(extra)} unit_id not in units.csv for {c}: {sorted(extra)[:5]}")
-                    left = sorted(ids - set(a["unit_id"]))          # units the computed file does not have keep the display geometry
-                    keep = disp[disp["unit_id"].isin(left)]
-                    use = pd.concat([use[~use["unit_id"].isin(ids)], a, keep], ignore_index=True)
-                    self.geometry_note[lev][c] = f"analysis/{fn}" + (f" ({len(left)} unit(s) from display: {', '.join(left)})" if left else "")
-                else:
-                    self.geometry_note[lev][c] = f"display/adm{lev}.parquet (analysis file {fn} not found)"
+                a = read_geo(p)
+                extra = set(a["unit_id"]) - ids
+                if extra:
+                    raise Stop(f"{p.name}: {len(extra)} unit_id not in units.csv for {c}: {sorted(extra)[:5]}")
+                left = sorted(ids - set(a["unit_id"]))          # units the computed file does not have keep the display geometry
+                keep = disp[disp["unit_id"].isin(left)]
+                use = pd.concat([use[~use["unit_id"].isin(ids)], a, keep], ignore_index=True)
+                self.geometry_note[lev][c] = p.name + (f" ({len(left)} unit(s) from display: {', '.join(left)})" if left else "")
             for tab, store in ((use, self.polys[lev]), (disp, self.polys_display[lev])):
                 tab = tab.assign(iso3=tab["unit_id"].map(self.iso))
                 for c in sorted(set(tab["iso3"])):
@@ -232,9 +267,11 @@ def point_chain(lon, lat, country, polys, parent, has, only=None):
             a, b, mm = locate_in(lon[idx], lat[idx], polys[2][c])
             u2[idx], h2[idx] = a, b
             stats["multi_hit_adm2"] += mm
+            stats[f"multi_hit_adm2:{c}"] += mm
         if c in polys[1]:
             a, b, mm = locate_in(lon[idx], lat[idx], polys[1][c])
             stats["multi_hit_adm1"] += mm
+            stats[f"multi_hit_adm1:{c}"] += mm
             have2 = u2[idx] != ""
             par = np.array([parent.get(x, "") for x in u2[idx]], dtype=object)
             dis = have2 & (a != "") & (par != a)
@@ -259,12 +296,18 @@ def main() -> int:
     ap.add_argument("--gem-dir", default=None, help="folder with the GEM build (default <repo>\\data\\gem); needed when the branch checked out has no data\\gem")
     ap.add_argument("--out-dir", default=None)
     ap.add_argument("--rules", default=None, help="atlas_adm1_countries.csv (default <out-dir>\\rules\\atlas_adm1_countries.csv, optional)")
+    ap.add_argument("--aliases", default=None, help="atlas_adm1_aliases.csv (default <out-dir>\\rules\\atlas_adm1_aliases.csv, optional)")
+    ap.add_argument("--prev-index", default=DEFAULT_PREV, help="folder data\\index of index 0.1.x (CSV files and build_hashes.json): regression check")
+    ap.add_argument("--old-units", default=None, help="units.csv of abf-boundaries 0.2.0 (default <repo>\\data\\abf-boundaries\\v0.2.0\\units.csv, optional)")
     ap.add_argument("--no-sha-check", action="store_true", help="tests only")
     ap.add_argument("--no-count-check", action="store_true", help="tests only: skip the expected record counts")
+    ap.add_argument("--no-regression", action="store_true", help="tests only: skip the comparison with index 0.1.x")
     a = ap.parse_args()
     repo, froot, rel = Path(a.repo), Path(a.frame_root), Path(a.release)
     out_dir = Path(a.out_dir) if a.out_dir else repo / "data" / "index"
     rules_p = Path(a.rules) if a.rules else out_dir / "rules" / "atlas_adm1_countries.csv"
+    alias_p = Path(a.aliases) if a.aliases else out_dir / "rules" / "atlas_adm1_aliases.csv"
+    prev_dir = Path(a.prev_index)
     checks: list[tuple[str, bool, str]] = []
 
     def check(name: str, ok: bool, detail: str = "", hard: bool = True):
@@ -282,9 +325,11 @@ def main() -> int:
                  "operator_type_groups.csv": rel / "operator_type_groups.csv",
                  "energy_plants_gem_units.csv": gd / "energy_plants_gem_units.csv",
                  "energy_plants_gem_tzsam_units.csv": gd / "energy_plants_gem_tzsam_units.csv", "gem build_hashes.json": gd / "build_hashes.json",
-                 "units.csv": repo / "data" / "abf-boundaries" / "v0.2.0" / "units.csv"}
+                 "units.csv": froot / "units.csv", "abf-boundaries manifest.json": froot / "manifest.json"}
         if rules_p.is_file():
             paths["atlas_adm1_countries.csv"] = rules_p
+        if alias_p.is_file():
+            paths["atlas_adm1_aliases.csv"] = alias_p
         inputs = {}
         for k, p in paths.items():
             if not p.is_file():
@@ -325,12 +370,48 @@ def main() -> int:
 
         # ---------------------------------------------------------------- frame
         log("== frame")
-        F = Frame(units, froot)
+        ucount = units["level"].value_counts().to_dict()
+        check("units.csv of the frame: ADM0 / ADM1 / ADM2", {k: ucount.get(k, 0) for k in EXPECTED_UNITS} == EXPECTED_UNITS or a.no_count_check,
+              f"{ucount} (expected {EXPECTED_UNITS})")
+        old_up = Path(a.old_units) if a.old_units else repo / "data" / "abf-boundaries" / "v0.2.0" / "units.csv"
+        if old_up.is_file():
+            ou = rcsv(old_up, ["unit_id", "iso3", "level", "name", "parent_id"])
+            mm_ = ou.merge(units, on="unit_id", how="left", suffixes=("_o", "_n"))
+            chg_ = {k: int((mm_[f"{k}_o"] != mm_[f"{k}_n"]).sum()) for k in ("iso3", "level", "name", "parent_id")}
+            check("units of abf-boundaries 0.2.0 are unchanged in 0.3.0 (iso3, level, name, parent_id)", len(mm_) == len(ou) and not any(chg_.values()) and not mm_["iso3_n"].isna().any(),
+                  f"{len(ou):,} old units; changed fields {chg_}; absent {int(mm_['iso3_n'].isna().sum())}")
+            newu = units[~units["unit_id"].isin(ou["unit_id"])]
+            check("new units are ADM1 of the 15 countries only", set(newu["level"]) == {"ADM1"} and sorted(set(newu["iso3"])) == sorted(NEW15) or a.no_count_check,
+                  f"{len(newu)} new units, countries {sorted(set(newu['iso3']))}")
+        else:
+            log(f"  note: {old_up} not found, the check of old units is skipped")
+        F = Frame(units, froot, strict=not a.no_count_check)
         check("countries with ADM1 / ADM2 in units.csv", True, f"{len(F.has[1])} / {sorted(F.has[2])}", hard=False)
+        check("countries with ADM1 in units.csv", len(F.has[1]) == 123 or a.no_count_check, f"{len(F.has[1])} (expected 123)")
         for lev in (1, 2):
             for c, s in sorted(F.geometry_note[lev].items()):
                 log(f"  ADM{lev} {c}: {s}")
-        bgeom = {f"adm{lev}": {"default": f"display/adm{lev}.parquet", **{c: s for c, s in sorted(F.geometry_note[lev].items())}} for lev in (1, 2)}
+        bgeom = {f"adm{lev}": {"default": f"adm{lev}.parquet", **{c: s for c, s in sorted(F.geometry_note[lev].items())}} for lev in (1, 2)}
+        # the files the build reads against the manifest of the release
+        frame_files = {"units.csv": froot / "units.csv", "adm1.parquet": F.display_files[1], "adm2.parquet": F.display_files[2]}
+        for lev in (1, 2):
+            for c, pth in sorted(F.analysis_files[lev].items()):
+                frame_files[pth.name] = pth
+        man_b = json.loads(paths["abf-boundaries manifest.json"].read_text(encoding="utf-8"))
+        ent = manifest_entries(man_b)
+        log(f"  manifest.json of the frame: {man_b.get('dataset')} {man_b.get('version')}, doi {man_b.get('doi')}, {len(ent)} files listed")
+        check("manifest.json of the frame is abf-boundaries 0.3.0", man_b.get("dataset") == "abf-boundaries" and str(man_b.get("version")) == "0.3.0",
+              f"{man_b.get('dataset')} {man_b.get('version')}")
+        ffiles = {}
+        for fn, pth in sorted(frame_files.items()):
+            ffiles[fn] = sha_pair(pth)["sha256"]
+            if a.no_sha_check:
+                continue
+            if fn in ent:
+                check(f"sha256 of {fn} = manifest.json of the frame", ffiles[fn] == ent[fn], f"{ffiles[fn][:16]}...")
+            else:
+                check(f"{fn} is listed in manifest.json of the frame", False, "not listed: sha256 recorded only", hard=False)
+        log(f"  frame files read: {len(ffiles)} (units.csv, 2 display, {len(F.analysis_files[1]) + len(F.analysis_files[2])} analysis); all sha256 recorded in build_hashes.json")
 
         # ---------------------------------------------------------------- Atlas regions table (optional)
         table: dict[str, str] = {}
@@ -359,6 +440,41 @@ def main() -> int:
         for r in units.itertuples(index=False):
             if r.level in ("ADM1", "ADM2"):
                 name_idx[(r.iso3, r.level)][norm(r.name)].append(r.unit_id)
+        if table:
+            check("countries in the Atlas regions table (without USA)", len(table) == EXPECTED_TABLE_COUNTRIES or a.no_count_check,
+                  f"{len(table)} (expected {EXPECTED_TABLE_COUNTRIES}); new in 0.2.0: {sorted(set(table) & set(NEW15))}")
+        # ---- table of spellings (SPEC 0.2 r3 item 1.4): only the rows that were checked against the points and approved
+        alias: dict[tuple[str, str], str] = {}
+        alias_rows = []
+        if alias_p.is_file():
+            at = rcsv(alias_p, ["iso3", "adm1_raw", "unit_id", "reason", "decided_by"])
+            for r in at.itertuples(index=False):
+                k_ = (r.iso3, norm(r.adm1_raw))
+                if not k_[1]:
+                    raise Stop(f"atlas_adm1_aliases.csv: empty adm1_raw for {r.iso3}")
+                if k_ in alias:
+                    raise Stop(f"atlas_adm1_aliases.csv: duplicate row for {r.iso3} {r.adm1_raw!r}")
+                if r.unit_id not in F.iso:
+                    raise Stop(f"atlas_adm1_aliases.csv: {r.iso3} {r.adm1_raw!r}: unit_id {r.unit_id} is not in units.csv")
+                if F.iso[r.unit_id] != r.iso3:
+                    raise Stop(f"atlas_adm1_aliases.csv: {r.iso3} {r.adm1_raw!r}: unit {r.unit_id} belongs to {F.iso[r.unit_id]}")
+                if r.iso3 not in table:
+                    raise Stop(f"atlas_adm1_aliases.csv: {r.iso3} is not a country of atlas_adm1_countries.csv, its spelling row cannot be used")
+                lvl_u = F.level[r.unit_id]
+                if lvl_u not in ("ADM1", "ADM2") or (lvl_u == "ADM2" and table[r.iso3] != "adm1_or_adm2" and table[r.iso3] != "adm2") or \
+                        (lvl_u == "ADM1" and table[r.iso3] == "adm2"):
+                    raise Stop(f"atlas_adm1_aliases.csv: {r.iso3} {r.adm1_raw!r}: level {lvl_u} does not fit frame_level {table[r.iso3]}")
+                if not r.reason.strip() or not r.decided_by.strip():
+                    raise Stop(f"atlas_adm1_aliases.csv: {r.iso3} {r.adm1_raw!r}: reason and decided_by are required")
+                if r.reason.split(":")[0] not in ("spelling", "former name", "merged", "within"):
+                    raise Stop(f"atlas_adm1_aliases.csv: {r.iso3} {r.adm1_raw!r}: reason must start with spelling:, former name:, merged: or within:")
+                alias[k_] = r.unit_id
+                alias_rows.append(dict(iso3=r.iso3, adm1_raw=r.adm1_raw, unit_id=r.unit_id, reason=r.reason, decided_by=r.decided_by))
+            check("rows of atlas_adm1_aliases.csv", len(alias) == EXPECTED_ALIAS_ROWS or a.no_count_check, f"{len(alias)} (expected {EXPECTED_ALIAS_ROWS}); countries {sorted({k[0] for k in alias})}")
+            clash = [(k, v) for k, v in alias.items() if len(name_idx[(k[0], "ADM1")].get(k[1], [])) + len(name_idx[(k[0], "ADM2")].get(k[1], [])) > 0]
+            log(f"  spelling rows whose written name already equals a unit name (they never fire, the name match goes first): {len(clash)} {clash[:5]}")
+        else:
+            log("  atlas_adm1_aliases.csv not found: the build runs without the table of spellings")
 
         # ---------------------------------------------------------------- records
         log("== records")
@@ -421,6 +537,8 @@ def main() -> int:
         p2 = np.full(n, "", dtype=object)
         stat = Counter()
         to_pt = np.zeros(n, dtype=bool)                    # Atlas, table country: region not matched, the row goes by the point (SPEC r5)
+        alias_hit: Counter = Counter()                     # (iso3, normalised name) -> records placed through the table of spellings
+        alias_recs: list[int] = []
         rid, raw1 = R["record_id"].to_numpy(), R["adm1_raw"].to_numpy()
         for i in range(n):
             c = adm0[i]
@@ -453,6 +571,11 @@ def main() -> int:
                             cand, clev = name_idx[(c, "ADM1")].get(key_, []), "adm1"
                     else:
                         cand = name_idx[(c, lvl.upper())].get(key_, [])
+                    if len(cand) != 1 and (c, key_) in alias:                       # the table of spellings: the name match goes first
+                        cand = [alias[(c, key_)]]
+                        clev = "adm2" if F.level[cand[0]] == "ADM2" else "adm1"
+                        alias_hit[(c, key_)] += 1
+                        alias_recs.append(i)
                 if len(cand) == 1:
                     ub[i] = "field"
                     if clev == "adm1":
@@ -490,6 +613,7 @@ def main() -> int:
                 un[i] = "point_in_other_country"
         R["adm1"], R["adm2"], R["unit_basis"], R["unit_note"], R["adm1_point"], R["adm2_point"] = a1, a2, ub, un, p1, p2
         R["to_point"] = to_pt
+        R["how1"] = h1p
         R["approximate"] = np.where(~has_pt, "", np.where(kind == "gem", np.where(R["acc"].to_numpy() == "approximate", "true", "false"), "true"))
         R["boundary_release"] = BOUNDARY_RELEASE
 
@@ -533,16 +657,76 @@ def main() -> int:
             ntp, nro = int(to_pt.sum()), int((np.array(un, dtype=object) == "region_only").sum())
             log(f"  Atlas, table countries: region not matched, row moved to the point: {ntp}; region_only: {nro}")
 
-        # Q5: computed geometry (USA, NOR) against display geometry
+        # ---------------------------------------------------------------- spelling table: use and checks
+        X: dict = {"alias_rows": alias_rows}
+        a_hit = {f"{k[0]} {k[1]}": v for k, v in sorted(alias_hit.items())}
+        unused = [r_ for r_ in alias_rows if alias_hit.get((r_["iso3"], norm(r_["adm1_raw"])), 0) == 0]
+        check("every row of the table of spellings is used by at least one record", not unused, f"{len(unused)} unused: {[(r_['iso3'], r_['adm1_raw']) for r_ in unused[:5]]}", hard=False)
+        arr_ = np.array(alias_recs, dtype=int)
+        alias_old = [i for i in arr_ if adm0[i] not in NEW15]
+        alias_new = [i for i in arr_ if adm0[i] in NEW15]
+        log(f"  records placed through the table of spellings: {len(arr_)}; countries 0.1: {len(alias_old)}; the 15: {len(alias_new)}")
+        X["alias_records"] = len(arr_)
+        X["alias_old_ids"] = [str(rid[i]) for i in alias_old]
+        X["alias_use"] = {k: int(v) for k, v in a_hit.items()}
+
+        if a.no_regression:
+            X["reg"] = None
+            X["changed_old"] = []
+            log("== regression skipped (--no-regression, tests only)")
+        else:
+            # ---------------------------------------------------------------- regression against index 0.1.x (SPEC 0.2 item 2.2)
+            log("== regression against index 0.1.x")
+            old_parts = []
+            for s_ in SETS:
+                d_ = prev_dir / s_
+                if not d_.is_dir():
+                    raise Stop(f"index 0.1.x not found: {d_} (give the folder with --prev-index)")
+                for pth in sorted(d_.glob("*.csv")):
+                    if pth.name in ("adm0_other.csv", "summary.csv"):
+                        continue
+                    old_parts.append(pd.read_csv(pth, dtype=str, keep_default_na=False, usecols=["record_id"] + CMP_COLS + ["boundary_release"]))
+            O = pd.concat(old_parts, ignore_index=True)
+            check("record_id of index 0.1.x = record_id of this build", len(O) == len(R) and set(O["record_id"]) == set(R["record_id"]), f"{len(O):,} old rows, {len(R):,} records")
+            check("every row of index 0.1.x has boundary_release " + OLD_BOUNDARY_RELEASE, set(O["boundary_release"]) == {OLD_BOUNDARY_RELEASE}, str(sorted(set(O["boundary_release"]))))
+            M = R[["record_id", "set"] + CMP_COLS + ["boundary_release"]].merge(O, on="record_id", how="inner", suffixes=("", "_old"))
+            in15 = M["adm0"].isin(NEW15).to_numpy()
+            any_diff = np.zeros(len(M), dtype=bool)
+            for c_ in CMP_COLS:
+                any_diff |= (M[c_] != M[c_ + "_old"]).to_numpy()
+            a_ids = {str(rid[i]) for i in alias_old}
+            D = M[any_diff & ~in15]
+            log(f"  records outside the 15 countries that differ from 0.1.x in any of the nine fields: {len(D)}; changed by the table of spellings: {len(a_ids)}")
+            check("outside the 15 countries only records of the table of spellings differ from 0.1.x (nine fields byte for byte otherwise)",
+                  set(D["record_id"]) <= a_ids, f"{len(set(D['record_id']) - a_ids)} other record(s) differ: {sorted(set(D['record_id']) - a_ids)[:5]}")
+            check("records changed by the table of spellings in the countries of 0.1 (BRA, FIN, FRA, JPN, MYS, NGA)",
+                  len(D) == EXPECTED_ALIAS_CHANGED_OLD or a.no_count_check, f"{len(D)} (expected {EXPECTED_ALIAS_CHANGED_OLD}); by country {dict(Counter(D['adm0']))}")
+            n15 = M[in15]
+            for c_ in ("adm0", "adm0_basis", "adm0_other", "adm2", "adm1_point", "adm2_point"):
+                check(f"the 15 countries: {c_} equals 0.1.x", bool((n15[c_] == n15[c_ + "_old"]).all()), f"{int((n15[c_] != n15[c_ + '_old']).sum())} differ")
+            check("the 15 countries: adm1 was empty in 0.1.x (the frame had no ADM1 there)", bool((n15["adm1_old"] == "").all()), f"{int((n15['adm1_old'] != '').sum())} not empty")
+            X["reg"] = dict(rows=len(M), old_diff_outside=len(D), rows15=len(n15), adm1_filled15=int(((n15["adm1_old"] == "") & (n15["adm1"] != "")).sum()),
+                            note_tr={f"{o_!r} -> {n_!r}": int(v) for (o_, n_), v in Counter(zip(n15["unit_note_old"], n15["unit_note"])).most_common()},
+                            basis_tr={f"{o_!r} -> {n_!r}": int(v) for (o_, n_), v in Counter(zip(n15["unit_basis_old"], n15["unit_basis"])).most_common()})
+            X["changed_old"] = [dict(record_id=r_.record_id, adm0=r_.adm0, was=f"adm1={r_.adm1_old or '-'} adm2={r_.adm2_old or '-'} basis={r_.unit_basis_old or '-'} note={r_.unit_note_old or '-'}",
+                                     now=f"adm1={r_.adm1 or '-'} adm2={r_.adm2 or '-'} basis={r_.unit_basis or '-'} note={r_.unit_note or '-'}") for r_ in D.sort_values("record_id").itertuples(index=False)]
+            for e_ in X["changed_old"]:
+                log(f"    changed: {e_['record_id']} {e_['adm0']}: {e_['was']} -> {e_['now']}")
+
+        # Q5: computed geometry against display geometry (USA, NOR and the 15 national countries)
         diff = {}
-        dsp_c = {"USA", "NOR"}
+        grp = {"USA, NOR": ["USA", "NOR"], "the 15 national countries": NEW15}
+        dsp_c = set(NEW15) | {"USA", "NOR"}
         dpolys = {1: {c: g for c, g in F.polys_display[1].items() if c in dsp_c}, 2: {c: g for c, g in F.polys_display[2].items() if c in dsp_c}}
         d1, d2, _, _, _ = point_chain(lon, lat, adm0.astype(object), dpolys, F.parent, F.has, only=dsp_c)
-        sel = (ub == "point") & np.isin(adm0, list(dsp_c))
-        for s_ in SETS:
-            ms = sel & (R["set"].to_numpy() == s_)
-            diff[s_] = {"points": int(ms.sum()), "adm1_differs": int((a1[ms] != d1[ms]).sum()), "adm2_differs": int((a2[ms] != d2[ms]).sum())}
-        log(f"  computed vs display geometry (USA, NOR; rows placed by point): {diff}")
+        for gname, gl in grp.items():
+            sel = (ub == "point") & np.isin(adm0, gl)
+            for s_ in SETS:
+                ms = sel & (R["set"].to_numpy() == s_)
+                diff[(s_, gname)] = {"points": int(ms.sum()), "adm1_differs": int((a1[ms] != d1[ms]).sum()), "adm2_differs": int((a2[ms] != d2[ms]).sum())}
+        log(f"  computed vs display geometry (rows placed by point): {diff}")
+        X["multi"] = {k.split(":")[1]: int(v) for k, v in st.items() if k.startswith("multi_hit_adm1:") and v}
+        X["multi2"] = {k.split(":")[1]: int(v) for k, v in st.items() if k.startswith("multi_hit_adm2:") and v}
 
         # ---------------------------------------------------------------- serialise
         log("== serialise")
@@ -629,6 +813,7 @@ def main() -> int:
                     "records": len(S), "near_rule_m": NEAR_M, "unit_note_values": sorted(NOTES - {""}),
                     "levels_by_country": levels, "aggregations": agg[s_],
                     "atlas_regions_by_field_countries": sorted(table) if s_ == "abf-dc" else None,
+                    "atlas_spelling_rows": len(alias_rows) if s_ == "abf-dc" else None, "frame_files_sha256": ffiles,
                     "files": {c: {"rows": r, "csv_bytes": len(files[f"{s_}/{c}.csv"]), "csv_gz_bytes": len(files[f"{s_}/{c}.csv.gz"]),
                                   "sha256": sha_bytes(files[f"{s_}/{c}.csv"])} for c, r in sorted(per_set[s_]["rows_by"].items())},
                     "inputs_sha256_lf": {k: v["sha256_lf"] for k, v in sorted(inputs.items())}}
@@ -649,16 +834,30 @@ def main() -> int:
         hashes = {k: sha_bytes(v) for k, v in sorted(files.items())}
         hpath = out_dir / "build_hashes.json"
         prev = json.loads(hpath.read_text(encoding="utf-8")) if hpath.is_file() else None
+        if prev is not None and prev.get("index_version") != INDEX_VERSION:
+            prev = None                                    # the file on disk is the build of another version (0.1.x): not a rerun
         same = None if prev is None else prev.get("files") == hashes
-        report = make_report(a, inputs, checks, R, per_set, fsize, hashes, diff, dis, table, F, same, time.time() - t0)
+        ohp = prev_dir / "build_hashes.json"
+        if ohp.is_file():
+            ofiles = set(json.loads(ohp.read_text(encoding="utf-8")).get("files", {}))
+            X["files_new"], X["files_gone"] = sorted(set(hashes) - ofiles), sorted(ofiles - set(hashes))
+            log(f"  output files against 0.1.x: new {len(X['files_new'])} {X['files_new'][:6]}, missing {len(X['files_gone'])} {X['files_gone'][:6]}")
+            check("list of output files against index 0.1.x (new and missing)", not X["files_new"] and not X["files_gone"],
+                  f"new {len(X['files_new'])}, missing {len(X['files_gone'])}", hard=False)
+        else:
+            X["files_new"], X["files_gone"] = None, None
+            log(f"  {ohp} not found: the list of output files is not compared with 0.1.x")
+        X["frame_files"] = ffiles
+        report = make_report(a, inputs, checks, R, per_set, fsize, hashes, diff, dis, table, F, same, time.time() - t0, X)
         out_dir.mkdir(parents=True, exist_ok=True)
         for k, v in files.items():
             p = out_dir / k
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_bytes(v)
         (out_dir / "build_report.md").write_bytes(report.encode("utf-8"))
-        hpath.write_bytes((json.dumps({"inputs": {k: {kk: vv for kk, vv in v.items() if kk != "path"} for k, v in sorted(inputs.items())},
-                                       "files": hashes}, indent=2, sort_keys=True) + "\n").encode("utf-8"))
+        hpath.write_bytes((json.dumps({"index_version": INDEX_VERSION, "boundary_release": BOUNDARY_RELEASE,
+                                       "inputs": {k: {kk: vv for kk, vv in v.items() if kk != "path"} for k, v in sorted(inputs.items())},
+                                       "frame_files_sha256": ffiles, "files": hashes}, indent=2, sort_keys=True) + "\n").encode("utf-8"))
         log(f"== done in {time.time() - t0:.0f} s; rerun identical to the previous build: {same}; {len(files)} files in {out_dir}")
         return 0
     except Stop as e:
@@ -668,8 +867,8 @@ def main() -> int:
         return 1
 
 
-def make_report(a, inputs, checks, R, per_set, fsize, hashes, diff, dis, table, F, same, secs) -> str:
-    L = ["# abf-index 0.1.0 · build report", "", f"Index version {INDEX_VERSION}; frame {BOUNDARY_RELEASE}; rule: SPEC_INDEX_territory_v0_1 r5.", "",
+def make_report(a, inputs, checks, R, per_set, fsize, hashes, diff, dis, table, F, same, secs, X) -> str:
+    L = ["# abf-index 0.2.0 · build report", "", f"Index version {INDEX_VERSION}; frame {BOUNDARY_RELEASE}; rules: SPEC_INDEX_territory_v0_1 r11 and SPEC_INDEX_territory_v0_2 r3.", "",
          "## Inputs", "", "| Input | Bytes | sha256 (as it lies) | sha256_lf |", "|---|---:|---|---|"]
     for k, v in sorted(inputs.items()):
         L.append(f"| {k} | {v['bytes']:,} | `{v['sha256']}` | `{v['sha256_lf']}` |")
@@ -693,13 +892,62 @@ def make_report(a, inputs, checks, R, per_set, fsize, hashes, diff, dis, table, 
                      f"{int(g['to_point'].sum())} | {int((g['unit_note'] == 'region_not_matched').sum())} |")
         L += ["", f"Total: region not matched and the row moved to the point: {int(A['to_point'].sum())}; region_only: {int((A['unit_note'] == 'region_only').sum())}; "
                   f"region_not_matched without a point: {int((A['unit_note'] == 'region_not_matched').sum())}.", ""]
+    # ---- the 15 national countries
+    L += ["## The 15 countries with new ADM1 (COL, EST, HKG, IDN, IRL, KOR, LUX, LVA, MEX, NZL, PER, PHL, THA, TWN, VNM)", "",
+          "adm1 by the Atlas field (table countries), by the point strictly within a unit, by the nearest unit within 22.2 km, no_unit_near, no_point, region_not_matched.", "",
+          "| Set | Country | records | with point | adm1 filled | by field | by point: within | by point: nearest | no_unit_near | no_point | region_not_matched | points in two units |",
+          "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    tot = defaultdict(lambda: defaultdict(int))
+    for s_ in SETS:
+        for c in NEW15:
+            g = R[(R["set"] == s_) & (R["adm0"] == c)]
+            if not len(g):
+                continue
+            bp = g[g["unit_basis"] == "point"]
+            row = dict(records=len(g), with_point=int(g["lon"].notna().sum()), filled=int((g["adm1"] != "").sum()), field=int((g["unit_basis"] == "field").sum()),
+                       within=int((bp["how1"] == "within").sum()), near=int((bp["how1"] == "near").sum()), nun=int((g["unit_note"] == "no_unit_near").sum()),
+                       nop=int((g["unit_note"] == "no_point").sum()), rnm=int((g["unit_note"] == "region_not_matched").sum()),
+                       multi=int(X["multi"].get(c, 0)) if s_ == "abf-dc" else 0)
+            for k_, v_ in row.items():
+                tot[s_][k_] += v_
+            L.append(f"| {s_} | {c} | {row['records']:,} | {row['with_point']:,} | {row['filled']:,} | {row['field']:,} | {row['within']:,} | {row['near']:,} | {row['nun']:,} | {row['nop']:,} | {row['rnm']:,} | {row['multi'] if s_ == 'abf-dc' else '(see abf-dc)'} |")
+    L += ["", "| Set | records | adm1 filled | by field | by point: within | by point: nearest | no_unit_near | no_point | region_not_matched |", "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    for s_ in SETS:
+        t_ = tot[s_]
+        L.append(f"| {s_} | {t_['records']:,} | {t_['filled']:,} | {t_['field']:,} | {t_['within']:,} | {t_['near']:,} | {t_['nun']:,} | {t_['nop']:,} | {t_['rnm']:,} |")
+    L += ["", f"Points in two units of one country (lowest unit_id taken), the 15 countries, counted once per distinct point over all sets (lookups of the set records): {dict(X['multi'])}.", ""]
+    # ---- spelling table
+    L += ["## Table of spellings (atlas_adm1_aliases.csv)", "", f"{len(X['alias_rows'])} rows; records placed through it: {X['alias_records']}.", "",
+          "| iso3 | adm1_raw | unit_id | records | reason | decided_by |", "|---|---|---|---:|---|---|"]
+    for r_ in X["alias_rows"]:
+        L.append(f"| {r_['iso3']} | {r_['adm1_raw']} | {r_['unit_id']} | {X['alias_use'].get(r_['iso3'] + ' ' + norm(r_['adm1_raw']), 0)} | {r_['reason'].replace('|', '/')} | {r_['decided_by']} |")
+    # ---- regression
+    rg = X["reg"]
+    if rg is None:
+        L += ["", "## Regression against index 0.1.x", "", "Skipped (--no-regression, tests only).", ""]
+    else:
+      L += ["", "## Regression against index 0.1.x", "",
+          f"Records compared: {rg['rows']:,}. Nine fields (adm0, adm0_basis, adm0_other, adm1, adm2, unit_basis, unit_note, adm1_point, adm2_point):", "",
+          f"- outside the 15 countries: {rg['old_diff_outside']} records differ, all through the table of spellings (expected {EXPECTED_ALIAS_CHANGED_OLD}): BRA, FIN, FRA, JPN, MYS, NGA;",
+          f"- the 15 countries ({rg['rows15']:,} records): adm0, adm0_basis, adm0_other, adm2, adm1_point, adm2_point equal 0.1.x; adm1 filled {rg['adm1_filled15']:,} (empty in 0.1.x);",
+          f"- unit_note transitions in the 15 (old -> new): {rg['note_tr']};", f"- unit_basis transitions in the 15 (old -> new): {rg['basis_tr']}.", "",
+          f"`boundary_release` changes from {OLD_BOUNDARY_RELEASE} to {BOUNDARY_RELEASE} in all rows.", "",
+          "Records of the countries of 0.1 changed by the table of spellings (list):", "", "| record_id | adm0 | 0.1.x | 0.2.0 |", "|---|---|---|---|"]
+    for e_ in X["changed_old"]:
+        L.append(f"| {e_['record_id']} | {e_['adm0']} | {e_['was']} | {e_['now']} |")
+    if X.get("files_new") is not None:
+        L += ["", f"Output files against index 0.1.x: new {len(X['files_new'])} {X['files_new'][:10]}; missing {len(X['files_gone'])} {X['files_gone'][:10]}."]
+    L += ["", "## Frame files read (sha256)", "", "| File | sha256 |", "|---|---|"]
+    for k_, h_ in sorted(X["frame_files"].items()):
+        L.append(f"| {k_} | `{h_}` |")
+    L += [""]
     L += ["## Rows with adm1_point (Atlas: adm0 by the field, point in another country)", "", "| record_id | adm0 | adm0_other | adm1_point | adm2_point |", "|---|---|---|---|---|"]
     for r in R[R["adm1_point"] != ""].itertuples(index=False):
         L.append(f"| {r.record_id} | {r.adm0} | {r.adm0_other} | {r.adm1_point} | {r.adm2_point} |")
-    L += ["", "## Geometry: computed (USA, NOR) against display", "", "Rows placed by point in USA / NOR whose unit differs between the two geometries:", "",
-          "| Set | rows in USA/NOR by point | adm1 differs | adm2 differs |", "|---|---:|---:|---:|"]
-    for s_, d in diff.items():
-        L.append(f"| {s_} | {d['points']:,} | {d['adm1_differs']:,} | {d['adm2_differs']:,} |")
+    L += ["", "## Geometry: computed against display", "", "Rows placed by point whose unit differs between the computed and the display geometry:", "",
+          "| Group | Set | rows by point | adm1 differs | adm2 differs |", "|---|---|---:|---:|---:|"]
+    for (s_, g_), d in diff.items():
+        L.append(f"| {g_} | {s_} | {d['points']:,} | {d['adm1_differs']:,} | {d['adm2_differs']:,} |")
     if dis:
         L += ["", f"ADM1 looked up directly differs from the parent of the ADM2 found (point rows): {dis}"]
     L += ["", "## File sizes (country files)", "", "| Set | Files | Rows | CSV MiB | gzip MiB | largest CSV (country, MiB) | largest gzip MiB |", "|---|---:|---:|---:|---:|---|---:|"]

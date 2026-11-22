@@ -1,7 +1,7 @@
-# Index of abf-energy 0.1.0: GEM units (RES_texts_INDEX_v0_1_0 r4 section 2.4).
+# Index of abf-energy 0.1.0: GEM units (RES_texts_INDEX_v0_2_0 r1 section 4.1).
 title: "Territory index · Power plants (abf-energy 0.1.0) · generating units"
 description: >-
-  Where each of the 164,672 generating units of energy_plants_gem_units lies in abf-boundaries v0.2.0. A unit is
+  Where each of the 164,672 generating units of energy_plants_gem_units lies in abf-boundaries v0.3.0. A unit is
   assigned by its point: to the country of the frame in which the point lies, and to the units of that country in
   which it lies, or the nearest one within 22.2 km. A point more than 22.2 km from any country takes the country GEM
   names. Units, not plant rows, are indexed: a unit has one type and one status, so counts and capacity add up within
@@ -9,24 +9,30 @@ description: >-
 known_gaps:
   - >-
     GEM gives an approximate location for 73,268 of the 164,672 units (44.5%), and many approximate points are shared:
-    134 points carry 20 or more plants each. Such a point can lie in a unit next to the plant's own. Of the 1,087
-    shared points with five or more plants that lie in a first-level unit, 172 are within 5 km of its boundary.
+    134 points carry 20 or more plants each. Such a point can lie in a unit next to the plant's own.
   - >-
     For 291 units GEM names another country than the one in which the point lies, for example in Crimea, which GEM
     lists under Ukraine and the frame shows under Russian control. They are assigned to the country of the point and
     listed for the country GEM names (adm0_other.csv).
   - >-
-    668 units lie more than 22.2 km from every first-level unit of their country and have none (no_unit_near). Points
-    that fall just outside the generalized outlines of their country's units get the nearest unit within 22.2 km.
+    806 units lie more than 22.2 km from every first-level unit of their country and have none (no_unit_near), 138 of
+    them offshore in the 15 countries with national first levels. Points that fall just outside the outlines of their
+    country's units, or in the narrow gaps between provinces of Indonesia, get the nearest unit within 22.2 km.
+  - >-
+    In the 15 countries with national first levels, points are assigned with the national files, which keep their own
+    coastline and are not fitted to neighbors at sea. A point in two units of one country would take the unit with the
+    smaller unit_id; there is none in this version.
   - >-
     A plant can have units in two units of the frame. The number of plants of a unit therefore does not add up to the
     number of plants of its country.
-  - "ADM1 exists in this frame for 108 countries and ADM2 for the United States, France and Norway."
+  - "ADM1 exists in this frame for 123 countries and ADM2 for the United States, France and Norway."
 verification:
   method: >-
-    Built by script from the files of abf-energy 0.1.0 and abf-boundaries v0.2.0. The build stops if a unit is missing
-    or appears in two country files, if the capacity by type and status differs from the layer, or if an input differs
-    from the published file. Points are assigned with the calculation geometry of the United States and Norway and the
-    display geometry of the frame elsewhere. A second run gives byte-identical files.
+    Built by script from the files of abf-energy 0.1.0 and abf-boundaries v0.3.0. The build stops if a unit is missing
+    or appears in two country files, if the capacity by type and status differs from the layer, if an input differs
+    from the published file, or if any row outside the 15 countries with new first-level units differs from version
+    0.1 for any reason other than the frame version. Points are assigned with the calculation geometry of the United
+    States, Norway (with Svalbard from Natural Earth) and the 15 countries with national first levels, and the display
+    geometry of the frame elsewhere. A second run gives byte-identical files.
 copied_fields:
   energy_plants_gem_units: [plant_name, location_id, type, status_group, capacity_mw]

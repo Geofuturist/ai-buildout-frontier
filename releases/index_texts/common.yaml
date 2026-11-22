@@ -1,4 +1,5 @@
-# Texts common to the three territory indexes (RES_texts_INDEX_v0_1_0 r4 sections 2.1, 2.2, 3). Public texts: English, American spelling.
+# Texts common to the three territory indexes (RES_texts_INDEX_v0_1_0 r4 sections 2.1, 2.2, 3; changes of 0.2.0: RES_texts_INDEX_v0_2_0 r1 section 2).
+# Public texts: English, American spelling.
 # Read by scripts/publish/index_build.py; the public meta.json of every index set is made from them (SPEC_INDEX r10 section 7).
 fields:
   record_id: "Key of the record in its layer."
@@ -13,8 +14,9 @@ fields:
   adm1: "First-level unit of the record in the frame (unit_id), inside adm0."
   adm2: "Second-level unit of the record in the frame (unit_id), inside adm1."
   unit_basis: >-
-    How adm1 and adm2 were assigned: field (the unit the record names) or point (the unit of the frame in which the
-    point lies, among the units of adm0, or the nearest such unit within 22.2 km).
+    How adm1 and adm2 were assigned: field (the unit the record names, directly or by another name listed in
+    atlas_adm1_aliases.csv) or point (the unit of the frame in which the point lies, among the units of adm0, or the
+    nearest such unit within 22.2 km).
   unit_note: "Why the first level that the country has in the frame is empty for this record (see null_meaning)."
   adm1_point: >-
     For a record assigned to adm0 by the country it names whose point lies inside another country: the first-level
@@ -23,7 +25,7 @@ fields:
   approximate: >-
     true where the point is not a site: the town point of an Atlas or Epoch AI record, or a GEM unit whose location
     GEM gives as approximate.
-  boundary_release: "Version of the boundary frame used: abf-boundaries v0.2.0."
+  boundary_release: "Version of the boundary frame used: abf-boundaries v0.3.0."
 null_meaning:
   adm0_other: "The country the record names and the country of its point are the same, or the record has no point."
   adm1: >-
@@ -31,7 +33,7 @@ null_meaning:
     reason is given in unit_note.
   adm2: >-
     The record has no second-level unit: the country has no second-level units in this frame (only the United States,
-    France and Norway have them in v0.2.0), or the reason is given in unit_note.
+    France and Norway have them in v0.3.0), or the reason is given in unit_note.
   unit_basis: "No unit below the country was assigned."
   unit_note: "Nothing is missing, or the level does not exist for the country in this frame."
   adm1_point: "The point lies in the country assigned as adm0, or the record has no point."
@@ -47,8 +49,8 @@ unit_note_descriptions:
   no_county_field: "The record names no U.S. county; it is counted in its state only."
   no_state: "The record names no U.S. state; it is counted in the country only."
   region_not_matched: >-
-    The record gives no region, or one that matches no unit of the frame by exact name, and has no point to assign it
-    by.
+    The record gives no region, or one that matches no unit of the frame by exact name or through
+    atlas_adm1_aliases.csv, and has no point to assign it by.
   no_unit_near: "The point lies more than 22.2 km from every unit of its country."
   no_point: "The record has no point below the country."
   point_in_other_country: >-
